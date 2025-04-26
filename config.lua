@@ -1,3 +1,4 @@
+---@diagnostic disable: lowercase-global
 accountManager = true
 namelockManager = true
 newPlayerChooseVoc = true
@@ -39,7 +40,7 @@ autoBanishUnknownBytes = false
 worldType = "open"
 protectionLevel = 100
 pvpTileIgnoreLevelAndVocationProtection = true
-pzLocked = 60 * 1000
+pzLocked = 30 * 1000
 huntingDuration = 60 * 1000
 criticalHitChance = 7
 criticalHitMultiplier = 1

@@ -13,8 +13,165 @@
 [11/3/2024 11:37:16] /reload spells
 [11/3/2024 11:43:47] /reload spells
 [11/3/2024 11:44:15] /reload spells
-[14/8/2024 14:8:54] tecnicas
-[14/8/2024 14:9:5] tecnicas
-[14/8/2024 14:30:4] tecnicas
-[14/8/2024 14:33:49] /m android
-[14/8/2024 14:33:51] /m android
+[7/4/2025 22:13:32] /m lion
+[7/4/2025 22:13:38] /s lion
+[7/4/2025 22:13:53] /s demon
+[7/4/2025 22:22:40] /m valak
+[7/4/2025 22:22:49] /m demon
+[23/4/2025 0:52:25] /s demon
+[23/4/2025 0:53:25] /m valak
+[23/4/2025 0:53:29] /m valak
+[23/4/2025 0:53:37] /m golem
+[23/4/2025 0:54:12] tecnicas
+[23/4/2025 16:1:16] /s demon
+[23/4/2025 16:2:29] tecnicas
+[23/4/2025 16:3:56] /reload spells
+[23/4/2025 16:4:27] /reload spells
+[23/4/2025 16:5:50] /reload spells
+[23/4/2025 16:6:8] tecnicas
+[23/4/2025 16:8:24] /s rat
+[23/4/2025 16:8:44] /s boar
+[23/4/2025 16:9:34] /a 5
+[23/4/2025 16:9:35] /a 5
+[23/4/2025 16:9:41] /a 15
+[23/4/2025 16:10:2] /s demon
+[25/4/2025 22:29:45] /t
+[25/4/2025 22:30:14] /t soad
+[25/4/2025 22:30:23] /ghost
+[25/4/2025 22:30:25] /ghost
+[25/4/2025 22:32:31] /attr vocation 1
+[25/4/2025 22:33:15] /level
+[25/4/2025 22:33:20] /level Soad
+[25/4/2025 22:33:24] /level Soad, 100000
+[25/4/2025 22:34:9] /newtype 550
+[25/4/2025 22:35:41] /newtype 634
+[25/4/2025 22:36:34] /attr vocation 2
+[25/4/2025 22:38:30] /attr vocation 3
+[25/4/2025 22:39:16] /attr vocation 4
+[25/4/2025 22:40:7] /attr vocation 5
+[25/4/2025 22:42:22] /reload talk
+[25/4/2025 22:43:36] /m demon
+[25/4/2025 22:43:51] /r
+[25/4/2025 22:44:1] /attr vocation 6
+[25/4/2025 22:44:8] /attr vocation 6
+[25/4/2025 23:45:25] /reload talk
+[25/4/2025 23:45:29] /attr vocation 6
+[25/4/2025 23:46:19] /attr vocation 7
+[25/4/2025 23:47:46] /reload talk
+[25/4/2025 23:48:5] /attr vocation 8
+[25/4/2025 23:49:46] /attr vocation 9
+[25/4/2025 23:50:39] /attr vocation 10
+[25/4/2025 23:51:16] /attr vocation 11
+[25/4/2025 23:51:45] /attr vocation 12
+[25/4/2025 23:52:26] /attr vocation 13
+[25/4/2025 23:52:46] /attr vocation 14
+[25/4/2025 23:55:26] /newtype 2172
+[25/4/2025 23:55:53] /newtype 2644
+[25/4/2025 23:56:48] /attr vocation 15
+[25/4/2025 23:57:25] /attr vocation 16
+[25/4/2025 23:58:30] /attr vocation 17
+[25/4/2025 23:59:36] /attr vocation 18
+[26/4/2025 0:0:14] /attr vocation 19
+[26/4/2025 0:1:2] /attr vocation 20
+[26/4/2025 0:1:38] /attr vocation 21
+[26/4/2025 0:2:16] /attr vocation 22
+[26/4/2025 0:3:3] /attr vocation 34
+[26/4/2025 0:4:7] /attr vocation 40
+[26/4/2025 0:4:55] /attr vocation 47
+[26/4/2025 0:5:48] /reload talk
+[26/4/2025 0:6:37] /attr vocation 48
+[26/4/2025 0:7:30] /reload talk
+[26/4/2025 0:8:6] /reload talk
+[26/4/2025 0:10:35] /reload talk
+[26/4/2025 0:10:57] /reload talk
+[26/4/2025 0:11:42] /reload talk
+[26/4/2025 0:12:5] /reload talk
+[26/4/2025 0:12:15] /reload talk
+[26/4/2025 0:14:31] /reload talk
+[26/4/2025 0:15:7] /reload talk
+[26/4/2025 0:15:33] /attr vocation 49
+[26/4/2025 0:15:58] /attr vocation 50
+[26/4/2025 0:16:17] /attr vocation 51
+[26/4/2025 0:16:57] /attr vocation 52
+[26/4/2025 0:17:24] /attr vocation 53
+[26/4/2025 0:18:29] /attr vocation 54
+[26/4/2025 0:18:54] /attr vocation 55
+[26/4/2025 0:19:36] /attr vocation 56
+[26/4/2025 0:20:15] /attr vocation 56
+[26/4/2025 0:20:17] /attr vocation 57
+[26/4/2025 0:20:36] /attr vocation 58
+[26/4/2025 0:21:6] /attr vocation 59
+[26/4/2025 0:21:36] /attr vocation 60
+[26/4/2025 0:23:5] /reload talk
+[26/4/2025 0:23:47] /attr vocation 61
+[26/4/2025 0:24:20] /attr vocation 62
+[26/4/2025 0:25:29] /reload talk
+[26/4/2025 0:27:43] /attr vocation 63
+[26/4/2025 0:28:4] /attr vocation 64
+[26/4/2025 0:29:10] /attr vocation 65
+[26/4/2025 0:29:34] /attr vocation 66
+[26/4/2025 0:33:6] /attr vocation 67
+[26/4/2025 0:33:40] /attr vocation 68
+[26/4/2025 0:33:54] /attr vocation 69
+[26/4/2025 0:34:8] /attr vocation 57
+[26/4/2025 0:34:26] /attr vocation 33
+[26/4/2025 0:36:11] /reload talk
+[26/4/2025 0:48:33] /reload talk
+[26/4/2025 0:50:44] /newtype 2450
+[26/4/2025 0:51:34] /newtype 2730
+[26/4/2025 0:56:25] /reload talk
+[26/4/2025 0:58:47] /reload talk
+[26/4/2025 1:7:48] /t soad
+[26/4/2025 1:9:24] !balance
+[26/4/2025 1:18:10] /r
+[26/4/2025 1:18:14] /reload talk
+[26/4/2025 1:18:23] /reload global
+[26/4/2025 1:18:29] /reload globalevents
+[26/4/2025 1:19:23] /reload globalevents
+[26/4/2025 1:19:47] /reload globalevents
+[26/4/2025 1:20:2] /reload globalevents
+[26/4/2025 1:22:32] /reload creaturescripts
+[26/4/2025 1:22:45] /reload creaturescripts
+[26/4/2025 1:34:13] /newtype 2430
+[26/4/2025 1:34:19] /newtype 2540
+[26/4/2025 1:34:23] /newtype 2330
+[26/4/2025 1:34:28] /newtype 2500
+[26/4/2025 1:35:3] /newtype 2782
+[26/4/2025 1:36:33] /reload talk
+[26/4/2025 1:36:39] /reload creaturescripts
+[26/4/2025 1:37:51] /reload creaturescripts
+[26/4/2025 1:38:9] /level
+[26/4/2025 1:39:0] /level [ADM] Supreme 500
+[26/4/2025 1:40:8] /level soad 100
+[26/4/2025 1:40:11] /level soad, 100
+[26/4/2025 1:40:32] /level soad, 100
+[26/4/2025 1:40:34] /level soad, 100
+[26/4/2025 1:40:37] /level soad, 150
+[26/4/2025 1:40:50] /level soad, 500
+[26/4/2025 1:43:28] /reload talk
+[26/4/2025 1:44:29] /level soad, 500
+[26/4/2025 1:45:12] /reload config
+[26/4/2025 1:53:15] /level soad, 500
+[26/4/2025 1:53:43] /reload config
+[26/4/2025 1:56:13] /level soad, 500
+[26/4/2025 1:56:59] /level soad, 500
+[26/4/2025 1:58:21] /level soad, 500
+[26/4/2025 2:0:37] /reload talk
+[26/4/2025 2:2:13] /level soad, 500
+[26/4/2025 2:4:53] /reload talk
+[26/4/2025 2:5:38] /reload talk
+[26/4/2025 2:6:35] /reload talk
+[26/4/2025 2:6:43] /reload talk
+[26/4/2025 2:9:15] /reload talk
+[26/4/2025 2:9:58] /level soad, 500
+[26/4/2025 2:10:24] /reload talk
+[26/4/2025 2:13:50] /reload globalevents
+[26/4/2025 2:14:2] /level soad, 500
+[26/4/2025 2:15:36] /level soad, 500
+[26/4/2025 2:16:25] /level soad, 500
+[26/4/2025 2:16:27] /reload globalevents
+[26/4/2025 2:17:17] /reload globalevents
+[26/4/2025 2:18:20] /reload globalevents
+[26/4/2025 2:19:36] /reload globalevents
+[26/4/2025 2:19:48] /reload globalevents
+[26/4/2025 2:35:43] /reload talk

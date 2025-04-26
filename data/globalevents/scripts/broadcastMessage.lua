@@ -1,10 +1,15 @@
 CONFIG = {
     [1] = {
-        message = "- - > TV Karakura < - -\n\n To know what the commands are, just say /commands.",
+        message = "- - > TV Karakura < - -\n\n Para ver os comandos, digite /commands.",
         color = 22
     },
     [2] = {
-        message = "- - > Dragon Ball TV < - -\n\n To transform, just say transform 1, transform 2, transform 3, etc.",
+        message =
+        "- - > Dragon Ball TV < - -\n\n Para transformar, basta dizer transformar 1/!saga 1, transformar 2/!saga 2.",
+        color = 22
+    },
+    [3] = {
+        message = "- - > Dragon Ball TV < - -\n\n Para ver os comandos, digite /commands.",
         color = 22
     }
 }

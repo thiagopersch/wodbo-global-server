@@ -1,4 +1,4 @@
-local config = {broadcast = {120, 30}, shallow = "no", delay = 120, events = 30}
+local config = { broadcast = { 120, 30 }, shallow = "no", delay = 120, events = 30 }
 
 config.shallow = getBooleanFromString(config.shallow)
 
@@ -12,7 +12,7 @@ local function executeSave(seconds)
         end
 
         text = text .. "erver save within " .. seconds ..
-                   " seconds, please mind it may freeze!"
+            " seconds, please mind it may freeze!"
         doBroadcastMessage(text)
     end
 

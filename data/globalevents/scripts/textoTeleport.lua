@@ -1,19 +1,9 @@
 local positions = {
-    ["First Itens"] = {
-        pos = {x = 17470, y = 17379, z = 6},
-        color = {205, 210},
+    ["Itens iniciais"] = {
+        pos = { x = 31999, y = 32004, z = 7 },
+        color = { 205, 210 },
         effect = {}
     },
-    ["Houses"] = {
-        pos = {x = 17474, y = 17366, z = 6},
-        color = {205, 210},
-        effect = {10, 376}
-    },
-    ["Arena PvP"] = {
-        pos = {x = 17466, y = 17366, z = 6},
-        color = {205, 210},
-        effect = {10, 376}
-    }
 }
 
 function onThink(cid, interval, lastExecution)
@@ -24,7 +14,7 @@ function onThink(cid, interval, lastExecution)
             end
         end
         doSendAnimatedText(pos.pos, t, #pos.color > 0 and
-                               pos.color[math.random(#pos.color)] or 215)
+            pos.color[math.random(#pos.color)] or 215)
     end
     return true
 end

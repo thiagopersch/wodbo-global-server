@@ -1,14 +1,14 @@
 local effects = {
--- Vocations DBZ
-    [1] = 102, -- Bardock
-    [2] = 105, -- Bills
-    [3] = 111, -- Botamo
-    [4] = 107, -- Brolly
-    [5] = 110, -- Bulma
-    [6] = 104, -- Buu
-    [7] = 106, -- C8
-    [8] = 103, -- C17
-    [9] = 103, -- C18
+    -- Vocations DBZ
+    [1] = 102,  -- Bardock
+    [2] = 105,  -- Bills
+    [3] = 111,  -- Botamo
+    [4] = 107,  -- Brolly
+    [5] = 110,  -- Bulma
+    [6] = 104,  -- Buu
+    [7] = 106,  -- C8
+    [8] = 103,  -- C17
+    [9] = 103,  -- C18
     [10] = 100, -- Cabba
     [11] = 101, -- Cell
     [12] = 108, -- Cooler
@@ -32,7 +32,7 @@ local effects = {
     [30] = 131, -- Piccolo
     [31] = 123, -- Quitela
     [32] = 108, -- Raditz
-    [33] = 121, -- Shenron
+    [33] = 357, -- Shenron
     [34] = 137, -- Tapion
     [35] = 138, -- Trunks
     [36] = 152, -- Tsuful
@@ -45,8 +45,8 @@ local effects = {
     [43] = 100, -- Videl
     [44] = 121, -- Zaiko
     [45] = 148, -- Zeno
-    
--- Vocations Bleach
+
+    -- Vocations Bleach
     [47] = 119, -- Aizen
     [48] = 149, -- Byakuya
     [49] = 151, -- Gin
@@ -67,7 +67,7 @@ local effects = {
     [64] = 149, -- Ulquiorra
     [65] = 147, -- Urahara
     [66] = 150, -- Yoruichi
-    [67] = 147 -- Zaraki
+    [67] = 147  -- Zaraki
 }
 
 function onThink(interval)

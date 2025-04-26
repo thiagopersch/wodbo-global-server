@@ -1,9 +1,4 @@
---[[ 
-    Talking Tp/signs/tiles for TFS 0.2+
-    70%shawak,30%Damadgerz
-    Idea by Damadgerz
-]] --
-local time = 5 -- 1 = 1 sec, 2 = 2 sec, ...
+local time = 1 -- 1 = 1 sec, 2 = 2 sec, ...
 
 local say_events = {}
 local function SayText(cid)
@@ -26,7 +21,7 @@ function onSay(cid, words, param, channel)
     if param == "on" then
         if isPlayer(cid) == TRUE then
             doSendAnimatedText(getPlayerPosition(cid), "Treinando!",
-                               math.random(01, 255))
+                math.random(01, 255))
         end
         say_events[getPlayerGUID(cid)] = addEvent(SayText, time * 1000, cid)
         doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "You Now Stated you are (afk).")

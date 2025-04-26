@@ -1,103 +1,88 @@
-function getPlayerNameByGUID2(n)
-    local c = db.getResult("SELECT `name` FROM `players` WHERE `id` = " .. n .. ";")
-    if c:getID() == -1 then return "SQL_ERROR[" .. n .. "]" end
-    return c:getDataString("name")
+function getPlayerNameByGUID(playerId)
+    local result = db.getResult("SELECT `name` FROM `players` WHERE `id` = " .. db.escapeString(playerId) .. ";")
+    if result:getID() == -1 then
+        result:free()
+        return "SQL_ERROR[" .. playerId .. "]"
+    end
+    local name = result:getDataString("name")
+    result:free()
+    return name
 end
 
-function onSay(cid, words, param)
-    local max = 10
-    local letters_to_next = 20
+function onSay(cid, words, param, channel)
+    local maxRanks = 10
+    local nameLength = 25
     local skills = {
-        ['fist'] = 0,
-        ['club'] = 1,
-        ['sword'] = 2,
-        ['axe'] = 3,
-        ['distance'] = 4,
-        ['shielding'] = 5,
-        ['fishing'] = 6,
-        ['dist'] = 4,
-        ['shield'] = 5,
-        ['fish'] = 6
+        fist = 0,
+        club = 1,
+        sword = 2,
+        axe = 3,
+        distance = 4,
+        shielding = 5,
+        fishing = 6,
+        dist = 4,
+        shield = 5,
+        fish = 6,
+        maglevel = 10,
+        resets = 11
     }
 
-    local name_now
-    local name = "Highscore for level\n"
-    local rkn = 0
-    local no_break = 0
+    param = param:lower()
+    local highscore = "Highscore\n\n"
+    local query, header, valueField
 
-    param = string.lower(param)
-
-    dofile('config.lua')
-
-    if param == "" or param == "level" and (param ~= "magic" and param == "ml") and
-        skills[param] == nil then
-        name = name .. "\n"
-        name = name .. "Rank Level - Nome do Jogador\n"
-        local v = db.getResult("SELECT `name`, `level`, `experience` FROM `players` WHERE `group_id` <= 2 ORDER BY `experience` DESC LIMIT 0," .. (max) .. ";")
-
-        repeat
-            no_break = no_break + 1
-            if v:getID() == -1 then break end
-            rkn = rkn + 1
-            name_now, l = v:getDataString("name"), string.len(v:getDataString("name"))
-            space = ""
-
-            for i = 1, letters_to_next - l do space = space .. " " end
-            name = name .. rkn .. ". " .. v:getDataInt("level") .. "  -  " .. name_now .. space .. " " .. "\n"
-
-            if no_break >= 20 then break end
-        until v:next() == false
+    if param == "" or param == "level" then
+        header = "Rank Level - Player Name\n"
+        query =
+        "SELECT `name`, `level`, `experience` FROM `players` WHERE `group_id` < 3 ORDER BY `experience` DESC LIMIT " ..
+        maxRanks .. ";"
+        valueField = "level"
     elseif param == "magic" or param == "ml" then
-        name = name .. "\n"
-        name = name .. "Rank Magic - Nome do Jogador\n"
-        local v = db.getResult("SELECT `name`, `level`, `maglevel` FROM `players` WHERE `group_id` <= 2 ORDER BY `maglevel` DESC LIMIT 0," .. (max) .. ";")
-        repeat
-            if v:getID() == -1 then break end
-            rkn = rkn + 1
-            name_now, l = v:getDataString("name"), string.len(v:getDataString("name"))
-            space = ""
-            for i = 1, letters_to_next - l do space = space .. " " end
-            name = name .. rkn .. ". " .. v:getDataInt("maglevel") .. "  -  " .. name_now .. space .. " " .. " " .. "" .. "\n"
-        until v:next() == false
-
+        header = "Rank Magic - Player Name\n"
+        query = "SELECT `name`, `maglevel` FROM `players` WHERE `group_id` < 3 ORDER BY `maglevel` DESC LIMIT " ..
+        maxRanks .. ";"
+        valueField = "maglevel"
     elseif param == "reset" or param == "resets" then
-        name = name .. "\nRank Reset - Nome do Jogador\n"
-        local v = db.getResult("SELECT `player_id`, `value` FROM `player_storage` WHERE `key` = 1020 ORDER BY cast(value as INTEGER) DESC;")
-        local kk = 0
-        repeat
-            if kk == max or v:getID() == -1 then break end
-            kk = kk + 1
-            name_now, l = getPlayerNameByGUID2(v:getDataInt("player_id")), string.len(getPlayerNameByGUID2(v:getDataInt("player_id")))
-            space = ""
-            for i = 1, letters_to_next - l do space = space .. " " end
-            if name_now == nil then
-                name_now = 'sql error[' .. v:getDataInt("player_id") .. ']'
-            end
-
-            name = name .. kk .. ". " .. v:getDataInt("value") .. "  -  " .. name_now .. space .. " " .. " " .. "" .. "\n"
-
-        until v:next() == false
-
-    elseif skills[param] ~= nil then
-        name = name .. "\n"
-        name = name .. "Rank " .. param .. " fighting - Nome do Jogador\n"
-
-        local v = db.getResult("SELECT `player_id`, `value` FROM `player_skills` WHERE `skillid` = " .. skills[param] .. " ORDER BY `value` DESC;")
-        local kk = 0
-        repeat
-            if kk == max or v:getID() == -1 then break end
-            kk = kk + 1
-            name_now, l = getPlayerNameByGUID2(v:getDataInt("player_id")), string.len(getPlayerNameByGUID2(v:getDataInt("player_id")))
-            space = ""
-            for i = 1, letters_to_next - l do space = space .. " " end
-            if name_now == nil then
-                name_now = 'sql error[' .. v:getDataInt("player_id") .. ']'
-            end
-            name = name .. kk .. ". " .. v:getDataInt("value") .. "  -  " .. name_now .. space .. " \n"
-            
-        until v:next() == false
+        header = "Rank Reset - Player Name\n"
+        query = "SELECT `name`, `resets` FROM `players` WHERE `group_id` < 3 ORDER BY `resets` DESC LIMIT " ..
+        maxRanks .. ";"
+        valueField = "resets"
+    elseif skills[param] then
+        header = "Rank " .. param:gsub("^%l", string.upper) .. " - Player Name\n"
+        query = "SELECT `player_id`, `value` FROM `player_skills` WHERE `skillid` = " ..
+        skills[param] .. " ORDER BY `value` DESC LIMIT " .. maxRanks .. ";"
+        valueField = "value"
+    else
+        doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,
+            "Invalid parameter. Use: level, magic, reset, fist, club, sword, axe, distance, shielding, fishing.")
+        return true
     end
 
-    if name ~= "Highscore\n" then doPlayerPopupFYI(cid, name) end
+    highscore = highscore .. header
+    local result = db.getResult(query)
+    if result:getID() == -1 then
+        result:free()
+        doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Error retrieving highscore data.")
+        return true
+    end
+
+    local rank = 0
+    repeat
+        rank = rank + 1
+        local playerName, value
+        if skills[param] and param ~= "maglevel" and param ~= "resets" then
+            playerName = getPlayerNameByGUID(result:getDataInt("player_id"))
+            value = result:getDataInt("value")
+        else
+            playerName = result:getDataString("name")
+            value = result:getDataInt(valueField)
+        end
+
+        local spaces = string.rep(" ", nameLength - #playerName)
+        highscore = highscore .. rank .. ". " .. value .. "  -  " .. playerName .. spaces .. "\n"
+    until not result:next() or rank >= maxRanks
+
+    result:free()
+    doPlayerPopupFYI(cid, highscore)
     return true
 end

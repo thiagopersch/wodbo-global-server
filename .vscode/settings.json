@@ -1,1 +1,27 @@
-{}
+{
+  "Lua.diagnostics.globals": [
+    "getPlayerVocation",
+    "doPlayerSendTextMessage",
+    "doPlayerSendCancel",
+    "doSendMagicEffect",
+    "doCreatureChangeOutfit",
+    "getPlayerLevel",
+    "onSay",
+    "getPlayerFlagValue",
+    "getPlayerIp",
+    "getCreatureMana",
+    "getCreatureHealth",
+    "getPlayerGuildNick",
+    "getPlayerGuildName",
+    "getPlayerGuildRank",
+    "getPlayerGuildId",
+    "getPlayerPartner",
+    "getPlayerNameByGUID",
+    "getPlayerSex",
+    "getPlayerSpecialDescription",
+    "doPlayerSetSpecialDescription",
+    "onLook",
+    "registerCreatureEvent",
+    "onLogin"
+  ]
+}
