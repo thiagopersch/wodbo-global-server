@@ -22,6 +22,19 @@
     "doPlayerSetSpecialDescription",
     "onLook",
     "registerCreatureEvent",
-    "onLogin"
+    "onLogin",
+    "getCreatureTarget",
+    "isCreature",
+    "doCombat",
+    "getThingPosition",
+    "addEvent",
+    "onCastSpell",
+    "createCombatArea",
+    "setCombatCallback",
+    "setCombatArea",
+    "setCombatParam",
+    "onGetFormulaValues",
+    "createCombatObject",
+    "setCombatFormula"
   ]
 }

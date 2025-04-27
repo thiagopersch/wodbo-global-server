@@ -31,7 +31,7 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="-0" max="-100" />
-		<attack name="thunderstorm rune" interval="2000" min="-0" max="-400" />
+		<attack name="hyouryuu senbi" interval="2000" min="-0" max="-400" />
 	</attacks>
 	<immunities>
 		<immunity physical="0" />

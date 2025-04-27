@@ -1,15 +1,15 @@
-local combat1 = createCombatObject()
-setCombatParam(combat1, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatParam(combat1, COMBAT_PARAM_DISTANCEEFFECT, 125)
-setCombatParam(combat1, COMBAT_PARAM_EFFECT, 329)
-setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -1.0, 0, -50.0, 0)
+local combat = createCombatObject()
+setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, 125)
+setCombatParam(combat, COMBAT_PARAM_EFFECT, 282)
+setCombatFormula(combat, COMBAT_FORMULA_LEVELMAGIC, -1, -1, -5, -1, -5, -5, 1, 1)
 
 local function onCastSpell1(parameters)
     doCombat(parameters.cid, parameters.combat1, parameters.var)
 end
 
 function onCastSpell(cid, var)
-    local parameters = {cid = cid, var = var, combat1 = combat1}
+    local parameters = { cid = cid, var = var, combat1 = combat }
 
     for k = 1, 2 do
         addEvent(function()

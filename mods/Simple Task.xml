@@ -3,163 +3,163 @@
 	<config name="task_func"><![CDATA[
 task_sys = {
 	[1] = {
-		name = "Wolf", 
-		start = 176201, 
-		monsters_list = {"Wolf"}, 
-		level = 1, 
-		count = 3000, 
-		points = 2, 
-		items = {{2666,500}, {3976,500}, {5897,500}}, 
-		reward = {{1992,1}, {2670,200}, {2671,200}}, 
-		exp = 2000000, 
+		name = "Wolf",
+		start = 176201,
+		monsters_list = {"Wolf"},
+		level = 1,
+		count = 3000,
+		points = 2,
+		items = {{2666,500}, {3976,500}, {5897,500}},
+		reward = {{1992,1}, {2670,200}, {2671,200}},
+		exp = 2000000,
 		money = 20000
 	},
 	[2] = {
-		name = "Wolf Hollow", 
-		start = 176202, 
+		name = "Wolf Hollow",
+		start = 176202,
 		monsters_list = {"Wolf Hollow"},
-		level = 10, 
-		count = 6000, 
-		points = 2, 
-		items = {{2666,500}, {3976,500}, {5897,500}}, 
+		level = 10,
+		count = 6000,
+		points = 2,
+		items = {{2666,500}, {3976,500}, {5897,500}},
 		reward = {{2666,100}, {2471,1}, {2487,1}, {2495,1}, {2640,1}
-		}, 
-		exp = 2500000, 
+		},
+		exp = 2500000,
 		money = 30000
 	},
 	[3] = {
-		name = "Wolf Fire", 
-		start = 176203, 
-		monsters_list = {"Wolf Fire"}, 
-		level = 20, 
-		count = 7000, 
-		points = 2, 
-		items = {{2666,500}, {2111,100}, {2494,1}}, 
-		reward = {{2666,100}, {8872,1}, {8821,1}, {3982,1}}, 
-		exp = 2500000, 
+		name = "Wolf Fire",
+		start = 176203,
+		monsters_list = {"Wolf Fire"},
+		level = 20,
+		count = 7000,
+		points = 2,
+		items = {{2666,500}, {2111,100}, {2494,1}},
+		reward = {{2666,100}, {8872,1}, {8821,1}, {3982,1}},
+		exp = 2500000,
 		money = 30000
 	},
 	[4] = {
-		name = "Wolf Ice", 
-		start = 176204, 
-		monsters_list = {"Wolf Ice"}, 
-		level = 30, 
-		count = 7000, 
-		points = 2, 
-		items = {{2666,500},{3976,500},{5897,500}}, 
-		reward = {{2666,100},{2471,1},{2487,1},{2495,1},{2640,1}}, 
-		exp = 2500000, 
+		name = "Wolf Ice",
+		start = 176204,
+		monsters_list = {"Wolf Ice"},
+		level = 30,
+		count = 7000,
+		points = 2,
+		items = {{2666,500},{3976,500},{5897,500}},
+		reward = {{2666,100},{2471,1},{2487,1},{2495,1},{2640,1}},
+		exp = 2500000,
 		money = 30000
 	}
 }
 
 daily_task = {
 	[1] = {
-		name = "Wolfs", 
-		monsters_list = {"Wolf","Wolf Hollow","Wolf Fire","Wolf Ice"}, 
-		count = 1000, 
-		points = 2, 
-		reward = {{2666,500},{3976,500},{5897,500}}, 
-		exp = 50000000, 
+		name = "Wolfs",
+		monsters_list = {"Wolf","Wolf Hollow","Wolf Fire","Wolf Ice"},
+		count = 1000,
+		points = 2,
+		reward = {{2666,500},{3976,500},{5897,500}},
+		exp = 50000000,
 		money = 100000
 	},
 	[2] = {
-		name = "TarantulaS", 
-		monsters_list = {"Tarantula"}, 
-		count = 120, 
-		points = 1, 
-		reward = {}, 
-		exp = 9000, 
+		name = "TarantulaS",
+		monsters_list = {"Tarantula"},
+		count = 120,
+		points = 1,
+		reward = {},
+		exp = 9000,
 		money = 12000
 	},
 	[3] = {
-		name = "Wyvern", 
-		monsters_list = {"Wyvern"}, 
-		count = 125, 
-		points = 2, 
-		reward = {}, 
-		exp = 9000, 
+		name = "Wyvern",
+		monsters_list = {"Wyvern"},
+		count = 125,
+		points = 2,
+		reward = {},
+		exp = 9000,
 		money = 15000
 	},
 	[4] = {
-		name = "Dragons", 
-		monsters_list = {"Dragon","Dragon Hatchling"}, 
-		count = 150, 
-		points = 0, 
-		reward = {}, 
-		exp = 2000, 
+		name = "Dragons",
+		monsters_list = {"Dragon","Dragon Hatchling"},
+		count = 150,
+		points = 0,
+		reward = {},
+		exp = 2000,
 		money = 10000
 	},
 	[5] = {
-		name = "Wailing Widows", 
-		monsters_list = {"Wailing Widows"}, 
-		count = 200, 
-		points = 1, 
-		reward = {}, 
-		exp = 20000, 
+		name = "Wailing Widows",
+		monsters_list = {"Wailing Widows"},
+		count = 200,
+		points = 1,
+		reward = {},
+		exp = 20000,
 		money = 25000
 	},
 	[6] = {
-		name = "Ancient Scarabs", 
-		monsters_list = {"Ancient Scarab"}, 
-		count = 180, 
-		points = 5, 
-		reward = {}, 
-		exp = 22000, 
+		name = "Ancient Scarabs",
+		monsters_list = {"Ancient Scarab"},
+		count = 180,
+		points = 5,
+		reward = {},
+		exp = 22000,
 		money = 18000
 	},
 	[7] = {
-		name = "High Class Lizards", 
-		monsters_list = {"Corrupted Soul","Eternal Guardian","Lizard Chosen","Lizard Dragon Priest","Lizard High Guard","Lizard Legionnaire","Lizard Magistratus","Lizard Noble","Lizard Zaogun"}, 
-		count = 300, 
-		points = 3, 
-		reward = {}, 
-		exp = 50000, 
+		name = "High Class Lizards",
+		monsters_list = {"Corrupted Soul","Eternal Guardian","Lizard Chosen","Lizard Dragon Priest","Lizard High Guard","Lizard Legionnaire","Lizard Magistratus","Lizard Noble","Lizard Zaogun"},
+		count = 300,
+		points = 3,
+		reward = {},
+		exp = 50000,
 		money = 60000
 	},
 	[8] = {
-		name = "Mutated BatS", 
-		monsters_list = {"Mutated Bat"}, 
-		count = 260, 
-		points = 2, 
-		reward = {}, 
-		exp = 40000, 
+		name = "Mutated BatS",
+		monsters_list = {"Mutated Bat"},
+		count = 260,
+		points = 2,
+		reward = {},
+		exp = 40000,
 		money = 55000
 	},
 	[9] = {
-		name = "Giant Spiders", 
-		monsters_list = {"Giant Spider"}, 
-		count = 350, 
-		points = 3, 
-		reward = {}, 
-		exp = 60000, 
+		name = "Giant Spiders",
+		monsters_list = {"Giant Spider"},
+		count = 350,
+		points = 3,
+		reward = {},
+		exp = 60000,
 		money = 70000
 	},
 	[10] = {
-		name = "Undead Dragons", 
-		monsters_list = {"Undead Dragon"}, 
-		count = 500, 
-		points = 3, 
-		reward = {{2173,1}}, 
-		exp = 90000, 
+		name = "Undead Dragons",
+		monsters_list = {"Undead Dragon"},
+		count = 500,
+		points = 3,
+		reward = {{2173,1}},
+		exp = 90000,
 		money = 120000
 	},
 	[11] = {
-		name = "HydraS", 
+		name = "HydraS",
 		monsters_list = {"Hydra"},
-		count = 600, 
-		points = 3, 
-		reward = {{2173,1}}, 
-		exp = 100000, 
+		count = 600,
+		points = 3,
+		reward = {{2173,1}},
+		exp = 100000,
 		money = 160000
 	},
 	[12] = {
-		name = "Ghastly Dragons", 
-		monsters_list = {"Ghastly Dragon"}, 
-		count = 700, 
-		points = 3, 
-		reward = {{2173,1}}, 
-		exp = 130000, 
+		name = "Ghastly Dragons",
+		monsters_list = {"Ghastly Dragon"},
+		count = 700,
+		points = 3,
+		reward = {{2173,1}},
+		exp = 130000,
 		money = 200000
 	}
 }
@@ -189,10 +189,10 @@ function doRandomDailyTask(cid)
 end
 function GetRankTask(cid)
 	local ranks = {
-		[{1, 200}] = "Beginner", 
+		[{1, 200}] = "Beginner",
 		[{201, 500}] = "Knight",
 		[{501, 1000}] = "Hunter",
-		[{1001, 2000}] = "Holy Knight",		
+		[{1001, 2000}] = "Holy Knight",
 		[{2001, math.huge}] = "Supreme Holy Knight"
 	}
 	for v , r in pairs(ranks) do
@@ -207,9 +207,9 @@ function getItemsFromList(items)
 	if table.maxn(items) > 0 then
 		for i = 1, table.maxn(items) do
 			str = str .. items[i][2] .. ' ' .. getItemNameById(items[i][1])
-			if i ~= table.maxn(items) then str = str .. ', ' 
-			end 
-		end 
+			if i ~= table.maxn(items) then str = str .. ', '
+			end
+		end
 	end
 	return str
 end
@@ -218,15 +218,15 @@ function doRemoveItemsFromList(cid,items)
 	if table.maxn(items) > 0 then
 		for i = 1, table.maxn(items) do
 			if getPlayerItemCount(cid,items[i][1]) >= items[i][2] then
-			count = count + 1 end 
-		end 
+			count = count + 1 end
+		end
 	end
 	if count == table.maxn(items) then
 		for i = 1, table.maxn(items) do doPlayerRemoveItem(cid,items[i][1],items[i][2]) end
-	else 
-		return false 
+	else
+		return false
 	end
-	return true 
+	return true
 end
 function getMonsterFromList(monster)
 	local str = ''
@@ -234,7 +234,7 @@ function getMonsterFromList(monster)
 		for i = 1, #monster do
 			str = str .. monster[i]
 			if i ~= #monster then str = str .. ', ' end
-		end 
+		end
 	end
 	return str
 end
@@ -280,7 +280,7 @@ elseif isInArray({"daily","diaria"},param) then
 end
 if not task_sys[task] or getPlayerStorageValue(cid, task_sys[task].start) <= 0 then
 	doPlayerSendCancel(cid, "You are not in any task.") return true
-end 
+end
 return doShowTextDialog(cid, 8918, "[->] CURRENT TASK {"..getTaskMission(cid).."/"..#task_sys.."} [<-]\n\nName: "..task_sys[task].name.."\nLevel: "..task_sys[task].level.."\nProgress: ["..(getPlayerStorageValue(cid, task_sys_storages[3]) < 0 and 0 or getPlayerStorageValue(cid, task_sys_storages[3])).."/"..task_sys[task].count.."]\nMonster(s): "..getMonsterFromList(task_sys[task].monsters_list)..".\nItems: "..(#task_sys[task].items > 0 and getItemsFromList(task_sys[task].items) or "none")..".\n\n[->] TASK REWARDS [<-]\n\nMoney: "..(task_sys[task].money > 0 and task_sys[task].money or 0).."\nExperience: "..(task_sys[task].exp > 0 and task_sys[task].exp or 0).."\nPoints: "..task_sys[task].points.."\nItems: "..(#task_sys[task].reward > 0 and getItemsFromList(task_sys[task].reward) or "No reward items")..".")
 ]]>	</talkaction>
 	<event type="look" name="TaskLook" event="script"><![CDATA[
@@ -288,7 +288,7 @@ domodlib('task_func')
 function onLook(cid, thing, position, lookDistance)
 	if isPlayer(thing.uid) and getTaskPoints(thing.uid) > 0 then
 		doPlayerSetSpecialDescription(thing.uid, "\n"..(getPlayerSex(thing.uid) == 0 and "She" or "He").. " is a "..GetRankTask(thing.uid))
-	end	
+	end
 	return true
 end]]></event>
 	<event type="kill" name="KillTask" event="script"><![CDATA[
@@ -313,7 +313,7 @@ function onKill(cid, target, lastHit)
 			if getPlayerStorageValue(cid, task_sys_storages[5]) >= daily.count then
 				doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Daily Task System] Congratulations! You finished a daily task "..daily.name..", return to the NPC Detones seems to receive his reward.")
 			end
-		end 
+		end
 	end
 	return true
 end]]></event>

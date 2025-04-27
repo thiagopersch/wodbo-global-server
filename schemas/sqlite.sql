@@ -1,4 +1,4 @@
-CREATE TABLE "server_config" (
+CREATE TABLE IF NOT EXISTS "server_config" (
 	"config" VARCHAR(35) NOT NULL DEFAULT '',
 	"value" VARCHAR(255) NOT NULL DEFAULT '',
 	UNIQUE ("config")
@@ -6,7 +6,7 @@ CREATE TABLE "server_config" (
 
 INSERT INTO "server_config" VALUES ('db_version', 26);
 
-CREATE TABLE "server_motd" (
+CREATE TABLE IF NOT EXISTS "server_motd" (
 	"id" INTEGER NOT NULL,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"text" TEXT NOT NULL DEFAULT '',
@@ -15,7 +15,7 @@ CREATE TABLE "server_motd" (
 
 INSERT INTO "server_motd" VALUES (1, 0, 'Welcome to The Forgotten Server!');
 
-CREATE TABLE "server_record" (
+CREATE TABLE IF NOT EXISTS "server_record" (
 	"record" INTEGER NOT NULL,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"timestamp" INTEGER NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE "server_record" (
 
 INSERT INTO "server_record" VALUES (0, 0, 0);
 
-CREATE TABLE "server_reports" (
+CREATE TABLE IF NOT EXISTS "server_reports" (
 	"id" INTEGER PRIMARY KEY,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"player_id" INTEGER NOT NULL DEFAULT 0,
@@ -36,7 +36,7 @@ CREATE TABLE "server_reports" (
 	"reads" INTEGER NOT NULL DEFAULT 0
 );
 
-CREATE TABLE "accounts" (
+CREATE TABLE IF NOT EXISTS "accounts" (
 	"id" INTEGER PRIMARY KEY NOT NULL,
 	"name" VARCHAR(255) NOT NULL,
 	"password" VARCHAR(255) NOT NULL,
@@ -52,7 +52,7 @@ CREATE TABLE "accounts" (
 
 INSERT INTO "accounts" VALUES (1, '1', '1', 65535, 0, '', '0', 0, 0, 1);
 
-CREATE TABLE "players" (
+CREATE TABLE IF NOT EXISTS "players" (
 	"id" INTEGER PRIMARY KEY NOT NULL,
 	"name" VARCHAR(255) NOT NULL,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
@@ -113,7 +113,7 @@ CREATE TABLE "players" (
 
 INSERT INTO "players" VALUES (1, 'Account Manager', 0, 1, 1, 1, 0, 150, 150, 0, 0, 0, 0, 0, 110, 0, 0, 0, 0, 0, 0, 0, 50, 50, 7, '', 400, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 201660000, 0, 100, 100, 100, 100, 100, 0, 0, 0, 0, 0, '', 0, 0 '');
 
-CREATE TABLE "account_viplist" (
+CREATE TABLE IF NOT EXISTS "account_viplist" (
 	"account_id" INTEGER NOT NULL,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"player_id" INTEGER NOT NULL,
@@ -122,14 +122,14 @@ CREATE TABLE "account_viplist" (
 	FOREIGN KEY ("player_id") REFERENCES "players" ("id")
 );
 
-CREATE TABLE "global_storage" (
+CREATE TABLE IF NOT EXISTS "global_storage" (
 	"key" INTEGER NOT NULL,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"value" VARCHAR(255) NOT NULL DEFAULT '0',
 	UNIQUE ("key", "world_id")
 );
 
-CREATE TABLE "guilds" (
+CREATE TABLE IF NOT EXISTS "guilds" (
 	"id" INTEGER PRIMARY KEY,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"name" VARCHAR(255) NOT NULL,
@@ -141,7 +141,7 @@ CREATE TABLE "guilds" (
 	FOREIGN KEY ("ownerid") REFERENCES "players" ("id")
 );
 
-CREATE TABLE "guild_wars" (
+CREATE TABLE IF NOT EXISTS "guild_wars" (
 	"id" INTEGER PRIMARY KEY,
 	"guild_id" INTEGER NOT NULL,
 	"enemy_id" INTEGER NOT NULL,
@@ -166,7 +166,7 @@ CREATE TABLE IF NOT EXISTS "guild_kills" (
 	FOREIGN KEY ("death_id") REFERENCES "player_deaths"("id") ON DELETE CASCADE
 );
 
-CREATE TABLE "guild_invites" (
+CREATE TABLE IF NOT EXISTS "guild_invites" (
 	"player_id" INTEGER NOT NULL,
 	"guild_id" INTEGER NOT NULL,
 	UNIQUE ("player_id", "guild_id"),
@@ -174,7 +174,7 @@ CREATE TABLE "guild_invites" (
 	FOREIGN KEY ("guild_id") REFERENCES "guilds" ("id")
 );
 
-CREATE TABLE "guild_ranks" (
+CREATE TABLE IF NOT EXISTS "guild_ranks" (
 	"id" INTEGER PRIMARY KEY,
 	"guild_id" INTEGER NOT NULL,
 	"name" VARCHAR(255) NOT NULL,
@@ -182,7 +182,7 @@ CREATE TABLE "guild_ranks" (
 	FOREIGN KEY ("guild_id") REFERENCES "guilds" ("id")
 );
 
-CREATE TABLE "houses" (
+CREATE TABLE IF NOT EXISTS "houses" (
 	"id" INTEGER NOT NULL,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"owner" INTEGER NOT NULL,
@@ -202,7 +202,7 @@ CREATE TABLE "houses" (
 	UNIQUE ("id", "world_id")
 );
 
-CREATE TABLE "house_lists" (
+CREATE TABLE IF NOT EXISTS "house_lists" (
 	"house_id" INTEGER NOT NULL,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"listid" INTEGER NOT NULL,
@@ -211,7 +211,7 @@ CREATE TABLE "house_lists" (
 	FOREIGN KEY ("house_id", "world_id") REFERENCES "houses" ("id", "world_id")
 );
 
-CREATE TABLE "house_data" (
+CREATE TABLE IF NOT EXISTS "house_data" (
 	"house_id" INTEGER NOT NULL,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"data" LONGBLOB NOT NULL,
@@ -219,7 +219,7 @@ CREATE TABLE "house_data" (
 	FOREIGN KEY ("house_id", "world_id") REFERENCES "houses" ("id", "world_id")
 );
 
-CREATE TABLE "house_auctions" (
+CREATE TABLE IF NOT EXISTS "house_auctions" (
 	"house_id" INTEGER NOT NULL,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"player_id" INTEGER NOT NULL,
@@ -231,7 +231,7 @@ CREATE TABLE "house_auctions" (
 	FOREIGN KEY ("player_id") REFERENCES "players" ("id")
 );
 
-CREATE TABLE "player_deaths" (
+CREATE TABLE IF NOT EXISTS "player_deaths" (
 	"id" INTEGER PRIMARY KEY,
 	"player_id" INTEGER NOT NULL,
 	"date" INTEGER NOT NULL,
@@ -239,7 +239,7 @@ CREATE TABLE "player_deaths" (
 	FOREIGN KEY ("player_id") REFERENCES "players" ("id")
 );
 
-CREATE TABLE "killers" (
+CREATE TABLE IF NOT EXISTS "killers" (
 	"id" INTEGER PRIMARY KEY,
 	"death_id" INTEGER NOT NULL,
 	"final_hit" BOOLEAN NOT NULL DEFAULT FALSE,
@@ -248,20 +248,20 @@ CREATE TABLE "killers" (
 	FOREIGN KEY ("death_id") REFERENCES "player_deaths" ("id")
 );
 
-CREATE TABLE "player_killers" (
+CREATE TABLE IF NOT EXISTS "player_killers" (
 	"kill_id" INTEGER NOT NULL,
 	"player_id" INTEGER NOT NULL,
 	FOREIGN KEY ("kill_id") REFERENCES "killers" ("id"),
 	FOREIGN KEY ("player_id") REFERENCES "players" ("id")
 );
 
-CREATE TABLE "environment_killers" (
+CREATE TABLE IF NOT EXISTS "environment_killers" (
 	"kill_id" INTEGER NOT NULL,
 	"name" VARCHAR(255) NOT NULL,
 	FOREIGN KEY ("kill_id") REFERENCES "killers" ("id")
 );
 
-CREATE TABLE "player_depotitems" (
+CREATE TABLE IF NOT EXISTS "player_depotitems" (
 	"player_id" INTEGER NOT NULL,
 	"sid" INTEGER NOT NULL,
 	"pid" INTEGER NOT NULL DEFAULT 0,
@@ -272,7 +272,7 @@ CREATE TABLE "player_depotitems" (
 	FOREIGN KEY ("player_id") REFERENCES "players" ("id")
 );
 
-CREATE TABLE "player_namelocks" (
+CREATE TABLE IF NOT EXISTS "player_namelocks" (
 	"player_id" INTEGER NOT NULL,
 	"name" VARCHAR(255) NOT NULL,
 	"new_name" VARCHAR(255) NOT NULL,
@@ -280,7 +280,7 @@ CREATE TABLE "player_namelocks" (
 	FOREIGN KEY ("player_id") REFERENCES "players" ("id")
 );
 
-CREATE TABLE "player_skills" (
+CREATE TABLE IF NOT EXISTS "player_skills" (
 	"player_id" INTEGER NOT NULL,
 	"skillid" INTEGER NOT NULL,
 	"value" INTEGER NOT NULL DEFAULT 0,
@@ -289,7 +289,7 @@ CREATE TABLE "player_skills" (
 	FOREIGN KEY ("player_id") REFERENCES "players" ("id")
 );
 
-CREATE TABLE "player_storage" (
+CREATE TABLE IF NOT EXISTS "player_storage" (
 	"player_id" INTEGER NOT NULL,
 	"key" INTEGER NOT NULL,
 	"value" VARCHAR(255) NOT NULL DEFAULT '0',
@@ -297,7 +297,7 @@ CREATE TABLE "player_storage" (
 	FOREIGN KEY ("player_id") REFERENCES "players" ("id")
 );
 
-CREATE TABLE "player_viplist" (
+CREATE TABLE IF NOT EXISTS "player_viplist" (
 	"player_id" INTEGER NOT NULL,
 	"vip_id" INTEGER NOT NULL,
 	UNIQUE ("player_id", "vip_id"),
@@ -305,7 +305,7 @@ CREATE TABLE "player_viplist" (
 	FOREIGN KEY ("vip_id") REFERENCES "players" ("id")
 );
 
-CREATE TABLE "tiles" (
+CREATE TABLE IF NOT EXISTS "tiles" (
 	"id" INTEGER NOT NULL,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"house_id" INTEGER NOT NULL,
@@ -316,7 +316,7 @@ CREATE TABLE "tiles" (
 	FOREIGN KEY ("house_id", "world_id") REFERENCES "houses" ("id", "world_id")
 );
 
-CREATE TABLE "tile_items" (
+CREATE TABLE IF NOT EXISTS "tile_items" (
 	"tile_id" INTEGER NOT NULL,
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"sid" INTEGER NOT NULL,
@@ -328,7 +328,7 @@ CREATE TABLE "tile_items" (
 	FOREIGN KEY ("tile_id") REFERENCES "tiles" ("id")
 );
 
-CREATE TABLE "player_items" (
+CREATE TABLE IF NOT EXISTS "player_items" (
 	"player_id" INT NOT NULL,
 	"sid" INT NOT NULL,
 	"pid" INT NOT NULL DEFAULT 0,
@@ -339,14 +339,14 @@ CREATE TABLE "player_items" (
 	FOREIGN KEY ("player_id") REFERENCES "players" ("id")
 );
 
-CREATE TABLE "player_spells" (
+CREATE TABLE IF NOT EXISTS "player_spells" (
 	"player_id" INTEGER NOT NULL,
 	"name" VARCHAR(255) NOT NULL,
 	UNIQUE ("player_id", "name"),
 	FOREIGN KEY ("player_id") REFERENCES "players" ("id")
 );
 
-CREATE TABLE "bans" (
+CREATE TABLE IF NOT EXISTS "bans" (
 	"id" INTEGER PRIMARY KEY NOT NULL,
 	"type" INTEGER NOT NULL,
 	"value" INTEGER NOT NULL,
@@ -360,6 +360,13 @@ CREATE TABLE "bans" (
 	"action" INTEGER  NOT NULL DEFAULT 0,
 	"statement" VARCHAR(255) NOT NULL DEFAULT ''
 );
+
+CREATE TABLE IF NOT EXISTS "loterry" (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	name TEXT NOT NULL,
+	item TEXT NOT NULL,
+	created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+)
 
 CREATE TRIGGER "oncreate_guilds"
 AFTER INSERT ON "guilds"
@@ -760,6 +767,8 @@ CREATE TRIGGER increment_resets
 AFTER UPDATE OF resets ON players
 BEGIN
     UPDATE players
-    SET resets = resets + 1
+    SET resets = resets
     WHERE rowid = NEW.rowid;
 END;
+
+CREATE INDEX idx_name ON lottery(name);
