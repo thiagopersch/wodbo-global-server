@@ -38,19 +38,21 @@ function onLogin(cid)
         doSendMagicEffect(getCreaturePosition(cid), CONST_ME_TELEPORT)
     end
 
-    registerCreatureEvent(cid, "Outfit")
+    --registerCreatureEvent(cid, "Outfit")
     registerCreatureEvent(cid, "AmuletDeath")
     registerCreatureEvent(cid, "FullHpMana")
     registerCreatureEvent(cid, "FragReward")
     registerCreatureEvent(cid, "Mail")
     registerCreatureEvent(cid, "GuildMotd")
     registerCreatureEvent(cid, "Idle")
-    registerCreatureEvent(cid, "KillingInTheNameOf")
+    --registerCreatureEvent(cid, "KillingInTheNameOf")
     if (config.useFragHandler) then registerCreatureEvent(cid, "SkullCheck") end
     registerCreatureEvent(cid, "ReportBug")
     registerCreatureEvent(cid, "AdvanceSave")
     registerCreatureEvent(cid, "onlinepoints")
     registerCreatureEvent(cid, "fraglook")
+    registerCreatureEvent(cid, "DeathPlayer")
+    registerCreatureEvent(cid, "LevelRecompense")
 
     local sagastor = 578744
     if getPlayerStorageValue(cid, sagastor) ~= -1 then

@@ -10,13 +10,15 @@ end
 
 function onCastSpell(cid, var)
     local parameters = { cid = cid, var = var, combat1 = combat }
+    local repet = 200  -- Intervalo entre repetições (ms)
+    local qtdRepet = 2 -- Quantidade de repetições
 
-    for k = 1, 2 do
+    for k = 1, qtdRepet do
         addEvent(function()
             if isCreature(cid) then
                 addEvent(onCastSpell1, 1, parameters)
             end
-        end, 1 + ((k - 1) * 200))
+        end, 1 + ((k - 1) * repet))
     end
     return true
 end

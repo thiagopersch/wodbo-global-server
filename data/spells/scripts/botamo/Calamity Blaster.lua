@@ -1,7 +1,8 @@
-local combat1 = createCombatObject()
-setCombatParam(combat1, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatParam(combat1, COMBAT_PARAM_DISTANCEEFFECT, 78)
-setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -10.0, 0, -35.0, 0)
+local combat = createCombatObject()
+setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, 80)
+setCombatFormula(combat, COMBAT_FORMULA_LEVELMAGIC, -5, -6, -15, -20, -5, -200, 1, 1)
+
 
 local function onCastSpell1(parameters)
     doCombat(parameters.cid, parameters.combat1, parameters.var)
@@ -13,15 +14,18 @@ function onCastSpell(cid, var)
         y = getThingPosition(getCreatureTarget(cid)).y + 1,
         z = getThingPosition(getCreatureTarget(cid)).z
     }
-    local parameters = {cid = cid, var = var, combat1 = combat1}
+    local parameters = { cid = cid, var = var, combat1 = combat }
+    local repet = 200   -- Intervalo entre repetições (ms)
+    local qtdRepet = 10 -- Quantidade de repetições
+    local magEffect = 474
 
-    for k = 1, 10 do
+    for k = 1, qtdRepet do
         addEvent(function()
             if isCreature(cid) then
                 addEvent(onCastSpell1, 1, parameters)
-                doSendMagicEffect(position1, 334)
+                doSendMagicEffect(position1, magEffect)
             end
-        end, 1 + ((k - 1) * 200))
+        end, 1 + ((k - 1) * repet))
     end
     return true
 end

@@ -1,36 +1,43 @@
 local combat = createCombatObject()
+local exhaustionId = 13101
+local msg = "Please wait 30 seconds to use the spell again."
+local effect = 240
+local magEffect = 378
+local repet = 30
+local duration = 30000
+local qtdRepet = 300
 setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, false)
 
 local condition = createConditionObject(CONDITION_ATTRIBUTES)
-setConditionParam(condition, CONDITION_PARAM_TICKS, 60000)
-setConditionParam(condition, CONDITION_PARAM_SKILL_FIST, 10)
-setConditionParam(condition, CONDITION_PARAM_SKILL_CLUB, 10)
-setConditionParam(condition, CONDITION_PARAM_SKILL_SWORD, 10)
-setConditionParam(condition, CONDITION_PARAM_SKILL_AXE, 10)
-setConditionParam(condition, CONDITION_PARAM_SKILL_DISTANCE, 10)
-setConditionParam(condition, CONDITION_PARAM_SKILL_SHIELD, 10)
-setConditionParam(condition, CONDITION_PARAM_STAT_MAGICLEVEL, 10)
+setConditionParam(condition, CONDITION_PARAM_TICKS, duration)
+setConditionParam(condition, CONDITION_PARAM_SKILL_FIST, 2)
+setConditionParam(condition, CONDITION_PARAM_SKILL_CLUB, 2)
+setConditionParam(condition, CONDITION_PARAM_SKILL_SWORD, 2)
+setConditionParam(condition, CONDITION_PARAM_SKILL_AXE, 2)
+setConditionParam(condition, CONDITION_PARAM_SKILL_DISTANCE, 2)
+setConditionParam(condition, CONDITION_PARAM_SKILL_SHIELD, 2)
+setConditionParam(condition, CONDITION_PARAM_STAT_MAGICLEVEL, 2)
 setConditionParam(condition, CONDITION_PARAM_BUFF, true)
 setCombatCondition(combat, condition)
 
 function onCastSpell(cid, var)
-    if exhaustion.check(cid, 13101) == TRUE then
-        doPlayerSendCancel(cid, "Please wait 60 seconds to use the spell again.")
-        doSendMagicEffect(getCreaturePosition(cid), 2)
+    if exhaustion.check(cid, exhaustionId) == TRUE then
+        doPlayerSendCancel(cid, msg)
+        doSendMagicEffect(getCreaturePosition(cid), effect)
         return false
     end
-    for k = 1, 60 do
+    for k = 1, repet do
         addEvent(function()
             if isCreature(cid) then
                 local pos1 = {
-                    x = getPlayerPosition(cid).x + 1,
-                    y = getPlayerPosition(cid).y + 0,
+                    x = getPlayerPosition(cid).x,
+                    y = getPlayerPosition(cid).y,
                     z = getPlayerPosition(cid).z
                 }
-                doSendMagicEffect(pos1, 252)
+                doSendMagicEffect(pos1, magEffect)
             end
-        end, 1 + ((k - 1) * 500))
+        end, 1 + ((k - 1) * qtdRepet))
     end
-    exhaustion.set(cid, 13101, 30.0)
+    exhaustion.set(cid, exhaustionId, repet)
     return doCombat(cid, combat, var)
 end

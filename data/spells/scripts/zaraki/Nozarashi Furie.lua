@@ -1,37 +1,18 @@
-local combat1 = createCombatObject()
-setCombatParam(combat1, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -10.0, 0, -100.0, 0)
+local combat = createCombatObject()
+setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+setCombatParam(combat, COMBAT_PARAM_EFFECT, 568)
 
-arr1 = {
-    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-    {0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0},
-    {0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0}, 
-    {0, 0, 0, 1, 1, 2, 1, 1, 0, 0, 0},
-    {0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0}, 
-    {0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0},
-    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
-    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
-}
-
-local area1 = createCombatArea(arr1)
-
-setCombatArea(combat1, area1)
-
-local function onCastSpell1(parameters)
-    doCombat(parameters.cid, parameters.combat1, parameters.var)
+function onGetFormulaValues(cid, level, maglevel)
+    local min = -((level / 5) + (maglevel * 3.99) + 75)
+    local max = -((level / 5) + (maglevel * 9.99) + 150)
+    return min, max
 end
 
+setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
+
+local area = createCombatArea(AREA_CROSS6X6)
+setCombatArea(combat, area)
+
 function onCastSpell(cid, var)
-    local pos1 = {
-        x = getPlayerPosition(cid).x + 2,
-        y = getPlayerPosition(cid).y + 2,
-        z = getPlayerPosition(cid).z
-    }
-    local parameters = {cid = cid, var = var, combat1 = combat1}
-    addEvent(onCastSpell1, 0, parameters)
-    doSendMagicEffect(pos1, 327)
-    return true
+    return doCombat(cid, combat, var)
 end

@@ -1,26 +1,19 @@
-local combat1 = createCombatObject()
-setCombatParam(combat1, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -50.0, 0, -90.0, 0)
+local combat = createCombatObject()
+setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+setCombatParam(combat, COMBAT_PARAM_EFFECT, 286)
+setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, 272)
 
-local function onCastSpell1(parameters)
-    doCombat(parameters.cid, parameters.combat1, parameters.var)
+function onGetFormulaValues(cid, level, maglevel)
+    local min = -((level / 1) + (maglevel * 15) + 10)
+    local max = -((level / 2) + (maglevel * 30) + 50)
+    return min, max
 end
 
-function onCastSpell(cid, var)
-    local position1 = {
-        x = getThingPosition(getCreatureTarget(cid)).x,
-        y = getThingPosition(getCreatureTarget(cid)).y,
-        z = getThingPosition(getCreatureTarget(cid)).z
-    }
-    local parameters = {cid = cid, var = var, combat1 = combat1}
+setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
-    for k = 1, 1 do
-        addEvent(function()
-            if isCreature(cid) then
-                addEvent(onCastSpell1, 1, parameters)
-                doSendMagicEffect(position1, 66)
-            end
-        end, 1 + ((k - 1) * 200))
-    end
-    return true
+-- local area = createCombatArea(AREA_CROSS1X1)
+-- setCombatArea(combat, area)
+
+function onCastSpell(cid, var)
+    return doCombat(cid, combat, var)
 end

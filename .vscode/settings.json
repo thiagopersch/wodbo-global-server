@@ -35,6 +35,15 @@
     "setCombatParam",
     "onGetFormulaValues",
     "createCombatObject",
-    "setCombatFormula"
-  ]
+    "setCombatFormula",
+    "accountManager",
+    "createConditionObject",
+    "setConditionParam",
+    "setCombatCondition",
+    "doCreatureAddMana",
+    "doSendAnimatedText",
+    "setConditionFormula",
+    "doPlayerAddItem"
+  ],
+  "Lua.diagnostics.disable": ["lowercase-global"]
 }

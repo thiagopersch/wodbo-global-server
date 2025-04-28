@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
-	<event type="login" name="Outfit" script="outfit_vocation.lua" />
+	<!-- <event type="login" name="Outfit" script="outfit_vocation.lua" /> -->
 	<event type="death" name="AmuletDeath" script="amuletDeath.lua" />
 	<event type="look" name="fraglook" event="script" value="fraglook.lua" />
 	<event type="advance" name="FullHpMana" event="script" value="fullhpmana.lua" />
@@ -14,5 +14,9 @@
 	<event type="moveitem" name="MoveItem" event="script" value="houseprotect.lua" />
 	<event type="extendedopcode" name="ExtendedOpcode" event="script" value="extendedopcode.lua" />
 	<event type="login" name="onlinepoints" event="script" value="onlinepoints.lua" />
-	<event type="kill" name="KillingInTheNameOf" event="script" value="killinginthenameof.lua" />
+	<event type="death" name="DeathPlayer" event="script" value="deathplayer.lua" />
+	<event type="login" name="DeathLogin" event="script" value="deathplayer.lua" />
+	<event type="advance" name="LevelRecompense" event="script" value="recompenselvl.lua" />
+
+	<!-- <event type="kill" name="KillingInTheNameOf" event="script" value="killinginthenameof.lua" /> -->
 </creaturescripts>

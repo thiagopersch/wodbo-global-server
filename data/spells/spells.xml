@@ -33,10 +33,10 @@
         aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
         value="support/reiatsu regeneration.lua">
     </instant>
-    <instant name="Charge" words="Charge" lvl="10" mana="600" prem="0" aggressive="0" selftarget="1"
+    <instant name="Charge" words="Charge" lvl="50" mana="600" prem="0" aggressive="0" selftarget="1"
         exhaustion="2000" needlearn="0" event="script" value="support/charge.lua">
     </instant>
-    <instant name="Super Charge" words="Super Charge" lvl="15" mana="1000" prem="1" aggressive="0"
+    <instant name="Super Charge" words="Super Charge" lvl="200" mana="1000" prem="1" aggressive="0"
         selftarget="1" exhaustion="2000" needlearn="0" event="script"
         value="support/super charge.lua">
     </instant>
@@ -52,7 +52,6 @@
         prem="0" range="10" needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0"
         event="script" value="support/super renzoku energy dan.lua">
     </instant>
-
     <!-- Monsters -->
 
 
@@ -570,14 +569,14 @@
         value="saiyajin/Super Kienzan Blast.lua">
         <vocation id="27" /> <!-- Kuririn -->
     </instant>
-    <instant name="Dragon Fist Attack" words="Dragon Fist Attack" lvl="250" mana="900" prem="0"
+    <instant name="Dragon Fist Attack" words="Dragon Fist Attack" lvl="250" mana="1200" prem="0"
         range="10" needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
         value="saiyajin/Dragon Fist Attack.lua">
         <vocation id="17" /> <!-- Goku -->
         <vocation id="18" /> <!-- Goku Black -->
         <vocation id="41" /> <!-- Vegetto -->
     </instant>
-    <instant name="Evil Kienzan" words="Evil Kienzan" lvl="250" mana="900" prem="0" range="10"
+    <instant name="Evil Kienzan" words="Evil Kienzan" lvl="250" mana="1200" prem="0" range="10"
         needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
         value="saiyajin/Evil Kienzan.lua">
         <vocation id="27" /> <!-- Kuririn -->
@@ -607,41 +606,41 @@
     <!-- Dende and Piccolo -->
     <instant name="Makosen" words="Makosen" lvl="50" mana="300" prem="0" range="10" needtarget="1"
         blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="dende/Makosen.lua">
-        <vocation id="13" />
-        <vocation id="30" /> <!-- Piccolo -->
+        <vocation name="Dende" />
+        <vocation name="Piccolo" /> <!-- Piccolo -->
     </instant>
     <instant name="Namekjin Wave" words="Namekjin Wave" lvl="75" mana="400" prem="0" aggressive="0"
         selftarget="1" exhaustion="2000" needlearn="0" event="script"
         value="dende/Namekjin Wave.lua">
-        <vocation id="13" />
+        <vocation name="Dende" />
         <vocation id="30" /> <!-- Piccolo -->
     </instant>
     <instant name="Hellzone Granade" words="Hellzone Granade" lvl="100" mana="500" prem="0"
         range="10" needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
         value="dende/Hellzone Granade.lua">
-        <vocation id="13" />
+        <vocation name="Dende" />
         <vocation id="30" /> <!-- Piccolo -->
     </instant>
     <instant name="Namekjin Rage" words="Namekjin Rage" lvl="200" mana="700" prem="0" range="10"
         needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
         value="dende/Namekjin Rage.lua">
-        <vocation id="13" />
+        <vocation name="Dende" />
         <vocation id="30" /> <!-- Piccolo -->
     </instant>
-    <instant name="Heal Friend" words="Heal Friend" lvl="500" mana="900" prem="0" aggressive="0"
-        needtarget="1" params="1" exhaustion="1000" needlearn="0" event="script"
+    <instant name="Heal Friend" words="Heal Friend" lvl="500" mana="6000" prem="1" aggressive="0"
+        needtarget="1" params="1" exhaustion="2000" needlearn="0" event="script"
         value="dende/Heal Friend.lua">
-        <vocation id="13" />
+        <vocation name="Dende" />
     </instant>
-    <instant name="Namekjin Regeneration" words="Namekjin Regeneration" lvl="800" mana="1000"
-        prem="0" aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    <instant name="Namekjin Regeneration" words="Namekjin Regeneration" lvl="800" mana="8000"
+        prem="1" aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
         value="dende/Namekjin Regeneration.lua">
-        <vocation id="13" />
+        <vocation name="Dende" />
     </instant>
-    <conjure name="Create Senzu Bean" words="Create Senzu Bean" lvl="1000" maglv="90" mana="5000"
-        soul="100" conjureId="2674" conjureCount="5" exhaustion="3000" needlearn="0"
+    <conjure name="Create Senzu Bean" words="Create Senzu Bean" lvl="1000" maglv="110" mana="1000"
+        soul="30" conjureId="2674" prem="1" conjureCount="5" exhaustion="5000" needlearn="0"
         function="conjureItem">
-        <vocation id="13" />
+        <vocation name="Dende" />
     </conjure>
 
     <!-- Gods Of Destruction (Bills, Ginn, Liquir, Quitela, Vermouth)-->
@@ -779,6 +778,7 @@
         value="hitsugaya/Hyouten Hyakkasou.lua">
         <vocation id="51" />
     </instant>
+
     <!-- Hitto -->
     <instant name="Brave Slash" words="Brave Slash" lvl="50" mana="300" prem="0" range="10"
         needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
@@ -977,7 +977,7 @@
         value="kyouraku/Darumasan Gakoronda.lua">
         <vocation id="55" />
     </instant>
-    <instant name="Kageokuri" words="Kageokuri" lvl="100" mana="500" prem="0" range="10"
+    <instant name="Kageokuri" words="Kageokuri" lvl="250" mana="1000" prem="0" range="10"
         needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
         value="kyouraku/Kageokuri.lua">
         <vocation id="55" />
@@ -1125,7 +1125,7 @@
     <instant name="Hell Granade" words="Hell Granade" lvl="150" mana="600" prem="0" range="10"
         needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
         value="shenron/Hell Granade.lua">
-        <vocation id="13" /> <!-- Dende -->
+        <vocation name="Dende" /> <!-- Dende -->
         <vocation id="30" /> <!-- Piccolo -->
         <vocation id="33" /> <!-- Shenron -->
     </instant>

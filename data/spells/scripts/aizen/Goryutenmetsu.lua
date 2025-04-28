@@ -14,14 +14,15 @@ function onCastSpell(cid, var)
         z = getThingPosition(getCreatureTarget(cid)).z
     }
     local parameters = { cid = cid, var = var, combat1 = combat }
-    local repet = 200   -- Intervalo entre repetições (ms)
-    local qtdRepet = 10 -- Quantidade de repetições
+    local repet = 200     -- Intervalo entre repetições (ms)
+    local qtdRepet = 10   -- Quantidade de repetições
+    local magEffect = 659 -- ID do efeito
 
     for k = 1, qtdRepet do
         addEvent(function()
             if isCreature(cid) then
                 addEvent(onCastSpell1, 1, parameters)
-                doSendMagicEffect(position1, 659)
+                doSendMagicEffect(position1, magEffect)
             end
         end, 1 + ((k - 1) * repet))
     end

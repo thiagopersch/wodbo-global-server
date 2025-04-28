@@ -1,4 +1,3 @@
----@diagnostic disable: lowercase-global
 accountManager = true
 namelockManager = true
 newPlayerChooseVoc = true
@@ -23,7 +22,7 @@ monthlyFragsToBanishment = monthlyFragsToRedSkull
 blackSkulledDeathHealth = 40
 blackSkulledDeathMana = 0
 useBlackSkull = true
-advancedFragList = false
+advancedFragList = true
 
 notationsToBan = 3
 warningsToFinalBan = 4
@@ -44,14 +43,14 @@ pzLocked = 30 * 1000
 huntingDuration = 60 * 1000
 criticalHitChance = 7
 criticalHitMultiplier = 1
-displayCriticalHitNotify = false
+displayCriticalHitNotify = true
 removeWeaponAmmunition = true
 removeWeaponCharges = true
 removeRuneCharges = true
 whiteSkullTime = 15 * 60 * 1000
 noDamageToSameLookfeet = false
 showHealingDamage = true
-showHealingDamageForMonsters = false
+showHealingDamageForMonsters = true
 healthHealingColor = COLOR_GREEN
 manaHealingColor = COLOR_DARKPURPLE
 fieldOwnershipDuration = 5 * 1000
@@ -86,7 +85,7 @@ statusTimeout = 5 * 60 * 1000
 replaceKickOnLogin = true
 forceSlowConnectionsToDisconnect = false
 loginOnlyWithLoginServer = false
-premiumPlayerSkipWaitList = false
+premiumPlayerSkipWaitList = true
 enableCast = true
 
 sqlType = "sqlite"
@@ -136,7 +135,7 @@ onSell = 1000
 changeOutfit = 1000
 
 mapName = "main.otbm"
-mapAuthor = "TP"
+mapAuthor = "Peixola"
 randomizeTiles = true
 storeTrash = true
 cleanProtectedZones = false
@@ -160,8 +159,8 @@ emoteSpells = true
 allowChangeOutfit = true
 allowChangeColors = true
 allowChangeAddons = true
-disableOutfitsForPrivilegedPlayers = true
-addonsOnlyPremium = true
+disableOutfitsForPrivilegedPlayers = false
+addonsOnlyPremium = false
 
 dataDirectory = "data/"
 logsDirectory = "data/logs/"
@@ -203,11 +202,11 @@ blessingReductionDecrement = 5
 eachBlessReduction = 8
 
 experienceStages = false
-rateExperience = 1.0
+rateExperience = 4.0
 rateExperienceFromPlayers = 0
-rateSkill = 1.0
-rateMagic = 1.0
-rateLoot = 1.0
+rateSkill = 5.0
+rateMagic = 3.0
+rateLoot = 2.0
 rateSpawn = 5
 
 rateMonsterHealth = 1.0
@@ -245,7 +244,7 @@ cleanMapAtGlobalSave = true
 deSpawnRange = 2
 deSpawnRadius = 50
 
-maxPlayerSummons = 5
+maxPlayerSummons = 3
 teleportAllSummons = true
 teleportPlayerSummons = false
 

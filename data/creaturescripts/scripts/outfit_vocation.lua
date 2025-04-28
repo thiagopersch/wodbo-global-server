@@ -1,14 +1,14 @@
 function onLogin(cid)
     local voc = {
-        [1] = 2, -- Bardock
-        [2] = 28, -- Bills
-        [3] = 50, -- Botamo
-        [4] = 63, -- Brolly
-        [5] = 64, -- Bulma
-        [6] = 74, -- Buu
-        [7] = 84, -- C8
-        [8] = 96, -- C17
-        [9] = 105, -- C18
+        [1] = 2,    -- Bardock
+        [2] = 28,   -- Bills
+        [3] = 50,   -- Botamo
+        [4] = 63,   -- Brolly
+        [5] = 64,   -- Bulma
+        [6] = 74,   -- Buu
+        [7] = 84,   -- C8
+        [8] = 96,   -- C17
+        [9] = 105,  -- C18
         [10] = 113, -- Cabba
         [11] = 123, -- Cell
         [12] = 130, -- Cooler
@@ -41,11 +41,11 @@ function onLogin(cid)
         [39] = 432, -- Vados
         [40] = 440, -- Vegeta
         [41] = 454, -- Vegetto
-        [42] = 20, -- Vermouth
+        [42] = 20,  -- Vermouth
         [43] = 463, -- Videl
         [44] = 470, -- Zaiko
         [45] = 482, -- Zeno
-        
+
         [47] = 495, -- Aizen
         [48] = 504, -- Byakuya
         [49] = 512, -- Ginn
@@ -66,9 +66,9 @@ function onLogin(cid)
         [64] = 634, -- Ulquiorra
         [65] = 642, -- Urahara
         [66] = 652, -- Yoruichi
-        [67] = 657 -- Zaraki
+        [67] = 657  -- Zaraki
     }
     if (not voc[getPlayerVocation(cid)]) then return true end
-    doSetCreatureOutfit(cid, {lookType = voc[getPlayerVocation(cid)]}, -1)
+    doSetCreatureOutfit(cid, { lookType = voc[getPlayerVocation(cid)] }, -1)
     return TRUE
 end
