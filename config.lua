@@ -138,7 +138,7 @@ mapName = "main.otbm"
 mapAuthor = "Peixola"
 randomizeTiles = true
 storeTrash = true
-cleanProtectedZones = false
+cleanProtectedZones = true
 mailboxDisabledTowns = ""
 
 defaultPriority = "high"
