@@ -17,6 +17,9 @@
 	<event type="death" name="DeathPlayer" event="script" value="deathplayer.lua" />
 	<event type="login" name="DeathLogin" event="script" value="deathplayer.lua" />
 	<event type="advance" name="LevelRecompense" event="script" value="recompenselvl.lua" />
+	<event type="look" name="showKD" event="script" value="KillsandDeath.lua" />
+	<event type="advance" name="AdvLevelSpells" event="script" value="advancespells.lua" />
+	<event type="advance" name="timelevel" script="timelevel.lua" />
 
 	<!-- <event type="kill" name="KillingInTheNameOf" event="script" value="killinginthenameof.lua" /> -->
 </creaturescripts>

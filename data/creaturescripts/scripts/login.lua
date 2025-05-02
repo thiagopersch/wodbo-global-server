@@ -53,6 +53,9 @@ function onLogin(cid)
     registerCreatureEvent(cid, "fraglook")
     registerCreatureEvent(cid, "DeathPlayer")
     registerCreatureEvent(cid, "LevelRecompense")
+    registerCreatureEvent(cid, "showKD")
+    registerCreatureEvent(cid, "AdvLevelSpells")
+    registerCreatureEvent(cid, "timelevel")
 
     local sagastor = 578744
     if getPlayerStorageValue(cid, sagastor) ~= -1 then

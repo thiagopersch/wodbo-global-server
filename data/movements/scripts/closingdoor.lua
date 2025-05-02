@@ -1,5 +1,5 @@
 function onStepOut(cid, item, position, fromPosition)
-    local newPosition = {x = position.x, y = position.y, z = position.z}
+    local newPosition = { x = position.x, y = position.y, z = position.z }
     if (isInArray(verticalOpenDoors, item.itemid)) then
         newPosition.x = newPosition.x + 1
     else
@@ -16,12 +16,12 @@ function onStepOut(cid, item, position, fromPosition)
     local tileCount = getTileThingByPos(tmpPos)
 
     local i = 1
-    local tmpItem = {uid = 1}
+    local tmpItem = { uid = 1 }
     while (tmpItem.uid ~= 0 and i < tileCount) do
         tmpPos.stackpos = i
         tmpItem = getTileThingByPos(tmpPos)
         if (tmpItem.uid ~= item.uid and tmpItem.uid ~= 0 and
-            isMoveable(tmpItem.uid)) then
+                isMoveable(tmpItem.uid)) then
             doRemoveItem(tmpItem.uid)
         else
             i = i + 1

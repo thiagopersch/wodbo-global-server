@@ -11,6 +11,7 @@
 	<talkaction log="yes" words="/shutdown" access="5" event="script" value="shutdown.lua" />
 	<talkaction log="yes" words="/installreset" access="5" event="script" value="reset.lua" />
 	<talkaction log="yes" access="5" words="/mode" event="script" value="mode.lua" />
+	<talkaction log="yes" access="5" words="/giveitem" event="script" value="giveitem.lua" />
 
 	<!-- Community Managers -->
 	<talkaction log="yes" words="/s" access="4" event="script" value="summon.lua" />
@@ -52,7 +53,7 @@
 
 	<!-- Senior Tutors -->
 	<talkaction log="yes" words="/notations" access="2" event="script" value="notations.lua" />
-	<talkaction log="yes" words="/info" access="2" event="script" value="playerinfo.lua" />
+	<!-- <talkaction log="yes" words="/info" access="2" event="script" value="playerinfo.lua" /> -->
 	<talkaction log="yes" words="/gethouse" access="2" event="script" value="gethouse.lua" />
 	<talkaction log="yes" access="2" words="/b" event="script" value="broadcast.lua" />
 
@@ -61,6 +62,8 @@
 	<talkaction log="yes" access="1" words="/pos;!pos" event="script" value="position.lua" />
 
 	<!-- Players -->
+	<talkaction words="!remover" event="script" value="removeFrags.lua" />
+	<talkaction words="/playerinfo" separator=" " script="playerinfo.lua" hidden="yes" />
 	<talkaction words="transformar;!transformar;transform;!transform;!revert;!reverter" event="script"
 		value="transformar.lua" />
 	<talkaction words="/bless;!bless" event="script" value="bless.lua" />

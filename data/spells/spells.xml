@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spells>
     <!-- Spells Iniciais -->
-    <!-- <rune name="Reiatsu Prision" id="2288" charges="1" maglv="20" exhaustion="2000"
-    blocktype="solid" allowfaruse="1" event="script" value="support/magic prison.lua"/> -->
+    <rune name="Reiatsu Prision" id="2288" charges="1" maglv="20" exhaustion="2000"
+        blocktype="solid" allowfaruse="1" event="script" value="support/magic prison.lua" />
     <instant name="Reiatsu Light" words="Reiatsu Light" lvl="1" mana="10" prem="0" aggressive="0"
         selftarget="1" exhaustion="2000" needlearn="0" event="script"
         value="support/reiatsu light.lua">
@@ -53,7 +53,6 @@
         event="script" value="support/super renzoku energy dan.lua">
     </instant>
     <!-- Monsters -->
-
 
     <!-- Cannons -->
     <instant name="Kamehameha" words="Kamehameha" lvl="90" mana="550" prem="0" blockwalls="1"

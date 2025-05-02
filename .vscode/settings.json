@@ -43,7 +43,9 @@
     "doCreatureAddMana",
     "doSendAnimatedText",
     "setConditionFormula",
-    "doPlayerAddItem"
+    "doPlayerAddItem",
+    "doCreatureSay",
+    "variantToPosition"
   ],
   "Lua.diagnostics.disable": ["lowercase-global"]
 }
