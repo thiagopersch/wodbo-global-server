@@ -34,18 +34,18 @@ end
 
 function doPlayerTakeItem(cid, itemid, amount)
     return getPlayerItemCount(cid, itemid) >= amount and
-               doPlayerRemoveItem(cid, itemid, amount)
+        doPlayerRemoveItem(cid, itemid, amount)
 end
 
 function doPlayerBuyItem(cid, itemid, count, cost, charges)
     return doPlayerRemoveMoney(cid, cost) and
-               doPlayerGiveItem(cid, itemid, count, charges)
+        doPlayerGiveItem(cid, itemid, count, charges)
 end
 
 function doPlayerBuyItemContainer(cid, containerid, itemid, count, cost, charges)
     return doPlayerRemoveMoney(cid, cost) and
-               doPlayerGiveItemContainer(cid, containerid, itemid, count,
-                                         charges)
+        doPlayerGiveItemContainer(cid, containerid, itemid, count,
+            charges)
 end
 
 function doPlayerSellItem(cid, itemid, count, cost)
@@ -53,7 +53,7 @@ function doPlayerSellItem(cid, itemid, count, cost)
 
     if (not doPlayerAddMoney(cid, cost)) then
         error('[doPlayerSellItem] Could not add money to: ' ..
-                  getPlayerName(cid) .. ' (' .. cost .. 'gp).')
+            getPlayerName(cid) .. ' (' .. cost .. 'gp).')
     end
 
     return true
@@ -86,7 +86,7 @@ end
 
 function isPremium(cid)
     return (isPlayer(cid) and (getPlayerPremiumDays(cid) > 0 or
-               getBooleanFromString(getConfigInfo('freePremium'))))
+        getBooleanFromString(getConfigInfo('freePremium'))))
 end
 
 function getMonthDayEnding(day)
@@ -102,7 +102,7 @@ function getMonthDayEnding(day)
 end
 
 function getMonthString(m)
-    return os.date("%B", os.time {year = 1970, month = m, day = 1})
+    return os.date("%B", os.time { year = 1970, month = m, day = 1 })
 end
 
 function getArticle(str) return str:find("[AaEeIiOoUuYy]") == 1 and "an" or "a" end
@@ -141,7 +141,7 @@ function getTibiaTime()
         minutes = minutes - 60
     end
 
-    return {hours = hours, minutes = minutes}
+    return { hours = hours, minutes = minutes }
 end
 
 function doWriteLogFile(file, text)
@@ -176,8 +176,10 @@ function doPlayerRemovePremiumDays(cid, days)
     return doPlayerAddPremiumDays(cid, -days)
 end
 
-function getPlayerMasterPos(cid) return
-    getTownTemplePosition(getPlayerTown(cid)) end
+function getPlayerMasterPos(cid)
+    return
+        getTownTemplePosition(getPlayerTown(cid))
+end
 
 function getHouseOwner(houseId) return getHouseInfo(houseId).owner end
 
@@ -232,7 +234,7 @@ function doShutdown() return doSetGameState(GAMESTATE_SHUTDOWN) end
 
 function doSummonCreature(name, pos, displayError)
     local displayError, cid = displayError or true,
-                              doCreateMonster(name, pos, displayError)
+        doCreateMonster(name, pos, displayError)
     if (not cid) then cid = doCreateNpc(name, pos, displayError) end
 
     return cid
@@ -260,7 +262,7 @@ function isPlayerGhost(cid)
 
     return
         getCreatureCondition(cid, CONDITION_GAMEMASTER, GAMEMASTER_INVISIBLE) or
-            getPlayerFlagValue(cid, PLAYERFLAG_CANNOTBESEEN)
+        getPlayerFlagValue(cid, PLAYERFLAG_CANNOTBESEEN)
 end
 
 function isMonster(cid)
@@ -281,12 +283,12 @@ function doPlayerAddLevel(cid, amount, round)
     local experience, level = 0, getPlayerLevel(cid)
     if (amount > 0) then
         experience = getExperienceForLevel(level + amount) -
-                         (round and getPlayerExperience(cid) or
-                             getExperienceForLevel(level))
+            (round and getPlayerExperience(cid) or
+                getExperienceForLevel(level))
     else
         experience = -((round and getPlayerExperience(cid) or
-                         getExperienceForLevel(level)) -
-                         getExperienceForLevel(level + amount))
+                getExperienceForLevel(level)) -
+            getExperienceForLevel(level + amount))
     end
 
     return doPlayerAddExperience(cid, experience)
@@ -295,11 +297,11 @@ end
 function doPlayerAddMagLevel(cid, amount)
     for i = 1, amount do
         doPlayerAddSpentMana(cid,
-                             (getPlayerRequiredMana(cid, getPlayerMagLevel(cid,
-                                                                           true) +
-                                                        1) -
-                                 getPlayerSpentMana(cid)) /
-                                 getConfigInfo('rateMagic'))
+            (getPlayerRequiredMana(cid, getPlayerMagLevel(cid,
+                        true) +
+                    1) -
+                getPlayerSpentMana(cid)) /
+            getConfigInfo('rateMagic'))
     end
     return true
 end
@@ -312,11 +314,11 @@ function doPlayerAddSkill(cid, skill, amount, round)
     end
 
     return doPlayerAddSkillTry(cid, skill,
-                               (getPlayerRequiredSkillTries(cid, skill,
-                                                            getPlayerSkillLevel(
-                                                                cid, skill) + 1) -
-                                   getPlayerSkillTries(cid, skill)) /
-                                   getConfigInfo('rateSkill'))
+        (getPlayerRequiredSkillTries(cid, skill,
+                getPlayerSkillLevel(
+                    cid, skill) + 1) -
+            getPlayerSkillTries(cid, skill)) /
+        getConfigInfo('rateSkill'))
 end
 
 function getPartyLeader(cid)
@@ -354,7 +356,7 @@ end
 
 function doPlayerBroadcastMessage(cid, text, class, checkFlag, ghost)
     local checkFlag, ghost, class = checkFlag or true, ghost or false,
-                                    class or TALKTYPE_BROADCAST
+        class or TALKTYPE_BROADCAST
     if (checkFlag and not getPlayerFlagValue(cid, PLAYERFLAG_CANBROADCAST)) then
         return false
     end
@@ -374,7 +376,7 @@ function doPlayerBroadcastMessage(cid, text, class, checkFlag, ghost)
     end
 
     print("> " .. getCreatureName(cid) .. " broadcasted message: \"" .. text ..
-              "\".")
+        "\".")
     return true
 end
 
@@ -386,7 +388,7 @@ function getBooleanFromString(input)
 
     local str = string.lower(tostring(input))
     return (str == "yes" or str == "true" or
-               (tonumber(str) ~= nil and tonumber(str) > 0))
+        (tonumber(str) ~= nil and tonumber(str) > 0))
 end
 
 function doCopyItem(item, attributes)
@@ -420,13 +422,13 @@ end
 function setAttackFormula(combat, type, minl, maxl, minm, maxm, min, max)
     local min, max = min or 0, max or 0
     return setCombatFormula(combat, type, -1, 0, -1, 0, minl, maxl, minm, maxm,
-                            min, max)
+        min, max)
 end
 
 function setHealingFormula(combat, type, minl, maxl, minm, maxm, min, max)
     local min, max = min or 0, max or 0
     return setCombatFormula(combat, type, 1, 0, 1, 0, minl, maxl, minm, maxm,
-                            min, max)
+        min, max)
 end
 
 function doChangeTypeItem(uid, subtype)
@@ -477,13 +479,13 @@ end
 
 function getItemWeightById(itemid, count, precision)
     local item, count, precision = getItemInfo(itemid), count or 1,
-                                   precision or false
+        precision or false
     if (not item) then return false end
 
     if (count > 100) then
         -- print a warning, as its impossible to have more than 100 stackable items without "cheating" the count
         print('[Warning] getItemWeightById',
-              'Calculating weight for more than 100 items!')
+            'Calculating weight for more than 100 items!')
     end
 
     local weight = item.weight * count

@@ -12,6 +12,7 @@
 	<talkaction log="yes" words="/installreset" access="5" event="script" value="reset.lua" />
 	<talkaction log="yes" access="5" words="/mode" event="script" value="mode.lua" />
 	<talkaction log="yes" access="5" words="/giveitem" event="script" value="giveitem.lua" />
+	<talkaction log="yes" words="/pa" access="5" event="script" value="addpremmy.lua" />
 
 	<!-- Community Managers -->
 	<talkaction log="yes" words="/s" access="4" event="script" value="summon.lua" />
@@ -62,6 +63,7 @@
 	<talkaction log="yes" access="1" words="/pos;!pos" event="script" value="position.lua" />
 
 	<!-- Players -->
+	<talkaction words="!deathlist" script="deathlist_all.lua" />
 	<talkaction words="!remover" event="script" value="removeFrags.lua" />
 	<talkaction words="/playerinfo" separator=" " script="playerinfo.lua" hidden="yes" />
 	<talkaction words="transformar;!transformar;transform;!transform;!revert;!reverter" event="script"

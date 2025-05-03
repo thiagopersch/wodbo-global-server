@@ -45,7 +45,15 @@
     "setConditionFormula",
     "doPlayerAddItem",
     "doCreatureSay",
-    "variantToPosition"
+    "variantToPosition",
+    "doCreateItemEx",
+    "doPlayerAddItemEx",
+    "doAddContainerItem",
+    "doPlayerRemoveMoney",
+    "doPlayerRemoveItem",
+    "getPlayerItemCount",
+    "doPlayerAddMoney",
+    "getPlayerBalance"
   ],
   "Lua.diagnostics.disable": ["lowercase-global"]
 }
