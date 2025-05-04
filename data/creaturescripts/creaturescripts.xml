@@ -21,6 +21,5 @@
 	<event type="advance" name="AdvLevelSpells" event="script" value="advancespells.lua" />
 	<event type="advance" name="timelevel" script="timelevel.lua" />
 	<event type="think" name="IconMap" event="script" value="iconmap.lua" />
-
-	<!-- <event type="kill" name="KillingInTheNameOf" event="script" value="killinginthenameof.lua" /> -->
+	<event type="kill" name="KillingInTheNameOf" event="script" value="killinginthenameof.lua" />
 </creaturescripts>

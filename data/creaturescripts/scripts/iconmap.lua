@@ -2,8 +2,8 @@ local config = {
     storage = 030220122041,
     version = 1,
     marks = {
-        { mark = 5, pos = { x = 1095, y = 1062, z = 7 }, desc = "Temple." },
-        { mark = 4, pos = { x = 895, y = 996, z = 7 }, desc = "Depot." }
+        { mark = 5, pos = { x = 31999, y = 32001, z = 6 }, desc = "Inicio da sua história." },
+        { mark = 4, pos = { x = 32000, y = 32021, z = 6 }, desc = "Dragon" }
     }
 }
 

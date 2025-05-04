@@ -45,7 +45,7 @@ function onLogin(cid)
     registerCreatureEvent(cid, "Mail")
     registerCreatureEvent(cid, "GuildMotd")
     registerCreatureEvent(cid, "Idle")
-    --registerCreatureEvent(cid, "KillingInTheNameOf")
+    registerCreatureEvent(cid, "KillingInTheNameOf")
     if (config.useFragHandler) then registerCreatureEvent(cid, "SkullCheck") end
     registerCreatureEvent(cid, "ReportBug")
     registerCreatureEvent(cid, "AdvanceSave")
