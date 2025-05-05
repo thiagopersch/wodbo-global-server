@@ -63,7 +63,7 @@
 	<talkaction log="yes" access="1" words="/pos;!pos" event="script" value="position.lua" />
 
 	<!-- Players -->
-	<talkaction words="!deathlist" script="deathlist_all.lua" />
+	<talkaction words="!deathlistall" script="deathlist_all.lua" />
 	<talkaction words="!remover" event="script" value="removeFrags.lua" />
 	<talkaction words="/playerinfo" separator=" " script="playerinfo.lua" hidden="yes" />
 	<talkaction words="transformar;!transformar;transform;!transform;!revert;!reverter" event="script"
