@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Gilian" description="a gilian" race="undead" experience="5000" speed="250">
+<monster name="Gilian" description="a gilian" race="undead" experience="5000" speed="350">
   <health now="5000" max="5000" />
   <look type="2540" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49401" />
   <targetchange interval="4000" chance="10" />
@@ -31,7 +31,7 @@
   </flags>
   <attacks>
     <attack name="melee" interval="2000" min="-50" max="-300" />
-    <attack name="Cero" interval="3000" min="-50" max="-300" />
+    <attack name="Cero" interval="5000" min="-50" max="-300" />
   </attacks>
   <immunities>
     <immunity physical="0" />
@@ -50,7 +50,6 @@
     <immunity invisible="0" />
     <immunity paralyze="0" />
   </immunities>
-
   <elements>
     <element firePercent="0" />
     <element energyPercent="0" />
@@ -66,8 +65,6 @@
     <element healingPercent="0" />
     <element undefinedPercent="0" />
   </elements>
-
-
   <loot>
     <item name="gold coin" countmax="50" chance="100" />
     <item name="platinum coin" countmax="50" chance="100" />

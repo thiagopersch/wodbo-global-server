@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Afonso" script="default.lua" walkinterval="2000">
 	<health now="100" max="100" />
-	<look type="941" head="0" body="79" legs="114" feet="76" addons="3"/>
+	<look type="130" head="0" body="79" legs="114" feet="76" addons="3" />
 	<parameters>
-		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I sell backpacks. Say {trade}."/>
-		<parameter key="module_shop" value="1"/>
-		<parameter key="shop_buyable" value="
+		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I sell backpacks. Say {trade}." />
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable"
+			value="
 			shinigami bag,1987,10000;
 			backpack,1988,10000;
 			santa claus backpack,1989,10000;
@@ -53,6 +54,6 @@
 			colorful backpack,13934,10000;
 			hermes backpack,14056,10000;
 			skull backpack,14101,10000
-			"/>
+			" />
 	</parameters>
 </npc>

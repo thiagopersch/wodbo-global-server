@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Hawk" script="default.lua" walkinterval="2000">
-	<health now="100" max="100"/>
-	<look type="1042"/>
+	<health now="100" max="100" />
+	<look type="2666" head="0" body="79" legs="114" feet="76" addons="3" />
 	<parameters>
-		<parameter key="module_shop" value="1"/>
-		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I sell foods. Say {trade}."/>
-		<parameter key="shop_buyable" value="
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I sell foods. Say {trade}." />
+		<parameter key="shop_buyable"
+			value="
 			meat,2666,10000;
 			health potion,2670,10000;
 			reiatsu potion,2671,10000;
@@ -77,6 +78,6 @@
 			beetroot,8845,10000;
 			lump of chocolate dough,8846,10000;
 			chocolate cake,8847,10000
-		"/>
+		" />
 	</parameters>
 </npc>

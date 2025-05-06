@@ -2317,99 +2317,78 @@
 		<attribute key="weight" value="820" />
 		<attribute key="armor" value="0" />
 		<attribute key="slotType" value="head" />
-
-
 	</item>
 	<item id="2140" article="a" name="holy scarab">
-
 		<attribute key="weight" value="870" />
 	</item>
 	<item id="2141" article="a" name="holy falcon">
-
 		<attribute key="weight" value="840" />
 	</item>
 	<item id="2142" article="an" name="ancient amulet">
 		<attribute key="weight" value="840" />
 		<attribute key="slotType" value="necklace" />
-
 	</item>
 	<item id="2143" article="a" name="white pearl">
-
 		<attribute key="weight" value="20" />
 	</item>
 	<item id="2144" article="a" name="black pearl">
-
 		<attribute key="weight" value="20" />
 	</item>
 	<item id="2145" article="a" name="small diamond">
-
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2146" article="a" name="small sapphire">
-
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2147" article="a" name="small ruby" plural="small rubies">
-
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2148" article="a" name="gold coin">
-
+		<attribute key="worth" value="1"/>
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2149" article="a" name="small emerald">
-
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2150" article="a" name="small amethyst">
-
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2151" article="a" name="talon">
-
 		<attribute key="weight" value="20" />
 		<attribute key="description" value="There are many rumours about these magic gems." />
 	</item>
 	<item id="2152" article="a" name="platinum coin">
-
+		<attribute key="worth" value="100"/>
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2153" article="a" name="violet gem">
-
 		<attribute key="weight" value="30" />
 	</item>
 	<item id="2154" article="a" name="yellow gem">
-
 		<attribute key="weight" value="30" />
 	</item>
 	<item id="2155" article="a" name="green gem">
-
 		<attribute key="weight" value="30" />
 	</item>
 	<item id="2156" article="a" name="red gem">
-
 		<attribute key="weight" value="30" />
 	</item>
 	<item id="2157" article="a" name="gold nugget">
-
 		<attribute key="weight" value="80" />
 	</item>
 	<item id="2158" article="a" name="blue gem">
-
 		<attribute key="weight" value="100" />
 	</item>
 	<item id="2159" article="a" name="scarab coin">
-
 		<attribute key="weight" value="20" />
 	</item>
 	<item id="2160" article="a" name="crystal coin">
-
+		<attribute key="worth" value="10000"/>
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2161" article="a" name="strange talisman">
 		<attribute key="weight" value="290" />
 		<attribute key="slotType" value="necklace" />
-
 		<attribute key="charges" value="200" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentEnergy" value="10" />

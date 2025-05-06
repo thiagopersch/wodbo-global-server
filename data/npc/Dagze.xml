@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Dagze" script="default.lua" walkinterval="2000">
-	<health now="100" max="100"/>
-	<look type="1066"/>
+	<health now="100" max="100" />
+	<look type="1137" head="0" body="79" legs="114" feet="76" addons="3" />
 	<parameters>
-		<parameter key="module_shop" value="1"/>
-		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy wands. Say {trade}."/>
-		<parameter key="shop_sellable" value="
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy wands. Say {trade}." />
+		<parameter key="shop_sellable"
+			value="
 			terra rod,2181,100000;
 			snakebite rod,2182,100000;
 			hailstorm rod,2183,100000;
@@ -20,7 +21,7 @@
 			angel wand,13714,250000;
 			soulmaimer,14249,300000;
 			soultainter,14252,300000;
-			soulhexer,14253,300000;
-		"/>
+			soulhexer,14253,300000
+		" />
 	</parameters>
 </npc>

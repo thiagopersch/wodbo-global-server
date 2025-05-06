@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Android" description="a android" race="energy" experience="250" speed="180">
-	<health now="250" max="250" />
+<monster name="Android" description="a android" race="energy" experience="250" speed="280">
+	<health now="300" max="300" />
 	<look type="1777" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49246" />
 	<targetchange interval="4000" chance="10" />
 	<flags>
@@ -30,9 +30,9 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="-50" max="-300" />
-		<attack name="Bomb" interval="3000" min="-50" max="-300" />
-		<attack name="Double Ball" interval="4000" min="-50" max="-300" />
+		<attack name="melee" interval="2000" min="-1" max="-30" />
+		<attack name="Bomb" interval="5000" min="-1" max="-30" />
+		<attack name="Double Ball" interval="10000" min="-1" max="-30" />
 	</attacks>
 	<immunities>
 		<immunity physical="0" />

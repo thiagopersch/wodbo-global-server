@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Assassin" nameDescription="an assassin" race="blood" experience="105" speed="224"
+<monster name="Assassin" nameDescription="an assassin" race="blood" experience="1050" speed="224"
 	manacost="450">
-	<health now="175" max="175" />
+	<health now="1750" max="1750" />
 	<look type="2439" head="95" body="95" legs="95" feet="95" corpse="6080" />
 	<targetchange interval="2000" chance="5" />
 	<strategy attack="70" defense="20" />
@@ -28,10 +28,10 @@
 		</attack>
 	</attacks>
 	<defenses armor="17" defense="40">
-		<defense name="speed" interval="1000" chance="9" speedchange="1201" duration="3000">
+		<defense name="speed" interval="1000" chance="90" speedchange="1201" duration="3000">
 			<attribute key="areaEffect" value="redshimmer" />
 		</defense>
-		<defense name="invisible" interval="1000" chance="9" duration="2000">
+		<defense name="invisible" interval="1000" chance="100" duration="2000">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
 	</defenses>

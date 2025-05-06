@@ -37,7 +37,7 @@ violationNameReportActionType = 2
 autoBanishUnknownBytes = false
 
 worldType = "open"
-protectionLevel = 100
+protectionLevel = 50
 pvpTileIgnoreLevelAndVocationProtection = true
 pzLocked = 30 * 1000
 huntingDuration = 60 * 1000
@@ -118,7 +118,7 @@ buyableAndSellableHouses = true
 houseNeedPremium = true
 bedsRequirePremium = true
 levelToBuyHouse = 100
-housesPerAccount = 0
+housesPerAccount = 2
 houseRentAsPrice = false
 housePriceAsRent = false
 housePriceEachSquare = 1000
@@ -192,7 +192,7 @@ tileLimit = 0
 protectionTileLimit = 0
 houseTileLimit = 0
 
-freePremium = true
+freePremium = false
 premiumForPromotion = true
 
 blessings = true

@@ -51,7 +51,6 @@
     <immunity invisible="0" />
     <immunity paralyze="0" />
   </immunities>
-
   <elements>
     <element firePercent="0" />
     <element energyPercent="0" />
@@ -67,6 +66,4 @@
     <element healingPercent="0" />
     <element undefinedPercent="0" />
   </elements>
-
-
 </monster>

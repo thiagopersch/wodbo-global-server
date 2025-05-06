@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Bandit Swordman" description="a bandit swordman" race="blood" experience="800"
   speed="180">
-  <health now="1000" max="1000" />
+  <health now="1800" max="1800" />
   <look type="2442" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49306" />
   <targetchange interval="4000" chance="10" />
   <flags>
@@ -52,7 +52,6 @@
     <immunity invisible="0" />
     <immunity paralyze="0" />
   </immunities>
-
   <elements>
     <element firePercent="0" />
     <element energyPercent="0" />
@@ -68,8 +67,6 @@
     <element healingPercent="0" />
     <element undefinedPercent="0" />
   </elements>
-
-
   <loot>
     <item name="gold coin" countmax="50" chance="100" />
     <item name="platinum coin" countmax="50" chance="100" />

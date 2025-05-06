@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Kayfas" script="default.lua" walkinterval="2000">
-	<health now="100" max="100"/>
-	<look type="701"/>
+	<health now="100" max="100" />
+	<look type="634" head="0" body="79" legs="114" feet="76" addons="3" />
 	<parameters>
-		<parameter key="module_shop" value="1"/>
-		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy maces. Say {trade}."/>
-		<parameter key="shop_sellable" value="
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy maces. Say {trade}." />
+		<parameter key="shop_sellable"
+			value="
 			supreme club,8920,200000;
 			infernal`s axe,13706,250000;
 			enchanted lightning,13708,250000;
@@ -16,6 +17,6 @@
 			angel hammer,13717,300000;
 			soulbiter,14247,300000;
 			soulleater,14248,300000
-		"/>
+		" />
 	</parameters>
 </npc>

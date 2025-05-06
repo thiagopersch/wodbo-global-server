@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Rivertall" script="default.lua" walkinterval="2000">
-	<health now="100" max="100"/>
-	<look type="903"/>
+	<health now="100" max="100" />
+	<look type="664" head="0" body="79" legs="114" feet="76" addons="3" />
 	<parameters>
-		<parameter key="module_shop" value="1"/>
-		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy gloves. Say {trade}."/>
-		<parameter key="shop_sellable" value="
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy gloves. Say {trade}." />
+		<parameter key="shop_sellable"
+			value="
 			shinigami glove,7383,50000;
 			human glove,7384,10000;
 			demonic glove,7386,30000;
@@ -33,6 +34,6 @@
 			kinght glove,8930,130000;
 			shenlong glove,13699,150000;
 			golden fist,8931,130000
-		"/>
+		" />
 	</parameters>
 </npc>

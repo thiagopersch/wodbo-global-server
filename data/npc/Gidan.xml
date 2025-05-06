@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Gidan" script="default.lua" walkinterval="2000">
-	<health now="100" max="100"/>
-	<look type="703"/>
+	<health now="100" max="100" />
+	<look type="610" head="0" body="79" legs="114" feet="76" addons="3" />
 	<parameters>
-		<parameter key="module_shop" value="1"/>
-		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy bows and crossbows. Say {trade}."/>
-		<parameter key="shop_sellable" value="
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet"
+			value="Hello, |PLAYERNAME|! I buy bows and crossbows. Say {trade}." />
+		<parameter key="shop_sellable"
+			value="
 			crossbow supreme,2185,100000;
 			crossbow of inferno,2186,110000;
 			bow of inferno,2187,120000;
@@ -19,6 +21,6 @@
 			angel bow,13715,250000;
 			soulbleeder,14250,300000;
 			soulpiercer,14251,300000
-		"/>
+		" />
 	</parameters>
 </npc>

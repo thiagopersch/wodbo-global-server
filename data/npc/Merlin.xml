@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Merlin" script="default.lua" walkinterval="2000">
-	<health now="100" max="100"/>
-	<look type="987"/>
+	<health now="100" max="100" />
+	<look type="987" head="114" body="76" legs="116" feet="132" addons="3" />
 	<parameters>
-		<parameter key="module_shop" value="1"/>
-		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy boots. Say {trade}."/>
-		<parameter key="shop_sellable" value="
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy boots. Say {trade}." />
+		<parameter key="shop_sellable"
+			value="
 			human boots,9812,25000;
 			cell boots,9813,250000;
 			saiyan boots,9929,50000;
@@ -44,6 +45,6 @@
 			angel boots,13735,300000;
 			pair of soulwalkers,14261,350000;
 			pair of soulstalkers,14262,350000
-		"/>
+		" />
 	</parameters>
 </npc>

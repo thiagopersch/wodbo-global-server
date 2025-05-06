@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Samanta" script="default.lua" walkinterval="2000">
-	<health now="100" max="100"/>
-	<look type="1183" head="114" body="94" legs="114" feet="79" addons="3"/>
+	<health now="100" max="100" />
+	<look type="683" head="114" body="94" legs="114" feet="79" addons="3" />
 	<parameters>
-		<parameter key="module_shop" value="1"/>
-		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy armors. Say {trade}."/>
-		<parameter key="shop_sellable" value="
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy armors. Say {trade}." />
+		<parameter key="shop_sellable"
+			value="
 			supreme armor,2463,250000;
 			ice barbarian armor,2464,150000;
 			pluff armor,2465,100000;
@@ -62,10 +63,10 @@
 			hibiscus armor,8873,300000;
 			freeza armor,8874,100000;
 			black janemba armor,8875,100000;
-			golden armor,8876,50000
+			golden armor,8876,50000;
 			soulhell,14258,200000;
 			soulmantle,14259,200000;
 			soulshroud,14260,200000
-		"/>
+		" />
 	</parameters>
 </npc>

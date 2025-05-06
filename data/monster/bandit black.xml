@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Bandit Black" nameDescription="a bandit black" race="blood" experience="65"
-	speed="180"
-	manacost="450">
-	<health now="245" max="245" />
+<monster name="Bandit Black" nameDescription="a bandit black" race="blood" experience="100"
+	speed="180" manacost="450">
+	<health now="250" max="250" />
 	<look type="2510" head="58" body="59" legs="45" feet="114" corpse="6080" />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />

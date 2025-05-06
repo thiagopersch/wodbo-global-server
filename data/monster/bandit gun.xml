@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Bandit Gun" description="a bandit gun" race="blood" experience="300" speed="180">
-  <health now="500" max="500" />
+<monster name="Bandit Gun" description="a bandit gun" race="blood" experience="200" speed="100">
+  <health now="300" max="300" />
   <look type="2511" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49304" />
   <targetchange interval="4000" chance="10" />
   <flags>
@@ -31,7 +31,7 @@
   </flags>
   <attacks>
     <attack name="melee" interval="2000" min="-50" max="-300" />
-    <attack name="Bomb" interval="3000" min="-50" max="-300" />
+    <attack name="Bomb" interval="5000" min="-50" max="-300" />
   </attacks>
   <immunities>
     <immunity physical="0" />
@@ -50,7 +50,6 @@
     <immunity invisible="0" />
     <immunity paralyze="0" />
   </immunities>
-
   <elements>
     <element firePercent="0" />
     <element energyPercent="0" />
@@ -66,8 +65,6 @@
     <element healingPercent="0" />
     <element undefinedPercent="0" />
   </elements>
-
-
   <loot>
     <item name="gold coin" countmax="50" chance="100" />
     <item name="platinum coin" countmax="50" chance="100" />

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Razo" script="default.lua" walkinterval="2000">
-	<health now="100" max="100"/>
-	<look type="1158"/>
+	<health now="100" max="100" />
+	<look type="637" head="0" body="79" legs="114" feet="76" addons="3" />
 	<parameters>
-		<parameter key="module_shop" value="1"/>
-		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy helmets. Say {trade}."/>
-		<parameter key="shop_sellable" value="
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy helmets. Say {trade}." />
+		<parameter key="shop_sellable"
+			value="
 			ice barbarian helmet,2128,200000;
 			supreme helmet,2342,250000;
 			helmet of the ancients,2343,70000;
@@ -43,6 +44,6 @@
 			fullbring helmet,13728,600000;
 			enchanted zangetsu helmet,13736,600000;
 			angel helmet,13732,1200000
-		"/>
+		" />
 	</parameters>
 </npc>

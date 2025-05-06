@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Dobao" script="default.lua" walkinterval="2000">
-	<health now="100" max="100"/>
-	<look type="690"/>
+	<health now="100" max="100" />
+	<look type="690" head="114" body="76" legs="116" feet="132" addons="3" />
 	<parameters>
-		<parameter key="module_shop" value="1"/>
-		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy swords. Say {trade}."/>
-		<parameter key="shop_sellable" value="
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy swords. Say {trade}." />
+		<parameter key="shop_sellable"
+			value="
 			goku staff,2418,20000;
 			getsuga sword,2376,30000;
 			enchanted getsuga sword,2377,40000;
@@ -55,6 +56,6 @@
 			zabimaru,2381,20000;
 			soulcutter,14245,200000;
 			soulshredder,14246,200000
-		"/>
+		" />
 	</parameters>
 </npc>

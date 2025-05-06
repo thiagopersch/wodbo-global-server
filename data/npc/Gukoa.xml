@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Gukoa" script="default.lua" walkinterval="2000">
-	<health now="100" max="100"/>
-	<look type="891"/>
+	<health now="100" max="100" />
+	<look type="884" head="0" body="79" legs="114" feet="76" addons="3" />
 	<parameters>
-		<parameter key="module_shop" value="1"/>
-		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy legs. Say {trade}."/>
-		<parameter key="shop_sellable" value="
-			ornamented legs,8889,25000;
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy legs. Say {trade}." />
+		<parameter key="shop_sellable"
+			value="ornamented legs,8889,25000;
 			golden legs,8890,25000;
 			black janemba legs,8891,250000;
 			super goku legs,9776,100000;
@@ -37,7 +37,7 @@
 			ssj5 legs,7730,100000;
 			strange legs,8923,200000;
 			bills legs,9777,100000;
-			golden freeza legs,9811,100000
+			golden freeza legs,9811,100000;
 			freeza legs,8892,100000;
 			cabba legs,9808,100000;
 			hell shenlong legs,13681,200000;
@@ -50,6 +50,6 @@
 			angel legs,13734,220000;
 			soulhancks,14256,270000;
 			soulstrider,14257,270000
-		"/>
+		" />
 	</parameters>
 </npc>
