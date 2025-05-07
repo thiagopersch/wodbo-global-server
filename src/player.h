@@ -178,7 +178,7 @@ class Player : public Creature, public Cylinder
 		virtual const Player* getPlayer() const {return this;}
 
 		static MuteCountMap muteCountMap;
-		
+
 		bool getCastingState() const {return cast.isCasting;};
 		virtual const std::string& getCastingPassword() const {return cast.password;};
 
@@ -310,11 +310,11 @@ class Player : public Creature, public Cylinder
 		uint32_t getGUID() const {return guid;}
 
 		static AutoList<Player> autoList;
-		
+
 		static AutoList<Player> castAutoList;
 		static AutoList<ProtocolGame> cSpectators;
 		static uint32_t nextSpectator;
-		
+
 		virtual uint32_t rangeId() {return 0x10000000;}
 
 		void addList();
@@ -699,7 +699,7 @@ class Player : public Creature, public Cylinder
 			{if(client) {client->sendUpdateTile(tile, pos);
 				for(AutoList<ProtocolGame>::iterator it = cSpectators.begin(); it != cSpectators.end(); ++it) if(it->second->getPlayer() == this)
 					it->second->sendUpdateTile(tile, pos);
-			}	
+			}
 		}
 
 		void sendChannelMessage(std::string author, std::string text, SpeakClasses type, uint8_t channel)
@@ -718,7 +718,7 @@ class Player : public Creature, public Cylinder
 		void sendCreatureDisappear(const Creature* creature, uint32_t stackpos)
 			{if(client) {client->sendRemoveCreature(creature, creature->getPosition(), stackpos);
 				for(AutoList<ProtocolGame>::iterator it = cSpectators.begin(); it != cSpectators.end(); ++it) if(it->second->getPlayer() == this)
-					it->second->sendRemoveCreature(creature, creature->getPosition(), stackpos); 
+					it->second->sendRemoveCreature(creature, creature->getPosition(), stackpos);
 			}
 		}
 		void sendCreatureMove(const Creature* creature, const Tile* newTile, const Position& newPos,
@@ -892,10 +892,10 @@ class Player : public Creature, public Cylinder
 		void sendDistanceShoot(const Position& from, const Position& to, uint8_t type) const
 			{if(client) {client->sendDistanceShoot(from, to, type);
 				for(AutoList<ProtocolGame>::const_iterator it = cSpectators.begin(); it != cSpectators.end(); ++it) if(it->second->getPlayer() == this)
-					it->second->sendDistanceShoot(from, to, type); 
+					it->second->sendDistanceShoot(from, to, type);
 			}
 		}
-		
+
 		void sendHouseWindow(House* house, uint32_t listId) const;
 		void sendOutfitWindow() const {if(client) client->sendOutfitWindow();}
 		void sendQuests() const {if(client) client->sendQuests();}
@@ -1065,6 +1065,7 @@ class Player : public Creature, public Cylinder
 		void setNextWalkActionTask(SchedulerTask* task);
 		void setNextWalkTask(SchedulerTask* task);
 		void setNextActionTask(SchedulerTask* task);
+		void doPlayerSendExtendedOpcode(uint8_t opcode, const std::string& buffer);
 
 		virtual bool onDeath();
 		virtual Item* createCorpse(DeathList deathList);

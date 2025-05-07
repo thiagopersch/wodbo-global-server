@@ -36,6 +36,8 @@
 #include "game.h"
 #include "chat.h"
 
+#include "protocolgame.h"
+
 extern ConfigManager g_config;
 extern Game g_game;
 extern Chat g_chat;
@@ -159,13 +161,13 @@ void Player::setCasting(bool c)
 
 	if(cast.isCasting && !c)
 	{
-		castAutoList.erase(id);             
+		castAutoList.erase(id);
         kickCastViewers();
 	}
 	else
 	{
 		castAutoList[id] = this;
-			
+
 		ChatChannel* channel = g_chat.createChannel(this, CHANNEL_PRIVATE);
 		if(channel && channel->addUser(this))
 			sendCreatePrivateChannel(channel->getId(), channel->getName());
@@ -546,7 +548,7 @@ void Player::sendIcons() const
 		icons |= ICON_PZ;
 
 	client->sendIcons(icons);
-	
+
 	for(AutoList<ProtocolGame>::const_iterator it = Player::cSpectators.begin(); it != Player::cSpectators.end(); ++it)
 		if(it->second->getPlayer() == this)
 			it->second->sendIcons(icons);
@@ -1958,7 +1960,7 @@ void Player::setMagicLevel(uint64_t value)
 	magLevel = value;
 	manaSpent = 0;
 	magLevelPercent = 0;
-	
+
 	char advMsg[50];
 	sprintf(advMsg, "You advanced to magic level %d.", magLevel);
 	sendTextMessage(MSG_EVENT_ADVANCE, advMsg);
@@ -2484,7 +2486,7 @@ void Player::removeList()
 	Manager::getInstance()->removeUser(id);
 	autoList.erase(id);
 	castAutoList.erase(id);
-	
+
 	if(!isGhost())
 	{
 		for(AutoList<Player>::iterator it = autoList.begin(); it != autoList.end(); ++it)
@@ -4717,7 +4719,7 @@ void Player::manageAccount(const std::string &text)
 				{
 					talkState[9] = false;
 					talkState[13] = true;
-					
+
 					bool firstPart = true;
 					for(TownMap::const_iterator it = Towns::getInstance()->getFirstTown(); it != Towns::getInstance()->getLastTown(); ++it)
 					{
@@ -5322,4 +5324,11 @@ void Player::sendCritical() const
 {
 	if(g_config.getBool(ConfigManager::DISPLAY_CRITICAL_HIT))
 		g_game.addAnimatedText(getPosition(), COLOR_DARKRED, "CRITICAL!");
+}
+
+void Player::doPlayerSendExtendedOpcode(uint8_t opcode, const std::string& buffer)
+{
+    if (client) {
+        client->sendExtendedOpcode(opcode, buffer);
+    }
 }
