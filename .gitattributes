@@ -11,6 +11,6 @@
 */src/vc10/.vs/theforgottenserver/CopilotIndices/17.13.444.19527/SemanticSymbols.db filter=lfs diff=lfs merge=lfs -text
 */src/vc10/.vs/theforgottenserver/v17/Browse.VC.db filter=lfs diff=lfs merge=lfs -text
 */src/vc10/.vs/
-*.db
+*.db filter=lfs diff=lfs merge=lfs -text
 src/vc10/.vs/theforgottenserver/CopilotIndices/17.13.444.19527/SemanticSymbols.db filter=lfs diff=lfs merge=lfs -text
 src/vc10/.vs/theforgottenserver/v17/Browse.VC.db filter=lfs diff=lfs merge=lfs -text
