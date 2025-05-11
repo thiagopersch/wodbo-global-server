@@ -3,7 +3,7 @@
 	<globalevent name="OnlineHighscore" interval="300000" script="online_highscore.lua" />
 	<globalevent name="invasion" interval="1800000" event="script" value="invasion.lua" />
 	<globalevent name="lottery" interval="1800000" event="script" value="lottery.lua" />
-	<globalevent name="broadcastMessage" interval="600000" script="broadcastMessage.lua" />
+	<globalevent name="broadcastMessage" interval="60000" script="broadcastMessage.lua" />
 	<globalevent name="textoTeleport" interval="1000" script="textoTeleport.lua" />
 	<!-- <globalevent name="playereffect" interval="1000" script="playerEffect.lua" /> -->
 	<globalevent name="save" interval="3600000" event="script" value="save.lua" />

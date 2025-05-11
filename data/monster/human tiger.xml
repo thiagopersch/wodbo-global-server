@@ -30,7 +30,9 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="-50" max="-300" />
+		<attack name="melee" interval="2000" min="-10" max="-30" />
+		<attack name="nozarashi attack" interval="5000" min="-40" max="-70" />
+		<attack name="furie" interval="10000" min="-10" max="-90" />
 	</attacks>
 	<immunities>
 		<immunity physical="0" />
@@ -49,7 +51,6 @@
 		<immunity invisible="0" />
 		<immunity paralyze="0" />
 	</immunities>
-
 	<elements>
 		<element firePercent="0" />
 		<element energyPercent="0" />
@@ -65,10 +66,9 @@
 		<element healingPercent="0" />
 		<element undefinedPercent="0" />
 	</elements>
-
-
 	<loot>
-		<item name="gold coin" countmax="50" chance="100" />
-		<item name="platinum coin" countmax="50" chance="100" />
+		<item name="gold coin" countmax="50" chance="1000" />
+		<item name="platinum coin" countmax="50" chance="1000" />
+		<item name="meat" countmax="5" chance="1000" />
 	</loot>
 </monster>

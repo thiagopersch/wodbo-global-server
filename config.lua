@@ -202,7 +202,7 @@ blessingReductionDecrement = 5
 eachBlessReduction = 8
 
 experienceStages = false
-rateExperience = 4.0
+rateExperience = 20.0
 rateExperienceFromPlayers = 0
 rateSkill = 5.0
 rateMagic = 3.0

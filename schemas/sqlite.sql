@@ -47,6 +47,7 @@ CREATE TABLE IF NOT EXISTS "accounts" (
 	"blocked" BOOLEAN NOT NULL DEFAULT 0,
 	"warnings" INTEGER NOT NULL DEFAULT 0,
 	"group_id" INTEGER NOT NULL DEFAULT 1,
+	"salt" VARCHAR(255) NOT NULL DEFAULT '',
 	UNIQUE ("name")
 );
 
@@ -58,6 +59,7 @@ CREATE TABLE IF NOT EXISTS "players" (
 	"world_id" INTEGER NOT NULL DEFAULT 0,
 	"group_id" INTEGER NOT NULL,
 	"account_id" INTEGER NOT NULL,
+	"rank_id" INTEGER NOT NULL,
 	"level" INTEGER NOT NULL DEFAULT 1,
 	"vocation" INTEGER NOT NULL DEFAULT 0,
 	"health" INTEGER NOT NULL DEFAULT 100,
@@ -86,7 +88,6 @@ CREATE TABLE IF NOT EXISTS "players" (
 	"save" BOOLEAN NOT NULL DEFAULT 1,
 	"skull" INTEGER NOT NULL DEFAULT 0,
 	"skulltime" INTEGER NOT NULL DEFAULT 0,
-	"rank_id" INTEGER NOT NULL,
 	"guildnick" VARCHAR(255) NOT NULL DEFAULT '',
 	"lastlogout" INTEGER NOT NULL DEFAULT 0,
 	"blessings" INTEGER NOT NULL DEFAULT 0,
@@ -107,9 +108,9 @@ CREATE TABLE IF NOT EXISTS "players" (
 	"cast" TINYINT NOT NULL DEFAULT 0,
 	"castViewers" INT(11) NOT NULL DEFAULT 0,
 	"castDescription" VARCHAR(255) NOT NULL DEFAULT '',
-	"online_time" INT(11) NOT NULL DEFAULT 0,
 	"resets" INT(11) NOT NULL DEFAULT 0,
 	"skill_points" INT(11) NOT NULL DEFAULT 0,
+	"online_time" INT(11) NOT NULL DEFAULT 0,
 	UNIQUE ("name", "deleted"),
 	FOREIGN KEY ("account_id") REFERENCES "accounts" ("id")
 );

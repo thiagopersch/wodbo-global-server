@@ -31,8 +31,8 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-450" />
-		<attack name="cero" interval="5000" min="0" max="-750" />
+		<attack name="melee" interval="2000" min="-1" max="-150" />
+		<attack name="cero" interval="2000" min="-1" max="-450" />
 		<attack name="auto destruction" interval="5000" min="-1" max="-1000" />
 		<attack name="physical" interval="3000" chance="11" radius="6" target="1" min="-100" max="-800">
 			<attribute key="areaEffect" value="redspark" />
@@ -51,7 +51,7 @@
 		<immunity earth="0" />
 		<immunity ice="0" />
 		<immunity holy="0" />
-		<immunity death="0" />
+		<immunity death="1" />
 		<immunity drown="0" />
 		<immunity lifedrain="0" />
 		<immunity manadrain="0" />
@@ -61,10 +61,10 @@
 		<immunity paralyze="1" />
 	</immunities>
 	<defenses armor="35" defense="35">
-		<defense name="speed" interval="2000" chance="15" speedchange="450" duration="5000">
+		<defense name="speed" interval="2000" chance="85" speedchange="450" duration="5000">
 			<attribute key="areaEffect" value="redshimmer" />
 		</defense>
-		<defense name="healing" interval="2000" chance="10" min="0" max="110">
+		<defense name="healing" interval="2000" chance="30" min="0" max="110">
 			<attribute key="areaEffect" value="blueshimmer" />
 		</defense>
 	</defenses>

@@ -31,8 +31,8 @@
   </flags>
   <attacks>
     <attack name="melee" interval="2000" min="-50" max="-100" />
-    <attack name="Getsuga Tenshou" interval="4000" min="-20" max="-300" />
-    <attack name="Saigo no Getsuga Tenshou" interval="6000" min="-80" max="-800" />
+    <attack name="Getsuga Tenshou" interval="5000" min="-20" max="-300" />
+    <attack name="Saigo no Getsuga Tenshou" interval="10000" min="-1" max="-1000" />
   </attacks>
   <immunities>
     <immunity physical="0" />

@@ -30,8 +30,9 @@
     <flag canwalkonpoison="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" min="-50" max="-300" />
+    <attack name="melee" interval="2000" min="-50" max="-230" />
     <attack name="Cero" interval="5000" min="-50" max="-300" />
+    <attack name="Hikotsu Taihou" interval="10000" min="-1" max="-1000" />
   </attacks>
   <immunities>
     <immunity physical="0" />
@@ -66,10 +67,10 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item name="gold coin" countmax="50" chance="100" />
-    <item name="platinum coin" countmax="50" chance="100" />
-    <item name="rifle" chance="70" />
-    <item name="magma armor" chance="70" />
-    <item name="crystal coin" countmax="30" chance="100" />
+    <item name="gold coin" countmax="50" chance="1000" />
+    <item name="platinum coin" countmax="50" chance="1000" />
+    <item name="rifle" chance="700" />
+    <item name="magma armor" chance="700" />
+    <item name="crystal coin" countmax="30" chance="400" />
   </loot>
 </monster>
