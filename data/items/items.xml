@@ -1113,7 +1113,6 @@
 	<item id="1714" article="a" name="chest of drawers">
 		<attribute key="rotateTo" value="1717" />
 		<attribute key="containerSize" value="10" />
-
 	</item>
 	<item id="1715" article="a" name="chest of drawers">
 		<attribute key="rotateTo" value="1714" />
@@ -2184,7 +2183,6 @@
 	</item>
 	<item id="2109" article="a" name="football" />
 	<item id="2110" article="a" name="doll">
-
 		<attribute key="weight" value="650" />
 	</item>
 	<item id="2111" article="a" name="snowball">
@@ -28563,34 +28561,26 @@
 		<attribute key="weight" value="1800" />
 		<attribute key="containerSize" value="20" />
 		<attribute key="slotType" value="backpack" />
-
-
 	</item>
 	<item id="18394" article="a" name="crystal backpack">
 		<attribute key="weight" value="1800" />
 		<attribute key="containerSize" value="20" />
 		<attribute key="slotType" value="backpack" />
-
-
 	</item>
 	<item id="18395" article="a" name="muck remover">
-
 		<attribute key="weight" value="90" />
 	</item>
 	<item id="18396" article="a" name="mucus plug">
 		<attribute key="description" value="Perhaps it contains something useful." />
 		<attribute key="weight" value="8500" />
-
 	</item>
 	<item id="18397" article="a" name="mushroom pie">
 		<attribute key="weight" value="900" />
-
 	</item>
 	<item id="18398" article="a" name="gill gugel">
 		<attribute key="weight" value="900" />
 		<attribute key="armor" value="5" />
 		<attribute key="slotType" value="head" />
-
 		<attribute key="absorbPercentEarth" value="6" />
 		<attribute key="absorbPercentFire" value="-6" />
 		<attribute key="magiclevelpoints" value="2" />
@@ -28599,7 +28589,6 @@
 		<attribute key="weight" value="1900" />
 		<attribute key="armor" value="12" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="absorbPercentEarth" value="10" />
 		<attribute key="absorbPercentFire" value="-10" />
 		<attribute key="magiclevelpoints" value="1" />
@@ -28608,7 +28597,6 @@
 		<attribute key="weight" value="2800" />
 		<attribute key="armor" value="7" />
 		<attribute key="slotType" value="legs" />
-
 		<attribute key="absorbPercentEarth" value="8" />
 		<attribute key="absorbPercentFire" value="-8" />
 		<attribute key="magiclevelpoints" value="1" />
@@ -28620,7 +28608,6 @@
 		<attribute key="magiclevelpoints" value="3" />
 		<attribute key="defense" value="20" />
 		<attribute key="weaponType" value="shield" />
-
 		<attribute key="absorbPercentEarth" value="3" />
 		<attribute key="absorbPercentFire" value="-3" />
 		<attribute key="showattributes" value="1" />
@@ -28638,7 +28625,6 @@
 		<attribute key="weight" value="5600" />
 		<attribute key="armor" value="9" />
 		<attribute key="slotType" value="head" />
-
 		<attribute key="absorbPercentPhysical" value="5" />
 		<attribute key="skillShield" value="1" />
 	</item>
@@ -28647,15 +28633,12 @@
 		<attribute key="armor" value="15" />
 		<attribute key="absorbPercentPhysical" value="5" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="speed" value="30" />
-
 	</item>
 	<item id="18405" name="prismatic legs">
 		<attribute key="weight" value="7100" />
 		<attribute key="armor" value="8" />
 		<attribute key="slotType" value="legs" />
-
 		<attribute key="absorbPercentPhysical" value="3" />
 		<attribute key="skillDist" value="2" />
 	</item>
@@ -28663,16 +28646,13 @@
 		<attribute key="weight" value="1800" />
 		<attribute key="armor" value="3" />
 		<attribute key="slotType" value="feet" />
-
 		<attribute key="speed" value="30" />
 		<attribute key="absorbPercentDeath" value="3" />
 		<attribute key="showattributes" value="1" />
-
 	</item>
 	<item id="18407" article="a" name="prismatic necklace">
 		<attribute key="weight" value="650" />
 		<attribute key="slotType" value="necklace" />
-
 		<attribute key="charges" value="750" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentPhysical" value="10" />
@@ -28682,7 +28662,6 @@
 	<item id="18408" article="a" name="prismatic ring">
 		<attribute key="weight" value="105" />
 		<attribute key="slotType" value="ring" />
-
 		<attribute key="absorbPercentPhysical" value="10" />
 		<attribute key="absorbPercentEnergy" value="8" />
 		<attribute key="transformEquipTo" value="18528" />
@@ -28694,7 +28673,6 @@
 		<attribute key="description" value="It contains the everblazing fire." />
 		<attribute key="weight" value="3700" />
 		<attribute key="weaponType" value="wand" />
-
 		<attribute key="shootType" value="fire" />
 		<attribute key="range" value="4" />
 		<attribute key="magiclevelpoints" value="1" />
@@ -28704,7 +28682,6 @@
 		<attribute key="defense" value="37" />
 		<attribute key="skillShield" value="2" />
 		<attribute key="weaponType" value="shield" />
-
 		<attribute key="showattributes" value="1" />
 		<attribute key="absorbPercentPhysical" value="4" />
 	</item>
@@ -28712,7 +28689,6 @@
 		<attribute key="description" value="A true staff of old, spitting slimy orbs." />
 		<attribute key="weight" value="3700" />
 		<attribute key="weaponType" value="wand" />
-
 		<attribute key="shootType" value="smallearth" />
 		<attribute key="range" value="4" />
 		<attribute key="magiclevelpoints" value="1" />
@@ -28721,99 +28697,76 @@
 		<attribute key="description" value="Hurls the icy essence of the Svargrond glaciers." />
 		<attribute key="weight" value="3700" />
 		<attribute key="weaponType" value="wand" />
-
 		<attribute key="shootType" value="smallice" />
 		<attribute key="range" value="4" />
 		<attribute key="magiclevelpoints" value="1" />
 	</item>
 	<item id="18413" article="a" name="blue crystal shard">
 		<attribute key="weight" value="20" />
-
 	</item>
 	<item id="18414" article="a" name="violet crystal shard">
 		<attribute key="weight" value="20" />
-
 	</item>
 	<item id="18415" article="a" name="green crystal shard">
 		<attribute key="weight" value="20" />
-
 	</item>
 	<item id="18416" article="a" name="green crystal splinter">
 		<attribute key="weight" value="10" />
-
 	</item>
 	<item id="18417" article="a" name="brown crystal splinter">
 		<attribute key="weight" value="10" />
-
 	</item>
 	<item id="18418" article="a" name="blue crystal splinter">
 		<attribute key="weight" value="10" />
-
 	</item>
 	<item id="18419" article="a" name="cyan crystal fragment">
 		<attribute key="weight" value="15" />
-
 	</item>
 	<item id="18420" article="a" name="red crystal fragment">
 		<attribute key="weight" value="15" />
-
 	</item>
 	<item id="18421" article="a" name="green crystal fragment">
 		<attribute key="weight" value="15" />
-
 	</item>
 	<item id="18422" article="a" name="minor crystalline token">
 		<attribute key="weight" value="250" />
-
 	</item>
 	<item id="18423" article="a" name="major crystalline token">
 		<attribute key="weight" value="350" />
-
 	</item>
 	<item id="18424" article="a" name="magma clump">
 		<attribute key="weight" value="310" />
-
 	</item>
 	<item id="18425" article="a" name="blazing bone">
 		<attribute key="weight" value="220" />
-
 	</item>
 	<item id="18426" article="an" name="eye of a weeper" plural="eyes of a weeper">
 		<attribute key="weight" value="90" />
-
 	</item>
 	<item id="18427" article="a" name="pulverized ore">
 		<attribute key="weight" value="170" />
-
 	</item>
 	<item id="18428" article="a" name="cliff strider claw">
 		<attribute key="weight" value="220" />
-
 	</item>
 	<item id="18429" article="a" name="vein of ore" plural="veins of ore">
 		<attribute key="weight" value="360" />
-
 	</item>
 	<item id="18430" name="Deathstrike's snippet">
 		<attribute key="weight" value="380" />
-
 		<attribute key="showcount" value="0" />
 	</item>
 	<item id="18431" article="a" name="stone nose">
 		<attribute key="weight" value="260" />
-
 	</item>
 	<item id="18432" name="crystalline spikes">
 		<attribute key="weight" value="340" />
-
 		<attribute key="showcount" value="0" />
 	</item>
 	<item id="18433" article="a" name="humongous chunk">
-
 		<attribute key="weight" value="190" />
 	</item>
 	<item id="18434" article="a" name="hideous chunk">
-
 		<attribute key="weight" value="160" />
 	</item>
 	<item id="18435" article="a" name="prismatic bolt">
@@ -67324,4 +67277,291 @@
 	<item id="44747" article="a" name="naga boat" />
 	<item id="44754" article="a" name="huge lily pad" />
 	<item fromid="44755" toid="44757" article="a" name="pillar" />
+	<item fromid="44758" toid="44759" article="a" name="yeti doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="44760" article="a" name="golden knight doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="44761" article="a" name="golden knight and hunter doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="44762" article="a" name="hunter doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="44763" article="a" name="hunter and golden hunter doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="45575" article="a" name="ancient doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="48566" article="a" name="citizen doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49016" article="a" name="demon bull doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49017" article="a" name="earth bull doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49018" article="a" name="primitive cerberus doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49508" article="a" name="android 16 doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49509" article="a" name="goku doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49510" article="a" name="vegeta doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49511" article="a" name="trunks doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49512" article="a" name="buu doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49513" article="a" name="piccolo doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49514" article="a" name="chibi gohan doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49515" article="a" name="children gohan doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49516" article="a" name="cell doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49517" article="a" name="uub doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49518" article="a" name="android 17 doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49519" article="a" name="android 18 doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49520" article="a" name="cooler doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49521" article="a" name="tsuful doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49522" article="a" name="dende doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49523" article="a" name="gotenks doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49524" article="a" name="freeza doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49525" article="a" name="jenks doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49526" article="a" name="kaio doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49527" article="a" name="bardock doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49528" article="a" name="brolly doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49529" article="a" name="jenk saiyajin doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49530" article="a" name="trunks saiyajin doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49852" article="a" name="new goku doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49853" article="a" name="new vegeta doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49864" article="a" name="new freeza doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49854" article="a" name="new android 18 doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49856" article="a" name="one star dragon ball">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49857" article="a" name="two star dragon ball">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49858" article="a" name="three star dragon ball">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49859" article="a" name="four star dragon ball">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49860" article="a" name="five star dragon ball">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49861" article="a" name="six star dragon ball">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49862" article="a" name="seven star dragon ball">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49510" article="a" name="vegeta doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49066" article="a" name="ancient sea chest">
+		<attribute key="containerSize" value="10" />
+	</item>
+	<item id="49452" article="a" name="dragon ball backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49453" article="a" name="death bag">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="18" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49469" article="a" name="shinigami bag">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="18" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49470" article="a" name="modern bag">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49471" article="a" name="christmas bag">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49472" article="a" name="war backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="50" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49479" article="a" name="gray capsule bag">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="32" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49480" article="a" name="green capsule bag">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="32" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49481" article="a" name="little bag">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="10" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49482" article="a" name="red capsule bag">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="32" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49483" article="a" name="blue capsule bag">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="32" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49484" article="a" name="red modern baackpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="32" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49485" article="a" name="adventurer backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="42" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49486" article="a" name="gray suitcase">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="22" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49487" article="a" name="digital backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="22" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49774" article="a" name="ninja backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49841" article="a" name="shenlong backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49842" article="a" name="green modern backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49843" article="a" name="yellow modern backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49844" article="a" name="red modern backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49845" article="a" name="pink modern backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49846" article="a" name="gray modern backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49847" article="a" name="golden modern backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49882" article="a" name="hermes backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49891" article="a" name="neon backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49689" article="a" name="HP Point" plural="HP Points">
+		<attribute key="weight" value="10" />
+	</item>
+	<item id="49690" article="a" name="MP Point" plural="MP Points">
+		<attribute key="weight" value="10" />
+	</item>
+	<item id="49691" article="a" name="Leaf senzu" plural="Leaf senzus">
+		<attribute key="weight" value="10" />
+	</item>
+	<item id="49692" article="a" name="Branch senzu" plural="Branch senzus">
+		<attribute key="weight" value="10" />
+	</item>
+	<item id="49693" article="a" name="Green senzu" plural="Green senzus">
+		<attribute key="weight" value="10" />
+	</item>
+	<item id="49694" article="a" name="Red senzu" plural="Red senzus">
+		<attribute key="weight" value="10" />
+	</item>
+	<item id="49695" article="a" name="Black senzu" plural="Black senzus">
+		<attribute key="weight" value="10" />
+	</item>
+	<item id="49696" article="a" name="Crystal senzu" plural="Crystal senzus">
+		<attribute key="weight" value="10" />
+	</item>
 </items>

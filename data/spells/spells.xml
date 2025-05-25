@@ -52,6 +52,11 @@
         prem="0" range="10" needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0"
         event="script" value="support/super renzoku energy dan.lua">
     </instant>
+    <instant name="Bakuhatsuha" words="Bakuhatsuha" lvl="75" mana="5000" prem="0" aggressive="0"
+        selftarget="1" exhaustion="2000" needlearn="0" event="script"
+        value="monsters/bakuhatsuha.lua">
+        <vocation id="0" />
+    </instant>
     <!-- Monsters -->
 
     <!-- Cannons -->

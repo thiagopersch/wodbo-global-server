@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Spopovitch" nameDescription="an spopovitch" race="blood" experience="100000"
+	speed="500" manacost="0">
+	<health now="60000" max="60000" />
+	<look type="2497" head="1" body="1" legs="1" feet="1" addons="0" corpse="49341" />
+	<targetchange interval="5000" chance="8" />
+	<strategy attack="100" defense="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="500" min="-3000" max="-8000" />
+		<attack name="final shine" interval="1000" chance="20" min="-4000" max="-12000" />
+	</attacks>
+	<defenses armor="0" defense="0">
+	</defenses>
+	<immunities>
+		<immunity physical="0" />
+		<immunity energy="0" />
+		<immunity fire="0" />
+		<immunity poison="0" />
+		<immunity lifedrain="0" />
+		<immunity paralyze="0" />
+		<immunity outfit="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<loot>
+		<item id="2148" countmax="100" chance="100000" /> <!-- Cents -->
+		<item id="2152" countmax="50" chance="50000" /> <!-- Dollars -->
+		<item id="2160" countmax="5" chance="500" /> <!-- Golds -->
+		<item id="12778" countmax="10" chance="500" /> <!-- Senzu Root -->
+		<item id="49582" chance="250" /> <!-- Blaster -->
+	</loot>
+</monster>

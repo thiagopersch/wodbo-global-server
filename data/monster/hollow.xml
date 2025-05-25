@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Acidwire" description="a acidwire" race="undead" experience="3000" speed="210">
-  <health now="3000" max="3000" />
-  <look type="2349" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49401" />
+<monster name="Hollow" description="a hollow" race="undead" experience="6000" speed="260">
+  <health now="8000" max="8000" />
+  <look type="2365" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49401" />
   <targetchange interval="4000" chance="10" />
   <flags>
     <flag summonable="0" />
@@ -31,8 +31,7 @@
   </flags>
   <attacks>
     <attack name="melee" interval="2000" min="-10" max="-90" />
-    <attack name="Cero" interval="4000" min="-50" max="-290" />
-    <attack name="Brave Furie" interval="10000" min="-200" max="-1200" />
+    <attack name="Cero" interval="4000" min="-50" max="-490" />
   </attacks>
   <immunities>
     <immunity physical="0" />
