@@ -19,8 +19,8 @@
 		<flag runonhealth="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="500" min="-3000" max="-8000" />
-		<attack name="final shine" interval="1000" chance="20" min="-4000" max="-12000" />
+		<attack name="melee" interval="500" min="-300" max="-800" />
+		<attack name="final shine" interval="1000" chance="20" min="-400" max="-1200" />
 	</attacks>
 	<defenses armor="0" defense="0">
 	</defenses>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<monster name="Acid Hollow" nameDescription="a acid hollow" race="undead" experience="900000"
+<monster name="Acid Hollow" nameDescription="a acid hollow" race="undead" experience="100000"
 	speed="470">
-	<health now="1000000" max="1000000" />
+	<health now="100000" max="100000" />
 	<look type="2306" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49401" />
 	<targetchange interval="4000" chance="10" />
 	<flags>

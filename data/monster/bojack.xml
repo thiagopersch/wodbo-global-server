@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <monster name="Bojack" nameDescription="an bojack" race="blood" experience="40000" speed="500"
 	manacost="0">
-	<health now="230000" max="230000" />
-	<look type="2479" head="1" body="1" legs="1" feet="1" addons="0" corpse="12854" />
+	<health now="93000" max="93000" />
+	<look type="2479" head="1" body="1" legs="1" feet="1" addons="0" corpse="49348" />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
 	<flags>
@@ -22,8 +22,6 @@
 		<attack name="melee" interval="2000" min="-200" max="-400" />
 		<attack name="makosen" interval="4000" min="-60" max="-300" />
 	</attacks>
-	<defenses armor="0" defense="0">
-	</defenses>
 	<immunities>
 		<immunity physical="0" />
 		<immunity energy="0" />

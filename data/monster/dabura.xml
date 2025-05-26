@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <monster name="Dabura" nameDescription="an dabura" race="blood" experience="80000" speed="350"
 	manacost="0">
-	<health now="500000" max="500000" />
+	<health now="90000" max="90000" />
 	<look type="2487" head="1" body="1" legs="1" feet="1" addons="0" corpse="49360" />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />

@@ -57,6 +57,11 @@
         value="monsters/bakuhatsuha.lua">
         <vocation id="0" />
     </instant>
+    <instant name="Final Shine" words="final shine" lvl="200" mana="6000" prem="0" range="10"
+        needtarget="1" blockwalls="1" exhaustion="1000" needlearn="0" event="script"
+        value="monsters/final shine.lua">
+        <vocation id="0" />
+    </instant>
     <!-- Monsters -->
 
     <!-- Cannons -->

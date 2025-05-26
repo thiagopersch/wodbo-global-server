@@ -53,7 +53,18 @@
     "doPlayerRemoveItem",
     "getPlayerItemCount",
     "doPlayerAddMoney",
-    "getPlayerBalance"
+    "getPlayerBalance",
+    "doCreatureAddHealth",
+    "doRemoveItem",
+    "db",
+    "getPlayerGUID",
+    "getCreatureOutfit",
+    "getCreatureSkullType",
+    "getCreatureCondition",
+    "getCreatureMaxHealth",
+    "getCreatureMaxMana",
+    "setCreatureMaxHealth",
+    "setCreatureMaxMana"
   ],
   "Lua.diagnostics.disable": ["lowercase-global"]
 }

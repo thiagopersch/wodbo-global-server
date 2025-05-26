@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <monster name="Guardians of the Forest of Menos"
-	nameDescription="a guardians of the forest of menos" race="undead" experience="1200000"
+	nameDescription="a guardians of the forest of menos" race="undead" experience="70000"
 	speed="470">
-	<health now="7000000" max="7000000" />
+	<health now="70000" max="70000" />
 	<look type="2364" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49401" />
 	<targetchange interval="4000" chance="10" />
 	<flags>

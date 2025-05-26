@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Goku" description="a goku" race="blood" experience="300" speed="300">
-  <health now="500" max="500" />
+<monster name="Goku" description="a goku" race="blood" experience="1500" speed="300">
+  <health now="2500" max="2500" />
   <look type="1881" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49245" />
   <targetchange interval="4000" chance="10" />
   <flags>
@@ -67,8 +67,8 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item name="gold coin" countmax="50" chance="100" />
-    <item name="platinum coin" countmax="50" chance="100" />
+    <item name="gold coin" countmax="50" chance="10000" />
+    <item name="platinum coin" countmax="50" chance="10000" />
     <item name="goku armor" chance="300" />
     <item name="goku legs" chance="300" />
     <item name="goku boots" chance="300" />

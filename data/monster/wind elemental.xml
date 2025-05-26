@@ -3,7 +3,7 @@
 	speed="500"
 	manacost="0">
 	<health now="20000" max="20000" />
-	<look type="2493" head="1" body="1" legs="1" feet="1" addons="0" corpse="0" />
+	<look type="2496" head="1" body="1" legs="1" feet="1" addons="0" corpse="0" />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
 	<flags>

@@ -68,8 +68,6 @@
 	<talkaction words="!deathlistall" script="deathlist_all.lua" />
 	<talkaction words="!remover" event="script" value="removeFrags.lua" />
 	<talkaction words="/playerinfo" separator=" " script="playerinfo.lua" hidden="yes" />
-	<talkaction words="/transformar;/transform;/revert;/reverter" event="script"
-		value="transformar.lua" />
 	<talkaction words="/bless;!bless" event="script" value="bless.lua" />
 	<!-- <talkaction words="!aol" event="script" value="aol.lua"/> -->
 	<talkaction words="!tp" event="script" value="fly.lua" />
@@ -90,7 +88,13 @@
 	<talkaction words="!tecnicas;tecnicas;!spells" log="yes" event="script" value="tecnicas.lua" />
 	<talkaction words="!cast;/cast" event="script" value="cast.lua" />
 	<talkaction words="!save" script="salvarjogador.lua" />
+
+	<!-- Transformations -->
 	<talkaction words="!resetar;!reset;/resetar;/reset" event="script" value="reset.lua" />
+	<talkaction words="/transformar;/transform;/revert;/reverter" event="script"
+		value="transformar.lua" />
+
+	<!-- Bank -->
 	<talkaction log="yes" words="!deposit" script="bank/deposit.lua" />
 	<talkaction log="yes" words="!balance" script="bank/balance.lua" />
 	<talkaction log="yes" words="!withdraw" script="bank/withdraw.lua" />

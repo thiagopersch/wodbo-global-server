@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Wolf hollow" nameDescription="a wolf hollow" race="undead" experience="40"
-	speed="230"
-	manacost="255">
+	speed="230" manacost="255">
 	<health now="70" max="70" />
 	<look type="2544" corpse="49296" />
 	<targetchange interval="2000" chance="0" />

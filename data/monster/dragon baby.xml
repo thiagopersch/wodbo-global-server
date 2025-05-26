@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Dragon Baby" nameDescription="a dragon baby" race="blood" experience="100"
+<monster name="Dragon Baby" nameDescription="a dragon baby" race="blood" experience="1000"
 	speed="170" manacost="0">
-	<health now="300" max="300" />
+	<health now="3000" max="3000" />
 	<look type="2461" corpse="49309" />
 	<targetchange interval="2000" chance="5" />
 	<strategy attack="70" defense="10" />

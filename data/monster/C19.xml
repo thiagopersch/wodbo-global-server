@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <monster name="C19" nameDescription="an C19" race="blood" experience="6500" speed="400" manacost="0">
 	<health now="11000" max="11000" />
-	<look type="423" head="1" body="1" legs="1" feet="1" addons="0" corpse="49347" />
+	<look type="2478" head="1" body="1" legs="1" feet="1" addons="0" corpse="49347" />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
 	<flags>

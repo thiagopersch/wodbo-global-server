@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<monster name="Lobisomen" nameDescription="a lobisomen" race="blood" experience="14000" speed="800">
-	<health now="70000" max="70000" />
+<monster name="Lobisomen" nameDescription="a lobisomen" race="blood" experience="60000" speed="800">
+	<health now="110000" max="110000" />
 	<look type="2465" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49314" />
 	<targetchange interval="4000" chance="10" />
 	<flags>
