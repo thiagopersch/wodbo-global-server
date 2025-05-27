@@ -6,9 +6,9 @@ local magEffect = 596
 local repet = 30
 local duration = 30000
 local qtdRepet = 500
-setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, false)
-
 local condition = createConditionObject(CONDITION_ATTRIBUTES)
+
+setCombatParam(combat, COMBAT_PARAM_AGGRESSIVE, false)
 setConditionParam(condition, CONDITION_PARAM_TICKS, duration)
 setConditionParam(condition, CONDITION_PARAM_SKILL_FIST, 1)
 setConditionParam(condition, CONDITION_PARAM_SKILL_CLUB, 1)

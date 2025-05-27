@@ -4,9 +4,7 @@ setCombatParam(combat, COMBAT_PARAM_EFFECT, 6)
 setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, 21)
 
 function onGetFormulaValues(cid, level, maglevel)
-  local min = -((level / 5) + (maglevel * 3.99) + 75)
-  local max = -((level / 5) + (maglevel * 9.99) + 150)
-  return min, max
+  return getCombatFormulaValues(cid, level, maglevel, 1, 2, 10, 1, 1)
 end
 
 setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")

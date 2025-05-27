@@ -1,0 +1,19 @@
+# Distance:
+
+```lua
+function onGetFormulaValues(cid, level, maglevel)
+    return getCombatFormulaValues(cid, level, maglevel, 1, 2, 10, 1, 1)
+end
+
+setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
+```
+
+# Area:
+
+```lua
+function onGetFormulaValues(cid, level, maglevel)
+    return getCombatFormulaValues(cid, level, maglevel, 2, 4, 40, 1, 1)
+end
+
+setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
+```

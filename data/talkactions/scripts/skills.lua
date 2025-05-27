@@ -6,6 +6,7 @@ function onSay(cid, words, param, channel)
   if points == -1 then
     points = 0
   end
-  doPlayerSendExtendedOpcode(cid, 50, "openSkillsWindow|" .. points)
+  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,
+    "You have " .. points .. " skill points available. Use /skill <skill> to allocate them.")
   return true
 end
