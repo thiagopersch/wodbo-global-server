@@ -1,5 +1,6 @@
 local config = {
-    ingameGuilds = getBooleanFromString(getConfigValue('ingameGuildManagement'))
+    ingameGuilds = getBooleanFromString(getConfigValue('ingameGuildManagement')),
+    icon = 28355
 }
 
 function onSay(cid, words, param, channel)
@@ -8,8 +9,8 @@ function onSay(cid, words, param, channel)
         if (not talk.hidden and playerAccess >= talk.access) then
             local tmp = talk.words:sub(1, 1):trim()
             if ((config.ingameGuilds or
-                (talk.functionName ~= "guildjoin" and talk.functionName ~=
-                    "guildcreate")) and (tmp == "!" or tmp == "/")) then
+                    (talk.functionName ~= "guildjoin" and talk.functionName ~=
+                        "guildcreate")) and (tmp == "!" or tmp == "/")) then
                 table.insert(t, talk)
             end
         end
@@ -26,6 +27,6 @@ function onSay(cid, words, param, channel)
         str = str .. line .. talk.words .. "\n"
     end
 
-    doShowTextDialog(cid, 2160, str)
+    doShowTextDialog(cid, config.icon, str)
     return true
 end

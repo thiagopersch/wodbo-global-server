@@ -1,6 +1,6 @@
-local combat1 = createCombatObject()
-setCombatParam(combat1, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatParam(combat1, COMBAT_PARAM_DISTANCEEFFECT, 107)
+local combat = createCombatObject()
+setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, 107)
 
 
 function onGetFormulaValues(cid, level, maglevel)
@@ -10,7 +10,7 @@ end
 setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local function onCastSpell1(parameters)
-    doCombat(parameters.cid, parameters.combat1, parameters.var)
+    doCombat(parameters.cid, parameters.combat, parameters.var)
 end
 
 function onCastSpell(cid, var)
@@ -19,7 +19,7 @@ function onCastSpell(cid, var)
         y = getThingPosition(getCreatureTarget(cid)).y + 1,
         z = getThingPosition(getCreatureTarget(cid)).z
     }
-    local parameters = { cid = cid, var = var, combat1 = combat1 }
+    local parameters = { cid = cid, var = var, combat = combat }
     local repet = 200  -- Intervalo entre repetições (ms)
     local qtdRepet = 3 -- Quantidade de repetições
 

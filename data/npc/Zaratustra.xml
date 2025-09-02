@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Zaratustra" script="zaratustra.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="130" head="95" body="19" legs="69" feet="116" addons="3" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Hello |PLAYERNAME|, where do you want to {travel}?" />
+	</parameters>
+</npc>

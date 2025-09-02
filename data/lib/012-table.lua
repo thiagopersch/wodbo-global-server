@@ -1,6 +1,6 @@
-table.find = function (table, value)
+table.find = function(table, value)
 	for i, v in pairs(table) do
-		if(v == value) then
+		if (v == value) then
 			return i
 		end
 	end
@@ -8,9 +8,9 @@ table.find = function (table, value)
 	return nil
 end
 
-table.contains = function (txt, str)
+table.contains = function(txt, str)
 	for i, v in pairs(str) do
-		if(txt:find(v) and not txt:find('(%w+)' .. v) and not txt:find(v .. '(%w+)')) then
+		if (txt:find(v) and not txt:find('(%w+)' .. v) and not txt:find(v .. '(%w+)')) then
 			return true
 		end
 	end
@@ -19,10 +19,10 @@ table.contains = function (txt, str)
 end
 table.isStrIn = table.contains
 
-table.count = function (table, item)
+table.count = function(table, item)
 	local count = 0
 	for i, n in pairs(table) do
-		if(item == n) then
+		if (item == n) then
 			count = count + 1
 		end
 	end
@@ -31,14 +31,14 @@ table.count = function (table, item)
 end
 table.countElements = table.count
 
-table.getCombinations = function (table, num)
+table.getCombinations = function(table, num)
 	local a, number, select, newlist = {}, #table, num, {}
 	for i = 1, select do
 		a[#a + 1] = i
 	end
 
 	local newthing = {}
-	while(true) do
+	while (true) do
 		local newrow = {}
 		for i = 1, select do
 			newrow[#newrow + 1] = table[a[i]]
@@ -46,11 +46,11 @@ table.getCombinations = function (table, num)
 
 		newlist[#newlist + 1] = newrow
 		i = select
-		while(a[i] == (number - select + i)) do
+		while (a[i] == (number - select + i)) do
 			i = i - 1
 		end
 
-		if(i < 1) then
+		if (i < 1) then
 			break
 		end
 
@@ -61,4 +61,36 @@ table.getCombinations = function (table, num)
 	end
 
 	return newlist
+end
+
+table.serialize = function(x, recur)
+	local t = type(x)
+	recur = recur or {}
+
+	if t == nil then
+		return "nil"
+	elseif t == "string" then
+		return string.format("%q", x)
+	elseif t == "number" then
+		return tostring(x)
+	elseif t == "boolean" then
+		return t and "true" or "false"
+	elseif getmetatable(x) then
+		error("Can not serialize a table that has a metatable associated with it.")
+	elseif t == "table" then
+		if (table.find(recur, x)) then
+			error("Can not serialize recursive tables.")
+		end
+		table.insert(recur, x)
+
+		local s = "{"
+		for k, v in pairs(x) do
+			s = s .. "[" .. table.serialize(k, recur) .. "]"
+			s = s .. " = " .. table.serialize(v, recur) .. ","
+		end
+		s = s .. "}"
+		return s
+	else
+		error("Can not serialize value of type '" .. t .. "'.")
+	end
 end

@@ -64,7 +64,10 @@
     "getCreatureMaxHealth",
     "getCreatureMaxMana",
     "setCreatureMaxHealth",
-    "setCreatureMaxMana"
+    "setCreatureMaxMana",
+    "selfSay",
+    "getPlayerPremiumDays",
+    "getPlayerMoney"
   ],
   "Lua.diagnostics.disable": ["lowercase-global"]
 }

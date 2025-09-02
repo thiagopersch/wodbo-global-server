@@ -811,7 +811,7 @@ void LuaInterface::error(const char* function, const std::string& desc)
 {
 	if(g_config.getBool(ConfigManager::SILENT_LUA))
 		return;
-	
+
 	int32_t script, callback;
 	bool timer;
 	std::string event;
@@ -1400,14 +1400,13 @@ void LuaInterface::moveValue(lua_State* from, lua_State* to)
 	lua_pop(from, 1); // Pop the value we just read
 }
 
-void LuaInterface::registerFunctions()
-{
+void LuaInterface::registerFunctions(){
 	//example(...)
 	//lua_register(L, "name", C_function);
-   
+
     //getPlayersOnline()
 	lua_register(m_luaState, "getCastsOnline", LuaInterface::luaGetCastsOnline);
-		
+
 	//doPlayerSetCastDescription(cid, desc)
 	lua_register(m_luaState, "doPlayerSetCastDescription", LuaInterface::luaDoPlayerSetCastDescription);
 
@@ -1425,7 +1424,7 @@ void LuaInterface::registerFunctions()
 
 	//doPlayerRemoveCastBan(cid, ip)
 	lua_register(m_luaState, "doPlayerRemoveCastBan", LuaInterface::luaDoPlayerRemoveCastBan);
-	
+
 	//doPlayerAddCastKick(cid, ip)
     lua_register(m_luaState, "doPlayerAddCastKick", LuaInterface::luaDoPlayerAddCastKick);
 
@@ -1443,10 +1442,10 @@ void LuaInterface::registerFunctions()
 
 	//getPlayerCast(cid)
 	lua_register(m_luaState, "getPlayerCast", LuaInterface::luaGetPlayerCast);
-	
+
     //doSendPlayerExtendedOpcode(cid, opcode, buffer)
     lua_register(m_luaState, "doSendPlayerExtendedOpcode", LuaInterface::luaDoSendPlayerExtendedOpcode);
-	
+
 	//getCreatureHealth(cid)
 	lua_register(m_luaState, "getCreatureHealth", LuaInterface::luaGetCreatureHealth);
 
@@ -1533,7 +1532,7 @@ void LuaInterface::registerFunctions()
 
     //doSetCreatureLight(cid, lightLevel, lightColor, time)
     lua_register(m_luaState, "doSetCreatureLight", LuaInterface::luaDoSetCreatureLight);
-	
+
 	//getPlayerSlotItem(cid, slot)
 	lua_register(m_luaState, "getPlayerSlotItem", LuaInterface::luaGetPlayerSlotItem);
 
@@ -2111,7 +2110,7 @@ void LuaInterface::registerFunctions()
     lua_register(m_luaState, "getPlayerLastPong", LuaInterface::luaGetPlayerLastPong);
     //getOtsysTime(cid)
     lua_register(m_luaState, "getOtsysTime", LuaInterface::luaGetOtsysTime);
-    
+
 	//doSetItemOutfit(cid, item[, time = -1])
 	lua_register(m_luaState, "doSetItemOutfit", LuaInterface::luaSetItemOutfit);
 
@@ -3371,7 +3370,7 @@ int32_t LuaInterface::luaGetPlayerCastMutes(lua_State* L)
 	if(Player* player = env->getPlayerByUID(popNumber(L)))
 	{
 		PlayerCast pc = player->getCast();
-		lua_newtable(L); 
+		lua_newtable(L);
 		for(std::list<CastBan>::iterator it = pc.muted.begin(); it != pc.muted.end(); ++it)
 		{
 			createTable(L, it->ip);
@@ -3395,7 +3394,7 @@ int32_t LuaInterface::luaDoPlayerRemoveCastMute(lua_State* L)
 	ScriptEnviroment* env = getEnv();
 	if(Player* player = env->getPlayerByUID(popNumber(L)))
 	{
-		if(player->removeCastMute(name)) 
+		if(player->removeCastMute(name))
 			lua_pushboolean(L, true);
 		else
 			lua_pushboolean(L, false);
@@ -3466,7 +3465,7 @@ int32_t LuaInterface::luaDoPlayerRemoveCastBan(lua_State* L)
 	ScriptEnviroment* env = getEnv();
 	if(Player* player = env->getPlayerByUID(popNumber(L)))
 	{
-		if(player->removeCastBan(name)) 
+		if(player->removeCastBan(name))
 			lua_pushboolean(L, true);
 		else
 			lua_pushboolean(L, false);
@@ -3500,7 +3499,7 @@ int32_t LuaInterface::luaDoPlayerAddCastKick(lua_State* L) //by Yan Liima
 
 	return 1;
 }
-    
+
 int32_t LuaInterface::luaDoPlayerAddCastBan(lua_State* L)
 {
 	//doPlayerAddCastBan(cid, ip)
@@ -5503,18 +5502,18 @@ int32_t LuaInterface::luaDoPlayerAddSoul(lua_State* L)
 }
 
 int32_t LuaInterface::luaDoPlayerSetExtraAttackSpeed(lua_State *L)
-{	
-	uint32_t speed = popNumber(L);						
+{
+	uint32_t speed = popNumber(L);
 	ScriptEnviroment* env = getEnv();
-		   if(Player* player = env->getPlayerByUID(popNumber(L))){	
+		   if(Player* player = env->getPlayerByUID(popNumber(L))){
 					player->setPlayerExtraAttackSpeed(speed);
 					lua_pushnumber(L, true);
-		   }	
+		   }
 		   else
-		   {		  
+		   {
 		errorEx(getError(LUA_ERROR_PLAYER_NOT_FOUND));
 				   lua_pushnumber(L, false);
-		   }	  
+		   }
 	return 1;
 }
 
@@ -5792,7 +5791,7 @@ int32_t LuaInterface::luaDoSetCreatureLight(lua_State* L)
 
 	ScriptEnviroment* env = getEnv();
 	Creature* creature = env->getCreatureByUID(cid);
-	
+
 	if(creature)
 	{
 		Condition* condition = Condition::createCondition(CONDITIONID_COMBAT, CONDITION_LIGHT, time, level | (color << 8));
@@ -7724,7 +7723,7 @@ int32_t LuaInterface::luaDoSteerCreature(lua_State* L)
 	/*uint16_t maxNodes = 100;
 	if(lua_gettop(L) > 2)
 		maxNodes = popNumber(L);*/
-	
+
 	PositionEx pos;
 	popPosition(L, pos);
 
@@ -11262,10 +11261,10 @@ int32_t LuaInterface::luaDoPlayerSendPing(lua_State* L)
             void sendPing();
             lua_pushboolean(L, true);
     }else{
-          lua_pushboolean(L, false);        
+          lua_pushboolean(L, false);
           }
     lua_pushboolean(L, true);
- 
+
     return 1;
 }
 int32_t LuaInterface::luaGetOtsysTime(lua_State* L)

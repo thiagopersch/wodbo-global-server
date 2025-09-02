@@ -3375,16 +3375,15 @@ addGameTask(&Game::parsePlayerExtendedOpcode, player->getID(), opcode, buffer);
 
 void ProtocolGame::sendExtendedOpcode(uint8_t opcode, const std::string& buffer)
 {
-// opcodes estendidos s� podem ser enviados para jogadores usando otclient(otc), o t�bia(old) da cipsoft n�o pode entend�-los
-	if(player && !player->isUsingOtclient())
-		return;
+    if(player && !player->isUsingOtclient())
+        return;
 
-	NetworkMessage_ptr msg = getOutputBuffer();
-	if(msg)
-	{
-		TRACK_MESSAGE(msg);
-		msg->put<char>(0x32);
-		msg->put<char>(opcode);
-		msg->putString(buffer);
-	}
+    NetworkMessage_ptr msg = getOutputBuffer();
+    if(msg)
+    {
+        TRACK_MESSAGE(msg);
+        msg->put<char>(0x32);
+        msg->put<char>(opcode);
+        msg->putString(buffer);
+    }
 }

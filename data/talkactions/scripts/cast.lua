@@ -12,7 +12,7 @@ function onSay(cid, words, param, channel)
         doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Cast has ended.")
         doPlayerSetCastState(cid, false)
         doPlayerSave(cid)
-    elseif isInArray({"pass", "password", "p"}, tmp[1]) then
+    elseif isInArray({ "pass", "password", "p" }, tmp[1]) then
         if not (tmp[2]) then
             return doPlayerSendCancel(cid, "You need to set a password")
         end
@@ -28,7 +28,7 @@ function onSay(cid, words, param, channel)
             doPlayerSetCastPassword(cid, tmp[2])
             doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Cast password was set to: " .. tmp[2])
         end
-    elseif isInArray({"desc", "description", "d"}, tmp[1]) then
+    elseif isInArray({ "desc", "description", "d" }, tmp[1]) then
         local d = param:gsub(tmp[1] .. (tmp[2] and " " or ""), "")
 
         if not (d) or d:len() == 0 then
@@ -71,28 +71,28 @@ function onSay(cid, words, param, channel)
     elseif tmp[1] == "mute" then
         if not (tmp[2]) then
             return doPlayerSendCancel(cid,
-                                      "Specify a spectator that you want to mute.")
+                "Specify a spectator that you want to mute.")
         end
 
         if doPlayerAddCastMute(cid, tmp[2]) then
             doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "Spectator '" ..
-                                        tmp[2] .. "' has been muted.")
+                tmp[2] .. "' has been muted.")
         else
             doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "Spectator '" ..
-                                        tmp[2] .. "' could not be muted.")
+                tmp[2] .. "' could not be muted.")
         end
     elseif tmp[1] == "unmute" then
         if not (tmp[2]) then
             return doPlayerSendCancel(cid,
-                                      "Specify the person you want to unmute.")
+                "Specify the person you want to unmute.")
         end
 
         if doPlayerRemoveCastMute(cid, tmp[2]) then
             doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "Spectator '" ..
-                                        tmp[2] .. "' has been unmuted.")
+                tmp[2] .. "' has been unmuted.")
         else
             doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "Spectator '" ..
-                                        tmp[2] .. "' could not be unmuted.")
+                tmp[2] .. "' could not be unmuted.")
         end
     elseif param == "mutes" then
         local t = getCastMutes(cid)
@@ -119,22 +119,22 @@ function onSay(cid, words, param, channel)
         for _, v in pairs(t) do count = count + 1 end
 
         doShowTextDialog(cid, 5958,
-                         "Cast Status:\n\n*Viewers:\n      " .. count ..
-                             "\n*Description:\n      " ..
-                             (c.description == "" and "Not set" or c.description) ..
-                             "\n*Password:\n      " ..
-                             (c.password == "" and "Not set" or "Set - '" ..
-                                 c.password .. "'"))
+            "Cast Status:\n\n*Viewers:\n      " .. count ..
+            "\n*Description:\n      " ..
+            (c.description == "" and "Not set" or c.description) ..
+            "\n*Password:\n      " ..
+            (c.password == "" and "Not set" or "Set - '" ..
+                c.password .. "'"))
     elseif param == "update" then
         if getPlayerStorageValue(cid, 656544) > os.time() then
             return doPlayerSendCancel(cid,
-                                      "You used this command lately. Wait: " ..
-                                          (getPlayerStorageValue(cid, 656544) -
-                                              os.time()) .. " sec.")
+                "You used this command lately. Wait: " ..
+                (getPlayerStorageValue(cid, 656544) -
+                    os.time()) .. " sec.")
         end
         doPlayerSave(cid)
         doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,
-                                "The cast settings have been updated.")
+            "The cast settings have been updated.")
         doPlayerSetStorageValue(cid, 656544, os.time() + 60)
     end
     return true

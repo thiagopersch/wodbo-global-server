@@ -49,7 +49,7 @@ function onExtendedOpcode(cid, opcode, buffer)
       setPlayerStorageValue(cid, skillStorage[skill], currentLevel + 1)
       setPlayerStorageValue(cid, 10000, points - 1)
       applySkillEffects(cid, skill, currentLevel + 1)
-      doPlayerSendExtendedOpcode(cid, 50, "updatePoints|" .. (points - 1))
+      ExtendedOpcode(cid, 50, "updatePoints|" .. (points - 1))
       doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE,
         "Você melhorou " .. skill .. " para o nível " .. (currentLevel + 1) .. ".")
     end

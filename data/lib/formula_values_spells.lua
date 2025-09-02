@@ -1,4 +1,3 @@
--- data/lib/combat_utils.lua
 function getCombatFormulaValues(cid, level, maglevel, baseMin, baseMax, levelDiv, magMultMin, magMultMax)
   local min, max
 

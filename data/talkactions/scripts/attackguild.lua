@@ -1,6 +1,5 @@
 -- script by Notorious
 function onSay(cid, words, param)
-
     local storageId = 101
 
     if isPlayerPzLocked(cid) then
@@ -14,8 +13,9 @@ function onSay(cid, words, param)
     end
 
     if param == '' then
-        local status = {[1] = {"OFF"}, [-1] = {"ON"}}
-        doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Currently Status: " .. status[getPlayerStorageValue(cid, storageId)][1] .. "")
+        local status = { [1] = { "OFF" }, [-1] = { "ON" } }
+        doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,
+            "Currently Status: " .. status[getPlayerStorageValue(cid, storageId)][1] .. "")
         return true
     end
 

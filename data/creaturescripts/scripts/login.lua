@@ -58,7 +58,7 @@ function onLogin(cid)
     registerCreatureEvent(cid, "timelevel")
     registerCreatureEvent(cid, "IconMap")
     registerCreatureEvent(cid, "SkillPoints")
-    registerCreatureEvent(cid, "ExtendedOpcode")
+    registerCreatureEvent(cid, "onExtendedOpcode")
 
     local sagastor = 578744
     if getPlayerStorageValue(cid, sagastor) ~= -1 then

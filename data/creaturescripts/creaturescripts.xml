@@ -12,7 +12,6 @@
 	<event type="think" name="Idle" event="script" value="idle.lua" />
 	<event type="think" name="SkullCheck" event="script" value="skullcheck.lua" />
 	<event type="moveitem" name="MoveItem" event="script" value="houseprotect.lua" />
-	<event type="extendedopcode" name="ExtendedOpcode" event="script" value="extendedopcode.lua" />
 	<event type="login" name="onlinepoints" event="script" value="onlinepoints.lua" />
 	<event type="death" name="DeathPlayer" event="script" value="deathplayer.lua" />
 	<event type="login" name="DeathLogin" event="script" value="deathplayer.lua" />
@@ -23,4 +22,5 @@
 	<event type="think" name="IconMap" event="script" value="iconmap.lua" />
 	<event type="kill" name="KillingInTheNameOf" event="script" value="killinginthenameof.lua" />
 	<event type="advance" name="SkillPoints" event="script" value="skillpoints.lua" />
+	<event type="extendedopcode" name="BankExtendedOpcode" event="script" value="bank_extended.lua" />
 </creaturescripts>

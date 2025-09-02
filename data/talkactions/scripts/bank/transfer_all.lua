@@ -1,5 +1,4 @@
 function onSay(cid, words, param)
-
     local config = {
         bankSystemEnabled = getBooleanFromString(getConfigInfo('bankSystem')),
         playerIsFighting = hasCondition(cid, CONDITION_INFIGHT)
@@ -12,7 +11,8 @@ function onSay(cid, words, param)
         end
         local t = string.explode(param, ",")
         if playerExists(param) then
-            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "You have transferred " .. getPlayerBalance(cid) .. " gold to " .. param .. ".")
+            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,
+                "You have transferred " .. getPlayerBalance(cid) .. " gold to " .. param .. ".")
             doPlayerTransferAllMoneyTo(cid, param)
         else
             doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Player " .. param .. " does not exist.")

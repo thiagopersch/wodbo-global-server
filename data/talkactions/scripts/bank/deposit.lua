@@ -18,8 +18,11 @@ function onSay(cid, words, param)
 
             m = math.abs(m)
 
-            if m <= getPlayerMoney(cid) then doPlayerDepositMoney(cid, m)
-                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Okay, you have added the amount of " .. m .. " gold in your account. Your current account balance is " .. getPlayerBalance(cid) .. ".")
+            if m <= getPlayerMoney(cid) then
+                doPlayerDepositMoney(cid, m)
+                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,
+                    "Okay, you have added the amount of " ..
+                    m .. " gold in your account. Your current account balance is " .. getPlayerBalance(cid) .. ".")
             else
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "You do not have enough money.")
             end

@@ -1,5 +1,4 @@
 function onSay(cid, words, param)
-
     local config = {
         bankSystemEnabled = getBooleanFromString(getConfigInfo('bankSystem')),
         playerIsFighting = hasCondition(cid, CONDITION_INFIGHT)
@@ -22,7 +21,8 @@ function onSay(cid, words, param)
 
             if m <= getPlayerBalance(cid) then
                 doPlayerWithdrawMoney(cid, m)
-                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Here you are, " .. m .. " gold. Your account balance is " .. getPlayerBalance(cid) .. ".")
+                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,
+                    "Here you are, " .. m .. " gold. Your account balance is " .. getPlayerBalance(cid) .. ".")
             else
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "There is not enough gold on your account.")
             end
