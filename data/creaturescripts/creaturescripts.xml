@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
 	<!-- <event type="login" name="Outfit" script="outfit_vocation.lua" /> -->
+	<event type="kill" name="AnnounceDeath" event="script" value="announce_death.lua" />
 	<event type="death" name="AmuletDeath" script="amuletDeath.lua" />
 	<event type="look" name="fraglook" event="script" value="fraglook.lua" />
 	<event type="advance" name="FullHpMana" event="script" value="fullhpmana.lua" />

@@ -31,9 +31,9 @@
     <flag canwalkonpoison="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" min="-50" max="-100" />
-    <attack name="Sword Bash" interval="3000" min="-50" max="-120" />
-    <attack name="Brave Furie" interval="10000" min="-100" max="-150" />
+    <attack name="melee" interval="2000" min="-5" max="-50" />
+    <attack name="Sword Bash" interval="3000" min="-5" max="-20" />
+    <attack name="Brave Furie" interval="10000" min="-10" max="-35" />
   </attacks>
   <immunities>
     <immunity physical="0" />

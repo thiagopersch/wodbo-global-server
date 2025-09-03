@@ -122,7 +122,7 @@ function doPlayerAddItemStacking(cid, itemid, amount) -- revisado
 		for _ ,x in pairs(item) do
 			local ret = getThing(x)
 			if ret.type < 100 then
-				doTransformItem(ret.uid, itemid, ret.type+amount) 
+				doTransformItem(ret.uid, itemid, ret.type+amount)
 				if ret.type+amount > 100 then
 					doPlayerAddItem(cid, itemid, ret.type+amount-100)
 				end
@@ -183,7 +183,7 @@ function onLogin(cid)
 end]]></event>
 	<event type="kill" name="LootEventKIll" event="script"><![CDATA[
 domodlib('Loot_func')
-function onKill(cid, target, lastHit) 
+function onKill(cid, target, lastHit)
 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
 	end
@@ -211,8 +211,8 @@ if not item then
 	doPlayerSendCancel(cid, "This item does not exist.") return true
 end
 local var = isInTable(cid, item)
-if isInArray({2148,2152,2160},item) then 
-	doPlayerSendCancel(cid, "Enter !autoloot money to add money in your list!") return true	
+if isInArray({2148,2152,2160},item) then
+	doPlayerSendCancel(cid, "Enter !autoloot money to add money in your list!") return true
 elseif isInArray(info.BlockItemsList, item) then
 	doPlayerSendCancel(cid, "You can not add this item in the list!") return true
 elseif not var and #getPlayerStorageTable(cid, info.Storages[1]) >= slots then

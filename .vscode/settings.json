@@ -67,7 +67,8 @@
     "setCreatureMaxMana",
     "selfSay",
     "getPlayerPremiumDays",
-    "getPlayerMoney"
+    "getPlayerMoney",
+    "doPlayerSetTown"
   ],
   "Lua.diagnostics.disable": ["lowercase-global"]
 }

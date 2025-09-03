@@ -39,6 +39,7 @@ function onLogin(cid)
     end
 
     --registerCreatureEvent(cid, "Outfit")
+    registerCreatureEvent(cid, "AnnounceDeath")
     registerCreatureEvent(cid, "AmuletDeath")
     registerCreatureEvent(cid, "FullHpMana")
     registerCreatureEvent(cid, "FragReward")

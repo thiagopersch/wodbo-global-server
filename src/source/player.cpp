@@ -79,8 +79,8 @@ Player::Player(const std::string& _name, ProtocolGame* p):
 	purchaseCallback = saleCallback = -1;
 	level = shootRange = 1;
 	rates[SKILL__MAGLEVEL] = rates[SKILL__LEVEL] = 1.0f;
-	soulMax = 100;
-	capacity = 400.00;
+	soulMax = 200;
+	capacity = 500.00;
 	stamina = STAMINA_MAX;
 	lastLoad = lastPing = lastPong = OTSYS_TIME();
 
@@ -157,12 +157,12 @@ void Player::setCasting(bool c) //CAST
 		return;
 
 	if(cast.isCasting && !c) {
-		castAutoList.erase(id);             
+		castAutoList.erase(id);
         kickCastViewers();
 	}
 	else {
 		castAutoList[id] = this;
-			
+
 		ChatChannel* channel = g_chat.createChannel(this, CHANNEL_PRIVATE);
 		if(channel && channel->addUser(this))
 			sendCreatePrivateChannel(channel->getId(), channel->getName());
@@ -532,7 +532,7 @@ void Player::sendIcons() const
 			icons |= (*it)->getIcons();
 	}
 
-	if(getZone() == ZONE_PROTECTION) //Se preciso deixa só esse
+	if(getZone() == ZONE_PROTECTION) //Se preciso deixa sï¿½ esse
 	{
 		icons |= ICON_PROTECTIONZONE; //E esse, by Yan Liima.
 		if(hasBitSet(ICON_SWORDS, icons))
@@ -543,7 +543,7 @@ void Player::sendIcons() const
 		icons |= ICON_PZ;
 
 	client->sendIcons(icons);
-	
+
 	for(AutoList<ProtocolGame>::const_iterator it = Player::cSpectators.begin(); it != Player::cSpectators.end(); ++it) //CAST
 		if(it->second->getPlayer() == this)
 			it->second->sendIcons(icons);
@@ -565,7 +565,7 @@ void Player::sendIcons() const
 void Player::updateInventoryWeight()
 {
     inventoryWeight = 0.00;
- 
+
     if(!hasFlag(PlayerFlag_HasInfiniteCapacity)){
         for(int i = SLOT_FIRST; i < SLOT_LAST; ++i){
             Item* item = getInventoryItem((slots_t)i);
@@ -1212,7 +1212,7 @@ void Player::sendCancelMessage(ReturnValue message) const
 		case RET_YOUHAVETOWAIT:
 			sendCancel("Sorry, you have to wait.");
 			break;
-			
+
 		case RET_DONTSHOWMESSAGE:
 			break;
 
@@ -1614,7 +1614,7 @@ void Player::onCreatureMove(const Creature* creature, const Tile* newTile, const
 				addCondition(condition);
 		}
 	}
-	
+
 	// unset editing house
 	if (editHouse && !newTile->hasFlag(TILESTATE_HOUSE))
 		editHouse = NULL;
@@ -1775,7 +1775,7 @@ uint32_t Player::getNextActionTime(bool scheduler/* = true*/) const
 {
 	if(!scheduler)
 		return (uint32_t)std::max((int64_t)0, ((int64_t)nextAction - OTSYS_TIME()));
-	
+
 	return (uint32_t)std::max((int64_t)SCHEDULER_MINTICKS, ((int64_t)nextAction - OTSYS_TIME()));
 }
 
@@ -1812,7 +1812,7 @@ void Player::onThink(uint32_t interval)
 		messageTicks = 0;
 		addMessageBuffer();
 	}
-	
+
 	if(lastMail && lastMail < (uint64_t)(OTSYS_TIME() + g_config.getNumber(ConfigManager::MAIL_ATTEMPTS_FADE)))
 		mailAttempts = lastMail = 0;
 }
@@ -1971,7 +1971,7 @@ void Player::setMagicLevel(uint64_t value)
 	magLevel = value;
 	manaSpent = 0;
 	magLevelPercent = 0;
-	
+
 	char advMsg[50];
 	sprintf(advMsg, "You advanced to magic level %d.", magLevel);
 	sendTextMessage(MSG_EVENT_ADVANCE, advMsg);
@@ -2238,7 +2238,7 @@ uint32_t Player::getIP() const
 bool Player::onDeath()
 {
 	kickCastViewers(); //CAST
-     
+
 	Item* preventLoss = NULL;
 	Item* preventDrop = NULL;
 	if(getZone() == ZONE_HARDCORE)
@@ -2495,7 +2495,7 @@ void Player::removeList()
 	Manager::getInstance()->removeUser(id);
 	autoList.erase(id);
 	castAutoList.erase(id); //CAST
-	
+
 	if(!isGhost())
 	{
 		for(AutoList<Player>::iterator it = autoList.begin(); it != autoList.end(); ++it)
@@ -2859,7 +2859,7 @@ ReturnValue Player::__queryAdd(int32_t index, const Thing* thing, uint32_t count
 			self->sendStats();
 		}
 	}
-	
+
 	return ret;
 }
 
@@ -4813,7 +4813,7 @@ void Player::manageAccount(const std::string &text)
 				{
 					talkState[9] = false;
 					talkState[13] = true;
-					
+
 					bool firstPart = true;
 					for(TownMap::const_iterator it = Towns::getInstance()->getFirstTown(); it != Towns::getInstance()->getLastTown(); ++it)
 					{

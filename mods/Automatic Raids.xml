@@ -1,53 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mod name="Automatic Raids" version="1.0" author="Vodkart And xotservx" contact="tibiaking.com"
-  enabled="yes">
-  <config name="raids_func">
+    enabled="yes">
+    <config name="raids_func">
         <![CDATA[
-days = {
-    ["Monday"] = {
-        ["21:30"] = {
-            nome = "Orshabaal",
-            pos = {
-                fromPosition = {x=184, y=55, z=7},
-                toPosition = {x=188, y=58, z=7}
-            },
-            m = {"5 Fire Devil", "2 Orshabaal"},
-            Time = 15
-        },
-        ["21:33"] = {
-            nome = "Dragon",
-            pos = {
-                fromPosition = {x=197, y=57, z=7},
-                toPosition = {x=203, y=60, z=7}
-            },
-            m = {"100 Dragon"},
-            Time = 20
-        }
-    },
-    ["Sunday"] = {
-        ["10:08"] = {
-            nome = "Demon",
-            pos = {
-                fromPosition = {x=202, y=11, z=7},
-                toPosition = {x=204, y=12, z=7}
-            },
-            m = {"1 Demon"},
-            Time = 15
-        },
-        ["10:46"] = {
-            nome = "Hydra",
-            pos = {
-                fromPosition = {x=197, y=57, z=7},
-                toPosition = {x=203, y=60, z=7}
-            },
-            m = {"7 Hydra", "4 Cyclops"},
-            Time = 20
-        }
-    }
-}
+            days = {
+                ["Monday"] = {
+                    ["08:00"] = {
+                        nome = "Orshabaal",
+                        pos = {
+                            fromPosition = {x = 31881, y = 32184, z = 7},
+                            toPosition = {x = 31983, y = 32245, z = 7}
+                        },
+                        m = {"5 Fire Devil", "2 Orshabaal", "10 Hellhound", "15 Demon"},
+                        Time = 15
+                    },
+                    ["21:00"] = {
+                        nome = "Dragon",
+                        pos = {
+                            fromPosition = {x = 31881, y = 32184, z = 7},
+                            toPosition = {x = 31983, y = 32245, z = 7}
+                        },
+                        m = {"20 Dragon"},
+                        Time = 15
+                    }
+                },
+                ["Sunday"] = {
+                    ["12:00"] = {
+                        nome = "Demon",
+                        pos = {
+                            fromPosition = {x = 31881, y = 32184, z = 7},
+                            toPosition = {x = 31983, y = 32245, z = 7}
+                        },
+                        m = {"20 Demon"},
+                        Time = 15
+                    },
+                    ["18:00"] = {
+                        nome = "Dragon Lord",
+                        pos = {
+                            fromPosition = {x = 31881, y = 32184, z = 7},
+                            toPosition = {x = 31983, y = 32245, z = 7}
+                        },
+                        m = {"10 Dragon Lord", "10 Dragon Lord Hatchling", "10 Dragon Hatchling"},
+                        Time = 15
+                    }
+                },
+                ["Tuesday"] = {
+                    ["11:00"] = {
+                        nome = "Demon",
+                        pos = {
+                            fromPosition = {x = 31881, y = 32184, z = 7},
+                            toPosition = {x = 31983, y = 32245, z = 7}
+                        },
+                        m = {"15 Demon"},
+                        Time = 15
+                    },
+                    ["10:45"] = {
+                        nome = "Dragon Lord",
+                        pos = {
+                            fromPosition = {x = 31881, y = 32184, z = 7},
+                            toPosition = {x = 31983, y = 32245, z = 7}
+                        },
+                        m = {"10 Dragon Lord", "10 Dragon Lord Hatchling", "10 Dragon Hatchling"},
+                        Time = 15
+                    }
+                }
+            }
         ]]>
     </config>
-  <globalevent name="AutomaticRaids" interval="60" event="script">
+    <globalevent name="AutomaticRaids" interval="60" event="script">
         <![CDATA[
 domodlib('raids_func')
 
