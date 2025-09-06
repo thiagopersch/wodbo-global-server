@@ -137,3 +137,144 @@
 [3/9/2025 1:7:43] /down
 [3/9/2025 1:7:56] /down
 [3/9/2025 1:15:52] /down
+[5/9/2025 11:46:15] /r
+[5/9/2025 16:54:7] /t
+[5/9/2025 16:58:50] /reload npc
+[5/9/2025 16:59:28] /t
+[5/9/2025 17:1:44] /t
+[5/9/2025 17:3:42] /s demon
+[5/9/2025 17:5:47] /clean
+[5/9/2025 17:5:49] /t
+[5/9/2025 17:11:25] /t
+[5/9/2025 20:26:11] /reload creaturescripts
+[5/9/2025 21:25:12] !deposit all
+[5/9/2025 21:25:47] !deposit 100000
+[5/9/2025 21:25:49] !deposit 1000000
+[5/9/2025 21:25:57] !deposit 9000000
+[5/9/2025 21:25:59] !deposit 900000
+[5/9/2025 21:26:6] !balance
+[5/9/2025 21:31:16] /t
+[5/9/2025 21:34:14] !withdraw
+[5/9/2025 21:34:17] !withdraw all
+[5/9/2025 21:34:20] !withdraw 
+[5/9/2025 21:34:21] !balance
+[5/9/2025 21:34:30] !balance
+[5/9/2025 21:34:42] !withdraw 1000112
+[5/9/2025 21:34:54] /i backpack
+[5/9/2025 21:35:30] /r
+[5/9/2025 21:35:33] /r 100
+[5/9/2025 21:38:45] /reload talk
+[5/9/2025 21:40:22] !balance
+[5/9/2025 21:40:27] !depositall
+[5/9/2025 21:44:45] !balance
+[5/9/2025 22:12:18] /reload creaturescripts
+[5/9/2025 22:19:12] /reload lib
+[5/9/2025 22:39:12] /m rabbit
+[5/9/2025 22:42:0] /m mama bird
+[5/9/2025 22:42:6] /s mama bird
+[5/9/2025 22:43:51] /reload monsters
+[5/9/2025 22:45:9] /reload monsters
+[5/9/2025 22:45:58] /reload monsters
+[5/9/2025 22:46:8] /reload monsters
+[5/9/2025 22:46:40] /reload monsters
+[5/9/2025 22:46:59] /reload monsters
+[5/9/2025 22:47:13] /reload monsters
+[5/9/2025 22:50:14] /reload monsters
+[5/9/2025 22:50:21] /s Fire Elemental Supremo
+[5/9/2025 22:51:21] /reload monsters
+[5/9/2025 22:51:55] /reload monsters
+[5/9/2025 22:52:12] /reload monsters
+[5/9/2025 22:52:16] /s Fire Elemental Supremo
+[5/9/2025 22:52:18] /s Fire Elemental Supremo
+[5/9/2025 22:52:20] /s Fire Elemental Supremo
+[5/9/2025 22:52:24] /s Fire Elemental Supremo
+[5/9/2025 22:52:28] /m demon
+[5/9/2025 22:53:46] /reload monsters
+[5/9/2025 22:53:56] /r
+[5/9/2025 22:54:11] /m mama bird
+[5/9/2025 22:54:17] /s Fire Elemental Supremo
+[5/9/2025 22:54:20] /s Fire Elemental Supremo
+[5/9/2025 22:54:34] /reload monsters
+[5/9/2025 22:54:36] /s Fire Elemental Supremo
+[5/9/2025 22:54:38] /s Fire Elemental Supremo
+[5/9/2025 22:54:44] /reload monsters
+[5/9/2025 22:54:45] /s Fire Elemental Supremo
+[5/9/2025 22:54:49] /s Fire Elemental Supremo
+[5/9/2025 22:55:18] /t
+[5/9/2025 22:55:34] /r
+[5/9/2025 22:55:39] /r
+[5/9/2025 22:56:3] /reload monsters
+[5/9/2025 22:56:33] tecnicas
+[5/9/2025 22:57:21] /clean
+[5/9/2025 22:57:38] /s Fire Elemental Supremo
+[5/9/2025 22:57:49] /r
+[5/9/2025 22:57:51] /r
+[5/9/2025 22:58:16] /reload monsters
+[5/9/2025 22:58:20] /s Fire Elemental Supremo
+[5/9/2025 23:2:10] /reload monsters
+[5/9/2025 23:2:11] /s Fire Elemental Supremo
+[5/9/2025 23:2:17] /reload monsters
+[5/9/2025 23:2:18] /s Fire Elemental Supremo
+[5/9/2025 23:3:49] /reload monsters
+[5/9/2025 23:4:3] /s Fire Elemental Supremo
+[5/9/2025 23:4:7] /m mama bird
+[5/9/2025 23:4:42] /reload monsters
+[5/9/2025 23:5:11] /reload monsters
+[5/9/2025 23:5:16] /s Fire Elemental Supremo
+[5/9/2025 23:5:17] /s Fire Elemental Supremo
+[5/9/2025 23:5:20] /r
+[5/9/2025 23:5:22] /r
+[5/9/2025 23:5:24] /r
+[5/9/2025 23:5:30] /r
+[5/9/2025 23:5:34] /r
+[5/9/2025 23:5:39] /r
+[5/9/2025 23:5:41] /r
+[5/9/2025 23:5:43] /r
+[5/9/2025 23:5:45] /s Fire Elemental Supremo
+[5/9/2025 23:8:0] /reload spells
+[5/9/2025 23:8:8] /reload spells
+[5/9/2025 23:8:25] /r
+[5/9/2025 23:8:27] /r
+[5/9/2025 23:8:29] /r
+[5/9/2025 23:8:30] /r
+[5/9/2025 23:8:33] /r
+[5/9/2025 23:8:37] /r
+[5/9/2025 23:8:40] /s Fire Elemental Supremo
+[5/9/2025 23:9:6] /m demon
+[5/9/2025 23:9:44] /m training monk
+[5/9/2025 23:10:39] /m mama bird
+[5/9/2025 23:11:1] /bc asdasd
+[5/9/2025 23:12:24] /s Fire Elemental Supremo
+[5/9/2025 23:12:28] /r
+[5/9/2025 23:12:30] /r
+[5/9/2025 23:12:36] /r
+[5/9/2025 23:12:38] /r
+[5/9/2025 23:12:43] /r
+[5/9/2025 23:12:45] /r
+[5/9/2025 23:12:47] /r
+[5/9/2025 23:12:49] /r
+[5/9/2025 23:12:52] /r
+[5/9/2025 23:12:53] /r
+[5/9/2025 23:12:55] /r
+[5/9/2025 23:12:56] /s Fire Elemental Supremo
+[5/9/2025 23:13:43] /reload monsters
+[5/9/2025 23:13:49] /m demon
+[5/9/2025 23:14:44] /reload monsters
+[5/9/2025 23:15:6] /reload monsters
+[5/9/2025 23:15:12] /clean
+[6/9/2025 0:7:51] /i gold coin
+[6/9/2025 0:8:49] /s demon
+[6/9/2025 0:14:4] /m mama brind
+[6/9/2025 0:14:11] /m mama bird
+[6/9/2025 0:29:35] /t
+[6/9/2025 0:33:7] /newtype 2783
+[6/9/2025 0:33:9] /newtype 2784
+[6/9/2025 0:33:15] /save
+[6/9/2025 1:30:11] /reload creaturescripts
+[6/9/2025 1:52:49] /level
+[6/9/2025 1:52:54] /level god, 1
+[6/9/2025 1:52:57] /level god, 10
+[6/9/2025 1:53:3] /level god, 10
+[6/9/2025 1:53:8] /level god, 10000000
+[6/9/2025 1:53:12] /level god, 10000
+[6/9/2025 1:54:40] /t

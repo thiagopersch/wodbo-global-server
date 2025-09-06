@@ -39,6 +39,7 @@ function onLogin(cid)
     end
 
     --registerCreatureEvent(cid, "Outfit")
+    if (config.useFragHandler) then registerCreatureEvent(cid, "SkullCheck") end
     registerCreatureEvent(cid, "AnnounceDeath")
     registerCreatureEvent(cid, "AmuletDeath")
     registerCreatureEvent(cid, "FullHpMana")
@@ -47,7 +48,6 @@ function onLogin(cid)
     registerCreatureEvent(cid, "GuildMotd")
     registerCreatureEvent(cid, "Idle")
     registerCreatureEvent(cid, "KillingInTheNameOf")
-    if (config.useFragHandler) then registerCreatureEvent(cid, "SkullCheck") end
     registerCreatureEvent(cid, "ReportBug")
     registerCreatureEvent(cid, "AdvanceSave")
     registerCreatureEvent(cid, "onlinepoints")
@@ -59,7 +59,9 @@ function onLogin(cid)
     registerCreatureEvent(cid, "timelevel")
     registerCreatureEvent(cid, "IconMap")
     registerCreatureEvent(cid, "SkillPoints")
-    registerCreatureEvent(cid, "onExtendedOpcode")
+    registerCreatureEvent(cid, "HighscoreOpcode")
+    registerCreatureEvent(cid, "BankLogin")
+    registerCreatureEvent(cid, "BankExtended")
 
     local sagastor = 578744
     if getPlayerStorageValue(cid, sagastor) ~= -1 then

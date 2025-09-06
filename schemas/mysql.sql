@@ -102,7 +102,14 @@ CREATE TABLE `players`(
 	`cast` TINYINT NOT NULL DEFAULT 0,
 	`castViewers` INT(11) NOT NULL DEFAULT 0,
 	`castDescription` VARCHAR(255) NOT NULL DEFAULT '',
-	
+	`health_skill` INT NOT NULL DEFAULT 0,
+	`mana_skill` INT NOT NULL DEFAULT 0,
+	`bend_skill` INT NOT NULL DEFAULT 0,
+	`dodge_skill` INT NOT NULL DEFAULT 0,
+	`resets` INT NOT NULL DEFAULT 0,
+	`skill_points` INT NOT NULL DEFAULT 0,
+	`online_time` INT NOT NULL DEFAULT 0,
+
 	PRIMARY KEY (`id`), UNIQUE (`name`, `deleted`),
 	KEY (`account_id`), KEY (`group_id`),
 	KEY (`online`), KEY (`deleted`),

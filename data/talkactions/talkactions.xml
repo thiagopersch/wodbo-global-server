@@ -97,10 +97,13 @@
 		value="transformar.lua" />
 
 	<!-- Bank -->
-	<talkaction log="yes" words="!deposit" script="bank/deposit.lua" />
-	<talkaction log="yes" words="!balance" script="bank/balance.lua" />
-	<talkaction log="yes" words="!withdraw" script="bank/withdraw.lua" />
-	<talkaction log="yes" words="!transfer" script="bank/transfer.lua" />
+	<talkaction log="yes" words="!balance" script="bank\balance.lua" />
+	<talkaction log="yes" words="!deposit" script="bank\deposit.lua" />
+	<talkaction log="yes" words="!withdraw" script="bank\withdraw.lua" />
+	<talkaction log="yes" words="!transfer" script="bank\transfer.lua" />
+	<talkaction log="yes" words="!depositall" script="bank\deposit_all.lua" />
+	<talkaction log="yes" words="!withdrawall" script="bank\withdraw_all.lua" />
+	<talkaction log="yes" words="!transferall" script="bank\transfer_all.lua" />
 
 	<!-- Houses -->
 	<talkaction words="!buyhouse;/buyhouse" filter="word-spaced" event="function" value="houseBuy" />

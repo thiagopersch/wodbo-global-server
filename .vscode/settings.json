@@ -68,7 +68,15 @@
     "selfSay",
     "getPlayerPremiumDays",
     "getPlayerMoney",
-    "doPlayerSetTown"
+    "doPlayerSetTown",
+    "doPlayerSetVocation",
+    "doPlayerSendOutfitWindow",
+    "getPlayerAccountManager",
+    "doPlayerSetLossPercent",
+    "getConfigValue",
+    "doCreatureSetMaxHealth",
+    "getCreatureBaseSpeed",
+    "doChangeSpeed"
   ],
   "Lua.diagnostics.disable": ["lowercase-global"]
 }
