@@ -28,5 +28,5 @@ function doPlayerAddOnlineTime(cid, amount)
     return
   end
   db.executeQuery("UPDATE `players` SET `online_time` = `online_time` + " ..
-  amount .. " WHERE `id` = " .. getPlayerGUID(cid))
+    amount .. " WHERE `id` = " .. getPlayerGUID(cid))
 end

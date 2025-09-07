@@ -170,6 +170,10 @@ function getPlayerVocationName(cid)
     return getVocationInfo(getPlayerVocation(cid)).name
 end
 
+function getPlayerVocationId(cid)
+    return getVocationInfo(getPlayerVocation(cid)).id
+end
+
 function getPromotedVocation(vid) return getVocationInfo(vid).promotedVocation end
 
 function doPlayerRemovePremiumDays(cid, days)

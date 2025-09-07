@@ -76,7 +76,15 @@
     "getConfigValue",
     "doCreatureSetMaxHealth",
     "getCreatureBaseSpeed",
-    "doChangeSpeed"
+    "doChangeSpeed",
+    "getVocationInfo",
+    "doPlayerAddPremiumDays",
+    "getHouseInfo",
+    "getTownTemplePosition",
+    "getPlayerTown",
+    "doAddCondition",
+    "getGroupInfo",
+    "getPlayerGroupId"
   ],
   "Lua.diagnostics.disable": ["lowercase-global"]
 }

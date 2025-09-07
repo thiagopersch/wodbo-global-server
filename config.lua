@@ -1,13 +1,28 @@
+-- Account manager
 accountManager = true
-namelockManager = true
-newPlayerChooseVoc = true
+namelockManager = false
 newPlayerChooseTown = false
-newPlayerDefaultTownId = 2
+newPlayerChooseVoc = true
+-- newPlayerDefaultTownId = 2
+newPlayerSpawnPosX = 32000
+newPlayerSpawnPosY = 32002
+newPlayerSpawnPosZ = 7
+newPlayerTownId = 1
 newPlayerLevel = 1
 newPlayerMagicLevel = 0
 generateAccountNumber = false
-
+generateAccountSalt = false
+accountSize = 25
 useFragHandler = true
+enableCast = true
+
+-- Unjustified kills
+-- NOTE: *Banishment and *BlackSkull variables are >summed up<
+-- (dailyFragsToRedSkull + dailyFragsToBanishment) with their
+-- *RedSkull equivalents.
+-- Auto banishing works only if useBlackSkull set to negative.
+-- advancedFragList is not advised if you use huge frags
+-- requirements.
 redSkullLength = 30 * 24 * 60 * 60
 blackSkullLength = 45 * 24 * 60 * 60
 dailyFragsToRedSkull = 3
@@ -22,8 +37,12 @@ monthlyFragsToBanishment = monthlyFragsToRedSkull
 blackSkulledDeathHealth = 40
 blackSkulledDeathMana = 0
 useBlackSkull = true
-advancedFragList = true
+useFragHandler = true
+advancedFragList = false
 
+-- Banishments
+-- violationNameReportActionType 1 = just a report, 2 = name lock, 3 = player banishment
+-- killsBanLength works only if useBlackSkull option is disabled.
 notationsToBan = 3
 warningsToFinalBan = 4
 warningsToDeletion = 5
@@ -35,6 +54,10 @@ broadcastBanishments = true
 maxViolationCommentSize = 200
 violationNameReportActionType = 2
 autoBanishUnknownBytes = false
+-- Battle
+-- NOTE: showHealingDamageForMonsters inheritates from showHealingDamage.
+-- loginProtectionPeriod is the famous Tibia anti-magebomb system.
+-- deathLostPercent set to nil enables manual mode.
 
 worldType = "open"
 protectionLevel = 50
@@ -49,10 +72,8 @@ removeWeaponCharges = true
 removeRuneCharges = true
 whiteSkullTime = 15 * 60 * 1000
 noDamageToSameLookfeet = false
-showHealingDamage = true
-showHealingDamageForMonsters = true
-healthHealingColor = COLOR_GREEN
-manaHealingColor = COLOR_DARKPURPLE
+showHealingDamage = false
+showHealingDamageForMonsters = false
 fieldOwnershipDuration = 5 * 1000
 stopAttackingAtExit = true
 loginProtectionPeriod = 10 * 1000
@@ -60,15 +81,18 @@ deathLostPercent = 10
 stairhopDelay = 2 * 1000
 pushCreatureDelay = 2 * 1000
 deathContainerId = 1987
-gainExperienceColor = 210
-addManaSpentInPvPZone = false
+gainExperienceColor = 215
+addManaSpentInPvPZone = true
 squareColor = 0
 allowFightback = true
 fistBaseAttack = 7
 optionalWarAttackableAlly = false
+healthHealingColor = COLOR_GREEN
+manaHealingColor = COLOR_DARKPURPLE
 
 worldId = 0
 ip = "127.0.0.1"
+bindOnlyGlobalAddress = false
 loginPort = 7171
 gamePort = 7172
 loginTries = 10
@@ -86,54 +110,78 @@ replaceKickOnLogin = true
 forceSlowConnectionsToDisconnect = false
 loginOnlyWithLoginServer = false
 premiumPlayerSkipWaitList = true
-enableCast = true
+max_packets_per_second = 1000
 
+-- Anti-Divulga��o
+advertisingBlock = ".net;servegame;no-ip;.hopto;.net;.info;.org;.zapto;.me;.ddns;.pl;.biz"
+
+-- Anti-Push
+useAntiPush = true
+antiPushDelay = 500
+antiPushItems = "2148,2152,2160,3976"
+
+-- Database
+-- NOTE: sqlFile is used only by sqlite database, and sqlKeepAlive by mysql database.
+-- To disable sqlKeepAlive such as mysqlReadTimeout use 0 value.
+-- encryptionType can be plain, md5, sha1, sha256, sha512 or vahash.
 sqlType = "sqlite"
 sqlHost = "127.0.0.1"
 sqlPort = 3306
 sqlUser = "root"
 sqlPass = ""
-sqlDatabase = ""
+sqlDatabase = "forgottenserver"
 sqlFile = "theforgottenserver.s3db"
 sqlKeepAlive = 0
 mysqlReadTimeout = 10
 mysqlWriteTimeout = 10
+mysqlReconnectionAttempts = 5
 encryptionType = "sha1"
 
+-- Deathlist
 deathListEnabled = true
 deathListRequiredTime = 1 * 60 * 1000
 deathAssistCount = 19
 maxDeathRecords = 5
 
+-- Guilds
 ingameGuildManagement = true
-levelToFormGuild = 100
+levelToFormGuild = 8
 premiumDaysToFormGuild = 0
 guildNameMinLength = 4
 guildNameMaxLength = 20
+maxPlayerGuild = 1000
 
-highscoreDisplayPlayers = 50
+-- Highscores
+highscoreDisplayPlayers = 15
 updateHighscoresAfterMinutes = 60
 
+-- Houses
 buyableAndSellableHouses = true
 houseNeedPremium = true
 bedsRequirePremium = true
-levelToBuyHouse = 100
-housesPerAccount = 2
+levelToBuyHouse = 8
+housesPerAccount = 0
 houseRentAsPrice = false
 housePriceAsRent = false
 housePriceEachSquare = 1000
 houseRentPeriod = "never"
 houseCleanOld = 0
 guildHalls = true
+houseSkipInitialRent = true
 
+-- Item usage
 timeBetweenActions = 500
-timeBetweenExActions = 1000
+timeBetweenExActions = 500
+timeBetweenCustomActions = 500
 hotkeyAimbotEnabled = true
 
-onBuy = 1000
-onSell = 1000
-changeOutfit = 1000
+-- Exhausts
+onBuy = 500
+onSell = 500
+changeOutfit = 500
 
+-- Map
+-- NOTE: storeTrash costs more memory, but will perform alot faster cleaning.
 mapName = "main.otbm"
 mapAuthor = "Peixola"
 randomizeTiles = true
@@ -141,10 +189,21 @@ storeTrash = true
 cleanProtectedZones = true
 mailboxDisabledTowns = ""
 
+-- Mailbox Block
+mailMaxAttempts = 5
+mailBlockPeriod = 30 * 60 * 1000
+mailAttemptsFadeTime = 5 * 60 * 1000
+
+-- Process
+-- NOTE: defaultPriority works only on Windows and niceLevel on *nix
+-- niceLevel works only on *nix systems
+-- coresUsed are seperated by comma cores ids used by server process,
+-- default is -1, so it stays untouched (automaticaly assigned by OS).
 defaultPriority = "high"
 niceLevel = 5
 coresUsed = "-1"
 
+-- Startup
 startupDatabaseOptimization = true
 updatePremiumStateAtStartup = true
 confirmOutdatedVersion = false
@@ -155,13 +214,19 @@ formulaMagic = 1.0
 bufferMutedOnSpellFailure = false
 spellNameInsteadOfWords = false
 emoteSpells = true
+hideSpellWords = false
+unifiedSpells = true
 
+-- Outfits
 allowChangeOutfit = true
 allowChangeColors = true
 allowChangeAddons = true
 disableOutfitsForPrivilegedPlayers = false
 addonsOnlyPremium = false
 
+-- Miscellaneous
+-- NOTE: promptExceptionTracerErrorBox works only with precompiled support feature,
+-- called "exception tracer" (__EXCEPTION_TRACER__ flag).
 dataDirectory = "data/"
 logsDirectory = "data/logs/"
 bankSystem = true
@@ -169,22 +234,33 @@ displaySkillLevelOnAdvance = true
 promptExceptionTracerErrorBox = true
 maximumDoorLevel = 9999
 maxMessageBuffer = 4
+tradeLimit = 100
+defaultDepotSize = 1000
+defaultDepotSizePremium = 2000
+classicEquipmentSlots = true
 
+-- VIP list
 separateVipListPerCharacter = false
-vipListDefaultLimit = 50
+vipListDefaultLimit = 20
 vipListDefaultPremiumLimit = 100
 
+-- Saving-related
+-- useHouseDataStorage usage may be found at README.
 saveGlobalStorage = true
 useHouseDataStorage = true
-storePlayerDirection = true
+storePlayerDirection = false
 
+-- Loot
+-- monsterLootMessage 0 to disable, 1 - only party, 2 - only player, 3 - party or player (like Tibia's)
 checkCorpseOwner = true
 monsterLootMessage = 3
 monsterLootMessageType = 25
 
+-- Ghost mode
 ghostModeInvisibleEffect = false
 ghostModeSpellEffects = true
 
+-- Limits
 idleWarningTime = 14 * 60 * 1000
 idleKickTime = 15 * 60 * 1000
 reportsExpirationAfterReads = 1
@@ -192,31 +268,54 @@ tileLimit = 0
 protectionTileLimit = 0
 houseTileLimit = 0
 
-freePremium = false
+-- Premium-related
+freePremium = true
 premiumForPromotion = true
 
+-- Blessings
+-- NOTE: blessingReduction* regards items/containers loss.
+-- eachBlessReduction is how much each bless reduces the experience/magic/skills loss.
 blessings = true
 blessingOnlyPremium = true
 blessingReductionBase = 30
 blessingReductionDecrement = 5
 eachBlessReduction = 8
 
+-- Rates
+-- NOTE: experienceStages configuration is located in data/XML/stages.xml.
+-- rateExperienceFromPlayers 0 to disable.
 experienceStages = false
 rateExperience = 20.0
 rateExperienceFromPlayers = 0
 rateSkill = 5.0
 rateMagic = 3.0
 rateLoot = 2.0
-rateSpawn = 5
+rateSpawn = 2.0
 
+-- Monster rates
 rateMonsterHealth = 1.0
 rateMonsterMana = 1.0
 rateMonsterAttack = 1.0
 rateMonsterDefense = 1.0
 
+-- Experience from players
+-- NOTE: min~Threshold* set to 0 will disable the minimum threshold:
+-- player will gain experience from every lower leveled player.
+-- max~Threshold* set to 0 will disable the maximum threshold:
+-- player will gain experience from every higher leveled player.
 minLevelThresholdForKilledPlayer = 0.9
 maxLevelThresholdForKilledPlayer = 1.1
 
+-- Stamina
+-- NOTE: Stamina is stored in miliseconds, so seconds are multiplied by 1000.
+-- rateStaminaHits multiplies every hit done a creature, which are later
+-- multiplied by player attack speed.
+-- rateStaminaGain is multiplying every second of logged out time, eg:
+-- 60 * 1000 / 3 = 20 seconds, what gives 1 stamina minute for 3 being logged off.
+-- rateStaminaThresholdGain is dividing in case the normal gain (that is
+-- multiplied by rateStaminaGain, btw.) passed above threshold, eg:
+-- 60 * 1000 / 3 = 20 / 4 = 5 seconds (3 * 4 = 12 minutes for 1 stamina minute).
+-- staminaRatingLimit* is in minutes.
 rateStaminaLoss = 1
 rateStaminaGain = 3
 rateStaminaThresholdGain = 12
@@ -227,6 +326,9 @@ rateStaminaAboveNormal = 1.5
 rateStaminaUnderNormal = 0.5
 staminaThresholdOnlyPremium = true
 
+-- Party
+-- NOTE: experienceShareLevelDifference is float number.
+-- experienceShareLevelDifference is highestLevel * value
 experienceShareRadiusX = 30
 experienceShareRadiusY = 30
 experienceShareRadiusZ = 1
@@ -235,19 +337,27 @@ extraPartyExperienceLimit = 20
 extraPartyExperiencePercent = 5
 experienceShareActivity = 2 * 60 * 1000
 
+-- Global save
+-- NOTE: globalSaveHour means like 03:00, not that it will save every 3 hours,
+-- if you want such a system please check out data/globalevents/globalevents.xml.
 globalSaveEnabled = true
-globalSaveHour = 3
-globalSaveMinute = 10
+globalSaveHour = 12
+globalSaveMinute = 60
 shutdownAtGlobalSave = true
-cleanMapAtGlobalSave = true
+cleanMapAtGlobalSave = false
 
+-- Spawns
 deSpawnRange = 2
 deSpawnRadius = 50
+monsterSpawnWalkback = true
+allowBlockSpawn = true
 
-maxPlayerSummons = 3
+-- Summons
+maxPlayerSummons = 2
 teleportAllSummons = true
 teleportPlayerSummons = false
 
+-- Status
 statusPort = 7171
 ownerName = ""
 ownerEmail = "@otland.net"
@@ -255,18 +365,27 @@ url = "http://otland.net/"
 location = "Brazil"
 displayGamemastersWithOnlineCommand = false
 
+-- Logs
 displayPlayersLogging = true
 prefixChannelLogs = ""
-runFile = ""
-outputLog = ""
+runFile = "server/run.log"
+outputLog = "server/out.log"
 truncateLogsOnStartup = false
+logsPlayers = false
 
+-- Manager
+-- NOTE: managerPassword left blank disables manager.
 managerPort = 7171
 managerLogs = true
 managerPassword = ""
 managerLocalhostOnly = true
 managerConnectionsLimit = 1
 
+-- Admin
+-- NOTE: adminPassword left blank disables manager.
+-- Set to anything if you set adminRequireLogin to false.
+-- adminEncryption available options: rsa1024xtea;
+-- remember to set correct data!
 adminPort = 7171
 adminLogs = true
 adminPassword = ""

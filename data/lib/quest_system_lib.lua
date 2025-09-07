@@ -22,7 +22,8 @@ function sendQuestLog(cid)
     if meetsLevel and meetsStorage then
       questCount = questCount + 1
       msg = msg ..
-          "," .. quest.id .. "," .. quest.name .. "," .. (quest.description or "Sem descrição") .. "," .. completa
+          "," ..
+          quest.id .. "," .. quest.name .. "," .. (quest.description or "No description provided.") .. "," .. completa
     end
   end
 

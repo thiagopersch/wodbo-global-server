@@ -1,68 +1,39 @@
-[27/3/2020 14:12:16] > Using SHA1 encryption
-[27/3/2020 14:12:16] >> Loading RSA key
-[27/3/2020 14:12:16] >> Starting SQL connection
-[27/3/2020 14:12:16] >> Running Database Manager
-[27/3/2020 14:12:16] > Optimized database.
-[27/3/2020 14:12:16] >> Loading items (OTB)
-[27/3/2020 14:12:17] >> Loading items (XML)
-[27/3/2020 14:12:17] [Warning - Items::loadFromXml] Unknown shootType feet
-[27/3/2020 14:12:17] >> Loading groups
-[27/3/2020 14:12:17] >> Loading vocations
-[27/3/2020 14:12:17] >> Loading outfits
-[27/3/2020 14:12:17] >> Loading chat channels
-[27/3/2020 14:12:17] >> Loading script systems
-[27/3/2020 14:12:17] >> Loading mods...
-[27/3/2020 14:12:17] > Loading AutoLoot.xml... done.
-[27/3/2020 14:12:17] > Loading buypremium_command.xml... done.
-[27/3/2020 14:12:17] > Loading customspells.xml... done.
-[27/3/2020 14:12:17] > Loading highscorebook.xml... done.
-[27/3/2020 14:12:17] > Loading Run Event.xml... done.
-[27/3/2020 14:12:17] > Loading Simple Task.xml... done.
-[27/3/2020 14:12:17] > 6 mods were loaded.
-[27/3/2020 14:12:17] >> Loading experience stages
-[27/3/2020 14:12:17] >> Loading monsters
-[27/3/2020 14:12:17] >> Loading map and spawns...
-[27/3/2020 14:12:17] > Map size: 2048x2048.
-[27/3/2020 14:12:17] > Map descriptions: 
-[27/3/2020 14:12:17] "Saved with Remere's Map Editor 3.5"
-[27/3/2020 14:12:17] "No map description available."
-[27/3/2020 14:12:18] > Map loading time: 1.144 seconds.
-[27/3/2020 14:12:18] > Data parsing time: 0.021 seconds.
-[27/3/2020 14:12:30] > Houses synchronization time: 11.484 seconds.
-[27/3/2020 14:12:31] > Content unserialization time: 1.486 seconds.
-[27/3/2020 14:12:31] >> Checking world type... Open PvP
-[27/3/2020 14:12:31] >> Initializing game state and binding services...
+[6/9/2025 16:41:43] > Usando SHA1 criptografia
+[6/9/2025 16:41:43] >> Carregando RSA key
+[6/9/2025 16:41:43] >> Iniciando conexao SQL
+[6/9/2025 16:41:43] >> Executando Gerenciador de Banco de Dados
+[6/9/2025 16:41:43] > Optimized database.
+[6/9/2025 16:41:43] >> Carregando items (OTB)
+[6/9/2025 16:41:43] >> Carregando items (XML)
+[6/9/2025 16:41:44] [Warning - Items::loadFromXml] Duplicate registered item with id 47396
+[6/9/2025 16:41:44] [Warning - Items::loadFromXml] Duplicate registered item with id 49270
+[6/9/2025 16:41:44] >> Carregando Grupos
+[6/9/2025 16:41:44] >> Carregando Vocacoes
+[6/9/2025 16:41:44] >> Carregando Outfits
+[6/9/2025 16:41:44] >> Carregando Canal de Chat
+[6/9/2025 16:41:44] >> Carregando Sistema
+[6/9/2025 16:41:44] >> Carregando Mods...
+[6/9/2025 16:41:44] > Loading AutoLoot.xml... done.
+[6/9/2025 16:41:44] > Loading Automatic Raids.xml... done.
+[6/9/2025 16:41:44] > Loading highscorebook.xml... done.
+[6/9/2025 16:41:44] > Loading Simple Task.xml... done.
+[6/9/2025 16:41:44] > 4 mods were loaded.
+[6/9/2025 16:41:44] >> Carregando EXP Stages
+[6/9/2025 16:41:44] >> Carregando Monstros
+[6/9/2025 16:41:45] >> Carregando Mapa e Spawns...
+[6/9/2025 16:41:46] > Tamanho do Mapa: 64000x64000.
+[6/9/2025 16:41:46] > Descricao do Mapa: 
+[6/9/2025 16:41:46] "Saved with OTAcademy Map Editor 4.1.1"
+[6/9/2025 16:41:46] "No map description available."
+[6/9/2025 16:41:47] > Mapa carregado em: 1.826 segundos.
+[6/9/2025 16:41:47] > Data carregada em: 0.114 segundos.
+[6/9/2025 16:41:47] > Houses carregada em: 0.001 segundos.
+[6/9/2025 16:41:47] > Content unserialization time: 0 seconds.
+[6/9/2025 16:41:47] > Carregando Tipo de PVP... Open PvP
+[6/9/2025 16:41:47] > Inicializando estado do jogo e registrando servicos...
+[6/9/2025 16:41:47] > IP do Servidor: 127.0.0.1
+[6/9/2025 16:41:47] > IP local do Servidor: 172.28.192.1	192.168.1.102	
+[6/9/2025 16:41:47] > Portas do Servidor: 7171	7172	
+[6/9/2025 16:41:47] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[6/9/2025 16:41:57] >> DBOSupreme servidor Online!
 
-[27/3/2020 14:12:31] [Error - GlobalEvent Interface] 
-[27/3/2020 14:12:31] data/globalevents/scripts/init.lua:onStartup
-[27/3/2020 14:12:31] Description: 
-[27/3/2020 14:12:31] data/globalevents/scripts/init.lua:78: attempt to call field 'executeQuery' (a nil value)
-[27/3/2020 14:12:31] stack traceback:
-[27/3/2020 14:12:31] 	data/globalevents/scripts/init.lua:78: in function <data/globalevents/scripts/init.lua:8>
-[27/3/2020 14:12:31] > Global IP address: 127.0.0.1
-[27/3/2020 14:12:31] > Local IP address(es): 192.168.30.8	
-[27/3/2020 14:12:31] > Bound ports: 7171	7172	
-[27/3/2020 14:12:31] >> Everything smells good, server is starting up...
-[27/3/2020 14:12:31] >> DBOnline server Online!
-
-[27/3/2020 14:13:18] Santa Inquisicao has logged in.
-[27/3/2020 14:20:15] Santa Inquisicao has logged out.
-[27/3/2020 14:20:15] Santa Inquisicao has logged in.
-[27/3/2020 14:20:17] Santa Inquisicao has logged out.
-[27/3/2020 14:20:21] Santa Inquisicao has logged in.
-[27/3/2020 14:21:39] Santa Inquisicao has logged out.
-[27/3/2020 14:21:40] Galileu has logged in.
-
-[27/3/2020 14:22:13] [Error - GlobalEvent Interface] 
-[27/3/2020 14:22:13] data/globalevents/scripts/record.lua:onRecord
-[27/3/2020 14:22:13] Description: 
-[27/3/2020 14:22:13] data/globalevents/scripts/record.lua:2: attempt to call field 'executeQuery' (a nil value)
-[27/3/2020 14:22:13] stack traceback:
-[27/3/2020 14:22:13] 	data/globalevents/scripts/record.lua:2: in function <data/globalevents/scripts/record.lua:1>
-[27/3/2020 14:22:13] Santa Inquisicao has logged in.
-[27/3/2020 14:23:6] Galileu has logged out.
-[27/3/2020 14:23:10] Galileu has logged in.
-[27/3/2020 14:28:39] Galileu has logged out.
-[27/3/2020 14:29:17] > Saving server...
-[27/3/2020 14:29:18] > SAVE: Complete in 1.578 seconds using relational house storage.
-[27/3/2020 14:30:29] Santa Inquisicao has logged out.

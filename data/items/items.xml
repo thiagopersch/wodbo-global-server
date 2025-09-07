@@ -2342,7 +2342,7 @@
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2148" article="a" name="gold coin">
-		<attribute key="worth" value="1"/>
+		<attribute key="worth" value="1" />
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2149" article="a" name="small emerald">
@@ -2356,7 +2356,7 @@
 		<attribute key="description" value="There are many rumours about these magic gems." />
 	</item>
 	<item id="2152" article="a" name="platinum coin">
-		<attribute key="worth" value="100"/>
+		<attribute key="worth" value="100" />
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2153" article="a" name="violet gem">
@@ -2381,7 +2381,7 @@
 		<attribute key="weight" value="20" />
 	</item>
 	<item id="2160" article="a" name="crystal coin">
-		<attribute key="worth" value="10000"/>
+		<attribute key="worth" value="10000" />
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="2161" article="a" name="strange talisman">
@@ -2393,7 +2393,6 @@
 		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2162" article="a" name="magic light wand">
-
 		<attribute key="slotType" value="ammo" />
 		<attribute key="weight" value="1500" />
 		<attribute key="stopduration" value="1" />
@@ -2409,7 +2408,6 @@
 	<item id="2164" article="a" name="might ring">
 		<attribute key="weight" value="100" />
 		<attribute key="slotType" value="ring" />
-
 		<attribute key="charges" value="20" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentAll" value="20" />
@@ -2418,7 +2416,6 @@
 	<item id="2165" article="a" name="stealth ring">
 		<attribute key="weight" value="100" />
 		<attribute key="slotType" value="ring" />
-
 		<attribute key="transformEquipTo" value="2202" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -2426,7 +2423,6 @@
 	<item id="2166" article="a" name="power ring">
 		<attribute key="weight" value="80" />
 		<attribute key="slotType" value="ring" />
-
 		<attribute key="transformEquipTo" value="2203" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -2434,7 +2430,6 @@
 	<item id="2167" article="an" name="energy ring">
 		<attribute key="weight" value="80" />
 		<attribute key="slotType" value="ring" />
-
 		<attribute key="transformEquipTo" value="2204" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -2442,7 +2437,6 @@
 	<item id="2168" article="a" name="life ring">
 		<attribute key="weight" value="80" />
 		<attribute key="slotType" value="ring" />
-
 		<attribute key="transformEquipTo" value="2205" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -2450,7 +2444,6 @@
 	<item id="2169" article="a" name="time ring">
 		<attribute key="weight" value="90" />
 		<attribute key="slotType" value="ring" />
-
 		<attribute key="transformEquipTo" value="2206" />
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
@@ -2458,7 +2451,6 @@
 	<item id="2170" article="a" name="silver amulet">
 		<attribute key="weight" value="500" />
 		<attribute key="slotType" value="necklace" />
-
 		<attribute key="charges" value="200" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentEarth" value="10" />
@@ -2469,12 +2461,10 @@
 		<attribute key="weight" value="600" />
 		<attribute key="armor" value="2" />
 		<attribute key="slotType" value="necklace" />
-
 	</item>
 	<item id="2172" article="a" name="bronze amulet">
 		<attribute key="weight" value="500" />
 		<attribute key="slotType" value="necklace" />
-
 		<attribute key="charges" value="200" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentManaDrain" value="20" />
@@ -2483,12 +2473,9 @@
 	<item id="2173" article="an" name="amulet of loss">
 		<attribute key="weight" value="420" />
 		<attribute key="slotType" value="necklace" />
-
 		<attribute key="charges" value="1" />
 	</item>
 	<item id="2174" article="a" name="strange symbol">
-
-
 		<attribute key="weight" value="200" />
 	</item>
 	<item id="2175" article="a" name="spellbook">
@@ -2497,25 +2484,19 @@
 		<attribute key="weight" value="1800" />
 		<attribute key="defense" value="14" />
 		<attribute key="weaponType" value="shield" />
-
-
 	</item>
 	<item id="2176" article="an" name="orb">
-
 		<attribute key="weight" value="800" />
 	</item>
 	<item id="2177" article="a" name="life crystal">
-
 		<attribute key="weight" value="263" />
 	</item>
 	<item id="2178" article="a" name="mind stone">
-
 		<attribute key="weight" value="250" />
 	</item>
 	<item id="2179" article="a" name="gold ring">
 		<attribute key="weight" value="100" />
 		<attribute key="slotType" value="ring" />
-
 	</item>
 	<item id="2180" article="the" name="orb of nature" />
 	<item id="2181" article="a" name="terra rod">
@@ -2592,7 +2573,6 @@
 		<attribute key="description" value="Surges of energy rush through the tip of this wand." />
 		<attribute key="weight" value="1900" />
 		<attribute key="weaponType" value="wand" />
-
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />
 	</item>
@@ -3414,19 +3394,22 @@
 		<attribute key="duration" value="86400" />
 	</item>
 	<item id="2352" article="a" name="crystal arrow">
-		<attribute key="description" value="This arrow seems not suitable for the use with ordinary bows. It seems to be rotting rapidly." />
+		<attribute key="description"
+			value="This arrow seems not suitable for the use with ordinary bows. It seems to be rotting rapidly." />
 		<attribute key="weight" value="100" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="86400" />
 	</item>
 	<item id="2353" article="a" name="burning heart">
-		<attribute key="description" value="It is still beating with unholy life. It seems to be rotting rapidly." />
+		<attribute key="description"
+			value="It is still beating with unholy life. It seems to be rotting rapidly." />
 		<attribute key="weight" value="400" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="86400" />
 	</item>
 	<item id="2354" article="an" name="ornamented ankh">
-		<attribute key="description" value="This ancient relic shows signs of untold age. It seems to be rotting rapidly." />
+		<attribute key="description"
+			value="This ancient relic shows signs of untold age. It seems to be rotting rapidly." />
 		<attribute key="weight" value="200" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="86400" />
@@ -3516,7 +3499,6 @@
 		<attribute key="defense" value="12" />
 		<attribute key="attack" value="14" />
 		<attribute key="weaponType" value="sword" />
-
 		<attribute key="extradef" value="1" />
 
 	</item>
@@ -3525,7 +3507,6 @@
 		<attribute key="defense" value="25" />
 		<attribute key="attack" value="30" />
 		<attribute key="weaponType" value="sword" />
-
 		<attribute key="slotType" value="two-handed" />
 	</item>
 	<item id="2378" article="a" name="battle axe">
@@ -3533,7 +3514,6 @@
 		<attribute key="defense" value="10" />
 		<attribute key="attack" value="25" />
 		<attribute key="weaponType" value="axe" />
-
 		<attribute key="slotType" value="two-handed" />
 	</item>
 	<item id="2379" article="a" name="dagger">
@@ -4141,7 +4121,8 @@
 		<attribute key="slotType" value="two-handed" />
 	</item>
 	<item id="2453" article="an" name="arcane staff">
-		<attribute key="description" value="It is enchanted with ancient magic that renders a weak staff into a powerful weapon." />
+		<attribute key="description"
+			value="It is enchanted with ancient magic that renders a weak staff into a powerful weapon." />
 		<attribute key="weight" value="4000" />
 		<attribute key="defense" value="30" />
 		<attribute key="attack" value="50" />
@@ -17328,7 +17309,6 @@
 		<attribute key="weight" value="6900" />
 		<attribute key="defense" value="37" />
 		<attribute key="weaponType" value="shield" />
-
 		<attribute key="duration" value="900" />
 		<attribute key="decayTo" value="8905" />
 		<attribute key="healthGain" value="1" />
@@ -45817,7 +45797,8 @@
 	<item id="28343" article="a" name="ransom note" editorsuffix=" (Immobile)" />
 	<item id="28344" editorsuffix=" (Blank)" />
 	<item id="28345" article="a" name="golden brush" plural="golden brushes">
-		<attribute key="description" value="The owner of this golden brush can be proud of supporting arts." />
+		<attribute key="description"
+			value="The owner of this golden brush can be proud of supporting arts." />
 		<attribute key="weight" value="1240" />
 	</item>
 	<item id="28346" article="a" name="mysterious amphora" editorsuffix=" (Immobile)" />
@@ -45873,7 +45854,8 @@
 		<attribute key="weight" value="60" />
 	</item>
 	<item id="28358" article="a" name="little bowl of myrrh" plural="little bowls of myrrh">
-		<attribute key="description" value="You see a little bowl of myrrh. It smells like mummy's spirit." />
+		<attribute key="description"
+			value="You see a little bowl of myrrh. It smells like mummy's spirit." />
 		<attribute key="weight" value="60" />
 	</item>
 	<item id="28359" article="a" name="dead brood" />
@@ -45900,7 +45882,8 @@
 		<attribute key="weight" value="120" />
 	</item>
 	<item id="28375" article="a" name="gold converter">
-		<attribute key="description" value="You bought this item in the Store or gained it as a daily reward. This item cannot be traded." />
+		<attribute key="description"
+			value="You bought this item in the Store or gained it as a daily reward. This item cannot be traded." />
 		<attribute key="charges" value="500" />
 		<attribute key="showCharges" value="1" />
 		<attribute key="decayTo" value="0" />
@@ -45908,19 +45891,23 @@
 		<attribute key="moveable" value="0" />
 	</item>
 	<item id="28376" article="a" name="reward shrine">
-		<attribute key="description" value="It depicts the two suns of Tibia, symbolising the course of a day." />
+		<attribute key="description"
+			value="It depicts the two suns of Tibia, symbolising the course of a day." />
 		<attribute key="rotateTo" value="28377" />
 	</item>
 	<item id="28377" article="a" name="reward shrine">
-		<attribute key="description" value="It depicts the two suns of Tibia, symbolising the course of a day." />
+		<attribute key="description"
+			value="It depicts the two suns of Tibia, symbolising the course of a day." />
 		<attribute key="rotateTo" value="28376" />
 	</item>
 	<item id="28378" article="a" name="shiny reward shrine">
-		<attribute key="description" value="It depicts the two suns of Tibia, symbolising the course of a day." />
+		<attribute key="description"
+			value="It depicts the two suns of Tibia, symbolising the course of a day." />
 		<attribute key="rotateTo" value="28379" />
 	</item>
 	<item id="28379" article="a" name="shiny reward shrine">
-		<attribute key="description" value="It depicts the two suns of Tibia, symbolising the course of a day." />
+		<attribute key="description"
+			value="It depicts the two suns of Tibia, symbolising the course of a day." />
 		<attribute key="rotateTo" value="28378" />
 	</item>
 	<item id="28380" article="a" name="stuffed moohtant" />
@@ -45974,7 +45961,8 @@
 		<attribute key="weight" value="250" />
 	</item>
 	<item id="28401" article="a" name="guidebook">
-		<attribute key="description" value="Someone's guidebook. It looks rather used and seems to have been read many times." />
+		<attribute key="description"
+			value="Someone's guidebook. It looks rather used and seems to have been read many times." />
 		<attribute key="weight" value="150" />
 	</item>
 	<item id="28402" article="a" name="broken compass">
@@ -47837,16 +47825,16 @@
 		<attribute key="rotateTo" value="28768" />
 
 	</item>
-	<item id="28770" article="a" name="rolled-up verdant carpet"/>
-	<item id="28771" article="a" name="verdant carpet"/>
-	<item id="28772" article="a" name="rolled-up shaggy carpet"/>
-	<item id="28773" article="a" name="shaggy carpet"/>
-	<item id="28774" article="a" name="rolled-up mystic carpet"/>
-	<item id="28775" article="a" name="mystic carpet"/>
-	<item id="28776" article="a" name="pile of stone planks"/>
-	<item id="28777" name="stone tiles"/>
-	<item id="28778" name="wooden planks"/>
-	<item id="28779" article="a" name="pile of wooden planks"/>
+	<item id="28770" article="a" name="rolled-up verdant carpet" />
+	<item id="28771" article="a" name="verdant carpet" />
+	<item id="28772" article="a" name="rolled-up shaggy carpet" />
+	<item id="28773" article="a" name="shaggy carpet" />
+	<item id="28774" article="a" name="rolled-up mystic carpet" />
+	<item id="28775" article="a" name="mystic carpet" />
+	<item id="28776" article="a" name="pile of stone planks" />
+	<item id="28777" name="stone tiles" />
+	<item id="28778" name="wooden planks" />
+	<item id="28779" article="a" name="pile of wooden planks" />
 	<item id="28780" article="a" name="dead lion" editorsuffix=" (Not Decaying)" />
 	<item id="28781" name="remains of a misguided" editorsuffix=" (Removed?)">
 		<attribute key="containerSize" value="24" />
@@ -47913,12 +47901,12 @@
 	</item>
 	<item id="28799" name="small stones" />
 	<item fromid="28800" toid="28805" editorsuffix=" (Blank)" />
-	<item id="28806" article="a" name="wheat carpet"/>
-	<item id="28807" article="a" name="rolled-up wheat carpet"/>
-	<item id="28808" article="a" name="rolled-up crested carpet"/>
-	<item id="28809" article="a" name="crested carpet"/>
-	<item id="28810" article="a" name="rolled-up decorated carpet"/>
-	<item id="28811" article="a" name="decorated carpet"/>
+	<item id="28806" article="a" name="wheat carpet" />
+	<item id="28807" article="a" name="rolled-up wheat carpet" />
+	<item id="28808" article="a" name="rolled-up crested carpet" />
+	<item id="28809" article="a" name="crested carpet" />
+	<item id="28810" article="a" name="rolled-up decorated carpet" />
+	<item id="28811" article="a" name="decorated carpet" />
 	<item id="28812" article="an" name="ornate chair">
 		<attribute key="rotateTo" value="28813" />
 
@@ -51480,7 +51468,8 @@
 	<item fromid="32005" toid="32006" article="a" name="sarcophagus" editorsuffix=" (Ectoplasm)" />
 	<item id="32007" article="a" name="strangely ornamented key">
 		<attribute key="weight" value="100" />
-		<attribute key="description" value="This key belongs to an ancient being which will reclaim it if you do not hurry." />
+		<attribute key="description"
+			value="This key belongs to an ancient being which will reclaim it if you do not hurry." />
 		<attribute key="duration" value="1800" />
 		<attribute key="showattributes" value="1" />
 	</item>
@@ -51653,7 +51642,8 @@
 	</item>
 	<item id="32088" article="a" name="hireling lamp">
 		<attribute key="weight" value="1000" />
-		<attribute key="description" value="This mysterious lamp summons your very own personal hireling." />
+		<attribute key="description"
+			value="This mysterious lamp summons your very own personal hireling." />
 		<attribute key="pickupable" value="0" />
 		<attribute key="moveable" value="0" />
 	</item>
@@ -55650,7 +55640,7 @@
 	</item>
 	<item id="34601" article="a" name="pirate flag" />
 	<item id="34602" article="a" name="treasure map" />
-	<item id="34603" article="a" name="skeleton in a cage"/>
+	<item id="34603" article="a" name="skeleton in a cage" />
 	<item id="34604" article="a" name="ship's wheel" />
 	<item id="34605" article="a" name="mermaid figure head">
 		<attribute key="rotateTo" value="34606" />
@@ -55660,7 +55650,7 @@
 	</item>
 	<item id="34607" article="a" name="white shark trophy" />
 	<!-- <item fromid="34608" toid="34610" editorsuffix=" (Blank)" /> -->
-	<item id="34611" article="a" name="monkey"/>
+	<item id="34611" article="a" name="monkey" />
 	<item id="34612" article="a" name="monkey" editorsuffix=" (Activated)">
 		<attribute key="decayTo" value="34611" />
 		<attribute key="duration" value="3" />
@@ -59501,7 +59491,8 @@
 	</item>
 	<!-- <item id="36764" editorsuffix=" (Blank)" /> -->
 	<item id="36765" article="a" name="bag you desire">
-		<attribute key="description" value="It contains the most powerful artifacts from the depths of Zarganash's darkest realms." />
+		<attribute key="description"
+			value="It contains the most powerful artifacts from the depths of Zarganash's darkest realms." />
 		<attribute key="weight" value="150" />
 	</item>
 	<item id="36766" article="a" name="slightly feline statue" />
@@ -59732,7 +59723,8 @@
 		<attribute key="weight" value="15000" />
 	</item>
 	<item id="36814" article="a" name="lion amulet">
-		<attribute key="description" value="The heraldic animal of the Order of the Lion is emblazoned on this imposing amulet. It is worn with pride by true knights of the lion." />
+		<attribute key="description"
+			value="The heraldic animal of the Order of the Lion is emblazoned on this imposing amulet. It is worn with pride by true knights of the lion." />
 		<attribute key="weight" value="520" />
 		<attribute key="armor" value="3" />
 		<attribute key="slotType" value="necklace" />
@@ -60118,7 +60110,8 @@
 	</item>
 	<item fromid="36912" toid="36913" article="a" name="lion column" />
 	<item id="36914" name="red silk flower">
-		<attribute key="description" value="The petals are made of silk, the buds and pistil of rubies. The werelions of the Darama Desert often use such flowers as love pledges." />
+		<attribute key="description"
+			value="The petals are made of silk, the buds and pistil of rubies. The werelions of the Darama Desert often use such flowers as love pledges." />
 		<attribute key="weight" value="30" />
 	</item>
 	<item id="36915" article="a" name="loose ventilation grille" />
@@ -60149,19 +60142,23 @@
 	</item>
 	<item id="36924" article="a" name="baby Munster">
 		<attribute key="weight" value="1703" />
-		<attribute key="description" value="Legends say that when he grew up, he accidentally swallowed his favourite toy." />
+		<attribute key="description"
+			value="Legends say that when he grew up, he accidentally swallowed his favourite toy." />
 	</item>
 	<item id="36925" article="a" name="baby Munster" editorsuffix=" (Activated)">
 		<attribute key="weight" value="1703" />
 		<attribute key="decayTo" value="36924" />
 		<attribute key="duration" value="3" />
-		<attribute key="description" value="Legends say that when he grew up, he accidentally swallowed his favourite toy." />
+		<attribute key="description"
+			value="Legends say that when he grew up, he accidentally swallowed his favourite toy." />
 	</item>
 	<item id="36926" name="glowworms" editorsuffix=" (Activated)">
-		<attribute key="description" value="You see a glowworms. Some glowworms are said to be giving off a mysterious, soothing light." />
+		<attribute key="description"
+			value="You see a glowworms. Some glowworms are said to be giving off a mysterious, soothing light." />
 	</item>
 	<item id="36927" name="glowworms">
-		<attribute key="description" value="You see a glowworms. Some glowworms are said to be giving off a mysterious, soothing light." />
+		<attribute key="description"
+			value="You see a glowworms. Some glowworms are said to be giving off a mysterious, soothing light." />
 	</item>
 	<item id="36928" article="an" name="oven">
 		<attribute key="rotateTo" value="36930" />
@@ -60312,13 +60309,15 @@
 	</item>
 	<item id="36982" article="a" name="wicked witch">
 		<attribute key="weight" value="1990" />
-		<attribute key="description" value="She was one of Ferumbras' former students at the Noodles Academy." />
+		<attribute key="description"
+			value="She was one of Ferumbras' former students at the Noodles Academy." />
 	</item>
 	<item id="36983" article="a" name="wicked witch" editorsuffix=" (Activated)">
 		<attribute key="weight" value="1990" />
 		<attribute key="decayTo" value="36982" />
 		<attribute key="duration" value="4" />
-		<attribute key="description" value="She was one of Ferumbras' former students at the Noodles Academy." />
+		<attribute key="description"
+			value="She was one of Ferumbras' former students at the Noodles Academy." />
 	</item>
 	<item id="36984" article="a" name="bronze cup" editorsuffix=" (Valour)">
 		<attribute key="weight" value="1000" />
@@ -60637,8 +60636,8 @@
 	<item id="37840" article="a" name="pair of bellows">
 		<attribute key="rotateTo" value="37839" />
 	</item>
-	<item fromid="37841" toid="37842" article="an" name="anvil"/>
-	<item fromid="37843" toid="37844" article="a" name="water bucket"/>
+	<item fromid="37841" toid="37842" article="an" name="anvil" />
+	<item fromid="37843" toid="37844" article="a" name="water bucket" />
 	<item id="37845" article="a" name="wrought-iron bed" editorsuffix=" (Male)">
 		<attribute key="description" value="Someone is sleeping there." />
 		<attribute key="type" value="bed" />
@@ -62002,7 +62001,7 @@
 	<item id="39293" article="a" name="volcanic chair">
 		<attribute key="rotateTo" value="39290" />
 	</item>
-	<item fromid="39294" toid="39295" article="a" name="volcanic table"/>
+	<item fromid="39294" toid="39295" article="a" name="volcanic table" />
 	<item id="39296" article="a" name="volcanic shelf">
 		<attribute key="rotateTo" value="39297" />
 	</item>
@@ -62435,7 +62434,8 @@
 		<attribute key="weight" value="210" />
 	</item>
 	<item id="39380" article="a" name="strike enhancement">
-		<attribute key="description" value="Drinking this potion temporarily increases critical hit chance." />
+		<attribute key="description"
+			value="Drinking this potion temporarily increases critical hit chance." />
 		<attribute key="weight" value="210" />
 	</item>
 	<item id="39381" article="a" name="stamina extension">
@@ -63324,7 +63324,8 @@
 			value="This cloth resembles a prime artefact. It feels soft to the touch and seems to have almost no weight." />
 	</item>
 	<item id="39606" article="the" name="cobra amulet carpet">
-		<attribute key="description" value="This carpet resembles the cobra amulet prime artefact. It feels soft to the touch and seems to have almost no weight." />
+		<attribute key="description"
+			value="This carpet resembles the cobra amulet prime artefact. It feels soft to the touch and seems to have almost no weight." />
 	</item>
 	<item id="39607" article="a" name="folded artefact carpet I" plural="folded artefact carpets I"
 		editorsuffix=" (Sapling)">
@@ -65031,23 +65032,28 @@
 	<item id="40958" name="Morshabaal's extract">
 		<attribute key="weight" value="3150" />
 		<attribute key="showcount" value="0" />
-		<attribute key="description" value="Only the chosen ones have witnessed this extremely rare phenomenon of draptor transformation." />
+		<attribute key="description"
+			value="Only the chosen ones have witnessed this extremely rare phenomenon of draptor transformation." />
 	</item>
 	<item id="40959" article="a" name="sculpture of a fox" editorsuffix=" (Neutral)">
-		<attribute key="description" value="It symbolises the spirit of the fox. A mystic aura surrounds this sculpture." />
+		<attribute key="description"
+			value="It symbolises the spirit of the fox. A mystic aura surrounds this sculpture." />
 	</item>
 	<item id="40960" article="a" name="sculpture of a fox" editorsuffix=" (Little Fox)">
-		<attribute key="description" value="It symbolises the spirit of the fox. A mystic aura surrounds this sculpture." />
+		<attribute key="description"
+			value="It symbolises the spirit of the fox. A mystic aura surrounds this sculpture." />
 	</item>
 	<item id="40961" article="a" name="sculpture of a fox" editorsuffix=" (Little Fox Appearing)">
 		<attribute key="decayTo" value="40960" />
 		<attribute key="duration" value="3" />
-		<attribute key="description" value="It symbolises the spirit of the fox. A mystic aura surrounds this sculpture." />
+		<attribute key="description"
+			value="It symbolises the spirit of the fox. A mystic aura surrounds this sculpture." />
 	</item>
 	<item id="40962" article="a" name="sculpture of a fox" editorsuffix=" (Little Fox Disappearing)">
 		<attribute key="decayTo" value="40960" />
 		<attribute key="duration" value="2" />
-		<attribute key="description" value="It symbolises the spirit of the fox. A mystic aura surrounds this sculpture." />
+		<attribute key="description"
+			value="It symbolises the spirit of the fox. A mystic aura surrounds this sculpture." />
 	</item>
 	<item id="40963" article="a" name="Zaoan divider">
 		<attribute key="rotateTo" value="40964" />
@@ -67251,7 +67257,6 @@
 	<item fromid="47406" toid="47417" article="a" name="luxury bed">
 		<attribute key="type" value="bed" />
 	</item>
-	<item id="47396" article="the" name="grass flowyers carpet" />
 	<item id="45575" article="a" name="ancient doll">
 		<attribute key="weight" value="850" />
 	</item>
@@ -67708,12 +67713,6 @@
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="49269" article="a" name="dead perfect janemba">
-		<attribute key="containerSize" value="32" />
-		<attribute key="decayTo" value="0" />
-		<attribute key="duration" value="60" />
-		<attribute key="corpseType" value="blood" />
-	</item>
-	<item id="49270" article="a" name="dead perfect cell">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="60" />
@@ -68805,7 +68804,6 @@
 		<attribute key="duration" value="60" />
 		<attribute key="corpseType" value="blood" />
 	</item>
-
 	<item id="49452" article="a" name="dragon ball backpack">
 		<attribute key="weight" value="1500" />
 		<attribute key="containerSize" value="35" />
@@ -68813,27 +68811,205 @@
 	</item>
 	<item id="49453" article="a" name="death bag">
 		<attribute key="weight" value="1500" />
-		<attribute key="containerSize" value="18" />
+		<attribute key="containerSize" value="20" />
 		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49454" article="a" name="leaf backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="32" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49455" article="a" name="fusion armor">
+		<attribute key="weight" value="1500" />
+		<attribute key="armor" value="40" />
+		<attribute key="healthGain" value="500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="speed" value="100" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49456" article="a" name="hunter legs">
+		<attribute key="weight" value="900" />
+		<attribute key="armor" value="35" />
+		<attribute key="healthGain" value="1250" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1250" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49457" article="a" name="tsuful boots">
+		<attribute key="weight" value="900" />
+		<attribute key="armor" value="30" />
+		<attribute key="healthGain" value="180" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="180" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="speed" value="150" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49458" article="a" name="bills legs">
+		<attribute key="weight" value="300" />
+		<attribute key="armor" value="40" />
+		<attribute key="healthGain" value="600" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="600" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="speed" value="1500" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49459" article="a" name="golden freeza boots">
+		<attribute key="weight" value="300" />
+		<attribute key="armor" value="38" />
+		<attribute key="healthGain" value="500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="speed" value="500" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49460" article="a" name="hitto boots">
+		<attribute key="weight" value="300" />
+		<attribute key="armor" value="30" />
+		<attribute key="healthGain" value="300" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="300" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="speed" value="1100" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49461" article="a" name="unknown legs">
+		<attribute key="weight" value="400" />
+		<attribute key="armor" value="10" />
+		<attribute key="healthGain" value="190" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="190" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49462" article="a" name="goku ssj5 legs">
+		<attribute key="weight" value="600" />
+		<attribute key="armor" value="35" />
+		<attribute key="healthGain" value="450" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="450" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="speed" value="1100" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49463" article="a" name="janemba legs">
+		<attribute key="weight" value="800" />
+		<attribute key="armor" value="39" />
+		<attribute key="healthGain" value="490" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="490" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="2" />
+		<attribute key="speed" value="200" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49464" article="a" name="cell armor">
+		<attribute key="weight" value="1200" />
+		<attribute key="armor" value="45" />
+		<attribute key="healthGain" value="500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="3" />
+		<attribute key="speed" value="200" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49465" article="a" name="yardrats armor">
+		<attribute key="weight" value="600" />
+		<attribute key="armor" value="15" />
+		<attribute key="healthGain" value="120" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="speed" value="50" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49466" article="a" name="zaiko armor">
+		<attribute key="weight" value="600" />
+		<attribute key="armor" value="34" />
+		<attribute key="healthGain" value="450" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="450" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="3" />
+		<attribute key="speed" value="250" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49467" article="a" name="wand of abisal venom death">
+		<attribute key="weight" value="1900" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="death" />
+		<attribute key="range" value="10" />
+	</item>
+	<item id="49468" article="a" name="demon wolverine glove">
+		<attribute key="weight" value="1900" />
+		<attribute key="defense" value="10" />
+		<attribute key="attack" value="25" />
+		<attribute key="weaponType" value="axe" />
 	</item>
 	<item id="49469" article="a" name="shinigami bag">
 		<attribute key="weight" value="1500" />
-		<attribute key="containerSize" value="18" />
+		<attribute key="containerSize" value="20" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="49470" article="a" name="modern bag">
 		<attribute key="weight" value="1500" />
-		<attribute key="containerSize" value="30" />
+		<attribute key="containerSize" value="35" />
 		<attribute key="slotType" value="backpack" />
 	</item>
-	<item id="49471" article="a" name="christmas bag">
+	<item id="49471" article="a" name="christmas backpack">
 		<attribute key="weight" value="1500" />
-		<attribute key="containerSize" value="30" />
+		<attribute key="containerSize" value="35" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="49472" article="a" name="war backpack">
 		<attribute key="weight" value="1500" />
-		<attribute key="containerSize" value="50" />
+		<attribute key="description"
+			value="backpack used in ancient times by the greatest warriors in combat." />
+		<attribute key="containerSize" value="35" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49473" article="a" name="ladybird backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49474" article="a" name="crystal backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49475" article="a" name="desert backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="speed" value="100" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49476" article="a" name="cake backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49477" article="a" name="energy backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="absorbPercentEnergy" value="30" />
+		<attribute key="suppressEnergy" value="30" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49478" article="a" name="book backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="absorbPercentEnergy" value="30" />
+		<attribute key="suppressEnergy" value="30" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="magiclevelpoints" value="10" />
+		<attribute key="speed" value="150" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="49479" article="a" name="gray capsule bag">
@@ -68880,6 +69056,793 @@
 		<attribute key="weight" value="1500" />
 		<attribute key="containerSize" value="22" />
 		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49488" article="a" name="ice golem ancient world helmet">
+		<attribute key="weight" value="600" />
+		<attribute key="armor" value="15" />
+		<attribute key="healthGain" value="2500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="2500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentice" value="15" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49489" article="a" name="ice golem ancient world necklace">
+		<attribute key="weight" value="600" />
+		<attribute key="healthGain" value="3500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="3500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentice" value="15" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="slotType" value="necklace" />
+	</item>
+	<item id="49490" article="a" name="quincy necklace">
+		<attribute key="weight" value="500" />
+		<attribute key="healthGain" value="350" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="350" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentholy" value="15" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="slotType" value="necklace" />
+	</item>
+	<item id="49491" article="a" name="shinigami badge necklace">
+		<attribute key="weight" value="200" />
+		<attribute key="healthGain" value="450" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="450" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="preventloss" value="1" />
+		<attribute key="absorbpercentall" value="15" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="slotType" value="necklace" />
+	</item>
+	<item id="49492" article="a" name="enchanted holy crossbow">
+		<attribute key="weight" value="4000" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="ammoType" value="bolt" />
+		<attribute key="range" value="10" />
+	</item>
+	<item id="49493" article="a" name="enchanted infernal crossbow">
+		<attribute key="weight" value="4000" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="ammoType" value="bolt" />
+		<attribute key="range" value="10" />
+	</item>
+	<item id="49494" article="a" name="enchanted infernal bow">
+		<attribute key="weight" value="3100" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="range" value="8" />
+	</item>
+	<item id="49495" article="a" name="enchanted crystal bow">
+		<attribute key="weight" value="3100" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="range" value="8" />
+	</item>
+	<item id="49496" article="a" name="enchanted holy bow">
+		<attribute key="weight" value="3100" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="range" value="8" />
+	</item>
+	<item id="49497" article="a" name="enchanted quincy bow">
+		<attribute key="weight" value="3100" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="range" value="8" />
+	</item>
+	<item id="49498" article="a" name="enchanted holy wand">
+		<attribute key="weight" value="1900" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="holy" />
+		<attribute key="range" value="10" />
+	</item>
+	<item id="49499" article="a" name="ice golem ancient world boots">
+		<attribute key="weight" value="600" />
+		<attribute key="armor" value="15" />
+		<attribute key="healthGain" value="2500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="2500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentice" value="15" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="speed" value="250" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49500" article="a" name="ice golem ancient world ring">
+		<attribute key="weight" value="600" />
+		<attribute key="armor" value="15" />
+		<attribute key="healthGain" value="1500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentice" value="15" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="speed" value="250" />
+		<attribute key="weapontype" value="ring" />
+	</item>
+	<item id="49501" article="a" name="ice golem ancient world shield">
+		<attribute key="weight" value="600" />
+		<attribute key="armor" value="90" />
+		<attribute key="healthGain" value="1500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentice" value="25" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="speed" value="250" />
+		<attribute key="slotType" value="ring" />
+	</item>
+	<item id="49502" article="a" name="demonic fusion ear studs">
+		<attribute key="weight" value="600" />
+		<attribute key="manaGain" value="1200" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentall" value="15" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="speed" value="50" />
+		<attribute key="weapontype" value="ring" />
+	</item>
+	<item id="49503" article="a" name="experience scroll purple">
+		<attribute key="weight" value="600" />
+		<attribute key="description" value="This scroll grants the player 1kk experience." />
+	</item>
+	<item id="49504" article="a" name="experience scroll blue">
+		<attribute key="weight" value="600" />
+		<attribute key="description" value="This scroll grants the player 3kk experience." />
+	</item>
+	<item id="49505" article="a" name="experience scroll red">
+		<attribute key="weight" value="600" />
+		<attribute key="description" value="This scroll grants the player 5kk experience." />
+	</item>
+	<item id="49506" article="a" name="enchanted experience scroll blue">
+		<attribute key="weight" value="600" />
+		<attribute key="description" value="This scroll grants the player 10kk experience." />
+	</item>
+	<item id="49507" article="a" name="enchanted experience scroll gray">
+		<attribute key="weight" value="600" />
+		<attribute key="description" value="This scroll grants the player 20kk experience." />
+	</item>
+	<item id="49508" article="a" name="android 16 doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49509" article="a" name="goku doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49510" article="a" name="vegeta doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49511" article="a" name="trunks doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49512" article="a" name="buu doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49513" article="a" name="piccolo doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49514" article="a" name="child gohan doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49515" article="a" name="adolescent gohan doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49516" article="a" name="perfect cell doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49517" article="a" name="uub doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49518" article="a" name="android 17 doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49519" article="a" name="android 18 doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49520" article="a" name="cooler doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49521" article="a" name="tsuful doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49522" article="a" name="dende doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49523" article="a" name="gotenks doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49524" article="a" name="janemba doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49525" article="a" name="jenk doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49526" article="a" name="mr. kaioh doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49527" article="a" name="bardock doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49528" article="a" name="brolly ssj doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49529" article="a" name="adult gohan doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49530" article="a" name="future trunks doll">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49531" article="a" name="colored worms">
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="49532" article="a" name="hunter helmet">
+		<attribute key="weight" value="900" />
+		<attribute key="armor" value="35" />
+		<attribute key="healthGain" value="1250" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1250" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49533" article="a" name="golden freeza glove">
+		<attribute key="weight" value="2200" />
+		<attribute key="defense" value="25" />
+		<attribute key="attack" value="35" />
+		<attribute key="weaponType" value="axe" />
+	</item>
+	<item id="49534" article="a" name="hitto glove">
+		<attribute key="weight" value="1300" />
+		<attribute key="defense" value="40" />
+		<attribute key="attack" value="35" />
+		<attribute key="weaponType" value="axe" />
+	</item>
+	<item id="49535" article="a" name="getsuga sword">
+		<attribute key="weight" value="3300" />
+		<attribute key="defense" value="40" />
+		<attribute key="attack" value="44" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49536" article="a" name="enchanted getsuga sword">
+		<attribute key="weight" value="3300" />
+		<attribute key="defense" value="70" />
+		<attribute key="attack" value="65" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49537" article="a" name="wabisuke zanpakuto">
+		<attribute key="weight" value="3300" />
+		<attribute key="defense" value="35" />
+		<attribute key="attack" value="35" />
+		<attribute key="absorbpercentall" value="80" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49538" article="a" name="zangetsu zanpakuto">
+		<attribute key="weight" value="4300" />
+		<attribute key="defense" value="50" />
+		<attribute key="attack" value="45" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49539" article="a" name="katen kyokotsu zanpakuto">
+		<attribute key="weight" value="3300" />
+		<attribute key="defense" value="60" />
+		<attribute key="attack" value="55" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49540" article="a" name="zabimaru zanpakuto">
+		<attribute key="weight" value="3300" />
+		<attribute key="defense" value="49" />
+		<attribute key="attack" value="46" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49541" article="a" name="enchanted tensa zangetsu zanpakuto">
+		<attribute key="weight" value="3300" />
+		<attribute key="defense" value="80" />
+		<attribute key="attack" value="80" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="speed" value="500" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49542" article="a" name="tensa zangetsu zanpakuto">
+		<attribute key="weight" value="3300" />
+		<attribute key="defense" value="70" />
+		<attribute key="attack" value="70" />
+		<attribute key="magiclevelpoints" value="2" />
+		<attribute key="speed" value="250" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49543" article="a" name="brazo izquierda del diablo">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="35" />
+		<attribute key="attack" value="40" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49544" article="a" name="unknown sword">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="28" />
+		<attribute key="attack" value="38" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49545" article="a" name="magic wand of the goku">
+		<attribute key="weight" value="100" />
+		<attribute key="defense" value="5" />
+		<attribute key="attack" value="10" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49546" article="a" name="wand epoxy">
+		<attribute key="weight" value="1000" />
+		<attribute key="defense" value="9" />
+		<attribute key="attack" value="17" />
+		<attribute key="weaponType" value="club" />
+		<attribute key="shoottype" value="venom" />
+	</item>
+	<item id="49547" article="a" name="dagger">
+		<attribute key="weight" value="400" />
+		<attribute key="defense" value="3" />
+		<attribute key="attack" value="13" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49548" article="a" name="z sword">
+		<attribute key="weight" value="10000" />
+		<attribute key="defense" value="18" />
+		<attribute key="attack" value="24" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49549" article="a" name="device energy pure">
+		<attribute key="weight" value="1000" />
+		<attribute key="defense" value="9" />
+		<attribute key="attack" value="18" />
+		<attribute key="weaponType" value="club" />
+		<attribute key="shoottype" value="energy" />
+	</item>
+	<item id="49550" article="a" name="demonic sword">
+		<attribute key="weight" value="6000" />
+		<attribute key="defense" value="20" />
+		<attribute key="attack" value="25" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49551" article="a" name="janemba sword">
+		<attribute key="weight" value="4000" />
+		<attribute key="defense" value="25" />
+		<attribute key="attack" value="26" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49552" article="a" name="mini device energy pure">
+		<attribute key="weight" value="1000" />
+		<attribute key="defense" value="2" />
+		<attribute key="attack" value="14" />
+		<attribute key="weaponType" value="club" />
+		<attribute key="shoottype" value="energy" />
+	</item>
+	<item id="49553" article="a" name="big device energy pure">
+		<attribute key="weight" value="1000" />
+		<attribute key="defense" value="3" />
+		<attribute key="attack" value="20" />
+		<attribute key="weaponType" value="club" />
+		<attribute key="shoottype" value="energy" />
+	</item>
+	<item id="49554" article="a" name="warrior sword">
+		<attribute key="weight" value="3500" />
+		<attribute key="defense" value="10" />
+		<attribute key="attack" value="20" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49555" article="a" name="holy knight sword">
+		<attribute key="weight" value="3500" />
+		<attribute key="defense" value="19" />
+		<attribute key="attack" value="26" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49556" article="a" name="sword of disease">
+		<attribute key="weight" value="3500" />
+		<attribute key="defense" value="14" />
+		<attribute key="attack" value="22" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49557" article="a" name="prince of the hell sword">
+		<attribute key="weight" value="3500" />
+		<attribute key="defense" value="23" />
+		<attribute key="attack" value="30" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49558" article="a" name="zanpakuto">
+		<attribute key="weight" value="3500" />
+		<attribute key="defense" value="6" />
+		<attribute key="attack" value="11" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49559" article="a" name="enchanted janemba sword">
+		<attribute key="weight" value="5500" />
+		<attribute key="defense" value="28" />
+		<attribute key="attack" value="33" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49560" article="a" name="ryuujin jakka zanpakuto">
+		<attribute key="weight" value="1100" />
+		<attribute key="defense" value="100" />
+		<attribute key="attack" value="100" />
+		<attribute key="absorbpercentfire" value="100" />
+		<attribute key="elementfire" value="100" />
+		<attribute key="magiclevelpoints" value="7" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49561" article="a" name="pointed sword">
+		<attribute key="weight" value="5500" />
+		<attribute key="defense" value="11" />
+		<attribute key="attack" value="11" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49562" article="a" name="mini dagger">
+		<attribute key="weight" value="50" />
+		<attribute key="defense" value="1" />
+		<attribute key="attack" value="2" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49563" article="a" name="aqua sword">
+		<attribute key="weight" value="8700" />
+		<attribute key="defense" value="20" />
+		<attribute key="attack" value="20" />
+		<attribute key="absorbpercentice" value="10" />
+		<attribute key="elementice" value="10" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49564" article="a" name="heavy greatsword">
+		<attribute key="weight" value="19000" />
+		<attribute key="defense" value="50" />
+		<attribute key="attack" value="40" />
+		<attribute key="absorbpercentall" value="15" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49565" article="a" name="iron spear">
+		<attribute key="weight" value="1900" />
+		<attribute key="defense" value="15" />
+		<attribute key="attack" value="19" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49566" article="a" name="infernal heavy greatsword">
+		<attribute key="weight" value="19000" />
+		<attribute key="defense" value="55" />
+		<attribute key="attack" value="56" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49567" article="a" name="imperfect makankosappo">
+		<attribute key="weight" value="1900" />
+		<attribute key="attack" value="13" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49568" article="a" name="perfect makankosappo">
+		<attribute key="weight" value="2000" />
+		<attribute key="attack" value="16" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49569" article="a" name="simple guarded zanpakuto">
+		<attribute key="weight" value="100" />
+		<attribute key="defense" value="5" />
+		<attribute key="attack" value="10" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49570" article="a" name="crystal ice sword">
+		<attribute key="weight" value="9000" />
+		<attribute key="defense" value="12" />
+		<attribute key="attack" value="15" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49571" article="a" name="hollow simple sword">
+		<attribute key="weight" value="9000" />
+		<attribute key="defense" value="11" />
+		<attribute key="attack" value="15" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49572" article="a" name="perfect makankosappo red">
+		<attribute key="weight" value="2000" />
+		<attribute key="attack" value="16" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49573" article="a" name="awp">
+		<attribute key="weight" value="20000" />
+		<attribute key="attack" value="34" />
+		<attribute key="weaponType" value="club" />
+		<attribute key="shootType" value="death" />
+	</item>
+	<item id="49574" article="a" name="mini pistol">
+		<attribute key="weight" value="1000" />
+		<attribute key="attack" value="20" />
+		<attribute key="weaponType" value="club" />
+		<attribute key="shootType" value="death" />
+	</item>
+	<item id="49575" article="a" name="mini gun">
+		<attribute key="weight" value="1000" />
+		<attribute key="attack" value="25" />
+		<attribute key="weaponType" value="club" />
+		<attribute key="shootType" value="death" />
+	</item>
+	<item id="49576" article="a" name="enchated gaia wand">
+		<attribute key="weight" value="1000" />
+		<attribute key="defense" value="15" />
+		<attribute key="attack" value="25" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49577" article="a" name="green pistol energy">
+		<attribute key="weight" value="5000" />
+		<attribute key="attack" value="25" />
+		<attribute key="weaponType" value="club" />
+		<attribute key="shootType" value="death" />
+	</item>
+	<item id="49578" article="a" name="mace enchanted">
+		<attribute key="weight" value="9000" />
+		<attribute key="attack" value="13" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49579" article="a" name="energy pistol energy">
+		<attribute key="weight" value="5000" />
+		<attribute key="attack" value="25" />
+		<attribute key="weaponType" value="club" />
+		<attribute key="shootType" value="energy" />
+	</item>
+	<item id="49580" article="a" name="lifedrain hand">
+		<attribute key="weight" value="2000" />
+		<attribute key="attack" value="15" />
+		<attribute key="weaponType" value="axe" />
+	</item>
+	<item id="49581" article="a" name="solider infernal sword">
+		<attribute key="weight" value="7500" />
+		<attribute key="defense" value="21" />
+		<attribute key="attack" value="21" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49582" article="a" name="blaster saiyajin">
+		<attribute key="weight" value="2000" />
+		<attribute key="attack" value="15" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49583" article="a" name="white saguino sword">
+		<attribute key="weight" value="5500" />
+		<attribute key="defense" value="29" />
+		<attribute key="attack" value="29" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49584" article="a" name="mace golden enchanted">
+		<attribute key="weight" value="10000" />
+		<attribute key="attack" value="20" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49585" article="a" name="red reishi">
+		<attribute key="weight" value="100" />
+		<attribute key="attack" value="10" />
+		<attribute key="weaponType" value="fist" />
+	</item>
+	<item id="49586" article="a" name="reishi">
+		<attribute key="weight" value="100" />
+		<attribute key="attack" value="10" />
+		<attribute key="weaponType" value="fist" />
+	</item>
+	<item id="49587" article="a" name="enchanted purple sword of the infernal">
+		<attribute key="weight" value="1000" />
+		<attribute key="defense" value="10" />
+		<attribute key="attack" value="17" />
+		<attribute key="weaponType" value="fist" />
+	</item>
+	<item id="49588" article="a" name="double-edged axe">
+		<attribute key="weight" value="5000" />
+		<attribute key="defense" value="15" />
+		<attribute key="attack" value="21" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49589" article="a" name="concentred reishi">
+		<attribute key="weight" value="100" />
+		<attribute key="attack" value="15" />
+		<attribute key="weaponType" value="fist" />
+	</item>
+	<item id="49590" article="a" name="enchanted tarantula prey">
+		<attribute key="weight" value="1000" />
+		<attribute key="defense" value="15" />
+		<attribute key="attack" value="15" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49591" article="a" name="enchanted blue sword">
+		<attribute key="weight" value="1000" />
+		<attribute key="defense" value="13" />
+		<attribute key="attack" value="13" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49592" article="a" name="old enchanted sword">
+		<attribute key="weight" value="1000" />
+		<attribute key="defense" value="14" />
+		<attribute key="attack" value="14" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49593" article="a" name="old rita axe">
+		<attribute key="weight" value="1000" />
+		<attribute key="defense" value="14" />
+		<attribute key="attack" value="27" />
+		<attribute key="weaponType" value="axe" />
+	</item>
+	<item id="49594" article="a" name="vaizard mask">
+		<attribute key="weight" value="1000" />
+		<attribute key="armor" value="90" />
+		<attribute key="defense" value="70" />
+		<attribute key="healthGain" value="5500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="5500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="manashield" value="1" />
+		<attribute key="attackspeed" value="800" />
+		<attribute key="speed" value="800" />
+		<attribute key="slottype" value="head" />
+	</item>
+	<item id="49595" article="a" name="gilian mask">
+		<attribute key="weight" value="1000" />
+		<attribute key="armor" value="40" />
+		<attribute key="defense" value="30" />
+		<attribute key="healthGain" value="1500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="slottype" value="head" />
+	</item>
+	<item id="49596" article="a" name="nelliel mask">
+		<attribute key="weight" value="1000" />
+		<attribute key="armor" value="44" />
+		<attribute key="defense" value="27" />
+		<attribute key="healthGain" value="1900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="3" />
+		<attribute key="slottype" value="head" />
+	</item>
+	<item id="49597" article="a" name="break hollow mask">
+		<attribute key="weight" value="1000" />
+		<attribute key="armor" value="20" />
+		<attribute key="defense" value="10" />
+		<attribute key="healthGain" value="800" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="800" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="slottype" value="head" />
+	</item>
+	<item id="49598" article="a" name="leader guardians of the forest of menos mask">
+		<attribute key="weight" value="1000" />
+		<attribute key="armor" value="23" />
+		<attribute key="healthGain" value="1200" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1200" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="slottype" value="head" />
+	</item>
+	<item id="49599" article="a" name="shinji mask">
+		<attribute key="weight" value="1000" />
+		<attribute key="armor" value="60" />
+		<attribute key="healthGain" value="1800" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1800" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="slottype" value="head" />
+	</item>
+	<item id="49600" article="a" name="hunter armor">
+		<attribute key="weight" value="900" />
+		<attribute key="armor" value="35" />
+		<attribute key="healthGain" value="1250" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1250" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="slottype" value="body" />
+	</item>
+	<item id="49601" article="a" name="ice golem ancient world armor">
+		<attribute key="weight" value="600" />
+		<attribute key="armor" value="25" />
+		<attribute key="healthGain" value="2500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="2500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentice" value="55" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="speed" value="250" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49602" article="a" name="enchanted ancient hunter armor">
+		<attribute key="weight" value="800" />
+		<attribute key="armor" value="35" />
+		<attribute key="healthGain" value="2500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="2500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="invisible" value="1" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="speed" value="550" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49603" article="a" name="zangetsu cloak">
+		<attribute key="weight" value="100" />
+		<attribute key="armor" value="25" />
+		<attribute key="healthGain" value="1500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="3" />
+		<attribute key="speed" value="750" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49604" article="a" name="fire cloak">
+		<attribute key="weight" value="100" />
+		<attribute key="armor" value="25" />
+		<attribute key="healthGain" value="1300" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1300" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49605" article="a" name="ice legs">
+		<attribute key="weight" value="1000" />
+		<attribute key="armor" value="26" />
+		<attribute key="healthGain" value="1000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49606" article="a" name="golden legs">
+		<attribute key="weight" value="1000" />
+		<attribute key="armor" value="30" />
+		<attribute key="healthGain" value="3000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="3000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="4" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49607" article="a" name="vegeta legs">
+		<attribute key="weight" value="1000" />
+		<attribute key="armor" value="15" />
+		<attribute key="healthGain" value="500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49608" article="a" name="perfect ulquiora mask">
+		<attribute key="weight" value="1000" />
+		<attribute key="armor" value="60" />
+		<attribute key="healthGain" value="2800" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="2800" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="2" />
+		<attribute key="slottype" value="head" />
+	</item>
+	<item id="49609" article="a" name="magma cloak">
+		<attribute key="weight" value="100" />
+		<attribute key="armor" value="15" />
+		<attribute key="healthGain" value="1400" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1400" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49610" article="a" name="shinigami hollow mask">
+		<attribute key="weight" value="1000" />
+		<attribute key="armor" value="15" />
+		<attribute key="healthGain" value="1500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="2" />
+		<attribute key="slottype" value="head" />
 	</item>
 	<item id="49774" article="a" name="ninja backpack">
 		<attribute key="weight" value="1500" />
