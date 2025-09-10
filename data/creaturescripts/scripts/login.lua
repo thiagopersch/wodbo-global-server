@@ -34,6 +34,14 @@ function onLogin(cid)
             "Hello, type 'account' to create an account or type 'recover' to recover an account.")
     end
 
+    local loot = ''
+    for i = 1, #getPlayerStorageTable(cid, info.Storages[1]) do
+        loot = loot ..
+            getItemInfo(getPlayerStorageTable(cid, info.Storages[1])[i]).clientId ..
+            '-' .. getItemNameById(getPlayerStorageTable(cid, info.Storages[1])[i]) .. '@'
+    end
+    doSendPlayerExtendedOpcode(cid, 157, loot)
+
     if (not isPlayerGhost(cid)) then
         doSendMagicEffect(getCreaturePosition(cid), CONST_ME_TELEPORT)
     end

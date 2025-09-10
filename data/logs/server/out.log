@@ -1,68 +1,107 @@
-[9/9/2025 21:26:47] > Usando SHA1 criptografia
-[9/9/2025 21:26:47] >> Carregando RSA key
-[9/9/2025 21:26:47] >> Iniciando conexao SQL
-[9/9/2025 21:26:47] >> Executando Gerenciador de Banco de Dados
-[9/9/2025 21:26:47] > Optimized database.
-[9/9/2025 21:26:47] >> Carregando items (OTB)
-[9/9/2025 21:26:48] >> Carregando items (XML)
-[9/9/2025 21:26:48] >> Carregando Grupos
-[9/9/2025 21:26:48] >> Carregando Vocacoes
-[9/9/2025 21:26:48] >> Carregando Outfits
-[9/9/2025 21:26:48] >> Carregando Canal de Chat
-[9/9/2025 21:26:48] >> Carregando Sistema
-[9/9/2025 21:26:48] >> Carregando Mods...
-[9/9/2025 21:26:48] > Loading AutoLoot.xml... done.
-[9/9/2025 21:26:48] > Loading Automatic Raids.xml... done.
-[9/9/2025 21:26:48] > Loading highscorebook.xml... done.
-[9/9/2025 21:26:48] > Loading Simple Task.xml... done.
-[9/9/2025 21:26:48] > 4 mods were loaded.
-[9/9/2025 21:26:48] >> Carregando EXP Stages
-[9/9/2025 21:26:48] >> Carregando Monstros
-[9/9/2025 21:26:48] >> Carregando Mapa e Spawns...
-[9/9/2025 21:26:49] > Tamanho do Mapa: 64000x64000.
-[9/9/2025 21:26:49] > Descricao do Mapa: 
-[9/9/2025 21:26:49] "Saved with OTAcademy Map Editor 4.1.1"
-[9/9/2025 21:26:49] "No map description available."
-[9/9/2025 21:26:50] > Mapa carregado em: 1.362 segundos.
-[9/9/2025 21:26:50] > Data carregada em: 0.073 segundos.
-[9/9/2025 21:26:50] > Houses carregada em: 0.002 segundos.
-[9/9/2025 21:26:50] > Content unserialization time: 0.001 seconds.
-[9/9/2025 21:26:50] > Carregando Tipo de PVP... Open PvP
-[9/9/2025 21:26:50] > Inicializando estado do jogo e registrando servicos...
-[9/9/2025 21:26:50] > IP do Servidor: 127.0.0.1
-[9/9/2025 21:26:50] > IP local do Servidor: 172.23.224.1	192.168.1.102	
-[9/9/2025 21:26:50] > Portas do Servidor: 7171	7172	
-[9/9/2025 21:26:50] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[9/9/2025 21:27:0] >> DBOSupreme servidor Online!
+[9/9/2025 23:28:28] > Usando SHA1 criptografia
+[9/9/2025 23:28:28] >> Carregando RSA key
+[9/9/2025 23:28:28] >> Iniciando conexao SQL
+[9/9/2025 23:28:28] >> Executando Gerenciador de Banco de Dados
+[9/9/2025 23:28:28] > Optimized database.
+[9/9/2025 23:28:28] >> Carregando items (OTB)
+[9/9/2025 23:28:28] >> Carregando items (XML)
+[9/9/2025 23:28:28] >> Carregando Grupos
+[9/9/2025 23:28:28] >> Carregando Vocacoes
+[9/9/2025 23:28:28] >> Carregando Outfits
+[9/9/2025 23:28:28] >> Carregando Canal de Chat
+[9/9/2025 23:28:28] >> Carregando Sistema
+[9/9/2025 23:28:29] >> Carregando Mods...
+[9/9/2025 23:28:29] > Loading AutoLoot.xml... done.
+[9/9/2025 23:28:29] > Loading Automatic Raids.xml... done.
+[9/9/2025 23:28:29] > Loading highscorebook.xml... done.
+[9/9/2025 23:28:29] > Loading Simple Task.xml... done.
+[9/9/2025 23:28:29] > 4 mods were loaded.
+[9/9/2025 23:28:29] >> Carregando EXP Stages
+[9/9/2025 23:28:29] >> Carregando Monstros
+[9/9/2025 23:28:29] >> Carregando Mapa e Spawns...
+[9/9/2025 23:28:29] > Tamanho do Mapa: 64000x64000.
+[9/9/2025 23:28:29] > Descricao do Mapa: 
+[9/9/2025 23:28:29] "Saved with OTAcademy Map Editor 4.1.1"
+[9/9/2025 23:28:29] "No map description available."
+[9/9/2025 23:28:30] > Mapa carregado em: 1.402 segundos.
+[9/9/2025 23:28:30] > Data carregada em: 0.068 segundos.
+[9/9/2025 23:28:30] > Houses carregada em: 0.002 segundos.
+[9/9/2025 23:28:30] > Content unserialization time: 0.001 seconds.
+[9/9/2025 23:28:30] > Carregando Tipo de PVP... Open PvP
+[9/9/2025 23:28:30] > Inicializando estado do jogo e registrando servicos...
+[9/9/2025 23:28:30] > IP do Servidor: 127.0.0.1
+[9/9/2025 23:28:30] > IP local do Servidor: 172.23.224.1	192.168.1.102	
+[9/9/2025 23:28:30] > Portas do Servidor: 7171	7172	
+[9/9/2025 23:28:30] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[9/9/2025 23:28:40] >> DBOSupreme servidor Online!
 
-[9/9/2025 21:27:0] God has logged in.
+[9/9/2025 23:28:40] God has logged in.
 
-[9/9/2025 21:31:48] [Error - GlobalEvent Interface] 
-[9/9/2025 21:31:48] data/globalevents/scripts/online_highscore.lua:onThink
-[9/9/2025 21:31:48] Description: 
-[9/9/2025 21:31:48] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/9/2025 21:31:48] stack traceback:
-[9/9/2025 21:31:48] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/9/2025 21:31:48] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[9/9/2025 23:33:29] [Error - GlobalEvent Interface] 
+[9/9/2025 23:33:29] data/globalevents/scripts/online_highscore.lua:onThink
+[9/9/2025 23:33:29] Description: 
+[9/9/2025 23:33:29] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[9/9/2025 23:33:29] stack traceback:
+[9/9/2025 23:33:29] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[9/9/2025 23:33:29] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/9/2025 21:36:48] [Error - GlobalEvent Interface] 
-[9/9/2025 21:36:48] data/globalevents/scripts/online_highscore.lua:onThink
-[9/9/2025 21:36:48] Description: 
-[9/9/2025 21:36:48] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/9/2025 21:36:48] stack traceback:
-[9/9/2025 21:36:48] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/9/2025 21:36:48] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[9/9/2025 23:38:29] [Error - GlobalEvent Interface] 
+[9/9/2025 23:38:29] data/globalevents/scripts/online_highscore.lua:onThink
+[9/9/2025 23:38:29] Description: 
+[9/9/2025 23:38:29] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[9/9/2025 23:38:29] stack traceback:
+[9/9/2025 23:38:29] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[9/9/2025 23:38:29] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/9/2025 21:41:48] [Error - GlobalEvent Interface] 
-[9/9/2025 21:41:48] data/globalevents/scripts/online_highscore.lua:onThink
-[9/9/2025 21:41:48] Description: 
-[9/9/2025 21:41:48] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/9/2025 21:41:48] stack traceback:
-[9/9/2025 21:41:48] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/9/2025 21:41:48] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/9/2025 21:45:33] [Notice - Game::reloadInfo] Reload type does not work.
-[9/9/2025 21:45:33] > Loading AutoLoot.xml... done.
-[9/9/2025 21:45:33] > Loading Automatic Raids.xml... done.
-[9/9/2025 21:45:33] > Loading highscorebook.xml... done.
-[9/9/2025 21:45:33] > Loading Simple Task.xml... done.
-[9/9/2025 21:45:33] > 4 mods were loaded.
+[9/9/2025 23:43:29] [Error - GlobalEvent Interface] 
+[9/9/2025 23:43:29] data/globalevents/scripts/online_highscore.lua:onThink
+[9/9/2025 23:43:29] Description: 
+[9/9/2025 23:43:29] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[9/9/2025 23:43:29] stack traceback:
+[9/9/2025 23:43:29] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[9/9/2025 23:43:29] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[9/9/2025 23:48:29] [Error - GlobalEvent Interface] 
+[9/9/2025 23:48:29] data/globalevents/scripts/online_highscore.lua:onThink
+[9/9/2025 23:48:29] Description: 
+[9/9/2025 23:48:29] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[9/9/2025 23:48:29] stack traceback:
+[9/9/2025 23:48:29] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[9/9/2025 23:48:29] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[9/9/2025 23:49:30] God has logged out.
+[10/9/2025 0:0:47] God has logged in.
+[10/9/2025 0:1:17] God has logged out.
+[10/9/2025 0:2:11] God has logged in.
+[10/9/2025 0:2:27] God has logged out.
+[10/9/2025 0:3:53] God has logged in.
+[10/9/2025 0:3:55] God has logged out.
+[10/9/2025 0:3:55] Dias Atras has logged in.
+[10/9/2025 0:3:56] Dias Atras has logged out.
+[10/9/2025 0:3:56] Account Manager has logged in.
+[10/9/2025 0:3:58] Account Manager has logged out.
+[10/9/2025 0:3:58] Leo stronda has logged in.
+[10/9/2025 0:3:59] Leo stronda has logged out.
+[10/9/2025 0:3:59] Soad has logged in.
+[10/9/2025 0:4:2] Soad has logged out.
+[10/9/2025 0:4:3] God has logged in.
+[10/9/2025 0:4:9] God has logged out.
+[10/9/2025 0:6:29] God has logged in.
+[10/9/2025 0:7:23] God has logged out.
+[10/9/2025 0:7:26] God has logged in.
+[10/9/2025 0:7:31] God has logged out.
+[10/9/2025 0:7:31] God has logged in.
+[10/9/2025 0:7:36] God has logged out.
+[10/9/2025 0:10:7] God has logged in.
+[10/9/2025 0:10:58] God has logged out.
+[10/9/2025 0:14:53] God has logged in.
+
+[10/9/2025 0:18:29] [Error - GlobalEvent Interface] 
+[10/9/2025 0:18:29] data/globalevents/scripts/online_highscore.lua:onThink
+[10/9/2025 0:18:29] Description: 
+[10/9/2025 0:18:29] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[10/9/2025 0:18:29] stack traceback:
+[10/9/2025 0:18:29] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[10/9/2025 0:18:29] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[10/9/2025 0:21:26] God has logged out.
+[10/9/2025 0:26:1] God has logged in.
+[10/9/2025 0:27:57] God has logged out.

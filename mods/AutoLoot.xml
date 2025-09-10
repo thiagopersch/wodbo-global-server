@@ -3,10 +3,10 @@
 	<config name="Loot_func"><![CDATA[
 
 info = {
-	AutomaticDeposit = false,
+	AutomaticDeposit = true,
 	BlockMonsters = {},
 	BlockItemsList = {2123,2515},
-	Max_Slots = {free = 2, premium = 5},
+	Max_Slots = {free = 5, premium = 25},
 	Storages = {27000,28001,28002}
 }
 function setPlayerStorageTable(cid, storage, tab)
@@ -168,7 +168,7 @@ function corpseRetireItems(cid, pos)
 		end
 	end
 end
-]]>	</config>
+]]></config>
 	<event type="login" name="LootLogin" event="script"><![CDATA[
 function onLogin(cid)
 	registerCreatureEvent(cid, "LootEventKIll")
@@ -191,38 +191,47 @@ function onKill(cid, target, lastHit)
 end]]></event>
 	<talkaction words="!autoloot;/autoloot" event="buffer"><![CDATA[
 domodlib('Loot_func')
-local param, slots = param:lower(), isPremium(cid) and info.Max_Slots.premium or info.Max_Slots.free
-if not param or param == "" then
-	ShowItemsTabble(cid) return true
-elseif tonumber(param) then
-	doPlayerSendCancel(cid, "enter commands: !autoloot item name [+] !autoloot clean [+] !autoloot money [+] !autoloot on/off") return true
-elseif isInArray({"clean","limpar", "clear"}, param) then
+local slots = isPremium(cid) and info.Max_Slots.premium or info.Max_Slots.free
+if not param:lower() or param:lower() == "" then
+	return true
+elseif param:lower() == "clean" then
 	setPlayerStorageValue(cid, info.Storages[1], -1)
-	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Auto Loot] Your list has been cleaned.") return true
-elseif isInArray({"start","stop","on","off"}, param) then
+	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Auto Loot] Your list has been cleaned.")
+	return true
+elseif isInArray({"on","off"}, param:lower()) then
 	setPlayerStorageValue(cid, info.Storages[3], getPlayerStorageValue(cid, info.Storages[3]) <= 0 and 1 or 0)
-	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Auto Loot] "..(getPlayerStorageValue(cid, info.Storages[3]) > 0 and "Stopped" or "Started")..".") return true
-elseif isInArray({"money","gold","gps","dinheiro"}, param) then
-	setPlayerStorageValue(cid, info.Storages[2], getPlayerStorageValue(cid, info.Storages[2]) <= 0 and 1 or 0)
-	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Auto Loot] Gold Colleting "..(getPlayerStorageValue(cid, info.Storages[2]) > 0 and "Activated" or "disabled")..".") return true
+	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Auto Loot] "..(getPlayerStorageValue(cid, info.Storages[3]) > 0 and "Stopped" or "Started")..".")
+	return true
 end
-local item = getItemIdByName(param, false)
+
+local param = string.explode(param, ",")
+if param[1]:lower() == "add" then
+local item = getItemIdByName(param[2], false)
 if not item then
-	doPlayerSendCancel(cid, "This item does not exist.") return true
+	doPlayerSendCancel(cid, "This item does not exist.")
+	return true
 end
 local var = isInTable(cid, item)
-if isInArray({2148,2152,2160},item) then
-	doPlayerSendCancel(cid, "Enter !autoloot money to add money in your list!") return true
-elseif isInArray(info.BlockItemsList, item) then
-	doPlayerSendCancel(cid, "You can not add this item in the list!") return true
+
+if isInArray(info.BlockItemsList, item) then
+	doPlayerSendCancel(cid, "You can not add this item in the list!")
+	return true
 elseif not var and #getPlayerStorageTable(cid, info.Storages[1]) >= slots then
 	doPlayerSendCancel(cid, "max "..slots.." from auto loot") return true
 end
 if not var then
 	addItemTable(cid, item)
-else
-	removeItemTable(cid, item)
 end
-doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,not var and "you added the item "..param.." in the list" or "you removed the item "..param.." from the list")
+doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[AutoLoot] You added the item ["..param[2].."] in the list")
+elseif param[1]:lower() == "remove" then
+	local item = getItemIdByName(param[2], false)
+	if not item then
+		doPlayerSendCancel(cid, "This item does not exist.")
+		return true
+	end
+	removeItemTable(cid, item)
+	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[AutoLoot] You removed the item ["..param[2].."] from the list")
+end
+
 return true]]></talkaction>
 </mod>
