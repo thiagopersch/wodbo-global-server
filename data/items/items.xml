@@ -2126,7 +2126,7 @@
 	</item>
 	<item id="2090" article="a" name="crystal key">
 		<attribute key="type" value="key" />
-		<attribute key="weight" value="100" />
+		<attribute key="weight" value="10000" />
 	</item>
 	<item id="2091" article="a" name="golden key">
 		<attribute key="type" value="key" />
@@ -36699,8 +36699,11 @@
 	<item id="23815" editorsuffix=" (Blank)" />
 	<item id="23816" article="a" name="war backpack">
 		<attribute key="weight" value="1800" />
-		<attribute key="writeable" value="0" />
-		<attribute key="description" value="Carry all you need for battle in it." />
+		<attribute key="description"
+			value="backpack used in ancient times by the greatest warriors in combat." />
+		<attribute key="containerSize" value="40" />
+		<attribute key="magiclevelpoints" value="2" />
+		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="23817" article="a" name="dead woodling" editorsuffix=" (Immobile)">
 		<attribute key="containerSize" value="15" />
@@ -38172,8 +38175,6 @@
 		<attribute key="weight" value="1800" />
 		<attribute key="containerSize" value="20" />
 		<attribute key="slotType" value="backpack" />
-
-
 	</item>
 	<item id="24741" article="a" name="fur armor">
 		<attribute key="weight" value="4900" />
@@ -68964,12 +68965,12 @@
 		<attribute key="containerSize" value="35" />
 		<attribute key="slotType" value="backpack" />
 	</item>
-	<item id="49472" article="a" name="war backpack">
+	<item id="49472" article="a" name="simple war backpack">
 		<attribute key="weight" value="1500" />
 		<attribute key="description"
 			value="backpack used in ancient times by the greatest warriors in combat." />
-		<attribute key="containerSize" value="35" />
-		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="containerSize" value="25" />
+		<attribute key="magiclevelpoints" value="2" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="49473" article="a" name="ladybird backpack">
@@ -69167,7 +69168,7 @@
 		<attribute key="absorbpercentice" value="15" />
 		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="speed" value="250" />
-		<attribute key="weapontype" value="ring" />
+		<attribute key="slotType" value="ring" />
 	</item>
 	<item id="49501" article="a" name="ice golem ancient world shield">
 		<attribute key="weight" value="600" />
@@ -69188,7 +69189,7 @@
 		<attribute key="absorbpercentall" value="15" />
 		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="speed" value="50" />
-		<attribute key="weapontype" value="ring" />
+		<attribute key="slotType" value="ring" />
 	</item>
 	<item id="49503" article="a" name="experience scroll purple">
 		<attribute key="weight" value="600" />
@@ -69209,75 +69210,6 @@
 	<item id="49507" article="a" name="enchanted experience scroll gray">
 		<attribute key="weight" value="600" />
 		<attribute key="description" value="This scroll grants the player 20kk experience." />
-	</item>
-	<item id="49508" article="a" name="android 16 doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49509" article="a" name="goku doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49510" article="a" name="vegeta doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49511" article="a" name="trunks doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49512" article="a" name="buu doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49513" article="a" name="piccolo doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49514" article="a" name="child gohan doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49515" article="a" name="adolescent gohan doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49516" article="a" name="perfect cell doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49517" article="a" name="uub doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49518" article="a" name="android 17 doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49519" article="a" name="android 18 doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49520" article="a" name="cooler doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49521" article="a" name="tsuful doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49522" article="a" name="dende doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49523" article="a" name="gotenks doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49524" article="a" name="janemba doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49525" article="a" name="jenk doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49526" article="a" name="mr. kaioh doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49527" article="a" name="bardock doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49528" article="a" name="brolly ssj doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49529" article="a" name="adult gohan doll">
-		<attribute key="weight" value="100" />
-	</item>
-	<item id="49530" article="a" name="future trunks doll">
-		<attribute key="weight" value="100" />
 	</item>
 	<item id="49531" article="a" name="colored worms">
 		<attribute key="weight" value="100" />
@@ -69379,7 +69311,7 @@
 		<attribute key="defense" value="9" />
 		<attribute key="attack" value="17" />
 		<attribute key="weaponType" value="club" />
-		<attribute key="shoottype" value="venom" />
+		<attribute key="shoottype" value="poison" />
 	</item>
 	<item id="49547" article="a" name="dagger">
 		<attribute key="weight" value="400" />
@@ -70096,7 +70028,7 @@
 		<attribute key="healthTicks" value="1" />
 		<attribute key="manaGain" value="300" />
 		<attribute key="manaTicks" value="1" />
-		<attribute key="slotType" value="head" />
+		<attribute key="slotType" value="body" />
 	</item>
 	<item id="49638" article="a" name="hitto helmet">
 		<attribute key="weight" value="300" />
@@ -70188,102 +70120,102 @@
 		<attribute key="defense" value="60" />
 		<attribute key="absorbpercentice" value="150" />
 		<attribute key="absorbpercentall" value="50" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49648" article="a" name="ice shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="50" />
 		<attribute key="absorbpercentice" value="100" />
 		<attribute key="absorbpercentall" value="50" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49649" article="a" name="mastermind shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="40" />
 		<attribute key="absorbpercentall" value="40" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49650" article="a" name="bamboo shield">
 		<attribute key="weight" value="9000" />
 		<attribute key="defense" value="15" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49651" article="a" name="kingdom shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbpercentall" value="10" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49652" article="a" name="bracelet shield">
 		<attribute key="weight" value="1000" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbpercentall" value="30" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49653" article="a" name="pox shield">
 		<attribute key="weight" value="1000" />
 		<attribute key="defense" value="40" />
 		<attribute key="absorbPercentEarth" value="30" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49654" article="a" name="enchanted kingdom shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="50" />
 		<attribute key="absorbpercentall" value="50" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49655" article="a" name="supreme enchanted kingdom shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="80" />
 		<attribute key="absorbpercentall" value="80" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49656" article="a" name="iron shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="25" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49657" article="a" name="green day shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="45" />
 		<attribute key="absorbpercentall" value="20" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49658" article="a" name="turtle shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="47" />
 		<attribute key="absorbpercentall" value="40" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49659" article="a" name="demonic shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="90" />
 		<attribute key="absorbpercentall" value="90" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49660" article="a" name="falcon shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="60" />
 		<attribute key="absorbpercentall" value="19" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49661" article="a" name="new simple kingdom shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="35" />
 		<attribute key="absorbpercentall" value="5" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49662" article="a" name="new big kingdom shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="75" />
 		<attribute key="absorbpercentall" value="50" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49663" article="a" name="esmerald purple shield">
 		<attribute key="weight" value="10000" />
 		<attribute key="defense" value="75" />
 		<attribute key="absorbpercentall" value="55" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 	</item>
 	<item id="49664" article="a" name="bardock boots">
 		<attribute key="weight" value="4000" />

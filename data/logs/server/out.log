@@ -1,39 +1,68 @@
-[6/9/2025 16:41:43] > Usando SHA1 criptografia
-[6/9/2025 16:41:43] >> Carregando RSA key
-[6/9/2025 16:41:43] >> Iniciando conexao SQL
-[6/9/2025 16:41:43] >> Executando Gerenciador de Banco de Dados
-[6/9/2025 16:41:43] > Optimized database.
-[6/9/2025 16:41:43] >> Carregando items (OTB)
-[6/9/2025 16:41:43] >> Carregando items (XML)
-[6/9/2025 16:41:44] [Warning - Items::loadFromXml] Duplicate registered item with id 47396
-[6/9/2025 16:41:44] [Warning - Items::loadFromXml] Duplicate registered item with id 49270
-[6/9/2025 16:41:44] >> Carregando Grupos
-[6/9/2025 16:41:44] >> Carregando Vocacoes
-[6/9/2025 16:41:44] >> Carregando Outfits
-[6/9/2025 16:41:44] >> Carregando Canal de Chat
-[6/9/2025 16:41:44] >> Carregando Sistema
-[6/9/2025 16:41:44] >> Carregando Mods...
-[6/9/2025 16:41:44] > Loading AutoLoot.xml... done.
-[6/9/2025 16:41:44] > Loading Automatic Raids.xml... done.
-[6/9/2025 16:41:44] > Loading highscorebook.xml... done.
-[6/9/2025 16:41:44] > Loading Simple Task.xml... done.
-[6/9/2025 16:41:44] > 4 mods were loaded.
-[6/9/2025 16:41:44] >> Carregando EXP Stages
-[6/9/2025 16:41:44] >> Carregando Monstros
-[6/9/2025 16:41:45] >> Carregando Mapa e Spawns...
-[6/9/2025 16:41:46] > Tamanho do Mapa: 64000x64000.
-[6/9/2025 16:41:46] > Descricao do Mapa: 
-[6/9/2025 16:41:46] "Saved with OTAcademy Map Editor 4.1.1"
-[6/9/2025 16:41:46] "No map description available."
-[6/9/2025 16:41:47] > Mapa carregado em: 1.826 segundos.
-[6/9/2025 16:41:47] > Data carregada em: 0.114 segundos.
-[6/9/2025 16:41:47] > Houses carregada em: 0.001 segundos.
-[6/9/2025 16:41:47] > Content unserialization time: 0 seconds.
-[6/9/2025 16:41:47] > Carregando Tipo de PVP... Open PvP
-[6/9/2025 16:41:47] > Inicializando estado do jogo e registrando servicos...
-[6/9/2025 16:41:47] > IP do Servidor: 127.0.0.1
-[6/9/2025 16:41:47] > IP local do Servidor: 172.28.192.1	192.168.1.102	
-[6/9/2025 16:41:47] > Portas do Servidor: 7171	7172	
-[6/9/2025 16:41:47] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[6/9/2025 16:41:57] >> DBOSupreme servidor Online!
+[9/9/2025 21:26:47] > Usando SHA1 criptografia
+[9/9/2025 21:26:47] >> Carregando RSA key
+[9/9/2025 21:26:47] >> Iniciando conexao SQL
+[9/9/2025 21:26:47] >> Executando Gerenciador de Banco de Dados
+[9/9/2025 21:26:47] > Optimized database.
+[9/9/2025 21:26:47] >> Carregando items (OTB)
+[9/9/2025 21:26:48] >> Carregando items (XML)
+[9/9/2025 21:26:48] >> Carregando Grupos
+[9/9/2025 21:26:48] >> Carregando Vocacoes
+[9/9/2025 21:26:48] >> Carregando Outfits
+[9/9/2025 21:26:48] >> Carregando Canal de Chat
+[9/9/2025 21:26:48] >> Carregando Sistema
+[9/9/2025 21:26:48] >> Carregando Mods...
+[9/9/2025 21:26:48] > Loading AutoLoot.xml... done.
+[9/9/2025 21:26:48] > Loading Automatic Raids.xml... done.
+[9/9/2025 21:26:48] > Loading highscorebook.xml... done.
+[9/9/2025 21:26:48] > Loading Simple Task.xml... done.
+[9/9/2025 21:26:48] > 4 mods were loaded.
+[9/9/2025 21:26:48] >> Carregando EXP Stages
+[9/9/2025 21:26:48] >> Carregando Monstros
+[9/9/2025 21:26:48] >> Carregando Mapa e Spawns...
+[9/9/2025 21:26:49] > Tamanho do Mapa: 64000x64000.
+[9/9/2025 21:26:49] > Descricao do Mapa: 
+[9/9/2025 21:26:49] "Saved with OTAcademy Map Editor 4.1.1"
+[9/9/2025 21:26:49] "No map description available."
+[9/9/2025 21:26:50] > Mapa carregado em: 1.362 segundos.
+[9/9/2025 21:26:50] > Data carregada em: 0.073 segundos.
+[9/9/2025 21:26:50] > Houses carregada em: 0.002 segundos.
+[9/9/2025 21:26:50] > Content unserialization time: 0.001 seconds.
+[9/9/2025 21:26:50] > Carregando Tipo de PVP... Open PvP
+[9/9/2025 21:26:50] > Inicializando estado do jogo e registrando servicos...
+[9/9/2025 21:26:50] > IP do Servidor: 127.0.0.1
+[9/9/2025 21:26:50] > IP local do Servidor: 172.23.224.1	192.168.1.102	
+[9/9/2025 21:26:50] > Portas do Servidor: 7171	7172	
+[9/9/2025 21:26:50] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[9/9/2025 21:27:0] >> DBOSupreme servidor Online!
 
+[9/9/2025 21:27:0] God has logged in.
+
+[9/9/2025 21:31:48] [Error - GlobalEvent Interface] 
+[9/9/2025 21:31:48] data/globalevents/scripts/online_highscore.lua:onThink
+[9/9/2025 21:31:48] Description: 
+[9/9/2025 21:31:48] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[9/9/2025 21:31:48] stack traceback:
+[9/9/2025 21:31:48] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[9/9/2025 21:31:48] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[9/9/2025 21:36:48] [Error - GlobalEvent Interface] 
+[9/9/2025 21:36:48] data/globalevents/scripts/online_highscore.lua:onThink
+[9/9/2025 21:36:48] Description: 
+[9/9/2025 21:36:48] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[9/9/2025 21:36:48] stack traceback:
+[9/9/2025 21:36:48] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[9/9/2025 21:36:48] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[9/9/2025 21:41:48] [Error - GlobalEvent Interface] 
+[9/9/2025 21:41:48] data/globalevents/scripts/online_highscore.lua:onThink
+[9/9/2025 21:41:48] Description: 
+[9/9/2025 21:41:48] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[9/9/2025 21:41:48] stack traceback:
+[9/9/2025 21:41:48] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[9/9/2025 21:41:48] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[9/9/2025 21:45:33] [Notice - Game::reloadInfo] Reload type does not work.
+[9/9/2025 21:45:33] > Loading AutoLoot.xml... done.
+[9/9/2025 21:45:33] > Loading Automatic Raids.xml... done.
+[9/9/2025 21:45:33] > Loading highscorebook.xml... done.
+[9/9/2025 21:45:33] > Loading Simple Task.xml... done.
+[9/9/2025 21:45:33] > 4 mods were loaded.
