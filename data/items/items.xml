@@ -9555,7 +9555,6 @@
 	<item fromid="5866" toid="5868" article="an" name="earth pile" />
 	<item fromid="5869" toid="5874" article="a" name="poison trickle" />
 	<item id="5875" name="sniper gloves">
-
 		<attribute key="description" value="They are the pride of the paladin guild." />
 		<attribute key="weight" value="400" />
 		<attribute key="showcount" value="0" />
@@ -70800,6 +70799,770 @@
 		<attribute key="containerSize" value="35" />
 		<attribute key="slotType" value="backpack" />
 	</item>
+	<item id="49775" article="a" name="cobra bow">
+		<attribute key="weight" value="3100" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="range" value="7" />
+	</item>
+	<item id="49776" article="a" name="ice golem ancient world crossbow">
+		<attribute key="weight" value="4000" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="ammoType" value="bolt" />
+		<attribute key="range" value="10" />
+	</item>
+	<item id="49777" article="a" name="infernal crossbow">
+		<attribute key="weight" value="4000" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="ammoType" value="bolt" />
+		<attribute key="range" value="10" />
+	</item>
+	<item id="49778" article="a" name="ultimate shenlong legs">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="100" />
+		<attribute key="healthGain" value="9900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="9900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="5" />
+		<attribute key="skillaxe" value="5" />
+		<attribute key="skillclub" value="5" />
+		<attribute key="skilldist" value="5" />
+		<attribute key="skillfish" value="5" />
+		<attribute key="skillshield" value="5" />
+		<attribute key="skillfist" value="5" />
+		<attribute key="magiclevelpoints" value="3" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49779" article="a" name="ultimate black shenlong legs">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="100" />
+		<attribute key="healthGain" value="9900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="9900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="6" />
+		<attribute key="skillaxe" value="6" />
+		<attribute key="skillclub" value="6" />
+		<attribute key="skilldist" value="6" />
+		<attribute key="skillfish" value="6" />
+		<attribute key="skillshield" value="6" />
+		<attribute key="skillfist" value="6" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49780" article="a" name="ultimate black shenlong armor">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="100" />
+		<attribute key="healthGain" value="9900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="9900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="6" />
+		<attribute key="skillaxe" value="6" />
+		<attribute key="skillclub" value="6" />
+		<attribute key="skilldist" value="6" />
+		<attribute key="skillfish" value="6" />
+		<attribute key="skillshield" value="6" />
+		<attribute key="skillfist" value="6" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49781" article="a" name="ultimate shenlong armor">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="100" />
+		<attribute key="healthGain" value="9900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="9900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="5" />
+		<attribute key="skillaxe" value="5" />
+		<attribute key="skillclub" value="5" />
+		<attribute key="skilldist" value="5" />
+		<attribute key="skillfish" value="5" />
+		<attribute key="skillshield" value="5" />
+		<attribute key="skillfist" value="5" />
+		<attribute key="magiclevelpoints" value="3" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49782" article="a" name="ultimate shenlong helmet">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="100" />
+		<attribute key="healthGain" value="9900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="9900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="5" />
+		<attribute key="skillaxe" value="5" />
+		<attribute key="skillclub" value="5" />
+		<attribute key="skilldist" value="5" />
+		<attribute key="skillfish" value="5" />
+		<attribute key="skillshield" value="5" />
+		<attribute key="skillfist" value="5" />
+		<attribute key="magiclevelpoints" value="3" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49783" article="a" name="ultimate black shenlong helmet">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="100" />
+		<attribute key="healthGain" value="9900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="9900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="6" />
+		<attribute key="skillaxe" value="6" />
+		<attribute key="skillclub" value="6" />
+		<attribute key="skilldist" value="6" />
+		<attribute key="skillfish" value="6" />
+		<attribute key="skillshield" value="6" />
+		<attribute key="skillfist" value="6" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49784" article="a" name="shenlong helmet">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="85" />
+		<attribute key="healthGain" value="8900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="8900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="4" />
+		<attribute key="skillaxe" value="4" />
+		<attribute key="skillclub" value="4" />
+		<attribute key="skilldist" value="4" />
+		<attribute key="skillfish" value="4" />
+		<attribute key="skillshield" value="4" />
+		<attribute key="skillfist" value="4" />
+		<attribute key="magiclevelpoints" value="4" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49785" article="a" name="demonic mage helmet">
+		<attribute key="weight" value="90000" />
+		<attribute key="armor" value="120" />
+		<attribute key="healthGain" value="12000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="12000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="7" />
+		<attribute key="skillaxe" value="7" />
+		<attribute key="skillclub" value="7" />
+		<attribute key="skilldist" value="7" />
+		<attribute key="skillfish" value="7" />
+		<attribute key="skillshield" value="7" />
+		<attribute key="skillfist" value="7" />
+		<attribute key="magiclevelpoints" value="7" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49786" article="a" name="demonic mage armor">
+		<attribute key="weight" value="90000" />
+		<attribute key="armor" value="120" />
+		<attribute key="healthGain" value="12000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="12000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="7" />
+		<attribute key="skillaxe" value="7" />
+		<attribute key="skillclub" value="7" />
+		<attribute key="skilldist" value="7" />
+		<attribute key="skillfish" value="7" />
+		<attribute key="skillshield" value="7" />
+		<attribute key="skillfist" value="7" />
+		<attribute key="magiclevelpoints" value="7" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49787" article="a" name="demonic mage legs">
+		<attribute key="weight" value="90000" />
+		<attribute key="armor" value="120" />
+		<attribute key="healthGain" value="12000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="12000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="7" />
+		<attribute key="skillaxe" value="7" />
+		<attribute key="skillclub" value="7" />
+		<attribute key="skilldist" value="7" />
+		<attribute key="skillfish" value="7" />
+		<attribute key="skillshield" value="7" />
+		<attribute key="skillfist" value="7" />
+		<attribute key="magiclevelpoints" value="7" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49788" article="a" name="demonic mage boots">
+		<attribute key="weight" value="90000" />
+		<attribute key="armor" value="120" />
+		<attribute key="healthGain" value="12000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="12000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="7" />
+		<attribute key="skillaxe" value="7" />
+		<attribute key="skillclub" value="7" />
+		<attribute key="skilldist" value="7" />
+		<attribute key="skillfish" value="7" />
+		<attribute key="skillshield" value="7" />
+		<attribute key="skillfist" value="7" />
+		<attribute key="magiclevelpoints" value="7" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49789" article="a" name="demonic knight helmet">
+		<attribute key="weight" value="90000" />
+		<attribute key="armor" value="125" />
+		<attribute key="healthGain" value="13000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="13000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="7" />
+		<attribute key="skillaxe" value="7" />
+		<attribute key="skillclub" value="7" />
+		<attribute key="skilldist" value="7" />
+		<attribute key="skillfish" value="7" />
+		<attribute key="skillshield" value="7" />
+		<attribute key="skillfist" value="7" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49790" article="a" name="shenlong armor">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="85" />
+		<attribute key="healthGain" value="8900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="8900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="4" />
+		<attribute key="skillaxe" value="4" />
+		<attribute key="skillclub" value="4" />
+		<attribute key="skilldist" value="4" />
+		<attribute key="skillfish" value="4" />
+		<attribute key="skillshield" value="4" />
+		<attribute key="skillfist" value="4" />
+		<attribute key="magiclevelpoints" value="4" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49791" article="a" name="shenlong legs">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="85" />
+		<attribute key="healthGain" value="8900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="8900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="4" />
+		<attribute key="skillaxe" value="4" />
+		<attribute key="skillclub" value="4" />
+		<attribute key="skilldist" value="4" />
+		<attribute key="skillfish" value="4" />
+		<attribute key="skillshield" value="4" />
+		<attribute key="skillfist" value="4" />
+		<attribute key="magiclevelpoints" value="4" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49792" article="a" name="shenlong boots">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="85" />
+		<attribute key="healthGain" value="8900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="8900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="4" />
+		<attribute key="skillaxe" value="4" />
+		<attribute key="skillclub" value="4" />
+		<attribute key="skilldist" value="4" />
+		<attribute key="skillfish" value="4" />
+		<attribute key="skillshield" value="4" />
+		<attribute key="skillfist" value="4" />
+		<attribute key="magiclevelpoints" value="4" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49793" article="a" name="ultimate shenlong boots">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="100" />
+		<attribute key="healthGain" value="9900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="9900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="5" />
+		<attribute key="skillaxe" value="5" />
+		<attribute key="skillclub" value="5" />
+		<attribute key="skilldist" value="5" />
+		<attribute key="skillfish" value="5" />
+		<attribute key="skillshield" value="5" />
+		<attribute key="skillfist" value="5" />
+		<attribute key="magiclevelpoints" value="3" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49794" article="a" name="ultimate black shenlong boots">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="100" />
+		<attribute key="healthGain" value="9900" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="9900" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="6" />
+		<attribute key="skillaxe" value="6" />
+		<attribute key="skillclub" value="6" />
+		<attribute key="skilldist" value="6" />
+		<attribute key="skillfish" value="6" />
+		<attribute key="skillshield" value="6" />
+		<attribute key="skillfist" value="6" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49795" article="a" name="shenlong sword">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="100" />
+		<attribute key="defense" value="50" />
+		<attribute key="extradef" value="25" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49796" article="a" name="shenlong glove">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="100" />
+		<attribute key="defense" value="25" />
+		<attribute key="extradef" value="25" />
+		<attribute key="weaponType" value="axe" />
+	</item>
+	<item id="49797" article="a" name="shibauine sanguine sword">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="90" />
+		<attribute key="defense" value="30" />
+		<attribute key="extradef" value="10" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49798" article="a" name="ultimate black shenlong sword">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="120" />
+		<attribute key="defense" value="70" />
+		<attribute key="extradef" value="50" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49799" article="a" name="ultimate black shenlong shield">
+		<attribute key="weight" value="3500" />
+		<attribute key="defense" value="150" />
+		<attribute key="extradef" value="50" />
+		<attribute key="weaponType" value="shield" />
+	</item>
+	<item id="49800" article="a" name="falcon sword">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="120" />
+		<attribute key="defense" value="70" />
+		<attribute key="extradef" value="50" />
+		<attribute key="speed" value="250" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49801" article="a" name="demonic sword">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="125" />
+		<attribute key="defense" value="75" />
+		<attribute key="extradef" value="55" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49802" article="a" name="infernal bow">
+		<attribute key="weight" value="3100" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="range" value="7" />
+	</item>
+	<item id="49803" article="a" name="demonic axe">
+		<attribute key="weight" value="2500" />
+		<attribute key="attack" value="115" />
+		<attribute key="defense" value="35" />
+		<attribute key="weaponType" value="axe" />
+	</item>
+	<item id="49804" article="a" name="venom tensa zangetsu sword">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="70" />
+		<attribute key="defense" value="40" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49805" article="a" name="santa tereza eletric sword">
+		<attribute key="weight" value="35000" />
+		<attribute key="attack" value="70" />
+		<attribute key="defense" value="40" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49806" article="a" name="el brazo esquierdo">
+		<attribute key="weight" value="35000" />
+		<attribute key="attack" value="50" />
+		<attribute key="defense" value="40" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49807" article="a" name="kingdom axe">
+		<attribute key="weight" value="35000" />
+		<attribute key="attack" value="70" />
+		<attribute key="defense" value="40" />
+		<attribute key="weaponType" value="axe" />
+	</item>
+	<item id="49808" article="a" name="rita axe">
+		<attribute key="weight" value="35000" />
+		<attribute key="attack" value="170" />
+		<attribute key="defense" value="100" />
+		<attribute key="weaponType" value="axe" />
+	</item>
+	<item id="49809" article="a" name="getsuga shadow sword">
+		<attribute key="weight" value="35000" />
+		<attribute key="attack" value="200" />
+		<attribute key="defense" value="150" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49810" article="a" name="supreme shibauine sanguine sword">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="100" />
+		<attribute key="defense" value="60" />
+		<attribute key="extradef" value="30" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49811" article="a" name="scepter of angel">
+		<attribute key="weight" value="4900" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="energy" />
+		<attribute key="range" value="10" />
+	</item>
+	<item id="49812" article="a" name="angel bow">
+		<attribute key="weight" value="3100" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="ammoType" value="arrow" />
+		<attribute key="range" value="10" />
+	</item>
+	<item id="49813" article="a" name="angel mace">
+		<attribute key="weight" value="35000" />
+		<attribute key="attack" value="115" />
+		<attribute key="defense" value="70" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49813" article="a" name="angel axe">
+		<attribute key="weight" value="35000" />
+		<attribute key="attack" value="114" />
+		<attribute key="defense" value="70" />
+		<attribute key="weaponType" value="club" />
+	</item>
+	<item id="49815" article="a" name="shenlong shield">
+		<attribute key="weight" value="3500" />
+		<attribute key="defense" value="80" />
+		<attribute key="extradef" value="50" />
+		<attribute key="weaponType" value="shield" />
+	</item>
+	<item id="49816" article="a" name="ultimate fullbring armor">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="200" />
+		<attribute key="healthGain" value="20000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="20000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="9" />
+		<attribute key="skillaxe" value="9" />
+		<attribute key="skillclub" value="9" />
+		<attribute key="skilldist" value="9" />
+		<attribute key="skillfish" value="9" />
+		<attribute key="skillshield" value="9" />
+		<attribute key="skillfist" value="9" />
+		<attribute key="magiclevelpoints" value="9" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49817" article="a" name="ultimate fullbring legs">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="200" />
+		<attribute key="healthGain" value="20000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="20000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="9" />
+		<attribute key="skillaxe" value="9" />
+		<attribute key="skillclub" value="9" />
+		<attribute key="skilldist" value="9" />
+		<attribute key="skillfish" value="9" />
+		<attribute key="skillshield" value="9" />
+		<attribute key="skillfist" value="9" />
+		<attribute key="magiclevelpoints" value="9" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49818" article="a" name="ultimate fullbring boots">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="200" />
+		<attribute key="healthGain" value="20000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="20000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="9" />
+		<attribute key="skillaxe" value="9" />
+		<attribute key="skillclub" value="9" />
+		<attribute key="skilldist" value="9" />
+		<attribute key="skillfish" value="9" />
+		<attribute key="skillshield" value="9" />
+		<attribute key="skillfist" value="9" />
+		<attribute key="magiclevelpoints" value="9" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49502" article="a" name="ultimate demonic shenlong ear studs">
+		<attribute key="weight" value="600" />
+		<attribute key="manaGain" value="6200" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentall" value="50" />
+		<attribute key="magiclevelpoints" value="7" />
+		<attribute key="speed" value="750" />
+		<attribute key="slotType" value="ring" />
+	</item>
+	<item id="49820" article="an" name="ultimate demonic shenlong necklace">
+		<attribute key="weight" value="420" />
+		<attribute key="manaGain" value="6200" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentall" value="70" />
+		<attribute key="magiclevelpoints" value="7" />
+		<attribute key="speed" value="750" />
+		<attribute key="slotType" value="necklace" />
+	</item>
+	<item id="49821" article="a" name="ultimate demonic shenlong helmet">
+		<attribute key="weight" value="90000" />
+		<attribute key="armor" value="90" />
+		<attribute key="healthGain" value="6000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="6000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="6" />
+		<attribute key="skillaxe" value="6" />
+		<attribute key="skillclub" value="6" />
+		<attribute key="skilldist" value="6" />
+		<attribute key="skillfish" value="6" />
+		<attribute key="skillshield" value="6" />
+		<attribute key="skillfist" value="6" />
+		<attribute key="magiclevelpoints" value="6" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49822" article="a" name="ultimate demonic shenlong armor">
+		<attribute key="weight" value="90000" />
+		<attribute key="armor" value="90" />
+		<attribute key="healthGain" value="6000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="6000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="6" />
+		<attribute key="skillaxe" value="6" />
+		<attribute key="skillclub" value="6" />
+		<attribute key="skilldist" value="6" />
+		<attribute key="skillfish" value="6" />
+		<attribute key="skillshield" value="6" />
+		<attribute key="skillfist" value="6" />
+		<attribute key="magiclevelpoints" value="6" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49823" article="a" name="ultimate demonic shenlong legs">
+		<attribute key="weight" value="90000" />
+		<attribute key="armor" value="90" />
+		<attribute key="healthGain" value="6000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="6000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="6" />
+		<attribute key="skillaxe" value="6" />
+		<attribute key="skillclub" value="6" />
+		<attribute key="skilldist" value="6" />
+		<attribute key="skillfish" value="6" />
+		<attribute key="skillshield" value="6" />
+		<attribute key="skillfist" value="6" />
+		<attribute key="magiclevelpoints" value="6" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49824" article="a" name="ultimate demonic shenlong boots">
+		<attribute key="weight" value="90000" />
+		<attribute key="armor" value="90" />
+		<attribute key="healthGain" value="6000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="6000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="6" />
+		<attribute key="skillaxe" value="6" />
+		<attribute key="skillclub" value="6" />
+		<attribute key="skilldist" value="6" />
+		<attribute key="skillfish" value="6" />
+		<attribute key="skillshield" value="6" />
+		<attribute key="skillfist" value="6" />
+		<attribute key="magiclevelpoints" value="6" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49825" article="a" name="fullbring helmet">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="180" />
+		<attribute key="healthGain" value="18000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="18000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="8" />
+		<attribute key="skillaxe" value="8" />
+		<attribute key="skillclub" value="8" />
+		<attribute key="skilldist" value="8" />
+		<attribute key="skillfish" value="8" />
+		<attribute key="skillshield" value="8" />
+		<attribute key="skillfist" value="8" />
+		<attribute key="magiclevelpoints" value="8" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49826" article="a" name="fullbring armor">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="180" />
+		<attribute key="healthGain" value="18000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="18000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="8" />
+		<attribute key="skillaxe" value="8" />
+		<attribute key="skillclub" value="8" />
+		<attribute key="skilldist" value="8" />
+		<attribute key="skillfish" value="8" />
+		<attribute key="skillshield" value="8" />
+		<attribute key="skillfist" value="8" />
+		<attribute key="magiclevelpoints" value="8" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49827" article="a" name="fullbring legs">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="180" />
+		<attribute key="healthGain" value="18000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="18000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="8" />
+		<attribute key="skillaxe" value="8" />
+		<attribute key="skillclub" value="8" />
+		<attribute key="skilldist" value="8" />
+		<attribute key="skillfish" value="8" />
+		<attribute key="skillshield" value="8" />
+		<attribute key="skillfist" value="8" />
+		<attribute key="magiclevelpoints" value="8" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49828" article="a" name="fullbring boots">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="180" />
+		<attribute key="healthGain" value="18000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="18000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="8" />
+		<attribute key="skillaxe" value="8" />
+		<attribute key="skillclub" value="8" />
+		<attribute key="skilldist" value="8" />
+		<attribute key="skillfish" value="8" />
+		<attribute key="skillshield" value="8" />
+		<attribute key="skillfist" value="8" />
+		<attribute key="magiclevelpoints" value="8" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49829" article="a" name="angel helmet">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="185" />
+		<attribute key="healthGain" value="17500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="17500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="8" />
+		<attribute key="skillaxe" value="8" />
+		<attribute key="skillclub" value="8" />
+		<attribute key="skilldist" value="8" />
+		<attribute key="skillfish" value="8" />
+		<attribute key="skillshield" value="8" />
+		<attribute key="skillfist" value="8" />
+		<attribute key="magiclevelpoints" value="10" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49830" article="a" name="angel armor">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="185" />
+		<attribute key="healthGain" value="17500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="17500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="8" />
+		<attribute key="skillaxe" value="8" />
+		<attribute key="skillclub" value="8" />
+		<attribute key="skilldist" value="8" />
+		<attribute key="skillfish" value="8" />
+		<attribute key="skillshield" value="8" />
+		<attribute key="skillfist" value="8" />
+		<attribute key="magiclevelpoints" value="10" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49831" article="a" name="angel legs">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="185" />
+		<attribute key="healthGain" value="17500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="17500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="8" />
+		<attribute key="skillaxe" value="8" />
+		<attribute key="skillclub" value="8" />
+		<attribute key="skilldist" value="8" />
+		<attribute key="skillfish" value="8" />
+		<attribute key="skillshield" value="8" />
+		<attribute key="skillfist" value="8" />
+		<attribute key="magiclevelpoints" value="10" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49832" article="a" name="angel boots">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="185" />
+		<attribute key="healthGain" value="17500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="17500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="8" />
+		<attribute key="skillaxe" value="8" />
+		<attribute key="skillclub" value="8" />
+		<attribute key="skilldist" value="8" />
+		<attribute key="skillfish" value="8" />
+		<attribute key="skillshield" value="8" />
+		<attribute key="skillfist" value="8" />
+		<attribute key="magiclevelpoints" value="10" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49833" article="a" name="ultimate fullbring helmet">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="200" />
+		<attribute key="healthGain" value="20000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="20000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="9" />
+		<attribute key="skillaxe" value="9" />
+		<attribute key="skillclub" value="9" />
+		<attribute key="skilldist" value="9" />
+		<attribute key="skillfish" value="9" />
+		<attribute key="skillshield" value="9" />
+		<attribute key="skillfist" value="9" />
+		<attribute key="magiclevelpoints" value="9" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49834" article="a" name="purple bar" plural="purple bars">
+		<attribute key="weight" value="10" />
+		<attribute key="worth" value="10000" />
+	</item>
+	<item id="49835" article="a" name="sonic coin" plural="sonic coins">
+		<attribute key="weight" value="10" />
+		<attribute key="worth" value="10000" />
+	</item>
+	<item id="49836" article="a" name="green bar" plural="green bars">
+		<attribute key="weight" value="10" />
+		<attribute key="worth" value="10000" />
+	</item>
+	<item id="49837" article="a" name="grey bar" plural="grey bars">
+		<attribute key="weight" value="10" />
+		<attribute key="worth" value="10000" />
+	</item>
+	<item id="49838" article="a" name="infernal ball" plural="infernal balls">
+		<attribute key="weight" value="10" />
+		<attribute key="worth" value="10000" />
+	</item>
+	<item id="49839" article="a" name="eletric ball" plural="eletric balls">
+		<attribute key="weight" value="10" />
+		<attribute key="worth" value="10000" />
+	</item>
+	<item id="49840" article="a" name="aqua ball" plural="aqua balls">
+		<attribute key="weight" value="10" />
+		<attribute key="worth" value="10000" />
+	</item>
 	<item id="49841" article="a" name="shenlong backpack">
 		<attribute key="weight" value="1500" />
 		<attribute key="containerSize" value="35" />
@@ -70835,14 +71598,387 @@
 		<attribute key="containerSize" value="35" />
 		<attribute key="slotType" value="backpack" />
 	</item>
-	<item id="49882" article="a" name="hermes backpack">
+	<item id="49848" article="a" name="yellow detector">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="15" />
+		<attribute key="healthGain" value="750" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="750" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="2" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49849" article="a" name="broly boots">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="65" />
+		<attribute key="healthGain" value="2500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="2500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="4" />
+		<attribute key="skillaxe" value="4" />
+		<attribute key="skillclub" value="4" />
+		<attribute key="skilldist" value="4" />
+		<attribute key="skillfish" value="4" />
+		<attribute key="skillshield" value="4" />
+		<attribute key="skillfist" value="4" />
+		<attribute key="magiclevelpoints" value="4" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49850" article="a" name="corporation legs">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="65" />
+		<attribute key="healthGain" value="1500" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1500" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="2" />
+		<attribute key="skillaxe" value="2" />
+		<attribute key="skillclub" value="2" />
+		<attribute key="skilldist" value="2" />
+		<attribute key="skillfish" value="2" />
+		<attribute key="skillshield" value="2" />
+		<attribute key="skillfist" value="2" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49851" article="a" name="white potara">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="35" />
+		<attribute key="healthGain" value="1000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="1" />
+		<attribute key="skillaxe" value="1" />
+		<attribute key="skillclub" value="1" />
+		<attribute key="skilldist" value="1" />
+		<attribute key="skillfish" value="1" />
+		<attribute key="skillshield" value="1" />
+		<attribute key="skillfist" value="1" />
+		<attribute key="slotType" value="ring" />
+	</item>
+	<item id="49852" article="a" name="goku doll">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="49853" article="a" name="vegeta doll">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="49854" article="a" name="freeza doll">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="49855" article="a" name="android 18 doll">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="49856" article="a" name="black one star dragon ball">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="49857" article="a" name="black two star dragon ball">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="49858" article="a" name="black three star dragon ball">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="49859" article="a" name="black four star dragon ball">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="49860" article="a" name="black five star dragon ball">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="49861" article="a" name="black six star dragon ball">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="49862" article="a" name="black seven star dragon ball">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="49863" article="a" name="sword of ice">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="105" />
+		<attribute key="defense" value="60" />
+		<attribute key="extradef" value="30" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49864" article="a" name="imperfect-form freeza helmet">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="20" />
+		<attribute key="healthGain" value="1000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="helmet" />
+	</item>
+	<item id="49865" article="a" name="imperfect-form freeza armor">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="20" />
+		<attribute key="healthGain" value="1000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49866" article="a" name="imperfect-form freeza legs">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="20" />
+		<attribute key="healthGain" value="1000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49867" article="a" name="imperfect-form cell helmet">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="25" />
+		<attribute key="healthGain" value="1200" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1200" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="helmet" />
+	</item>
+	<item id="49868" article="a" name="imperfect-form cell armor">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="25" />
+		<attribute key="healthGain" value="1200" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1200" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49869" article="a" name="imperfect-form cell legs">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="25" />
+		<attribute key="healthGain" value="1200" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1200" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49870" article="a" name="simple golden boots">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="50" />
+		<attribute key="healthGain" value="1800" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1800" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49871" article="a" name="ice potara">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="35" />
+		<attribute key="healthGain" value="1000" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1000" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="skillsword" value="1" />
+		<attribute key="skillaxe" value="1" />
+		<attribute key="skillclub" value="1" />
+		<attribute key="skilldist" value="1" />
+		<attribute key="skillfish" value="1" />
+		<attribute key="skillshield" value="1" />
+		<attribute key="skillfist" value="1" />
+		<attribute key="absorbpercentice" value="100" />
+		<attribute key="absorbpercentfire" value="-100" />
+		<attribute key="slotType" value="ring" />
+	</item>
+	<item id="49872" article="a" name="cell eggs">
+		<attribute key="description" value="item used to craft Cell Set." />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="49812" article="a" name="energy gloves">
+		<attribute key="weight" value="1100" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="slotType" value="two-handed" />
+		<attribute key="ammoType" value="bolt" />
+		<attribute key="range" value="10" />
+	</item>
+	<item id="49874" article="a" name="one star wins">
+		<attribute key="weight" value="3000" />
+	</item>
+	<item id="49875" article="a" name="ice glove">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="55" />
+		<attribute key="defense" value="15" />
+		<attribute key="extradef" value="5" />
+		<attribute key="absorbpercentice" value="90" />
+		<attribute key="absorbpercentfire" value="-90" />
+		<attribute key="weaponType" value="axe" />
+	</item>
+	<item id="49876" article="a" name="ice sword">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="550" />
+		<attribute key="defense" value="15" />
+		<attribute key="extradef" value="10" />
+		<attribute key="absorbpercentice" value="90" />
+		<attribute key="absorbpercentfire" value="-90" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49877" article="a" name="ice boots">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="50" />
+		<attribute key="healthGain" value="3800" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="3800" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentice" value="90" />
+		<attribute key="absorbpercentfire" value="-90" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="49878" article="a" name="corporation helmet">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="20" />
+		<attribute key="healthGain" value="1300" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1300" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="helmet" />
+	</item>
+	<item id="49879" article="a" name="future trunks cloak">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="20" />
+		<attribute key="healthGain" value="1100" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1100" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49880" article="a" name="ice turban">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="50" />
+		<attribute key="healthGain" value="3800" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="3800" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentice" value="90" />
+		<attribute key="absorbpercentfire" value="-90" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="49881" article="a" name="ice cloak">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="50" />
+		<attribute key="healthGain" value="3800" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="3800" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentice" value="90" />
+		<attribute key="absorbpercentfire" value="-90" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49882" article="a" name="ice backpack">
 		<attribute key="weight" value="1500" />
 		<attribute key="containerSize" value="35" />
 		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="49883" article="a" name="energy ball shield">
+		<attribute key="weight" value="3500" />
+		<attribute key="defense" value="80" />
+		<attribute key="extradef" value="50" />
+		<attribute key="absorbpercentenergy" value="90" />
+		<attribute key="weaponType" value="shield" />
+	</item>
+	<item id="49884" article="a" name="energy ball glove">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="55" />
+		<attribute key="defense" value="15" />
+		<attribute key="extradef" value="5" />
+		<attribute key="absorbpercentenergy" value="90" />
+		<attribute key="absorbpercentpoison" value="-90" />
+		<attribute key="weaponType" value="axe" />
+	</item>
+	<item id="49885" article="a" name="energy ball sword">
+		<attribute key="weight" value="3500" />
+		<attribute key="attack" value="55" />
+		<attribute key="defense" value="15" />
+		<attribute key="extradef" value="10" />
+		<attribute key="absorbpercentenergy" value="90" />
+		<attribute key="absorbpercentpoison" value="-90" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="49886" article="a" name="energy boots">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="90" />
+		<attribute key="healthGain" value="6800" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="6800" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="absorbpercentenergy" value="90" />
+		<attribute key="absorbpercentpoison" value="-90" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49887" article="a" name="energy cloak">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="90" />
+		<attribute key="healthGain" value="6800" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="6800" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="absorbpercentenergy" value="90" />
+		<attribute key="absorbpercentpoison" value="-90" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49888" article="a" name="energy armor">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="90" />
+		<attribute key="healthGain" value="6800" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="6800" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="absorbpercentenergy" value="90" />
+		<attribute key="absorbpercentpoison" value="-90" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="49889" article="a" name="energy helmet">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="90" />
+		<attribute key="healthGain" value="6800" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="6800" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="absorbpercentenergy" value="90" />
+		<attribute key="absorbpercentpoison" value="-90" />
+		<attribute key="slotType" value="helmet" />
+	</item>
+	<item id="49890" article="a" name="energy necklace">
+		<attribute key="weight" value="10000" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="absorbpercentenergy" value="90" />
+		<attribute key="absorbpercentpoison" value="-90" />
+		<attribute key="slotType" value="necklace" />
 	</item>
 	<item id="49891" article="a" name="neon backpack">
 		<attribute key="weight" value="1500" />
 		<attribute key="containerSize" value="35" />
 		<attribute key="slotType" value="backpack" />
 	</item>
+	<item id="49892" article="a" name="energy legs">
+		<attribute key="weight" value="10000" />
+		<attribute key="armor" value="90" />
+		<attribute key="healthGain" value="6800" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="6800" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="absorbpercentenergy" value="90" />
+		<attribute key="absorbpercentpoison" value="-90" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="49893" name="clouds ground" />
+	<item fromid="49894" toid="49896" article="a" name="dbo green grass flowers ground" />
+	<item fromid="49897" toid="49907" article="a" name="dbo grass ground" />
+	<item id="49908" name="ramps ground" />
+	<item id="49909" name="white ground" />
+	<item id="49910" name="ramps ground" />
+	<item id="49911" name="bleach ramps ground" />
+	<item id="49912" name="bleach grey ground" />
+	<item id="49913" name="space ground" />
+	<item id="49914" name="grass ground" />
+	<item id="49915" name="stars ground" />
+	<item id="49916" name="stones ground" />
+	<item id="49917" name="grey stones ground" />
+	<item id="49918" name="stones ground" />
+	<item id="49919" name="grey stones ground" />
+	<item id="49920" name="dark browns ramps ground" />
+	<item fromid="49921" toid="49922" name="dark stones ground" />
+	<item fromid="49923" toid="49924" name="dark stones ground" />
 </items>
