@@ -1,44 +1,60 @@
-[10/9/2025 9:45:49] > Usando SHA1 criptografia
-[10/9/2025 9:45:49] >> Carregando RSA key
-[10/9/2025 9:45:49] >> Iniciando conexao SQL
-[10/9/2025 9:45:49] >> Executando Gerenciador de Banco de Dados
-[10/9/2025 9:45:49] > Optimized database.
-[10/9/2025 9:45:49] >> Carregando items (OTB)
-[10/9/2025 9:45:49] >> Carregando items (XML)
-[10/9/2025 9:45:49] >> Carregando Grupos
-[10/9/2025 9:45:49] >> Carregando Vocacoes
-[10/9/2025 9:45:49] >> Carregando Outfits
-[10/9/2025 9:45:49] >> Carregando Canal de Chat
-[10/9/2025 9:45:49] >> Carregando Sistema
-[10/9/2025 9:45:50] >> Carregando Mods...
-[10/9/2025 9:45:50] > Loading AutoLoot.xml... done.
-[10/9/2025 9:45:50] > Loading Automatic Raids.xml... done.
-[10/9/2025 9:45:50] > Loading highscorebook.xml... done.
-[10/9/2025 9:45:50] > Loading Simple Task.xml... done.
-[10/9/2025 9:45:50] > 4 mods were loaded.
-[10/9/2025 9:45:50] >> Carregando EXP Stages
-[10/9/2025 9:45:50] >> Carregando Monstros
-[10/9/2025 9:45:50] >> Carregando Mapa e Spawns...
-[10/9/2025 9:45:50] > Tamanho do Mapa: 64000x64000.
-[10/9/2025 9:45:50] > Descricao do Mapa: 
-[10/9/2025 9:45:50] "Saved with OTAcademy Map Editor 4.1.1"
-[10/9/2025 9:45:50] "No map description available."
-[10/9/2025 9:45:51] > Mapa carregado em: 1.164 segundos.
-[10/9/2025 9:45:51] > Data carregada em: 0.071 segundos.
-[10/9/2025 9:45:51] > Houses carregada em: 0 segundos.
-[10/9/2025 9:45:51] > Content unserialization time: 0.001 seconds.
-[10/9/2025 9:45:51] > Carregando Tipo de PVP... Open PvP
-[10/9/2025 9:45:51] > Inicializando estado do jogo e registrando servicos...
-[10/9/2025 9:45:51] > IP do Servidor: 127.0.0.1
-[10/9/2025 9:45:51] > IP local do Servidor: 172.21.80.1	192.168.1.102	
-[10/9/2025 9:45:51] > Portas do Servidor: 7171	7172	
-[10/9/2025 9:45:51] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[10/9/2025 9:46:1] >> DBOSupreme servidor Online!
+[30/9/2025 8:52:18] > Usando SHA1 criptografia
+[30/9/2025 8:52:18] >> Carregando RSA key
+[30/9/2025 8:52:18] >> Iniciando conexao SQL
+[30/9/2025 8:52:18] >> Executando Gerenciador de Banco de Dados
+[30/9/2025 8:52:18] > Optimized database.
+[30/9/2025 8:52:18] >> Carregando items (OTB)
+[30/9/2025 8:52:19] >> Carregando items (XML)
+[30/9/2025 8:52:19] >> Carregando Grupos
+[30/9/2025 8:52:19] >> Carregando Vocacoes
+[30/9/2025 8:52:19] >> Carregando Outfits
+[30/9/2025 8:52:19] >> Carregando Canal de Chat
+[30/9/2025 8:52:19] >> Carregando Sistema
+[30/9/2025 8:52:20] >> Carregando Mods...
+[30/9/2025 8:52:20] > Loading AutoLoot.xml... done.
+[30/9/2025 8:52:20] > Loading Automatic Raids.xml... done.
+[30/9/2025 8:52:20] > Loading highscorebook.xml... done.
+[30/9/2025 8:52:20] > Loading Simple Task.xml... done.
+[30/9/2025 8:52:20] > 4 mods were loaded.
+[30/9/2025 8:52:20] >> Carregando EXP Stages
+[30/9/2025 8:52:20] >> Carregando Monstros
+[30/9/2025 8:52:20] >> Carregando Mapa e Spawns...
+[30/9/2025 8:52:20] > Tamanho do Mapa: 64000x64000.
+[30/9/2025 8:52:20] > Descricao do Mapa: 
+[30/9/2025 8:52:20] "Saved with OTAcademy Map Editor 4.1.1"
+[30/9/2025 8:52:20] "No map description available."
+[30/9/2025 8:52:22] > Mapa carregado em: 1.825 segundos.
+[30/9/2025 8:52:22] > Data carregada em: 0.134 segundos.
+[30/9/2025 8:52:22] > Houses carregada em: 0.002 segundos.
+[30/9/2025 8:52:22] > Content unserialization time: 0.001 seconds.
+[30/9/2025 8:52:22] > Carregando Tipo de PVP... Open PvP
+[30/9/2025 8:52:22] > Inicializando estado do jogo e registrando servicos...
+[30/9/2025 8:52:22] > IP do Servidor: 127.0.0.1
+[30/9/2025 8:52:22] > IP local do Servidor: 172.22.192.1	192.168.1.102	
+[30/9/2025 8:52:22] > Portas do Servidor: 7171	7172	
+[30/9/2025 8:52:22] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[30/9/2025 8:52:32] >> DBOSupreme servidor Online!
 
-[10/9/2025 9:46:20] God has logged in.
-[10/9/2025 9:49:38] God has logged out.
-[10/9/2025 10:47:50] > Salvando servidor...
-[10/9/2025 10:47:50] > SAVE: Completo em 0.003 segundos usando binary casa storage.
-[10/9/2025 11:46:20] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
-[10/9/2025 11:47:50] > Salvando servidor...
-[10/9/2025 11:47:50] > SAVE: Completo em 0.001 segundos usando binary casa storage.
+[30/9/2025 8:52:33] God has logged in.
+[30/9/2025 8:53:0] God has logged out.
+[30/9/2025 8:53:1] Account Manager has logged in.
+[30/9/2025 8:53:3] Account Manager has logged out.
+[30/9/2025 8:53:3] Dias Atras has logged in.
+[30/9/2025 8:53:5] Dias Atras has logged out.
+[30/9/2025 8:53:6] God has logged in.
+
+[30/9/2025 8:53:52] [Error - TalkAction Interface] 
+[30/9/2025 8:53:52] data/talkactions/scripts/addlevel.lua:onSay
+[30/9/2025 8:53:52] Description: 
+[30/9/2025 8:53:52] data/lib/050-function.lua:157: attempt to perform arithmetic on local 'lv' (a nil value)
+[30/9/2025 8:53:52] stack traceback:
+[30/9/2025 8:53:52] 	data/lib/050-function.lua:157: in function 'getExperienceForLevel'
+[30/9/2025 8:53:52] 	data/talkactions/scripts/addlevel.lua:14: in function <data/talkactions/scripts/addlevel.lua:1>
+
+[30/9/2025 8:57:20] [Error - GlobalEvent Interface] 
+[30/9/2025 8:57:20] data/globalevents/scripts/online_highscore.lua:onThink
+[30/9/2025 8:57:20] Description: 
+[30/9/2025 8:57:20] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[30/9/2025 8:57:20] stack traceback:
+[30/9/2025 8:57:20] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[30/9/2025 8:57:20] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore

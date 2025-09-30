@@ -67215,39 +67215,6 @@
 	<item id="49530" article="a" name="trunks saiyajin doll">
 		<attribute key="weight" value="850" />
 	</item>
-	<item id="49852" article="a" name="new goku doll">
-		<attribute key="weight" value="850" />
-	</item>
-	<item id="49853" article="a" name="new vegeta doll">
-		<attribute key="weight" value="850" />
-	</item>
-	<item id="49864" article="a" name="new freeza doll">
-		<attribute key="weight" value="850" />
-	</item>
-	<item id="49854" article="a" name="new android 18 doll">
-		<attribute key="weight" value="850" />
-	</item>
-	<item id="49856" article="a" name="one star dragon ball">
-		<attribute key="weight" value="850" />
-	</item>
-	<item id="49857" article="a" name="two star dragon ball">
-		<attribute key="weight" value="850" />
-	</item>
-	<item id="49858" article="a" name="three star dragon ball">
-		<attribute key="weight" value="850" />
-	</item>
-	<item id="49859" article="a" name="four star dragon ball">
-		<attribute key="weight" value="850" />
-	</item>
-	<item id="49860" article="a" name="five star dragon ball">
-		<attribute key="weight" value="850" />
-	</item>
-	<item id="49861" article="a" name="six star dragon ball">
-		<attribute key="weight" value="850" />
-	</item>
-	<item id="49862" article="a" name="seven star dragon ball">
-		<attribute key="weight" value="850" />
-	</item>
 	<item id="49066" article="a" name="ancient sea chest">
 		<attribute key="containerSize" value="10" />
 	</item>
@@ -71233,7 +71200,7 @@
 		<attribute key="defense" value="70" />
 		<attribute key="weaponType" value="club" />
 	</item>
-	<item id="49813" article="a" name="angel axe">
+	<item id="49814" article="a" name="angel axe">
 		<attribute key="weight" value="35000" />
 		<attribute key="attack" value="114" />
 		<attribute key="defense" value="70" />
@@ -71296,7 +71263,7 @@
 		<attribute key="magiclevelpoints" value="9" />
 		<attribute key="slotType" value="feet" />
 	</item>
-	<item id="49502" article="a" name="ultimate demonic shenlong ear studs">
+	<item id="49819" article="a" name="ultimate demonic shenlong ear studs">
 		<attribute key="weight" value="600" />
 		<attribute key="manaGain" value="6200" />
 		<attribute key="manaTicks" value="1" />
@@ -71537,31 +71504,28 @@
 	</item>
 	<item id="49834" article="a" name="purple bar" plural="purple bars">
 		<attribute key="weight" value="10" />
-		<attribute key="worth" value="10000" />
+		<attribute key="worth" value="20000" />
 	</item>
 	<item id="49835" article="a" name="sonic coin" plural="sonic coins">
 		<attribute key="weight" value="10" />
-		<attribute key="worth" value="10000" />
+		<attribute key="worth" value="30000" />
 	</item>
 	<item id="49836" article="a" name="green bar" plural="green bars">
 		<attribute key="weight" value="10" />
-		<attribute key="worth" value="10000" />
+		<attribute key="worth" value="40000" />
 	</item>
 	<item id="49837" article="a" name="grey bar" plural="grey bars">
 		<attribute key="weight" value="10" />
-		<attribute key="worth" value="10000" />
+		<attribute key="worth" value="50000" />
 	</item>
 	<item id="49838" article="a" name="infernal ball" plural="infernal balls">
 		<attribute key="weight" value="10" />
-		<attribute key="worth" value="10000" />
 	</item>
 	<item id="49839" article="a" name="eletric ball" plural="eletric balls">
 		<attribute key="weight" value="10" />
-		<attribute key="worth" value="10000" />
 	</item>
 	<item id="49840" article="a" name="aqua ball" plural="aqua balls">
 		<attribute key="weight" value="10" />
-		<attribute key="worth" value="10000" />
 	</item>
 	<item id="49841" article="a" name="shenlong backpack">
 		<attribute key="weight" value="1500" />
@@ -71704,7 +71668,7 @@
 		<attribute key="healthTicks" value="1" />
 		<attribute key="manaGain" value="1000" />
 		<attribute key="manaTicks" value="1" />
-		<attribute key="slotType" value="helmet" />
+		<attribute key="slotType" value="head" />
 	</item>
 	<item id="49865" article="a" name="imperfect-form freeza armor">
 		<attribute key="weight" value="10000" />
@@ -71731,7 +71695,7 @@
 		<attribute key="healthTicks" value="1" />
 		<attribute key="manaGain" value="1200" />
 		<attribute key="manaTicks" value="1" />
-		<attribute key="slotType" value="helmet" />
+		<attribute key="slotType" value="head" />
 	</item>
 	<item id="49868" article="a" name="imperfect-form cell armor">
 		<attribute key="weight" value="10000" />
@@ -71782,7 +71746,7 @@
 		<attribute key="description" value="item used to craft Cell Set." />
 		<attribute key="weight" value="1000" />
 	</item>
-	<item id="49812" article="a" name="energy gloves">
+	<item id="49873" article="a" name="energy gloves">
 		<attribute key="weight" value="1100" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="slotType" value="two-handed" />
@@ -71828,7 +71792,7 @@
 		<attribute key="healthTicks" value="1" />
 		<attribute key="manaGain" value="1300" />
 		<attribute key="manaTicks" value="1" />
-		<attribute key="slotType" value="helmet" />
+		<attribute key="slotType" value="head" />
 	</item>
 	<item id="49879" article="a" name="future trunks cloak">
 		<attribute key="weight" value="10000" />
@@ -71937,7 +71901,7 @@
 		<attribute key="magiclevelpoints" value="5" />
 		<attribute key="absorbpercentenergy" value="90" />
 		<attribute key="absorbpercentpoison" value="-90" />
-		<attribute key="slotType" value="helmet" />
+		<attribute key="slotType" value="head" />
 	</item>
 	<item id="49890" article="a" name="energy necklace">
 		<attribute key="weight" value="10000" />
