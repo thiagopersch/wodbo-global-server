@@ -66017,7 +66017,6 @@
 	<item id="44266" article="a" name="turtle amulet" editorsuffix=" (Discharged)">
 		<attribute key="weight" value="480" />
 		<attribute key="slotType" value="necklace" />
-
 	</item>
 	<item id="44267" article="a" name="primal light" editorsuffix=" (R: 1, White)" />
 	<!-- 44268 -->
@@ -67110,9 +67109,130 @@
 	<item id="44763" article="a" name="hunter and golden hunter doll">
 		<attribute key="weight" value="850" />
 	</item>
+	<item id="44764" article="a" name="magnific king sword">
+		<attribute key="weight" value="3300" />
+		<attribute key="attack" value="500" />
+		<attribute key="defense" value="400" />
+		<attribute key="extradef" value="400" />
+		<attribute key="weaponType" value="sword" />
+	</item>
 	<item fromid="44778" toid="44789" article="a" name="flowyer bed">
 		<attribute key="type" value="bed" />
 		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="45527" article="a" name="indie mace">
+		<attribute key="weight" value="3300" />
+		<attribute key="attack" value="40" />
+		<attribute key="defense" value="20" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<item id="45528" article="a" name="indie lance legs">
+		<attribute key="weight" value="900" />
+		<attribute key="armor" value="50" />
+		<attribute key="healthGain" value="1350" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1350" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="45529" article="a" name="indie lance helmet">
+		<attribute key="weight" value="900" />
+		<attribute key="armor" value="50" />
+		<attribute key="healthGain" value="1350" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1350" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="45530" article="a" name="indie lance armor">
+		<attribute key="weight" value="900" />
+		<attribute key="armor" value="50" />
+		<attribute key="healthGain" value="1350" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1350" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="slotType" value="body" />
+	</item>
+	<item id="45531" article="a" name="indie lance boots">
+		<attribute key="weight" value="900" />
+		<attribute key="armor" value="50" />
+		<attribute key="healthGain" value="1350" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1350" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="speed" value="300" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="45532" article="a" name="indie lance">
+		<attribute key="weight" value="6700" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="smallice" />
+		<attribute key="range" value="4" />
+	</item>
+	<item id="45585" article="a" name="indie knight helmet">
+		<attribute key="weight" value="900" />
+		<attribute key="armor" value="50" />
+		<attribute key="healthGain" value="1350" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1350" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentall" value="40" />
+		<attribute key="slotType" value="head" />
+	</item>
+	<item id="45586" article="a" name="indie knight legs">
+		<attribute key="weight" value="900" />
+		<attribute key="armor" value="50" />
+		<attribute key="healthGain" value="1350" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1350" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentall" value="40" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="45587" article="a" name="indie knight thin legs">
+		<attribute key="weight" value="900" />
+		<attribute key="armor" value="53" />
+		<attribute key="healthGain" value="1350" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1350" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="speed" value="200" />
+		<attribute key="absorbpercentall" value="30" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="45588" article="a" name="indie knight armor">
+		<attribute key="weight" value="900" />
+		<attribute key="armor" value="50" />
+		<attribute key="healthGain" value="1350" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1350" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="absorbpercentall" value="40" />
+		<attribute key="slotType" value="legs" />
+	</item>
+	<item id="45589" article="a" name="pox boots">
+		<attribute key="weight" value="9000" />
+		<attribute key="armor" value="55" />
+		<attribute key="healthGain" value="1750" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1750" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="speed" value="450" />
+		<attribute key="absorbpercentpoison" value="100" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="45590" article="a" name="bones boots">
+		<attribute key="weight" value="9000" />
+		<attribute key="armor" value="35" />
+		<attribute key="healthGain" value="1250" />
+		<attribute key="healthTicks" value="1" />
+		<attribute key="manaGain" value="1250" />
+		<attribute key="manaTicks" value="1" />
+		<attribute key="speed" value="600" />
+		<attribute key="absorbpercentpoison" value="40" />
+		<attribute key="absorbpercentdeath" value="90" />
+		<attribute key="absorbpercentphysical" value="-30" />
+		<attribute key="slotType" value="feet" />
 	</item>
 	<item fromid="47340" toid="47351" article="a" name="boat bed">
 		<attribute key="type" value="bed" />
