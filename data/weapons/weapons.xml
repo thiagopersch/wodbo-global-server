@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <weapons>
 	<!-- Magics -->
-	<wand id="2401" event="script" value="big mace.lua"/>
-	<wand id="2439" event="script" value="blaster.lua"/>
-	<wand id="2190" event="script" value="bow ice.lua"/>
-	<wand id="2187" event="script" value="bow of inferno.lua"/>
-	<wand id="2423" event="script" value="clerical mace.lua"/>
-	<wand id="2186" event="script" value="crossbow of inferno.lua"/>
-	<wand id="2185" event="script" value="crossbow supreme.lua"/>
-	<wand id="2433" event="script" value="enchanted staff.lua"/>
-	<wand id="2436" event="script" value="energy gun.lua"/>
-	<wand id="2445" event="script" value="energy ki.lua"/>
-	<wand id="2434" event="script" value="green gun.lua"/>
-	<wand id="2188" event="script" value="ice barbarian bow.lua"/>
-	<wand id="8910" event="script" value="ice rod.lua"/>
-	<wand id="2398" event="script" value="mace.lua"/>
-	<wand id="2424" event="script" value="metralhadora.lua"/>
-	<wand id="2394" event="script" value="morning star.lua"/>
-	<wand id="8911" event="script" value="northwind rod.lua"/>
-	<wand id="8932" event="script" value="pistol.lua"/>
-	<wand id="2444" event="script" value="red ki.lua"/>
-	<wand id="2422" event="script" value="rifle.lua"/>
-	<wand id="2448" event="script" value="studded ki.lua"/>
-	<wand id="2189" event="script" value="supreme bow.lua"/>
-	<wand id="8921" event="script" value="supreme demonic wand.lua"/>
-	<wand id="7958" event="script" value="supreme vortex.lua"/>
-	<wand id="2191" event="script" value="wand of dragonbreath.lua"/>
-	<wand id="2391" event="script" value="war pistol.lua"/>
-	<wand id="13705" event="script" value="infernal's bow.lua"/>
-	<wand id="13714" event="script" value="angel wand.lua"/>
-	<wand id="13715" event="script" value="angel bow.lua"/>
-	<wand id="14249" event="script" value="soulmaimer.lua"/>
-	<wand id="14250" event="script" value="soulbleeder.lua"/>
-	<wand id="14251" event="script" value="soulpiercer.lua"/>
-	
-	<wand id="14252" event="script" value="soultainter.lua"/>
-	<wand id="14253" event="script" value="soulhexer.lua"/>
+	<wand id="2401" event="script" value="big mace.lua" />
+	<wand id="2439" event="script" value="blaster.lua" />
+	<wand id="2190" event="script" value="bow ice.lua" />
+	<wand id="2187" event="script" value="bow of inferno.lua" />
+	<wand id="2423" event="script" value="clerical mace.lua" />
+	<wand id="2186" event="script" value="crossbow of inferno.lua" />
+	<wand id="2185" event="script" value="crossbow supreme.lua" />
+	<wand id="2433" event="script" value="enchanted staff.lua" />
+	<wand id="2436" event="script" value="energy gun.lua" />
+	<wand id="2445" event="script" value="energy ki.lua" />
+	<wand id="2434" event="script" value="green gun.lua" />
+	<wand id="2188" event="script" value="ice barbarian bow.lua" />
+	<wand id="8910" event="script" value="ice rod.lua" />
+	<wand id="2398" event="script" value="mace.lua" />
+	<wand id="2424" event="script" value="metralhadora.lua" />
+	<wand id="2394" event="script" value="morning star.lua" />
+	<wand id="8911" event="script" value="northwind rod.lua" />
+	<wand id="8932" event="script" value="pistol.lua" />
+	<wand id="2444" event="script" value="red ki.lua" />
+	<wand id="2422" event="script" value="rifle.lua" />
+	<wand id="2448" event="script" value="studded ki.lua" />
+	<wand id="2189" event="script" value="supreme bow.lua" />
+	<wand id="8921" event="script" value="supreme demonic wand.lua" />
+	<wand id="7958" event="script" value="supreme vortex.lua" />
+	<wand id="2191" event="script" value="wand of dragonbreath.lua" />
+	<wand id="2391" event="script" value="war pistol.lua" />
+	<wand id="13705" event="script" value="infernal's bow.lua" />
+	<wand id="13714" event="script" value="angel wand.lua" />
+	<wand id="13715" event="script" value="angel bow.lua" />
+	<wand id="14249" event="script" value="soulmaimer.lua" />
+	<wand id="14250" event="script" value="soulbleeder.lua" />
+	<wand id="14251" event="script" value="soulpiercer.lua" />
+	<wand id="14252" event="script" value="soultainter.lua" />
+	<wand id="14253" event="script" value="soulhexer.lua" />
 
 
 	<!-- Todos -->

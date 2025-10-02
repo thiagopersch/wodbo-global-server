@@ -16431,14 +16431,11 @@
 		<attribute key="weight" value="2500" />
 		<attribute key="armor" value="6" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8820" article="a" name="mage hat">
 		<attribute key="weight" value="900" />
 		<attribute key="armor" value="3" />
 		<attribute key="slotType" value="head" />
-
-
 	</item>
 	<item id="8821" article="a" name="witchhunter's coat">
 		<attribute key="weight" value="2500" />
@@ -16446,41 +16443,33 @@
 		<attribute key="absorbPercentDeath" value="2" />
 		<attribute key="absorbPercentHoly" value="-2" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item fromid="8822" toid="8823" article="a" name="toolbox" />
 	<item fromid="8824" toid="8833" name="sparkling gems" />
 	<item fromid="8834" toid="8835" article="a" name="sorcerer statue" />
 	<item fromid="8836" toid="8837" article="a" name="guardian statue" />
 	<item id="8838" article="a" name="potato" plural="potatoes">
-
 		<attribute key="weight" value="170" />
 	</item>
 	<item id="8839" article="a" name="plum">
-
 		<attribute key="weight" value="130" />
 	</item>
 	<item id="8840" article="a" name="raspberry" plural="raspberries">
-
 		<attribute key="weight" value="20" />
 	</item>
 	<item id="8841" article="a" name="lemon">
 		<attribute key="weight" value="20" />
 	</item>
 	<item id="8842" article="a" name="cucumber">
-
 		<attribute key="weight" value="200" />
 	</item>
 	<item id="8843" article="an" name="onion">
-
 		<attribute key="weight" value="140" />
 	</item>
 	<item id="8844" article="a" name="jalapeno pepper">
-
 		<attribute key="weight" value="30" />
 	</item>
 	<item id="8845" article="a" name="beetroot">
-
 		<attribute key="weight" value="130" />
 	</item>
 	<item id="8846" article="a" name="lump of chocolate dough" plural="lumps of chocolate dough">
@@ -16497,81 +16486,66 @@
 		<attribute key="weight" value="3500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
-
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="range" value="5" />
 		<attribute key="hitChance" value="1" />
-
 	</item>
 	<item id="8850" article="a" name="chain bolter">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
-
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="range" value="3" />
 		<attribute key="attack" value="4" />
-
 	</item>
 	<item id="8851" article="a" name="royal crossbow">
 		<attribute key="weight" value="12000" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
-
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="range" value="6" />
 		<attribute key="hitChance" value="3" />
 		<attribute key="attack" value="5" />
-
 	</item>
 	<item id="8852" article="the" name="devileye">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
-
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="range" value="6" />
 		<attribute key="hitChance" value="-20" />
 		<attribute key="attack" value="20" />
-
 	</item>
 	<item id="8853" article="the" name="ironworker">
 		<attribute key="weight" value="5500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
-
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="range" value="5" />
 		<attribute key="attack" value="4" />
-
 	</item>
 	<item id="8854" article="a" name="warsinger bow">
 		<attribute key="weight" value="4500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
-
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="range" value="7" />
 		<attribute key="hitChance" value="5" />
 		<attribute key="attack" value="3" />
-
 	</item>
 	<item id="8855" article="a" name="composite hornbow">
 		<attribute key="weight" value="5200" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
-
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="range" value="6" />
 		<attribute key="hitChance" value="2" />
 		<attribute key="attack" value="3" />
-
 	</item>
 	<item id="8856" name="Yol's bow">
 		<attribute key="weight" value="3500" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
-
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="range" value="7" />
 		<attribute key="hitChance" value="7" />
@@ -16580,23 +16554,19 @@
 		<attribute key="weight" value="2200" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
-
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="range" value="6" />
 		<attribute key="hitChance" value="3" />
-
 	</item>
 	<item id="8858" name="Elethriel's elemental bow">
 		<attribute key="weight" value="4400" />
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="weaponType" value="distance" />
-
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="range" value="4" />
 		<attribute key="attack" value="7" />
 	</item>
 	<item id="8859" name="spider fangs">
-
 		<attribute key="showcount" value="0" />
 		<attribute key="weight" value="50" />
 	</item>
@@ -16614,7 +16584,6 @@
 		<attribute key="absorbPercentDeath" value="8" />
 		<attribute key="absorbPercentHoly" value="-8" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8866" article="the" name="robe of the ice queen">
 		<attribute key="description" value="The soft tissue shimmers." />
@@ -16623,13 +16592,11 @@
 		<attribute key="absorbPercentIce" value="12" />
 		<attribute key="absorbPercentEnergy" value="-12" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8867" article="a" name="dragon robe">
 		<attribute key="description" value="It is covered with runic symbols." />
 		<attribute key="weight" value="2850" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="armor" value="12" />
 		<attribute key="absorbPercentFire" value="12" />
 		<attribute key="absorbPercentIce" value="-12" />
@@ -16641,7 +16608,6 @@
 		<attribute key="absorbPercentEnergy" value="12" />
 		<attribute key="absorbPercentEarth" value="-12" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8869" article="a" name="greenwood coat">
 		<attribute key="weight" value="2850" />
@@ -16649,12 +16615,10 @@
 		<attribute key="absorbPercentEarth" value="12" />
 		<attribute key="absorbPercentFire" value="-12" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8870" article="a" name="spirit cloak">
 		<attribute key="armor" value="8" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="weight" value="2650" />
 		<attribute key="magiclevelpoints" value="1" />
 	</item>
@@ -16662,39 +16626,33 @@
 		<attribute key="weight" value="2100" />
 		<attribute key="armor" value="9" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="magiclevelpoints" value="1" />
 	</item>
 	<item id="8872" article="a" name="belted cape">
 		<attribute key="weight" value="3500" />
 		<attribute key="armor" value="10" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8873" article="a" name="hibiscus dress">
 		<attribute key="weight" value="1900" />
 		<attribute key="armor" value="0" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8874" article="a" name="summer dress">
 		<attribute key="weight" value="1000" />
 		<attribute key="armor" value="0" />
 		<attribute key="absorbPercentDeath" value="5" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8875" article="a" name="tunic">
 		<attribute key="weight" value="1500" />
 		<attribute key="armor" value="0" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8876" article="a" name="girl's dress">
 		<attribute key="weight" value="1300" />
 		<attribute key="armor" value="0" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8877" article="a" name="lavos armor">
 		<attribute key="weight" value="8500" />
@@ -16702,7 +16660,6 @@
 		<attribute key="absorbPercentFire" value="3" />
 		<attribute key="absorbPercentIce" value="-3" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8878" article="a" name="crystalline armor">
 		<attribute key="weight" value="8450" />
@@ -16710,7 +16667,6 @@
 		<attribute key="absorbPercentIce" value="3" />
 		<attribute key="absorbPercentEnergy" value="-3" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8879" article="a" name="voltage armor">
 		<attribute key="weight" value="8450" />
@@ -16718,7 +16674,6 @@
 		<attribute key="absorbPercentEnergy" value="3" />
 		<attribute key="absorbPercentEarth" value="-3" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8880" article="a" name="swamplair armor">
 		<attribute key="weight" value="8450" />
@@ -16726,7 +16681,6 @@
 		<attribute key="absorbPercentEarth" value="3" />
 		<attribute key="absorbPercentFire" value="-3" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8881" article="a" name="fireborn giant armor">
 		<attribute key="weight" value="12000" />
@@ -16735,12 +16689,10 @@
 		<attribute key="absorbPercentFire" value="5" />
 		<attribute key="absorbPercentIce" value="-5" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8882" article="an" name="earthborn titan armor">
 		<attribute key="weight" value="12000" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="armor" value="15" />
 		<attribute key="skillAxe" value="2" />
 		<attribute key="absorbPercentEarth" value="5" />
@@ -16753,7 +16705,6 @@
 		<attribute key="absorbPercentEarth" value="-5" />
 		<attribute key="skillClub" value="2" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8884" article="an" name="oceanborn leviathan armor">
 		<attribute key="weight" value="10000" />
@@ -16762,12 +16713,10 @@
 		<attribute key="absorbPercentIce" value="5" />
 		<attribute key="absorbPercentEnergy" value="-5" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8885" article="a" name="divine plate">
 		<attribute key="armor" value="13" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="weight" value="7500" />
 		<attribute key="absorbPercentDeath" value="10" />
 		<attribute key="absorbPercentHoly" value="-10" />
@@ -16775,7 +16724,6 @@
 	<item id="8886" article="a" name="molten plate">
 		<attribute key="armor" value="13" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="weight" value="7500" />
 		<attribute key="absorbPercentFire" value="7" />
 		<attribute key="absorbPercentIce" value="-7" />
@@ -16783,7 +16731,6 @@
 	<item id="8887" article="a" name="frozen plate">
 		<attribute key="armor" value="13" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="weight" value="7500" />
 		<attribute key="absorbPercentIce" value="7" />
 		<attribute key="absorbPercentEnergy" value="-7" />
@@ -16791,10 +16738,8 @@
 	<item id="8888" article="a" name="master archer's armor">
 		<attribute key="armor" value="15" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="weight" value="6900" />
 		<attribute key="skillDist" value="3" />
-
 	</item>
 	<item id="8889" article="a" name="skullcracker armor">
 		<attribute key="weight" value="11000" />
@@ -16802,28 +16747,23 @@
 		<attribute key="absorbPercentDeath" value="5" />
 		<attribute key="absorbPercentHoly" value="-5" />
 		<attribute key="slotType" value="body" />
-
 	</item>
 	<item id="8890" article="a" name="robe of the underworld">
 		<attribute key="weight" value="3100" />
 		<attribute key="armor" value="12" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="absorbPercentDeath" value="12" />
 		<attribute key="absorbPercentHoly" value="-12" />
 	</item>
 	<item id="8891" article="a" name="paladin armor">
 		<attribute key="armor" value="12" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="weight" value="6500" />
 		<attribute key="skillDist" value="2" />
-
 	</item>
 	<item id="8892" article="an" name="ethno coat">
 		<attribute key="armor" value="7" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="weight" value="2550" />
 		<attribute key="magiclevelpoints" value="1" />
 	</item>
@@ -16837,8 +16777,6 @@
 		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="defense" value="18" />
 		<attribute key="weaponType" value="shield" />
-
-
 	</item>
 	<item id="8901" article="a" name="spellbook of warding">
 		<attribute key="description"
@@ -16847,8 +16785,6 @@
 		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="defense" value="22" />
 		<attribute key="weaponType" value="shield" />
-
-
 	</item>
 	<item id="8902" article="a" name="spellbook of mind control">
 		<attribute key="description"
@@ -16857,7 +16793,6 @@
 		<attribute key="magiclevelpoints" value="2" />
 		<attribute key="defense" value="16" />
 		<attribute key="weaponType" value="shield" />
-
 	</item>
 	<item id="8903" article="a" name="spellbook of lost souls">
 		<attribute key="description"
@@ -16866,7 +16801,6 @@
 		<attribute key="magiclevelpoints" value="2" />
 		<attribute key="defense" value="20" />
 		<attribute key="weaponType" value="shield" />
-
 	</item>
 	<item id="8904" article="a" name="spellscroll of prophecies">
 		<attribute key="description"
@@ -16875,14 +16809,12 @@
 		<attribute key="magiclevelpoints" value="3" />
 		<attribute key="defense" value="12" />
 		<attribute key="weaponType" value="shield" />
-
 	</item>
 	<item id="8905" article="a" name="rainbow shield">
 		<attribute key="description" value="Strange elemental magic flows over this shield." />
 		<attribute key="weight" value="6900" />
 		<attribute key="defense" value="30" />
 		<attribute key="weaponType" value="shield" />
-
 	</item>
 	<item id="8906" article="a" name="fiery rainbow shield">
 		<attribute key="description"
@@ -16890,7 +16822,6 @@
 		<attribute key="weight" value="6900" />
 		<attribute key="defense" value="36" />
 		<attribute key="weaponType" value="shield" />
-
 		<attribute key="duration" value="900" />
 		<attribute key="decayTo" value="8905" />
 		<attribute key="skillShield" value="3" />
@@ -16901,7 +16832,6 @@
 		<attribute key="weight" value="6900" />
 		<attribute key="defense" value="39" />
 		<attribute key="weaponType" value="shield" />
-
 		<attribute key="duration" value="900" />
 		<attribute key="decayTo" value="8905" />
 	</item>
@@ -16911,7 +16841,6 @@
 		<attribute key="weight" value="6900" />
 		<attribute key="defense" value="36" />
 		<attribute key="weaponType" value="shield" />
-
 		<attribute key="duration" value="900" />
 		<attribute key="decayTo" value="8905" />
 		<attribute key="speed" value="20" />
@@ -16933,26 +16862,21 @@
 		<attribute key="description" value="No one knows which hell this unholy rod comes from." />
 		<attribute key="weight" value="2900" />
 		<attribute key="weaponType" value="wand" />
-
 		<attribute key="shootType" value="death" />
 		<attribute key="range" value="3" />
-
 	</item>
 	<item id="8911" article="a" name="northwind rod">
 		<attribute key="description"
 			value="It was made by one of the shamans in Svargrond and symbolises an icy mammoth." />
 		<attribute key="weight" value="2900" />
 		<attribute key="weaponType" value="wand" />
-
 		<attribute key="shootType" value="ice" />
 		<attribute key="range" value="3" />
-
 	</item>
 	<item id="8912" article="a" name="springsprout rod">
 		<attribute key="description" value="It is filled with the energy of growing plants." />
 		<attribute key="weight" value="2700" />
 		<attribute key="weaponType" value="wand" />
-
 		<attribute key="shootType" value="smallearth" />
 		<attribute key="range" value="3" />
 	</item>
@@ -16964,7 +16888,6 @@
 		<attribute key="magiclevelpoints" value="3" />
 		<attribute key="defense" value="16" />
 		<attribute key="weaponType" value="shield" />
-
 	</item>
 	<item id="8919" article="a" name="spell rune">
 		<attribute key="description"
@@ -16974,62 +16897,49 @@
 		<attribute key="description" value="It is sparkling with universal energy." />
 		<attribute key="weight" value="2550" />
 		<attribute key="weaponType" value="wand" />
-
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="3" />
-
 	</item>
 	<item id="8921" article="a" name="wand of draconia">
 		<attribute key="description" value="This wand holds the spirit and soul of a dragon lord." />
 		<attribute key="weight" value="2700" />
 		<attribute key="weaponType" value="wand" />
-
 		<attribute key="shootType" value="fire" />
 		<attribute key="range" value="3" />
-
 	</item>
 	<item id="8922" article="a" name="wand of voodoo">
 		<attribute key="description"
 			value="It is filled with the dark hatred and rage of a tormented demonic being." />
 		<attribute key="weight" value="2850" />
 		<attribute key="weaponType" value="wand" />
-
 		<attribute key="shootType" value="death" />
 		<attribute key="range" value="3" />
-
 	</item>
 	<item id="8923" name="ranger legs">
 		<attribute key="weight" value="3500" />
 		<attribute key="armor" value="4" />
 		<attribute key="slotType" value="legs" />
-
 	</item>
 	<item id="8924" article="a" name="hellforged axe">
 		<attribute key="weight" value="8800" />
 		<attribute key="defense" value="28" />
 		<attribute key="attack" value="51" />
 		<attribute key="weaponType" value="axe" />
-
 		<attribute key="extradef" value="2" />
-
 	</item>
 	<item id="8925" article="a" name="solar axe">
 		<attribute key="weight" value="11000" />
 		<attribute key="defense" value="29" />
 		<attribute key="attack" value="52" />
 		<attribute key="weaponType" value="axe" />
-
 		<attribute key="extradef" value="3" />
-
 	</item>
 	<item id="8926" article="a" name="demonwing axe">
 		<attribute key="weight" value="12000" />
 		<attribute key="defense" value="20" />
 		<attribute key="attack" value="53" />
 		<attribute key="weaponType" value="axe" />
-
 		<attribute key="slotType" value="two-handed" />
-
 	</item>
 	<item id="8927" article="a" name="dark trinity mace">
 		<attribute key="weight" value="9900" />

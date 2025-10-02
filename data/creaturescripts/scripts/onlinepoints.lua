@@ -2,7 +2,8 @@ function addOnlineBonus(cid, horas, bonus_contador, bonus_max)
     if not isPlayer(cid) then return false end
     setPlayerStorageValue(cid, bonus_contador, getPlayerStorageValue(cid, bonus_contador) + 1)
     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,
-        "[Online Points] Hello Warrior, for being online in our world, you just received 1 Online Points for that!. Total: " ..
+        "[Online Points] Hello " ..
+        getPlayerName(cid) .. ", for being online in our world, you just received 1 Online Points for that!. Total: " ..
         getPlayerStorageValue(cid, bonus_contador) .. ".")
     if getPlayerStorageValue(cid, bonus_contador) >= bonus_max then
         doPlayerSendTextMessage(cid, 19,
