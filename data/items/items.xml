@@ -18395,29 +18395,23 @@
 	</item>
 	<item id="9927" article="a" name="flower wreath">
 		<attribute key="slotType" value="head" />
-
 		<attribute key="weight" value="500" />
 	</item>
 	<item id="9928" name="leaf legs">
 		<attribute key="slotType" value="legs" />
-
 		<attribute key="weight" value="1200" />
 	</item>
 	<item id="9929" article="a" name="flower dress">
 		<attribute key="slotType" value="body" />
-
 		<attribute key="weight" value="1900" />
 	</item>
 	<item id="9930" article="a" name="flask of rust remover" plural="flasks of dust remover">
-
 		<attribute key="description" value="It can be used to clean and polish old and rusty armors." />
 		<attribute key="weight" value="90" />
 	</item>
 	<item id="9931" article="a" name="coconut shoes">
 		<attribute key="weight" value="600" />
 		<attribute key="slotType" value="feet" />
-
-
 	</item>
 	<item id="9932" article="a" name="firewalker boots" editorsuffix=" (Equipped)">
 		<attribute key="description"
@@ -18425,7 +18419,6 @@
 		<attribute key="weight" value="950" />
 		<attribute key="armor" value="2" />
 		<attribute key="slotType" value="feet" />
-
 		<attribute key="decayTo" value="10022" />
 		<attribute key="fieldAbsorbPercentFire" value="90" />
 		<attribute key="transformDeEquipTo" value="9933" />
@@ -47993,21 +47986,18 @@
 		<attribute key="decayTo" value="30208" />
 		<attribute key="duration" value="60" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30210" name="remains of a tunnel tyrant">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="30209" />
 		<attribute key="duration" value="60" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30211" name="remains of a tunnel tyrant" editorsuffix=" (Immobile)">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="30210" />
 		<attribute key="duration" value="10" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30212" name="remains of a cave devourer">
 		<attribute key="containerSize" value="32" />
@@ -48020,21 +48010,18 @@
 		<attribute key="decayTo" value="30212" />
 		<attribute key="duration" value="60" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30214" name="remains of a cave devourer">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="30213" />
 		<attribute key="duration" value="60" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30215" name="remains of a cave devourer" editorsuffix=" (Immobile)">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="30214" />
 		<attribute key="duration" value="10" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30216" name="remains of a chasm spawn">
 		<attribute key="containerSize" value="32" />
@@ -48047,27 +48034,23 @@
 		<attribute key="decayTo" value="30216" />
 		<attribute key="duration" value="60" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30218" name="remains of a chasm spawn">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="30217" />
 		<attribute key="duration" value="60" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30219" name="remains of a chasm spawn" editorsuffix=" (Immobile)">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="30218" />
 		<attribute key="duration" value="10" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30220" editorsuffix=" (Blank)" />
 	<item id="30221" article="a" name="foxtail amulet">
 		<attribute key="weight" value="500" />
 		<attribute key="slotType" value="necklace" />
-
 		<attribute key="armor" value="2" />
 		<attribute key="absorbPercentPhysical" value="5" />
 	</item>
@@ -48097,80 +48080,63 @@
 		<attribute key="weight" value="650" />
 	</item>
 	<item id="30248" name="deepworm spikes">
-
 		<attribute key="weight" value="100" />
 		<attribute key="showcount" value="0" />
 	</item>
 	<item id="30249" name="deepworm spike roots">
-
 		<attribute key="weight" value="70" />
 		<attribute key="showcount" value="0" />
 	</item>
 	<item id="30250" name="deepworm jaws">
-
 		<attribute key="weight" value="180" />
 		<attribute key="showcount" value="0" />
 	</item>
 	<item id="30251" name="tunnel tyrant head">
-
 		<attribute key="weight" value="180" />
 	</item>
 	<item id="30252" article="a" name="tunnel tyrant shell">
-
 		<attribute key="weight" value="250" />
 	</item>
 	<item id="30253" name="diremaw brainpan">
-
 		<attribute key="weight" value="150" />
 	</item>
 	<item id="30254" name="diremaw legs">
-
 		<attribute key="weight" value="230" />
 		<attribute key="showcount" value="0" />
 	</item>
 	<item id="30255" name="cave devourer eyes">
-
 		<attribute key="weight" value="80" />
 		<attribute key="showcount" value="0" />
 	</item>
 	<item id="30256" article="a" name="cave devourer maw">
-
 		<attribute key="weight" value="190" />
 	</item>
 	<item id="30257" name="cave devourer legs">
-
 		<attribute key="weight" value="240" />
 		<attribute key="showcount" value="0" />
 	</item>
 	<item id="30258" article="a" name="chasm spawn head">
-
 		<attribute key="weight" value="160" />
 	</item>
 	<item id="30259" article="a" name="chasm spawn abdomen">
-
 		<attribute key="weight" value="270" />
 	</item>
 	<item id="30260" article="a" name="chasm spawn tail">
-
 		<attribute key="weight" value="160" />
 	</item>
 	<item id="30261" article="a" name="candle stump">
-
 		<attribute key="weight" value="850" />
 		<attribute key="description"
 			value="It is attached to a long leather strap with a tinged tin clasp." />
 	</item>
 	<item id="30262" article="a" name="stonerefiner's skull">
-
 		<attribute key="weight" value="300" />
 	</item>
 	<item id="30263" name="withered pauldrons">
-
 		<attribute key="weight" value="140" />
 		<attribute key="showcount" value="0" />
 	</item>
 	<item id="30264" article="a" name="withered scalp">
-
 		<attribute key="weight" value="170" />
 	</item>
 	<item id="30265" editorsuffix=" (Blank)" />
@@ -48203,54 +48169,44 @@
 	<item id="30272" article="a" name="reflection of Obujos" />
 	<item id="30273" name="the Last Planegazer" />
 	<item id="30274" article="a" name="pristine worm head">
-
 		<attribute key="weight" value="190" />
 		<attribute key="description" value="One of the heads of the Duke of the Depths." />
 	</item>
 	<item id="30275" article="a" name="giant tentacle">
-
 		<attribute key="weight" value="210" />
 		<attribute key="description" value="A tentacle of the Duke of the Depths." />
 	</item>
 	<item id="30276" article="a" name="damaged worm head">
-
 		<attribute key="weight" value="160" />
 		<attribute key="description" value="One of the heads of the Duke of the Depths." />
 	</item>
 	<item id="30277" article="a" name="huge shell">
-
 		<attribute key="weight" value="320" />
 		<attribute key="description" value="The shell of the Baron from Below." />
 	</item>
 	<item id="30278" article="a" name="chitinous mouth">
-
 		<attribute key="weight" value="240" />
 		<attribute key="description" value="The mouth of the Baron from Below." />
 	</item>
 	<item id="30279" article="a" name="slimy leg">
-
 		<attribute key="weight" value="160" />
 		<attribute key="description" value="A slimy leg of the Baron from Below" />
 	</item>
 	<item id="30280" name="longing eyes">
-
 		<attribute key="weight" value="120" />
 		<attribute key="description" value="The longing eyes of the Baron from Below." />
 		<attribute key="showcount" value="0" />
 	</item>
 	<item id="30281" article="a" name="harpoon of a giant snail" plural="harpoons of a giant snail">
-
 		<attribute key="weight" value="80" />
 		<attribute key="description"
 			value="The harpoon of the Count of the Core is hollow and contains lethal poison." />
 	</item>
 	<item id="30282" article="a" name="chitinous mouth">
-
 		<attribute key="weight" value="250" />
 		<attribute key="description" value="The mouth of the Count of the Core." />
 	</item>
 	<item id="30283" article="a" name="huge spiky snail shell">
-
 		<attribute key="weight" value="380" />
 		<attribute key="description" value="The spikey shell of the Count of the Core." />
 	</item>
@@ -48265,28 +48221,24 @@
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="30" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30287" name="dead Baron from Below">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="30286" />
 		<attribute key="duration" value="60" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30288" name="dead Baron from Below">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="30287" />
 		<attribute key="duration" value="60" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30289" name="dead Baron from Below" editorsuffix=" (Immobile)">
 		<attribute key="containerSize" value="32" />
 		<attribute key="decayTo" value="30288" />
 		<attribute key="duration" value="10" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30290" name="dead Count of the Core">
 		<attribute key="containerSize" value="32" />
@@ -48375,29 +48327,24 @@
 	<item id="30303" article="a" name="gnome helmet">
 		<attribute key="weight" value="2400" />
 		<attribute key="slotType" value="head" />
-
 		<attribute key="armor" value="7" />
 		<attribute key="magiclevelpoints" value="2" />
 		<attribute key="absorbPercentPhysical" value="3" />
 		<attribute key="absorbPercentEnergy" value="8" />
 		<attribute key="absorbPercentIce" value="-2" />
-
 	</item>
 	<item id="30304" article="a" name="gnome armor">
 		<attribute key="weight" value="12000" />
 		<attribute key="slotType" value="body" />
-
 		<attribute key="armor" value="17" />
 		<attribute key="skillDist" value="3" />
 		<attribute key="absorbPercentPhysical" value="4" />
 		<attribute key="absorbPercentEnergy" value="8" />
 		<attribute key="absorbPercentIce" value="-2" />
-
 	</item>
 	<item id="30305" article="a" name="gnome legs">
 		<attribute key="weight" value="2500" />
 		<attribute key="slotType" value="legs" />
-
 		<attribute key="armor" value="9" />
 		<attribute key="magiclevelpoints" value="2" />
 		<attribute key="absorbPercentEnergy" value="7" />
@@ -48406,13 +48353,11 @@
 	<item id="30306" article="a" name="gnome shield">
 		<attribute key="weight" value="6000" />
 		<attribute key="weaponType" value="shield" />
-
 		<attribute key="defense" value="38" />
 		<attribute key="skillShield" value="2" />
 		<attribute key="absorbPercentPhysical" value="6" />
 		<attribute key="absorbPercentEnergy" value="8" />
 		<attribute key="absorbPercentIce" value="-2" />
-
 	</item>
 	<item id="30307" article="a" name="gnome sword">
 		<attribute key="weight" value="8500" />
@@ -48424,32 +48369,26 @@
 		<attribute key="skillSword" value="2" />
 		<attribute key="extradef" value="3" />
 		<attribute key="absorbPercentEnergy" value="6" />
-
 	</item>
 	<item id="30308" article="a" name="huge red crystal" />
 	<item id="30309" article="a" name="suspicious device">
-
 		<attribute key="weight" value="1000" />
 		<attribute key="description"
 			value="This thing looks like it was carried around by someone for a long time." />
 	</item>
 	<item id="30310" article="a" name="surprise jar">
-
 		<attribute key="weight" value="1000" />
 	</item>
 	<item id="30311" article="a" name="plan for a makeshift armour">
-
 		<attribute key="weight" value="200" />
 		<attribute key="description"
 			value="With this plan you should be able to knock up an improvised armour." />
 	</item>
 	<item id="30312" article="a" name="tinged pot">
-
 		<attribute key="weight" value="3500" />
 		<attribute key="description" value="It looks like you could use it as a makeshift helmet." />
 	</item>
 	<item id="30313" article="a" name="crude wood planks">
-
 		<attribute key="weight" value="200" />
 		<attribute key="description"
 			value="They look like you could use them to enhance some kind of makeshift armour." />
@@ -48461,7 +48400,6 @@
 	<item fromid="30315" toid="30316" name="parquet" />
 	<item id="30317" article="an" name="alchemistic chair">
 		<attribute key="rotateTo" value="30318" />
-
 	</item>
 	<item id="30318" article="an" name="alchemistic chair">
 		<attribute key="rotateTo" value="30317" />
@@ -48470,45 +48408,29 @@
 	<item id="30319" article="an" name="alchemist cabinet">
 		<attribute key="containerSize" value="8" />
 		<attribute key="rotateTo" value="30320" />
-
 	</item>
 	<item id="30320" article="an" name="alchemist cabinet">
 		<attribute key="containerSize" value="8" />
 		<attribute key="rotateTo" value="30319" />
-
 	</item>
 	<item id="30321" article="an" name="alchemistic table">
 		<attribute key="rotateTo" value="30322" />
-
 	</item>
 	<item id="30322" article="an" name="alchemistic table">
 		<attribute key="rotateTo" value="30321" />
-
 	</item>
-	<item fromid="30323" toid="30326" article="a" name="light of change">
-
-	</item>
-	<item id="30327" article="a" name="torch of change" editorsuffix=" (Off)">
-
-	</item>
+	<item fromid="30323" toid="30326" article="a" name="light of change"/>
+	<item id="30327" article="a" name="torch of change" editorsuffix=" (Off)"/>
 	<item id="30328" editorsuffix=" (Blank)" />
-	<item id="30329" article="a" name="torch of change" editorsuffix=" (Red)">
-
-	</item>
-	<item id="30330" article="a" name="torch of change" editorsuffix=" (Green)">
-
-	</item>
-	<item id="30331" article="a" name="torch of change" editorsuffix=" (Blue)">
-
-	</item>
+	<item id="30329" article="a" name="torch of change" editorsuffix=" (Red)"/>
+	<item id="30330" article="a" name="torch of change" editorsuffix=" (Green)"/>
+	<item id="30331" article="a" name="torch of change" editorsuffix=" (Blue)"/>
 	<item fromid="30332" toid="30334" editorsuffix=" (Blank)" />
 	<item id="30335" article="an" name="alchemist bookstand">
 		<attribute key="rotateTo" value="30336" />
-
 	</item>
 	<item id="30336" article="an" name="alchemist bookstand">
 		<attribute key="rotateTo" value="30335" />
-
 	</item>
 	<item id="30337" article="an" name="alchemist bookstand" editorsuffix=" (Turning Page)">
 		<attribute key="decayTo" value="30335" />
@@ -48518,12 +48440,8 @@
 		<attribute key="decayTo" value="30336" />
 		<attribute key="duration" value="1" />
 	</item>
-	<item id="30339" name="alchemistic scales">
-
-	</item>
-	<item id="30340" name="alchemistic scales">
-
-	</item>
+	<item id="30339" name="alchemistic scales"/>
+	<item id="30340" name="alchemistic scales"/>
 	<item id="30341" name="alchemistic scales" editorsuffix=" (Tipping Right)">
 		<attribute key="decayTo" value="30340" />
 		<attribute key="duration" value="1" />
@@ -48532,36 +48450,28 @@
 		<attribute key="decayTo" value="30339" />
 		<attribute key="duration" value="1" />
 	</item>
-	<item fromid="30343" toid="30344" article="a" name="pile of alchemistic books">
-
-	</item>
+	<item fromid="30343" toid="30344" article="a" name="pile of alchemistic books"/>
 	<item id="30345" article="an" name="alchemistic cupboard" />
 	<item id="30346" editorsuffix=" (Blank)" />
 	<item id="30347" article="a" name="Ferumbras bust">
 		<attribute key="rotateTo" value="30349" />
-
 	</item>
 	<item id="30348" article="a" name="Ferumbras bust">
 		<attribute key="description" value="Something is missing." />
 		<attribute key="rotateTo" value="30350" />
-
 	</item>
 	<item id="30349" article="a" name="Ferumbras bust">
 		<attribute key="rotateTo" value="30347" />
-
 	</item>
 	<item id="30350" article="a" name="Ferumbras bust">
 		<attribute key="description" value="Something is missing." />
 		<attribute key="rotateTo" value="30348" />
-
 	</item>
 	<item id="30351" article="a" name="Queen Eloise bust">
 		<attribute key="rotateTo" value="30352" />
-
 	</item>
 	<item id="30352" article="a" name="Queen Eloise bust">
 		<attribute key="rotateTo" value="30351" />
-
 	</item>
 	<item id="30353" article="a" name="gloomy dungeon scene" />
 	<item id="30354" name="arrival at Thais" />
@@ -48573,11 +48483,9 @@
 	</item>
 	<item id="30358" article="a" name="King Tibianus bust">
 		<attribute key="rotateTo" value="30359" />
-
 	</item>
 	<item id="30359" article="a" name="King Tibianus bust">
 		<attribute key="rotateTo" value="30358" />
-
 	</item>
 	<item fromid="30360" toid="30361" article="a" name="werefox trophy" />
 	<item id="30362" article="a" name="werefox trophy">
@@ -48588,14 +48496,12 @@
 		<attribute key="decayTo" value="30364" />
 		<attribute key="duration" value="10" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30364" article="a" name="dead cave spider">
 		<attribute key="containerSize" value="30" />
 		<attribute key="decayTo" value="30365" />
 		<attribute key="duration" value="60" />
 		<attribute key="corpseType" value="venom" />
-
 	</item>
 	<item id="30365" article="a" name="dead cave spider">
 		<attribute key="containerSize" value="30" />
@@ -48748,7 +48654,6 @@
 	<item id="30528" article="a" name="yellow energy basin" />
 	<item id="30529" article="a" name="red energy basin" />
 	<item id="30530" article="a" name="sample of monster blood" plural="samples of monster blood">
-
 		<attribute key="weight" value="85" />
 		<attribute key="description" value="The blood in this test tube is of a very deep ruby red." />
 	</item>
@@ -48759,7 +48664,6 @@
 	<item id="30552" article="a" name="bucket of scrolls" />
 	<item id="30553" article="a" name="stack of books" />
 	<item fromid="30554" toid="30555" article="a" name="wooden chair">
-
 	</item>
 	<item fromid="30556" toid="30559" article="a" name="pile of books and scrolls" />
 	<item fromid="30560" toid="30561" article="a" name="large pile of books" />
@@ -48775,15 +48679,12 @@
 		<attribute key="weight" value="1300" />
 	</item>
 	<item id="30588" article="a" name="sinister book">
-
 		<attribute key="weight" value="1500" />
 	</item>
 	<item id="30589" article="an" name="ominous book">
-
 		<attribute key="weight" value="1500" />
 	</item>
 	<item id="30590" article="a" name="knowledgeable book">
-
 		<attribute key="weight" value="2000" />
 	</item>
 	<item fromid="30591" toid="30592" article="a" name="banner" />
@@ -48973,7 +48874,6 @@
 		<attribute key="weight" value="1100" />
 	</item>
 	<item id="31140" article="a" name="blueberry cupcake">
-
 		<attribute key="weight" value="280" />
 	</item>
 	<item id="31141" article="a" name="strawberry cupcake">
@@ -48984,7 +48884,6 @@
 	</item>
 	<item id="31143" editorsuffix=" (Blank)" />
 	<item id="31144" article="a" name="parchment of dark knowledge">
-
 		<attribute key="weight" value="200" />
 		<attribute key="description" value="Its power seems to seek a book to attach to." />
 	</item>
@@ -49044,7 +48943,6 @@
 	<item id="31179" article="a" name="glowing sign" />
 	<item id="31180" editorsuffix=" (Blank)" />
 	<item fromid="31181" toid="31182" article="a" name="magic gold converter">
-
 		<attribute key="charges" value="500" />
 		<attribute key="showcharges" value="1" />
 	</item>
@@ -49152,71 +49050,57 @@
 		<attribute key="description"
 			value="You can train your skills by using training weapons with this exercise dummy." />
 		<attribute key="rotateTo" value="31216" />
-
 	</item>
 	<item id="31216" article="a" name="ferumbras exercise dummy">
 		<attribute key="description"
 			value="You can train your skills by using training weapons with this exercise dummy." />
 		<attribute key="rotateTo" value="31215" />
-
 	</item>
 	<item id="31217" article="a" name="demon exercise dummy">
 		<attribute key="description"
 			value="You can train your skills by using training weapons with this exercise dummy." />
 		<attribute key="rotateTo" value="31218" />
-
 	</item>
 	<item id="31218" article="a" name="demon exercise dummy">
 		<attribute key="description"
 			value="You can train your skills by using training weapons with this exercise dummy." />
 		<attribute key="rotateTo" value="31217" />
-
 	</item>
 	<item id="31219" article="a" name="monk exercise dummy">
 		<attribute key="description"
 			value="You can train your skills by using training weapons with this exercise dummy." />
 		<attribute key="rotateTo" value="31220" />
-
 	</item>
 	<item id="31220" article="a" name="monk exercise dummy">
 		<attribute key="description"
 			value="You can train your skills by using training weapons with this exercise dummy." />
 		<attribute key="rotateTo" value="31219" />
-
 	</item>
 	<item id="31221" article="an" name="exercise dummy">
 		<attribute key="description"
 			value="You can train your skills by using training weapons with this exercise dummy." />
 	</item>
 	<item id="31222" article="a" name="silken bookmark">
-
 		<attribute key="weight" value="100" />
 	</item>
 	<item id="31223" article="a" name="quill">
-
 		<attribute key="weight" value="100" />
 	</item>
 	<item id="31224" article="an" name="inkwell">
-
 		<attribute key="weight" value="180" />
 	</item>
 	<item id="31225" article="a" name="book page">
-
 		<attribute key="weight" value="100" />
 	</item>
 	<item id="31226" article="a" name="glowing rune">
-
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="31227" article="a" name="book backpack">
 		<attribute key="weight" value="1800" />
 		<attribute key="containerSize" value="22" />
-
 		<attribute key="slotType" value="backpack" />
-
 	</item>
 	<item id="31228" article="an" name="ornate tome">
-
 		<attribute key="weight" value="1500" />
 	</item>
 	<item id="31229" article="a" name="sign of Zathroth" />
@@ -49717,115 +49601,85 @@
 		<attribute key="effect" value="teleport" />
 	</item>
 	<item fromid="31330" toid="31331" article="an" name="anglerfish lamp">
-
 	</item>
 	<item id="31332" article="a" name="skeletal chair">
-
 		<attribute key="rotateTo" value="31333" />
 	</item>
 	<item id="31333" article="a" name="skeletal chair">
-
 		<attribute key="rotateTo" value="31334" />
 	</item>
 	<item id="31334" article="a" name="skeletal chair">
-
 		<attribute key="rotateTo" value="31335" />
 	</item>
 	<item id="31335" article="a" name="skeletal chair">
-
 		<attribute key="rotateTo" value="31332" />
 	</item>
 	<item id="31336" article="a" name="skeletal table">
-
 		<attribute key="rotateTo" value="31337" />
 	</item>
 	<item id="31337" article="a" name="skeletal table">
-
 		<attribute key="rotateTo" value="31336" />
 	</item>
 	<item id="31338" article="a" name="skeletal chest">
-
 		<attribute key="rotateTo" value="31339" />
 		<attribute key="containerSize" value="18" />
 	</item>
 	<item id="31339" article="a" name="skeletal chest">
-
 		<attribute key="rotateTo" value="31340" />
 		<attribute key="containerSize" value="18" />
 	</item>
 	<item id="31340" article="a" name="skeletal chest">
-
 		<attribute key="rotateTo" value="31341" />
 		<attribute key="containerSize" value="18" />
 	</item>
 	<item id="31341" article="a" name="skeletal chest">
-
 		<attribute key="rotateTo" value="31338" />
 		<attribute key="containerSize" value="18" />
 	</item>
 	<item id="31342" article="a" name="skeletal cabinet">
-
 		<attribute key="rotateTo" value="31343" />
 		<attribute key="containerSize" value="8" />
 	</item>
 	<item id="31343" article="a" name="skeletal cabinet">
-
 		<attribute key="rotateTo" value="31342" />
 		<attribute key="containerSize" value="8" />
 	</item>
 	<item id="31344" article="a" name="carnivorous plant">
-
 		<attribute key="rotateTo" value="31345" />
 	</item>
 	<item id="31345" article="a" name="carnivorous plant">
-
 		<attribute key="rotateTo" value="31344" />
 	</item>
-	<item id="31346" article="a" name="baby rotworm" editorsuffix=" (Neutral)">
-
-	</item>
+	<item id="31346" article="a" name="baby rotworm" editorsuffix=" (Neutral)"/>
 	<item id="31347" article="a" name="baby rotworm" editorsuffix=" (Going Down)">
-
 		<attribute key="decayTo" value="31348" />
 		<attribute key="duration" value="3" />
 	</item>
-	<item id="31348" article="a" name="baby rotworm" editorsuffix=" (Underground)">
-
-	</item>
+	<item id="31348" article="a" name="baby rotworm" editorsuffix=" (Underground)"/>
 	<item id="31349" article="a" name="baby rotworm" editorsuffix=" (Coming Up)">
-
 		<attribute key="decayTo" value="31346" />
 		<attribute key="duration" value="3" />
 	</item>
 	<item id="31350" article="a" name="fennec" editorsuffix=" (Neutral)">
 		<attribute key="description"
 			value="Contrary to popular belief the fennec does not use his ears, which are the largest amongst foxes, to fly, soar or stabilise his balance. They mainly serve to dissipate heat." />
-
 	</item>
 	<item id="31351" article="a" name="fennec" editorsuffix=" (Eating)">
 		<attribute key="description"
 			value="Contrary to popular belief the fennec does not use his ears, which are the largest amongst foxes, to fly, soar or stabilise his balance. They mainly serve to dissipate heat." />
 		<attribute key="decayTo" value="31557" />
 		<attribute key="duration" value="3" />
-
 	</item>
 	<item id="31352" article="a" name="ship's telescope" editorsuffix=" (Immobile)" />
-	<item id="31353" article="a" name="bellflower">
-
-	</item>
-	<item id="31354" article="a" name="forget-me-not">
-
-	</item>
-	<item id="31355" article="a" name="red geranium">
-
-	</item>
+	<item id="31353" article="a" name="bellflower"/>
+	<item id="31354" article="a" name="forget-me-not"/>
+	<item id="31355" article="a" name="red geranium"/>
 	<item id="31356" article="a" name="raft" />
 	<item id="31357" article="a" name="fennec" editorsuffix=" (Not Hungry)">
 		<attribute key="description"
 			value="Contrary to popular belief the fennec does not use his ears, which are the largest amongst foxes, to fly, soar or stabilise his balance. They mainly serve to dissipate heat." />
 		<attribute key="decayTo" value="31550" />
 		<attribute key="duration" value="65" />
-
 	</item>
 	<item id="31358" name="the True Book of Death">
 		<attribute key="weight" value="1300" />
@@ -49853,47 +49707,38 @@
 	<item id="31369" article="a" name="magic sphere" />
 	<item id="31370" article="a" name="falcon circlet">
 		<attribute key="slotType" value="head" />
-
 		<attribute key="armor" value="8" />
 		<attribute key="magiclevelpoints" value="2" />
 		<attribute key="absorbPercentFire" value="9" />
 		<attribute key="weight" value="1300" />
-
 	</item>
 	<item id="31371" article="a" name="falcon coif">
 		<attribute key="slotType" value="head" />
-
 		<attribute key="armor" value="10" />
 		<attribute key="skillDist" value="2" />
 		<attribute key="skillShield" value="2" />
 		<attribute key="absorbPercentPhysical" value="3" />
 		<attribute key="absorbPercentFire" value="10" />
 		<attribute key="weight" value="2800" />
-
 	</item>
 	<item id="31372" article="a" name="falcon rod">
 		<attribute key="weaponType" value="wand" />
-
 		<attribute key="range" value="5" />
 		<attribute key="shootType" value="smallearth" />
 		<attribute key="magiclevelpoints" value="3" />
 		<attribute key="absorbPercentEnergy" value="8" />
 		<attribute key="weight" value="3700" />
-
 	</item>
 	<item id="31373" article="a" name="falcon wand">
 		<attribute key="weaponType" value="wand" />
-
 		<attribute key="range" value="5" />
 		<attribute key="shootType" value="energy" />
 		<attribute key="magiclevelpoints" value="3" />
 		<attribute key="absorbPercentFire" value="8" />
 		<attribute key="weight" value="3300" />
-
 	</item>
 	<item id="31374" article="a" name="falcon bow">
 		<attribute key="weaponType" value="distance" />
-
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="range" value="6" />
@@ -49902,20 +49747,16 @@
 		<attribute key="skillDist" value="2" />
 		<attribute key="absorbPercentFire" value="5" />
 		<attribute key="weight" value="3500" />
-
 	</item>
 	<item id="31375" article="a" name="falcon plate">
 		<attribute key="slotType" value="body" />
-
 		<attribute key="armor" value="18" />
 		<attribute key="skillShield" value="4" />
 		<attribute key="absorbPercentPhysical" value="12" />
 		<attribute key="weight" value="18800" />
-
 	</item>
 	<item id="31376" name="falcon greaves">
 		<attribute key="slotType" value="legs" />
-
 		<attribute key="armor" value="10" />
 		<attribute key="skillDist" value="3" />
 		<attribute key="skillSword" value="3" />
@@ -49927,36 +49768,29 @@
 	</item>
 	<item id="31377" article="a" name="falcon shield">
 		<attribute key="weaponType" value="shield" />
-
 		<attribute key="defense" value="39" />
 		<attribute key="absorbPercentPhysical" value="6" />
 		<attribute key="absorbPercentFire" value="10" />
 		<attribute key="weight" value="5700" />
-
 	</item>
 	<item id="31378" article="a" name="falcon escutcheon">
 		<attribute key="weaponType" value="shield" />
-
 		<attribute key="defense" value="40" />
 		<attribute key="absorbPercentPhysical" value="7" />
 		<attribute key="absorbPercentFire" value="15" />
 		<attribute key="weight" value="6000" />
-
 	</item>
 	<item id="31379" article="a" name="falcon longsword">
 		<attribute key="weaponType" value="sword" />
-
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="attack" value="56" />
 		<attribute key="defense" value="34" />
 		<attribute key="skillSword" value="4" />
 		<attribute key="absorbPercentEarth" value="10" />
 		<attribute key="weight" value="8200" />
-
 	</item>
 	<item id="31380" article="a" name="falcon battleaxe">
 		<attribute key="weaponType" value="axe" />
-
 		<attribute key="slotType" value="two-handed" />
 		<attribute key="attack" value="10" />
 		<attribute key="elementEnergy" value="47" />
@@ -49964,11 +49798,9 @@
 		<attribute key="skillAxe" value="4" />
 		<attribute key="absorbPercentEnergy" value="12" />
 		<attribute key="weight" value="9500" />
-
 	</item>
 	<item id="31381" article="a" name="falcon mace">
 		<attribute key="weaponType" value="club" />
-
 		<attribute key="attack" value="11" />
 		<attribute key="elementEnergy" value="41" />
 		<attribute key="defense" value="33" />
@@ -49976,7 +49808,6 @@
 		<attribute key="skillClub" value="3" />
 		<attribute key="absorbPercentEnergy" value="7" />
 		<attribute key="weight" value="6800" />
-
 	</item>
 	<item id="31382" name="remains of a falcon paladin" editorsuffix=" (Immobile)">
 		<attribute key="containerSize" value="32" />
