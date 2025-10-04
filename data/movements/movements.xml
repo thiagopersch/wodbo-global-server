@@ -1338,6 +1338,12 @@
 	<movevent type="DeEquip" itemid="49886" slot="feet" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="49459" slot="feet" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="49459" slot="feet" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="49703" slot="feet" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="49703" slot="feet" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="49698" slot="feet" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="49698" slot="feet" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="49457" slot="feet" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="49457" slot="feet" event="function" value="onDeEquipItem" />
 
 	<!-- Necklace -->
 	<movevent type="Equip" itemid="2661" slot="necklace" event="function" value="onEquipItem" />
