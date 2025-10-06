@@ -1,35 +1,67 @@
-[3/10/2025 22:28:16] > Usando SHA1 criptografia
-[3/10/2025 22:28:16] >> Carregando RSA key
-[3/10/2025 22:28:16] >> Iniciando conexao SQL
-[3/10/2025 22:28:16] >> Executando Gerenciador de Banco de Dados
-[3/10/2025 22:28:16] > Optimized database.
-[3/10/2025 22:28:16] >> Carregando items (OTB)
-[3/10/2025 22:28:16] >> Carregando items (XML)
-[3/10/2025 22:28:17] >> Carregando Grupos
-[3/10/2025 22:28:17] >> Carregando Vocacoes
-[3/10/2025 22:28:17] >> Carregando Outfits
-[3/10/2025 22:28:17] >> Carregando Canal de Chat
-[3/10/2025 22:28:17] >> Carregando Sistema
-[3/10/2025 22:28:17] >> Carregando Mods...
-[3/10/2025 22:28:17] > Loading AutoLoot.xml... done.
-[3/10/2025 22:28:17] > Loading Automatic Raids.xml... done.
-[3/10/2025 22:28:17] > Loading highscorebook.xml... done.
-[3/10/2025 22:28:17] > Loading Simple Task.xml... done.
-[3/10/2025 22:28:17] > 4 mods were loaded.
-[3/10/2025 22:28:17] >> Carregando EXP Stages
-[3/10/2025 22:28:17] >> Carregando Monstros
-[3/10/2025 22:28:17] >> Carregando Mapa e Spawns...
-[3/10/2025 22:28:17] > Tamanho do Mapa: 64000x64000.
-[3/10/2025 22:28:17] > Descricao do Mapa: 
-[3/10/2025 22:28:17] "Saved with OTAcademy Map Editor 4.1.1"
-[3/10/2025 22:28:17] "No map description available."
-[3/10/2025 22:28:18] > Mapa carregado em: 1.125 segundos.
-[3/10/2025 22:28:18] > Data carregada em: 0.063 segundos.
-[3/10/2025 22:28:18] > Houses carregada em: 0.001 segundos.
-[3/10/2025 22:28:18] > Content unserialization time: 0.001 seconds.
-[3/10/2025 22:28:18] > Carregando Tipo de PVP... Open PvP
-[3/10/2025 22:28:18] > Inicializando estado do jogo e registrando servicos...
-[3/10/2025 22:28:18] > IP do Servidor: 127.0.0.1
-[3/10/2025 22:28:18] > IP local do Servidor: 172.23.64.1	192.168.1.104	
-[3/10/2025 22:28:18] > Portas do Servidor: 7171	7172	
-[3/10/2025 22:28:18] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[5/10/2025 14:23:26] > Usando SHA1 criptografia
+[5/10/2025 14:23:26] >> Carregando RSA key
+[5/10/2025 14:23:26] >> Iniciando conexao SQL
+[5/10/2025 14:23:26] >> Executando Gerenciador de Banco de Dados
+[5/10/2025 14:23:26] > Optimized database.
+[5/10/2025 14:23:26] >> Carregando items (OTB)
+[5/10/2025 14:23:27] >> Carregando items (XML)
+[5/10/2025 14:23:27] >> Carregando Grupos
+[5/10/2025 14:23:27] >> Carregando Vocacoes
+[5/10/2025 14:23:27] >> Carregando Outfits
+[5/10/2025 14:23:27] >> Carregando Canal de Chat
+[5/10/2025 14:23:27] >> Carregando Sistema
+
+[5/10/2025 14:23:27] [Error - Weapon Interface] 
+[5/10/2025 14:23:27] data/weapons/scripts/dbo-bleach\mini gun.lua
+[5/10/2025 14:23:27] Description: 
+[5/10/2025 14:23:27] (luaSetCombatFormula) Combat not found
+[5/10/2025 14:23:27] >> Carregando Mods...
+[5/10/2025 14:23:27] > Loading AutoLoot.xml... done.
+[5/10/2025 14:23:27] > Loading Automatic Raids.xml... done.
+[5/10/2025 14:23:27] > Loading highscorebook.xml... done.
+[5/10/2025 14:23:27] > Loading Simple Task.xml... done.
+[5/10/2025 14:23:27] > 4 mods were loaded.
+[5/10/2025 14:23:27] >> Carregando EXP Stages
+[5/10/2025 14:23:27] >> Carregando Monstros
+[5/10/2025 14:23:27] >> Carregando Mapa e Spawns...
+[5/10/2025 14:23:28] > Tamanho do Mapa: 64000x64000.
+[5/10/2025 14:23:28] > Descricao do Mapa: 
+[5/10/2025 14:23:28] "Saved with OTAcademy Map Editor 4.1.1"
+[5/10/2025 14:23:28] "No map description available."
+[5/10/2025 14:23:29] > Mapa carregado em: 1.511 segundos.
+[5/10/2025 14:23:29] > Data carregada em: 0.077 segundos.
+[5/10/2025 14:23:29] > Houses carregada em: 0.001 segundos.
+[5/10/2025 14:23:29] > Content unserialization time: 0 seconds.
+[5/10/2025 14:23:29] > Carregando Tipo de PVP... Open PvP
+[5/10/2025 14:23:29] > Inicializando estado do jogo e registrando servicos...
+[5/10/2025 14:23:29] > IP do Servidor: 127.0.0.1
+[5/10/2025 14:23:29] > IP local do Servidor: 172.30.80.1	192.168.1.101	
+[5/10/2025 14:23:29] > Portas do Servidor: 7171	7172	
+[5/10/2025 14:23:29] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[5/10/2025 14:23:39] >> DBOSupreme servidor Online!
+
+[5/10/2025 14:23:39] God has logged in.
+
+[5/10/2025 14:28:27] [Error - GlobalEvent Interface] 
+[5/10/2025 14:28:27] data/globalevents/scripts/online_highscore.lua:onThink
+[5/10/2025 14:28:27] Description: 
+[5/10/2025 14:28:27] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[5/10/2025 14:28:27] stack traceback:
+[5/10/2025 14:28:27] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[5/10/2025 14:28:27] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[5/10/2025 14:33:27] [Error - GlobalEvent Interface] 
+[5/10/2025 14:33:28] data/globalevents/scripts/online_highscore.lua:onThink
+[5/10/2025 14:33:28] Description: 
+[5/10/2025 14:33:28] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[5/10/2025 14:33:28] stack traceback:
+[5/10/2025 14:33:28] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[5/10/2025 14:33:28] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[5/10/2025 14:38:28] [Error - GlobalEvent Interface] 
+[5/10/2025 14:38:28] data/globalevents/scripts/online_highscore.lua:onThink
+[5/10/2025 14:38:28] Description: 
+[5/10/2025 14:38:28] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[5/10/2025 14:38:28] stack traceback:
+[5/10/2025 14:38:28] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[5/10/2025 14:38:28] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore

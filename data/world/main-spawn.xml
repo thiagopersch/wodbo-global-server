@@ -8786,6 +8786,9 @@
 	<spawn centerx="32041" centery="32075" centerz="7" radius="1">
 		<monster name="Bandit Swordman" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31947" centery="32117" centerz="7" radius="1">
+		<npc name="Travel" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31967" centery="32151" centerz="7" radius="1">
 		<monster name="Cat" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -8953,6 +8956,9 @@
 	</spawn>
 	<spawn centerx="31971" centery="32221" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31775" centery="32222" centerz="7" radius="1">
+		<npc name="Travel" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31805" centery="32223" centerz="7" radius="1">
 		<monster name="Training Monk" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -9243,6 +9249,9 @@
 	<spawn centerx="31842" centery="32334" centerz="7" radius="1">
 		<monster name="Bandit Black" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31880" centery="32334" centerz="7" radius="1">
+		<npc name="Travel" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31890" centery="32334" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -9263,6 +9272,9 @@
 	</spawn>
 	<spawn centerx="31885" centery="32335" centerz="7" radius="1">
 		<monster name="Bandit Black" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31896" centery="32335" centerz="7" radius="1">
+		<npc name="Travel" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31934" centery="32335" centerz="7" radius="1">
 		<monster name="Bandit" x="0" y="0" z="7" spawntime="60" direction="2" />

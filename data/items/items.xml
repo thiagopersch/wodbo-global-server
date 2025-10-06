@@ -61288,7 +61288,7 @@
 		<attribute key="defense" value="21" />
 		<attribute key="weaponType" value="shield" />
 	</item>
-	<item id="39330" article="an" name="eldritch wand">
+	<item id="39330" article="an" name="eldritch rod">
 		<attribute key="weaponType" value="wand" />
 		<attribute key="range" value="4" />
 		<attribute key="shootType" value="smallice" />
@@ -61296,7 +61296,7 @@
 		<attribute key="absorbPercentEarth" value="4" />
 		<attribute key="weight" value="3500" />
 	</item>
-	<item id="39331" article="a" name="gilded eldritch wand">
+	<item id="39331" article="a" name="gilded eldritch rod">
 		<attribute key="description" value="Refined by the legendary goldsmith Gnomaurum." />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="range" value="4" />
@@ -68974,33 +68974,34 @@
 	</item>
 	<item id="49573" article="a" name="awp">
 		<attribute key="weight" value="20000" />
-		<attribute key="attack" value="34" />
-		<attribute key="weaponType" value="club" />
+		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="death" />
+		<attribute key="range" value="10" />
 	</item>
 	<item id="49574" article="a" name="mini pistol">
 		<attribute key="weight" value="1000" />
-		<attribute key="attack" value="20" />
-		<attribute key="weaponType" value="club" />
+		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="death" />
+		<attribute key="range" value="5" />
 	</item>
 	<item id="49575" article="a" name="mini gun">
 		<attribute key="weight" value="1000" />
-		<attribute key="attack" value="25" />
-		<attribute key="weaponType" value="club" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="attackspeed" value="500" />
 		<attribute key="shootType" value="death" />
+		<attribute key="range" value="7" />
 	</item>
 	<item id="49576" article="a" name="enchated gaia wand">
 		<attribute key="weight" value="1000" />
-		<attribute key="defense" value="15" />
-		<attribute key="attack" value="25" />
-		<attribute key="weaponType" value="club" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="death" />
+		<attribute key="range" value="7" />
 	</item>
 	<item id="49577" article="a" name="green pistol energy">
-		<attribute key="weight" value="5000" />
-		<attribute key="attack" value="25" />
-		<attribute key="weaponType" value="club" />
+		<attribute key="weight" value="1000" />
+		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="death" />
+		<attribute key="range" value="7" />
 	</item>
 	<item id="49578" article="a" name="mace enchanted">
 		<attribute key="weight" value="9000" />
@@ -69008,10 +69009,10 @@
 		<attribute key="weaponType" value="club" />
 	</item>
 	<item id="49579" article="a" name="energy pistol energy">
-		<attribute key="weight" value="5000" />
-		<attribute key="attack" value="25" />
-		<attribute key="weaponType" value="club" />
-		<attribute key="shootType" value="energy" />
+		<attribute key="weight" value="1000" />
+		<attribute key="weaponType" value="wand" />
+		<attribute key="shootType" value="death" />
+		<attribute key="range" value="7" />
 	</item>
 	<item id="49580" article="a" name="lifedrain hand">
 		<attribute key="weight" value="2000" />
@@ -69042,13 +69043,9 @@
 	</item>
 	<item id="49585" article="a" name="red reishi">
 		<attribute key="weight" value="100" />
-		<attribute key="attack" value="10" />
-		<attribute key="weaponType" value="fist" />
 	</item>
 	<item id="49586" article="a" name="reishi">
 		<attribute key="weight" value="100" />
-		<attribute key="attack" value="10" />
-		<attribute key="weaponType" value="fist" />
 	</item>
 	<item id="49587" article="a" name="enchanted purple sword of the infernal">
 		<attribute key="weight" value="1000" />
@@ -70434,7 +70431,7 @@
 		<attribute key="defense" value="30" />
 		<attribute key="weaponType" value="club" />
 	</item>
-	<item id="49751" article="a" name="wand of abisal venom fire">
+	<item id="49751" article="a" name="ornate remedy wand">
 		<attribute key="weight" value="1900" />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="fire" />
