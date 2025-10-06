@@ -1,39 +1,50 @@
-[5/10/2025 21:46:1] > Usando SHA1 criptografia
-[5/10/2025 21:46:1] >> Carregando RSA key
-[5/10/2025 21:46:1] >> Iniciando conexao SQL
-[5/10/2025 21:46:1] >> Executando Gerenciador de Banco de Dados
-[5/10/2025 21:46:1] > Optimized database.
-[5/10/2025 21:46:1] >> Carregando items (OTB)
-[5/10/2025 21:46:1] >> Carregando items (XML)
-[5/10/2025 21:46:2] >> Carregando Grupos
-[5/10/2025 21:46:2] >> Carregando Vocacoes
-[5/10/2025 21:46:2] >> Carregando Outfits
-[5/10/2025 21:46:2] >> Carregando Canal de Chat
-[5/10/2025 21:46:2] >> Carregando Sistema
-[5/10/2025 21:46:2] [Warning - Weapons::registerEvent] Duplicate registered item with id: 8912
-[5/10/2025 21:46:2] [Warning - Weapons::registerEvent] Duplicate registered item with id: 8920
-[5/10/2025 21:46:2] >> Carregando Mods...
-[5/10/2025 21:46:2] > Loading AutoLoot.xml... done.
-[5/10/2025 21:46:2] > Loading Automatic Raids.xml... done.
-[5/10/2025 21:46:2] > Loading highscorebook.xml... done.
-[5/10/2025 21:46:2] > Loading Simple Task.xml... done.
-[5/10/2025 21:46:2] > 4 mods were loaded.
-[5/10/2025 21:46:2] >> Carregando EXP Stages
-[5/10/2025 21:46:2] >> Carregando Monstros
-[5/10/2025 21:46:2] >> Carregando Mapa e Spawns...
-[5/10/2025 21:46:2] > Tamanho do Mapa: 64000x64000.
-[5/10/2025 21:46:2] > Descricao do Mapa: 
-[5/10/2025 21:46:2] "Saved with OTAcademy Map Editor 4.1.1"
-[5/10/2025 21:46:2] "No map description available."
-[5/10/2025 21:46:3] > Mapa carregado em: 1.221 segundos.
-[5/10/2025 21:46:3] > Data carregada em: 0.064 segundos.
-[5/10/2025 21:46:3] > Houses carregada em: 0.001 segundos.
-[5/10/2025 21:46:3] > Content unserialization time: 0 seconds.
-[5/10/2025 21:46:3] > Carregando Tipo de PVP... Open PvP
-[5/10/2025 21:46:3] > Inicializando estado do jogo e registrando servicos...
-[5/10/2025 21:46:3] > IP do Servidor: 127.0.0.1
-[5/10/2025 21:46:3] > IP local do Servidor: 172.23.64.1	192.168.1.101	
-[5/10/2025 21:46:3] > Portas do Servidor: 7171	7172	
-[5/10/2025 21:46:3] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[5/10/2025 21:46:13] >> DBOSupreme servidor Online!
+[6/10/2025 0:38:56] > Usando SHA1 criptografia
+[6/10/2025 0:38:56] >> Carregando RSA key
+[6/10/2025 0:38:56] >> Iniciando conexao SQL
+[6/10/2025 0:38:56] >> Executando Gerenciador de Banco de Dados
+[6/10/2025 0:38:56] > Optimized database.
+[6/10/2025 0:38:56] >> Carregando items (OTB)
+[6/10/2025 0:38:57] >> Carregando items (XML)
+[6/10/2025 0:38:57] >> Carregando Grupos
+[6/10/2025 0:38:57] >> Carregando Vocacoes
+[6/10/2025 0:38:57] >> Carregando Outfits
+[6/10/2025 0:38:57] >> Carregando Canal de Chat
+[6/10/2025 0:38:57] >> Carregando Sistema
+[6/10/2025 0:38:57] >> Carregando Mods...
+[6/10/2025 0:38:57] > Loading AutoLoot.xml... done.
+[6/10/2025 0:38:57] > Loading Automatic Raids.xml... done.
+[6/10/2025 0:38:57] > Loading highscorebook.xml... done.
+[6/10/2025 0:38:57] > Loading Simple Task.xml... done.
+[6/10/2025 0:38:57] > 4 mods were loaded.
+[6/10/2025 0:38:57] >> Carregando EXP Stages
+[6/10/2025 0:38:57] >> Carregando Monstros
+[6/10/2025 0:38:57] >> Carregando Mapa e Spawns...
+[6/10/2025 0:38:57] > Tamanho do Mapa: 64000x64000.
+[6/10/2025 0:38:57] > Descricao do Mapa: 
+[6/10/2025 0:38:57] "Saved with OTAcademy Map Editor 4.1.1"
+[6/10/2025 0:38:57] "No map description available."
+[6/10/2025 0:38:59] > Mapa carregado em: 1.666 segundos.
+[6/10/2025 0:38:59] > Data carregada em: 0.105 segundos.
+[6/10/2025 0:38:59] > Houses carregada em: 0.002 segundos.
+[6/10/2025 0:38:59] > Content unserialization time: 0 seconds.
+[6/10/2025 0:38:59] > Carregando Tipo de PVP... Open PvP
+[6/10/2025 0:38:59] > Inicializando estado do jogo e registrando servicos...
+[6/10/2025 0:38:59] > IP do Servidor: 127.0.0.1
+[6/10/2025 0:38:59] > IP local do Servidor: 172.23.64.1	192.168.1.101	
+[6/10/2025 0:38:59] > Portas do Servidor: 7171	7172	
+[6/10/2025 0:38:59] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[6/10/2025 0:39:9] >> DBOSupreme servidor Online!
 
+[6/10/2025 0:39:9] Dias Atras has logged in.
+[6/10/2025 0:39:13] Dias Atras has logged out.
+[6/10/2025 0:39:13] God has logged in.
+
+[6/10/2025 0:43:57] [Error - GlobalEvent Interface] 
+[6/10/2025 0:43:57] data/globalevents/scripts/online_highscore.lua:onThink
+[6/10/2025 0:43:57] Description: 
+[6/10/2025 0:43:57] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[6/10/2025 0:43:57] stack traceback:
+[6/10/2025 0:43:57] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[6/10/2025 0:43:57] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[6/10/2025 0:44:52] God has logged out.
+[6/10/2025 0:45:3] God has logged in.

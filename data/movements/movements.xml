@@ -41,6 +41,7 @@
 	<!-- Citizen teleport -->
 	<movevent type="StepIn" itemid="1387" event="script" value="citizen.lua" />
 	<movevent type="StepIn" itemid="1397" event="script" value="citizen.lua" />
+	<movevent type="StepIn" itemid="25417" event="script" value="citizen.lua" />
 
 	<!-- Walkback when walking on quest chest -->
 	<movevent type="StepIn" itemid="1738" event="script" value="walkback.lua" />
@@ -877,7 +878,7 @@
 	<movevent type="DeEquip" itemid="49888" slot="armor" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="9929" slot="armor" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="9929" slot="armor" event="function" value="onDeEquipItem" />
-	
+
 	<!-- Legs -->
 	<movevent type="Equip" itemid="2507" slot="legs" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="2507" slot="legs" event="function" value="onDeEquipItem" />

@@ -4,7 +4,7 @@
 -- Configuration
 local Config = {
   -- Opcode for communication with client
-  OpCode = 156
+  OpCode = 164
 }
 
 -- Handle player login

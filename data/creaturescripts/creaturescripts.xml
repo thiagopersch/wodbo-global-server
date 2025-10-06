@@ -24,7 +24,7 @@
 	<event type="kill" name="KillingInTheNameOf" event="script" value="killinginthenameof.lua" />
 	<event type="login" name="SkillPoints" event="script" value="skillpoints.lua" />
 	<event type="extendedopcode" name="HighscoreOpcode" script="highscore.lua" />
-	<event type="login" name="BankLogin" event="script" value="bank_server.lua" />
+	<!-- <event type="login" name="BankLogin" event="script" value="bank_server.lua" /> -->
 	<event type="login" name="playerLogin" script="login.lua" />
 	<event type="extendedopcode" name="BankExtended" event="script" value="bank_server.lua" />
 </creaturescripts>
