@@ -2,7 +2,7 @@
 <monster name="Dromedary" nameDescription="a dromedary" race="blood" experience="30" speed="180"
 	manacost="320">
 	<health now="80" max="80" />
-	<look type="404" corpse="5986" />
+	<look type="404" corpse="13519" />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
 	<flags>

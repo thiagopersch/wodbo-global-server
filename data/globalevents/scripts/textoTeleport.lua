@@ -4,6 +4,11 @@ local positions = {
         color = { 205, 210 },
         effect = {}
     },
+    ["Trainers"] = {
+        pos = { x = 31893, y = 32222, z = 7 },
+        color = { 205, 210 },
+        effect = { 251 }
+    },
 }
 
 function onThink(cid, interval, lastExecution)
@@ -13,8 +18,7 @@ function onThink(cid, interval, lastExecution)
                 doSendMagicEffect(pos.pos, effect)
             end
         end
-        doSendAnimatedText(pos.pos, t, #pos.color > 0 and
-            pos.color[math.random(#pos.color)] or 215)
+        doSendAnimatedText(pos.pos, t, #pos.color > 0 and pos.color[math.random(#pos.color)] or 215)
     end
     return true
 end
