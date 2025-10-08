@@ -1,10 +1,10 @@
 local HIGH_OPCODE = 73
 
 local highscoreCategories = {
-    [0] = {name = "Level",         type = "player", column = "level",    expr = "experience"},
-    [1] = {name = "Magic Level",   type = "player", column = "maglevel", expr = "maglevel"},
-    [2] = {name = "Fist Fighting", type = "skill",  skillid = 0},
-    [3] = {name = "Shielding",     type = "skill",  skillid = 5},
+    [0] = { name = "Level", type = "player", column = "level", expr = "experience" },
+    [1] = { name = "Magic Level", type = "player", column = "maglevel", expr = "maglevel" },
+    [2] = { name = "Fist Fighting", type = "skill", skillid = 0 },
+    [3] = { name = "Shielding", type = "skill", skillid = 5 },
     -- Adicione mais categorias aqui se quiser...
 }
 
@@ -37,7 +37,7 @@ function sendHighscore(cid, req)
     perPage = math.min(50, math.max(1, perPage))
     if page < 1 then page = 1 end
 
-    local vocations = req.vocations or {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+    local vocations = req.vocations or { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 }
     local vocColumn = (def.type == "skill" and "players.vocation") or "vocation"
     local vocWhere = ""
     if vocations and #vocations > 0 and not (vocations[1] == 0) then
@@ -56,17 +56,19 @@ function sendHighscore(cid, req)
     -- Ranking por player stats
     if def.type == "player" then
         local orderBy = "ORDER BY `" .. def.column .. "` DESC, `experience` DESC"
-        local countRes = db.getResult("SELECT COUNT(*) AS total FROM `players` WHERE 1=1"..vocWhere..ownWhere..";")
+        local countRes = db.getResult("SELECT COUNT(*) AS total FROM `players` WHERE 1=1" .. vocWhere .. ownWhere .. ";")
         if countRes:getID() ~= -1 then
             total = countRes:getDataInt("total")
             countRes:free()
         end
         pages = math.max(1, math.ceil(total / perPage))
         if page > pages then page = pages end
-        local offset = (page-1)*perPage
+        local offset = (page - 1) * perPage
 
-        local sql = "SELECT `name`, `level`, `experience`, `maglevel`, `vocation`, `looktype`, `lookhead`, `lookbody`, `looklegs`, `lookfeet`, `lookaddons` " ..
-            "FROM `players` WHERE 1=1"..vocWhere..ownWhere.." "..orderBy.." LIMIT "..perPage.." OFFSET "..offset
+        local sql =
+            "SELECT `name`, `level`, `experience`, `maglevel`, `vocation`, `looktype`, `lookhead`, `lookbody`, `looklegs`, `lookfeet`, `lookaddons` " ..
+            "FROM `players` WHERE 1=1" .. vocWhere .. ownWhere .. " " .. orderBy ..
+            " LIMIT " .. perPage .. " OFFSET " .. offset
         local res = db.getResult(sql)
         local rank = offset + 1
         while res:getID() ~= -1 do
@@ -91,7 +93,9 @@ function sendHighscore(cid, req)
                 lookLegs = res:getDataInt("looklegs"),
                 lookFeet = res:getDataInt("lookfeet"),
                 lookAddons = res:getDataInt("lookaddons"),
-                wingsId = 0, auraId = 0, shaderId = 0,
+                wingsId = 0,
+                auraId = 0,
+                shaderId = 0,
                 online = isOnline
             })
             rank = rank + 1
@@ -99,27 +103,27 @@ function sendHighscore(cid, req)
         end
         res:free()
 
-    -- Ranking por skills
+        -- Ranking por skills
     elseif def.type == "skill" then
         local skillid = def.skillid
         local countSql = "SELECT COUNT(*) AS total " ..
             "FROM `player_skills` INNER JOIN `players` ON `player_skills`.`player_id` = `players`.`id` " ..
-            "WHERE `player_skills`.`skillid`="..skillid..vocWhere..ownWhere..";"
+            "WHERE `player_skills`.`skillid`=" .. skillid .. vocWhere .. ownWhere .. ";"
         local resCount = db.getResult(countSql)
         if resCount:getID() ~= -1 then
             total = resCount:getDataInt("total")
             resCount:free()
         end
-        pages = math.max(1, math.ceil(total/perPage))
+        pages = math.max(1, math.ceil(total / perPage))
         if page > pages then page = pages end
-        local offset = (page-1)*perPage
+        local offset = (page - 1) * perPage
 
         local sql = [[SELECT players.name, players.level, players.vocation, players.looktype, players.lookhead,
             players.lookbody, players.looklegs, players.lookfeet, players.lookaddons, player_skills.value
             FROM player_skills INNER JOIN players ON player_skills.player_id=players.id
-            WHERE player_skills.skillid=]]..skillid..vocWhere..ownWhere..
+            WHERE player_skills.skillid=]] .. skillid .. vocWhere .. ownWhere ..
             [[ ORDER BY player_skills.value DESC, players.level DESC
-            LIMIT ]]..perPage.." OFFSET "..offset..";"
+            LIMIT ]] .. perPage .. " OFFSET " .. offset .. ";"
         local res = db.getResult(sql)
         local rank = offset + 1
         while res and res:getID() ~= -1 do
@@ -143,7 +147,9 @@ function sendHighscore(cid, req)
                 lookLegs = res:getDataInt("looklegs"),
                 lookFeet = res:getDataInt("lookfeet"),
                 lookAddons = res:getDataInt("lookaddons"),
-                wingsId = 0, auraId = 0, shaderId = 0,
+                wingsId = 0,
+                auraId = 0,
+                shaderId = 0,
                 online = isOnline
             })
             rank = rank + 1

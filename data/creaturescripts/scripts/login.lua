@@ -46,10 +46,16 @@ function onLogin(cid)
         doSendMagicEffect(getCreaturePosition(cid), CONST_ME_TELEPORT)
     end
 
+    --- CRITICAL SYSTEM ----
+    if getPlayerStorageValue(cid, 48913) == -1 then
+        setPlayerStorageValue(cid, 48913, 0)
+    end
+
     --registerCreatureEvent(cid, "Outfit")
     if (config.useFragHandler) then registerCreatureEvent(cid, "SkullCheck") end
     registerCreatureEvent(cid, "AnnounceDeath")
     registerCreatureEvent(cid, "AmuletDeath")
+    registerCreatureEvent(cid, "critical")
     registerCreatureEvent(cid, "FullHpMana")
     registerCreatureEvent(cid, "FragReward")
     registerCreatureEvent(cid, "Mail")

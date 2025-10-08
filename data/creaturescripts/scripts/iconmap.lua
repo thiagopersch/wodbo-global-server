@@ -2,7 +2,7 @@ local config = {
     storage = 030220122041,
     version = 1,
     marks = {
-        { mark = 5, pos = { x = 31999, y = 32001, z = 6 }, desc = "Inicio da sua história." },
+        { mark = 5, pos = { x = 31999, y = 32001, z = 6 }, desc = "Beginning of your story" },
         { mark = 4, pos = { x = 32000, y = 32021, z = 6 }, desc = "Dragon" }
     }
 }

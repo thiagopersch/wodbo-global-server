@@ -7,7 +7,7 @@ task_sys = {
 		start = 176201,
 		monsters_list = {"Wolf"},
 		level = 1,
-		count = 3000,
+		count = 5,
 		points = 2,
 		items = {{2666,500}, {3976,500}, {5897,500}},
 		reward = {{1992,1}, {2670,200}, {2671,200}},
@@ -19,7 +19,7 @@ task_sys = {
 		start = 176202,
 		monsters_list = {"Wolf Hollow"},
 		level = 10,
-		count = 6000,
+		count = 400,
 		points = 2,
 		items = {{2666,500}, {3976,500}, {5897,500}},
 		reward = {{2666,100}, {2471,1}, {2487,1}, {2495,1}, {2640,1}
@@ -32,7 +32,7 @@ task_sys = {
 		start = 176203,
 		monsters_list = {"Wolf Fire"},
 		level = 20,
-		count = 7000,
+		count = 1000,
 		points = 2,
 		items = {{2666,500}, {2111,100}, {2494,1}},
 		reward = {{2666,100}, {8872,1}, {8821,1}, {3982,1}},
@@ -44,7 +44,7 @@ task_sys = {
 		start = 176204,
 		monsters_list = {"Wolf Ice"},
 		level = 30,
-		count = 7000,
+		count = 1000,
 		points = 2,
 		items = {{2666,500},{3976,500},{5897,500}},
 		reward = {{2666,100},{2471,1},{2487,1},{2495,1},{2640,1}},
@@ -299,19 +299,19 @@ function onKill(cid, target, lastHit)
 		if t and getPlayerStorageValue(cid, t.start) > 0 and isInArray(t.monsters_list, getCreatureName(target):lower()) and getPlayerStorageValue(cid, task_sys_storages[3]) < t.count then
 			setPlayerStorageValue(cid, task_sys_storages[3], getPlayerStorageValue(cid, task_sys_storages[3]) < 0 and 1 or (getPlayerStorageValue(cid, task_sys_storages[3])+1))
 			if getPlayerStorageValue(cid, task_sys_storages[8]) <= 0 and getPlayerStorageValue(cid, task_sys_storages[3]) < t.count then
-				doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Task System] killed [" .. getPlayerStorageValue(cid, task_sys_storages[3]) .. "/" .. t.count .. "] of " .. t.name .. " task!")
+				doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Task System] You killed [" .. getPlayerStorageValue(cid, task_sys_storages[3]) .. "/" .. t.count .. "] of " .. t.name .. " task!")
 			end
 			if getPlayerStorageValue(cid, task_sys_storages[3]) >= t.count then
-				doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Task System] Congratulations! You finished a task "..t.name..", return to the NPC Detones seems to receive his reward.")
+				doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Task System] Congratulations! You finished a task {"..t.name.."}, return to the NPC Taskman seems to receive his reward.")
 			end
 		end
 		if daily and getPlayerStorageValue(cid, task_sys_storages[7]) > 0 and getPlayerStorageValue(cid, task_sys_storages[6]) - os.time() >= 0 and isInArray(daily.monsters_list, getCreatureName(target):lower()) and getPlayerStorageValue(cid, task_sys_storages[5]) < daily.count then
 			setPlayerStorageValue(cid, task_sys_storages[5], getPlayerStorageValue(cid, task_sys_storages[5]) < 0 and 1 or (getPlayerStorageValue(cid, task_sys_storages[5])+1))
 			if getPlayerStorageValue(cid, task_sys_storages[8]) <= 0 and getPlayerStorageValue(cid, task_sys_storages[5]) < daily.count then
-				doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,"[Daily Task System] killed [" .. getPlayerStorageValue(cid, task_sys_storages[5]) .. "/" .. daily.count .. "] of " .. daily.name .. " task!")
+				doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,"[Daily Task System] You killed [" .. getPlayerStorageValue(cid, task_sys_storages[5]) .. "/" .. daily.count .. "] of " .. daily.name .. " task!")
 			end
 			if getPlayerStorageValue(cid, task_sys_storages[5]) >= daily.count then
-				doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Daily Task System] Congratulations! You finished a daily task "..daily.name..", return to the NPC Detones seems to receive his reward.")
+				doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,"[Daily Task System] Congratulations! You finished a daily task {"..daily.name.."}, return to the NPC Taskman seems to receive his reward.")
 			end
 		end
 	end

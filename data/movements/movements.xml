@@ -1598,6 +1598,8 @@
 	<movevent type="DeEquip" itemid="49653" slot="shield" event="function" value="onDeEquipItem" />
 
 	<!-- Backpacks -->
+	<movevent type="Equip" itemid="23816" slot="backpack" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="23816" slot="backpack" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="49452" slot="backpack" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="49452" slot="backpack" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="49454" slot="backpack" event="function" value="onEquipItem" />

@@ -54,7 +54,7 @@ end
 function onLook(cid, thing, position, lookDistance)
     if isPlayer(thing.uid) then
         local description = "\n[Frags: " ..
-        getPlayerFrags(thing.uid) .. "] [Resets: " .. getPlayerResets(thing.uid) .. "]"
+            getPlayerFrags(thing.uid) .. "] [Resets: " .. getPlayerResets(thing.uid) .. "]"
         doPlayerSetSpecialDescription(thing.uid, description)
 
         if thing.uid == cid then
@@ -76,7 +76,7 @@ function onLook(cid, thing, position, lookDistance)
                     " You are " .. (getPlayerGuildRank(cid) == "" and "a member" or getPlayerGuildRank(cid)) ..
                     " of the " .. getPlayerGuildName(cid)
                 string = getPlayerGuildNick(cid) ~= "" and string .. " (" .. getPlayerGuildNick(cid) .. ")." or
-                string .. "."
+                    string .. "."
             end
             if getPlayerFlagValue(cid, PLAYERCUSTOMFLAG_CANSEECREATUREDETAILS) then
                 string = string .. "\nLife: [" .. getCreatureHealth(cid) .. " / " .. getCreatureMaxHealth(cid) .. "]" ..
@@ -85,7 +85,7 @@ function onLook(cid, thing, position, lookDistance)
             end
             if getPlayerFlagValue(cid, PLAYERCUSTOMFLAG_CANSEEPOSITION) then
                 string = string ..
-                "\nPosition: [X:" .. position.x .. "] [Y:" .. position.y .. "] [Z:" .. position.z .. "]"
+                    "\nPosition: [X:" .. position.x .. "] [Y:" .. position.y .. "] [Z:" .. position.z .. "]"
             end
             doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, string)
             return false

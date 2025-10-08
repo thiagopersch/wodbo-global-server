@@ -15,7 +15,7 @@ end
 
 function onUse(cid, item, fromPosition, itemEx, toPosition)
     if (fromPosition.x ~= CONTAINER_POSITION and isPlayerPzLocked(cid) and
-        getTileInfo(fromPosition).protection) then
+            getTileInfo(fromPosition).protection) then
         doPlayerSendDefaultCancel(cid, RETURNVALUE_NOTPOSSIBLE)
         return true
     end
@@ -24,7 +24,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
         if (item.actionid == 189) then
             if (not isPremium(cid)) then
                 doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR,
-                                        "Only the worthy may pass.")
+                    "Only the worthy may pass.")
                 return true
             end
 
@@ -33,11 +33,11 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
         end
 
         local gender = item.actionid - 186
-        if (isInArray({PLAYERSEX_FEMALE, PLAYERSEX_MALE, PLAYERSEX_GAMEMASTER},
-                      gender)) then
+        if (isInArray({ PLAYERSEX_FEMALE, PLAYERSEX_MALE, PLAYERSEX_GAMEMASTER },
+                gender)) then
             if (gender ~= getPlayerSex(cid)) then
                 doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR,
-                                        "Only the worthy may pass.")
+                    "Only the worthy may pass.")
                 return true
             end
 
@@ -49,7 +49,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
         if (skull >= SKULL_NONE and skull <= SKULL_BLACK) then
             if (skull ~= getCreatureSkullType(cid)) then
                 doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR,
-                                        "Only the worthy may pass.")
+                    "Only the worthy may pass.")
                 return true
             end
 
@@ -61,7 +61,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
         if (group >= 0 and group < 30) then
             if (group > getPlayerGroupId(cid)) then
                 doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR,
-                                        "Only the worthy may pass.")
+                    "Only the worthy may pass.")
                 return true
             end
 
@@ -73,9 +73,9 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
         if (vocation >= 0 and vocation < 50) then
             local playerVocationInfo = getVocationInfo(getPlayerVocation(cid))
             if (playerVocationInfo.id ~= vocation and
-                playerVocationInfo.fromVocation ~= vocation) then
+                    playerVocationInfo.fromVocation ~= vocation) then
                 doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR,
-                                        "Only the worthy may pass.")
+                    "Only the worthy may pass.")
                 return true
             end
 
@@ -84,12 +84,12 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
         end
 
         if (item.actionid == 190 or
-            (item.actionid ~= 0 and getPlayerLevel(cid) >=
-                (item.actionid - getItemLevelDoor(item.itemid)))) then
+                (item.actionid ~= 0 and getPlayerLevel(cid) >=
+                    (item.actionid - getItemLevelDoor(item.itemid)))) then
             doorEnter(cid, item, toPosition)
         else
             doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR,
-                                    "Only the worthy may pass.")
+                "Only the worthy may pass.")
         end
 
         return true
@@ -97,12 +97,12 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 
     if (isInArray(specialDoors, item.itemid)) then
         if (item.actionid == 100 or
-            (item.actionid ~= 0 and getPlayerStorageValue(cid, item.actionid) >
-                0)) then
+                (item.actionid ~= 0 and getPlayerStorageValue(cid, item.actionid) >
+                    0)) then
             doorEnter(cid, item, toPosition)
         else
             doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR,
-                                    "The door seems to be sealed against unwanted intruders.")
+                "The door seems to be sealed against unwanted intruders.")
         end
 
         return true
@@ -123,7 +123,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     end
 
     if (isInArray(horizontalOpenDoors, item.itemid) and
-        checkStackpos(item, fromPosition)) then
+            checkStackpos(item, fromPosition)) then
         local newPosition = toPosition
         newPosition.y = newPosition.y + 1
         local doorPosition = fromPosition
@@ -133,9 +133,9 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
             local pzDoorPosition = getTileInfo(doorPosition).protection
             local pzNewPosition = getTileInfo(newPosition).protection
             if ((pzDoorPosition and not pzNewPosition and doorCreature.uid ~=
-                cid) or
-                (not pzDoorPosition and pzNewPosition and doorCreature.uid ==
-                    cid and isPlayerPzLocked(cid))) then
+                        cid) or
+                    (not pzDoorPosition and pzNewPosition and doorCreature.uid ==
+                        cid and isPlayerPzLocked(cid))) then
                 doPlayerSendDefaultCancel(cid, RETURNVALUE_NOTPOSSIBLE)
             else
                 doTeleportThing(doorCreature.uid, newPosition)
@@ -152,7 +152,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     end
 
     if (isInArray(verticalOpenDoors, item.itemid) and
-        checkStackpos(item, fromPosition)) then
+            checkStackpos(item, fromPosition)) then
         local newPosition = toPosition
         newPosition.x = newPosition.x + 1
         local doorPosition = fromPosition
@@ -160,8 +160,8 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
         local doorCreature = getThingfromPos(doorPosition)
         if (doorCreature.itemid ~= 0) then
             if (getTileInfo(doorPosition).protection and
-                not getTileInfo(newPosition).protection and doorCreature.uid ~=
-                cid) then
+                    not getTileInfo(newPosition).protection and doorCreature.uid ~=
+                    cid) then
                 doPlayerSendDefaultCancel(cid, RETURNVALUE_NOTPOSSIBLE)
             else
                 doTeleportThing(doorCreature.uid, newPosition)

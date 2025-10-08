@@ -8,10 +8,11 @@
 	<action uniqueid="5788" script="vertical.lua" />
 	<action uniqueid="5789" script="horizontal.lua" />
 	<action itemid="13370" script="powerfruit.lua" />
+	<action itemid="20135" script="critical.lua" />
 
 	<!-- QUESTS -->
 	<action uniqueid="10000" script="quests/firstItens.lua" />
-	<action uniqueid="10001" script="quests/demonGrenSet.lua" />
+	<action uniqueid="10001" script="quests/demonGreenSet.lua" />
 	<!-- <action uniqueid="10002" script="quests/samuraihelmet.lua"/>
 	<action uniqueid="10003" script="quests/janembasword.lua"/>
 	<action uniqueid="10004" script="quests/redki.lua"/>
@@ -162,8 +163,9 @@
 	<action itemid="2148" event="script" value="other/changegold.lua" />
 	<action itemid="2152" event="script" value="other/changegold.lua" />
 	<action itemid="2160" event="script" value="other/changegold.lua" />
-	<action itemid="13737" event="script" value="other/changegold.lua" />
-	<action itemid="13739" event="script" value="other/changegold.lua" />
+	<action itemid="49834" event="script" value="other/changegold.lua" />
+	<action itemid="49836" event="script" value="other/changegold.lua" />
+	<action itemid="49837" event="script" value="other/changegold.lua" />
 
 	<!-- Teleport (stairs, ladders) -->
 	<action itemid="430" event="script" value="other/teleport.lua" />

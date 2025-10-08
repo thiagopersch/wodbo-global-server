@@ -84,7 +84,8 @@
     "getPlayerTown",
     "doAddCondition",
     "getGroupInfo",
-    "getPlayerGroupId"
+    "getPlayerGroupId",
+    "doPlayerSave"
   ],
   "Lua.diagnostics.disable": ["lowercase-global"]
 }

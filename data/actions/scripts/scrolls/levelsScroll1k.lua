@@ -1,4 +1,3 @@
--- Scripted By Perfection -- 
 local itemID = 2260
 local lvl = 100
 function onUse(cid, item, frompos, item2, topos)

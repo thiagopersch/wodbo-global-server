@@ -160,7 +160,7 @@ typedef std::list<Party*> PartyList;
 typedef std::map<uint32_t, War_t> WarMap;
 #endif
 
-#define SPEED_MAX 1500
+#define SPEED_MAX 5000
 #define SPEED_MIN 10
 #define STAMINA_MAX (42 * 60 * 60 * 1000)
 #define STAMINA_MULTIPLIER (60 * 1000)

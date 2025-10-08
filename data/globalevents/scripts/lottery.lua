@@ -2,9 +2,9 @@ local config = {
     lottery_hour = "2 hours", -- Time to next lottery (only for broadcast message, real time you can set on globalevents.xml)
     rewards_id = {
         2160, 5801, 23816, 49468, 49723, 49535, 49540, 49583, 49551, 49571, 49596, 49609, 49620, 49686, 49756, 49674, 49669, 49503, 49504, 49505, 49506, 49507
-    },                    -- Rewards ID
-    crystal_counts = 100, -- Used only if on rewards_id is crystal coin (ID: 2160).
-    website = "yes"       -- Only if you have php scripts and table `lottery` in your database!
+    },                   -- Rewards ID
+    crystal_counts = 10, -- Used only if on rewards_id is crystal coin (ID: 2160).
+    website = "yes"      -- Only if you have php scripts and table `lottery` in your database!
 }
 function onThink(interval, lastExecution)
     if (getWorldCreatures(0) == 0) then return true end

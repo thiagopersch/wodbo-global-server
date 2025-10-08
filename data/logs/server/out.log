@@ -1,92 +1,38 @@
-[7/10/2025 16:8:31] > Usando SHA1 criptografia
-[7/10/2025 16:8:31] >> Carregando RSA key
-[7/10/2025 16:8:31] >> Iniciando conexao SQL
-[7/10/2025 16:8:31] >> Executando Gerenciador de Banco de Dados
-[7/10/2025 16:8:31] > Optimized database.
-[7/10/2025 16:8:31] >> Carregando items (OTB)
-[7/10/2025 16:8:31] >> Carregando items (XML)
-[7/10/2025 16:8:31] >> Carregando Grupos
-[7/10/2025 16:8:31] >> Carregando Vocacoes
-[7/10/2025 16:8:31] >> Carregando Outfits
-[7/10/2025 16:8:31] >> Carregando Canal de Chat
-[7/10/2025 16:8:31] >> Carregando Sistema
-[7/10/2025 16:8:32] >> Carregando Mods...
-[7/10/2025 16:8:32] > Loading AutoLoot.xml... done.
-[7/10/2025 16:8:32] > Loading Automatic Raids.xml... done.
-[7/10/2025 16:8:32] > Loading highscorebook.xml... done.
-[7/10/2025 16:8:32] > Loading Simple Task.xml... done.
-[7/10/2025 16:8:32] > 4 mods were loaded.
-[7/10/2025 16:8:32] >> Carregando EXP Stages
-[7/10/2025 16:8:32] >> Carregando Monstros
-[7/10/2025 16:8:32] >> Carregando Mapa e Spawns...
-[7/10/2025 16:8:32] > Tamanho do Mapa: 64000x64000.
-[7/10/2025 16:8:32] > Descricao do Mapa: 
-[7/10/2025 16:8:32] "Saved with OTAcademy Map Editor 4.1.1"
-[7/10/2025 16:8:32] "No map description available."
-[7/10/2025 16:8:33] [Warning - IOMap::loadMap] Movable item in house: 1, item type: 35131, pos 31892/32249/7
-[7/10/2025 16:8:33] [Warning - IOMap::loadMap] Movable item in house: 1, item type: 35140, pos 31892/32250/7
-[7/10/2025 16:8:34] > Mapa carregado em: 1.746 segundos.
-[7/10/2025 16:8:34] > Data carregada em: 0.101 segundos.
-[7/10/2025 16:8:34] > Houses carregada em: 0.005 segundos.
-[7/10/2025 16:8:34] > Content unserialization time: 0.001 seconds.
-[7/10/2025 16:8:34] > Carregando Tipo de PVP... Open PvP
-[7/10/2025 16:8:34] > Inicializando estado do jogo e registrando servicos...
-[7/10/2025 16:8:34] > IP do Servidor: 127.0.0.1
-[7/10/2025 16:8:34] > IP local do Servidor: 172.21.208.1	192.168.1.101	
-[7/10/2025 16:8:34] > Portas do Servidor: 7171	7172	
-[7/10/2025 16:8:34] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[7/10/2025 16:8:44] >> DBOSupreme servidor Online!
+[7/10/2025 23:43:0] > Usando SHA1 criptografia
+[7/10/2025 23:43:0] >> Carregando RSA key
+[7/10/2025 23:43:0] >> Iniciando conexao SQL
+[7/10/2025 23:43:0] >> Executando Gerenciador de Banco de Dados
+[7/10/2025 23:43:0] > Optimized database.
+[7/10/2025 23:43:0] >> Carregando items (OTB)
+[7/10/2025 23:43:1] >> Carregando items (XML)
+[7/10/2025 23:43:1] >> Carregando Grupos
+[7/10/2025 23:43:1] >> Carregando Vocacoes
+[7/10/2025 23:43:1] >> Carregando Outfits
+[7/10/2025 23:43:1] >> Carregando Canal de Chat
+[7/10/2025 23:43:1] >> Carregando Sistema
+[7/10/2025 23:43:1] >> Carregando Mods...
+[7/10/2025 23:43:1] > Loading AutoLoot.xml... done.
+[7/10/2025 23:43:1] > Loading Automatic Raids.xml... done.
+[7/10/2025 23:43:1] > Loading highscorebook.xml... done.
+[7/10/2025 23:43:1] > Loading Simple Task.xml... done.
+[7/10/2025 23:43:1] > 4 mods were loaded.
+[7/10/2025 23:43:1] >> Carregando EXP Stages
+[7/10/2025 23:43:1] >> Carregando Monstros
+[7/10/2025 23:43:1] >> Carregando Mapa e Spawns...
+[7/10/2025 23:43:1] > Tamanho do Mapa: 64000x64000.
+[7/10/2025 23:43:1] > Descricao do Mapa: 
+[7/10/2025 23:43:1] "Saved with OTAcademy Map Editor 4.1.1"
+[7/10/2025 23:43:1] "No map description available."
+[7/10/2025 23:43:3] > Mapa carregado em: 1.624 segundos.
+[7/10/2025 23:43:3] > Data carregada em: 0.093 segundos.
+[7/10/2025 23:43:3] > Houses carregada em: 0.008 segundos.
+[7/10/2025 23:43:3] > Content unserialization time: 0.001 seconds.
+[7/10/2025 23:43:3] > Carregando Tipo de PVP... Open PvP
+[7/10/2025 23:43:3] > Inicializando estado do jogo e registrando servicos...
+[7/10/2025 23:43:3] > IP do Servidor: 127.0.0.1
+[7/10/2025 23:43:3] > IP local do Servidor: 172.21.208.1	192.168.1.101	
+[7/10/2025 23:43:3] > Portas do Servidor: 7171	7172	
+[7/10/2025 23:43:3] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[7/10/2025 23:43:13] >> DBOSupreme servidor Online!
 
-[7/10/2025 16:8:44] God has logged in.
-
-[7/10/2025 16:13:32] [Error - GlobalEvent Interface] 
-[7/10/2025 16:13:32] data/globalevents/scripts/online_highscore.lua:onThink
-[7/10/2025 16:13:32] Description: 
-[7/10/2025 16:13:32] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[7/10/2025 16:13:32] stack traceback:
-[7/10/2025 16:13:32] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[7/10/2025 16:13:32] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[7/10/2025 16:16:50] > Loading AutoLoot.xml... done.
-[7/10/2025 16:16:50] > Loading Automatic Raids.xml... done.
-[7/10/2025 16:16:50] > Loading highscorebook.xml... done.
-[7/10/2025 16:16:50] > Loading Simple Task.xml... done.
-[7/10/2025 16:16:50] > 4 mods were loaded.
-[7/10/2025 16:17:37] > Loading AutoLoot.xml... done.
-[7/10/2025 16:17:37] > Loading Automatic Raids.xml... done.
-[7/10/2025 16:17:37] > Loading highscorebook.xml... done.
-[7/10/2025 16:17:37] > Loading Simple Task.xml... done.
-[7/10/2025 16:17:37] > 4 mods were loaded.
-[7/10/2025 16:17:51] > Loading AutoLoot.xml... done.
-[7/10/2025 16:17:51] > Loading Automatic Raids.xml... done.
-[7/10/2025 16:17:51] > Loading highscorebook.xml... done.
-[7/10/2025 16:17:51] > Loading Simple Task.xml... done.
-[7/10/2025 16:17:51] > 4 mods were loaded.
-[7/10/2025 16:18:38] > Loading AutoLoot.xml... done.
-[7/10/2025 16:18:38] > Loading Automatic Raids.xml... done.
-[7/10/2025 16:18:38] > Loading highscorebook.xml... done.
-[7/10/2025 16:18:38] > Loading Simple Task.xml... done.
-[7/10/2025 16:18:38] > 4 mods were loaded.
-
-[7/10/2025 16:23:38] [Error - GlobalEvent Interface] 
-[7/10/2025 16:23:38] data/globalevents/scripts/online_highscore.lua:onThink
-[7/10/2025 16:23:38] Description: 
-[7/10/2025 16:23:38] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[7/10/2025 16:23:38] stack traceback:
-[7/10/2025 16:23:38] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[7/10/2025 16:23:38] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[7/10/2025 16:28:38] [Error - GlobalEvent Interface] 
-[7/10/2025 16:28:38] data/globalevents/scripts/online_highscore.lua:onThink
-[7/10/2025 16:28:38] Description: 
-[7/10/2025 16:28:38] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[7/10/2025 16:28:38] stack traceback:
-[7/10/2025 16:28:38] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[7/10/2025 16:28:38] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[7/10/2025 16:33:38] [Error - GlobalEvent Interface] 
-[7/10/2025 16:33:38] data/globalevents/scripts/online_highscore.lua:onThink
-[7/10/2025 16:33:38] Description: 
-[7/10/2025 16:33:38] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[7/10/2025 16:33:38] stack traceback:
-[7/10/2025 16:33:38] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[7/10/2025 16:33:38] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[7/10/2025 23:43:13] God has logged in.

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
 	<globalevent name="OnlineHighscore" interval="300000" script="online_highscore.lua" />
-	<globalevent name="lottery" interval="1800000" event="script" value="lottery.lua" />
+	<globalevent name="lottery" interval="7200000" event="script" value="lottery.lua" />
 	<globalevent name="broadcastMessage" interval="60000" script="broadcastMessage.lua" />
-	<globalevent name="textoTeleport" interval="1000" script="textoTeleport.lua" />
+	<globalevent name="textoTeleport" interval="2000" script="textoTeleport.lua" />
 	<!-- <globalevent name="playereffect" interval="1000" script="playerEffect.lua" /> -->
 	<globalevent name="save" interval="3600000" event="script" value="save.lua" />
 	<globalevent name="clean" interval="7200000" event="script" value="clean.lua" />

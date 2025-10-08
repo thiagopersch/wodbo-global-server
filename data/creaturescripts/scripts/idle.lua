@@ -5,7 +5,7 @@ local config = {
 
 function onThink(cid, interval)
     if (getTileInfo(getCreaturePosition(cid)).nologout or getCreatureNoMove(cid) or
-        getPlayerCustomFlagValue(cid, PLAYERCUSTOMFLAG_ALLOWIDLE)) then
+            getPlayerCustomFlagValue(cid, PLAYERCUSTOMFLAG_ALLOWIDLE)) then
         return true
     end
 
@@ -15,11 +15,11 @@ function onThink(cid, interval)
         doRemoveCreature(cid)
     elseif (config.idleWarning > 0 and idleTime == config.idleWarning) then
         local message = "You have been idle for " ..
-                            math.ceil(config.idleWarning / 60000) .. " minutes"
+            math.ceil(config.idleWarning / 60000) .. " minutes"
         if (config.idleKick > 0) then
             message = message .. ", you will be disconnected in "
             local diff = math.ceil((config.idleWarning - config.idleKick) /
-                                       60000)
+                60000)
             if (diff > 1) then
                 message = message .. diff .. " minutes"
             else

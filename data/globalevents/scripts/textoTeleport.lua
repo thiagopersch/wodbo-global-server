@@ -9,6 +9,11 @@ local positions = {
         color = { 205, 210 },
         effect = { 251 }
     },
+    ["Arena PvP"] = {
+        pos = { x = 31917, y = 32224, z = 7 },
+        color = { 205, 210 },
+        effect = { 10 }
+    },
 }
 
 function onThink(cid, interval, lastExecution)

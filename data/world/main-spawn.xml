@@ -8822,6 +8822,9 @@
 	<spawn centerx="31957" centery="32163" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31964" centery="32163" centerz="7" radius="1">
+		<npc name="Afonso" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31959" centery="32165" centerz="7" radius="1">
 		<monster name="Cat" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -8833,6 +8836,9 @@
 	</spawn>
 	<spawn centerx="31956" centery="32174" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31964" centery="32174" centerz="7" radius="1">
+		<npc name="Frodo" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31969" centery="32174" centerz="7" radius="1">
 		<monster name="Cat" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -8860,6 +8866,9 @@
 	</spawn>
 	<spawn centerx="31943" centery="32194" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31926" centery="32195" centerz="7" radius="4">
+		<npc name="Taskman" x="0" y="2" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31945" centery="32197" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />

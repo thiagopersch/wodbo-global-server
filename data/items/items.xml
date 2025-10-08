@@ -68709,7 +68709,6 @@
 	</item>
 	<item id="49835" article="a" name="sonic coin" plural="sonic coins">
 		<attribute key="weight" value="10" />
-		<attribute key="worth" value="30000" />
 	</item>
 	<item id="49836" article="a" name="green bar" plural="green bars">
 		<attribute key="weight" value="10" />

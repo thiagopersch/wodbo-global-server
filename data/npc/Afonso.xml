@@ -1,59 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Afonso" script="default.lua" walkinterval="2000">
-	<health now="100" max="100" />
-	<look type="130" head="0" body="79" legs="114" feet="76" addons="3" />
-	<parameters>
-		<parameter key="message_greet" value="Hello, |PLAYERNAME|! I sell backpacks. Say {trade}." />
-		<parameter key="module_shop" value="1" />
-		<parameter key="shop_buyable"
-			value="
-			shinigami bag,1987,10000;
-			backpack,1988,10000;
-			santa claus backpack,1989,10000;
-			war backpack,1990,10000;
-			ladybug backpack,1991,10000;
-			crystal backpack,1992,10000;
-			worm backpack,1993,10000;
-			cake backpack,1994,10000;
-			electro backpack,1995,10000;
-			book backpack,1996,10000;
-			grey capsule,1997,10000;
-			little bag,1998,10000;
-			red capsule,1999,10000;
-			blue capsule,2000,10000;
-			red schoolbag,2001,10000;
-			big schoolbag,2002,10000;
-			grey malet,2003,10000;
-			digital bag,2004,10000;
-			backpack of holding,2365,10000;
-			green capsule,3939,10000;
-			camouflage backpack,3940,10000;
-			dragon ball backpack,7737,10000;
-			mushroom backpack,7738,10000;
-			leaf backpack,7739,10000;
-			precious jewels backpack,5801,10000;
-			pirate backpack,5926,10000;
-			pox backpack,5927,10000;
-			beach backpack,5949,10000;
-			dentura backpack,5950,10000;
-			fur backpack,7342,10000;
-			medicine backpack,12683,10000;
-			brocade backpack,9774,10000;
-			brocade bag,9775,10000;
-			demon backpack,9775,10000;
-			orange backpack,10519,10000;
-			orange bag,10520,10000;
-			moon backpack,10521,10000;
-			crown backpack,10522,10000;
-			hearth backpack,11119,10000;
-			hobbit backpack,11241,10000;
-			hobbit bag,11242,10000;
-			china backpack,11243,10000;
-			minotaur backpack,11244,10000;
-			christmas backpack,11263,10000;
-			colorful backpack,13934,10000;
-			hermes backpack,14056,10000;
-			skull backpack,14101,10000
-			" />
-	</parameters>
+   <health now="100" max="100" />
+   <look type="130" head="0" body="79" legs="114" feet="76" addons="3" />
+   <parameters>
+      <parameter key="module_shop" value="1" />
+      <parameter key="message_greet" value="Hello, |PLAYERNAME|! I sell backpacks. Say {trade}." />
+      <parameter key="shop_buyable"
+         value="
+            backpack,1988,100000;
+            green backpack,1998,100000;
+            yellow backpack,1999,100000;
+            red backpack,2000,100000;
+            purple backpack,2001,100000;
+            blue backpack,2002,100000;
+            grey backpack,2003,100000;
+            golden backpack,2004,100000;
+            backpack of holding,2365,100000;
+            shopping bag,23782,100000;
+            wolf backpack,24740,100000;
+            energetic backpack,26181,100000;
+            reward container,21518,100000;
+            shaggy ogre bag,25419,100000;
+            gold pouch,26377,100000;
+            birthday backpack,27051,100000;
+            blossom bag,28436,100000;
+            book backpack,31227,100000;
+            festive backpack,32853,100000;
+            winged backpack,34281,100000;
+            ghost backpack,35276,100000;
+            raccoon backpack,38233,100000;
+            Galthen's satchel,39469,100000;
+            exaltation chest,40217,100000;
+            changing backpack,40686,100000;
+            25 years backpack,42841,100000;
+            lilypad backpack,44745,100000;
+            dragon ball backpack,49452,100000;
+            death bag,49453,100000;
+            leaf backpack,49454,100000;
+            shinigami bag,49469,100000;
+            modern bag,49470,100000;
+            christmas backpack,49471,100000;
+            simple war backpack,49472,100000;
+            ladybird backpack,49473,100000;
+            crystal backpack,49474,100000;
+            desert backpack,49475,100000;
+            cake backpack,49476,100000;
+            energy backpack,49477,100000;
+            book backpack,49478,100000;
+            gray capsule bag,49479,100000;
+            green capsule bag,49480,100000;
+            little bag,49481,100000;
+            red capsule bag,49482,100000;
+            blue capsule bag,49483,100000;
+            red modern baackpack,49484,100000;
+            adventurer backpack,49485,100000;
+            gray suitcase,49486,100000;
+            digital backpack,49487,100000;
+            ninja backpack,49774,100000;
+            shenlong backpack,49841,100000;
+            green modern backpack,49842,100000;
+            yellow modern backpack,49843,100000;
+            red modern backpack,49844,100000;
+            pink modern backpack,49845,100000;
+            gray modern backpack,49846,100000;
+            golden modern backpack,49847,100000;
+            ice backpack,49882,100000;
+            neon backpack,49891,100000;
+            beach backpack,5949,100000;
+            jewelled backpack,5801,100000;
+            camouflage backpack,3940,100000;
+            pirate backpack,5926,100000;
+            fur backpack,7342,100000;
+            brocade backpack,9774,100000;
+            demon backpack,10518,100000;
+            orange backpack,10519,100000;
+            moon backpack,10521,100000;
+            crown backpack,10522,100000;
+            heart backpack,11119,100000;
+            expedition backpack,11241,100000;
+            dragon backpack,11243,100000;
+            minotaur backpack,11244,100000;
+            santa backpack,11263,100000;
+            deeping backpack,15645,100000;
+            buggy backpack,15646,100000;
+            anniversary backpack,16007,100000;
+            mushroom backpack,18393,100000;
+            crystal backpack,18394,100000;
+            cake backpack,22696,100000;
+            pannier backpack,21475,100000;
+            feedbag,23663,100000;
+            glooth backpack,23666,100000;
+            war backpack,23816,100000
+            " />
+   </parameters>
 </npc>
