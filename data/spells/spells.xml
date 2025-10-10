@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spells>
-    <!-- Spells Iniciais -->
+    <!-- Gerais -->
+    <!-- <instant group="support" spellid="81" name="Levitate" words="exani hur" level="12"
+    mana="50" premium="0" aggressive="0" cooldown="2000" groupcooldown="2000" params="1"
+    needlearn="0" script="support/levitate.lua" /> -->
     <rune name="Reiatsu Prision" id="2288" charges="1" maglv="20" exhaustion="2000"
         blocktype="solid" allowfaruse="1" event="script" value="support/magic prison.lua" />
     <instant name="Reiatsu Light" words="Reiatsu Light" lvl="1" mana="10" prem="0" aggressive="0"

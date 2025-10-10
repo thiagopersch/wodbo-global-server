@@ -561,8 +561,8 @@
 		<attribute key="floorchange" value="north" />
 	</item>
 	<item id="1405" article="a" name="ramp" />
-	<item id="1406" article="a" name="grave"/>
-	<item fromid="1407" toid="1409" article="a" name="grave stone"/>
+	<item id="1406" article="a" name="grave" />
+	<item fromid="1407" toid="1409" article="a" name="grave stone" />
 	<item id="1410" article="a" name="stone coffin">
 		<attribute key="containerSize" value="6" />
 	</item>
@@ -590,18 +590,24 @@
 	</item>
 	<item fromid="1426" toid="1427" article="an" name="unlit campfire" />
 	<item id="1428" article="a" name="campfire" />
-	<item fromid="1429" toid="1434" article="a" name="sign"/>
+	<item fromid="1429" toid="1434" article="a" name="sign">
+		<attribute key="readable" value="1" />
+	</item>
 	<item id="1435" article="a" name="dragon flag" />
 	<item id="1436" article="a" name="castle flag" />
 	<item id="1437" article="a" name="flag of Tibia" />
-	<item fromid="1438" toid="1439" article="a" name="street sign"/>
-	<item fromid="1440" toid="1441" article="a" name="sign"/>
+	<item fromid="1438" toid="1439" article="a" name="street sign">
+		<attribute key="readable" value="1" />
+	</item>
+	<item fromid="1440" toid="1441" article="a" name="sign">
+		<attribute key="readable" value="1" />
+	</item>
 	<item id="1442" article="a" name="statue">
 		<attribute key="rotateTo" value="1476" />
 	</item>
 	<item id="1443" article="a" name="statue" editorsuffix=" (Immobile)" />
-	<item id="1444" article="a" name="hero statue"/>
-	<item id="1445" article="a" name="monument"/>
+	<item id="1444" article="a" name="hero statue" />
+	<item id="1445" article="a" name="monument" />
 	<item id="1446" article="a" name="minotaur statue">
 		<attribute key="rotateTo" value="1462" />
 	</item>
@@ -903,10 +909,10 @@
 	<item fromid="1582" toid="1593" article="a" name="white stone railing" />
 	<item fromid="1594" toid="1601" article="a" name="wooden railing" />
 	<item fromid="1602" toid="1614" article="a" name="big table" />
-	<item id="1615" article="a" name="square table"/>
-	<item id="1616" article="a" name="small round table"/>
+	<item id="1615" article="a" name="square table" />
+	<item id="1616" article="a" name="small round table" />
 	<item fromid="1617" toid="1618" article="a" name="counter" />
-	<item id="1619" article="a" name="small table"/>
+	<item id="1619" article="a" name="small table" />
 	<item fromid="1620" toid="1621" article="a" name="counter" />
 	<item fromid="1622" toid="1633" article="a" name="table" />
 	<item id="1634" article="a" name="passthrough">
@@ -1874,8 +1880,8 @@
 	<item id="2063" article="a" name="small oil lamp">
 		<attribute key="weight" value="900" />
 	</item>
-	<item id="2064" article="a" name="table lamp"/>
-	<item id="2065" article="a" name="lit table lamp"/>
+	<item id="2064" article="a" name="table lamp" />
+	<item id="2065" article="a" name="lit table lamp" />
 	<item id="2066" article="a" name="wall lamp" />
 	<item id="2067" article="a" name="lit wall lamp" />
 	<item id="2068" article="a" name="wall lamp" />
@@ -1977,7 +1983,7 @@
 		<attribute key="slotType" value="ammo" />
 		<attribute key="weight" value="1250" />
 	</item>
-	<item id="2098" article="a" name="globe"/>
+	<item id="2098" article="a" name="globe" />
 	<item id="2099" article="a" name="water pipe">
 		<attribute key="weight" value="5600" />
 	</item>
@@ -6423,7 +6429,7 @@
 	<item id="3084" article="a" name="dead rotworm" editorsuffix=" (Not Decaying)">
 		<attribute key="containerSize" value="20" />
 	</item>
-	<item id="3085" article="a" name="dead rotworm" editorsuffix=" (Not Decaying)"/>
+	<item id="3085" article="a" name="dead rotworm" editorsuffix=" (Not Decaying)" />
 	<item id="3086" article="a" name="dead wolf" editorsuffix=" (Not Decaying)">
 		<attribute key="weight" value="26000" />
 		<attribute key="containerSize" value="10" />
@@ -6754,7 +6760,7 @@
 	<item id="3727" article="a" name="stone snake wall" />
 	<item id="3728" article="a" name="stone snake pagoda" />
 	<item fromid="3729" toid="3732" article="a" name="dried well" />
-	<item fromid="3733" toid="3736" article="a" name="poison well"/>
+	<item fromid="3733" toid="3736" article="a" name="poison well" />
 	<item fromid="3737" toid="3738" article="a" name="pagoda" />
 	<item fromid="3739" toid="3742" article="a" name="huntress statue" />
 	<item id="3743" article="a" name="bamboo lamp" />
@@ -6795,7 +6801,7 @@
 	<item id="3810" article="a" name="bamboo table">
 		<attribute key="rotateTo" value="3809" />
 	</item>
-	<item id="3811" article="a" name="thick trunk"/>
+	<item id="3811" article="a" name="thick trunk" />
 	<item id="3812" article="an" name="ornamented stone table" />
 	<item id="3813" article="a" name="tusk chair">
 		<attribute key="rotateTo" value="3816" />
@@ -6821,7 +6827,7 @@
 	<item id="3820" article="an" name="ivory chair">
 		<attribute key="rotateTo" value="3818" />
 	</item>
-	<item id="3821" article="a" name="small trunk"/>
+	<item id="3821" article="a" name="small trunk" />
 	<item fromid="3822" toid="3825" article="a" name="bamboo wardrobe">
 		<attribute key="containerSize" value="6" />
 	</item>
@@ -8394,7 +8400,9 @@
 	<item fromid="5309" toid="5314" article="a" name="white stone railing" />
 	<item fromid="5315" toid="5320" article="a" name="wooden railing" />
 	<item fromid="5321" toid="5331" article="a" name="wooden column" />
-	<item fromid="5332" toid="5389" article="a" name="sign"/>
+	<item fromid="5332" toid="5389" article="a" name="sign">
+		<attribute key="readable" value="1" />
+	</item>
 	<item fromid="5390" toid="5391" article="a" name="pawpaw tree" />
 	<item id="5392" article="a" name="mangrove" />
 	<item id="5393" article="a" name="mangrove" />
@@ -17798,7 +17806,7 @@
 		<attribute key="description" value="Use it in your house to construct a crystal table." />
 		<attribute key="weight" value="2500" />
 	</item>
-	<item id="9975" article="a" name="crystal table"/>
+	<item id="9975" article="a" name="crystal table" />
 	<item id="9976" article="a" name="crystal pedestal">
 		<attribute key="weight" value="4000" />
 	</item>
@@ -19963,7 +19971,7 @@
 	<item id="11238" article="a" name="mammoth tusk">
 		<attribute key="weight" value="600" />
 	</item>
-	<item id="11239" article="a" name="statue"/>
+	<item id="11239" article="a" name="statue" />
 	<item id="11240" name="guardian boots">
 		<attribute key="armor" value="3" />
 		<attribute key="absorbPercentPhysical" value="2" />
@@ -22895,7 +22903,7 @@
 		<attribute key="description" value="This hammer is a lesser version of the fabled Ban-Hammer." />
 		<attribute key="weight" value="6800" />
 	</item>
-	<item id="13500" name="ornate canopic jar"/>
+	<item id="13500" name="ornate canopic jar" />
 	<item id="13501" article="a" name="dead sandstone scorpion" editorsuffix=" (Immobile)">
 		<attribute key="containerSize" value="22" />
 		<attribute key="decayTo" value="13502" />
@@ -23720,7 +23728,9 @@
 		<attribute key="containerSize" value="10" />
 	</item>
 	<item fromid="13904" toid="13920" article="a" name="large spider web" />
-	<item fromid="13921" toid="13922" article="a" name="warning sign"/>
+	<item fromid="13921" toid="13922" article="a" name="warning sign">
+		<attribute key="readable" value="1" />
+	</item>
 	<item id="13923" article="a" name="flask of wasp poison">
 		<attribute key="description" value="It's very toxic. Do not ever drink green liquids." />
 		<attribute key="weight" value="180" />
@@ -27916,13 +27926,15 @@
 	<item id="19956" article="a" name="trunkhammer">
 		<attribute key="weight" value="6800" />
 	</item>
-	<item id="19957" article="a" name="junk trunk"/>
+	<item id="19957" article="a" name="junk trunk" />
 	<item id="19958" article="a" name="smashed trunk">
 		<attribute key="decayTo" value="19957" />
 		<attribute key="duration" value="240" />
 	</item>
 	<item id="19959" article="a" name="cracked stone" />
-	<item id="19960" article="an" name="advertisement sign" />
+	<item id="19960" article="an" name="advertisement sign">
+		<attribute key="readable" value="1" />
+	</item>
 	<item id="19961" name="black swamp gas" />
 	<item id="19962" article="a" name="dead lost husher" editorsuffix=" (Immobile)">
 		<attribute key="containerSize" value="44" />
@@ -28101,11 +28113,21 @@
 	</item>
 	<item id="20002" article="an" name="hourglass" />
 	<item fromid="20003" toid="20004" article="a" name="filigree statue" />
-	<item fromid="20005" toid="20072" article="a" name="sign" />
-	<item fromid="20073" toid="20074" article="a" name="steamship station sign" />
-	<item fromid="20075" toid="20076" article="a" name="magic carpet sign" />
-	<item fromid="20077" toid="20078" article="a" name="harbour sign" />
-	<item fromid="20079" toid="20080" article="a" name="bank sign" />
+	<item fromid="20005" toid="20072" article="a" name="sign">
+		<attribute key="readable" value="1" />
+	</item>
+	<item fromid="20073" toid="20074" article="a" name="steamship station sign">
+		<attribute key="readable" value="1" />
+	</item>
+	<item fromid="20075" toid="20076" article="a" name="magic carpet sign">
+		<attribute key="readable" value="1" />
+	</item>
+	<item fromid="20077" toid="20078" article="a" name="harbour sign">
+		<attribute key="readable" value="1" />
+	</item>
+	<item fromid="20079" toid="20080" article="a" name="bank sign">
+		<attribute key="readable" value="1" />
+	</item>
 	<item fromid="20081" toid="20082" article="an" name="oriel window" />
 	<item fromid="20083" toid="20086" article="a" name="roof" />
 	<item fromid="20087" toid="20088" article="a" name="blocked cave entrance" />
@@ -28254,7 +28276,9 @@
 		<attribute key="weaponType" value="club" />
 	</item>
 	<item fromid="20140" toid="20141" article="a" name="low stone wall" />
-	<item fromid="20142" toid="20147" article="a" name="sign"/>
+	<item fromid="20142" toid="20147" article="a" name="sign">
+		<attribute key="readable" value="1" />
+	</item>
 	<item fromid="20148" toid="20149" article="a" name="pillar railing" />
 	<item fromid="20150" toid="20153" article="a" name="bookcase">
 		<attribute key="containerSize" value="6" />
@@ -31342,7 +31366,7 @@
 	<item id="21391" article="a" name="council certificate">
 		<attribute key="weight" value="100" />
 	</item>
-	<item id="21392" article="a" name="dusty amphora" editorsuffix=" (Immobile)"/>
+	<item id="21392" article="a" name="dusty amphora" editorsuffix=" (Immobile)" />
 	<item id="21393" name="remains of a dusty amphora">
 		<attribute key="decayTo" value="21392" />
 		<attribute key="duration" value="300" />
@@ -35167,7 +35191,7 @@
 		<attribute key="description" value="The remains of the evil crystal glitter balefully." />
 	</item>
 	<item id="24304" name="grass" />
-	<item id="24305" article="a" name="lapis-crested vase" editorsuffix=" (Immobile)"/>
+	<item id="24305" article="a" name="lapis-crested vase" editorsuffix=" (Immobile)" />
 	<item id="24306" name="the remains of a lapis vase" editorsuffix=" (Immobile)">
 		<attribute key="decayTo" value="24305" />
 		<attribute key="duration" value="300" />
@@ -35198,7 +35222,7 @@
 		<attribute key="corpseType" value="undead" />
 	</item>
 	<item id="24313" editorsuffix=" (Blank)" />
-	<item id="24314" article="a" name="large amphora" editorsuffix=" (Immobile)"/>
+	<item id="24314" article="a" name="large amphora" editorsuffix=" (Immobile)" />
 	<item id="24315" name="remains of an amphora" editorsuffix=" (Immobile)">
 		<attribute key="decayTo" value="24314" />
 		<attribute key="duration" value="300" />
@@ -36337,7 +36361,9 @@
 	</item>
 	<item id="24852" article="a" name="glowing green sphere" />
 	<item fromid="24853" toid="24907" editorsuffix=" (Blank)" />
-	<item fromid="24908" toid="24909" article="a" name="sign" />
+	<item fromid="24908" toid="24909" article="a" name="sign">
+		<attribute key="readable" value="1" />
+	</item>
 	<item id="24910" article="a" name="bone flute">
 		<attribute key="weight" value="30" />
 		<attribute key="description" value="Crude pictures of animals are carved into it." />
@@ -41668,8 +41694,8 @@
 		<attribute key="decayTo" value="27088" />
 		<attribute key="duration" value="2" />
 	</item>
-	<item id="27090" article="a" name="skull lamp"/>
-	<item id="27091" article="a" name="lit skull lamp"/>
+	<item id="27090" article="a" name="skull lamp" />
+	<item id="27091" article="a" name="lit skull lamp" />
 	<item id="27092" article="a" name="lit skull lamp" editorsuffix=" (Powering up)">
 		<attribute key="decayTo" value="27091" />
 		<attribute key="duration" value="2" />
@@ -42579,8 +42605,8 @@
 		<attribute key="decayTo" value="27867" />
 		<attribute key="duration" value="3" />
 	</item>
-	<item id="27867" article="a" name="vengothic lamp" editorsuffix=" (On)"/>
-	<item id="27868" article="a" name="vengothic lamp" editorsuffix=" (Off)"/>
+	<item id="27867" article="a" name="vengothic lamp" editorsuffix=" (On)" />
+	<item id="27868" article="a" name="vengothic lamp" editorsuffix=" (Off)" />
 	<item id="27869" article="a" name="chameleon">
 		<attribute key="description"
 			value="This chameleon is trying very hard to look absolutely unsuspicious." />
@@ -43085,7 +43111,9 @@
 	<item id="28380" article="a" name="stuffed moohtant" />
 	<item id="28381" article="a" name="stuffed skunk" />
 	<item id="28382" article="an" name="energy fence" editorsuffix=" (Walkable)" />
-	<item fromid="28383" toid="28384" article="an" name="emerald sign" />
+	<item fromid="28383" toid="28384" article="an" name="emerald sign">
+		<attribute key="readable" value="1" />
+	</item>
 	<item id="28385" article="a" name="dark moon mirror">
 		<attribute key="weight" value="200" />
 	</item>
@@ -44803,7 +44831,7 @@
 		<attribute key="duration" value="10" />
 		<attribute key="corpseType" value="undead" />
 	</item>
-	<item id="28732" article="a" name="bath tub"/>
+	<item id="28732" article="a" name="bath tub" />
 	<item id="28733" article="a" name="bath tub">
 		<attribute key="moveable" value="0" />
 	</item>
@@ -44932,7 +44960,7 @@
 		<attribute key="containerSize" value="18" />
 		<attribute key="rotateTo" value="28763" />
 	</item>
-	<item id="28767" article="a" name="verdant table"/>
+	<item id="28767" article="a" name="verdant table" />
 	<item id="28768" article="a" name="venorean table clock">
 		<attribute key="rotateTo" value="28769" />
 	</item>
@@ -45077,8 +45105,8 @@
 		<attribute key="decayTo" value="28827" />
 		<attribute key="duration" value="3" />
 	</item>
-	<item id="28827" article="a" name="terrarium" editorsuffix=" (Neutral Up)"/>
-	<item id="28828" article="a" name="terrarium" editorsuffix=" (Neutral Down)"/>
+	<item id="28827" article="a" name="terrarium" editorsuffix=" (Neutral Up)" />
+	<item id="28828" article="a" name="terrarium" editorsuffix=" (Neutral Down)" />
 	<item id="28829" article="a" name="demon">
 		<attribute key="rotateTo" value="28830" />
 	</item>
@@ -46060,12 +46088,12 @@
 	<item id="30322" article="an" name="alchemistic table">
 		<attribute key="rotateTo" value="30321" />
 	</item>
-	<item fromid="30323" toid="30326" article="a" name="light of change"/>
-	<item id="30327" article="a" name="torch of change" editorsuffix=" (Off)"/>
+	<item fromid="30323" toid="30326" article="a" name="light of change" />
+	<item id="30327" article="a" name="torch of change" editorsuffix=" (Off)" />
 	<item id="30328" editorsuffix=" (Blank)" />
-	<item id="30329" article="a" name="torch of change" editorsuffix=" (Red)"/>
-	<item id="30330" article="a" name="torch of change" editorsuffix=" (Green)"/>
-	<item id="30331" article="a" name="torch of change" editorsuffix=" (Blue)"/>
+	<item id="30329" article="a" name="torch of change" editorsuffix=" (Red)" />
+	<item id="30330" article="a" name="torch of change" editorsuffix=" (Green)" />
+	<item id="30331" article="a" name="torch of change" editorsuffix=" (Blue)" />
 	<item fromid="30332" toid="30334" editorsuffix=" (Blank)" />
 	<item id="30335" article="an" name="alchemist bookstand">
 		<attribute key="rotateTo" value="30336" />
@@ -46081,8 +46109,8 @@
 		<attribute key="decayTo" value="30336" />
 		<attribute key="duration" value="1" />
 	</item>
-	<item id="30339" name="alchemistic scales"/>
-	<item id="30340" name="alchemistic scales"/>
+	<item id="30339" name="alchemistic scales" />
+	<item id="30340" name="alchemistic scales" />
 	<item id="30341" name="alchemistic scales" editorsuffix=" (Tipping Right)">
 		<attribute key="decayTo" value="30340" />
 		<attribute key="duration" value="1" />
@@ -46091,7 +46119,7 @@
 		<attribute key="decayTo" value="30339" />
 		<attribute key="duration" value="1" />
 	</item>
-	<item fromid="30343" toid="30344" article="a" name="pile of alchemistic books"/>
+	<item fromid="30343" toid="30344" article="a" name="pile of alchemistic books" />
 	<item id="30345" article="an" name="alchemistic cupboard" />
 	<item id="30346" editorsuffix=" (Blank)" />
 	<item id="30347" article="a" name="Ferumbras bust">
@@ -46304,7 +46332,7 @@
 	<item fromid="30550" toid="30551" article="a" name="writing desk" />
 	<item id="30552" article="a" name="bucket of scrolls" />
 	<item id="30553" article="a" name="stack of books" />
-	<item fromid="30554" toid="30555" article="a" name="wooden chair"/>
+	<item fromid="30554" toid="30555" article="a" name="wooden chair" />
 	<item fromid="30556" toid="30559" article="a" name="pile of books and scrolls" />
 	<item fromid="30560" toid="30561" article="a" name="large pile of books" />
 	<item fromid="30562" toid="30563" article="a" name="high pile of books" />
@@ -46580,7 +46608,9 @@
 		<attribute key="effect" value="teleport" />
 	</item>
 	<item id="31178" article="an" name="ornate chest" editorsuffix=" (Immobile)" />
-	<item id="31179" article="a" name="glowing sign" />
+	<item id="31179" article="a" name="glowing sign">
+		<attribute key="readable" value="1" />
+	</item>
 	<item id="31180" editorsuffix=" (Blank)" />
 	<item fromid="31181" toid="31182" article="a" name="magic gold converter">
 		<attribute key="charges" value="500" />
@@ -46743,8 +46773,12 @@
 	<item id="31228" article="an" name="ornate tome">
 		<attribute key="weight" value="1500" />
 	</item>
-	<item id="31229" article="a" name="sign of Zathroth" />
-	<item id="31230" article="a" name="glowing sign of Zathroth" />
+	<item id="31229" article="a" name="sign of Zathroth">
+		<attribute key="readable" value="1" />
+	</item>
+	<item id="31230" article="a" name="glowing sign of Zathroth">
+		<attribute key="readable" value="1" />
+	</item>
 	<item id="31231" name="remains of an animated feather">
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="30" />
@@ -47240,7 +47274,7 @@
 		<attribute key="type" value="teleport" />
 		<attribute key="effect" value="teleport" />
 	</item>
-	<item fromid="31330" toid="31331" article="an" name="anglerfish lamp"/>
+	<item fromid="31330" toid="31331" article="an" name="anglerfish lamp" />
 	<item id="31332" article="a" name="skeletal chair">
 		<attribute key="rotateTo" value="31333" />
 	</item>
@@ -47289,12 +47323,12 @@
 	<item id="31345" article="a" name="carnivorous plant">
 		<attribute key="rotateTo" value="31344" />
 	</item>
-	<item id="31346" article="a" name="baby rotworm" editorsuffix=" (Neutral)"/>
+	<item id="31346" article="a" name="baby rotworm" editorsuffix=" (Neutral)" />
 	<item id="31347" article="a" name="baby rotworm" editorsuffix=" (Going Down)">
 		<attribute key="decayTo" value="31348" />
 		<attribute key="duration" value="3" />
 	</item>
-	<item id="31348" article="a" name="baby rotworm" editorsuffix=" (Underground)"/>
+	<item id="31348" article="a" name="baby rotworm" editorsuffix=" (Underground)" />
 	<item id="31349" article="a" name="baby rotworm" editorsuffix=" (Coming Up)">
 		<attribute key="decayTo" value="31346" />
 		<attribute key="duration" value="3" />
@@ -47310,9 +47344,9 @@
 		<attribute key="duration" value="3" />
 	</item>
 	<item id="31352" article="a" name="ship's telescope" editorsuffix=" (Immobile)" />
-	<item id="31353" article="a" name="bellflower"/>
-	<item id="31354" article="a" name="forget-me-not"/>
-	<item id="31355" article="a" name="red geranium"/>
+	<item id="31353" article="a" name="bellflower" />
+	<item id="31354" article="a" name="forget-me-not" />
+	<item id="31355" article="a" name="red geranium" />
 	<item id="31356" article="a" name="raft" />
 	<item id="31357" article="a" name="fennec" editorsuffix=" (Not Hungry)">
 		<attribute key="description"
@@ -54223,7 +54257,7 @@
 		<attribute key="containerSize" value="8" />
 		<attribute key="rotateTo" value="35431" />
 	</item>
-	<item id="35433" article="an" name="ice table"/>
+	<item id="35433" article="an" name="ice table" />
 	<item id="35434" article="an" name="ice stool">
 		<attribute key="rotateTo" value="35435" />
 	</item>
@@ -54246,7 +54280,7 @@
 		<attribute key="containerSize" value="8" />
 		<attribute key="rotateTo" value="35437" />
 	</item>
-	<item fromid="35440" toid="35441" article="an" name="ice chandelier"/>
+	<item fromid="35440" toid="35441" article="an" name="ice chandelier" />
 	<item id="35442" article="a" name="ferumbras snowman">
 		<attribute key="rotateTo" value="35443" />
 	</item>
@@ -54351,9 +54385,9 @@
 		<attribute key="decayTo" value="35566" />
 		<attribute key="duration" value="6" />
 	</item>
-	<item id="35564" article="a" name="baby vulcongra"/>
-	<item id="35565" article="a" name="baby brain squid"/>
-	<item id="35566" article="a" name="guzzlemaw grub"/>
+	<item id="35564" article="a" name="baby vulcongra" />
+	<item id="35565" article="a" name="baby brain squid" />
+	<item id="35566" article="a" name="guzzlemaw grub" />
 	<item id="35567" article="a" name="baby vulcongra">
 		<attribute key="decayTo" value="35564" />
 		<attribute key="duration" value="6" />
@@ -54520,7 +54554,7 @@
 	<item fromid="35676" toid="35677" article="a" name="shrine" editorsuffix=" (Green)" />
 	<item fromid="35678" toid="35679" article="a" name="shrine" editorsuffix=" (Orange)" />
 	<item fromid="35680" toid="35681" article="a" name="shrine" editorsuffix=" (Purple)" />
-	<item fromid="35682" toid="35687" article="a" name="heart lamp"/>
+	<item fromid="35682" toid="35687" article="a" name="heart lamp" />
 	<item id="35688" article="a" name="heart cabinet">
 		<attribute key="containerSize" value="8" />
 		<attribute key="rotateTo" value="35689" />
@@ -54547,7 +54581,7 @@
 	<item id="35695" article="a" name="heart chair">
 		<attribute key="rotateTo" value="35692" />
 	</item>
-	<item id="35696" article="a" name="bat"/>
+	<item id="35696" article="a" name="bat" />
 	<item id="35697" article="a" name="bat">
 		<attribute key="decayTo" value="35696" />
 		<attribute key="duration" value="2" />
@@ -54572,9 +54606,9 @@
 		<attribute key="containerSize" value="18" />
 		<attribute key="rotateTo" value="35700" />
 	</item>
-	<item id="35703" article="a" name="heart lamp"/>
-	<item id="35704" article="a" name="four hearts lamp"/>
-	<item id="35705" article="a" name="small hearts lamp"/>
+	<item id="35703" article="a" name="heart lamp" />
+	<item id="35704" article="a" name="four hearts lamp" />
+	<item id="35705" article="a" name="small hearts lamp" />
 	<item id="35706" name="grass cuts" />
 	<item id="35707" name="dirt floor">
 		<attribute key="description" value="There is a hole in the ceiling." />
@@ -54793,7 +54827,7 @@
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
-	<item fromid="35981" toid="35985" article="a" name="monolith of the planes"/>
+	<item fromid="35981" toid="35985" article="a" name="monolith of the planes" />
 	<item id="35986" article="a" name="monolith of the planes kit">
 		<attribute key="description"
 			value="Use it in your house to construct a monolith of the planes... hopefully you know what you are doing." />
@@ -54889,7 +54923,9 @@
 	<item fromid="36379" toid="36380" name="wooden planks" />
 	<item fromid="36381" toid="36382" article="a" name="stack of firewood" />
 	<item fromid="36383" toid="36384" article="an" name="alcove balcony" />
-	<item fromid="36385" toid="36388" article="a" name="weathered sign" />
+	<item fromid="36385" toid="36388" article="a" name="weathered sign">
+		<attribute key="readable" value="1" />
+	</item>
 	<item id="36389" article="a" name="sacks of floor" />
 	<item fromid="36390" toid="36391" article="a" name="henhouse" />
 	<item fromid="36392" toid="36393" article="a" name="beam" />
@@ -55782,7 +55818,7 @@
 		<attribute key="decayTo" value="36682" />
 		<attribute key="duration" value="2" />
 	</item>
-	<item id="36684" article="a" name="baby bonelord" editorsuffix=" (Awake)"/>
+	<item id="36684" article="a" name="baby bonelord" editorsuffix=" (Awake)" />
 	<item id="36685" article="a" name="baby bonelord" editorsuffix=" (Skeleton)">
 		<attribute key="decayTo" value="36684" />
 		<attribute key="duration" value="2" />
@@ -55803,8 +55839,8 @@
 		<attribute key="rotateTo" value="36687" />
 		<attribute key="containerSize" value="8" />
 	</item>
-	<item id="36690" article="an" name="artist table"/>
-	<item id="36691" article="an" name="artist table" editorsuffix=" (Empty)"/>
+	<item id="36690" article="an" name="artist table" />
+	<item id="36691" article="an" name="artist table" editorsuffix=" (Empty)" />
 	<item id="36692" article="an" name="artist chair">
 		<attribute key="rotateTo" value="36693" />
 	</item>
@@ -55845,8 +55881,8 @@
 	<item id="36703" article="a" name="sculptor shelf" editorsuffix=" (Empty)">
 		<attribute key="rotateTo" value="36701" />
 	</item>
-	<item id="36704" article="a" name="sculptor table"/>
-	<item id="36705" article="a" name="sculptor table" editorsuffix=" (Empty)"/>
+	<item id="36704" article="a" name="sculptor table" />
+	<item id="36705" article="a" name="sculptor table" editorsuffix=" (Empty)" />
 	<item id="36706" article="a" name="sculptor chair">
 		<attribute key="rotateTo" value="36707" />
 	</item>
@@ -56902,8 +56938,8 @@
 		<attribute key="rotateTo" value="36952" />
 		<attribute key="containerSize" value="18" />
 	</item>
-	<item id="36956" article="a" name="barrel"/>
-	<item id="36957" article="a" name="barrel" editorsuffix=" (Empty)"/>
+	<item id="36956" article="a" name="barrel" />
+	<item id="36957" article="a" name="barrel" editorsuffix=" (Empty)" />
 	<item id="36958" article="a" name="vegetable basket">
 		<attribute key="rotateTo" value="36959" />
 	</item>
@@ -57056,8 +57092,12 @@
 	<item id="37153" name="wall cracks" />
 	<item fromid="37154" toid="37159" article="a" name="wall mask" />
 	<!-- <item fromid="37160" toid="37205" editorsuffix=" (Blank)" /> -->
-	<item fromid="37206" toid="37211" article="a" name="broken sign" />
-	<item fromid="37212" toid="37217" article="a" name="fallen sign" />
+	<item fromid="37206" toid="37211" article="a" name="broken sign">
+		<attribute key="readable" value="1" />
+	</item>
+	<item fromid="37212" toid="37217" article="a" name="fallen sign">
+		<attribute key="readable" value="1" />
+	</item>
 	<item fromid="37218" toid="37226" name="waste wood" />
 	<item fromid="37227" toid="37233" name="broken pieces" />
 	<!-- <item fromid="37234" toid="37244" editorsuffix=" (Blank)" /> -->
@@ -58580,10 +58620,10 @@
 	<item id="39273" article="a" name="sticky elemental goo">
 		<attribute key="weight" value="10" />
 	</item>
-	<item fromid="39274" toid="39275" article="a" name="volcanic basin"/>
-	<item fromid="39276" toid="39277" article="a" name="volcanic sphere"/>
-	<item fromid="39278" toid="39279" article="a" name="volcanic spire"/>
-	<item fromid="39280" toid="39281" article="a" name="volcanic bulb"/>
+	<item fromid="39274" toid="39275" article="a" name="volcanic basin" />
+	<item fromid="39276" toid="39277" article="a" name="volcanic sphere" />
+	<item fromid="39278" toid="39279" article="a" name="volcanic spire" />
+	<item fromid="39280" toid="39281" article="a" name="volcanic bulb" />
 	<item id="39282" article="a" name="volcanic mirror">
 		<attribute key="rotateTo" value="39283" />
 	</item>
@@ -58643,7 +58683,7 @@
 	<item id="39301" article="a" name="volcanic shelf">
 		<attribute key="rotateTo" value="39300" />
 	</item>
-	<item id="39302" article="a" name="demon baller" editorsuffix=" (Neutral)"/>
+	<item id="39302" article="a" name="demon baller" editorsuffix=" (Neutral)" />
 	<item fromid="39303" toid="39304" article="a" name="demon baller" editorsuffix=" (Wraparound)">
 		<attribute key="decayTo" value="39302" />
 		<attribute key="duration" value="3" />
@@ -59148,7 +59188,7 @@
 	</item>
 	<item id="39404" article="a" name="brachiodemon trophy" />
 	<item id="39405" article="a" name="many faces trophy" />
-	<item id="39406" article="a" name="falcon pet" editorsuffix=" (Neutral)"/>
+	<item id="39406" article="a" name="falcon pet" editorsuffix=" (Neutral)" />
 	<item id="39407" article="a" name="falcon pet" editorsuffix=" (Circling Peak)">
 		<attribute key="decayTo" value="39412" />
 		<attribute key="duration" value="3" />
@@ -59161,9 +59201,9 @@
 		<attribute key="decayTo" value="39410" />
 		<attribute key="duration" value="3" />
 	</item>
-	<item id="39410" article="a" name="falcon pet" editorsuffix=" (In Nest)"/>
+	<item id="39410" article="a" name="falcon pet" editorsuffix=" (In Nest)" />
 	<!-- <item id="39411" editorsuffix=" (Blank)" /> -->
-	<item id="39412" article="a" name="falcon pet" editorsuffix=" (Peak)"/>
+	<item id="39412" article="a" name="falcon pet" editorsuffix=" (Peak)" />
 	<!-- <item fromid="39413" toid="39416" editorsuffix=" (Blank)" /> -->
 	<item id="39417" article="a" name="dead lavafungus">
 		<attribute key="decayTo" value="0" />
@@ -60099,7 +60139,7 @@
 	<item id="39663" article="a" name="leaf chair">
 		<attribute key="rotateTo" value="39660" />
 	</item>
-	<item id="39664" article="a" name="stump table"/>
+	<item id="39664" article="a" name="stump table" />
 	<item id="39665" article="a" name="shroom cupboard">
 		<attribute key="rotateTo" value="39666" />
 	</item>
@@ -60118,8 +60158,8 @@
 	<item id="39670" article="a" name="log chest">
 		<attribute key="rotateTo" value="39667" />
 	</item>
-	<item fromid="39671" toid="39672" article="a" name="yellow shroom lamp"/>
-	<item fromid="39673" toid="39674" article="a" name="pink shroom lamp"/>
+	<item fromid="39671" toid="39672" article="a" name="yellow shroom lamp" />
+	<item fromid="39673" toid="39674" article="a" name="pink shroom lamp" />
 	<item id="39675" name="grass">
 		<attribute key="forceSerialize" value="1" />
 	</item>
@@ -60349,7 +60389,7 @@
 	<item id="39833" article="a" name="kraken chair">
 		<attribute key="rotateTo" value="39830" />
 	</item>
-	<item id="39834" article="a" name="kraken table"/>
+	<item id="39834" article="a" name="kraken table" />
 	<item id="39835" article="a" name="kraken cabinet">
 		<attribute key="containerSize" value="10" />
 		<attribute key="rotateTo" value="39836" />
@@ -60374,10 +60414,10 @@
 		<attribute key="containerSize" value="18" />
 		<attribute key="rotateTo" value="39837" />
 	</item>
-	<item id="39841" article="a" name="kraken watcher lamp" editorsuffix=" (Blinking)"/>
-	<item id="39842" article="a" name="kraken watcher lamp"/>
-	<item id="39843" article="a" name="kraken buoy lamp"/>
-	<item id="39844" article="a" name="kraken tentacle lamp"/>
+	<item id="39841" article="a" name="kraken watcher lamp" editorsuffix=" (Blinking)" />
+	<item id="39842" article="a" name="kraken watcher lamp" />
+	<item id="39843" article="a" name="kraken buoy lamp" />
+	<item id="39844" article="a" name="kraken tentacle lamp" />
 	<item id="39845" article="an" name="empty kraken shelf">
 		<attribute key="rotateTo" value="39846" />
 	</item>
@@ -60475,15 +60515,15 @@
 			value="Juding by the pinching of his beak, this one seems to be born to joust." />
 	</item>
 	<!-- 39869 / 40174 -->
-	<item id="40175" article="a" name="kraken buoy lamp"/>
-	<item id="40176" article="a" name="kraken tentacle lamp"/>
+	<item id="40175" article="a" name="kraken buoy lamp" />
+	<item id="40176" article="a" name="kraken tentacle lamp" />
 	<!-- 40177 / 40216 -->
 	<item id="40217" article="an" name="exaltation chest">
 		<attribute key="containerSize" value="2" />
 		<attribute key="weight" value="20" />
 	</item>
 	<!-- 40218 / 40355 -->
-	<item id="40356" article="a" name="kraken watcher lamp"/>
+	<item id="40356" article="a" name="kraken watcher lamp" />
 	<item id="40357" article="a" name="magic forcefield">
 		<attribute key="description" value="You can see the other side through it." />
 		<attribute key="type" value="teleport" />
@@ -61037,16 +61077,16 @@
 	<item id="40696" article="a" name="tapestry of honour" editorsuffix=" (XX)">
 		<attribute key="weight" value="800" />
 	</item>
-	<item id="40697" article="a" name="pile of presents"/>
-	<item id="40698" name="three presents"/>
-	<item id="40699" article="a" name="green and a blue present"/>
-	<item id="40700" article="a" name="green and a red present"/>
-	<item id="40701" article="a" name="blue and a red present"/>
-	<item id="40702" article="a" name="blue present"/>
-	<item id="40703" article="a" name="red present"/>
-	<item id="40704" article="a" name="small blue present"/>
-	<item id="40705" article="a" name="yellow present"/>
-	<item id="40706" article="a" name="yellow present"/>
+	<item id="40697" article="a" name="pile of presents" />
+	<item id="40698" name="three presents" />
+	<item id="40699" article="a" name="green and a blue present" />
+	<item id="40700" article="a" name="green and a red present" />
+	<item id="40701" article="a" name="blue and a red present" />
+	<item id="40702" article="a" name="blue present" />
+	<item id="40703" article="a" name="red present" />
+	<item id="40704" article="a" name="small blue present" />
+	<item id="40705" article="a" name="yellow present" />
+	<item id="40706" article="a" name="yellow present" />
 	<item id="40707" article="a" name="dragon pinata" editorsuffix=" (Closed)" />
 	<item id="40708" article="a" name="dragon pinata" editorsuffix=" (Opening)">
 		<attribute key="decayTo" value="40709" />
@@ -61455,15 +61495,15 @@
 	<item id="40950" name="wooden sandals">
 		<attribute key="rotateTo" value="40949" />
 	</item>
-	<item id="40951" article="a" name="Zaoan side table"/>
+	<item id="40951" article="a" name="Zaoan side table" />
 	<item id="40952" article="a" name="katana display">
 		<attribute key="rotateTo" value="40953" />
 	</item>
 	<item id="40953" article="a" name="katana display">
 		<attribute key="rotateTo" value="40952" />
 	</item>
-	<item fromid="40954" toid="40955" article="a" name="Zaoan wall lamp"/>
-	<item fromid="40956" toid="40957" name="Zaoan wall lamps"/>
+	<item fromid="40954" toid="40955" article="a" name="Zaoan wall lamp" />
+	<item fromid="40956" toid="40957" name="Zaoan wall lamps" />
 	<item id="40958" name="Morshabaal's extract">
 		<attribute key="weight" value="3150" />
 		<attribute key="showcount" value="0" />
@@ -61593,12 +61633,12 @@
 		<attribute key="containerSize" value="25" />
 		<attribute key="slotType" value="backpack" />
 	</item>
-	<item id="42842" article="a" name="lucky dragon"/>
+	<item id="42842" article="a" name="lucky dragon" />
 	<item id="42843" article="a" name="lucky dragon kit">
 		<attribute key="description" value="Use it in your house to place a lucky dragon." />
 		<attribute key="weight" value="2500" />
 	</item>
-	<item id="42844" article="a" name="lucky dragon" editorsuffix=" (Party Trumpet)"/>
+	<item id="42844" article="a" name="lucky dragon" editorsuffix=" (Party Trumpet)" />
 	<item id="42845" article="a" name="rainbow torch">
 		<attribute key="slotType" value="ammo" />
 		<attribute key="weight" value="500" />
@@ -63261,7 +63301,7 @@
 	<item id="44457" article="a" name="well-laid knightly table">
 		<attribute key="rotateTo" value="44456" />
 	</item>
-	<item fromid="44458" toid="44459" article="a" name="knightly chess table"/>
+	<item fromid="44458" toid="44459" article="a" name="knightly chess table" />
 	<item id="44460" article="a" name="knightly bed" editorsuffix=" (Male)">
 		<attribute key="description" value="Someone is sleeping there." />
 		<attribute key="type" value="bed" />
@@ -63326,18 +63366,18 @@
 		<attribute key="containerSize" value="8" />
 		<attribute key="rotateTo" value="44472" />
 	</item>
-	<item fromid="44474" toid="44476" article="a" name="knightly fire bowl"/>
-	<item id="44477" article="a" name="knightly wall lamp"/>
-	<item id="44478" article="a" name="knightly wall lamp" editorsuffix=" (Lit)"/>
+	<item fromid="44474" toid="44476" article="a" name="knightly fire bowl" />
+	<item id="44477" article="a" name="knightly wall lamp" />
+	<item id="44478" article="a" name="knightly wall lamp" editorsuffix=" (Lit)" />
 	<!-- 44479 / 44514 -->
 	<item fromid="44515" toid="44526" name="some crystals" />
-	<item id="44527" article="a" name="knightly sword lamp"/>
-	<item id="44528" article="a" name="knightly sword lamp" editorsuffix=" (Lit)"/>
-	<item id="44529" article="a" name="knightly candelabra"/>
-	<item id="44530" article="a" name="knightly candelabra" editorsuffix=" (Lit)"/>
-	<item id="44531" article="a" name="knightly candle holder"/>
-	<item id="44532" article="a" name="knightly candle holder" editorsuffix=" (Lit)"/>
-	<item id="44533" article="a" name="knightly decorative shield"/>
+	<item id="44527" article="a" name="knightly sword lamp" />
+	<item id="44528" article="a" name="knightly sword lamp" editorsuffix=" (Lit)" />
+	<item id="44529" article="a" name="knightly candelabra" />
+	<item id="44530" article="a" name="knightly candelabra" editorsuffix=" (Lit)" />
+	<item id="44531" article="a" name="knightly candle holder" />
+	<item id="44532" article="a" name="knightly candle holder" editorsuffix=" (Lit)" />
+	<item id="44533" article="a" name="knightly decorative shield" />
 	<!-- 44534 -->
 	<item id="44535" article="a" name="well-laid knightly table">
 		<attribute key="rotateTo" value="44536" />
@@ -68705,18 +68745,18 @@
 	</item>
 	<item id="49834" article="a" name="purple bar" plural="purple bars">
 		<attribute key="weight" value="10" />
-		<attribute key="worth" value="20000" />
+		<!-- <attribute key="worth" value="20000" /> -->
 	</item>
 	<item id="49835" article="a" name="sonic coin" plural="sonic coins">
 		<attribute key="weight" value="10" />
 	</item>
 	<item id="49836" article="a" name="green bar" plural="green bars">
 		<attribute key="weight" value="10" />
-		<attribute key="worth" value="40000" />
+		<!-- <attribute key="worth" value="40000" /> -->
 	</item>
 	<item id="49837" article="a" name="grey bar" plural="grey bars">
 		<attribute key="weight" value="10" />
-		<attribute key="worth" value="50000" />
+		<!-- <attribute key="worth" value="50000" /> -->
 	</item>
 	<item id="49838" article="a" name="infernal ball" plural="infernal balls">
 		<attribute key="weight" value="10" />

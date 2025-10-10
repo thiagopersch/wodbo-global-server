@@ -4,11 +4,11 @@ function onKill(cid, target, lastHit)
   end
 
   doBroadcastMessage(
-  "" ..
-  getCreatureName(target) ..
-  "[" ..
-  getPlayerLevel(target) ..
-  "] acabou de ser humilhado pelo jogador " .. getCreatureName(cid) .. "[" .. getPlayerLevel(cid) .. "].",
+    "" ..
+    getCreatureName(target) ..
+    "[" ..
+    getPlayerLevel(target) ..
+    "] acabou de ser humilhado pelo jogador " .. getCreatureName(cid) .. "[" .. getPlayerLevel(cid) .. "].",
     MESSAGE_STATUS_CONSOLE_ORANGE)
   return true
 end

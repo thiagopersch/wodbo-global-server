@@ -1,10 +1,11 @@
 local coins = {
     [ITEM_GOLD_COIN] = { to = ITEM_PLATINUM_COIN, effect = TEXTCOLOR_GREY },
     [ITEM_PLATINUM_COIN] = { from = ITEM_GOLD_COIN, to = ITEM_CRYSTAL_COIN, effect = TEXTCOLOR_LIGHTGREEN },
+    --[ITEM_CRYSTAL_COIN] = { from = ITEM_PLATINUM_COIN, effect = TEXTCOLOR_YELLOW },
     [ITEM_CRYSTAL_COIN] = { from = ITEM_PLATINUM_COIN, to = ITEM_PURPLE_BAR, effect = TEXTCOLOR_YELLOW },
     [ITEM_PURPLE_BAR] = { from = ITEM_CRYSTAL_COIN, to = ITEM_GREEN_BAR, effect = TEXTCOLOR_PURPLE },
     [ITEM_GREEN_BAR] = { from = ITEM_PURPLE_BAR, to = ITEM_GREY_BAR, effect = TEXTCOLOR_GREEN },
-    [ITEM_GREY_BAR] = { from = ITEM_GREEN_BAR, to = ITEM_GREY_BAR, effect = TEXTCOLOR_GREY },
+    [ITEM_GREY_BAR] = { from = ITEM_GREEN_BAR, effect = TEXTCOLOR_GREY },
 }
 
 function onUse(cid, item, fromPosition, itemEx, toPosition)
@@ -16,7 +17,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     if (not coin) then return false end
 
     if (coin.to ~= nil and item.type == ITEMCOUNT_MAX) then
-        doChangeTypeItem(item.uid, item.type - item.type)
+        doRemoveItem(item.uid, ITEMCOUNT_MAX)
         doPlayerAddItem(cid, coin.to, 1)
         doSendAnimatedText(fromPosition, "$$$", coins[coin.to].effect)
     elseif (coin.from ~= nil) then
