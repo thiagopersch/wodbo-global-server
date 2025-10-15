@@ -54,11 +54,11 @@ broadcastBanishments = true
 maxViolationCommentSize = 200
 violationNameReportActionType = 2
 autoBanishUnknownBytes = false
+
 -- Battle
 -- NOTE: showHealingDamageForMonsters inheritates from showHealingDamage.
 -- loginProtectionPeriod is the famous Tibia anti-magebomb system.
 -- deathLostPercent set to nil enables manual mode.
-
 worldType = "open"
 protectionLevel = 50
 pvpTileIgnoreLevelAndVocationProtection = true
@@ -124,12 +124,12 @@ antiPushItems = "2148,2152,2160,3976"
 -- NOTE: sqlFile is used only by sqlite database, and sqlKeepAlive by mysql database.
 -- To disable sqlKeepAlive such as mysqlReadTimeout use 0 value.
 -- encryptionType can be plain, md5, sha1, sha256, sha512 or vahash.
-sqlType = "sqlite"
+sqlType = "mysql"
 sqlHost = "127.0.0.1"
 sqlPort = 3306
 sqlUser = "root"
-sqlPass = ""
-sqlDatabase = "forgottenserver"
+sqlPass = "wodbleach"
+sqlDatabase = "wodbleach"
 sqlFile = "theforgottenserver.s3db"
 sqlKeepAlive = 0
 mysqlReadTimeout = 10

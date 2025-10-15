@@ -4908,8 +4908,6 @@
 			<brush name="dark stone wall with hell ramp" />
 			<brush name="other egipt ramp" />
 			<brush name="swamp ramp" />
-
-
 			<brush name="sandstone ramp" />
 			<brush name="mountain hole - filled" />
 			<brush name="mountain hole - empty" />
@@ -4959,7 +4957,7 @@
 			<brush name="oramond hole1" />
 			<item fromid="22840" />
 			<brush name="oramond hole2" />
-			<item fromid="1386" />
+			<brush name="old ladder" />
 			<item fromid="3678" />
 			<item fromid="5543" />
 			<item fromid="8599" />

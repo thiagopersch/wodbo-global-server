@@ -6796,6 +6796,19 @@
 	</brush>
 
 	<brush
+		name="old ladder" type="doodad" server_lookid="1386" draggable="true"
+		on_blocking="false" thickness="10/10">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="1386" />
+			</tile>
+			<tile x="0" y="0" z="-1">
+				<item id="459" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush
 		name="mushroom corkscrew hole" type="doodad" server_lookid="17768" draggable="true"
 		on_blocking="false" thickness="10/10">
 		<composite chance="10">
