@@ -1,7 +1,7 @@
 import os
 
-directory_in = 'C:\\Users\\thiag\\Meus Projetos\\server-tibia\\data\\monster'
-directory_out = 'C:\\Users\\thiag\\Meus Projetos\\server-tibia\\data\\monster'
+directory_in = 'C:\\Users\\thiag\\Projetos\\server-tibia\\data\\monster'
+directory_out = 'C:\\Users\\thiag\\Projetos\\server-tibia\\data\\monster'
 xml_tags = '<?xml version="1.0" encoding="UTF-8"?>\n<monsters>\n'
 
 # List to store file information

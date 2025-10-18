@@ -11,8 +11,8 @@
 	<action itemid="20135" script="critical.lua" />
 
 	<!-- QUESTS -->
-	<action uniqueid="10000" script="quests/firstItens.lua" />
-	<action uniqueid="10001" script="quests/demonGreenSet.lua" />
+	<action uniqueid="11000" script="quests/firstItens.lua" />
+	<action uniqueid="11001" script="quests/demonGreenSet.lua" />
 	<!-- <action uniqueid="10002" script="quests/samuraihelmet.lua"/>
 	<action uniqueid="10003" script="quests/janembasword.lua"/>
 	<action uniqueid="10004" script="quests/redki.lua"/>

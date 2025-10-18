@@ -2,7 +2,8 @@
 questData = {
   quests = {
     --{ id = , name = "", description = ".", lvl = , storage = 0, successful = 0 },
-    { id = 1, name = "Initial items", description = "When you start the game you will receive some basic items by clicking on the chest.", lvl = 1, storage = 0, successful = 10000 },
+    { id = 1, name = "Initial items",   description = "When you start the game you will receive some basic items by clicking on the chest.", lvl = 1,   storage = 0, successful = 11000 * 2 },
+    { id = 2, name = "Demon Green Set", description = "Complete the quest to receive the Demon Green Set.",                                  lvl = 200, storage = 0, successful = 11001 * 2 },
   }
 }
 

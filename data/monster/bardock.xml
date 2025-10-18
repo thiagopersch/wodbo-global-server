@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Bardock" description="a bardock" race="blood" experience="300" speed="300">
-  <health now="500" max="500" />
-  <look type="1881" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49290" />
+<monster name="Bardock" description="a bardock" race="blood" experience="3000" speed="300">
+  <health now="5000" max="5000" />
+  <look type="1683" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49290" />
   <targetchange interval="4000" chance="10" />
   <flags>
     <flag summonable="0" />
@@ -30,9 +30,9 @@
     <flag canwalkonpoison="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" min="-1" max="-100" />
-    <attack name="Dock Rage" interval="5000" min="-1" max="-70" />
-    <attack name="Saiyajin Energy" interval="10000" min="-1" max="-90" />
+    <attack name="melee" interval="1000" min="-1" max="-100" />
+    <attack name="Dock Rage" interval="3000" min="-1" max="-170" />
+    <attack name="Saiyajin Energy" interval="10000" min="-1" max="-190" />
   </attacks>
   <immunities>
     <immunity physical="0" />
@@ -48,8 +48,8 @@
     <immunity manadrain="0" />
     <immunity outfit="0" />
     <immunity drunk="0" />
-    <immunity invisible="0" />
-    <immunity paralyze="0" />
+    <immunity invisible="1" />
+    <immunity paralyze="1" />
   </immunities>
   <elements>
     <element firePercent="0" />
@@ -67,10 +67,11 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item name="gold coin" countmax="50" chance="10000" />
-    <item name="platinum coin" countmax="50" chance="10000" />
-    <item name="bardock armor" chance="300" />
-    <item name="bardock legs" chance="300" />
-    <item name="bardock boots" chance="300" />
+    <item name="gold coin" countmax="60" chance="100000" />
+    <item name="platinum coin" countmax="30" chance="100000" />
+    <item name="crystal coin" countmax="10" chance="50000" />
+    <item name="bardock armor" chance="3000" />
+    <item name="bardock legs" chance="3000" />
+    <item name="bardock boots" chance="3000" />
   </loot>
 </monster>

@@ -1,5 +1,5 @@
 function onUse(cid, item, frompos, item2, topos)
-    local uid = 10001
+    local uid = 11001
     if item.uid == uid then
         if getPlayerStorageValue(cid, uid) == -1 then
             doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "Congratulations! You have gain the quest item!")
