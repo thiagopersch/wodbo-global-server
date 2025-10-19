@@ -1,95 +1,231 @@
-[18/10/2025 2:47:18] > Usando SHA1 criptografia
-[18/10/2025 2:47:18] >> Carregando RSA key
-[18/10/2025 2:47:18] >> Iniciando conexao SQL
-[18/10/2025 2:47:18] >> Executando Gerenciador de Banco de Dados
-[18/10/2025 2:47:18] > Optimized database.
-[18/10/2025 2:47:18] >> Carregando items (OTB)
-[18/10/2025 2:47:19] >> Carregando items (XML)
-[18/10/2025 2:47:19] >> Carregando Grupos
-[18/10/2025 2:47:19] >> Carregando Vocacoes
-[18/10/2025 2:47:19] >> Carregando Outfits
-[18/10/2025 2:47:19] >> Carregando Canal de Chat
-[18/10/2025 2:47:19] >> Carregando Sistema
-[18/10/2025 2:47:19] >> Carregando Mods...
-[18/10/2025 2:47:19] > Loading AutoLoot.xml... done.
-[18/10/2025 2:47:19] > Loading Automatic Raids.xml... done.
-[18/10/2025 2:47:19] > Loading highscorebook.xml... done.
-[18/10/2025 2:47:19] > Loading Simple Task.xml... done.
-[18/10/2025 2:47:19] > 4 mods were loaded.
-[18/10/2025 2:47:19] >> Carregando EXP Stages
-[18/10/2025 2:47:19] >> Carregando Monstros
-[18/10/2025 2:47:20] >> Carregando Mapa e Spawns...
-[18/10/2025 2:47:20] > Tamanho do Mapa: 64000x64000.
-[18/10/2025 2:47:20] > Descricao do Mapa: 
-[18/10/2025 2:47:20] "Saved with OTAcademy Map Editor 4.1.1"
-[18/10/2025 2:47:20] "No map description available."
-[18/10/2025 2:47:23] > Mapa carregado em: 3.315 segundos.
-[18/10/2025 2:47:23] > Data carregada em: 0.14 segundos.
-[18/10/2025 2:47:23] > Houses carregada em: 0.008 segundos.
-[18/10/2025 2:47:23] > Content unserialization time: 0.001 seconds.
-[18/10/2025 2:47:23] > Carregando Tipo de PVP... Open PvP
-[18/10/2025 2:47:23] > Inicializando estado do jogo e registrando servicos...
-[18/10/2025 2:47:23] > IP do Servidor: 127.0.0.1
-[18/10/2025 2:47:23] > IP local do Servidor: 172.29.80.1	172.29.16.1	192.168.1.102	
-[18/10/2025 2:47:23] > Portas do Servidor: 7171	7172	
-[18/10/2025 2:47:23] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[18/10/2025 2:47:33] >> DBOSupreme servidor Online!
+[18/10/2025 20:27:7] > Usando SHA1 criptografia
+[18/10/2025 20:27:7] >> Carregando RSA key
+[18/10/2025 20:27:7] >> Iniciando conexao SQL
+[18/10/2025 20:27:7] >> Executando Gerenciador de Banco de Dados
+[18/10/2025 20:27:7] > Optimized database.
+[18/10/2025 20:27:7] >> Carregando items (OTB)
+[18/10/2025 20:27:8] >> Carregando items (XML)
+[18/10/2025 20:27:8] >> Carregando Grupos
+[18/10/2025 20:27:8] >> Carregando Vocacoes
+[18/10/2025 20:27:8] >> Carregando Outfits
+[18/10/2025 20:27:8] >> Carregando Canal de Chat
+[18/10/2025 20:27:8] >> Carregando Sistema
+[18/10/2025 20:27:8] >> Carregando Mods...
+[18/10/2025 20:27:8] > Loading AutoLoot.xml... done.
+[18/10/2025 20:27:8] > Loading Automatic Raids.xml... done.
+[18/10/2025 20:27:8] > Loading highscorebook.xml... done.
+[18/10/2025 20:27:8] > Loading Simple Task.xml... done.
+[18/10/2025 20:27:8] > 4 mods were loaded.
+[18/10/2025 20:27:8] >> Carregando EXP Stages
+[18/10/2025 20:27:8] >> Carregando Monstros
+[18/10/2025 20:27:9] >> Carregando Mapa e Spawns...
+[18/10/2025 20:27:9] > Tamanho do Mapa: 64000x64000.
+[18/10/2025 20:27:9] > Descricao do Mapa: 
+[18/10/2025 20:27:9] "Saved with OTAcademy Map Editor 4.1.1"
+[18/10/2025 20:27:9] "No map description available."
+[18/10/2025 20:27:11] > Mapa carregado em: 2.801 segundos.
+[18/10/2025 20:27:12] > Data carregada em: 0.265 segundos.
+[18/10/2025 20:27:12] > Houses carregada em: 0.007 segundos.
+[18/10/2025 20:27:12] > Content unserialization time: 0.001 seconds.
+[18/10/2025 20:27:12] > Carregando Tipo de PVP... Open PvP
+[18/10/2025 20:27:12] > Inicializando estado do jogo e registrando servicos...
+[18/10/2025 20:27:12] > IP do Servidor: 127.0.0.1
+[18/10/2025 20:27:12] > IP local do Servidor: 192.168.32.1	192.168.1.102	
+[18/10/2025 20:27:12] > Portas do Servidor: 7171	7172	
+[18/10/2025 20:27:12] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[18/10/2025 20:27:22] >> DBOSupreme servidor Online!
 
-[18/10/2025 2:47:33] God has logged in.
-[18/10/2025 2:50:21] > Salvando servidor...
-[18/10/2025 2:50:21] > SAVE: Completo em 0.028 segundos usando binary casa storage.
-[18/10/2025 2:50:23] God has logged out.
-[18/10/2025 2:50:23] Vaca Aga has logged in.
+[18/10/2025 20:27:29] God has logged in.
+[18/10/2025 20:28:13] God has logged out.
+[18/10/2025 20:28:18] Dias Atras has logged in.
+[18/10/2025 20:28:22] Dias Atras has logged out.
+[18/10/2025 20:28:22] God has logged in.
 
-[18/10/2025 2:52:19] [Error - GlobalEvent Interface] 
-[18/10/2025 2:52:19] data/globalevents/scripts/online_highscore.lua:onThink
-[18/10/2025 2:52:19] Description: 
-[18/10/2025 2:52:19] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[18/10/2025 2:52:19] stack traceback:
-[18/10/2025 2:52:19] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[18/10/2025 2:52:19] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[18/10/2025 2:52:43] Vaca Aga has logged out.
-[18/10/2025 2:52:44] Vaca Aga has logged in.
-[18/10/2025 2:53:23] Vaca Aga has logged out.
-[18/10/2025 2:53:28] Vaca Aga has logged in.
+[18/10/2025 20:32:8] [Error - GlobalEvent Interface] 
+[18/10/2025 20:32:8] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 20:32:8] Description: 
+[18/10/2025 20:32:8] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 20:32:8] stack traceback:
+[18/10/2025 20:32:8] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 20:32:8] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[18/10/2025 2:57:19] [Error - GlobalEvent Interface] 
-[18/10/2025 2:57:19] data/globalevents/scripts/online_highscore.lua:onThink
-[18/10/2025 2:57:19] Description: 
-[18/10/2025 2:57:19] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[18/10/2025 2:57:19] stack traceback:
-[18/10/2025 2:57:19] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[18/10/2025 2:57:19] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[18/10/2025 2:57:24] Vaca Aga has logged out.
-[18/10/2025 2:57:25] God has logged in.
-[18/10/2025 2:57:28] > Loading AutoLoot.xml... done.
-[18/10/2025 2:57:28] > Loading Automatic Raids.xml... done.
-[18/10/2025 2:57:28] > Loading highscorebook.xml... done.
-[18/10/2025 2:57:28] > Loading Simple Task.xml... done.
-[18/10/2025 2:57:28] > 4 mods were loaded.
-[18/10/2025 2:57:31] God has logged out.
-[18/10/2025 2:57:31] Vaca Aga has logged in.
+[18/10/2025 20:37:8] [Error - GlobalEvent Interface] 
+[18/10/2025 20:37:8] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 20:37:8] Description: 
+[18/10/2025 20:37:8] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 20:37:8] stack traceback:
+[18/10/2025 20:37:8] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 20:37:8] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[18/10/2025 3:2:19] [Error - GlobalEvent Interface] 
-[18/10/2025 3:2:19] data/globalevents/scripts/online_highscore.lua:onThink
-[18/10/2025 3:2:19] Description: 
-[18/10/2025 3:2:19] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[18/10/2025 3:2:19] stack traceback:
-[18/10/2025 3:2:19] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[18/10/2025 3:2:19] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[18/10/2025 20:42:8] [Error - GlobalEvent Interface] 
+[18/10/2025 20:42:8] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 20:42:8] Description: 
+[18/10/2025 20:42:8] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 20:42:8] stack traceback:
+[18/10/2025 20:42:8] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 20:42:8] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[18/10/2025 3:7:19] [Error - GlobalEvent Interface] 
-[18/10/2025 3:7:19] data/globalevents/scripts/online_highscore.lua:onThink
-[18/10/2025 3:7:19] Description: 
-[18/10/2025 3:7:19] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[18/10/2025 3:7:19] stack traceback:
-[18/10/2025 3:7:19] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[18/10/2025 3:7:19] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[18/10/2025 20:47:8] [Error - GlobalEvent Interface] 
+[18/10/2025 20:47:8] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 20:47:8] Description: 
+[18/10/2025 20:47:8] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 20:47:8] stack traceback:
+[18/10/2025 20:47:8] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 20:47:8] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[18/10/2025 3:12:20] [Error - GlobalEvent Interface] 
-[18/10/2025 3:12:20] data/globalevents/scripts/online_highscore.lua:onThink
-[18/10/2025 3:12:20] Description: 
-[18/10/2025 3:12:20] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[18/10/2025 3:12:20] stack traceback:
-[18/10/2025 3:12:20] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[18/10/2025 3:12:20] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[18/10/2025 20:49:55] [Error - CreatureScript Interface] 
+[18/10/2025 20:49:55] In a timer event called from: 
+[18/10/2025 20:49:55] domodlib('Loot_func')
+[18/10/2025 20:49:55] function onKill(cid, target, lastHit)
+[18/10/2025 20:49:55] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[18/10/2025 20:49:55] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[18/10/2025 20:49:55] 	end
+[18/10/2025 20:49:55] 	return true
+[18/10/2025 20:49:55] end:onKill
+[18/10/2025 20:49:55] Description: 
+[18/10/2025 20:49:55] (luaGetContainerSize) Container not found
+
+[18/10/2025 20:49:55] [Error - CreatureScript Interface] 
+[18/10/2025 20:49:55] In a timer event called from: 
+[18/10/2025 20:49:55] domodlib('Loot_func')
+[18/10/2025 20:49:55] function onKill(cid, target, lastHit)
+[18/10/2025 20:49:55] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[18/10/2025 20:49:55] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[18/10/2025 20:49:55] 	end
+[18/10/2025 20:49:55] 	return true
+[18/10/2025 20:49:55] end:onKill
+[18/10/2025 20:49:55] Description: 
+[18/10/2025 20:49:55] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[18/10/2025 20:49:55] stack traceback:
+[18/10/2025 20:49:55] 	[C]: in function 'pairs'
+[18/10/2025 20:49:55] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[18/10/2025 20:52:9] [Error - GlobalEvent Interface] 
+[18/10/2025 20:52:9] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 20:52:9] Description: 
+[18/10/2025 20:52:9] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 20:52:9] stack traceback:
+[18/10/2025 20:52:9] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 20:52:9] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 20:57:9] [Error - GlobalEvent Interface] 
+[18/10/2025 20:57:9] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 20:57:9] Description: 
+[18/10/2025 20:57:9] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 20:57:9] stack traceback:
+[18/10/2025 20:57:9] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 20:57:9] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 21:2:9] [Error - GlobalEvent Interface] 
+[18/10/2025 21:2:9] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 21:2:9] Description: 
+[18/10/2025 21:2:9] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 21:2:9] stack traceback:
+[18/10/2025 21:2:9] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 21:2:9] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 21:7:9] [Error - GlobalEvent Interface] 
+[18/10/2025 21:7:9] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 21:7:9] Description: 
+[18/10/2025 21:7:9] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 21:7:9] stack traceback:
+[18/10/2025 21:7:9] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 21:7:9] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 21:12:9] [Error - GlobalEvent Interface] 
+[18/10/2025 21:12:9] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 21:12:9] Description: 
+[18/10/2025 21:12:9] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 21:12:9] stack traceback:
+[18/10/2025 21:12:9] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 21:12:9] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 21:17:10] [Error - GlobalEvent Interface] 
+[18/10/2025 21:17:10] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 21:17:10] Description: 
+[18/10/2025 21:17:10] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 21:17:10] stack traceback:
+[18/10/2025 21:17:10] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 21:17:10] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 21:22:10] [Error - GlobalEvent Interface] 
+[18/10/2025 21:22:10] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 21:22:10] Description: 
+[18/10/2025 21:22:10] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 21:22:10] stack traceback:
+[18/10/2025 21:22:10] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 21:22:10] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 21:27:10] [Error - GlobalEvent Interface] 
+[18/10/2025 21:27:10] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 21:27:10] Description: 
+[18/10/2025 21:27:10] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 21:27:10] stack traceback:
+[18/10/2025 21:27:10] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 21:27:10] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[18/10/2025 21:29:8] > Salvando servidor...
+[18/10/2025 21:29:9] > SAVE: Completo em 0.025 segundos usando binary casa storage.
+
+[18/10/2025 21:32:10] [Error - GlobalEvent Interface] 
+[18/10/2025 21:32:10] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 21:32:10] Description: 
+[18/10/2025 21:32:10] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 21:32:10] stack traceback:
+[18/10/2025 21:32:10] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 21:32:10] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 21:37:10] [Error - GlobalEvent Interface] 
+[18/10/2025 21:37:10] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 21:37:10] Description: 
+[18/10/2025 21:37:10] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 21:37:10] stack traceback:
+[18/10/2025 21:37:10] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 21:37:10] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 21:42:10] [Error - GlobalEvent Interface] 
+[18/10/2025 21:42:10] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 21:42:10] Description: 
+[18/10/2025 21:42:10] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 21:42:10] stack traceback:
+[18/10/2025 21:42:10] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 21:42:10] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 21:47:10] [Error - GlobalEvent Interface] 
+[18/10/2025 21:47:10] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 21:47:10] Description: 
+[18/10/2025 21:47:10] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 21:47:10] stack traceback:
+[18/10/2025 21:47:10] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 21:47:10] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 21:52:10] [Error - GlobalEvent Interface] 
+[18/10/2025 21:52:10] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 21:52:10] Description: 
+[18/10/2025 21:52:10] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 21:52:10] stack traceback:
+[18/10/2025 21:52:10] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 21:52:10] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 21:57:10] [Error - GlobalEvent Interface] 
+[18/10/2025 21:57:10] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 21:57:10] Description: 
+[18/10/2025 21:57:10] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 21:57:10] stack traceback:
+[18/10/2025 21:57:10] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 21:57:10] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 22:2:10] [Error - GlobalEvent Interface] 
+[18/10/2025 22:2:10] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 22:2:10] Description: 
+[18/10/2025 22:2:10] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 22:2:10] stack traceback:
+[18/10/2025 22:2:10] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 22:2:10] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[18/10/2025 22:7:10] [Error - GlobalEvent Interface] 
+[18/10/2025 22:7:10] data/globalevents/scripts/online_highscore.lua:onThink
+[18/10/2025 22:7:10] Description: 
+[18/10/2025 22:7:10] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[18/10/2025 22:7:10] stack traceback:
+[18/10/2025 22:7:10] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[18/10/2025 22:7:10] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
