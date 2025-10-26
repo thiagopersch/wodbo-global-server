@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<monster name="Goku SSJ2" nameDescription="an goku ssj2" race="blood" experience="100000" speed="425" manacost="0">
+	<health now="200000" max="200000" />
+	<look type="1884" head="1" body="1" legs="1" feet="1" addons="0" corpse="49245" />
+	<targetchange interval="5000" chance="8" />
+	<strategy attack="100" defense="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+    <attack name="melee" interval="2000" min="-200" max="-400" />
+    <attack name="renzoku energy dan" chance="35" interval="5000" min="-200" max="-400" />
+    <attack name="super energy wave" chance="2" interval="6000" min="-1200" max="-2500" />
+    <attack name="crusher ball" interval="3000" chance="15" min="-550" max="-900" />
+    <attack name="kienzan" interval="10000" chance="5" min="-200" max="-700" />
+  </attacks>
+	<defenses armor="0" defense="0" />
+	<immunities>
+		<immunity physical="0" />
+		<immunity energy="0" />
+		<immunity fire="0" />
+		<immunity poison="0" />
+		<immunity lifedrain="0" />
+		<immunity paralyze="0" />
+		<immunity outfit="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Fight with all your might.!" />
+		<voice sentence="I want to see what you're capable of.!" />
+		<voice sentence="You made me angry!" />
+	</voices>
+	<loot>
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="platinum coin" countmax="75" chance="50000" />
+		<item name="crystal coin" countmax="2" chance="500" />
+		<item name="hp point" countmax="10" chance="1000" />
+		<item name="mp point" countmax="10" chance="1000" />
+		<item name="leaf senzu" countmax="5" chance="1000" />
+		<item name="branch senzu" countmax="5" chance="1000" />
+    <item name="goku armor" chance="1000" />
+    <item name="goku legs" chance="1000" />
+    <item name="goku boots" chance="1000" />
+	</loot>
+</monster>

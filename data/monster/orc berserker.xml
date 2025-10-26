@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Orc Berserker" nameDescription="a orc berserker" race="blood" experience="195"
-	speed="250" manacost="590">
-	<health now="210" max="210" />
+<?xml version="1.0" encoding="UTF-8" ?>
+<monster
+  name="Orc Berserker"
+  nameDescription="a orc berserker"
+  race="blood"
+  experience="1950"
+  speed="250"
+  manacost="590"
+>
+	<health now="2100" max="2100" />
 	<look type="8" corpse="5980" />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />

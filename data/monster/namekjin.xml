@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<monster name="Namekjin" nameDescription="an namekjin" race="blood" experience="15000" speed="400" manacost="0">
+	<health now="20000" max="20000" />
+	<look type="34" head="1" body="1" legs="1" feet="1" addons="0" corpse="12792" />
+	<targetchange interval="5000" chance="8" />
+	<strategy attack="100" defense="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-200" max="-400" />
+		<attack name="Makosen" interval="2000" chance="25" min="-230" max="-700" />
+		<attack name="Namekjin Wave" interval="5000" chance="10" min="-300" max="-600" />
+	</attacks>
+	<defenses armor="0" defense="0">
+	</defenses>
+	<immunities>
+		<immunity physical="0" />
+		<immunity energy="0" />
+		<immunity fire="0" />
+		<immunity poison="0" />
+		<immunity lifedrain="0" />
+		<immunity paralyze="0" />
+		<immunity outfit="1" />
+		<immunity invisible="0" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Die or get out of my sight.!" />
+		<voice sentence="Damn!" />
+	</voices>
+		<loot>
+			<item name="gold coin" countmax="100" chance="100000" />
+  		<item name="platinum coin" countmax="75" chance="50000" />
+  		<item name="crystal coin" countmax="5" chance="1000" />
+  		<item name="hp point" countmax="10" chance="1000" />
+  		<item name="mp point" countmax="10" chance="1000" />
+  		<item name="leaf senzu" countmax="5" chance="1000" />
+  		<item name="branch senzu" countmax="5" chance="1000" />
+  		<item name="imperfect piccolo helmet" chance="1000" />
+  		<item name="perfect piccolo hat" chance="1000" />
+  		<item name="piccolo waistcoat" chance="1000" />
+  		<item name="old piccolo armor" chance="1000" />
+  		<item name="piccolo boots" chance="1000" />
+  		<item name="imperfect makankosappo" chance="1000" />
+  		<item name="perfect makankosappo" chance="1000" />
+  		<item name="perfect makankosappo red" chance="1000" />
+		</loot>
+</monster>

@@ -1,6 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Apprentice Sheng" nameDescription="apprentice sheng" race="blood" experience="1000"
-	speed="170" manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<monster
+  name="Apprentice Sheng"
+  nameDescription="apprentice sheng"
+  race="blood"
+  experience="1000"
+  speed="170"
+  manacost="0"
+>
 	<health now="950" max="950" />
 	<look type="23" corpse="5981" />
 	<targetchange interval="5000" chance="8" />
@@ -24,8 +30,7 @@
 			<attribute key="shootEffect" value="energyball" />
 			<attribute key="areaEffect" value="energyarea" />
 		</attack>
-		<attack name="fire" interval="2000" chance="10" range="7" radius="1" target="1" min="-15"
-			max="-45">
+		<attack name="fire" interval="2000" chance="10" range="7" radius="1" target="1" min="-15" max="-45">
 			<attribute key="shootEffect" value="fire" />
 			<attribute key="areaEffect" value="firearea" />
 		</attack>

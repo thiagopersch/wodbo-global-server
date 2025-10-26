@@ -734,8 +734,9 @@
 			<borderitem edge="dnw" item="4639" />
 			<borderitem edge="dne" item="4638" />
 			<borderitem edge="dsw" item="4637" />
-			<borderitem edge="dse" item="4636" /> -- Handles for the 8 different
-			specific cases which might occur with water/sand borders -- <specific>
+			<borderitem edge="dse" item="4636" />
+			-- Handles for the 8 different specific cases which might occur with water/sand borders --
+			<specific>
 				<conditions>
 					<match_item id="4634" />
 					<match_border id="2" edge="e" />
@@ -1651,9 +1652,10 @@
 		<border align="inner" to="icy mountain" id="53" />
 		<border align="inner" to="snowy mountain" id="53" />
 		<border align="inner" to="none" id="3" />
-		<border align="outer" to="none" id="51" />
-		<border align="outer" id="10" />
 		<border align="inner" id="3" />
+		<border align="outer" to="none" id="51" />
+		<border align="outer" id="29" />
+		<!-- <border align="outer" id="10" /> -->
 		<optional id="29" />
 	</brush>
 
@@ -1681,8 +1683,7 @@
 		<friend name="mountain" />
 	</brush>
 
-	<brush name="snowy mountain" type="ground" server_lookid="671" z-order="9901"
-		solo_optional="true">
+	<brush name="snowy mountain" type="ground" server_lookid="671" z-order="9901" solo_optional="true">
 		<item id="6869" chance="1" />
 
 		<border align="inner" to="none" id="53" />
@@ -2103,8 +2104,16 @@
 		<item id="3220" chance="10" />
 	</brush>
 
-	<brush name="stone stairway" type="doodad" server_lookid="3219" draggable="true"
-		on_blocking="true" redo_borders="true" one_size="true" thickness="100/100">
+	<brush
+		name="stone stairway"
+		type="doodad"
+		server_lookid="3219"
+		draggable="true"
+		on_blocking="true"
+		redo_borders="true"
+		one_size="true"
+		thickness="100/100"
+	>
 		<alternate>
 			<item id="3219" chance="10" />
 		</alternate>
@@ -2113,23 +2122,55 @@
 		</alternate>
 	</brush>
 
-	<brush name="black stone stairs" type="doodad" server_lookid="4834" draggable="true"
-		on_blocking="true" redo_borders="true" one_size="true" thickness="100/100">
+	<brush
+		name="black stone stairs"
+		type="doodad"
+		server_lookid="4834"
+		draggable="true"
+		on_blocking="true"
+		redo_borders="true"
+		one_size="true"
+		thickness="100/100"
+	>
 		<item id="4834" chance="10" />
 	</brush>
 
-	<brush name="black stone trapdoor" type="doodad" server_lookid="4835" draggable="true"
-		on_blocking="true" redo_borders="true" one_size="true" thickness="100/100">
+	<brush
+		name="black stone trapdoor"
+		type="doodad"
+		server_lookid="4835"
+		draggable="true"
+		on_blocking="true"
+		redo_borders="true"
+		one_size="true"
+		thickness="100/100"
+	>
 		<item id="4835" chance="10" />
 	</brush>
 
-	<brush name="gray stone stairs" type="doodad" server_lookid="4836" draggable="true"
-		on_blocking="true" redo_borders="true" one_size="true" thickness="100/100">
+	<brush
+		name="gray stone stairs"
+		type="doodad"
+		server_lookid="4836"
+		draggable="true"
+		on_blocking="true"
+		redo_borders="true"
+		one_size="true"
+		thickness="100/100"
+	>
 		<item id="4836" chance="10" />
 	</brush>
 
-	<brush name="gray stone trapdoor" type="doodad" server_lookid="4837" draggable="true"
-		on_blocking="true" redo_borders="true" one_size="true" thickness="100/100">
+	<brush
+		name="gray stone trapdoor"
+		type="doodad"
+		server_lookid="4837"
+		draggable="true"
+		on_blocking="true"
+		redo_borders="true"
+		one_size="true"
+		thickness="100/100"
+	>
 		<item id="4837" chance="10" />
 	</brush>
 
@@ -3270,7 +3311,7 @@
 	</brush>
 
 	<brush name="dark sand" type="ground" server_lookid="12912" z-order="5300">
-		<item id="12912" chance="100" />
+		<item id="12912" chance="1000" />
 		<item id="12913" chance="1" />
 		<item id="12914" chance="1" />
 		<item id="12915" chance="1" />
@@ -3547,32 +3588,28 @@
 		<item id="448" chance="10" />
 	</brush>
 
-	<brush name="striped marquee red white (vertical)" type="ground" server_lookid="5189"
-		z-order="80">
+	<brush name="striped marquee red white (vertical)" type="ground" server_lookid="5189" z-order="80">
 		<item id="5189" chance="10" />
 
 		<border align="outer" to="none" id="214" />
 		<border align="outer" id="214" />
 	</brush>
 
-	<brush name="striped marquee red white (horizontal)" type="ground" server_lookid="5160"
-		z-order="80">
+	<brush name="striped marquee red white (horizontal)" type="ground" server_lookid="5160" z-order="80">
 		<item id="5160" chance="10" />
 
 		<border align="outer" to="none" id="215" />
 		<border align="outer" id="215" />
 	</brush>
 
-	<brush name="striped marquee blue yellow (vertical)" type="ground" server_lookid="5200"
-		z-order="90">
+	<brush name="striped marquee blue yellow (vertical)" type="ground" server_lookid="5200" z-order="90">
 		<item id="5200" chance="10" />
 
 		<border align="outer" to="none" id="216" />
 		<border align="outer" id="216" />
 	</brush>
 
-	<brush name="striped marquee blue yellow (horizontal)" type="ground" server_lookid="5174"
-		z-order="90">
+	<brush name="striped marquee blue yellow (horizontal)" type="ground" server_lookid="5174" z-order="90">
 		<item id="5174" chance="10" />
 
 		<border align="outer" to="none" id="217" />
@@ -4159,8 +4196,7 @@
 		<border align="outer" to="none" id="255" />
 	</brush>
 
-	<brush name="flooded grass shallow sea futurist" type="ground" server_lookid="43199"
-		z-order="9999">
+	<brush name="flooded grass shallow sea futurist" type="ground" server_lookid="43199" z-order="9999">
 		<item id="43199" chance="10" />
 		<item id="43200" chance="10" />
 		<item id="43201" chance="10" />
@@ -4223,8 +4259,7 @@
 		<border align="outer" to="none" id="1" />
 	</brush>
 
-	<brush name="star leaves alternate horizontal" type="ground" server_lookid="43316"
-		z-order="9999">
+	<brush name="star leaves alternate horizontal" type="ground" server_lookid="43316" z-order="9999">
 		<item id="43316" chance="10" />
 		<item id="43317" chance="10" />
 
@@ -4398,7 +4433,7 @@
 		<border align="inner" to="none" id="1" />
 	</brush>
 
-	<brush name="star floor" type="ground" server_lookid="47811" z-order="9999">
+	<brush name="star floor" type="ground" server_lookid="47811" z-order="2500">
 		<item id="47811" chance="100" />
 		<item id="47812" chance="100" />
 		<item id="47813" chance="100" />
@@ -4420,7 +4455,7 @@
 		<border align="inner" to="none" id="1" />
 	</brush>
 
-	<brush name="broken star floor" type="ground" server_lookid="47839" z-order="9999">
+	<brush name="broken star floor" type="ground" server_lookid="47839" z-order="2500">
 		<item id="47839" chance="100" />
 		<item id="47840" chance="100" />
 		<item id="47841" chance="100" />
@@ -4442,7 +4477,7 @@
 		<border align="inner" to="none" id="1" />
 	</brush>
 
-	<brush name="fungnus floor" type="ground" server_lookid="48028" z-order="9999">
+	<brush name="fungnus floor" type="ground" server_lookid="48028" z-order="2500">
 		<item id="48028" chance="100" />
 		<item id="48029" chance="100" />
 		<item id="48030" chance="100" />
@@ -4463,7 +4498,7 @@
 		<item id="48801" chance="100" />
 	</brush>
 
-	<brush name="ice lava" type="ground" server_lookid="48958" z-order="9999">
+	<brush name="ice lava" type="ground" server_lookid="48958" z-order="2500">
 		<item id="48958" chance="100" />
 		<item id="48959" chance="100" />
 		<item id="48960" chance="100" />
@@ -4472,11 +4507,11 @@
 		<item id="48963" chance="100" />
 	</brush>
 
-	<brush name="clouds" type="ground" server_lookid="49893" z-order="9999">
+	<brush name="clouds" type="ground" server_lookid="49893" z-order="2498">
 		<item id="49893" chance="100" />
 	</brush>
 
-	<brush name="modern grass" type="ground" server_lookid="49894" z-order="9999">
+	<brush name="modern grass" type="ground" server_lookid="49894" z-order="2499">
 		<item id="49894" chance="100" />
 		<item id="49895" chance="100" />
 		<item id="49896" chance="100" />
@@ -4485,7 +4520,7 @@
 		<border align="inner" to="none" id="1" />
 	</brush>
 
-	<brush name="grass nature dbo" type="ground" server_lookid="49975" z-order="3600">
+	<brush name="grass nature dbo" type="ground" server_lookid="49975" z-order="2500">
 		<item id="49975" chance="100" />
 		<item id="49976" chance="100" />
 		<item id="49977" chance="100" />
@@ -4519,8 +4554,7 @@
 		<item id="49910" chance="100" />
 	</brush>
 
-	<brush name="bleach wooden planks alternative" type="ground" server_lookid="49911"
-		z-order="2500">
+	<brush name="bleach wooden planks alternative" type="ground" server_lookid="49911" z-order="2500">
 		<item id="49911" chance="100" />
 	</brush>
 
@@ -4532,7 +4566,7 @@
 		<item id="49913" chance="100" />
 	</brush>
 
-	<brush name="dbo grass alternate" type="ground" server_lookid="49914" z-order="2500">
+	<brush name="dbo grass alternate" type="ground" server_lookid="49914" z-order="2501">
 		<item id="49914" chance="100" />
 	</brush>
 
@@ -4669,8 +4703,10 @@
 		<item id="49962" chance="100" />
 	</brush>
 
-	<brush name="Nightfall Sunset" type="ground" server_lookid="49963" z-order="2500">
+	<brush name="dbo sand" type="ground" server_lookid="49963" z-order="1999">
 		<item id="49963" chance="100" />
+
+		<border align="inner" to="none" id="1" />
 	</brush>
 
 	<brush name="Moonlight Star" type="ground" server_lookid="49964" z-order="2500">
@@ -4711,7 +4747,7 @@
 		<item id="49974" chance="100" />
 	</brush>
 
-	<brush name="modern dbo grass" type="ground" server_lookid="50215" z-order="9999">
+	<brush name="modern dbo grass" type="ground" server_lookid="50215" z-order="2500">
 		<item id="50215" chance="100" />
 
 		<border align="outer" id="288" />

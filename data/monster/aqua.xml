@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <monster name="Aqua" nameDescription="a aqua" race="blood" experience="10000" speed="300">
 	<health now="20000" max="20000" />
 	<look type="2440" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49305" />
@@ -30,8 +30,8 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-150" />
-		<attack name="physical" interval="2000" chance="20" range="7" min="-0" max="-40">
+		<attack name="melee" interval="2000" min="-150" max="-400" />
+		<attack name="physical" interval="4000" chance="20" range="7" min="-200" max="-400">
 			<attribute key="shootEffect" value="throwingknife" />
 		</attack>
 	</attacks>
@@ -53,13 +53,7 @@
 		<immunity paralyze="1" />
 	</immunities>
 	<defenses armor="35" defense="35">
-		<defense
-			name="speed"
-			interval="2000"
-			chance="15"
-			speedchange="450"
-			duration="5000"
-		>
+		<defense name="speed" interval="2000" chance="15" speedchange="450" duration="5000">
 			<attribute key="areaEffect" value="redshimmer" />
 		</defense>
 		<defense name="healing" interval="2000" chance="10" min="0" max="110">

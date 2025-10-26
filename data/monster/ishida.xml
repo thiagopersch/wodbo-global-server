@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Ichigo" description="a ichigo" race="blood" experience="300" speed="300">
-  <health now="500" max="500" />
+<?xml version="1.0" encoding="UTF-8" ?>
+<monster name="Ichigo" description="a ichigo" race="blood" experience="3000" speed="300">
+  <health now="5000" max="5000" />
   <look type="2243" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49444" />
   <targetchange interval="4000" chance="10" />
   <flags>
@@ -31,7 +31,6 @@
   </flags>
   <attacks>
     <attack name="melee" interval="2000" min="-1" max="-100" />
-    <attack name="Cero" interval="2000" min="-1" max="-60" />
     <attack name="Kojaku" interval="5000" min="-1" max="-70" />
     <attack name="Ginrei Kojaku" interval="7000" min="-1" max="-90" />
     <attack name="Arrow Ricochet" interval="10000" min="-1" max="-150" />
@@ -69,8 +68,13 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item name="gold coin" countmax="50" chance="10000" />
-    <item name="platinum coin" countmax="50" chance="10000" />
+    <item name="gold coin" countmax="100" chance="100000" />
+		<item name="platinum coin" countmax="75" chance="50000" />
+		<item name="crystal coin" countmax="2" chance="500" />
+		<item name="hp point" countmax="10" chance="1000" />
+		<item name="mp point" countmax="10" chance="1000" />
+		<item name="leaf senzu" countmax="5" chance="1000" />
+		<item name="branch senzu" countmax="5" chance="1000" />
     <item name="katana" chance="1000" />
   </loot>
 </monster>

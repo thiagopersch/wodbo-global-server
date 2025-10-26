@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Vegeta" description="a vegeta" race="blood" experience="300" speed="300">
-  <health now="500" max="500" />
+<monster name="Vegeta" description="a vegeta" race="blood" experience="3000" speed="300">
+  <health now="5000" max="5000" />
   <look type="2121" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49444" />
   <targetchange interval="4000" chance="10" />
   <flags>
@@ -31,9 +31,9 @@
   </flags>
   <attacks>
     <attack name="melee" interval="2000" min="-1" max="-20" />
-    <attack name="Big Bang Attack" interval="5000" min="-1" max="-330" />
-    <attack name="Burning Attack" interval="8000" min="-1" max="-490" />
-    <attack name="explosion" interval="10000" min="-1" max="-300" />
+    <attack name="Big Bang Attack" interval="5000" chance="25" min="-1" max="-330" />
+    <attack name="Burning Attack" interval="8000" chance="25" min="-1" max="-490" />
+    <attack name="explosion" interval="10000" chance="25" min="-1" max="-300" />
   </attacks>
   <immunities>
     <immunity physical="0" />
@@ -67,11 +67,24 @@
     <element healingPercent="0" />
     <element undefinedPercent="0" />
   </elements>
+  <voices interval="5000" chance="10">
+    <voice sentence="You useless worm!" />
+    <voice sentence="I'm the prince of all Saiyans!" />
+    <voice sentence="Fight with all your strength!" />
+  </voices>
   <loot>
-    <item name="gold coin" countmax="50" chance="10000" />
-    <item name="platinum coin" countmax="50" chance="10000" />
-    <item name="saiyan armor" chance="300" />
-    <item name="saiyan legs" chance="300" />
-    <item name="saiyan boots" chance="300" />
+    <item name="gold coin" countmax="100" chance="100000" />
+    <item name="dollar" countmax="100" chance="75000" />
+    <item name="gold" countmax="5" chance="10000" />
+    <item name="senzu leaf" countmax="15" chance="2500" />
+    <item name="senzu root" countmax="10" chance="1500" />
+    <item name="senzu bean" countmax="5" chance="1000" />
+    <item name="vegeta armor" chance="1000" />
+    <item name="vegeta legs" chance="1000" />
+    <item name="saiyan armor" chance="1000" />
+    <item name="saiyan legs" chance="1000" />
+    <item name="saiyan boots" chance="1000" />
+    <item name="majin legs" chance="1000" />
+    <item name="majin boots" chance="1000" />
   </loot>
 </monster>

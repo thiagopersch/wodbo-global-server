@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Rukia" description="a rukia" race="blood" experience="300" speed="300">
-  <health now="500" max="500" />
+<?xml version="1.0" encoding="UTF-8" ?>
+<monster name="Rukia" description="a rukia" race="blood" experience="3000" speed="300">
+  <health now="5000" max="5000" />
   <look type="2278" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49444" />
   <targetchange interval="4000" chance="10" />
   <flags>
@@ -31,7 +31,6 @@
   </flags>
   <attacks>
     <attack name="melee" interval="2000" min="-1" max="-100" />
-    <attack name="Cero" interval="2000" min="-1" max="-60" />
     <attack name="Tsukishiro" interval="5000" min="-1" max="-70" />
     <attack name="Hakuren" interval="7000" min="-1" max="-90" />
     <attack name="Shirafune" interval="10000" min="-1" max="-150" />

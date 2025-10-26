@@ -1,7 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="King Vegeta" nameDescription="an king vegeta" race="blood" experience="3000"
-	speed="400"
-	manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<monster name="King Vegeta" nameDescription="an king vegeta" race="blood" experience="3000" speed="400" manacost="0">
 	<health now="6000" max="6000" />
 	<look type="2457" head="1" body="1" legs="1" feet="1" addons="0" corpse="49366" />
 	<targetchange interval="5000" chance="8" />
@@ -21,9 +19,9 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="-75" max="-100" />
-		<attack name="big bang attack" interval="7500" min="-200" max="-300" />
-		<attack name="Explosion" interval="4000" min="-500" max="-900" />
-		<attack name="Burning Attack" interval="10000" min="-200" max="-900" />
+		<attack name="big bang attack" interval="7500" chance="50" min="-200" max="-300" />
+		<attack name="Explosion" interval="4000" chance="10" min="-500" max="-900" />
+		<attack name="Burning Attack" interval="10000" chance="35" min="-200" max="-900" />
 	</attacks>
 	<defenses armor="0" defense="0">
 	</defenses>
@@ -42,11 +40,15 @@
 		<voice sentence="Hahahaa" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="100000" /> <!-- Cents -->
-		<item id="2152" countmax="15" chance="50000" /> <!-- Dollars -->
-		<item id="49582" chance="500" />
-		<item id="49677" chance="300" />
-		<item id="49667" chance="300" />
-		<item id="49713" chance="400" />
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="platinum coin" countmax="75" chance="50000" />
+		<item name="crystal coin" countmax="5" chance="1000" />
+		<item name="hp point" countmax="10" chance="1000" />
+		<item name="mp point" countmax="10" chance="1000" />
+		<item name="leaf senzu" countmax="5" chance="1000" />
+		<item name="branch senzu" countmax="5" chance="1000" />
+		<item name="blaster saiyajin" chance="1000" />
+		<item name="saiyan waiscoat" chance="1000" />
+		<item name="strong white glove" chance="1000" />
 	</loot>
 </monster>

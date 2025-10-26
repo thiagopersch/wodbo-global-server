@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <monster name="Lobisomen" nameDescription="a lobisomen" race="blood" experience="60000" speed="800">
 	<health now="110000" max="110000" />
 	<look type="2465" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49314" />
@@ -95,9 +95,13 @@
 		<voice sentence="HRAAAAAAAAAARRRRRR!" yell="1" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="90" chance="35000" /><!-- gold coin -->
-		<item id="2148" countmax="90" chance="35000" /><!-- gold coin -->
-		<item id="2148" countmax="45" chance="35000" /><!-- gold coin -->
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="platinum coin" countmax="75" chance="50000" />
+		<item name="crystal coin" countmax="5" chance="1000" />
+		<item name="hp point" countmax="10" chance="1000" />
+		<item name="mp point" countmax="10" chance="1000" />
+		<item name="leaf senzu" countmax="5" chance="1000" />
+		<item name="branch senzu" countmax="5" chance="1000" />
 		<item id="2381" chance="2700" /><!-- halberd -->
 		<item id="2398" chance="19000" /><!-- mace-->
 		<item id="2647" chance="6500" /><!-- plate legs -->

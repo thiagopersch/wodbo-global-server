@@ -1,7 +1,13 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Golden Oozaru" nameDescription="an golden oozaru" race="blood" experience="55000"
-	speed="350" manacost="0">
-	<health now="300000" max="300000" />
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<monster
+  name="Golden Oozaru"
+  nameDescription="an golden oozaru"
+  race="blood"
+  experience="450000"
+  speed="350"
+  manacost="0"
+>
+	<health now="750000" max="750000" />
 	<look type="2488" head="1" body="1" legs="1" feet="1" addons="0" corpse="49363" />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
@@ -19,13 +25,13 @@
 		<flag runonhealth="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="-15" max="-200" />
-		<attack name="Big Bang Attack" interval="3000" chance="25" min="-10" max="-350" />
-		<attack name="Kienzan" interval="7000" chance="25" min="-18" max="-400" />
-		<attack name="Explosion" interval="10000" chance="25" min="-18" max="-500" />
-		<attack name="Super Energy Wave" interval="10000" chance="25" min="-18" max="-600" />
-		<attack name="Crusher Ball" interval="5000" chance="25" min="-18" max="-700" />
-		<attack name="Triple Kienzan" interval="8000" chance="25" min="-18" max="-450" />
+		<attack name="melee" interval="2000" min="-150" max="-500" />
+		<attack name="Big Bang Attack" interval="3000" chance="35" min="-100" max="-550" />
+		<attack name="Kienzan" interval="7000" chance="25" min="-180" max="-800" />
+		<attack name="Explosion" interval="10000" chance="2" min="-180" max="-500" />
+		<attack name="Super Energy Wave" interval="10000" chance="2" min="-180" max="-600" />
+		<attack name="Crusher Ball" interval="5000" chance="20" min="-180" max="-700" />
+		<attack name="Triple Kienzan" interval="8000" chance="35" min="-180" max="-950" />
 	</attacks>
 	<immunities>
 		<immunity physical="0" />
@@ -41,12 +47,12 @@
 		<voice sentence="Aaaaarghh!" yell="1" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="50" chance="100000" /> <!-- Cents -->
-		<item id="2152" countmax="40" chance="100000" /> <!-- Dollars -->
-		<item id="2160" countmax="10" chance="5000" /> <!-- Golds -->
-		<item id="12775" countmax="5" chance="5000" /> <!-- HP Potion -->
-		<item id="12776" countmax="5" chance="5000" /> <!-- Ki Potion -->
-		<item id="49691" countmax="5" chance="1000" /> <!-- Leaf Senzu -->
-		<item id="49692" countmax="5" chance="1000" /> <!-- Branch Senzu -->
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="platinum coin" countmax="75" chance="50000" />
+		<item name="crystal coin" countmax="2" chance="500" />
+		<item name="hp point" countmax="10" chance="1000" />
+		<item name="mp point" countmax="10" chance="1000" />
+		<item name="leaf senzu" countmax="5" chance="1000" />
+		<item name="branch senzu" countmax="5" chance="1000" />
 	</loot>
 </monster>

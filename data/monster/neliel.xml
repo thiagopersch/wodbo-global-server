@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Neliel" description="a neliel" race="blood" experience="300" speed="300">
-  <health now="500" max="500" />
+<?xml version="1.0" encoding="UTF-8" ?>
+<monster name="Neliel" description="a neliel" race="blood" experience="3000" speed="300">
+  <health now="5000" max="5000" />
   <look type="2258" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49444" />
   <targetchange interval="4000" chance="10" />
   <flags>
@@ -69,8 +69,13 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item name="gold coin" countmax="50" chance="10000" />
-    <item name="platinum coin" countmax="50" chance="10000" />
+    <item name="gold coin" countmax="100" chance="100000" />
+		<item name="platinum coin" countmax="75" chance="50000" />
+		<item name="crystal coin" countmax="5" chance="1000" />
+		<item name="hp point" countmax="10" chance="1000" />
+		<item name="mp point" countmax="10" chance="1000" />
+		<item name="leaf senzu" countmax="5" chance="1000" />
+		<item name="branch senzu" countmax="5" chance="1000" />
     <item name="katana" chance="1000" />
   </loot>
 </monster>

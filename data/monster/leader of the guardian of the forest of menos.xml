@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<monster name="Guardians of the Forest of Menos"
-	nameDescription="a guardians of the forest of menos" race="undead" experience="70000"
-	speed="470">
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<monster
+  name="Leader of the guardian of the forest of menos"
+  nameDescription="a leader of the guardian of the forest of menos"
+  race="undead"
+  experience="70000"
+  speed="470"
+>
 	<health now="70000" max="70000" />
 	<look type="2364" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49401" />
 	<targetchange interval="4000" chance="10" />
@@ -33,7 +37,7 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="-200" max="-900" />
-		<attack name="cero" interval="8000" min="-100" max="-500" />
+		<attack name="cero" interval="8000" min="-500" max="-1000" />
 		<attack name="murcielago" interval="4000" min="-100" max="-900" />
 		<attack name="brave furie" interval="8000" min="-800" max="-5000" />
 		<attack name="physical" interval="3000" chance="11" radius="6" target="1" min="-100" max="-1500">
@@ -89,7 +93,13 @@
 		<voice sentence="Go to sleep!" yell="1" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="5000" /> <!-- gold coin -->
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="platinum coin" countmax="75" chance="50000" />
+		<item name="crystal coin" countmax="2" chance="500" />
+		<item name="hp point" countmax="10" chance="1000" />
+		<item name="mp point" countmax="10" chance="1000" />
+		<item name="leaf senzu" countmax="5" chance="1000" />
+		<item name="branch senzu" countmax="5" chance="1000" />
 		<item id="7439" chance="1500" /> <!-- berserk potion -->
 		<item id="9980" chance="100" /> <!-- crystal of power -->
 		<item id="2418" chance="900" /> <!-- golden sickle -->

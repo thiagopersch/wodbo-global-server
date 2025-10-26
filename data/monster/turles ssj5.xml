@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Turles SSJ5" nameDescription="an turles ssj5" race="blood" experience="1000000"
+	speed="600" manacost="0">
+	<health now="1500000" max="1500000" />
+	<look type="2103" head="1" body="1" legs="1" feet="1" addons="0" corpse="49288" />
+	<targetchange interval="5000" chance="8" />
+	<strategy attack="100" defense="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-300" max="-1200" />
+		<attack name="Kienzan" interval="1000" chance="25" min="-1000" max="-1600" />
+		<attack name="Super Energy Wave" interval="3000" chance="10" min="-3000" max="-5000" />
+		<attack name="Crusher Ball" interval="3000" chance="15" min="-500" max="-1000" />
+		<attack name="Burning Attack" interval="3000" chance="20" min="-400" max="-1300" />
+		<attack name="Chybie Blast" interval="3000" chance="5" min="-500" max="-1000" />
+	</attacks>
+	<immunities>
+		<immunity physical="0" />
+		<immunity energy="0" />
+		<immunity fire="0" />
+		<immunity poison="0" />
+		<immunity lifedrain="0" />
+		<immunity paralyze="0" />
+		<immunity outfit="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Your death is near!" />
+		<voice sentence="It made me furious!" />
+	</voices>
+	<loot>
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="dollar" countmax="100" chance="75000" />
+		<item name="gold" countmax="5" chance="10000" />
+		<item name="senzu leaf" countmax="15" chance="2500" />
+		<item name="senzu root" countmax="10" chance="1500" />
+		<item name="senzu bean" countmax="5" chance="1000" />
+		<item name="strong white magesty glove" chance="1000" />
+		<item name="saiyan armor" chance="1000" />
+		<item name="saiyan boots" chance="1000" />
+	</loot>
+</monster>

@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Fat Boo" nameDescription="an fat buu" race="blood" experience="30000" speed="400"
-	manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<monster name="Fat Boo" nameDescription="an fat buu" race="blood" experience="40000" speed="200" manacost="0">
 	<health now="40000" max="40000" />
 	<look type="1755" head="1" body="1" legs="1" feet="1" addons="0" corpse="49351" />
 	<targetchange interval="5000" chance="8" />

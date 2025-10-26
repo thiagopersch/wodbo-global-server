@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="C19 And C20" nameDescription="an C19 And C20" race="blood" experience="25000"
-	speed="300" manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<monster name="C19 And C20" nameDescription="an c19 and c20" race="blood" experience="25000" speed="300" manacost="0">
 	<health now="80000" max="80000" />
 	<look type="2492" head="1" body="1" legs="1" feet="1" addons="0" corpse="49364" />
 	<targetchange interval="5000" chance="8" />
@@ -19,12 +18,11 @@
 		<flag runonhealth="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="500" min="-100" max="-200" />
-		<attack name="death ball" interval="1000" min="-100" max="-400" />
-		<attack name="auto destruction" interval="4000" chance="50" min="-100" max="-400" />
+		<attack name="melee" interval="1000" min="-300" max="-700" />
+		<attack name="death ball" interval="2000" min="-600" max="-900" />
+		<attack name="auto destruction" interval="6000" chance="50" min="-1000" max="-2000" />
 	</attacks>
-	<defenses armor="0" defense="0">
-	</defenses>
+	<defenses armor="0" defense="0" />
 	<immunities>
 		<immunity physical="0" />
 		<immunity energy="0" />
@@ -35,14 +33,17 @@
 		<immunity outfit="1" />
 		<immunity invisible="0" />
 	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="DAMN!!!" />
+		<voice sentence="I will destroy everything!!" />
+	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="100000" /> <!-- Cents -->
-		<item id="2152" countmax="75" chance="50000" /> <!-- Dollars -->
-		<item id="12775" countmax="10" chance="750" /> <!-- Hp Potion -->
-		<item id="12776" countmax="10" chance="750" /> <!-- Ki Potion -->
-		<item id="2160" countmax="2" chance="300" /> <!-- Golds -->
-		<item id="49691" countmax="5" chance="100" /> <!-- Leaf Senzu -->
-		<item id="49692" countmax="5" chance="100" /> <!-- Branch Senzu -->
-
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="platinum coin" countmax="75" chance="50000" />
+		<item name="crystal coin" countmax="5" chance="1000" />
+		<item name="hp point" countmax="10" chance="1000" />
+		<item name="mp point" countmax="10" chance="1000" />
+		<item name="leaf senzu" countmax="5" chance="1000" />
+		<item name="branch senzu" countmax="5" chance="1000" />
 	</loot>
 </monster>

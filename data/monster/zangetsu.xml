@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <monster name="Zangetsu" description="a zangetsu" race="undead" experience="4500" speed="0">
   <health now="8000" max="8000" />
   <look type="2347" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49312" />
@@ -51,7 +51,6 @@
     <immunity invisible="1" />
     <immunity paralyze="0" />
   </immunities>
-
   <elements>
     <element firePercent="0" />
     <element energyPercent="0" />
@@ -67,6 +66,4 @@
     <element healingPercent="0" />
     <element undefinedPercent="0" />
   </elements>
-
-
 </monster>

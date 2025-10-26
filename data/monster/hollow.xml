@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <monster name="Hollow" description="a hollow" race="undead" experience="6000" speed="260">
   <health now="8000" max="8000" />
   <look type="2365" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49401" />
@@ -30,8 +30,8 @@
     <flag canwalkonpoison="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" min="-10" max="-90" />
-    <attack name="Cero" interval="4000" min="-50" max="-490" />
+    <attack name="melee" interval="1000" min="-100" max="-300" />
+    <attack name="Cero" interval="2000" chance="15" min="-120" max="-490" />
   </attacks>
   <immunities>
     <immunity physical="0" />
@@ -66,7 +66,13 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item id="2148" countmax="100" chance="5000" /> <!-- gold coin -->
+    <item name="gold coin" countmax="100" chance="100000" />
+		<item name="platinum coin" countmax="75" chance="50000" />
+		<item name="crystal coin" countmax="2" chance="500" />
+		<item name="hp point" countmax="10" chance="1000" />
+		<item name="mp point" countmax="10" chance="1000" />
+		<item name="leaf senzu" countmax="5" chance="1000" />
+		<item name="branch senzu" countmax="5" chance="1000" />
     <item id="7439" chance="1500" /> <!-- berserk potion -->
     <item id="9980" chance="100" /> <!-- crystal of power -->
     <item id="2418" chance="900" /> <!-- golden sickle -->
@@ -75,7 +81,6 @@
     <item id="7761" countmax="10" chance="3000" /> <!-- enchanted small emerald-->
     <item id="2670" countmax="10" chance="1500" /> <!-- health potion -->
     <item id="2671" countmax="10" chance="1500" /> <!-- reiatsu potion -->
-    <item id="7887" chance="3200" /> <!-- terra amulet -->
     <item id="2791" chance="4500" /> <!-- wood mushroom -->
   </loot>
 </monster>

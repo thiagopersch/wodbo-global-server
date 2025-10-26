@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="C20" nameDescription="an C20" race="blood" experience="75000" speed="700"
-	manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<monster name="C20" nameDescription="an C20" race="blood" experience="75000" speed="700" manacost="0">
 	<health now="370000" max="370000" />
-	<look type="2480" head="1" body="1" legs="1" feet="1" addons="0" corpse="12893" />
+	<look type="2480" head="1" body="1" legs="1" feet="1" addons="0" corpse="49346" />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
 	<flags>
@@ -35,14 +34,18 @@
 		<immunity outfit="1" />
 		<immunity invisible="1" />
 	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="DAMN!!!" />
+		<voice sentence="I will destroy everything!!" />
+	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="100000" /> <!-- Cents -->
-		<item id="2152" countmax="75" chance="50000" /> <!-- Dollars -->
-		<item id="2160" countmax="2" chance="500" /> <!-- Golds -->
-		<item id="12775" countmax="10" chance="25000" /> <!-- Hp Potion -->
-		<item id="12776" countmax="10" chance="25000" /> <!-- Ki Potion -->
-		<item id="12778" countmax="5" chance="10000" /> <!-- Senzu Root -->
-
-		<item id="12627" chance="5000" /> <!-- Pai Pai Helmet -->
+		<item name="gold coin" countmax="100" chance="100000" />
+		<item name="platinum coin" countmax="75" chance="50000" />
+		<item name="crystal coin" countmax="5" chance="1000" />
+		<item name="hp point" countmax="10" chance="1000" />
+		<item name="mp point" countmax="10" chance="1000" />
+		<item name="leaf senzu" countmax="5" chance="1000" />
+		<item name="branch senzu" countmax="5" chance="1000" />
+		<item name="pai pai helmet" chance="5000" />
 	</loot>
 </monster>

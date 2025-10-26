@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<monster name="Term" nameDescription="a term" race="energy" experience="2500" speed="380" manacost="0">
+	<health now="1475" max="1475" />
+	<look type="1786" corpse="49353" />
+	<targetchange interval="5000" chance="8" />
+	<strategy attack="100" defense="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="90" attack="10" />
+		<attack name="Double Ball" interval="2000" chance="15" skill="90" attack="30" />
+		<attack name="Auto Destruction" interval="8000" chance="7" skill="90" attack="50" />
+		<attack name="Generic Ki Blast" interval="4000" chance="10" skill="90" attack="70" />
+		<attack name="physical" interval="2000" chance="10" range="6" min="0" max="-100">
+			<attribute key="shootEffect" value="largerock" />
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="35">
+		<defense name="speed" interval="1000" chance="10" speedchange="130" duration="10000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="100" />
+		<element firePercent="30" />
+		<element physicalPercent="20" />
+		<element earthPercent="20" />
+		<element deathPercent="20" />
+		<element icePercent="-15" />
+		<element holyPercent="-3" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="COME HERE AND DIE!" yell="1" />
+		<voice sentence="Destructiooooon!" />
+		<voice sentence="It's a good day to destroy!" />
+	</voices>
+	<loot>
+		<item name="gold coin" countmax="90" chance="9000" />
+		<item name="gold coin" countmax="40" chance="9000" />
+		<item name="platinum coin" countmax="25" chance="7800" />
+		<item name="flash arrow" countmax="20" chance="5000" />
+		<item name="leaf senzu" countmax="5" chance="1000" />
+		<item name="soul orb" chance="5390" />
+		<item name="crystal necklace" chance="480" />
+		<item name="bag" chance="100000">
+			<inside>
+				<item name="small amethyst" countmax="2" chance1="12000" />
+				<item name="giant sword" chance="1290" />
+				<item name="plate armor" chance="4590" />
+				<item name="dreaded cleaver" chance="560" />
+				<item name="crowbar" chance="14980" />
+				<item name="dark armor" chance="11190" />
+				<item name="steel boots" chance="890" />
+				<item name="mind stone" chance="640" />
+				<item name="chaos mace" chance="1370" />
+				<item name="skull helmet" chance="160" />
+				<item name="energy pistol energy" chance="100" />
+			</inside>
+		</item>
+	</loot>
+</monster>
