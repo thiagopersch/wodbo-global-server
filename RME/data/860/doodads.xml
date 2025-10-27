@@ -764,7 +764,7 @@
 		type="doodad"
 		server_lookid="3614"
 		draggable="true"
-		on_blocking="true"
+		on_blocking="false"
 		on_duplicate="true"
 		thickness="50/100"
 	>
@@ -29649,7 +29649,7 @@
 			</composite>
 		</brush>
 
-	<brush name="dbo florest" type="doodad" server_lookid="50055" draggable="true" on_blocking="true" thickness="10/100">
+	<brush name="dbo florest" type="doodad" server_lookid="50055" draggable="true" on_blocking="false" thickness="10/100">
 		<item id="50050" chance="10" />
 		<item id="50051" chance="10" />
 		<item id="50052" chance="10" />
@@ -29712,7 +29712,14 @@
 		<item id="50161" chance="10" />
 	</brush>
 
-	<brush name="bleach florest" type="doodad" server_lookid="50182" draggable="true" on_blocking="true" thickness="10/100">
+	<brush
+		name="bleach florest"
+		type="doodad"
+		server_lookid="50182"
+		draggable="true"
+		on_blocking="false"
+		thickness="10/100"
+	>
 		<item id="50182" chance="10" />
 		<item id="50183" chance="10" />
 		<item id="50184" chance="10" />
@@ -29723,7 +29730,7 @@
 		type="doodad"
 		server_lookid="50108"
 		draggable="true"
-		on_blocking="true"
+		on_blocking="false"
 		thickness="10/100"
 	>
 		<item id="50108" chance="10" />
@@ -29747,7 +29754,7 @@
 		type="doodad"
 		server_lookid="50059"
 		draggable="true"
-		on_blocking="true"
+		on_blocking="false"
 		thickness="10/100"
 	>
 		<item id="50059" chance="10" />
@@ -29760,7 +29767,7 @@
 		type="doodad"
 		server_lookid="50070"
 		draggable="true"
-		on_blocking="true"
+		on_blocking="false"
 		thickness="10/100"
 	>
 		<item id="50070" chance="10" />
@@ -29812,7 +29819,7 @@
 
 	</brush>
 
-	<brush name="dbo desert" type="doodad" server_lookid="50076" draggable="true" on_blocking="true" thickness="10/100">
+	<brush name="dbo desert" type="doodad" server_lookid="50076" draggable="true" on_blocking="false" thickness="10/100">
 		<item id="50076" chance="10" />
 		<item id="50077" chance="10" />
 		<item id="50078" chance="10" />

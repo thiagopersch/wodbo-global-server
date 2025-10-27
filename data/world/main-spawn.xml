@@ -33475,6 +33475,12 @@
 	<spawn centerx="31953" centery="32255" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31604" centery="32256" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31612" centery="32256" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31815" centery="32256" centerz="8" radius="1">
 		<monster name="Carrion Worm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -33489,6 +33495,12 @@
 	</spawn>
 	<spawn centerx="32251" centery="32256" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31623" centery="32257" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31653" centery="32257" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31858" centery="32257" centerz="8" radius="1">
 		<monster name="Carrion Worm" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -33523,6 +33535,12 @@
 	<spawn centerx="32316" centery="32257" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31615" centery="32258" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31667" centery="32258" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31795" centery="32258" centerz="8" radius="1">
 		<monster name="Carrion Worm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -33553,6 +33571,15 @@
 	<spawn centerx="31957" centery="32258" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31600" centery="32259" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31621" centery="32259" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31629" centery="32259" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31912" centery="32259" centerz="8" radius="1">
 		<monster name="Cave Rat" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -33570,6 +33597,15 @@
 	</spawn>
 	<spawn centerx="31977" centery="32260" centerz="8" radius="1">
 		<monster name="Carrion Worm" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31598" centery="32261" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31644" centery="32261" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31667" centery="32261" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31816" centery="32261" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -33593,6 +33629,9 @@
 	</spawn>
 	<spawn centerx="31950" centery="32261" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31624" centery="32262" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31833" centery="32262" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -33624,6 +33663,9 @@
 	<spawn centerx="32344" centery="32263" centerz="8" radius="1">
 		<monster name="Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31633" centery="32264" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31800" centery="32264" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -33638,6 +33680,12 @@
 	</spawn>
 	<spawn centerx="31989" centery="32264" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31620" centery="32265" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31659" centery="32265" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31805" centery="32265" centerz="8" radius="1">
 		<monster name="Cave Rat" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -33671,6 +33719,9 @@
 	<spawn centerx="32298" centery="32265" centerz="8" radius="1">
 		<monster name="Kid Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31610" centery="32266" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31809" centery="32266" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -33692,6 +33743,9 @@
 	<spawn centerx="32435" centery="32266" centerz="8" radius="1">
 		<monster name="Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31622" centery="32267" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31798" centery="32267" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -33706,6 +33760,12 @@
 	</spawn>
 	<spawn centerx="31933" centery="32267" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31630" centery="32268" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31655" centery="32268" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31824" centery="32268" centerz="8" radius="1">
 		<monster name="Cave Rat" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -33743,6 +33803,9 @@
 	<spawn centerx="32416" centery="32269" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31597" centery="32270" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31825" centery="32270" centerz="8" radius="1">
 		<monster name="Cave Rat" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -33754,6 +33817,24 @@
 	</spawn>
 	<spawn centerx="32350" centery="32270" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31609" centery="32271" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31612" centery="32271" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31633" centery="32271" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31645" centery="32271" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31661" centery="32271" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31668" centery="32271" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31839" centery="32271" centerz="8" radius="1">
 		<monster name="Cave Rat" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -33823,6 +33904,15 @@
 	<spawn centerx="31986" centery="32273" centerz="8" radius="1">
 		<monster name="Carrion Worm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31618" centery="32274" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31625" centery="32274" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31654" centery="32274" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31799" centery="32274" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -33837,6 +33927,9 @@
 	</spawn>
 	<spawn centerx="32286" centery="32274" centerz="8" radius="1">
 		<monster name="Kid Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31600" centery="32275" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31801" centery="32275" centerz="8" radius="1">
 		<monster name="Cave Rat" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -33859,6 +33952,15 @@
 	<spawn centerx="32449" centery="32275" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31611" centery="32276" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31631" centery="32276" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31659" centery="32276" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31806" centery="32276" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -33870,6 +33972,12 @@
 	</spawn>
 	<spawn centerx="31982" centery="32276" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31648" centery="32277" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31666" centery="32277" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31824" centery="32277" centerz="8" radius="1">
 		<monster name="Cave Rat" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -33886,6 +33994,9 @@
 	<spawn centerx="32335" centery="32277" centerz="8" radius="1">
 		<monster name="Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31615" centery="32278" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31799" centery="32278" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -33901,8 +34012,14 @@
 	<spawn centerx="32405" centery="32278" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31621" centery="32279" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="32378" centery="32279" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31598" centery="32280" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31822" centery="32280" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -33967,6 +34084,12 @@
 	<spawn centerx="32182" centery="32283" centerz="8" radius="1">
 		<monster name="Kid Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31597" centery="32284" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31623" centery="32284" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31813" centery="32284" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34016,6 +34139,9 @@
 	<spawn centerx="32337" centery="32285" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31601" centery="32286" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31809" centery="32286" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34024,6 +34150,15 @@
 	</spawn>
 	<spawn centerx="32008" centery="32286" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31607" centery="32287" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31616" centery="32287" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31632" centery="32287" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31868" centery="32287" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -34052,6 +34187,9 @@
 	<spawn centerx="32462" centery="32287" centerz="8" radius="1">
 		<monster name="Kid Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31624" centery="32288" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31884" centery="32288" centerz="8" radius="1">
 		<monster name="Carrion Worm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34079,6 +34217,9 @@
 	<spawn centerx="32191" centery="32290" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31667" centery="32291" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31809" centery="32291" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34093,6 +34234,9 @@
 	</spawn>
 	<spawn centerx="32200" centery="32291" centerz="8" radius="1">
 		<monster name="Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31675" centery="32292" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31859" centery="32292" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -34166,6 +34310,12 @@
 	<spawn centerx="32279" centery="32295" centerz="8" radius="1">
 		<monster name="Kid Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31663" centery="32296" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31674" centery="32296" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31906" centery="32296" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34206,6 +34356,9 @@
 	<spawn centerx="32378" centery="32298" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31635" centery="32299" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31811" centery="32299" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34230,6 +34383,9 @@
 	<spawn centerx="32390" centery="32299" centerz="8" radius="1">
 		<monster name="Kid Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31626" centery="32300" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31815" centery="32300" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34246,6 +34402,12 @@
 	<spawn centerx="32374" centery="32300" centerz="8" radius="1">
 		<monster name="Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31665" centery="32301" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31673" centery="32301" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31847" centery="32301" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34254,6 +34416,9 @@
 	</spawn>
 	<spawn centerx="31932" centery="32301" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31619" centery="32302" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31825" centery="32302" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="-1" z="8" spawntime="60" direction="2" />
@@ -34280,6 +34445,9 @@
 	<spawn centerx="32466" centery="32302" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31636" centery="32303" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31810" centery="32303" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34297,6 +34465,9 @@
 	</spawn>
 	<spawn centerx="32443" centery="32303" centerz="8" radius="1">
 		<monster name="Kid Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31614" centery="32304" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31819" centery="32304" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -34331,6 +34502,9 @@
 	<spawn centerx="32306" centery="32304" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31602" centery="32305" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31828" centery="32305" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34343,6 +34517,12 @@
 	<spawn centerx="32339" centery="32305" centerz="8" radius="1">
 		<monster name="Kid Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31664" centery="32306" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31675" centery="32306" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31865" centery="32306" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34351,6 +34531,9 @@
 	</spawn>
 	<spawn centerx="31937" centery="32306" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31626" centery="32307" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31852" centery="32307" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -34409,6 +34592,9 @@
 	<spawn centerx="32356" centery="32309" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31611" centery="32310" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31829" centery="32310" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34436,6 +34622,12 @@
 	<spawn centerx="32436" centery="32310" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31666" centery="32311" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31675" centery="32311" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31877" centery="32311" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34447,6 +34639,15 @@
 	</spawn>
 	<spawn centerx="31905" centery="32311" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31600" centery="32312" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31618" centery="32312" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31631" centery="32312" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31818" centery="32312" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -34494,6 +34695,9 @@
 	<spawn centerx="32445" centery="32313" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31624" centery="32314" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31912" centery="32314" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34539,6 +34743,12 @@
 	<spawn centerx="32477" centery="32315" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31636" centery="32316" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31666" centery="32316" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31886" centery="32316" centerz="8" radius="1">
 		<monster name="Carrion Worm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34560,6 +34770,9 @@
 	<spawn centerx="32400" centery="32316" centerz="8" radius="1">
 		<monster name="Kid Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31676" centery="32317" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31926" centery="32317" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34574,6 +34787,9 @@
 	</spawn>
 	<spawn centerx="32343" centery="32317" centerz="8" radius="1">
 		<monster name="Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31602" centery="32318" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31921" centery="32318" centerz="8" radius="1">
 		<monster name="Rotworm" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -34602,6 +34818,9 @@
 	<spawn centerx="32453" centery="32319" centerz="8" radius="1">
 		<monster name="Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31624" centery="32320" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31898" centery="32320" centerz="8" radius="1">
 		<monster name="Carrion Worm" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34629,6 +34848,15 @@
 	<spawn centerx="32479" centery="32321" centerz="8" radius="1">
 		<monster name="Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31607" centery="32322" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31621" centery="32322" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31664" centery="32322" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31917" centery="32322" centerz="8" radius="1">
 		<monster name="Rotworm Queen" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
@@ -34640,6 +34868,12 @@
 	</spawn>
 	<spawn centerx="32317" centery="32322" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31671" centery="32323" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31675" centery="32323" centerz="8" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31919" centery="32324" centerz="8" radius="1">
 		<monster name="Carrion Worm" x="0" y="0" z="8" spawntime="60" direction="2" />
@@ -34800,5 +35034,834 @@
 	</spawn>
 	<spawn centerx="32316" centery="32384" centerz="8" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="8" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31594" centery="32250" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31606" centery="32250" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31618" centery="32251" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31623" centery="32251" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31634" centery="32251" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31645" centery="32251" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31652" centery="32251" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31664" centery="32251" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31600" centery="32252" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31612" centery="32252" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31626" centery="32252" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31639" centery="32252" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31672" centery="32252" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31680" centery="32252" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31666" centery="32254" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31593" centery="32255" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31658" centery="32255" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31676" centery="32255" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31637" centery="32257" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31640" centery="32258" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31671" centery="32259" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31680" centery="32259" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31593" centery="32261" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31675" centery="32262" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31637" centery="32265" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31640" centery="32266" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31680" centery="32266" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31673" centery="32267" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31594" centery="32268" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31675" centery="32272" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31638" centery="32273" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31681" centery="32273" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31593" centery="32274" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31640" centery="32274" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+		<monster name="Aqua Corrupted" x="0" y="1" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31679" centery="32280" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31593" centery="32282" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31638" centery="32282" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31647" centery="32282" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31656" centery="32284" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31663" centery="32286" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31679" centery="32286" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31593" centery="32287" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31672" centery="32287" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31642" centery="32288" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31655" centery="32288" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31604" centery="32290" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31596" centery="32291" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31616" centery="32291" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31631" centery="32291" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31656" centery="32292" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31680" centery="32292" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31610" centery="32293" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31621" centery="32293" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31646" centery="32293" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31601" centery="32294" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31593" centery="32295" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31630" centery="32295" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31639" centery="32295" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31599" centery="32296" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31658" centery="32296" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31605" centery="32297" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31645" centery="32298" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31680" centery="32299" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31602" centery="32300" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31658" centery="32302" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31594" centery="32303" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31652" centery="32304" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31640" centery="32305" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31681" centery="32308" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31593" centery="32309" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31645" centery="32310" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31595" centery="32311" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31656" centery="32312" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31644" centery="32314" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31649" centery="32316" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31593" centery="32317" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31680" centery="32319" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31645" centery="32320" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31635" centery="32321" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31595" centery="32322" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31652" centery="32323" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31595" centery="32326" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31608" centery="32326" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31620" centery="32326" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31630" centery="32326" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31640" centery="32326" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31661" centery="32326" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31680" centery="32326" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31672" centery="32327" centerz="9" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="9" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31683" centery="32191" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31693" centery="32193" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31678" centery="32196" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31689" centery="32196" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31703" centery="32196" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31655" centery="32197" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31669" centery="32197" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31674" centery="32199" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31716" centery="32199" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31659" centery="32201" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31690" centery="32202" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31700" centery="32204" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31613" centery="32205" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31627" centery="32205" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31716" centery="32205" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31647" centery="32206" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31638" centery="32207" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31614" centery="32208" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31726" centery="32208" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31600" centery="32211" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31638" centery="32211" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31628" centery="32212" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31607" centery="32213" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31722" centery="32213" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31586" centery="32214" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+		<monster name="Aqua Corrupted" x="1" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31598" centery="32217" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31732" centery="32217" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31589" centery="32218" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31727" centery="32220" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31579" centery="32226" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31595" centery="32230" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31619" centery="32230" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31631" centery="32230" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31643" centery="32230" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31656" centery="32230" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31728" centery="32230" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31586" centery="32231" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31605" centery="32231" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31666" centery="32231" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31675" centery="32231" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31687" centery="32231" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31731" centery="32233" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31694" centery="32235" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31574" centery="32236" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31588" centery="32237" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31637" centery="32237" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31659" centery="32237" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31681" centery="32237" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31560" centery="32238" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31594" centery="32238" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31610" centery="32239" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+		<monster name="Aqua Corrupted" x="0" y="1" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31699" centery="32239" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31628" centery="32240" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31649" centery="32240" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31722" centery="32241" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31710" centery="32242" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31579" centery="32243" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31675" centery="32244" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31691" centery="32244" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31610" centery="32245" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31622" centery="32245" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31656" centery="32245" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31702" centery="32245" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31582" centery="32246" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31643" centery="32246" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31664" centery="32246" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31632" centery="32247" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31558" centery="32249" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31589" centery="32249" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31685" centery="32249" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31697" centery="32251" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31585" centery="32252" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31554" centery="32255" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31690" centery="32255" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31580" centery="32257" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31584" centery="32260" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31697" centery="32260" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31558" centery="32262" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31589" centery="32264" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31684" centery="32264" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31555" centery="32267" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31692" centery="32268" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31580" centery="32269" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31559" centery="32273" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31703" centery="32274" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31712" centery="32275" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31696" centery="32276" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="-1" y="0" z="10" spawntime="60" direction="2" />
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31585" centery="32277" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31566" centery="32279" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31721" centery="32279" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31589" centery="32282" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31684" centery="32282" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31556" centery="32284" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31567" centery="32284" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31580" centery="32285" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31727" centery="32285" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31692" centery="32287" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31561" centery="32290" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31699" centery="32290" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31687" centery="32294" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31569" centery="32295" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31581" centery="32297" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31699" centery="32297" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31728" centery="32297" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31575" centery="32298" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31589" centery="32298" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31686" centery="32302" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31581" centery="32305" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31698" centery="32308" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31726" centery="32308" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31590" centery="32309" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31686" centery="32311" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31582" centery="32315" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31725" centery="32315" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31564" centery="32316" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31558" centery="32318" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31694" centery="32319" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31588" centery="32322" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31685" centery="32322" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31566" centery="32324" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31727" centery="32325" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31690" centery="32327" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31699" centery="32327" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31581" centery="32328" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31608" centery="32330" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31620" centery="32330" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31639" centery="32331" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31675" centery="32331" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31569" centery="32332" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31599" centery="32332" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31660" centery="32333" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31716" centery="32333" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31582" centery="32335" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31648" centery="32335" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31593" centery="32336" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31621" centery="32336" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31613" centery="32337" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31685" centery="32337" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31556" centery="32338" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31575" centery="32338" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31603" centery="32338" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31637" centery="32338" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31701" centery="32338" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31677" centery="32339" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31723" centery="32339" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31664" centery="32340" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31565" centery="32341" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31578" centery="32343" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31570" centery="32344" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31683" centery="32345" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31609" centery="32346" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31726" centery="32346" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31592" centery="32347" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31625" centery="32347" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31694" centery="32347" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31564" centery="32348" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31638" centery="32348" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31649" centery="32348" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31658" centery="32348" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31574" centery="32349" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31702" centery="32351" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31668" centery="32352" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31609" centery="32353" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31584" centery="32354" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31722" centery="32354" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31557" centery="32355" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31566" centery="32355" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31683" centery="32356" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31695" centery="32356" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31623" centery="32357" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31647" centery="32357" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31662" centery="32357" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31594" centery="32358" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31633" centery="32358" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31713" centery="32363" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31589" centery="32364" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31598" centery="32367" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31700" centery="32368" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31622" centery="32369" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31611" centery="32370" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31635" centery="32370" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31643" centery="32370" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31650" centery="32370" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31659" centery="32370" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31685" centery="32370" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31673" centery="32371" centerz="10" radius="1">
+		<monster name="Aqua Corrupted" x="0" y="0" z="10" spawntime="60" direction="2" />
 	</spawn>
 </spawns>
