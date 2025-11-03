@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <actions>
 	<action itemid="5952" event="script" value="points.lua" />
 	<action itemid="2178" script="pedravoc.lua" />
@@ -9,6 +9,9 @@
 	<action uniqueid="5789" script="horizontal.lua" />
 	<action itemid="13370" script="powerfruit.lua" />
 	<action itemid="20135" script="critical.lua" />
+
+	<!-- Vocations -->
+	<action fromid="49508" toid="49530" event="script" value="unlock_vocation.lua" />
 
 	<!-- QUESTS -->
 	<action uniqueid="11000" script="quests/firstItens.lua" />

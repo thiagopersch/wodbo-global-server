@@ -324,15 +324,15 @@ class LuaInterface
 		static bool getArea(lua_State* L, std::list<uint32_t>& list, uint32_t& rows);
 
 		virtual void registerFunctions();
-		static int32_t luaDoSendPlayerExtendedOpcode(lua_State* L);
-  
+		static int32_t luaDoPlayerSendExtendedOpcode(lua_State* L);
+
         //lua functions
         //Ping
         static int32_t luaDoPlayerSendPing(lua_State* L);
         static int32_t luaGetPlayerLastPing(lua_State* L);
         static int32_t luaGetPlayerLastPong(lua_State* L);
         static int32_t luaGetOtsysTime(lua_State* L);
-        
+
         //CAST
 		static int32_t luaGetCastsOnline(lua_State* L);
 		static int32_t luaDoPlayerSetCastPassword(lua_State* L);
@@ -347,7 +347,7 @@ class LuaInterface
 		static int32_t luaDoPlayerAddCastMute(lua_State* L);
 		static int32_t luaDoPlayerRemoveCastMute(lua_State* L);
 		static int32_t luaGetPlayerCastMutes(lua_State* L);
-		
+
 		static int32_t luaDoRemoveItem(lua_State* L);
 		static int32_t luaDoPlayerFeed(lua_State* L);
 		static int32_t luaDoPlayerSendCancel(lua_State* L);

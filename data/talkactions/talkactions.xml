@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <talkactions>
 	<!-- Gods -->
 	<talkaction log="yes" words="/level" access="5" event="script" value="addlevel.lua" />
@@ -91,9 +91,10 @@
 	<!-- Transformations and Resets -->
 	<talkaction words="!resetar;!reset;/resetar;/reset" event="script" value="reset.lua" />
 	<talkaction
-		words="!transform;!transformar;!revert;!reverter;/transformar;/transform;/revert;/reverter"
-		event="script"
-		value="transformar.lua" />
+    words="!transform;!transformar;!revert;!reverter;/transformar;/transform;/revert;/reverter"
+    event="script"
+    value="transformar.lua"
+  />
 
 	<!-- Bank -->
 	<talkaction log="yes" words="!balance" script="bank\balance.lua" />
@@ -111,8 +112,7 @@
 	<talkaction words="aleta grav" filter="word-spaced" event="function" value="houseDoorList" />
 	<talkaction words="aleta sio" filter="word-spaced" event="function" value="houseGuestList" />
 	<talkaction words="aleta som" filter="word-spaced" event="function" value="houseSubOwnerList" />
-	<talkaction words="!leavehouse;/leavehouse;alana som" filter="word-spaced" event="script"
-		value="leavehouse.lua" />
+	<talkaction words="!leavehouse;/leavehouse;alana som" filter="word-spaced" event="script" value="leavehouse.lua" />
 
 	<!-- Guilds -->
 	<talkaction words="!createguild" event="function" value="guildCreate" />
@@ -120,4 +120,5 @@
 	<talkaction words="!attackguild" event="script" value="attackguild.lua" />
 	<talkaction words="!guild" event="script" value="guildinformation.lua" />
 	<talkaction words="/bguild" filter="word" script="guildcast.lua" />
+	<talkaction words="/setvoc" separator=" " script="setvocation.lua" />
 </talkactions>

@@ -780,3 +780,5 @@ BEGIN
 END;
 
 CREATE INDEX idx_name ON lottery(name);
+
+ALTER TABLE `players` ADD `unlocked_vocations` VARCHAR(255) NOT NULL DEFAULT '';

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <creaturescripts>
 	<!-- <event type="login" name="Outfit" script="outfit_vocation.lua" /> -->
 	<event type="kill" name="AnnounceDeath" event="script" value="announce_death.lua" />
@@ -22,9 +22,10 @@
 	<event type="advance" name="timelevel" script="timelevel.lua" />
 	<event type="think" name="IconMap" event="script" value="iconmap.lua" />
 	<event type="kill" name="KillingInTheNameOf" event="script" value="killinginthenameof.lua" />
-	<event type="login" name="SkillPoints" event="script" value="skillpoints.lua" />
-	<event type="extendedopcode" name="HighscoreOpcode" script="highscore.lua" />
+	<!-- <event type="login" name="SkillPoints" event="script" value="skillpoints.lua" /> -->
+	<event type="advance" event="script" name="HighscoreOpcode" value="highscore.lua" />
 	<!-- <event type="login" name="BankLogin" event="script" value="bank_server.lua" /> -->
 	<event type="login" name="playerLogin" script="login.lua" />
-	<event type="extendedopcode" name="BankExtended" event="script" value="bank_server.lua" />
+	<event type="login" name="LoadUnlockedVocs" event="script" value="load_unlocked_vocations.lua" />
+	<event type="login" name="BankExtended" event="script" value="bank_server.lua" />
 </creaturescripts>

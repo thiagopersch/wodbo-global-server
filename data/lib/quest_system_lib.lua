@@ -30,9 +30,9 @@ function sendQuestLog(cid)
 
   if questCount > 0 then
     --print("Sending opcode 135: " .. msg)
-    doSendPlayerExtendedOpcode(cid, 135, msg)
+    doPlayerSendExtendedOpcode(cid, 135, msg)
   else
     --print("No quests available for player")
-    doSendPlayerExtendedOpcode(cid, 135, "#questlog#") -- Envia buffer vazio para evitar erros
+    doPlayerSendExtendedOpcode(cid, 135, "#questlog#") -- Envia buffer vazio para evitar erros
   end
 end

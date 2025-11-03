@@ -15,6 +15,7 @@ generateAccountSalt = false
 accountSize = 25
 useFragHandler = true
 enableCast = true
+extendedOpcodes = true
 
 -- Unjustified kills
 -- NOTE: *Banishment and *BlackSkull variables are >summed up<

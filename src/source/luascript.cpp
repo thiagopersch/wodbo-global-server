@@ -1443,8 +1443,8 @@ void LuaInterface::registerFunctions(){
 	//getPlayerCast(cid)
 	lua_register(m_luaState, "getPlayerCast", LuaInterface::luaGetPlayerCast);
 
-    //doSendPlayerExtendedOpcode(cid, opcode, buffer)
-    lua_register(m_luaState, "doSendPlayerExtendedOpcode", LuaInterface::luaDoSendPlayerExtendedOpcode);
+    //doPlayerSendExtendedOpcode(cid, opcode, buffer)
+    lua_register(m_luaState, "doPlayerSendExtendedOpcode", LuaInterface::luaDoPlayerSendExtendedOpcode);
 
 	//getCreatureHealth(cid)
 	lua_register(m_luaState, "getCreatureHealth", LuaInterface::luaGetCreatureHealth);
@@ -11227,21 +11227,23 @@ SHIFT_OPERATOR(uint32_t, ULeftShift, <<)
 SHIFT_OPERATOR(uint32_t, URightShift, >>)
 
 #undef SHIFT_OPERATOR
-int32_t LuaInterface::luaDoSendPlayerExtendedOpcode(lua_State* L)
+int32_t LuaInterface::luaDoPlayerSendExtendedOpcode(lua_State* L)
 {
-	//doPlayerSendExtendedOpcode(cid, opcode, buffer)
-	std::string buffer = popString(L);
-	int32_t opcode = popNumber(L);
+    // doPlayerSendExtendedOpcode(cid, opcode, buffer)
+    std::string buffer = popString(L);
+    int32_t opcode = popNumber(L);
+    uint32_t cid = popNumber(L);
 
-	ScriptEnviroment* env = getEnv();
-	if(Player* player = env->getPlayerByUID(popNumber(L)))
-	{
-		player->sendExtendedOpcode(opcode, buffer);
-		lua_pushboolean(L, true);
-	}
+    ScriptEnviroment* env = getEnv();
+    Player* player = env->getPlayerByUID(cid);
+    if (!player) {
+        lua_pushboolean(L, false);
+        return 1;
+    }
 
-	lua_pushboolean(L, false);
-	return 1;
+    player->sendExtendedOpcode(opcode, buffer);
+    lua_pushboolean(L, true);
+    return 1;
 }
 
 int32_t LuaInterface::luaDoPlayerSendPing(lua_State* L)

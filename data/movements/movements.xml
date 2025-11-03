@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <movements>
+  <movevent type="StepIn" actionid="5500" event="script" value="vocation_tile.lua" />
+  <movevent type="StepOut" actionid="5500" event="script" value="vocation_tile.lua" />
+
 	<!-- Reset Tile -->
 	<movevent type="StepIn" uniqueid="17456" event="script" value="tilel.lua" />
 

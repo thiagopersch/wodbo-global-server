@@ -480,3 +480,5 @@ BEGIN
 END|
 
 DELIMITER ;
+
+ALTER TABLE `players` ADD `unlocked_vocations` VARCHAR(255) NOT NULL DEFAULT '';

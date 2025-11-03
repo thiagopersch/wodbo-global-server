@@ -8,10 +8,10 @@ function doSendDialogNpc(cid, npc, msg, opc)
   if (not opc) then
     opc = ''
   end
-  doSendPlayerExtendedOpcode(cid, OpcodeDialog,
+  doPlayerSendExtendedOpcode(cid, OpcodeDialog,
     table.serialize({ action = Actions.open, data = { npcId = npc, message = msg, options = opc } }))
 end
 
 function doSendDialogNpcClose(cid)
-  doSendPlayerExtendedOpcode(cid, OpcodeDialog, table.serialize({ action = Actions.closed }))
+  doPlayerSendExtendedOpcode(cid, OpcodeDialog, table.serialize({ action = Actions.closed }))
 end
