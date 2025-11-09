@@ -2,7 +2,7 @@ local positions = {
     ["Itens iniciais"] = {
         pos = { x = 31999, y = 32004, z = 7 },
         color = { 205, 210 },
-        effect = {}
+        effect = { 55 }
     },
     ["Trainers"] = {
         pos = { x = 31893, y = 32222, z = 7 },

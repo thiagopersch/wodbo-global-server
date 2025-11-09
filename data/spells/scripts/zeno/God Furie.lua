@@ -1,13 +1,18 @@
 local combat = createCombatObject()
+local param = {
+    magEffect = 534,
+    lvl = 75,
+    pos = { x = 2, y = 2, z = 0 }
+}
 setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 
 function onGetFormulaValues(cid, level, maglevel)
-    return getCombatFormulaValues(cid, level, maglevel, 2, 4, 40, 1, 1)
+    return getCombatFormulaValues(cid, level, maglevel, 1, 2, 10, 1, 1, param.lvl)
 end
 
 setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
-local area1 = createCombatArea(AREA_SQUARE2X2)
+local area1 = createCombatArea(AREA_SQUARE3X3)
 
 setCombatArea(combat, area1)
 
@@ -17,14 +22,13 @@ end
 
 function onCastSpell(cid, var)
     local pos1 = {
-        x = getPlayerPosition(cid).x + 2,
-        y = getPlayerPosition(cid).y + 2,
-        z = getPlayerPosition(cid).z
+        x = getPlayerPosition(cid).x + param.pos.x,
+        y = getPlayerPosition(cid).y + param.pos.y,
+        z = getPlayerPosition(cid).z + param.pos.z
     }
     local parameters = { cid = cid, var = var, combat1 = combat }
-    local magEffect = 534
 
     addEvent(onCastSpell1, 0, parameters)
-    doSendMagicEffect(pos1, magEffect)
+    doSendMagicEffect(pos1, param.magEffect)
     return true
 end

@@ -1,16 +1,19 @@
 local param = {
-    distanceEffect = 155,
-    magEffect = 43,
-    lvl = 50,
+    enableDistanceEffect = true,
+    distanceEffect = 219,
+    magEffect = 278,
+    lvl = 200,
     interval = 300,
-    numRepeat = 1,
+    numRepeat = 10,
     pos = { x = 0, y = 0, z = 0 },
     speedPerTile = 1 -- tempo em ms que o distanceEffect leva para percorrer 1 tile
 }
 
 local combat = createCombatObject()
 setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, param.distanceEffect)
+if param.enableDistanceEffect then
+    setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, param.distanceEffect)
+end
 
 function onGetFormulaValues(cid, level, maglevel)
     return getCombatFormulaValues(cid, level, maglevel, 1, 2, 10, 1, 1, param.lvl)

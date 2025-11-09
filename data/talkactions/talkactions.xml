@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
 	<!-- Gods -->
 	<talkaction log="yes" words="/level" access="5" event="script" value="addlevel.lua" />
@@ -67,7 +67,6 @@
 	<talkaction words="!marcar" event="script" value="marcar.lua" />
 	<talkaction words="!sendquestlog" event="script" value="sendquestlog.lua" />
 	<talkaction words="/onlinepoints;!onlinepoints" event="script" value="onlinepoints.lua" />
-	<!-- <talkaction words="/skills" event="script" value="skills.lua" /> -->
 	<talkaction words="!deathlistall" script="deathlist_all.lua" />
 	<talkaction words="!remover" event="script" value="removeFrags.lua" />
 	<talkaction words="/bless;!bless" event="script" value="bless.lua" />
@@ -87,14 +86,15 @@
 	<talkaction words="!tecnicas;tecnicas;!spells" log="yes" event="script" value="tecnicas.lua" />
 	<talkaction words="!cast;/cast" event="script" value="cast.lua" />
 	<talkaction words="!save" script="salvarjogador.lua" />
+	<!-- <talkaction words="/setvoc" separator=" " script="setvocation.lua" /> -->
 
 	<!-- Transformations and Resets -->
 	<talkaction words="!resetar;!reset;/resetar;/reset" event="script" value="reset.lua" />
 	<talkaction
-    words="!transform;!transformar;!revert;!reverter;/transformar;/transform;/revert;/reverter"
-    event="script"
-    value="transformar.lua"
-  />
+		words="!transform;!transformar;!revert;!reverter;/transformar;/transform;/revert;/reverter"
+		event="script"
+		value="transformar.lua"
+	/>
 
 	<!-- Bank -->
 	<talkaction log="yes" words="!balance" script="bank\balance.lua" />
@@ -112,7 +112,8 @@
 	<talkaction words="aleta grav" filter="word-spaced" event="function" value="houseDoorList" />
 	<talkaction words="aleta sio" filter="word-spaced" event="function" value="houseGuestList" />
 	<talkaction words="aleta som" filter="word-spaced" event="function" value="houseSubOwnerList" />
-	<talkaction words="!leavehouse;/leavehouse;alana som" filter="word-spaced" event="script" value="leavehouse.lua" />
+	<talkaction words="!leavehouse;/leavehouse;alana som" filter="word-spaced" event="script"
+		value="leavehouse.lua" />
 
 	<!-- Guilds -->
 	<talkaction words="!createguild" event="function" value="guildCreate" />
@@ -120,5 +121,4 @@
 	<talkaction words="!attackguild" event="script" value="attackguild.lua" />
 	<talkaction words="!guild" event="script" value="guildinformation.lua" />
 	<talkaction words="/bguild" filter="word" script="guildcast.lua" />
-	<talkaction words="/setvoc" separator=" " script="setvocation.lua" />
 </talkactions>

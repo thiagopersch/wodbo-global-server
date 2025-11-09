@@ -85,7 +85,15 @@
     "doAddCondition",
     "getGroupInfo",
     "getPlayerGroupId",
-    "doPlayerSave"
+    "doPlayerSave",
+    "getTopCreature",
+    "doTargetCombatHealth",
+    "getPlayerInstantSpellCount",
+    "getPlayerInstantSpellInfo",
+    "doShowTextDialog",
+    "doPlayerSendExtendedOpcode",
+    "getCreatureLookDirection",
+    "numberToVariant"
   ],
-  "Lua.diagnostics.disable": ["lowercase-global"]
+  "Lua.diagnostics.disable": ["lowercase-global", "redundant-parameter"]
 }

@@ -3,7 +3,7 @@ setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, 96)
 
 function onGetFormulaValues(cid, level, maglevel)
-    return getCombatFormulaValues(cid, level, maglevel, 1, 2, 10, 1, 1)
+    return getCombatFormulaValues(cid, level, maglevel, 1, 2, 10, 1, 1, 150)
 end
 
 setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
@@ -13,6 +13,10 @@ local function onCastSpell1(parameters)
 end
 
 function onCastSpell(cid, var)
+    local target = getCreatureTarget(cid)
+    if not target or not isCreature(target) or getCreatureHealth(target) <= 0 then
+        return false
+    end
     local position1 = {
         x = getThingPosition(getCreatureTarget(cid)).x + 1,
         y = getThingPosition(getCreatureTarget(cid)).y + 1,
