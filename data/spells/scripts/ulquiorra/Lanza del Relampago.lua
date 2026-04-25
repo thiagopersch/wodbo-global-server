@@ -1,13 +1,13 @@
 local combat = createCombatObject()
 local param = {
-    magEffect = 2428,
-    lvl = 75,
-    pos = { x = 2, y = 2, z = 0 }
+    magEffect = 1662,
+    lvl = 400,
+    pos = { x = 4, y = 4, z = 0 }
 }
 setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 
 function onGetFormulaValues(cid, level, maglevel)
-    return getCombatFormulaValues(cid, level, maglevel, 1, 2, 10, 1, 1, param.lvl)
+    return getCombatFormulaValues(cid, level, maglevel, 1, 2, 1, 1, 1, param.lvl)
 end
 
 setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")

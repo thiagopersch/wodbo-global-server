@@ -12,6 +12,7 @@
 - Ajustar :x:
   - Mensagens no broadcast :x:
   - textoTeleports :x:
+  - Loteria
 
 # Items
 
@@ -35,6 +36,7 @@
 
 - Ajustar os npc's de compra e venda de items :x:
 - Criar outros NPC's conforme a necessidade :x:
+- Toda compra está vindo com quantidade de 2 ao invés de 1
 
 # Raids
 
@@ -62,6 +64,7 @@
 # Sistemas, Mods e outras funcionalidades
 
 - [Sistema de skin](https://tibiaking.com/topic/96408-system-skin-860/)
+- [Boosted Creature](https://tibiaking.com/topic/98696-resolvidoboosted-creature/)
 - [Mining System](https://tibiaking.com/topic/35665-mining-system/)
 - [Quest Diária](https://tibiaking.com/topic/74788-quest-di%C3%A1ria/)
 - [Amulet of Experience](https://tibiaking.com/topic/7982-action-amulet-of-experience/)
@@ -69,32 +72,32 @@
 - [Akatsuki system](https://tibiaking.com/topic/75913-akatsuki-system-simples/)
 - [Bonus Exp and Loot system](https://pastebin.com/Wc9ZL8Km)
 - [TopLevel Effect](https://xtibia.com/forum/topic/233144-toplevel-effect/)
-- [\[Creature Events\] Animação para vip](https://tibiaking.com/topic/52395-creature-events-anima%C3%A7ao-para-vip/)
+- [[Creature Events] Animação para vip](https://tibiaking.com/topic/52395-creature-events-anima%C3%A7ao-para-vip/)
 - [Heart System](https://tibiaking.com/topic/41920-heart-system/)
 - [TFS 1.x | Recompensa por Level (Item, Bank, Addon, Mount)](https://tibiaking.com/topic/51573-recompensa-por-level-item-bank-addon-mount/)
-- [TFS 0.4 | \[UP-LEVEL\] Recompensa ao subir de level](https://tibiaking.com/topic/36453-up-level-recompensa-ao-subir-de-level/)
+- [TFS 0.4 | [UP-LEVEL] Recompensa ao subir de level](https://tibiaking.com/topic/36453-up-level-recompensa-ao-subir-de-level/)
 - [Mostrar a quantidade que morreu e que matou ao dar look no player](https://tibiaking.com/topic/57782-mostrar-a-quantidade-que-morreu-e-que-matou-ao-dar-look-no-player/) :white_check_mark:
-- [\[CreatureEvent\] Rank Militar](https://tibiaking.com/topic/8680-creatureevent-rank-militar/)
+- [[CreatureEvent] Rank Militar](https://tibiaking.com/topic/8680-creatureevent-rank-militar/)
 - [LevelUP Time](https://tibiaking.com/topic/68333-levelup-time-you-advanced-to-level-35-in-3-minutes-and-10-seconds/) :white_check_mark:
-- [\[Anunciar Morte\] Fulano acabou de morrer para Ciclano](https://tibiaking.com/topic/35473-anunciar-morte-fulano-acabou-de-morrer-para-ciclano/) :white_check_mark:
-- [\[CreatureScripts\] Hit Message](https://tibiaking.com/topic/12594-creaturescripts-hit-message/)
+- [[Anunciar Morte] Fulano acabou de morrer para Ciclano](https://tibiaking.com/topic/35473-anunciar-morte-fulano-acabou-de-morrer-para-ciclano/) :white_check_mark:
+- [[CreatureScripts] Hit Message](https://tibiaking.com/topic/12594-creaturescripts-hit-message/)
 - [Kill Boss System](https://tibiaking.com/topic/27210-kill-boss-system/)
-- [\[CreatureScript\] Level Speed ao Atingir Determinado Level - REFORMULADO](https://tibiaking.com/topic/41998-creaturescript-level-speed-ao-atingir-determinado-level-reformulado/)
+- [[CreatureScript] Level Speed ao Atingir Determinado Level - REFORMULADO](https://tibiaking.com/topic/41998-creaturescript-level-speed-ao-atingir-determinado-level-reformulado/)
 - [Skills Rates (Corrigido, otimizado e estavel)](https://tibiaking.com/topic/46441-skills-rates-corrigido-otimizado-e-estavel/)
-- [\[Anti Guild Attacks\] Você não pode atacar sua guild](https://tibiaking.com/topic/45792-anti-guild-attacks-voc%C3%AA-n%C3%A3o-pode-atacar-sua-guild/)
+- [[Anti Guild Attacks] Você não pode atacar sua guild](https://tibiaking.com/topic/45792-anti-guild-attacks-voc%C3%AA-n%C3%A3o-pode-atacar-sua-guild/)
 - [Defense System - "Dodge"](https://tibiaking.com/topic/33652-defense-system-dodge/)
 - [Dodge System (item)](https://tibiaking.com/topic/99739-action-dodge-system-item/)
-- [\[Vip Bônus\] Exp bônus para jogadores vip account](https://tibiaking.com/topic/37029-vip-b%C3%B4nus-exp-b%C3%B4nus-para-jogadores-vip-account/)
+- [[Vip Bônus] Exp bônus para jogadores vip account](https://tibiaking.com/topic/37029-vip-b%C3%B4nus-exp-b%C3%B4nus-para-jogadores-vip-account/)
 - [TFS 0.4 | Evento DoubleXP](https://tibiaking.com/topic/67665-evento-doublexp-tfs-04/)
-- [\[Creaturescripts\] Experiencia para Guild (por nº de Jogadores Online)](https://tibiaking.com/topic/36654-creaturescripts-experiencia-para-guild-por-n%C2%BA-de-jogadores-online/)
-- [Evento Blood Castle \[Automático\]](https://tibiaking.com/topic/33713-evento-blood-castle-autom%C3%A1tico/)
+- [[Creaturescripts] Experiencia para Guild (por nº de Jogadores Online)](https://tibiaking.com/topic/36654-creaturescripts-experiencia-para-guild-por-n%C2%BA-de-jogadores-online/)
+- [Evento Blood Castle [Automático]](https://tibiaking.com/topic/33713-evento-blood-castle-autom%C3%A1tico/)
 - [Sistema de Idade](https://tibiaking.com/topic/69808-sistema-de-idade/)
 
 ### GlobalEvents
 
-- [\[GlobalEvents\] Npc por tempo](https://tibiaking.com/topic/12905-globalevents-npc-por-tempo/)
+- [[GlobalEvents] Npc por tempo](https://tibiaking.com/topic/12905-globalevents-npc-por-tempo/)
 - [Novo sistema de noticias](https://tibiaking.com/topic/26838-novo-sistema-de-noticias/)
-- [\[GlobalEvents\] Mensagens Automáticas](https://tibiaking.com/topic/1979-globalevents-mensagens-autom%C3%A1ticas/)
+- [[GlobalEvents] Mensagens Automáticas](https://tibiaking.com/topic/1979-globalevents-mensagens-autom%C3%A1ticas/)
 
 ### Spells
 

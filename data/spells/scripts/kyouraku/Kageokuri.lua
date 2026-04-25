@@ -1,11 +1,11 @@
 local param = {
     enableDistanceEffect = true,
     distanceEffect = 155,
-    magEffect = 755,
+    magEffect = 2413,
     lvl = 250,
     interval = 300,
     numRepeat = 1,
-    pos = { x = 0, y = 0, z = 0 },
+    pos = { x = 1, y = 1, z = 0 },
     speedPerTile = 1 -- tempo em ms que o distanceEffect leva para percorrer 1 tile
 }
 
@@ -16,7 +16,7 @@ if param.enableDistanceEffect then
 end
 
 function onGetFormulaValues(cid, level, maglevel)
-    return getCombatFormulaValues(cid, level, maglevel, 1, 2, 10, 1, 1, param.lvl)
+    return getCombatFormulaValues(cid, level, maglevel, 1, 2, 2, 1, 1, param.lvl)
 end
 
 setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")

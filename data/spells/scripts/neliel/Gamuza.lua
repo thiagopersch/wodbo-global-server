@@ -1,11 +1,11 @@
 local param = {
     enableDistanceEffect = true,
-    distanceEffect = 553,
-    magEffect = 2434,
+    distanceEffect = 206,
+    magEffect = 2185,
     lvl = 200,
     interval = 300,
     numRepeat = 10,
-    pos = { x = 2, y = 2, z = 0 },
+    pos = { x = 1, y = 1, z = 0 },
     speedPerTile = 1 -- tempo em ms que o distanceEffect leva para percorrer 1 tile
 }
 

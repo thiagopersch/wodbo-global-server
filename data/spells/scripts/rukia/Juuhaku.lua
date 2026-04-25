@@ -1,16 +1,16 @@
 local param = {
     enableDistanceEffect = true,
     distanceEffect = 160,
-    magEffect = 1889,
+    magEffect = 1174,
     lvl = 150,
     interval = 300,
     numRepeat = 3,
-    pos = { x = 0, y = 0, z = 0 },
+    pos = { x = 1, y = 0, z = 0 },
     speedPerTile = 1 -- tempo em ms que o distanceEffect leva para percorrer 1 tile
 }
 
 local combat = createCombatObject()
-setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_ICEDAMAGE)
 if param.enableDistanceEffect then
     setCombatParam(combat, COMBAT_PARAM_DISTANCEEFFECT, param.distanceEffect)
 end

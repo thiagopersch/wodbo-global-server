@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <monster name="Mama Bird" nameDescription="a mama bird" race="blood" experience="350000000"
 	speed="400">
-	<health now="1200000" max="1200000" />
+	<health now="12000000" max="12000000" />
 	<look type="2589" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49386" />
 	<targetchange interval="4000" chance="10" />
 	<flags>

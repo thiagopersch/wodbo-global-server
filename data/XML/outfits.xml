@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <outfits>
-	<outfit id="1">
+	<outfit id="1" type="0" name="Goku" premium="no">
+		<stats />
+		<list gender="0" count="1" looktype="1881" />
+		<list gender="1" count="1" looktype="1881" />
+	</outfit>
+	<outfit id="2" type="0" name="Goku Kaioken" premium="no">
+		<stats />
+		<list gender="0" count="1" looktype="1882" />
+		<list gender="1" count="1" looktype="1882" />
+	</outfit>
+	<outfit id="3" type="0" name="Goku SSJ" premium="no">
+		<stats />
+		<list gender="0" count="1" looktype="1883" />
+		<list gender="1" count="1" looktype="1883" />
+	</outfit>
+	<outfit id="4" type="0" name="Goku SSJ2" premium="no">
+		<stats />
+		<list gender="0" count="1" looktype="1884" />
+		<list gender="1" count="1" looktype="1884" />
+	</outfit>
+	<outfit id="5" type="0" name="Gogeta" premium="no">
+		<stats />
+		<list gender="0" count="1" looktype="1885" />
+		<list gender="1" count="1" looktype="1885" />
+	</outfit>
+	<outfit id="6" type="0" name="Goku SSJ3" premium="no">
+		<stats />
+		<list gender="0" count="1" looktype="1886" />
+		<list gender="1" count="1" looktype="1886" />
+	</outfit>
+
+
+	<!-- <outfit id="1">
 		<list gender="0" lookType="136" name="Citizen" />
 		<list gender="1" lookType="128" name="Citizen" />
 	</outfit>
@@ -603,5 +635,5 @@
 	<outfit id="121">
 		<list gender="0" lookType="1777" name="Beekeeper" />
 		<list gender="1" lookType="1776" name="Beekeeper" />
-	</outfit>
+	</outfit> -->
 </outfits>

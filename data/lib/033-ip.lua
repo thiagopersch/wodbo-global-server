@@ -13,11 +13,11 @@ function doConvertIntegerToIp(int, mask)
             bit.urshift(bit.uband(mask, 255), 0)
         }
         if ((m[1] == 255 or m[1] == 0) and (m[2] == 255 or m[2] == 0) and
-            (m[3] == 255 or m[3] == 0) and (m[4] == 255 or m[4] == 0)) then
+                (m[3] == 255 or m[3] == 0) and (m[4] == 255 or m[4] == 0)) then
             for i = 1, 4 do if (m[i] == 0) then b[i] = "*" end end
         elseif (m[1] ~= 255 or m[2] ~= 255 or m[3] ~= 255 or m[4] ~= 255) then
             return b[4] .. "." .. b[3] .. "." .. b[2] .. "." .. b[1] .. ":" ..
-                       m[4] .. "." .. m[3] .. "." .. m[2] .. "." .. m[1]
+                m[4] .. "." .. m[3] .. "." .. m[2] .. "." .. m[1]
         end
     end
 
@@ -53,7 +53,7 @@ function doConvertIpToInteger(str)
     if (maskIndex <= 1) then return 0, 0 end
 
     local ipString, maskString, ip, mask, index = str:sub(1, maskIndex - 1),
-                                                  str:sub(maskIndex), 0, 0, 0
+        str:sub(maskIndex), 0, 0, 0
     for b in ipString:gmatch("(%d+).?") do
         local t = tonumber(b)
         if (t == nil or t > 255 or t < 0) then return 0, 0 end

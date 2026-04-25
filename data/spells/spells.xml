@@ -12,7 +12,7 @@
   <instant name="Lightning Step" words="Speed" lvl="1" mana="10" prem="0" aggressive="0"
     selftarget="1" exhaustion="2000" needlearn="0" event="script" value="support/speed up.lua">
   </instant>
-  <instant name="Super Lightni>ng Step" words="Super Speed" lvl="100" mana="100" prem="1"
+  <instant name="Super Lightning Step" words="Super Speed" lvl="100" mana="100" prem="1"
     aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="support/super speed.lua">
   </instant>
@@ -58,7 +58,7 @@
     selftarget="1" exhaustion="2000" needlearn="0" event="script" value="monsters/bakuhatsuha.lua">
     <vocation id="0" />
   </instant>
-  <instant name="Final Shine" words="final shine" lvl="1" mana="0" prem="0" range="10"
+  <instant name="Final Shine" words="Final Shine" lvl="1" mana="0" prem="0" range="10"
     needtarget="1" blockwalls="1" exhaustion="1000" needlearn="0" event="script"
     value="monsters/final shine.lua">
     <vocation id="0" />
@@ -722,8 +722,8 @@
     <vocation id="31" /><!-- Quitela -->
     <vocation id="42" /><!-- Vermouth -->
   </instant>
-  <instant name="Hakai" words="Hakai" lvl="250" mana="1000" prem="0" range="10" needtarget="1"
-    blockwalls="1" exhaustion="20000" needlearn="0" event="script"
+  <instant name="Hakai" words="Hakai" lvl="250" mana="0" maglv="100" prem="0" range="3"
+    needtarget="1" blockwalls="1" exhaustion="120000" needlearn="0" event="script"
     value="gods of destruction/Hakai.lua">
     <vocation id="2" /><!-- Bills -->
     <vocation id="15" /><!-- Ginn -->
@@ -1089,12 +1089,12 @@
   </instant>
 
   <!-- Rukia -->
-  <instant name="Some no Mai, Tsukishiro" words="Tsukishiro" lvl="50" mana="300" prem="0" range="10"
-    needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
+  <instant name="Tsukishiro" words="Tsukishiro" lvl="50" mana="300" prem="0" range="5"
+    needtarget="1" blockwalls="1" exhaustion="5000" needlearn="0" event="script"
     value="rukia/Tsukishiro.lua">
     <vocation id="59" />
   </instant>
-  <instant name="Tsugi no Mai, Hakuren" words="Hakuren" lvl="75" mana="400" prem="0" aggressive="0"
+  <instant name="Hakuren" words="Hakuren" lvl="75" mana="400" prem="0" aggressive="0"
     selftarget="1"
     exhaustion="2000" needlearn="0" event="script" value="rukia/Hakuren.lua">
     <vocation id="59" />

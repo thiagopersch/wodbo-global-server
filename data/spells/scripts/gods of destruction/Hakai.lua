@@ -26,6 +26,20 @@ local function onCastSpell1(parameters)
 end
 
 function onCastSpell(cid, var)
+    -- Verificar magic level mínimo
+    if getPlayerMagLevel(cid) < 100 then
+        doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "You not have magic level 100.")
+        return false
+    end
+
+    -- Consumir 100% da mana atual
+    local currentMana = getCreatureMana(cid)
+    if currentMana <= 0 then
+        doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "You not have mana to use Hakai.")
+        return false
+    end
+    doCreatureAddMana(cid, -currentMana)
+
     local target = getCreatureTarget(cid)
     if not target or not isCreature(target) or getCreatureHealth(target) <= 0 then
         return false

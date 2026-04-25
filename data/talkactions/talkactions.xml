@@ -16,20 +16,20 @@
 	<talkaction words="/playerinfo" separator=" " script="playerinfo.lua" hidden="yes" access="5" />
 
 	<!-- Community Managers -->
-	<talkaction log="yes" words="/s" access="4" event="script" value="summon.lua" />
-	<talkaction log="yes" words="/n" access="4" event="script" value="creature.lua" />
-	<talkaction log="yes" words="/m" access="4" event="script" value="creature.lua" />
+	<talkaction log="yes" words="/summon" access="4" event="script" value="summon.lua" />
+	<talkaction log="yes" words="/npc" access="4" event="script" value="creature.lua" />
+	<talkaction log="yes" words="/monster" access="4" event="script" value="creature.lua" />
 	<talkaction log="yes" words="/reload" access="4" event="script" value="reload.lua" />
 	<talkaction log="yes" words="/raid" access="4" event="script" value="raid.lua" />
-	<talkaction log="yes" words="/newtype" access="4" event="script" value="newtype.lua" />
-	<talkaction log="yes" words="/r" access="4" event="script" value="remove.lua" />
+	<talkaction log="yes" words="/outfit" access="4" event="script" value="newtype.lua" />
+	<talkaction log="yes" words="/remove" access="4" event="script" value="remove.lua" />
 	<talkaction log="yes" words="/owner" access="4" event="script" value="owner.lua" />
 	<talkaction log="yes" words="/storage" access="4" event="script" value="storage.lua" />
 	<talkaction log="yes" words="/config" access="4" event="script" value="configinfo.lua" />
 	<talkaction log="yes" words="/i" access="4" event="script" value="createitem.lua" />
-	<talkaction access="4" words="/z" event="script" value="magiceffect.lua" />
-	<talkaction access="4" words="/x" event="script" value="animationeffect.lua" />
-	<talkaction access="4" words="/y" event="script" value="animatedtext.lua" />
+	<talkaction access="4" words="/effect" event="script" value="magiceffect.lua" />
+	<talkaction access="4" words="/animation" event="script" value="animationeffect.lua" />
+	<talkaction access="4" words="/text" event="script" value="animatedtext.lua" />
 	<talkaction log="yes" words="/bc" access="4" event="script" value="broadcastclass.lua" />
 	<talkaction log="yes" access="4" words="/mkick" event="script" value="masskick.lua" />
 

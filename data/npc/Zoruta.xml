@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<npc name="Zoruta" script="default.lua" walkinterval="2000">
+<npc name="Zoruta" script="trade.lua" walkinterval="2000" floorchange="0">
 	<health now="100" max="100" />
 	<look type="732" head="0" body="79" legs="114" feet="76" addons="3" />
 	<parameters>
@@ -7,26 +7,6 @@
 		<parameter key="message_greet"
 			value="Hello, |PLAYERNAME|! I buy enchanted weapons. Say {trade}." />
 		<parameter key="shop_sellable"
-			value="
-			pistol,8932,50000;
-			war pistol,2391,70000;
-			morning star,2394,80000;
-			mace,2398,85000;
-			big mace,2398,90000;
-			crowbar,2416,95000;
-			battle hammer,2417,40000;
-			thunder hammer,2421,50000;
-			rifle,2422,50000;
-			clerical mace,2423,60000;
-			metralhadora,2424,65000;
-			green gun,2434,35000;
-			energy gun,2436,37000;
-			light mace,2437,40000;
-			blaster,2439,50000;
-			red ki,2444,80000;
-			energy ki,2445,80000;
-			studded ki,2448,80000;
-			bone club,2449,80000
-		" />
+			value="pistol,8932,50000;war pistol,2391,70000;morning star,2394,80000;mace,2398,85000;big mace,2398,90000;crowbar,2416,95000;battle hammer,2417,40000;thunder hammer,2421,50000;rifle,2422,50000;clerical mace,2423,60000;metralhadora,2424,65000;green gun,2434,35000;energy gun,2436,37000;light mace,2437,40000;blaster,2439,50000;red ki,2444,80000;energy ki,2445,80000;studded ki,2448,80000;bone club,2449,80000" />
 	</parameters>
 </npc>

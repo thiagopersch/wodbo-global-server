@@ -1,6 +1,6 @@
 local config = {
     type = COMBAT_PHYSICALDAMAGE,
-    effects = { 282 }, -- lista de efeitos para alternar
+    effects = { 813, 897 }, -- lista de efeitos para alternar 282
     minDmg = 100,
     maxDmg = 200,
     areaIncreaseDelay = 100,

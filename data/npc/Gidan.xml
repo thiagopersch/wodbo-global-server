@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<npc name="Gidan" script="default.lua" walkinterval="2000">
+<npc name="Gidan" script="trade.lua" walkinterval="2000" floorchange="0">
 	<health now="100" max="100" />
 	<look type="610" head="0" body="79" legs="114" feet="76" addons="3" />
 	<parameters>
@@ -7,20 +7,6 @@
 		<parameter key="message_greet"
 			value="Hello, |PLAYERNAME|! I buy bows and crossbows. Say {trade}." />
 		<parameter key="shop_sellable"
-			value="
-			crossbow supreme,2185,100000;
-			crossbow of inferno,2186,110000;
-			bow of inferno,2187,120000;
-			ice barbarian bow,2188,130000;
-			supreme bow,2189,140000;
-			bow ice,2190,100000;
-			hive bow,12744,250000;
-			ornate crossbow,12745,250000;
-			thorn spitter,12746,250000;
-			infernal's bow,13705,200000;
-			angel bow,13715,250000;
-			soulbleeder,14250,300000;
-			soulpiercer,14251,300000
-		" />
+			value="crossbow supreme,2185,100000;crossbow of inferno,2186,110000;bow of inferno,2187,120000;ice barbarian bow,2188,130000;supreme bow,2189,140000;bow ice,2190,100000;hive bow,12744,250000;ornate crossbow,12745,250000;thorn spitter,12746,250000;infernal bow,13705,200000;angel bow,13715,250000;soulbleeder,14250,300000;soulpiercer,14251,300000" />
 	</parameters>
 </npc>

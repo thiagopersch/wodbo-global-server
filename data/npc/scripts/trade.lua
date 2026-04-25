@@ -10,7 +10,8 @@ function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) 
 
 function onThink() npcHandler:onThink() end
 
-npcHandler:addModule(FocusModule:new())
+function onPlayerEndTrade(cid) npcHandler:onPlayerEndTrade(cid) end
 
-local shopModule = ShopModule:new()
-npcHandler:addModule(shopModule)
+function onPlayerCloseChannel(cid) npcHandler:onPlayerCloseChannel(cid) end
+
+npcHandler:addModule(FocusModule:new())

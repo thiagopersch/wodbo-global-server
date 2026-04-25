@@ -1,7 +1,7 @@
 local param = {
     enableDistanceEffect = true,
     distanceEffect = 166,
-    magEffect = 1713,
+    magEffect = 2206,
     lvl = 100,
     interval = 300,
     numRepeat = 2,

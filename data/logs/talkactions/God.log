@@ -7274,3 +7274,370 @@
 [9/11/2025 17:33:56] /reload spells
 [9/11/2025 17:35:1] /reload spells
 [9/11/2025 17:35:9] /reload spells
+[10/11/2025 21:37:39] /reload spells
+[10/11/2025 21:37:55] /reload spells
+[10/11/2025 21:43:28] /reload moveevents
+[10/11/2025 21:44:53] /reload moveevents
+[10/11/2025 21:46:13] /m demon
+[10/11/2025 21:46:19] /s mama bird
+[10/11/2025 21:46:32] /m mama bird
+[10/11/2025 21:47:30] /s fire elemental supremo
+[10/11/2025 21:48:12] /clean
+[10/11/2025 21:58:56] /reload creatureevents
+[10/11/2025 22:0:34] /reload creatureevents
+[10/11/2025 22:3:34] /reload creatureevents
+[10/11/2025 22:6:9] /reload creatureevents
+[10/11/2025 22:40:56] /newtype 1886
+[10/11/2025 22:41:1] /newtype 1887
+[10/11/2025 22:41:4] /newtype 1888
+[10/11/2025 22:43:42] /level god, 1
+[10/11/2025 22:43:58] /reload creatureevents
+[10/11/2025 22:44:26] /level god, 200
+[10/11/2025 22:47:7] /m demon
+[10/11/2025 22:47:7] /m demon
+[10/11/2025 22:47:8] /m demon
+[10/11/2025 22:47:15] /r
+[10/11/2025 22:47:15] /r
+[10/11/2025 22:47:16] /r
+[10/11/2025 22:55:48] /reload creaturescripts
+[10/11/2025 22:57:59] /reload creaturescripts
+[10/11/2025 22:58:55] /reload creaturescripts
+[10/11/2025 22:59:29] /reload creaturescripts
+[10/11/2025 22:59:59] /reload creaturescripts
+[10/11/2025 23:0:4] /reload creaturescripts
+[10/11/2025 23:0:29] /reload creaturescripts
+[10/11/2025 23:1:31] /reload creaturescripts
+[10/11/2025 23:1:55] /reload creaturescripts
+[10/11/2025 23:3:20] /reload creaturescripts
+[10/11/2025 23:3:48] /reload creaturescripts
+[10/11/2025 23:5:14] /reload spells
+[10/11/2025 23:5:17] /reload creaturescripts
+[12/11/2025 19:13:24] /goto vegeta
+[12/11/2025 19:16:28] /s demon
+[12/11/2025 19:17:21] /s demon
+[12/11/2025 19:19:32] /s parroty
+[12/11/2025 19:19:34] /s parrot
+[12/11/2025 19:19:55] /s acid hollow
+[12/11/2025 19:20:42] /t
+[17/11/2025 9:42:51] /newtype 13
+[17/11/2025 14:33:10] /i 47250
+[17/11/2025 14:33:17] /i 47250
+[25/11/2025 18:2:54] /goto afonso
+[25/11/2025 18:3:28] /i 2160
+[25/11/2025 18:3:41] /i 2160
+[25/11/2025 18:12:5] /reload npc
+[25/11/2025 18:19:3] /reload npc
+[25/11/2025 18:38:56] /reload npc
+[25/11/2025 18:40:28] /reload npc
+[25/11/2025 18:41:40] /reload npc
+[25/11/2025 18:41:46] /r
+[25/11/2025 18:41:48] /r 100
+[25/11/2025 18:49:45] /reload npc
+[25/11/2025 19:5:50] /reload npc
+[25/11/2025 19:15:52] /reload npc
+[25/11/2025 19:21:3] /reload npc
+[25/11/2025 20:20:42] /ghost
+[25/11/2025 20:20:44] /ghost
+[25/11/2025 20:30:26] /reload npc
+[25/11/2025 20:32:36] /reload npc
+[25/11/2025 20:34:18] /reload npc
+[25/11/2025 20:35:59] /reload npc
+[25/11/2025 20:37:25] /reload npc
+[25/11/2025 20:38:19] /reload npc
+[25/11/2025 20:39:32] /reload npc
+[25/11/2025 20:39:56] /reload npc
+[25/11/2025 20:41:31] /reload npc
+[25/11/2025 20:43:18] /reload npc
+[25/11/2025 20:44:14] /reload npc
+[25/11/2025 20:45:28] /reload npc
+[25/11/2025 20:46:40] /reload npc
+[25/11/2025 20:48:30] /reload npc
+[25/11/2025 20:49:8] /reload npc
+[25/11/2025 20:51:12] /reload npc
+[25/11/2025 20:51:24] /reload npc
+[25/11/2025 20:52:3] /reload npc
+[25/11/2025 20:54:19] /reload npc
+[25/11/2025 21:6:23] /reload npc
+[25/11/2025 21:7:12] /reload npc
+[25/11/2025 21:7:35] /reload npc
+[25/11/2025 21:11:57] /reload npc
+[25/11/2025 21:22:7] /reload npc
+[25/11/2025 21:22:52] /reload npc
+[25/11/2025 21:24:3] /reload npc
+[25/11/2025 21:29:47] /reload npc
+[25/11/2025 21:32:12] /reload npc
+[25/11/2025 21:32:51] /reload npc
+[25/11/2025 21:33:15] /reload npc
+[25/11/2025 21:34:35] /reload npc
+[25/11/2025 21:35:47] /reload npc
+[25/11/2025 21:36:30] /reload npc
+[25/11/2025 21:38:1] /reload npc
+[25/11/2025 21:41:12] /reload npc
+[25/11/2025 21:44:37] /reload npc
+[25/11/2025 21:45:22] /reload npc
+[25/11/2025 21:50:46] /n bankman
+[25/11/2025 21:50:50] /n bankman
+[25/11/2025 21:50:57] /n mercvhant
+[25/11/2025 21:50:59] /n merchant
+[25/11/2025 21:54:19] /reload npc
+[25/11/2025 21:54:51] /reload npc
+[25/11/2025 21:56:10] /reload npc
+[25/11/2025 22:0:51] /reload npc
+[25/11/2025 22:7:30] /reload npc
+[25/11/2025 22:16:9] /reload npc
+[25/11/2025 22:17:47] /reload npc
+[25/11/2025 22:18:18] /reload npc
+[25/11/2025 22:20:38] /reload npc
+[25/11/2025 22:21:21] /reload npc
+[25/11/2025 22:22:21] /reload npc
+[25/11/2025 22:24:14] /reload npc
+[25/11/2025 22:27:13] /reload npc
+[25/11/2025 22:29:34] /reload npc
+[25/11/2025 22:30:27] /reload npc
+[25/11/2025 22:30:36] /reload npc
+[25/11/2025 22:31:30] /reload npc
+[25/11/2025 22:31:46] /reload npc
+[25/11/2025 22:36:30] /reload npc
+[25/11/2025 22:36:39] /goto dobao
+[25/11/2025 22:37:1] /i golden sickle
+[25/11/2025 22:38:57] /reload npc
+[25/11/2025 22:40:52] /reload npc
+[25/11/2025 22:41:57] /reload npc
+[25/11/2025 22:50:23] /goto travel
+[25/11/2025 22:54:44] /reload npc
+[25/11/2025 22:54:59] /t
+[25/11/2025 22:55:13] /reload npc
+[25/11/2025 22:55:48] /reload npc
+[25/11/2025 22:58:3] /reload npc
+[25/11/2025 22:58:49] /reload npc
+[25/11/2025 23:0:32] /reload npc
+[25/11/2025 23:1:17] /goto taskman
+[25/11/2025 23:1:51] /goto taskman
+[25/11/2025 23:2:13] /goto afonso
+[10/4/2026 19:18:39] /i shinigami amulet
+[10/4/2026 19:18:54] /i shinigami neckelace
+[25/4/2026 10:21:40] /t
+[25/4/2026 10:21:52] /newtype 6517
+[25/4/2026 10:22:3] /newtype 6504
+[25/4/2026 10:22:34] /newtype 6503
+[25/4/2026 10:34:52] /reload spells
+[25/4/2026 10:35:25] /reload spells
+[25/4/2026 10:41:27] /reload spells
+[25/4/2026 10:43:44] /reload spells
+[25/4/2026 10:44:6] /reload spells
+[25/4/2026 10:45:39] /reload spells
+[25/4/2026 10:50:8] /reload spells
+[25/4/2026 10:50:33] /reload spells
+[25/4/2026 10:50:44] /reload spells
+[25/4/2026 10:54:52] /reload spells
+[25/4/2026 10:55:4] /reload spells
+[25/4/2026 10:56:9] /reload spells
+[25/4/2026 10:56:39] /reload spells
+[25/4/2026 10:57:4] /a 50
+[25/4/2026 10:59:10] /reload spells
+[25/4/2026 11:0:13] /reload spells
+[25/4/2026 11:33:34] /reload spells
+[25/4/2026 11:34:58] /reload spells
+[25/4/2026 11:35:9] /reload spells
+[25/4/2026 11:36:9] /reload spells
+[25/4/2026 11:39:29] /reload spells
+[25/4/2026 11:39:36] /reload spells
+[25/4/2026 11:39:41] /reload spells
+[25/4/2026 11:40:6] /reload spells
+[25/4/2026 13:40:25] /reload spells
+[25/4/2026 13:40:32] /reload spells
+[25/4/2026 13:41:41] /reload spells
+[25/4/2026 13:42:40] /reload spells
+[25/4/2026 13:42:48] /reload spells
+[25/4/2026 13:43:56] /reload spells
+[25/4/2026 13:44:31] /reload spells
+[25/4/2026 13:45:1] /reload spells
+[25/4/2026 13:45:12] /reload spells
+[25/4/2026 13:47:15] /reload spells
+[25/4/2026 13:47:27] /reload spells
+[25/4/2026 13:50:1] /reload spells
+[25/4/2026 13:50:23] /reload spells
+[25/4/2026 13:50:32] /reload spells
+[25/4/2026 13:52:45] /reload spells
+[25/4/2026 13:52:51] /reload spells
+[25/4/2026 13:53:12] /reload spells
+[25/4/2026 13:53:17] /reload spells
+[25/4/2026 13:53:23] /reload spells
+[25/4/2026 13:54:9] /reload spells
+[25/4/2026 13:54:17] /reload spells
+[25/4/2026 13:54:26] /reload spells
+[25/4/2026 13:54:42] /reload spells
+[25/4/2026 13:56:49] /reload spells
+[25/4/2026 13:56:57] /reload spells
+[25/4/2026 14:1:22] /reload spells
+[25/4/2026 14:2:2] /reload spells
+[25/4/2026 14:4:34] /reload spells
+[25/4/2026 14:4:46] /reload spells
+[25/4/2026 14:5:49] /reload spells
+[25/4/2026 14:14:14] /reload spells
+[25/4/2026 14:16:22] /reload spells
+[25/4/2026 14:16:41] /reload spells
+[25/4/2026 14:17:33] /reload spells
+[25/4/2026 14:17:48] /reload spells
+[25/4/2026 14:18:2] /reload spells
+[25/4/2026 14:18:35] /reload spells
+[25/4/2026 14:18:46] /reload spells
+[25/4/2026 14:18:57] /reload spells
+[25/4/2026 14:19:9] /reload spells
+[25/4/2026 14:19:19] /reload spells
+[25/4/2026 14:19:29] /reload spells
+[25/4/2026 14:19:42] /reload spells
+[25/4/2026 14:20:1] /reload spells
+[25/4/2026 14:20:13] /reload spells
+[25/4/2026 14:20:41] /reload spells
+[25/4/2026 14:21:36] /r
+[25/4/2026 14:21:40] /i war backpack
+[25/4/2026 14:21:53] /a 1--
+[25/4/2026 14:21:57] /r 10
+[25/4/2026 14:22:0] /r 100
+[25/4/2026 14:22:25] /addskill
+[25/4/2026 14:22:30] /addskill God
+[25/4/2026 14:22:36] /addskill God, 100
+[25/4/2026 14:22:38] /addskill God, 100
+[25/4/2026 14:22:39] /addskill God, 100
+[25/4/2026 14:22:40] /addskill God, 100
+[25/4/2026 14:23:8] /addskill maglevel, 100
+[25/4/2026 14:23:12] /addskill maglevel, God, 100
+[25/4/2026 14:23:23] /addskill god, maglevel, 100
+[25/4/2026 14:24:15] /reload talk
+[25/4/2026 14:24:24] /reload talk
+[25/4/2026 14:26:1] /addskill level, God, 100
+[25/4/2026 14:26:4] /addskill level, God, 100
+[25/4/2026 14:26:27] /level
+[25/4/2026 14:26:31] /level god, 100
+[25/4/2026 14:26:37] /level god, 250
+[25/4/2026 14:27:37] /reload talk
+[25/4/2026 14:27:57] /outfit 1885
+[25/4/2026 14:28:12] /reload talk
+[25/4/2026 14:28:20] /outfit 1884
+[25/4/2026 14:28:23] /outfit 1886
+[25/4/2026 14:28:25] /outfit 1885
+[25/4/2026 14:28:29] /reload talk
+[25/4/2026 14:29:7] /reload talk
+[25/4/2026 14:31:20] /addskill level, god, 100
+[25/4/2026 14:31:25] /addskill level, God, 100
+[25/4/2026 14:31:31] /addskill lvl, God,100
+[25/4/2026 14:31:44] /level 
+[25/4/2026 14:31:50] /level God, 300
+[25/4/2026 14:44:31] /reload talk
+[25/4/2026 14:46:48] /reload talk
+[25/4/2026 14:47:48] /reload talk
+[25/4/2026 14:49:6] /reload talk
+[25/4/2026 14:52:51] /reload talk
+[25/4/2026 15:0:38] /reload talk
+[25/4/2026 15:0:38] /reload spells
+[25/4/2026 15:1:25] /reload talk
+[25/4/2026 15:1:26] /reload spells
+[25/4/2026 15:1:43] /reload spells
+[25/4/2026 15:1:51] /reload spells
+[25/4/2026 15:2:14] /reload spells
+[25/4/2026 15:2:22] /reload spells
+[25/4/2026 15:2:51] /reload talk
+[25/4/2026 15:2:52] /reload spells
+[25/4/2026 15:3:16] /reload spells
+[25/4/2026 15:4:12] /reload talk
+[25/4/2026 15:4:13] /reload spells
+[25/4/2026 15:4:37] /reload talk
+[25/4/2026 15:4:53] /reload talk
+[25/4/2026 15:7:44] /reload talk
+[25/4/2026 15:9:4] /reload talk
+[25/4/2026 15:10:55] /reload talk
+[25/4/2026 15:13:47] /reload talk
+[25/4/2026 15:16:37] /reload talk
+[25/4/2026 15:17:24] /reload talk
+[25/4/2026 15:19:42] /reload spells
+[25/4/2026 15:41:16] /reload talk
+[25/4/2026 15:41:17] /reload spells
+[25/4/2026 15:41:25] /reload spells
+[25/4/2026 15:41:33] /reload spells
+[25/4/2026 15:42:1] /reload spells
+[25/4/2026 15:42:6] /reload spells
+[25/4/2026 15:47:37] /reload spells
+[25/4/2026 15:47:50] /reload spells
+[25/4/2026 15:49:20] /reload spells
+[25/4/2026 15:49:27] /reload spells
+[25/4/2026 15:52:51] /reload talk
+[25/4/2026 15:52:52] /reload spells
+[25/4/2026 15:53:1] /reload talk
+[25/4/2026 15:53:2] /reload talk
+[25/4/2026 15:55:5] /reload spells
+[25/4/2026 15:55:11] /reload spells
+[25/4/2026 16:1:46] /reload spells
+[25/4/2026 16:4:57] /reload spells
+[25/4/2026 16:5:49] /reload spells
+[25/4/2026 16:5:57] /reload spells
+[25/4/2026 16:8:47] /reload spells
+[25/4/2026 16:12:29] /reload spells
+[25/4/2026 16:13:6] /reload spells
+[25/4/2026 16:14:16] /reload spells
+[25/4/2026 16:14:23] /reload spells
+[25/4/2026 16:14:32] /reload spells
+[25/4/2026 16:18:18] /reload spells
+[25/4/2026 16:18:30] /reload spells
+[25/4/2026 16:18:40] /reload spells
+[25/4/2026 16:19:0] /reload spells
+[25/4/2026 16:19:10] /reload spells
+[25/4/2026 16:19:41] /reload spells
+[25/4/2026 16:19:54] /reload spells
+[25/4/2026 16:28:56] /reload spells
+[25/4/2026 16:29:1] /reload spells
+[25/4/2026 16:29:8] /reload spells
+[25/4/2026 16:29:22] /reload spells
+[25/4/2026 16:30:3] /reload spells
+[25/4/2026 16:30:11] /reload spells
+[25/4/2026 16:32:37] /reload spells
+[25/4/2026 16:33:13] /reload spells
+[25/4/2026 16:33:48] /reload spells
+[25/4/2026 16:33:54] /reload spells
+[25/4/2026 16:34:52] /reload spells
+[25/4/2026 16:35:20] /reload spells
+[25/4/2026 16:35:44] /reload spells
+[25/4/2026 16:35:51] /reload spells
+[25/4/2026 16:38:16] /reload spells
+[25/4/2026 16:38:25] /reload spells
+[25/4/2026 16:38:32] /reload spells
+[25/4/2026 16:38:38] /reload spells
+[25/4/2026 16:38:43] /reload spells
+[25/4/2026 16:39:24] /reload spells
+[25/4/2026 16:39:29] /reload spells
+[25/4/2026 16:39:35] /reload spells
+[25/4/2026 16:39:35] /reload spells
+[25/4/2026 16:39:41] /reload spells
+[25/4/2026 16:40:19] /reload spells
+[25/4/2026 16:41:37] /reload spells
+[25/4/2026 16:41:45] /reload spells
+[25/4/2026 16:42:6] /reload spells
+[25/4/2026 16:43:44] /reload spells
+[25/4/2026 16:44:42] /reload spells
+[25/4/2026 16:44:52] /reload spells
+[25/4/2026 16:45:24] /reload spells
+[25/4/2026 16:45:31] /reload spells
+[25/4/2026 16:48:35] /reload spells
+[25/4/2026 16:48:43] /reload spells
+[25/4/2026 16:52:2] /reload spells
+[25/4/2026 16:52:10] /reload spells
+[25/4/2026 16:53:0] /reload spells
+[25/4/2026 16:53:14] /reload spells
+[25/4/2026 16:53:27] /reload spells
+[25/4/2026 16:54:11] /reload spells
+[25/4/2026 16:54:26] /reload spells
+[25/4/2026 16:54:32] /reload spells
+[25/4/2026 16:54:32] /reload spells
+[25/4/2026 16:55:11] /reload spells
+[25/4/2026 16:56:22] /reload spells
+[25/4/2026 16:56:28] /reload spells
+[25/4/2026 16:57:9] /reload spells
+[25/4/2026 16:57:18] /reload spells
+[25/4/2026 16:57:56] /reload spells
+[25/4/2026 17:1:7] /reload spells
+[25/4/2026 17:1:21] /reload spells
+[25/4/2026 17:1:48] /reload spells
+[25/4/2026 17:4:55] /reload spells
+[25/4/2026 17:5:4] /reload spells
+[25/4/2026 17:5:9] /reload spells
+[25/4/2026 17:10:33] /reload spells

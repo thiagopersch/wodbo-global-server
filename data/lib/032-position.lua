@@ -1,12 +1,12 @@
 function isInRange(position, fromPosition, toPosition)
     return (position.x >= fromPosition.x and position.y >= fromPosition.y and
-               position.z >= fromPosition.z and position.x <= toPosition.x and
-               position.y <= toPosition.y and position.z <= toPosition.z)
+        position.z >= fromPosition.z and position.x <= toPosition.x and
+        position.y <= toPosition.y and position.z <= toPosition.z)
 end
 
 function getDistanceBetween(fromPosition, toPosition)
     local x, y = math.abs(fromPosition.x - toPosition.x),
-                 math.abs(fromPosition.y - toPosition.y)
+        math.abs(fromPosition.y - toPosition.y)
     local diff = math.max(x, y)
     if (fromPosition.z ~= toPosition.z) then diff = diff + 9 + 6 end
 
@@ -73,14 +73,14 @@ end
 
 function doComparePositions(position, positionEx)
     return position.x == positionEx.x and position.y == positionEx.y and
-               position.z == positionEx.z
+        position.z == positionEx.z
 end
 
 function getArea(position, x, y)
     local t = {}
     for i = (position.x - x), (position.x + x) do
         for j = (position.y - y), (position.y + y) do
-            table.insert(t, {x = i, y = j, z = position.z})
+            table.insert(t, { x = i, y = j, z = position.z })
         end
     end
 

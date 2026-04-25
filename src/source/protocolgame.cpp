@@ -2949,8 +2949,9 @@ void ProtocolGame::AddCreature(NetworkMessage_ptr msg, const Creature* creature,
 void ProtocolGame::AddPlayerStats(NetworkMessage_ptr msg)
 {
 	msg->put<char>(0xA0);
-	msg->put<uint16_t>(player->getHealth());
+    msg->put<uint16_t>(player->getHealth());
 	msg->put<uint16_t>(player->getPlayerInfo(PLAYERINFO_MAXHEALTH));
+
 	msg->put<uint32_t>(uint32_t(player->getFreeCapacity() * 100));
 	uint64_t experience = player->getExperience();
 	if(experience > 0x7FFFFFFF) // client debugs after 2,147,483,647 exp
@@ -3282,7 +3283,8 @@ void ProtocolGame::MoveDownCreature(NetworkMessage_ptr msg, const Creature* crea
 
 	//south
 	msg->put<char>(0x67);
-	GetMapDescription(oldPos.x - 8, oldPos.y + 7, newPos.z, 18, 1, msg);
+	GetMapDescription(oldPos.x - Map::maxClientViewportX, oldPos.y + (Map::maxClientViewportY+1), newPos.z, ((Map::maxClientViewportX+1)*2), 1, msg);
+	//GetMapDescription(oldPos.x - 8, oldPos.y + 7, newPos.z, 18, 1, msg);
 }
 
 //inventory

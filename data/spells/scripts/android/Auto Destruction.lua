@@ -1,8 +1,8 @@
 local combat = createCombatObject()
 local param = {
-    magEffect = 2307,
+    magEffect = 2376,
     lvl = 75,
-    pos = { x = 3, y = 3, z = 0 }
+    pos = { x = 4, y = 4, z = 0 }
 }
 setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 
@@ -12,7 +12,7 @@ end
 
 setCombatCallback(combat, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
-local area1 = createCombatArea(AREA_SQUARE3X3)
+local area1 = createCombatArea(AREA_SQUARE4X4)
 
 setCombatArea(combat, area1)
 

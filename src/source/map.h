@@ -159,8 +159,8 @@ class Map
 
 		static const int32_t maxViewportX = 18; //min value: maxClientViewportX + 1
 		static const int32_t maxViewportY = 18; //min value: maxClientViewportY + 1
-		static const int32_t maxClientViewportX = 15;
-		static const int32_t maxClientViewportY = 13;
+		static const int32_t maxClientViewportX = 14;
+		static const int32_t maxClientViewportY = 12;
 
 		// static const int32_t maxViewportX = 11; //min value: maxClientViewportX + 1
 		// static const int32_t maxViewportY = 11; //min value: maxClientViewportY + 1

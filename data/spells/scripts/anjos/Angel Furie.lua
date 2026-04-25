@@ -1,8 +1,8 @@
 local combat = createCombatObject()
 local param = {
-    magEffect = 2409,
+    magEffect = 2664,
     lvl = 75,
-    pos = { x = 3, y = 3, z = 0 }
+    pos = { x = 2, y = 2, z = 0 }
 }
 setCombatParam(combat, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 

@@ -10,7 +10,7 @@ CONFIG = {
     },
     [3] = {
         message =
-        "Para ver seu saldo de banco digite !balance, para depositar digite !depositar e para sacar digite !withdraw.",
+        "Para ver seu saldo de banco digite !balance, para depositar digite '!deposit value/all' e para sacar digite '!withdraw value/all'.",
         color = 22
     }
 }

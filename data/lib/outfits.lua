@@ -1,0 +1,62 @@
+-- AnimeOutfitRewards = {
+--   [1] = {
+--     name = "Goku",
+--     outfitId = 1,
+--     addons = 0,
+--     effect = CONST_ME_ENERGYHIT,
+--     color = TEXTCOLOR_YELLOW,
+--     msg = "Goku ativou o modo base!",
+--     auraEffect = CONST_ME_YELLOWENERGY,
+--     auraInterval = 800
+--   },
+--   [30] = {
+--     name = "Goku Kaioken",
+--     outfitId = 2,
+--     addons = 0,
+--     effect = CONST_ME_FIREWORK_RED,
+--     color = TEXTCOLOR_RED,
+--     msg = "KAIOKEN x10! Goku está em chamas!",
+--     auraEffect = CONST_ME_FIREWORK_RED,
+--     auraInterval = 600
+--   },
+--   [50] = {
+--     name = "Goku SSJ",
+--     outfitId = 3,
+--     addons = 0,
+--     effect = CONST_ME_YELLOW_RINGS,
+--     color = TEXTCOLOR_YELLOW,
+--     msg = "SUPER SAIYAJIN! O poder de Goku explodiu!",
+--     auraEffect = CONST_ME_ENERGYBALL,
+--     auraInterval = 700
+--   },
+--   [100] = {
+--     name = "Goku SSJ2",
+--     outfitId = 4,
+--     addons = 0,
+--     effect = CONST_ME_EXPLOSIONAREA,
+--     color = TEXTCOLOR_ORANGE,
+--     msg = "SSJ2! Goku alcançou um novo patamar!",
+--     auraEffect = CONST_ME_ENERGYHIT,
+--     auraInterval = 900
+--   },
+--   [150] = {
+--     name = "Goku SSJ3",
+--     outfitId = 5,
+--     addons = 0,
+--     effect = CONST_ME_STONES,
+--     color = TEXTCOLOR_WHITE,
+--     msg = "SSJ3! O cabelo de Goku cresceu... e o poder também!",
+--     auraEffect = CONST_ME_ENERGYAREA,
+--     auraInterval = 1000
+--   },
+--   [200] = {
+--     name = "Goku SSJ4",
+--     outfitId = 6,
+--     addons = 0,
+--     effect = CONST_ME_DRAWBLOOD,
+--     color = TEXTCOLOR_RED,
+--     msg = "SSJ4! Goku se transformou na fera primal!",
+--     auraEffect = CONST_ME_BIGCLOUDS,
+--     auraInterval = 1200
+--   },
+-- }

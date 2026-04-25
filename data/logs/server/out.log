@@ -1,1258 +1,1695 @@
-[9/11/2025 14:14:2] > Usando SHA1 criptografia
-[9/11/2025 14:14:2] >> Carregando RSA key
-[9/11/2025 14:14:2] >> Iniciando conexao SQL
-[9/11/2025 14:14:2] >> Executando Gerenciador de Banco de Dados
-[9/11/2025 14:14:2] > Optimized database.
-[9/11/2025 14:14:2] >> Carregando items (OTB)
-[9/11/2025 14:14:2] >> Carregando items (XML)
-[9/11/2025 14:14:3] >> Carregando Grupos
-[9/11/2025 14:14:3] >> Carregando Vocacoes
-[9/11/2025 14:14:3] >> Carregando Outfits
-[9/11/2025 14:14:3] >> Carregando Canal de Chat
-[9/11/2025 14:14:3] >> Carregando Sistema
-[9/11/2025 14:14:3] >> Carregando Mods...
-[9/11/2025 14:14:3] > Loading AutoLoot.xml... done.
-[9/11/2025 14:14:3] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:14:3] > Loading highscorebook.xml... done.
-[9/11/2025 14:14:3] > Loading Simple Task.xml... done.
-[9/11/2025 14:14:3] > 4 mods were loaded.
-[9/11/2025 14:14:3] >> Carregando EXP Stages
-[9/11/2025 14:14:3] >> Carregando Monstros
-[9/11/2025 14:14:4] >> Carregando Mapa e Spawns...
-[9/11/2025 14:14:4] > Tamanho do Mapa: 64000x64000.
-[9/11/2025 14:14:4] > Descricao do Mapa: 
-[9/11/2025 14:14:4] "Saved with OTAcademy Map Editor 4.1.1"
-[9/11/2025 14:14:4] "No map description available."
-[9/11/2025 14:14:8] > Mapa carregado em: 4.588 segundos.
-[9/11/2025 14:14:8] > Data carregada em: 0.233 segundos.
-[9/11/2025 14:14:10] > Houses carregada em: 1.793 segundos.
-[9/11/2025 14:14:10] > Content unserialization time: 0.002 seconds.
-[9/11/2025 14:14:10] > Carregando Tipo de PVP... Open PvP
-[9/11/2025 14:14:10] > Inicializando estado do jogo e registrando servicos...
-[9/11/2025 14:14:10] > IP do Servidor: 127.0.0.1
-[9/11/2025 14:14:10] > IP local do Servidor: 172.17.32.1	192.168.1.101	
-[9/11/2025 14:14:10] > Portas do Servidor: 7171	7172	
-[9/11/2025 14:14:10] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[9/11/2025 14:14:20] >> DBOSupreme servidor Online!
+[25/4/2026 10:20:38] > Usando SHA1 criptografia
+[25/4/2026 10:20:38] >> Carregando RSA key
+[25/4/2026 10:20:38] >> Iniciando conexao SQL
+[25/4/2026 10:20:38] >> Executando Gerenciador de Banco de Dados
+[25/4/2026 10:20:38] > Optimized database.
+[25/4/2026 10:20:38] >> Carregando items (OTB)
+[25/4/2026 10:20:38] >> Carregando items (XML)
+[25/4/2026 10:20:38] >> Carregando Grupos
+[25/4/2026 10:20:38] >> Carregando Vocacoes
+[25/4/2026 10:20:38] >> Carregando Outfits
+[25/4/2026 10:20:38] >> Carregando Canal de Chat
+[25/4/2026 10:20:38] >> Carregando Sistema
+[25/4/2026 10:20:42] >> Carregando Mods...
+[25/4/2026 10:20:42] > Loading AutoLoot.xml... done.
+[25/4/2026 10:20:42] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:20:42] > Loading highscorebook.xml... done.
+[25/4/2026 10:20:42] > Loading Simple Task.xml... done.
+[25/4/2026 10:20:42] > 4 mods were loaded.
+[25/4/2026 10:20:42] >> Carregando EXP Stages
+[25/4/2026 10:20:42] >> Carregando Monstros
+[25/4/2026 10:20:46] >> Carregando Mapa e Spawns...
+[25/4/2026 10:20:46] > Tamanho do Mapa: 64000x64000.
+[25/4/2026 10:20:46] > Descricao do Mapa: 
+[25/4/2026 10:20:46] "Saved with OTAcademy Map Editor 4.1.1"
+[25/4/2026 10:20:46] "No map description available."
+[25/4/2026 10:20:49] > Mapa carregado em: 2.727 segundos.
+[25/4/2026 10:20:49] > Data carregada em: 0.397 segundos.
+[25/4/2026 10:20:51] > Houses carregada em: 1.588 segundos.
+[25/4/2026 10:20:51] > Content unserialization time: 0.001 seconds.
+[25/4/2026 10:20:51] > Carregando Tipo de PVP... Open PvP
+[25/4/2026 10:20:51] > Inicializando estado do jogo e registrando servicos...
+[25/4/2026 10:20:51] > IP do Servidor: 127.0.0.1
+[25/4/2026 10:20:51] > IP local do Servidor: 172.23.16.1	192.168.1.104	
+[25/4/2026 10:20:51] > Portas do Servidor: 7171	7172	
+[25/4/2026 10:20:51] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[25/4/2026 10:21:1] >> DBOSupreme servidor Online!
 
-[9/11/2025 14:14:28] God has logged in.
-[9/11/2025 14:16:24] > Loading AutoLoot.xml... done.
-[9/11/2025 14:16:24] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:16:24] > Loading highscorebook.xml... done.
-[9/11/2025 14:16:24] > Loading Simple Task.xml... done.
-[9/11/2025 14:16:24] > 4 mods were loaded.
-[9/11/2025 14:17:4] > Loading AutoLoot.xml... done.
-[9/11/2025 14:17:4] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:17:4] > Loading highscorebook.xml... done.
-[9/11/2025 14:17:4] > Loading Simple Task.xml... done.
-[9/11/2025 14:17:4] > 4 mods were loaded.
+[25/4/2026 10:21:2] God has logged in.
+[25/4/2026 10:25:26] God has logged out.
+[25/4/2026 10:25:26] God has logged in.
 
-[9/11/2025 14:19:3] [Error - GlobalEvent Interface] 
-[9/11/2025 14:19:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 14:19:3] Description: 
-[9/11/2025 14:19:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 14:19:3] stack traceback:
-[9/11/2025 14:19:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 14:19:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 10:25:42] [Error - GlobalEvent Interface] 
+[25/4/2026 10:25:42] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 10:25:42] Description: 
+[25/4/2026 10:25:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 10:25:42] stack traceback:
+[25/4/2026 10:25:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 10:25:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 10:26:4] God has logged out.
+[25/4/2026 10:26:4] God has logged in.
+[25/4/2026 10:28:0] God has logged out.
+[25/4/2026 10:28:0] God has logged in.
 
-[9/11/2025 14:24:3] [Error - GlobalEvent Interface] 
-[9/11/2025 14:24:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 14:24:3] Description: 
-[9/11/2025 14:24:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 14:24:3] stack traceback:
-[9/11/2025 14:24:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 14:24:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 14:27:30] > Loading AutoLoot.xml... done.
-[9/11/2025 14:27:30] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:27:30] > Loading highscorebook.xml... done.
-[9/11/2025 14:27:30] > Loading Simple Task.xml... done.
-[9/11/2025 14:27:30] > 4 mods were loaded.
-[9/11/2025 14:27:42] > Loading AutoLoot.xml... done.
-[9/11/2025 14:27:42] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:27:42] > Loading highscorebook.xml... done.
-[9/11/2025 14:27:42] > Loading Simple Task.xml... done.
-[9/11/2025 14:27:42] > 4 mods were loaded.
-[9/11/2025 14:27:52] > Loading AutoLoot.xml... done.
-[9/11/2025 14:27:52] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:27:52] > Loading highscorebook.xml... done.
-[9/11/2025 14:27:52] > Loading Simple Task.xml... done.
-[9/11/2025 14:27:52] > 4 mods were loaded.
-[9/11/2025 14:28:32] > Loading AutoLoot.xml... done.
-[9/11/2025 14:28:32] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:28:32] > Loading highscorebook.xml... done.
-[9/11/2025 14:28:32] > Loading Simple Task.xml... done.
-[9/11/2025 14:28:32] > 4 mods were loaded.
-[9/11/2025 14:28:51] > Loading AutoLoot.xml... done.
-[9/11/2025 14:28:51] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:28:51] > Loading highscorebook.xml... done.
-[9/11/2025 14:28:51] > Loading Simple Task.xml... done.
-[9/11/2025 14:28:51] > 4 mods were loaded.
+[25/4/2026 10:30:42] [Error - GlobalEvent Interface] 
+[25/4/2026 10:30:42] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 10:30:42] Description: 
+[25/4/2026 10:30:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 10:30:42] stack traceback:
+[25/4/2026 10:30:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 10:30:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 10:34:43] God has logged out.
+[25/4/2026 10:34:44] God has logged in.
+[25/4/2026 10:34:52] > Loading AutoLoot.xml... done.
+[25/4/2026 10:34:52] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:34:52] > Loading highscorebook.xml... done.
+[25/4/2026 10:34:52] > Loading Simple Task.xml... done.
+[25/4/2026 10:34:52] > 4 mods were loaded.
+[25/4/2026 10:35:26] > Loading AutoLoot.xml... done.
+[25/4/2026 10:35:26] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:35:26] > Loading highscorebook.xml... done.
+[25/4/2026 10:35:26] > Loading Simple Task.xml... done.
+[25/4/2026 10:35:26] > 4 mods were loaded.
 
-[9/11/2025 14:29:3] [Error - GlobalEvent Interface] 
-[9/11/2025 14:29:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 14:29:3] Description: 
-[9/11/2025 14:29:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 14:29:3] stack traceback:
-[9/11/2025 14:29:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 14:29:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 14:29:8] > Loading AutoLoot.xml... done.
-[9/11/2025 14:29:8] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:29:8] > Loading highscorebook.xml... done.
-[9/11/2025 14:29:8] > Loading Simple Task.xml... done.
-[9/11/2025 14:29:8] > 4 mods were loaded.
-[9/11/2025 14:30:29] > Loading AutoLoot.xml... done.
-[9/11/2025 14:30:29] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:30:29] > Loading highscorebook.xml... done.
-[9/11/2025 14:30:29] > Loading Simple Task.xml... done.
-[9/11/2025 14:30:29] > 4 mods were loaded.
-[9/11/2025 14:32:1] > Loading AutoLoot.xml... done.
-[9/11/2025 14:32:1] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:32:1] > Loading highscorebook.xml... done.
-[9/11/2025 14:32:1] > Loading Simple Task.xml... done.
-[9/11/2025 14:32:1] > 4 mods were loaded.
+[25/4/2026 10:35:42] [Error - GlobalEvent Interface] 
+[25/4/2026 10:35:42] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 10:35:42] Description: 
+[25/4/2026 10:35:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 10:35:42] stack traceback:
+[25/4/2026 10:35:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 10:35:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 14:34:3] [Error - GlobalEvent Interface] 
-[9/11/2025 14:34:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 14:34:3] Description: 
-[9/11/2025 14:34:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 14:34:3] stack traceback:
-[9/11/2025 14:34:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 14:34:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 14:35:49] > Loading AutoLoot.xml... done.
-[9/11/2025 14:35:49] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:35:49] > Loading highscorebook.xml... done.
-[9/11/2025 14:35:49] > Loading Simple Task.xml... done.
-[9/11/2025 14:35:49] > 4 mods were loaded.
+[25/4/2026 10:40:42] [Error - GlobalEvent Interface] 
+[25/4/2026 10:40:42] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 10:40:42] Description: 
+[25/4/2026 10:40:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 10:40:42] stack traceback:
+[25/4/2026 10:40:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 10:40:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 10:41:27] > Loading AutoLoot.xml... done.
+[25/4/2026 10:41:27] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:41:27] > Loading highscorebook.xml... done.
+[25/4/2026 10:41:27] > Loading Simple Task.xml... done.
+[25/4/2026 10:41:27] > 4 mods were loaded.
+[25/4/2026 10:43:44] > Loading AutoLoot.xml... done.
+[25/4/2026 10:43:44] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:43:44] > Loading highscorebook.xml... done.
+[25/4/2026 10:43:44] > Loading Simple Task.xml... done.
+[25/4/2026 10:43:44] > 4 mods were loaded.
+[25/4/2026 10:44:7] > Loading AutoLoot.xml... done.
+[25/4/2026 10:44:7] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:44:7] > Loading highscorebook.xml... done.
+[25/4/2026 10:44:7] > Loading Simple Task.xml... done.
+[25/4/2026 10:44:7] > 4 mods were loaded.
+[25/4/2026 10:45:39] > Loading AutoLoot.xml... done.
+[25/4/2026 10:45:39] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:45:39] > Loading highscorebook.xml... done.
+[25/4/2026 10:45:39] > Loading Simple Task.xml... done.
+[25/4/2026 10:45:39] > 4 mods were loaded.
 
-[9/11/2025 14:39:3] [Error - GlobalEvent Interface] 
-[9/11/2025 14:39:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 14:39:3] Description: 
-[9/11/2025 14:39:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 14:39:3] stack traceback:
-[9/11/2025 14:39:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 14:39:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 14:41:57] > Loading AutoLoot.xml... done.
-[9/11/2025 14:41:57] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:41:57] > Loading highscorebook.xml... done.
-[9/11/2025 14:41:57] > Loading Simple Task.xml... done.
-[9/11/2025 14:41:57] > 4 mods were loaded.
-[9/11/2025 14:42:6] > Loading AutoLoot.xml... done.
-[9/11/2025 14:42:6] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:42:6] > Loading highscorebook.xml... done.
-[9/11/2025 14:42:6] > Loading Simple Task.xml... done.
-[9/11/2025 14:42:6] > 4 mods were loaded.
-[9/11/2025 14:43:6] > Loading AutoLoot.xml... done.
-[9/11/2025 14:43:6] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:43:6] > Loading highscorebook.xml... done.
-[9/11/2025 14:43:6] > Loading Simple Task.xml... done.
-[9/11/2025 14:43:6] > 4 mods were loaded.
+[25/4/2026 10:45:42] [Error - GlobalEvent Interface] 
+[25/4/2026 10:45:42] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 10:45:42] Description: 
+[25/4/2026 10:45:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 10:45:42] stack traceback:
+[25/4/2026 10:45:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 10:45:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 10:50:9] > Loading AutoLoot.xml... done.
+[25/4/2026 10:50:9] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:50:9] > Loading highscorebook.xml... done.
+[25/4/2026 10:50:9] > Loading Simple Task.xml... done.
+[25/4/2026 10:50:9] > 4 mods were loaded.
+[25/4/2026 10:50:33] > Loading AutoLoot.xml... done.
+[25/4/2026 10:50:33] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:50:33] > Loading highscorebook.xml... done.
+[25/4/2026 10:50:33] > Loading Simple Task.xml... done.
+[25/4/2026 10:50:33] > 4 mods were loaded.
 
-[9/11/2025 14:44:3] [Error - GlobalEvent Interface] 
-[9/11/2025 14:44:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 14:44:3] Description: 
-[9/11/2025 14:44:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 14:44:3] stack traceback:
-[9/11/2025 14:44:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 14:44:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 10:50:42] [Error - GlobalEvent Interface] 
+[25/4/2026 10:50:42] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 10:50:42] Description: 
+[25/4/2026 10:50:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 10:50:42] stack traceback:
+[25/4/2026 10:50:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 10:50:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 10:50:44] > Loading AutoLoot.xml... done.
+[25/4/2026 10:50:44] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:50:44] > Loading highscorebook.xml... done.
+[25/4/2026 10:50:44] > Loading Simple Task.xml... done.
+[25/4/2026 10:50:44] > 4 mods were loaded.
+[25/4/2026 10:54:53] > Loading AutoLoot.xml... done.
+[25/4/2026 10:54:53] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:54:53] > Loading highscorebook.xml... done.
+[25/4/2026 10:54:53] > Loading Simple Task.xml... done.
+[25/4/2026 10:54:53] > 4 mods were loaded.
+[25/4/2026 10:55:5] > Loading AutoLoot.xml... done.
+[25/4/2026 10:55:5] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:55:5] > Loading highscorebook.xml... done.
+[25/4/2026 10:55:5] > Loading Simple Task.xml... done.
+[25/4/2026 10:55:5] > 4 mods were loaded.
 
-[9/11/2025 14:49:3] [Error - GlobalEvent Interface] 
-[9/11/2025 14:49:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 14:49:3] Description: 
-[9/11/2025 14:49:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 14:49:3] stack traceback:
-[9/11/2025 14:49:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 14:49:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 10:55:42] [Error - GlobalEvent Interface] 
+[25/4/2026 10:55:42] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 10:55:42] Description: 
+[25/4/2026 10:55:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 10:55:42] stack traceback:
+[25/4/2026 10:55:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 10:55:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 10:56:9] > Loading AutoLoot.xml... done.
+[25/4/2026 10:56:9] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:56:9] > Loading highscorebook.xml... done.
+[25/4/2026 10:56:9] > Loading Simple Task.xml... done.
+[25/4/2026 10:56:9] > 4 mods were loaded.
+[25/4/2026 10:56:40] > Loading AutoLoot.xml... done.
+[25/4/2026 10:56:40] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:56:40] > Loading highscorebook.xml... done.
+[25/4/2026 10:56:40] > Loading Simple Task.xml... done.
+[25/4/2026 10:56:40] > 4 mods were loaded.
+[25/4/2026 10:59:10] > Loading AutoLoot.xml... done.
+[25/4/2026 10:59:10] > Loading Automatic Raids.xml... done.
+[25/4/2026 10:59:10] > Loading highscorebook.xml... done.
+[25/4/2026 10:59:10] > Loading Simple Task.xml... done.
+[25/4/2026 10:59:10] > 4 mods were loaded.
+[25/4/2026 11:0:13] > Loading AutoLoot.xml... done.
+[25/4/2026 11:0:13] > Loading Automatic Raids.xml... done.
+[25/4/2026 11:0:13] > Loading highscorebook.xml... done.
+[25/4/2026 11:0:13] > Loading Simple Task.xml... done.
+[25/4/2026 11:0:13] > 4 mods were loaded.
 
-[9/11/2025 14:54:3] [Error - GlobalEvent Interface] 
-[9/11/2025 14:54:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 14:54:3] Description: 
-[9/11/2025 14:54:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 14:54:3] stack traceback:
-[9/11/2025 14:54:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 14:54:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 14:54:41] > Loading AutoLoot.xml... done.
-[9/11/2025 14:54:41] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:54:41] > Loading highscorebook.xml... done.
-[9/11/2025 14:54:41] > Loading Simple Task.xml... done.
-[9/11/2025 14:54:41] > 4 mods were loaded.
-[9/11/2025 14:55:23] > Loading AutoLoot.xml... done.
-[9/11/2025 14:55:23] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:55:23] > Loading highscorebook.xml... done.
-[9/11/2025 14:55:23] > Loading Simple Task.xml... done.
-[9/11/2025 14:55:23] > 4 mods were loaded.
-[9/11/2025 14:55:24] > Loading AutoLoot.xml... done.
-[9/11/2025 14:55:24] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:55:24] > Loading highscorebook.xml... done.
-[9/11/2025 14:55:24] > Loading Simple Task.xml... done.
-[9/11/2025 14:55:24] > 4 mods were loaded.
-[9/11/2025 14:57:33] > Loading AutoLoot.xml... done.
-[9/11/2025 14:57:33] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:57:33] > Loading highscorebook.xml... done.
-[9/11/2025 14:57:33] > Loading Simple Task.xml... done.
-[9/11/2025 14:57:33] > 4 mods were loaded.
-[9/11/2025 14:57:40] > Loading AutoLoot.xml... done.
-[9/11/2025 14:57:40] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:57:40] > Loading highscorebook.xml... done.
-[9/11/2025 14:57:40] > Loading Simple Task.xml... done.
-[9/11/2025 14:57:40] > 4 mods were loaded.
-[9/11/2025 14:57:54] > Loading AutoLoot.xml... done.
-[9/11/2025 14:57:54] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:57:54] > Loading highscorebook.xml... done.
-[9/11/2025 14:57:54] > Loading Simple Task.xml... done.
-[9/11/2025 14:57:54] > 4 mods were loaded.
-[9/11/2025 14:58:7] > Loading AutoLoot.xml... done.
-[9/11/2025 14:58:7] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:58:7] > Loading highscorebook.xml... done.
-[9/11/2025 14:58:7] > Loading Simple Task.xml... done.
-[9/11/2025 14:58:7] > 4 mods were loaded.
-[9/11/2025 14:58:10] > Loading AutoLoot.xml... done.
-[9/11/2025 14:58:10] > Loading Automatic Raids.xml... done.
-[9/11/2025 14:58:10] > Loading highscorebook.xml... done.
-[9/11/2025 14:58:10] > Loading Simple Task.xml... done.
-[9/11/2025 14:58:10] > 4 mods were loaded.
+[25/4/2026 11:0:42] [Error - GlobalEvent Interface] 
+[25/4/2026 11:0:42] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 11:0:42] Description: 
+[25/4/2026 11:0:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 11:0:42] stack traceback:
+[25/4/2026 11:0:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 11:0:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 14:59:3] [Error - GlobalEvent Interface] 
-[9/11/2025 14:59:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 14:59:3] Description: 
-[9/11/2025 14:59:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 14:59:3] stack traceback:
-[9/11/2025 14:59:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 14:59:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 15:1:49] > Loading AutoLoot.xml... done.
-[9/11/2025 15:1:49] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:1:49] > Loading highscorebook.xml... done.
-[9/11/2025 15:1:49] > Loading Simple Task.xml... done.
-[9/11/2025 15:1:49] > 4 mods were loaded.
-[9/11/2025 15:3:44] > Loading AutoLoot.xml... done.
-[9/11/2025 15:3:44] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:3:44] > Loading highscorebook.xml... done.
-[9/11/2025 15:3:44] > Loading Simple Task.xml... done.
-[9/11/2025 15:3:44] > 4 mods were loaded.
+[25/4/2026 11:5:42] [Error - GlobalEvent Interface] 
+[25/4/2026 11:5:42] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 11:5:42] Description: 
+[25/4/2026 11:5:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 11:5:42] stack traceback:
+[25/4/2026 11:5:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 11:5:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 15:4:3] [Error - GlobalEvent Interface] 
-[9/11/2025 15:4:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 15:4:3] Description: 
-[9/11/2025 15:4:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 15:4:3] stack traceback:
-[9/11/2025 15:4:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 15:4:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 15:6:23] > Loading AutoLoot.xml... done.
-[9/11/2025 15:6:23] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:6:23] > Loading highscorebook.xml... done.
-[9/11/2025 15:6:23] > Loading Simple Task.xml... done.
-[9/11/2025 15:6:23] > 4 mods were loaded.
+[25/4/2026 11:10:42] [Error - GlobalEvent Interface] 
+[25/4/2026 11:10:42] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 11:10:42] Description: 
+[25/4/2026 11:10:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 11:10:42] stack traceback:
+[25/4/2026 11:10:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 11:10:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 15:9:3] [Error - GlobalEvent Interface] 
-[9/11/2025 15:9:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 15:9:3] Description: 
-[9/11/2025 15:9:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 15:9:3] stack traceback:
-[9/11/2025 15:9:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 15:9:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 11:15:42] [Error - GlobalEvent Interface] 
+[25/4/2026 11:15:42] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 11:15:42] Description: 
+[25/4/2026 11:15:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 11:15:42] stack traceback:
+[25/4/2026 11:15:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 11:15:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 15:14:3] [Error - GlobalEvent Interface] 
-[9/11/2025 15:14:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 15:14:3] Description: 
-[9/11/2025 15:14:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 15:14:3] stack traceback:
-[9/11/2025 15:14:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 15:14:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 15:16:3] > Salvando servidor...
-[9/11/2025 15:16:3] > SAVE: Completo em 0.086 segundos usando binary casa storage.
-[9/11/2025 15:16:49] > Loading AutoLoot.xml... done.
-[9/11/2025 15:16:49] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:16:49] > Loading highscorebook.xml... done.
-[9/11/2025 15:16:49] > Loading Simple Task.xml... done.
-[9/11/2025 15:16:49] > 4 mods were loaded.
-[9/11/2025 15:17:38] God has logged out.
-[9/11/2025 15:17:38] God has logged in.
-[9/11/2025 15:18:59] > Loading AutoLoot.xml... done.
-[9/11/2025 15:18:59] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:18:59] > Loading highscorebook.xml... done.
-[9/11/2025 15:18:59] > Loading Simple Task.xml... done.
-[9/11/2025 15:18:59] > 4 mods were loaded.
+[25/4/2026 11:20:42] [Error - GlobalEvent Interface] 
+[25/4/2026 11:20:42] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 11:20:42] Description: 
+[25/4/2026 11:20:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 11:20:42] stack traceback:
+[25/4/2026 11:20:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 11:20:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 11:22:42] > Salvando servidor...
+[25/4/2026 11:22:42] > SAVE: Completo em 0.09 segundos usando binary casa storage.
 
-[9/11/2025 15:19:3] [Error - GlobalEvent Interface] 
-[9/11/2025 15:19:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 15:19:3] Description: 
-[9/11/2025 15:19:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 15:19:3] stack traceback:
-[9/11/2025 15:19:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 15:19:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 15:19:14] > Loading AutoLoot.xml... done.
-[9/11/2025 15:19:14] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:19:14] > Loading highscorebook.xml... done.
-[9/11/2025 15:19:14] > Loading Simple Task.xml... done.
-[9/11/2025 15:19:14] > 4 mods were loaded.
-[9/11/2025 15:20:42] > Loading AutoLoot.xml... done.
-[9/11/2025 15:20:42] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:20:42] > Loading highscorebook.xml... done.
-[9/11/2025 15:20:42] > Loading Simple Task.xml... done.
-[9/11/2025 15:20:42] > 4 mods were loaded.
-[9/11/2025 15:20:43] > Loading AutoLoot.xml... done.
-[9/11/2025 15:20:43] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:20:43] > Loading highscorebook.xml... done.
-[9/11/2025 15:20:43] > Loading Simple Task.xml... done.
-[9/11/2025 15:20:43] > 4 mods were loaded.
-[9/11/2025 15:21:25] > Loading AutoLoot.xml... done.
-[9/11/2025 15:21:25] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:21:25] > Loading highscorebook.xml... done.
-[9/11/2025 15:21:25] > Loading Simple Task.xml... done.
-[9/11/2025 15:21:25] > 4 mods were loaded.
-[9/11/2025 15:21:32] > Loading AutoLoot.xml... done.
-[9/11/2025 15:21:32] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:21:32] > Loading highscorebook.xml... done.
-[9/11/2025 15:21:32] > Loading Simple Task.xml... done.
-[9/11/2025 15:21:32] > 4 mods were loaded.
-[9/11/2025 15:22:42] > Loading AutoLoot.xml... done.
-[9/11/2025 15:22:42] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:22:42] > Loading highscorebook.xml... done.
-[9/11/2025 15:22:42] > Loading Simple Task.xml... done.
-[9/11/2025 15:22:42] > 4 mods were loaded.
-[9/11/2025 15:23:30] > Loading AutoLoot.xml... done.
-[9/11/2025 15:23:30] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:23:30] > Loading highscorebook.xml... done.
-[9/11/2025 15:23:30] > Loading Simple Task.xml... done.
-[9/11/2025 15:23:30] > 4 mods were loaded.
+[25/4/2026 11:25:43] [Error - GlobalEvent Interface] 
+[25/4/2026 11:25:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 11:25:43] Description: 
+[25/4/2026 11:25:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 11:25:43] stack traceback:
+[25/4/2026 11:25:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 11:25:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 15:24:3] [Error - GlobalEvent Interface] 
-[9/11/2025 15:24:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 15:24:3] Description: 
-[9/11/2025 15:24:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 15:24:3] stack traceback:
-[9/11/2025 15:24:3] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 15:24:3] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 15:24:44] > Loading AutoLoot.xml... done.
-[9/11/2025 15:24:44] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:24:44] > Loading highscorebook.xml... done.
-[9/11/2025 15:24:44] > Loading Simple Task.xml... done.
-[9/11/2025 15:24:44] > 4 mods were loaded.
-[9/11/2025 15:24:54] > Loading AutoLoot.xml... done.
-[9/11/2025 15:24:54] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:24:54] > Loading highscorebook.xml... done.
-[9/11/2025 15:24:54] > Loading Simple Task.xml... done.
-[9/11/2025 15:24:54] > 4 mods were loaded.
-[9/11/2025 15:28:38] > Loading AutoLoot.xml... done.
-[9/11/2025 15:28:38] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:28:38] > Loading highscorebook.xml... done.
-[9/11/2025 15:28:38] > Loading Simple Task.xml... done.
-[9/11/2025 15:28:38] > 4 mods were loaded.
+[25/4/2026 11:30:43] [Error - GlobalEvent Interface] 
+[25/4/2026 11:30:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 11:30:43] Description: 
+[25/4/2026 11:30:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 11:30:43] stack traceback:
+[25/4/2026 11:30:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 11:30:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 11:33:34] > Loading AutoLoot.xml... done.
+[25/4/2026 11:33:34] > Loading Automatic Raids.xml... done.
+[25/4/2026 11:33:34] > Loading highscorebook.xml... done.
+[25/4/2026 11:33:34] > Loading Simple Task.xml... done.
+[25/4/2026 11:33:34] > 4 mods were loaded.
+[25/4/2026 11:34:58] > Loading AutoLoot.xml... done.
+[25/4/2026 11:34:58] > Loading Automatic Raids.xml... done.
+[25/4/2026 11:34:58] > Loading highscorebook.xml... done.
+[25/4/2026 11:34:58] > Loading Simple Task.xml... done.
+[25/4/2026 11:34:58] > 4 mods were loaded.
+[25/4/2026 11:35:9] > Loading AutoLoot.xml... done.
+[25/4/2026 11:35:9] > Loading Automatic Raids.xml... done.
+[25/4/2026 11:35:9] > Loading highscorebook.xml... done.
+[25/4/2026 11:35:9] > Loading Simple Task.xml... done.
+[25/4/2026 11:35:9] > 4 mods were loaded.
 
-[9/11/2025 15:29:3] [Error - GlobalEvent Interface] 
-[9/11/2025 15:29:3] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 15:29:3] Description: 
-[9/11/2025 15:29:3] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 15:29:3] stack traceback:
-[9/11/2025 15:29:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 15:29:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 15:29:52] > Loading AutoLoot.xml... done.
-[9/11/2025 15:29:52] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:29:52] > Loading highscorebook.xml... done.
-[9/11/2025 15:29:52] > Loading Simple Task.xml... done.
-[9/11/2025 15:29:52] > 4 mods were loaded.
-[9/11/2025 15:30:2] > Loading AutoLoot.xml... done.
-[9/11/2025 15:30:2] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:30:2] > Loading highscorebook.xml... done.
-[9/11/2025 15:30:2] > Loading Simple Task.xml... done.
-[9/11/2025 15:30:2] > 4 mods were loaded.
-[9/11/2025 15:30:11] > Loading AutoLoot.xml... done.
-[9/11/2025 15:30:11] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:30:11] > Loading highscorebook.xml... done.
-[9/11/2025 15:30:11] > Loading Simple Task.xml... done.
-[9/11/2025 15:30:11] > 4 mods were loaded.
+[25/4/2026 11:35:43] [Error - GlobalEvent Interface] 
+[25/4/2026 11:35:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 11:35:43] Description: 
+[25/4/2026 11:35:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 11:35:43] stack traceback:
+[25/4/2026 11:35:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 11:35:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 11:36:10] > Loading AutoLoot.xml... done.
+[25/4/2026 11:36:10] > Loading Automatic Raids.xml... done.
+[25/4/2026 11:36:10] > Loading highscorebook.xml... done.
+[25/4/2026 11:36:10] > Loading Simple Task.xml... done.
+[25/4/2026 11:36:10] > 4 mods were loaded.
+[25/4/2026 11:39:29] > Loading AutoLoot.xml... done.
+[25/4/2026 11:39:29] > Loading Automatic Raids.xml... done.
+[25/4/2026 11:39:29] > Loading highscorebook.xml... done.
+[25/4/2026 11:39:29] > Loading Simple Task.xml... done.
+[25/4/2026 11:39:29] > 4 mods were loaded.
+[25/4/2026 11:39:36] > Loading AutoLoot.xml... done.
+[25/4/2026 11:39:36] > Loading Automatic Raids.xml... done.
+[25/4/2026 11:39:36] > Loading highscorebook.xml... done.
+[25/4/2026 11:39:36] > Loading Simple Task.xml... done.
+[25/4/2026 11:39:36] > 4 mods were loaded.
+[25/4/2026 11:39:42] > Loading AutoLoot.xml... done.
+[25/4/2026 11:39:42] > Loading Automatic Raids.xml... done.
+[25/4/2026 11:39:42] > Loading highscorebook.xml... done.
+[25/4/2026 11:39:42] > Loading Simple Task.xml... done.
+[25/4/2026 11:39:42] > 4 mods were loaded.
+[25/4/2026 11:40:6] > Loading AutoLoot.xml... done.
+[25/4/2026 11:40:6] > Loading Automatic Raids.xml... done.
+[25/4/2026 11:40:6] > Loading highscorebook.xml... done.
+[25/4/2026 11:40:6] > Loading Simple Task.xml... done.
+[25/4/2026 11:40:6] > 4 mods were loaded.
 
-[9/11/2025 15:34:4] [Error - GlobalEvent Interface] 
-[9/11/2025 15:34:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 15:34:4] Description: 
-[9/11/2025 15:34:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 15:34:4] stack traceback:
-[9/11/2025 15:34:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 15:34:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 15:34:52] > Loading AutoLoot.xml... done.
-[9/11/2025 15:34:52] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:34:52] > Loading highscorebook.xml... done.
-[9/11/2025 15:34:52] > Loading Simple Task.xml... done.
-[9/11/2025 15:34:52] > 4 mods were loaded.
-[9/11/2025 15:36:7] > Loading AutoLoot.xml... done.
-[9/11/2025 15:36:7] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:36:7] > Loading highscorebook.xml... done.
-[9/11/2025 15:36:7] > Loading Simple Task.xml... done.
-[9/11/2025 15:36:7] > 4 mods were loaded.
-[9/11/2025 15:37:12] > Loading AutoLoot.xml... done.
-[9/11/2025 15:37:12] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:37:12] > Loading highscorebook.xml... done.
-[9/11/2025 15:37:12] > Loading Simple Task.xml... done.
-[9/11/2025 15:37:12] > 4 mods were loaded.
-[9/11/2025 15:38:31] > Loading AutoLoot.xml... done.
-[9/11/2025 15:38:31] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:38:31] > Loading highscorebook.xml... done.
-[9/11/2025 15:38:31] > Loading Simple Task.xml... done.
-[9/11/2025 15:38:31] > 4 mods were loaded.
+[25/4/2026 11:40:43] [Error - GlobalEvent Interface] 
+[25/4/2026 11:40:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 11:40:43] Description: 
+[25/4/2026 11:40:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 11:40:43] stack traceback:
+[25/4/2026 11:40:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 11:40:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 15:39:4] [Error - GlobalEvent Interface] 
-[9/11/2025 15:39:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 15:39:4] Description: 
-[9/11/2025 15:39:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 15:39:4] stack traceback:
-[9/11/2025 15:39:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 15:39:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 15:41:8] > Loading AutoLoot.xml... done.
-[9/11/2025 15:41:8] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:41:8] > Loading highscorebook.xml... done.
-[9/11/2025 15:41:8] > Loading Simple Task.xml... done.
-[9/11/2025 15:41:8] > 4 mods were loaded.
-[9/11/2025 15:41:16] > Loading AutoLoot.xml... done.
-[9/11/2025 15:41:16] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:41:16] > Loading highscorebook.xml... done.
-[9/11/2025 15:41:16] > Loading Simple Task.xml... done.
-[9/11/2025 15:41:16] > 4 mods were loaded.
-[9/11/2025 15:42:44] > Loading AutoLoot.xml... done.
-[9/11/2025 15:42:44] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:42:44] > Loading highscorebook.xml... done.
-[9/11/2025 15:42:44] > Loading Simple Task.xml... done.
-[9/11/2025 15:42:44] > 4 mods were loaded.
+[25/4/2026 11:45:43] [Error - GlobalEvent Interface] 
+[25/4/2026 11:45:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 11:45:43] Description: 
+[25/4/2026 11:45:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 11:45:43] stack traceback:
+[25/4/2026 11:45:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 11:45:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 15:44:4] [Error - GlobalEvent Interface] 
-[9/11/2025 15:44:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 15:44:4] Description: 
-[9/11/2025 15:44:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 15:44:4] stack traceback:
-[9/11/2025 15:44:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 15:44:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 15:46:37] > Loading AutoLoot.xml... done.
-[9/11/2025 15:46:37] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:46:37] > Loading highscorebook.xml... done.
-[9/11/2025 15:46:37] > Loading Simple Task.xml... done.
-[9/11/2025 15:46:37] > 4 mods were loaded.
-[9/11/2025 15:47:13] > Loading AutoLoot.xml... done.
-[9/11/2025 15:47:13] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:47:13] > Loading highscorebook.xml... done.
-[9/11/2025 15:47:13] > Loading Simple Task.xml... done.
-[9/11/2025 15:47:13] > 4 mods were loaded.
-[9/11/2025 15:47:22] > Loading AutoLoot.xml... done.
-[9/11/2025 15:47:22] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:47:22] > Loading highscorebook.xml... done.
-[9/11/2025 15:47:22] > Loading Simple Task.xml... done.
-[9/11/2025 15:47:22] > 4 mods were loaded.
-[9/11/2025 15:48:46] > Loading AutoLoot.xml... done.
-[9/11/2025 15:48:46] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:48:46] > Loading highscorebook.xml... done.
-[9/11/2025 15:48:46] > Loading Simple Task.xml... done.
-[9/11/2025 15:48:46] > 4 mods were loaded.
+[25/4/2026 11:50:43] [Error - GlobalEvent Interface] 
+[25/4/2026 11:50:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 11:50:43] Description: 
+[25/4/2026 11:50:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 11:50:43] stack traceback:
+[25/4/2026 11:50:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 11:50:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 15:49:4] [Error - GlobalEvent Interface] 
-[9/11/2025 15:49:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 15:49:4] Description: 
-[9/11/2025 15:49:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 15:49:4] stack traceback:
-[9/11/2025 15:49:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 15:49:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 15:51:12] > Loading AutoLoot.xml... done.
-[9/11/2025 15:51:12] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:51:12] > Loading highscorebook.xml... done.
-[9/11/2025 15:51:12] > Loading Simple Task.xml... done.
-[9/11/2025 15:51:12] > 4 mods were loaded.
-[9/11/2025 15:52:20] > Loading AutoLoot.xml... done.
-[9/11/2025 15:52:20] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:52:20] > Loading highscorebook.xml... done.
-[9/11/2025 15:52:20] > Loading Simple Task.xml... done.
-[9/11/2025 15:52:20] > 4 mods were loaded.
+[25/4/2026 11:55:43] [Error - GlobalEvent Interface] 
+[25/4/2026 11:55:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 11:55:43] Description: 
+[25/4/2026 11:55:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 11:55:43] stack traceback:
+[25/4/2026 11:55:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 11:55:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 15:54:4] [Error - GlobalEvent Interface] 
-[9/11/2025 15:54:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 15:54:4] Description: 
-[9/11/2025 15:54:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 15:54:4] stack traceback:
-[9/11/2025 15:54:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 15:54:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 15:57:55] > Loading AutoLoot.xml... done.
-[9/11/2025 15:57:55] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:57:55] > Loading highscorebook.xml... done.
-[9/11/2025 15:57:55] > Loading Simple Task.xml... done.
-[9/11/2025 15:57:55] > 4 mods were loaded.
-[9/11/2025 15:58:6] > Loading AutoLoot.xml... done.
-[9/11/2025 15:58:6] > Loading Automatic Raids.xml... done.
-[9/11/2025 15:58:6] > Loading highscorebook.xml... done.
-[9/11/2025 15:58:6] > Loading Simple Task.xml... done.
-[9/11/2025 15:58:6] > 4 mods were loaded.
+[25/4/2026 12:0:43] [Error - GlobalEvent Interface] 
+[25/4/2026 12:0:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 12:0:43] Description: 
+[25/4/2026 12:0:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 12:0:43] stack traceback:
+[25/4/2026 12:0:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 12:0:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 15:59:4] [Error - GlobalEvent Interface] 
-[9/11/2025 15:59:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 15:59:4] Description: 
-[9/11/2025 15:59:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 15:59:4] stack traceback:
-[9/11/2025 15:59:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 15:59:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 16:0:5] > Loading AutoLoot.xml... done.
-[9/11/2025 16:0:5] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:0:5] > Loading highscorebook.xml... done.
-[9/11/2025 16:0:5] > Loading Simple Task.xml... done.
-[9/11/2025 16:0:5] > 4 mods were loaded.
-[9/11/2025 16:0:55] > Loading AutoLoot.xml... done.
-[9/11/2025 16:0:55] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:0:55] > Loading highscorebook.xml... done.
-[9/11/2025 16:0:55] > Loading Simple Task.xml... done.
-[9/11/2025 16:0:55] > 4 mods were loaded.
-[9/11/2025 16:1:31] > Loading AutoLoot.xml... done.
-[9/11/2025 16:1:31] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:1:31] > Loading highscorebook.xml... done.
-[9/11/2025 16:1:31] > Loading Simple Task.xml... done.
-[9/11/2025 16:1:31] > 4 mods were loaded.
-[9/11/2025 16:3:19] > Loading AutoLoot.xml... done.
-[9/11/2025 16:3:19] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:3:19] > Loading highscorebook.xml... done.
-[9/11/2025 16:3:19] > Loading Simple Task.xml... done.
-[9/11/2025 16:3:19] > 4 mods were loaded.
-[9/11/2025 16:3:34] > Loading AutoLoot.xml... done.
-[9/11/2025 16:3:34] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:3:34] > Loading highscorebook.xml... done.
-[9/11/2025 16:3:34] > Loading Simple Task.xml... done.
-[9/11/2025 16:3:34] > 4 mods were loaded.
-[9/11/2025 16:3:43] > Loading AutoLoot.xml... done.
-[9/11/2025 16:3:43] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:3:43] > Loading highscorebook.xml... done.
-[9/11/2025 16:3:43] > Loading Simple Task.xml... done.
-[9/11/2025 16:3:43] > 4 mods were loaded.
+[25/4/2026 12:5:43] [Error - GlobalEvent Interface] 
+[25/4/2026 12:5:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 12:5:43] Description: 
+[25/4/2026 12:5:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 12:5:43] stack traceback:
+[25/4/2026 12:5:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 12:5:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 16:4:4] [Error - GlobalEvent Interface] 
-[9/11/2025 16:4:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 16:4:4] Description: 
-[9/11/2025 16:4:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 16:4:4] stack traceback:
-[9/11/2025 16:4:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 16:4:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 16:7:17] > Loading AutoLoot.xml... done.
-[9/11/2025 16:7:17] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:7:17] > Loading highscorebook.xml... done.
-[9/11/2025 16:7:17] > Loading Simple Task.xml... done.
-[9/11/2025 16:7:17] > 4 mods were loaded.
-[9/11/2025 16:7:59] > Loading AutoLoot.xml... done.
-[9/11/2025 16:7:59] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:7:59] > Loading highscorebook.xml... done.
-[9/11/2025 16:7:59] > Loading Simple Task.xml... done.
-[9/11/2025 16:7:59] > 4 mods were loaded.
-[9/11/2025 16:8:44] > Loading AutoLoot.xml... done.
-[9/11/2025 16:8:44] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:8:44] > Loading highscorebook.xml... done.
-[9/11/2025 16:8:44] > Loading Simple Task.xml... done.
-[9/11/2025 16:8:44] > 4 mods were loaded.
+[25/4/2026 12:10:43] [Error - GlobalEvent Interface] 
+[25/4/2026 12:10:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 12:10:43] Description: 
+[25/4/2026 12:10:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 12:10:43] stack traceback:
+[25/4/2026 12:10:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 12:10:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 16:9:4] [Error - GlobalEvent Interface] 
-[9/11/2025 16:9:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 16:9:4] Description: 
-[9/11/2025 16:9:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 16:9:4] stack traceback:
-[9/11/2025 16:9:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 16:9:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 16:9:8] > Loading AutoLoot.xml... done.
-[9/11/2025 16:9:8] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:9:8] > Loading highscorebook.xml... done.
-[9/11/2025 16:9:8] > Loading Simple Task.xml... done.
-[9/11/2025 16:9:8] > 4 mods were loaded.
-[9/11/2025 16:14:3] OTSYS_SQLITE3_PREPARE(): SQLITE ERROR: no such table: lottery (INSERT INTO "lottery" ("name", "item") VALUES ('God', 'nelliel mask');)
+[25/4/2026 12:15:43] [Error - GlobalEvent Interface] 
+[25/4/2026 12:15:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 12:15:43] Description: 
+[25/4/2026 12:15:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 12:15:43] stack traceback:
+[25/4/2026 12:15:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 12:15:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 12:20:42] OTSYS_SQLITE3_PREPARE(): SQLITE ERROR: no such table: lottery (INSERT INTO "lottery" ("name", "item") VALUES ('God', 'white saguino sword');)
 
-[9/11/2025 16:14:4] [Error - GlobalEvent Interface] 
-[9/11/2025 16:14:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 16:14:4] Description: 
-[9/11/2025 16:14:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 16:14:4] stack traceback:
-[9/11/2025 16:14:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 16:14:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 16:14:33] > CLEAN: Removed 0 items from 1 tile (1 were marked) in 0 seconds.
-[9/11/2025 16:16:3] > Salvando servidor...
-[9/11/2025 16:16:3] > SAVE: Completo em 0.087 segundos usando binary casa storage.
-[9/11/2025 16:16:30] > Loading AutoLoot.xml... done.
-[9/11/2025 16:16:30] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:16:30] > Loading highscorebook.xml... done.
-[9/11/2025 16:16:30] > Loading Simple Task.xml... done.
-[9/11/2025 16:16:30] > 4 mods were loaded.
-[9/11/2025 16:17:43] > Loading AutoLoot.xml... done.
-[9/11/2025 16:17:43] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:17:43] > Loading highscorebook.xml... done.
-[9/11/2025 16:17:43] > Loading Simple Task.xml... done.
-[9/11/2025 16:17:43] > 4 mods were loaded.
-[9/11/2025 16:18:51] > Loading AutoLoot.xml... done.
-[9/11/2025 16:18:51] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:18:51] > Loading highscorebook.xml... done.
-[9/11/2025 16:18:51] > Loading Simple Task.xml... done.
-[9/11/2025 16:18:51] > 4 mods were loaded.
+[25/4/2026 12:20:43] [Error - GlobalEvent Interface] 
+[25/4/2026 12:20:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 12:20:43] Description: 
+[25/4/2026 12:20:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 12:20:43] stack traceback:
+[25/4/2026 12:20:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 12:20:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 12:21:12] > CLEAN: Removed 1 item from 6 tiles (6 were marked) in 0 seconds.
+[25/4/2026 12:22:42] > Salvando servidor...
+[25/4/2026 12:22:42] > SAVE: Completo em 0.072 segundos usando binary casa storage.
 
-[9/11/2025 16:19:4] [Error - GlobalEvent Interface] 
-[9/11/2025 16:19:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 16:19:4] Description: 
-[9/11/2025 16:19:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 16:19:4] stack traceback:
-[9/11/2025 16:19:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 16:19:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 16:21:43] > Loading AutoLoot.xml... done.
-[9/11/2025 16:21:43] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:21:43] > Loading highscorebook.xml... done.
-[9/11/2025 16:21:43] > Loading Simple Task.xml... done.
-[9/11/2025 16:21:43] > 4 mods were loaded.
-[9/11/2025 16:21:50] > Loading AutoLoot.xml... done.
-[9/11/2025 16:21:50] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:21:50] > Loading highscorebook.xml... done.
-[9/11/2025 16:21:50] > Loading Simple Task.xml... done.
-[9/11/2025 16:21:50] > 4 mods were loaded.
-[9/11/2025 16:21:59] > Loading AutoLoot.xml... done.
-[9/11/2025 16:21:59] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:21:59] > Loading highscorebook.xml... done.
-[9/11/2025 16:21:59] > Loading Simple Task.xml... done.
-[9/11/2025 16:21:59] > 4 mods were loaded.
-[9/11/2025 16:22:34] > Loading AutoLoot.xml... done.
-[9/11/2025 16:22:34] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:22:34] > Loading highscorebook.xml... done.
-[9/11/2025 16:22:34] > Loading Simple Task.xml... done.
-[9/11/2025 16:22:34] > 4 mods were loaded.
-[9/11/2025 16:22:42] > Loading AutoLoot.xml... done.
-[9/11/2025 16:22:42] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:22:42] > Loading highscorebook.xml... done.
-[9/11/2025 16:22:42] > Loading Simple Task.xml... done.
-[9/11/2025 16:22:42] > 4 mods were loaded.
-[9/11/2025 16:22:48] > Loading AutoLoot.xml... done.
-[9/11/2025 16:22:48] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:22:48] > Loading highscorebook.xml... done.
-[9/11/2025 16:22:48] > Loading Simple Task.xml... done.
-[9/11/2025 16:22:48] > 4 mods were loaded.
-[9/11/2025 16:23:26] > Loading AutoLoot.xml... done.
-[9/11/2025 16:23:26] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:23:26] > Loading highscorebook.xml... done.
-[9/11/2025 16:23:26] > Loading Simple Task.xml... done.
-[9/11/2025 16:23:26] > 4 mods were loaded.
+[25/4/2026 12:25:43] [Error - GlobalEvent Interface] 
+[25/4/2026 12:25:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 12:25:43] Description: 
+[25/4/2026 12:25:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 12:25:43] stack traceback:
+[25/4/2026 12:25:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 12:25:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 16:24:4] [Error - GlobalEvent Interface] 
-[9/11/2025 16:24:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 16:24:4] Description: 
-[9/11/2025 16:24:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 16:24:4] stack traceback:
-[9/11/2025 16:24:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 16:24:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 16:26:13] > Loading AutoLoot.xml... done.
-[9/11/2025 16:26:13] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:26:13] > Loading highscorebook.xml... done.
-[9/11/2025 16:26:13] > Loading Simple Task.xml... done.
-[9/11/2025 16:26:13] > 4 mods were loaded.
-[9/11/2025 16:26:21] > Loading AutoLoot.xml... done.
-[9/11/2025 16:26:21] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:26:21] > Loading highscorebook.xml... done.
-[9/11/2025 16:26:21] > Loading Simple Task.xml... done.
-[9/11/2025 16:26:21] > 4 mods were loaded.
-[9/11/2025 16:26:27] > Loading AutoLoot.xml... done.
-[9/11/2025 16:26:27] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:26:27] > Loading highscorebook.xml... done.
-[9/11/2025 16:26:27] > Loading Simple Task.xml... done.
-[9/11/2025 16:26:27] > 4 mods were loaded.
-[9/11/2025 16:26:34] > Loading AutoLoot.xml... done.
-[9/11/2025 16:26:34] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:26:34] > Loading highscorebook.xml... done.
-[9/11/2025 16:26:34] > Loading Simple Task.xml... done.
-[9/11/2025 16:26:34] > 4 mods were loaded.
-[9/11/2025 16:27:3] > Loading AutoLoot.xml... done.
-[9/11/2025 16:27:3] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:27:4] > Loading highscorebook.xml... done.
-[9/11/2025 16:27:4] > Loading Simple Task.xml... done.
-[9/11/2025 16:27:4] > 4 mods were loaded.
-[9/11/2025 16:28:37] > Loading AutoLoot.xml... done.
-[9/11/2025 16:28:37] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:28:37] > Loading highscorebook.xml... done.
-[9/11/2025 16:28:37] > Loading Simple Task.xml... done.
-[9/11/2025 16:28:37] > 4 mods were loaded.
+[25/4/2026 12:30:43] [Error - GlobalEvent Interface] 
+[25/4/2026 12:30:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 12:30:43] Description: 
+[25/4/2026 12:30:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 12:30:43] stack traceback:
+[25/4/2026 12:30:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 12:30:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 16:29:4] [Error - GlobalEvent Interface] 
-[9/11/2025 16:29:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 16:29:4] Description: 
-[9/11/2025 16:29:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 16:29:4] stack traceback:
-[9/11/2025 16:29:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 16:29:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 16:29:30] > Loading AutoLoot.xml... done.
-[9/11/2025 16:29:30] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:29:30] > Loading highscorebook.xml... done.
-[9/11/2025 16:29:30] > Loading Simple Task.xml... done.
-[9/11/2025 16:29:30] > 4 mods were loaded.
-[9/11/2025 16:30:51] > Loading AutoLoot.xml... done.
-[9/11/2025 16:30:51] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:30:51] > Loading highscorebook.xml... done.
-[9/11/2025 16:30:51] > Loading Simple Task.xml... done.
-[9/11/2025 16:30:51] > 4 mods were loaded.
-[9/11/2025 16:32:4] > Loading AutoLoot.xml... done.
-[9/11/2025 16:32:4] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:32:4] > Loading highscorebook.xml... done.
-[9/11/2025 16:32:4] > Loading Simple Task.xml... done.
-[9/11/2025 16:32:4] > 4 mods were loaded.
-[9/11/2025 16:32:38] > Loading AutoLoot.xml... done.
-[9/11/2025 16:32:38] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:32:38] > Loading highscorebook.xml... done.
-[9/11/2025 16:32:38] > Loading Simple Task.xml... done.
-[9/11/2025 16:32:38] > 4 mods were loaded.
+[25/4/2026 12:35:43] [Error - GlobalEvent Interface] 
+[25/4/2026 12:35:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 12:35:43] Description: 
+[25/4/2026 12:35:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 12:35:43] stack traceback:
+[25/4/2026 12:35:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 12:35:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 16:34:4] [Error - GlobalEvent Interface] 
-[9/11/2025 16:34:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 16:34:4] Description: 
-[9/11/2025 16:34:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 16:34:4] stack traceback:
-[9/11/2025 16:34:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 16:34:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 16:35:11] > Loading AutoLoot.xml... done.
-[9/11/2025 16:35:11] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:35:11] > Loading highscorebook.xml... done.
-[9/11/2025 16:35:11] > Loading Simple Task.xml... done.
-[9/11/2025 16:35:11] > 4 mods were loaded.
-[9/11/2025 16:35:21] > Loading AutoLoot.xml... done.
-[9/11/2025 16:35:21] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:35:21] > Loading highscorebook.xml... done.
-[9/11/2025 16:35:21] > Loading Simple Task.xml... done.
-[9/11/2025 16:35:21] > 4 mods were loaded.
-[9/11/2025 16:35:28] > Loading AutoLoot.xml... done.
-[9/11/2025 16:35:28] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:35:28] > Loading highscorebook.xml... done.
-[9/11/2025 16:35:28] > Loading Simple Task.xml... done.
-[9/11/2025 16:35:28] > 4 mods were loaded.
-[9/11/2025 16:35:34] > Loading AutoLoot.xml... done.
-[9/11/2025 16:35:34] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:35:34] > Loading highscorebook.xml... done.
-[9/11/2025 16:35:34] > Loading Simple Task.xml... done.
-[9/11/2025 16:35:34] > 4 mods were loaded.
-[9/11/2025 16:35:39] > Loading AutoLoot.xml... done.
-[9/11/2025 16:35:39] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:35:39] > Loading highscorebook.xml... done.
-[9/11/2025 16:35:39] > Loading Simple Task.xml... done.
-[9/11/2025 16:35:39] > 4 mods were loaded.
-[9/11/2025 16:37:38] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:37:38] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:37:38] > Loading AutoLoot.xml... done.
-[9/11/2025 16:37:38] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:37:38] > Loading highscorebook.xml... done.
-[9/11/2025 16:37:38] > Loading Simple Task.xml... done.
-[9/11/2025 16:37:38] > 4 mods were loaded.
+[25/4/2026 12:40:43] [Error - GlobalEvent Interface] 
+[25/4/2026 12:40:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 12:40:43] Description: 
+[25/4/2026 12:40:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 12:40:43] stack traceback:
+[25/4/2026 12:40:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 12:40:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 16:39:4] [Error - GlobalEvent Interface] 
-[9/11/2025 16:39:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 16:39:4] Description: 
-[9/11/2025 16:39:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 16:39:4] stack traceback:
-[9/11/2025 16:39:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 16:39:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 16:43:52] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:43:52] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:43:52] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:43:52] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:43:52] > Loading AutoLoot.xml... done.
-[9/11/2025 16:43:52] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:43:52] > Loading highscorebook.xml... done.
-[9/11/2025 16:43:52] > Loading Simple Task.xml... done.
-[9/11/2025 16:43:52] > 4 mods were loaded.
+[25/4/2026 12:45:43] [Error - GlobalEvent Interface] 
+[25/4/2026 12:45:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 12:45:43] Description: 
+[25/4/2026 12:45:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 12:45:43] stack traceback:
+[25/4/2026 12:45:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 12:45:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 16:44:4] [Error - GlobalEvent Interface] 
-[9/11/2025 16:44:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 16:44:4] Description: 
-[9/11/2025 16:44:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 16:44:4] stack traceback:
-[9/11/2025 16:44:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 16:44:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 16:44:25] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:44:25] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:44:25] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:44:25] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:44:25] > Loading AutoLoot.xml... done.
-[9/11/2025 16:44:25] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:44:25] > Loading highscorebook.xml... done.
-[9/11/2025 16:44:25] > Loading Simple Task.xml... done.
-[9/11/2025 16:44:25] > 4 mods were loaded.
-[9/11/2025 16:45:17] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:45:17] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:45:17] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:45:17] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:45:17] > Loading AutoLoot.xml... done.
-[9/11/2025 16:45:17] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:45:17] > Loading highscorebook.xml... done.
-[9/11/2025 16:45:17] > Loading Simple Task.xml... done.
-[9/11/2025 16:45:17] > 4 mods were loaded.
-[9/11/2025 16:45:24] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:45:24] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:45:24] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:45:24] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:45:24] > Loading AutoLoot.xml... done.
-[9/11/2025 16:45:24] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:45:24] > Loading highscorebook.xml... done.
-[9/11/2025 16:45:24] > Loading Simple Task.xml... done.
-[9/11/2025 16:45:24] > 4 mods were loaded.
-[9/11/2025 16:45:30] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:45:30] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:45:30] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:45:30] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:45:30] > Loading AutoLoot.xml... done.
-[9/11/2025 16:45:30] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:45:30] > Loading highscorebook.xml... done.
-[9/11/2025 16:45:30] > Loading Simple Task.xml... done.
-[9/11/2025 16:45:30] > 4 mods were loaded.
-[9/11/2025 16:45:37] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:45:37] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:45:37] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:45:37] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:45:37] > Loading AutoLoot.xml... done.
-[9/11/2025 16:45:37] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:45:37] > Loading highscorebook.xml... done.
-[9/11/2025 16:45:37] > Loading Simple Task.xml... done.
-[9/11/2025 16:45:37] > 4 mods were loaded.
+[25/4/2026 12:50:43] [Error - GlobalEvent Interface] 
+[25/4/2026 12:50:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 12:50:43] Description: 
+[25/4/2026 12:50:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 12:50:43] stack traceback:
+[25/4/2026 12:50:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 12:50:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 16:49:4] [Error - GlobalEvent Interface] 
-[9/11/2025 16:49:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 16:49:4] Description: 
-[9/11/2025 16:49:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 16:49:4] stack traceback:
-[9/11/2025 16:49:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 16:49:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 16:50:9] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:50:9] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:50:9] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:50:9] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:50:9] > Loading AutoLoot.xml... done.
-[9/11/2025 16:50:9] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:50:9] > Loading highscorebook.xml... done.
-[9/11/2025 16:50:9] > Loading Simple Task.xml... done.
-[9/11/2025 16:50:9] > 4 mods were loaded.
-[9/11/2025 16:51:8] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:51:8] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:51:8] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:51:8] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:51:8] > Loading AutoLoot.xml... done.
-[9/11/2025 16:51:8] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:51:8] > Loading highscorebook.xml... done.
-[9/11/2025 16:51:8] > Loading Simple Task.xml... done.
-[9/11/2025 16:51:8] > 4 mods were loaded.
-[9/11/2025 16:51:12] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:51:12] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:51:12] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:51:12] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:51:12] > Loading AutoLoot.xml... done.
-[9/11/2025 16:51:12] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:51:12] > Loading highscorebook.xml... done.
-[9/11/2025 16:51:12] > Loading Simple Task.xml... done.
-[9/11/2025 16:51:12] > 4 mods were loaded.
-[9/11/2025 16:51:21] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:51:21] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:51:21] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:51:21] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:51:21] > Loading AutoLoot.xml... done.
-[9/11/2025 16:51:21] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:51:21] > Loading highscorebook.xml... done.
-[9/11/2025 16:51:21] > Loading Simple Task.xml... done.
-[9/11/2025 16:51:21] > 4 mods were loaded.
-[9/11/2025 16:52:59] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:52:59] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:52:59] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:52:59] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:52:59] > Loading AutoLoot.xml... done.
-[9/11/2025 16:52:59] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:52:59] > Loading highscorebook.xml... done.
-[9/11/2025 16:52:59] > Loading Simple Task.xml... done.
-[9/11/2025 16:52:59] > 4 mods were loaded.
+[25/4/2026 12:55:43] [Error - GlobalEvent Interface] 
+[25/4/2026 12:55:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 12:55:43] Description: 
+[25/4/2026 12:55:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 12:55:43] stack traceback:
+[25/4/2026 12:55:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 12:55:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 16:54:4] [Error - GlobalEvent Interface] 
-[9/11/2025 16:54:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 16:54:4] Description: 
-[9/11/2025 16:54:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 16:54:4] stack traceback:
-[9/11/2025 16:54:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 16:54:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 16:54:15] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:54:15] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:54:15] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:54:15] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:54:15] > Loading AutoLoot.xml... done.
-[9/11/2025 16:54:15] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:54:15] > Loading highscorebook.xml... done.
-[9/11/2025 16:54:15] > Loading Simple Task.xml... done.
-[9/11/2025 16:54:15] > 4 mods were loaded.
-[9/11/2025 16:54:34] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:54:34] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:54:34] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:54:34] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:54:34] > Loading AutoLoot.xml... done.
-[9/11/2025 16:54:34] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:54:34] > Loading highscorebook.xml... done.
-[9/11/2025 16:54:34] > Loading Simple Task.xml... done.
-[9/11/2025 16:54:34] > 4 mods were loaded.
-[9/11/2025 16:55:14] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:55:14] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:55:14] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:55:14] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:55:14] > Loading AutoLoot.xml... done.
-[9/11/2025 16:55:14] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:55:14] > Loading highscorebook.xml... done.
-[9/11/2025 16:55:14] > Loading Simple Task.xml... done.
-[9/11/2025 16:55:14] > 4 mods were loaded.
-[9/11/2025 16:57:26] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:57:26] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:57:26] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:57:26] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:57:26] > Loading AutoLoot.xml... done.
-[9/11/2025 16:57:26] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:57:26] > Loading highscorebook.xml... done.
-[9/11/2025 16:57:26] > Loading Simple Task.xml... done.
-[9/11/2025 16:57:26] > 4 mods were loaded.
-[9/11/2025 16:57:33] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:57:33] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:57:33] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:57:33] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:57:33] > Loading AutoLoot.xml... done.
-[9/11/2025 16:57:33] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:57:33] > Loading highscorebook.xml... done.
-[9/11/2025 16:57:33] > Loading Simple Task.xml... done.
-[9/11/2025 16:57:33] > 4 mods were loaded.
-[9/11/2025 16:58:32] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 16:58:32] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:58:32] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 16:58:32] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 16:58:32] > Loading AutoLoot.xml... done.
-[9/11/2025 16:58:32] > Loading Automatic Raids.xml... done.
-[9/11/2025 16:58:32] > Loading highscorebook.xml... done.
-[9/11/2025 16:58:32] > Loading Simple Task.xml... done.
-[9/11/2025 16:58:32] > 4 mods were loaded.
+[25/4/2026 13:0:43] [Error - GlobalEvent Interface] 
+[25/4/2026 13:0:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 13:0:43] Description: 
+[25/4/2026 13:0:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 13:0:43] stack traceback:
+[25/4/2026 13:0:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 13:0:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 16:59:4] [Error - GlobalEvent Interface] 
-[9/11/2025 16:59:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 16:59:4] Description: 
-[9/11/2025 16:59:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 16:59:4] stack traceback:
-[9/11/2025 16:59:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 16:59:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 17:3:46] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:3:46] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:3:46] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:3:46] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:3:46] > Loading AutoLoot.xml... done.
-[9/11/2025 17:3:46] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:3:46] > Loading highscorebook.xml... done.
-[9/11/2025 17:3:46] > Loading Simple Task.xml... done.
-[9/11/2025 17:3:46] > 4 mods were loaded.
+[25/4/2026 13:5:43] [Error - GlobalEvent Interface] 
+[25/4/2026 13:5:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 13:5:43] Description: 
+[25/4/2026 13:5:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 13:5:43] stack traceback:
+[25/4/2026 13:5:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 13:5:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 17:4:4] [Error - GlobalEvent Interface] 
-[9/11/2025 17:4:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 17:4:4] Description: 
-[9/11/2025 17:4:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 17:4:4] stack traceback:
-[9/11/2025 17:4:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 17:4:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 17:4:49] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:4:49] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:4:49] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:4:49] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:4:49] > Loading AutoLoot.xml... done.
-[9/11/2025 17:4:49] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:4:49] > Loading highscorebook.xml... done.
-[9/11/2025 17:4:49] > Loading Simple Task.xml... done.
-[9/11/2025 17:4:49] > 4 mods were loaded.
-[9/11/2025 17:4:54] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:4:54] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:4:54] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:4:54] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:4:54] > Loading AutoLoot.xml... done.
-[9/11/2025 17:4:54] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:4:54] > Loading highscorebook.xml... done.
-[9/11/2025 17:4:54] > Loading Simple Task.xml... done.
-[9/11/2025 17:4:54] > 4 mods were loaded.
-[9/11/2025 17:7:59] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:7:59] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:7:59] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:7:59] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:8:0] > Loading AutoLoot.xml... done.
-[9/11/2025 17:8:0] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:8:0] > Loading highscorebook.xml... done.
-[9/11/2025 17:8:0] > Loading Simple Task.xml... done.
-[9/11/2025 17:8:0] > 4 mods were loaded.
-[9/11/2025 17:8:19] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:8:19] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:8:19] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:8:19] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:8:19] > Loading AutoLoot.xml... done.
-[9/11/2025 17:8:19] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:8:19] > Loading highscorebook.xml... done.
-[9/11/2025 17:8:19] > Loading Simple Task.xml... done.
-[9/11/2025 17:8:19] > 4 mods were loaded.
-[9/11/2025 17:8:28] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:8:28] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:8:28] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:8:28] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:8:29] > Loading AutoLoot.xml... done.
-[9/11/2025 17:8:29] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:8:29] > Loading highscorebook.xml... done.
-[9/11/2025 17:8:29] > Loading Simple Task.xml... done.
-[9/11/2025 17:8:29] > 4 mods were loaded.
-[9/11/2025 17:8:39] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:8:39] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:8:39] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:8:39] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:8:39] > Loading AutoLoot.xml... done.
-[9/11/2025 17:8:39] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:8:39] > Loading highscorebook.xml... done.
-[9/11/2025 17:8:39] > Loading Simple Task.xml... done.
-[9/11/2025 17:8:39] > 4 mods were loaded.
-[9/11/2025 17:8:53] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:8:53] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:8:53] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:8:53] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:8:53] > Loading AutoLoot.xml... done.
-[9/11/2025 17:8:53] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:8:53] > Loading highscorebook.xml... done.
-[9/11/2025 17:8:53] > Loading Simple Task.xml... done.
-[9/11/2025 17:8:53] > 4 mods were loaded.
+[25/4/2026 13:10:43] [Error - GlobalEvent Interface] 
+[25/4/2026 13:10:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 13:10:43] Description: 
+[25/4/2026 13:10:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 13:10:43] stack traceback:
+[25/4/2026 13:10:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 13:10:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 17:9:4] [Error - GlobalEvent Interface] 
-[9/11/2025 17:9:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 17:9:4] Description: 
-[9/11/2025 17:9:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 17:9:4] stack traceback:
-[9/11/2025 17:9:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 17:9:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 17:9:8] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:9:8] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:9:8] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:9:8] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:9:8] > Loading AutoLoot.xml... done.
-[9/11/2025 17:9:8] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:9:8] > Loading highscorebook.xml... done.
-[9/11/2025 17:9:8] > Loading Simple Task.xml... done.
-[9/11/2025 17:9:8] > 4 mods were loaded.
-[9/11/2025 17:9:11] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:9:11] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:9:11] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:9:11] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:9:12] > Loading AutoLoot.xml... done.
-[9/11/2025 17:9:12] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:9:12] > Loading highscorebook.xml... done.
-[9/11/2025 17:9:12] > Loading Simple Task.xml... done.
-[9/11/2025 17:9:12] > 4 mods were loaded.
-[9/11/2025 17:12:2] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:12:2] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:12:2] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:12:2] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:12:2] > Loading AutoLoot.xml... done.
-[9/11/2025 17:12:2] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:12:2] > Loading highscorebook.xml... done.
-[9/11/2025 17:12:2] > Loading Simple Task.xml... done.
-[9/11/2025 17:12:2] > 4 mods were loaded.
-[9/11/2025 17:13:42] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:13:42] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:13:42] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:13:42] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:13:42] > Loading AutoLoot.xml... done.
-[9/11/2025 17:13:42] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:13:42] > Loading highscorebook.xml... done.
-[9/11/2025 17:13:42] > Loading Simple Task.xml... done.
-[9/11/2025 17:13:42] > 4 mods were loaded.
+[25/4/2026 13:15:43] [Error - GlobalEvent Interface] 
+[25/4/2026 13:15:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 13:15:43] Description: 
+[25/4/2026 13:15:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 13:15:43] stack traceback:
+[25/4/2026 13:15:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 13:15:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 17:14:4] [Error - GlobalEvent Interface] 
-[9/11/2025 17:14:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 17:14:4] Description: 
-[9/11/2025 17:14:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 17:14:4] stack traceback:
-[9/11/2025 17:14:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 17:14:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 17:16:3] > Salvando servidor...
-[9/11/2025 17:16:3] > SAVE: Completo em 0.091 segundos usando binary casa storage.
-[9/11/2025 17:17:54] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:17:54] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:17:54] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:17:54] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:17:55] > Loading AutoLoot.xml... done.
-[9/11/2025 17:17:55] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:17:55] > Loading highscorebook.xml... done.
-[9/11/2025 17:17:55] > Loading Simple Task.xml... done.
-[9/11/2025 17:17:55] > 4 mods were loaded.
-[9/11/2025 17:18:48] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:18:48] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:18:48] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:18:48] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:18:48] > Loading AutoLoot.xml... done.
-[9/11/2025 17:18:48] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:18:48] > Loading highscorebook.xml... done.
-[9/11/2025 17:18:48] > Loading Simple Task.xml... done.
-[9/11/2025 17:18:48] > 4 mods were loaded.
+[25/4/2026 13:20:43] [Error - GlobalEvent Interface] 
+[25/4/2026 13:20:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 13:20:43] Description: 
+[25/4/2026 13:20:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 13:20:43] stack traceback:
+[25/4/2026 13:20:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 13:20:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 13:22:42] > Salvando servidor...
+[25/4/2026 13:22:42] > SAVE: Completo em 0.068 segundos usando binary casa storage.
 
-[9/11/2025 17:19:4] [Error - GlobalEvent Interface] 
-[9/11/2025 17:19:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 17:19:4] Description: 
-[9/11/2025 17:19:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 17:19:4] stack traceback:
-[9/11/2025 17:19:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 17:19:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 17:20:27] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:20:27] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:20:27] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:20:27] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:20:27] > Loading AutoLoot.xml... done.
-[9/11/2025 17:20:27] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:20:27] > Loading highscorebook.xml... done.
-[9/11/2025 17:20:27] > Loading Simple Task.xml... done.
-[9/11/2025 17:20:27] > 4 mods were loaded.
-[9/11/2025 17:22:25] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:22:25] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:22:25] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:22:25] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:22:25] > Loading AutoLoot.xml... done.
-[9/11/2025 17:22:25] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:22:25] > Loading highscorebook.xml... done.
-[9/11/2025 17:22:25] > Loading Simple Task.xml... done.
-[9/11/2025 17:22:25] > 4 mods were loaded.
-[9/11/2025 17:22:35] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:22:35] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:22:35] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:22:35] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:22:35] > Loading AutoLoot.xml... done.
-[9/11/2025 17:22:35] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:22:35] > Loading highscorebook.xml... done.
-[9/11/2025 17:22:35] > Loading Simple Task.xml... done.
-[9/11/2025 17:22:35] > 4 mods were loaded.
-[9/11/2025 17:24:0] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:24:0] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:24:0] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:24:0] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:24:0] > Loading AutoLoot.xml... done.
-[9/11/2025 17:24:0] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:24:0] > Loading highscorebook.xml... done.
-[9/11/2025 17:24:0] > Loading Simple Task.xml... done.
-[9/11/2025 17:24:0] > 4 mods were loaded.
+[25/4/2026 13:25:43] [Error - GlobalEvent Interface] 
+[25/4/2026 13:25:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 13:25:43] Description: 
+[25/4/2026 13:25:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 13:25:43] stack traceback:
+[25/4/2026 13:25:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 13:25:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 17:24:4] [Error - GlobalEvent Interface] 
-[9/11/2025 17:24:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 17:24:4] Description: 
-[9/11/2025 17:24:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 17:24:4] stack traceback:
-[9/11/2025 17:24:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 17:24:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 17:24:22] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:24:22] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:24:22] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:24:22] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:24:22] > Loading AutoLoot.xml... done.
-[9/11/2025 17:24:22] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:24:22] > Loading highscorebook.xml... done.
-[9/11/2025 17:24:22] > Loading Simple Task.xml... done.
-[9/11/2025 17:24:22] > 4 mods were loaded.
-[9/11/2025 17:26:48] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:26:48] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:26:48] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:26:48] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:26:48] > Loading AutoLoot.xml... done.
-[9/11/2025 17:26:48] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:26:48] > Loading highscorebook.xml... done.
-[9/11/2025 17:26:48] > Loading Simple Task.xml... done.
-[9/11/2025 17:26:48] > 4 mods were loaded.
-[9/11/2025 17:27:50] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:27:50] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:27:50] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:27:50] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:27:50] > Loading AutoLoot.xml... done.
-[9/11/2025 17:27:50] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:27:50] > Loading highscorebook.xml... done.
-[9/11/2025 17:27:50] > Loading Simple Task.xml... done.
-[9/11/2025 17:27:50] > 4 mods were loaded.
+[25/4/2026 13:30:43] [Error - GlobalEvent Interface] 
+[25/4/2026 13:30:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 13:30:43] Description: 
+[25/4/2026 13:30:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 13:30:43] stack traceback:
+[25/4/2026 13:30:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 13:30:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
 
-[9/11/2025 17:29:4] [Error - GlobalEvent Interface] 
-[9/11/2025 17:29:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 17:29:4] Description: 
-[9/11/2025 17:29:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 17:29:4] stack traceback:
-[9/11/2025 17:29:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 17:29:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 17:30:32] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:30:32] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:30:32] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:30:32] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:30:32] > Loading AutoLoot.xml... done.
-[9/11/2025 17:30:32] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:30:32] > Loading highscorebook.xml... done.
-[9/11/2025 17:30:32] > Loading Simple Task.xml... done.
-[9/11/2025 17:30:32] > 4 mods were loaded.
-[9/11/2025 17:30:40] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:30:40] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:30:40] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:30:40] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:30:40] > Loading AutoLoot.xml... done.
-[9/11/2025 17:30:40] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:30:40] > Loading highscorebook.xml... done.
-[9/11/2025 17:30:40] > Loading Simple Task.xml... done.
-[9/11/2025 17:30:40] > 4 mods were loaded.
-[9/11/2025 17:30:54] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:30:54] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:30:54] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:30:54] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:30:54] > Loading AutoLoot.xml... done.
-[9/11/2025 17:30:54] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:30:54] > Loading highscorebook.xml... done.
-[9/11/2025 17:30:54] > Loading Simple Task.xml... done.
-[9/11/2025 17:30:54] > 4 mods were loaded.
-[9/11/2025 17:31:8] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:31:8] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:31:8] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:31:8] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:31:8] > Loading AutoLoot.xml... done.
-[9/11/2025 17:31:8] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:31:8] > Loading highscorebook.xml... done.
-[9/11/2025 17:31:8] > Loading Simple Task.xml... done.
-[9/11/2025 17:31:8] > 4 mods were loaded.
-[9/11/2025 17:31:20] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:31:20] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:31:20] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:31:20] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:31:20] > Loading AutoLoot.xml... done.
-[9/11/2025 17:31:20] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:31:20] > Loading highscorebook.xml... done.
-[9/11/2025 17:31:20] > Loading Simple Task.xml... done.
-[9/11/2025 17:31:20] > 4 mods were loaded.
-[9/11/2025 17:33:48] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:33:48] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:33:48] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:33:48] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:33:48] > Loading AutoLoot.xml... done.
-[9/11/2025 17:33:48] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:33:48] > Loading highscorebook.xml... done.
-[9/11/2025 17:33:48] > Loading Simple Task.xml... done.
-[9/11/2025 17:33:48] > 4 mods were loaded.
-[9/11/2025 17:33:57] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:33:57] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:33:57] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:33:57] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:33:57] > Loading AutoLoot.xml... done.
-[9/11/2025 17:33:57] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:33:57] > Loading highscorebook.xml... done.
-[9/11/2025 17:33:57] > Loading Simple Task.xml... done.
-[9/11/2025 17:33:57] > 4 mods were loaded.
+[25/4/2026 13:35:43] [Error - GlobalEvent Interface] 
+[25/4/2026 13:35:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 13:35:43] Description: 
+[25/4/2026 13:35:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 13:35:43] stack traceback:
+[25/4/2026 13:35:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 13:35:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 13:40:25] > Loading AutoLoot.xml... done.
+[25/4/2026 13:40:25] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:40:25] > Loading highscorebook.xml... done.
+[25/4/2026 13:40:25] > Loading Simple Task.xml... done.
+[25/4/2026 13:40:25] > 4 mods were loaded.
+[25/4/2026 13:40:33] > Loading AutoLoot.xml... done.
+[25/4/2026 13:40:33] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:40:33] > Loading highscorebook.xml... done.
+[25/4/2026 13:40:33] > Loading Simple Task.xml... done.
+[25/4/2026 13:40:33] > 4 mods were loaded.
 
-[9/11/2025 17:34:4] [Error - GlobalEvent Interface] 
-[9/11/2025 17:34:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 17:34:4] Description: 
-[9/11/2025 17:34:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 17:34:4] stack traceback:
-[9/11/2025 17:34:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 17:34:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[9/11/2025 17:35:1] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:35:1] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:35:1] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:35:1] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:35:1] > Loading AutoLoot.xml... done.
-[9/11/2025 17:35:1] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:35:1] > Loading highscorebook.xml... done.
-[9/11/2025 17:35:1] > Loading Simple Task.xml... done.
-[9/11/2025 17:35:1] > 4 mods were loaded.
-[9/11/2025 17:35:9] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Tsukishiro
-[9/11/2025 17:35:9] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:35:9] [Error - Monsters::deserializeSpell] Rukia - Unknown spell name: Hakuren
-[9/11/2025 17:35:9] [Warning - Monsters::loadMonster] Cant load spell. (data/monster/rukia.xml)
-[9/11/2025 17:35:9] > Loading AutoLoot.xml... done.
-[9/11/2025 17:35:9] > Loading Automatic Raids.xml... done.
-[9/11/2025 17:35:9] > Loading highscorebook.xml... done.
-[9/11/2025 17:35:9] > Loading Simple Task.xml... done.
-[9/11/2025 17:35:9] > 4 mods were loaded.
-[9/11/2025 17:37:15] God has logged out.
-[9/11/2025 17:37:16] God has logged in.
+[25/4/2026 13:40:43] [Error - GlobalEvent Interface] 
+[25/4/2026 13:40:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 13:40:43] Description: 
+[25/4/2026 13:40:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 13:40:43] stack traceback:
+[25/4/2026 13:40:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 13:40:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 13:41:41] > Loading AutoLoot.xml... done.
+[25/4/2026 13:41:41] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:41:41] > Loading highscorebook.xml... done.
+[25/4/2026 13:41:41] > Loading Simple Task.xml... done.
+[25/4/2026 13:41:41] > 4 mods were loaded.
+[25/4/2026 13:42:41] > Loading AutoLoot.xml... done.
+[25/4/2026 13:42:41] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:42:41] > Loading highscorebook.xml... done.
+[25/4/2026 13:42:41] > Loading Simple Task.xml... done.
+[25/4/2026 13:42:41] > 4 mods were loaded.
+[25/4/2026 13:42:48] > Loading AutoLoot.xml... done.
+[25/4/2026 13:42:48] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:42:48] > Loading highscorebook.xml... done.
+[25/4/2026 13:42:48] > Loading Simple Task.xml... done.
+[25/4/2026 13:42:48] > 4 mods were loaded.
+[25/4/2026 13:43:56] > Loading AutoLoot.xml... done.
+[25/4/2026 13:43:56] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:43:56] > Loading highscorebook.xml... done.
+[25/4/2026 13:43:56] > Loading Simple Task.xml... done.
+[25/4/2026 13:43:56] > 4 mods were loaded.
+[25/4/2026 13:44:32] > Loading AutoLoot.xml... done.
+[25/4/2026 13:44:32] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:44:32] > Loading highscorebook.xml... done.
+[25/4/2026 13:44:32] > Loading Simple Task.xml... done.
+[25/4/2026 13:44:32] > 4 mods were loaded.
+[25/4/2026 13:45:1] > Loading AutoLoot.xml... done.
+[25/4/2026 13:45:1] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:45:1] > Loading highscorebook.xml... done.
+[25/4/2026 13:45:1] > Loading Simple Task.xml... done.
+[25/4/2026 13:45:1] > 4 mods were loaded.
+[25/4/2026 13:45:12] > Loading AutoLoot.xml... done.
+[25/4/2026 13:45:12] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:45:12] > Loading highscorebook.xml... done.
+[25/4/2026 13:45:12] > Loading Simple Task.xml... done.
+[25/4/2026 13:45:12] > 4 mods were loaded.
 
-[9/11/2025 17:39:4] [Error - GlobalEvent Interface] 
-[9/11/2025 17:39:4] data/globalevents/scripts/online_highscore.lua:onThink
-[9/11/2025 17:39:4] Description: 
-[9/11/2025 17:39:4] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[9/11/2025 17:39:4] stack traceback:
-[9/11/2025 17:39:4] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[9/11/2025 17:39:4] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 13:45:43] [Error - GlobalEvent Interface] 
+[25/4/2026 13:45:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 13:45:43] Description: 
+[25/4/2026 13:45:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 13:45:43] stack traceback:
+[25/4/2026 13:45:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 13:45:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 13:47:16] > Loading AutoLoot.xml... done.
+[25/4/2026 13:47:16] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:47:16] > Loading highscorebook.xml... done.
+[25/4/2026 13:47:16] > Loading Simple Task.xml... done.
+[25/4/2026 13:47:16] > 4 mods were loaded.
+[25/4/2026 13:47:27] > Loading AutoLoot.xml... done.
+[25/4/2026 13:47:27] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:47:27] > Loading highscorebook.xml... done.
+[25/4/2026 13:47:27] > Loading Simple Task.xml... done.
+[25/4/2026 13:47:27] > 4 mods were loaded.
+[25/4/2026 13:50:1] > Loading AutoLoot.xml... done.
+[25/4/2026 13:50:1] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:50:1] > Loading highscorebook.xml... done.
+[25/4/2026 13:50:1] > Loading Simple Task.xml... done.
+[25/4/2026 13:50:1] > 4 mods were loaded.
+[25/4/2026 13:50:23] > Loading AutoLoot.xml... done.
+[25/4/2026 13:50:23] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:50:23] > Loading highscorebook.xml... done.
+[25/4/2026 13:50:23] > Loading Simple Task.xml... done.
+[25/4/2026 13:50:23] > 4 mods were loaded.
+[25/4/2026 13:50:33] > Loading AutoLoot.xml... done.
+[25/4/2026 13:50:33] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:50:33] > Loading highscorebook.xml... done.
+[25/4/2026 13:50:33] > Loading Simple Task.xml... done.
+[25/4/2026 13:50:33] > 4 mods were loaded.
+
+[25/4/2026 13:50:43] [Error - GlobalEvent Interface] 
+[25/4/2026 13:50:43] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 13:50:43] Description: 
+[25/4/2026 13:50:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 13:50:43] stack traceback:
+[25/4/2026 13:50:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 13:50:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 13:52:46] > Loading AutoLoot.xml... done.
+[25/4/2026 13:52:46] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:52:46] > Loading highscorebook.xml... done.
+[25/4/2026 13:52:46] > Loading Simple Task.xml... done.
+[25/4/2026 13:52:46] > 4 mods were loaded.
+[25/4/2026 13:52:51] > Loading AutoLoot.xml... done.
+[25/4/2026 13:52:51] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:52:51] > Loading highscorebook.xml... done.
+[25/4/2026 13:52:51] > Loading Simple Task.xml... done.
+[25/4/2026 13:52:51] > 4 mods were loaded.
+[25/4/2026 13:53:12] > Loading AutoLoot.xml... done.
+[25/4/2026 13:53:12] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:53:12] > Loading highscorebook.xml... done.
+[25/4/2026 13:53:12] > Loading Simple Task.xml... done.
+[25/4/2026 13:53:12] > 4 mods were loaded.
+[25/4/2026 13:53:17] > Loading AutoLoot.xml... done.
+[25/4/2026 13:53:17] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:53:17] > Loading highscorebook.xml... done.
+[25/4/2026 13:53:17] > Loading Simple Task.xml... done.
+[25/4/2026 13:53:17] > 4 mods were loaded.
+[25/4/2026 13:53:24] > Loading AutoLoot.xml... done.
+[25/4/2026 13:53:24] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:53:24] > Loading highscorebook.xml... done.
+[25/4/2026 13:53:24] > Loading Simple Task.xml... done.
+[25/4/2026 13:53:24] > 4 mods were loaded.
+[25/4/2026 13:54:9] > Loading AutoLoot.xml... done.
+[25/4/2026 13:54:9] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:54:9] > Loading highscorebook.xml... done.
+[25/4/2026 13:54:9] > Loading Simple Task.xml... done.
+[25/4/2026 13:54:9] > 4 mods were loaded.
+[25/4/2026 13:54:17] > Loading AutoLoot.xml... done.
+[25/4/2026 13:54:17] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:54:17] > Loading highscorebook.xml... done.
+[25/4/2026 13:54:17] > Loading Simple Task.xml... done.
+[25/4/2026 13:54:17] > 4 mods were loaded.
+[25/4/2026 13:54:26] > Loading AutoLoot.xml... done.
+[25/4/2026 13:54:26] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:54:26] > Loading highscorebook.xml... done.
+[25/4/2026 13:54:26] > Loading Simple Task.xml... done.
+[25/4/2026 13:54:26] > 4 mods were loaded.
+[25/4/2026 13:54:42] > Loading AutoLoot.xml... done.
+[25/4/2026 13:54:42] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:54:42] > Loading highscorebook.xml... done.
+[25/4/2026 13:54:42] > Loading Simple Task.xml... done.
+[25/4/2026 13:54:42] > 4 mods were loaded.
+
+[25/4/2026 13:55:44] [Error - GlobalEvent Interface] 
+[25/4/2026 13:55:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 13:55:44] Description: 
+[25/4/2026 13:55:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 13:55:44] stack traceback:
+[25/4/2026 13:55:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 13:55:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 13:56:49] > Loading AutoLoot.xml... done.
+[25/4/2026 13:56:49] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:56:49] > Loading highscorebook.xml... done.
+[25/4/2026 13:56:49] > Loading Simple Task.xml... done.
+[25/4/2026 13:56:49] > 4 mods were loaded.
+[25/4/2026 13:56:57] > Loading AutoLoot.xml... done.
+[25/4/2026 13:56:57] > Loading Automatic Raids.xml... done.
+[25/4/2026 13:56:57] > Loading highscorebook.xml... done.
+[25/4/2026 13:56:57] > Loading Simple Task.xml... done.
+[25/4/2026 13:56:57] > 4 mods were loaded.
+
+[25/4/2026 14:0:44] [Error - GlobalEvent Interface] 
+[25/4/2026 14:0:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 14:0:44] Description: 
+[25/4/2026 14:0:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 14:0:44] stack traceback:
+[25/4/2026 14:0:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 14:0:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 14:1:22] > Loading AutoLoot.xml... done.
+[25/4/2026 14:1:22] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:1:22] > Loading highscorebook.xml... done.
+[25/4/2026 14:1:22] > Loading Simple Task.xml... done.
+[25/4/2026 14:1:22] > 4 mods were loaded.
+[25/4/2026 14:2:3] > Loading AutoLoot.xml... done.
+[25/4/2026 14:2:3] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:2:3] > Loading highscorebook.xml... done.
+[25/4/2026 14:2:3] > Loading Simple Task.xml... done.
+[25/4/2026 14:2:3] > 4 mods were loaded.
+[25/4/2026 14:4:35] > Loading AutoLoot.xml... done.
+[25/4/2026 14:4:35] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:4:35] > Loading highscorebook.xml... done.
+[25/4/2026 14:4:35] > Loading Simple Task.xml... done.
+[25/4/2026 14:4:35] > 4 mods were loaded.
+[25/4/2026 14:4:47] > Loading AutoLoot.xml... done.
+[25/4/2026 14:4:47] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:4:47] > Loading highscorebook.xml... done.
+[25/4/2026 14:4:47] > Loading Simple Task.xml... done.
+[25/4/2026 14:4:47] > 4 mods were loaded.
+
+[25/4/2026 14:5:44] [Error - GlobalEvent Interface] 
+[25/4/2026 14:5:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 14:5:44] Description: 
+[25/4/2026 14:5:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 14:5:44] stack traceback:
+[25/4/2026 14:5:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 14:5:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 14:5:49] > Loading AutoLoot.xml... done.
+[25/4/2026 14:5:49] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:5:49] > Loading highscorebook.xml... done.
+[25/4/2026 14:5:49] > Loading Simple Task.xml... done.
+[25/4/2026 14:5:49] > 4 mods were loaded.
+
+[25/4/2026 14:10:44] [Error - GlobalEvent Interface] 
+[25/4/2026 14:10:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 14:10:44] Description: 
+[25/4/2026 14:10:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 14:10:44] stack traceback:
+[25/4/2026 14:10:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 14:10:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 14:14:14] > Loading AutoLoot.xml... done.
+[25/4/2026 14:14:14] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:14:14] > Loading highscorebook.xml... done.
+[25/4/2026 14:14:14] > Loading Simple Task.xml... done.
+[25/4/2026 14:14:14] > 4 mods were loaded.
+
+[25/4/2026 14:14:22] [Error - Spell Interface] 
+[25/4/2026 14:14:22] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[25/4/2026 14:14:22] Description: 
+[25/4/2026 14:14:22] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to call global 'getMagicLevel' (a nil value)
+[25/4/2026 14:14:22] stack traceback:
+[25/4/2026 14:14:22] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[25/4/2026 14:15:44] [Error - GlobalEvent Interface] 
+[25/4/2026 14:15:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 14:15:44] Description: 
+[25/4/2026 14:15:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 14:15:44] stack traceback:
+[25/4/2026 14:15:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 14:15:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 14:16:22] > Loading AutoLoot.xml... done.
+[25/4/2026 14:16:22] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:16:22] > Loading highscorebook.xml... done.
+[25/4/2026 14:16:22] > Loading Simple Task.xml... done.
+[25/4/2026 14:16:22] > 4 mods were loaded.
+[25/4/2026 14:16:41] > Loading AutoLoot.xml... done.
+[25/4/2026 14:16:41] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:16:41] > Loading highscorebook.xml... done.
+[25/4/2026 14:16:41] > Loading Simple Task.xml... done.
+[25/4/2026 14:16:41] > 4 mods were loaded.
+[25/4/2026 14:17:34] > Loading AutoLoot.xml... done.
+[25/4/2026 14:17:34] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:17:34] > Loading highscorebook.xml... done.
+[25/4/2026 14:17:34] > Loading Simple Task.xml... done.
+[25/4/2026 14:17:34] > 4 mods were loaded.
+[25/4/2026 14:17:49] > Loading AutoLoot.xml... done.
+[25/4/2026 14:17:49] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:17:49] > Loading highscorebook.xml... done.
+[25/4/2026 14:17:49] > Loading Simple Task.xml... done.
+[25/4/2026 14:17:49] > 4 mods were loaded.
+[25/4/2026 14:18:3] > Loading AutoLoot.xml... done.
+[25/4/2026 14:18:3] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:18:3] > Loading highscorebook.xml... done.
+[25/4/2026 14:18:3] > Loading Simple Task.xml... done.
+[25/4/2026 14:18:3] > 4 mods were loaded.
+[25/4/2026 14:18:35] > Loading AutoLoot.xml... done.
+[25/4/2026 14:18:35] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:18:35] > Loading highscorebook.xml... done.
+[25/4/2026 14:18:35] > Loading Simple Task.xml... done.
+[25/4/2026 14:18:35] > 4 mods were loaded.
+[25/4/2026 14:18:46] > Loading AutoLoot.xml... done.
+[25/4/2026 14:18:46] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:18:46] > Loading highscorebook.xml... done.
+[25/4/2026 14:18:46] > Loading Simple Task.xml... done.
+[25/4/2026 14:18:46] > 4 mods were loaded.
+[25/4/2026 14:18:57] > Loading AutoLoot.xml... done.
+[25/4/2026 14:18:57] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:18:57] > Loading highscorebook.xml... done.
+[25/4/2026 14:18:57] > Loading Simple Task.xml... done.
+[25/4/2026 14:18:57] > 4 mods were loaded.
+[25/4/2026 14:19:9] > Loading AutoLoot.xml... done.
+[25/4/2026 14:19:9] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:19:9] > Loading highscorebook.xml... done.
+[25/4/2026 14:19:9] > Loading Simple Task.xml... done.
+[25/4/2026 14:19:9] > 4 mods were loaded.
+[25/4/2026 14:19:19] > Loading AutoLoot.xml... done.
+[25/4/2026 14:19:19] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:19:19] > Loading highscorebook.xml... done.
+[25/4/2026 14:19:19] > Loading Simple Task.xml... done.
+[25/4/2026 14:19:19] > 4 mods were loaded.
+[25/4/2026 14:19:29] > Loading AutoLoot.xml... done.
+[25/4/2026 14:19:29] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:19:29] > Loading highscorebook.xml... done.
+[25/4/2026 14:19:29] > Loading Simple Task.xml... done.
+[25/4/2026 14:19:29] > 4 mods were loaded.
+[25/4/2026 14:19:43] > Loading AutoLoot.xml... done.
+[25/4/2026 14:19:43] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:19:43] > Loading highscorebook.xml... done.
+[25/4/2026 14:19:43] > Loading Simple Task.xml... done.
+[25/4/2026 14:19:43] > 4 mods were loaded.
+[25/4/2026 14:20:2] > Loading AutoLoot.xml... done.
+[25/4/2026 14:20:2] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:20:2] > Loading highscorebook.xml... done.
+[25/4/2026 14:20:2] > Loading Simple Task.xml... done.
+[25/4/2026 14:20:2] > 4 mods were loaded.
+[25/4/2026 14:20:13] > Loading AutoLoot.xml... done.
+[25/4/2026 14:20:13] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:20:13] > Loading highscorebook.xml... done.
+[25/4/2026 14:20:13] > Loading Simple Task.xml... done.
+[25/4/2026 14:20:13] > 4 mods were loaded.
+[25/4/2026 14:20:41] > Loading AutoLoot.xml... done.
+[25/4/2026 14:20:41] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:20:41] > Loading highscorebook.xml... done.
+[25/4/2026 14:20:41] > Loading Simple Task.xml... done.
+[25/4/2026 14:20:41] > 4 mods were loaded.
+[25/4/2026 14:20:42] OTSYS_SQLITE3_PREPARE(): SQLITE ERROR: no such table: lottery (INSERT INTO "lottery" ("name", "item") VALUES ('God', 'nelliel mask');)
+
+[25/4/2026 14:20:44] [Error - GlobalEvent Interface] 
+[25/4/2026 14:20:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 14:20:44] Description: 
+[25/4/2026 14:20:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 14:20:44] stack traceback:
+[25/4/2026 14:20:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 14:20:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 14:21:12] > CLEAN: Removed 4 items from 5 tiles (5 were marked) in 0 seconds.
+[25/4/2026 14:22:42] > Salvando servidor...
+[25/4/2026 14:22:42] > SAVE: Completo em 0.081 segundos usando binary casa storage.
+[25/4/2026 14:24:15] > Loading AutoLoot.xml... done.
+[25/4/2026 14:24:15] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:24:15] > Loading highscorebook.xml... done.
+[25/4/2026 14:24:15] > Loading Simple Task.xml... done.
+[25/4/2026 14:24:15] > 4 mods were loaded.
+[25/4/2026 14:24:25] > Loading AutoLoot.xml... done.
+[25/4/2026 14:24:25] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:24:25] > Loading highscorebook.xml... done.
+[25/4/2026 14:24:25] > Loading Simple Task.xml... done.
+[25/4/2026 14:24:25] > 4 mods were loaded.
+
+[25/4/2026 14:25:44] [Error - GlobalEvent Interface] 
+[25/4/2026 14:25:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 14:25:44] Description: 
+[25/4/2026 14:25:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 14:25:44] stack traceback:
+[25/4/2026 14:25:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 14:25:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 14:27:37] > Loading AutoLoot.xml... done.
+[25/4/2026 14:27:37] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:27:37] > Loading highscorebook.xml... done.
+[25/4/2026 14:27:37] > Loading Simple Task.xml... done.
+[25/4/2026 14:27:37] > 4 mods were loaded.
+[25/4/2026 14:28:12] > Loading AutoLoot.xml... done.
+[25/4/2026 14:28:12] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:28:12] > Loading highscorebook.xml... done.
+[25/4/2026 14:28:12] > Loading Simple Task.xml... done.
+[25/4/2026 14:28:12] > 4 mods were loaded.
+[25/4/2026 14:28:13] God has logged out.
+[25/4/2026 14:28:14] God has logged in.
+[25/4/2026 14:28:29] > Loading AutoLoot.xml... done.
+[25/4/2026 14:28:29] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:28:29] > Loading highscorebook.xml... done.
+[25/4/2026 14:28:29] > Loading Simple Task.xml... done.
+[25/4/2026 14:28:29] > 4 mods were loaded.
+[25/4/2026 14:29:7] > Loading AutoLoot.xml... done.
+[25/4/2026 14:29:7] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:29:7] > Loading highscorebook.xml... done.
+[25/4/2026 14:29:7] > Loading Simple Task.xml... done.
+[25/4/2026 14:29:7] > 4 mods were loaded.
+[25/4/2026 14:29:10] God has logged out.
+[25/4/2026 14:29:10] God has logged in.
+[25/4/2026 14:29:43] God has logged out.
+[25/4/2026 14:29:43] God has logged in.
+
+[25/4/2026 14:30:44] [Error - GlobalEvent Interface] 
+[25/4/2026 14:30:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 14:30:44] Description: 
+[25/4/2026 14:30:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 14:30:44] stack traceback:
+[25/4/2026 14:30:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 14:30:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 14:35:44] [Error - GlobalEvent Interface] 
+[25/4/2026 14:35:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 14:35:44] Description: 
+[25/4/2026 14:35:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 14:35:44] stack traceback:
+[25/4/2026 14:35:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 14:35:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 14:40:44] [Error - GlobalEvent Interface] 
+[25/4/2026 14:40:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 14:40:44] Description: 
+[25/4/2026 14:40:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 14:40:44] stack traceback:
+[25/4/2026 14:40:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 14:40:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 14:44:32] > Loading AutoLoot.xml... done.
+[25/4/2026 14:44:32] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:44:32] > Loading highscorebook.xml... done.
+[25/4/2026 14:44:32] > Loading Simple Task.xml... done.
+[25/4/2026 14:44:32] > 4 mods were loaded.
+
+[25/4/2026 14:45:44] [Error - GlobalEvent Interface] 
+[25/4/2026 14:45:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 14:45:44] Description: 
+[25/4/2026 14:45:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 14:45:44] stack traceback:
+[25/4/2026 14:45:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 14:45:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 14:46:48] > Loading AutoLoot.xml... done.
+[25/4/2026 14:46:48] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:46:48] > Loading highscorebook.xml... done.
+[25/4/2026 14:46:48] > Loading Simple Task.xml... done.
+[25/4/2026 14:46:48] > 4 mods were loaded.
+[25/4/2026 14:47:48] > Loading AutoLoot.xml... done.
+[25/4/2026 14:47:48] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:47:48] > Loading highscorebook.xml... done.
+[25/4/2026 14:47:48] > Loading Simple Task.xml... done.
+[25/4/2026 14:47:48] > 4 mods were loaded.
+[25/4/2026 14:49:7] > Loading AutoLoot.xml... done.
+[25/4/2026 14:49:7] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:49:7] > Loading highscorebook.xml... done.
+[25/4/2026 14:49:7] > Loading Simple Task.xml... done.
+[25/4/2026 14:49:7] > 4 mods were loaded.
+[25/4/2026 14:49:8] God has logged out.
+[25/4/2026 14:49:9] God has logged in.
+
+[25/4/2026 14:50:44] [Error - GlobalEvent Interface] 
+[25/4/2026 14:50:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 14:50:44] Description: 
+[25/4/2026 14:50:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 14:50:44] stack traceback:
+[25/4/2026 14:50:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 14:50:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 14:52:51] > Loading AutoLoot.xml... done.
+[25/4/2026 14:52:51] > Loading Automatic Raids.xml... done.
+[25/4/2026 14:52:51] > Loading highscorebook.xml... done.
+[25/4/2026 14:52:51] > Loading Simple Task.xml... done.
+[25/4/2026 14:52:51] > 4 mods were loaded.
+
+[25/4/2026 14:55:44] [Error - GlobalEvent Interface] 
+[25/4/2026 14:55:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 14:55:44] Description: 
+[25/4/2026 14:55:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 14:55:44] stack traceback:
+[25/4/2026 14:55:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 14:55:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 15:0:38] > Loading AutoLoot.xml... done.
+[25/4/2026 15:0:38] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:0:38] > Loading highscorebook.xml... done.
+[25/4/2026 15:0:38] > Loading Simple Task.xml... done.
+[25/4/2026 15:0:38] > 4 mods were loaded.
+[25/4/2026 15:0:39] > Loading AutoLoot.xml... done.
+[25/4/2026 15:0:39] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:0:39] > Loading highscorebook.xml... done.
+[25/4/2026 15:0:39] > Loading Simple Task.xml... done.
+[25/4/2026 15:0:39] > 4 mods were loaded.
+
+[25/4/2026 15:0:44] [Error - GlobalEvent Interface] 
+[25/4/2026 15:0:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 15:0:44] Description: 
+[25/4/2026 15:0:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 15:0:44] stack traceback:
+[25/4/2026 15:0:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 15:0:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 15:1:25] > Loading AutoLoot.xml... done.
+[25/4/2026 15:1:25] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:1:25] > Loading highscorebook.xml... done.
+[25/4/2026 15:1:25] > Loading Simple Task.xml... done.
+[25/4/2026 15:1:25] > 4 mods were loaded.
+[25/4/2026 15:1:26] > Loading AutoLoot.xml... done.
+[25/4/2026 15:1:26] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:1:26] > Loading highscorebook.xml... done.
+[25/4/2026 15:1:26] > Loading Simple Task.xml... done.
+[25/4/2026 15:1:26] > 4 mods were loaded.
+[25/4/2026 15:1:43] > Loading AutoLoot.xml... done.
+[25/4/2026 15:1:43] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:1:43] > Loading highscorebook.xml... done.
+[25/4/2026 15:1:43] > Loading Simple Task.xml... done.
+[25/4/2026 15:1:43] > 4 mods were loaded.
+[25/4/2026 15:1:51] > Loading AutoLoot.xml... done.
+[25/4/2026 15:1:51] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:1:51] > Loading highscorebook.xml... done.
+[25/4/2026 15:1:51] > Loading Simple Task.xml... done.
+[25/4/2026 15:1:51] > 4 mods were loaded.
+[25/4/2026 15:2:14] > Loading AutoLoot.xml... done.
+[25/4/2026 15:2:14] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:2:14] > Loading highscorebook.xml... done.
+[25/4/2026 15:2:14] > Loading Simple Task.xml... done.
+[25/4/2026 15:2:14] > 4 mods were loaded.
+[25/4/2026 15:2:22] > Loading AutoLoot.xml... done.
+[25/4/2026 15:2:22] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:2:22] > Loading highscorebook.xml... done.
+[25/4/2026 15:2:22] > Loading Simple Task.xml... done.
+[25/4/2026 15:2:22] > 4 mods were loaded.
+[25/4/2026 15:2:51] > Loading AutoLoot.xml... done.
+[25/4/2026 15:2:51] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:2:51] > Loading highscorebook.xml... done.
+[25/4/2026 15:2:51] > Loading Simple Task.xml... done.
+[25/4/2026 15:2:51] > 4 mods were loaded.
+[25/4/2026 15:2:53] > Loading AutoLoot.xml... done.
+[25/4/2026 15:2:53] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:2:53] > Loading highscorebook.xml... done.
+[25/4/2026 15:2:53] > Loading Simple Task.xml... done.
+[25/4/2026 15:2:53] > 4 mods were loaded.
+[25/4/2026 15:3:16] > Loading AutoLoot.xml... done.
+[25/4/2026 15:3:16] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:3:16] > Loading highscorebook.xml... done.
+[25/4/2026 15:3:16] > Loading Simple Task.xml... done.
+[25/4/2026 15:3:16] > 4 mods were loaded.
+[25/4/2026 15:4:13] > Loading AutoLoot.xml... done.
+[25/4/2026 15:4:13] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:4:13] > Loading highscorebook.xml... done.
+[25/4/2026 15:4:13] > Loading Simple Task.xml... done.
+[25/4/2026 15:4:13] > 4 mods were loaded.
+[25/4/2026 15:4:13] > Loading AutoLoot.xml... done.
+[25/4/2026 15:4:13] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:4:13] > Loading highscorebook.xml... done.
+[25/4/2026 15:4:13] > Loading Simple Task.xml... done.
+[25/4/2026 15:4:13] > 4 mods were loaded.
+[25/4/2026 15:4:37] > Loading AutoLoot.xml... done.
+[25/4/2026 15:4:37] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:4:37] > Loading highscorebook.xml... done.
+[25/4/2026 15:4:37] > Loading Simple Task.xml... done.
+[25/4/2026 15:4:37] > 4 mods were loaded.
+[25/4/2026 15:4:53] > Loading AutoLoot.xml... done.
+[25/4/2026 15:4:53] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:4:53] > Loading highscorebook.xml... done.
+[25/4/2026 15:4:53] > Loading Simple Task.xml... done.
+[25/4/2026 15:4:53] > 4 mods were loaded.
+
+[25/4/2026 15:5:44] [Error - GlobalEvent Interface] 
+[25/4/2026 15:5:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 15:5:44] Description: 
+[25/4/2026 15:5:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 15:5:44] stack traceback:
+[25/4/2026 15:5:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 15:5:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 15:7:44] > Loading AutoLoot.xml... done.
+[25/4/2026 15:7:44] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:7:44] > Loading highscorebook.xml... done.
+[25/4/2026 15:7:44] > Loading Simple Task.xml... done.
+[25/4/2026 15:7:44] > 4 mods were loaded.
+[25/4/2026 15:9:4] > Loading AutoLoot.xml... done.
+[25/4/2026 15:9:4] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:9:4] > Loading highscorebook.xml... done.
+[25/4/2026 15:9:4] > Loading Simple Task.xml... done.
+[25/4/2026 15:9:4] > 4 mods were loaded.
+
+[25/4/2026 15:10:44] [Error - GlobalEvent Interface] 
+[25/4/2026 15:10:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 15:10:44] Description: 
+[25/4/2026 15:10:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 15:10:44] stack traceback:
+[25/4/2026 15:10:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 15:10:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 15:10:55] > Loading AutoLoot.xml... done.
+[25/4/2026 15:10:55] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:10:55] > Loading highscorebook.xml... done.
+[25/4/2026 15:10:55] > Loading Simple Task.xml... done.
+[25/4/2026 15:10:55] > 4 mods were loaded.
+[25/4/2026 15:13:47] > Loading AutoLoot.xml... done.
+[25/4/2026 15:13:47] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:13:47] > Loading highscorebook.xml... done.
+[25/4/2026 15:13:47] > Loading Simple Task.xml... done.
+[25/4/2026 15:13:47] > 4 mods were loaded.
+
+[25/4/2026 15:15:44] [Error - GlobalEvent Interface] 
+[25/4/2026 15:15:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 15:15:44] Description: 
+[25/4/2026 15:15:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 15:15:44] stack traceback:
+[25/4/2026 15:15:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 15:15:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 15:16:37] > Loading AutoLoot.xml... done.
+[25/4/2026 15:16:37] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:16:37] > Loading highscorebook.xml... done.
+[25/4/2026 15:16:37] > Loading Simple Task.xml... done.
+[25/4/2026 15:16:37] > 4 mods were loaded.
+[25/4/2026 15:17:24] > Loading AutoLoot.xml... done.
+[25/4/2026 15:17:24] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:17:24] > Loading highscorebook.xml... done.
+[25/4/2026 15:17:24] > Loading Simple Task.xml... done.
+[25/4/2026 15:17:24] > 4 mods were loaded.
+[25/4/2026 15:19:43] > Loading AutoLoot.xml... done.
+[25/4/2026 15:19:43] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:19:43] > Loading highscorebook.xml... done.
+[25/4/2026 15:19:43] > Loading Simple Task.xml... done.
+[25/4/2026 15:19:43] > 4 mods were loaded.
+
+[25/4/2026 15:20:44] [Error - GlobalEvent Interface] 
+[25/4/2026 15:20:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 15:20:44] Description: 
+[25/4/2026 15:20:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 15:20:44] stack traceback:
+[25/4/2026 15:20:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 15:20:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 15:22:42] > Salvando servidor...
+[25/4/2026 15:22:42] > SAVE: Completo em 0.083 segundos usando binary casa storage.
+
+[25/4/2026 15:25:44] [Error - GlobalEvent Interface] 
+[25/4/2026 15:25:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 15:25:44] Description: 
+[25/4/2026 15:25:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 15:25:44] stack traceback:
+[25/4/2026 15:25:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 15:25:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 15:30:44] [Error - GlobalEvent Interface] 
+[25/4/2026 15:30:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 15:30:44] Description: 
+[25/4/2026 15:30:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 15:30:44] stack traceback:
+[25/4/2026 15:30:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 15:30:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 15:35:44] [Error - GlobalEvent Interface] 
+[25/4/2026 15:35:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 15:35:44] Description: 
+[25/4/2026 15:35:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 15:35:44] stack traceback:
+[25/4/2026 15:35:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 15:35:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 15:40:44] [Error - GlobalEvent Interface] 
+[25/4/2026 15:40:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 15:40:44] Description: 
+[25/4/2026 15:40:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 15:40:44] stack traceback:
+[25/4/2026 15:40:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 15:40:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 15:41:16] > Loading AutoLoot.xml... done.
+[25/4/2026 15:41:16] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:41:16] > Loading highscorebook.xml... done.
+[25/4/2026 15:41:16] > Loading Simple Task.xml... done.
+[25/4/2026 15:41:16] > 4 mods were loaded.
+[25/4/2026 15:41:17] > Loading AutoLoot.xml... done.
+[25/4/2026 15:41:17] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:41:17] > Loading highscorebook.xml... done.
+[25/4/2026 15:41:17] > Loading Simple Task.xml... done.
+[25/4/2026 15:41:17] > 4 mods were loaded.
+[25/4/2026 15:41:25] > Loading AutoLoot.xml... done.
+[25/4/2026 15:41:25] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:41:25] > Loading highscorebook.xml... done.
+[25/4/2026 15:41:25] > Loading Simple Task.xml... done.
+[25/4/2026 15:41:25] > 4 mods were loaded.
+[25/4/2026 15:41:34] > Loading AutoLoot.xml... done.
+[25/4/2026 15:41:34] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:41:34] > Loading highscorebook.xml... done.
+[25/4/2026 15:41:34] > Loading Simple Task.xml... done.
+[25/4/2026 15:41:34] > 4 mods were loaded.
+[25/4/2026 15:42:1] > Loading AutoLoot.xml... done.
+[25/4/2026 15:42:1] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:42:1] > Loading highscorebook.xml... done.
+[25/4/2026 15:42:1] > Loading Simple Task.xml... done.
+[25/4/2026 15:42:1] > 4 mods were loaded.
+[25/4/2026 15:42:6] > Loading AutoLoot.xml... done.
+[25/4/2026 15:42:6] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:42:6] > Loading highscorebook.xml... done.
+[25/4/2026 15:42:6] > Loading Simple Task.xml... done.
+[25/4/2026 15:42:6] > 4 mods were loaded.
+
+[25/4/2026 15:45:44] [Error - GlobalEvent Interface] 
+[25/4/2026 15:45:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 15:45:44] Description: 
+[25/4/2026 15:45:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 15:45:44] stack traceback:
+[25/4/2026 15:45:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 15:45:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 15:47:38] > Loading AutoLoot.xml... done.
+[25/4/2026 15:47:38] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:47:38] > Loading highscorebook.xml... done.
+[25/4/2026 15:47:38] > Loading Simple Task.xml... done.
+[25/4/2026 15:47:38] > 4 mods were loaded.
+[25/4/2026 15:47:50] > Loading AutoLoot.xml... done.
+[25/4/2026 15:47:50] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:47:50] > Loading highscorebook.xml... done.
+[25/4/2026 15:47:50] > Loading Simple Task.xml... done.
+[25/4/2026 15:47:50] > 4 mods were loaded.
+[25/4/2026 15:49:20] > Loading AutoLoot.xml... done.
+[25/4/2026 15:49:20] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:49:20] > Loading highscorebook.xml... done.
+[25/4/2026 15:49:20] > Loading Simple Task.xml... done.
+[25/4/2026 15:49:20] > 4 mods were loaded.
+[25/4/2026 15:49:27] > Loading AutoLoot.xml... done.
+[25/4/2026 15:49:27] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:49:27] > Loading highscorebook.xml... done.
+[25/4/2026 15:49:27] > Loading Simple Task.xml... done.
+[25/4/2026 15:49:27] > 4 mods were loaded.
+
+[25/4/2026 15:50:44] [Error - GlobalEvent Interface] 
+[25/4/2026 15:50:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 15:50:44] Description: 
+[25/4/2026 15:50:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 15:50:44] stack traceback:
+[25/4/2026 15:50:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 15:50:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 15:52:51] > Loading AutoLoot.xml... done.
+[25/4/2026 15:52:51] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:52:51] > Loading highscorebook.xml... done.
+[25/4/2026 15:52:51] > Loading Simple Task.xml... done.
+[25/4/2026 15:52:51] > 4 mods were loaded.
+[25/4/2026 15:52:52] > Loading AutoLoot.xml... done.
+[25/4/2026 15:52:52] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:52:52] > Loading highscorebook.xml... done.
+[25/4/2026 15:52:52] > Loading Simple Task.xml... done.
+[25/4/2026 15:52:52] > 4 mods were loaded.
+[25/4/2026 15:53:1] > Loading AutoLoot.xml... done.
+[25/4/2026 15:53:1] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:53:1] > Loading highscorebook.xml... done.
+[25/4/2026 15:53:1] > Loading Simple Task.xml... done.
+[25/4/2026 15:53:1] > 4 mods were loaded.
+[25/4/2026 15:53:2] > Loading AutoLoot.xml... done.
+[25/4/2026 15:53:2] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:53:2] > Loading highscorebook.xml... done.
+[25/4/2026 15:53:2] > Loading Simple Task.xml... done.
+[25/4/2026 15:53:2] > 4 mods were loaded.
+[25/4/2026 15:55:6] > Loading AutoLoot.xml... done.
+[25/4/2026 15:55:6] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:55:6] > Loading highscorebook.xml... done.
+[25/4/2026 15:55:6] > Loading Simple Task.xml... done.
+[25/4/2026 15:55:6] > 4 mods were loaded.
+[25/4/2026 15:55:11] > Loading AutoLoot.xml... done.
+[25/4/2026 15:55:11] > Loading Automatic Raids.xml... done.
+[25/4/2026 15:55:11] > Loading highscorebook.xml... done.
+[25/4/2026 15:55:11] > Loading Simple Task.xml... done.
+[25/4/2026 15:55:11] > 4 mods were loaded.
+
+[25/4/2026 15:55:44] [Error - GlobalEvent Interface] 
+[25/4/2026 15:55:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 15:55:44] Description: 
+[25/4/2026 15:55:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 15:55:44] stack traceback:
+[25/4/2026 15:55:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 15:55:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 16:0:44] [Error - GlobalEvent Interface] 
+[25/4/2026 16:0:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 16:0:44] Description: 
+[25/4/2026 16:0:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 16:0:44] stack traceback:
+[25/4/2026 16:0:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 16:0:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 16:1:46] > Loading AutoLoot.xml... done.
+[25/4/2026 16:1:46] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:1:46] > Loading highscorebook.xml... done.
+[25/4/2026 16:1:46] > Loading Simple Task.xml... done.
+[25/4/2026 16:1:46] > 4 mods were loaded.
+[25/4/2026 16:4:57] > Loading AutoLoot.xml... done.
+[25/4/2026 16:4:57] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:4:57] > Loading highscorebook.xml... done.
+[25/4/2026 16:4:57] > Loading Simple Task.xml... done.
+[25/4/2026 16:4:57] > 4 mods were loaded.
+
+[25/4/2026 16:5:44] [Error - GlobalEvent Interface] 
+[25/4/2026 16:5:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 16:5:44] Description: 
+[25/4/2026 16:5:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 16:5:44] stack traceback:
+[25/4/2026 16:5:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 16:5:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 16:5:49] > Loading AutoLoot.xml... done.
+[25/4/2026 16:5:49] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:5:49] > Loading highscorebook.xml... done.
+[25/4/2026 16:5:49] > Loading Simple Task.xml... done.
+[25/4/2026 16:5:49] > 4 mods were loaded.
+[25/4/2026 16:5:57] > Loading AutoLoot.xml... done.
+[25/4/2026 16:5:57] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:5:57] > Loading highscorebook.xml... done.
+[25/4/2026 16:5:57] > Loading Simple Task.xml... done.
+[25/4/2026 16:5:57] > 4 mods were loaded.
+[25/4/2026 16:8:47] > Loading AutoLoot.xml... done.
+[25/4/2026 16:8:47] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:8:47] > Loading highscorebook.xml... done.
+[25/4/2026 16:8:47] > Loading Simple Task.xml... done.
+[25/4/2026 16:8:47] > 4 mods were loaded.
+
+[25/4/2026 16:10:44] [Error - GlobalEvent Interface] 
+[25/4/2026 16:10:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 16:10:44] Description: 
+[25/4/2026 16:10:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 16:10:44] stack traceback:
+[25/4/2026 16:10:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 16:10:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 16:12:29] > Loading AutoLoot.xml... done.
+[25/4/2026 16:12:29] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:12:29] > Loading highscorebook.xml... done.
+[25/4/2026 16:12:29] > Loading Simple Task.xml... done.
+[25/4/2026 16:12:29] > 4 mods were loaded.
+[25/4/2026 16:13:6] > Loading AutoLoot.xml... done.
+[25/4/2026 16:13:6] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:13:6] > Loading highscorebook.xml... done.
+[25/4/2026 16:13:6] > Loading Simple Task.xml... done.
+[25/4/2026 16:13:6] > 4 mods were loaded.
+[25/4/2026 16:14:17] > Loading AutoLoot.xml... done.
+[25/4/2026 16:14:17] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:14:17] > Loading highscorebook.xml... done.
+[25/4/2026 16:14:17] > Loading Simple Task.xml... done.
+[25/4/2026 16:14:17] > 4 mods were loaded.
+[25/4/2026 16:14:23] > Loading AutoLoot.xml... done.
+[25/4/2026 16:14:23] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:14:23] > Loading highscorebook.xml... done.
+[25/4/2026 16:14:23] > Loading Simple Task.xml... done.
+[25/4/2026 16:14:23] > 4 mods were loaded.
+[25/4/2026 16:14:33] > Loading AutoLoot.xml... done.
+[25/4/2026 16:14:33] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:14:33] > Loading highscorebook.xml... done.
+[25/4/2026 16:14:33] > Loading Simple Task.xml... done.
+[25/4/2026 16:14:33] > 4 mods were loaded.
+
+[25/4/2026 16:15:44] [Error - GlobalEvent Interface] 
+[25/4/2026 16:15:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 16:15:44] Description: 
+[25/4/2026 16:15:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 16:15:44] stack traceback:
+[25/4/2026 16:15:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 16:15:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 16:18:18] > Loading AutoLoot.xml... done.
+[25/4/2026 16:18:18] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:18:18] > Loading highscorebook.xml... done.
+[25/4/2026 16:18:18] > Loading Simple Task.xml... done.
+[25/4/2026 16:18:18] > 4 mods were loaded.
+[25/4/2026 16:18:31] > Loading AutoLoot.xml... done.
+[25/4/2026 16:18:31] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:18:31] > Loading highscorebook.xml... done.
+[25/4/2026 16:18:31] > Loading Simple Task.xml... done.
+[25/4/2026 16:18:31] > 4 mods were loaded.
+[25/4/2026 16:18:40] > Loading AutoLoot.xml... done.
+[25/4/2026 16:18:40] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:18:40] > Loading highscorebook.xml... done.
+[25/4/2026 16:18:40] > Loading Simple Task.xml... done.
+[25/4/2026 16:18:40] > 4 mods were loaded.
+[25/4/2026 16:19:0] > Loading AutoLoot.xml... done.
+[25/4/2026 16:19:0] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:19:0] > Loading highscorebook.xml... done.
+[25/4/2026 16:19:0] > Loading Simple Task.xml... done.
+[25/4/2026 16:19:0] > 4 mods were loaded.
+[25/4/2026 16:19:11] > Loading AutoLoot.xml... done.
+[25/4/2026 16:19:11] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:19:11] > Loading highscorebook.xml... done.
+[25/4/2026 16:19:11] > Loading Simple Task.xml... done.
+[25/4/2026 16:19:11] > 4 mods were loaded.
+[25/4/2026 16:19:41] > Loading AutoLoot.xml... done.
+[25/4/2026 16:19:41] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:19:41] > Loading highscorebook.xml... done.
+[25/4/2026 16:19:41] > Loading Simple Task.xml... done.
+[25/4/2026 16:19:41] > 4 mods were loaded.
+[25/4/2026 16:19:55] > Loading AutoLoot.xml... done.
+[25/4/2026 16:19:55] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:19:55] > Loading highscorebook.xml... done.
+[25/4/2026 16:19:55] > Loading Simple Task.xml... done.
+[25/4/2026 16:19:55] > 4 mods were loaded.
+[25/4/2026 16:20:42] OTSYS_SQLITE3_PREPARE(): SQLITE ERROR: no such table: lottery (INSERT INTO "lottery" ("name", "item") VALUES ('God', 'goku boots');)
+
+[25/4/2026 16:20:44] [Error - GlobalEvent Interface] 
+[25/4/2026 16:20:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 16:20:44] Description: 
+[25/4/2026 16:20:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 16:20:44] stack traceback:
+[25/4/2026 16:20:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 16:20:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 16:21:12] > CLEAN: Removed 1 item from 4 tiles (4 were marked) in 0 seconds.
+[25/4/2026 16:22:42] > Salvando servidor...
+[25/4/2026 16:22:42] > SAVE: Completo em 0.094 segundos usando binary casa storage.
+
+[25/4/2026 16:25:44] [Error - GlobalEvent Interface] 
+[25/4/2026 16:25:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 16:25:44] Description: 
+[25/4/2026 16:25:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 16:25:44] stack traceback:
+[25/4/2026 16:25:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 16:25:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 16:28:57] > Loading AutoLoot.xml... done.
+[25/4/2026 16:28:57] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:28:57] > Loading highscorebook.xml... done.
+[25/4/2026 16:28:57] > Loading Simple Task.xml... done.
+[25/4/2026 16:28:57] > 4 mods were loaded.
+[25/4/2026 16:29:2] > Loading AutoLoot.xml... done.
+[25/4/2026 16:29:2] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:29:2] > Loading highscorebook.xml... done.
+[25/4/2026 16:29:2] > Loading Simple Task.xml... done.
+[25/4/2026 16:29:2] > 4 mods were loaded.
+[25/4/2026 16:29:9] > Loading AutoLoot.xml... done.
+[25/4/2026 16:29:9] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:29:9] > Loading highscorebook.xml... done.
+[25/4/2026 16:29:9] > Loading Simple Task.xml... done.
+[25/4/2026 16:29:9] > 4 mods were loaded.
+[25/4/2026 16:29:23] > Loading AutoLoot.xml... done.
+[25/4/2026 16:29:23] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:29:23] > Loading highscorebook.xml... done.
+[25/4/2026 16:29:23] > Loading Simple Task.xml... done.
+[25/4/2026 16:29:23] > 4 mods were loaded.
+[25/4/2026 16:30:3] > Loading AutoLoot.xml... done.
+[25/4/2026 16:30:3] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:30:3] > Loading highscorebook.xml... done.
+[25/4/2026 16:30:3] > Loading Simple Task.xml... done.
+[25/4/2026 16:30:3] > 4 mods were loaded.
+[25/4/2026 16:30:11] > Loading AutoLoot.xml... done.
+[25/4/2026 16:30:11] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:30:11] > Loading highscorebook.xml... done.
+[25/4/2026 16:30:11] > Loading Simple Task.xml... done.
+[25/4/2026 16:30:11] > 4 mods were loaded.
+
+[25/4/2026 16:30:44] [Error - GlobalEvent Interface] 
+[25/4/2026 16:30:44] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 16:30:44] Description: 
+[25/4/2026 16:30:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 16:30:44] stack traceback:
+[25/4/2026 16:30:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 16:30:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 16:32:38] > Loading AutoLoot.xml... done.
+[25/4/2026 16:32:38] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:32:38] > Loading highscorebook.xml... done.
+[25/4/2026 16:32:38] > Loading Simple Task.xml... done.
+[25/4/2026 16:32:38] > 4 mods were loaded.
+[25/4/2026 16:33:13] > Loading AutoLoot.xml... done.
+[25/4/2026 16:33:13] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:33:13] > Loading highscorebook.xml... done.
+[25/4/2026 16:33:13] > Loading Simple Task.xml... done.
+[25/4/2026 16:33:13] > 4 mods were loaded.
+[25/4/2026 16:33:49] > Loading AutoLoot.xml... done.
+[25/4/2026 16:33:49] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:33:49] > Loading highscorebook.xml... done.
+[25/4/2026 16:33:49] > Loading Simple Task.xml... done.
+[25/4/2026 16:33:49] > 4 mods were loaded.
+[25/4/2026 16:33:54] > Loading AutoLoot.xml... done.
+[25/4/2026 16:33:54] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:33:54] > Loading highscorebook.xml... done.
+[25/4/2026 16:33:54] > Loading Simple Task.xml... done.
+[25/4/2026 16:33:54] > 4 mods were loaded.
+[25/4/2026 16:34:53] > Loading AutoLoot.xml... done.
+[25/4/2026 16:34:53] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:34:53] > Loading highscorebook.xml... done.
+[25/4/2026 16:34:53] > Loading Simple Task.xml... done.
+[25/4/2026 16:34:53] > 4 mods were loaded.
+[25/4/2026 16:35:20] > Loading AutoLoot.xml... done.
+[25/4/2026 16:35:20] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:35:20] > Loading highscorebook.xml... done.
+[25/4/2026 16:35:20] > Loading Simple Task.xml... done.
+[25/4/2026 16:35:20] > 4 mods were loaded.
+[25/4/2026 16:35:44] > Loading AutoLoot.xml... done.
+[25/4/2026 16:35:44] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:35:44] > Loading highscorebook.xml... done.
+[25/4/2026 16:35:44] > Loading Simple Task.xml... done.
+[25/4/2026 16:35:44] > 4 mods were loaded.
+
+[25/4/2026 16:35:45] [Error - GlobalEvent Interface] 
+[25/4/2026 16:35:45] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 16:35:45] Description: 
+[25/4/2026 16:35:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 16:35:45] stack traceback:
+[25/4/2026 16:35:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 16:35:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 16:35:51] > Loading AutoLoot.xml... done.
+[25/4/2026 16:35:51] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:35:51] > Loading highscorebook.xml... done.
+[25/4/2026 16:35:51] > Loading Simple Task.xml... done.
+[25/4/2026 16:35:51] > 4 mods were loaded.
+[25/4/2026 16:38:16] > Loading AutoLoot.xml... done.
+[25/4/2026 16:38:16] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:38:16] > Loading highscorebook.xml... done.
+[25/4/2026 16:38:16] > Loading Simple Task.xml... done.
+[25/4/2026 16:38:16] > 4 mods were loaded.
+[25/4/2026 16:38:25] > Loading AutoLoot.xml... done.
+[25/4/2026 16:38:25] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:38:25] > Loading highscorebook.xml... done.
+[25/4/2026 16:38:25] > Loading Simple Task.xml... done.
+[25/4/2026 16:38:25] > 4 mods were loaded.
+[25/4/2026 16:38:33] > Loading AutoLoot.xml... done.
+[25/4/2026 16:38:33] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:38:33] > Loading highscorebook.xml... done.
+[25/4/2026 16:38:33] > Loading Simple Task.xml... done.
+[25/4/2026 16:38:33] > 4 mods were loaded.
+[25/4/2026 16:38:38] > Loading AutoLoot.xml... done.
+[25/4/2026 16:38:38] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:38:38] > Loading highscorebook.xml... done.
+[25/4/2026 16:38:38] > Loading Simple Task.xml... done.
+[25/4/2026 16:38:38] > 4 mods were loaded.
+[25/4/2026 16:38:44] > Loading AutoLoot.xml... done.
+[25/4/2026 16:38:44] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:38:44] > Loading highscorebook.xml... done.
+[25/4/2026 16:38:44] > Loading Simple Task.xml... done.
+[25/4/2026 16:38:44] > 4 mods were loaded.
+[25/4/2026 16:39:24] > Loading AutoLoot.xml... done.
+[25/4/2026 16:39:24] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:39:24] > Loading highscorebook.xml... done.
+[25/4/2026 16:39:24] > Loading Simple Task.xml... done.
+[25/4/2026 16:39:24] > 4 mods were loaded.
+[25/4/2026 16:39:30] > Loading AutoLoot.xml... done.
+[25/4/2026 16:39:30] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:39:30] > Loading highscorebook.xml... done.
+[25/4/2026 16:39:30] > Loading Simple Task.xml... done.
+[25/4/2026 16:39:30] > 4 mods were loaded.
+[25/4/2026 16:39:35] > Loading AutoLoot.xml... done.
+[25/4/2026 16:39:35] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:39:35] > Loading highscorebook.xml... done.
+[25/4/2026 16:39:35] > Loading Simple Task.xml... done.
+[25/4/2026 16:39:35] > 4 mods were loaded.
+[25/4/2026 16:39:36] > Loading AutoLoot.xml... done.
+[25/4/2026 16:39:36] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:39:36] > Loading highscorebook.xml... done.
+[25/4/2026 16:39:36] > Loading Simple Task.xml... done.
+[25/4/2026 16:39:36] > 4 mods were loaded.
+[25/4/2026 16:39:42] > Loading AutoLoot.xml... done.
+[25/4/2026 16:39:42] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:39:42] > Loading highscorebook.xml... done.
+[25/4/2026 16:39:42] > Loading Simple Task.xml... done.
+[25/4/2026 16:39:42] > 4 mods were loaded.
+[25/4/2026 16:40:19] > Loading AutoLoot.xml... done.
+[25/4/2026 16:40:19] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:40:19] > Loading highscorebook.xml... done.
+[25/4/2026 16:40:19] > Loading Simple Task.xml... done.
+[25/4/2026 16:40:19] > 4 mods were loaded.
+
+[25/4/2026 16:40:45] [Error - GlobalEvent Interface] 
+[25/4/2026 16:40:45] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 16:40:45] Description: 
+[25/4/2026 16:40:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 16:40:45] stack traceback:
+[25/4/2026 16:40:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 16:40:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 16:41:38] > Loading AutoLoot.xml... done.
+[25/4/2026 16:41:38] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:41:38] > Loading highscorebook.xml... done.
+[25/4/2026 16:41:38] > Loading Simple Task.xml... done.
+[25/4/2026 16:41:38] > 4 mods were loaded.
+[25/4/2026 16:41:46] > Loading AutoLoot.xml... done.
+[25/4/2026 16:41:46] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:41:46] > Loading highscorebook.xml... done.
+[25/4/2026 16:41:46] > Loading Simple Task.xml... done.
+[25/4/2026 16:41:46] > 4 mods were loaded.
+[25/4/2026 16:42:6] > Loading AutoLoot.xml... done.
+[25/4/2026 16:42:6] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:42:6] > Loading highscorebook.xml... done.
+[25/4/2026 16:42:6] > Loading Simple Task.xml... done.
+[25/4/2026 16:42:6] > 4 mods were loaded.
+[25/4/2026 16:43:45] > Loading AutoLoot.xml... done.
+[25/4/2026 16:43:45] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:43:45] > Loading highscorebook.xml... done.
+[25/4/2026 16:43:45] > Loading Simple Task.xml... done.
+[25/4/2026 16:43:45] > 4 mods were loaded.
+[25/4/2026 16:44:42] > Loading AutoLoot.xml... done.
+[25/4/2026 16:44:42] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:44:42] > Loading highscorebook.xml... done.
+[25/4/2026 16:44:42] > Loading Simple Task.xml... done.
+[25/4/2026 16:44:42] > 4 mods were loaded.
+[25/4/2026 16:44:53] > Loading AutoLoot.xml... done.
+[25/4/2026 16:44:53] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:44:53] > Loading highscorebook.xml... done.
+[25/4/2026 16:44:53] > Loading Simple Task.xml... done.
+[25/4/2026 16:44:53] > 4 mods were loaded.
+[25/4/2026 16:45:24] > Loading AutoLoot.xml... done.
+[25/4/2026 16:45:24] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:45:24] > Loading highscorebook.xml... done.
+[25/4/2026 16:45:24] > Loading Simple Task.xml... done.
+[25/4/2026 16:45:24] > 4 mods were loaded.
+[25/4/2026 16:45:32] > Loading AutoLoot.xml... done.
+[25/4/2026 16:45:32] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:45:32] > Loading highscorebook.xml... done.
+[25/4/2026 16:45:32] > Loading Simple Task.xml... done.
+[25/4/2026 16:45:32] > 4 mods were loaded.
+
+[25/4/2026 16:45:45] [Error - GlobalEvent Interface] 
+[25/4/2026 16:45:45] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 16:45:45] Description: 
+[25/4/2026 16:45:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 16:45:45] stack traceback:
+[25/4/2026 16:45:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 16:45:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 16:48:36] > Loading AutoLoot.xml... done.
+[25/4/2026 16:48:36] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:48:36] > Loading highscorebook.xml... done.
+[25/4/2026 16:48:36] > Loading Simple Task.xml... done.
+[25/4/2026 16:48:36] > 4 mods were loaded.
+[25/4/2026 16:48:43] > Loading AutoLoot.xml... done.
+[25/4/2026 16:48:43] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:48:43] > Loading highscorebook.xml... done.
+[25/4/2026 16:48:43] > Loading Simple Task.xml... done.
+[25/4/2026 16:48:43] > 4 mods were loaded.
+
+[25/4/2026 16:50:45] [Error - GlobalEvent Interface] 
+[25/4/2026 16:50:45] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 16:50:45] Description: 
+[25/4/2026 16:50:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 16:50:45] stack traceback:
+[25/4/2026 16:50:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 16:50:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 16:52:3] > Loading AutoLoot.xml... done.
+[25/4/2026 16:52:3] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:52:3] > Loading highscorebook.xml... done.
+[25/4/2026 16:52:3] > Loading Simple Task.xml... done.
+[25/4/2026 16:52:3] > 4 mods were loaded.
+[25/4/2026 16:52:10] > Loading AutoLoot.xml... done.
+[25/4/2026 16:52:10] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:52:10] > Loading highscorebook.xml... done.
+[25/4/2026 16:52:10] > Loading Simple Task.xml... done.
+[25/4/2026 16:52:10] > 4 mods were loaded.
+[25/4/2026 16:53:1] > Loading AutoLoot.xml... done.
+[25/4/2026 16:53:1] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:53:1] > Loading highscorebook.xml... done.
+[25/4/2026 16:53:1] > Loading Simple Task.xml... done.
+[25/4/2026 16:53:1] > 4 mods were loaded.
+[25/4/2026 16:53:14] > Loading AutoLoot.xml... done.
+[25/4/2026 16:53:14] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:53:14] > Loading highscorebook.xml... done.
+[25/4/2026 16:53:14] > Loading Simple Task.xml... done.
+[25/4/2026 16:53:14] > 4 mods were loaded.
+[25/4/2026 16:53:27] > Loading AutoLoot.xml... done.
+[25/4/2026 16:53:27] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:53:27] > Loading highscorebook.xml... done.
+[25/4/2026 16:53:27] > Loading Simple Task.xml... done.
+[25/4/2026 16:53:27] > 4 mods were loaded.
+[25/4/2026 16:54:12] > Loading AutoLoot.xml... done.
+[25/4/2026 16:54:12] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:54:12] > Loading highscorebook.xml... done.
+[25/4/2026 16:54:12] > Loading Simple Task.xml... done.
+[25/4/2026 16:54:12] > 4 mods were loaded.
+[25/4/2026 16:54:26] > Loading AutoLoot.xml... done.
+[25/4/2026 16:54:26] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:54:26] > Loading highscorebook.xml... done.
+[25/4/2026 16:54:26] > Loading Simple Task.xml... done.
+[25/4/2026 16:54:26] > 4 mods were loaded.
+[25/4/2026 16:54:32] > Loading AutoLoot.xml... done.
+[25/4/2026 16:54:32] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:54:32] > Loading highscorebook.xml... done.
+[25/4/2026 16:54:32] > Loading Simple Task.xml... done.
+[25/4/2026 16:54:32] > 4 mods were loaded.
+[25/4/2026 16:54:33] > Loading AutoLoot.xml... done.
+[25/4/2026 16:54:33] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:54:33] > Loading highscorebook.xml... done.
+[25/4/2026 16:54:33] > Loading Simple Task.xml... done.
+[25/4/2026 16:54:33] > 4 mods were loaded.
+[25/4/2026 16:55:11] > Loading AutoLoot.xml... done.
+[25/4/2026 16:55:11] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:55:11] > Loading highscorebook.xml... done.
+[25/4/2026 16:55:11] > Loading Simple Task.xml... done.
+[25/4/2026 16:55:11] > 4 mods were loaded.
+
+[25/4/2026 16:55:45] [Error - GlobalEvent Interface] 
+[25/4/2026 16:55:45] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 16:55:45] Description: 
+[25/4/2026 16:55:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 16:55:45] stack traceback:
+[25/4/2026 16:55:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 16:55:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 16:56:22] > Loading AutoLoot.xml... done.
+[25/4/2026 16:56:22] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:56:22] > Loading highscorebook.xml... done.
+[25/4/2026 16:56:22] > Loading Simple Task.xml... done.
+[25/4/2026 16:56:22] > 4 mods were loaded.
+[25/4/2026 16:56:29] > Loading AutoLoot.xml... done.
+[25/4/2026 16:56:29] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:56:29] > Loading highscorebook.xml... done.
+[25/4/2026 16:56:29] > Loading Simple Task.xml... done.
+[25/4/2026 16:56:29] > 4 mods were loaded.
+[25/4/2026 16:57:9] > Loading AutoLoot.xml... done.
+[25/4/2026 16:57:9] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:57:9] > Loading highscorebook.xml... done.
+[25/4/2026 16:57:9] > Loading Simple Task.xml... done.
+[25/4/2026 16:57:9] > 4 mods were loaded.
+[25/4/2026 16:57:18] > Loading AutoLoot.xml... done.
+[25/4/2026 16:57:18] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:57:18] > Loading highscorebook.xml... done.
+[25/4/2026 16:57:18] > Loading Simple Task.xml... done.
+[25/4/2026 16:57:18] > 4 mods were loaded.
+[25/4/2026 16:57:57] > Loading AutoLoot.xml... done.
+[25/4/2026 16:57:57] > Loading Automatic Raids.xml... done.
+[25/4/2026 16:57:57] > Loading highscorebook.xml... done.
+[25/4/2026 16:57:57] > Loading Simple Task.xml... done.
+[25/4/2026 16:57:57] > 4 mods were loaded.
+
+[25/4/2026 17:0:45] [Error - GlobalEvent Interface] 
+[25/4/2026 17:0:45] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 17:0:45] Description: 
+[25/4/2026 17:0:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 17:0:45] stack traceback:
+[25/4/2026 17:0:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 17:0:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 17:1:7] > Loading AutoLoot.xml... done.
+[25/4/2026 17:1:7] > Loading Automatic Raids.xml... done.
+[25/4/2026 17:1:7] > Loading highscorebook.xml... done.
+[25/4/2026 17:1:7] > Loading Simple Task.xml... done.
+[25/4/2026 17:1:7] > 4 mods were loaded.
+[25/4/2026 17:1:21] > Loading AutoLoot.xml... done.
+[25/4/2026 17:1:21] > Loading Automatic Raids.xml... done.
+[25/4/2026 17:1:21] > Loading highscorebook.xml... done.
+[25/4/2026 17:1:21] > Loading Simple Task.xml... done.
+[25/4/2026 17:1:21] > 4 mods were loaded.
+[25/4/2026 17:1:48] > Loading AutoLoot.xml... done.
+[25/4/2026 17:1:48] > Loading Automatic Raids.xml... done.
+[25/4/2026 17:1:48] > Loading highscorebook.xml... done.
+[25/4/2026 17:1:48] > Loading Simple Task.xml... done.
+[25/4/2026 17:1:48] > 4 mods were loaded.
+[25/4/2026 17:4:56] > Loading AutoLoot.xml... done.
+[25/4/2026 17:4:56] > Loading Automatic Raids.xml... done.
+[25/4/2026 17:4:56] > Loading highscorebook.xml... done.
+[25/4/2026 17:4:56] > Loading Simple Task.xml... done.
+[25/4/2026 17:4:56] > 4 mods were loaded.
+[25/4/2026 17:5:5] > Loading AutoLoot.xml... done.
+[25/4/2026 17:5:5] > Loading Automatic Raids.xml... done.
+[25/4/2026 17:5:5] > Loading highscorebook.xml... done.
+[25/4/2026 17:5:5] > Loading Simple Task.xml... done.
+[25/4/2026 17:5:5] > 4 mods were loaded.
+[25/4/2026 17:5:9] > Loading AutoLoot.xml... done.
+[25/4/2026 17:5:9] > Loading Automatic Raids.xml... done.
+[25/4/2026 17:5:9] > Loading highscorebook.xml... done.
+[25/4/2026 17:5:9] > Loading Simple Task.xml... done.
+[25/4/2026 17:5:9] > 4 mods were loaded.
+
+[25/4/2026 17:5:45] [Error - GlobalEvent Interface] 
+[25/4/2026 17:5:45] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 17:5:45] Description: 
+[25/4/2026 17:5:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 17:5:45] stack traceback:
+[25/4/2026 17:5:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 17:5:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 17:10:33] > Loading AutoLoot.xml... done.
+[25/4/2026 17:10:33] > Loading Automatic Raids.xml... done.
+[25/4/2026 17:10:33] > Loading highscorebook.xml... done.
+[25/4/2026 17:10:33] > Loading Simple Task.xml... done.
+[25/4/2026 17:10:33] > 4 mods were loaded.
+
+[25/4/2026 17:10:45] [Error - GlobalEvent Interface] 
+[25/4/2026 17:10:45] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 17:10:45] Description: 
+[25/4/2026 17:10:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 17:10:45] stack traceback:
+[25/4/2026 17:10:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 17:10:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
