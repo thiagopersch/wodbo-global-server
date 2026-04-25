@@ -998,20 +998,11 @@ local time = 1
 local effect = 240
 local effectStorage = 578745
 
--- ┌─────────────────────────────────────────────────────────────────────────┐
--- │  FEATURE 1 — Flash de transformação (dispara UMA VEZ ao transformar)   │
--- │  Campos no outfit: effect, effectPos                                    │
--- │  Campos na saga  : effect (padrão), effectPos (padrão)                 │
--- └─────────────────────────────────────────────────────────────────────────┘
-
--- Resolve a posição do flash de transformação.
--- Se o player estiver montado (lookMount > 0), desloca y-1 para o efeito aparecer sobre a montaria.
--- Offset final: out.effectPos > sagaData.effectPos > sem offset.
 local function getTransformEffectPos(cid, sagaData, outfitData)
     local pos = getThingPos(cid)
     local outfit = getCreatureOutfit(cid)
     if outfit and outfit.lookMount and outfit.lookMount > 0 then
-        pos.y = pos.y - 1 -- montaria aparece visualmente um tile acima (norte)
+        pos.y = pos.y - 1
     end
     local offset = (outfitData and outfitData.effectPos) or sagaData.effectPos
     if offset then
@@ -1022,14 +1013,6 @@ local function getTransformEffectPos(cid, sagaData, outfitData)
     return pos
 end
 
--- ┌─────────────────────────────────────────────────────────────────────────┐
--- │  FEATURE 2 — Aura contínua (fica no player durante toda a forma)       │
--- │  Campos no outfit: aura, auraPos                                       │
--- └─────────────────────────────────────────────────────────────────────────┘
-
--- Loop de aura: dispara a cada segundo enquanto effectStorage == generation.
--- Usar geração evita que o loop antigo continue rodando após uma nova transformação.
--- offset: opcional {x,y,z} de out.auraPos, recalculado sobre pos atual do player a cada tick.
 local function sendContinuousEffect(cid, effectId, offset, generation)
     if isPlayer(cid) and getPlayerStorageValue(cid, effectStorage) == generation then
         local pos = getThingPos(cid)
@@ -1043,21 +1026,30 @@ local function sendContinuousEffect(cid, effectId, offset, generation)
     end
 end
 
--- Inicia uma nova geração de aura, matando qualquer loop anterior automaticamente.
-local function startAura(cid, effectId, offset)
-    local gen = math.abs(getPlayerStorageValue(cid, effectStorage) or 0) + 1
+-- Gera a próxima geração de forma monotônica e a armazena.
+-- Como nunca volta para um valor já usado, loops antigos (com gen menor) sempre param.
+local function nextAuraGen(cid)
+    local current = getPlayerStorageValue(cid, effectStorage)
+    local gen = (current > 0 and current or 0) + 1
     setPlayerStorageValue(cid, effectStorage, gen)
+    return gen
+end
+
+-- Inicia loop de aura com nova geração — invalida automaticamente qualquer loop anterior.
+local function startAura(cid, effectId, offset)
+    local gen = nextAuraGen(cid)
     sendContinuousEffect(cid, effectId, offset, gen)
 end
 
--- Para o loop de aura ativo.
+-- Para o loop ativo incrementando a geração (sem resetar).
+-- Loops antigos agendados no addEvent vão falhar no próximo tick pois sua geração não bate mais.
 local function stopAura(cid)
-    setPlayerStorageValue(cid, effectStorage, 0)
+    nextAuraGen(cid)
 end
 
 function onSay(cid, words, param, channel)
     if exhaustion.check(cid, storage) == TRUE then
-        doPlayerSendCancel(cid, "You are exhausted.")
+        doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "Wait 1 second before transforming again.")
         return true
     end
 
@@ -1075,12 +1067,19 @@ function onSay(cid, words, param, channel)
         end
     end
 
-    -- Handle revert command
     if words:lower() == "!revert" or words:lower() == "!reverter" then
         local out = outfits[1]
+
+        if getCreatureOutfit(cid).lookType == out.lookType then
+            doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "You are already in your base transformation!")
+            exhaustion.set(cid, storage, time)
+            return true
+        end
+
         local sagaData = saga[vocation]
 
-        -- [Feature 1] Flash de transformação: out.effect > sagaData.effect > padrão global
+        stopAura(cid)
+
         local flashEffectId = out.effect or sagaData.effect or effect
         local flashPos = getTransformEffectPos(cid, sagaData, out)
         doCreatureChangeOutfit(cid, { lookType = out.lookType })
@@ -1089,21 +1088,16 @@ function onSay(cid, words, param, channel)
         doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "You've reverted to your base transformation!")
         doPlayerSay(cid, "Back to my original form!", TALKTYPE_ORANGE_1)
 
-        -- [Feature 2] Aura contínua: out.aura (com out.auraPos opcional)
         if out.aura then
             startAura(cid, out.aura, out.auraPos)
-        else
-            stopAura(cid)
         end
 
         exhaustion.set(cid, storage, time)
         return true
     end
 
-    -- Handle transform command
     local transformIndex
     if param == '' then
-        -- Get current outfit
         local currentOutfit = getCreatureOutfit(cid).lookType
         local currentIndex = 0
         for i, outfit in ipairs(outfits) do
@@ -1113,14 +1107,12 @@ function onSay(cid, words, param, channel)
             end
         end
 
-        -- Check if at last transformation
         if currentIndex == #outfits then
             doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "You have reached the final transformation!")
             exhaustion.set(cid, storage, time)
             return true
         end
 
-        -- Calculate next index
         transformIndex = currentIndex + 1
     else
         local t = string.explode(param, ",")
@@ -1151,7 +1143,6 @@ function onSay(cid, words, param, channel)
     local out = outfits[transformIndex]
     local sagaData = saga[vocation]
 
-    -- [Feature 1] Flash de transformação: out.effect > sagaData.effect > padrão global
     local flashEffectId = out.effect or sagaData.effect or effect
     local flashPos = getTransformEffectPos(cid, sagaData, out)
     doCreatureChangeOutfit(cid, { lookType = out.lookType })
@@ -1159,9 +1150,6 @@ function onSay(cid, words, param, channel)
     doSendMagicEffect(flashPos, flashEffectId)
     doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "You've chosen a new transform!")
     doPlayerSay(cid, "Aah, there, I'm stronger!", TALKTYPE_ORANGE_1)
-
-    -- [Feature 2] Aura contínua: out.aura (com out.auraPos opcional)
-    -- startAura incrementa a geração, matando o loop anterior automaticamente.
     if out.aura then
         startAura(cid, out.aura, out.auraPos)
     else
