@@ -1,6 +1,6 @@
 function onSay(cid, words, param)
     local opcodeOpenSpellList = 123
-    doPlayerSendExtendedOpcode(cid, opcodeOpenSpellList, "")
+    doPlayerSendExtendedOpcode(cid, opcodeOpenSpellList, tostring(getPlayerVocation(cid)))
     return TRUE
 end
 

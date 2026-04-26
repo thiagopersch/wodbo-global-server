@@ -1,1695 +1,936 @@
-[25/4/2026 10:20:38] > Usando SHA1 criptografia
-[25/4/2026 10:20:38] >> Carregando RSA key
-[25/4/2026 10:20:38] >> Iniciando conexao SQL
-[25/4/2026 10:20:38] >> Executando Gerenciador de Banco de Dados
-[25/4/2026 10:20:38] > Optimized database.
-[25/4/2026 10:20:38] >> Carregando items (OTB)
-[25/4/2026 10:20:38] >> Carregando items (XML)
-[25/4/2026 10:20:38] >> Carregando Grupos
-[25/4/2026 10:20:38] >> Carregando Vocacoes
-[25/4/2026 10:20:38] >> Carregando Outfits
-[25/4/2026 10:20:38] >> Carregando Canal de Chat
-[25/4/2026 10:20:38] >> Carregando Sistema
-[25/4/2026 10:20:42] >> Carregando Mods...
-[25/4/2026 10:20:42] > Loading AutoLoot.xml... done.
-[25/4/2026 10:20:42] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:20:42] > Loading highscorebook.xml... done.
-[25/4/2026 10:20:42] > Loading Simple Task.xml... done.
-[25/4/2026 10:20:42] > 4 mods were loaded.
-[25/4/2026 10:20:42] >> Carregando EXP Stages
-[25/4/2026 10:20:42] >> Carregando Monstros
-[25/4/2026 10:20:46] >> Carregando Mapa e Spawns...
-[25/4/2026 10:20:46] > Tamanho do Mapa: 64000x64000.
-[25/4/2026 10:20:46] > Descricao do Mapa: 
-[25/4/2026 10:20:46] "Saved with OTAcademy Map Editor 4.1.1"
-[25/4/2026 10:20:46] "No map description available."
-[25/4/2026 10:20:49] > Mapa carregado em: 2.727 segundos.
-[25/4/2026 10:20:49] > Data carregada em: 0.397 segundos.
-[25/4/2026 10:20:51] > Houses carregada em: 1.588 segundos.
-[25/4/2026 10:20:51] > Content unserialization time: 0.001 seconds.
-[25/4/2026 10:20:51] > Carregando Tipo de PVP... Open PvP
-[25/4/2026 10:20:51] > Inicializando estado do jogo e registrando servicos...
-[25/4/2026 10:20:51] > IP do Servidor: 127.0.0.1
-[25/4/2026 10:20:51] > IP local do Servidor: 172.23.16.1	192.168.1.104	
-[25/4/2026 10:20:51] > Portas do Servidor: 7171	7172	
-[25/4/2026 10:20:51] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[25/4/2026 10:21:1] >> DBOSupreme servidor Online!
-
-[25/4/2026 10:21:2] God has logged in.
-[25/4/2026 10:25:26] God has logged out.
-[25/4/2026 10:25:26] God has logged in.
-
-[25/4/2026 10:25:42] [Error - GlobalEvent Interface] 
-[25/4/2026 10:25:42] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 10:25:42] Description: 
-[25/4/2026 10:25:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 10:25:42] stack traceback:
-[25/4/2026 10:25:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 10:25:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 10:26:4] God has logged out.
-[25/4/2026 10:26:4] God has logged in.
-[25/4/2026 10:28:0] God has logged out.
-[25/4/2026 10:28:0] God has logged in.
-
-[25/4/2026 10:30:42] [Error - GlobalEvent Interface] 
-[25/4/2026 10:30:42] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 10:30:42] Description: 
-[25/4/2026 10:30:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 10:30:42] stack traceback:
-[25/4/2026 10:30:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 10:30:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 10:34:43] God has logged out.
-[25/4/2026 10:34:44] God has logged in.
-[25/4/2026 10:34:52] > Loading AutoLoot.xml... done.
-[25/4/2026 10:34:52] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:34:52] > Loading highscorebook.xml... done.
-[25/4/2026 10:34:52] > Loading Simple Task.xml... done.
-[25/4/2026 10:34:52] > 4 mods were loaded.
-[25/4/2026 10:35:26] > Loading AutoLoot.xml... done.
-[25/4/2026 10:35:26] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:35:26] > Loading highscorebook.xml... done.
-[25/4/2026 10:35:26] > Loading Simple Task.xml... done.
-[25/4/2026 10:35:26] > 4 mods were loaded.
-
-[25/4/2026 10:35:42] [Error - GlobalEvent Interface] 
-[25/4/2026 10:35:42] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 10:35:42] Description: 
-[25/4/2026 10:35:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 10:35:42] stack traceback:
-[25/4/2026 10:35:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 10:35:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 10:40:42] [Error - GlobalEvent Interface] 
-[25/4/2026 10:40:42] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 10:40:42] Description: 
-[25/4/2026 10:40:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 10:40:42] stack traceback:
-[25/4/2026 10:40:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 10:40:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 10:41:27] > Loading AutoLoot.xml... done.
-[25/4/2026 10:41:27] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:41:27] > Loading highscorebook.xml... done.
-[25/4/2026 10:41:27] > Loading Simple Task.xml... done.
-[25/4/2026 10:41:27] > 4 mods were loaded.
-[25/4/2026 10:43:44] > Loading AutoLoot.xml... done.
-[25/4/2026 10:43:44] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:43:44] > Loading highscorebook.xml... done.
-[25/4/2026 10:43:44] > Loading Simple Task.xml... done.
-[25/4/2026 10:43:44] > 4 mods were loaded.
-[25/4/2026 10:44:7] > Loading AutoLoot.xml... done.
-[25/4/2026 10:44:7] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:44:7] > Loading highscorebook.xml... done.
-[25/4/2026 10:44:7] > Loading Simple Task.xml... done.
-[25/4/2026 10:44:7] > 4 mods were loaded.
-[25/4/2026 10:45:39] > Loading AutoLoot.xml... done.
-[25/4/2026 10:45:39] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:45:39] > Loading highscorebook.xml... done.
-[25/4/2026 10:45:39] > Loading Simple Task.xml... done.
-[25/4/2026 10:45:39] > 4 mods were loaded.
-
-[25/4/2026 10:45:42] [Error - GlobalEvent Interface] 
-[25/4/2026 10:45:42] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 10:45:42] Description: 
-[25/4/2026 10:45:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 10:45:42] stack traceback:
-[25/4/2026 10:45:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 10:45:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 10:50:9] > Loading AutoLoot.xml... done.
-[25/4/2026 10:50:9] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:50:9] > Loading highscorebook.xml... done.
-[25/4/2026 10:50:9] > Loading Simple Task.xml... done.
-[25/4/2026 10:50:9] > 4 mods were loaded.
-[25/4/2026 10:50:33] > Loading AutoLoot.xml... done.
-[25/4/2026 10:50:33] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:50:33] > Loading highscorebook.xml... done.
-[25/4/2026 10:50:33] > Loading Simple Task.xml... done.
-[25/4/2026 10:50:33] > 4 mods were loaded.
-
-[25/4/2026 10:50:42] [Error - GlobalEvent Interface] 
-[25/4/2026 10:50:42] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 10:50:42] Description: 
-[25/4/2026 10:50:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 10:50:42] stack traceback:
-[25/4/2026 10:50:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 10:50:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 10:50:44] > Loading AutoLoot.xml... done.
-[25/4/2026 10:50:44] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:50:44] > Loading highscorebook.xml... done.
-[25/4/2026 10:50:44] > Loading Simple Task.xml... done.
-[25/4/2026 10:50:44] > 4 mods were loaded.
-[25/4/2026 10:54:53] > Loading AutoLoot.xml... done.
-[25/4/2026 10:54:53] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:54:53] > Loading highscorebook.xml... done.
-[25/4/2026 10:54:53] > Loading Simple Task.xml... done.
-[25/4/2026 10:54:53] > 4 mods were loaded.
-[25/4/2026 10:55:5] > Loading AutoLoot.xml... done.
-[25/4/2026 10:55:5] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:55:5] > Loading highscorebook.xml... done.
-[25/4/2026 10:55:5] > Loading Simple Task.xml... done.
-[25/4/2026 10:55:5] > 4 mods were loaded.
-
-[25/4/2026 10:55:42] [Error - GlobalEvent Interface] 
-[25/4/2026 10:55:42] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 10:55:42] Description: 
-[25/4/2026 10:55:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 10:55:42] stack traceback:
-[25/4/2026 10:55:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 10:55:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 10:56:9] > Loading AutoLoot.xml... done.
-[25/4/2026 10:56:9] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:56:9] > Loading highscorebook.xml... done.
-[25/4/2026 10:56:9] > Loading Simple Task.xml... done.
-[25/4/2026 10:56:9] > 4 mods were loaded.
-[25/4/2026 10:56:40] > Loading AutoLoot.xml... done.
-[25/4/2026 10:56:40] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:56:40] > Loading highscorebook.xml... done.
-[25/4/2026 10:56:40] > Loading Simple Task.xml... done.
-[25/4/2026 10:56:40] > 4 mods were loaded.
-[25/4/2026 10:59:10] > Loading AutoLoot.xml... done.
-[25/4/2026 10:59:10] > Loading Automatic Raids.xml... done.
-[25/4/2026 10:59:10] > Loading highscorebook.xml... done.
-[25/4/2026 10:59:10] > Loading Simple Task.xml... done.
-[25/4/2026 10:59:10] > 4 mods were loaded.
-[25/4/2026 11:0:13] > Loading AutoLoot.xml... done.
-[25/4/2026 11:0:13] > Loading Automatic Raids.xml... done.
-[25/4/2026 11:0:13] > Loading highscorebook.xml... done.
-[25/4/2026 11:0:13] > Loading Simple Task.xml... done.
-[25/4/2026 11:0:13] > 4 mods were loaded.
-
-[25/4/2026 11:0:42] [Error - GlobalEvent Interface] 
-[25/4/2026 11:0:42] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 11:0:42] Description: 
-[25/4/2026 11:0:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 11:0:42] stack traceback:
-[25/4/2026 11:0:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 11:0:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 11:5:42] [Error - GlobalEvent Interface] 
-[25/4/2026 11:5:42] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 11:5:42] Description: 
-[25/4/2026 11:5:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 11:5:42] stack traceback:
-[25/4/2026 11:5:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 11:5:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 11:10:42] [Error - GlobalEvent Interface] 
-[25/4/2026 11:10:42] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 11:10:42] Description: 
-[25/4/2026 11:10:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 11:10:42] stack traceback:
-[25/4/2026 11:10:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 11:10:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 11:15:42] [Error - GlobalEvent Interface] 
-[25/4/2026 11:15:42] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 11:15:42] Description: 
-[25/4/2026 11:15:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 11:15:42] stack traceback:
-[25/4/2026 11:15:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 11:15:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 11:20:42] [Error - GlobalEvent Interface] 
-[25/4/2026 11:20:42] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 11:20:42] Description: 
-[25/4/2026 11:20:42] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 11:20:42] stack traceback:
-[25/4/2026 11:20:42] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 11:20:42] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 11:22:42] > Salvando servidor...
-[25/4/2026 11:22:42] > SAVE: Completo em 0.09 segundos usando binary casa storage.
-
-[25/4/2026 11:25:43] [Error - GlobalEvent Interface] 
-[25/4/2026 11:25:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 11:25:43] Description: 
-[25/4/2026 11:25:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 11:25:43] stack traceback:
-[25/4/2026 11:25:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 11:25:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 11:30:43] [Error - GlobalEvent Interface] 
-[25/4/2026 11:30:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 11:30:43] Description: 
-[25/4/2026 11:30:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 11:30:43] stack traceback:
-[25/4/2026 11:30:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 11:30:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 11:33:34] > Loading AutoLoot.xml... done.
-[25/4/2026 11:33:34] > Loading Automatic Raids.xml... done.
-[25/4/2026 11:33:34] > Loading highscorebook.xml... done.
-[25/4/2026 11:33:34] > Loading Simple Task.xml... done.
-[25/4/2026 11:33:34] > 4 mods were loaded.
-[25/4/2026 11:34:58] > Loading AutoLoot.xml... done.
-[25/4/2026 11:34:58] > Loading Automatic Raids.xml... done.
-[25/4/2026 11:34:58] > Loading highscorebook.xml... done.
-[25/4/2026 11:34:58] > Loading Simple Task.xml... done.
-[25/4/2026 11:34:58] > 4 mods were loaded.
-[25/4/2026 11:35:9] > Loading AutoLoot.xml... done.
-[25/4/2026 11:35:9] > Loading Automatic Raids.xml... done.
-[25/4/2026 11:35:9] > Loading highscorebook.xml... done.
-[25/4/2026 11:35:9] > Loading Simple Task.xml... done.
-[25/4/2026 11:35:9] > 4 mods were loaded.
-
-[25/4/2026 11:35:43] [Error - GlobalEvent Interface] 
-[25/4/2026 11:35:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 11:35:43] Description: 
-[25/4/2026 11:35:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 11:35:43] stack traceback:
-[25/4/2026 11:35:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 11:35:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 11:36:10] > Loading AutoLoot.xml... done.
-[25/4/2026 11:36:10] > Loading Automatic Raids.xml... done.
-[25/4/2026 11:36:10] > Loading highscorebook.xml... done.
-[25/4/2026 11:36:10] > Loading Simple Task.xml... done.
-[25/4/2026 11:36:10] > 4 mods were loaded.
-[25/4/2026 11:39:29] > Loading AutoLoot.xml... done.
-[25/4/2026 11:39:29] > Loading Automatic Raids.xml... done.
-[25/4/2026 11:39:29] > Loading highscorebook.xml... done.
-[25/4/2026 11:39:29] > Loading Simple Task.xml... done.
-[25/4/2026 11:39:29] > 4 mods were loaded.
-[25/4/2026 11:39:36] > Loading AutoLoot.xml... done.
-[25/4/2026 11:39:36] > Loading Automatic Raids.xml... done.
-[25/4/2026 11:39:36] > Loading highscorebook.xml... done.
-[25/4/2026 11:39:36] > Loading Simple Task.xml... done.
-[25/4/2026 11:39:36] > 4 mods were loaded.
-[25/4/2026 11:39:42] > Loading AutoLoot.xml... done.
-[25/4/2026 11:39:42] > Loading Automatic Raids.xml... done.
-[25/4/2026 11:39:42] > Loading highscorebook.xml... done.
-[25/4/2026 11:39:42] > Loading Simple Task.xml... done.
-[25/4/2026 11:39:42] > 4 mods were loaded.
-[25/4/2026 11:40:6] > Loading AutoLoot.xml... done.
-[25/4/2026 11:40:6] > Loading Automatic Raids.xml... done.
-[25/4/2026 11:40:6] > Loading highscorebook.xml... done.
-[25/4/2026 11:40:6] > Loading Simple Task.xml... done.
-[25/4/2026 11:40:6] > 4 mods were loaded.
-
-[25/4/2026 11:40:43] [Error - GlobalEvent Interface] 
-[25/4/2026 11:40:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 11:40:43] Description: 
-[25/4/2026 11:40:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 11:40:43] stack traceback:
-[25/4/2026 11:40:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 11:40:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 11:45:43] [Error - GlobalEvent Interface] 
-[25/4/2026 11:45:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 11:45:43] Description: 
-[25/4/2026 11:45:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 11:45:43] stack traceback:
-[25/4/2026 11:45:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 11:45:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 11:50:43] [Error - GlobalEvent Interface] 
-[25/4/2026 11:50:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 11:50:43] Description: 
-[25/4/2026 11:50:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 11:50:43] stack traceback:
-[25/4/2026 11:50:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 11:50:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 11:55:43] [Error - GlobalEvent Interface] 
-[25/4/2026 11:55:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 11:55:43] Description: 
-[25/4/2026 11:55:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 11:55:43] stack traceback:
-[25/4/2026 11:55:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 11:55:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 12:0:43] [Error - GlobalEvent Interface] 
-[25/4/2026 12:0:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 12:0:43] Description: 
-[25/4/2026 12:0:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 12:0:43] stack traceback:
-[25/4/2026 12:0:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 12:0:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 12:5:43] [Error - GlobalEvent Interface] 
-[25/4/2026 12:5:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 12:5:43] Description: 
-[25/4/2026 12:5:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 12:5:43] stack traceback:
-[25/4/2026 12:5:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 12:5:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 12:10:43] [Error - GlobalEvent Interface] 
-[25/4/2026 12:10:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 12:10:43] Description: 
-[25/4/2026 12:10:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 12:10:43] stack traceback:
-[25/4/2026 12:10:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 12:10:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 12:15:43] [Error - GlobalEvent Interface] 
-[25/4/2026 12:15:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 12:15:43] Description: 
-[25/4/2026 12:15:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 12:15:43] stack traceback:
-[25/4/2026 12:15:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 12:15:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 12:20:42] OTSYS_SQLITE3_PREPARE(): SQLITE ERROR: no such table: lottery (INSERT INTO "lottery" ("name", "item") VALUES ('God', 'white saguino sword');)
-
-[25/4/2026 12:20:43] [Error - GlobalEvent Interface] 
-[25/4/2026 12:20:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 12:20:43] Description: 
-[25/4/2026 12:20:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 12:20:43] stack traceback:
-[25/4/2026 12:20:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 12:20:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 12:21:12] > CLEAN: Removed 1 item from 6 tiles (6 were marked) in 0 seconds.
-[25/4/2026 12:22:42] > Salvando servidor...
-[25/4/2026 12:22:42] > SAVE: Completo em 0.072 segundos usando binary casa storage.
-
-[25/4/2026 12:25:43] [Error - GlobalEvent Interface] 
-[25/4/2026 12:25:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 12:25:43] Description: 
-[25/4/2026 12:25:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 12:25:43] stack traceback:
-[25/4/2026 12:25:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 12:25:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 12:30:43] [Error - GlobalEvent Interface] 
-[25/4/2026 12:30:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 12:30:43] Description: 
-[25/4/2026 12:30:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 12:30:43] stack traceback:
-[25/4/2026 12:30:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 12:30:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 12:35:43] [Error - GlobalEvent Interface] 
-[25/4/2026 12:35:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 12:35:43] Description: 
-[25/4/2026 12:35:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 12:35:43] stack traceback:
-[25/4/2026 12:35:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 12:35:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 12:40:43] [Error - GlobalEvent Interface] 
-[25/4/2026 12:40:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 12:40:43] Description: 
-[25/4/2026 12:40:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 12:40:43] stack traceback:
-[25/4/2026 12:40:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 12:40:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 12:45:43] [Error - GlobalEvent Interface] 
-[25/4/2026 12:45:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 12:45:43] Description: 
-[25/4/2026 12:45:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 12:45:43] stack traceback:
-[25/4/2026 12:45:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 12:45:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 12:50:43] [Error - GlobalEvent Interface] 
-[25/4/2026 12:50:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 12:50:43] Description: 
-[25/4/2026 12:50:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 12:50:43] stack traceback:
-[25/4/2026 12:50:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 12:50:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 12:55:43] [Error - GlobalEvent Interface] 
-[25/4/2026 12:55:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 12:55:43] Description: 
-[25/4/2026 12:55:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 12:55:43] stack traceback:
-[25/4/2026 12:55:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 12:55:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 13:0:43] [Error - GlobalEvent Interface] 
-[25/4/2026 13:0:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 13:0:43] Description: 
-[25/4/2026 13:0:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 13:0:43] stack traceback:
-[25/4/2026 13:0:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 13:0:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 13:5:43] [Error - GlobalEvent Interface] 
-[25/4/2026 13:5:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 13:5:43] Description: 
-[25/4/2026 13:5:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 13:5:43] stack traceback:
-[25/4/2026 13:5:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 13:5:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 13:10:43] [Error - GlobalEvent Interface] 
-[25/4/2026 13:10:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 13:10:43] Description: 
-[25/4/2026 13:10:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 13:10:43] stack traceback:
-[25/4/2026 13:10:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 13:10:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 13:15:43] [Error - GlobalEvent Interface] 
-[25/4/2026 13:15:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 13:15:43] Description: 
-[25/4/2026 13:15:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 13:15:43] stack traceback:
-[25/4/2026 13:15:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 13:15:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 13:20:43] [Error - GlobalEvent Interface] 
-[25/4/2026 13:20:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 13:20:43] Description: 
-[25/4/2026 13:20:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 13:20:43] stack traceback:
-[25/4/2026 13:20:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 13:20:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 13:22:42] > Salvando servidor...
-[25/4/2026 13:22:42] > SAVE: Completo em 0.068 segundos usando binary casa storage.
-
-[25/4/2026 13:25:43] [Error - GlobalEvent Interface] 
-[25/4/2026 13:25:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 13:25:43] Description: 
-[25/4/2026 13:25:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 13:25:43] stack traceback:
-[25/4/2026 13:25:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 13:25:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 13:30:43] [Error - GlobalEvent Interface] 
-[25/4/2026 13:30:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 13:30:43] Description: 
-[25/4/2026 13:30:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 13:30:43] stack traceback:
-[25/4/2026 13:30:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 13:30:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 13:35:43] [Error - GlobalEvent Interface] 
-[25/4/2026 13:35:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 13:35:43] Description: 
-[25/4/2026 13:35:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 13:35:43] stack traceback:
-[25/4/2026 13:35:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 13:35:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 13:40:25] > Loading AutoLoot.xml... done.
-[25/4/2026 13:40:25] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:40:25] > Loading highscorebook.xml... done.
-[25/4/2026 13:40:25] > Loading Simple Task.xml... done.
-[25/4/2026 13:40:25] > 4 mods were loaded.
-[25/4/2026 13:40:33] > Loading AutoLoot.xml... done.
-[25/4/2026 13:40:33] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:40:33] > Loading highscorebook.xml... done.
-[25/4/2026 13:40:33] > Loading Simple Task.xml... done.
-[25/4/2026 13:40:33] > 4 mods were loaded.
-
-[25/4/2026 13:40:43] [Error - GlobalEvent Interface] 
-[25/4/2026 13:40:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 13:40:43] Description: 
-[25/4/2026 13:40:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 13:40:43] stack traceback:
-[25/4/2026 13:40:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 13:40:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 13:41:41] > Loading AutoLoot.xml... done.
-[25/4/2026 13:41:41] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:41:41] > Loading highscorebook.xml... done.
-[25/4/2026 13:41:41] > Loading Simple Task.xml... done.
-[25/4/2026 13:41:41] > 4 mods were loaded.
-[25/4/2026 13:42:41] > Loading AutoLoot.xml... done.
-[25/4/2026 13:42:41] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:42:41] > Loading highscorebook.xml... done.
-[25/4/2026 13:42:41] > Loading Simple Task.xml... done.
-[25/4/2026 13:42:41] > 4 mods were loaded.
-[25/4/2026 13:42:48] > Loading AutoLoot.xml... done.
-[25/4/2026 13:42:48] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:42:48] > Loading highscorebook.xml... done.
-[25/4/2026 13:42:48] > Loading Simple Task.xml... done.
-[25/4/2026 13:42:48] > 4 mods were loaded.
-[25/4/2026 13:43:56] > Loading AutoLoot.xml... done.
-[25/4/2026 13:43:56] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:43:56] > Loading highscorebook.xml... done.
-[25/4/2026 13:43:56] > Loading Simple Task.xml... done.
-[25/4/2026 13:43:56] > 4 mods were loaded.
-[25/4/2026 13:44:32] > Loading AutoLoot.xml... done.
-[25/4/2026 13:44:32] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:44:32] > Loading highscorebook.xml... done.
-[25/4/2026 13:44:32] > Loading Simple Task.xml... done.
-[25/4/2026 13:44:32] > 4 mods were loaded.
-[25/4/2026 13:45:1] > Loading AutoLoot.xml... done.
-[25/4/2026 13:45:1] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:45:1] > Loading highscorebook.xml... done.
-[25/4/2026 13:45:1] > Loading Simple Task.xml... done.
-[25/4/2026 13:45:1] > 4 mods were loaded.
-[25/4/2026 13:45:12] > Loading AutoLoot.xml... done.
-[25/4/2026 13:45:12] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:45:12] > Loading highscorebook.xml... done.
-[25/4/2026 13:45:12] > Loading Simple Task.xml... done.
-[25/4/2026 13:45:12] > 4 mods were loaded.
-
-[25/4/2026 13:45:43] [Error - GlobalEvent Interface] 
-[25/4/2026 13:45:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 13:45:43] Description: 
-[25/4/2026 13:45:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 13:45:43] stack traceback:
-[25/4/2026 13:45:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 13:45:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 13:47:16] > Loading AutoLoot.xml... done.
-[25/4/2026 13:47:16] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:47:16] > Loading highscorebook.xml... done.
-[25/4/2026 13:47:16] > Loading Simple Task.xml... done.
-[25/4/2026 13:47:16] > 4 mods were loaded.
-[25/4/2026 13:47:27] > Loading AutoLoot.xml... done.
-[25/4/2026 13:47:27] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:47:27] > Loading highscorebook.xml... done.
-[25/4/2026 13:47:27] > Loading Simple Task.xml... done.
-[25/4/2026 13:47:27] > 4 mods were loaded.
-[25/4/2026 13:50:1] > Loading AutoLoot.xml... done.
-[25/4/2026 13:50:1] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:50:1] > Loading highscorebook.xml... done.
-[25/4/2026 13:50:1] > Loading Simple Task.xml... done.
-[25/4/2026 13:50:1] > 4 mods were loaded.
-[25/4/2026 13:50:23] > Loading AutoLoot.xml... done.
-[25/4/2026 13:50:23] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:50:23] > Loading highscorebook.xml... done.
-[25/4/2026 13:50:23] > Loading Simple Task.xml... done.
-[25/4/2026 13:50:23] > 4 mods were loaded.
-[25/4/2026 13:50:33] > Loading AutoLoot.xml... done.
-[25/4/2026 13:50:33] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:50:33] > Loading highscorebook.xml... done.
-[25/4/2026 13:50:33] > Loading Simple Task.xml... done.
-[25/4/2026 13:50:33] > 4 mods were loaded.
-
-[25/4/2026 13:50:43] [Error - GlobalEvent Interface] 
-[25/4/2026 13:50:43] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 13:50:43] Description: 
-[25/4/2026 13:50:43] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 13:50:43] stack traceback:
-[25/4/2026 13:50:43] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 13:50:43] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 13:52:46] > Loading AutoLoot.xml... done.
-[25/4/2026 13:52:46] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:52:46] > Loading highscorebook.xml... done.
-[25/4/2026 13:52:46] > Loading Simple Task.xml... done.
-[25/4/2026 13:52:46] > 4 mods were loaded.
-[25/4/2026 13:52:51] > Loading AutoLoot.xml... done.
-[25/4/2026 13:52:51] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:52:51] > Loading highscorebook.xml... done.
-[25/4/2026 13:52:51] > Loading Simple Task.xml... done.
-[25/4/2026 13:52:51] > 4 mods were loaded.
-[25/4/2026 13:53:12] > Loading AutoLoot.xml... done.
-[25/4/2026 13:53:12] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:53:12] > Loading highscorebook.xml... done.
-[25/4/2026 13:53:12] > Loading Simple Task.xml... done.
-[25/4/2026 13:53:12] > 4 mods were loaded.
-[25/4/2026 13:53:17] > Loading AutoLoot.xml... done.
-[25/4/2026 13:53:17] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:53:17] > Loading highscorebook.xml... done.
-[25/4/2026 13:53:17] > Loading Simple Task.xml... done.
-[25/4/2026 13:53:17] > 4 mods were loaded.
-[25/4/2026 13:53:24] > Loading AutoLoot.xml... done.
-[25/4/2026 13:53:24] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:53:24] > Loading highscorebook.xml... done.
-[25/4/2026 13:53:24] > Loading Simple Task.xml... done.
-[25/4/2026 13:53:24] > 4 mods were loaded.
-[25/4/2026 13:54:9] > Loading AutoLoot.xml... done.
-[25/4/2026 13:54:9] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:54:9] > Loading highscorebook.xml... done.
-[25/4/2026 13:54:9] > Loading Simple Task.xml... done.
-[25/4/2026 13:54:9] > 4 mods were loaded.
-[25/4/2026 13:54:17] > Loading AutoLoot.xml... done.
-[25/4/2026 13:54:17] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:54:17] > Loading highscorebook.xml... done.
-[25/4/2026 13:54:17] > Loading Simple Task.xml... done.
-[25/4/2026 13:54:17] > 4 mods were loaded.
-[25/4/2026 13:54:26] > Loading AutoLoot.xml... done.
-[25/4/2026 13:54:26] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:54:26] > Loading highscorebook.xml... done.
-[25/4/2026 13:54:26] > Loading Simple Task.xml... done.
-[25/4/2026 13:54:26] > 4 mods were loaded.
-[25/4/2026 13:54:42] > Loading AutoLoot.xml... done.
-[25/4/2026 13:54:42] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:54:42] > Loading highscorebook.xml... done.
-[25/4/2026 13:54:42] > Loading Simple Task.xml... done.
-[25/4/2026 13:54:42] > 4 mods were loaded.
-
-[25/4/2026 13:55:44] [Error - GlobalEvent Interface] 
-[25/4/2026 13:55:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 13:55:44] Description: 
-[25/4/2026 13:55:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 13:55:44] stack traceback:
-[25/4/2026 13:55:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 13:55:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 13:56:49] > Loading AutoLoot.xml... done.
-[25/4/2026 13:56:49] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:56:49] > Loading highscorebook.xml... done.
-[25/4/2026 13:56:49] > Loading Simple Task.xml... done.
-[25/4/2026 13:56:49] > 4 mods were loaded.
-[25/4/2026 13:56:57] > Loading AutoLoot.xml... done.
-[25/4/2026 13:56:57] > Loading Automatic Raids.xml... done.
-[25/4/2026 13:56:57] > Loading highscorebook.xml... done.
-[25/4/2026 13:56:57] > Loading Simple Task.xml... done.
-[25/4/2026 13:56:57] > 4 mods were loaded.
-
-[25/4/2026 14:0:44] [Error - GlobalEvent Interface] 
-[25/4/2026 14:0:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 14:0:44] Description: 
-[25/4/2026 14:0:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 14:0:44] stack traceback:
-[25/4/2026 14:0:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 14:0:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 14:1:22] > Loading AutoLoot.xml... done.
-[25/4/2026 14:1:22] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:1:22] > Loading highscorebook.xml... done.
-[25/4/2026 14:1:22] > Loading Simple Task.xml... done.
-[25/4/2026 14:1:22] > 4 mods were loaded.
-[25/4/2026 14:2:3] > Loading AutoLoot.xml... done.
-[25/4/2026 14:2:3] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:2:3] > Loading highscorebook.xml... done.
-[25/4/2026 14:2:3] > Loading Simple Task.xml... done.
-[25/4/2026 14:2:3] > 4 mods were loaded.
-[25/4/2026 14:4:35] > Loading AutoLoot.xml... done.
-[25/4/2026 14:4:35] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:4:35] > Loading highscorebook.xml... done.
-[25/4/2026 14:4:35] > Loading Simple Task.xml... done.
-[25/4/2026 14:4:35] > 4 mods were loaded.
-[25/4/2026 14:4:47] > Loading AutoLoot.xml... done.
-[25/4/2026 14:4:47] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:4:47] > Loading highscorebook.xml... done.
-[25/4/2026 14:4:47] > Loading Simple Task.xml... done.
-[25/4/2026 14:4:47] > 4 mods were loaded.
-
-[25/4/2026 14:5:44] [Error - GlobalEvent Interface] 
-[25/4/2026 14:5:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 14:5:44] Description: 
-[25/4/2026 14:5:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 14:5:44] stack traceback:
-[25/4/2026 14:5:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 14:5:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 14:5:49] > Loading AutoLoot.xml... done.
-[25/4/2026 14:5:49] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:5:49] > Loading highscorebook.xml... done.
-[25/4/2026 14:5:49] > Loading Simple Task.xml... done.
-[25/4/2026 14:5:49] > 4 mods were loaded.
-
-[25/4/2026 14:10:44] [Error - GlobalEvent Interface] 
-[25/4/2026 14:10:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 14:10:44] Description: 
-[25/4/2026 14:10:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 14:10:44] stack traceback:
-[25/4/2026 14:10:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 14:10:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 14:14:14] > Loading AutoLoot.xml... done.
-[25/4/2026 14:14:14] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:14:14] > Loading highscorebook.xml... done.
-[25/4/2026 14:14:14] > Loading Simple Task.xml... done.
-[25/4/2026 14:14:14] > 4 mods were loaded.
-
-[25/4/2026 14:14:22] [Error - Spell Interface] 
-[25/4/2026 14:14:22] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
-[25/4/2026 14:14:22] Description: 
-[25/4/2026 14:14:22] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to call global 'getMagicLevel' (a nil value)
-[25/4/2026 14:14:22] stack traceback:
-[25/4/2026 14:14:22] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
-
-[25/4/2026 14:15:44] [Error - GlobalEvent Interface] 
-[25/4/2026 14:15:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 14:15:44] Description: 
-[25/4/2026 14:15:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 14:15:44] stack traceback:
-[25/4/2026 14:15:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 14:15:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 14:16:22] > Loading AutoLoot.xml... done.
-[25/4/2026 14:16:22] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:16:22] > Loading highscorebook.xml... done.
-[25/4/2026 14:16:22] > Loading Simple Task.xml... done.
-[25/4/2026 14:16:22] > 4 mods were loaded.
-[25/4/2026 14:16:41] > Loading AutoLoot.xml... done.
-[25/4/2026 14:16:41] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:16:41] > Loading highscorebook.xml... done.
-[25/4/2026 14:16:41] > Loading Simple Task.xml... done.
-[25/4/2026 14:16:41] > 4 mods were loaded.
-[25/4/2026 14:17:34] > Loading AutoLoot.xml... done.
-[25/4/2026 14:17:34] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:17:34] > Loading highscorebook.xml... done.
-[25/4/2026 14:17:34] > Loading Simple Task.xml... done.
-[25/4/2026 14:17:34] > 4 mods were loaded.
-[25/4/2026 14:17:49] > Loading AutoLoot.xml... done.
-[25/4/2026 14:17:49] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:17:49] > Loading highscorebook.xml... done.
-[25/4/2026 14:17:49] > Loading Simple Task.xml... done.
-[25/4/2026 14:17:49] > 4 mods were loaded.
-[25/4/2026 14:18:3] > Loading AutoLoot.xml... done.
-[25/4/2026 14:18:3] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:18:3] > Loading highscorebook.xml... done.
-[25/4/2026 14:18:3] > Loading Simple Task.xml... done.
-[25/4/2026 14:18:3] > 4 mods were loaded.
-[25/4/2026 14:18:35] > Loading AutoLoot.xml... done.
-[25/4/2026 14:18:35] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:18:35] > Loading highscorebook.xml... done.
-[25/4/2026 14:18:35] > Loading Simple Task.xml... done.
-[25/4/2026 14:18:35] > 4 mods were loaded.
-[25/4/2026 14:18:46] > Loading AutoLoot.xml... done.
-[25/4/2026 14:18:46] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:18:46] > Loading highscorebook.xml... done.
-[25/4/2026 14:18:46] > Loading Simple Task.xml... done.
-[25/4/2026 14:18:46] > 4 mods were loaded.
-[25/4/2026 14:18:57] > Loading AutoLoot.xml... done.
-[25/4/2026 14:18:57] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:18:57] > Loading highscorebook.xml... done.
-[25/4/2026 14:18:57] > Loading Simple Task.xml... done.
-[25/4/2026 14:18:57] > 4 mods were loaded.
-[25/4/2026 14:19:9] > Loading AutoLoot.xml... done.
-[25/4/2026 14:19:9] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:19:9] > Loading highscorebook.xml... done.
-[25/4/2026 14:19:9] > Loading Simple Task.xml... done.
-[25/4/2026 14:19:9] > 4 mods were loaded.
-[25/4/2026 14:19:19] > Loading AutoLoot.xml... done.
-[25/4/2026 14:19:19] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:19:19] > Loading highscorebook.xml... done.
-[25/4/2026 14:19:19] > Loading Simple Task.xml... done.
-[25/4/2026 14:19:19] > 4 mods were loaded.
-[25/4/2026 14:19:29] > Loading AutoLoot.xml... done.
-[25/4/2026 14:19:29] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:19:29] > Loading highscorebook.xml... done.
-[25/4/2026 14:19:29] > Loading Simple Task.xml... done.
-[25/4/2026 14:19:29] > 4 mods were loaded.
-[25/4/2026 14:19:43] > Loading AutoLoot.xml... done.
-[25/4/2026 14:19:43] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:19:43] > Loading highscorebook.xml... done.
-[25/4/2026 14:19:43] > Loading Simple Task.xml... done.
-[25/4/2026 14:19:43] > 4 mods were loaded.
-[25/4/2026 14:20:2] > Loading AutoLoot.xml... done.
-[25/4/2026 14:20:2] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:20:2] > Loading highscorebook.xml... done.
-[25/4/2026 14:20:2] > Loading Simple Task.xml... done.
-[25/4/2026 14:20:2] > 4 mods were loaded.
-[25/4/2026 14:20:13] > Loading AutoLoot.xml... done.
-[25/4/2026 14:20:13] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:20:13] > Loading highscorebook.xml... done.
-[25/4/2026 14:20:13] > Loading Simple Task.xml... done.
-[25/4/2026 14:20:13] > 4 mods were loaded.
-[25/4/2026 14:20:41] > Loading AutoLoot.xml... done.
-[25/4/2026 14:20:41] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:20:41] > Loading highscorebook.xml... done.
-[25/4/2026 14:20:41] > Loading Simple Task.xml... done.
-[25/4/2026 14:20:41] > 4 mods were loaded.
-[25/4/2026 14:20:42] OTSYS_SQLITE3_PREPARE(): SQLITE ERROR: no such table: lottery (INSERT INTO "lottery" ("name", "item") VALUES ('God', 'nelliel mask');)
-
-[25/4/2026 14:20:44] [Error - GlobalEvent Interface] 
-[25/4/2026 14:20:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 14:20:44] Description: 
-[25/4/2026 14:20:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 14:20:44] stack traceback:
-[25/4/2026 14:20:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 14:20:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 14:21:12] > CLEAN: Removed 4 items from 5 tiles (5 were marked) in 0 seconds.
-[25/4/2026 14:22:42] > Salvando servidor...
-[25/4/2026 14:22:42] > SAVE: Completo em 0.081 segundos usando binary casa storage.
-[25/4/2026 14:24:15] > Loading AutoLoot.xml... done.
-[25/4/2026 14:24:15] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:24:15] > Loading highscorebook.xml... done.
-[25/4/2026 14:24:15] > Loading Simple Task.xml... done.
-[25/4/2026 14:24:15] > 4 mods were loaded.
-[25/4/2026 14:24:25] > Loading AutoLoot.xml... done.
-[25/4/2026 14:24:25] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:24:25] > Loading highscorebook.xml... done.
-[25/4/2026 14:24:25] > Loading Simple Task.xml... done.
-[25/4/2026 14:24:25] > 4 mods were loaded.
-
-[25/4/2026 14:25:44] [Error - GlobalEvent Interface] 
-[25/4/2026 14:25:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 14:25:44] Description: 
-[25/4/2026 14:25:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 14:25:44] stack traceback:
-[25/4/2026 14:25:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 14:25:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 14:27:37] > Loading AutoLoot.xml... done.
-[25/4/2026 14:27:37] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:27:37] > Loading highscorebook.xml... done.
-[25/4/2026 14:27:37] > Loading Simple Task.xml... done.
-[25/4/2026 14:27:37] > 4 mods were loaded.
-[25/4/2026 14:28:12] > Loading AutoLoot.xml... done.
-[25/4/2026 14:28:12] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:28:12] > Loading highscorebook.xml... done.
-[25/4/2026 14:28:12] > Loading Simple Task.xml... done.
-[25/4/2026 14:28:12] > 4 mods were loaded.
-[25/4/2026 14:28:13] God has logged out.
-[25/4/2026 14:28:14] God has logged in.
-[25/4/2026 14:28:29] > Loading AutoLoot.xml... done.
-[25/4/2026 14:28:29] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:28:29] > Loading highscorebook.xml... done.
-[25/4/2026 14:28:29] > Loading Simple Task.xml... done.
-[25/4/2026 14:28:29] > 4 mods were loaded.
-[25/4/2026 14:29:7] > Loading AutoLoot.xml... done.
-[25/4/2026 14:29:7] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:29:7] > Loading highscorebook.xml... done.
-[25/4/2026 14:29:7] > Loading Simple Task.xml... done.
-[25/4/2026 14:29:7] > 4 mods were loaded.
-[25/4/2026 14:29:10] God has logged out.
-[25/4/2026 14:29:10] God has logged in.
-[25/4/2026 14:29:43] God has logged out.
-[25/4/2026 14:29:43] God has logged in.
-
-[25/4/2026 14:30:44] [Error - GlobalEvent Interface] 
-[25/4/2026 14:30:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 14:30:44] Description: 
-[25/4/2026 14:30:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 14:30:44] stack traceback:
-[25/4/2026 14:30:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 14:30:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 14:35:44] [Error - GlobalEvent Interface] 
-[25/4/2026 14:35:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 14:35:44] Description: 
-[25/4/2026 14:35:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 14:35:44] stack traceback:
-[25/4/2026 14:35:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 14:35:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 14:40:44] [Error - GlobalEvent Interface] 
-[25/4/2026 14:40:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 14:40:44] Description: 
-[25/4/2026 14:40:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 14:40:44] stack traceback:
-[25/4/2026 14:40:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 14:40:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 14:44:32] > Loading AutoLoot.xml... done.
-[25/4/2026 14:44:32] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:44:32] > Loading highscorebook.xml... done.
-[25/4/2026 14:44:32] > Loading Simple Task.xml... done.
-[25/4/2026 14:44:32] > 4 mods were loaded.
-
-[25/4/2026 14:45:44] [Error - GlobalEvent Interface] 
-[25/4/2026 14:45:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 14:45:44] Description: 
-[25/4/2026 14:45:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 14:45:44] stack traceback:
-[25/4/2026 14:45:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 14:45:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 14:46:48] > Loading AutoLoot.xml... done.
-[25/4/2026 14:46:48] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:46:48] > Loading highscorebook.xml... done.
-[25/4/2026 14:46:48] > Loading Simple Task.xml... done.
-[25/4/2026 14:46:48] > 4 mods were loaded.
-[25/4/2026 14:47:48] > Loading AutoLoot.xml... done.
-[25/4/2026 14:47:48] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:47:48] > Loading highscorebook.xml... done.
-[25/4/2026 14:47:48] > Loading Simple Task.xml... done.
-[25/4/2026 14:47:48] > 4 mods were loaded.
-[25/4/2026 14:49:7] > Loading AutoLoot.xml... done.
-[25/4/2026 14:49:7] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:49:7] > Loading highscorebook.xml... done.
-[25/4/2026 14:49:7] > Loading Simple Task.xml... done.
-[25/4/2026 14:49:7] > 4 mods were loaded.
-[25/4/2026 14:49:8] God has logged out.
-[25/4/2026 14:49:9] God has logged in.
-
-[25/4/2026 14:50:44] [Error - GlobalEvent Interface] 
-[25/4/2026 14:50:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 14:50:44] Description: 
-[25/4/2026 14:50:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 14:50:44] stack traceback:
-[25/4/2026 14:50:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 14:50:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 14:52:51] > Loading AutoLoot.xml... done.
-[25/4/2026 14:52:51] > Loading Automatic Raids.xml... done.
-[25/4/2026 14:52:51] > Loading highscorebook.xml... done.
-[25/4/2026 14:52:51] > Loading Simple Task.xml... done.
-[25/4/2026 14:52:51] > 4 mods were loaded.
-
-[25/4/2026 14:55:44] [Error - GlobalEvent Interface] 
-[25/4/2026 14:55:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 14:55:44] Description: 
-[25/4/2026 14:55:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 14:55:44] stack traceback:
-[25/4/2026 14:55:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 14:55:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 15:0:38] > Loading AutoLoot.xml... done.
-[25/4/2026 15:0:38] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:0:38] > Loading highscorebook.xml... done.
-[25/4/2026 15:0:38] > Loading Simple Task.xml... done.
-[25/4/2026 15:0:38] > 4 mods were loaded.
-[25/4/2026 15:0:39] > Loading AutoLoot.xml... done.
-[25/4/2026 15:0:39] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:0:39] > Loading highscorebook.xml... done.
-[25/4/2026 15:0:39] > Loading Simple Task.xml... done.
-[25/4/2026 15:0:39] > 4 mods were loaded.
-
-[25/4/2026 15:0:44] [Error - GlobalEvent Interface] 
-[25/4/2026 15:0:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 15:0:44] Description: 
-[25/4/2026 15:0:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 15:0:44] stack traceback:
-[25/4/2026 15:0:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 15:0:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 15:1:25] > Loading AutoLoot.xml... done.
-[25/4/2026 15:1:25] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:1:25] > Loading highscorebook.xml... done.
-[25/4/2026 15:1:25] > Loading Simple Task.xml... done.
-[25/4/2026 15:1:25] > 4 mods were loaded.
-[25/4/2026 15:1:26] > Loading AutoLoot.xml... done.
-[25/4/2026 15:1:26] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:1:26] > Loading highscorebook.xml... done.
-[25/4/2026 15:1:26] > Loading Simple Task.xml... done.
-[25/4/2026 15:1:26] > 4 mods were loaded.
-[25/4/2026 15:1:43] > Loading AutoLoot.xml... done.
-[25/4/2026 15:1:43] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:1:43] > Loading highscorebook.xml... done.
-[25/4/2026 15:1:43] > Loading Simple Task.xml... done.
-[25/4/2026 15:1:43] > 4 mods were loaded.
-[25/4/2026 15:1:51] > Loading AutoLoot.xml... done.
-[25/4/2026 15:1:51] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:1:51] > Loading highscorebook.xml... done.
-[25/4/2026 15:1:51] > Loading Simple Task.xml... done.
-[25/4/2026 15:1:51] > 4 mods were loaded.
-[25/4/2026 15:2:14] > Loading AutoLoot.xml... done.
-[25/4/2026 15:2:14] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:2:14] > Loading highscorebook.xml... done.
-[25/4/2026 15:2:14] > Loading Simple Task.xml... done.
-[25/4/2026 15:2:14] > 4 mods were loaded.
-[25/4/2026 15:2:22] > Loading AutoLoot.xml... done.
-[25/4/2026 15:2:22] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:2:22] > Loading highscorebook.xml... done.
-[25/4/2026 15:2:22] > Loading Simple Task.xml... done.
-[25/4/2026 15:2:22] > 4 mods were loaded.
-[25/4/2026 15:2:51] > Loading AutoLoot.xml... done.
-[25/4/2026 15:2:51] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:2:51] > Loading highscorebook.xml... done.
-[25/4/2026 15:2:51] > Loading Simple Task.xml... done.
-[25/4/2026 15:2:51] > 4 mods were loaded.
-[25/4/2026 15:2:53] > Loading AutoLoot.xml... done.
-[25/4/2026 15:2:53] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:2:53] > Loading highscorebook.xml... done.
-[25/4/2026 15:2:53] > Loading Simple Task.xml... done.
-[25/4/2026 15:2:53] > 4 mods were loaded.
-[25/4/2026 15:3:16] > Loading AutoLoot.xml... done.
-[25/4/2026 15:3:16] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:3:16] > Loading highscorebook.xml... done.
-[25/4/2026 15:3:16] > Loading Simple Task.xml... done.
-[25/4/2026 15:3:16] > 4 mods were loaded.
-[25/4/2026 15:4:13] > Loading AutoLoot.xml... done.
-[25/4/2026 15:4:13] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:4:13] > Loading highscorebook.xml... done.
-[25/4/2026 15:4:13] > Loading Simple Task.xml... done.
-[25/4/2026 15:4:13] > 4 mods were loaded.
-[25/4/2026 15:4:13] > Loading AutoLoot.xml... done.
-[25/4/2026 15:4:13] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:4:13] > Loading highscorebook.xml... done.
-[25/4/2026 15:4:13] > Loading Simple Task.xml... done.
-[25/4/2026 15:4:13] > 4 mods were loaded.
-[25/4/2026 15:4:37] > Loading AutoLoot.xml... done.
-[25/4/2026 15:4:37] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:4:37] > Loading highscorebook.xml... done.
-[25/4/2026 15:4:37] > Loading Simple Task.xml... done.
-[25/4/2026 15:4:37] > 4 mods were loaded.
-[25/4/2026 15:4:53] > Loading AutoLoot.xml... done.
-[25/4/2026 15:4:53] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:4:53] > Loading highscorebook.xml... done.
-[25/4/2026 15:4:53] > Loading Simple Task.xml... done.
-[25/4/2026 15:4:53] > 4 mods were loaded.
-
-[25/4/2026 15:5:44] [Error - GlobalEvent Interface] 
-[25/4/2026 15:5:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 15:5:44] Description: 
-[25/4/2026 15:5:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 15:5:44] stack traceback:
-[25/4/2026 15:5:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 15:5:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 15:7:44] > Loading AutoLoot.xml... done.
-[25/4/2026 15:7:44] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:7:44] > Loading highscorebook.xml... done.
-[25/4/2026 15:7:44] > Loading Simple Task.xml... done.
-[25/4/2026 15:7:44] > 4 mods were loaded.
-[25/4/2026 15:9:4] > Loading AutoLoot.xml... done.
-[25/4/2026 15:9:4] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:9:4] > Loading highscorebook.xml... done.
-[25/4/2026 15:9:4] > Loading Simple Task.xml... done.
-[25/4/2026 15:9:4] > 4 mods were loaded.
-
-[25/4/2026 15:10:44] [Error - GlobalEvent Interface] 
-[25/4/2026 15:10:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 15:10:44] Description: 
-[25/4/2026 15:10:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 15:10:44] stack traceback:
-[25/4/2026 15:10:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 15:10:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 15:10:55] > Loading AutoLoot.xml... done.
-[25/4/2026 15:10:55] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:10:55] > Loading highscorebook.xml... done.
-[25/4/2026 15:10:55] > Loading Simple Task.xml... done.
-[25/4/2026 15:10:55] > 4 mods were loaded.
-[25/4/2026 15:13:47] > Loading AutoLoot.xml... done.
-[25/4/2026 15:13:47] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:13:47] > Loading highscorebook.xml... done.
-[25/4/2026 15:13:47] > Loading Simple Task.xml... done.
-[25/4/2026 15:13:47] > 4 mods were loaded.
-
-[25/4/2026 15:15:44] [Error - GlobalEvent Interface] 
-[25/4/2026 15:15:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 15:15:44] Description: 
-[25/4/2026 15:15:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 15:15:44] stack traceback:
-[25/4/2026 15:15:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 15:15:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 15:16:37] > Loading AutoLoot.xml... done.
-[25/4/2026 15:16:37] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:16:37] > Loading highscorebook.xml... done.
-[25/4/2026 15:16:37] > Loading Simple Task.xml... done.
-[25/4/2026 15:16:37] > 4 mods were loaded.
-[25/4/2026 15:17:24] > Loading AutoLoot.xml... done.
-[25/4/2026 15:17:24] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:17:24] > Loading highscorebook.xml... done.
-[25/4/2026 15:17:24] > Loading Simple Task.xml... done.
-[25/4/2026 15:17:24] > 4 mods were loaded.
-[25/4/2026 15:19:43] > Loading AutoLoot.xml... done.
-[25/4/2026 15:19:43] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:19:43] > Loading highscorebook.xml... done.
-[25/4/2026 15:19:43] > Loading Simple Task.xml... done.
-[25/4/2026 15:19:43] > 4 mods were loaded.
-
-[25/4/2026 15:20:44] [Error - GlobalEvent Interface] 
-[25/4/2026 15:20:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 15:20:44] Description: 
-[25/4/2026 15:20:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 15:20:44] stack traceback:
-[25/4/2026 15:20:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 15:20:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 15:22:42] > Salvando servidor...
-[25/4/2026 15:22:42] > SAVE: Completo em 0.083 segundos usando binary casa storage.
-
-[25/4/2026 15:25:44] [Error - GlobalEvent Interface] 
-[25/4/2026 15:25:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 15:25:44] Description: 
-[25/4/2026 15:25:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 15:25:44] stack traceback:
-[25/4/2026 15:25:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 15:25:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 15:30:44] [Error - GlobalEvent Interface] 
-[25/4/2026 15:30:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 15:30:44] Description: 
-[25/4/2026 15:30:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 15:30:44] stack traceback:
-[25/4/2026 15:30:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 15:30:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 15:35:44] [Error - GlobalEvent Interface] 
-[25/4/2026 15:35:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 15:35:44] Description: 
-[25/4/2026 15:35:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 15:35:44] stack traceback:
-[25/4/2026 15:35:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 15:35:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 15:40:44] [Error - GlobalEvent Interface] 
-[25/4/2026 15:40:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 15:40:44] Description: 
-[25/4/2026 15:40:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 15:40:44] stack traceback:
-[25/4/2026 15:40:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 15:40:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 15:41:16] > Loading AutoLoot.xml... done.
-[25/4/2026 15:41:16] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:41:16] > Loading highscorebook.xml... done.
-[25/4/2026 15:41:16] > Loading Simple Task.xml... done.
-[25/4/2026 15:41:16] > 4 mods were loaded.
-[25/4/2026 15:41:17] > Loading AutoLoot.xml... done.
-[25/4/2026 15:41:17] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:41:17] > Loading highscorebook.xml... done.
-[25/4/2026 15:41:17] > Loading Simple Task.xml... done.
-[25/4/2026 15:41:17] > 4 mods were loaded.
-[25/4/2026 15:41:25] > Loading AutoLoot.xml... done.
-[25/4/2026 15:41:25] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:41:25] > Loading highscorebook.xml... done.
-[25/4/2026 15:41:25] > Loading Simple Task.xml... done.
-[25/4/2026 15:41:25] > 4 mods were loaded.
-[25/4/2026 15:41:34] > Loading AutoLoot.xml... done.
-[25/4/2026 15:41:34] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:41:34] > Loading highscorebook.xml... done.
-[25/4/2026 15:41:34] > Loading Simple Task.xml... done.
-[25/4/2026 15:41:34] > 4 mods were loaded.
-[25/4/2026 15:42:1] > Loading AutoLoot.xml... done.
-[25/4/2026 15:42:1] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:42:1] > Loading highscorebook.xml... done.
-[25/4/2026 15:42:1] > Loading Simple Task.xml... done.
-[25/4/2026 15:42:1] > 4 mods were loaded.
-[25/4/2026 15:42:6] > Loading AutoLoot.xml... done.
-[25/4/2026 15:42:6] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:42:6] > Loading highscorebook.xml... done.
-[25/4/2026 15:42:6] > Loading Simple Task.xml... done.
-[25/4/2026 15:42:6] > 4 mods were loaded.
-
-[25/4/2026 15:45:44] [Error - GlobalEvent Interface] 
-[25/4/2026 15:45:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 15:45:44] Description: 
-[25/4/2026 15:45:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 15:45:44] stack traceback:
-[25/4/2026 15:45:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 15:45:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 15:47:38] > Loading AutoLoot.xml... done.
-[25/4/2026 15:47:38] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:47:38] > Loading highscorebook.xml... done.
-[25/4/2026 15:47:38] > Loading Simple Task.xml... done.
-[25/4/2026 15:47:38] > 4 mods were loaded.
-[25/4/2026 15:47:50] > Loading AutoLoot.xml... done.
-[25/4/2026 15:47:50] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:47:50] > Loading highscorebook.xml... done.
-[25/4/2026 15:47:50] > Loading Simple Task.xml... done.
-[25/4/2026 15:47:50] > 4 mods were loaded.
-[25/4/2026 15:49:20] > Loading AutoLoot.xml... done.
-[25/4/2026 15:49:20] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:49:20] > Loading highscorebook.xml... done.
-[25/4/2026 15:49:20] > Loading Simple Task.xml... done.
-[25/4/2026 15:49:20] > 4 mods were loaded.
-[25/4/2026 15:49:27] > Loading AutoLoot.xml... done.
-[25/4/2026 15:49:27] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:49:27] > Loading highscorebook.xml... done.
-[25/4/2026 15:49:27] > Loading Simple Task.xml... done.
-[25/4/2026 15:49:27] > 4 mods were loaded.
-
-[25/4/2026 15:50:44] [Error - GlobalEvent Interface] 
-[25/4/2026 15:50:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 15:50:44] Description: 
-[25/4/2026 15:50:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 15:50:44] stack traceback:
-[25/4/2026 15:50:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 15:50:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 15:52:51] > Loading AutoLoot.xml... done.
-[25/4/2026 15:52:51] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:52:51] > Loading highscorebook.xml... done.
-[25/4/2026 15:52:51] > Loading Simple Task.xml... done.
-[25/4/2026 15:52:51] > 4 mods were loaded.
-[25/4/2026 15:52:52] > Loading AutoLoot.xml... done.
-[25/4/2026 15:52:52] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:52:52] > Loading highscorebook.xml... done.
-[25/4/2026 15:52:52] > Loading Simple Task.xml... done.
-[25/4/2026 15:52:52] > 4 mods were loaded.
-[25/4/2026 15:53:1] > Loading AutoLoot.xml... done.
-[25/4/2026 15:53:1] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:53:1] > Loading highscorebook.xml... done.
-[25/4/2026 15:53:1] > Loading Simple Task.xml... done.
-[25/4/2026 15:53:1] > 4 mods were loaded.
-[25/4/2026 15:53:2] > Loading AutoLoot.xml... done.
-[25/4/2026 15:53:2] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:53:2] > Loading highscorebook.xml... done.
-[25/4/2026 15:53:2] > Loading Simple Task.xml... done.
-[25/4/2026 15:53:2] > 4 mods were loaded.
-[25/4/2026 15:55:6] > Loading AutoLoot.xml... done.
-[25/4/2026 15:55:6] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:55:6] > Loading highscorebook.xml... done.
-[25/4/2026 15:55:6] > Loading Simple Task.xml... done.
-[25/4/2026 15:55:6] > 4 mods were loaded.
-[25/4/2026 15:55:11] > Loading AutoLoot.xml... done.
-[25/4/2026 15:55:11] > Loading Automatic Raids.xml... done.
-[25/4/2026 15:55:11] > Loading highscorebook.xml... done.
-[25/4/2026 15:55:11] > Loading Simple Task.xml... done.
-[25/4/2026 15:55:11] > 4 mods were loaded.
-
-[25/4/2026 15:55:44] [Error - GlobalEvent Interface] 
-[25/4/2026 15:55:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 15:55:44] Description: 
-[25/4/2026 15:55:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 15:55:44] stack traceback:
-[25/4/2026 15:55:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 15:55:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-
-[25/4/2026 16:0:44] [Error - GlobalEvent Interface] 
-[25/4/2026 16:0:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 16:0:44] Description: 
-[25/4/2026 16:0:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 16:0:44] stack traceback:
-[25/4/2026 16:0:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 16:0:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 16:1:46] > Loading AutoLoot.xml... done.
-[25/4/2026 16:1:46] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:1:46] > Loading highscorebook.xml... done.
-[25/4/2026 16:1:46] > Loading Simple Task.xml... done.
-[25/4/2026 16:1:46] > 4 mods were loaded.
-[25/4/2026 16:4:57] > Loading AutoLoot.xml... done.
-[25/4/2026 16:4:57] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:4:57] > Loading highscorebook.xml... done.
-[25/4/2026 16:4:57] > Loading Simple Task.xml... done.
-[25/4/2026 16:4:57] > 4 mods were loaded.
-
-[25/4/2026 16:5:44] [Error - GlobalEvent Interface] 
-[25/4/2026 16:5:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 16:5:44] Description: 
-[25/4/2026 16:5:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 16:5:44] stack traceback:
-[25/4/2026 16:5:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 16:5:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 16:5:49] > Loading AutoLoot.xml... done.
-[25/4/2026 16:5:49] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:5:49] > Loading highscorebook.xml... done.
-[25/4/2026 16:5:49] > Loading Simple Task.xml... done.
-[25/4/2026 16:5:49] > 4 mods were loaded.
-[25/4/2026 16:5:57] > Loading AutoLoot.xml... done.
-[25/4/2026 16:5:57] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:5:57] > Loading highscorebook.xml... done.
-[25/4/2026 16:5:57] > Loading Simple Task.xml... done.
-[25/4/2026 16:5:57] > 4 mods were loaded.
-[25/4/2026 16:8:47] > Loading AutoLoot.xml... done.
-[25/4/2026 16:8:47] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:8:47] > Loading highscorebook.xml... done.
-[25/4/2026 16:8:47] > Loading Simple Task.xml... done.
-[25/4/2026 16:8:47] > 4 mods were loaded.
-
-[25/4/2026 16:10:44] [Error - GlobalEvent Interface] 
-[25/4/2026 16:10:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 16:10:44] Description: 
-[25/4/2026 16:10:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 16:10:44] stack traceback:
-[25/4/2026 16:10:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 16:10:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 16:12:29] > Loading AutoLoot.xml... done.
-[25/4/2026 16:12:29] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:12:29] > Loading highscorebook.xml... done.
-[25/4/2026 16:12:29] > Loading Simple Task.xml... done.
-[25/4/2026 16:12:29] > 4 mods were loaded.
-[25/4/2026 16:13:6] > Loading AutoLoot.xml... done.
-[25/4/2026 16:13:6] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:13:6] > Loading highscorebook.xml... done.
-[25/4/2026 16:13:6] > Loading Simple Task.xml... done.
-[25/4/2026 16:13:6] > 4 mods were loaded.
-[25/4/2026 16:14:17] > Loading AutoLoot.xml... done.
-[25/4/2026 16:14:17] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:14:17] > Loading highscorebook.xml... done.
-[25/4/2026 16:14:17] > Loading Simple Task.xml... done.
-[25/4/2026 16:14:17] > 4 mods were loaded.
-[25/4/2026 16:14:23] > Loading AutoLoot.xml... done.
-[25/4/2026 16:14:23] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:14:23] > Loading highscorebook.xml... done.
-[25/4/2026 16:14:23] > Loading Simple Task.xml... done.
-[25/4/2026 16:14:23] > 4 mods were loaded.
-[25/4/2026 16:14:33] > Loading AutoLoot.xml... done.
-[25/4/2026 16:14:33] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:14:33] > Loading highscorebook.xml... done.
-[25/4/2026 16:14:33] > Loading Simple Task.xml... done.
-[25/4/2026 16:14:33] > 4 mods were loaded.
-
-[25/4/2026 16:15:44] [Error - GlobalEvent Interface] 
-[25/4/2026 16:15:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 16:15:44] Description: 
-[25/4/2026 16:15:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 16:15:44] stack traceback:
-[25/4/2026 16:15:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 16:15:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 16:18:18] > Loading AutoLoot.xml... done.
-[25/4/2026 16:18:18] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:18:18] > Loading highscorebook.xml... done.
-[25/4/2026 16:18:18] > Loading Simple Task.xml... done.
-[25/4/2026 16:18:18] > 4 mods were loaded.
-[25/4/2026 16:18:31] > Loading AutoLoot.xml... done.
-[25/4/2026 16:18:31] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:18:31] > Loading highscorebook.xml... done.
-[25/4/2026 16:18:31] > Loading Simple Task.xml... done.
-[25/4/2026 16:18:31] > 4 mods were loaded.
-[25/4/2026 16:18:40] > Loading AutoLoot.xml... done.
-[25/4/2026 16:18:40] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:18:40] > Loading highscorebook.xml... done.
-[25/4/2026 16:18:40] > Loading Simple Task.xml... done.
-[25/4/2026 16:18:40] > 4 mods were loaded.
-[25/4/2026 16:19:0] > Loading AutoLoot.xml... done.
-[25/4/2026 16:19:0] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:19:0] > Loading highscorebook.xml... done.
-[25/4/2026 16:19:0] > Loading Simple Task.xml... done.
-[25/4/2026 16:19:0] > 4 mods were loaded.
-[25/4/2026 16:19:11] > Loading AutoLoot.xml... done.
-[25/4/2026 16:19:11] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:19:11] > Loading highscorebook.xml... done.
-[25/4/2026 16:19:11] > Loading Simple Task.xml... done.
-[25/4/2026 16:19:11] > 4 mods were loaded.
-[25/4/2026 16:19:41] > Loading AutoLoot.xml... done.
-[25/4/2026 16:19:41] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:19:41] > Loading highscorebook.xml... done.
-[25/4/2026 16:19:41] > Loading Simple Task.xml... done.
-[25/4/2026 16:19:41] > 4 mods were loaded.
-[25/4/2026 16:19:55] > Loading AutoLoot.xml... done.
-[25/4/2026 16:19:55] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:19:55] > Loading highscorebook.xml... done.
-[25/4/2026 16:19:55] > Loading Simple Task.xml... done.
-[25/4/2026 16:19:55] > 4 mods were loaded.
-[25/4/2026 16:20:42] OTSYS_SQLITE3_PREPARE(): SQLITE ERROR: no such table: lottery (INSERT INTO "lottery" ("name", "item") VALUES ('God', 'goku boots');)
-
-[25/4/2026 16:20:44] [Error - GlobalEvent Interface] 
-[25/4/2026 16:20:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 16:20:44] Description: 
-[25/4/2026 16:20:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 16:20:44] stack traceback:
-[25/4/2026 16:20:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 16:20:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 16:21:12] > CLEAN: Removed 1 item from 4 tiles (4 were marked) in 0 seconds.
-[25/4/2026 16:22:42] > Salvando servidor...
-[25/4/2026 16:22:42] > SAVE: Completo em 0.094 segundos usando binary casa storage.
-
-[25/4/2026 16:25:44] [Error - GlobalEvent Interface] 
-[25/4/2026 16:25:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 16:25:44] Description: 
-[25/4/2026 16:25:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 16:25:44] stack traceback:
-[25/4/2026 16:25:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 16:25:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 16:28:57] > Loading AutoLoot.xml... done.
-[25/4/2026 16:28:57] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:28:57] > Loading highscorebook.xml... done.
-[25/4/2026 16:28:57] > Loading Simple Task.xml... done.
-[25/4/2026 16:28:57] > 4 mods were loaded.
-[25/4/2026 16:29:2] > Loading AutoLoot.xml... done.
-[25/4/2026 16:29:2] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:29:2] > Loading highscorebook.xml... done.
-[25/4/2026 16:29:2] > Loading Simple Task.xml... done.
-[25/4/2026 16:29:2] > 4 mods were loaded.
-[25/4/2026 16:29:9] > Loading AutoLoot.xml... done.
-[25/4/2026 16:29:9] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:29:9] > Loading highscorebook.xml... done.
-[25/4/2026 16:29:9] > Loading Simple Task.xml... done.
-[25/4/2026 16:29:9] > 4 mods were loaded.
-[25/4/2026 16:29:23] > Loading AutoLoot.xml... done.
-[25/4/2026 16:29:23] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:29:23] > Loading highscorebook.xml... done.
-[25/4/2026 16:29:23] > Loading Simple Task.xml... done.
-[25/4/2026 16:29:23] > 4 mods were loaded.
-[25/4/2026 16:30:3] > Loading AutoLoot.xml... done.
-[25/4/2026 16:30:3] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:30:3] > Loading highscorebook.xml... done.
-[25/4/2026 16:30:3] > Loading Simple Task.xml... done.
-[25/4/2026 16:30:3] > 4 mods were loaded.
-[25/4/2026 16:30:11] > Loading AutoLoot.xml... done.
-[25/4/2026 16:30:11] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:30:11] > Loading highscorebook.xml... done.
-[25/4/2026 16:30:11] > Loading Simple Task.xml... done.
-[25/4/2026 16:30:11] > 4 mods were loaded.
-
-[25/4/2026 16:30:44] [Error - GlobalEvent Interface] 
-[25/4/2026 16:30:44] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 16:30:44] Description: 
-[25/4/2026 16:30:44] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 16:30:44] stack traceback:
-[25/4/2026 16:30:44] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 16:30:44] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 16:32:38] > Loading AutoLoot.xml... done.
-[25/4/2026 16:32:38] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:32:38] > Loading highscorebook.xml... done.
-[25/4/2026 16:32:38] > Loading Simple Task.xml... done.
-[25/4/2026 16:32:38] > 4 mods were loaded.
-[25/4/2026 16:33:13] > Loading AutoLoot.xml... done.
-[25/4/2026 16:33:13] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:33:13] > Loading highscorebook.xml... done.
-[25/4/2026 16:33:13] > Loading Simple Task.xml... done.
-[25/4/2026 16:33:13] > 4 mods were loaded.
-[25/4/2026 16:33:49] > Loading AutoLoot.xml... done.
-[25/4/2026 16:33:49] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:33:49] > Loading highscorebook.xml... done.
-[25/4/2026 16:33:49] > Loading Simple Task.xml... done.
-[25/4/2026 16:33:49] > 4 mods were loaded.
-[25/4/2026 16:33:54] > Loading AutoLoot.xml... done.
-[25/4/2026 16:33:54] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:33:54] > Loading highscorebook.xml... done.
-[25/4/2026 16:33:54] > Loading Simple Task.xml... done.
-[25/4/2026 16:33:54] > 4 mods were loaded.
-[25/4/2026 16:34:53] > Loading AutoLoot.xml... done.
-[25/4/2026 16:34:53] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:34:53] > Loading highscorebook.xml... done.
-[25/4/2026 16:34:53] > Loading Simple Task.xml... done.
-[25/4/2026 16:34:53] > 4 mods were loaded.
-[25/4/2026 16:35:20] > Loading AutoLoot.xml... done.
-[25/4/2026 16:35:20] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:35:20] > Loading highscorebook.xml... done.
-[25/4/2026 16:35:20] > Loading Simple Task.xml... done.
-[25/4/2026 16:35:20] > 4 mods were loaded.
-[25/4/2026 16:35:44] > Loading AutoLoot.xml... done.
-[25/4/2026 16:35:44] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:35:44] > Loading highscorebook.xml... done.
-[25/4/2026 16:35:44] > Loading Simple Task.xml... done.
-[25/4/2026 16:35:44] > 4 mods were loaded.
-
-[25/4/2026 16:35:45] [Error - GlobalEvent Interface] 
-[25/4/2026 16:35:45] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 16:35:45] Description: 
-[25/4/2026 16:35:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 16:35:45] stack traceback:
-[25/4/2026 16:35:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 16:35:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 16:35:51] > Loading AutoLoot.xml... done.
-[25/4/2026 16:35:51] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:35:51] > Loading highscorebook.xml... done.
-[25/4/2026 16:35:51] > Loading Simple Task.xml... done.
-[25/4/2026 16:35:51] > 4 mods were loaded.
-[25/4/2026 16:38:16] > Loading AutoLoot.xml... done.
-[25/4/2026 16:38:16] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:38:16] > Loading highscorebook.xml... done.
-[25/4/2026 16:38:16] > Loading Simple Task.xml... done.
-[25/4/2026 16:38:16] > 4 mods were loaded.
-[25/4/2026 16:38:25] > Loading AutoLoot.xml... done.
-[25/4/2026 16:38:25] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:38:25] > Loading highscorebook.xml... done.
-[25/4/2026 16:38:25] > Loading Simple Task.xml... done.
-[25/4/2026 16:38:25] > 4 mods were loaded.
-[25/4/2026 16:38:33] > Loading AutoLoot.xml... done.
-[25/4/2026 16:38:33] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:38:33] > Loading highscorebook.xml... done.
-[25/4/2026 16:38:33] > Loading Simple Task.xml... done.
-[25/4/2026 16:38:33] > 4 mods were loaded.
-[25/4/2026 16:38:38] > Loading AutoLoot.xml... done.
-[25/4/2026 16:38:38] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:38:38] > Loading highscorebook.xml... done.
-[25/4/2026 16:38:38] > Loading Simple Task.xml... done.
-[25/4/2026 16:38:38] > 4 mods were loaded.
-[25/4/2026 16:38:44] > Loading AutoLoot.xml... done.
-[25/4/2026 16:38:44] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:38:44] > Loading highscorebook.xml... done.
-[25/4/2026 16:38:44] > Loading Simple Task.xml... done.
-[25/4/2026 16:38:44] > 4 mods were loaded.
-[25/4/2026 16:39:24] > Loading AutoLoot.xml... done.
-[25/4/2026 16:39:24] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:39:24] > Loading highscorebook.xml... done.
-[25/4/2026 16:39:24] > Loading Simple Task.xml... done.
-[25/4/2026 16:39:24] > 4 mods were loaded.
-[25/4/2026 16:39:30] > Loading AutoLoot.xml... done.
-[25/4/2026 16:39:30] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:39:30] > Loading highscorebook.xml... done.
-[25/4/2026 16:39:30] > Loading Simple Task.xml... done.
-[25/4/2026 16:39:30] > 4 mods were loaded.
-[25/4/2026 16:39:35] > Loading AutoLoot.xml... done.
-[25/4/2026 16:39:35] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:39:35] > Loading highscorebook.xml... done.
-[25/4/2026 16:39:35] > Loading Simple Task.xml... done.
-[25/4/2026 16:39:35] > 4 mods were loaded.
-[25/4/2026 16:39:36] > Loading AutoLoot.xml... done.
-[25/4/2026 16:39:36] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:39:36] > Loading highscorebook.xml... done.
-[25/4/2026 16:39:36] > Loading Simple Task.xml... done.
-[25/4/2026 16:39:36] > 4 mods were loaded.
-[25/4/2026 16:39:42] > Loading AutoLoot.xml... done.
-[25/4/2026 16:39:42] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:39:42] > Loading highscorebook.xml... done.
-[25/4/2026 16:39:42] > Loading Simple Task.xml... done.
-[25/4/2026 16:39:42] > 4 mods were loaded.
-[25/4/2026 16:40:19] > Loading AutoLoot.xml... done.
-[25/4/2026 16:40:19] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:40:19] > Loading highscorebook.xml... done.
-[25/4/2026 16:40:19] > Loading Simple Task.xml... done.
-[25/4/2026 16:40:19] > 4 mods were loaded.
-
-[25/4/2026 16:40:45] [Error - GlobalEvent Interface] 
-[25/4/2026 16:40:45] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 16:40:45] Description: 
-[25/4/2026 16:40:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 16:40:45] stack traceback:
-[25/4/2026 16:40:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 16:40:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 16:41:38] > Loading AutoLoot.xml... done.
-[25/4/2026 16:41:38] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:41:38] > Loading highscorebook.xml... done.
-[25/4/2026 16:41:38] > Loading Simple Task.xml... done.
-[25/4/2026 16:41:38] > 4 mods were loaded.
-[25/4/2026 16:41:46] > Loading AutoLoot.xml... done.
-[25/4/2026 16:41:46] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:41:46] > Loading highscorebook.xml... done.
-[25/4/2026 16:41:46] > Loading Simple Task.xml... done.
-[25/4/2026 16:41:46] > 4 mods were loaded.
-[25/4/2026 16:42:6] > Loading AutoLoot.xml... done.
-[25/4/2026 16:42:6] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:42:6] > Loading highscorebook.xml... done.
-[25/4/2026 16:42:6] > Loading Simple Task.xml... done.
-[25/4/2026 16:42:6] > 4 mods were loaded.
-[25/4/2026 16:43:45] > Loading AutoLoot.xml... done.
-[25/4/2026 16:43:45] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:43:45] > Loading highscorebook.xml... done.
-[25/4/2026 16:43:45] > Loading Simple Task.xml... done.
-[25/4/2026 16:43:45] > 4 mods were loaded.
-[25/4/2026 16:44:42] > Loading AutoLoot.xml... done.
-[25/4/2026 16:44:42] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:44:42] > Loading highscorebook.xml... done.
-[25/4/2026 16:44:42] > Loading Simple Task.xml... done.
-[25/4/2026 16:44:42] > 4 mods were loaded.
-[25/4/2026 16:44:53] > Loading AutoLoot.xml... done.
-[25/4/2026 16:44:53] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:44:53] > Loading highscorebook.xml... done.
-[25/4/2026 16:44:53] > Loading Simple Task.xml... done.
-[25/4/2026 16:44:53] > 4 mods were loaded.
-[25/4/2026 16:45:24] > Loading AutoLoot.xml... done.
-[25/4/2026 16:45:24] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:45:24] > Loading highscorebook.xml... done.
-[25/4/2026 16:45:24] > Loading Simple Task.xml... done.
-[25/4/2026 16:45:24] > 4 mods were loaded.
-[25/4/2026 16:45:32] > Loading AutoLoot.xml... done.
-[25/4/2026 16:45:32] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:45:32] > Loading highscorebook.xml... done.
-[25/4/2026 16:45:32] > Loading Simple Task.xml... done.
-[25/4/2026 16:45:32] > 4 mods were loaded.
-
-[25/4/2026 16:45:45] [Error - GlobalEvent Interface] 
-[25/4/2026 16:45:45] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 16:45:45] Description: 
-[25/4/2026 16:45:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 16:45:45] stack traceback:
-[25/4/2026 16:45:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 16:45:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 16:48:36] > Loading AutoLoot.xml... done.
-[25/4/2026 16:48:36] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:48:36] > Loading highscorebook.xml... done.
-[25/4/2026 16:48:36] > Loading Simple Task.xml... done.
-[25/4/2026 16:48:36] > 4 mods were loaded.
-[25/4/2026 16:48:43] > Loading AutoLoot.xml... done.
-[25/4/2026 16:48:43] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:48:43] > Loading highscorebook.xml... done.
-[25/4/2026 16:48:43] > Loading Simple Task.xml... done.
-[25/4/2026 16:48:43] > 4 mods were loaded.
-
-[25/4/2026 16:50:45] [Error - GlobalEvent Interface] 
-[25/4/2026 16:50:45] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 16:50:45] Description: 
-[25/4/2026 16:50:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 16:50:45] stack traceback:
-[25/4/2026 16:50:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 16:50:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 16:52:3] > Loading AutoLoot.xml... done.
-[25/4/2026 16:52:3] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:52:3] > Loading highscorebook.xml... done.
-[25/4/2026 16:52:3] > Loading Simple Task.xml... done.
-[25/4/2026 16:52:3] > 4 mods were loaded.
-[25/4/2026 16:52:10] > Loading AutoLoot.xml... done.
-[25/4/2026 16:52:10] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:52:10] > Loading highscorebook.xml... done.
-[25/4/2026 16:52:10] > Loading Simple Task.xml... done.
-[25/4/2026 16:52:10] > 4 mods were loaded.
-[25/4/2026 16:53:1] > Loading AutoLoot.xml... done.
-[25/4/2026 16:53:1] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:53:1] > Loading highscorebook.xml... done.
-[25/4/2026 16:53:1] > Loading Simple Task.xml... done.
-[25/4/2026 16:53:1] > 4 mods were loaded.
-[25/4/2026 16:53:14] > Loading AutoLoot.xml... done.
-[25/4/2026 16:53:14] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:53:14] > Loading highscorebook.xml... done.
-[25/4/2026 16:53:14] > Loading Simple Task.xml... done.
-[25/4/2026 16:53:14] > 4 mods were loaded.
-[25/4/2026 16:53:27] > Loading AutoLoot.xml... done.
-[25/4/2026 16:53:27] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:53:27] > Loading highscorebook.xml... done.
-[25/4/2026 16:53:27] > Loading Simple Task.xml... done.
-[25/4/2026 16:53:27] > 4 mods were loaded.
-[25/4/2026 16:54:12] > Loading AutoLoot.xml... done.
-[25/4/2026 16:54:12] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:54:12] > Loading highscorebook.xml... done.
-[25/4/2026 16:54:12] > Loading Simple Task.xml... done.
-[25/4/2026 16:54:12] > 4 mods were loaded.
-[25/4/2026 16:54:26] > Loading AutoLoot.xml... done.
-[25/4/2026 16:54:26] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:54:26] > Loading highscorebook.xml... done.
-[25/4/2026 16:54:26] > Loading Simple Task.xml... done.
-[25/4/2026 16:54:26] > 4 mods were loaded.
-[25/4/2026 16:54:32] > Loading AutoLoot.xml... done.
-[25/4/2026 16:54:32] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:54:32] > Loading highscorebook.xml... done.
-[25/4/2026 16:54:32] > Loading Simple Task.xml... done.
-[25/4/2026 16:54:32] > 4 mods were loaded.
-[25/4/2026 16:54:33] > Loading AutoLoot.xml... done.
-[25/4/2026 16:54:33] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:54:33] > Loading highscorebook.xml... done.
-[25/4/2026 16:54:33] > Loading Simple Task.xml... done.
-[25/4/2026 16:54:33] > 4 mods were loaded.
-[25/4/2026 16:55:11] > Loading AutoLoot.xml... done.
-[25/4/2026 16:55:11] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:55:11] > Loading highscorebook.xml... done.
-[25/4/2026 16:55:11] > Loading Simple Task.xml... done.
-[25/4/2026 16:55:11] > 4 mods were loaded.
-
-[25/4/2026 16:55:45] [Error - GlobalEvent Interface] 
-[25/4/2026 16:55:45] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 16:55:45] Description: 
-[25/4/2026 16:55:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 16:55:45] stack traceback:
-[25/4/2026 16:55:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 16:55:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 16:56:22] > Loading AutoLoot.xml... done.
-[25/4/2026 16:56:22] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:56:22] > Loading highscorebook.xml... done.
-[25/4/2026 16:56:22] > Loading Simple Task.xml... done.
-[25/4/2026 16:56:22] > 4 mods were loaded.
-[25/4/2026 16:56:29] > Loading AutoLoot.xml... done.
-[25/4/2026 16:56:29] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:56:29] > Loading highscorebook.xml... done.
-[25/4/2026 16:56:29] > Loading Simple Task.xml... done.
-[25/4/2026 16:56:29] > 4 mods were loaded.
-[25/4/2026 16:57:9] > Loading AutoLoot.xml... done.
-[25/4/2026 16:57:9] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:57:9] > Loading highscorebook.xml... done.
-[25/4/2026 16:57:9] > Loading Simple Task.xml... done.
-[25/4/2026 16:57:9] > 4 mods were loaded.
-[25/4/2026 16:57:18] > Loading AutoLoot.xml... done.
-[25/4/2026 16:57:18] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:57:18] > Loading highscorebook.xml... done.
-[25/4/2026 16:57:18] > Loading Simple Task.xml... done.
-[25/4/2026 16:57:18] > 4 mods were loaded.
-[25/4/2026 16:57:57] > Loading AutoLoot.xml... done.
-[25/4/2026 16:57:57] > Loading Automatic Raids.xml... done.
-[25/4/2026 16:57:57] > Loading highscorebook.xml... done.
-[25/4/2026 16:57:57] > Loading Simple Task.xml... done.
-[25/4/2026 16:57:57] > 4 mods were loaded.
-
-[25/4/2026 17:0:45] [Error - GlobalEvent Interface] 
-[25/4/2026 17:0:45] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 17:0:45] Description: 
-[25/4/2026 17:0:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 17:0:45] stack traceback:
-[25/4/2026 17:0:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 17:0:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 17:1:7] > Loading AutoLoot.xml... done.
-[25/4/2026 17:1:7] > Loading Automatic Raids.xml... done.
-[25/4/2026 17:1:7] > Loading highscorebook.xml... done.
-[25/4/2026 17:1:7] > Loading Simple Task.xml... done.
-[25/4/2026 17:1:7] > 4 mods were loaded.
-[25/4/2026 17:1:21] > Loading AutoLoot.xml... done.
-[25/4/2026 17:1:21] > Loading Automatic Raids.xml... done.
-[25/4/2026 17:1:21] > Loading highscorebook.xml... done.
-[25/4/2026 17:1:21] > Loading Simple Task.xml... done.
-[25/4/2026 17:1:21] > 4 mods were loaded.
-[25/4/2026 17:1:48] > Loading AutoLoot.xml... done.
-[25/4/2026 17:1:48] > Loading Automatic Raids.xml... done.
-[25/4/2026 17:1:48] > Loading highscorebook.xml... done.
-[25/4/2026 17:1:48] > Loading Simple Task.xml... done.
-[25/4/2026 17:1:48] > 4 mods were loaded.
-[25/4/2026 17:4:56] > Loading AutoLoot.xml... done.
-[25/4/2026 17:4:56] > Loading Automatic Raids.xml... done.
-[25/4/2026 17:4:56] > Loading highscorebook.xml... done.
-[25/4/2026 17:4:56] > Loading Simple Task.xml... done.
-[25/4/2026 17:4:56] > 4 mods were loaded.
-[25/4/2026 17:5:5] > Loading AutoLoot.xml... done.
-[25/4/2026 17:5:5] > Loading Automatic Raids.xml... done.
-[25/4/2026 17:5:5] > Loading highscorebook.xml... done.
-[25/4/2026 17:5:5] > Loading Simple Task.xml... done.
-[25/4/2026 17:5:5] > 4 mods were loaded.
-[25/4/2026 17:5:9] > Loading AutoLoot.xml... done.
-[25/4/2026 17:5:9] > Loading Automatic Raids.xml... done.
-[25/4/2026 17:5:9] > Loading highscorebook.xml... done.
-[25/4/2026 17:5:9] > Loading Simple Task.xml... done.
-[25/4/2026 17:5:9] > 4 mods were loaded.
-
-[25/4/2026 17:5:45] [Error - GlobalEvent Interface] 
-[25/4/2026 17:5:45] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 17:5:45] Description: 
-[25/4/2026 17:5:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 17:5:45] stack traceback:
-[25/4/2026 17:5:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 17:5:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[25/4/2026 17:10:33] > Loading AutoLoot.xml... done.
-[25/4/2026 17:10:33] > Loading Automatic Raids.xml... done.
-[25/4/2026 17:10:33] > Loading highscorebook.xml... done.
-[25/4/2026 17:10:33] > Loading Simple Task.xml... done.
-[25/4/2026 17:10:33] > 4 mods were loaded.
-
-[25/4/2026 17:10:45] [Error - GlobalEvent Interface] 
-[25/4/2026 17:10:45] data/globalevents/scripts/online_highscore.lua:onThink
-[25/4/2026 17:10:45] Description: 
-[25/4/2026 17:10:45] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[25/4/2026 17:10:45] stack traceback:
-[25/4/2026 17:10:45] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[25/4/2026 17:10:45] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 20:42:30] > Usando SHA1 criptografia
+[25/4/2026 20:42:30] >> Carregando RSA key
+[25/4/2026 20:42:30] >> Iniciando conexao SQL
+[25/4/2026 20:42:30] >> Executando Gerenciador de Banco de Dados
+[25/4/2026 20:42:30] > Optimized database.
+[25/4/2026 20:42:30] >> Carregando items (OTB)
+[25/4/2026 20:42:30] >> Carregando items (XML)
+[25/4/2026 20:42:30] >> Carregando Grupos
+[25/4/2026 20:42:30] >> Carregando Vocacoes
+[25/4/2026 20:42:30] >> Carregando Outfits
+[25/4/2026 20:42:30] >> Carregando Canal de Chat
+[25/4/2026 20:42:30] >> Carregando Sistema
+[25/4/2026 20:42:31] >> Carregando Mods...
+[25/4/2026 20:42:31] > Loading AutoLoot.xml... done.
+[25/4/2026 20:42:31] > Loading Automatic Raids.xml... done.
+[25/4/2026 20:42:31] > Loading highscorebook.xml... done.
+[25/4/2026 20:42:31] > Loading Simple Task.xml... done.
+[25/4/2026 20:42:31] > 4 mods were loaded.
+[25/4/2026 20:42:31] >> Carregando EXP Stages
+[25/4/2026 20:42:31] >> Carregando Monstros
+[25/4/2026 20:42:31] >> Carregando Mapa e Spawns...
+[25/4/2026 20:42:31] > Tamanho do Mapa: 64000x64000.
+[25/4/2026 20:42:31] > Descricao do Mapa: 
+[25/4/2026 20:42:31] "Saved with OTAcademy Map Editor 4.1.1"
+[25/4/2026 20:42:31] "No map description available."
+[25/4/2026 20:42:34] > Mapa carregado em: 2.771 segundos.
+[25/4/2026 20:42:34] > Data carregada em: 0.162 segundos.
+[25/4/2026 20:42:35] > Houses carregada em: 1.402 segundos.
+[25/4/2026 20:42:35] > Content unserialization time: 0.002 seconds.
+[25/4/2026 20:42:35] > Carregando Tipo de PVP... Open PvP
+[25/4/2026 20:42:35] > Inicializando estado do jogo e registrando servicos...
+[25/4/2026 20:42:35] > IP do Servidor: 127.0.0.1
+[25/4/2026 20:42:35] > IP local do Servidor: 172.23.16.1	192.168.1.104	
+[25/4/2026 20:42:35] > Portas do Servidor: 7171	7172	
+[25/4/2026 20:42:35] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[25/4/2026 20:42:45] >> DBOSupreme servidor Online!
+
+[25/4/2026 20:42:48] God has logged in.
+[25/4/2026 20:42:59] God has logged out.
+[25/4/2026 20:42:59] Dias Atras has logged in.
+
+[25/4/2026 20:47:31] [Error - GlobalEvent Interface] 
+[25/4/2026 20:47:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 20:47:31] Description: 
+[25/4/2026 20:47:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 20:47:31] stack traceback:
+[25/4/2026 20:47:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 20:47:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 20:52:31] [Error - GlobalEvent Interface] 
+[25/4/2026 20:52:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 20:52:31] Description: 
+[25/4/2026 20:52:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 20:52:31] stack traceback:
+[25/4/2026 20:52:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 20:52:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 20:57:31] [Error - GlobalEvent Interface] 
+[25/4/2026 20:57:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 20:57:31] Description: 
+[25/4/2026 20:57:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 20:57:31] stack traceback:
+[25/4/2026 20:57:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 20:57:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 20:59:4] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:4] In a timer event called from: 
+[25/4/2026 20:59:4] domodlib('Loot_func')
+[25/4/2026 20:59:4] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:4] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:4] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:4] 	end
+[25/4/2026 20:59:4] 	return true
+[25/4/2026 20:59:4] end:onKill
+[25/4/2026 20:59:4] Description: 
+[25/4/2026 20:59:4] (luaGetContainerSize) Container not found
+
+[25/4/2026 20:59:4] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:4] In a timer event called from: 
+[25/4/2026 20:59:4] domodlib('Loot_func')
+[25/4/2026 20:59:4] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:4] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:4] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:4] 	end
+[25/4/2026 20:59:4] 	return true
+[25/4/2026 20:59:4] end:onKill
+[25/4/2026 20:59:4] Description: 
+[25/4/2026 20:59:4] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 20:59:4] stack traceback:
+[25/4/2026 20:59:4] 	[C]: in function 'pairs'
+[25/4/2026 20:59:4] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 20:59:15] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:15] In a timer event called from: 
+[25/4/2026 20:59:15] domodlib('Loot_func')
+[25/4/2026 20:59:15] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:15] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:15] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:15] 	end
+[25/4/2026 20:59:15] 	return true
+[25/4/2026 20:59:15] end:onKill
+[25/4/2026 20:59:15] Description: 
+[25/4/2026 20:59:15] (luaGetContainerSize) Container not found
+
+[25/4/2026 20:59:15] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:15] In a timer event called from: 
+[25/4/2026 20:59:15] domodlib('Loot_func')
+[25/4/2026 20:59:15] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:15] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:15] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:15] 	end
+[25/4/2026 20:59:15] 	return true
+[25/4/2026 20:59:15] end:onKill
+[25/4/2026 20:59:15] Description: 
+[25/4/2026 20:59:15] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 20:59:15] stack traceback:
+[25/4/2026 20:59:15] 	[C]: in function 'pairs'
+[25/4/2026 20:59:15] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 20:59:15] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:15] In a timer event called from: 
+[25/4/2026 20:59:15] domodlib('Loot_func')
+[25/4/2026 20:59:15] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:15] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:15] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:15] 	end
+[25/4/2026 20:59:15] 	return true
+[25/4/2026 20:59:15] end:onKill
+[25/4/2026 20:59:15] Description: 
+[25/4/2026 20:59:15] (luaGetContainerSize) Container not found
+
+[25/4/2026 20:59:15] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:15] In a timer event called from: 
+[25/4/2026 20:59:15] domodlib('Loot_func')
+[25/4/2026 20:59:15] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:15] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:15] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:15] 	end
+[25/4/2026 20:59:15] 	return true
+[25/4/2026 20:59:15] end:onKill
+[25/4/2026 20:59:15] Description: 
+[25/4/2026 20:59:15] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 20:59:15] stack traceback:
+[25/4/2026 20:59:15] 	[C]: in function 'pairs'
+[25/4/2026 20:59:15] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 20:59:15] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:15] In a timer event called from: 
+[25/4/2026 20:59:15] domodlib('Loot_func')
+[25/4/2026 20:59:15] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:15] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:15] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:15] 	end
+[25/4/2026 20:59:15] 	return true
+[25/4/2026 20:59:15] end:onKill
+[25/4/2026 20:59:15] Description: 
+[25/4/2026 20:59:15] (luaGetContainerSize) Container not found
+
+[25/4/2026 20:59:15] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:15] In a timer event called from: 
+[25/4/2026 20:59:15] domodlib('Loot_func')
+[25/4/2026 20:59:15] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:15] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:15] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:15] 	end
+[25/4/2026 20:59:15] 	return true
+[25/4/2026 20:59:15] end:onKill
+[25/4/2026 20:59:15] Description: 
+[25/4/2026 20:59:15] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 20:59:15] stack traceback:
+[25/4/2026 20:59:15] 	[C]: in function 'pairs'
+[25/4/2026 20:59:15] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 20:59:15] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:15] In a timer event called from: 
+[25/4/2026 20:59:15] domodlib('Loot_func')
+[25/4/2026 20:59:15] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:15] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:15] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:15] 	end
+[25/4/2026 20:59:15] 	return true
+[25/4/2026 20:59:15] end:onKill
+[25/4/2026 20:59:15] Description: 
+[25/4/2026 20:59:15] (luaGetContainerSize) Container not found
+
+[25/4/2026 20:59:15] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:15] In a timer event called from: 
+[25/4/2026 20:59:15] domodlib('Loot_func')
+[25/4/2026 20:59:15] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:15] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:15] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:15] 	end
+[25/4/2026 20:59:15] 	return true
+[25/4/2026 20:59:15] end:onKill
+[25/4/2026 20:59:15] Description: 
+[25/4/2026 20:59:15] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 20:59:15] stack traceback:
+[25/4/2026 20:59:15] 	[C]: in function 'pairs'
+[25/4/2026 20:59:15] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 20:59:30] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:30] In a timer event called from: 
+[25/4/2026 20:59:30] domodlib('Loot_func')
+[25/4/2026 20:59:30] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:30] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:30] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:30] 	end
+[25/4/2026 20:59:30] 	return true
+[25/4/2026 20:59:30] end:onKill
+[25/4/2026 20:59:30] Description: 
+[25/4/2026 20:59:30] (luaGetContainerSize) Container not found
+
+[25/4/2026 20:59:30] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:30] In a timer event called from: 
+[25/4/2026 20:59:30] domodlib('Loot_func')
+[25/4/2026 20:59:30] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:30] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:30] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:30] 	end
+[25/4/2026 20:59:30] 	return true
+[25/4/2026 20:59:30] end:onKill
+[25/4/2026 20:59:30] Description: 
+[25/4/2026 20:59:30] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 20:59:30] stack traceback:
+[25/4/2026 20:59:30] 	[C]: in function 'pairs'
+[25/4/2026 20:59:30] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 20:59:30] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:30] In a timer event called from: 
+[25/4/2026 20:59:30] domodlib('Loot_func')
+[25/4/2026 20:59:30] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:30] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:30] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:30] 	end
+[25/4/2026 20:59:30] 	return true
+[25/4/2026 20:59:30] end:onKill
+[25/4/2026 20:59:30] Description: 
+[25/4/2026 20:59:30] (luaGetContainerSize) Container not found
+
+[25/4/2026 20:59:30] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:30] In a timer event called from: 
+[25/4/2026 20:59:30] domodlib('Loot_func')
+[25/4/2026 20:59:30] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:30] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:30] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:30] 	end
+[25/4/2026 20:59:30] 	return true
+[25/4/2026 20:59:30] end:onKill
+[25/4/2026 20:59:30] Description: 
+[25/4/2026 20:59:30] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 20:59:30] stack traceback:
+[25/4/2026 20:59:30] 	[C]: in function 'pairs'
+[25/4/2026 20:59:30] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 20:59:30] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:30] In a timer event called from: 
+[25/4/2026 20:59:30] domodlib('Loot_func')
+[25/4/2026 20:59:30] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:30] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:30] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:30] 	end
+[25/4/2026 20:59:30] 	return true
+[25/4/2026 20:59:30] end:onKill
+[25/4/2026 20:59:30] Description: 
+[25/4/2026 20:59:30] (luaGetContainerSize) Container not found
+
+[25/4/2026 20:59:30] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:30] In a timer event called from: 
+[25/4/2026 20:59:30] domodlib('Loot_func')
+[25/4/2026 20:59:30] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:30] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:30] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:30] 	end
+[25/4/2026 20:59:30] 	return true
+[25/4/2026 20:59:30] end:onKill
+[25/4/2026 20:59:30] Description: 
+[25/4/2026 20:59:30] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 20:59:30] stack traceback:
+[25/4/2026 20:59:30] 	[C]: in function 'pairs'
+[25/4/2026 20:59:30] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 20:59:30] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:30] In a timer event called from: 
+[25/4/2026 20:59:30] domodlib('Loot_func')
+[25/4/2026 20:59:30] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:30] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:30] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:30] 	end
+[25/4/2026 20:59:30] 	return true
+[25/4/2026 20:59:30] end:onKill
+[25/4/2026 20:59:30] Description: 
+[25/4/2026 20:59:30] (luaGetContainerSize) Container not found
+
+[25/4/2026 20:59:30] [Error - CreatureScript Interface] 
+[25/4/2026 20:59:30] In a timer event called from: 
+[25/4/2026 20:59:30] domodlib('Loot_func')
+[25/4/2026 20:59:30] function onKill(cid, target, lastHit)
+[25/4/2026 20:59:30] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 20:59:30] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 20:59:30] 	end
+[25/4/2026 20:59:30] 	return true
+[25/4/2026 20:59:30] end:onKill
+[25/4/2026 20:59:30] Description: 
+[25/4/2026 20:59:30] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 20:59:30] stack traceback:
+[25/4/2026 20:59:30] 	[C]: in function 'pairs'
+[25/4/2026 20:59:30] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:2:31] [Error - GlobalEvent Interface] 
+[25/4/2026 21:2:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 21:2:31] Description: 
+[25/4/2026 21:2:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 21:2:31] stack traceback:
+[25/4/2026 21:2:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 21:2:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 21:5:10] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:10] In a timer event called from: 
+[25/4/2026 21:5:10] domodlib('Loot_func')
+[25/4/2026 21:5:10] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:10] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:10] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:10] 	end
+[25/4/2026 21:5:10] 	return true
+[25/4/2026 21:5:10] end:onKill
+[25/4/2026 21:5:10] Description: 
+[25/4/2026 21:5:10] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:10] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:10] In a timer event called from: 
+[25/4/2026 21:5:10] domodlib('Loot_func')
+[25/4/2026 21:5:10] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:10] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:10] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:10] 	end
+[25/4/2026 21:5:10] 	return true
+[25/4/2026 21:5:10] end:onKill
+[25/4/2026 21:5:10] Description: 
+[25/4/2026 21:5:10] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:10] stack traceback:
+[25/4/2026 21:5:10] 	[C]: in function 'pairs'
+[25/4/2026 21:5:10] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:5:11] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:11] In a timer event called from: 
+[25/4/2026 21:5:11] domodlib('Loot_func')
+[25/4/2026 21:5:11] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:11] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:11] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:11] 	end
+[25/4/2026 21:5:11] 	return true
+[25/4/2026 21:5:11] end:onKill
+[25/4/2026 21:5:11] Description: 
+[25/4/2026 21:5:11] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:11] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:11] In a timer event called from: 
+[25/4/2026 21:5:11] domodlib('Loot_func')
+[25/4/2026 21:5:11] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:11] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:11] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:11] 	end
+[25/4/2026 21:5:11] 	return true
+[25/4/2026 21:5:11] end:onKill
+[25/4/2026 21:5:11] Description: 
+[25/4/2026 21:5:11] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:11] stack traceback:
+[25/4/2026 21:5:11] 	[C]: in function 'pairs'
+[25/4/2026 21:5:11] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:13] stack traceback:
+[25/4/2026 21:5:13] 	[C]: in function 'pairs'
+[25/4/2026 21:5:13] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:13] stack traceback:
+[25/4/2026 21:5:13] 	[C]: in function 'pairs'
+[25/4/2026 21:5:13] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:13] stack traceback:
+[25/4/2026 21:5:13] 	[C]: in function 'pairs'
+[25/4/2026 21:5:13] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:13] stack traceback:
+[25/4/2026 21:5:13] 	[C]: in function 'pairs'
+[25/4/2026 21:5:13] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:13] stack traceback:
+[25/4/2026 21:5:13] 	[C]: in function 'pairs'
+[25/4/2026 21:5:13] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:13] stack traceback:
+[25/4/2026 21:5:13] 	[C]: in function 'pairs'
+[25/4/2026 21:5:13] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:13] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:13] In a timer event called from: 
+[25/4/2026 21:5:13] domodlib('Loot_func')
+[25/4/2026 21:5:13] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:13] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:13] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:13] 	end
+[25/4/2026 21:5:13] 	return true
+[25/4/2026 21:5:13] end:onKill
+[25/4/2026 21:5:13] Description: 
+[25/4/2026 21:5:13] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:13] stack traceback:
+[25/4/2026 21:5:13] 	[C]: in function 'pairs'
+[25/4/2026 21:5:13] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:5:20] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:20] In a timer event called from: 
+[25/4/2026 21:5:20] domodlib('Loot_func')
+[25/4/2026 21:5:20] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:20] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:20] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:20] 	end
+[25/4/2026 21:5:20] 	return true
+[25/4/2026 21:5:20] end:onKill
+[25/4/2026 21:5:20] Description: 
+[25/4/2026 21:5:20] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:20] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:20] In a timer event called from: 
+[25/4/2026 21:5:20] domodlib('Loot_func')
+[25/4/2026 21:5:20] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:20] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:20] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:20] 	end
+[25/4/2026 21:5:20] 	return true
+[25/4/2026 21:5:20] end:onKill
+[25/4/2026 21:5:20] Description: 
+[25/4/2026 21:5:20] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:20] stack traceback:
+[25/4/2026 21:5:20] 	[C]: in function 'pairs'
+[25/4/2026 21:5:20] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:5:20] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:20] In a timer event called from: 
+[25/4/2026 21:5:20] domodlib('Loot_func')
+[25/4/2026 21:5:20] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:20] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:20] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:20] 	end
+[25/4/2026 21:5:20] 	return true
+[25/4/2026 21:5:20] end:onKill
+[25/4/2026 21:5:20] Description: 
+[25/4/2026 21:5:20] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:20] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:20] In a timer event called from: 
+[25/4/2026 21:5:20] domodlib('Loot_func')
+[25/4/2026 21:5:20] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:20] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:20] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:20] 	end
+[25/4/2026 21:5:20] 	return true
+[25/4/2026 21:5:20] end:onKill
+[25/4/2026 21:5:20] Description: 
+[25/4/2026 21:5:20] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:20] stack traceback:
+[25/4/2026 21:5:20] 	[C]: in function 'pairs'
+[25/4/2026 21:5:20] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:5:24] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:24] In a timer event called from: 
+[25/4/2026 21:5:24] domodlib('Loot_func')
+[25/4/2026 21:5:24] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:24] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:24] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:24] 	end
+[25/4/2026 21:5:24] 	return true
+[25/4/2026 21:5:24] end:onKill
+[25/4/2026 21:5:24] Description: 
+[25/4/2026 21:5:24] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:24] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:24] In a timer event called from: 
+[25/4/2026 21:5:24] domodlib('Loot_func')
+[25/4/2026 21:5:24] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:24] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:24] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:24] 	end
+[25/4/2026 21:5:24] 	return true
+[25/4/2026 21:5:24] end:onKill
+[25/4/2026 21:5:24] Description: 
+[25/4/2026 21:5:24] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:24] stack traceback:
+[25/4/2026 21:5:24] 	[C]: in function 'pairs'
+[25/4/2026 21:5:24] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:5:24] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:24] In a timer event called from: 
+[25/4/2026 21:5:24] domodlib('Loot_func')
+[25/4/2026 21:5:24] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:24] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:24] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:24] 	end
+[25/4/2026 21:5:24] 	return true
+[25/4/2026 21:5:24] end:onKill
+[25/4/2026 21:5:24] Description: 
+[25/4/2026 21:5:24] (luaGetContainerSize) Container not found
+
+[25/4/2026 21:5:24] [Error - CreatureScript Interface] 
+[25/4/2026 21:5:24] In a timer event called from: 
+[25/4/2026 21:5:24] domodlib('Loot_func')
+[25/4/2026 21:5:24] function onKill(cid, target, lastHit)
+[25/4/2026 21:5:24] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[25/4/2026 21:5:24] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[25/4/2026 21:5:24] 	end
+[25/4/2026 21:5:24] 	return true
+[25/4/2026 21:5:24] end:onKill
+[25/4/2026 21:5:24] Description: 
+[25/4/2026 21:5:24] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[25/4/2026 21:5:24] stack traceback:
+[25/4/2026 21:5:24] 	[C]: in function 'pairs'
+[25/4/2026 21:5:24] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[25/4/2026 21:7:31] [Error - GlobalEvent Interface] 
+[25/4/2026 21:7:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 21:7:31] Description: 
+[25/4/2026 21:7:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 21:7:31] stack traceback:
+[25/4/2026 21:7:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 21:7:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 21:9:1] Dias Atras has logged out.
+[25/4/2026 21:9:1] God has logged in.
+[25/4/2026 21:9:5] God has logged out.
+[25/4/2026 21:9:5] Dias Atras has logged in.
+[25/4/2026 21:9:8] Dias Atras has logged out.
+[25/4/2026 21:9:8] God has logged in.
+[25/4/2026 21:9:9] God has logged out.
+[25/4/2026 21:9:9] Dias Atras has logged in.
+[25/4/2026 21:9:13] Dias Atras has logged out.
+[25/4/2026 21:9:13] God has logged in.
+[25/4/2026 21:9:16] God has logged out.
+[25/4/2026 21:9:16] God has logged in.
+[25/4/2026 21:9:22] God has logged out.
+[25/4/2026 21:9:22] Leo stronda has logged in.
+[25/4/2026 21:9:27] Leo stronda has logged out.
+[25/4/2026 21:9:27] Sono has logged in.
+[25/4/2026 21:9:29] Sono has logged out.
+[25/4/2026 21:9:29] Vaca Aga has logged in.
+[25/4/2026 21:9:31] Vaca Aga has logged out.
+[25/4/2026 21:9:32] Vaca Aga has logged in.
+[25/4/2026 21:9:37] Vaca Aga has logged out.
+[25/4/2026 21:9:38] God has logged in.
+[25/4/2026 21:9:50] God has logged out.
+[25/4/2026 21:9:50] Dias Atras has logged in.
+[25/4/2026 21:9:52] Dias Atras has logged out.
+[25/4/2026 21:9:52] Leo stronda has logged in.
+[25/4/2026 21:10:10] Leo stronda has logged out.
+[25/4/2026 21:10:10] Sono has logged in.
+[25/4/2026 21:10:22] Sono has logged out.
+[25/4/2026 21:10:23] Vaca Aga has logged in.
+
+[25/4/2026 21:12:31] [Error - GlobalEvent Interface] 
+[25/4/2026 21:12:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 21:12:31] Description: 
+[25/4/2026 21:12:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 21:12:31] stack traceback:
+[25/4/2026 21:12:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 21:12:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 21:14:58] Vaca Aga has logged out.
+[25/4/2026 21:14:58] God has logged in.
+[25/4/2026 21:14:59] > Loading AutoLoot.xml... done.
+[25/4/2026 21:14:59] > Loading Automatic Raids.xml... done.
+[25/4/2026 21:14:59] > Loading highscorebook.xml... done.
+[25/4/2026 21:14:59] > Loading Simple Task.xml... done.
+[25/4/2026 21:14:59] > 4 mods were loaded.
+[25/4/2026 21:15:20] God has logged out.
+[25/4/2026 21:15:21] Dias Atras has logged in.
+
+[25/4/2026 21:17:31] [Error - GlobalEvent Interface] 
+[25/4/2026 21:17:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 21:17:31] Description: 
+[25/4/2026 21:17:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 21:17:31] stack traceback:
+[25/4/2026 21:17:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 21:17:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 21:22:31] [Error - GlobalEvent Interface] 
+[25/4/2026 21:22:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 21:22:31] Description: 
+[25/4/2026 21:22:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 21:22:31] stack traceback:
+[25/4/2026 21:22:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 21:22:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 21:22:49] Dias Atras has logged out.
+[25/4/2026 21:22:49] God has logged in.
+[25/4/2026 21:22:52] > Loading AutoLoot.xml... done.
+[25/4/2026 21:22:52] > Loading Automatic Raids.xml... done.
+[25/4/2026 21:22:52] > Loading highscorebook.xml... done.
+[25/4/2026 21:22:52] > Loading Simple Task.xml... done.
+[25/4/2026 21:22:52] > 4 mods were loaded.
+[25/4/2026 21:22:53] > Loading AutoLoot.xml... done.
+[25/4/2026 21:22:53] > Loading Automatic Raids.xml... done.
+[25/4/2026 21:22:53] > Loading highscorebook.xml... done.
+[25/4/2026 21:22:53] > Loading Simple Task.xml... done.
+[25/4/2026 21:22:53] > 4 mods were loaded.
+[25/4/2026 21:23:15] God has logged out.
+[25/4/2026 21:23:15] Dias Atras has logged in.
+[25/4/2026 21:24:52] Dias Atras has logged out.
+[25/4/2026 21:24:52] Dias Atras has logged in.
+[25/4/2026 21:24:56] Dias Atras has logged out.
+[25/4/2026 21:24:56] Leo stronda has logged in.
+[25/4/2026 21:25:19] Leo stronda has logged out.
+[25/4/2026 21:25:19] Sono has logged in.
+
+[25/4/2026 21:27:31] [Error - GlobalEvent Interface] 
+[25/4/2026 21:27:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 21:27:31] Description: 
+[25/4/2026 21:27:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 21:27:31] stack traceback:
+[25/4/2026 21:27:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 21:27:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 21:32:31] [Error - GlobalEvent Interface] 
+[25/4/2026 21:32:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 21:32:31] Description: 
+[25/4/2026 21:32:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 21:32:31] stack traceback:
+[25/4/2026 21:32:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 21:32:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 21:36:34] Sono has logged out.
+[25/4/2026 21:36:34] Dias Atras has logged in.
+
+[25/4/2026 21:37:31] [Error - GlobalEvent Interface] 
+[25/4/2026 21:37:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 21:37:31] Description: 
+[25/4/2026 21:37:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 21:37:31] stack traceback:
+[25/4/2026 21:37:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 21:37:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 21:42:31] [Error - GlobalEvent Interface] 
+[25/4/2026 21:42:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 21:42:31] Description: 
+[25/4/2026 21:42:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 21:42:31] stack traceback:
+[25/4/2026 21:42:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 21:42:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 21:44:31] > Salvando servidor...
+[25/4/2026 21:44:31] > SAVE: Completo em 0.072 segundos usando binary casa storage.
+[25/4/2026 21:46:7] Dias Atras has logged out.
+[25/4/2026 21:46:7] God has logged in.
+[25/4/2026 21:46:8] > Loading AutoLoot.xml... done.
+[25/4/2026 21:46:8] > Loading Automatic Raids.xml... done.
+[25/4/2026 21:46:8] > Loading highscorebook.xml... done.
+[25/4/2026 21:46:8] > Loading Simple Task.xml... done.
+[25/4/2026 21:46:8] > 4 mods were loaded.
+[25/4/2026 21:46:9] > Loading AutoLoot.xml... done.
+[25/4/2026 21:46:9] > Loading Automatic Raids.xml... done.
+[25/4/2026 21:46:9] > Loading highscorebook.xml... done.
+[25/4/2026 21:46:9] > Loading Simple Task.xml... done.
+[25/4/2026 21:46:9] > 4 mods were loaded.
+[25/4/2026 21:46:10] God has logged out.
+[25/4/2026 21:46:10] Dias Atras has logged in.
+
+[25/4/2026 21:47:31] [Error - GlobalEvent Interface] 
+[25/4/2026 21:47:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 21:47:31] Description: 
+[25/4/2026 21:47:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 21:47:31] stack traceback:
+[25/4/2026 21:47:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 21:47:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 21:48:48] Dias Atras has logged out.
+[25/4/2026 21:48:48] Leo stronda has logged in.
+[25/4/2026 21:48:56] Leo stronda has logged out.
+[25/4/2026 21:48:56] Sono has logged in.
+[25/4/2026 21:49:26] Sono has logged out.
+[25/4/2026 21:49:26] Vaca Aga has logged in.
+
+[25/4/2026 21:52:31] [Error - GlobalEvent Interface] 
+[25/4/2026 21:52:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 21:52:31] Description: 
+[25/4/2026 21:52:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 21:52:31] stack traceback:
+[25/4/2026 21:52:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 21:52:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 21:53:39] Vaca Aga has logged out.
+[25/4/2026 21:53:39] God has logged in.
+[25/4/2026 21:53:41] > Loading AutoLoot.xml... done.
+[25/4/2026 21:53:41] > Loading Automatic Raids.xml... done.
+[25/4/2026 21:53:41] > Loading highscorebook.xml... done.
+[25/4/2026 21:53:41] > Loading Simple Task.xml... done.
+[25/4/2026 21:53:41] > 4 mods were loaded.
+[25/4/2026 21:54:9] God has logged out.
+[25/4/2026 21:54:9] Dias Atras has logged in.
+[25/4/2026 21:54:21] Dias Atras has logged out.
+[25/4/2026 21:54:21] Leo stronda has logged in.
+[25/4/2026 21:54:32] Leo stronda has logged out.
+[25/4/2026 21:54:32] Sono has logged in.
+[25/4/2026 21:55:48] Sono has logged out.
+[25/4/2026 21:55:48] God has logged in.
+[25/4/2026 21:55:49] > Loading AutoLoot.xml... done.
+[25/4/2026 21:55:49] > Loading Automatic Raids.xml... done.
+[25/4/2026 21:55:49] > Loading highscorebook.xml... done.
+[25/4/2026 21:55:49] > Loading Simple Task.xml... done.
+[25/4/2026 21:55:49] > 4 mods were loaded.
+[25/4/2026 21:55:51] > Loading AutoLoot.xml... done.
+[25/4/2026 21:55:51] > Loading Automatic Raids.xml... done.
+[25/4/2026 21:55:51] > Loading highscorebook.xml... done.
+[25/4/2026 21:55:51] > Loading Simple Task.xml... done.
+[25/4/2026 21:55:51] > 4 mods were loaded.
+[25/4/2026 21:55:52] God has logged out.
+[25/4/2026 21:55:52] Sono has logged in.
+[25/4/2026 21:56:43] Sono has logged out.
+[25/4/2026 21:56:43] Vaca Aga has logged in.
+[25/4/2026 21:56:52] Vaca Aga has logged out.
+[25/4/2026 21:56:52] God has logged in.
+
+[25/4/2026 21:57:31] [Error - GlobalEvent Interface] 
+[25/4/2026 21:57:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 21:57:31] Description: 
+[25/4/2026 21:57:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 21:57:31] stack traceback:
+[25/4/2026 21:57:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 21:57:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 22:1:36] > Loading AutoLoot.xml... done.
+[25/4/2026 22:1:36] > Loading Automatic Raids.xml... done.
+[25/4/2026 22:1:36] > Loading highscorebook.xml... done.
+[25/4/2026 22:1:36] > Loading Simple Task.xml... done.
+[25/4/2026 22:1:36] > 4 mods were loaded.
+
+[25/4/2026 22:2:31] [Error - GlobalEvent Interface] 
+[25/4/2026 22:2:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 22:2:31] Description: 
+[25/4/2026 22:2:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 22:2:31] stack traceback:
+[25/4/2026 22:2:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 22:2:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 22:5:53] > Loading AutoLoot.xml... done.
+[25/4/2026 22:5:53] > Loading Automatic Raids.xml... done.
+[25/4/2026 22:5:53] > Loading highscorebook.xml... done.
+[25/4/2026 22:5:53] > Loading Simple Task.xml... done.
+[25/4/2026 22:5:53] > 4 mods were loaded.
+
+[25/4/2026 22:7:31] [Error - GlobalEvent Interface] 
+[25/4/2026 22:7:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 22:7:31] Description: 
+[25/4/2026 22:7:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 22:7:31] stack traceback:
+[25/4/2026 22:7:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 22:7:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[25/4/2026 22:9:16] > Loading AutoLoot.xml... done.
+[25/4/2026 22:9:16] > Loading Automatic Raids.xml... done.
+[25/4/2026 22:9:16] > Loading highscorebook.xml... done.
+[25/4/2026 22:9:16] > Loading Simple Task.xml... done.
+[25/4/2026 22:9:16] > 4 mods were loaded.
+[25/4/2026 22:11:20] > Loading AutoLoot.xml... done.
+[25/4/2026 22:11:20] > Loading Automatic Raids.xml... done.
+[25/4/2026 22:11:20] > Loading highscorebook.xml... done.
+[25/4/2026 22:11:20] > Loading Simple Task.xml... done.
+[25/4/2026 22:11:20] > 4 mods were loaded.
+
+[25/4/2026 22:12:31] [Error - GlobalEvent Interface] 
+[25/4/2026 22:12:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 22:12:31] Description: 
+[25/4/2026 22:12:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 22:12:31] stack traceback:
+[25/4/2026 22:12:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 22:12:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 22:17:31] [Error - GlobalEvent Interface] 
+[25/4/2026 22:17:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 22:17:31] Description: 
+[25/4/2026 22:17:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 22:17:31] stack traceback:
+[25/4/2026 22:17:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 22:17:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 22:22:31] [Error - GlobalEvent Interface] 
+[25/4/2026 22:22:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 22:22:31] Description: 
+[25/4/2026 22:22:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 22:22:31] stack traceback:
+[25/4/2026 22:22:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 22:22:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+
+[25/4/2026 22:27:31] [Error - GlobalEvent Interface] 
+[25/4/2026 22:27:31] data/globalevents/scripts/online_highscore.lua:onThink
+[25/4/2026 22:27:31] Description: 
+[25/4/2026 22:27:31] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[25/4/2026 22:27:31] stack traceback:
+[25/4/2026 22:27:31] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[25/4/2026 22:27:31] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore

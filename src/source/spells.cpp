@@ -79,7 +79,7 @@ ReturnValue Spells::onPlayerSay(Player* player, const std::string& words)
 
     if(g_config.getBool(ConfigManager::HIDE_SPELL_WORDS))
         return RET_NOERROR;
-        
+
 	if(!g_config.getBool(ConfigManager::SPELL_NAME_INSTEAD_WORDS))
 	{
 		if(g_config.getBool(ConfigManager::UNIFIED_SPELLS))
@@ -1370,7 +1370,7 @@ bool InstantSpell::SummonMonster(const InstantSpell* spell, Creature* creature, 
 
 		if((int32_t)player->getSummonCount() >= g_config.getNumber(ConfigManager::MAX_PLAYER_SUMMONS))
 		{
-			player->sendCancel("Você não pode convocar mais criaturas.");
+			player->sendCancel("You can't summon more creatures.");
 			g_game.addMagicEffect(player->getPosition(), MAGIC_EFFECT_POFF);
 			return false;
 		}
