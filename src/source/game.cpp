@@ -1477,7 +1477,7 @@ bool Game::playerMoveItem(uint32_t playerId, const Position& fromPos,
 		player->sendCancelMessage(RET_CANNOTTHROW);
 		return false;
 	}
-	
+
 bool success = true;
     CreatureEventList moveitemEvents = player->getCreatureEvents(CREATURE_EVENT_MOVEITEM2);
     for(CreatureEventList::iterator it = moveitemEvents.begin(); it != moveitemEvents.end(); ++it)
@@ -1490,7 +1490,7 @@ bool success = true;
 
 if(!success)
     return false;
-    
+
 	/* Corrigido ElfBot Anti-Push (Anti-Crash) */
 	if(g_config.getBool(ConfigManager::ANTI_PUSH)){ //included by Yan Liima
 	std::string antiPushItems = g_config.getString(ConfigManager::ANTI_PUSH_ITEMS);
@@ -1508,10 +1508,10 @@ if(!success)
 	if(Condition* condition = Condition::createCondition(CONDITIONID_DEFAULT, CONDITION_EXHAUST, delay, 0, false, 1))
 	player->addCondition(condition);
 	/* end */
-   
+
     if(!g_creatureEvents->executeMoveItems(player, item, mapFromPos, mapToPos))
 		return false;
-	
+
 	ReturnValue ret = internalMoveItem(player, fromCylinder, toCylinder, toIndex, item, count, NULL);
 	if(ret != RET_NOERROR)
 	{
@@ -2303,7 +2303,7 @@ bool Game::playerCreatePrivateChannel(uint32_t playerId, ProtocolGame* pg) //CAS
 	}
 
 	for(AutoList<ProtocolGame>::const_iterator it = Player::cSpectators.begin(); it != Player::cSpectators.end(); ++it) if(it->second->getPlayer() == player)
-		it->second->publicSendMessage(player, SPEAK_PRIVATE, "O dono do cast reativou o chat da transmiss�o.");
+		it->second->publicSendMessage(player, SPEAK_PRIVATE, "O dono do cast reativou o chat da transmiss�o.");
 
 	player->sendCreatePrivateChannel(channel->getId(), channel->getName());
 	return true;
@@ -2355,7 +2355,7 @@ bool Game::playerRequestChannels(uint32_t playerId, ProtocolGame* pg) //CAST
 		pg->publicSendChannelsDialog();
 	else
 		player->sendChannelsDialog();
-		
+
 	return true;
 }
 
@@ -3412,7 +3412,7 @@ bool Game::playerPurchaseItem(uint32_t playerId, uint16_t spriteId, uint8_t coun
 		player->sendCancelMessage(RET_YOUHAVETOWAIT);
 		return false;
 	}
-	
+
 	int32_t onBuy, onSell;
 	Npc* merchant = player->getShopOwner(onBuy, onSell);
 	if(!merchant)
@@ -3428,7 +3428,7 @@ bool Game::playerPurchaseItem(uint32_t playerId, uint16_t spriteId, uint8_t coun
 
 	if(!player->canShopItem(it.id, subType, SHOPEVENT_BUY))
 		return false;
-	
+
 	if(Condition* onBuyExhaust = Condition::createCondition(CONDITIONID_DEFAULT, CONDITION_EXHAUST, g_config.getNumber(ConfigManager::EXHAUST_ONBUY), 0, false, EXHAUST_NPC))
 		player->addCondition(onBuyExhaust);
 
@@ -3441,13 +3441,13 @@ bool Game::playerSellItem(uint32_t playerId, uint16_t spriteId, uint8_t count, u
 	Player* player = getPlayerByID(playerId);
 	if(!player || player->isRemoved())
 		return false;
-	
+
     if(player->hasCondition(CONDITION_EXHAUST, EXHAUST_NPC))
 	{
 		player->sendCancelMessage(RET_YOUHAVETOWAIT);
 		return false;
 	}
-	
+
 	int32_t onBuy, onSell;
 	Npc* merchant = player->getShopOwner(onBuy, onSell);
 	if(!merchant)
@@ -3463,7 +3463,7 @@ bool Game::playerSellItem(uint32_t playerId, uint16_t spriteId, uint8_t count, u
 
 	if(!player->canShopItem(it.id, subType, SHOPEVENT_SELL))
 		return false;
-	
+
 	if(Condition* onSellExhaust = Condition::createCondition(CONDITIONID_DEFAULT, CONDITION_EXHAUST, g_config.getNumber(ConfigManager::EXHAUST_ONSELL), 0, false, EXHAUST_NPC))
 		player->addCondition(onSellExhaust);
 
@@ -3605,6 +3605,43 @@ bool Game::playerLookAt(uint32_t playerId, const Position& pos, uint16_t spriteI
 	return true;
 }
 
+void Game::playerRequestItemTooltip(uint32_t playerId, const std::string& buffer)
+{
+	Player* player = getPlayerByID(playerId);
+	if (!player) return;
+
+	std::vector<std::string> v = explodeString(buffer, ";");
+	if (v.size() < 6) return;
+
+	uint16_t itemId = (uint16_t)atoi(v[0].c_str());
+	uint8_t count = (uint8_t)atoi(v[1].c_str());
+	Position pos((uint16_t)atoi(v[2].c_str()), (uint16_t)atoi(v[3].c_str()), (uint8_t)atoi(v[4].c_str()));
+	int32_t stackpos = atoi(v[5].c_str());
+
+	Thing* thing = internalGetThing(player, pos, stackpos, itemId, STACKPOS_LOOK);
+	if(!thing || !thing->getItem())
+		return;
+
+	Item* item = thing->getItem();
+	// Removida verificação rígida para aumentar compatibilidade com diferentes protocolos/ids
+	std::string description = item->getDescription(1);
+
+	// Adicionar atributos extras se o jogador for GM ou tiver flag
+	if (player->hasCustomFlag(PlayerCustomFlag_CanSeeItemDetails))
+	{
+		std::ostringstream ss;
+		ss << "\nItemID: [" << item->getID() << "], ClientID: [" << item->getClientID() << "]";
+		if(item->getActionId() > 0)
+			ss << ", ActionID: [" << item->getActionId() << "]";
+		if(item->getUniqueId() > 0)
+			ss << ", UniqueID: [" << item->getUniqueId() << "]";
+
+		description += ss.str();
+	}
+
+	player->sendExtendedOpcode(150, buffer + "|" + description);
+}
+
 bool Game::playerQuests(uint32_t playerId)
 {
 	Player* player = getPlayerByID(playerId);
@@ -3704,7 +3741,7 @@ bool Game::playerSetFightModes(uint32_t playerId, fightMode_t fightMode, chaseMo
 	player->setFightMode(fightMode);
 	player->setChaseMode(chaseMode);
 	player->setSecureMode(secureMode);
-	
+
 	player->setLastAttack(OTSYS_TIME());
 	return true;
 }
@@ -3718,7 +3755,7 @@ bool Game::playerRequestAddVip(uint32_t playerId, const std::string& vipName)
 	uint32_t guid;
 	bool specialVip;
 	std::string name = vipName;
-	
+
 	player->setNextExAction(OTSYS_TIME() + g_config.getNumber(ConfigManager::CUSTOM_ACTIONS_DELAY_INTERVAL) - 10);
 	if(!IOLoginData::getInstance()->getGuidByNameEx(guid, specialVip, name))
 	{
@@ -3726,7 +3763,7 @@ bool Game::playerRequestAddVip(uint32_t playerId, const std::string& vipName)
 		return false;
 	}
 
-	if(specialVip && !player->hasFlag(PlayerFlag_SpecialVIP)) 
+	if(specialVip && !player->hasFlag(PlayerFlag_SpecialVIP))
 	{
 		player->sendTextMessage(MSG_STATUS_SMALL, "You cannot add this player.");
 		return false;
@@ -3737,7 +3774,7 @@ bool Game::playerRequestAddVip(uint32_t playerId, const std::string& vipName)
 		player->sendTextMessage(MSG_STATUS_SMALL, "Please wait few seconds before adding new player to your vip list.");
 		return false;
 	}
-	
+
 	bool online = false;
 	if(Player* target = getPlayerByName(name))
 		online = player->canSeeCreature(target);
@@ -3866,7 +3903,7 @@ bool Game::playerSay(uint32_t playerId, uint16_t channelId, SpeakClasses type, c
             i--;
         }
     }
-    
+
     StringVec strVector;
     strVector = explodeString(g_config.getString(ConfigManager::ADVERTISING_BLOCK), ";");
     for(StringVec::iterator it = strVector.begin(); it != strVector.end(); ++it)
@@ -3884,7 +3921,7 @@ bool Game::playerSay(uint32_t playerId, uint16_t channelId, SpeakClasses type, c
             }
         }
     }
-    
+
 	if(player->isAccountManager())
 	{
 		if(mute)
@@ -3911,7 +3948,7 @@ bool Game::playerSay(uint32_t playerId, uint16_t channelId, SpeakClasses type, c
 		return true;
 	//included by Yan Liima
     bool logsPlayerYan = g_config.getBool(ConfigManager::LOG_PLAYER);
-    if (logsPlayerYan) {	
+    if (logsPlayerYan) {
 	Logger::getInstance()->eFile("players/" + player->getName() + ".log", text, true);
     }
 	switch(type)
@@ -4049,10 +4086,10 @@ bool Game::playerTalkToChannel(Player* player, SpeakClasses type, const std::str
 		{
 			if(channelId == CHANNEL_HELP && player->hasFlag(PlayerFlag_TalkOrangeHelpChannel))
 				type = SPEAK_CHANNEL_O;
-				
+
 			if(g_chat.getPrivateChannel(player) != NULL && channelId == g_chat.getPrivateChannel(player)->getId() && (pg == NULL || (pg != NULL && !pg->getIsCast()))) //CAST
 				type = SPEAK_CHANNEL_O; //CAST
-				
+
 			break;
 		}
 
@@ -6531,6 +6568,12 @@ void Game::parsePlayerExtendedOpcode(uint32_t playerId, uint8_t opcode, const st
 	Player* player = getPlayerByID(playerId);
 	if(!player || player->isRemoved())
 		return;
+
+		if(opcode == 150)
+	{
+		playerRequestItemTooltip(playerId, buffer);
+		return;
+	}
 
 	CreatureEventList extendedOpcodeEvents = player->getCreatureEvents(CREATURE_EVENT_EXTENDED_OPCODE);
 	for(CreatureEventList::iterator it = extendedOpcodeEvents.begin(); it != extendedOpcodeEvents.end(); ++it)

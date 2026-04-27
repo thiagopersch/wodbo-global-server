@@ -2910,6 +2910,15 @@ void ProtocolGame::AddCreature(NetworkMessage_ptr msg, const Creature* creature,
 		msg->put<uint32_t>(remove);
 		msg->put<uint32_t>(creature->getID());
 		msg->putString(creature->getHideName() ? "" : creature->getName());
+		if (const Player* p = creature->getPlayer()) {
+			if (p->getVocation()) {
+				msg->putString(p->getVocation()->getName());
+			} else {
+				msg->putString("No Vocation");
+			}
+		} else {
+			msg->putString("");
+		}
 	}
 	else
 	{
