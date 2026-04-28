@@ -69,13 +69,20 @@ function onLook(cid, thing, position, lookDistance)
     end
 
     -- 2. Stats (Age, Frags, Resets) - Visible to ALL
-    local age = math.max(0, getPlayerStorageValue(target, STORAGE_AGE))
+    local age = getPlayerAgeReal(target)
     local ageTitle = getAgeTitle(age)
     local frags = getPlayerFrags(target)
     local resets = getPlayerResets(target)
+    local ageTitle = getAgeTitle(age)
 
-    description = description .. string.format("\n[Age: %d anos (%s)]", age, ageTitle)
-    description = description .. string.format("\n[Frags: %d] [Resets: %d]", frags, resets)
+    if age < 2 then
+        ageTitle = "year"
+    else
+        ageTitle = "years"
+    end
+
+    description = description .. string.format("\n[Age: %d %s (%s)]", age, ageTitle, getAgeTitle(age))
+    description = description .. string.format("\n[Frags: %d]\n[Resets: %d]", frags, resets)
 
     -- 3. GOD Only Details
     -- Using common flags for details/position visibility
