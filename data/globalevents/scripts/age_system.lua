@@ -66,10 +66,9 @@ local function getPlayerAgeMinutesReal(cid)
     return minutes
 end
 
-local function setPlayerAgeMinutesReal(cid, minutes)
+local function updatePlayerAgeDB(cid, minutes, age)
     local guid = getPlayerGUID(cid)
-    -- Use db.query directly instead of db.executeQuery
-    local query = "UPDATE `players` SET `age_minutes` = " .. minutes .. " WHERE `id` = " .. guid
+    local query = "UPDATE `players` SET `age_minutes` = " .. minutes .. ", `age` = " .. age .. " WHERE `id` = " .. guid
     local result = db.storeQuery(query)
     if result then
         result:free()
@@ -100,7 +99,7 @@ function onThink(interval, lastExecution)
 
         if newAge > age then
             doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,
-                "Voce envelheceu! Agora voce tem " .. newAge .. " anos. (" .. title .. ")")
+                "You aged! Now you have " .. newAge .. " years. (" .. title .. ")")
 
             local effectId = config.effects[getEffectIndex(newAge)]
             if effectId then
@@ -111,7 +110,7 @@ function onThink(interval, lastExecution)
             doPlayerSendExtendedOpcode(cid, opcode, ageData)
         end
 
-        setPlayerAgeMinutesReal(cid, newMinutes)
+        updatePlayerAgeDB(cid, newMinutes, newAge)
     end
 
     return true

@@ -24,7 +24,7 @@ function timeString(timeDiff)
 end
 
 function onAdvance(player, skill, oldlevel, newlevel)
-  if skill ~= SKILL_LEVEL then
+  if skill ~= SKILL__LEVEL then
     return true
   end
 
