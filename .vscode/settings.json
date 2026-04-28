@@ -173,7 +173,8 @@
     "getCreatureSpeed",
     "getTownName",
     "getPlayerSlotItem",
-    "result"
+    "result",
+    "doSavePlayer"
   ],
   "Lua.diagnostics.disable": [
     "lowercase-global",

@@ -64,6 +64,7 @@
 	<talkaction log="yes" access="1" words="/pos;!pos" event="script" value="position.lua" />
 
 	<!-- Players -->
+	<talkaction words="!exp" event="script" value="monsters.lua" />
 	<talkaction words="!marcar" event="script" value="marcar.lua" />
 	<talkaction words="!sendquestlog" event="script" value="sendquestlog.lua" />
 	<talkaction words="/onlinepoints;!onlinepoints" event="script" value="onlinepoints.lua" />

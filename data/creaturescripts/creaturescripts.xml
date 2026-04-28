@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
+	<event type="login" name="StaffLogin" event="script" value="stafflogged.lua" />
 	<event type="login" name="StaffEffect" event="script" value="staffeffect.lua" />
 	<event type="login" name="OutfitFilter" event="script" value="outfits_filter.lua" />
 	<event type="advance" name="OutfitAdvance" event="script" value="outfits_filter.lua" />
