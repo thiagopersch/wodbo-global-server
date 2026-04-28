@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
+	<event type="login" name="StaffEffect" event="script" value="staffeffect.lua" />
 	<event type="login" name="OutfitFilter" event="script" value="outfits_filter.lua" />
 	<event type="advance" name="OutfitAdvance" event="script" value="outfits_filter.lua" />
 	<event type="kill" name="AnnounceDeath" event="script" value="announce_death.lua" />
@@ -26,11 +27,11 @@
 	<!-- <event type="login" name="SkillPoints" event="script" value="skillpoints.lua" /> -->
 	<!-- <event type="extendedopcode" event="script" name="HighscoreOpcode" value="highscore.lua" /> -->
 	<event type="login" name="BankExtended" event="script" value="bank_server.lua" />
-	<!-- <event type="extendedopcode" event="script" name="ChangeVocationOpcode"
-	value="change_vocation.lua" />
-	<event type="login" name="LoadUnlockedVocs" event="script" value="load_unlocked_vocations.lua" /> -->
-	<!-- <event type="login" name="playerLogin" script="login.lua" /> -->
-	<!-- <event type="think" name="AnimeOutfitSystem" script="login.lua" />
+	<event type="extendedopcode" event="script" name="ChangeVocationOpcode"
+		value="change_vocation.lua" />
+	<event type="login" name="ChangeVocationLogin" event="script" value="change_vocation.lua" />
+	<!-- <event type="login" name="playerLogin" script="login.lua" />
+	<event type="think" name="AnimeOutfitSystem" script="login.lua" />
 	<event type="logout" name="AnimeOutfitSave" script="login.lua" />
 	<event type="preparedeath" name="AnimeOutfitDeath" script="login.lua" />
 	<event type="advance" name="AnimeOutfits" script="login.lua" /> -->

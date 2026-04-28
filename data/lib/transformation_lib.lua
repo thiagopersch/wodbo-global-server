@@ -939,7 +939,7 @@ saga = {
     -- Renji
     [58] = {
         { lookType = 2268 },
-        { lookType = 2271, aura = 406 },
+        { lookType = 2271, aura = 342 },
         { lookType = 2270 },
         { lookType = 2269 },
         { lookType = 2272 },
@@ -1153,7 +1153,7 @@ function updatePlayerOutfits(cid)
     setPlayerStorageValue(cid, STORAGE_BASE + voc, level)
 
     -- 3. ADD Saga Transformations for the CURRENT vocation
-    -- We add ALL of them to the player's list. 
+    -- We add ALL of them to the player's list.
     -- The engine's canWearOutfit will then filter which ones appear in the window based on level.
     if sagaData then
         for _, outfit in ipairs(sagaData) do
