@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
-	<!-- <event type="login" name="Outfit" script="outfit_vocation.lua" /> -->
+	<event type="login" name="OutfitFilter" event="script" value="outfits_filter.lua" />
+	<event type="advance" name="OutfitAdvance" event="script" value="outfits_filter.lua" />
 	<event type="kill" name="AnnounceDeath" event="script" value="announce_death.lua" />
 	<event type="death" name="AmuletDeath" script="amuletDeath.lua" />
 	<event type="look" name="fraglook" event="script" value="fraglook.lua" />
@@ -33,4 +34,5 @@
 	<event type="logout" name="AnimeOutfitSave" script="login.lua" />
 	<event type="preparedeath" name="AnimeOutfitDeath" script="login.lua" />
 	<event type="advance" name="AnimeOutfits" script="login.lua" /> -->
+	<event type="extendedopcode" name="ProfileOpcode" event="script" value="profile_server.lua" />
 </creaturescripts>

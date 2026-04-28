@@ -161,7 +161,19 @@
     "getCreatureStorage",
     "doCreatureSetStorage",
     "storage",
-    "doPlayerSetPromotionLevel"
+    "doPlayerSetPromotionLevel",
+    "getPlayerFreeCap",
+    "getPlayerAccount",
+    "getNotationsCount",
+    "getPlayerAccess",
+    "doPlayerPopupFYI",
+    "getPlayerAccountId",
+    "getPlayerByNameWildcard",
+    "getPlayerGhostAccess",
+    "getCreatureSpeed",
+    "getTownName",
+    "getPlayerSlotItem",
+    "result"
   ],
   "Lua.diagnostics.disable": [
     "lowercase-global",

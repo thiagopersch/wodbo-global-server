@@ -1,58 +1,46 @@
-[26/4/2026 22:24:29] > Usando SHA1 criptografia
-[26/4/2026 22:24:29] >> Carregando RSA key
-[26/4/2026 22:24:29] >> Iniciando conexao SQL
-[26/4/2026 22:24:29] >> Executando Gerenciador de Banco de Dados
-[26/4/2026 22:24:29] > Optimized database.
-[26/4/2026 22:24:29] >> Carregando items (OTB)
-[26/4/2026 22:24:30] >> Carregando items (XML)
-[26/4/2026 22:24:30] >> Carregando Grupos
-[26/4/2026 22:24:30] >> Carregando Vocacoes
-[26/4/2026 22:24:30] >> Carregando Outfits
-[26/4/2026 22:24:30] >> Carregando Canal de Chat
-[26/4/2026 22:24:30] >> Carregando Sistema
-[26/4/2026 22:24:33] >> Carregando Mods...
-[26/4/2026 22:24:33] > Loading AutoLoot.xml... done.
-[26/4/2026 22:24:33] > Loading Automatic Raids.xml... done.
-[26/4/2026 22:24:33] > Loading highscorebook.xml... done.
-[26/4/2026 22:24:33] > Loading Simple Task.xml... done.
-[26/4/2026 22:24:33] > 4 mods were loaded.
-[26/4/2026 22:24:33] >> Carregando EXP Stages
-[26/4/2026 22:24:33] >> Carregando Monstros
-[26/4/2026 22:24:37] >> Carregando Mapa e Spawns...
-[26/4/2026 22:24:37] > Tamanho do Mapa: 64000x64000.
-[26/4/2026 22:24:37] > Descricao do Mapa: 
-[26/4/2026 22:24:37] "Saved with OTAcademy Map Editor 4.1.1"
-[26/4/2026 22:24:37] "No map description available."
-[26/4/2026 22:24:40] > Mapa carregado em: 2.695 segundos.
-[26/4/2026 22:24:40] > Data carregada em: 0.366 segundos.
-[26/4/2026 22:24:42] > Houses carregada em: 1.806 segundos.
-[26/4/2026 22:24:42] > Content unserialization time: 0.006 seconds.
-[26/4/2026 22:24:42] > Carregando Tipo de PVP... Open PvP
-[26/4/2026 22:24:42] > Inicializando estado do jogo e registrando servicos...
-[26/4/2026 22:24:42] > IP do Servidor: 127.0.0.1
-[26/4/2026 22:24:42] > IP local do Servidor: 172.29.80.1	172.29.16.1	192.168.1.104	
-[26/4/2026 22:24:42] > Portas do Servidor: 7171	7172	
-[26/4/2026 22:24:42] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[26/4/2026 22:24:52] >> DBOSupreme servidor Online!
+[27/4/2026 20:4:33] > Usando SHA1 criptografia
+[27/4/2026 20:4:33] >> Carregando RSA key
+[27/4/2026 20:4:33] >> Iniciando conexao SQL
+[27/4/2026 20:4:33] >> Executando Gerenciador de Banco de Dados
+[27/4/2026 20:4:33] > Optimized database.
+[27/4/2026 20:4:33] >> Carregando items (OTB)
+[27/4/2026 20:4:33] >> Carregando items (XML)
+[27/4/2026 20:4:34] >> Carregando Grupos
+[27/4/2026 20:4:34] >> Carregando Vocacoes
+[27/4/2026 20:4:34] >> Carregando Outfits
+[27/4/2026 20:4:34] >> Carregando Canal de Chat
+[27/4/2026 20:4:34] >> Carregando Sistema
+[27/4/2026 20:4:34] >> Carregando Mods...
+[27/4/2026 20:4:34] > Loading AutoLoot.xml... done.
+[27/4/2026 20:4:34] > Loading Automatic Raids.xml... done.
+[27/4/2026 20:4:34] > Loading highscorebook.xml... done.
+[27/4/2026 20:4:34] > Loading Simple Task.xml... done.
+[27/4/2026 20:4:34] > 4 mods were loaded.
+[27/4/2026 20:4:34] >> Carregando EXP Stages
+[27/4/2026 20:4:34] >> Carregando Monstros
+[27/4/2026 20:4:34] >> Carregando Mapa e Spawns...
+[27/4/2026 20:4:34] > Tamanho do Mapa: 64000x64000.
+[27/4/2026 20:4:34] > Descricao do Mapa: 
+[27/4/2026 20:4:34] "Saved with OTAcademy Map Editor 4.1.1"
+[27/4/2026 20:4:34] "No map description available."
+[27/4/2026 20:4:37] > Mapa carregado em: 2.598 segundos.
+[27/4/2026 20:4:37] > Data carregada em: 0.139 segundos.
+[27/4/2026 20:4:38] > Houses carregada em: 1.544 segundos.
+[27/4/2026 20:4:38] > Content unserialization time: 0.002 seconds.
+[27/4/2026 20:4:38] > Carregando Tipo de PVP... Open PvP
+[27/4/2026 20:4:38] > Inicializando estado do jogo e registrando servicos...
+[27/4/2026 20:4:38] > IP do Servidor: 127.0.0.1
+[27/4/2026 20:4:38] > IP local do Servidor: 172.26.80.1	192.168.1.104	
+[27/4/2026 20:4:38] > Portas do Servidor: 7171	7172	
+[27/4/2026 20:4:38] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[27/4/2026 20:4:48] >> DBOSupreme servidor Online!
 
-[26/4/2026 22:24:53] God has logged in.
-[26/4/2026 22:26:32] God has logged out.
-[26/4/2026 22:26:32] Dias Atras has logged in.
-[26/4/2026 22:26:37] Dias Atras has logged out.
-[26/4/2026 22:26:37] God has logged in.
-[26/4/2026 22:27:39] God has logged out.
-[26/4/2026 22:27:39] Dias Atras has logged in.
-[26/4/2026 22:27:43] Dias Atras has logged out.
-[26/4/2026 22:27:43] Dias Atras has logged in.
-[26/4/2026 22:28:14] Dias Atras has logged out.
-[26/4/2026 22:28:14] Leo stronda has logged in.
-[26/4/2026 22:28:27] Leo stronda has logged out.
-[26/4/2026 22:28:27] God has logged in.
+[27/4/2026 20:4:56] God has logged in.
 
-[26/4/2026 22:29:34] [Error - GlobalEvent Interface] 
-[26/4/2026 22:29:34] data/globalevents/scripts/online_highscore.lua:onThink
-[26/4/2026 22:29:34] Description: 
-[26/4/2026 22:29:34] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[26/4/2026 22:29:34] stack traceback:
-[26/4/2026 22:29:34] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[26/4/2026 22:29:34] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[27/4/2026 20:9:34] [Error - GlobalEvent Interface] 
+[27/4/2026 20:9:34] data/globalevents/scripts/online_highscore.lua:onThink
+[27/4/2026 20:9:34] Description: 
+[27/4/2026 20:9:34] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[27/4/2026 20:9:34] stack traceback:
+[27/4/2026 20:9:34] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[27/4/2026 20:9:34] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore

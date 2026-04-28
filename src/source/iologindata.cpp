@@ -1078,7 +1078,7 @@ bool IOLoginData::saveItems(const Player* player, const ItemBlockList& itemList,
 
 		uint32_t attributesSize = 0;
 		const char* attributes = propWriteStream.getStream(attributesSize);
-		
+
 		std::stringstream ss;
 		ss << player->getGUID() << ", " << it->first << ", " << runningId << ", " << item->getID()
 			<< ", " << (int32_t)item->getSubType() << ", " << db->escapeBlob(attributes, attributesSize).c_str();
@@ -1106,7 +1106,7 @@ bool IOLoginData::saveItems(const Player* player, const ItemBlockList& itemList,
 
 			uint32_t attributesSize = 0;
 			const char* attributes = propWriteStream.getStream(attributesSize);
-			
+
 			std::stringstream ss;
 			ss << player->getGUID() << ", " << stack.second << ", " << runningId << ", " << item->getID()
 				<< ", " << (int32_t)item->getSubType() << ", " << db->escapeBlob(attributes, attributesSize).c_str();
@@ -1548,7 +1548,7 @@ bool IOLoginData::createCharacter(uint32_t accountId, std::string characterName,
 
 	Vocation* vocation = Vocations::getInstance()->getVocation(vocationId);
 	Vocation* rookVoc = Vocations::getInstance()->getVocation(0);
-    
+
 	Town* town = Towns::getInstance()->getTown(townId);
 
 	uint16_t healthMax = 150, manaMax = 150, capMax = 400, lookType = 136;

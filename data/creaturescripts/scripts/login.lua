@@ -1,3 +1,5 @@
+-- Using profile_lib.lua for age and titles
+
 local config = {
   loginMessage = getConfigValue('loginMessage'),
   useFragHandler = getBooleanFromString(getConfigValue('useFragHandler'))
@@ -17,8 +19,8 @@ function onLogin(cid)
       str = "Your last visit was on " ..
           os.date("%a %b %d %X %Y", lastLogin) .. "."
     else
-      str = str .. " Please choose your outfit."
-      doPlayerSendOutfitWindow(cid)
+      str = str .. " Welcome to DBOSupreme!"
+      -- doPlayerSendOutfitWindow(cid)
       setPlayerStorageValue(cid, 30024, 0)
     end
 
@@ -51,6 +53,7 @@ function onLogin(cid)
     setPlayerStorageValue(cid, 48913, 0)
   end
 
+  registerCreatureEvent(cid, "OutfitFilter")
   --registerCreatureEvent(cid, "Outfit")
   if (config.useFragHandler) then registerCreatureEvent(cid, "SkullCheck") end
   registerCreatureEvent(cid, "AnnounceDeath")
@@ -74,16 +77,43 @@ function onLogin(cid)
   registerCreatureEvent(cid, "IconMap")
   -- registerCreatureEvent(cid, "SkillPoints")
   registerCreatureEvent(cid, "LoadUnlockedVocs")
-  registerCreatureEvent(cid, "HighscoreOpcode")
+  registerCreatureEvent(cid, "ProfileOpcode")
   registerCreatureEvent(cid, "BankExtended")
 
   local sagastor = 578744
   if getPlayerStorageValue(cid, sagastor) ~= -1 then
     local w = tostring(getPlayerStorageValue(cid, sagastor)):gsub(':', '')
         :explode(',')
-    doCreatureChangeOutfit(cid, { lookType = tonumber(w[1]) })
-    doPlayerSetVocation(cid, tonumber(w[2]))
+    local lookType = tonumber(w[1])
+    local vocation = tonumber(w[2])
+    doCreatureChangeOutfit(cid, { lookType = lookType })
+    doPlayerSetVocation(cid, vocation)
+
+    -- Restart aura if applicable
+    if saga[vocation] then
+      for _, outfit in ipairs(saga[vocation]) do
+        if type(outfit) == "table" and outfit.lookType == lookType then
+          if outfit.aura then
+            startAura(cid, outfit.aura, outfit.auraPos)
+          end
+          break
+        end
+      end
+    end
+  else
+    -- First time login or no saga saved: set base outfit
+    local vocation = getPlayerVocation(cid)
+    if saga[vocation] and saga[vocation][1] then
+      doCreatureChangeOutfit(cid, { lookType = saga[vocation][1].lookType })
+    end
   end
+
+  local age = math.max(0, getPlayerStorageValue(cid, STORAGE_AGE))
+  local title = getAgeTitle(age)
+  local frags = getPlayerFrags(cid)
+  local resets = getPlayerResets(cid)
+
+  doPlayerSendExtendedOpcode(cid, 50, age .. "|" .. title .. "|" .. frags .. "|" .. resets)
 
   return true
 end

@@ -59,6 +59,7 @@
 	<talkaction log="yes" words="/pos;!pos" access="1" event="script" value="position.lua"/>
 
 	<!-- Players -->
+	<talkaction words="!idade" event="script" value="idade.lua"/>
 	<talkaction words="!frags;/frags" event="script" value="frags.lua"/>
 	<talkaction words="!online;/online" event="script" value="online.lua"/>
 	<talkaction words="!uptime;/uptime" event="script" value="uptime.lua"/>
