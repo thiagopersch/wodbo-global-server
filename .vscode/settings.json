@@ -174,7 +174,9 @@
     "getTownName",
     "getPlayerSlotItem",
     "result",
-    "doSavePlayer"
+    "doSavePlayer",
+    "getPlayerAccountType",
+    "ACCOUNT_TYPE_GOD"
   ],
   "Lua.diagnostics.disable": [
     "lowercase-global",

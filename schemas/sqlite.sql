@@ -378,6 +378,27 @@ CREATE TABLE IF NOT EXISTS "loterry" (
 	created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 )
 
+CREATE TABLE IF NOT EXISTS `player_vocation_stats` (
+	`player_id` INTEGER NOT NULL,
+	`vocation_id` INTEGER NOT NULL,
+	`level` INTEGER NOT NULL DEFAULT 1,
+	`experience` BIGINT NOT NULL DEFAULT 0,
+	`healthmax` INTEGER NOT NULL DEFAULT 150,
+	`manamax` INTEGER NOT NULL DEFAULT 150,
+	`maglevel` INTEGER NOT NULL DEFAULT 0,
+	`manaspent` BIGINT NOT NULL DEFAULT 0,
+	PRIMARY KEY (`player_id`, `vocation_id`)
+);
+
+CREATE TABLE IF NOT EXISTS `player_vocation_skills` (
+	`player_id` INTEGER NOT NULL,
+	`vocation_id` INTEGER NOT NULL,
+	`skillid` INTEGER NOT NULL,
+	`value` INTEGER NOT NULL DEFAULT 10,
+	`count` BIGINT NOT NULL DEFAULT 0,
+	PRIMARY KEY (`player_id`, `vocation_id`, `skillid`)
+);
+
 CREATE TRIGGER "oncreate_guilds"
 AFTER INSERT ON "guilds"
 BEGIN

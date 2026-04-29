@@ -1,5 +1,3 @@
--- Using profile_lib.lua for age and titles
-
 local config = {
   loginMessage = getConfigValue('loginMessage'),
   useFragHandler = getBooleanFromString(getConfigValue('useFragHandler'))
@@ -16,14 +14,11 @@ function onLogin(cid)
     local lastLogin, str = getPlayerLastLoginSaved(cid), config.loginMessage
     if (lastLogin > 0) then
       doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, str)
-      str = "Your last visit was on " ..
-          os.date("%a %b %d %X %Y", lastLogin) .. "."
+      str = "Your last visit was on " .. os.date("%a %b %d %X %Y", lastLogin) .. "."
     else
       str = str .. " Welcome to DBOSupreme!"
-      -- doPlayerSendOutfitWindow(cid)
       setPlayerStorageValue(cid, 30024, 0)
     end
-
     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, str)
   elseif (accountManager == MANAGER_NAMELOCK) then
     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,
@@ -48,13 +43,11 @@ function onLogin(cid)
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_TELEPORT)
   end
 
-  --- CRITICAL SYSTEM ----
   if getPlayerStorageValue(cid, 48913) == -1 then
     setPlayerStorageValue(cid, 48913, 0)
   end
 
   registerCreatureEvent(cid, "OutfitFilter")
-  --registerCreatureEvent(cid, "Outfit")
   if (config.useFragHandler) then registerCreatureEvent(cid, "SkullCheck") end
   registerCreatureEvent(cid, "AnnounceDeath")
   registerCreatureEvent(cid, "AmuletDeath")
@@ -75,37 +68,67 @@ function onLogin(cid)
   registerCreatureEvent(cid, "AdvLevelSpells")
   registerCreatureEvent(cid, "timelevel")
   registerCreatureEvent(cid, "IconMap")
-  -- registerCreatureEvent(cid, "SkillPoints")
   registerCreatureEvent(cid, "ChangeVocationOpcode")
   registerCreatureEvent(cid, "ChangeVocationLogin")
   registerCreatureEvent(cid, "ProfileOpcode")
   registerCreatureEvent(cid, "BankExtended")
 
-  local sagastor = 578744
-  if getPlayerStorageValue(cid, sagastor) ~= -1 then
-    local w = tostring(getPlayerStorageValue(cid, sagastor)):gsub(':', '')
-        :explode(',')
-    local lookType = tonumber(w[1])
-    local vocation = tonumber(w[2])
-    doCreatureChangeOutfit(cid, { lookType = lookType })
-    doPlayerSetVocation(cid, vocation)
+  -- [NOVO]: Lê e escreve DIRETAMENTE na coluna SQL, ignorando storages limitados do TFS!
+  local currentVoc = getPlayerVocation(cid)
+  local guid = getPlayerGUID(cid)
 
-    -- Restart aura if applicable
-    if saga[vocation] then
-      for _, outfit in ipairs(saga[vocation]) do
-        if type(outfit) == "table" and outfit.lookType == lookType then
-          if outfit.aura then
-            startAura(cid, outfit.aura, outfit.auraPos)
+  local q = db.getResult("SELECT `unlocked_vocations` FROM `players` WHERE `id` = " .. guid)
+  local unlockedStr = ""
+  if q and q:getID() ~= -1 then
+    unlockedStr = q:getDataString("unlocked_vocations")
+    q:free()
+  end
+
+  if unlockedStr == "" then
+    db.query("UPDATE `players` SET `unlocked_vocations` = '" .. currentVoc .. "' WHERE `id` = " .. guid)
+  else
+    local found = false
+    for v in unlockedStr:gmatch("(%d+)") do
+      if tonumber(v) == currentVoc then
+        found = true
+        break
+      end
+    end
+    if not found then
+      local newVal = unlockedStr .. "," .. currentVoc
+      db.query("UPDATE `players` SET `unlocked_vocations` = '" .. newVal .. "' WHERE `id` = " .. guid)
+    end
+  end
+
+  -- [CORREÇÃO]: Sagastor parsing seguro
+  local sagastor = 578744
+  local sagaValue = getPlayerStorageValue(cid, sagastor)
+
+  if sagaValue ~= -1 and tostring(sagaValue) ~= "" then
+    local w = tostring(sagaValue):gsub(':', ''):explode(',')
+    if w and #w >= 2 then
+      local lookType = tonumber(w[1])
+      local vocation = tonumber(w[2])
+
+      if lookType and vocation and vocation > 0 then
+        doCreatureChangeOutfit(cid, { lookType = lookType })
+        doPlayerSetVocation(cid, vocation)
+
+        if saga and saga[vocation] then
+          for _, outfit in ipairs(saga[vocation]) do
+            if type(outfit) == "table" and outfit.lookType == lookType then
+              if outfit.aura then
+                startAura(cid, outfit.aura, outfit.auraPos)
+              end
+              break
+            end
           end
-          break
         end
       end
     end
   else
-    -- First time login or no saga saved: set base outfit
-    local vocation = getPlayerVocation(cid)
-    if saga[vocation] and saga[vocation][1] then
-      doCreatureChangeOutfit(cid, { lookType = saga[vocation][1].lookType })
+    if saga and saga[currentVoc] and saga[currentVoc][1] then
+      doCreatureChangeOutfit(cid, { lookType = saga[currentVoc][1].lookType })
     end
   end
 

@@ -31,6 +31,8 @@ DROP TABLE IF EXISTS `server_motd`;
 DROP TABLE IF EXISTS `server_reports`;
 DROP TABLE IF EXISTS `server_config`;
 DROP TABLE IF EXISTS `account_viplist`;
+DROP TABLE IF EXISTS `player_vocation_stats`;
+DROP TABLE IF EXISTS `player_vocation_skills`;
 
 
 CREATE TABLE `accounts`(
@@ -428,6 +430,27 @@ CREATE TABLE `server_reports`
 	PRIMARY KEY (`id`),
 	KEY (`world_id`), KEY (`reads`),
 	FOREIGN KEY (`player_id`) REFERENCES `players`(`id`) ON DELETE CASCADE
+) ENGINE = InnoDB;
+
+CREATE TABLE `player_vocation_stats` (
+	`player_id` INT NOT NULL,
+	`vocation_id` INT NOT NULL,
+	`level` INT NOT NULL DEFAULT 1,
+	`experience` BIGINT NOT NULL DEFAULT 0,
+	`healthmax` INT NOT NULL DEFAULT 150,
+	`manamax` INT NOT NULL DEFAULT 150,
+	`maglevel` INT NOT NULL DEFAULT 0,
+	`manaspent` BIGINT NOT NULL DEFAULT 0,
+	PRIMARY KEY (`player_id`, `vocation_id`)
+) ENGINE = InnoDB;
+
+CREATE TABLE `player_vocation_skills` (
+	`player_id` INT NOT NULL,
+	`vocation_id` INT NOT NULL,
+	`skillid` INT NOT NULL,
+	`value` INT NOT NULL DEFAULT 10,
+	`count` BIGINT NOT NULL DEFAULT 0,
+	PRIMARY KEY (`player_id`, `vocation_id`, `skillid`)
 ) ENGINE = InnoDB;
 
 DELIMITER |
