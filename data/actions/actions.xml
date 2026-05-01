@@ -9,6 +9,8 @@
 	<action uniqueid="5789" script="horizontal.lua" />
 	<action itemid="13370" script="powerfruit.lua" />
 	<action itemid="20135" script="critical.lua" />
+	<!-- Vocation Rank Upgrade - USER: change itemid to your upgrade item -->
+	<action itemid="YOUR_ITEM_ID_HERE" event="script" value="vocation_rank_upgrade.lua" />
 
 	<!-- Vocations -->
 	<action fromid="49508" toid="49530" event="script" value="vocation_unlock_item.lua" />

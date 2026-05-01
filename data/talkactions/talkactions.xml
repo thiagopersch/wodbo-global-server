@@ -66,17 +66,18 @@
 	<talkaction log="yes" access="1" words="/pos;!pos" event="script" value="position.lua" />
 
 	<!-- Players -->
+	<talkaction words="!myrank;!myr" event="script" value="vocation_rank.lua" />
 	<talkaction words="!exp" event="script" value="monsters.lua" />
 	<talkaction words="!marcar" event="script" value="marcar.lua" />
 	<talkaction words="!sendquestlog" event="script" value="sendquestlog.lua" />
 	<talkaction words="/onlinepoints;!onlinepoints" event="script" value="onlinepoints.lua" />
-	<talkaction words="!deathlistall" script="deathlist_all.lua" />
+	<talkaction words="!deathlistall" event="script" value="deathlist_all.lua" />
 	<talkaction words="!remover" event="script" value="removeFrags.lua" />
 	<talkaction words="/bless;!bless" event="script" value="bless.lua" />
 	<talkaction words="!aol" event="script" value="aol.lua" />
 	<talkaction words="!tp" event="script" value="fly.lua" />
 	<talkaction words="!notice" event="script" value="notice.lua" />
-	<talkaction words="!rank" script="ranks.lua" />
+	<talkaction words="!highscores;!hs" event="script" value="ranks.lua" />
 	<talkaction words="!treinando" event="script" value="treinando.lua" />
 	<talkaction words="!frags" event="script" value="frags.lua" />
 	<talkaction words="!online" event="script" value="online.lua" />
@@ -88,7 +89,7 @@
 	<talkaction words="!commands;/commands" event="script" value="commands.lua" />
 	<talkaction words="!tecnicas;tecnicas;!spells" log="yes" event="script" value="tecnicas.lua" />
 	<talkaction words="!cast;/cast" event="script" value="cast.lua" />
-	<talkaction words="!save" script="salvarjogador.lua" />
+	<talkaction words="!save" event="script" value="salvarjogador.lua" />
 	<!-- <talkaction words="/setvoc" separator=" " script="setvocation.lua" /> -->
 
 	<!-- Transformations and Resets -->
@@ -100,12 +101,12 @@
 	/>
 
 	<!-- Bank -->
-	<talkaction log="yes" words="!balance" script="bank\balance.lua" />
-	<talkaction log="yes" words="!deposit" script="bank\deposit.lua" />
-	<talkaction log="yes" words="!withdraw" script="bank\withdraw.lua" />
-	<talkaction log="yes" words="!transfer" script="bank\transfer.lua" />
-	<talkaction log="yes" words="!depositall" script="bank\deposit_all.lua" />
-	<talkaction log="yes" words="!withdrawall" script="bank\withdraw_all.lua" />
+	<talkaction log="yes" words="!balance" event="script" value="bank\balance.lua" />
+	<talkaction log="yes" words="!deposit" event="script" value="bank\deposit.lua" />
+	<talkaction log="yes" words="!withdraw" event="script" value="bank\withdraw.lua" />
+	<talkaction log="yes" words="!transfer" event="script" value="bank\transfer.lua" />
+	<talkaction log="yes" words="!depositall" event="script" value="bank\deposit_all.lua" />
+	<talkaction log="yes" words="!withdrawall" event="script" value="bank\withdraw_all.lua" />
 	<talkaction log="yes" words="!transferall" script="bank\transfer_all.lua" />
 
 	<!-- Houses -->
@@ -124,4 +125,5 @@
 	<talkaction words="!attackguild" event="script" value="attackguild.lua" />
 	<talkaction words="!guild" event="script" value="guildinformation.lua" />
 	<talkaction words="/bguild" filter="word" script="guildcast.lua" />
+
 </talkactions>

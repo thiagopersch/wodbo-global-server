@@ -176,7 +176,8 @@
     "result",
     "doSavePlayer",
     "getPlayerAccountType",
-    "ACCOUNT_TYPE_GOD"
+    "ACCOUNT_TYPE_GOD",
+    "doSaveServer"
   ],
   "Lua.diagnostics.disable": [
     "lowercase-global",
