@@ -3,7 +3,7 @@ local t = {
   text = "STAFF",
   textcolor = COLOR_ORANGE,
   effect = 867,
-  interval = 2
+  interval = 3
 }
 
 
