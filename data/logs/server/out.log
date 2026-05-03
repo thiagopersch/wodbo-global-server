@@ -1,99 +1,66 @@
-[1/5/2026 22:4:46] > Usando SHA1 criptografia
-[1/5/2026 22:4:46] >> Carregando RSA key
-[1/5/2026 22:4:46] >> Iniciando conexao SQL
-[1/5/2026 22:4:46] >> Executando Gerenciador de Banco de Dados
-[1/5/2026 22:4:46] > Optimized database.
-[1/5/2026 22:4:46] >> Carregando items (OTB)
-[1/5/2026 22:4:46] >> Carregando items (XML)
-[1/5/2026 22:4:46] [Warning - Items::loadFromXml] Unknown key value usable
-[1/5/2026 22:4:46] [Warning - Items::loadFromXml] Unknown key value usable
-[1/5/2026 22:4:46] [Warning - Items::loadFromXml] Unknown key value usable
-[1/5/2026 22:4:46] [Warning - Items::loadFromXml] Unknown key value usable
-[1/5/2026 22:4:46] [Warning - Items::loadFromXml] Unknown key value usable
-[1/5/2026 22:4:46] [Warning - Items::loadFromXml] Unknown key value usable
-[1/5/2026 22:4:46] >> Carregando Grupos
-[1/5/2026 22:4:46] >> Carregando Vocacoes
-[1/5/2026 22:4:46] >> Carregando Outfits
-[1/5/2026 22:4:47] >> Carregando Canal de Chat
-[1/5/2026 22:4:47] >> Carregando Sistema
-[1/5/2026 22:4:47] >> Carregando Mods...
-[1/5/2026 22:4:47] > Loading AutoLoot.xml... done.
-[1/5/2026 22:4:47] > Loading Automatic Raids.xml... done.
-[1/5/2026 22:4:47] > Loading highscorebook.xml... done.
-[1/5/2026 22:4:47] > Loading Simple Task.xml... done.
-[1/5/2026 22:4:47] > 4 mods were loaded.
-[1/5/2026 22:4:47] >> Carregando EXP Stages
-[1/5/2026 22:4:47] >> Carregando Monstros
-[1/5/2026 22:4:47] >> Carregando Mapa e Spawns...
-[1/5/2026 22:4:47] > Tamanho do Mapa: 64000x64000.
-[1/5/2026 22:4:47] > Descricao do Mapa: 
-[1/5/2026 22:4:47] "Saved with OTAcademy Map Editor 4.1.1"
-[1/5/2026 22:4:47] "No map description available."
-[1/5/2026 22:4:50] > Mapa carregado em: 2.759 segundos.
-[1/5/2026 22:4:50] > Data carregada em: 0.156 segundos.
-[1/5/2026 22:4:51] > Houses carregada em: 1.425 segundos.
-[1/5/2026 22:4:51] > Content unserialization time: 0.002 seconds.
-[1/5/2026 22:4:51] > Carregando Tipo de PVP... Open PvP
-[1/5/2026 22:4:51] > Inicializando estado do jogo e registrando servicos...
-[1/5/2026 22:4:51] > IP do Servidor: 127.0.0.1
-[1/5/2026 22:4:51] > IP local do Servidor: 172.26.224.1	192.168.1.107	
-[1/5/2026 22:4:51] > Portas do Servidor: 7171	7172	
-[1/5/2026 22:4:51] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[1/5/2026 22:5:1] >> DBOSupreme servidor Online!
+[2/5/2026 21:28:24] > Usando SHA1 criptografia
+[2/5/2026 21:28:24] >> Carregando RSA key
+[2/5/2026 21:28:24] >> Iniciando conexao SQL
+[2/5/2026 21:28:24] >> Executando Gerenciador de Banco de Dados
+[2/5/2026 21:28:24] > Optimized database.
+[2/5/2026 21:28:24] >> Carregando items (OTB)
+[2/5/2026 21:28:24] >> Carregando items (XML)
+[2/5/2026 21:28:24] >> Carregando Grupos
+[2/5/2026 21:28:24] >> Carregando Vocacoes
+[2/5/2026 21:28:24] >> Carregando Outfits
+[2/5/2026 21:28:24] >> Carregando Canal de Chat
+[2/5/2026 21:28:24] >> Carregando Sistema
+[2/5/2026 21:28:25] >> Carregando Mods...
+[2/5/2026 21:28:25] > Loading AutoLoot.xml... done.
+[2/5/2026 21:28:25] > Loading Automatic Raids.xml... done.
+[2/5/2026 21:28:25] > Loading highscorebook.xml... done.
+[2/5/2026 21:28:25] > Loading Simple Task.xml... done.
+[2/5/2026 21:28:25] > 4 mods were loaded.
+[2/5/2026 21:28:25] >> Carregando EXP Stages
+[2/5/2026 21:28:25] >> Carregando Monstros
+[2/5/2026 21:28:32] >> Carregando Mapa e Spawns...
+[2/5/2026 21:28:32] > Tamanho do Mapa: 64000x64000.
+[2/5/2026 21:28:32] > Descricao do Mapa: 
+[2/5/2026 21:28:32] "Saved with OTAcademy Map Editor 4.1.1"
+[2/5/2026 21:28:32] "No map description available."
+[2/5/2026 21:28:35] > Mapa carregado em: 2.735 segundos.
+[2/5/2026 21:28:35] > Data carregada em: 0.315 segundos.
+[2/5/2026 21:28:36] > Houses carregada em: 1.248 segundos.
+[2/5/2026 21:28:36] > Content unserialization time: 0.003 seconds.
+[2/5/2026 21:28:36] > Carregando Tipo de PVP... Open PvP
+[2/5/2026 21:28:36] > Inicializando estado do jogo e registrando servicos...
+[2/5/2026 21:28:36] > IP do Servidor: 127.0.0.1
+[2/5/2026 21:28:36] > IP local do Servidor: 172.30.16.1	192.168.1.106	
+[2/5/2026 21:28:36] > Portas do Servidor: 7171	7172	
+[2/5/2026 21:28:36] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[2/5/2026 21:28:46] >> DBOSupreme servidor Online!
 
-[1/5/2026 22:5:35] God has logged in.
-[1/5/2026 22:7:2] God has logged out.
-[1/5/2026 22:10:34] God has logged in.
-[1/5/2026 22:12:32] God has logged out.
-[1/5/2026 22:17:3] God has logged in.
-[1/5/2026 22:18:18] God has logged out.
-[1/5/2026 22:18:19] Dias Atras has logged in.
-[1/5/2026 22:18:22] Dias Atras has logged out.
-[1/5/2026 22:18:23] Dias Atras has logged in.
-[1/5/2026 22:18:26] Dias Atras has logged out.
-[1/5/2026 22:18:27] Dias Atras has logged in.
-[1/5/2026 22:18:34] Account Manager has logged in.
-[1/5/2026 22:18:39] Account Manager has logged out.
-[1/5/2026 22:18:40] God has logged in.
-[1/5/2026 22:19:26] Dias Atras has logged out.
+[2/5/2026 21:28:50] God has logged in.
+[2/5/2026 21:29:13] God has logged out.
+[2/5/2026 21:29:16] God has logged in.
+[2/5/2026 21:30:16] God has logged out.
+[2/5/2026 21:30:20] God has logged in.
+[2/5/2026 21:31:29] God has logged out.
+[2/5/2026 22:30:25] > Salvando servidor...
+[2/5/2026 22:30:25] > SAVE: Completo em 0.104 segundos usando binary casa storage.
+[2/5/2026 22:32:14] God has logged in.
+[2/5/2026 22:32:23] God has logged out.
+[2/5/2026 22:32:24] God has logged in.
+[2/5/2026 22:32:37] God has logged out.
+[2/5/2026 22:32:38] God has logged in.
+[2/5/2026 22:32:51] God has logged out.
+[2/5/2026 22:32:52] God has logged in.
+[2/5/2026 22:33:0] God has logged out.
+[2/5/2026 22:33:1] God has logged in.
 
-[1/5/2026 22:19:47] [Error - GlobalEvent Interface] 
-[1/5/2026 22:19:47] data/globalevents/scripts/online_highscore.lua:onThink
-[1/5/2026 22:19:47] Description: 
-[1/5/2026 22:19:47] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[1/5/2026 22:19:47] stack traceback:
-[1/5/2026 22:19:47] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[1/5/2026 22:19:47] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[1/5/2026 22:20:3] God has logged out.
-[1/5/2026 22:32:36] God has logged in.
-[1/5/2026 22:33:52] God has logged out.
-[1/5/2026 22:43:0] Dias Atras has logged in.
-[1/5/2026 22:43:7] Dias Atras has logged out.
-[1/5/2026 22:43:8] God has logged in.
-[1/5/2026 22:43:46] God has logged out.
-[1/5/2026 22:43:48] God has logged in.
-
-[1/5/2026 22:44:47] [Error - GlobalEvent Interface] 
-[1/5/2026 22:44:47] data/globalevents/scripts/online_highscore.lua:onThink
-[1/5/2026 22:44:47] Description: 
-[1/5/2026 22:44:47] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[1/5/2026 22:44:47] stack traceback:
-[1/5/2026 22:44:47] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[1/5/2026 22:44:47] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[1/5/2026 22:45:58] God has logged out.
-[1/5/2026 22:45:59] God has logged in.
-
-[1/5/2026 22:49:47] [Error - GlobalEvent Interface] 
-[1/5/2026 22:49:47] data/globalevents/scripts/online_highscore.lua:onThink
-[1/5/2026 22:49:47] Description: 
-[1/5/2026 22:49:47] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
-[1/5/2026 22:49:47] stack traceback:
-[1/5/2026 22:49:47] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
-[1/5/2026 22:49:47] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
-[1/5/2026 22:53:44] God has logged out.
-[1/5/2026 22:54:51] God has logged in.
-[1/5/2026 22:56:19] God has logged out.
-[1/5/2026 22:56:20] God has logged in.
-[1/5/2026 22:56:22] God has logged out.
-[1/5/2026 22:56:23] God has logged in.
-[1/5/2026 22:57:28] God has logged out.
+[2/5/2026 22:33:25] [Error - GlobalEvent Interface] 
+[2/5/2026 22:33:25] data/globalevents/scripts/online_highscore.lua:onThink
+[2/5/2026 22:33:25] Description: 
+[2/5/2026 22:33:25] data/globalevents/scripts/online_highscore.lua:11: attempt to index field '?' (a number value)
+[2/5/2026 22:33:25] stack traceback:
+[2/5/2026 22:33:25] 	data/globalevents/scripts/online_highscore.lua:11: in function <data/globalevents/scripts/online_highscore.lua:1>
+[2/5/2026 22:33:25] [Error - GlobalEvents::think] Couldn't execute event: OnlineHighscore
+[2/5/2026 22:33:32] God has logged out.
+[2/5/2026 22:33:34] God has logged in.
+[2/5/2026 22:34:17] God has logged out.
+[2/5/2026 22:34:18] God has logged in.
