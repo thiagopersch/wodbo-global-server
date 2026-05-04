@@ -1,3 +1,8 @@
+-- ============================================================
+-- extendedopcode_vocation_ranks.lua
+-- Handles opcode 235 messages from clients (TFS 0.4)
+-- ============================================================
+
 dofile("data/lib/vocation_ranks_lib.lua")
 
 function onExtendedOpcode(cid, opcode, buffer)
@@ -5,9 +10,14 @@ function onExtendedOpcode(cid, opcode, buffer)
   if not isPlayer(cid) then return false end
 
   if buffer == "request" then
+    -- Client requested a full data refresh
     sendRankDataToClient(cid)
-  elseif buffer == "upgrade" then
-    VocationRankLib.doUpgrade(cid)
+  elseif buffer:sub(1, 7) == "upgrade" then
+    -- Format: "upgrade" or "upgrade|universal" or "upgrade|specific"
+    local parts  = string.explode(buffer, "|")
+    local source = parts[2] or "auto"     -- "universal", "specific", or "auto"
+    VocationRankLib.doUpgrade(cid, source)
   end
+
   return true
 end

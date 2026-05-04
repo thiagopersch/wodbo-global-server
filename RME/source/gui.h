@@ -29,6 +29,11 @@
 #include "map_tab.h"
 #include "palette_window.h"
 #include "client_version.h"
+#include "revscript_manager.h"
+#include "monster_manager.h"
+#include "npc_manager.h"
+#include "monster_maker_window.h"
+#include <memory> // For smart pointers
 
 class BaseMap;
 class Map;
@@ -50,8 +55,11 @@ class MapWindow;
 class MapCanvas;
 
 class SearchResultWindow;
+class MapSummaryWindow;
 class MinimapWindow;
 class PaletteWindow;
+class RecentBrushesWindow;
+class MonsterMakerWindow;
 class OldPropertiesWindow;
 class TilesetWindow;
 class EditTownsDialog;
@@ -59,17 +67,24 @@ class ItemButton;
 
 class LiveSocket;
 
+class SelectionDialog;
+class FindItemDialog;
+class LoadOptionsDialog;
+class PropertiesDialog;
+class PreferencesWindow;
+class ItemEditor;
+class BorderEditorDialog;
+
 extern const wxEventType EVT_UPDATE_MENUS;
 
-#define EVT_ON_UPDATE_MENUS(id, fn) \
-    DECLARE_EVENT_TABLE_ENTRY( \
-        EVT_UPDATE_MENUS, id, wxID_ANY, \
-        (wxObjectEventFunction)(wxEventFunction) wxStaticCastEvent( wxCommandEventFunction, &fn ), \
-        (wxObject *) nullptr \
-    ),
+#define EVT_ON_UPDATE_MENUS(id, fn)                                                             \
+	DECLARE_EVENT_TABLE_ENTRY(                                                                  \
+		EVT_UPDATE_MENUS, id, wxID_ANY,                                                         \
+		(wxObjectEventFunction)(wxEventFunction)wxStaticCastEvent(wxCommandEventFunction, &fn), \
+		(wxObject*)nullptr                                                                      \
+	),
 
-class Hotkey
-{
+class Hotkey {
 public:
 	Hotkey();
 	Hotkey(Position pos);
@@ -77,14 +92,23 @@ public:
 	Hotkey(std::string _brushname);
 	~Hotkey();
 
-	bool IsPosition() const {return type == POSITION;}
-	bool IsBrush() const {return type == BRUSH;}
-	Position GetPosition() const {ASSERT(IsPosition()); return pos;}
-	std::string GetBrushname() const {ASSERT(IsBrush()); return brushname;}
+	bool IsPosition() const {
+		return type == POSITION;
+	}
+	bool IsBrush() const {
+		return type == BRUSH;
+	}
+	Position GetPosition() const {
+		ASSERT(IsPosition());
+		return pos;
+	}
+	std::string GetBrushname() const {
+		ASSERT(IsBrush());
+		return brushname;
+	}
 
 private:
-	enum
-	{
+	enum {
 		NONE,
 		POSITION,
 		BRUSH,
@@ -100,10 +124,7 @@ private:
 std::ostream& operator<<(std::ostream& os, const Hotkey& hotkey);
 std::istream& operator>>(std::istream& os, Hotkey& hotkey);
 
-
-
-class GUI
-{
+class GUI {
 public: // dtor and ctor
 	GUI();
 	~GUI();
@@ -146,9 +167,9 @@ public:
 	 */
 	void SetLoadScale(int32_t from, int32_t to);
 
-	void ShowWelcomeDialog(const wxBitmap &icon);
+	void ShowWelcomeDialog(const wxBitmap& icon);
 	void FinishWelcomeDialog();
-    bool IsWelcomeDialogShown();
+	bool IsWelcomeDialogShown();
 
 	/**
 	 * Destroys (hides) the current loading bar.
@@ -157,7 +178,9 @@ public:
 
 	void UpdateMenubar();
 
-	bool IsRenderingEnabled() const {return disabled_counter == 0;}
+	bool IsRenderingEnabled() const {
+		return disabled_counter == 0;
+	}
 
 	void EnableHotkeys();
 	void DisableHotkeys();
@@ -166,12 +189,16 @@ public:
 	// This sends the event to the main window (redirecting from other controls)
 	void AddPendingCanvasEvent(wxEvent& event);
 
-    void OnWelcomeDialogClosed(wxCloseEvent &event);
-    void OnWelcomeDialogAction(wxCommandEvent &event);
+	void OnWelcomeDialogClosed(wxCloseEvent& event);
+	void OnWelcomeDialogAction(wxCommandEvent& event);
 
 protected:
-	void DisableRendering() {++disabled_counter;}
-	void EnableRendering() {--disabled_counter;}
+	void DisableRendering() {
+		++disabled_counter;
+	}
+	void EnableRendering() {
+		--disabled_counter;
+	}
 
 public:
 	void SetTitle(wxString newtitle);
@@ -184,22 +211,52 @@ public:
 	long PopupDialog(wxString title, wxString text, long style, wxString configsavename = wxEmptyString, uint32_t configsavevalue = 0);
 
 	void ListDialog(wxWindow* parent, wxString title, const wxArrayString& vec);
-	void ListDialog(const wxString& title, const wxArrayString& vec) { ListDialog(nullptr, title, vec); }
+	void ListDialog(const wxString& title, const wxArrayString& vec) {
+		ListDialog(nullptr, title, vec);
+	}
 
 	void ShowTextBox(wxWindow* parent, wxString title, wxString contents);
-	void ShowTextBox(const wxString& title, const wxString& contents) {ShowTextBox(nullptr, title, contents);}
+	void ShowTextBox(const wxString& title, const wxString& contents) {
+		ShowTextBox(nullptr, title, contents);
+	}
 
 	// Get the current GL context
 	// Param is required if the context is to be created.
 	wxGLContext* GetGLContext(wxGLCanvas* win);
 
 	// Search Results
+	SearchResultWindow* GetSearchWindow();
 	SearchResultWindow* ShowSearchWindow();
 	void HideSearchWindow();
+	
+	// Monster Maker
+	MonsterMakerWindow* GetMonsterMakerWindow();
+	MonsterMakerWindow* ShowMonsterMakerWindow();
+	void HideMonsterMakerWindow();
+
+	// Map Summary
+	MapSummaryWindow* GetMapSummaryWindow();
+	MapSummaryWindow* ShowMapSummaryWindow();
+
+	//=========================================================================
+	// Recent Brushes Window Interface
+	//=========================================================================
+	void HideRecentBrushesWindow();
+	RecentBrushesWindow* GetRecentBrushesWindow();
+	RecentBrushesWindow* ShowRecentBrushesWindow();
+	void AddRecentBrush(Brush* brush);
+
+	void HideMapSummaryWindow();
+	
+	// Search state persistence
+	void StoreSearchState(uint16_t itemId, bool onSelection);
+	void RestoreSearchState(SearchResultWindow* window);
+	bool HasStoredSearch() const { return has_last_search; }
 
 	// Minimap
 	void CreateMinimap();
 	void HideMinimap();
+	void ShowMinimap();
 	void DestroyMinimap();
 	void UpdateMinimap(bool immediate = false);
 	bool IsMinimapVisible() const;
@@ -213,8 +270,12 @@ public:
 	void SwitchMode();
 	void SetSelectionMode();
 	void SetDrawingMode();
-	bool IsSelectionMode() const {return mode == SELECTION_MODE;}
-	bool IsDrawingMode() const {return mode == DRAWING_MODE;}
+	bool IsSelectionMode() const {
+		return mode == SELECTION_MODE;
+	}
+	bool IsDrawingMode() const {
+		return mode == DRAWING_MODE;
+	}
 
 	void SetHotkey(int index, Hotkey& hotkey);
 	const Hotkey& GetHotkey(int index) const;
@@ -240,7 +301,9 @@ public:
 	int GetSpawnTime() const;
 
 	// Additional brush parameters
-	void SetSpawnTime(int time) {creature_spawntime = time;}
+	void SetSpawnTime(int time) {
+		creature_spawntime = time;
+	}
 	void SetBrushSize(int nz);
 	void SetBrushSizeInternal(int nz);
 	void SetBrushShape(BrushShape bs);
@@ -262,7 +325,9 @@ public:
 	static wxString GetExtensionsDirectory();
 
 	void discoverDataDirectory(const wxString& existentFile);
-	wxString getFoundDataDirectory() { return m_dataDirectory; }
+	wxString getFoundDataDirectory() {
+		return m_dataDirectory;
+	}
 
 	// Load/unload a client version (takes care of dialogs aswell)
 	void UnloadVersion();
@@ -271,7 +336,9 @@ public:
 	const ClientVersion& GetCurrentVersion() const;
 	ClientVersionID GetCurrentVersionID() const;
 	// If any version is loaded at all
-	bool IsVersionLoaded() const {return loaded_version != CLIENT_VERSION_NONE;}
+	bool IsVersionLoaded() const {
+		return loaded_version != CLIENT_VERSION_NONE;
+	}
 
 	// Centers current view on position
 	void SetScreenCenterPosition(Position pos);
@@ -287,7 +354,9 @@ public:
 	void PreparePaste();
 	void StartPasting();
 	void EndPasting();
-	bool IsPasting() const { return pasting; }
+	bool IsPasting() const {
+		return pasting;
+	}
 
 	bool CanUndo();
 	bool CanRedo();
@@ -295,7 +364,9 @@ public:
 	bool DoRedo();
 
 	// Editor interface
-	wxAuiManager* GetAuiManager() const { return aui_manager; }
+	wxAuiManager* GetAuiManager() const {
+		return aui_manager;
+	}
 	EditorTab* GetCurrentTab();
 	EditorTab* GetTab(int idx);
 	int GetTabCount() const;
@@ -308,24 +379,45 @@ public:
 	bool CloseLiveEditors(LiveSocket* sock);
 	bool CloseAllEditors();
 	void NewMapView();
+	void NewDetachedMapView();
+
+	// Detached views management
+	void RegisterDetachedView(Editor* editor, wxFrame* frame);
+	void RegisterDockableView(Editor* editor, MapWindow* window);
+	void UnregisterDetachedView(Editor* editor, wxFrame* frame);
+	void UnregisterDockableView(Editor* editor, MapWindow* window);
+	bool HasDetachedViews(Editor* editor) const;
+	bool CloseDetachedViews(Editor* editor);
+	void UpdateDetachedViewsTitle(Editor* editor);
 
 	// Map
 	Map& GetCurrentMap();
 	int GetOpenMapCount();
 	bool ShouldSave();
 	void SaveCurrentMap(FileName filename, bool showdialog); // "" means default filename
-	void SaveCurrentMap(bool showdialog = true) {SaveCurrentMap(wxString(""), showdialog);}
+	void SaveCurrentMap(bool showdialog = true) {
+		SaveCurrentMap(wxString(""), showdialog);
+	}
 	bool NewMap();
 	void OpenMap();
 	void SaveMap();
 	void SaveMapAs();
 	bool LoadMap(const FileName& fileName);
 
+	// RevScript functions
+	void ReloadRevScripts();
+	
+	// NPC functions
+	void ReloadNPCs();
+
 protected:
 	bool LoadDataFiles(wxString& error, wxArrayString& warnings);
 	ClientVersion* getLoadedVersion() const {
 		return loaded_version == CLIENT_VERSION_NONE ? nullptr : ClientVersion::get(loaded_version);
 	}
+	friend class ItemEditorWindow; // Grants access to protected/private members
+	// Method to clean up brush pointers
+	void CleanupBrushes();
 
 	//=========================================================================
 	// Palette Interface
@@ -347,7 +439,7 @@ public:
 	void SelectPalettePage(PaletteType pt);
 
 	// Returns primary palette
-	PaletteWindow* GetPalette();
+	PaletteWindow* GetPalette() const;
 	// Returns list of all palette, first in the list is primary
 	const std::list<PaletteWindow*>& GetPalettes();
 
@@ -370,10 +462,16 @@ public:
 	MinimapWindow* minimap;
 	DCButton* gem; // The small gem in the lower-right corner
 	SearchResultWindow* search_result_window;
+	MapSummaryWindow* map_summary_window;
+	RecentBrushesWindow* recent_brushes_window;
 	GraphicManager gfx;
+	RevScriptManager revscript_manager;
+	MonsterManager monster_manager;
+	NPCManager npc_manager;
+	MonsterMakerWindow* monster_maker_window;
 
-	BaseMap* secondary_map; // A buffer map
-	BaseMap* doodad_buffer_map; // The map in which doodads are temporarily stored
+	BaseMap* secondary_map; // A non-owning pointer to doodad_buffer_map when needed
+	std::unique_ptr<BaseMap> doodad_buffer_map; // The map in which doodads are temporarily stored
 
 	//=========================================================================
 	// Brush references
@@ -397,16 +495,16 @@ public:
 	FlagBrush* rook_brush;
 	FlagBrush* nolog_brush;
 	FlagBrush* pvp_brush;
+	FlagBrush* zone_brush;
 
 protected:
-
 	//=========================================================================
 	// Global GUI state
 	//=========================================================================
 	typedef std::list<PaletteWindow*> PaletteList;
 	PaletteList palettes;
 
-	wxGLContext* OGLContext;
+	std::unique_ptr<wxGLContext> OGLContext;
 
 	ClientVersionID loaded_version;
 	EditorMode mode;
@@ -429,6 +527,11 @@ protected:
 	bool use_custom_thickness;
 	float custom_thickness_mod;
 
+	// Custom brush dimensions
+	bool use_custom_brush_size;
+	int custom_brush_width;
+	int custom_brush_height;
+
 	//=========================================================================
 	// Progress bar tracking
 	//=========================================================================
@@ -445,27 +548,116 @@ protected:
 	friend class RenderingLock;
 	friend MapTab::MapTab(MapTabbook*, Editor*);
 	friend MapTab::MapTab(const MapTab*);
+
+public:
+	int GetHotkeyEventId(const std::string& action);
+
+	// Add after line 395 (public members section)
+	bool minimap_enabled;
+
+	// Map to track detached views for each editor
+	std::map<Editor*, std::list<wxFrame*>> detached_views;
+	std::map<Editor*, std::list<MapWindow*>> dockable_views;
+
+	void CheckAutoSave();
+	uint32_t last_autosave;
+	uint32_t last_autosave_check;
+
+	// Dark mode
+	void ApplyDarkMode();
+
+	// Search state variables
+	bool has_last_search;
+	uint16_t last_search_itemid;
+	bool last_search_on_selection;
+	wxString last_ignored_ids_text;
+	bool last_ignored_ids_enabled;
+
+	// Add after line 400 (public members section)
+	uint16_t GetCurrentActionID() const;
+	bool IsCurrentActionIDEnabled() const;
+
+	void SetCustomBrushSize(bool enable, int width = -1, int height = -1);
+	bool UseCustomBrushSize() const { return use_custom_brush_size; }
+	bool IsCustomBrushSizeActive() const { return use_custom_brush_size && brush_shape == BRUSHSHAPE_SQUARE; }
+	int GetBrushRadius() const { return brush_size; } // Returns the traditional brush radius index for circles
+	int GetBrushWidth() const { 
+		// Only use custom brush size for square brushes
+		if (use_custom_brush_size && brush_shape == BRUSHSHAPE_SQUARE) {
+			int result = custom_brush_width;
+			if (result <= 0) {
+				char debug_msg[256];
+				sprintf(debug_msg, "DEBUG DRAG: WARNING! GetBrushWidth custom returning %d - FORCING TO 1\n", result);
+				OutputDebugStringA(debug_msg);
+				result = 1; // Force minimum safe value to prevent division by zero
+			}
+			return result;
+		} else {
+			// Convert brush_size index to actual size for both circle and square when not using custom size
+			// brush_size 0 = size 1, brush_size 1 = size 2, etc.
+			int actual_size;
+			switch (brush_size) {
+				case 0: actual_size = 1; break;
+				case 1: actual_size = 2; break; 
+				case 2: actual_size = 3; break;
+				case 4: actual_size = 5; break;
+				case 6: actual_size = 7; break;
+				case 8: actual_size = 9; break;
+				case 11: actual_size = 12; break;
+				default: actual_size = std::max(1, brush_size + 1); break; // Fallback for unknown values
+			}
+			return actual_size;
+		}
+	}
+	int GetBrushHeight() const { 
+		// Only use custom brush size for square brushes
+		if (use_custom_brush_size && brush_shape == BRUSHSHAPE_SQUARE) {
+			int result = custom_brush_height;
+			if (result <= 0) {
+				char debug_msg[256];
+				sprintf(debug_msg, "DEBUG DRAG: WARNING! GetBrushHeight custom returning %d - FORCING TO 1\n", result);
+				OutputDebugStringA(debug_msg);
+				result = 1; // Force minimum safe value to prevent division by zero
+			}
+			return result;
+		} else {
+			// Convert brush_size index to actual size for both circle and square when not using custom size
+			// brush_size 0 = size 1, brush_size 1 = size 2, etc.
+			int actual_size;
+			switch (brush_size) {
+				case 0: actual_size = 1; break;
+				case 1: actual_size = 2; break;
+				case 2: actual_size = 3; break;
+				case 4: actual_size = 5; break;
+				case 6: actual_size = 7; break;
+				case 8: actual_size = 9; break;
+				case 11: actual_size = 12; break;
+				default: actual_size = std::max(1, brush_size + 1); break; // Fallback for unknown values
+			}
+			return actual_size;
+		}
+	}
 };
 
 extern GUI g_gui;
 
-class RenderingLock
-{
+class RenderingLock {
 	bool acquired;
+
 public:
-	RenderingLock() : acquired(true)
-	{
+	RenderingLock() :
+		acquired(true) {
 		g_gui.DisableRendering();
 	}
-	~RenderingLock()
-	{
+	~RenderingLock() {
 		release();
 	}
-	void release()
-	{
+	void release() {
 		g_gui.EnableRendering();
 		acquired = false;
 	}
+
+	MinimapWindow* GetMinimapWindow() { return g_gui.minimap; }
 };
 
 /**
@@ -473,25 +665,20 @@ public:
  * which will the be popped when it destructs.
  * Look in the GUI class for documentation of what the methods mean.
  */
-class ScopedLoadingBar
-{
+class ScopedLoadingBar {
 public:
-	ScopedLoadingBar(wxString message, bool canCancel = false)
-	{
+	ScopedLoadingBar(wxString message, bool canCancel = false) {
 		g_gui.CreateLoadBar(message, canCancel);
 	}
-	~ScopedLoadingBar()
-	{
+	~ScopedLoadingBar() {
 		g_gui.DestroyLoadBar();
 	}
 
-	void SetLoadDone(int32_t done, const wxString& newmessage = wxEmptyString)
-	{
+	void SetLoadDone(int32_t done, const wxString& newmessage = wxEmptyString) {
 		g_gui.SetLoadDone(done, newmessage);
 	}
 
-	void SetLoadScale(int32_t from, int32_t to)
-	{
+	void SetLoadScale(int32_t from, int32_t to) {
 		g_gui.SetLoadScale(from, to);
 	}
 };
@@ -500,5 +687,7 @@ public:
 
 void SetWindowToolTip(wxWindow* a, const wxString& tip);
 void SetWindowToolTip(wxWindow* a, wxWindow* b, const wxString& tip);
+
+
 
 #endif

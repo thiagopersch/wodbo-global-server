@@ -21,38 +21,33 @@
 #include "editor.h"
 #include "live_tab.h"
 
-EditorTab::EditorTab()
-{
+EditorTab::EditorTab() {
 	;
 }
 
-EditorTab::~EditorTab()
-{
+EditorTab::~EditorTab() {
 	;
 }
 
 BEGIN_EVENT_TABLE(MapTabbook, wxPanel)
-	EVT_AUINOTEBOOK_PAGE_CLOSE(wxID_ANY, MapTabbook::OnNotebookPageClose)
-	EVT_AUINOTEBOOK_PAGE_CHANGED(wxID_ANY, MapTabbook::OnNotebookPageChanged)
+EVT_AUINOTEBOOK_PAGE_CLOSE(wxID_ANY, MapTabbook::OnNotebookPageClose)
+EVT_AUINOTEBOOK_PAGE_CHANGED(wxID_ANY, MapTabbook::OnNotebookPageChanged)
 END_EVENT_TABLE()
 
-MapTabbook::MapTabbook(wxWindow *parent, wxWindowID id) :
-	wxPanel(parent, id, wxDefaultPosition, wxDefaultSize)
-{
+MapTabbook::MapTabbook(wxWindow* parent, wxWindowID id) :
+	wxPanel(parent, id, wxDefaultPosition, wxDefaultSize) {
 	wxSizer* wxz = newd wxBoxSizer(wxHORIZONTAL);
 	notebook = newd wxAuiNotebook(this, wxID_ANY, wxDefaultPosition, wxDefaultSize);
 	wxz->Add(notebook, 1, wxEXPAND);
 	SetSizerAndFit(wxz);
 }
 
-MapTabbook::~MapTabbook()
-{
+MapTabbook::~MapTabbook() {
 	;
 }
 
-void MapTabbook::CycleTab(bool forward)
-{
-	if(!notebook) {
+void MapTabbook::CycleTab(bool forward) {
+	if (!notebook) {
 		return;
 	}
 
@@ -60,7 +55,7 @@ void MapTabbook::CycleTab(bool forward)
 	int32_t currentSelection = notebook->GetSelection();
 
 	int32_t selection;
-	if(forward) {
+	if (forward) {
 		selection = (currentSelection + 1) % pageCount;
 	} else {
 		selection = (currentSelection - 1 + pageCount) % pageCount;
@@ -68,158 +63,185 @@ void MapTabbook::CycleTab(bool forward)
 	notebook->SetSelection(selection);
 }
 
-void MapTabbook::OnNotebookPageClose(wxAuiNotebookEvent& evt)
-{
+void MapTabbook::OnNotebookPageClose(wxAuiNotebookEvent& evt) {
 	EditorTab* editorTab = GetTab(evt.GetInt());
 
 	MapTab* mapTab = dynamic_cast<MapTab*>(editorTab);
-	if(mapTab && mapTab->IsUniqueReference() && mapTab->GetMap()) {
-		bool needRefresh = true;
-		if(mapTab->GetEditor()->IsLive()) {
-			if(mapTab->GetMap()->hasChanged()) {
-				SetFocusedTab(evt.GetInt());
-				if(!g_gui.root->DoQuerySave(false)) {
-					needRefresh = false;
+	if (mapTab) {
+		// Check for detached views first
+		if (g_gui.HasDetachedViews(mapTab->GetEditor())) {
+			SetFocusedTab(evt.GetInt());
+			
+			wxString message = "This map has one or more detached views open.\n";
+			message += "You must close all detached views before closing the map.";
+			
+			int choice = wxMessageBox(
+				message,
+				"Detached Views Open",
+				wxOK | wxCANCEL | wxICON_EXCLAMATION
+			);
+			
+			if (choice == wxOK) {
+				// User chose to close detached views
+				g_gui.CloseDetachedViews(mapTab->GetEditor());
+				
+				// Process any remaining events and check again
+				wxYield();
+				
+				// Verify that all detached views are actually closed
+				if (g_gui.HasDetachedViews(mapTab->GetEditor())) {
+					// Some views may still be open, prevent map from closing
+					wxMessageBox(
+						"Could not close all detached views. Please close them manually before closing the map.",
+						"Detached Views Still Open",
+						wxOK | wxICON_ERROR
+					);
 					evt.Veto();
+					return;
 				}
+			} else {
+				// User canceled operation
+				evt.Veto();
+				return;
 			}
 		}
+		
+		if (mapTab->IsUniqueReference() && mapTab->GetMap()) {
+			bool needRefresh = true;
+			if (mapTab->GetEditor()->IsLive()) {
+				if (mapTab->GetMap()->hasChanged()) {
+					SetFocusedTab(evt.GetInt());
+					if (!g_gui.root->DoQuerySave(false)) {
+						needRefresh = false;
+						evt.Veto();
+					}
+				}
+			}
 
-		if(needRefresh) {
-			g_gui.RefreshPalettes(nullptr, false);
-			g_gui.UpdateMenus();
+			if (needRefresh) {
+				g_gui.RefreshPalettes(nullptr, false);
+				g_gui.UpdateMenus();
+			}
+			return;
 		}
-		return;
 	}
 
 	LiveLogTab* lt = dynamic_cast<LiveLogTab*>(editorTab);
-	if(lt && lt->IsConnected()) {
+	if (lt && lt->IsConnected()) {
 		evt.Veto();
 	}
 }
 
-void MapTabbook::OnNotebookPageChanged(wxAuiNotebookEvent& evt)
-{
+void MapTabbook::OnNotebookPageChanged(wxAuiNotebookEvent& evt) {
 	g_gui.UpdateMinimap();
 
 	int32_t oldSelection = evt.GetOldSelection();
 	int32_t newSelection = evt.GetSelection();
 
 	MapTab* oldMapTab;
-	if(oldSelection != -1) {
+	if (oldSelection != -1) {
 		oldMapTab = dynamic_cast<MapTab*>(GetTab(oldSelection));
 	} else {
 		oldMapTab = nullptr;
 	}
 
 	MapTab* newMapTab;
-	if(newSelection != -1) {
+	if (newSelection != -1) {
 		newMapTab = dynamic_cast<MapTab*>(GetTab(newSelection));
 	} else {
 		newMapTab = nullptr;
 	}
 
-	if(!newMapTab) {
+	if (!newMapTab) {
 		g_gui.RefreshPalettes(nullptr);
-	} else if(!oldMapTab || !oldMapTab->HasSameReference(newMapTab)) {
+	} else if (!oldMapTab || !oldMapTab->HasSameReference(newMapTab)) {
 		g_gui.RefreshPalettes(newMapTab->GetMap());
 		g_gui.UpdateMenus();
 	}
 
-	if(oldMapTab)
+	if (oldMapTab) {
 		oldMapTab->VisibilityCheck();
-	if(newMapTab)
+	}
+	if (newMapTab) {
 		newMapTab->VisibilityCheck();
+	}
 }
 
-void MapTabbook::OnAllowNotebookDND(wxAuiNotebookEvent& evt)
-{
+void MapTabbook::OnAllowNotebookDND(wxAuiNotebookEvent& evt) {
 	evt.Allow();
 }
 
 // Wrappers
 
-void MapTabbook::AddTab(EditorTab* tab, bool select)
-{
+void MapTabbook::AddTab(EditorTab* tab, bool select) {
 	tab->GetWindow()->Reparent(notebook);
 	notebook->AddPage(tab->GetWindow(), tab->GetTitle(), select);
 	conv[tab->GetWindow()] = tab;
 }
 
-void MapTabbook::SetFocusedTab(int idx)
-{
+void MapTabbook::SetFocusedTab(int idx) {
 	notebook->SetSelection(idx);
 }
 
-EditorTab* MapTabbook::GetInternalTab(int idx)
-{
+EditorTab* MapTabbook::GetInternalTab(int idx) {
 	return conv[notebook->GetPage(idx)];
 }
 
-EditorTab* MapTabbook::GetCurrentTab()
-{
-	if(GetTabCount() == 0 || GetSelection() == -1) {
+EditorTab* MapTabbook::GetCurrentTab() {
+	if (GetTabCount() == 0 || GetSelection() == -1) {
 		return nullptr;
 	}
 	return dynamic_cast<EditorTab*>(GetInternalTab(GetSelection()));
 }
 
-EditorTab* MapTabbook::GetTab(int idx)
-{
+EditorTab* MapTabbook::GetTab(int idx) {
 	return GetInternalTab(idx);
 }
 
-wxWindow* MapTabbook::GetCurrentPage()
-{
-	if(GetTabCount() == 0) {
+wxWindow* MapTabbook::GetCurrentPage() {
+	if (GetTabCount() == 0) {
 		return nullptr;
 	}
 	return GetCurrentTab()->GetWindow();
 }
 
-void MapTabbook::OnSwitchEditorMode(EditorMode mode)
-{
-	for(int32_t i = 0; i < GetTabCount(); ++i) {
+void MapTabbook::OnSwitchEditorMode(EditorMode mode) {
+	for (int32_t i = 0; i < GetTabCount(); ++i) {
 		EditorTab* editorTab = GetTab(i);
-		if(editorTab) {
+		if (editorTab) {
 			editorTab->OnSwitchEditorMode(mode);
 		}
 	}
 }
 
-void MapTabbook::SetTabLabel(int idx, wxString label)
-{
-	if(notebook) {
+void MapTabbook::SetTabLabel(int idx, wxString label) {
+	if (notebook) {
 		notebook->SetPageText(idx, label);
 	}
 }
 
-void MapTabbook::DeleteTab(int idx)
-{
-	if(notebook) {
+void MapTabbook::DeleteTab(int idx) {
+	if (notebook) {
 		notebook->DeletePage(idx);
 	}
 }
 
-int MapTabbook::GetTabCount()
-{
-	if(notebook) {
+int MapTabbook::GetTabCount() {
+	if (notebook) {
 		return notebook->GetPageCount();
 	}
 	return 0;
 }
 
-int MapTabbook::GetTabIndex(wxWindow* w)
-{
-	if(notebook) {
+int MapTabbook::GetTabIndex(wxWindow* w) {
+	if (notebook) {
 		return notebook->GetPageIndex(w);
 	}
 	return 0;
 }
 
-int MapTabbook::GetSelection()
-{
-	if(notebook) {
+int MapTabbook::GetSelection() {
+	if (notebook) {
 		return notebook->GetSelection();
 	}
 	return 0;

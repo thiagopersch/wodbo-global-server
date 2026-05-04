@@ -10,6 +10,82 @@
 	<action itemid="13370" script="powerfruit.lua" />
 	<action itemid="20135" script="critical.lua" />
 
+	<!-- Vocation Rank Upgrade Items (Universal Fragments) -->
+	<action itemid="56386" event="script" value="vocation_rank_upgrade.lua" />
+	<action itemid="56411" event="script" value="vocation_rank_upgrade.lua" />
+	<action itemid="56412" event="script" value="vocation_rank_upgrade.lua" />
+	<action itemid="56413" event="script" value="vocation_rank_upgrade.lua" />
+	<action itemid="56414" event="script" value="vocation_rank_upgrade.lua" />
+	<action itemid="56328" event="script" value="vocation_rank_upgrade.lua" />
+
+	<!-- Vocation Rank Upgrade Items (Specific Vocation Fragments) -->
+	<action itemid="49852" event="script" value="vocation_rank_upgrade.lua" /> <!-- Goku -->
+	<action itemid="49853" event="script" value="vocation_rank_upgrade.lua" /> <!-- Vegeta -->
+	<action itemid="49854" event="script" value="vocation_rank_upgrade.lua" /> <!-- Gohan -->
+	<action itemid="49855" event="script" value="vocation_rank_upgrade.lua" /> <!-- Piccolo -->
+	<action itemid="49856" event="script" value="vocation_rank_upgrade.lua" /> <!-- Bardock -->
+	<action itemid="49857" event="script" value="vocation_rank_upgrade.lua" /> <!-- Bills -->
+	<action itemid="49858" event="script" value="vocation_rank_upgrade.lua" /> <!-- Botamo -->
+	<action itemid="49859" event="script" value="vocation_rank_upgrade.lua" /> <!-- Brolly -->
+	<action itemid="49860" event="script" value="vocation_rank_upgrade.lua" /> <!-- Bulma -->
+	<action itemid="49861" event="script" value="vocation_rank_upgrade.lua" /> <!-- Buu -->
+	<action itemid="49862" event="script" value="vocation_rank_upgrade.lua" /> <!-- C8 -->
+	<action itemid="49863" event="script" value="vocation_rank_upgrade.lua" /> <!-- C17 -->
+	<action itemid="49864" event="script" value="vocation_rank_upgrade.lua" /> <!-- C18 -->
+	<action itemid="49865" event="script" value="vocation_rank_upgrade.lua" /> <!-- Cabba -->
+	<action itemid="49866" event="script" value="vocation_rank_upgrade.lua" /> <!-- Cell -->
+	<action itemid="49867" event="script" value="vocation_rank_upgrade.lua" /> <!-- Cooler -->
+	<action itemid="49868" event="script" value="vocation_rank_upgrade.lua" /> <!-- Dende -->
+	<action itemid="49869" event="script" value="vocation_rank_upgrade.lua" /> <!-- Freeza -->
+	<action itemid="49870" event="script" value="vocation_rank_upgrade.lua" /> <!-- Ginn -->
+	<action itemid="49871" event="script" value="vocation_rank_upgrade.lua" /> <!-- Goku Black -->
+	<action itemid="49872" event="script" value="vocation_rank_upgrade.lua" /> <!-- Hitto -->
+	<action itemid="49873" event="script" value="vocation_rank_upgrade.lua" /> <!-- Janemba -->
+	<action itemid="49874" event="script" value="vocation_rank_upgrade.lua" /> <!-- Jiren -->
+	<action itemid="49875" event="script" value="vocation_rank_upgrade.lua" /> <!-- Kagome -->
+	<action itemid="49876" event="script" value="vocation_rank_upgrade.lua" /> <!-- Kaio -->
+	<action itemid="49877" event="script" value="vocation_rank_upgrade.lua" /> <!-- Kame -->
+	<action itemid="49878" event="script" value="vocation_rank_upgrade.lua" /> <!-- King Cold -->
+	<action itemid="49879" event="script" value="vocation_rank_upgrade.lua" /> <!-- King Vegeta -->
+	<action itemid="49880" event="script" value="vocation_rank_upgrade.lua" /> <!-- Kuririn -->
+	<action itemid="49881" event="script" value="vocation_rank_upgrade.lua" /> <!-- Liquir -->
+	<action itemid="49882" event="script" value="vocation_rank_upgrade.lua" /> <!-- Pan -->
+	<action itemid="49883" event="script" value="vocation_rank_upgrade.lua" /> <!-- Quitela -->
+	<action itemid="49884" event="script" value="vocation_rank_upgrade.lua" /> <!-- Raditz -->
+	<action itemid="49885" event="script" value="vocation_rank_upgrade.lua" /> <!-- Shenron -->
+	<action itemid="49886" event="script" value="vocation_rank_upgrade.lua" /> <!-- Tapion -->
+	<action itemid="49887" event="script" value="vocation_rank_upgrade.lua" /> <!-- Trunks -->
+	<action itemid="49888" event="script" value="vocation_rank_upgrade.lua" /> <!-- Tsuful -->
+	<action itemid="49889" event="script" value="vocation_rank_upgrade.lua" /> <!-- Turles -->
+	<action itemid="49890" event="script" value="vocation_rank_upgrade.lua" /> <!-- Uub -->
+	<action itemid="49891" event="script" value="vocation_rank_upgrade.lua" /> <!-- Vados -->
+	<action itemid="49892" event="script" value="vocation_rank_upgrade.lua" /> <!-- Vegetto -->
+	<action itemid="49893" event="script" value="vocation_rank_upgrade.lua" /> <!-- Vermouth -->
+	<action itemid="49894" event="script" value="vocation_rank_upgrade.lua" /> <!-- Videl -->
+	<action itemid="49895" event="script" value="vocation_rank_upgrade.lua" /> <!-- Zaiko -->
+	<action itemid="49896" event="script" value="vocation_rank_upgrade.lua" /> <!-- Zeno -->
+	<action itemid="49897" event="script" value="vocation_rank_upgrade.lua" /> <!-- Aizen -->
+	<action itemid="49898" event="script" value="vocation_rank_upgrade.lua" /> <!-- Byakuya -->
+	<action itemid="49899" event="script" value="vocation_rank_upgrade.lua" /> <!-- Gin -->
+	<action itemid="49900" event="script" value="vocation_rank_upgrade.lua" /> <!-- Grimmjow -->
+	<action itemid="49901" event="script" value="vocation_rank_upgrade.lua" /> <!-- Hitsugaya -->
+	<action itemid="49902" event="script" value="vocation_rank_upgrade.lua" /> <!-- Ichigo FullBring -->
+	<action itemid="49903" event="script" value="vocation_rank_upgrade.lua" /> <!-- Ichigo -->
+	<action itemid="49904" event="script" value="vocation_rank_upgrade.lua" /> <!-- Ishida -->
+	<action itemid="49905" event="script" value="vocation_rank_upgrade.lua" /> <!-- Kyouraku -->
+	<action itemid="49906" event="script" value="vocation_rank_upgrade.lua" /> <!-- Neliel -->
+	<action itemid="49907" event="script" value="vocation_rank_upgrade.lua" /> <!-- Orihime -->
+	<action itemid="49908" event="script" value="vocation_rank_upgrade.lua" /> <!-- Renji -->
+	<action itemid="49909" event="script" value="vocation_rank_upgrade.lua" /> <!-- Rukia -->
+	<action itemid="49910" event="script" value="vocation_rank_upgrade.lua" /> <!-- Sado -->
+	<action itemid="49911" event="script" value="vocation_rank_upgrade.lua" /> <!-- Shinji -->
+	<action itemid="49912" event="script" value="vocation_rank_upgrade.lua" /> <!-- Soi Fong -->
+	<action itemid="49913" event="script" value="vocation_rank_upgrade.lua" /> <!-- Tousen -->
+	<action itemid="49914" event="script" value="vocation_rank_upgrade.lua" /> <!-- Ulquiorra -->
+	<action itemid="49915" event="script" value="vocation_rank_upgrade.lua" /> <!-- Urahara -->
+	<action itemid="49916" event="script" value="vocation_rank_upgrade.lua" /> <!-- Yoruichi -->
+	<action itemid="49917" event="script" value="vocation_rank_upgrade.lua" /> <!-- Zaraki -->
+
 	<!-- Vocations -->
 	<action fromid="49508" toid="49530" event="script" value="vocation_unlock_item.lua" />
 

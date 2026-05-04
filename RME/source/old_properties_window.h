@@ -24,9 +24,9 @@
 
 class ContainerItemButton;
 class ContainerItemPopupMenu;
+class MapWindow;
 
-class OldPropertiesWindow : public ObjectPropertiesWindowBase
-{
+class OldPropertiesWindow : public ObjectPropertiesWindowBase {
 public:
 	OldPropertiesWindow(wxWindow* parent, const Map* map, const Tile* tile, Item* item, wxPoint = wxDefaultPosition);
 	OldPropertiesWindow(wxWindow* parent, const Map* map, const Tile* tile, Creature* creature, wxPoint = wxDefaultPosition);
@@ -35,13 +35,31 @@ public:
 
 	void OnFocusChange(wxFocusEvent&);
 	void OnChar(wxKeyEvent& evt);
+	void OnKeyDown(wxKeyEvent& evt);
+	void OnTextEnter(wxCommandEvent& evt);
 
 	void OnClickOK(wxCommandEvent&);
 	void OnClickCancel(wxCommandEvent&);
+	void OnClose(wxCloseEvent& evt);
 
 	void Update();
+	
+	// Non-modal methods
+	static OldPropertiesWindow* getInstance() { return instance; }
+	static void destroyInstance() { 
+		if (instance) {
+			instance->Destroy();
+			instance = nullptr;
+		}
+	}
+	static bool isActive() { return instance != nullptr; }
+	
+	void CommitChanges();
 
 protected:
+	// Singleton instance for non-modal use
+	static OldPropertiesWindow* instance;
+
 	// item
 	wxSpinCtrl* count_field;
 	wxSpinCtrl* action_id_field;
@@ -87,4 +105,3 @@ protected:
 };
 
 #endif
-

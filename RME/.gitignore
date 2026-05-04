@@ -8,16 +8,13 @@ build.*/
 build-debug
 build-release
 CMakeLists.txt.user*
-
+*.vs
 # RME
-rme
-rme.cfg
-data/user
 
-# exe and dll
-*.dll
-*.exe
+vcproj/x64/Release/data/800/Tibia.spr
+vcproj/x64/Release/data/800/Tibia.dat
 
+vcproj/enc_temp_folder/*
 # assets
 *.spr
 *.dat
@@ -55,5 +52,6 @@ xcuserdata
 .idea/
 cmake-build-debug/
 
-# Notepad++
-*.bak
+*.obj
+*.pdb
+/nodechatserver/node_modules

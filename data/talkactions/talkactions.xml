@@ -66,7 +66,7 @@
 	<talkaction log="yes" access="1" words="/pos;!pos" event="script" value="position.lua" />
 
 	<!-- Players -->
-	<talkaction words="!myrank;!myr" event="script" value="vocation_rank.lua" />
+	<talkaction words="!rank" event="script" value="vocation_rank.lua" />
 	<talkaction words="!exp" event="script" value="monsters.lua" />
 	<talkaction words="!marcar" event="script" value="marcar.lua" />
 	<talkaction words="!sendquestlog" event="script" value="sendquestlog.lua" />

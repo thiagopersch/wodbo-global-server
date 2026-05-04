@@ -46,6 +46,7 @@ public:
 	void OnLayoutFixTimer(wxTimerEvent& event);
 
 	void SetMap(Map* map);
+
 protected:
 	// Internal use
 	void SaveHouse();
@@ -56,6 +57,8 @@ protected:
 
 	void SelectHouseBrush();
 	void SelectExitBrush();
+	void RefreshHouseList();
+
 public:
 	// wxWidgets event handling
 	void OnTownChange(wxCommandEvent& event);
@@ -66,11 +69,13 @@ public:
 	void OnClickAddHouse(wxCommandEvent& event);
 	void OnClickEditHouse(wxCommandEvent& event);
 	void OnClickRemoveHouse(wxCommandEvent& event);
+	void OnListBoxContextMenu(wxContextMenuEvent& event);
+	void OnMoveHouseToTown(wxCommandEvent& event);
 
-	#ifdef __APPLE__
-	//Used for detecting a deselect
+#ifdef __APPLE__
+	// Used for detecting a deselect
 	void OnListBoxClick(wxMouseEvent& event);
-	#endif
+#endif
 
 protected:
 	Map* map;
@@ -81,6 +86,7 @@ protected:
 	wxButton* add_house_button;
 	wxButton* edit_house_button;
 	wxButton* remove_house_button;
+	wxMenu* context_menu;
 
 	// Used for ugly hack
 	bool do_resize_on_display;
@@ -89,8 +95,7 @@ protected:
 	DECLARE_EVENT_TABLE()
 };
 
-class EditHouseDialog : public wxDialog
-{
+class EditHouseDialog : public wxDialog {
 public:
 	EditHouseDialog(wxWindow* parent, Map* map, House* house);
 	virtual ~EditHouseDialog();
@@ -99,6 +104,7 @@ public:
 
 	void OnClickOK(wxCommandEvent&);
 	void OnClickCancel(wxCommandEvent&);
+
 protected:
 	Map* map;
 	House* what_house;
@@ -107,7 +113,7 @@ protected:
 
 	wxTextCtrl* name_field;
 	wxChoice* town_id_field;
-	wxSpinCtrl * id_field;
+	wxSpinCtrl* id_field;
 	wxTextCtrl* rent_field;
 	wxCheckBox* guildhall_field;
 

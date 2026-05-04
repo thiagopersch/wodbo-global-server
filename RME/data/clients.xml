@@ -81,6 +81,8 @@
 		<otb client="12.87" version="3" id="63"/>
 		<otb client="12.90" version="3" id="64"/>
 		<otb client="13.10" version="3" id="65"/>
+		<otb client="13.20" version="3" id="66"/>
+		<otb client="13.30" version="3" id="67"/>
 	</otbs>
 
 	<clients>
@@ -225,6 +227,12 @@
 			<extensions from="8.20 - 8.31" to="9.60"/>
 			<data format="9.6" dat="0x4FFA74CC" spr="0x4FFA74F9"/>
 		</client>
+		
+		<client name="9.64" otb="9.61" visible="true" data_directory="964">
+			<otbm version="3"/>
+			<extensions from="8.20 - 8.31" to="9.60"/>
+			<data format="9.6" dat="0x582FB329" spr="0x582FB329"/>
+		</client>
 
 		<client name="9.70" otb="9.70" visible="true" data_directory="970">
 			<otbm version="3"/>
@@ -310,30 +318,42 @@
             <data format="10.57" dat="0x4A10" spr="0x59E48E02"/>
 		</client>
 
-		<client name="12.86" otb="12.86" visible="true" default="true" data_directory="1286">
+		<client name="12.86" otb="12.86" visible="true" data_directory="1286">
             <otbm version="3"/>
             <extensions from="8.20 - 8.31" to="12.86"/>
             <data format="10.57" dat="0x4A10" spr="0x59E48E02"/>
 		</client>
 
-		<client name="12.87" otb="12.87" visible="true" default="true" data_directory="1287">
+		<client name="12.87" otb="12.87" visible="true" data_directory="1287">
             <otbm version="3"/>
             <extensions from="8.20 - 8.31" to="12.87"/>
             <data format="10.57" dat="0x4A10" spr="0x59E48E02"/>
 		</client>
 
-		<client name="12.90" otb="12.90" visible="true" default="true" data_directory="1290">
+		<client name="12.90" otb="12.90" visible="true" data_directory="1290">
             <otbm version="3"/>
             <extensions from="8.20 - 8.31" to="12.90"/>
             <data format="10.57" dat="0x4A10" spr="0x59E48E02"/>
 		</client>
 
-		<client name="13.10" otb="13.10" visible="true" default="true" data_directory="1310">
+		<client name="13.10" otb="13.10" visible="true" data_directory="1310">
             <otbm version="3"/>
             <extensions from="8.40" to="13.10"/>
             <data format="10.57" dat="0x4A10" spr="0x59E48E02"/>
 		</client>
-  </clients>
+
+		<client name="13.20" otb="13.20" visible="true" data_directory="1320">
+            <otbm version="3"/>
+            <extensions from="8.40" to="13.20"/>
+            <data format="10.57" dat="0x4A10" spr="0x59E48E02"/>
+		</client>
+
+		<client name="13.30" otb="13.30" visible="true" default="true" data_directory="1330">
+            <otbm version="3"/>
+            <extensions from="8.40" to="13.30"/>
+            <data format="10.57" dat="0x4A10" spr="0x59E48E02"/>
+		</client>
+	</clients>
 
 	<conversions>
 		<!-- Used by the editor to figure out when to run conversions -->

@@ -1,44 +1,67 @@
-What is this?
-=============
+[# RMEVIP
+ 
+Version 7.1.2 with Live mapping fixed and other improvements!
 
-This is a map editor for game servers that derivied from [OpenTibia](https://github.com/opentibia/server) server project.
 
-It is a fork of a [Map Editor](https://github.com/hampusborgos/rme) created by [Remere](https://github.com/hampusborgos).
+<img width="1391" height="716" alt="image" src="https://github.com/user-attachments/assets/f43e25df-5963-4968-8af8-395b8c80246e" />
 
-You can find an engine compatible with OTBM format at [OTAcademy](https://github.com/OTAcademy), [OTLand](https://github.com/OTLand), [OpenTibiaBR](https://github.com/OpenTibiaBR) or other OT communities.
+<img width="1761" height="989" alt="image" src="https://github.com/user-attachments/assets/1fb3d044-4d46-4b3a-b737-05dfc98c3cba" />
 
-Visit [OTAcademy discord](http://discord.gg/OTAcademy) if you are looking for support or updates.
+
+<img width="425" height="1000" alt="image" src="https://github.com/user-attachments/assets/deaaddc6-f342-4aef-be26-2ed6d481ba54" />
+
+<img width="711" height="533" alt="image" src="https://github.com/user-attachments/assets/7f52efb3-728b-4c4f-b528-9440582cdbb4" />
+
+<img width="431" height="604" alt="image" src="https://github.com/user-attachments/assets/1cc82af9-d702-4b12-90b6-df5dd9d31d38" />
+
+RME-Visual Idler Project
+
+Version 7 is what we will keep it at there will be no enumerations anymore.
+Why 7? It is my favourite number it is the numbre of the days in a week and most of all it is the number that represents Sunday a day of a significant importance of things being over the way they are. If your week was chaotic then sunday is the day you rest. If your week was full of hard work then Sunday is the day on which you deserve a break. If your week was smooth as always then Sunday is the day when you can enjoy the moment to remember it.
+
+
+https://discord.gg/FD2cYKBq5E
+
+join idlers tavern for latest updates!
+](https://discord.com/invite/FD2cYKBq5E
+
+idlers tavern has all the information about updates"
+
+
+continuation of : 
+https://github.com/Wirless/OTARMEIE-OLD
+
+
 
 I want to contribute
 ====================
 
-Contributions are very welcome, if you would like to make any changes, fork this project or request commit access.
-
-Please, if you would like to contribute anything, documentation, extensions or code speak up!
-
+Yeah right. 
 
 Bugs
 ======
 
-Have you found a bug? Please create an issue in our [bug tracker](https://github.com/OTAcademy/rme/issues)
+Have you found a bug? Me too!
 
 Other Applications
 ==========
-
-* To host your MMORPG game server, you can use [The Forgotten Server Plus](https://github.com/Zbizu/forgottenserver).
-* To play your MMORPG game, you can use [OTClient 1.0](https://github.com/Mehah/otclient)
-* To map your MMORPG game, you can use this map editor.
-
+XD
 Download
 ========
 
-You can find official releases at this repository [releases page](https://github.com/OTAcademy/RME/releases).
+Idlers Tavern discord has latest builds
+https://discord.gg/FD2cYKBq5E
+
 
 Compiling
 =========
 Required libraries:
 * wxWidgets >= 3.0
 * Boost >= 1.55.0
+
+### VCPKG libraries:
+* 32-bit : `vcpkg install wxwidgets freeglut asio nlohmann-json fmt libarchive boost-spirit`
+* 64-bit : `vcpkg install --triplet x64-windows wxwidgets freeglut asio nlohmann-json fmt libarchive boost-spirit`
 
 [Compile on Windows](https://github.com/hjnilsson/rme/wiki/Compiling-on-Windows)
 
@@ -47,3 +70,28 @@ Required libraries:
 [Compile on Arch Linux](https://github.com/hjnilsson/rme/wiki/Compiling-on-Arch-Linux)
 
 [Compile on macOS](https://github.com/hjnilsson/rme/wiki/Compiling-on-macOS)
+
+Extras:
+https://idler.live/
+
+![image](https://github.com/user-attachments/assets/aa00772e-8067-4b96-88b4-97dd0bbbb0f9)
+
+
+download exe dll
+[Release (1).zip](https://github.com/user-attachments/files/19621775/Release.1.zip)
+
+![image](https://github.com/user-attachments/assets/395931d7-bb59-4206-b21b-1c841c9921f4)
+
+![image](https://github.com/user-attachments/assets/50bea42b-7000-4e35-a8d7-f1fa38c2e4a8)
+
+![image](https://github.com/user-attachments/assets/22168663-2c6a-4e07-a2ff-27744afa9d67)
+
+![image](https://github.com/user-attachments/assets/a6566a93-b095-4db0-bc04-89400b683544)
+
+
+https://gyazo.com/d337bdf345b86111d1ef52ea16fd1792
+
+![image](https://github.com/user-attachments/assets/00186e9b-4051-4dcf-b664-bc039cf8abb4)
+
+
+)
