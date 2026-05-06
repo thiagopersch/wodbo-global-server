@@ -2,7 +2,7 @@
 <spells>
   <!-- Gerais -->
   <!-- <instant group="support" spellid="81" name="Levitate" words="exani hur" level="12" mana="50"
-  premium="0" aggressive="0" cooldown="2000" groupcooldown="2000" params="1" needlearn="0"
+  premium="0" aggressive="1" cooldown="2000" groupcooldown="2000" params="1" needlearn="0"
   script="support/levitate.lua" /> -->
   <rune name="Reiatsu Prision" id="2288" charges="1" maglv="20" exhaustion="2000" blocktype="solid"
     allowfaruse="1" event="script" group="support" value="support/magic prison.lua" />
@@ -51,17 +51,17 @@
     value="support/powerdown.lua">
   </instant>
   <instant name="Renzoku Energy Dan" words="Renzoku Energy Dan" lvl="1" mana="25" prem="0"
-    range="10" needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
-    group="attacks" value="support/renzoku energy dan.lua">
+    aggressive="0" range="10" needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0"
+    event="script" group="attacks" value="support/renzoku energy dan.lua">
   </instant>
   <instant name="Super Renzoku Energy Dan" words="Super Renzoku Energy Dan" lvl="20" mana="50"
-    prem="0" range="10" needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
-    group="attacks" value="support/super renzoku energy dan.lua">
+    prem="0" aggressive="0" range="10" needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0"
+    event="script" group="attacks" value="support/super renzoku energy dan.lua">
   </instant>
 
   <!-- Monsters -->
-  <instant name="Bakuhatsuha" words="Bakuhatsuha" lvl="1" mana="0" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" group="monsters"
+  <instant name="Bakuhatsuha" words="Bakuhatsuha" lvl="1" mana="0" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script" group="monsters"
     value="monsters/bakuhatsuha.lua">
     <vocation id="0" />
   </instant>
@@ -190,8 +190,8 @@
     blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="aizen/Kyokko.lua">
     <vocation id="47" />
   </instant>
-  <instant name="Hogyoku" words="Hogyoku" lvl="75" mana="500" prem="0" aggressive="0" selftarget="1"
-    exhaustion="2000" needlearn="0" event="script" value="aizen/Hogyoku.lua">
+  <instant name="Hogyoku" words="Hogyoku" lvl="75" mana="500" prem="0" aggressive="1" selftarget="1"
+    blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="aizen/Hogyoku.lua">
     <vocation id="47" />
   </instant>
   <instant name="Dankuu" words="Dankuu" lvl="100" mana="750" prem="0" range="10" needtarget="1"
@@ -219,7 +219,7 @@
     <vocation id="11" /><!-- Cell -->
   </instant>
   <instant name="Auto Destruction" words="Auto Destruction" lvl="75" mana="400" prem="0"
-    aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="1" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="android/Auto Destruction.lua">
     <vocation id="7" /><!-- C8 -->
     <vocation id="8" /><!-- C17 -->
@@ -257,8 +257,9 @@
     value="anjos/Angel Blast.lua">
     <vocation id="39" />
   </instant>
-  <instant name="Angel Furie" words="Angel Furie" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="anjos/Angel Furie.lua">
+  <instant name="Angel Furie" words="Angel Furie" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="anjos/Angel Furie.lua">
     <vocation id="39" />
   </instant>
   <instant name="Angel Attack" words="Angel Attack" lvl="100" mana="500" prem="0" range="10"
@@ -282,8 +283,8 @@
     blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="bardock/Dock Rage.lua">
     <vocation id="1" />
   </instant>
-  <instant name="Furie" words="Furie" lvl="75" mana="400" prem="0" aggressive="0" selftarget="1"
-    exhaustion="2000" needlearn="0" event="script" value="bardock/Furie.lua">
+  <instant name="Furie" words="Furie" lvl="75" mana="400" prem="0" aggressive="1" selftarget="1"
+    blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="bardock/Furie.lua">
     <vocation id="1" />
   </instant>
   <instant name="Saiyajin Energy" words="Saiyajin Energy" lvl="100" mana="500" prem="0" range="10"
@@ -308,8 +309,9 @@
     value="botamo/First Attack.lua">
     <vocation id="3" />
   </instant>
-  <instant name="Psychic Whip" words="Psychic Whip" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="botamo/Psychic Whip.lua">
+  <instant name="Psychic Whip" words="Psychic Whip" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="botamo/Psychic Whip.lua">
     <vocation id="3" />
   </instant>
   <instant name="Psychic Blast" words="Psychic Blast" lvl="100" mana="500" prem="0" range="10"
@@ -334,8 +336,8 @@
     value="brolly/Nokona Panchi.lua">
     <vocation id="4" />
   </instant>
-  <instant name="Barrier" words="Barrier" lvl="75" mana="400" prem="0" aggressive="0" selftarget="1"
-    exhaustion="2000" needlearn="0" event="script" value="brolly/Barrier.lua">
+  <instant name="Barrier" words="Barrier" lvl="75" mana="400" prem="0" aggressive="1" selftarget="1"
+    blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="brolly/Barrier.lua">
     <vocation id="4" />
   </instant>
   <instant name="Barakuitsu" words="Barakuitsu" lvl="100" mana="500" prem="0" range="10"
@@ -359,7 +361,7 @@
     <vocation id="5" />
   </instant>
   <instant name="Artillery Destruction" words="Artillery Destruction" lvl="75" mana="400" prem="0"
-    aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="1" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="bulma/Artillery Destruction.lua">
     <vocation id="5" />
   </instant>
@@ -390,8 +392,9 @@
     <vocation id="38" />
     <!-- Uub -->
   </instant>
-  <instant name="Galactic Donut" words="Galactic Donut" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="buu/Galactic Donut.lua">
+  <instant name="Galactic Donut" words="Galactic Donut" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="buu/Galactic Donut.lua">
     <vocation id="6" />
     <vocation id="38" />
     <!-- Uub -->
@@ -422,7 +425,7 @@
     <vocation id="48" />
   </instant>
   <instant name="Shuukei Hakuteiken" words="Shuukei Hakuteiken" lvl="75" mana="400" prem="0"
-    aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="1" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="byakuya/Shuukei Hakuteiken.lua">
     <vocation id="48" />
   </instant>
@@ -475,8 +478,9 @@
     <vocation id="41" /><!-- Vegetto -->
     <vocation id="24" /><!-- Kame -->
   </instant>
-  <instant name="Explosion" words="Explosion" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="saiyajin/Explosion.lua">
+  <instant name="Explosion" words="Explosion" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="saiyajin/Explosion.lua">
     <vocation id="40" /><!-- Vegeta -->
     <vocation id="26" /><!-- King Vegeta -->
     <vocation id="22" /><!-- Kagome -->
@@ -484,7 +488,7 @@
     <vocation id="36" /><!-- Tsuful -->
   </instant>
   <instant name="Super Energy Wave" words="Super Energy Wave" lvl="75" mana="400" prem="0"
-    aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="1" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="saiyajin/Super Energy Wave.lua">
     <vocation id="10" /><!-- Cabba -->
     <vocation id="16" /><!-- Gohan -->
@@ -497,7 +501,7 @@
     <vocation id="37" /><!-- Turles -->
   </instant>
   <instant name="Super Saiyaman Furie" words="Super Saiyaman Furie" lvl="75" mana="400" prem="0"
-    aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="1" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="saiyajin/Super Saiyaman Furie.lua">
     <vocation id="27" /><!-- Kuririn -->
     <vocation id="35" /><!-- Trunks -->
@@ -604,70 +608,62 @@
   </instant>
 
   <!-- Cooler and Freeza -->
-  <instant name="Daiburuboru" words="Daiburuboru" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="cooler/Daiburuboru.lua">
+  <instant name="Daiburuboru" words="Daiburuboru" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="cooler/Daiburuboru.lua">
     <vocation id="12" />
-    <vocation id="14" />
-    <!-- Freeza -->
-    <vocation id="25" />
-    <!-- King Cold -->
+    <vocation id="14" /><!-- Freeza -->
+    <vocation id="25" /><!-- King Cold -->
   </instant>
   <instant name="Nova" words="Nova" lvl="100" mana="500" prem="0" range="10" needtarget="1"
     blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="cooler/Nova.lua">
     <vocation id="12" />
-    <vocation id="14" />
-    <!-- Freeza -->
-    <vocation id="25" />
-    <!-- King Cold -->
+    <vocation id="14" /><!-- Freeza -->
+    <vocation id="25" /><!-- King Cold -->
   </instant>
   <instant name="Nova Blast" words="Nova Blast" lvl="200" mana="700" prem="0" range="10"
     needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
     value="cooler/Nova Blast.lua">
     <vocation id="12" />
-    <vocation id="14" />
-    <!-- Freeza -->
-    <vocation id="25" />
-    <!-- King Cold -->
+    <vocation id="14" /><!-- Freeza -->
+    <vocation id="25" /><!-- King Cold -->
   </instant>
 
   <!-- Dende and Piccolo -->
   <instant name="Makosen" words="Makosen" lvl="50" mana="300" prem="0" range="10" needtarget="1"
     blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="dende/Makosen.lua">
     <vocation id="13" />
-    <vocation id="30" />
-    <!-- Piccolo -->
+    <vocation id="30" /> <!-- Piccolo -->
   </instant>
-  <instant name="Namekjin Wave" words="Namekjin Wave" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="dende/Namekjin Wave.lua">
+  <instant name="Namekjin Wave" words="Namekjin Wave" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="dende/Namekjin Wave.lua">
     <vocation id="13" />
-    <vocation id="30" />
-    <!-- Piccolo -->
+    <vocation id="30" /> <!-- Piccolo -->
   </instant>
   <instant name="Hellzone Granade" words="Hellzone Granade" lvl="100" mana="500" prem="0" range="10"
     needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
     value="dende/Hellzone Granade.lua">
     <vocation id="13" />
-    <vocation id="30" />
-    <!-- Piccolo -->
+    <vocation id="30" /> <!-- Piccolo -->
   </instant>
   <instant name="Namekjin Rage" words="Namekjin Rage" lvl="200" mana="700" prem="0" range="10"
     needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
     value="dende/Namekjin Rage.lua">
     <vocation id="13" />
-    <vocation id="30" />
-    <!-- Piccolo -->
+    <vocation id="30" /> <!-- Piccolo -->
   </instant>
-  <instant name="Heal Friend" words="Heal Friend" lvl="500" mana="6000" prem="1" aggressive="0"
-    needtarget="1" params="1" exhaustion="2000" needlearn="0" event="script"
+  <instant name="Heal Friend" words="Heal Friend" lvl="500" mana="6000" prem="1" aggressive="1"
+    needtarget="1" blockwalls="1" params="1" exhaustion="2000" needlearn="0" event="script"
     value="dende/Heal Friend.lua">
     <vocation id="13" />
   </instant>
   <instant name="Namekjin Regeneration" words="Namekjin Regeneration" lvl="800" mana="8000" prem="1"
-    aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    aggressive="0" blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="dende/Namekjin Regeneration.lua">
     <vocation id="13" />
   </instant>
-  <conjure name="Create Senzu Bean" words="Create Senzu Bean" lvl="550" maglv="100" mana="10000"
+  <conjure name="Create Senzu Bean" words="Create Senzu Bean" lvl="550" maglv="110" mana="10000"
     soul="5" conjureId="49693" prem="1" conjureCount="10" exhaustion="5000" needlearn="0"
     function="conjureItem">
     <vocation id="13" />
@@ -684,46 +680,31 @@
     <vocation id="42" /><!-- Vermouth -->
   </instant>
   <instant name="Barakuitsu Furie" words="Barakuitsu Furie" lvl="75" mana="400" prem="0"
-    aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="1" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="gods of destruction/Barakuitsu Furie.lua">
-    <vocation id="2" />
-    <!-- Bills -->
-    <vocation id="15" />
-    <!-- Ginn -->
-    <vocation id="28" />
-    <!-- Liquir -->
-    <vocation id="31" />
-    <!-- Quitela -->
-    <vocation id="42" />
-    <!-- Vermouth -->
+    <vocation id="2" /> <!-- Bills -->
+    <vocation id="15" /> <!-- Ginn -->
+    <vocation id="28" /> <!-- Liquir -->
+    <vocation id="31" /> <!-- Quitela -->
+    <vocation id="42" /> <!-- Vermouth -->
   </instant>
   <instant name="Meteor Bash" words="Meteor Bash" lvl="100" mana="500" prem="0" range="10"
     needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
     value="gods of destruction/Meteor Bash.lua">
-    <vocation id="2" />
-    <!-- Bills -->
-    <vocation id="15" />
-    <!-- Ginn -->
-    <vocation id="28" />
-    <!-- Liquir -->
-    <vocation id="31" />
-    <!-- Quitela -->
-    <vocation id="42" />
-    <!-- Vermouth -->
+    <vocation id="2" /> <!-- Bills -->
+    <vocation id="15" /> <!-- Ginn -->
+    <vocation id="28" /> <!-- Liquir -->
+    <vocation id="31" /> <!-- Quitela -->
+    <vocation id="42" /> <!-- Vermouth -->
   </instant>
   <instant name="Dynamic Punch" words="Dynamic Punch" lvl="150" mana="600" prem="0" range="10"
     needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
     value="gods of destruction/Dynamic Punch.lua">
-    <vocation id="2" />
-    <!-- Bills -->
-    <vocation id="15" />
-    <!-- Ginn -->
-    <vocation id="28" />
-    <!-- Liquir -->
-    <vocation id="31" />
-    <!-- Quitela -->
-    <vocation id="42" />
-    <!-- Vermouth -->
+    <vocation id="2" /><!-- Bills -->
+    <vocation id="15" /><!-- Ginn -->
+    <vocation id="28" /><!-- Liquir -->
+    <vocation id="31" /><!-- Quitela -->
+    <vocation id="42" /><!-- Vermouth -->
   </instant>
   <instant name="Raging Strike" words="Raging Strike" lvl="200" mana="700" prem="0" range="10"
     needtarget="1" blockwalls="1" exhaustion="2000" needlearn="0" event="script"
@@ -751,8 +732,8 @@
     <vocation id="61" /><!-- Shinji -->
     <vocation id="64" /><!-- Ulquiorra -->
   </instant>
-  <instant name="Pantera" words="Pantera" lvl="75" mana="400" prem="0" aggressive="0" selftarget="1"
-    exhaustion="2000" needlearn="0" event="script" value="grimmjow/Pantera.lua">
+  <instant name="Pantera" words="Pantera" lvl="75" mana="400" prem="0" aggressive="1" selftarget="1"
+    blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="grimmjow/Pantera.lua">
     <vocation id="50" /><!-- Grimmjow -->
   </instant>
   <instant name="Desgarron" words="Desgarron" lvl="100" mana="500" prem="0" range="10"
@@ -778,7 +759,8 @@
     <vocation id="49" />
   </instant>
   <instant name="Korose Kamishini no Yari" words="Korose Kamishini no Yari" lvl="75" mana="400"
-    prem="0" aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="1" prem="0" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0"
+    event="script"
     value="gin/Korose Kamishini no Yari.lua">
     <vocation id="49" />
   </instant>
@@ -803,8 +785,9 @@
     value="hitsugaya/Daiguren Hyourinmaru.lua">
     <vocation id="51" />
   </instant>
-  <instant name="Ryuusenka" words="Ryuusenka" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="hitsugaya/Ryuusenka.lua">
+  <instant name="Ryuusenka" words="Ryuusenka" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="hitsugaya/Ryuusenka.lua">
     <vocation id="51" />
   </instant>
   <instant name="Hyouryuu Senbi" words="Hyouryuu Senbi" lvl="100" mana="500" prem="0" range="10"
@@ -829,8 +812,9 @@
     value="hitto/Brave Slash.lua">
     <vocation id="19" />
   </instant>
-  <instant name="Shockwave" words="Shockwave" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="hitto/Shockwave.lua">
+  <instant name="Shockwave" words="Shockwave" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="hitto/Shockwave.lua">
     <vocation id="19" />
   </instant>
   <instant name="Assassin Ball" words="Assassin Ball" lvl="100" mana="500" prem="0" range="10"
@@ -857,7 +841,8 @@
     <vocation id="52" /><!-- Ichigo Fullbring -->
   </instant>
   <instant name="Saigo no Getsuga Tenshou" words="Saigo no Getsuga Tenshou" lvl="75" mana="400"
-    prem="0" aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="1" prem="0" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0"
+    event="script"
     value="ichigo/Saigo no Getsuga Tenshou.lua">
     <vocation id="53" /><!-- Ichigo -->
     <vocation id="52" /><!-- Ichigo Fullbring -->
@@ -885,8 +870,9 @@
     blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="ishida/Kojaku.lua">
     <vocation id="54" />
   </instant>
-  <instant name="Arrow Ricochet" words="Arrow Ricochet" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="ishida/Arrow Ricochet.lua">
+  <instant name="Arrow Ricochet" words="Arrow Ricochet" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="ishida/Arrow Ricochet.lua">
     <vocation id="54" />
   </instant>
   <instant name="Ginrei Kojaku" words="Ginrei Kojaku" lvl="100" mana="500" prem="0" range="10"
@@ -911,8 +897,9 @@
     value="janemba/Demon Bash.lua">
     <vocation id="20" />
   </instant>
-  <instant name="Demon Furie" words="Demon Furie" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="janemba/Demon Furie.lua">
+  <instant name="Demon Furie" words="Demon Furie" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="janemba/Demon Furie.lua">
     <vocation id="20" />
   </instant>
   <instant name="Demon Rage" words="Demon Rage" lvl="100" mana="500" prem="0" range="10"
@@ -937,8 +924,9 @@
     value="jiren/Justice Fist.lua">
     <vocation id="21" />
   </instant>
-  <instant name="Justice Wave" words="Justice Wave" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="jiren/Justice Wave.lua">
+  <instant name="Justice Wave" words="Justice Wave" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="jiren/Justice Wave.lua">
     <vocation id="21" />
   </instant>
   <instant name="Punisher" words="Punisher" lvl="100" mana="500" prem="0" range="10" needtarget="1"
@@ -975,7 +963,7 @@
 
   <!-- Kame -->
   <instant name="Turtle Devastation" words="Turtle Devastation" lvl="75" mana="400" prem="0"
-    aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="1" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="kame/Turtle Devastation.lua">
     <vocation id="24" />
   </instant>
@@ -1001,8 +989,8 @@
     value="kyouraku/Bushou Goma.lua">
     <vocation id="55" />
   </instant>
-  <instant name="Takaoni" words="Takaoni" lvl="75" mana="400" prem="0" aggressive="0" selftarget="1"
-    exhaustion="2000" needlearn="0" event="script" value="kyouraku/Takaoni.lua">
+  <instant name="Takaoni" words="Takaoni" lvl="75" mana="400" prem="0" aggressive="1" selftarget="1"
+    blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="kyouraku/Takaoni.lua">
     <vocation id="55" />
   </instant>
   <instant name="Kageoni" words="Kageoni" lvl="100" mana="500" prem="0" range="10" needtarget="1"
@@ -1029,8 +1017,9 @@
     blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="neliel/Hiero.lua">
     <vocation id="56" />
   </instant>
-  <instant name="Nel Shower" words="Nel Shower" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="neliel/Nel Shower.lua">
+  <instant name="Nel Shower" words="Nel Shower" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="neliel/Nel Shower.lua">
     <vocation id="56" />
   </instant>
   <instant name="Double Cut" words="Double Cut" lvl="100" mana="500" prem="0" range="10"
@@ -1054,8 +1043,9 @@
     value="orihime/Santen Kesshun.lua">
     <vocation id="57" />
   </instant>
-  <instant name="Soten Kisshun" words="Soten Kisshun" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="orihime/Soten Kisshun.lua">
+  <instant name="Soten Kisshun" words="Soten Kisshun" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="orihime/Soten Kisshun.lua">
     <vocation id="57" />
   </instant>
   <instant name="Koten Zanshun" words="Koten Zanshun" lvl="100" mana="500" prem="0" range="10"
@@ -1080,8 +1070,9 @@
     value="renji/Higa Zekkou.lua">
     <vocation id="58" />
   </instant>
-  <instant name="Hikotsu Taihou" words="Hikotsu Taihou" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="renji/Hikotsu Taihou.lua">
+  <instant name="Hikotsu Taihou" words="Hikotsu Taihou" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="renji/Hikotsu Taihou.lua">
     <vocation id="58" />
   </instant>
   <instant name="Zaga Teppo" words="Zaga Teppo" lvl="100" mana="500" prem="0" range="10"
@@ -1106,9 +1097,9 @@
     value="rukia/Tsukishiro.lua">
     <vocation id="59" />
   </instant>
-  <instant name="Hakuren" words="Hakuren" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1"
-    exhaustion="2000" needlearn="0" event="script" value="rukia/Hakuren.lua">
+  <instant name="Hakuren" words="Hakuren" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="rukia/Hakuren.lua">
     <vocation id="59" />
   </instant>
   <instant name="Shirafune" words="Shirafune" lvl="100" mana="500" prem="0" range="10"
@@ -1132,8 +1123,9 @@
     value="sado/El Brazo Del La Muerte.lua">
     <vocation id="60" />
   </instant>
-  <instant name="La Muerte" words="La Muerte" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="sado/La Muerte.lua">
+  <instant name="La Muerte" words="La Muerte" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="sado/La Muerte.lua">
     <vocation id="60" />
   </instant>
   <instant name="El Directo" words="El Directo" lvl="100" mana="500" prem="0" range="10"
@@ -1153,8 +1145,9 @@
   </instant>
 
   <!-- Shenron -->
-  <instant name="Dragon Wave" words="Dragon Wave" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="shenron/Dragon Wave.lua">
+  <instant name="Dragon Wave" words="Dragon Wave" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="shenron/Dragon Wave.lua">
     <vocation id="33" /><!-- Shenron -->
   </instant>
   <instant name="Negative Karma Ball" words="Negative Karma Ball" lvl="100" mana="500" prem="0"
@@ -1176,8 +1169,9 @@
   </instant>
 
   <!-- Shinji -->
-  <instant name="Sakanade" words="Sakanade" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="shinji/Sakanade.lua">
+  <instant name="Sakanade" words="Sakanade" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="shinji/Sakanade.lua">
     <vocation id="61" />
   </instant>
   <instant name="Sakasama no Sekai" words="Sakasama no Sekai" lvl="100" mana="500" prem="0"
@@ -1197,8 +1191,9 @@
     value="soi fong/Suzumebachi Fist.lua">
     <vocation id="62" />
   </instant>
-  <instant name="Houmonka" words="Houmonka" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="soi fong/Houmonka.lua">
+  <instant name="Houmonka" words="Houmonka" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="soi fong/Houmonka.lua">
     <vocation id="62" />
   </instant>
   <instant name="Shunkou" words="Shunkou" lvl="100" mana="500" prem="0" range="10" needtarget="1"
@@ -1222,8 +1217,9 @@
     value="tapion/Sword Bash.lua">
     <vocation id="34" />
   </instant>
-  <instant name="Brave Furie" words="Brave Furie" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="tapion/Brave Furie.lua">
+  <instant name="Brave Furie" words="Brave Furie" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="tapion/Brave Furie.lua">
     <vocation id="34" />
   </instant>
   <instant name="Sword Rage" words="Sword Rage" lvl="100" mana="500" prem="0" range="10"
@@ -1248,7 +1244,7 @@
     value="tousen/Suzumushi Nishiki.lua">
     <vocation id="63" />
   </instant>
-  <instant name="Suzumushi Nake" words="Suzumushi Nake" lvl="75" mana="400" prem="0" aggressive="0"
+  <instant name="Suzumushi Nake" words="Suzumushi Nake" lvl="75" mana="400" prem="0" aggressive="1"
     selftarget="1" exhaustion="2000" needlearn="0" event="script" value="tousen/Suzumushi Nake.lua">
     <vocation id="63" />
   </instant>
@@ -1270,7 +1266,7 @@
 
   <!-- Ulquiorra -->
   <instant name="Lanza del Relampago" words="Lanza del Relampago" lvl="75" mana="400" prem="0"
-    aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="1" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="ulquiorra/Lanza del Relampago.lua">
     <vocation id="64" />
   </instant>
@@ -1296,7 +1292,7 @@
     <vocation id="65" />
   </instant>
   <instant name="Kamisori Benihime" words="Kamisori Benihime" lvl="75" mana="400" prem="0"
-    aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="1" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="urahara/Kamisori Benihime.lua">
     <vocation id="65" />
   </instant>
@@ -1321,8 +1317,8 @@
     blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="yoruichi/Utsusemi.lua">
     <vocation id="66" />
   </instant>
-  <instant name="Kokubyou Senki" words="Kokubyou Senki" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script"
+  <instant name="Kokubyou Senki" words="Kokubyou Senki" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="yoruichi/Kokubyou Senki.lua">
     <vocation id="66" />
   </instant>
@@ -1348,8 +1344,9 @@
     value="zaiko/Saiko Chou.lua">
     <vocation id="44" />
   </instant>
-  <instant name="Saikosai Furie" words="Saikosai Furie" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="zaiko/Saikosai Furie.lua">
+  <instant name="Saikosai Furie" words="Saikosai Furie" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="zaiko/Saikosai Furie.lua">
     <vocation id="44" />
   </instant>
   <instant name="Saikosai Boru" words="Saikosai Boru" lvl="100" mana="500" prem="0" range="10"
@@ -1375,7 +1372,7 @@
     <vocation id="67" />
   </instant>
   <instant name="Nozarashi Furie" words="Nozarashi Furie" lvl="75" mana="400" prem="0"
-    aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="1" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="zaraki/Nozarashi Furie.lua">
     <vocation id="67" />
   </instant>
@@ -1400,8 +1397,9 @@
     blockwalls="1" exhaustion="2000" needlearn="0" event="script" value="zeno/God Fist.lua">
     <vocation id="45" />
   </instant>
-  <instant name="God Furie" words="God Furie" lvl="75" mana="400" prem="0" aggressive="0"
-    selftarget="1" exhaustion="2000" needlearn="0" event="script" value="zeno/God Furie.lua">
+  <instant name="God Furie" words="God Furie" lvl="75" mana="400" prem="0" aggressive="1"
+    blockwalls="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    value="zeno/God Furie.lua">
     <vocation id="45" />
   </instant>
   <instant name="God Chou" words="God Chou" lvl="100" mana="500" prem="0" range="10" needtarget="1"
