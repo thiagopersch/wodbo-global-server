@@ -68213,28 +68213,28 @@
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="49689" article="a" name="HP point" plural="HP points">
-		<attribute key="weight" value="10" />
+		<attribute key="weight" value="100" />
 	</item>
 	<item id="49690" article="a" name="MP point" plural="MP points">
-		<attribute key="weight" value="10" />
+		<attribute key="weight" value="100" />
 	</item>
 	<item id="49691" article="a" name="leaf senzu" plural="leaf senzus">
-		<attribute key="weight" value="10" />
+		<attribute key="weight" value="100" />
 	</item>
 	<item id="49692" article="a" name="branch senzu" plural="branch senzus">
-		<attribute key="weight" value="10" />
+		<attribute key="weight" value="100" />
 	</item>
 	<item id="49693" article="a" name="green senzu" plural="green senzus">
-		<attribute key="weight" value="10" />
+		<attribute key="weight" value="100" />
 	</item>
 	<item id="49694" article="a" name="red senzu" plural="red senzus">
-		<attribute key="weight" value="10" />
+		<attribute key="weight" value="100" />
 	</item>
 	<item id="49695" article="a" name="black senzu" plural="black senzus">
-		<attribute key="weight" value="10" />
+		<attribute key="weight" value="100" />
 	</item>
 	<item id="49696" article="a" name="crystal senzu" plural="crystal senzus">
-		<attribute key="weight" value="10" />
+		<attribute key="weight" value="100" />
 	</item>
 	<item id="49697" article="a" name="old piccolo armor">
 		<attribute key="weight" value="2000" />
@@ -70114,5 +70114,153 @@
 	<item id="56414" name="gold universal fragment">
 		<attribute key="weight" value="10000" />
 		<attribute key="description" value="This item is used to perform any vocation upgrade." />
+	</item>
+
+	<!-- DAILY REWARD SYSTEM ITEMS -->
+	<!-- Senzus -->
+	<item id="56818" name="senzu of the devil">
+		<attribute key="weight" value="1000" />
+		<attribute key="description" value="Recupera 500k de HP e mana em instantaneo" />
+	</item>
+	<item id="56744" name="brown senzu">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Recupera 150k de HP e mana em instantaneo" />
+	</item>
+	<item id="56817" name="purple senzu">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Recupera 75k de HP e mana em instantaneo" />
+	</item>
+	<item id="56745" name="blue sky senzu">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Recupera 50k de HP e mana em instantaneo" />
+	</item>
+	<item id="56697" name="yellow senzu">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Recupera 25k de HP e mana em instantaneo" />
+	</item>
+	<!-- Potions (XP/Skill/Dodge/Crit) -->
+	<item id="56710" name="dodge potion">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill de dodge em 0.25%" />
+	</item>
+	<item id="56711" name="critical potion">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill de critical em 0.25%" />
+	</item>
+	<item id="56709" name="green xp potion 1h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta seu ganho de experiencia em 50% por 1h" />
+	</item>
+	<item id="56705" name="grey xp potion 2h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta seu ganho de experiencia em 50% por 2h" />
+	</item>
+	<item id="56742" name="capsule xp potion 6h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta seu ganho de experiencia em 50% por 6h" />
+	</item>
+	<item id="56704" name="celestial xp potion 12h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta seu ganho de experiencia em 50% por 12h" />
+	</item>
+	<item id="56703" name="purple shenlong xp potion 24h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta seu ganho de experiencia em 50% por 24h" />
+	</item>
+	<item id="56406" name="skill potion 30min">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill em 25% por 30min" />
+	</item>
+	<item id="56404" name="skill potion 1h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill em 25% por 1h" />
+	</item>
+	<item id="56403" name="skill potion 2h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill em 25% por 2h" />
+	</item>
+	<item id="56405" name="skill potion 3h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill em 25% por 3h" />
+	</item>
+	<item id="56408" name="skill potion 6h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill em 25% por 6h" />
+	</item>
+	<item id="56410" name="skill potion 12h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill em 25% por 12h" />
+	</item>
+	<item id="56409" name="skill potion 24h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill em 25% por 24h" />
+	</item>
+
+	<!-- Boxes and Misc -->
+	<item id="56396" name="red box mystery">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Abre e pega apenas um item aleatorio" />
+	</item>
+	<item id="56397" name="green box mystery">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Abre e pega apenas um item aleatorio" />
+	</item>
+	<item id="56399" name="chest system key">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Chave necessaria para abrir um bau no sistema de chest." />
+	</item>
+	<item id="56392" name="ectoplasmasma stone">
+		<attribute key="weight" value="100" />
+		<attribute key="description"
+			value="Pedra mistica para encantar itens no sistema de enchantment." />
+	</item>
+
+	<!-- Points -->
+	<item id="56449" name="10 points">
+		<attribute key="description" value="Concede 10 pontos no shopping." />
+	</item>
+	<item id="56451" name="20 points">
+		<attribute key="description" value="Concede 20 pontos no shopping." />
+	</item>
+
+	<!-- Backpacks -->
+	<item id="56037" name="kurama backpack">
+		<attribute key="containerSize" value="200" />
+		<attribute key="weight" value="1000" />
+		<attribute key="description" value="Kurama backpack com 200 de capacidadde de carga extra." />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentDeath" value="5" />
+		<attribute key="absorbPercentEnergy" value="5" />
+	</item>
+	<item id="55951" name="barragan backpack">
+		<attribute key="containerSize" value="100" />
+		<attribute key="weight" value="1000" />
+		<attribute key="description" value="Barragan backpack com 100 de capacidadde de carga extra." />
+		<attribute key="absorbPercentDeath" value="5" />
+	</item>
+	<item id="55953" name="ulquiorra backpack">
+		<attribute key="containerSize" value="150" />
+		<attribute key="weight" value="1000" />
+		<attribute key="description" value="Ulquiorra backpack com 150 de capacidadde de carga extra." />
+		<attribute key="absorbPercentDeath" value="5" />
+	</item>
+	<item id="55846" name="royal backpack">
+		<attribute key="containerSize" value="175" />
+		<attribute key="weight" value="1000" />
+		<attribute key="description" value="Royal backpack com 175 de capacidadde de carga extra." />
+		<attribute key="absorbPercentPhysical" value="5" />
+	</item>
+	<item id="55885" name="rabbit backpack">
+		<attribute key="containerSize" value="125" />
+		<attribute key="weight" value="1000" />
+		<attribute key="description" value="Rabbit backpack com 125 de capacidadde de carga extra." />
+		<attribute key="absorbPercentHoly" value="5" />
+	</item>
+	<item id="55863" name="gaia backpack">
+		<attribute key="containerSize" value="100" />
+		<attribute key="weight" value="1000" />
+		<attribute key="description" value="Gaia backpack com 100 de capacidadde de carga extra." />
+		<attribute key="absorbPercentEarth" value="5" />
 	</item>
 </items>

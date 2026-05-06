@@ -35,6 +35,12 @@ function onCastSpell(cid, var)
     -- Calculate the exact timestamp when the buff expires
     local expireAt = os.time() + (DURATION_MS / 1000)
 
+    -- Get Vocation Archetype Regen Data
+    local voc = getPlayerVocation(cid)
+    local vocationConfig = VocationRankConfig.Vocations[voc]
+    local archetype = vocationConfig and vocationConfig.archetype or "DPS"
+    local archetypeData = VocationRankConfig.Archetypes[archetype]
+
     -- Closure: emits effect at x+1, y+1 from the caster's current position
     local function emitBuffEffect()
         if not isCreature(cid) then return end
@@ -42,6 +48,17 @@ function onCastSpell(cid, var)
 
         local pos = getCreaturePosition(cid)
         doSendMagicEffect({ x = pos.x + 1, y = pos.y + 1, z = pos.z }, BUFF_EFFECT)
+
+        -- Apply Archetype Regen (Per tick calculation)
+        if archetypeData then
+            if archetypeData.manaRegenBuff then
+                doCreatureAddMana(cid, math.floor(archetypeData.manaRegenBuff * TICK_INTERVAL / 1000))
+            end
+            if archetypeData.hpRegenBuff then
+                doCreatureAddHealth(cid, math.floor(archetypeData.hpRegenBuff * TICK_INTERVAL / 1000))
+            end
+        end
+
         addEvent(emitBuffEffect, TICK_INTERVAL)
     end
 

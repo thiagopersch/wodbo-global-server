@@ -44,69 +44,69 @@ local PROFILE_MINUTES_PER_YEAR = 60
 
 -- Helper functions for additional stats
 local function getProfilePlayerAgeMinutesReal(cid)
-    local guid = getPlayerGUID(cid)
-    local result = db.getResult("SELECT `age_minutes` FROM `players` WHERE `id` = " .. guid)
-    local minutes = 0
-    if result and result:getID() ~= -1 then
-        minutes = result:getDataInt("age_minutes")
-        result:free()
-    end
-    return minutes
+	local guid = getPlayerGUID(cid)
+	local result = db.getResult("SELECT `age_minutes` FROM `players` WHERE `id` = " .. guid)
+	local minutes = 0
+	if result and result:getID() ~= -1 then
+		minutes = result:getDataInt("age_minutes")
+		result:free()
+	end
+	return minutes
 end
 
 local function getProfilePlayerAgeReal(cid)
-    local minutes = getProfilePlayerAgeMinutesReal(cid)
-    return math.floor(minutes / PROFILE_MINUTES_PER_YEAR)
+	local minutes = getProfilePlayerAgeMinutesReal(cid)
+	return math.floor(minutes / PROFILE_MINUTES_PER_YEAR)
 end
 
 local function getProfilePlayerResets(cid)
-    local guid = getPlayerGUID(cid)
-    local resets = 0
-    local result = db.getResult("SELECT `resets` FROM `players` WHERE `id` = " .. guid)
-    if result and result:getID() ~= -1 then
-        resets = result:getDataInt("resets")
-        result:free()
-    end
-    return math.max(0, resets)
+	local guid = getPlayerGUID(cid)
+	local resets = 0
+	local result = db.getResult("SELECT `resets` FROM `players` WHERE `id` = " .. guid)
+	if result and result:getID() ~= -1 then
+		resets = result:getDataInt("resets")
+		result:free()
+	end
+	return math.max(0, resets)
 end
 
 local function getProfilePlayerFrags(cid)
-    local guid = getPlayerGUID(cid)
-    local timeLimit = os.time() - (30 * 86400)
-    local count = 0
-    local result = db.getResult(
-        "SELECT COUNT(`pk`.`player_id`) as `count` FROM `player_killers` pk " ..
-        "LEFT JOIN `killers` k ON `pk`.`kill_id` = `k`.`id` " ..
-        "LEFT JOIN `player_deaths` pd ON `k`.`death_id` = `pd`.`id` " ..
-        "WHERE `pk`.`player_id` = " .. guid .. " AND `k`.`unjustified` = 1 AND `pd`.`date` >= " .. timeLimit
-    )
-    if result and result:getID() ~= -1 then
-        count = result:getDataInt("count")
-        result:free()
-    end
-    return count
+	local guid = getPlayerGUID(cid)
+	local timeLimit = os.time() - (30 * 86400)
+	local count = 0
+	local result = db.getResult(
+		"SELECT COUNT(`pk`.`player_id`) as `count` FROM `player_killers` pk " ..
+		"LEFT JOIN `killers` k ON `pk`.`kill_id` = `k`.`id` " ..
+		"LEFT JOIN `player_deaths` pd ON `k`.`death_id` = `pd`.`id` " ..
+		"WHERE `pk`.`player_id` = " .. guid .. " AND `k`.`unjustified` = 1 AND `pd`.`date` >= " .. timeLimit
+	)
+	if result and result:getID() ~= -1 then
+		count = result:getDataInt("count")
+		result:free()
+	end
+	return count
 end
 
 local function getProfilePlayerCap(cid)
-    local guid = getPlayerGUID(cid)
-    local result = db.getResult("SELECT `cap` FROM `players` WHERE `id` = " .. guid)
-    local cap = 0
-    if result and result:getID() ~= -1 then
-        cap = result:getDataInt("cap")
-        result:free()
-    end
-    return cap
+	local guid = getPlayerGUID(cid)
+	local result = db.getResult("SELECT `cap` FROM `players` WHERE `id` = " .. guid)
+	local cap = 0
+	if result and result:getID() ~= -1 then
+		cap = result:getDataInt("cap")
+		result:free()
+	end
+	return cap
 end
 
 local function getProfilePlayerBalance(cid)
-    local guid = getPlayerGUID(cid)
-    local result = db.getResult("SELECT `balance` FROM `players` WHERE `id` = " .. guid)
-    local balance = 0
-    if result and result:getID() ~= -1 then
-        balance = result:getDataInt("balance")
-        result:free()
-    end
-    return balance
+	local guid = getPlayerGUID(cid)
+	local result = db.getResult("SELECT `balance` FROM `players` WHERE `id` = " .. guid)
+	local balance = 0
+	if result and result:getID() ~= -1 then
+		balance = result:getDataInt("balance")
+		result:free()
+	end
+	return balance
 end
 
 ---@param cid number
@@ -125,20 +125,22 @@ function InspectModule:sendPlayerData(cid, creatureID)
 	end
 
 	local data = {
-		getCreatureName(creatureID),            -- 1
-		getCreatureMaxHealth(creatureID),       -- 2
-		getCreatureMaxMana(creatureID),         -- 3
-		getPlayerLevel(creatureID),             -- 4
-		getPlayerVocationName(creatureID),      -- 5
+		getCreatureName(creatureID),          -- 1
+		getCreatureMaxHealth(creatureID),     -- 2
+		getCreatureMaxMana(creatureID),       -- 3
+		getPlayerLevel(creatureID),           -- 4
+		getPlayerVocationName(creatureID),    -- 5
 		getTownName(getPlayerTown(creatureID)), -- 6
-		getPlayerStamina(creatureID),           -- 7
-		getPlayerGuildName(creatureID),         -- 8
-		isPremium(creatureID) and 1 or 0,       -- 9
-        getProfilePlayerAgeReal(creatureID),    -- 10 (NEW)
-        getProfilePlayerFrags(creatureID),      -- 11 (NEW)
-        getProfilePlayerResets(creatureID),     -- 12 (NEW)
-        getProfilePlayerBalance(creatureID),    -- 13 (NEW)
-        getProfilePlayerCap(creatureID),        -- 14 (NEW)
+		getPlayerStamina(creatureID),         -- 7
+		getPlayerGuildName(creatureID),       -- 8
+		isPremium(creatureID) and 1 or 0,     -- 9
+		getProfilePlayerAgeReal(creatureID),  -- 10 (NEW)
+		getProfilePlayerFrags(creatureID),    -- 11 (NEW)
+		getProfilePlayerResets(creatureID),   -- 12 (NEW)
+		getProfilePlayerBalance(creatureID),  -- 13 (NEW)
+		getProfilePlayerCap(creatureID),      -- 14 (NEW)
+		math.max(0, getPlayerStorageValue(creatureID, 48700)), -- 15 (DODGE)
+		math.max(0, getPlayerStorageValue(creatureID, 48701)), -- 16 (CRITICAL)
 	}
 
 	-- Adicionando as habilidades (skills)
@@ -152,7 +154,7 @@ function InspectModule:sendPlayerData(cid, creatureID)
 	-- Verifica se os equipamentos estǜo visveis e se o jogador local estǭ inspecionando a si mesmo
 	local showEquipments = getCreatureStorage(creatureID, self.privacy_storage) ~= 1
 	data[#data + 1] = cid == creatureID and 1 or 0 -- 23
-	data[#data + 1] = showEquipments and 1 or 0    -- 24
+	data[#data + 1] = showEquipments and 1 or 0   -- 24
 
 	-- Envia os equipamentos se permitido
 	for i = CONST_SLOT_FIRST, CONST_SLOT_LAST do
@@ -167,6 +169,5 @@ function InspectModule:sendPlayerData(cid, creatureID)
 		end
 	end
 
-	-- Envia os dados ao jogador que solicitou
 	doPlayerSendExtendedOpcode(cid, self.opcode, table.concat(data, "&"))
 end

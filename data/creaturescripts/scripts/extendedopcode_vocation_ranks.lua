@@ -10,12 +10,10 @@ function onExtendedOpcode(cid, opcode, buffer)
   if not isPlayer(cid) then return false end
 
   if buffer == "request" then
-    -- Client requested a full data refresh
     sendRankDataToClient(cid)
   elseif buffer:sub(1, 7) == "upgrade" then
-    -- Format: "upgrade" or "upgrade|universal" or "upgrade|specific"
     local parts  = string.explode(buffer, "|")
-    local source = parts[2] or "auto"     -- "universal", "specific", or "auto"
+    local source = parts[2] or "auto"
     VocationRankLib.doUpgrade(cid, source)
   end
 

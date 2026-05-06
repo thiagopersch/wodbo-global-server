@@ -970,7 +970,7 @@ InitArenaScript = 0
 arena_room_max_time = 240
 arenaKickPosition = { x = 597, y = 593, z = 6 } -- position where kick from arena when you leave/you did arena level
 arena_monsters = {}
-arena_monsters[42300] = 'frostfur'            -- first monster from 1 arena
+arena_monsters[42300] = 'frostfur'              -- first monster from 1 arena
 arena_monsters[42301] = 'bloodpaw'
 arena_monsters[42302] = 'bovinus'
 arena_monsters[42303] = 'achad'

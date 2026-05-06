@@ -1,6 +1,3 @@
-lua monster creator
-
-
 ----------------------------------------------------------------------------------------------------------------------------------
 --Based on monster maker tutorial: https://otland.net/threads/xml-how-to-make-a-monster-fully-explained-new.235454/#post-2272138--
 --Support: https://otland.net/----------------------------------------------------------------------------------------------------
@@ -13,13 +10,13 @@ lua monster creator
 -------------------------------------------------
 
 function UIComboBox:isOption(text)
-	if not self.options then return false end
-		for i,v in ipairs(self.options) do
-			if v.text == text then
-				return true
-			end
-		end
-	return false
+  if not self.options then return false end
+  for i, v in ipairs(self.options) do
+    if v.text == text then
+      return true
+    end
+  end
+  return false
 end
 
 -------------------------------------------------
@@ -60,7 +57,8 @@ ioTab = nil
 valuesTable = {}
 
 function init()
-  monsterMakerButton = modules.client_topmenu.addRightToggleButton('monsterMakerButton', tr('Monster Maker'), '/tool_monstermaker/img_tool_monstermaker/tool_monstermaker_img', toggle)
+  monsterMakerButton = modules.client_topmenu.addRightToggleButton('monsterMakerButton', tr('Monster Maker'),
+    '/tool_monstermaker/img_tool_monstermaker/tool_monstermaker_img', toggle)
   monsterMakerButton:setOn(false)
 
   monsterMakerWindow = g_ui.displayUI('tool_monstermaker')
@@ -734,14 +732,14 @@ function setMonsterPreview()
   --Anty outfit crash (avoid danger checktype id)
   --Test on 8.6--
   if checkType == 1 or checkType == 135 or (checkType >= 161 and checkType <= 191) or checkType == 411 or checkType == 415 or checkType == 424 or
-  checkType == 439 or checkType == 440 or checkType == 468 or checkType == 469 or (checkType >= 474 and checkType <= 485) or checkType == 501 or
-  checkType == 518 or checkType == 519 or checkType == 520 or checkType == 524 or checkType == 525 or checkType == 536 or checkType == 543 or
-  checkType == 549 or checkType == 576 or checkType == 581 or checkType == 582 or checkType == 597 or checkType == 616 or checkType == 623 or
-  checkType == 625 or (checkType >= 638 and checkType <= 646) or (checkType >= 652 and checkType <= 664) or checkType == 678 or
-  (checkType >= 700 and checkType <= 711) or checkType == 713 or checkType == 715 or checkType == 718 or checkType == 719 or checkType == 722 or
-  checkType == 723 or checkType == 737 or (checkType >= 741 and checkType <= 744) or checkType == 748 or (checkType >= 751 and checkType <= 758) or
-  (checkType >= 764 and checkType <= 801) --[[<-- Checked]] or (checkType >= 802 and checkType <= 841) --[[<-- not checked]] or checkType == 861 or
-  (checkType >= 864 and checkType <= 867) or checkType == 871 or checkType == 872 or checkType == 880 or (checkType >= 891 and checkType <= 898) then
+      checkType == 439 or checkType == 440 or checkType == 468 or checkType == 469 or (checkType >= 474 and checkType <= 485) or checkType == 501 or
+      checkType == 518 or checkType == 519 or checkType == 520 or checkType == 524 or checkType == 525 or checkType == 536 or checkType == 543 or
+      checkType == 549 or checkType == 576 or checkType == 581 or checkType == 582 or checkType == 597 or checkType == 616 or checkType == 623 or
+      checkType == 625 or (checkType >= 638 and checkType <= 646) or (checkType >= 652 and checkType <= 664) or checkType == 678 or
+      (checkType >= 700 and checkType <= 711) or checkType == 713 or checkType == 715 or checkType == 718 or checkType == 719 or checkType == 722 or
+      checkType == 723 or checkType == 737 or (checkType >= 741 and checkType <= 744) or checkType == 748 or (checkType >= 751 and checkType <= 758) or
+      (checkType >= 764 and checkType <= 801) --[[<-- Checked]] or (checkType >= 802 and checkType <= 841) --[[<-- not checked]] or checkType == 861 or
+      (checkType >= 864 and checkType <= 867) or checkType == 871 or checkType == 872 or checkType == 880 or (checkType >= 891 and checkType <= 898) then
     checkType = 0
   end
 
@@ -749,9 +747,14 @@ function setMonsterPreview()
 
   if g_sprites.isLoaded() then
     if valuesTable.looktypeCheckBox:isChecked() then
-      outfit = {type = checkType, feet = tonumber(valuesTable.feet:getText()), addons = tonumber(valuesTable.addons:getText()), legs = tonumber(valuesTable.legs:getText()), auxType = 0, head = tonumber(valuesTable.head:getText()), body = tonumber(valuesTable.body:getText()), mount = tonumber(valuesTable.mount:getText())}
+      outfit = { type = checkType, feet = tonumber(valuesTable.feet:getText()), addons = tonumber(valuesTable.addons
+      :getText()), legs = tonumber(valuesTable.legs:getText()), auxType = 0, head = tonumber(valuesTable.head:getText()), body =
+      tonumber(valuesTable.body:getText()), mount = tonumber(valuesTable.mount:getText()) }
     elseif valuesTable.looktypeExCheckBox:isChecked() then
-      outfit = {type = 130, feet = tonumber(valuesTable.feet:getText()), addons = tonumber(valuesTable.addons:getText()), legs = tonumber(valuesTable.legs:getText()), auxType = tonumber(valuesTable.looktype:getText()), head = tonumber(valuesTable.head:getText()), body = tonumber(valuesTable.body:getText()), mount = tonumber(valuesTable.mount:getText())}
+      outfit = { type = 130, feet = tonumber(valuesTable.feet:getText()), addons = tonumber(valuesTable.addons:getText()), legs =
+      tonumber(valuesTable.legs:getText()), auxType = tonumber(valuesTable.looktype:getText()), head = tonumber(
+      valuesTable.head:getText()), body = tonumber(valuesTable.body:getText()), mount = tonumber(valuesTable.mount
+      :getText()) }
     end
     valuesTable.monsterPreview:setOutfit(outfit)
   else
@@ -897,47 +900,49 @@ function generateXMLattack(table, indentation, firstIndentation)
   firstIndentation = firstIndentation or ''
 
   local attack = ''
-  attack = attack..firstIndentation..'<attack name="'..table.name..'" interval="'..table.interval..'"'
+  attack = attack .. firstIndentation .. '<attack name="' .. table.name .. '" interval="' .. table.interval .. '"'
   if table.chance ~= nil then
-    attack = attack..' chance="'..table.chance..'"'
+    attack = attack .. ' chance="' .. table.chance .. '"'
   end
   if table.length ~= nil then
-    attack = attack..' length="'..table.length..'"'
+    attack = attack .. ' length="' .. table.length .. '"'
   end
   if table.spread ~= nil then
-    attack = attack..' spread="'..table.spread..'"'
+    attack = attack .. ' spread="' .. table.spread .. '"'
   end
   if table.radius ~= nil then
-    attack = attack..' radius="'..table.radius..'"'
+    attack = attack .. ' radius="' .. table.radius .. '"'
   end
   if table.range ~= nil then
-    attack = attack..' range="'..table.range..'"'
+    attack = attack .. ' range="' .. table.range .. '"'
   end
   if table.target ~= nil then
-    attack = attack..' target="'..table.target..'"'
+    attack = attack .. ' target="' .. table.target .. '"'
   end
   if table.min ~= nil and table.max ~= nil then
-    attack = attack..' min="'..table.min..'" max="'..table.max..'"'
+    attack = attack .. ' min="' .. table.min .. '" max="' .. table.max .. '"'
   elseif table.skill ~= nil and table.attack ~= nil then
-    attack = attack..' skill="'..table.skill..'" attack="'..table.attack..'"'
+    attack = attack .. ' skill="' .. table.skill .. '" attack="' .. table.attack .. '"'
   end
   if table.poison ~= nil then
-    attack = attack..' poison="'..table.poison..'"'
+    attack = attack .. ' poison="' .. table.poison .. '"'
   end
   if not (table.areaEffect ~= nil or table.shootEffect ~= nil) then
-    attack = attack..'/>'
+    attack = attack .. '/>'
   else
-    attack = attack..'>'
+    attack = attack .. '>'
 
     if table.areaEffect ~= nil then
-      attack = attack..'\n'..firstIndentation..indentation..'<attribute key="areaEffect" value="'..table.areaEffect..'"/>'
+      attack = attack ..
+      '\n' .. firstIndentation .. indentation .. '<attribute key="areaEffect" value="' .. table.areaEffect .. '"/>'
     end
 
     if table.shootEffect ~= nil then
-      attack = attack..'\n'..firstIndentation..indentation..'<attribute key="shootEffect" value="'..table.shootEffect..'"/>'
+      attack = attack ..
+      '\n' .. firstIndentation .. indentation .. '<attribute key="shootEffect" value="' .. table.shootEffect .. '"/>'
     end
 
-    attack = attack..'\n'..firstIndentation..'</attack>'
+    attack = attack .. '\n' .. firstIndentation .. '</attack>'
   end
 
   return attack
@@ -961,7 +966,7 @@ function addToUIAndTable(attackUITable)
   listUIAttacksTable[id] = g_ui.createWidget('ChoiceListLabel', valuesTable.attacksAttackslist)
   listUIAttacksTable[id]:setText(generateXMLattack(attackUITable))
   listUIAttacksTable[id]:setId(id)
-  listUIAttacksTable[id]:setHeight(14*(1 + newLine))
+  listUIAttacksTable[id]:setHeight(14 * (1 + newLine))
 end
 
 function showAttackFromTable()
@@ -1010,7 +1015,7 @@ function showAttackFromTable()
   --interval/chance
   valuesTable.attacksInterval:setText(attacksTable[selectedRow].interval)
   valuesTable.attacksChance:setText(attacksTable[selectedRow].chance)
-  
+
   --length/spread/radius/poison
   if attacksTable[selectedRow].length ~= nil then
     valuesTable.attacksLengthCheckBox:setChecked(true)
@@ -1044,7 +1049,7 @@ function showAttackFromTable()
   else
     valuesTable.attacksTargetCheckBox:setChecked(false)
   end
-  
+
   --area/shoot effect
   if attacksTable[selectedRow].areaEffect then
     valuesTable.attacksAreaEffectComboBox:setOption(attacksTable[selectedRow].areaEffect)
@@ -1072,7 +1077,7 @@ function editAttackFromTable()
   local _, newLine = string.gsub(generateXMLattack(getAttackFromUI()), '\n', '\n')
 
   listUIAttacksTable[selectedRow]:setText(generateXMLattack(getAttackFromUI()))
-  listUIAttacksTable[selectedRow]:setHeight(14*(1 + newLine))
+  listUIAttacksTable[selectedRow]:setHeight(14 * (1 + newLine))
 end
 
 function deleteAttackFromTable()
@@ -1088,7 +1093,7 @@ function deleteAttackFromTable()
 end
 
 function deleteAllAttackFromTable()
-  for _,child in pairs(valuesTable.attacksAttackslist:getChildren()) do
+  for _, child in pairs(valuesTable.attacksAttackslist:getChildren()) do
     attacksTable[tonumber(child:getId())] = nil
     listUIAttacksTable[tonumber(child:getId())]:destroy()
     listUIAttacksTable[tonumber(child:getId())] = nil
@@ -1141,7 +1146,7 @@ function changeDefenseType(option)
     valuesTable.defensesRadius:setEnabled(false)
     valuesTable.defensesSpeedchangeLabel:setEnabled(false)
     valuesTable.defensesSpeedchange:setEnabled(false)
-  end 
+  end
 end
 
 local defensesTable = {}
@@ -1185,22 +1190,25 @@ function generateXMLdefense(table, indentation, firstIndentation)
   firstIndentation = firstIndentation or ''
 
   local defense = ''
-  defense = defense..firstIndentation..'<defense name="'..table.name..'" interval="'..table.interval..'" chance="'..table.chance..'"'
+  defense = defense ..
+  firstIndentation .. '<defense name="' .. table.name .. '" interval="' ..
+  table.interval .. '" chance="' .. table.chance .. '"'
   if table.name == 'healing' then
-    defense = defense..' min="'..table.min..'" max="'..table.max..'"'
+    defense = defense .. ' min="' .. table.min .. '" max="' .. table.max .. '"'
     if table.radius ~= nil then
-      defense = defense..' radius="'..table.radius..'"'
+      defense = defense .. ' radius="' .. table.radius .. '"'
     end
   elseif table.name == 'speed' then
-    defense = defense..' duration="'..table.duration..'" speedchange="'..table.speedChange..'"'
+    defense = defense .. ' duration="' .. table.duration .. '" speedchange="' .. table.speedChange .. '"'
   elseif table.name == 'invisible' then
-    defense = defense..' duration="'..table.duration..'"'
+    defense = defense .. ' duration="' .. table.duration .. '"'
   end
-  defense = defense..'>'
+  defense = defense .. '>'
 
-  defense = defense..'\n'..firstIndentation..indentation..'<attribute key="areaEffect" value="'..table.areaEffect..'"/>'
+  defense = defense ..
+  '\n' .. firstIndentation .. indentation .. '<attribute key="areaEffect" value="' .. table.areaEffect .. '"/>'
 
-  defense = defense..'\n'..firstIndentation..'</defense>'
+  defense = defense .. '\n' .. firstIndentation .. '</defense>'
 
   return defense
 end
@@ -1223,7 +1231,7 @@ function addDefenseToUIAndTable(defenseUITable)
   listUIDefensesTable[id] = g_ui.createWidget('ChoiceListLabel', valuesTable.defensesList)
   listUIDefensesTable[id]:setText(generateXMLdefense(defenseUITable))
   listUIDefensesTable[id]:setId(id)
-  listUIDefensesTable[id]:setHeight(14*(1 + newLine))
+  listUIDefensesTable[id]:setHeight(14 * (1 + newLine))
 end
 
 function showDefenseFromTable()
@@ -1276,7 +1284,7 @@ function editDefenseFromTable()
   local _, newLine = string.gsub(generateXMLdefense(getDefenseFromUI()), '\n', '\n')
 
   listUIDefensesTable[selectedRow]:setText(generateXMLdefense(getDefenseFromUI()))
-  listUIDefensesTable[selectedRow]:setHeight(14*(1 + newLine))
+  listUIDefensesTable[selectedRow]:setHeight(14 * (1 + newLine))
 end
 
 function deleteDefenseFromTable()
@@ -1292,7 +1300,7 @@ function deleteDefenseFromTable()
 end
 
 function deleteAllDefenseFromTable()
-  for _,child in pairs(valuesTable.defensesList:getChildren()) do
+  for _, child in pairs(valuesTable.defensesList:getChildren()) do
     defensesTable[tonumber(child:getId())] = nil
     listUIDefensesTable[tonumber(child:getId())]:destroy()
     listUIDefensesTable[tonumber(child:getId())] = nil
@@ -1323,7 +1331,10 @@ function generateXMLsummon(table, indentation, firstIndentation)
   firstIndentation = firstIndentation or ''
 
   local summon = ''
-  summon = summon..firstIndentation..'<summon name="'..table.name..'" interval="'..table.interval..'" chance="'..table.chance..'" max="'..table.max..'"/>'
+  summon = summon ..
+  firstIndentation ..
+  '<summon name="' .. table.name ..
+  '" interval="' .. table.interval .. '" chance="' .. table.chance .. '" max="' .. table.max .. '"/>'
 
   return summon
 end
@@ -1346,7 +1357,7 @@ function addSummonToUIAndTable(summonUITable)
   listUISummonsTable[id] = g_ui.createWidget('ChoiceListLabel', valuesTable.summonsList)
   listUISummonsTable[id]:setText(generateXMLsummon(summonUITable))
   listUISummonsTable[id]:setId(id)
-  listUISummonsTable[id]:setHeight(14*(1 + newLine))
+  listUISummonsTable[id]:setHeight(14 * (1 + newLine))
 end
 
 function showSummonFromTable()
@@ -1376,7 +1387,7 @@ function editSummonFromTable()
   local _, newLine = string.gsub(generateXMLsummon(getSummonFromUI()), '\n', '\n')
 
   listUISummonsTable[selectedRow]:setText(generateXMLsummon(getSummonFromUI()))
-  listUISummonsTable[selectedRow]:setHeight(14*(1 + newLine))
+  listUISummonsTable[selectedRow]:setHeight(14 * (1 + newLine))
 end
 
 function deleteSummonFromTable()
@@ -1392,7 +1403,7 @@ function deleteSummonFromTable()
 end
 
 function deleteAllSummonFromTable()
-  for _,child in pairs(valuesTable.summonsList:getChildren()) do
+  for _, child in pairs(valuesTable.summonsList:getChildren()) do
     summonsTable[tonumber(child:getId())] = nil
     listUISummonsTable[tonumber(child:getId())]:destroy()
     listUISummonsTable[tonumber(child:getId())] = nil
@@ -1421,11 +1432,11 @@ function generateXMLvoice(table, indentation, firstIndentation)
   firstIndentation = firstIndentation or ''
 
   local voice = ''
-  voice = voice..firstIndentation..'<voice sentence="'..table.voicesSentence..'"'
+  voice = voice .. firstIndentation .. '<voice sentence="' .. table.voicesSentence .. '"'
   if table.voicesYell then
-    voice = voice..' yell="1"/>'
+    voice = voice .. ' yell="1"/>'
   else
-    voice = voice..'/>'
+    voice = voice .. '/>'
   end
 
   return voice
@@ -1449,7 +1460,7 @@ function addVoiceToUIAndTable(voiceUITable)
   listUIVoicesTable[id] = g_ui.createWidget('ChoiceListLabel', valuesTable.voicesList)
   listUIVoicesTable[id]:setText(generateXMLvoice(voiceUITable))
   listUIVoicesTable[id]:setId(id)
-  listUIVoicesTable[id]:setHeight(14*(1 + newLine))
+  listUIVoicesTable[id]:setHeight(14 * (1 + newLine))
 end
 
 function showVoiceFromTable()
@@ -1481,7 +1492,7 @@ function editVoiceFromTable()
   local _, newLine = string.gsub(generateXMLvoice(getVoiceFromUI()), '\n', '\n')
 
   listUIVoicesTable[selectedRow]:setText(generateXMLvoice(getVoiceFromUI()))
-  listUIVoicesTable[selectedRow]:setHeight(14*(1 + newLine))
+  listUIVoicesTable[selectedRow]:setHeight(14 * (1 + newLine))
 end
 
 function deleteVoiceFromTable()
@@ -1497,7 +1508,7 @@ function deleteVoiceFromTable()
 end
 
 function deleteAllVoiceFromTable()
-  for _,child in pairs(valuesTable.voicesList:getChildren()) do
+  for _, child in pairs(valuesTable.voicesList:getChildren()) do
     voicesTable[tonumber(child:getId())] = nil
     listUIVoicesTable[tonumber(child:getId())]:destroy()
     listUIVoicesTable[tonumber(child:getId())] = nil
@@ -1607,28 +1618,28 @@ function generateXMLloot(table, indentation, firstIndentation)
 
   local loot = ''
   if table.id ~= nil then
-    loot = loot..firstIndentation..'<item id="'..table.id..'"'
+    loot = loot .. firstIndentation .. '<item id="' .. table.id .. '"'
   elseif table.name ~= nil then
-    loot = loot..firstIndentation..'<item name="'..table.name..'"'
+    loot = loot .. firstIndentation .. '<item name="' .. table.name .. '"'
   end
   if table.countmax ~= nil then
-    loot = loot..' countmax="'..table.countmax..'"'
+    loot = loot .. ' countmax="' .. table.countmax .. '"'
   end
   if table.subtype ~= nil then
-    loot = loot..' subtype="'..translateLootSubtype(table.subtype)..'"'
+    loot = loot .. ' subtype="' .. translateLootSubtype(table.subtype) .. '"'
   end
   if table.actionid ~= nil then
-    loot = loot..' actionId="'..table.actionid..'"'
+    loot = loot .. ' actionId="' .. table.actionid .. '"'
   end
   if table.uniqueid ~= nil then
-    loot = loot..' uniqueId="'..table.uniqueid..'"'
+    loot = loot .. ' uniqueId="' .. table.uniqueid .. '"'
   end
   if table.text ~= nil then
-    loot = loot..' text="'..table.text..'"'
+    loot = loot .. ' text="' .. table.text .. '"'
   end
-  loot = loot..' chance="'..table.chance..'"'..'/>'
+  loot = loot .. ' chance="' .. table.chance .. '"' .. '/>'
   if table.comment ~= nil then
-    loot = loot..' <!--'..table.comment..'-->'
+    loot = loot .. ' <!--' .. table.comment .. '-->'
   end
 
   return loot
@@ -1652,7 +1663,7 @@ function addLootToUIAndTable(lootUITable)
   listUILootTable[id] = g_ui.createWidget('ChoiceListLabel', valuesTable.lootList)
   listUILootTable[id]:setText(generateXMLloot(lootUITable))
   listUILootTable[id]:setId(id)
-  listUILootTable[id]:setHeight(14*(1 + newLine))
+  listUILootTable[id]:setHeight(14 * (1 + newLine))
 end
 
 function showLootFromTable()
@@ -1720,7 +1731,7 @@ function editLootFromTable()
   local _, newLine = string.gsub(generateXMLloot(getLootFromUI()), '\n', '\n')
 
   listUILootTable[selectedRow]:setText(generateXMLloot(getLootFromUI()))
-  listUILootTable[selectedRow]:setHeight(14*(1 + newLine))
+  listUILootTable[selectedRow]:setHeight(14 * (1 + newLine))
 end
 
 function deleteLootFromTable()
@@ -1736,7 +1747,7 @@ function deleteLootFromTable()
 end
 
 function deleteAllLootFromTable()
-  for _,child in pairs(valuesTable.lootList:getChildren()) do
+  for _, child in pairs(valuesTable.lootList:getChildren()) do
     lootTable[tonumber(child:getId())] = nil
     listUILootTable[tonumber(child:getId())]:destroy()
     listUILootTable[tonumber(child:getId())] = nil
@@ -1751,244 +1762,319 @@ function generateXMLFile(indentation)
   indentation = indentation or '\t'
   local fileXMLString = ''
 
-  fileXMLString = fileXMLString..'<!-- Generated with OTClient monstermaker [0.9.0] -->'..'\n'
-  fileXMLString = fileXMLString..'<?xml version="1.0" encoding="UTF-8"?>'
+  fileXMLString = fileXMLString .. '<!-- Generated with OTClient monstermaker [0.9.0] -->' .. '\n'
+  fileXMLString = fileXMLString .. '<?xml version="1.0" encoding="UTF-8"?>'
 
-  --Monster  
-  fileXMLString = fileXMLString..'\n'..'<monster name="'..valuesTable.name:getText()..'" nameDescription="'..valuesTable.nameDescription:getText()..
-  '" race="'..valuesTable.race:getText()..'" experience="'..valuesTable.experience:getText()..'" skull="'..valuesTable.skull:getText()..
-  '" speed="'..valuesTable.speed:getText()..'" manacost="'..valuesTable.manacost:getText()..'">'
-  
-  fileXMLString = fileXMLString..'\n'..indentation..'<health now="'..valuesTable.healthnow:getText()..'" max="'..valuesTable.healthmax:getText()..'"/>'
-  
+  --Monster
+  fileXMLString = fileXMLString ..
+      '\n' ..
+      '<monster name="' .. valuesTable.name:getText() .. '" nameDescription="' .. valuesTable.nameDescription:getText() ..
+      '" race="' ..
+      valuesTable.race:getText() ..
+      '" experience="' .. valuesTable.experience:getText() .. '" skull="' .. valuesTable.skull:getText() ..
+      '" speed="' .. valuesTable.speed:getText() .. '" manacost="' .. valuesTable.manacost:getText() .. '">'
+
+  fileXMLString = fileXMLString ..
+  '\n' ..
+  indentation .. '<health now="' .. valuesTable.healthnow:getText() .. '" max="' ..
+  valuesTable.healthmax:getText() .. '"/>'
+
   local lookTypeFormat = nil
   if valuesTable.looktypeOption:getSelectedWidget():getText() == 'Look Type' then
     lookTypeFormat = 'type'
   elseif valuesTable.looktypeOption:getSelectedWidget():getText() == 'Look TypeEx' then
     lookTypeFormat = 'typeEx'
   end
-  
-  fileXMLString = fileXMLString..'\n'..indentation..'<look '..lookTypeFormat..'="'..valuesTable.looktype:getText()..'" head="'..valuesTable.head:getText()..
-  '" body="'..valuesTable.body:getText()..'" legs="'..valuesTable.legs:getText()..'" feet="'..valuesTable.feet:getText()..'" addons="'..
-  valuesTable.addons:getText()..'" mount="'..valuesTable.mount:getText()..'" corpse="'..valuesTable.corpse:getText()..'"/>'
-  
-  fileXMLString = fileXMLString..'\n'..indentation..'<targetchange interval="'..valuesTable.interval:getText()..'" chance="'..valuesTable.chance:getText()..'"/>'
-  
+
+  fileXMLString = fileXMLString ..
+      '\n' ..
+      indentation ..
+      '<look ' .. lookTypeFormat .. '="' .. valuesTable.looktype:getText() .. '" head="' .. valuesTable.head:getText() ..
+      '" body="' ..
+      valuesTable.body:getText() ..
+      '" legs="' .. valuesTable.legs:getText() .. '" feet="' .. valuesTable.feet:getText() .. '" addons="' ..
+      valuesTable.addons:getText() ..
+      '" mount="' .. valuesTable.mount:getText() .. '" corpse="' .. valuesTable.corpse:getText() .. '"/>'
+
+  fileXMLString = fileXMLString ..
+  '\n' ..
+  indentation ..
+  '<targetchange interval="' .. valuesTable.interval:getText() .. '" chance="' .. valuesTable.chance:getText() .. '"/>'
+
   if valuesTable.strategyCheck:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..'<strategy attack="'..valuesTable.strategy:getValue()..'" defense="'..(100 - valuesTable.strategy:getValue())..'"/>'
+    fileXMLString = fileXMLString ..
+    '\n' ..
+    indentation ..
+    '<strategy attack="' ..
+    valuesTable.strategy:getValue() .. '" defense="' .. (100 - valuesTable.strategy:getValue()) .. '"/>'
   end
 
   --Flags
-  fileXMLString = fileXMLString..'\n'..indentation..'<flags>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag summonable="'..booleantonumber(valuesTable.flagsSummonable:isChecked())..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag attackable="'..booleantonumber(valuesTable.flagsAttackable:isChecked())..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag hostile="'..booleantonumber(valuesTable.flagsHostile:isChecked())..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag illusionable="'..booleantonumber(valuesTable.flagsIllusionable:isChecked())..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag convinceable="'..booleantonumber(valuesTable.flagsConvinceable:isChecked())..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag pushable="'..booleantonumber(valuesTable.flagsPushable:isChecked())..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag canpushitems="'..booleantonumber(valuesTable.flagsCanpushitems:isChecked())..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag canpushcreatures="'..booleantonumber(valuesTable.flagsCanpushcreatures:isChecked())..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag targetdistance="'..valuesTable.flagsTargetdistance:getText()..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag staticattack="'..valuesTable.flagsStaticattack:getValue()..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag hidehealth="'..booleantonumber(valuesTable.flagsHidehealth:isChecked())..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag lightcolor="'..valuesTable.flagsLightcolor:getText()..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag lightlevel="'..valuesTable.flagsLightlevel:getText()..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<flag runonhealth="'..valuesTable.flagsRunonhealth:getValue()..'"/>'
-  fileXMLString = fileXMLString..'\n'..indentation..'</flags>'
+  fileXMLString = fileXMLString .. '\n' .. indentation .. '<flags>'
+  fileXMLString = fileXMLString ..
+  '\n' .. indentation ..
+  indentation .. '<flag summonable="' .. booleantonumber(valuesTable.flagsSummonable:isChecked()) .. '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' .. indentation ..
+  indentation .. '<flag attackable="' .. booleantonumber(valuesTable.flagsAttackable:isChecked()) .. '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' .. indentation .. indentation .. '<flag hostile="' .. booleantonumber(valuesTable.flagsHostile:isChecked()) ..
+  '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' ..
+  indentation .. indentation .. '<flag illusionable="' ..
+  booleantonumber(valuesTable.flagsIllusionable:isChecked()) .. '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' ..
+  indentation .. indentation .. '<flag convinceable="' ..
+  booleantonumber(valuesTable.flagsConvinceable:isChecked()) .. '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' .. indentation .. indentation .. '<flag pushable="' ..
+  booleantonumber(valuesTable.flagsPushable:isChecked()) .. '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' ..
+  indentation .. indentation .. '<flag canpushitems="' ..
+  booleantonumber(valuesTable.flagsCanpushitems:isChecked()) .. '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' ..
+  indentation ..
+  indentation .. '<flag canpushcreatures="' .. booleantonumber(valuesTable.flagsCanpushcreatures:isChecked()) .. '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' .. indentation .. indentation .. '<flag targetdistance="' .. valuesTable.flagsTargetdistance:getText() .. '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' .. indentation .. indentation .. '<flag staticattack="' .. valuesTable.flagsStaticattack:getValue() .. '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' .. indentation ..
+  indentation .. '<flag hidehealth="' .. booleantonumber(valuesTable.flagsHidehealth:isChecked()) .. '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' .. indentation .. indentation .. '<flag lightcolor="' .. valuesTable.flagsLightcolor:getText() .. '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' .. indentation .. indentation .. '<flag lightlevel="' .. valuesTable.flagsLightlevel:getText() .. '"/>'
+  fileXMLString = fileXMLString ..
+  '\n' .. indentation .. indentation .. '<flag runonhealth="' .. valuesTable.flagsRunonhealth:getValue() .. '"/>'
+  fileXMLString = fileXMLString .. '\n' .. indentation .. '</flags>'
 
   --Script
   if valuesTable.scriptOnscript:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..'<script>'
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<event name="'..valuesTable.scriptAddscript:getText()..'"/>'
-    fileXMLString = fileXMLString..'\n'..indentation..'</script>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. '<script>'
+    fileXMLString = fileXMLString ..
+    '\n' .. indentation .. indentation .. '<event name="' .. valuesTable.scriptAddscript:getText() .. '"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. '</script>'
   end
 
   --Attacks
   if not table.empty(attacksTable) then
-    fileXMLString = fileXMLString..'\n'..indentation..'<attacks>'
-    for a,b in pairs(attacksTable) do
-      fileXMLString = fileXMLString..'\n'..generateXMLattack(b, indentation, indentation..indentation)
+    fileXMLString = fileXMLString .. '\n' .. indentation .. '<attacks>'
+    for a, b in pairs(attacksTable) do
+      fileXMLString = fileXMLString .. '\n' .. generateXMLattack(b, indentation, indentation .. indentation)
     end
-    fileXMLString = fileXMLString..'\n'..indentation..'</attacks>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. '</attacks>'
   end
 
   --Defenses
   if not table.empty(defensesTable) then
-    fileXMLString = fileXMLString..'\n'..indentation..'<defenses armor="'..valuesTable.defensesArmor:getText()..'" defense="'..valuesTable.defensesDefense:getText()..'">'
-    
-    for a,b in pairs(defensesTable) do
-      fileXMLString = fileXMLString..'\n'..generateXMLdefense(b, indentation, indentation..indentation)
+    fileXMLString = fileXMLString ..
+    '\n' ..
+    indentation ..
+    '<defenses armor="' ..
+    valuesTable.defensesArmor:getText() .. '" defense="' .. valuesTable.defensesDefense:getText() .. '">'
+
+    for a, b in pairs(defensesTable) do
+      fileXMLString = fileXMLString .. '\n' .. generateXMLdefense(b, indentation, indentation .. indentation)
     end
 
-    fileXMLString = fileXMLString..'\n'..indentation..'</defenses>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. '</defenses>'
   else
-    fileXMLString = fileXMLString..'\n'..indentation..'<defenses armor="'..valuesTable.defensesArmor:getText()..'" defense="'..valuesTable.defensesDefense:getText()..'"/>'
+    fileXMLString = fileXMLString ..
+    '\n' ..
+    indentation ..
+    '<defenses armor="' ..
+    valuesTable.defensesArmor:getText() .. '" defense="' .. valuesTable.defensesDefense:getText() .. '"/>'
   end
 
   --Elements
-  fileXMLString = fileXMLString..'\n'..indentation..'<elements>'
+  fileXMLString = fileXMLString .. '\n' .. indentation .. '<elements>'
   if valuesTable.elementsHolyText:getValue() ~= 0 then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<element holyPercent="'..valuesTable.elementsHolyText:getValue()..'"/>'
+    fileXMLString = fileXMLString ..
+    '\n' .. indentation .. indentation .. '<element holyPercent="' .. valuesTable.elementsHolyText:getValue() .. '"/>'
   end
   if valuesTable.elementsDeathText:getValue() ~= 0 then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<element deathPercent="'..valuesTable.elementsDeathText:getValue()..'"/>'
+    fileXMLString = fileXMLString ..
+    '\n' .. indentation .. indentation .. '<element deathPercent="' .. valuesTable.elementsDeathText:getValue() .. '"/>'
   end
   if valuesTable.elementsIceText:getValue() ~= 0 then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<element icePercent="'..valuesTable.elementsIceText:getValue()..'"/>'
+    fileXMLString = fileXMLString ..
+    '\n' .. indentation .. indentation .. '<element icePercent="' .. valuesTable.elementsIceText:getValue() .. '"/>'
   end
   if valuesTable.elementsFireText:getValue() ~= 0 then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<element firePercent="'..valuesTable.elementsFireText:getValue()..'"/>'
+    fileXMLString = fileXMLString ..
+    '\n' .. indentation .. indentation .. '<element firePercent="' .. valuesTable.elementsFireText:getValue() .. '"/>'
   end
   if valuesTable.elementsEarthText:getValue() ~= 0 then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<element earthPercent="'..valuesTable.elementsEarthText:getValue()..'"/>'
+    fileXMLString = fileXMLString ..
+    '\n' .. indentation .. indentation .. '<element earthPercent="' .. valuesTable.elementsEarthText:getValue() .. '"/>'
   end
   if valuesTable.elementsEnergyText:getValue() ~= 0 then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<element energyPercent="'..valuesTable.elementsEnergyText:getValue()..'"/>'
+    fileXMLString = fileXMLString ..
+    '\n' .. indentation .. indentation .. '<element energyPercent="' .. valuesTable.elementsEnergyText:getValue() ..
+    '"/>'
   end
   if valuesTable.elementsPhysicalText:getValue() ~= 0 then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<element physicalPercent="'..valuesTable.elementsPhysicalText:getValue()..'"/>'
+    fileXMLString = fileXMLString ..
+    '\n' .. indentation .. indentation ..
+    '<element physicalPercent="' .. valuesTable.elementsPhysicalText:getValue() .. '"/>'
   end
   if valuesTable.elementsLifedrainText:getValue() ~= 0 then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<element lifedrainPercent="'..valuesTable.elementsLifedrainText:getValue()..'"/>'
+    fileXMLString = fileXMLString ..
+    '\n' .. indentation ..
+    indentation .. '<element lifedrainPercent="' .. valuesTable.elementsLifedrainText:getValue() .. '"/>'
   end
   if valuesTable.elementsDrownText:getValue() ~= 0 then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<element drownPercent="'..valuesTable.elementsDrownText:getValue()..'"/>'
+    fileXMLString = fileXMLString ..
+    '\n' .. indentation .. indentation .. '<element drownPercent="' .. valuesTable.elementsDrownText:getValue() .. '"/>'
   end
-  fileXMLString = fileXMLString..'\n'..indentation..'</elements>'
+  fileXMLString = fileXMLString .. '\n' .. indentation .. '</elements>'
 
   --Immunities
-  fileXMLString = fileXMLString..'\n'..indentation..'<immunities>'
+  fileXMLString = fileXMLString .. '\n' .. indentation .. '<immunities>'
   if valuesTable.immunitiesHoly:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity holy="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity holy="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity holy="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity holy="0"/>'
   end
   if valuesTable.immunitiesDeath:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity death="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity death="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity death="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity death="0"/>'
   end
   if valuesTable.immunitiesIce:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity ice="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity ice="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity ice="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity ice="0"/>'
   end
   if valuesTable.immunitiesFire:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity fire="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity fire="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity fire="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity fire="0"/>'
   end
   if valuesTable.immunitiesEarth:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity earth="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity earth="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity earth="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity earth="0"/>'
   end
   if valuesTable.immunitiesEnergy:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity energy="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity energy="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity energy="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity energy="0"/>'
   end
   if valuesTable.immunitiesPhysical:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity physical="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity physical="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity physical="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity physical="0"/>'
   end
   if valuesTable.immunitiesLifedrain:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity lifedrain="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity lifedrain="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity lifedrain="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity lifedrain="0"/>'
   end
   if valuesTable.immunitiesDrown:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity drown="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity drown="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity drown="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity drown="0"/>'
   end
   if valuesTable.immunitiesParalyze:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity paralyze="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity paralyze="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity paralyze="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity paralyze="0"/>'
   end
   if valuesTable.immunitiesDrunk:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity drunk="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity drunk="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity drunk="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity drunk="0"/>'
   end
   if valuesTable.immunitiesInvisible:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity invisible="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity invisible="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity invisible="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity invisible="0"/>'
   end
   if valuesTable.immunitiesOutfit:isChecked() then
-    fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity outfit="1"/>'
-  --else
-  --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity outfit="0"/>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. indentation .. '<immunity outfit="1"/>'
+    --else
+    --  fileXMLString = fileXMLString..'\n'..indentation..indentation..'<immunity outfit="0"/>'
   end
-  fileXMLString = fileXMLString..'\n'..indentation..'</immunities>'
+  fileXMLString = fileXMLString .. '\n' .. indentation .. '</immunities>'
 
   --Summons
   if not table.empty(summonsTable) then
-    fileXMLString = fileXMLString..'\n'..indentation..'<summons maxSummons="'..valuesTable.summonsMaxSummons:getText()..'">'
-    for a,b in pairs(summonsTable) do
-      fileXMLString = fileXMLString..'\n'..generateXMLsummon(b, indentation, indentation..indentation)
+    fileXMLString = fileXMLString ..
+    '\n' .. indentation .. '<summons maxSummons="' .. valuesTable.summonsMaxSummons:getText() .. '">'
+    for a, b in pairs(summonsTable) do
+      fileXMLString = fileXMLString .. '\n' .. generateXMLsummon(b, indentation, indentation .. indentation)
     end
-    fileXMLString = fileXMLString..'\n'..indentation..'</summons>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. '</summons>'
   end
 
   --Voices
   if not table.empty(voicesTable) then
-    fileXMLString = fileXMLString..'\n'..indentation..'<voices interval="'..valuesTable.voicesInterval:getText()..'" chance="'..valuesTable.voicesChance:getText()..'">'
-    for a,b in pairs(voicesTable) do
-      fileXMLString = fileXMLString..'\n'..generateXMLvoice(b, indentation, indentation..indentation)
+    fileXMLString = fileXMLString ..
+    '\n' ..
+    indentation ..
+    '<voices interval="' .. valuesTable.voicesInterval:getText() ..
+    '" chance="' .. valuesTable.voicesChance:getText() .. '">'
+    for a, b in pairs(voicesTable) do
+      fileXMLString = fileXMLString .. '\n' .. generateXMLvoice(b, indentation, indentation .. indentation)
     end
-    fileXMLString = fileXMLString..'\n'..indentation..'</voices>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. '</voices>'
   end
 
   --Loot
   if not table.empty(lootTable) then
-    fileXMLString = fileXMLString..'\n'..indentation..'<loot>'
-    for a,b in pairs(lootTable) do
-      fileXMLString = fileXMLString..'\n'..generateXMLloot(b, indentation, indentation..indentation)
+    fileXMLString = fileXMLString .. '\n' .. indentation .. '<loot>'
+    for a, b in pairs(lootTable) do
+      fileXMLString = fileXMLString .. '\n' .. generateXMLloot(b, indentation, indentation .. indentation)
     end
-    fileXMLString = fileXMLString..'\n'..indentation..'</loot>'
+    fileXMLString = fileXMLString .. '\n' .. indentation .. '</loot>'
   end
 
-  fileXMLString = fileXMLString..'\n'..'</monster>'
+  fileXMLString = fileXMLString .. '\n' .. '</monster>'
 
   return fileXMLString
 end
 
 function saveToXML()
   local saveName = modules.tool_monstermaker.valuesTable.ioActualname:getText()
-  local saveFile = io.open(g_resources.getRealPath()..'tool_monstermaker/creatures/'..saveName, "r")
+  local saveFile = io.open(g_resources.getRealPath() .. 'tool_monstermaker/creatures/' .. saveName, "r")
   local warningWindow = nil
 
   if saveFile == nil then
-    local creatureXML = io.open(g_resources.getRealPath()..'tool_monstermaker/creatures/'..saveName, "w")
+    local creatureXML = io.open(g_resources.getRealPath() .. 'tool_monstermaker/creatures/' .. saveName, "w")
     if creatureXML then
       creatureXML:write(generateXMLFile())
       creatureXML:close()
       addCreatureFilesToList()
     end
 
-    local toMonsterXML = io.open(g_resources.getRealPath()..'tool_monstermaker/creatures/'..'monsters_'..saveName, "w")
+    local toMonsterXML = io.open(g_resources.getRealPath() .. 'tool_monstermaker/creatures/' .. 'monsters_' .. saveName,
+      "w")
     if toMonsterXML then
-      toMonsterXML:write('<monster name="'..valuesTable.name:getText().." file="..saveName..'" />')
+      toMonsterXML:write('<monster name="' .. valuesTable.name:getText() .. " file=" .. saveName .. '" />')
       toMonsterXML:close()
     end
   else
     saveFile:close()
 
     local yesCallback = function()
-      local creatureXML = io.open(g_resources.getRealPath()..'tool_monstermaker/creatures/'..saveName, "w")
+      local creatureXML = io.open(g_resources.getRealPath() .. 'tool_monstermaker/creatures/' .. saveName, "w")
       if creatureXML then
         creatureXML:write(generateXMLFile())
         creatureXML:close()
         addCreatureFilesToList()
       end
 
-      local toMonsterXML = io.open(g_resources.getRealPath()..'tool_monstermaker/creatures/'..'monsters_'..saveName, "w")
+      local toMonsterXML = io.open(g_resources.getRealPath() .. 'tool_monstermaker/creatures/' .. 'monsters_' .. saveName,
+        "w")
       if toMonsterXML then
-        toMonsterXML:write('<monster name="'..valuesTable.name:getText().." file="..saveName..'" />')
+        toMonsterXML:write('<monster name="' .. valuesTable.name:getText() .. " file=" .. saveName .. '" />')
         toMonsterXML:close()
       end
 
@@ -2002,10 +2088,12 @@ function saveToXML()
     end
 
     if not warningWindow then
-      warningWindow = displayGeneralBox(tr('Overwrite file'), tr('Do you want overwrite '..saveName..' file?\nIf you choose "yes", you will lost previous file!'), {
-        { text=tr('Yes'), callback = yesCallback},
-        { text=tr('No'), callback = noCallback},
-      anchor=AnchorHorizontalCenter}, yesCallback, noCallback)
+      warningWindow = displayGeneralBox(tr('Overwrite file'),
+        tr('Do you want overwrite ' .. saveName .. ' file?\nIf you choose "yes", you will lost previous file!'), {
+        { text = tr('Yes'), callback = yesCallback },
+        { text = tr('No'), callback = noCallback },
+        anchor = AnchorHorizontalCenter
+      }, yesCallback, noCallback)
     end
   end
 end
@@ -2015,18 +2103,18 @@ local creatureFilesLoadList = {}
 function addCreatureFilesToList()
   local creatureFiles = g_resources.listDirectoryFiles('/tool_monstermaker/creatures')
 
-  for c,d in pairs(creatureFiles) do
+  for c, d in pairs(creatureFiles) do
     if string.find(d, 'monsters_', 0) then
       creatureFiles[c] = nil
     end
   end
 
-  for a,b in pairs(creatureFilesLoadList) do
+  for a, b in pairs(creatureFilesLoadList) do
     creatureFilesLoadList[a]:destroy()
     creatureFilesLoadList[a] = nil
   end
 
-  for k,v in pairs(creatureFiles) do
+  for k, v in pairs(creatureFiles) do
     creatureFilesLoadList[k] = g_ui.createWidget('ChoiceListLabel', valuesTable.ioList)
     creatureFilesLoadList[k]:setText(v)
     creatureFilesLoadList[k]:setId(v)
@@ -2263,9 +2351,9 @@ function loadDataFromXMLToTable(sector, variableName, variableValue)
     valuesTable.strategyCheck:setChecked(true)
     if variableName == 'attack' then
       valuesTable.strategy:setValue(tonumber(variableValue))
-    --elseif variableName == 'defense' then
-    --  Ignore
-    --  valuesTable.strategy:setValue(100 - tonumber(variableValue))
+      --elseif variableName == 'defense' then
+      --  Ignore
+      --  valuesTable.strategy:setValue(100 - tonumber(variableValue))
     end
   elseif sector == 'flag' then
     if variableName == 'summonable' then
@@ -2509,7 +2597,7 @@ function loadFromXML()
 
   local selectedRow = valuesTable.ioList:getFocusedChild():getId()
 
-  local xml = io.open(g_resources.getRealPath()..'tool_monstermaker/creatures/'..selectedRow, "rb")
+  local xml = io.open(g_resources.getRealPath() .. 'tool_monstermaker/creatures/' .. selectedRow, "rb")
   local itemsXMLString = {}
 
   for line in xml:lines() do
@@ -2519,7 +2607,7 @@ function loadFromXML()
   xml:close()
 
   local parseSectors = {}
-  for a,b in ipairs(itemsXMLString) do
+  for a, b in ipairs(itemsXMLString) do
     local startSign = string.find(b, '<')
     if startSign then
       if string.sub(b, startSign + 1, startSign + 1) == '/' then
@@ -2559,26 +2647,26 @@ function loadFromXML()
           local commentText = ''
           local prePreparedText = ''
           if isStartComment and parseSectors[#parseSectors] == 'item' then
-            prePreparedText = string.sub(b, string.find(b, ' ', startSign), isStartComment-1)
+            prePreparedText = string.sub(b, string.find(b, ' ', startSign), isStartComment - 1)
             tableWithLoadingData.comment = string.sub(b, isStartComment + 4, isEndComment - 1)
           else
             prePreparedText = string.sub(b, string.find(b, ' ', startSign), string.len(b))
           end
           local preparedText = ''
           local startNewString = false
-          for i=1, #prePreparedText do
-            if prePreparedText:sub(i,i) == '"' then
+          for i = 1, #prePreparedText do
+            if prePreparedText:sub(i, i) == '"' then
               if not startNewString then
                 startNewString = true
-                preparedText = preparedText..prePreparedText:sub(i,i)
+                preparedText = preparedText .. prePreparedText:sub(i, i)
               else
                 startNewString = false
-                preparedText = preparedText..prePreparedText:sub(i,i)
+                preparedText = preparedText .. prePreparedText:sub(i, i)
               end
-            elseif prePreparedText:sub(i,i) == ' ' and not startNewString then
+            elseif prePreparedText:sub(i, i) == ' ' and not startNewString then
               --ignore
             else
-              preparedText = preparedText..prePreparedText:sub(i,i)
+              preparedText = preparedText .. prePreparedText:sub(i, i)
             end
           end
           while preparedText ~= '' do
@@ -2643,10 +2731,12 @@ function clearAllOptionsButton()
   end
 
   if not warningWindow then
-    warningWindow = displayGeneralBox(tr('Clear All'), tr('Do you want clear all changes?\nIf you choose "yes", you will lost all changes!'), {
-      { text=tr('Yes'), callback = yesCallback},
-      { text=tr('No'), callback = noCallback},
-    anchor=AnchorHorizontalCenter}, yesCallback, noCallback)
+    warningWindow = displayGeneralBox(tr('Clear All'),
+      tr('Do you want clear all changes?\nIf you choose "yes", you will lost all changes!'), {
+      { text = tr('Yes'), callback = yesCallback },
+      { text = tr('No'), callback = noCallback },
+      anchor = AnchorHorizontalCenter
+    }, yesCallback, noCallback)
   end
 end
 
@@ -2659,11 +2749,11 @@ function deleteFileXML()
   local deleteFileName = valuesTable.ioList:getFocusedChild():getText()
 
   local yesCallback = function()
-    if g_resources.fileExists('/tool_monstermaker/creatures/'..deleteFileName) then
-      os.remove(g_resources.getRealPath()..'tool_monstermaker/creatures/'..deleteFileName)
+    if g_resources.fileExists('/tool_monstermaker/creatures/' .. deleteFileName) then
+      os.remove(g_resources.getRealPath() .. 'tool_monstermaker/creatures/' .. deleteFileName)
     end
-    if g_resources.fileExists('/tool_monstermaker/creatures/'..'monsters_'..deleteFileName) then
-      os.remove(g_resources.getRealPath()..'tool_monstermaker/creatures/'..'monsters_'..deleteFileName)
+    if g_resources.fileExists('/tool_monstermaker/creatures/' .. 'monsters_' .. deleteFileName) then
+      os.remove(g_resources.getRealPath() .. 'tool_monstermaker/creatures/' .. 'monsters_' .. deleteFileName)
     end
 
     addCreatureFilesToList()
@@ -2678,9 +2768,11 @@ function deleteFileXML()
   end
 
   if not warningWindow then
-    warningWindow = displayGeneralBox(tr('Delete file'), tr('Do you want to delete '..' file?\nIf you choose "yes", you will lost this file!'), {
-      { text=tr('Yes'), callback = yesCallback},
-      { text=tr('No'), callback = noCallback},
-    anchor=AnchorHorizontalCenter}, yesCallback, noCallback)
+    warningWindow = displayGeneralBox(tr('Delete file'),
+      tr('Do you want to delete ' .. ' file?\nIf you choose "yes", you will lost this file!'), {
+      { text = tr('Yes'), callback = yesCallback },
+      { text = tr('No'), callback = noCallback },
+      anchor = AnchorHorizontalCenter
+    }, yesCallback, noCallback)
   end
 end

@@ -90,6 +90,7 @@
 	<talkaction words="!tecnicas;tecnicas;!spells" log="yes" event="script" value="tecnicas.lua" />
 	<talkaction words="!cast;/cast" event="script" value="cast.lua" />
 	<talkaction words="!save" event="script" value="salvarjogador.lua" />
+	<talkaction words="!stats;!dodge;!critical" event="script" value="stats_skills.lua" />
 	<!-- <talkaction words="/setvoc" separator=" " script="setvocation.lua" /> -->
 
 	<!-- Transformations and Resets -->

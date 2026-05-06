@@ -816,3 +816,20 @@ CREATE TABLE IF NOT EXISTS "player_vocation_ranks" (
   FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE CASCADE
 );
 CREATE INDEX IF NOT EXISTS idx_player_vocation_ranks ON player_vocation_ranks(player_id, vocation_id);
+
+ALTER TABLE `players` ADD `dodge` INT NOT NULL DEFAULT 0;
+ALTER TABLE `players` ADD `critical` INT NOT NULL DEFAULT 0;
+ALTER TABLE `player_vocation_stats` ADD `dodge` INT NOT NULL DEFAULT 0;
+ALTER TABLE `player_vocation_stats` ADD `critical` INT NOT NULL DEFAULT 0;
+
+CREATE TABLE IF NOT EXISTS "player_daily_rewards" (
+  "player_id" INTEGER NOT NULL,
+  "day" TINYINT NOT NULL,
+  "month" TINYINT NOT NULL,
+  "year" INTEGER NOT NULL,
+  "item_id" INTEGER NOT NULL,
+  "count" INTEGER NOT NULL,
+  "timestamp" INTEGER NOT NULL,
+  PRIMARY KEY ("player_id", "day", "month", "year"),
+  FOREIGN KEY ("player_id") REFERENCES "players"("id") ON DELETE CASCADE
+);

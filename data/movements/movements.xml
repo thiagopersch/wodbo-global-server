@@ -1651,6 +1651,20 @@
 	<movevent type="DeEquip" itemid="49483" slot="backpack" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="49774" slot="backpack" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="49774" slot="backpack" event="function" value="onDeEquipItem" />
+	
+	<!-- New Daily Reward Backpacks -->
+	<movevent type="Equip" itemid="56037" slot="backpack" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="56037" slot="backpack" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="55951" slot="backpack" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="55951" slot="backpack" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="55953" slot="backpack" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="55953" slot="backpack" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="55846" slot="backpack" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="55846" slot="backpack" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="55885" slot="backpack" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="55885" slot="backpack" event="function" value="onDeEquipItem" />
+	<movevent type="Equip" itemid="55863" slot="backpack" event="function" value="onEquipItem" />
+	<movevent type="DeEquip" itemid="55863" slot="backpack" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="49882" slot="backpack" event="function" value="onEquipItem" />
 	<movevent type="DeEquip" itemid="49882" slot="backpack" event="function" value="onDeEquipItem" />
 	<movevent type="Equip" itemid="49841" slot="backpack" event="function" value="onEquipItem" />

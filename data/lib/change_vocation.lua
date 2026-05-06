@@ -2,11 +2,10 @@ if ChangeVocation and ChangeVocation.__loaded then
   return
 end
 
-ChangeVocation = {}
+ChangeVocation          = {}
 ChangeVocation.__loaded = true
-print("[CV] Library loaded - Advanced Database System")
 
-local Config           = {
+local Config            = {
   OPCODE = 230,
   STORAGE_UNLOCKED = 50001,
   DEFAULT_LOOKTYPE = 0,
@@ -80,8 +79,8 @@ local Config           = {
   }
 }
 
-ChangeVocation.Config  = Config
-ChangeVocation.Actions = { ServerOpen = 1, ServerSync = 2, ClientChange = 1, ServerOpenSync = 3, ServerClose = 4, ForceLogout = 5 }
+ChangeVocation.Config   = Config
+ChangeVocation.Actions  = { ServerOpen = 1, ServerSync = 2, ClientChange = 1, ServerOpenSync = 3, ServerClose = 4, ForceLogout = 5 }
 
 local function dbQuery(query)
   if db.query then
@@ -93,7 +92,7 @@ end
 
 function ChangeVocation.initDB()
   dbQuery(
-    "CREATE TABLE IF NOT EXISTS `player_vocation_stats` (`player_id` INTEGER NOT NULL, `vocation_id` INTEGER NOT NULL, `level` INTEGER NOT NULL DEFAULT 1, `experience` BIGINT NOT NULL DEFAULT 0, `healthmax` INTEGER NOT NULL DEFAULT 150, `manamax` INTEGER NOT NULL DEFAULT 150, `maglevel` INTEGER NOT NULL DEFAULT 0, `manaspent` BIGINT NOT NULL DEFAULT 0, `cap` INTEGER NOT NULL DEFAULT 400, `health_skill` INTEGER NOT NULL DEFAULT 0, `mana_skill` INTEGER NOT NULL DEFAULT 0, `bend_skill` INTEGER NOT NULL DEFAULT 0, `dodge_skill` INTEGER NOT NULL DEFAULT 0, `skill_points` INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (`player_id`, `vocation_id`));")
+    "CREATE TABLE IF NOT EXISTS `player_vocation_stats` (`player_id` INTEGER NOT NULL, `vocation_id` INTEGER NOT NULL, `level` INTEGER NOT NULL DEFAULT 1, `experience` BIGINT NOT NULL DEFAULT 0, `healthmax` INTEGER NOT NULL DEFAULT 150, `manamax` INTEGER NOT NULL DEFAULT 150, `maglevel` INTEGER NOT NULL DEFAULT 0, `manaspent` BIGINT NOT NULL DEFAULT 0, `cap` INTEGER NOT NULL DEFAULT 400, `health_skill` INTEGER NOT NULL DEFAULT 0, `mana_skill` INTEGER NOT NULL DEFAULT 0, `bend_skill` INTEGER NOT NULL DEFAULT 0, `dodge_skill` INTEGER NOT NULL DEFAULT 0, `dodge` INTEGER NOT NULL DEFAULT 0, `critical` INTEGER NOT NULL DEFAULT 0, `skill_points` INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (`player_id`, `vocation_id`));")
   dbQuery(
     "CREATE TABLE IF NOT EXISTS `player_vocation_skills` (`player_id` INTEGER NOT NULL, `vocation_id` INTEGER NOT NULL, `skillid` INTEGER NOT NULL, `value` INTEGER NOT NULL DEFAULT 10, `count` BIGINT NOT NULL DEFAULT 0, PRIMARY KEY (`player_id`, `vocation_id`, `skillid`));")
   dbQuery(
@@ -209,9 +208,9 @@ function ChangeVocation.swapVocationSQL(guid, old_voc, new_voc, looktype)
 
   -- Backup Atual
   dbQuery(
-    "REPLACE INTO `player_vocation_stats` (`player_id`, `vocation_id`, `level`, `experience`, `healthmax`, `manamax`, `maglevel`, `manaspent`, `cap`, `health_skill`, `mana_skill`, `bend_skill`, `dodge_skill`, `skill_points`) SELECT `id`, " ..
+    "REPLACE INTO `player_vocation_stats` (`player_id`, `vocation_id`, `level`, `experience`, `healthmax`, `manamax`, `maglevel`, `manaspent`, `cap`, `health_skill`, `mana_skill`, `bend_skill`, `dodge_skill`, `dodge`, `critical`, `skill_points`) SELECT `id`, " ..
     old_voc ..
-    ", `level`, `experience`, `healthmax`, `manamax`, `maglevel`, `manaspent`, `cap`, `health_skill`, `mana_skill`, `bend_skill`, `dodge_skill`, `skill_points` FROM `players` WHERE `id` = " ..
+    ", `level`, `experience`, `healthmax`, `manamax`, `maglevel`, `manaspent`, `cap`, `health_skill`, `mana_skill`, `bend_skill`, `dodge_skill`, `dodge`, `critical`, `skill_points` FROM `players` WHERE `id` = " ..
     guid)
   dbQuery(
     "REPLACE INTO `player_vocation_skills` (`player_id`, `vocation_id`, `skillid`, `value`, `count`) SELECT `player_id`, " ..
@@ -278,6 +277,14 @@ function ChangeVocation.swapVocationSQL(guid, old_voc, new_voc, looktype)
       guid ..
       " AND `vocation_id` = " ..
       new_voc ..
+      "), `dodge` = (SELECT `dodge` FROM `player_vocation_stats` WHERE `player_id` = " ..
+      guid ..
+      " AND `vocation_id` = " ..
+      new_voc ..
+      "), `critical` = (SELECT `critical` FROM `player_vocation_stats` WHERE `player_id` = " ..
+      guid ..
+      " AND `vocation_id` = " ..
+      new_voc ..
       "), `dodge_skill` = (SELECT `dodge_skill` FROM `player_vocation_stats` WHERE `player_id` = " ..
       guid ..
       " AND `vocation_id` = " ..
@@ -301,7 +308,7 @@ function ChangeVocation.swapVocationSQL(guid, old_voc, new_voc, looktype)
   else
     -- Começa do Level 1
     dbQuery(
-      "UPDATE `players` SET `level` = 1, `experience` = 0, `healthmax` = 150, `health` = 150, `manamax` = 150, `mana` = 150, `maglevel` = 0, `manaspent` = 0, `cap` = 500, `health_skill` = 0, `mana_skill` = 0, `bend_skill` = 0, `dodge_skill` = 0, `skill_points` = 0, `vocation` = " ..
+      "UPDATE `players` SET `level` = 1, `experience` = 0, `healthmax` = 150, `health` = 150, `manamax` = 150, `mana` = 150, `maglevel` = 0, `manaspent` = 0, `cap` = 500, `health_skill` = 0, `mana_skill` = 0, `bend_skill` = 0, `dodge_skill` = 0, `dodge` = 0, `critical` = 0, `skill_points` = 0, `vocation` = " ..
       new_voc .. ", `looktype` = " .. looktype .. " WHERE `id` = " .. guid)
     dbQuery("UPDATE `player_skills` SET `value` = 10, `count` = 0 WHERE `player_id` = " .. guid)
     dbQuery("DELETE FROM `player_spells` WHERE `player_id` = " .. guid)

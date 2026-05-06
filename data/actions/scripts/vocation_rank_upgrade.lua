@@ -9,8 +9,17 @@ function onUse(cid, item, fromPosition, target, toPosition, isHotkey)
   local itemId = item.itemid
   local config = VocationRankConfig
 
-  -- Check if it's the universal fragment
-  if itemId == config.UniversalFragmentItemId then
+  -- Check if it's a universal fragment (any type)
+  local universalIds = config.UniversalFragmentItemIds or {config.UniversalFragmentItemId}
+  local isUniversal = false
+  for _, uid in ipairs(universalIds) do
+    if itemId == uid then
+      isUniversal = true
+      break
+    end
+  end
+
+  if isUniversal then
     VocationRankLib.doUpgrade(cid, "universal")
     return true
   end

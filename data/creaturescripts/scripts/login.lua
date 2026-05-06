@@ -72,15 +72,37 @@ function onLogin(cid)
   registerCreatureEvent(cid, "ChangeVocationLogin")
   registerCreatureEvent(cid, "ProfileOpcode")
   registerCreatureEvent(cid, "BankExtended")
+  registerCreatureEvent(cid, "VocationRanks")
+  registerCreatureEvent(cid, "VocationRanksOpcode")
+  registerCreatureEvent(cid, "DailyReward")
+  registerCreatureEvent(cid, "DailyRewardOpcode")
+  registerCreatureEvent(cid, "DailyRewardStats")
+
+  -- Bônus de XP/Skill do Daily Reward
+  local xpBonusTime = getPlayerStorageValue(cid, 48702)
+  if xpBonusTime > os.time() then
+    doPlayerSetExperienceRate(cid, 1.5)
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Seu bônus de 50% de XP está ativo!")
+  end
+  
+  local skillBonusTime = getPlayerStorageValue(cid, 48703)
+  if skillBonusTime > os.time() then
+    doPlayerSetMagicRate(cid, 1.25)
+    -- Para outras skills, o TFS 0.4 geralmente não tem um 'setRate' individual simples no lib 
+    -- mas o MagicRate já cobre uma parte importante.
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Seu bônus de 25% de Skill está ativo!")
+  end
 
   -- [NOVO]: Lê e escreve DIRETAMENTE na coluna SQL, ignorando storages limitados do TFS!
   local currentVoc = getPlayerVocation(cid)
   local guid = getPlayerGUID(cid)
 
-  local q = db.getResult("SELECT `unlocked_vocations` FROM `players` WHERE `id` = " .. guid)
+  local q = db.getResult("SELECT `unlocked_vocations`, `dodge`, `critical` FROM `players` WHERE `id` = " .. guid)
   local unlockedStr = ""
   if q and q:getID() ~= -1 then
     unlockedStr = q:getDataString("unlocked_vocations")
+    setPlayerStorageValue(cid, 48700, q:getDataInt("dodge"))
+    setPlayerStorageValue(cid, 48701, q:getDataInt("critical"))
     q:free()
   end
 

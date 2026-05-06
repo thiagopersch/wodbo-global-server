@@ -41,4 +41,9 @@
 	<event type="advance" name="AnimeOutfits" script="login.lua" /> -->
 	<event type="extendedopcode" name="ProfileOpcode" event="script" value="profile_server.lua" />
 	<event type="extendedopcode" name="VocationRanksOpcode" event="script" value="extendedopcode_vocation_ranks.lua" />
+	<event type="login" name="DailyReward" event="script" value="daily_reward.lua" />
+	<event type="extendedopcode" name="DailyRewardOpcode" event="script" value="daily_reward.lua" />
+	
+	<!-- Daily Reward Extra Systems -->
+	<event type="statschange" name="DailyRewardStats" event="script" value="daily_reward_multipliers.lua" />
 </creaturescripts>

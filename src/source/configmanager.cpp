@@ -353,6 +353,8 @@ bool ConfigManager::load()
 	m_confNumber[EXHAUST_ONBUY] = getGlobalNumber("onBuy", 500);
 	m_confNumber[EXHAUST_ONSELL] = getGlobalNumber("onSell", 500);
 	m_confNumber[EXHAUST_CHANGEOUFIT] = getGlobalNumber("changeOutfit", 500);
+	m_confBool[ENABLE_UINT16_COUNT] = getGlobalBool("countUint16", false);
+	m_confNumber[UINT16_COUNT] = getGlobalNumber("maxcount", 100);
 
 	m_loaded = true;
 	return true;
