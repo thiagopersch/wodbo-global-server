@@ -46,7 +46,7 @@ class ProtocolGame : public Protocol
 			protocolGameCount++;
 #endif
 			player = NULL;
-			
+
 			isCast = false; //CAST
 			viewerName = "";
 			m_eventConnect = m_packetCount = m_packetTime = 0;
@@ -71,7 +71,7 @@ class ProtocolGame : public Protocol
 		bool logout(bool displayEffect, bool forceLogout);
 
 		void setPlayer(Player* p);
-		
+
 		Player* getPlayer() {return player;}  //CAST
 		bool getIsCast() {return isCast;}
 		std::string getViewerName() {return viewerName;}
@@ -326,7 +326,7 @@ class ProtocolGame : public Protocol
 
 		//shop
 		void AddShopItem(NetworkMessage_ptr msg, const ShopInfo& item);
-		
+
 		void parseExtendedOpcode(NetworkMessage& msg);
         void sendExtendedOpcode(uint8_t opcode, const std::string& buffer);
 

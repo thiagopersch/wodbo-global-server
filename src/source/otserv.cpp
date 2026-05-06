@@ -543,7 +543,7 @@ void otserv(StringVec, ServiceManager* services)
 	const char* p(g_config.getString(ConfigManager::RSA_PRIME1).c_str());
 	const char* q(g_config.getString(ConfigManager::RSA_PRIME2).c_str());
 	const char* d(g_config.getString(ConfigManager::RSA_PRIVATE).c_str());
-	
+
     g_RSA.initialize(p, q, d);
 	std::clog << ">> Iniciando conexao SQL" << std::endl;
 	Database* db = Database::getInstance();

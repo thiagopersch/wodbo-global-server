@@ -382,7 +382,7 @@ class Npc : public Creature
 
 		void setCreatureFocus(Creature* creature);
 		NpcScript* getInterface();
-		
+
 		void setHouser(bool _houser) {houser = _houser;}
 		const bool getHouser() const {return houser;}
 

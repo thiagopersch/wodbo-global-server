@@ -17,8 +17,8 @@ useFragHandler = true
 enableCast = true
 extendedOpcodes = true
 useKFormatForNumbers = true
-countUint16 = true --> padrão vem desativado
-maxcount = 10000   -- min -> 1 max -> 65.535  (obs padrão = 100)
+-- countUint16 = false
+-- maxcount = 10000
 
 -- Unjustified kills
 -- NOTE: *Banishment and *BlackSkull variables are >summed up<

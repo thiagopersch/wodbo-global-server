@@ -16,6 +16,12 @@ generateAccountSalt = false
 accountSize = 10
 enableCast = true
 
+-- Stackable item limit
+-- Set to false for vanilla Tibia client compatibility (sends uint8_t)
+-- Set to true only if using a modified client that supports uint16_t
+-- countUint16 = false
+-- maxcount = 10000
+
 -- Unjustified kills
 -- NOTE: *Banishment and *BlackSkull variables are >summed up<
 -- (dailyFragsToRedSkull + dailyFragsToBanishment) with their

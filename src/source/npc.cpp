@@ -2988,4 +2988,3 @@ void NpcEvents::onThink()
 	else
 		std::clog << "[Error - NpcEvents::onThink] NPC Name: " << m_npc->getName() << " - Call stack overflow" << std::endl;
 }
-

@@ -17,6 +17,9 @@
 # Items
 
 - Criar novos que foram importados :x:
+- Ajustar os corpses dos monstros :x:
+- Ajustar os itens abaixo:
+  - 44718 -> mushroom backpack | vol: 35
 
 # Monsters
 

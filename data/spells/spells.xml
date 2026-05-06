@@ -31,13 +31,11 @@
   </instant>
   <instant name="Big Regeneration" words="Big Regeneration" lvl="40" mana="0" prem="1"
     aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
-    group="healing,support"
-    value="support/big regeneration.lua">
+    group="healing,support" value="support/big regeneration.lua">
   </instant>
   <instant name="Reiatsu Regeneration" words="Reiatsu Regeneration" lvl="15" mana="0" prem="1"
     aggressive="0" selftarget="1" exhaustion="2000" needlearn="0" event="script"
-    group="healing,support"
-    value="support/reiatsu regeneration.lua">
+    group="healing,support" value="support/reiatsu regeneration.lua">
   </instant>
   <instant name="Charge" words="Charge" lvl="50" mana="600" prem="0" aggressive="0" selftarget="1"
     exhaustion="2000" needlearn="0" event="script" group="support" value="support/charge.lua">

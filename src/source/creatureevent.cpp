@@ -341,7 +341,7 @@ bool CreatureEvent::configureEvent(xmlNodePtr p)
 	else if(tmpStr == "death")
 		m_type = CREATURE_EVENT_DEATH;
 	else if(tmpStr == "extendedopcode")
-        m_type = CREATURE_EVENT_EXTENDED_OPCODE;	
+        m_type = CREATURE_EVENT_EXTENDED_OPCODE;
 	else if(tmpStr == "preparedeath")
 		m_type = CREATURE_EVENT_PREPAREDEATH;
 	else if(tmpStr == "moveitem")
@@ -413,7 +413,7 @@ std::string CreatureEvent::getScriptEventName() const
 		case CREATURE_EVENT_DEATH:
 			return "onDeath";
 		case CREATURE_EVENT_EXTENDED_OPCODE:
-            return "onExtendedOpcode";	
+            return "onExtendedOpcode";
 		case CREATURE_EVENT_PREPAREDEATH:
 			return "onPrepareDeath";
 		case CREATURE_EVENT_MOVEITEM:
@@ -479,12 +479,12 @@ std::string CreatureEvent::getScriptEventParams() const
 		case CREATURE_EVENT_DEATH:
 			return "cid, corpse, deathList";
 		case CREATURE_EVENT_EXTENDED_OPCODE:
-            return "cid, opcode, buffer";	
+            return "cid, opcode, buffer";
 		case CREATURE_EVENT_PREPAREDEATH:
 			return "cid, deathList";
 		case CREATURE_EVENT_MOVEITEM:
 	        return "moveItem, frompos, topos, cid";
-		case CREATURE_EVENT_MOVEITEM2:	
+		case CREATURE_EVENT_MOVEITEM2:
 			return "cid, item, count, toContainer, fromContainer, fromPos, toPos";
 		case CREATURE_EVENT_NONE:
 		default:
