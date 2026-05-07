@@ -1,7 +1,7 @@
 local t = {
   access = 3, -- acesso mínimo para sair o efeito
   text = "STAFF",
-  textcolor = COLOR_ORANGE,
+  textcolor = TEXTCOLOR_ORANGE,
   effect = 867,
   interval = 3
 }

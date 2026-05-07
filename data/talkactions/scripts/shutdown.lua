@@ -35,11 +35,11 @@ function prepareShutdown(minutes)
 	end
 
 	if(minutes == 1) then
-		doBroadcastMessage("Server is going down in " .. minutes .. " minute, please log out now!")
+		doBroadcastMessage("Server is going down in " .. minutes .. " minute, please log out now!", "warning", "top")
 	elseif(minutes <= 3) then
-		doBroadcastMessage("Server is going down in " .. minutes .. " minutes, please log out.")
+		doBroadcastMessage("Server is going down in " .. minutes .. " minutes, please log out.", "warning", "top")
 	else
-		doBroadcastMessage("Server is going down in " .. minutes .. " minutes.")
+		doBroadcastMessage("Server is going down in " .. minutes .. " minutes.", "warning", "top")
 	end
 
 	shutdownEvent = addEvent(prepareShutdown, 60000, minutes - 1)

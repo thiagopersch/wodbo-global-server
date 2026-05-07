@@ -1,23 +1,28 @@
 CONFIG = {
     [1] = {
         message =
-        "- - > TV Dragon Ball < - -\n\n Para transformar, basta dizer !transformar ou /transformar.",
-        color = 22
+        "..:: Dragon Ball TV ::..\nTo transform, simply say !transform or /transform.",
+        color = TEXTCOLOR_WHITE
     },
     [2] = {
-        message = "- - > TV Dragon Ball < - -\n\n Para ver os comandos, digite /commands.",
-        color = 22
+        message =
+        "..:: Dragon Ball TV ::..\nTo see the commands, type /commands.",
+        color = TEXTCOLOR_WHITE
     },
     [3] = {
         message =
-        "Para ver seu saldo de banco digite !balance, para depositar digite '!deposit value/all' e para sacar digite '!withdraw value/all'.",
-        color = 22
-    }
+            "To check your bank balance, type !balance. To deposit, type '!deposit value/all' and to withdraw, type '!withdraw value/all'.\nOr use our shortcuts: "
+            .. "Right-click on your character and then select the 'My Bank' option from the menu.",
+        color = TEXTCOLOR_BLUE
+
+    },
 }
 
+
 function onThink()
-    getRandom = math.random(1, #CONFIG)
-    message = CONFIG[getRandom].message
-    color = CONFIG[getRandom].color
-    return doBroadcastMessage(message, color)
+    local getRandom = math.random(1, #CONFIG)
+    local msg = CONFIG[getRandom].message
+    local color = CONFIG[getRandom].color
+    local formattedText = "center|" .. color .. "|" .. msg
+    return doBroadcastMessage(formattedText)
 end

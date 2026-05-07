@@ -26,6 +26,6 @@ function onSay(cid, words, param, channel)
 		return true
 	end
 
-	doBroadcastMessage("Gameworld type set to: " .. world .. ".", MESSAGE_EVENT_ADVANCE)
+	doBroadcastMessage("Gameworld type set to: " .. world .. ".", "advance", "top")
 	return true
 end

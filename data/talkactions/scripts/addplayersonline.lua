@@ -25,7 +25,7 @@ function onSay(cid, words, param)
 
   local itemName = getItemNameById(item)
 
-  doBroadcastMessage("The staff just sent " .. count .. " " .. itemName .. " to all online players!")
+  doBroadcastMessage("The staff just sent " .. count .. " " .. itemName .. " to all online players!", "warning", "top")
 
   return FALSE
 end

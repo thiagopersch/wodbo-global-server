@@ -359,7 +359,7 @@
     <vocation id="5" />
   </instant>
   <instant name="Artillery Destruction" words="Artillery Destruction" lvl="75" mana="400" prem="0"
-    blockwalls="1" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
+    blockwalls="0" aggressive="1" selftarget="1" exhaustion="2000" needlearn="0" event="script"
     value="bulma/Artillery Destruction.lua">
     <vocation id="5" />
   </instant>

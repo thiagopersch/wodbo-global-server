@@ -344,8 +344,9 @@ function doPlayerResetIdleTime(cid)
   return doPlayerSetIdleTime(cid, 0)
 end
 
-function doBroadcastMessage(text, class)
-  local class = class or MESSAGE_STATUS_WARNING
+function doBroadcastMessage(text, message_type, position)
+  local class = message_type or MESSAGE_STATUS_WARNING
+  local position = position or 'top'
   if (type(class) == 'string') then
     local className = MESSAGE_TYPES[class]
     if (not className) then return false end
@@ -353,10 +354,31 @@ function doBroadcastMessage(text, class)
   elseif (class < MESSAGE_FIRST or class > MESSAGE_LAST) then
     return false
   end
-  for _, pid in ipairs(getPlayersOnline()) do
-    doPlayerSendTextMessage(pid, class, text)
+
+  -- If text already contains '|', it's already formatted, send as-is
+  local formattedText = text
+  if not text:find('|') then
+    local color = TEXTCOLOR_RED
+    if (class == MESSAGE_STATUS_CONSOLE_BLUE) then
+      color = TEXTCOLOR_BLUE
+    elseif (class == MESSAGE_STATUS_CONSOLE_ORANGE) then
+      color = TEXTCOLOR_ORANGE
+    elseif (class == MESSAGE_INFO_DESCR) then
+      color = TEXTCOLOR_GREEN
+    elseif (class == MESSAGE_STATUS_CONSOLE_RED) then
+      color = TEXTCOLOR_RED
+    end
+
+    if (position == 'center' or position == 'bottom') then
+      formattedText = position .. '|' .. color .. '|' .. text
+    else
+      formattedText = color .. '|' .. text
+    end
   end
-  print("> Broadcasted message: \"" .. text .. "\".")
+
+  for _, pid in ipairs(getPlayersOnline()) do
+    doPlayerSendTextMessage(pid, class, formattedText)
+  end
   return true
 end
 

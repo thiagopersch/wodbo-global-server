@@ -29,9 +29,12 @@ function onAdvance(cid, skill, oldLevel, newLevel)
 		for level, info in pairs(config) do
 			if newLevel >= level and (getPlayerStorageValue(cid, 30700) == -1 or not (string.find(getPlayerStorageValue(cid, 30700), "'" .. level .. "'"))) then
 				doPlayerAddItem(cid, info.item, info.count)
-				doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING,
-					"Congratulations, you have reached the level " .. newLevel .. " and earned " ..
-					info.count .. " " .. getItemNameById(info.item) .. ".")
+
+				local msg = getPlayerName(cid) .. ", you have reached the level " .. newLevel .. " and earned " ..
+						info.count .. " " .. getItemNameById(info.item) .. "."
+				local formattedText = "center|" .. TEXTCOLOR_YELLOW .. "|" .. msg
+				addEvent(doBroadcastMessage, 21, formattedText)
+
 				local sat = getPlayerStorageValue(cid, 30700) == -1 and "Values: '" .. level .. "'" or
 						getPlayerStorageValue(cid, 30700) .. ",'" .. level .. "'"
 				setPlayerStorageValue(cid, 30700, sat)

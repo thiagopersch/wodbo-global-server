@@ -10,11 +10,11 @@ function onAdvance(cid, skill, oldLevel, newLevel)
     end
 
     if #spells > 0 then
-      doPlayerSendTextMessage(cid, MESSAGE_EVENT_ORANGE,
+      doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,
         "You have just advanced to level " .. newLevel .. " and learned new spells!")
 
       for _, v in pairs(spells) do
-        doPlayerSendTextMessage(cid, MESSAGE_EVENT_ORANGE, v)
+        doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, v)
       end
     end
   end

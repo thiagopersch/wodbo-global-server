@@ -9,6 +9,6 @@ function onKill(cid, target, lastHit)
     "[" ..
     getPlayerLevel(target) ..
     "] acabou de ser humilhado pelo jogador " .. getCreatureName(cid) .. "[" .. getPlayerLevel(cid) .. "].",
-    MESSAGE_STATUS_CONSOLE_ORANGE)
+    "orange", "top")
   return true
 end

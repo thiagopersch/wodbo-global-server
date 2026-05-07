@@ -34,7 +34,7 @@ function onSay(cid, words, param, channel)
 	if(not config.broadcast) then
 		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, param .. " has " .. str)
 	else
-		doBroadcastMessage(param .. " has " .. str, MESSAGE_EVENT_ADVANCE)
+		doBroadcastMessage(param .. " has " .. str, "advance", "top")
 	end
 
 	doPlayerSendTextMessage(pid, MESSAGE_EVENT_ADVANCE, "You have " .. str)

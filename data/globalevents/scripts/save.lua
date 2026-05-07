@@ -13,7 +13,7 @@ local function executeSave(seconds)
 
         text = text .. "erver save within " .. seconds ..
             " seconds, please mind it may freeze!"
-        doBroadcastMessage(text)
+        doBroadcastMessage(text, "warning", "top")
     end
 
     if (seconds > 0) then

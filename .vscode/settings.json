@@ -177,7 +177,19 @@
     "doSavePlayer",
     "getPlayerAccountType",
     "ACCOUNT_TYPE_GOD",
-    "doSaveServer"
+    "doSaveServer",
+    "doCleanMap",
+    "getPlayerSkullEnd",
+    "getCreatureMaster",
+    "getCreatureNoMove",
+    "getPlayerIdleTime",
+    "getPlayerCustomFlagValue",
+    "doPlayerAddMapMark",
+    "getHouseAccessList",
+    "getHouseFromPos",
+    "getGuildMotd",
+    "doPlayerSendChannelMessage",
+    "doCreatureSetDropLoot"
   ],
   "Lua.diagnostics.disable": [
     "lowercase-global",

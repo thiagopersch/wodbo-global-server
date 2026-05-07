@@ -31,9 +31,9 @@
     <flag canwalkonpoison="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" min="-1" max="-500" />
-    <attack name="Dock Rage" interval="4000" chance="20" min="-1" max="-570" />
-    <attack name="Saiyajin Energy" interval="10000" chance="10" min="-1" max="-590" />
+    <attack name="melee" interval="2000" min="-1000" max="-15000" />
+    <attack name="Dock Rage" interval="4000" chance="20" min="-1000" max="-13000" />
+    <attack name="Saiyajin Energy" interval="10000" chance="10" min="-1000" max="-13500" />
   </attacks>
   <immunities>
     <immunity physical="0" />

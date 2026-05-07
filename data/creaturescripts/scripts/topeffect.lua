@@ -34,7 +34,10 @@ function onAdvance(cid, skill, oldlevel, newlevel)
     if (query:getID() ~= -1) then
       local level = tonumber(query:getDataString("level"))
       if level < newlevel and topPlayer ~= getPlayerID(cid) then
-        doBroadcastMessage("The player" .. getPlayerName(cid) .. " has become the new Top Level. Congratulations!", 22)
+        local msg = "The player" .. getPlayerName(cid) .. " has become the new Top Level. Congratulations!"
+        local formattedText = "center|" .. config.mensagem.efeito .. "|" .. msg
+
+        addEvent(doBroadcastMessage, 21, formattedText)
         topPlayer = getPlayerID(cid)
         doSaveServer()
         setGlobalStorageValue(config.globalstr, getPlayerID(cid))

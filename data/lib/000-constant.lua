@@ -356,7 +356,10 @@ MESSAGE_TYPES = {
     ["blue"] = MESSAGE_STATUS_CONSOLE_BLUE,
     ["red"] = MESSAGE_STATUS_CONSOLE_RED,
     ["warning"] = MESSAGE_STATUS_WARNING,
-    ["status"] = MESSAGE_STATUS_DEFAULT
+    ["status"] = MESSAGE_STATUS_DEFAULT,
+    ["broadcast_top"] = MESSAGE_STATUS_WARNING,
+    ["broadcast_center"] = MESSAGE_EVENT_DEFAULT,
+    ["broadcast_bottom"] = MESSAGE_STATUS_SMALL
 }
 
 COLOR_BLACK = 0

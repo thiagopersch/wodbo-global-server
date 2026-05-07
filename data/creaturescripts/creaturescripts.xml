@@ -24,7 +24,7 @@
 	<event type="advance" name="LevelRecompense" event="script" value="recompenselvl.lua" />
 	<event type="look" name="showKD" event="script" value="KillsandDeath.lua" />
 	<event type="advance" name="AdvLevelSpells" event="script" value="advancespells.lua" />
-	<event type="advance" name="timelevel" script="timelevel.lua" />
+	<event type="advance" name="timelevel" event="script" value="timelevel.lua" />
 	<event type="think" name="IconMap" event="script" value="iconmap.lua" />
 	<event type="kill" name="KillingInTheNameOf" event="script" value="killinginthenameof.lua" />
 	<event type="login" name="VocationRanks" event="script" value="vocation_ranks.lua" />

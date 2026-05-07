@@ -68908,6 +68908,11 @@
 		<attribute key="speed" value="550" />
 		<attribute key="slotType" value="feet" />
 	</item>
+	<item id="49773" article="a" name="earth backpack">
+		<attribute key="weight" value="1500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
 	<item id="49774" article="a" name="ninja backpack">
 		<attribute key="weight" value="1500" />
 		<attribute key="containerSize" value="35" />
@@ -69673,7 +69678,7 @@
 	<item id="49840" article="a" name="aqua ball" plural="aqua balls">
 		<attribute key="weight" value="10" />
 	</item>
-	<item id="49841" article="a" name="shenlong backpack">
+	<item id="49841" article="a" name="old shenlong backpack">
 		<attribute key="weight" value="1500" />
 		<attribute key="containerSize" value="35" />
 		<attribute key="slotType" value="backpack" />
@@ -70091,6 +70096,1948 @@
 	<item id="49920" name="dark browns ramps ground" />
 	<item fromid="49921" toid="49922" name="dark stones ground" />
 	<item fromid="49923" toid="49924" name="dark stones ground" />
+	<item id="55794" name="one star backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55795" name="two star backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55796" name="three star backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55797" name="four star backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55798" name="five star backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55799" name="six star backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55800" name="seven star backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55801" name="green reptilian backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55802" name="yellow reptilian backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55803" name="red reptilian backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55804" name="purple star bag">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="12" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55805" name="blue winter backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55806" name="pink kitty puar backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55807" name="puar backpack">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55808" name="green winter backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55809" name="black sack">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="12" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55810" name="brown woven backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55811" name="golden woven backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55812" name="blue woven backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55813" name="purple woven backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55814" name="green woven backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55815" name="red woven backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55816" name="ultimate shenlong backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+		<attribute key="skillSword" value="2" />
+	</item>
+	<item id="55817" name="streamer twitch backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55818" name="blue dragon head backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+		<attribute key="skillDist" value="2" />
+	</item>
+	<item id="55819" name="pumpkin patch backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55820" name="purple star bag">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="12" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55821" name="blue winter backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55822" name="leather satchel bag">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="12" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55823" name="small parchment pouch">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="12" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55824" name="heart backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55825" name="butterfly backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55826" name="bronze star bag">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="12" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55827" name="violet star bag">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="12" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55828" name="green star bag">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="12" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55829" name="orange kitty puar backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55830" name="yellow dragon head backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55831" name="orange dragon head backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+		<attribute key="skillAxe" value="2" />
+	</item>
+	<item id="55832" name="pink dragon head backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55833" name="purple dragon head backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+		<attribute key="magiclevelpoints" value="2" />
+	</item>
+	<item id="55834" name="red dragon head backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+		<attribute key="skillClub" value="2" />
+	</item>
+	<item id="55835" name="purple ball four star backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55836" name="grey tactical backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55837" name="brown explorer backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55838" name="spooky stitched backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55839" name="hunter backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55840" name="chaves backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55841" name="holy backpack">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55842" name="leather side bag">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="12" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55843" name="alchemist backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+		<attribute key="magiclevelpoints" value="3" />
+	</item>
+	<item id="55844" name="purple royal backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+		<attribute key="manaGain" value="8000" />
+		<attribute key="manaTicks" value="1000" />
+	</item>
+	<item id="55845" name="elven ranger backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55846" name="royal cape backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="absorbPercentPhysical" value="5" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55847" name="dark skull backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55848" name="cursed pumpkin backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55849" name="ribcage backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55850" name="mimic backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55851" name="obsidian skull backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55852" name="horned demon backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55853" name="jewel studded backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55854" name="tribal shaman backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55855" name="dark gold backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55856" name="silver plate backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+		<attribute key="skillShield" value="2" />
+	</item>
+	<item id="55857" name="crimson gold backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55858" name="shadow horned backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55859" name="nature wood backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55860" name="sturdy leather backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55861" name="emerald jewel backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55862" name="golden angel backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55863" name="gaia backpack">
+		<attribute key="containerSize" value="50" />
+		<attribute key="weight" value="500" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55864" name="simple angel backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55865" name="nomad backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55866" name="village ninja backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55867" name="potions backpack">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55868" name="ornament baackpack">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55869" name="red wings backpack">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55870" name="ornament nomad survival backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55871" name="gold fox backpack">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="12" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55872" name="ra backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55873" name="ice golem backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55874" name="supreme sanguine baackpack">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="40" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55875" name="electrolux backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55876" name="red death backpack">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="35" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55877" name="deep sea backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55878" name="crystal backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55879" name="crusader backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55880" name="infernal backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55881" name="golden knight backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55882" name="silver wing backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55883" name="dark ritual backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55884" name="nature guardian backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55885" name="rabbit backpack">
+		<attribute key="containerSize" value="50" />
+		<attribute key="weight" value="500" />
+		<attribute key="description" value="Rabbit backpack com 50 de capacidadde de carga extra." />
+		<attribute key="absorbPercentHoly" value="5" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55886" name="phoenix backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55887" name="royal wood backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55888" name="nebula backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55889" name="gear backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55890" name="frozen backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55891" name="purple velvet backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55892" name="angelic backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55893" name="striped yellow backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55894" name="orange rune backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55895" name="sea shell backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55896" name="golden crest backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55897" name="void backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55898" name="rainbow backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55899" name="death backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55900" name="joker backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55901" name="red demon backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55902" name="skull grey backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55904" name="dark skull backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55905" name="green energy backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55906" name="orc backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55907" name="goblin backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55908" name="blue bunny backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55909" name="cell backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55910" name="ghost backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55911" name="slime backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55912" name="vampire backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55913" name="white ghost backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55914" name="black feline backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55915" name="youtube backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55916" name="cyberpunk backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55917" name="skeleton backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55918" name="reaper backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55919" name="military backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55920" name="camo backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55921" name="fire wall backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55922" name="tech backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55923" name="medical backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55924" name="explorer backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55925" name="capsule corp backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55926" name="crimson backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55927" name="azure backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55928" name="love backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55929" name="toxic backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55930" name="butterfly backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55931" name="royal backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55932" name="red bag backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55933" name="ancient backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55934" name="purple backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55935" name="light blue backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55936" name="red backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55937" name="pink backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55938" name="dark grey backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55939" name="snow backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55940" name="void purple backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55941" name="pirate loot backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55942" name="skull black backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55943" name="hollow mask backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55944" name="santa backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55945" name="school backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55946" name="dark crown backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55947" name="blue tribal backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55948" name="white tribal backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55949" name="white yellow backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55950" name="golden skull backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55951" name="barragan backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="60" />
+		<attribute key="absorbPercentDeath" value="5" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55952" name="white bandaged backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55953" name="ulquiorra backpack">
+		<attribute key="containerSize" value="60" />
+		<attribute key="weight" value="500" />
+		<attribute key="description" value="Ulquiorra backpack com 60 de capacidadde de carga extra." />
+		<attribute key="absorbPercentDeath" value="5" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55954" name="dark beholder backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55955" name="pink striped backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55960" name="ghostly bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55961" name="red samurai backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55962" name="blue samurai backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55963" name="red heart backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55964" name="teddy bear backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55965" name="twitch backpack white">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55966" name="majin buu backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55967" name="steampunk backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55968" name="purple gem backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55969" name="golden king backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55970" name="red bird backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55971" name="magma backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55972" name="twitch backpack purple">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55973" name="black tech backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55974" name="charizard backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55975" name="ghostface backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55976" name="white stripes backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55977" name="8 ball backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55978" name="facebook backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55979" name="gengar backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55980" name="psyduck backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55981" name="mega gengar backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55982" name="gardevoir backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55983" name="glaceon backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55984" name="kabutops backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55985" name="latios backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55986" name="sceptile backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55987" name="instagram backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55988" name="kingdra backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55989" name="kyogre backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55990" name="pikachu backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55991" name="guitar backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55992" name="roserade backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55993" name="red skull backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55994" name="blastoise backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55995" name="vileplume backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55996" name="scizor backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55997" name="porygon-z backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55998" name="metagross backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="55999" name="shiny metagross backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56000" name="team galactic backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56001" name="registeel backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56002" name="deoxys backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56003" name="togekiss backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56004" name="marill backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56005" name="vileplume backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56006" name="tech backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56007" name="charizard backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56008" name="ghostface backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56009" name="white stripes backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56010" name="8 ball backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56011" name="facebook backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56012" name="gengar backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56013" name="psyduck backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56014" name="mega gengar backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56015" name="gardevoir backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56016" name="glaceon backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56017" name="kabutops backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56018" name="latios backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56019" name="sceptile backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56020" name="instagram backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56021" name="kingdra backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56022" name="kyogre backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56023" name="pikachu backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56024" name="guitar backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56025" name="roserade backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56026" name="red skull backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56027" name="blastoise backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56028" name="scizor backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56029" name="porygon-z backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56030" name="metagross backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56031" name="shiny metagross backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56032" name="team galactic backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56033" name="registeel backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56034" name="deoxys backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56035" name="togekiss backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56036" name="marill backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56037" name="kurama backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="60" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentDeath" value="5" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56038" name="black heart backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56039" name="majin buu backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56040" name="shenlong backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56041" name="pumpkin backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56042" name="twitch backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56043" name="dragon ball backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56044" name="dark purple aura backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56045" name="pink cream backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56046" name="grey wolf backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56047" name="black red aura backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56048" name="purple aura backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56049" name="green aura backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56050" name="red aura backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56051" name="royal purple backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56052" name="simple red backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56053" name="adventurer backpack red">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56054" name="adventurer backpack yellow">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56055" name="adventurer backpack white">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56056" name="adventurer backpack blue">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56057" name="adventurer backpack purple">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56058" name="adventurer backpack green">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56059" name="superman backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56060" name="white knight backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56061" name="lion backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56062" name="shenlong backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56063" name="dragon ball backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56064" name="pink school backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56065" name="majin buu backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56066" name="grey metal backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56067" name="purple velvet backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56068" name="dark adventurer backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56069" name="mewtwo backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56070" name="pikachu backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56071" name="red knight backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56072" name="luffy backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56073" name="christmas backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56074" name="anubis backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56075" name="brown beast backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56076" name="holy priest backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56077" name="demon red backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56078" name="black bear backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56079" name="iron man backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56080" name="captain america backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56081" name="pirate skull backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56082" name="bone shield backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56083" name="dark plate backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56084" name="blue crystal backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56085" name="stone turtle backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56086" name="toxic backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56087" name="shaman backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56088" name="nightmare backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56089" name="swamp pumpkin backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56090" name="red scale backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56091" name="silver armor backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56092" name="rugged leather backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56093" name="nature backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56094" name="abyssal backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56095" name="red silk backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56096" name="white silk backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56097" name="blue silk backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56098" name="brown hat backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56099" name="golden fire backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56100" name="skull dark backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56101" name="viking backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56102" name="green energy backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56103" name="ancient tree backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56104" name="noble backpack red">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56105" name="purple shell backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56106" name="gears backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56107" name="crystal blue backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56108" name="red pouch backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56109" name="champion backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56110" name="harry potter backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56111" name="zelda backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56112" name="purple tech backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56113" name="silver wing backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56114" name="traveller backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56115" name="golden angel backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56116" name="pink rabbit backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56117" name="blue rabbit backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56118" name="yellow rabbit backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56119" name="dark armor backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56120" name="golden knight backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56121" name="demon gold backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56122" name="knight blue backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56123" name="frost crystal backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56124" name="rugged hunter backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56125" name="skull spikes backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56126" name="purple thunder backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56127" name="leather pouch bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56128" name="magical blue bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56129" name="serpent skin bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56130" name="golden fire bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56131" name="pharaoh bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56132" name="brown dragon bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56133" name="black warrior backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56134" name="explorer green backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56135" name="shiny crystal bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56136" name="warlock bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56137" name="king backpack blue">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56138" name="nature bag green">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56139" name="tech red backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56140" name="unicorn backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56141" name="sturdy wood backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56142" name="queen noble backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56143" name="void backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56144" name="valkyrie backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56145" name="forest hunter backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56146" name="tribal beast backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56147" name="golden phoenix backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56148" name="lovely heart backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56149" name="wooden tribal backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56150" name="jester backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56151" name="angelic backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56152" name="mystic eye backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56153" name="skull knight backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56154" name="venomous backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56155" name="royal scholar backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56156" name="golden crown backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56157" name="flower bomb bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56158" name="red u bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56159" name="green gem bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56160" name="dark ritual bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56161" name="brown skull bag">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56162" name="z cube box">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56163" name="white gift box">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56164" name="purple question box">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56165" name="yellow question box">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56166" name="emerald chest">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56167" name="purple surprise box">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56168" name="colorful gift box">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56169" name="star gift box">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56170" name="dragon gift box">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56171" name="holy chest">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="57004" name="royal purple backpack alt">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="57005" name="musical blue backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="57006" name="musical red backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="57007" name="holy white backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="57008" name="ocean blue backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="57009" name="green adventurer backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="57011" name="furry forest backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="57012" name="horned grey backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="57013" name="brown scale backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="57014" name="frozen wing backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="57015" name="ice warrior backpack">
+		<attribute key="weight" value="500" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+
+
 	<item id="56328" name="mystic gold stone">
 		<attribute key="weight" value="10000" />
 		<attribute key="description" value="This item is used to perform any vocation upgrade." />
@@ -70224,43 +72171,190 @@
 	</item>
 
 	<!-- Backpacks -->
-	<item id="56037" name="kurama backpack">
-		<attribute key="containerSize" value="200" />
-		<attribute key="weight" value="1000" />
-		<attribute key="description" value="Kurama backpack com 200 de capacidadde de carga extra." />
-		<attribute key="absorbPercentFire" value="5" />
-		<attribute key="absorbPercentEarth" value="5" />
-		<attribute key="absorbPercentDeath" value="5" />
-		<attribute key="absorbPercentEnergy" value="5" />
+	
+	
+	
+	
+	
+
+	<item id="51719" name="red small chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
 	</item>
-	<item id="55951" name="barragan backpack">
-		<attribute key="containerSize" value="100" />
-		<attribute key="weight" value="1000" />
-		<attribute key="description" value="Barragan backpack com 100 de capacidadde de carga extra." />
-		<attribute key="absorbPercentDeath" value="5" />
+	<item id="51720" name="golden small chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
 	</item>
-	<item id="55953" name="ulquiorra backpack">
-		<attribute key="containerSize" value="150" />
-		<attribute key="weight" value="1000" />
-		<attribute key="description" value="Ulquiorra backpack com 150 de capacidadde de carga extra." />
-		<attribute key="absorbPercentDeath" value="5" />
+	<item id="51721" name="blue small chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
 	</item>
-	<item id="55846" name="royal backpack">
-		<attribute key="containerSize" value="175" />
-		<attribute key="weight" value="1000" />
-		<attribute key="description" value="Royal backpack com 175 de capacidadde de carga extra." />
-		<attribute key="absorbPercentPhysical" value="5" />
+	<item id="51722" name="green leafy chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
 	</item>
-	<item id="55885" name="rabbit backpack">
-		<attribute key="containerSize" value="125" />
-		<attribute key="weight" value="1000" />
-		<attribute key="description" value="Rabbit backpack com 125 de capacidadde de carga extra." />
-		<attribute key="absorbPercentHoly" value="5" />
+	<item id="51723" name="brown leafy chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
 	</item>
-	<item id="55863" name="gaia backpack">
-		<attribute key="containerSize" value="100" />
-		<attribute key="weight" value="1000" />
-		<attribute key="description" value="Gaia backpack com 100 de capacidadde de carga extra." />
-		<attribute key="absorbPercentEarth" value="5" />
+	<item id="51724" name="purple crystal chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51725" name="pink crystal chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51726" name="wooden curved chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51727" name="golden curved chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51728" name="blue glowing chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51729" name="cyan glowing chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51730" name="lava glowing chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51731" name="silver curved chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51732" name="demon bone chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51733" name="dark knight chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51734" name="red tech chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51735" name="ankh white chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51736" name="reward small chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51737" name="golden ankh chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51738" name="white ankh chest large">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51739" name="ivory ankh chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51909" name="mini wooden box">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51910" name="mini golden box">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51954" name="cyan square chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51955" name="purple square chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51956" name="green square chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51908" name="silver mini chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51959" name="red antique box">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="51960" name="brown antique box">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="52037" name="ice wing chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="52038" name="plain wooden chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="52039" name="flaming wooden chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="52040" name="dark wooden crate">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="52079" name="blue magic box">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56975" name="master dragon chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56976" name="cyber chest green">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56977" name="cyber chest orange">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56978" name="cyber chest blue">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56979" name="shamanic wooden chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56980" name="purple nightmare chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56981" name="blue crystal golem chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56982" name="undead bone chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56983" name="golden metal chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56984" name="silver metal chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56985" name="green metal chest">
+		<attribute key="weight" value="12000" />
+		<attribute key="containerSize" value="15" />
 	</item>
 </items>

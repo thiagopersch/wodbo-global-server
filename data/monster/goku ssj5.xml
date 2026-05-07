@@ -1,7 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Goku SSJ5" nameDescription="an Goku SSJ5" race="blood" experience="500000" speed="600" manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Goku SSJ5" nameDescription="an Goku SSJ5" race="blood" experience="5000000"
+	speed="600" manacost="0">
 	<health now="500000" max="500000" />
-	<look type="16" head="1" body="1" legs="1" feet="1" addons="0" corpse="49245" />
+	<look type="6518" head="1" body="1" legs="1" feet="1" addons="0" corpse="49245" />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
 	<flags>
@@ -18,12 +19,12 @@
 		<flag runonhealth="0" />
 	</flags>
 	<attacks>
-    <attack name="melee" interval="2000" min="-400" max="-1000" />
-    <attack name="renzoku energy dan" chance="35" interval="5000" min="-400" max="-1200" />
-    <attack name="super energy wave" chance="2" interval="6000" min="-2400" max="-8000" />
-    <attack name="crusher ball" interval="3000" chance="15" min="-1200" max="-4000" />
-    <attack name="kienzan" interval="10000" chance="5" min="-1200" max="-4500" />
-  </attacks>
+		<attack name="melee" interval="2000" min="-400" max="-10000" />
+		<attack name="renzoku energy dan" chance="35" interval="5000" min="-400" max="-12000" />
+		<attack name="super energy wave" chance="2" interval="6000" min="-2400" max="-80000" />
+		<attack name="crusher ball" interval="3000" chance="15" min="-1200" max="-40000" />
+		<attack name="kienzan" interval="10000" chance="5" min="-1200" max="-45000" />
+	</attacks>
 	<defenses armor="0" defense="0" />
 	<immunities>
 		<immunity physical="0" />
@@ -48,9 +49,9 @@
 		<item name="mp point" countmax="10" chance="1000" />
 		<item name="leaf senzu" countmax="5" chance="1000" />
 		<item name="branch senzu" countmax="5" chance="1000" />
-    <item name="goku armor" chance="1000" />
-    <item name="goku legs" chance="1000" />
-    <item name="goku boots" chance="1000" />
-    <item name="goku ssj5 boots" chance="500" />
+		<item name="goku armor" chance="1000" />
+		<item name="goku legs" chance="1000" />
+		<item name="goku boots" chance="1000" />
+		<item name="goku ssj5 boots" chance="500" />
 	</loot>
 </monster>

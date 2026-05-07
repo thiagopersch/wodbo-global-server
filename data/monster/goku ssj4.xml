@@ -1,6 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Goku SSJ4" nameDescription="an goku ssj4" race="blood" experience="200000" speed="475" manacost="0">
-	<health now="400000" max="400000" />
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Goku SSJ4" nameDescription="an goku ssj4" race="blood" experience="2000000"
+	speed="500" manacost="0">
+	<health now="250000" max="250000" />
 	<look type="1893" head="1" body="1" legs="1" feet="1" addons="0" corpse="49245" />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
@@ -18,12 +19,12 @@
 		<flag runonhealth="0" />
 	</flags>
 	<attacks>
-    <attack name="melee" interval="2000" min="-400" max="-1000" />
-    <attack name="renzoku energy dan" chance="35" interval="5000" min="-400" max="-1200" />
-    <attack name="super energy wave" chance="2" interval="6000" min="-2400" max="-8000" />
-    <attack name="crusher ball" interval="3000" chance="15" min="-1200" max="-4000" />
-    <attack name="kienzan" interval="10000" chance="5" min="-1200" max="-4500" />
-  </attacks>
+		<attack name="melee" interval="2000" min="-400" max="-10000" />
+		<attack name="renzoku energy dan" chance="35" interval="5000" min="-400" max="-12000" />
+		<attack name="super energy wave" chance="2" interval="6000" min="-2400" max="-50000" />
+		<attack name="crusher ball" interval="3000" chance="15" min="-1200" max="-20000" />
+		<attack name="kienzan" interval="10000" chance="5" min="-1200" max="-25000" />
+	</attacks>
 	<defenses armor="0" defense="0" />
 	<immunities>
 		<immunity physical="0" />
@@ -48,8 +49,8 @@
 		<item name="mp point" countmax="10" chance="1000" />
 		<item name="leaf senzu" countmax="5" chance="1000" />
 		<item name="branch senzu" countmax="5" chance="1000" />
-    <item name="goku armor" chance="1000" />
-    <item name="goku legs" chance="1000" />
-    <item name="goku boots" chance="1000" />
+		<item name="goku armor" chance="1000" />
+		<item name="goku legs" chance="1000" />
+		<item name="goku boots" chance="1000" />
 	</loot>
 </monster>

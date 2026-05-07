@@ -1,39 +1,1720 @@
-[6/5/2026 15:10:19] > Usando SHA1 criptografia
-[6/5/2026 15:10:19] >> Carregando RSA key
-[6/5/2026 15:10:19] >> Iniciando conexao SQL
-[6/5/2026 15:10:19] >> Executando Gerenciador de Banco de Dados
-[6/5/2026 15:10:19] > Optimized database.
-[6/5/2026 15:10:19] >> Carregando items (OTB)
-[6/5/2026 15:10:19] >> Carregando items (XML)
-[6/5/2026 15:10:20] >> Carregando Grupos
-[6/5/2026 15:10:20] >> Carregando Vocacoes
-[6/5/2026 15:10:20] >> Carregando Outfits
-[6/5/2026 15:10:20] >> Carregando Canal de Chat
-[6/5/2026 15:10:20] >> Carregando Sistema
-[6/5/2026 15:10:20] >> Carregando Mods...
-[6/5/2026 15:10:20] > Loading AutoLoot.xml... done.
-[6/5/2026 15:10:20] > Loading Automatic Raids.xml... done.
-[6/5/2026 15:10:20] > Loading highscorebook.xml... done.
-[6/5/2026 15:10:20] > Loading Simple Task.xml... done.
-[6/5/2026 15:10:20] > 4 mods were loaded.
-[6/5/2026 15:10:20] >> Carregando EXP Stages
-[6/5/2026 15:10:20] >> Carregando Monstros
-[6/5/2026 15:10:21] >> Carregando Mapa e Spawns...
-[6/5/2026 15:10:21] > Tamanho do Mapa: 64000x64000.
-[6/5/2026 15:10:21] > Descricao do Mapa: 
-[6/5/2026 15:10:21] "Saved with OTARMEIE 7.1.2"
-[6/5/2026 15:10:21] "No map description available."
-[6/5/2026 15:10:24] > Mapa carregado em: 3.353 segundos.
-[6/5/2026 15:10:24] > Data carregada em: 0.233 segundos.
-[6/5/2026 15:10:26] > Houses carregada em: 1.728 segundos.
-[6/5/2026 15:10:26] > Content unserialization time: 0.005 seconds.
-[6/5/2026 15:10:26] > Carregando Tipo de PVP... Open PvP
-[6/5/2026 15:10:26] > Inicializando estado do jogo e registrando servicos...
-[6/5/2026 15:10:26] > IP do Servidor: 127.0.0.1
-[6/5/2026 15:10:26] > IP local do Servidor: 172.27.48.1	192.168.1.105	
-[6/5/2026 15:10:26] > Portas do Servidor: 7171	7172	
-[6/5/2026 15:10:26] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[6/5/2026 15:10:36] >> DBOSupreme servidor Online!
+[7/5/2026 0:50:20] > Usando SHA1 criptografia
+[7/5/2026 0:50:20] >> Carregando RSA key
+[7/5/2026 0:50:20] >> Iniciando conexao SQL
+[7/5/2026 0:50:20] >> Executando Gerenciador de Banco de Dados
+[7/5/2026 0:50:20] > Optimized database.
+[7/5/2026 0:50:20] >> Carregando items (OTB)
+[7/5/2026 0:50:21] >> Carregando items (XML)
+[7/5/2026 0:50:21] >> Carregando Grupos
+[7/5/2026 0:50:21] >> Carregando Vocacoes
+[7/5/2026 0:50:21] >> Carregando Outfits
+[7/5/2026 0:50:21] >> Carregando Canal de Chat
+[7/5/2026 0:50:21] >> Carregando Sistema
+[7/5/2026 0:50:25] >> Carregando Mods...
+[7/5/2026 0:50:25] > Loading AutoLoot.xml... done.
+[7/5/2026 0:50:25] > Loading Automatic Raids.xml... done.
+[7/5/2026 0:50:25] > Loading highscorebook.xml... done.
+[7/5/2026 0:50:25] > Loading Simple Task.xml... done.
+[7/5/2026 0:50:25] > 4 mods were loaded.
+[7/5/2026 0:50:25] >> Carregando EXP Stages
+[7/5/2026 0:50:25] >> Carregando Monstros
+[7/5/2026 0:50:30] >> Carregando Mapa e Spawns...
+[7/5/2026 0:50:30] > Tamanho do Mapa: 64000x64000.
+[7/5/2026 0:50:30] > Descricao do Mapa: 
+[7/5/2026 0:50:30] "Saved with OTARMEIE 7.1.2"
+[7/5/2026 0:50:30] "No map description available."
+[7/5/2026 0:50:33] > Mapa carregado em: 2.892 segundos.
+[7/5/2026 0:50:33] > Data carregada em: 0.376 segundos.
+[7/5/2026 0:50:35] > Houses carregada em: 1.476 segundos.
+[7/5/2026 0:50:35] > Content unserialization time: 0.003 seconds.
+[7/5/2026 0:50:35] > Carregando Tipo de PVP... Open PvP
+[7/5/2026 0:50:35] > Inicializando estado do jogo e registrando servicos...
+[7/5/2026 0:50:35] > IP do Servidor: 127.0.0.1
+[7/5/2026 0:50:35] > IP local do Servidor: 172.27.48.1	192.168.1.105	
+[7/5/2026 0:50:35] > Portas do Servidor: 7171	7172	
+[7/5/2026 0:50:35] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[7/5/2026 0:50:45] >> DBOSupreme servidor Online!
 
-[6/5/2026 15:10:43] God has logged in.
-[6/5/2026 15:11:58] God has logged out.
+[7/5/2026 0:53:40] God has logged in.
+[7/5/2026 0:54:11] > Loading AutoLoot.xml... done.
+[7/5/2026 0:54:11] > Loading Automatic Raids.xml... done.
+[7/5/2026 0:54:11] > Loading highscorebook.xml... done.
+[7/5/2026 0:54:11] > Loading Simple Task.xml... done.
+[7/5/2026 0:54:11] > 4 mods were loaded.
+[7/5/2026 0:54:12] God has logged out.
+[7/5/2026 0:54:14] God has logged in.
+[7/5/2026 0:54:24] > Loading AutoLoot.xml... done.
+[7/5/2026 0:54:24] > Loading Automatic Raids.xml... done.
+[7/5/2026 0:54:24] > Loading highscorebook.xml... done.
+[7/5/2026 0:54:24] > Loading Simple Task.xml... done.
+[7/5/2026 0:54:24] > 4 mods were loaded.
+[7/5/2026 0:54:25] God has logged out.
+[7/5/2026 0:54:27] God has logged in.
+[7/5/2026 0:54:31] > Loading AutoLoot.xml... done.
+[7/5/2026 0:54:31] > Loading Automatic Raids.xml... done.
+[7/5/2026 0:54:31] > Loading highscorebook.xml... done.
+[7/5/2026 0:54:31] > Loading Simple Task.xml... done.
+[7/5/2026 0:54:31] > 4 mods were loaded.
+[7/5/2026 0:54:32] God has logged out.
+[7/5/2026 0:54:34] God has logged in.
+[7/5/2026 0:55:18] > Loading AutoLoot.xml... done.
+[7/5/2026 0:55:18] > Loading Automatic Raids.xml... done.
+[7/5/2026 0:55:18] > Loading highscorebook.xml... done.
+[7/5/2026 0:55:18] > Loading Simple Task.xml... done.
+[7/5/2026 0:55:18] > 4 mods were loaded.
+[7/5/2026 0:55:19] > Loading AutoLoot.xml... done.
+[7/5/2026 0:55:19] > Loading Automatic Raids.xml... done.
+[7/5/2026 0:55:19] > Loading highscorebook.xml... done.
+[7/5/2026 0:55:19] > Loading Simple Task.xml... done.
+[7/5/2026 0:55:19] > 4 mods were loaded.
+[7/5/2026 0:57:32] > Loading AutoLoot.xml... done.
+[7/5/2026 0:57:32] > Loading Automatic Raids.xml... done.
+[7/5/2026 0:57:32] > Loading highscorebook.xml... done.
+[7/5/2026 0:57:32] > Loading Simple Task.xml... done.
+[7/5/2026 0:57:32] > 4 mods were loaded.
+[7/5/2026 0:58:9] > Loading AutoLoot.xml... done.
+[7/5/2026 0:58:9] > Loading Automatic Raids.xml... done.
+[7/5/2026 0:58:9] > Loading highscorebook.xml... done.
+[7/5/2026 0:58:9] > Loading Simple Task.xml... done.
+[7/5/2026 0:58:9] > 4 mods were loaded.
+[7/5/2026 0:58:23] > Loading AutoLoot.xml... done.
+[7/5/2026 0:58:23] > Loading Automatic Raids.xml... done.
+[7/5/2026 0:58:23] > Loading highscorebook.xml... done.
+[7/5/2026 0:58:23] > Loading Simple Task.xml... done.
+[7/5/2026 0:58:23] > 4 mods were loaded.
+[7/5/2026 1:0:21] > Loading AutoLoot.xml... done.
+[7/5/2026 1:0:21] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:0:21] > Loading highscorebook.xml... done.
+[7/5/2026 1:0:21] > Loading Simple Task.xml... done.
+[7/5/2026 1:0:21] > 4 mods were loaded.
+[7/5/2026 1:0:46] > Loading AutoLoot.xml... done.
+[7/5/2026 1:0:46] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:0:46] > Loading highscorebook.xml... done.
+[7/5/2026 1:0:46] > Loading Simple Task.xml... done.
+[7/5/2026 1:0:46] > 4 mods were loaded.
+[7/5/2026 1:1:39] > Loading AutoLoot.xml... done.
+[7/5/2026 1:1:39] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:1:39] > Loading highscorebook.xml... done.
+[7/5/2026 1:1:39] > Loading Simple Task.xml... done.
+[7/5/2026 1:1:39] > 4 mods were loaded.
+[7/5/2026 1:3:17] > Loading AutoLoot.xml... done.
+[7/5/2026 1:3:17] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:3:17] > Loading highscorebook.xml... done.
+[7/5/2026 1:3:17] > Loading Simple Task.xml... done.
+[7/5/2026 1:3:17] > 4 mods were loaded.
+[7/5/2026 1:3:20] God has logged out.
+[7/5/2026 1:3:22] God has logged in.
+[7/5/2026 1:3:25] God has logged out.
+[7/5/2026 1:3:26] God has logged in.
+[7/5/2026 1:5:10] > Loading AutoLoot.xml... done.
+[7/5/2026 1:5:10] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:5:10] > Loading highscorebook.xml... done.
+[7/5/2026 1:5:10] > Loading Simple Task.xml... done.
+[7/5/2026 1:5:10] > 4 mods were loaded.
+[7/5/2026 1:5:31] > Loading AutoLoot.xml... done.
+[7/5/2026 1:5:31] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:5:31] > Loading highscorebook.xml... done.
+[7/5/2026 1:5:31] > Loading Simple Task.xml... done.
+[7/5/2026 1:5:31] > 4 mods were loaded.
+[7/5/2026 1:5:33] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:34] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:36] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:37] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:38] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:38] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0.001 seconds.
+[7/5/2026 1:5:39] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:40] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:41] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:42] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:43] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:44] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:45] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:46] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:48] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:49] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:50] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:51] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:52] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:53] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:54] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:55] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:56] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:57] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:58] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:5:59] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:0] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:1] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:2] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:4] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:5] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:6] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:7] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:8] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:9] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:10] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:11] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:12] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:13] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:14] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:15] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:16] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:17] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:18] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:20] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:21] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:22] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:23] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:24] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:25] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:26] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:27] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:28] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:29] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:30] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:31] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:33] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:34] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:35] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:36] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:37] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:38] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:39] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:40] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:40] > Loading AutoLoot.xml... done.
+[7/5/2026 1:6:40] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:6:40] > Loading highscorebook.xml... done.
+[7/5/2026 1:6:40] > Loading Simple Task.xml... done.
+[7/5/2026 1:6:40] > 4 mods were loaded.
+[7/5/2026 1:6:43] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:44] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:45] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:46] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:47] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:48] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:49] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:50] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:51] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:52] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:53] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:54] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:55] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:56] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:57] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:58] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:6:59] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:0] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:2] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:3] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:4] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:5] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:6] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:7] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:8] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:9] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:10] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:11] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:12] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:13] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:15] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:16] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:17] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:18] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:19] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:20] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:21] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:22] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:23] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:24] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:25] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:26] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:28] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:29] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:30] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:31] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:32] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:33] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:34] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:35] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:36] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:37] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:38] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:39] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:41] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:42] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:43] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:43] > Loading AutoLoot.xml... done.
+[7/5/2026 1:7:43] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:7:43] > Loading highscorebook.xml... done.
+[7/5/2026 1:7:43] > Loading Simple Task.xml... done.
+[7/5/2026 1:7:43] > 4 mods were loaded.
+[7/5/2026 1:7:45] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:46] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:47] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:48] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:49] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:50] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:51] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:52] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:53] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:54] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:55] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:57] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:58] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:7:59] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:0] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:1] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:2] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:3] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:4] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:5] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:6] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:7] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:8] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:9] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:10] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:12] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:13] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:14] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:15] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:16] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:17] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:18] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:19] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:20] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:21] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:22] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:23] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:24] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:25] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:27] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:28] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:29] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:30] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:31] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:32] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:33] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:34] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:36] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:37] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:38] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:39] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:40] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:41] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:42] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:43] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:44] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:45] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:46] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:47] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:48] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:49] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:50] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:51] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:53] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:54] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:55] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:56] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:57] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:58] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:8:59] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:0] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:2] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:3] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:4] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:5] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:6] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:7] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:8] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:9] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:10] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:11] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:12] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:13] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:14] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:15] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:16] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:18] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:19] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:20] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:21] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:22] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:23] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:24] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:25] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:26] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:27] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:28] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:29] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:30] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:31] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:32] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:33] > Loading AutoLoot.xml... done.
+[7/5/2026 1:9:33] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:9:33] > Loading highscorebook.xml... done.
+[7/5/2026 1:9:33] > Loading Simple Task.xml... done.
+[7/5/2026 1:9:33] > 4 mods were loaded.
+[7/5/2026 1:9:35] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:36] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:37] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:38] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:39] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:40] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:41] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:42] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:43] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:44] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:45] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:46] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:48] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:49] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:50] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:51] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:52] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:53] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:54] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:55] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:56] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:57] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:58] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:9:59] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:1] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:2] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:3] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:4] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:5] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:6] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:7] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:8] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:9] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:10] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:11] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:12] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:14] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:15] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:16] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:17] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:18] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:19] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:20] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:21] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:22] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:23] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:24] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:25] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:26] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:27] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:29] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:30] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:31] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:32] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:33] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:34] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:35] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:36] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:37] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:39] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:40] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:41] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:42] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:43] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:44] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:45] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:46] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:47] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:48] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:49] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:50] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:51] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:52] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:53] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:10:59] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:0] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:1] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:3] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:4] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:5] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:6] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:7] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:8] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:9] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:10] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:11] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:12] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:13] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:14] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:16] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:17] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:18] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:19] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:20] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:21] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:22] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:23] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:24] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:25] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:26] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:27] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:28] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:29] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:30] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:32] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:33] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:34] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:35] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:36] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:37] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:38] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:39] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:40] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:41] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:42] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:43] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:44] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:45] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:46] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:48] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:49] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:50] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:51] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:52] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:53] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:54] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:55] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:56] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:57] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:58] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:11:59] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:1] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:2] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:3] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:4] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:5] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:6] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:7] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:8] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:9] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:10] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:11] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:12] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:13] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:14] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:15] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:17] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:18] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:19] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:20] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:21] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:22] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:23] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:24] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:25] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:27] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:28] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:29] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:30] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:31] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:32] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:33] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:34] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:35] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:36] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:37] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:38] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:39] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:41] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:42] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:43] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:44] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:45] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:46] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:47] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:48] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:49] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[7/5/2026 1:12:49] > Loading AutoLoot.xml... done.
+[7/5/2026 1:12:49] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:12:49] > Loading highscorebook.xml... done.
+[7/5/2026 1:12:49] > Loading Simple Task.xml... done.
+[7/5/2026 1:12:49] > 4 mods were loaded.
+[7/5/2026 1:15:22] > Loading AutoLoot.xml... done.
+[7/5/2026 1:15:22] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:15:22] > Loading highscorebook.xml... done.
+[7/5/2026 1:15:22] > Loading Simple Task.xml... done.
+[7/5/2026 1:15:22] > 4 mods were loaded.
+[7/5/2026 1:16:39] > Loading AutoLoot.xml... done.
+[7/5/2026 1:16:39] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:16:39] > Loading highscorebook.xml... done.
+[7/5/2026 1:16:39] > Loading Simple Task.xml... done.
+[7/5/2026 1:16:39] > 4 mods were loaded.
+[7/5/2026 1:16:41] God has logged out.
+[7/5/2026 1:16:42] Dias Atras has logged in.
+[7/5/2026 1:16:53] Dias Atras has logged out.
+[7/5/2026 1:16:56] God has logged in.
+[7/5/2026 1:17:24] > Loading AutoLoot.xml... done.
+[7/5/2026 1:17:24] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:17:24] > Loading highscorebook.xml... done.
+[7/5/2026 1:17:24] > Loading Simple Task.xml... done.
+[7/5/2026 1:17:24] > 4 mods were loaded.
+[7/5/2026 1:17:26] God has logged out.
+[7/5/2026 1:17:28] Dias Atras has logged in.
+[7/5/2026 1:17:59] Dias Atras has logged out.
+[7/5/2026 1:18:1] God has logged in.
+[7/5/2026 1:18:2] > Loading AutoLoot.xml... done.
+[7/5/2026 1:18:2] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:18:2] > Loading highscorebook.xml... done.
+[7/5/2026 1:18:2] > Loading Simple Task.xml... done.
+[7/5/2026 1:18:2] > 4 mods were loaded.
+[7/5/2026 1:18:3] God has logged out.
+[7/5/2026 1:18:6] God has logged in.
+[7/5/2026 1:18:26] Dias Atras has logged in.
+[7/5/2026 1:18:32] God has logged out.
+[7/5/2026 1:18:33] God has logged in.
+[7/5/2026 1:19:3] God has logged out.
+[7/5/2026 1:19:5] God has logged in.
+[7/5/2026 1:20:39] > Loading AutoLoot.xml... done.
+[7/5/2026 1:20:39] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:20:39] > Loading highscorebook.xml... done.
+[7/5/2026 1:20:39] > Loading Simple Task.xml... done.
+[7/5/2026 1:20:39] > 4 mods were loaded.
+[7/5/2026 1:24:55] > Loading AutoLoot.xml... done.
+[7/5/2026 1:24:55] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:24:55] > Loading highscorebook.xml... done.
+[7/5/2026 1:24:55] > Loading Simple Task.xml... done.
+[7/5/2026 1:24:55] > 4 mods were loaded.
+[7/5/2026 1:24:56] > Loading AutoLoot.xml... done.
+[7/5/2026 1:24:56] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:24:56] > Loading highscorebook.xml... done.
+[7/5/2026 1:24:56] > Loading Simple Task.xml... done.
+[7/5/2026 1:24:56] > 4 mods were loaded.
+[7/5/2026 1:26:5] Dias Atras has logged out.
+[7/5/2026 1:26:6] Dias Atras has logged in.
+
+[7/5/2026 1:36:40] [Error - TalkAction Interface] 
+[7/5/2026 1:36:40] data/talkactions/scripts/creature.lua:onSay
+[7/5/2026 1:36:40] Description: 
+[7/5/2026 1:36:40] (luaDoCreateMonster) Monster with name 'demonm' not found
+
+[7/5/2026 1:39:45] [Error - TalkAction Interface] 
+[7/5/2026 1:39:45] data/talkactions/scripts/creature.lua:onSay
+[7/5/2026 1:39:45] Description: 
+[7/5/2026 1:39:45] (luaDoCreateMonster) Monster with name 'bills' not found
+[7/5/2026 1:42:30] > Loading AutoLoot.xml... done.
+[7/5/2026 1:42:30] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:42:30] > Loading highscorebook.xml... done.
+[7/5/2026 1:42:30] > Loading Simple Task.xml... done.
+[7/5/2026 1:42:30] > 4 mods were loaded.
+[7/5/2026 1:59:26] God has logged out.
+[7/5/2026 1:59:27] God has logged in.
+[7/5/2026 1:59:48] > Loading AutoLoot.xml... done.
+[7/5/2026 1:59:48] > Loading Automatic Raids.xml... done.
+[7/5/2026 1:59:48] > Loading highscorebook.xml... done.
+[7/5/2026 1:59:48] > Loading Simple Task.xml... done.
+[7/5/2026 1:59:48] > 4 mods were loaded.
+[7/5/2026 2:0:24] > Loading AutoLoot.xml... done.
+[7/5/2026 2:0:24] > Loading Automatic Raids.xml... done.
+[7/5/2026 2:0:24] > Loading highscorebook.xml... done.
+[7/5/2026 2:0:24] > Loading Simple Task.xml... done.
+[7/5/2026 2:0:24] > 4 mods were loaded.
+[7/5/2026 2:4:30] Dias Atras has logged out.
+[7/5/2026 2:4:32] Dias Atras has logged in.
+[7/5/2026 2:5:58] Dias Atras has logged out.
+[7/5/2026 2:6:1] God has logged out.
+[7/5/2026 2:10:11] God has logged in.
+[7/5/2026 2:10:17] Dias Atras has logged in.
+[7/5/2026 2:11:38] > Loading AutoLoot.xml... done.
+[7/5/2026 2:11:38] > Loading Automatic Raids.xml... done.
+[7/5/2026 2:11:38] > Loading highscorebook.xml... done.
+[7/5/2026 2:11:38] > Loading Simple Task.xml... done.
+[7/5/2026 2:11:38] > 4 mods were loaded.
+[7/5/2026 2:13:28] > Loading AutoLoot.xml... done.
+[7/5/2026 2:13:28] > Loading Automatic Raids.xml... done.
+[7/5/2026 2:13:28] > Loading highscorebook.xml... done.
+[7/5/2026 2:13:28] > Loading Simple Task.xml... done.
+[7/5/2026 2:13:28] > 4 mods were loaded.
+
+[7/5/2026 2:16:54] [Error - Spell Interface] 
+[7/5/2026 2:16:54] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:16:54] Description: 
+[7/5/2026 2:16:54] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:16:54] [Error - Spell Interface] 
+[7/5/2026 2:16:54] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:16:54] Description: 
+[7/5/2026 2:16:54] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:16:54] stack traceback:
+[7/5/2026 2:16:54] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:17:0] [Error - Spell Interface] 
+[7/5/2026 2:17:0] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:0] Description: 
+[7/5/2026 2:17:0] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:17:0] [Error - Spell Interface] 
+[7/5/2026 2:17:0] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:0] Description: 
+[7/5/2026 2:17:0] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:17:0] stack traceback:
+[7/5/2026 2:17:0] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:17:6] [Error - Spell Interface] 
+[7/5/2026 2:17:6] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:6] Description: 
+[7/5/2026 2:17:6] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:17:6] [Error - Spell Interface] 
+[7/5/2026 2:17:6] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:6] Description: 
+[7/5/2026 2:17:6] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:17:6] stack traceback:
+[7/5/2026 2:17:6] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:17:13] [Error - Spell Interface] 
+[7/5/2026 2:17:13] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:13] Description: 
+[7/5/2026 2:17:13] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:17:13] [Error - Spell Interface] 
+[7/5/2026 2:17:13] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:13] Description: 
+[7/5/2026 2:17:13] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:17:13] stack traceback:
+[7/5/2026 2:17:13] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:17:19] [Error - Spell Interface] 
+[7/5/2026 2:17:19] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:19] Description: 
+[7/5/2026 2:17:19] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:17:19] [Error - Spell Interface] 
+[7/5/2026 2:17:19] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:19] Description: 
+[7/5/2026 2:17:19] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:17:19] stack traceback:
+[7/5/2026 2:17:19] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:17:25] [Error - Spell Interface] 
+[7/5/2026 2:17:25] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:25] Description: 
+[7/5/2026 2:17:25] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:17:25] [Error - Spell Interface] 
+[7/5/2026 2:17:25] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:25] Description: 
+[7/5/2026 2:17:25] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:17:25] stack traceback:
+[7/5/2026 2:17:25] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:17:31] [Error - Spell Interface] 
+[7/5/2026 2:17:31] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:31] Description: 
+[7/5/2026 2:17:31] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:17:31] [Error - Spell Interface] 
+[7/5/2026 2:17:31] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:31] Description: 
+[7/5/2026 2:17:31] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:17:31] stack traceback:
+[7/5/2026 2:17:31] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:17:38] [Error - Spell Interface] 
+[7/5/2026 2:17:38] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:38] Description: 
+[7/5/2026 2:17:38] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:17:38] [Error - Spell Interface] 
+[7/5/2026 2:17:38] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:38] Description: 
+[7/5/2026 2:17:38] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:17:38] stack traceback:
+[7/5/2026 2:17:38] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:17:44] [Error - Spell Interface] 
+[7/5/2026 2:17:44] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:44] Description: 
+[7/5/2026 2:17:44] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:17:44] [Error - Spell Interface] 
+[7/5/2026 2:17:44] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:44] Description: 
+[7/5/2026 2:17:44] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:17:44] stack traceback:
+[7/5/2026 2:17:44] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:17:50] [Error - Spell Interface] 
+[7/5/2026 2:17:50] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:50] Description: 
+[7/5/2026 2:17:50] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:17:50] [Error - Spell Interface] 
+[7/5/2026 2:17:50] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:50] Description: 
+[7/5/2026 2:17:50] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:17:50] stack traceback:
+[7/5/2026 2:17:50] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:17:56] [Error - Spell Interface] 
+[7/5/2026 2:17:56] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:56] Description: 
+[7/5/2026 2:17:56] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:17:56] [Error - Spell Interface] 
+[7/5/2026 2:17:56] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:17:56] Description: 
+[7/5/2026 2:17:56] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:17:56] stack traceback:
+[7/5/2026 2:17:56] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:18:2] [Error - Spell Interface] 
+[7/5/2026 2:18:2] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:2] Description: 
+[7/5/2026 2:18:2] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:18:2] [Error - Spell Interface] 
+[7/5/2026 2:18:2] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:2] Description: 
+[7/5/2026 2:18:2] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:18:2] stack traceback:
+[7/5/2026 2:18:2] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:18:9] [Error - Spell Interface] 
+[7/5/2026 2:18:9] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:9] Description: 
+[7/5/2026 2:18:9] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:18:9] [Error - Spell Interface] 
+[7/5/2026 2:18:9] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:9] Description: 
+[7/5/2026 2:18:9] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:18:9] stack traceback:
+[7/5/2026 2:18:9] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:18:15] [Error - Spell Interface] 
+[7/5/2026 2:18:15] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:15] Description: 
+[7/5/2026 2:18:15] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:18:15] [Error - Spell Interface] 
+[7/5/2026 2:18:15] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:15] Description: 
+[7/5/2026 2:18:15] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:18:15] stack traceback:
+[7/5/2026 2:18:15] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:18:21] [Error - Spell Interface] 
+[7/5/2026 2:18:21] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:21] Description: 
+[7/5/2026 2:18:21] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:18:21] [Error - Spell Interface] 
+[7/5/2026 2:18:21] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:21] Description: 
+[7/5/2026 2:18:21] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:18:21] stack traceback:
+[7/5/2026 2:18:21] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:18:27] [Error - Spell Interface] 
+[7/5/2026 2:18:27] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:27] Description: 
+[7/5/2026 2:18:27] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:18:27] [Error - Spell Interface] 
+[7/5/2026 2:18:27] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:27] Description: 
+[7/5/2026 2:18:27] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:18:27] stack traceback:
+[7/5/2026 2:18:27] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:18:34] [Error - Spell Interface] 
+[7/5/2026 2:18:34] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:34] Description: 
+[7/5/2026 2:18:34] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:18:34] [Error - Spell Interface] 
+[7/5/2026 2:18:34] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:34] Description: 
+[7/5/2026 2:18:34] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:18:34] stack traceback:
+[7/5/2026 2:18:34] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:18:40] [Error - Spell Interface] 
+[7/5/2026 2:18:40] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:40] Description: 
+[7/5/2026 2:18:40] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:18:40] [Error - Spell Interface] 
+[7/5/2026 2:18:40] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:40] Description: 
+[7/5/2026 2:18:40] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:18:40] stack traceback:
+[7/5/2026 2:18:40] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:18:46] [Error - Spell Interface] 
+[7/5/2026 2:18:46] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:46] Description: 
+[7/5/2026 2:18:46] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:18:46] [Error - Spell Interface] 
+[7/5/2026 2:18:46] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:46] Description: 
+[7/5/2026 2:18:46] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:18:46] stack traceback:
+[7/5/2026 2:18:46] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:18:52] [Error - Spell Interface] 
+[7/5/2026 2:18:52] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:52] Description: 
+[7/5/2026 2:18:52] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:18:52] [Error - Spell Interface] 
+[7/5/2026 2:18:52] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:52] Description: 
+[7/5/2026 2:18:52] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:18:52] stack traceback:
+[7/5/2026 2:18:52] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:18:59] [Error - Spell Interface] 
+[7/5/2026 2:18:59] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:59] Description: 
+[7/5/2026 2:18:59] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:18:59] [Error - Spell Interface] 
+[7/5/2026 2:18:59] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:18:59] Description: 
+[7/5/2026 2:18:59] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:18:59] stack traceback:
+[7/5/2026 2:18:59] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:19:5] [Error - Spell Interface] 
+[7/5/2026 2:19:5] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:5] Description: 
+[7/5/2026 2:19:5] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:19:5] [Error - Spell Interface] 
+[7/5/2026 2:19:5] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:5] Description: 
+[7/5/2026 2:19:5] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:19:5] stack traceback:
+[7/5/2026 2:19:5] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:19:11] [Error - Spell Interface] 
+[7/5/2026 2:19:11] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:11] Description: 
+[7/5/2026 2:19:11] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:19:11] [Error - Spell Interface] 
+[7/5/2026 2:19:11] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:11] Description: 
+[7/5/2026 2:19:11] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:19:11] stack traceback:
+[7/5/2026 2:19:11] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:19:17] [Error - Spell Interface] 
+[7/5/2026 2:19:17] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:17] Description: 
+[7/5/2026 2:19:17] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:19:17] [Error - Spell Interface] 
+[7/5/2026 2:19:17] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:17] Description: 
+[7/5/2026 2:19:17] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:19:17] stack traceback:
+[7/5/2026 2:19:17] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:19:23] [Error - Spell Interface] 
+[7/5/2026 2:19:23] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:23] Description: 
+[7/5/2026 2:19:23] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:19:23] [Error - Spell Interface] 
+[7/5/2026 2:19:23] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:23] Description: 
+[7/5/2026 2:19:23] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:19:23] stack traceback:
+[7/5/2026 2:19:23] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:19:30] [Error - Spell Interface] 
+[7/5/2026 2:19:30] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:30] Description: 
+[7/5/2026 2:19:30] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:19:30] [Error - Spell Interface] 
+[7/5/2026 2:19:30] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:30] Description: 
+[7/5/2026 2:19:30] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:19:30] stack traceback:
+[7/5/2026 2:19:30] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:19:36] [Error - Spell Interface] 
+[7/5/2026 2:19:36] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:36] Description: 
+[7/5/2026 2:19:36] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:19:36] [Error - Spell Interface] 
+[7/5/2026 2:19:36] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:36] Description: 
+[7/5/2026 2:19:36] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:19:36] stack traceback:
+[7/5/2026 2:19:36] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:19:42] [Error - Spell Interface] 
+[7/5/2026 2:19:42] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:42] Description: 
+[7/5/2026 2:19:42] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:19:42] [Error - Spell Interface] 
+[7/5/2026 2:19:42] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:42] Description: 
+[7/5/2026 2:19:42] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:19:42] stack traceback:
+[7/5/2026 2:19:42] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:19:48] [Error - Spell Interface] 
+[7/5/2026 2:19:48] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:48] Description: 
+[7/5/2026 2:19:48] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:19:48] [Error - Spell Interface] 
+[7/5/2026 2:19:48] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:48] Description: 
+[7/5/2026 2:19:48] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:19:48] stack traceback:
+[7/5/2026 2:19:48] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:19:55] [Error - Spell Interface] 
+[7/5/2026 2:19:55] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:55] Description: 
+[7/5/2026 2:19:55] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:19:55] [Error - Spell Interface] 
+[7/5/2026 2:19:55] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:19:55] Description: 
+[7/5/2026 2:19:55] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:19:55] stack traceback:
+[7/5/2026 2:19:55] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:20:1] [Error - Spell Interface] 
+[7/5/2026 2:20:1] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:1] Description: 
+[7/5/2026 2:20:1] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:20:1] [Error - Spell Interface] 
+[7/5/2026 2:20:1] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:1] Description: 
+[7/5/2026 2:20:1] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:20:1] stack traceback:
+[7/5/2026 2:20:1] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:20:7] [Error - Spell Interface] 
+[7/5/2026 2:20:7] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:7] Description: 
+[7/5/2026 2:20:7] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:20:7] [Error - Spell Interface] 
+[7/5/2026 2:20:7] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:7] Description: 
+[7/5/2026 2:20:7] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:20:7] stack traceback:
+[7/5/2026 2:20:7] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:20:13] [Error - Spell Interface] 
+[7/5/2026 2:20:13] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:13] Description: 
+[7/5/2026 2:20:13] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:20:13] [Error - Spell Interface] 
+[7/5/2026 2:20:13] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:13] Description: 
+[7/5/2026 2:20:13] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:20:13] stack traceback:
+[7/5/2026 2:20:13] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:20:19] [Error - Spell Interface] 
+[7/5/2026 2:20:19] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:19] Description: 
+[7/5/2026 2:20:19] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:20:19] [Error - Spell Interface] 
+[7/5/2026 2:20:19] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:19] Description: 
+[7/5/2026 2:20:19] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:20:19] stack traceback:
+[7/5/2026 2:20:19] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:20:26] [Error - Spell Interface] 
+[7/5/2026 2:20:26] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:26] Description: 
+[7/5/2026 2:20:26] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:20:26] [Error - Spell Interface] 
+[7/5/2026 2:20:26] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:26] Description: 
+[7/5/2026 2:20:26] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:20:26] stack traceback:
+[7/5/2026 2:20:26] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:20:32] [Error - Spell Interface] 
+[7/5/2026 2:20:32] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:32] Description: 
+[7/5/2026 2:20:32] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:20:32] [Error - Spell Interface] 
+[7/5/2026 2:20:32] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:32] Description: 
+[7/5/2026 2:20:32] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:20:32] stack traceback:
+[7/5/2026 2:20:32] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:20:38] [Error - Spell Interface] 
+[7/5/2026 2:20:38] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:38] Description: 
+[7/5/2026 2:20:38] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:20:38] [Error - Spell Interface] 
+[7/5/2026 2:20:38] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:38] Description: 
+[7/5/2026 2:20:38] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:20:38] stack traceback:
+[7/5/2026 2:20:38] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:20:44] [Error - Spell Interface] 
+[7/5/2026 2:20:44] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:44] Description: 
+[7/5/2026 2:20:44] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:20:44] [Error - Spell Interface] 
+[7/5/2026 2:20:44] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:44] Description: 
+[7/5/2026 2:20:44] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:20:44] stack traceback:
+[7/5/2026 2:20:44] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:20:50] [Error - Spell Interface] 
+[7/5/2026 2:20:50] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:50] Description: 
+[7/5/2026 2:20:50] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:20:50] [Error - Spell Interface] 
+[7/5/2026 2:20:50] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:50] Description: 
+[7/5/2026 2:20:50] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:20:50] stack traceback:
+[7/5/2026 2:20:50] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:20:57] [Error - Spell Interface] 
+[7/5/2026 2:20:57] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:57] Description: 
+[7/5/2026 2:20:57] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:20:57] [Error - Spell Interface] 
+[7/5/2026 2:20:57] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:20:57] Description: 
+[7/5/2026 2:20:57] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:20:57] stack traceback:
+[7/5/2026 2:20:57] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:21:3] [Error - Spell Interface] 
+[7/5/2026 2:21:3] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:3] Description: 
+[7/5/2026 2:21:3] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:21:3] [Error - Spell Interface] 
+[7/5/2026 2:21:3] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:3] Description: 
+[7/5/2026 2:21:3] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:21:3] stack traceback:
+[7/5/2026 2:21:3] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:21:9] [Error - Spell Interface] 
+[7/5/2026 2:21:9] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:9] Description: 
+[7/5/2026 2:21:9] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:21:9] [Error - Spell Interface] 
+[7/5/2026 2:21:9] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:9] Description: 
+[7/5/2026 2:21:9] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:21:9] stack traceback:
+[7/5/2026 2:21:9] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:21:15] [Error - Spell Interface] 
+[7/5/2026 2:21:15] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:15] Description: 
+[7/5/2026 2:21:15] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:21:15] [Error - Spell Interface] 
+[7/5/2026 2:21:15] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:15] Description: 
+[7/5/2026 2:21:15] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:21:15] stack traceback:
+[7/5/2026 2:21:15] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:21:21] [Error - Spell Interface] 
+[7/5/2026 2:21:21] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:21] Description: 
+[7/5/2026 2:21:21] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:21:21] [Error - Spell Interface] 
+[7/5/2026 2:21:21] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:21] Description: 
+[7/5/2026 2:21:21] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:21:21] stack traceback:
+[7/5/2026 2:21:21] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:21:28] [Error - Spell Interface] 
+[7/5/2026 2:21:28] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:28] Description: 
+[7/5/2026 2:21:28] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:21:28] [Error - Spell Interface] 
+[7/5/2026 2:21:28] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:28] Description: 
+[7/5/2026 2:21:28] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:21:28] stack traceback:
+[7/5/2026 2:21:28] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:21:34] [Error - Spell Interface] 
+[7/5/2026 2:21:34] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:34] Description: 
+[7/5/2026 2:21:34] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:21:34] [Error - Spell Interface] 
+[7/5/2026 2:21:34] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:34] Description: 
+[7/5/2026 2:21:34] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:21:34] stack traceback:
+[7/5/2026 2:21:34] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:21:40] [Error - Spell Interface] 
+[7/5/2026 2:21:40] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:40] Description: 
+[7/5/2026 2:21:40] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:21:40] [Error - Spell Interface] 
+[7/5/2026 2:21:40] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:40] Description: 
+[7/5/2026 2:21:40] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:21:40] stack traceback:
+[7/5/2026 2:21:40] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:21:46] [Error - Spell Interface] 
+[7/5/2026 2:21:46] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:46] Description: 
+[7/5/2026 2:21:46] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:21:46] [Error - Spell Interface] 
+[7/5/2026 2:21:46] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:46] Description: 
+[7/5/2026 2:21:46] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:21:46] stack traceback:
+[7/5/2026 2:21:46] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:21:53] [Error - Spell Interface] 
+[7/5/2026 2:21:53] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:53] Description: 
+[7/5/2026 2:21:53] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:21:53] [Error - Spell Interface] 
+[7/5/2026 2:21:53] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:53] Description: 
+[7/5/2026 2:21:53] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:21:53] stack traceback:
+[7/5/2026 2:21:53] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:21:59] [Error - Spell Interface] 
+[7/5/2026 2:21:59] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:59] Description: 
+[7/5/2026 2:21:59] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:21:59] [Error - Spell Interface] 
+[7/5/2026 2:21:59] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:21:59] Description: 
+[7/5/2026 2:21:59] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:21:59] stack traceback:
+[7/5/2026 2:21:59] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:22:5] [Error - Spell Interface] 
+[7/5/2026 2:22:5] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:5] Description: 
+[7/5/2026 2:22:5] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:22:5] [Error - Spell Interface] 
+[7/5/2026 2:22:5] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:5] Description: 
+[7/5/2026 2:22:5] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:22:5] stack traceback:
+[7/5/2026 2:22:5] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:22:11] [Error - Spell Interface] 
+[7/5/2026 2:22:11] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:11] Description: 
+[7/5/2026 2:22:11] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:22:11] [Error - Spell Interface] 
+[7/5/2026 2:22:11] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:11] Description: 
+[7/5/2026 2:22:11] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:22:11] stack traceback:
+[7/5/2026 2:22:11] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:22:17] [Error - Spell Interface] 
+[7/5/2026 2:22:17] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:17] Description: 
+[7/5/2026 2:22:17] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:22:17] [Error - Spell Interface] 
+[7/5/2026 2:22:17] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:17] Description: 
+[7/5/2026 2:22:17] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:22:17] stack traceback:
+[7/5/2026 2:22:17] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:22:24] [Error - Spell Interface] 
+[7/5/2026 2:22:24] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:24] Description: 
+[7/5/2026 2:22:24] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:22:24] [Error - Spell Interface] 
+[7/5/2026 2:22:24] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:24] Description: 
+[7/5/2026 2:22:24] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:22:24] stack traceback:
+[7/5/2026 2:22:24] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:22:30] [Error - Spell Interface] 
+[7/5/2026 2:22:30] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:30] Description: 
+[7/5/2026 2:22:30] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:22:30] [Error - Spell Interface] 
+[7/5/2026 2:22:30] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:30] Description: 
+[7/5/2026 2:22:30] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:22:30] stack traceback:
+[7/5/2026 2:22:30] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:22:36] [Error - Spell Interface] 
+[7/5/2026 2:22:36] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:36] Description: 
+[7/5/2026 2:22:36] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:22:36] [Error - Spell Interface] 
+[7/5/2026 2:22:36] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:36] Description: 
+[7/5/2026 2:22:36] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:22:36] stack traceback:
+[7/5/2026 2:22:36] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:22:42] [Error - Spell Interface] 
+[7/5/2026 2:22:42] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:42] Description: 
+[7/5/2026 2:22:42] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:22:42] [Error - Spell Interface] 
+[7/5/2026 2:22:42] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:42] Description: 
+[7/5/2026 2:22:42] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:22:42] stack traceback:
+[7/5/2026 2:22:42] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:22:49] [Error - Spell Interface] 
+[7/5/2026 2:22:49] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:49] Description: 
+[7/5/2026 2:22:49] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:22:49] [Error - Spell Interface] 
+[7/5/2026 2:22:49] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:22:49] Description: 
+[7/5/2026 2:22:49] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:22:49] stack traceback:
+[7/5/2026 2:22:49] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:23:12] [Error - Spell Interface] 
+[7/5/2026 2:23:12] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:12] Description: 
+[7/5/2026 2:23:12] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:23:12] [Error - Spell Interface] 
+[7/5/2026 2:23:12] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:12] Description: 
+[7/5/2026 2:23:12] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:23:12] stack traceback:
+[7/5/2026 2:23:12] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:23:16] [Error - Spell Interface] 
+[7/5/2026 2:23:16] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:16] Description: 
+[7/5/2026 2:23:16] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:23:16] [Error - Spell Interface] 
+[7/5/2026 2:23:16] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:16] Description: 
+[7/5/2026 2:23:16] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:23:16] stack traceback:
+[7/5/2026 2:23:16] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:23:18] [Error - Spell Interface] 
+[7/5/2026 2:23:18] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:18] Description: 
+[7/5/2026 2:23:18] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:23:18] [Error - Spell Interface] 
+[7/5/2026 2:23:18] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:18] Description: 
+[7/5/2026 2:23:18] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:23:18] stack traceback:
+[7/5/2026 2:23:18] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:23:22] [Error - Spell Interface] 
+[7/5/2026 2:23:22] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:22] Description: 
+[7/5/2026 2:23:22] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:23:22] [Error - Spell Interface] 
+[7/5/2026 2:23:22] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:22] Description: 
+[7/5/2026 2:23:22] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:23:22] stack traceback:
+[7/5/2026 2:23:22] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:23:25] [Error - Spell Interface] 
+[7/5/2026 2:23:25] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:25] Description: 
+[7/5/2026 2:23:25] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:23:25] [Error - Spell Interface] 
+[7/5/2026 2:23:25] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:25] Description: 
+[7/5/2026 2:23:25] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:23:25] stack traceback:
+[7/5/2026 2:23:25] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:23:28] [Error - Spell Interface] 
+[7/5/2026 2:23:28] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:28] Description: 
+[7/5/2026 2:23:28] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:23:28] [Error - Spell Interface] 
+[7/5/2026 2:23:28] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:28] Description: 
+[7/5/2026 2:23:28] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:23:28] stack traceback:
+[7/5/2026 2:23:28] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:23:31] [Error - Spell Interface] 
+[7/5/2026 2:23:31] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:31] Description: 
+[7/5/2026 2:23:31] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:23:31] [Error - Spell Interface] 
+[7/5/2026 2:23:31] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:31] Description: 
+[7/5/2026 2:23:31] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:23:31] stack traceback:
+[7/5/2026 2:23:31] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:23:34] [Error - Spell Interface] 
+[7/5/2026 2:23:34] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:34] Description: 
+[7/5/2026 2:23:34] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:23:34] [Error - Spell Interface] 
+[7/5/2026 2:23:34] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:23:34] Description: 
+[7/5/2026 2:23:34] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:23:34] stack traceback:
+[7/5/2026 2:23:34] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:23:37] [Error - CreatureScript Interface] 
+[7/5/2026 2:23:37] In a timer event called from: 
+[7/5/2026 2:23:37] domodlib('Loot_func')
+[7/5/2026 2:23:37] function onKill(cid, target, lastHit)
+[7/5/2026 2:23:37] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[7/5/2026 2:23:37] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[7/5/2026 2:23:37] 	end
+[7/5/2026 2:23:37] 	return true
+[7/5/2026 2:23:37] end:onKill
+[7/5/2026 2:23:37] Description: 
+[7/5/2026 2:23:37] (luaGetContainerSize) Container not found
+
+[7/5/2026 2:23:37] [Error - CreatureScript Interface] 
+[7/5/2026 2:23:37] In a timer event called from: 
+[7/5/2026 2:23:37] domodlib('Loot_func')
+[7/5/2026 2:23:37] function onKill(cid, target, lastHit)
+[7/5/2026 2:23:37] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[7/5/2026 2:23:37] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[7/5/2026 2:23:37] 	end
+[7/5/2026 2:23:37] 	return true
+[7/5/2026 2:23:37] end:onKill
+[7/5/2026 2:23:37] Description: 
+[7/5/2026 2:23:37] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[7/5/2026 2:23:37] stack traceback:
+[7/5/2026 2:23:37] 	[C]: in function 'pairs'
+[7/5/2026 2:23:37] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+
+[7/5/2026 2:23:37] [Error - CreatureScript Interface] 
+[7/5/2026 2:23:37] In a timer event called from: 
+[7/5/2026 2:23:37] domodlib('Loot_func')
+[7/5/2026 2:23:37] function onKill(cid, target, lastHit)
+[7/5/2026 2:23:37] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[7/5/2026 2:23:37] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[7/5/2026 2:23:37] 	end
+[7/5/2026 2:23:37] 	return true
+[7/5/2026 2:23:37] end:onKill
+[7/5/2026 2:23:37] Description: 
+[7/5/2026 2:23:37] (luaGetContainerSize) Container not found
+
+[7/5/2026 2:23:37] [Error - CreatureScript Interface] 
+[7/5/2026 2:23:37] In a timer event called from: 
+[7/5/2026 2:23:37] domodlib('Loot_func')
+[7/5/2026 2:23:37] function onKill(cid, target, lastHit)
+[7/5/2026 2:23:37] 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
+[7/5/2026 2:23:37] 		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+[7/5/2026 2:23:37] 	end
+[7/5/2026 2:23:37] 	return true
+[7/5/2026 2:23:37] end:onKill
+[7/5/2026 2:23:37] Description: 
+[7/5/2026 2:23:37] [string "info = {..."]:152: bad argument #1 to 'pairs' (table expected, got boolean)
+[7/5/2026 2:23:37] stack traceback:
+[7/5/2026 2:23:37] 	[C]: in function 'pairs'
+[7/5/2026 2:23:37] 	[string "info = {..."]:152: in function <[string "info = {..."]:141>
+[7/5/2026 2:23:41] > Loading AutoLoot.xml... done.
+[7/5/2026 2:23:41] > Loading Automatic Raids.xml... done.
+[7/5/2026 2:23:41] > Loading highscorebook.xml... done.
+[7/5/2026 2:23:41] > Loading Simple Task.xml... done.
+[7/5/2026 2:23:41] > 4 mods were loaded.
+
+[7/5/2026 2:24:35] [Error - Spell Interface] 
+[7/5/2026 2:24:35] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:24:35] Description: 
+[7/5/2026 2:24:35] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:24:35] [Error - Spell Interface] 
+[7/5/2026 2:24:35] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:24:35] Description: 
+[7/5/2026 2:24:35] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:24:35] stack traceback:
+[7/5/2026 2:24:35] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:24:41] [Error - Spell Interface] 
+[7/5/2026 2:24:41] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:24:41] Description: 
+[7/5/2026 2:24:41] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:24:41] [Error - Spell Interface] 
+[7/5/2026 2:24:41] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:24:41] Description: 
+[7/5/2026 2:24:41] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:24:41] stack traceback:
+[7/5/2026 2:24:41] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:24:48] [Error - Spell Interface] 
+[7/5/2026 2:24:48] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:24:48] Description: 
+[7/5/2026 2:24:48] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:24:48] [Error - Spell Interface] 
+[7/5/2026 2:24:48] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:24:48] Description: 
+[7/5/2026 2:24:48] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:24:48] stack traceback:
+[7/5/2026 2:24:48] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+[7/5/2026 2:24:49] > Loading AutoLoot.xml... done.
+[7/5/2026 2:24:49] > Loading Automatic Raids.xml... done.
+[7/5/2026 2:24:49] > Loading highscorebook.xml... done.
+[7/5/2026 2:24:49] > Loading Simple Task.xml... done.
+[7/5/2026 2:24:49] > 4 mods were loaded.
+
+[7/5/2026 2:24:54] [Error - Spell Interface] 
+[7/5/2026 2:24:54] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:24:54] Description: 
+[7/5/2026 2:24:54] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:24:54] [Error - Spell Interface] 
+[7/5/2026 2:24:54] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:24:54] Description: 
+[7/5/2026 2:24:54] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:24:54] stack traceback:
+[7/5/2026 2:24:54] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:25:0] [Error - Spell Interface] 
+[7/5/2026 2:25:0] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:0] Description: 
+[7/5/2026 2:25:0] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:25:0] [Error - Spell Interface] 
+[7/5/2026 2:25:0] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:0] Description: 
+[7/5/2026 2:25:0] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:25:0] stack traceback:
+[7/5/2026 2:25:0] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:25:7] [Error - Spell Interface] 
+[7/5/2026 2:25:7] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:7] Description: 
+[7/5/2026 2:25:7] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:25:7] [Error - Spell Interface] 
+[7/5/2026 2:25:7] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:7] Description: 
+[7/5/2026 2:25:7] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:25:7] stack traceback:
+[7/5/2026 2:25:7] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:25:13] [Error - Spell Interface] 
+[7/5/2026 2:25:13] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:13] Description: 
+[7/5/2026 2:25:13] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:25:13] [Error - Spell Interface] 
+[7/5/2026 2:25:13] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:13] Description: 
+[7/5/2026 2:25:13] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:25:13] stack traceback:
+[7/5/2026 2:25:13] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:25:19] [Error - Spell Interface] 
+[7/5/2026 2:25:19] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:19] Description: 
+[7/5/2026 2:25:19] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:25:19] [Error - Spell Interface] 
+[7/5/2026 2:25:19] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:19] Description: 
+[7/5/2026 2:25:19] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:25:19] stack traceback:
+[7/5/2026 2:25:19] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:25:25] [Error - Spell Interface] 
+[7/5/2026 2:25:25] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:25] Description: 
+[7/5/2026 2:25:25] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:25:25] [Error - Spell Interface] 
+[7/5/2026 2:25:25] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:25] Description: 
+[7/5/2026 2:25:25] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:25:25] stack traceback:
+[7/5/2026 2:25:25] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:25:32] [Error - Spell Interface] 
+[7/5/2026 2:25:32] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:32] Description: 
+[7/5/2026 2:25:32] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:25:32] [Error - Spell Interface] 
+[7/5/2026 2:25:32] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:32] Description: 
+[7/5/2026 2:25:32] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:25:32] stack traceback:
+[7/5/2026 2:25:32] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:25:38] [Error - Spell Interface] 
+[7/5/2026 2:25:38] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:38] Description: 
+[7/5/2026 2:25:38] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:25:38] [Error - Spell Interface] 
+[7/5/2026 2:25:38] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:38] Description: 
+[7/5/2026 2:25:38] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:25:38] stack traceback:
+[7/5/2026 2:25:38] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:25:47] [Error - Spell Interface] 
+[7/5/2026 2:25:47] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:47] Description: 
+[7/5/2026 2:25:47] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:25:47] [Error - Spell Interface] 
+[7/5/2026 2:25:47] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:47] Description: 
+[7/5/2026 2:25:47] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:25:47] stack traceback:
+[7/5/2026 2:25:47] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:25:53] [Error - Spell Interface] 
+[7/5/2026 2:25:53] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:53] Description: 
+[7/5/2026 2:25:53] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:25:53] [Error - Spell Interface] 
+[7/5/2026 2:25:53] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:53] Description: 
+[7/5/2026 2:25:53] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:25:53] stack traceback:
+[7/5/2026 2:25:53] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:25:59] [Error - Spell Interface] 
+[7/5/2026 2:25:59] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:59] Description: 
+[7/5/2026 2:25:59] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:25:59] [Error - Spell Interface] 
+[7/5/2026 2:25:59] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:25:59] Description: 
+[7/5/2026 2:25:59] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:25:59] stack traceback:
+[7/5/2026 2:25:59] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:26:5] [Error - Spell Interface] 
+[7/5/2026 2:26:5] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:26:5] Description: 
+[7/5/2026 2:26:5] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:26:5] [Error - Spell Interface] 
+[7/5/2026 2:26:5] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:26:5] Description: 
+[7/5/2026 2:26:5] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:26:5] stack traceback:
+[7/5/2026 2:26:5] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:26:11] [Error - Spell Interface] 
+[7/5/2026 2:26:11] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:26:11] Description: 
+[7/5/2026 2:26:11] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:26:11] [Error - Spell Interface] 
+[7/5/2026 2:26:11] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:26:11] Description: 
+[7/5/2026 2:26:11] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:26:11] stack traceback:
+[7/5/2026 2:26:11] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:26:18] [Error - Spell Interface] 
+[7/5/2026 2:26:18] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:26:18] Description: 
+[7/5/2026 2:26:18] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:26:18] [Error - Spell Interface] 
+[7/5/2026 2:26:18] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:26:18] Description: 
+[7/5/2026 2:26:18] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:26:18] stack traceback:
+[7/5/2026 2:26:18] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:26:24] [Error - Spell Interface] 
+[7/5/2026 2:26:24] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:26:24] Description: 
+[7/5/2026 2:26:24] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:26:24] [Error - Spell Interface] 
+[7/5/2026 2:26:24] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:26:24] Description: 
+[7/5/2026 2:26:24] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:26:24] stack traceback:
+[7/5/2026 2:26:24] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+
+[7/5/2026 2:26:30] [Error - Spell Interface] 
+[7/5/2026 2:26:30] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:26:30] Description: 
+[7/5/2026 2:26:30] (luaGetPlayerMagLevel) Player not found
+
+[7/5/2026 2:26:30] [Error - Spell Interface] 
+[7/5/2026 2:26:30] data/spells/scripts/gods of destruction/Hakai.lua:onCastSpell
+[7/5/2026 2:26:30] Description: 
+[7/5/2026 2:26:30] data/spells/scripts/gods of destruction/Hakai.lua:30: attempt to compare boolean with number
+[7/5/2026 2:26:30] stack traceback:
+[7/5/2026 2:26:30] 	data/spells/scripts/gods of destruction/Hakai.lua:30: in function <data/spells/scripts/gods of destruction/Hakai.lua:28>
+[7/5/2026 2:26:31] God has logged out.
+[7/5/2026 2:26:33] God has logged in.
+[7/5/2026 2:26:55] > Salvando servidor...
+[7/5/2026 2:26:56] > SAVE: Completo em 0.182 segundos usando binary casa storage.

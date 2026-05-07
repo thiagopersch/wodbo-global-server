@@ -100,7 +100,7 @@ function onSay(cid, words, param, channel)
         tmp:free()
         db.executeQuery(query)
         doBroadcastMessage(getPlayerGuildName(cid) .. " has " .. msg,
-                           MESSAGE_EVENT_ADVANCE)
+                           "advance", "top")
         return true
     end
 
@@ -171,7 +171,7 @@ function onSay(cid, words, param, channel)
                 ", " .. frags .. ", " .. payment .. ");")
         doBroadcastMessage(getPlayerGuildName(cid) .. " has invited " ..
                                enemyName .. " to war till " .. frags ..
-                               " frags.", MESSAGE_EVENT_ADVANCE)
+                               " frags.", "advance", "top")
         return true
     end
 
@@ -192,7 +192,7 @@ function onSay(cid, words, param, channel)
         doBroadcastMessage(getPlayerGuildName(cid) .. " has " ..
                                (status == 4 and "mend fences" or
                                    "ended up a war") .. " with " .. enemyName ..
-                               ".", MESSAGE_EVENT_ADVANCE)
+                               ".", "advance", "top")
         return true
     end
 
@@ -224,7 +224,7 @@ function onSay(cid, words, param, channel)
         db.executeQuery(query)
         doBroadcastMessage(getPlayerGuildName(cid) ..
                                " has signed an armstice declaration on a war with " ..
-                               enemyName .. ".", MESSAGE_EVENT_ADVANCE)
+                               enemyName .. ".", "advance", "top")
         return true
     end
 

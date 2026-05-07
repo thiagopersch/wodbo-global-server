@@ -22,12 +22,12 @@ function onThink(interval, lastExecution)
             ", Reward: " .. config.crystal_counts .. " " ..
             getItemNameById(random_item) ..
             "s! Congratulations! (Next draw in " ..
-            config.lottery_hour .. ").")
+            config.lottery_hour .. ").", "warning", "top")
     else
         doBroadcastMessage("[LOTTERY] Winner: " .. getCreatureName(winner) ..
             ", Reward: " .. getItemNameById(random_item) ..
             "! Congratulations! (Next draw in " ..
-            config.lottery_hour .. ").")
+            config.lottery_hour .. ").", "warning", "top")
         doPlayerAddItem(winner, random_item, 1)
     end
 

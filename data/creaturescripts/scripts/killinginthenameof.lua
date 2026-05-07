@@ -1,7 +1,6 @@
 local tasks = {
   ["rat"] = { storage = 14501, amount = 10 },
   ["troll"] = { storage = 14502, amount = 20 },
-  ["troll"] = { storage = 14502, amount = 20 },
 }
 
 function onKill(cid, target, damage, flags)

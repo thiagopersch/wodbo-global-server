@@ -33,12 +33,12 @@ function prepareClean(minutes, cid)
 			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Cleaned " .. doCleanMap() .. " items.")
 		end
 
-		doBroadcastMessage("Game map cleaned.")
+		doBroadcastMessage("Game map cleaned.", "warning", "top")
 	elseif(minutes > 0) then
 		if(minutes == 1) then
-			doBroadcastMessage("Game map cleaning in " .. minutes .. " minute, please pick up all your items.")
+			doBroadcastMessage("Game map cleaning in " .. minutes .. " minute, please pick up all your items!", "warning", "top")
 		else
-			doBroadcastMessage("Game map cleaning in " .. minutes .. " minutes.")
+			doBroadcastMessage("Game map cleaning in " .. minutes .. " minutes.", "warning", "top")
 		end
 
 		cleanEvent = addEvent(prepareClean, 60000, minutes - 1, cid)

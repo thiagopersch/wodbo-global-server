@@ -10,14 +10,14 @@ function onDeath(cid, corpse, deathList)
             " [Level: " ..
             getPlayerLevel(cid) ..
             "] foi morto pelo jogador " .. getCreatureName(killer) .. " [Level: " .. getPlayerLevel(killer) .. "].",
-            MESSAGE_STATUS_CONSOLE_ORANGE)
+            "orange", "top")
     elseif isPlayer(killer) then
         doBroadcastMessage(
             getCreatureName(cid) ..
             " [Level: " ..
             getPlayerLevel(cid) ..
             "] foi morto pelo jogador " .. getCreatureName(killer) .. " [Level: " .. getPlayerLevel(killer) .. "].",
-            MESSAGE_STATUS_CONSOLE_ORANGE)
+            "orange", "top")
     end
     return true
 end

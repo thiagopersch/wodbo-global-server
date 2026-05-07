@@ -23,19 +23,21 @@ function timeString(timeDiff)
   return ret
 end
 
-function onAdvance(player, skill, oldlevel, newlevel)
+function onAdvance(cid, skill, oldlevel, newlevel)
   if skill ~= SKILL__LEVEL then
     return true
   end
 
-  oldtime = player:getStorageValue(3499)
-  timenow = os.time()
+  local oldtime = getPlayerStorageValue(cid, 3499)
+  local timenow = os.time()
   if oldtime == -1 then
-    player:setStorageValue(3499, timenow)
+    setPlayerStorageValue(cid, 3499, timenow)
   else
-    player:sendTextMessage(MESSAGE_INFO_DESCR,
-      "It took you " .. timeString(timenow - oldtime) .. " to advance in level from your last advance.")
-    player:setStorageValue(3499, timenow)
+    local msg = getPlayerName(cid) ..
+        " It took you " .. timeString(timenow - oldtime) .. " to advance in level from your last advance."
+    local formattedText = "center|" .. TEXTCOLOR_YELLOW .. "|" .. msg
+    addEvent(doBroadcastMessage, 21, formattedText)
+    setPlayerStorageValue(cid, 3499, timenow)
   end
   return true
 end
