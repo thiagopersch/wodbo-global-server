@@ -1,297 +1,48 @@
-[7/5/2026 20:55:25] > Usando SHA1 criptografia
-[7/5/2026 20:55:25] >> Carregando RSA key
-[7/5/2026 20:55:25] >> Iniciando conexao SQL
-[7/5/2026 20:55:25] >> Executando Gerenciador de Banco de Dados
-[7/5/2026 20:55:25] > Optimized database.
-[7/5/2026 20:55:25] >> Carregando items (OTB)
-[7/5/2026 20:55:25] >> Carregando items (XML)
-[7/5/2026 20:55:25] >> Carregando Grupos
-[7/5/2026 20:55:25] >> Carregando Vocacoes
-[7/5/2026 20:55:25] >> Carregando Outfits
-[7/5/2026 20:55:25] >> Carregando Canal de Chat
-[7/5/2026 20:55:25] >> Carregando Sistema
-[7/5/2026 20:55:26] >> Carregando Mods...
-[7/5/2026 20:55:26] > Loading AutoLoot.xml... done.
-[7/5/2026 20:55:26] > Loading Automatic Raids.xml... done.
-[7/5/2026 20:55:26] > Loading highscorebook.xml... done.
-[7/5/2026 20:55:26] > Loading Simple Task.xml... done.
-[7/5/2026 20:55:26] > 4 mods were loaded.
-[7/5/2026 20:55:26] >> Carregando EXP Stages
-[7/5/2026 20:55:26] >> Carregando Monstros
-[7/5/2026 20:55:30] >> Carregando Mapa e Spawns...
-[7/5/2026 20:55:31] > Tamanho do Mapa: 64000x64000.
-[7/5/2026 20:55:31] > Descricao do Mapa: 
-[7/5/2026 20:55:31] "Saved with OTARMEIE 7.1.2"
-[7/5/2026 20:55:31] "No map description available."
-[7/5/2026 20:55:34] > Mapa carregado em: 3.358 segundos.
-[7/5/2026 20:55:34] > Data carregada em: 0.341 segundos.
-[7/5/2026 20:55:36] > Houses carregada em: 1.426 segundos.
-[7/5/2026 20:55:36] > Content unserialization time: 0.003 seconds.
-[7/5/2026 20:55:36] > Carregando Tipo de PVP... Open PvP
-[7/5/2026 20:55:36] > Inicializando estado do jogo e registrando servicos...
-[7/5/2026 20:55:36] > IP do Servidor: 127.0.0.1
-[7/5/2026 20:55:36] > IP local do Servidor: 172.28.112.1	192.168.1.105	
-[7/5/2026 20:55:36] > Portas do Servidor: 7171	7172	
-[7/5/2026 20:55:36] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[7/5/2026 20:55:46] >> DBOSupreme servidor Online!
+[8/5/2026 9:21:54] > Usando SHA1 criptografia
+[8/5/2026 9:21:54] >> Carregando RSA key
+[8/5/2026 9:21:54] >> Iniciando conexao SQL
+[8/5/2026 9:21:54] >> Executando Gerenciador de Banco de Dados
+[8/5/2026 9:21:54] > Optimized database.
+[8/5/2026 9:21:54] >> Carregando items (OTB)
+[8/5/2026 9:21:54] >> Carregando items (XML)
+[8/5/2026 9:21:54] >> Carregando Grupos
+[8/5/2026 9:21:54] >> Carregando Vocacoes
+[8/5/2026 9:21:54] >> Carregando Outfits
+[8/5/2026 9:21:54] >> Carregando Canal de Chat
+[8/5/2026 9:21:54] >> Carregando Sistema
+[8/5/2026 9:21:55] >> Carregando Mods...
+[8/5/2026 9:21:55] > Loading AutoLoot.xml... done.
+[8/5/2026 9:21:55] > Loading Automatic Raids.xml... done.
+[8/5/2026 9:21:55] > Loading highscorebook.xml... done.
+[8/5/2026 9:21:55] > Loading Simple Task.xml... done.
+[8/5/2026 9:21:55] > 4 mods were loaded.
+[8/5/2026 9:21:55] >> Carregando EXP Stages
+[8/5/2026 9:21:55] >> Carregando Monstros
+[8/5/2026 9:21:55] >> Carregando Mapa e Spawns...
+[8/5/2026 9:21:56] > Tamanho do Mapa: 64000x64000.
+[8/5/2026 9:21:56] > Descricao do Mapa: 
+[8/5/2026 9:21:56] "Saved with OTARMEIE 7.1.2"
+[8/5/2026 9:21:56] "No map description available."
+[8/5/2026 9:21:58] > Mapa carregado em: 2.853 segundos.
+[8/5/2026 9:21:58] > Data carregada em: 0.179 segundos.
+[8/5/2026 9:22:1] > Houses carregada em: 2.296 segundos.
+[8/5/2026 9:22:1] > Content unserialization time: 0.004 seconds.
+[8/5/2026 9:22:1] > Carregando Tipo de PVP... Open PvP
+[8/5/2026 9:22:1] > Inicializando estado do jogo e registrando servicos...
+[8/5/2026 9:22:1] > IP do Servidor: 127.0.0.1
+[8/5/2026 9:22:1] > IP local do Servidor: 172.29.80.1	172.18.208.1	192.168.1.105	
+[8/5/2026 9:22:1] > Portas do Servidor: 7171	7172	
+[8/5/2026 9:22:1] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[8/5/2026 9:22:11] >> DBOSupreme servidor Online!
 
-[7/5/2026 20:56:3] God has logged in.
-[7/5/2026 20:56:10] God has logged out.
-[7/5/2026 20:56:11] Dias Atras has logged in.
-[7/5/2026 20:59:26] Dias Atras has logged out.
-[7/5/2026 21:20:59] Dias Atras has logged in.
-[7/5/2026 21:24:30] Dias Atras has logged out.
-[7/5/2026 21:29:7] Dias Atras has logged in.
-[7/5/2026 21:40:46] Dias Atras has logged out.
-[7/5/2026 21:41:21] Dias Atras has logged in.
-[7/5/2026 21:43:15] Dias Atras has logged out.
-[7/5/2026 21:43:17] Dias Atras has logged in.
-[7/5/2026 21:43:28] Dias Atras has logged out.
-[7/5/2026 21:43:29] Dias Atras has logged in.
-[7/5/2026 21:51:18] Dias Atras has logged out.
-[7/5/2026 21:51:19] Ayuni has logged in.
-[7/5/2026 21:52:47] Ayuni has logged out.
-[7/5/2026 21:52:49] Ayuni has logged in.
-[7/5/2026 21:57:26] > Salvando servidor...
-[7/5/2026 21:57:26] > SAVE: Completo em 0.136 segundos usando binary casa storage.
-
-[7/5/2026 21:59:39] [Error - Spell Interface] 
-[7/5/2026 21:59:39] In a timer event called from: 
-[7/5/2026 21:59:39] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:39] Description: 
-[7/5/2026 21:59:39] (luaGetTileInfo) Tile not found
-
-[7/5/2026 21:59:39] [Error - Spell Interface] 
-[7/5/2026 21:59:39] In a timer event called from: 
-[7/5/2026 21:59:39] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:39] Description: 
-[7/5/2026 21:59:39] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 21:59:39] stack traceback:
-[7/5/2026 21:59:39] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 21:59:39] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 21:59:39] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 21:59:39] 	data/lib/075-custom-functions.lua:98: in function <data/lib/075-custom-functions.lua:97>
-
-[7/5/2026 21:59:41] [Error - Spell Interface] 
-[7/5/2026 21:59:41] In a timer event called from: 
-[7/5/2026 21:59:41] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:41] Description: 
-[7/5/2026 21:59:41] (luaGetTileInfo) Tile not found
-
-[7/5/2026 21:59:41] [Error - Spell Interface] 
-[7/5/2026 21:59:41] In a timer event called from: 
-[7/5/2026 21:59:41] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:41] Description: 
-[7/5/2026 21:59:41] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 21:59:41] stack traceback:
-[7/5/2026 21:59:41] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 21:59:41] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 21:59:41] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 21:59:41] 	data/lib/075-custom-functions.lua:98: in function <data/lib/075-custom-functions.lua:97>
-
-[7/5/2026 21:59:43] [Error - Spell Interface] 
-[7/5/2026 21:59:43] In a timer event called from: 
-[7/5/2026 21:59:43] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:43] Description: 
-[7/5/2026 21:59:43] (luaGetTileInfo) Tile not found
-
-[7/5/2026 21:59:43] [Error - Spell Interface] 
-[7/5/2026 21:59:43] In a timer event called from: 
-[7/5/2026 21:59:43] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:43] Description: 
-[7/5/2026 21:59:43] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 21:59:43] stack traceback:
-[7/5/2026 21:59:43] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 21:59:43] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 21:59:43] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 21:59:43] 	data/lib/075-custom-functions.lua:98: in function <data/lib/075-custom-functions.lua:97>
-
-[7/5/2026 21:59:45] [Error - Spell Interface] 
-[7/5/2026 21:59:45] In a timer event called from: 
-[7/5/2026 21:59:45] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:45] Description: 
-[7/5/2026 21:59:45] (luaGetTileInfo) Tile not found
-
-[7/5/2026 21:59:45] [Error - Spell Interface] 
-[7/5/2026 21:59:45] In a timer event called from: 
-[7/5/2026 21:59:45] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:45] Description: 
-[7/5/2026 21:59:45] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 21:59:45] stack traceback:
-[7/5/2026 21:59:45] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 21:59:45] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 21:59:45] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 21:59:45] 	data/lib/075-custom-functions.lua:98: in function <data/lib/075-custom-functions.lua:97>
-
-[7/5/2026 21:59:51] [Error - Spell Interface] 
-[7/5/2026 21:59:51] In a timer event called from: 
-[7/5/2026 21:59:51] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:51] Description: 
-[7/5/2026 21:59:51] (luaGetTileInfo) Tile not found
-
-[7/5/2026 21:59:51] [Error - Spell Interface] 
-[7/5/2026 21:59:51] In a timer event called from: 
-[7/5/2026 21:59:51] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:51] Description: 
-[7/5/2026 21:59:51] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 21:59:51] stack traceback:
-[7/5/2026 21:59:51] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 21:59:51] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 21:59:51] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 21:59:51] 	data/lib/075-custom-functions.lua:98: in function <data/lib/075-custom-functions.lua:97>
-
-[7/5/2026 21:59:53] [Error - Spell Interface] 
-[7/5/2026 21:59:53] In a timer event called from: 
-[7/5/2026 21:59:53] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:53] Description: 
-[7/5/2026 21:59:53] (luaGetTileInfo) Tile not found
-
-[7/5/2026 21:59:53] [Error - Spell Interface] 
-[7/5/2026 21:59:53] In a timer event called from: 
-[7/5/2026 21:59:53] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:53] Description: 
-[7/5/2026 21:59:53] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 21:59:53] stack traceback:
-[7/5/2026 21:59:53] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 21:59:53] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 21:59:53] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 21:59:53] 	data/lib/075-custom-functions.lua:98: in function <data/lib/075-custom-functions.lua:97>
-
-[7/5/2026 21:59:55] [Error - Spell Interface] 
-[7/5/2026 21:59:55] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:55] Description: 
-[7/5/2026 21:59:55] (luaGetTileInfo) Tile not found
-
-[7/5/2026 21:59:55] [Error - Spell Interface] 
-[7/5/2026 21:59:55] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:55] Description: 
-[7/5/2026 21:59:55] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 21:59:55] stack traceback:
-[7/5/2026 21:59:55] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 21:59:55] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 21:59:55] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 21:59:55] 	data/lib/075-custom-functions.lua:102: in function <data/lib/075-custom-functions.lua:23>
-[7/5/2026 21:59:55] 	(tail call): ?
-
-[7/5/2026 21:59:56] [Error - Spell Interface] 
-[7/5/2026 21:59:56] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:56] Description: 
-[7/5/2026 21:59:56] (luaGetTileInfo) Tile not found
-
-[7/5/2026 21:59:56] [Error - Spell Interface] 
-[7/5/2026 21:59:56] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:56] Description: 
-[7/5/2026 21:59:56] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 21:59:56] stack traceback:
-[7/5/2026 21:59:56] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 21:59:56] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 21:59:56] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 21:59:56] 	data/lib/075-custom-functions.lua:102: in function <data/lib/075-custom-functions.lua:23>
-[7/5/2026 21:59:56] 	(tail call): ?
-
-[7/5/2026 21:59:57] [Error - Spell Interface] 
-[7/5/2026 21:59:57] In a timer event called from: 
-[7/5/2026 21:59:57] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:57] Description: 
-[7/5/2026 21:59:57] (luaGetTileInfo) Tile not found
-
-[7/5/2026 21:59:57] [Error - Spell Interface] 
-[7/5/2026 21:59:57] In a timer event called from: 
-[7/5/2026 21:59:57] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 21:59:57] Description: 
-[7/5/2026 21:59:57] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 21:59:57] stack traceback:
-[7/5/2026 21:59:57] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 21:59:57] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 21:59:57] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 21:59:57] 	data/lib/075-custom-functions.lua:98: in function <data/lib/075-custom-functions.lua:97>
-
-[7/5/2026 22:0:0] [Error - Spell Interface] 
-[7/5/2026 22:0:0] In a timer event called from: 
-[7/5/2026 22:0:0] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 22:0:0] Description: 
-[7/5/2026 22:0:0] (luaGetTileInfo) Tile not found
-
-[7/5/2026 22:0:0] [Error - Spell Interface] 
-[7/5/2026 22:0:0] In a timer event called from: 
-[7/5/2026 22:0:0] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 22:0:0] Description: 
-[7/5/2026 22:0:0] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 22:0:0] stack traceback:
-[7/5/2026 22:0:0] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 22:0:0] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 22:0:0] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 22:0:0] 	data/lib/075-custom-functions.lua:98: in function <data/lib/075-custom-functions.lua:97>
-
-[7/5/2026 22:1:6] [Error - Spell Interface] 
-[7/5/2026 22:1:6] In a timer event called from: 
-[7/5/2026 22:1:6] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 22:1:6] Description: 
-[7/5/2026 22:1:6] (luaGetTileInfo) Tile not found
-
-[7/5/2026 22:1:6] [Error - Spell Interface] 
-[7/5/2026 22:1:6] In a timer event called from: 
-[7/5/2026 22:1:6] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 22:1:6] Description: 
-[7/5/2026 22:1:6] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 22:1:6] stack traceback:
-[7/5/2026 22:1:6] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 22:1:6] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 22:1:6] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 22:1:6] 	data/lib/075-custom-functions.lua:98: in function <data/lib/075-custom-functions.lua:97>
-
-[7/5/2026 22:1:9] [Error - Spell Interface] 
-[7/5/2026 22:1:9] In a timer event called from: 
-[7/5/2026 22:1:9] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 22:1:9] Description: 
-[7/5/2026 22:1:9] (luaGetTileInfo) Tile not found
-
-[7/5/2026 22:1:9] [Error - Spell Interface] 
-[7/5/2026 22:1:9] In a timer event called from: 
-[7/5/2026 22:1:9] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 22:1:9] Description: 
-[7/5/2026 22:1:9] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 22:1:9] stack traceback:
-[7/5/2026 22:1:9] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 22:1:9] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 22:1:9] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 22:1:9] 	data/lib/075-custom-functions.lua:98: in function <data/lib/075-custom-functions.lua:97>
-
-[7/5/2026 22:1:11] [Error - Spell Interface] 
-[7/5/2026 22:1:11] In a timer event called from: 
-[7/5/2026 22:1:11] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 22:1:11] Description: 
-[7/5/2026 22:1:11] (luaGetTileInfo) Tile not found
-
-[7/5/2026 22:1:11] [Error - Spell Interface] 
-[7/5/2026 22:1:11] In a timer event called from: 
-[7/5/2026 22:1:11] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 22:1:11] Description: 
-[7/5/2026 22:1:11] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 22:1:11] stack traceback:
-[7/5/2026 22:1:11] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 22:1:11] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 22:1:11] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 22:1:11] 	data/lib/075-custom-functions.lua:98: in function <data/lib/075-custom-functions.lua:97>
-
-[7/5/2026 22:5:21] [Error - Spell Interface] 
-[7/5/2026 22:5:21] In a timer event called from: 
-[7/5/2026 22:5:21] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 22:5:21] Description: 
-[7/5/2026 22:5:21] (luaGetTileInfo) Tile not found
-
-[7/5/2026 22:5:21] [Error - Spell Interface] 
-[7/5/2026 22:5:21] In a timer event called from: 
-[7/5/2026 22:5:21] data/spells/scripts/byakuya/Shuukei Hakuteiken.lua:onCastSpell
-[7/5/2026 22:5:21] Description: 
-[7/5/2026 22:5:21] data/lib/050-function.lua:236: attempt to index a boolean value
-[7/5/2026 22:5:21] stack traceback:
-[7/5/2026 22:5:21] 	data/lib/050-function.lua:236: in function 'getTilePzInfo'
-[7/5/2026 22:5:21] 	data/lib/075-custom-functions.lua:63: in function 'doAreaDamage'
-[7/5/2026 22:5:21] 	data/lib/075-custom-functions.lua:96: in function 'expandArea'
-[7/5/2026 22:5:21] 	data/lib/075-custom-functions.lua:98: in function <data/lib/075-custom-functions.lua:97>
-[7/5/2026 22:7:45] Ayuni has logged out.
-[7/5/2026 22:7:46] Ayuni has logged in.
-[7/5/2026 22:9:15] Ayuni has logged out.
-[7/5/2026 22:9:17] Ayuni has logged in.
-[7/5/2026 22:25:42] Ayuni has logged out.
+[8/5/2026 9:22:49] Ayuni has logged in.
+[8/5/2026 9:42:41] Ayuni has logged out.
+[8/5/2026 9:42:46] Ayuni has logged in.
+[8/5/2026 10:17:9] Ayuni has logged out.
+[8/5/2026 10:17:11] Dias Atras has logged in.
+[8/5/2026 10:18:8] Dias Atras has logged out.
+[8/5/2026 10:18:9] Dias Atras has logged in.
+[8/5/2026 10:19:54] Dias Atras has logged out.
+[8/5/2026 10:19:56] God has logged in.
+[8/5/2026 10:23:55] > Salvando servidor...
+[8/5/2026 10:23:55] > SAVE: Completo em 0.192 segundos usando binary casa storage.

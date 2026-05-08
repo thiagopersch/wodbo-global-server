@@ -535,3 +535,33 @@ CREATE TABLE IF NOT EXISTS `player_daily_rewards` (
   PRIMARY KEY (`player_id`, `day`, `month`, `year`),
   FOREIGN KEY (`player_id`) REFERENCES `players`(`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `daily_rewards_monthly` (
+  `month` TINYINT NOT NULL,
+  `year` SMALLINT NOT NULL,
+  `day` TINYINT NOT NULL,
+  `item_id` INT NOT NULL,
+  `count` INT NOT NULL,
+  `client_id` INT NOT NULL DEFAULT 0,
+  PRIMARY KEY (`month`, `year`, `day`)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `daily_rewards_bonus_monthly` (
+  `month` TINYINT NOT NULL,
+  `year` SMALLINT NOT NULL,
+  `streak_day` TINYINT NOT NULL,
+  `item_id` INT NOT NULL,
+  `count` INT NOT NULL,
+  `client_id` INT NOT NULL DEFAULT 0,
+  PRIMARY KEY (`month`, `year`, `streak_day`)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `player_daily_reward_bonus` (
+  `player_id` INT NOT NULL,
+  `month` TINYINT NOT NULL,
+  `year` SMALLINT NOT NULL,
+  `streak_day` TINYINT NOT NULL,
+  `claimed_at` INT NOT NULL DEFAULT 0,
+  PRIMARY KEY (`player_id`, `month`, `year`, `streak_day`),
+  FOREIGN KEY (`player_id`) REFERENCES `players`(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB;

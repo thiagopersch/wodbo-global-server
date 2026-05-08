@@ -1,84 +1,237 @@
 DailyReward = {
     opcode = 155,
-    storageLastClaim = 100104,
-    storageConsecutive = 100100,
-    storageLastDay = 100101,
-    storageLastMonth = 100102,
 
-    -- Lista completa de todos os itens confirmados
-    pools = {
-        senzus = {
-            { id = 56744, clientId = 51689, count = 2,  name = "Brown Senzu" },
-            { id = 56817, clientId = 51762, count = 2,  name = "Purple Senzu" },
-            { id = 56745, clientId = 51690, count = 3,  name = "Blue Sky Senzu" },
-            { id = 56697, clientId = 51642, count = 4,  name = "Yellow Senzu" },
-            { id = 49694, clientId = 44639, count = 5,  name = "Red Senzu" },
-            { id = 49695, clientId = 44640, count = 1,  name = "Senzu Especial A" },
-            { id = 49696, clientId = 44641, count = 1,  name = "Senzu Especial B" },
-            { id = 49693, clientId = 44638, count = 10, name = "Senzu Pack" },
-            { id = 56818, clientId = 51763, count = 1,  name = "Mega Senzu" }
+    bonusDays = {5, 10, 15, 20, 25, 30},
+
+    -- Pools de itens DIÁRIOS
+    dailyPools = {
+        common = {
+            weight = 60,
+            items = {
+                {id = 49693, count = 10, clientId = 44638},
+                {id = 56697, count = 5,  clientId = 51642},
+                {id = 56745, count = 3,  clientId = 51690},
+                {id = 49694, count = 5,  clientId = 44639},
+            }
         },
         rare = {
-            { id = 56406, clientId = 51351, count = 1, name = "Skill Potion 30min" },
-            { id = 56407, clientId = 51352, count = 1, name = "Exp Potion 30min" },
-            { id = 9971,  clientId = 9971,  count = 2, name = "Gold Ingot" }
+            weight = 30,
+            items = {
+                {id = 56744, count = 2,  clientId = 51689},
+                {id = 56817, count = 2,  clientId = 51762},
+                {id = 49695, count = 1,  clientId = 44640},
+            }
         },
         ultra = {
-            { id = 9971,  clientId = 9971,  count = 10, name = "Gold Ingot Cluster" },
-            { id = 56406, clientId = 51351, count = 5,  name = "Skill Potion Pack" },
-            { id = 56407, clientId = 51352, count = 5,  name = "Exp Potion Pack" }
+            weight = 10,
+            items = {
+                {id = 56818, count = 1, clientId = 51763},
+                {id = 49696, count = 1, clientId = 44641},
+            }
         }
     },
 
-    months = {},
-    bonusItems = {}
+    -- Pools de itens BÔNUS (separada dos diários)
+    bonusPools = {
+        items = {
+            {id = 56406, count = 1, clientId = 51351, name = "Skill Potion 30min"},
+            {id = 56407, count = 1, clientId = 51352, name = "XP Potion 30min"},
+            {id = 9971,  count = 5, clientId = 9971,  name = "5x Gold Ingot"},
+            {id = 56399, count = 1, clientId = 51344, name = "Mysterious Key"},
+        },
+        outfits = {
+            {lookType = 128, name = "Armadura Dourada"},
+            {lookType = 129, name = "Armadura Demoníaca"},
+            {lookType = 130, name = "Armadura do Dragão"},
+        }
+    }
 }
 
 function DailyReward.getDaysInMonth(month, year)
-    local days = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }
+    local days = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
     if month == 2 and year % 4 == 0 and (year % 100 ~= 0 or year % 400 == 0) then
         return 29
     end
     return days[month] or 30
 end
 
-function DailyReward.setDayClaimed(mask, day)
-    return mask + (2 ^ (day - 1))
+function DailyReward.setBit(mask, bit)
+    return mask + (2 ^ (bit - 1))
 end
 
-function DailyReward.isDayClaimed(mask, day)
-    return math.floor(mask / 2 ^ (day - 1)) % 2 == 1
+function DailyReward.isBitSet(mask, bit)
+    return (math.floor(mask / (2 ^ (bit - 1))) % 2) == 1
 end
 
--- FUNÇÃO MESTRE: Retorna o item fixo para um dia específico baseado em cálculo matemático
--- Isso garante que o item NUNCA mude entre reinicios do servidor.
-function DailyReward.getItemForDate(day, month)
-    local pool = DailyReward.pools.senzus
-    if day % 7 == 0 then pool = DailyReward.pools.rare end
-    if day % 15 == 0 then pool = DailyReward.pools.ultra end
+function DailyReward.generateMonthlyList(month, year)
+    local daysInMonth = DailyReward.getDaysInMonth(month, year)
 
-    -- Fórmula determinística: (dia + (mês * 31)) cria um índice único e fixo para cada dia do ano
-    local index = ((day + (month * 31)) % #pool) + 1
-    local item = pool[index]
+    for day = 1, daysInMonth do
+        local roll = math.random(1, 100)
+        local accumulated = 0
+        local pool
 
-    return { id = item.id, clientId = item.clientId, count = item.count, name = item.name }
+        for _, p in pairs(DailyReward.dailyPools) do
+            accumulated = accumulated + p.weight
+            if roll <= accumulated then
+                pool = p.items
+                break
+            end
+        end
+        if not pool then
+            pool = DailyReward.dailyPools.common.items
+        end
+
+        local item = pool[math.random(#pool)]
+
+        db.query(string.format(
+            "INSERT INTO `daily_rewards_monthly` (`month`, `year`, `day`, `item_id`, `count`, `client_id`) VALUES (%d, %d, %d, %d, %d, %d)",
+            month, year, day, item.id, item.count, item.clientId))
+    end
+
+    for _, streakDay in ipairs(DailyReward.bonusDays) do
+        local item = DailyReward.bonusPools.items[math.random(#DailyReward.bonusPools.items)]
+        db.query(string.format(
+            "INSERT INTO `daily_rewards_bonus_monthly` (`month`, `year`, `streak_day`, `item_id`, `count`, `client_id`) VALUES (%d, %d, %d, %d, %d, %d)",
+            month, year, streakDay, item.id, item.count, item.clientId))
+    end
 end
 
--- Gera os bônus de forma fixa também
-function DailyReward.getBonusForStreak(streak)
-    local pool = DailyReward.pools.rare
-    if streak >= 20 then pool = DailyReward.pools.ultra end
-
-    local index = (streak % #pool) + 1
-    return pool[index]
+function DailyReward.ensureMonthlyList(month, year)
+    local q = db.getResult(string.format(
+        "SELECT COUNT(*) as `cnt` FROM `daily_rewards_monthly` WHERE `month` = %d AND `year` = %d",
+        month, year))
+    local count = 0
+    if q and q:getID() ~= -1 then
+        count = q:getDataInt("cnt")
+        q:free()
+    end
+    if count == 0 then
+        DailyReward.generateMonthlyList(month, year)
+    end
 end
 
--- Inicializa as tabelas de bônus fixas para o sistema usar
-local bonusDays = { 5, 10, 15, 20, 25, 30 }
-for _, streak in ipairs(bonusDays) do
-    DailyReward.bonusItems[streak] = DailyReward.getBonusForStreak(streak)
+function DailyReward.getDailyItem(day, month, year)
+    local q = db.getResult(string.format(
+        "SELECT `item_id`, `count`, `client_id` FROM `daily_rewards_monthly` WHERE `month` = %d AND `year` = %d AND `day` = %d",
+        month, year, day))
+    if q and q:getID() ~= -1 then
+        local result = {
+            id = q:getDataInt("item_id"),
+            count = q:getDataInt("count"),
+            clientId = q:getDataInt("client_id")
+        }
+        q:free()
+        return result
+    end
+    return nil
 end
 
--- Nota: Não precisamos mais pre-gerar 'months' em um loop gigante,
--- pois o servidor vai chamar DailyReward.getItemForDate(d, m) em tempo real,
--- e o resultado será sempre o mesmo para aquela data.
+function DailyReward.getBonusItem(streakDay, month, year)
+    local q = db.getResult(string.format(
+        "SELECT `item_id`, `count`, `client_id` FROM `daily_rewards_bonus_monthly` WHERE `month` = %d AND `year` = %d AND `streak_day` = %d",
+        month, year, streakDay))
+    if q and q:getID() ~= -1 then
+        local result = {
+            id = q:getDataInt("item_id"),
+            count = q:getDataInt("count"),
+            clientId = q:getDataInt("client_id")
+        }
+        q:free()
+        return result
+    end
+    return nil
+end
+
+function DailyReward.getConsecutive(player_id, month, year)
+    local today = tonumber(os.date("%d"))
+    local consecutive = 0
+    for day = today, 1, -1 do
+        local q = db.getResult(string.format(
+            "SELECT 1 FROM `player_daily_rewards` WHERE `player_id` = %d AND `month` = %d AND `year` = %d AND `day` = %d",
+            player_id, month, year, day))
+        if q and q:getID() ~= -1 then
+            q:free()
+            consecutive = consecutive + 1
+        else
+            break
+        end
+    end
+    return consecutive
+end
+
+function DailyReward.getClaimedMask(player_id, month, year)
+    local mask = 0
+    local q = db.getResult(string.format(
+        "SELECT `day` FROM `player_daily_rewards` WHERE `player_id` = %d AND `month` = %d AND `year` = %d",
+        player_id, month, year))
+    if q and q:getID() ~= -1 then
+        repeat
+            mask = DailyReward.setBit(mask, q:getDataInt("day"))
+        until not q:next()
+        q:free()
+    end
+    return mask
+end
+
+function DailyReward.getMissedMask(player_id, month, year)
+    local today = tonumber(os.date("%d"))
+    local claimedMask = DailyReward.getClaimedMask(player_id, month, year)
+    local mask = 0
+    for day = 1, today - 1 do
+        if not DailyReward.isBitSet(claimedMask, day) then
+            mask = DailyReward.setBit(mask, day)
+        end
+    end
+    return mask
+end
+
+function DailyReward.getClaimedDaysList(player_id, month, year)
+    local days = {}
+    local q = db.getResult(string.format(
+        "SELECT `day` FROM `player_daily_rewards` WHERE `player_id` = %d AND `month` = %d AND `year` = %d ORDER BY `day` ASC",
+        player_id, month, year))
+    if q and q:getID() ~= -1 then
+        repeat
+            days[#days + 1] = q:getDataInt("day")
+        until not q:next()
+        q:free()
+    end
+    return table.concat(days, ", ")
+end
+
+function DailyReward.getBonusState(player_id, month, year, consecutive)
+    local claimedMask = 0
+    local availableMask = 0
+
+    local q = db.getResult(string.format(
+        "SELECT `streak_day` FROM `player_daily_reward_bonus` WHERE `player_id` = %d AND `month` = %d AND `year` = %d",
+        player_id, month, year))
+    if q and q:getID() ~= -1 then
+        repeat
+            local sd = q:getDataInt("streak_day")
+            for i, bd in ipairs(DailyReward.bonusDays) do
+                if bd == sd then
+                    claimedMask = DailyReward.setBit(claimedMask, i)
+                    break
+                end
+            end
+        until not q:next()
+        q:free()
+    end
+
+    for i, bd in ipairs(DailyReward.bonusDays) do
+        if not DailyReward.isBitSet(claimedMask, i) and consecutive >= bd then
+            availableMask = DailyReward.setBit(availableMask, i)
+        end
+    end
+
+    return claimedMask, availableMask
+end
+
+function DailyReward.giveOutfit(cid, lookType)
+    if pcall(doPlayerAddOutfit, cid, lookType) then
+        return true
+    end
+    return false
+end
