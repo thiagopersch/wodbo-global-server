@@ -221,6 +221,19 @@ void NetworkMessage::putItem(const Item* item)
 		put<char>(fluidMap[item->getSubType() % 8]);
 }
 
+void NetworkMessage::putItem(const Item* item, bool withDescription)
+{
+	const ItemType& it = Item::items[item->getID()];
+	put<uint16_t>(it.clientId);
+	if(it.stackable)
+		put<char>(item->getSubType());
+	else if(it.isSplash() || it.isFluidContainer())
+		put<char>(fluidMap[item->getSubType() % 8]);
+
+	if(withDescription)
+		putString(item->getDescription(0));
+}
+
 void NetworkMessage::putItemId(const Item* item)
 {
 	const ItemType& it = Item::items[item->getID()];

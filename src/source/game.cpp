@@ -637,9 +637,23 @@ Thing* Game::internalGetThing(Player* player, const Position& pos, int32_t index
 	}
 	else if(pos.y & 0x40)
 	{
-		uint8_t fromCid = pos.y & 0x0F, slot = pos.z;
+		uint8_t fromCid = pos.y & 0x3F, slot = pos.z;
 		if(Container* parentcontainer = player->getContainer(fromCid))
-			return parentcontainer->getItem(slot);
+		{
+			Item* item = parentcontainer->getItem(slot);
+			if(!item)
+			{
+				for(ItemList::const_iterator it = parentcontainer->getItems(); it != parentcontainer->getEnd(); ++it)
+				{
+					if((*it)->getID() == spriteId)
+					{
+						item = *it;
+						break;
+					}
+				}
+			}
+			return item;
+		}
 	}
 	else if(!pos.y && !pos.z)
 	{

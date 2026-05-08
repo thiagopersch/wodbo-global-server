@@ -89,6 +89,7 @@ class NetworkMessage
 		void putPosition(const Position& pos);
 		void putItem(uint16_t id, uint8_t count);
 		void putItem(const Item* item);
+		void putItem(const Item* item, bool withDescription);
 		void putItemId(const Item* item);
 		void putItemId(uint16_t itemId);
 

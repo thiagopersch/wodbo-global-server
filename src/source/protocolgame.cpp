@@ -1994,7 +1994,7 @@ void ProtocolGame::sendContainer(uint32_t cid, const Container* container, bool 
 
 		ItemList::const_iterator cit = container->getItems();
 		for(uint32_t i = 0; cit != container->getEnd() && i < 255; ++cit, ++i)
-			msg->putItem(*cit);
+			msg->putItem(*cit, player->isUsingOtclient());
 	}
 }
 
@@ -3303,7 +3303,7 @@ void ProtocolGame::AddInventoryItem(NetworkMessage_ptr msg, slots_t slot, const 
 	{
 		msg->put<char>(0x78);
 		msg->put<char>(slot);
-		msg->putItem(item);
+		msg->putItem(item, player->isUsingOtclient());
 	}
 	else
 		RemoveInventoryItem(msg, slot);
@@ -3325,7 +3325,7 @@ void ProtocolGame::AddContainerItem(NetworkMessage_ptr msg, uint8_t cid, const I
 {
 	msg->put<char>(0x70);
 	msg->put<char>(cid);
-	msg->putItem(item);
+	msg->putItem(item, player->isUsingOtclient());
 }
 
 void ProtocolGame::UpdateContainerItem(NetworkMessage_ptr msg, uint8_t cid, uint8_t slot, const Item* item)
@@ -3333,7 +3333,7 @@ void ProtocolGame::UpdateContainerItem(NetworkMessage_ptr msg, uint8_t cid, uint
 	msg->put<char>(0x71);
 	msg->put<char>(cid);
 	msg->put<char>(slot);
-	msg->putItem(item);
+	msg->putItem(item, player->isUsingOtclient());
 }
 
 void ProtocolGame::RemoveContainerItem(NetworkMessage_ptr msg, uint8_t cid, uint8_t slot)

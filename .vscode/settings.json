@@ -189,7 +189,16 @@
     "getHouseFromPos",
     "getGuildMotd",
     "doPlayerSendChannelMessage",
-    "doCreatureSetDropLoot"
+    "doCreatureSetDropLoot",
+    "Tile",
+    "Position",
+    "TILESTATE_IMMOVABLEBLOCKSOLID",
+    "bit",
+    "FLAG_IGNOREBLOCKITEM",
+    "FLAG_IGNOREBLOCKCREATURE",
+    "getThingFromPos",
+    "doPlayerSendDefaultCancel",
+    "Condition"
   ],
   "Lua.diagnostics.disable": [
     "lowercase-global",

@@ -19,7 +19,7 @@ function onCastSpell(cid, var)
         y = getThingPosition(getCreatureTarget(cid)).y,
         z = getThingPosition(getCreatureTarget(cid)).z
     }
-    local parameters = {cid = cid, var = var, combat = combat}
+    local parameters = { cid = cid, var = var, combat = combat }
 
     for k = 1, 1 do
         addEvent(function()
