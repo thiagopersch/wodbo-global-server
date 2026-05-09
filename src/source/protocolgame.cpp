@@ -2972,7 +2972,7 @@ void ProtocolGame::AddPlayerStats(NetworkMessage_ptr msg)
 	msg->put<char>(player->getPlayerInfo(PLAYERINFO_LEVELPERCENT));
 	msg->put<uint16_t>(player->getPlayerInfo(PLAYERINFO_MANA));
 	msg->put<uint16_t>(player->getPlayerInfo(PLAYERINFO_MAXMANA));
-	msg->put<char>(player->getPlayerInfo(PLAYERINFO_MAGICLEVEL));
+	msg->put<uint16_t>(player->getPlayerInfo(PLAYERINFO_MAGICLEVEL));
 	msg->put<char>(player->getPlayerInfo(PLAYERINFO_MAGICLEVELPERCENT));
 	msg->put<char>(player->getPlayerInfo(PLAYERINFO_SOUL));
 	msg->put<uint16_t>(player->getStaminaMinutes());
@@ -2981,19 +2981,19 @@ void ProtocolGame::AddPlayerStats(NetworkMessage_ptr msg)
 void ProtocolGame::AddPlayerSkills(NetworkMessage_ptr msg)
 {
 	msg->put<char>(0xA1);
-	msg->put<char>(player->getSkill(SKILL_FIST, SKILL_LEVEL));
+	msg->put<uint16_t>(player->getSkill(SKILL_FIST, SKILL_LEVEL));
 	msg->put<char>(player->getSkill(SKILL_FIST, SKILL_PERCENT));
-	msg->put<char>(player->getSkill(SKILL_CLUB, SKILL_LEVEL));
+	msg->put<uint16_t>(player->getSkill(SKILL_CLUB, SKILL_LEVEL));
 	msg->put<char>(player->getSkill(SKILL_CLUB, SKILL_PERCENT));
-	msg->put<char>(player->getSkill(SKILL_SWORD, SKILL_LEVEL));
+	msg->put<uint16_t>(player->getSkill(SKILL_SWORD, SKILL_LEVEL));
 	msg->put<char>(player->getSkill(SKILL_SWORD, SKILL_PERCENT));
-	msg->put<char>(player->getSkill(SKILL_AXE, SKILL_LEVEL));
+	msg->put<uint16_t>(player->getSkill(SKILL_AXE, SKILL_LEVEL));
 	msg->put<char>(player->getSkill(SKILL_AXE, SKILL_PERCENT));
-	msg->put<char>(player->getSkill(SKILL_DIST, SKILL_LEVEL));
+	msg->put<uint16_t>(player->getSkill(SKILL_DIST, SKILL_LEVEL));
 	msg->put<char>(player->getSkill(SKILL_DIST, SKILL_PERCENT));
-	msg->put<char>(player->getSkill(SKILL_SHIELD, SKILL_LEVEL));
+	msg->put<uint16_t>(player->getSkill(SKILL_SHIELD, SKILL_LEVEL));
 	msg->put<char>(player->getSkill(SKILL_SHIELD, SKILL_PERCENT));
-	msg->put<char>(player->getSkill(SKILL_FISH, SKILL_LEVEL));
+	msg->put<uint16_t>(player->getSkill(SKILL_FISH, SKILL_LEVEL));
 	msg->put<char>(player->getSkill(SKILL_FISH, SKILL_PERCENT));
 }
 
