@@ -198,7 +198,10 @@
     "FLAG_IGNOREBLOCKCREATURE",
     "getThingFromPos",
     "doPlayerSendDefaultCancel",
-    "Condition"
+    "Condition",
+    "doDecayItem",
+    "getPlayerFood",
+    "doPlayerFeed"
   ],
   "Lua.diagnostics.disable": [
     "lowercase-global",

@@ -10,7 +10,6 @@ local ITEM_IDS = {
 	[2052] = 2053,
 	[2053] = 2051,
 	[2054] = 2055,
-	[2054] = 2055,
 	-- crystal pedestals
 	[9976] = 9977,
 	[9977] = 9978,
@@ -19,7 +18,7 @@ local ITEM_IDS = {
 }
 
 function onUse(cid, item, fromPosition, itemEx, toPosition)
-	if(not ITEM_IDS[item.itemid]) then
+	if (not ITEM_IDS[item.itemid]) then
 		return false
 	end
 
