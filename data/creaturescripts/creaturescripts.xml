@@ -46,4 +46,11 @@
 	
 	<!-- Daily Reward Extra Systems -->
 	<event type="statschange" name="DailyRewardStats" event="script" value="daily_reward_multipliers.lua" />
+	
+	<!-- Skill Upgrades System -->
+	<event type="statschange" name="SkillUpgradesCombat" event="script" value="skill_upgrades_stats.lua" />
+	<event type="login" name="SkillUpgradesLogin" event="script" value="skill_upgrades.lua" />
+	<event type="logout" name="SkillUpgradesLogout" event="script" value="skill_upgrades.lua" />
+	<event type="advance" name="SkillUpgradesAdvance" event="script" value="skill_upgrades.lua" />
+	<event type="extendedopcode" name="SkillUpgradesExtended" event="script" value="skill_upgrades.lua" />
 </creaturescripts>

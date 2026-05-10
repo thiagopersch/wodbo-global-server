@@ -77,12 +77,28 @@ function onLogin(cid)
   registerCreatureEvent(cid, "DailyReward")
   registerCreatureEvent(cid, "DailyRewardOpcode")
   registerCreatureEvent(cid, "DailyRewardStats")
+  
+  registerCreatureEvent(cid, "SkillUpgradesCombat")
+  registerCreatureEvent(cid, "SkillUpgradesLogin")
+  registerCreatureEvent(cid, "SkillUpgradesLogout")
 
-  -- Bônus de XP/Skill do Daily Reward
+  -- Bônus de XP/Skill do Daily Reward e Upgrades
+  local totalExpRate = 1.0
   local xpBonusTime = getPlayerStorageValue(cid, 48702)
   if xpBonusTime > os.time() then
-    doPlayerSetExperienceRate(cid, 1.5)
-    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Seu bônus de 50% de XP está ativo!")
+    totalExpRate = totalExpRate + 0.5
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Seu bônus de 50% de XP (Daily) está ativo!")
+  end
+  
+  if SkillUpgradesLib then
+      local skillExpBonus = SkillUpgradesLib.getSkillValue(cid, "exp_bonus")
+      if skillExpBonus > 0 then
+          totalExpRate = totalExpRate + (skillExpBonus / 100)
+      end
+  end
+  
+  if totalExpRate > 1.0 then
+      doPlayerSetExperienceRate(cid, totalExpRate)
   end
   
   local skillBonusTime = getPlayerStorageValue(cid, 48703)

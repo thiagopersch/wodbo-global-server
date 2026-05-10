@@ -24,8 +24,8 @@
 # Monsters
 
 - Ajustar :x:
-  - Looktypes :white_check_mark: :x:
-  - Corpose dos monstros: Donkey e Dromedary :white_check_mark: :x:
+  - Looktypes :white_check_mark:
+  - Corpose dos monstros: Donkey e Dromedary :white_check_mark:
   - Attacks :x:
   - HP :x:
   - Loots :x:

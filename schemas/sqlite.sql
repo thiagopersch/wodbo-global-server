@@ -863,3 +863,21 @@ CREATE TABLE IF NOT EXISTS "player_daily_reward_bonus" (
   PRIMARY KEY ("player_id", "month", "year", "streak_day"),
   FOREIGN KEY ("player_id") REFERENCES "players"("id") ON DELETE CASCADE
 );
+
+CREATE TABLE IF NOT EXISTS "player_skill_points" (
+  "player_id" INTEGER NOT NULL,
+  "vocation_id" INTEGER NOT NULL,
+  "available_points" INTEGER NOT NULL DEFAULT 0,
+  "spent_points" INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY ("player_id", "vocation_id"),
+  FOREIGN KEY ("player_id") REFERENCES "players"("id") ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS "player_skill_upgrades" (
+  "player_id" INTEGER NOT NULL,
+  "vocation_id" INTEGER NOT NULL,
+  "skill_name" VARCHAR(50) NOT NULL,
+  "current_level" INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY ("player_id", "vocation_id", "skill_name"),
+  FOREIGN KEY ("player_id") REFERENCES "players"("id") ON DELETE CASCADE
+);

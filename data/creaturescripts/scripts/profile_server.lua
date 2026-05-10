@@ -151,6 +151,13 @@ function onExtendedOpcode(cid, opcode, buffer)
         if vocInfo and vocInfo.name then
             vocationName = vocInfo.name
         end
+        if VocationRankConfig and VocationRankConfig.Vocations and VocationRankConfig.Vocations[vocId] then
+            local archetype = VocationRankConfig.Vocations[vocId].archetype
+            if archetype then
+                if archetype == "Support" then archetype = "Suporte" end
+                vocationName = vocationName .. " (" .. archetype .. ")"
+            end
+        end
 
         -- Health e Mana (In-game current values)
         local health = getCreatureHealth(target)

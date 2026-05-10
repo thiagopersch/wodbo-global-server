@@ -10,72 +10,72 @@ local Config            = {
   STORAGE_UNLOCKED = 50001,
   DEFAULT_LOOKTYPE = 0,
   Vocations = {
-    [1]  = { name = "Bardock", lookType = 1683 },
-    [2]  = { name = "Bills", lookType = 1711 },
-    [3]  = { name = "Botamo", lookType = 1731 },
-    [4]  = { name = "Brolly", lookType = 1739 },
-    [5]  = { name = "Bulma", lookType = 1748 },
-    [6]  = { name = "Buu", lookType = 1755 },
-    [7]  = { name = "C8", lookType = 1777 },
-    [8]  = { name = "C17", lookType = 1777 },
-    [9]  = { name = "C18", lookType = 1777 },
-    [10] = { name = "Cabba", lookType = 1794 },
-    [11] = { name = "Cell", lookType = 1804 },
-    [12] = { name = "Cooler", lookType = 1811 },
-    [13] = { name = "Dende", lookType = 1822 },
-    [14] = { name = "Freeza", lookType = 1835 },
-    [15] = { name = "Ginn", lookType = 1845 },
-    [16] = { name = "Gohan", lookType = 1854 },
-    [17] = { name = "Goku", lookType = 1881 },
-    [18] = { name = "Goku Black", lookType = 1869 },
-    [19] = { name = "Hitto", lookType = 1900 },
-    [20] = { name = "Janemba", lookType = 1909 },
-    [21] = { name = "Jiren", lookType = 1917 },
-    [22] = { name = "Kagome", lookType = 1931 },
-    [23] = { name = "Kaio", lookType = 1942 },
-    [24] = { name = "Kame", lookType = 1951 },
-    [25] = { name = "King Cold", lookType = 1963 },
-    [26] = { name = "King Vegeta", lookType = 1973 },
-    [27] = { name = "Kuririn", lookType = 1984 },
-    [28] = { name = "Liquir", lookType = 1995 },
-    [29] = { name = "Pan", lookType = 2003 },
-    [30] = { name = "Piccolo", lookType = 2012 },
-    [31] = { name = "Quitela", lookType = 2025 },
-    [32] = { name = "Raditz", lookType = 2034 },
-    [33] = { name = "Shenron", lookType = 2048 },
-    [34] = { name = "Tapion", lookType = 2051 },
-    [35] = { name = "Trunks", lookType = 2066 },
-    [36] = { name = "Tsuful", lookType = 2079 },
-    [37] = { name = "Turles", lookType = 2093 },
-    [38] = { name = "Uub", lookType = 2106 },
-    [39] = { name = "Vados", lookType = 2113 },
-    [40] = { name = "Vegeta", lookType = 2121 },
-    [41] = { name = "Vegetto", lookType = 2135 },
-    [42] = { name = "Vermouth", lookType = 1697 },
-    [43] = { name = "Videl", lookType = 2144 },
-    [44] = { name = "Zaiko", lookType = 2151 },
-    [45] = { name = "Zeno", lookType = 2163 },
-    [47] = { name = "Aizen", lookType = 2176 },
-    [48] = { name = "Byakuya", lookType = 2185 },
-    [49] = { name = "Gin", lookType = 2193 },
-    [50] = { name = "Grimmjow", lookType = 2199 },
-    [51] = { name = "Hitsugaya", lookType = 2207 },
-    [52] = { name = "Ichigo FullBring", lookType = 2218 },
-    [53] = { name = "Ichigo", lookType = 2227 },
-    [54] = { name = "Ishida", lookType = 2239 },
-    [55] = { name = "Kyouraku", lookType = 2250 },
-    [56] = { name = "Neliel", lookType = 2255 },
-    [57] = { name = "Orihime", lookType = 2262 },
-    [58] = { name = "Renji", lookType = 2268 },
-    [59] = { name = "Rukia", lookType = 2276 },
-    [60] = { name = "Sado", lookType = 2280 },
-    [61] = { name = "Shinji", lookType = 2291 },
-    [62] = { name = "Soi Fong", lookType = 2303 },
-    [63] = { name = "Tousen", lookType = 2309 },
-    [64] = { name = "Ulquiorra", lookType = 2315 },
-    [65] = { name = "Urahara", lookType = 2323 },
-    [66] = { name = "Yoruichi", lookType = 2332 },
-    [67] = { name = "Zaraki", lookType = 2339 },
+    [1] = { name = "Bardock", lookType = 1683, class = "DPS", universe = "Dragon Ball" },
+    [2] = { name = "Bills", lookType = 1711, class = "DPS", universe = "Dragon Ball" },
+    [3] = { name = "Botamo", lookType = 1731, class = "Tank", universe = "Dragon Ball" },
+    [4] = { name = "Brolly", lookType = 1739, class = "DPS", universe = "Dragon Ball" },
+    [5] = { name = "Bulma", lookType = 1748, class = "Bruiser", universe = "Dragon Ball" },
+    [6] = { name = "Buu", lookType = 1755, class = "Bruiser", universe = "Dragon Ball" },
+    [7] = { name = "C8", lookType = 1777, class = "Bruiser", universe = "Dragon Ball" },
+    [8] = { name = "C17", lookType = 1777, class = "Bruiser", universe = "Dragon Ball" },
+    [9] = { name = "C18", lookType = 1777, class = "Bruiser", universe = "Dragon Ball" },
+    [10] = { name = "Cabba", lookType = 1794, class = "DPS", universe = "Dragon Ball" },
+    [11] = { name = "Cell", lookType = 1804, class = "DPS", universe = "Dragon Ball" },
+    [12] = { name = "Cooler", lookType = 1811, class = "DPS", universe = "Dragon Ball" },
+    [13] = { name = "Dende", lookType = 1822, class = "Suporte", universe = "Dragon Ball" },
+    [14] = { name = "Freeza", lookType = 1835, class = "Bruiser", universe = "Dragon Ball" },
+    [15] = { name = "Ginn", lookType = 1845, class = "DPS", universe = "Dragon Ball" },
+    [16] = { name = "Gohan", lookType = 1854, class = "Bruiser", universe = "Dragon Ball" },
+    [17] = { name = "Goku", lookType = 1881, class = "DPS", universe = "Dragon Ball" },
+    [18] = { name = "Goku Black", lookType = 1869, class = "DPS", universe = "Dragon Ball" },
+    [19] = { name = "Hitto", lookType = 1900, class = "DPS", universe = "Dragon Ball" },
+    [20] = { name = "Janemba", lookType = 1909, class = "DPS", universe = "Dragon Ball" },
+    [21] = { name = "Jiren", lookType = 1917, class = "DPS", universe = "Dragon Ball" },
+    [22] = { name = "Kagome", lookType = 1931, class = "Bruiser", universe = "Dragon Ball" },
+    [23] = { name = "Kaio", lookType = 1942, class = "Bruiser", universe = "Dragon Ball" },
+    [24] = { name = "Kame", lookType = 1951, class = "Bruiser", universe = "Dragon Ball" },
+    [25] = { name = "King Cold", lookType = 1963, class = "Bruiser", universe = "Dragon Ball" },
+    [26] = { name = "King Vegeta", lookType = 1973, class = "Bruiser", universe = "Dragon Ball" },
+    [27] = { name = "Kuririn", lookType = 1984, class = "Bruiser", universe = "Dragon Ball" },
+    [28] = { name = "Liquir", lookType = 1995, class = "DPS", universe = "Dragon Ball" },
+    [29] = { name = "Pan", lookType = 2003, class = "Suporte", universe = "Dragon Ball" },
+    [30] = { name = "Piccolo", lookType = 2012, class = "Suporte", universe = "Dragon Ball" },
+    [31] = { name = "Quitela", lookType = 2025, class = "Bruiser", universe = "Dragon Ball" },
+    [32] = { name = "Raditz", lookType = 2034, class = "Bruiser", universe = "Dragon Ball" },
+    [33] = { name = "Shenron", lookType = 2048, class = "DPS", universe = "Dragon Ball" },
+    [34] = { name = "Tapion", lookType = 2051, class = "DPS", universe = "Dragon Ball" },
+    [35] = { name = "Trunks", lookType = 2066, class = "DPS", universe = "Dragon Ball" },
+    [36] = { name = "Tsuful", lookType = 2079, class = "Bruiser", universe = "Dragon Ball" },
+    [37] = { name = "Turles", lookType = 2093, class = "DPS", universe = "Dragon Ball" },
+    [38] = { name = "Uub", lookType = 2106, class = "Bruiser", universe = "Dragon Ball" },
+    [39] = { name = "Vados", lookType = 2113, class = "Bruiser", universe = "Dragon Ball" },
+    [40] = { name = "Vegeta", lookType = 2121, class = "DPS", universe = "Dragon Ball" },
+    [41] = { name = "Vegetto", lookType = 2135, class = "DPS", universe = "Dragon Ball" },
+    [42] = { name = "Vermouth", lookType = 1697, class = "DPS", universe = "Dragon Ball" },
+    [43] = { name = "Videl", lookType = 2144, class = "Suporte", universe = "Dragon Ball" },
+    [44] = { name = "Zaiko", lookType = 2151, class = "DPS", universe = "Dragon Ball" },
+    [45] = { name = "Zeno", lookType = 2163, class = "DPS", universe = "Dragon Ball" },
+    [47] = { name = "Aizen", lookType = 2176, class = "DPS", universe = "Bleach" },
+    [48] = { name = "Byakuya", lookType = 2185, class = "DPS", universe = "Bleach" },
+    [49] = { name = "Gin", lookType = 2193, class = "Bruiser", universe = "Bleach" },
+    [50] = { name = "Grimmjow", lookType = 2199, class = "DPS", universe = "Bleach" },
+    [51] = { name = "Hitsugaya", lookType = 2207, class = "Bruiser", universe = "Bleach" },
+    [52] = { name = "Ichigo FullBring", lookType = 2218, class = "DPS", universe = "Bleach" },
+    [53] = { name = "Ichigo", lookType = 2227, class = "DPS", universe = "Bleach" },
+    [54] = { name = "Ishida", lookType = 2239, class = "Bruiser", universe = "Bleach" },
+    [55] = { name = "Kyouraku", lookType = 2250, class = "DPS", universe = "Bleach" },
+    [56] = { name = "Neliel", lookType = 2255, class = "Bruiser", universe = "Bleach" },
+    [57] = { name = "Orihime", lookType = 2262, class = "Suporte", universe = "Bleach" },
+    [58] = { name = "Renji", lookType = 2268, class = "Bruiser", universe = "Bleach" },
+    [59] = { name = "Rukia", lookType = 2276, class = "Bruiser", universe = "Bleach" },
+    [60] = { name = "Sado", lookType = 2280, class = "Tank", universe = "Bleach" },
+    [61] = { name = "Shinji", lookType = 2291, class = "Bruiser", universe = "Bleach" },
+    [62] = { name = "Soi Fong", lookType = 2303, class = "Bruiser", universe = "Bleach" },
+    [63] = { name = "Tousen", lookType = 2309, class = "Bruiser", universe = "Bleach" },
+    [64] = { name = "Ulquiorra", lookType = 2315, class = "DPS", universe = "Bleach" },
+    [65] = { name = "Urahara", lookType = 2323, class = "Bruiser", universe = "Bleach" },
+    [66] = { name = "Yoruichi", lookType = 2332, class = "Bruiser", universe = "Bleach" },
+    [67] = { name = "Zaraki", lookType = 2339, class = "DPS", universe = "Bleach" },
   }
 }
 
@@ -167,20 +167,64 @@ end
 function ChangeVocation.buildPayload(cid, action)
   local unlocked  = ChangeVocation.getUnlockedVocations(cid)
   local currentId = getPlayerVocation(cid)
-  local bin       = ""
-  bin             = bin .. string.char(action)
-  bin             = bin .. encU16(currentId)
-  bin             = bin .. encU16(#unlocked)
+  local guid      = getPlayerGUID(cid)
 
+  local levels    = {}
+  local q         = db.getResult("SELECT `vocation_id`, `level` FROM `player_vocation_stats` WHERE `player_id` = " ..
+  guid)
+  if q and q:getID() ~= -1 then
+    repeat
+      local vid = q:getDataInt("vocation_id")
+      local lvl = q:getDataInt("level")
+      levels[vid] = lvl
+    until not q:next()
+    q:free()
+  end
+  levels[currentId] = getPlayerLevel(cid)
+
+  local vocList = {}
   for _, vocId in ipairs(unlocked) do
-    local v        = Config.Vocations[vocId] or {}
-    local name     = v.name or ("Voc " .. vocId)
+    local v = Config.Vocations[vocId] or {}
+    local name = v.name or ("Voc " .. vocId)
+    local universe = v.universe or "Dragon Ball"
+    local classType = v.class or "DPS"
     local lookType = v.lookType or Config.DEFAULT_LOOKTYPE
+    local level = levels[vocId] or 1
 
-    bin            = bin .. encU16(vocId)
-    bin            = bin .. encU16(lookType)
-    bin            = bin .. encU16(#name)
-    bin            = bin .. name
+    table.insert(vocList, {
+      id = vocId,
+      name = name,
+      universe = universe,
+      classType = classType,
+      lookType = lookType,
+      level = level
+    })
+  end
+
+  table.sort(vocList, function(a, b)
+    if a.universe == b.universe then
+      return a.name < b.name
+    end
+    return a.universe < b.universe
+  end)
+
+  local bin = ""
+  bin = bin .. string.char(action)
+  bin = bin .. encU16(currentId)
+  bin = bin .. encU16(#vocList)
+
+  for _, v in ipairs(vocList) do
+    bin = bin .. encU16(v.id)
+    bin = bin .. encU16(v.lookType)
+
+    bin = bin .. encU16(#v.name)
+    bin = bin .. v.name
+
+    bin = bin .. encU16(#v.classType)
+    bin = bin .. v.classType
+
+    bin = bin .. encU16(math.floor(v.level / 65536))
+    bin = bin .. encU16(v.level % 65536)
   end
   return toHex(bin)
 end

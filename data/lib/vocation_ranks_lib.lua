@@ -49,7 +49,8 @@ function VocationRankLib.applyStats(cid, vocationId, totalStars)
   if s.mana and s.mana > 0 then setConditionParam(condition, CONDITION_PARAM_STAT_MAXMANAPOINTS, s.mana * totalStars) end
   if s.attack and s.attack > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_MELEE, s.attack * totalStars) end
   if s.defense and s.defense > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_SHIELD, s.defense * totalStars) end
-  if s.magic and s.magic > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_MAGIC, s.magic * totalStars) end
+  if s.magic and s.magic > 0 then setConditionParam(condition, CONDITION_PARAM_STAT_MAGICLEVEL, s.magic * totalStars) end
+  if s.distance and s.distance > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_DISTANCE, s.distance * totalStars) end
 
   doAddCondition(cid, condition)
 end
@@ -84,6 +85,13 @@ function sendRankDataToClient(cid)
   local sMagic = s.magic or 0
 
   local vocName = getVocationInfo(vocationId).name or "None"
+  if VocationRankConfig and VocationRankConfig.Vocations and VocationRankConfig.Vocations[vocationId] then
+      local archetype = VocationRankConfig.Vocations[vocationId].archetype
+      if archetype then
+          if archetype == "Support" then archetype = "Suporte" end
+          vocName = vocName .. " (" .. archetype .. ")"
+      end
+  end
   local playerName = getCreatureName(cid)
 
   -- Protocol version 2: Added per-star bonuses

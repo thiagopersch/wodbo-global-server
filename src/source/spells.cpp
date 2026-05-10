@@ -950,7 +950,16 @@ bool Spell::checkRuneSpell(Player* player, const Position& toPos)
 void Spell::postSpell(Player* player) const
 {
 	if(!player->hasFlag(PlayerFlag_HasNoExhaustion) && exhaustion > 0)
-		player->addExhaust(exhaustion, isAggressive ? EXHAUST_COMBAT : EXHAUST_HEALING);
+	{
+		uint32_t finalExhaustion = exhaustion;
+
+		// Skill Upgrade System: apply Cooldown Reduction (0–60%)
+		int32_t cdReduction = player->getSkillUpgradeCooldownReduction();
+		if(cdReduction > 0)
+			finalExhaustion = (uint32_t)std::max((int32_t)0, (int32_t)std::floor(finalExhaustion * (1.0 - cdReduction / 100.0)));
+
+		player->addExhaust(finalExhaustion, isAggressive ? EXHAUST_COMBAT : EXHAUST_HEALING);
+	}
 
 	if(isAggressive && !player->hasFlag(PlayerFlag_NotGainInFight))
 		player->addInFightTicks(false);
@@ -974,10 +983,19 @@ void Spell::postSpell(Player* player, uint32_t manaCost, uint32_t soulCost) cons
 
 int32_t Spell::getManaCost(const Player* player) const
 {
+	int32_t baseCost = mana;
 	if(player && manaPercent)
-		return (int32_t)std::floor(double(player->getMaxMana() * manaPercent) / 100);
+		baseCost = (int32_t)std::floor(double(player->getMaxMana() * manaPercent) / 100);
 
-	return mana;
+	// Skill Upgrade System: apply Mana Reduction (0–80%)
+	if(player)
+	{
+		int32_t reduction = player->getSkillUpgradeManaReduction();
+		if(reduction > 0)
+			baseCost = std::max((int32_t)0, (int32_t)std::floor(baseCost * (1.0 - reduction / 100.0)));
+	}
+
+	return baseCost;
 }
 
 ReturnValue Spell::CreateIllusion(Creature* creature, const Outfit_t& outfit, int32_t time)

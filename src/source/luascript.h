@@ -466,6 +466,8 @@ class LuaInterface
 		static int32_t luaGetPlayerModes(lua_State* L);
 		static int32_t luaGetPlayerRates(lua_State* L);
 		static int32_t luaDoPlayerSetRate(lua_State* L);
+		static int32_t luaDoPlayerSetSkillUpgradeManaReduction(lua_State* L);
+		static int32_t luaDoPlayerSetSkillUpgradeCooldownReduction(lua_State* L);
 		static int32_t luaDoCreatureSetDropLoot(lua_State* L);
 		static int32_t luaGetPlayerLossPercent(lua_State* L);
 		static int32_t luaDoPlayerSetLossPercent(lua_State* L);

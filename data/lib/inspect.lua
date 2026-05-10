@@ -124,12 +124,22 @@ function InspectModule:sendPlayerData(cid, creatureID)
 		return
 	end
 
+	local vocId = getPlayerVocation(creatureID)
+	local vocName = getPlayerVocationName(creatureID)
+	if VocationRankConfig and VocationRankConfig.Vocations and VocationRankConfig.Vocations[vocId] then
+		local archetype = VocationRankConfig.Vocations[vocId].archetype
+		if archetype then
+			if archetype == "Support" then archetype = "Suporte" end
+			vocName = vocName .. " (" .. archetype .. ")"
+		end
+	end
+
 	local data = {
 		getCreatureName(creatureID),          -- 1
 		getCreatureMaxHealth(creatureID),     -- 2
 		getCreatureMaxMana(creatureID),       -- 3
 		getPlayerLevel(creatureID),           -- 4
-		getPlayerVocationName(creatureID),    -- 5
+		vocName,                              -- 5
 		getTownName(getPlayerTown(creatureID)), -- 6
 		getPlayerStamina(creatureID),         -- 7
 		getPlayerGuildName(creatureID),       -- 8

@@ -70016,7 +70016,7 @@
 		<attribute key="magiclevelpoints" value="5" />
 		<attribute key="absorbpercentenergy" value="90" />
 		<attribute key="absorbpercentpoison" value="-90" />
-		<attribute key="slotType" value="body" />
+		<attribute key="slotType" value="feet" />
 	</item>
 	<item id="49887" article="a" name="energy cloak">
 		<attribute key="weight" value="10000" />
@@ -70056,6 +70056,7 @@
 	</item>
 	<item id="49890" article="a" name="energy necklace">
 		<attribute key="weight" value="10000" />
+		<attribute key="description" value="magic level +5, absorb energy +5% and absorb poison -90%" />
 		<attribute key="magiclevelpoints" value="5" />
 		<attribute key="absorbpercentenergy" value="90" />
 		<attribute key="absorbpercentpoison" value="-90" />

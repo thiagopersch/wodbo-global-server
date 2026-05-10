@@ -645,6 +645,12 @@ class Player : public Creature, public Cylinder
 		void addInFightTicks(bool pzLock, int32_t ticks = 0);
 		void addDefaultRegeneration(uint32_t addTicks);
 
+		// Skill Upgrade System – mana/cooldown reduction cache
+		int32_t getSkillUpgradeManaReduction() const { return skillUpgradeManaReduction; }
+		void setSkillUpgradeManaReduction(int32_t value) { skillUpgradeManaReduction = std::max(0, std::min(80, value)); }
+		int32_t getSkillUpgradeCooldownReduction() const { return skillUpgradeCooldownReduction; }
+		void setSkillUpgradeCooldownReduction(int32_t value) { skillUpgradeCooldownReduction = std::max(0, std::min(60, value)); }
+
 		//combat event functions
 		virtual void onAddCondition(ConditionType_t type, bool hadCondition);
 		virtual void onAddCombatCondition(ConditionType_t type, bool hadCondition);
@@ -1251,6 +1257,10 @@ class Player : public Creature, public Cylinder
 		House* editHouse;
 		Npc* shopOwner;
 		Item* weapon;
+
+		// ---- Skill Upgrade System: cached values (set from Lua, read in C++) ----
+		int32_t skillUpgradeManaReduction;     // 0–80 (percent)
+		int32_t skillUpgradeCooldownReduction; // 0–60 (percent)
 
 		typedef std::set<uint32_t> AttackedSet;
 		AttackedSet attackedSet;

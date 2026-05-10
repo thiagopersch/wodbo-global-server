@@ -20,7 +20,7 @@
                             fromPosition = {x = 31881, y = 32184, z = 7},
                             toPosition = {x = 31983, y = 32245, z = 7}
                         },
-                        m = {"20 Dragon"},
+                        m = {"2 Dragon"},
                         Time = 15
                     }
                 },
@@ -31,7 +31,7 @@
                             fromPosition = {x = 31881, y = 32184, z = 7},
                             toPosition = {x = 31983, y = 32245, z = 7}
                         },
-                        m = {"20 Demon"},
+                        m = {"15 Demon"},
                         Time = 15
                     },
                     ["18:00"] = {
@@ -40,7 +40,7 @@
                             fromPosition = {x = 31881, y = 32184, z = 7},
                             toPosition = {x = 31983, y = 32245, z = 7}
                         },
-                        m = {"10 Dragon Lord", "10 Dragon Lord Hatchling", "10 Dragon Hatchling"},
+                        m = {"5 Dragon Lord", "5 Dragon Lord Hatchling", "5 Dragon Hatchling"},
                         Time = 15
                     }
                 },
@@ -51,7 +51,7 @@
                             fromPosition = {x = 31881, y = 32184, z = 7},
                             toPosition = {x = 31983, y = 32245, z = 7}
                         },
-                        m = {"15 Demon"},
+                        m = {"5 Demon"},
                         Time = 15
                     },
                     ["10:45"] = {
@@ -60,7 +60,7 @@
                             fromPosition = {x = 31881, y = 32184, z = 7},
                             toPosition = {x = 31983, y = 32245, z = 7}
                         },
-                        m = {"10 Dragon Lord", "10 Dragon Lord Hatchling", "10 Dragon Hatchling"},
+                        m = {"5 Dragon Lord", "5 Dragon Lord Hatchling", "5 Dragon Hatchling"},
                         Time = 15
                     }
                 }

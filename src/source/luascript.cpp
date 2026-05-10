@@ -2266,6 +2266,8 @@ void LuaInterface::registerFunctions(){
 
 	//doPlayerSetRate(cid, type, value)
 	lua_register(m_luaState, "doPlayerSetRate", LuaInterface::luaDoPlayerSetRate);
+	lua_register(m_luaState, "doPlayerSetSkillUpgradeManaReduction", LuaInterface::luaDoPlayerSetSkillUpgradeManaReduction);
+	lua_register(m_luaState, "doPlayerSetSkillUpgradeCooldownReduction", LuaInterface::luaDoPlayerSetSkillUpgradeCooldownReduction);
 
 	//getPlayerPartner(cid)
 	lua_register(m_luaState, "getPlayerPartner", LuaInterface::luaGetPlayerPartner);
@@ -9666,6 +9668,46 @@ int32_t LuaInterface::luaDoPlayerSetRate(lua_State* L)
 		}
 		else
 			lua_pushboolean(L, false);
+	}
+	else
+	{
+		errorEx(getError(LUA_ERROR_PLAYER_NOT_FOUND));
+		lua_pushboolean(L, false);
+	}
+
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSetSkillUpgradeManaReduction(lua_State* L)
+{
+	//doPlayerSetSkillUpgradeManaReduction(cid, percent)
+	int32_t percent = (int32_t)popNumber(L);
+
+	ScriptEnviroment* env = getEnv();
+	if(Player* player = env->getPlayerByUID(popNumber(L)))
+	{
+		player->setSkillUpgradeManaReduction(percent);
+		lua_pushboolean(L, true);
+	}
+	else
+	{
+		errorEx(getError(LUA_ERROR_PLAYER_NOT_FOUND));
+		lua_pushboolean(L, false);
+	}
+
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSetSkillUpgradeCooldownReduction(lua_State* L)
+{
+	//doPlayerSetSkillUpgradeCooldownReduction(cid, percent)
+	int32_t percent = (int32_t)popNumber(L);
+
+	ScriptEnviroment* env = getEnv();
+	if(Player* player = env->getPlayerByUID(popNumber(L)))
+	{
+		player->setSkillUpgradeCooldownReduction(percent);
+		lua_pushboolean(L, true);
 	}
 	else
 	{

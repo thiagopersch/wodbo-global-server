@@ -8,6 +8,13 @@ function getCombatFormulaValues(cid, level, maglevel, baseMin, baseMax, levelDiv
   local archetypeData = VocationRankConfig.Archetypes[archetype]
   local damageMult = archetypeData and archetypeData.damageMult or 1.0
 
+  if SkillUpgradesLib then
+    local extraMagicDamage = SkillUpgradesLib.getSkillValue(cid, "magic_damage")
+    if extraMagicDamage > 0 then
+      damageMult = damageMult * (1 + (extraMagicDamage / 100))
+    end
+  end
+
   local levelRanges = {
     { maxLevel = 1,         minMult = 0.5,  maxMult = 1.2,  minAdd = 2,   maxAdd = 5 },
     { maxLevel = 30,        minMult = 0.8,  maxMult = 2.0,  minAdd = 5,   maxAdd = 12 },
@@ -29,9 +36,9 @@ function getCombatFormulaValues(cid, level, maglevel, baseMin, baseMax, levelDiv
 
   local str = getPlayerSkill(cid, STAT_STRENGTH) or 0
   local int = getPlayerSkill(cid, STAT_INTELLIGENCE) or 0
-  
+
   -- Skills scale: Every 10 points adds a significant boost
-  local skillMult = 1 + ((str + int) / 200) 
+  local skillMult = 1 + ((str + int) / 200)
 
   for _, range in ipairs(levelRanges) do
     if level <= range.maxLevel then

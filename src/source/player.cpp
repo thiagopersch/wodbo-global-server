@@ -78,6 +78,7 @@ Player::Player(const std::string& _name, ProtocolGame* p):
 
 	purchaseCallback = saleCallback = -1;
 	level = shootRange = 1;
+	skillUpgradeManaReduction = skillUpgradeCooldownReduction = 0;
 	rates[SKILL__MAGLEVEL] = rates[SKILL__LEVEL] = 1.0f;
 	soulMax = 200;
 	capacity = 500.00;
