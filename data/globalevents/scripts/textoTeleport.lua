@@ -1,6 +1,6 @@
 local positions = {
     ["Itens iniciais"] = {
-        pos = { x = 31999, y = 32004, z = 7 },
+        pos = { x = 32000, y = 32004, z = 7 },
         color = { 205, 210 },
         effect = { 55 }
     },
@@ -10,7 +10,7 @@ local positions = {
         effect = { 251 }
     },
     ["Arena PvP"] = {
-        pos = { x = 31917, y = 32224, z = 7 },
+        pos = { x = 31893, y = 32224, z = 7 },
         color = { 205, 210 },
         effect = { 10 }
     },

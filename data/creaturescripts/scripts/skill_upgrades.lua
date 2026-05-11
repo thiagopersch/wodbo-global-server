@@ -51,6 +51,9 @@ function onExtendedOpcode(cid, opcode, buffer)
         if action == "upgrade" and data[2] then
             local skill_name = data[2]
             SkillUpgradesLib.upgradeSkill(cid, skill_name)
+        elseif action == "request" then
+            SkillUpgradesLib.sendMetaToClient(cid)
+            SkillUpgradesLib.sendUpdateToClient(cid)
         elseif action == "reset" then
             local resetItemId = SkillUpgradesConfig.ResetItemId or 9004
             local resetItemCount = SkillUpgradesConfig.ResetItemCount or 1

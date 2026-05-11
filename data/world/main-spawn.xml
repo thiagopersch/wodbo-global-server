@@ -21921,6 +21921,9 @@
 	<spawn centerx="31638" centery="32234" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31778" centery="32234" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31945" centery="32234" centerz="7" radius="1">
 		<monster name="Cat" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -21966,6 +21969,9 @@
 	<spawn centerx="31684" centery="32236" centerz="7" radius="1">
 		<monster name="Earth Overlord" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31779" centery="32236" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32145" centery="32236" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -21983,6 +21989,9 @@
 	</spawn>
 	<spawn centerx="31714" centery="32238" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31777" centery="32238" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32093" centery="32238" centerz="7" radius="1">
 		<monster name="Beholder" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22033,6 +22042,9 @@
 	<spawn centerx="32197" centery="32239" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31770" centery="32240" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32110" centery="32240" centerz="7" radius="1">
 		<monster name="Acid Blob" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22058,6 +22070,18 @@
 	<spawn centerx="31679" centery="32241" centerz="7" radius="1">
 		<monster name="Bandit Swordman" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31768" centery="32241" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31777" centery="32241" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31784" centery="32241" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31789" centery="32241" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32129" centery="32241" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22075,6 +22099,9 @@
 	</spawn>
 	<spawn centerx="31702" centery="32242" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31781" centery="32242" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32086" centery="32242" centerz="7" radius="1">
 		<monster name="Coral Frog" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22094,6 +22121,18 @@
 	<spawn centerx="31633" centery="32243" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31767" centery="32243" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31770" centery="32243" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31786" centery="32243" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31790" centery="32243" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32093" centery="32243" centerz="7" radius="1">
 		<monster name="Azure Frog" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22108,6 +22147,12 @@
 	</spawn>
 	<spawn centerx="31639" centery="32244" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31760" centery="32244" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31778" centery="32244" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32115" centery="32244" centerz="7" radius="1">
 		<monster name="Azure Frog" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22130,6 +22175,9 @@
 	<spawn centerx="31705" centery="32245" centerz="7" radius="1">
 		<monster name="Bandit Swordman" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31782" centery="32245" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32158" centery="32245" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22138,6 +22186,15 @@
 	</spawn>
 	<spawn centerx="31634" centery="32246" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31766" centery="32246" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31768" centery="32246" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31773" centery="32246" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32156" centery="32246" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22154,6 +22211,12 @@
 	</spawn>
 	<spawn centerx="31603" centery="32247" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31777" centery="32247" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31783" centery="32247" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32184" centery="32247" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22207,6 +22270,9 @@
 	<spawn centerx="31581" centery="32249" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31780" centery="32249" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31901" centery="32249" centerz="7" radius="1">
 		<monster name="Training Monk" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22239,6 +22305,12 @@
 	</spawn>
 	<spawn centerx="31703" centery="32250" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31769" centery="32250" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31786" centery="32250" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32157" centery="32250" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22273,6 +22345,9 @@
 	<spawn centerx="31594" centery="32252" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31747" centery="32252" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32181" centery="32252" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22294,6 +22369,12 @@
 	<spawn centerx="31621" centery="32253" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31741" centery="32253" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31767" centery="32253" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32166" centery="32253" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22302,6 +22383,9 @@
 	</spawn>
 	<spawn centerx="32207" centery="32253" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31770" centery="32254" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32116" centery="32254" centerz="7" radius="1">
 		<monster name="Acid Blob" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22320,6 +22404,12 @@
 	</spawn>
 	<spawn centerx="31625" centery="32255" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31783" centery="32255" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31789" centery="32255" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32084" centery="32255" centerz="7" radius="1">
 		<monster name="Beholder" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22381,6 +22471,9 @@
 	<spawn centerx="31700" centery="32257" centerz="7" radius="1">
 		<monster name="Bandit Swordman" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31747" centery="32257" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32099" centery="32257" centerz="7" radius="1">
 		<monster name="Acid Blob" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22401,6 +22494,12 @@
 	</spawn>
 	<spawn centerx="31661" centery="32258" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31754" centery="32258" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31779" centery="32258" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32091" centery="32258" centerz="7" radius="1">
 		<monster name="Coral Frog" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22445,6 +22544,12 @@
 	<spawn centerx="31710" centery="32260" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31733" centery="32260" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31769" centery="32260" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32126" centery="32260" centerz="7" radius="1">
 		<monster name="Azure Frog" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22453,6 +22558,9 @@
 	</spawn>
 	<spawn centerx="31577" centery="32261" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31759" centery="32261" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32093" centery="32261" centerz="7" radius="1">
 		<monster name="Azure Frog" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22477,6 +22585,13 @@
 	</spawn>
 	<spawn centerx="31675" centery="32262" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31744" centery="32262" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="-1" z="7" spawntime="0" direction="2" />
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31794" centery="32262" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32107" centery="32262" centerz="7" radius="1">
 		<monster name="Azure Frog" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22511,6 +22626,9 @@
 	<spawn centerx="31617" centery="32264" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31793" centery="32264" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32084" centery="32264" centerz="7" radius="1">
 		<monster name="Acid Blob" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22522,6 +22640,12 @@
 	</spawn>
 	<spawn centerx="31644" centery="32265" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31778" centery="32265" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31780" centery="32265" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32089" centery="32265" centerz="7" radius="1">
 		<monster name="Beholder" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22563,6 +22687,12 @@
 	<spawn centerx="31702" centery="32266" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31753" centery="32266" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31786" centery="32266" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32108" centery="32266" centerz="7" radius="1">
 		<monster name="Acid Blob" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22587,6 +22717,9 @@
 	<spawn centerx="31692" centery="32267" centerz="7" radius="1">
 		<monster name="Bandit Swordman" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31740" centery="32267" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32227" centery="32267" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22596,11 +22729,20 @@
 	<spawn centerx="31671" centery="32268" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31763" centery="32268" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31592" centery="32269" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31610" centery="32269" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31732" centery="32269" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31785" centery="32269" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32182" centery="32269" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22626,6 +22768,9 @@
 	</spawn>
 	<spawn centerx="31658" centery="32270" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31747" centery="32270" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32131" centery="32270" centerz="7" radius="1">
 		<monster name="Acid Blob" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22675,6 +22820,12 @@
 	<spawn centerx="31677" centery="32272" centerz="7" radius="1">
 		<monster name="Bandit Swordman" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31723" centery="32272" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31790" centery="32272" centerz="7" radius="1">
+		<monster name="Dog" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31921" centery="32272" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22699,6 +22850,12 @@
 	<spawn centerx="31662" centery="32273" centerz="7" radius="1">
 		<monster name="Bandit Swordman" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31758" centery="32273" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31762" centery="32273" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31929" centery="32273" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22713,6 +22870,9 @@
 	</spawn>
 	<spawn centerx="31668" centery="32274" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31734" centery="32274" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31962" centery="32274" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22809,6 +22969,9 @@
 	<spawn centerx="31633" centery="32277" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31779" centery="32277" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31918" centery="32277" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22825,6 +22988,12 @@
 		<monster name="Bandit Gun" x="0" y="-1" z="7" spawntime="60" direction="2" />
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31739" centery="32278" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31784" centery="32278" centerz="7" radius="1">
+		<monster name="Cat" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31966" centery="32278" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22839,6 +23008,12 @@
 	</spawn>
 	<spawn centerx="31677" centery="32279" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31720" centery="32279" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31752" centery="32279" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32109" centery="32279" centerz="7" radius="1">
 		<monster name="Defiler" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22860,6 +23035,9 @@
 	</spawn>
 	<spawn centerx="31577" centery="32280" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31743" centery="32280" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32105" centery="32280" centerz="7" radius="1">
 		<monster name="Defiler" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22894,6 +23072,9 @@
 	<spawn centerx="31571" centery="32281" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31730" centery="32281" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32114" centery="32281" centerz="7" radius="1">
 		<monster name="Beholder" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22911,6 +23092,9 @@
 	</spawn>
 	<spawn centerx="31586" centery="32282" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31757" centery="32282" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32227" centery="32282" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22954,6 +23138,9 @@
 	<spawn centerx="31663" centery="32285" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31746" centery="32285" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32208" centery="32285" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22962,6 +23149,9 @@
 	</spawn>
 	<spawn centerx="31576" centery="32286" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31736" centery="32286" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32174" centery="32286" centerz="7" radius="1">
 		<monster name="Beholder" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22974,6 +23164,9 @@
 	</spawn>
 	<spawn centerx="32250" centery="32286" centerz="7" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31718" centery="32287" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32111" centery="32287" centerz="7" radius="1">
 		<monster name="Defiler" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -23011,6 +23204,9 @@
 	<spawn centerx="31581" centery="32288" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31714" centery="32288" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32155" centery="32288" centerz="7" radius="1">
 		<monster name="Beholder" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -23044,6 +23240,12 @@
 	<spawn centerx="31634" centery="32290" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31725" centery="32290" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31740" centery="32290" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31916" centery="32290" centerz="7" radius="1">
 		<monster name="Training Monk" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -23070,6 +23272,9 @@
 	</spawn>
 	<spawn centerx="31574" centery="32291" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31732" centery="32291" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32121" centery="32291" centerz="7" radius="1">
 		<monster name="Defiler" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -23100,6 +23305,9 @@
 	</spawn>
 	<spawn centerx="31677" centery="32292" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31747" centery="32292" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32131" centery="32292" centerz="7" radius="1">
 		<monster name="Azure Frog" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -23143,6 +23351,15 @@
 	<spawn centerx="31614" centery="32293" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31720" centery="32293" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31750" centery="32293" centerz="7" radius="1">
+		<monster name="Boar" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31756" centery="32293" centerz="7" radius="1">
+		<monster name="Boar" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32126" centery="32293" centerz="7" radius="1">
 		<monster name="Defiler" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -23176,6 +23393,12 @@
 	<spawn centerx="31598" centery="32295" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31713" centery="32295" centerz="7" radius="1">
+		<monster name="Crocodile" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31736" centery="32295" centerz="7" radius="1">
+		<monster name="Cobra" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32432" centery="32295" centerz="7" radius="1">
 		<monster name="Bonebeast" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -23190,6 +23413,12 @@
 	</spawn>
 	<spawn centerx="31603" centery="32296" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31715" centery="32296" centerz="7" radius="1">
+		<monster name="Crocodile" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31740" centery="32296" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32125" centery="32296" centerz="7" radius="1">
 		<monster name="Defiler" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -23220,6 +23449,12 @@
 	</spawn>
 	<spawn centerx="31657" centery="32297" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31747" centery="32297" centerz="7" radius="1">
+		<monster name="Boar" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31752" centery="32297" centerz="7" radius="1">
+		<monster name="Boar" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32131" centery="32297" centerz="7" radius="1">
 		<monster name="Acid Blob" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -23260,6 +23495,12 @@
 	<spawn centerx="31646" centery="32298" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31716" centery="32298" centerz="7" radius="1">
+		<monster name="Crocodile" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31728" centery="32298" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32203" centery="32298" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -23288,6 +23529,9 @@
 	<spawn centerx="31588" centery="32300" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31737" centery="32300" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32251" centery="32300" centerz="7" radius="1">
 		<monster name="Fat Janemba" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -23303,6 +23547,9 @@
 	</spawn>
 	<spawn centerx="31616" centery="32301" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31744" centery="32301" centerz="7" radius="1">
+		<monster name="Boar" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32213" centery="32301" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -23378,6 +23625,12 @@
 	<spawn centerx="31624" centery="32303" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31738" centery="32303" centerz="7" radius="1">
+		<monster name="Boar" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31748" centery="32303" centerz="7" radius="1">
+		<monster name="Boar" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32180" centery="32303" centerz="7" radius="1">
 		<monster name="Acid Blob" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -23413,6 +23666,9 @@
 	</spawn>
 	<spawn centerx="31669" centery="32304" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31727" centery="32304" centerz="7" radius="1">
+		<monster name="Rabbit" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31913" centery="32304" centerz="7" radius="1">
 		<monster name="Training Monk" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -23532,6 +23788,18 @@
 	<spawn centerx="31655" centery="32308" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31719" centery="32308" centerz="7" radius="1">
+		<monster name="Crocodile" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31733" centery="32308" centerz="7" radius="1">
+		<monster name="Boar" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31739" centery="32308" centerz="7" radius="1">
+		<monster name="Boar" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31745" centery="32308" centerz="7" radius="1">
+		<monster name="Boar" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32170" centery="32308" centerz="7" radius="1">
 		<monster name="Azure Frog" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -23557,6 +23825,9 @@
 	<spawn centerx="31567" centery="32309" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="-1" z="7" spawntime="60" direction="2" />
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31741" centery="32309" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32147" centery="32309" centerz="7" radius="1">
 		<monster name="Coral Frog" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -23586,6 +23857,9 @@
 	<spawn centerx="31679" centery="32310" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31730" centery="32310" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32167" centery="32310" centerz="7" radius="1">
 		<monster name="Coral Frog" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -23608,11 +23882,29 @@
 	<spawn centerx="31624" centery="32311" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31732" centery="32311" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31736" centery="32311" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31742" centery="32311" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32158" centery="32311" centerz="7" radius="1">
 		<monster name="Defiler" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32269" centery="32311" centerz="7" radius="1">
 		<monster name="Janemba" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31720" centery="32312" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31724" centery="32312" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31739" centery="32312" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32197" centery="32312" centerz="7" radius="1">
 		<monster name="Acid Blob" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -23626,6 +23918,9 @@
 	<spawn centerx="32493" centery="32312" centerz="7" radius="1">
 		<monster name="Lion" x="0" y="0" z="7" spawntime="60" direction="2" />
 		<monster name="Lion" x="1" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31726" centery="32313" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32164" centery="32313" centerz="7" radius="1">
 		<monster name="Beholder" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -23654,6 +23949,12 @@
 	<spawn centerx="31623" centery="32314" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31730" centery="32314" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31736" centery="32314" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32151" centery="32314" centerz="7" radius="1">
 		<monster name="Defiler" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -23672,6 +23973,9 @@
 	<spawn centerx="32371" centery="32314" centerz="7" radius="1">
 		<monster name="Lion" x="0" y="-1" z="7" spawntime="60" direction="2" />
 		<monster name="Lion" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31722" centery="32315" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32233" centery="32315" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -23702,6 +24006,18 @@
 	</spawn>
 	<spawn centerx="31673" centery="32317" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31716" centery="32317" centerz="7" radius="1">
+		<monster name="Crocodile" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31725" centery="32317" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31727" centery="32317" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31733" centery="32317" centerz="7" radius="1">
+		<monster name="Deer" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32157" centery="32317" centerz="7" radius="1">
 		<monster name="Defiler" x="0" y="0" z="7" spawntime="60" direction="2" />

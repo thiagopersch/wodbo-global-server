@@ -22,8 +22,22 @@ function onStatsChange(cid, attacker, type, combat, value)
     end
 
     -- From here, we handle damage (HEALTHLOSS or MANALOSS)
-    if not isPlayer(attacker) or attacker == cid then return true end
     if type ~= STATSCHANGE_HEALTHLOSS and type ~= STATSCHANGE_MANALOSS then return true end
+
+    -- Reflect: when the player takes damage, chance to reflect back
+    if type == STATSCHANGE_HEALTHLOSS and isPlayer(cid) and attacker ~= cid then
+        local reflectChance = SkillUpgradesLib.getSkillValue(cid, "reflect_chance")
+        if reflectChance > 0 and math.random(1, 100) <= reflectChance then
+            local reflectDamage = math.ceil(value * 0.5)
+            if reflectDamage > 0 then
+                doTargetCombatHealth(0, attacker, combat, -reflectDamage, -reflectDamage, 255)
+                doSendMagicEffect(getCreaturePosition(attacker), CONST_ME_MAGIC_RED)
+            end
+        end
+    end
+
+    -- Skip attacker-side bonuses (crit, leech) if attacker is not a valid player
+    if not isPlayer(attacker) or attacker == cid then return true end
 
     local damage = value
     local appliedCrit = false
@@ -39,29 +53,23 @@ function onStatsChange(cid, attacker, type, combat, value)
         doSendAnimatedText(getCreaturePosition(cid), "CRITICAL!", 144)
     end
 
-    -- Life Leech
+    -- Life Leech (chance only, fixed 50% leech rate)
     local llChance = SkillUpgradesLib.getSkillValue(attacker, "life_leech_chance")
     if llChance > 0 and math.random(1, 100) <= llChance then
-        local llAmount = SkillUpgradesLib.getSkillValue(attacker, "life_leech_amount")
-        if llAmount > 0 then
-            local healAmount = math.ceil((damage * llAmount) / 100)
-            if healAmount > 0 then
-                doCreatureAddHealth(attacker, healAmount)
-                doSendMagicEffect(getCreaturePosition(attacker), CONST_ME_MAGIC_RED)
-            end
+        local healAmount = math.ceil(damage * 0.5)
+        if healAmount > 0 then
+            doCreatureAddHealth(attacker, healAmount)
+            doSendMagicEffect(getCreaturePosition(attacker), CONST_ME_MAGIC_RED)
         end
     end
 
-    -- Mana Leech
+    -- Mana Leech (chance only, fixed 50% leech rate)
     local mlChance = SkillUpgradesLib.getSkillValue(attacker, "mana_leech_chance")
     if mlChance > 0 and math.random(1, 100) <= mlChance then
-        local mlAmount = SkillUpgradesLib.getSkillValue(attacker, "mana_leech_amount")
-        if mlAmount > 0 then
-            local manaAmount = math.ceil((damage * mlAmount) / 100)
-            if manaAmount > 0 then
-                doCreatureAddMana(attacker, manaAmount)
-                doSendMagicEffect(getCreaturePosition(attacker), CONST_ME_MAGIC_BLUE)
-            end
+        local manaAmount = math.ceil(damage * 0.5)
+        if manaAmount > 0 then
+            doCreatureAddMana(attacker, manaAmount)
+            doSendMagicEffect(getCreaturePosition(attacker), CONST_ME_MAGIC_BLUE)
         end
     end
 

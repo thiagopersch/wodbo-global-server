@@ -21,25 +21,27 @@ function SkillUpgradesLib.loadPlayer(cid)
     PlayerSkillPointsCache[guid] = {}
 
     -- Load Points
-    local query = db.getResult("SELECT `vocation_id`, `available_points`, `spent_points` FROM `player_skill_points` WHERE `player_id` = " .. guid)
+    local query = db.getResult(
+    "SELECT `vocation_id`, `available_points`, `spent_points` FROM `player_skill_points` WHERE `player_id` = " .. guid)
     if query:getID() ~= -1 then
         repeat
             local voc = query:getDataInt("vocation_id")
             local avail = query:getDataInt("available_points")
             local spent = query:getDataInt("spent_points")
-            PlayerSkillPointsCache[guid][voc] = {available = avail, spent = spent}
+            PlayerSkillPointsCache[guid][voc] = { available = avail, spent = spent }
         until not query:next()
         query:free()
     end
 
     -- Load Skills
-    local querySkills = db.getResult("SELECT `vocation_id`, `skill_name`, `current_level` FROM `player_skill_upgrades` WHERE `player_id` = " .. guid)
+    local querySkills = db.getResult(
+    "SELECT `vocation_id`, `skill_name`, `current_level` FROM `player_skill_upgrades` WHERE `player_id` = " .. guid)
     if querySkills:getID() ~= -1 then
         repeat
             local voc = querySkills:getDataInt("vocation_id")
             local skill = querySkills:getDataString("skill_name")
             local lvl = querySkills:getDataInt("current_level")
-            
+
             if not PlayerSkillUpgradesCache[guid][voc] then
                 PlayerSkillUpgradesCache[guid][voc] = {}
             end
@@ -62,8 +64,10 @@ function SkillUpgradesLib.initVocation(guid, vocationId)
     if not PlayerSkillUpgradesCache[guid] then PlayerSkillUpgradesCache[guid] = {} end
 
     if not PlayerSkillPointsCache[guid][vocationId] then
-        PlayerSkillPointsCache[guid][vocationId] = {available = 0, spent = 0}
-        db.query("INSERT INTO `player_skill_points` (`player_id`, `vocation_id`, `available_points`, `spent_points`) VALUES (" .. guid .. ", " .. vocationId .. ", 0, 0)")
+        PlayerSkillPointsCache[guid][vocationId] = { available = 0, spent = 0 }
+        db.query(
+        "INSERT INTO `player_skill_points` (`player_id`, `vocation_id`, `available_points`, `spent_points`) VALUES (" ..
+        guid .. ", " .. vocationId .. ", 0, 0)")
     end
 
     if not PlayerSkillUpgradesCache[guid][vocationId] then
@@ -73,8 +77,8 @@ end
 
 function SkillUpgradesLib.getPoints(cid, vocationId)
     local guid = getPlayerGUID(cid)
-    if not guid or not PlayerSkillPointsCache[guid] then return {available = 0, spent = 0} end
-    return PlayerSkillPointsCache[guid][vocationId] or {available = 0, spent = 0}
+    if not guid or not PlayerSkillPointsCache[guid] then return { available = 0, spent = 0 } end
+    return PlayerSkillPointsCache[guid][vocationId] or { available = 0, spent = 0 }
 end
 
 function SkillUpgradesLib.addAvailablePoints(cid, vocationId, amount)
@@ -83,7 +87,9 @@ function SkillUpgradesLib.addAvailablePoints(cid, vocationId, amount)
 
     SkillUpgradesLib.initVocation(guid, vocationId)
     PlayerSkillPointsCache[guid][vocationId].available = PlayerSkillPointsCache[guid][vocationId].available + amount
-    db.query("UPDATE `player_skill_points` SET `available_points` = " .. PlayerSkillPointsCache[guid][vocationId].available .. " WHERE `player_id` = " .. guid .. " AND `vocation_id` = " .. vocationId)
+    db.query("UPDATE `player_skill_points` SET `available_points` = " ..
+    PlayerSkillPointsCache[guid][vocationId].available ..
+    " WHERE `player_id` = " .. guid .. " AND `vocation_id` = " .. vocationId)
     SkillUpgradesLib.sendUpdateToClient(cid)
 end
 
@@ -133,16 +139,23 @@ function SkillUpgradesLib.upgradeSkill(cid, skill_name)
     -- Deduct points and increase level
     points.available = points.available - cost
     points.spent = points.spent + cost
-    
+
     PlayerSkillUpgradesCache[guid][vocationId][skill_name] = currentLvl + 1
 
     -- DB Updates
-    db.query("UPDATE `player_skill_points` SET `available_points` = " .. points.available .. ", `spent_points` = " .. points.spent .. " WHERE `player_id` = " .. guid .. " AND `vocation_id` = " .. vocationId)
-    
+    db.query("UPDATE `player_skill_points` SET `available_points` = " ..
+    points.available ..
+    ", `spent_points` = " .. points.spent .. " WHERE `player_id` = " .. guid .. " AND `vocation_id` = " .. vocationId)
+
     if currentLvl == 0 then
-        db.query("INSERT INTO `player_skill_upgrades` (`player_id`, `vocation_id`, `skill_name`, `current_level`) VALUES (" .. guid .. ", " .. vocationId .. ", '" .. skill_name .. "', 1)")
+        db.query(
+        "INSERT INTO `player_skill_upgrades` (`player_id`, `vocation_id`, `skill_name`, `current_level`) VALUES (" ..
+        guid .. ", " .. vocationId .. ", '" .. skill_name .. "', 1)")
     else
-        db.query("UPDATE `player_skill_upgrades` SET `current_level` = " .. (currentLvl + 1) .. " WHERE `player_id` = " .. guid .. " AND `vocation_id` = " .. vocationId .. " AND `skill_name` = '" .. skill_name .. "'")
+        db.query("UPDATE `player_skill_upgrades` SET `current_level` = " ..
+        (currentLvl + 1) ..
+        " WHERE `player_id` = " ..
+        guid .. " AND `vocation_id` = " .. vocationId .. " AND `skill_name` = '" .. skill_name .. "'")
     end
 
     SkillUpgradesLib.applyCombatStats(cid, vocationId)
@@ -157,7 +170,7 @@ function SkillUpgradesLib.resetSkills(cid, vocationId)
     if not guid then return false end
 
     SkillUpgradesLib.initVocation(guid, vocationId)
-    
+
     local points = PlayerSkillPointsCache[guid][vocationId]
     if points.spent == 0 then
         return false
@@ -168,7 +181,8 @@ function SkillUpgradesLib.resetSkills(cid, vocationId)
 
     PlayerSkillUpgradesCache[guid][vocationId] = {}
 
-    db.query("UPDATE `player_skill_points` SET `available_points` = " .. points.available .. ", `spent_points` = 0 WHERE `player_id` = " .. guid .. " AND `vocation_id` = " .. vocationId)
+    db.query("UPDATE `player_skill_points` SET `available_points` = " ..
+    points.available .. ", `spent_points` = 0 WHERE `player_id` = " .. guid .. " AND `vocation_id` = " .. vocationId)
     db.query("DELETE FROM `player_skill_upgrades` WHERE `player_id` = " .. guid .. " AND `vocation_id` = " .. vocationId)
 
     SkillUpgradesLib.applyCombatStats(cid, vocationId)
@@ -179,37 +193,81 @@ end
 
 function SkillUpgradesLib.applyCombatStats(cid, vocationId)
     vocationId = vocationId or getPlayerVocation(cid)
-    
-    -- Apply direct conditions for base stats like ML, Melee, Distance, Shield
+
+    -- Apply direct conditions for base stats (individual skills)
     local condition = createConditionObject(CONDITION_ATTRIBUTES)
     setConditionParam(condition, CONDITION_PARAM_TICKS, -1)
     setConditionParam(condition, CONDITION_PARAM_SUBID, 98765) -- Unique subId for skill upgrades
-    
+
     local mlLvl = SkillUpgradesLib.getSkillValue(cid, "magic_level", vocationId)
     if mlLvl > 0 then setConditionParam(condition, CONDITION_PARAM_STAT_MAGICLEVEL, mlLvl) end
-    
-    local meleeLvl = SkillUpgradesLib.getSkillValue(cid, "melee_skill", vocationId)
-    if meleeLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_MELEE, meleeLvl) end
-    
-    local distLvl = SkillUpgradesLib.getSkillValue(cid, "distance_skill", vocationId)
+
+    local fistLvl = SkillUpgradesLib.getSkillValue(cid, "fist_fighting", vocationId)
+    if fistLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_FIST, fistLvl) end
+
+    local clubLvl = SkillUpgradesLib.getSkillValue(cid, "club_fighting", vocationId)
+    if clubLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_CLUB, clubLvl) end
+
+    local axeLvl = SkillUpgradesLib.getSkillValue(cid, "axe_fighting", vocationId)
+    if axeLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_AXE, axeLvl) end
+
+    local swordLvl = SkillUpgradesLib.getSkillValue(cid, "sword_fighting", vocationId)
+    if swordLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_SWORD, swordLvl) end
+
+    local distLvl = SkillUpgradesLib.getSkillValue(cid, "distance_fighting", vocationId)
     if distLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_DISTANCE, distLvl) end
-    
-    local shieldLvl = SkillUpgradesLib.getSkillValue(cid, "shielding_skill", vocationId)
+
+    local shieldLvl = SkillUpgradesLib.getSkillValue(cid, "shielding", vocationId)
     if shieldLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_SHIELD, shieldLvl) end
-    
+
     doAddCondition(cid, condition)
+
+    -- Apply mana and cooldown reduction via C++ functions
+    local cdLvl = SkillUpgradesLib.getSkillValue(cid, "cooldown_reduction", vocationId)
+    if cdLvl > 0 then
+        if doPlayerSetSkillUpgradeManaReduction then
+            doPlayerSetSkillUpgradeManaReduction(cid, cdLvl)
+        end
+        if doPlayerSetSkillUpgradeCooldownReduction then
+            doPlayerSetSkillUpgradeCooldownReduction(cid, cdLvl)
+        end
+    else
+        if doPlayerSetSkillUpgradeManaReduction then
+            doPlayerSetSkillUpgradeManaReduction(cid, 0)
+        end
+        if doPlayerSetSkillUpgradeCooldownReduction then
+            doPlayerSetSkillUpgradeCooldownReduction(cid, 0)
+        end
+    end
 end
 
 function SkillUpgradesLib.sendMetaToClient(cid)
     local buffer = "@meta"
     for key, cat in pairs(SkillUpgradesConfig.Categories) do
-        buffer = buffer .. "|" .. key .. ";" .. cat.name .. ";" .. cat.desc .. ";" .. cat.maxLevel .. ";" .. cat.formulaDisplay
+        local groupName = cat.group or ""
+        local groupOrder = 0
+        if groupName ~= "" and SkillUpgradesConfig.SkillGroups[groupName] then
+            groupOrder = SkillUpgradesConfig.SkillGroups[groupName].order
+        end
+        buffer = buffer ..
+        "|" ..
+        key ..
+        ";" ..
+        cat.name ..
+        ";" .. cat.desc .. ";" .. cat.maxLevel .. ";" .. cat.formulaDisplay .. ";" .. groupName .. ";" .. groupOrder
+    end
+
+    local groupsBuffer = "@groups"
+    for groupKey, groupInfo in pairs(SkillUpgradesConfig.SkillGroups) do
+        groupsBuffer = groupsBuffer .. "|" .. groupKey .. ";" .. groupInfo.name .. ";" .. groupInfo.order
     end
 
     if doSendPlayerExtendedOpcode then
         doSendPlayerExtendedOpcode(cid, SkillUpgradesConfig.Opcode, buffer)
+        doSendPlayerExtendedOpcode(cid, SkillUpgradesConfig.Opcode, groupsBuffer)
     elseif doPlayerSendExtendedOpcode then
         doPlayerSendExtendedOpcode(cid, SkillUpgradesConfig.Opcode, buffer)
+        doPlayerSendExtendedOpcode(cid, SkillUpgradesConfig.Opcode, groupsBuffer)
     end
 end
 
@@ -217,7 +275,7 @@ function SkillUpgradesLib.sendUpdateToClient(cid)
     local guid = getPlayerGUID(cid)
     local vocationId = getPlayerVocation(cid)
     if not guid then return end
-    
+
     SkillUpgradesLib.initVocation(guid, vocationId)
     local points = PlayerSkillPointsCache[guid][vocationId]
     local skills = PlayerSkillUpgradesCache[guid][vocationId] or {}
