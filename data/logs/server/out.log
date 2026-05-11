@@ -1,38 +1,59 @@
-[11/5/2026 13:22:50] > Usando SHA1 criptografia
-[11/5/2026 13:22:50] >> Carregando RSA key
-[11/5/2026 13:22:50] >> Iniciando conexao SQL
-[11/5/2026 13:22:50] >> Executando Gerenciador de Banco de Dados
-[11/5/2026 13:22:50] > Optimized database.
-[11/5/2026 13:22:50] >> Carregando items (OTB)
-[11/5/2026 13:22:51] >> Carregando items (XML)
-[11/5/2026 13:22:51] >> Carregando Grupos
-[11/5/2026 13:22:51] >> Carregando Vocacoes
-[11/5/2026 13:22:51] >> Carregando Outfits
-[11/5/2026 13:22:51] >> Carregando Canal de Chat
-[11/5/2026 13:22:51] >> Carregando Sistema
-[11/5/2026 13:22:51] >> Carregando Mods...
-[11/5/2026 13:22:51] > Loading AutoLoot.xml... done.
-[11/5/2026 13:22:51] > Loading Automatic Raids.xml... done.
-[11/5/2026 13:22:51] > Loading highscorebook.xml... done.
-[11/5/2026 13:22:51] > Loading Simple Task.xml... done.
-[11/5/2026 13:22:51] > 4 mods were loaded.
-[11/5/2026 13:22:51] >> Carregando EXP Stages
-[11/5/2026 13:22:51] >> Carregando Monstros
-[11/5/2026 13:22:52] >> Carregando Mapa e Spawns...
-[11/5/2026 13:22:52] > Tamanho do Mapa: 64000x64000.
-[11/5/2026 13:22:52] > Descricao do Mapa: 
-[11/5/2026 13:22:52] "Saved with OTARMEIE 7.1.2"
-[11/5/2026 13:22:52] "No map description available."
-[11/5/2026 13:22:55] > Mapa carregado em: 3.029 segundos.
-[11/5/2026 13:22:55] > Data carregada em: 0.185 segundos.
-[11/5/2026 13:22:57] > Houses carregada em: 1.725 segundos.
-[11/5/2026 13:22:57] > Content unserialization time: 0.003 seconds.
-[11/5/2026 13:22:57] > Carregando Tipo de PVP... Open PvP
-[11/5/2026 13:22:57] > Inicializando estado do jogo e registrando servicos...
-[11/5/2026 13:22:57] > IP do Servidor: 127.0.0.1
-[11/5/2026 13:22:57] > IP local do Servidor: 172.30.224.1	192.168.1.104	
-[11/5/2026 13:22:57] > Portas do Servidor: 7171	7172	
-[11/5/2026 13:22:57] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[11/5/2026 13:23:7] >> DBOSupreme servidor Online!
+[11/5/2026 15:31:29] > Usando SHA1 criptografia
+[11/5/2026 15:31:29] >> Carregando RSA key
+[11/5/2026 15:31:29] >> Iniciando conexao SQL
+[11/5/2026 15:31:29] >> Executando Gerenciador de Banco de Dados
+[11/5/2026 15:31:29] > Optimized database.
+[11/5/2026 15:31:29] >> Carregando items (OTB)
+[11/5/2026 15:31:30] >> Carregando items (XML)
+[11/5/2026 15:31:30] >> Carregando Grupos
+[11/5/2026 15:31:30] >> Carregando Vocacoes
+[11/5/2026 15:31:30] >> Carregando Outfits
+[11/5/2026 15:31:30] >> Carregando Canal de Chat
+[11/5/2026 15:31:30] >> Carregando Sistema
+[11/5/2026 15:31:30] >> Carregando Mods...
+[11/5/2026 15:31:30] > Loading AutoLoot.xml... done.
+[11/5/2026 15:31:30] > Loading Automatic Raids.xml... done.
+[11/5/2026 15:31:30] > Loading highscorebook.xml... done.
+[11/5/2026 15:31:30] > Loading Simple Task.xml... done.
+[11/5/2026 15:31:30] > 4 mods were loaded.
+[11/5/2026 15:31:30] >> Carregando EXP Stages
+[11/5/2026 15:31:30] >> Carregando Monstros
+[11/5/2026 15:31:31] >> Carregando Mapa e Spawns...
+[11/5/2026 15:31:31] > Tamanho do Mapa: 64000x64000.
+[11/5/2026 15:31:31] > Descricao do Mapa: 
+[11/5/2026 15:31:31] "Saved with OTARMEIE 7.1.2"
+[11/5/2026 15:31:31] "No map description available."
+[11/5/2026 15:31:33] > Mapa carregado em: 2.741 segundos.
+[11/5/2026 15:31:34] > Data carregada em: 0.163 segundos.
+[11/5/2026 15:31:35] > Houses carregada em: 1.869 segundos.
+[11/5/2026 15:31:35] > Content unserialization time: 0.003 seconds.
+[11/5/2026 15:31:35] > Carregando Tipo de PVP... Open PvP
+[11/5/2026 15:31:35] > Inicializando estado do jogo e registrando servicos...
+[11/5/2026 15:31:36] > IP do Servidor: 127.0.0.1
+[11/5/2026 15:31:36] > IP local do Servidor: 172.30.224.1	192.168.1.104	
+[11/5/2026 15:31:36] > Portas do Servidor: 7171	7172	
+[11/5/2026 15:31:36] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[11/5/2026 15:31:46] >> DBOSupreme servidor Online!
 
-[11/5/2026 13:23:9] God has logged in.
+[11/5/2026 15:34:6] God has logged in.
+[11/5/2026 15:52:1] God has logged out.
+[11/5/2026 15:55:35] God has logged in.
+[11/5/2026 16:33:30] > Salvando servidor...
+[11/5/2026 16:33:30] > SAVE: Completo em 0.11 segundos usando binary casa storage.
+[11/5/2026 17:31:30] OTSYS_SQLITE3_PREPARE(): SQLITE ERROR: no such table: lottery (INSERT INTO "lottery" ("name", "item") VALUES ('God', 'enchanted experience scroll blue');)
+[11/5/2026 17:31:30] > CLEAN: Removed 0 items from 2 tiles (2 were marked) in 0 seconds.
+[11/5/2026 17:33:30] > Salvando servidor...
+[11/5/2026 17:33:30] > SAVE: Completo em 0.149 segundos usando binary casa storage.
+[11/5/2026 18:8:47] > Loading AutoLoot.xml... done.
+[11/5/2026 18:8:47] > Loading Automatic Raids.xml... done.
+[11/5/2026 18:8:47] > Loading highscorebook.xml... done.
+[11/5/2026 18:8:47] > Loading Simple Task.xml... done.
+[11/5/2026 18:8:47] > 4 mods were loaded.
+[11/5/2026 18:8:54] sqlite3_step(): SQLITE ERROR: columns player_id, vocation_id are not unique
+[11/5/2026 18:24:11] > Loading AutoLoot.xml... done.
+[11/5/2026 18:24:11] > Loading Automatic Raids.xml... done.
+[11/5/2026 18:24:11] > Loading highscorebook.xml... done.
+[11/5/2026 18:24:11] > Loading Simple Task.xml... done.
+[11/5/2026 18:24:11] > 4 mods were loaded.
+[11/5/2026 18:25:8] God has logged out.
+[11/5/2026 18:25:9] Ayla has logged in.

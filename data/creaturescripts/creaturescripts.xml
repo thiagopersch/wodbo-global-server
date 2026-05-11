@@ -31,6 +31,7 @@
 	<!-- <event type="login" name="SkillPoints" event="script" value="skillpoints.lua" /> -->
 	<!-- <event type="extendedopcode" event="script" name="HighscoreOpcode" value="highscore.lua" /> -->
 	<event type="login" name="BankExtended" event="script" value="bank_server.lua" />
+	<event type="extendedopcode" name="BankOpcode" event="script" value="bank_server.lua" />
 	<event type="extendedopcode" event="script" name="ChangeVocationOpcode"
 		value="change_vocation.lua" />
 	<event type="login" name="ChangeVocationLogin" event="script" value="change_vocation.lua" />

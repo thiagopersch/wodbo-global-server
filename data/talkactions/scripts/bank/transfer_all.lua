@@ -5,17 +5,22 @@ function onSay(cid, words, param)
     }
 
     if config.bankSystemEnabled == TRUE then
-        if (param == "") then
-            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Command requires param.")
-            return TRUE
-        end
-        local t = string.explode(param, ",")
-        if playerExists(param) then
-            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,
-                "You have transferred " .. getPlayerBalance(cid) .. " gold to " .. param .. ".")
-            doPlayerTransferAllMoneyTo(cid, param)
+        if config.playerIsFighting == FALSE then
+            if (param == "") then
+                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Command requires param.")
+                return TRUE
+            end
+            local name = param:trim()
+            if playerExists(name) then
+                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,
+                    "You have transferred " .. getPlayerBalance(cid) .. " gold to " .. name .. ".")
+                doPlayerTransferAllMoneyTo(cid, name)
+            else
+                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Player " .. name .. " does not exist.")
+                return TRUE
+            end
         else
-            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Player " .. param .. " does not exist.")
+            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Bank can not be used in fight.")
             return TRUE
         end
     else

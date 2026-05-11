@@ -5,17 +5,22 @@ function onSay(cid, words, param)
     }
 
     if config.bankSystemEnabled == TRUE then
-        if config.playerIsFighting == TRUE then
+        if config.playerIsFighting == FALSE then
             if (param == "") then
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Command requires param.")
                 return TRUE
             end
 
             local t = string.explode(param, ",")
+            local name = t[1]
+            local amount = t[2]
 
-            local m = tonumber(t[2])
+            if not name or not amount then
+                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Invalid format. Use: !transfer name,amount")
+                return TRUE
+            end
 
-            local tmp = string.explode(t[2], ",")
+            local m = tonumber(amount)
 
             if (not m) then
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "No money specified.")
@@ -25,13 +30,13 @@ function onSay(cid, words, param)
             m = math.abs(m)
 
             if m <= getPlayerBalance(cid) then
-                if playerExists(t[1]) then
-                    doPlayerTransferMoneyTo(cid, t[1], m)
+                if playerExists(name) then
+                    doPlayerTransferMoneyTo(cid, name, m)
                     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,
                         "You have transferred " ..
-                        m .. " gold to " .. t[1] .. ". Your account balance is " .. getPlayerBalance(cid) .. " gold.")
+                        m .. " gold to " .. name .. ". Your account balance is " .. getPlayerBalance(cid) .. " gold.")
                 else
-                    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Player " .. t[1] .. " does not exist.")
+                    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Player " .. name .. " does not exist.")
                 end
             else
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,

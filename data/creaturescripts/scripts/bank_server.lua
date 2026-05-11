@@ -1,208 +1,287 @@
--- Banking System Server Module (TFS 0.4 compatible)
--- Handles banking operations on the server side
+if not json then
+  json = dofile('data/lib/json.lua')
+end
 
--- Configuration
 local Config = {
-  -- Opcode for communication with client
-  OpCode = 164
+  OpCode = 164,
+  CoinIds = {
+    gold = 2148,
+    platinum = 2152,
+    crystal = 2160
+  },
+  Cooldown = 3 -- seconds
 }
 
--- Handle player login
-function onLogin(player)
-  -- This event is not strictly needed for the extended opcode,
-  -- but you can use it to initialize other systems if you wish.
-  -- For the bank system, the extended opcode event is always active
-  -- after you register it in creaturescripts.xml.
+local lastAction = {}
+
+function onLogin(cid)
+  registerCreatureEvent(cid, "BankOpcode")
+  -- Send balance on login to sync client
+  addEvent(sendBalance, 1000, cid)
   return true
 end
 
--- Handle extended opcode messages from client
-function onExtendedOpcode(player, opcode, buffer)
-  -- Check if this is our opcode
+function onExtendedOpcode(cid, opcode, buffer)
   if opcode ~= Config.OpCode then
     return true
   end
 
-  -- Parse the message
+  if not getBooleanFromString(getConfigInfo('bankSystem')) then
+    return true
+  end
+
   local status, data = pcall(function()
     return json.decode(buffer)
   end)
 
-  -- Handle json parsing errors
   if not status or not data then
     return true
   end
 
-  -- Process different actions
-  if data.action == "get_balance" then
-    sendBalance(player)
-  elseif data.action == "deposit" then
-    handleDeposit(player, data.amount)
-  elseif data.action == "withdraw" then
-    handleWithdraw(player, data.amount)
-  elseif data.action == "deposit_all" then
-    handleDepositAll(player)
-  elseif data.action == "withdraw_all" then
-    handleWithdrawAll(player)
+  local action = data.action
+  if action ~= "get_balance" then
+    local now = os.time()
+    if lastAction[cid] and now - lastAction[cid] < Config.Cooldown then
+      return true
+    end
+
+    if hasCondition(cid, CONDITION_INFIGHT) then
+      sendError(cid, "Bank cannot be used in fight.")
+      return true
+    end
+
+    lastAction[cid] = now
+  end
+
+  if action == "get_balance" then
+    sendBalance(cid)
+  elseif action == "deposit" then
+    handleDeposit(cid, data.amount)
+  elseif action == "withdraw" then
+    handleWithdraw(cid, data.amount)
+  elseif action == "deposit_all" then
+    handleDepositAll(cid)
+  elseif action == "withdraw_all" then
+    handleWithdrawAll(cid)
+  elseif action == "transfer" then
+    handleTransfer(cid, data.name, data.amount)
+  elseif action == "transfer_all" then
+    handleTransferAll(cid, data.name)
   end
 
   return true
 end
 
--- Send the player's current bank balance
-function sendBalance(player)
-  if not player then return end
+function getCoinBreakdown(cid)
+  return {
+    gold = getPlayerItemCount(cid, Config.CoinIds.gold),
+    platinum = getPlayerItemCount(cid, Config.CoinIds.platinum),
+    crystal = getPlayerItemCount(cid, Config.CoinIds.crystal)
+  }
+end
 
-  -- Get the player's bank balance
-  local balance = player:getBankBalance()
+function sendBalance(cid)
+  if not isPlayer(cid) then return end
 
-  -- Send balance to client
-  player:sendExtendedOpcode(Config.OpCode, json.encode({
+  local coins = getCoinBreakdown(cid)
+  doPlayerSendExtendedOpcode(cid, Config.OpCode, json.encode({
     action = "balance_update",
-    balance = balance
+    balance = getPlayerBalance(cid),
+    money = getPlayerMoney(cid),
+    goldCoins = coins.gold,
+    platinumCoins = coins.platinum,
+    crystalCoins = coins.crystal
   }))
 end
 
--- Handle deposit request
-function handleDeposit(player, amount)
-  if not player or not amount then return end
+function handleDeposit(cid, amount)
+  if not isPlayer(cid) then return end
 
   amount = tonumber(amount)
   if not amount or amount <= 0 then
-    -- Invalid amount
-    sendTransactionResult(player, false, "Invalid amount")
+    sendError(cid, "Invalid amount.")
     return
   end
 
-  -- Check if player has enough money
-  if player:getMoney() < amount then
-    sendTransactionResult(player, false, "You don't have enough money")
+  if getPlayerMoney(cid) < amount then
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "You do not have enough money.")
+    sendBalance(cid)
     return
   end
 
-  -- Remove money from player and add to bank
-  if player:removeMoney(amount) then
-    player:setBankBalance(player:getBankBalance() + amount)
-
-    -- Send success message
-    sendTransactionResult(
-      player,
-      true,
-      "Deposited " .. amount .. " gold to your bank account",
-      player:getBankBalance()
-    )
-
-    player:sendTextMessage(MESSAGE_STATUS, "You have deposited " .. amount .. " gold.")
+  if doPlayerDepositMoney(cid, amount) then
+    local msg = "You have deposited " .. amount .. " gold. Your balance is " .. getPlayerBalance(cid) .. "."
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, msg)
+    doPlayerSendExtendedOpcode(cid, Config.OpCode, json.encode({
+      action = "transaction_result",
+      status = "success",
+      message = msg
+    }))
+    sendBalance(cid)
   else
-    -- Transaction failed
-    sendTransactionResult(player, false, "Failed to deposit: couldn't remove money")
+    sendError(cid, "Could not deposit money.")
   end
 end
 
--- Handle withdraw request
-function handleWithdraw(player, amount)
-  if not player or not amount then return end
+function handleWithdraw(cid, amount)
+  if not isPlayer(cid) then return end
 
   amount = tonumber(amount)
   if not amount or amount <= 0 then
-    -- Invalid amount
-    sendTransactionResult(player, false, "Invalid amount")
+    sendError(cid, "Invalid amount.")
     return
   end
 
-  -- Check if player has enough money in bank
-  if player:getBankBalance() < amount then
-    sendTransactionResult(player, false, "You don't have enough money in your bank account")
+  if getPlayerBalance(cid) < amount then
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "There is not enough gold on your account.")
+    sendBalance(cid)
     return
   end
 
-  -- Remove money from bank and add to player
-  player:setBankBalance(player:getBankBalance() - amount)
-  player:addMoney(amount)
-
-  -- Send success message
-  sendTransactionResult(
-    player,
-    true,
-    "Withdrew " .. amount .. " gold from your bank account",
-    player:getBankBalance()
-  )
-
-  player:sendTextMessage(MESSAGE_STATUS, "You have withdrawn " .. amount .. " gold.")
-end
-
--- Handle deposit all request
-function handleDepositAll(player)
-  if not player then return end
-
-  -- Get player's current money
-  local playerMoney = player:getMoney()
-
-  if playerMoney <= 0 then
-    sendTransactionResult(player, false, "You don't have any money to deposit")
-    return
-  end
-
-  -- Remove all money from player and add to bank
-  if player:removeMoney(playerMoney) then
-    player:setBankBalance(player:getBankBalance() + playerMoney)
-
-    -- Send success message
-    sendTransactionResult(
-      player,
-      true,
-      "Deposited all " .. playerMoney .. " gold to your bank account",
-      player:getBankBalance()
-    )
-
-    player:sendTextMessage(MESSAGE_STATUS, "You have deposited " .. playerMoney .. " gold.")
+  if doPlayerWithdrawMoney(cid, amount) then
+    local msg = "You have withdrawn " .. amount .. " gold. Your balance is " .. getPlayerBalance(cid) .. "."
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, msg)
+    doPlayerSendExtendedOpcode(cid, Config.OpCode, json.encode({
+      action = "transaction_result",
+      status = "success",
+      message = msg
+    }))
+    sendBalance(cid)
   else
-    -- Transaction failed
-    sendTransactionResult(player, false, "Failed to deposit all: couldn't remove money")
+    sendError(cid, "Could not withdraw money.")
   end
 end
 
--- Handle withdraw all request
-function handleWithdrawAll(player)
-  if not player then return end
+function handleDepositAll(cid)
+  if not isPlayer(cid) then return end
 
-  -- Get player's current bank balance
-  local bankBalance = player:getBankBalance()
-
-  if bankBalance <= 0 then
-    sendTransactionResult(player, false, "You don't have any money in your bank account")
+  local money = getPlayerMoney(cid)
+  if money <= 0 then
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "You do not have any money to deposit.")
+    sendBalance(cid)
     return
   end
 
-  -- Remove all money from bank and add to player
-  player:setBankBalance(0)
-  player:addMoney(bankBalance)
-
-  -- Send success message
-  sendTransactionResult(
-    player,
-    true,
-    "Withdrew all " .. bankBalance .. " gold from your bank account",
-    0
-  )
-
-  player:sendTextMessage(MESSAGE_STATUS, "You have withdrawn " .. bankBalance .. " gold.")
+  if doPlayerDepositAllMoney(cid) then
+    local msg = "You have deposited " .. money .. " gold. Your balance is " .. getPlayerBalance(cid) .. "."
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, msg)
+    doPlayerSendExtendedOpcode(cid, Config.OpCode, json.encode({
+      action = "transaction_result",
+      status = "success",
+      message = msg
+    }))
+    sendBalance(cid)
+  else
+    sendError(cid, "Could not deposit money.")
+  end
 end
 
--- Send transaction result to client
-function sendTransactionResult(player, success, message, balance)
-  if not player then return end
+function handleWithdrawAll(cid)
+  if not isPlayer(cid) then return end
 
-  -- If balance wasn't provided, get it
-  if not balance then
-    balance = player:getBankBalance()
+  local balance = getPlayerBalance(cid)
+  if balance <= 0 then
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "There is not enough gold on your account.")
+    sendBalance(cid)
+    return
   end
 
-  -- Send result to client
-  player:sendExtendedOpcode(Config.OpCode, json.encode({
+  if doPlayerWithdrawAllMoney(cid) then
+    local msg = "You have withdrawn " .. balance .. " gold. Your balance is 0."
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, msg)
+    doPlayerSendExtendedOpcode(cid, Config.OpCode, json.encode({
+      action = "transaction_result",
+      status = "success",
+      message = msg
+    }))
+    sendBalance(cid)
+  else
+    sendError(cid, "Could not withdraw money.")
+  end
+end
+
+function handleTransfer(cid, targetName, amount)
+  if not isPlayer(cid) then return end
+  
+  if not targetName or targetName == "" then
+    sendError(cid, "Target name is missing.")
+    return
+  end
+
+  amount = tonumber(amount)
+  if not amount or amount <= 0 then
+    sendError(cid, "Invalid amount.")
+    return
+  end
+
+  if getPlayerBalance(cid) < amount then
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "You do not have enough gold in your account.")
+    sendBalance(cid)
+    return
+  end
+
+  if not playerExists(targetName) then
+    sendError(cid, "Player " .. targetName .. " does not exist.")
+    return
+  end
+
+  if doPlayerTransferMoneyTo(cid, targetName, amount) then
+    local msg = "You have transferred " .. amount .. " gold to " .. targetName .. "."
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, msg)
+    doPlayerSendExtendedOpcode(cid, Config.OpCode, json.encode({
+      action = "transaction_result",
+      status = "success",
+      message = msg
+    }))
+    sendBalance(cid)
+  else
+    sendError(cid, "Could not transfer money.")
+  end
+end
+
+function handleTransferAll(cid, targetName)
+  if not isPlayer(cid) then return end
+
+  if not targetName or targetName == "" then
+    sendError(cid, "Target name is missing.")
+    return
+  end
+
+  local balance = getPlayerBalance(cid)
+  if balance <= 0 then
+    sendError(cid, "You do not have any gold in your account.")
+    return
+  end
+
+  if not playerExists(targetName) then
+    sendError(cid, "Player " .. targetName .. " does not exist.")
+    return
+  end
+
+  if doPlayerTransferAllMoneyTo(cid, targetName) then
+    local msg = "You have transferred all your gold (" .. balance .. ") to " .. targetName .. "."
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, msg)
+    doPlayerSendExtendedOpcode(cid, Config.OpCode, json.encode({
+      action = "transaction_result",
+      status = "success",
+      message = msg
+    }))
+    sendBalance(cid)
+  else
+    sendError(cid, "Could not transfer money.")
+  end
+end
+
+function sendError(cid, message)
+  if not isPlayer(cid) then return end
+  
+  doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, message)
+  doPlayerSendExtendedOpcode(cid, Config.OpCode, json.encode({
     action = "transaction_result",
-    success = success,
-    message = message,
-    balance = balance
+    status = "error",
+    message = message
   }))
+  sendBalance(cid)
 end
+
+
