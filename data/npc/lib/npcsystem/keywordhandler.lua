@@ -97,6 +97,7 @@ if (KeywordHandler == nil) then
 	function KeywordHandler:new()
 		local obj = {}
 		obj.root = KeywordNode:new(nil, nil, nil)
+		obj.lastNode = {}
 
 		setmetatable(obj, self)
 		self.__index = self
