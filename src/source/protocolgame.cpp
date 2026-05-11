@@ -2518,8 +2518,8 @@ void ProtocolGame::sendMoveCreature(const Creature* creature, const Tile*, const
 				if(oldPos.z != 7 || newPos.z < 8)
 				{
 					msg->put<char>(0x6D);
-					msg->putPosition(oldPos);
-					msg->put<char>(oldStackpos);
+					msg->put<uint16_t>(0xFFFF);
+					msg->put<uint32_t>(creature->getID());
 					msg->putPosition(newPos);
 				}
 				else
@@ -2579,8 +2579,8 @@ void ProtocolGame::sendMoveCreature(const Creature* creature, const Tile*, const
 			if(!teleport && (oldPos.z != 7 || newPos.z < 8) && oldStackpos < 10)
 			{
 				msg->put<char>(0x6D);
-				msg->putPosition(oldPos);
-				msg->put<char>(oldStackpos);
+				msg->put<uint16_t>(0xFFFF);
+				msg->put<uint32_t>(creature->getID());
 				msg->putPosition(newPos);
 			}
 			else

@@ -473,11 +473,19 @@ void Tile::moveCreature(Creature* actor, Creature* creature, Cylinder* toCylinde
 	int32_t newStackpos = newTile->__getIndexOfThing(creature);
 	if(!teleport)
 	{
-		if(pos.y > newPos.y)
+		if(pos.x < newPos.x && pos.y > newPos.y)
+			creature->setDirection(NORTHEAST);
+		else if(pos.x > newPos.x && pos.y > newPos.y)
+			creature->setDirection(NORTHWEST);
+		else if(pos.x < newPos.x && pos.y < newPos.y)
+			creature->setDirection(SOUTHEAST);
+		else if(pos.x > newPos.x && pos.y < newPos.y)
+			creature->setDirection(SOUTHWEST);
+		else if(pos.y > newPos.y)
 			creature->setDirection(NORTH);
 		else if(pos.y < newPos.y)
 			creature->setDirection(SOUTH);
-		if(pos.x < newPos.x)
+		else if(pos.x < newPos.x)
 			creature->setDirection(EAST);
 		else if(pos.x > newPos.x)
 			creature->setDirection(WEST);

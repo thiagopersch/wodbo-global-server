@@ -1,59 +1,152 @@
-[11/5/2026 15:31:29] > Usando SHA1 criptografia
-[11/5/2026 15:31:29] >> Carregando RSA key
-[11/5/2026 15:31:29] >> Iniciando conexao SQL
-[11/5/2026 15:31:29] >> Executando Gerenciador de Banco de Dados
-[11/5/2026 15:31:29] > Optimized database.
-[11/5/2026 15:31:29] >> Carregando items (OTB)
-[11/5/2026 15:31:30] >> Carregando items (XML)
-[11/5/2026 15:31:30] >> Carregando Grupos
-[11/5/2026 15:31:30] >> Carregando Vocacoes
-[11/5/2026 15:31:30] >> Carregando Outfits
-[11/5/2026 15:31:30] >> Carregando Canal de Chat
-[11/5/2026 15:31:30] >> Carregando Sistema
-[11/5/2026 15:31:30] >> Carregando Mods...
-[11/5/2026 15:31:30] > Loading AutoLoot.xml... done.
-[11/5/2026 15:31:30] > Loading Automatic Raids.xml... done.
-[11/5/2026 15:31:30] > Loading highscorebook.xml... done.
-[11/5/2026 15:31:30] > Loading Simple Task.xml... done.
-[11/5/2026 15:31:30] > 4 mods were loaded.
-[11/5/2026 15:31:30] >> Carregando EXP Stages
-[11/5/2026 15:31:30] >> Carregando Monstros
-[11/5/2026 15:31:31] >> Carregando Mapa e Spawns...
-[11/5/2026 15:31:31] > Tamanho do Mapa: 64000x64000.
-[11/5/2026 15:31:31] > Descricao do Mapa: 
-[11/5/2026 15:31:31] "Saved with OTARMEIE 7.1.2"
-[11/5/2026 15:31:31] "No map description available."
-[11/5/2026 15:31:33] > Mapa carregado em: 2.741 segundos.
-[11/5/2026 15:31:34] > Data carregada em: 0.163 segundos.
-[11/5/2026 15:31:35] > Houses carregada em: 1.869 segundos.
-[11/5/2026 15:31:35] > Content unserialization time: 0.003 seconds.
-[11/5/2026 15:31:35] > Carregando Tipo de PVP... Open PvP
-[11/5/2026 15:31:35] > Inicializando estado do jogo e registrando servicos...
-[11/5/2026 15:31:36] > IP do Servidor: 127.0.0.1
-[11/5/2026 15:31:36] > IP local do Servidor: 172.30.224.1	192.168.1.104	
-[11/5/2026 15:31:36] > Portas do Servidor: 7171	7172	
-[11/5/2026 15:31:36] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[11/5/2026 15:31:46] >> DBOSupreme servidor Online!
+[11/5/2026 19:45:31] > Usando SHA1 criptografia
+[11/5/2026 19:45:31] >> Carregando RSA key
+[11/5/2026 19:45:31] >> Iniciando conexao SQL
+[11/5/2026 19:45:31] >> Executando Gerenciador de Banco de Dados
+[11/5/2026 19:45:31] > Optimized database.
+[11/5/2026 19:45:32] >> Carregando items (OTB)
+[11/5/2026 19:45:32] >> Carregando items (XML)
+[11/5/2026 19:45:33] >> Carregando Grupos
+[11/5/2026 19:45:33] >> Carregando Vocacoes
+[11/5/2026 19:45:33] >> Carregando Outfits
+[11/5/2026 19:45:33] >> Carregando Canal de Chat
+[11/5/2026 19:45:33] >> Carregando Sistema
+[11/5/2026 19:45:34] >> Carregando Mods...
+[11/5/2026 19:45:34] > Loading AutoLoot.xml... done.
+[11/5/2026 19:45:34] > Loading Automatic Raids.xml... done.
+[11/5/2026 19:45:34] > Loading highscorebook.xml... done.
+[11/5/2026 19:45:34] > Loading Simple Task.xml... done.
+[11/5/2026 19:45:34] > 4 mods were loaded.
+[11/5/2026 19:45:34] >> Carregando EXP Stages
+[11/5/2026 19:45:34] >> Carregando Monstros
+[11/5/2026 19:45:35] >> Carregando Mapa e Spawns...
+[11/5/2026 19:45:36] > Tamanho do Mapa: 64000x64000.
+[11/5/2026 19:45:36] > Descricao do Mapa: 
+[11/5/2026 19:45:36] "Saved with OTARMEIE 7.1.2"
+[11/5/2026 19:45:36] "No map description available."
+[11/5/2026 19:45:40] > Mapa carregado em: 4.784 segundos.
+[11/5/2026 19:45:40] > Data carregada em: 0.175 segundos.
+[11/5/2026 19:45:42] > Houses carregada em: 1.577 segundos.
+[11/5/2026 19:45:42] > Content unserialization time: 0.004 seconds.
+[11/5/2026 19:45:42] > Carregando Tipo de PVP... Open PvP
+[11/5/2026 19:45:42] > Inicializando estado do jogo e registrando servicos...
+[11/5/2026 19:45:42] > IP do Servidor: 127.0.0.1
+[11/5/2026 19:45:42] > IP local do Servidor: 172.30.224.1	192.168.1.104	
+[11/5/2026 19:45:42] > Portas do Servidor: 7171	7172	
+[11/5/2026 19:45:42] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[11/5/2026 19:45:52] >> DBOSupreme servidor Online!
 
-[11/5/2026 15:34:6] God has logged in.
-[11/5/2026 15:52:1] God has logged out.
-[11/5/2026 15:55:35] God has logged in.
-[11/5/2026 16:33:30] > Salvando servidor...
-[11/5/2026 16:33:30] > SAVE: Completo em 0.11 segundos usando binary casa storage.
-[11/5/2026 17:31:30] OTSYS_SQLITE3_PREPARE(): SQLITE ERROR: no such table: lottery (INSERT INTO "lottery" ("name", "item") VALUES ('God', 'enchanted experience scroll blue');)
-[11/5/2026 17:31:30] > CLEAN: Removed 0 items from 2 tiles (2 were marked) in 0 seconds.
-[11/5/2026 17:33:30] > Salvando servidor...
-[11/5/2026 17:33:30] > SAVE: Completo em 0.149 segundos usando binary casa storage.
-[11/5/2026 18:8:47] > Loading AutoLoot.xml... done.
-[11/5/2026 18:8:47] > Loading Automatic Raids.xml... done.
-[11/5/2026 18:8:47] > Loading highscorebook.xml... done.
-[11/5/2026 18:8:47] > Loading Simple Task.xml... done.
-[11/5/2026 18:8:47] > 4 mods were loaded.
-[11/5/2026 18:8:54] sqlite3_step(): SQLITE ERROR: columns player_id, vocation_id are not unique
-[11/5/2026 18:24:11] > Loading AutoLoot.xml... done.
-[11/5/2026 18:24:11] > Loading Automatic Raids.xml... done.
-[11/5/2026 18:24:11] > Loading highscorebook.xml... done.
-[11/5/2026 18:24:11] > Loading Simple Task.xml... done.
-[11/5/2026 18:24:11] > 4 mods were loaded.
-[11/5/2026 18:25:8] God has logged out.
-[11/5/2026 18:25:9] Ayla has logged in.
+[11/5/2026 19:46:7] God has logged in.
+[11/5/2026 19:46:13] God has logged out.
+[11/5/2026 19:46:14] Ayuni has logged in.
+[11/5/2026 19:46:15] Ayuni has logged out.
+[11/5/2026 19:46:18] Ayla has logged in.
+[11/5/2026 19:46:44] Ayla has logged out.
+[11/5/2026 19:46:47] Ayla has logged in.
+[11/5/2026 19:46:59] Ayla has logged out.
+[11/5/2026 19:46:59] Leo stronda has logged in.
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
+
+[11/5/2026 19:54:50] [Error - Spell Interface] 
+[11/5/2026 19:54:50] In a timer event called from: 
+[11/5/2026 19:54:50] data/spells/scripts/tapion/Brave Furie.lua:onCastSpell
+[11/5/2026 19:54:50] Description: 
+[11/5/2026 19:54:50] (luaGetThingFromPos) Tile not found
