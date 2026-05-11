@@ -415,7 +415,8 @@ bool ProtocolGame::connect(uint32_t playerId, OperatingSystem_t operatingSystem,
 	player->client = this;
 	player->isConnecting = false;
 
-	player->sendCreatureAppear(player);
+	sendAddCreature(player, player->getPosition(), 1);
+
 	player->setOperatingSystem(operatingSystem);
 	player->setClientVersion(version);
 
@@ -706,6 +707,10 @@ void ProtocolGame::parsePacket(NetworkMessage &msg)
 
             case 0x32: // otclient extended opcode
 				parseExtendedOpcode(msg);
+				break;
+
+			case 0x42: // change map aware range
+				parseChangeMapAwareRange(msg);
 				break;
 
 			case 0x64: // move with steps
@@ -1256,6 +1261,29 @@ void ProtocolGame::parseCloseNpc(NetworkMessage&)
 void ProtocolGame::parseCancelMove(NetworkMessage&)
 {
 	addGameTask(&Game::playerCancelAttackAndFollow, player->getID());
+}
+
+
+
+void ProtocolGame::sendMapAwareRange(uint8_t width, uint8_t height)
+{
+	NetworkMessage_ptr msg = getOutputBuffer();
+	if(msg)
+	{
+		TRACK_MESSAGE(msg);
+		msg->put<char>(0x42);
+		msg->put<char>(width);
+		msg->put<char>(height);
+	}
+}
+
+void ProtocolGame::parseChangeMapAwareRange(NetworkMessage& msg)
+{
+	msg.get<uint8_t>(); // width
+	msg.get<uint8_t>(); // height
+	if(player && player->isUsingOtclient()) {
+		sendMapAwareRange(30, 22);
+	}
 }
 
 void ProtocolGame::parseReceivePing(NetworkMessage&)
@@ -2428,6 +2456,10 @@ void ProtocolGame::sendAddCreature(const Creature* creature, const Position& pos
 			}
 		}
 	}
+
+	msg->put<char>(0x42);
+	msg->put<char>(30);
+	msg->put<char>(22);
 
 	AddMapDescription(msg, pos);
 	for(int32_t i = SLOT_FIRST; i < SLOT_LAST; ++i)

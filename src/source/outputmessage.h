@@ -29,7 +29,7 @@
 #endif
 
 class Protocol;
-#define OUTPUT_POOL_SIZE 100
+#define OUTPUT_POOL_SIZE 20
 
 class OutputMessage : public NetworkMessage, boost::noncopyable
 {

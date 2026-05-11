@@ -114,6 +114,8 @@ class ProtocolGame : public Protocol
 		//Parse methods
 		void parseLogout(NetworkMessage& msg);
 		void parseCancelMove(NetworkMessage& msg);
+		void parseChangeMapAwareRange(NetworkMessage& msg);
+
 
 		void parseReceivePing(NetworkMessage& msg);
 		void parseAutoWalk(NetworkMessage& msg);
@@ -212,6 +214,8 @@ class ProtocolGame : public Protocol
 
 		void sendCancel(const std::string& message);
 		void sendCancelWalk();
+		void sendMapAwareRange(uint8_t width, uint8_t height);
+
 		void sendChangeSpeed(const Creature* creature, uint32_t speed);
 		void sendCancelTarget();
 		void sendCreatureOutfit(const Creature* creature, const Outfit_t& outfit);

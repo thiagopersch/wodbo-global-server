@@ -19,6 +19,7 @@
 #define __CONST__
 #include "definitions.h"
 
+
 enum MagicEffect_t
 {
 	MAGIC_EFFECT_DRAW_BLOOD	= 0x00,
@@ -963,7 +964,7 @@ enum PlayerCustomFlags
 #define NETWORK_RETRY_TIMEOUT 5000
 #define NETWORK_DEFAULT_SIZE 4096
 #define NETWORK_HEADER_SIZE 2
-#define NETWORK_MAX_SIZE 15360
+#define NETWORK_MAX_SIZE 65535
 
 #define IPBAN_FLAG 128
 #define LOCALHOST 2130706433
