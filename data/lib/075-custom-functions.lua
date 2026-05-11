@@ -25,13 +25,35 @@ function doExpandingWaveCombat(cid, config)
     return false
   end
 
+  local function isBlocked(pos)
+    -- Verifica se o tile existe primeiro para evitar spam de "Tile not found" no console
+    local ground = getThingfromPos({ x = pos.x, y = pos.y, z = pos.z, stackpos = 0 })
+    if ground.itemid == 0 then return true end -- Se não há chão, está bloqueado
+
+    local t = getTileInfo(pos)
+    if type(t) ~= 'table' then return false end
+    
+    -- 1. Checa Zona de Proteção / No-PvP / Casas
+    local pz = t.protection or t.pz or t.nopvp or t.house or false
+    if pz == true or (type(pz) == 'number' and pz > 0) then
+      return true
+    end
+
+    -- 2. Checa se o tile bloqueia projéteis (Paredes e objetos sólidos)
+    local block = t.blockprojectile or false
+    if block == true or (type(block) == 'number' and block > 0) then
+      return true
+    end
+
+    return false
+  end
+
   local casterPos = getCreaturePosition(cid)
-  if getTilePzInfo(casterPos) then
+  if isBlocked(casterPos) then
     return false
   end
 
   local hitCreatures = {}
-  local hitPositions = {}
 
   local function getEffect(radius)
     if config.effects then
@@ -40,9 +62,7 @@ function doExpandingWaveCombat(cid, config)
     return config.effect
   end
 
-  local function positionToString(pos)
-    return pos.x .. "," .. pos.y .. "," .. pos.z
-  end
+
 
   local function doAreaDamage(radius)
     if not isCreature(cid) then
@@ -50,35 +70,37 @@ function doExpandingWaveCombat(cid, config)
     end
 
     local center = getCreaturePosition(cid)
-    if getTilePzInfo(center) then
+    if isBlocked(center) then
       return false
     end
 
+    -- 1. Efeitos (Apenas no anel do raio atual, se NÃO for PZ)
     for x = -radius, radius do
       for y = -radius, radius do
-        local areaPos = { x = center.x + x, y = center.y + y, z = center.z }
-        if math.abs(x) + math.abs(y) <= radius then
-          if not (areaPos.x == center.x and areaPos.y == center.y and areaPos.z == center.z) then
-            -- ✅ Só mostra efeito se a posição NÃO for PZ
-            if not getTilePzInfo(areaPos) then
-              local posStr = positionToString(areaPos)
-              if not hitPositions[posStr] then
-                hitPositions[posStr] = true
-                doSendMagicEffect(areaPos, getEffect(radius))
-              end
-            end
+        if math.abs(x) + math.abs(y) == radius then
+          local areaPos = { x = center.x + x, y = center.y + y, z = center.z }
+          if not isBlocked(areaPos) then
+            doSendMagicEffect(areaPos, getEffect(radius))
           end
+        end
+      end
+    end
 
-          local creature = getTopCreature(areaPos).uid
-          if creature > 0 and isCreature(creature) and creature ~= cid then
-            if not hitCreatures[creature] then
-              hitCreatures[creature] = true
-              local targetPos = getCreaturePosition(creature)
-              if not getTilePzInfo(targetPos) then
-                local min = -(config.minDmg * radius)
-                local max = -(config.maxDmg * radius)
-                doTargetCombatHealth(cid, creature, config.type, min, max, getEffect(radius))
-              end
+    -- 2. Dano (Usando getSpectators para ser eficiente e evitar logs de 'Tile not found')
+    local spectators = getSpectators(center, radius, radius, false)
+    if spectators then
+      for _, creature in ipairs(spectators) do
+        if isCreature(creature) and creature ~= cid then
+          local targetPos = getCreaturePosition(creature)
+          local dist = math.abs(targetPos.x - center.x) + math.abs(targetPos.y - center.y)
+
+          if dist <= radius and not hitCreatures[creature] then
+            hitCreatures[creature] = true
+            -- Checar PZ na posição da criatura (Sempre segura/válida)
+            if not isBlocked(targetPos) then
+              local min = -(config.minDmg * radius)
+              local max = -(config.maxDmg * radius)
+              doTargetCombatHealth(cid, creature, config.type, min, max, getEffect(radius))
             end
           end
         end

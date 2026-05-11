@@ -233,12 +233,17 @@ function getItemWriter(uid) return getItemDescriptions(uid).writer end
 
 function getItemDate(uid) return getItemDescriptions(uid).date end
 
-function getTilePzInfo(pos) return getTileInfo(pos).protection end
+function getTilePzInfo(pos)
+  local tmp = getTileInfo(pos)
+  if type(tmp) ~= 'table' then return false end
+  return getBooleanFromString(tmp.protection) or getBooleanFromString(tmp.pz) or getBooleanFromString(tmp.nopvp) or false
+end
 
 function getTileZoneInfo(pos)
   local tmp = getTileInfo(pos)
-  if (tmp.pvp) then return 2 end
-  if (tmp.nopvp) then return 1 end
+  if type(tmp) ~= 'table' then return 0 end
+  if getBooleanFromString(tmp.pvp) then return 2 end
+  if getBooleanFromString(tmp.nopvp) then return 1 end
   return 0
 end
 
