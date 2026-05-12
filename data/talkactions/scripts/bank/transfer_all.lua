@@ -15,6 +15,7 @@ function onSay(cid, words, param)
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,
                     "You have transferred " .. getPlayerBalance(cid) .. " gold to " .. name .. ".")
                 doPlayerTransferAllMoneyTo(cid, name)
+                doPlayerSave(cid, true)
             else
                 doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Player " .. name .. " does not exist.")
                 return TRUE

@@ -60,6 +60,7 @@ function doPlayerWithdrawMoney(cid, amount)
     return false
   end
   doPlayerSetBalance(cid, balance - amount)
+  doPlayerSave(cid, true)
   return true
 end
 
@@ -71,6 +72,7 @@ function doPlayerDepositMoney(cid, amount)
     return false
   end
   doPlayerSetBalance(cid, getPlayerBalance(cid) + amount)
+  doPlayerSave(cid, true)
   return true
 end
 

@@ -32,6 +32,7 @@ function onSay(cid, words, param)
             if m <= getPlayerBalance(cid) then
                 if playerExists(name) then
                     doPlayerTransferMoneyTo(cid, name, m)
+                    doPlayerSave(cid, true)
                     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,
                         "You have transferred " ..
                         m .. " gold to " .. name .. ". Your account balance is " .. getPlayerBalance(cid) .. " gold.")

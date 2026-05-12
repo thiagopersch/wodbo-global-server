@@ -226,6 +226,7 @@ function handleTransfer(cid, targetName, amount)
   end
 
   if doPlayerTransferMoneyTo(cid, targetName, amount) then
+    doPlayerSave(cid, true)
     local msg = "You have transferred " .. amount .. " gold to " .. targetName .. "."
     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, msg)
     doPlayerSendExtendedOpcode(cid, Config.OpCode, json.encode({
@@ -259,6 +260,7 @@ function handleTransferAll(cid, targetName)
   end
 
   if doPlayerTransferAllMoneyTo(cid, targetName) then
+    doPlayerSave(cid, true)
     local msg = "You have transferred all your gold (" .. balance .. ") to " .. targetName .. "."
     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, msg)
     doPlayerSendExtendedOpcode(cid, Config.OpCode, json.encode({
