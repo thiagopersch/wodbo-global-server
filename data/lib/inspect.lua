@@ -109,6 +109,17 @@ local function getProfilePlayerBalance(cid)
 	return balance
 end
 
+local function getProfilePlayerOnlineTime(cid)
+	local guid = getPlayerGUID(cid)
+	local result = db.getResult("SELECT `online_time` FROM `players` WHERE `id` = " .. guid)
+	local onlineTime = 0
+	if result and result:getID() ~= -1 then
+		onlineTime = result:getDataInt("online_time")
+		result:free()
+	end
+	return math.max(0, onlineTime)
+end
+
 ---@param cid number
 ---@param creatureID number
 function InspectModule:sendPlayerData(cid, creatureID)
@@ -178,6 +189,9 @@ function InspectModule:sendPlayerData(cid, creatureID)
 			data[#data + 1] = 0
 		end
 	end
+
+	-- Online Points
+	data[#data + 1] = getProfilePlayerOnlineTime(creatureID)
 
 	doPlayerSendExtendedOpcode(cid, self.opcode, table.concat(data, "&"))
 end
