@@ -10,4 +10,5 @@
 	<globalevent name="record" type="record" event="script" value="record.lua" />
 	<globalevent type="startup" name="doCheckHouses" script="doCheckHouses.lua" />
 	<globalevent name="Age System" interval="60000" script="age_system.lua" />
+	<globalevent name="TaskSave" interval="300000" event="script" value="task_save.lua" />
 </globalevents>

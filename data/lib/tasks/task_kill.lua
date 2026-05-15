@@ -1,0 +1,55 @@
+if not TaskCache_getPlayerTask then dofile("data/lib/tasks/task_cache.lua") end
+if not TaskNetwork_sendTaskUpdate then dofile("data/lib/tasks/task_network.lua") end
+
+function TaskKill_onKill(cid, monsterName)
+    if not isPlayer(cid) or not monsterName then return end
+
+    local taskIds = TaskCache_getTasksForMonster(monsterName)
+    if #taskIds == 0 then return end
+
+    local cache = TaskCache_getPlayerCache(cid)
+
+    for _, taskId in ipairs(taskIds) do
+        local config = TASKS[taskId]
+        if config then
+            local shouldProcess = config.type ~= "delivery"
+
+            if shouldProcess then
+                local playerTask = cache[taskId]
+                if playerTask and playerTask.completed ~= 1 then
+                    local canProgress = true
+
+                    if playerTask.rewarded == 1 and not config.repeatable then
+                        canProgress = false
+                    end
+
+                    if canProgress then
+                        if config.daily and config.daily.enabled then
+                            if playerTask._dailyReset and os.time() > playerTask._dailyReset then
+                                playerTask.kills = 0
+                                playerTask.completed = 0
+                                playerTask.rewarded = 0
+                            end
+                        end
+
+                        playerTask.kills = (playerTask.kills or 0) + 1
+
+                        if playerTask.kills >= config.killsRequired then
+                            playerTask.completed = 1
+                            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "[Task] You completed the task '" .. config.name .. "'! Return to Taskerman to claim your reward.")
+                            doSendMagicEffect(getCreaturePosition(cid), CONST_ME_FIREAREA)
+                            TaskNetwork_sendCompletePopup(cid, taskId, config)
+                        else
+                            local remaining = config.killsRequired - playerTask.kills
+                            if remaining > 0 and remaining % 10 == 0 then
+                                doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[Task] " .. config.name .. ": " .. playerTask.kills .. "/" .. config.killsRequired .. " (" .. remaining .. " remaining)")
+                            end
+                        end
+
+                        TaskNetwork_sendTaskUpdate(cid, taskId, playerTask.kills, config.killsRequired, playerTask.completed)
+                    end
+                end
+            end
+        end
+    end
+end

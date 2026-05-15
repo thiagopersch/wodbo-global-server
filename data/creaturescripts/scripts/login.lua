@@ -82,6 +82,8 @@ function onLogin(cid)
   registerCreatureEvent(cid, "SkillUpgradesLogin")
   registerCreatureEvent(cid, "SkillUpgradesLogout")
 
+  registerCreatureEvent(cid, "TaskLogin")
+
   -- Bônus de XP/Skill do Daily Reward e Upgrades
   local totalExpRate = 1.0
   local xpBonusTime = getPlayerStorageValue(cid, 48702)

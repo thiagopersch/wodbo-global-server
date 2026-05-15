@@ -193,5 +193,26 @@ function InspectModule:sendPlayerData(cid, creatureID)
 	-- Online Points
 	data[#data + 1] = getProfilePlayerOnlineTime(creatureID)
 
+	-- Task Rank Integration
+	local rankName = "None"
+	local taskPoints = 0
+	local nextRankName = ""
+	local pointsToNext = 0
+	local pointsInThisRank = 0
+	local pointsToNextMax = 1
+
+	if TaskRank_getPlayerRankName then
+		rankName, taskPoints = TaskRank_getPlayerRankName(creatureID)
+		local category = TaskRank_getPlayerCategory(creatureID)
+		nextRankName, pointsToNext, pointsInThisRank, pointsToNextMax = TaskRank_getNextRank(creatureID, category)
+	end
+
+	data[#data + 1] = rankName        -- 48
+	data[#data + 1] = taskPoints       -- 49
+	data[#data + 1] = nextRankName     -- 50
+	data[#data + 1] = pointsToNext     -- 51
+	data[#data + 1] = pointsInThisRank -- 52
+	data[#data + 1] = pointsToNextMax  -- 53
+
 	doPlayerSendExtendedOpcode(cid, self.opcode, table.concat(data, "&"))
 end

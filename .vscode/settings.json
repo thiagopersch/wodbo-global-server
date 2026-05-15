@@ -201,7 +201,8 @@
     "Condition",
     "doDecayItem",
     "getPlayerFood",
-    "doPlayerFeed"
+    "doPlayerFeed",
+    "getCreatureDescription"
   ],
   "Lua.diagnostics.disable": [
     "lowercase-global",

@@ -126,5 +126,4 @@
 	<talkaction words="!attackguild" event="script" value="attackguild.lua" />
 	<talkaction words="!guild" event="script" value="guildinformation.lua" />
 	<talkaction words="/bguild" filter="word" script="guildcast.lua" />
-
 </talkactions>

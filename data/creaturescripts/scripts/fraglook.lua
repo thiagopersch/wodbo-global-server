@@ -101,10 +101,23 @@ function onLook(cid, thing, position, lookDistance)
         description = description .. string.format("\nIP: [%s]", ip)
     end
 
+    -- Task Rank
+    if isPlayer(target) then
+        local ok = pcall(function()
+            if TaskRank_getPlayerRankName then
+                local rankName, rankPoints = TaskRank_getPlayerRankName(target)
+                if rankName and rankName ~= "Unranked" then
+                    description = description .. string.format("\n[Task Rank: %s | %d pts]", rankName, rankPoints)
+                end
+            end
+        end)
+    end
+
     if canSeePos then
         description = description ..
             string.format("\nPosition: [X:%d] [Y:%d] [Z:%d]", position.x, position.y, position.z)
     end
+
 
     -- Append any other special description that might exist
     local special = getPlayerSpecialDescription(target)

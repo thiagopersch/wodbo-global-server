@@ -28,7 +28,6 @@
 	<event type="think" name="IconMap" event="script" value="iconmap.lua" />
 	<event type="kill" name="KillingInTheNameOf" event="script" value="killinginthenameof.lua" />
 	<event type="login" name="VocationRanks" event="script" value="vocation_ranks.lua" />
-	<!-- <event type="login" name="SkillPoints" event="script" value="skillpoints.lua" /> -->
 	<!-- <event type="extendedopcode" event="script" name="HighscoreOpcode" value="highscore.lua" /> -->
 	<event type="login" name="BankExtended" event="script" value="bank_server.lua" />
 	<event type="extendedopcode" name="BankOpcode" event="script" value="bank_server.lua" />
@@ -41,17 +40,28 @@
 	<event type="preparedeath" name="AnimeOutfitDeath" script="login.lua" />
 	<event type="advance" name="AnimeOutfits" script="login.lua" /> -->
 	<event type="extendedopcode" name="ProfileOpcode" event="script" value="profile_server.lua" />
-	<event type="extendedopcode" name="VocationRanksOpcode" event="script" value="extendedopcode_vocation_ranks.lua" />
+	<event type="extendedopcode" name="VocationRanksOpcode" event="script"
+		value="extendedopcode_vocation_ranks.lua" />
 	<event type="login" name="DailyReward" event="script" value="daily_reward.lua" />
 	<event type="extendedopcode" name="DailyRewardOpcode" event="script" value="daily_reward.lua" />
-	
+
 	<!-- Daily Reward Extra Systems -->
-	<event type="statschange" name="DailyRewardStats" event="script" value="daily_reward_multipliers.lua" />
-	
+	<event type="statschange" name="DailyRewardStats" event="script"
+		value="daily_reward_multipliers.lua" />
+
 	<!-- Skill Upgrades System -->
-	<event type="statschange" name="SkillUpgradesCombat" event="script" value="skill_upgrades_stats.lua" />
+	<event type="statschange" name="SkillUpgradesCombat" event="script"
+		value="skill_upgrades_stats.lua" />
 	<event type="login" name="SkillUpgradesLogin" event="script" value="skill_upgrades.lua" />
 	<event type="logout" name="SkillUpgradesLogout" event="script" value="skill_upgrades.lua" />
 	<event type="advance" name="SkillUpgradesAdvance" event="script" value="skill_upgrades.lua" />
-	<event type="extendedopcode" name="SkillUpgradesExtended" event="script" value="skill_upgrades.lua" />
+	<event type="extendedopcode" name="SkillUpgradesExtended" event="script"
+		value="skill_upgrades.lua" />
+
+	<!-- Task System -->
+	<event type="login" name="TaskLogin" event="script" value="task_login.lua" />
+	<event type="logout" name="TaskLogout" event="script" value="task_logout.lua" />
+	<event type="kill" name="TaskKill" event="script" value="task_kill.lua" />
+	<event type="look" name="TaskLook" event="script" value="task_look.lua" />
+	<event type="extendedopcode" name="TaskOpcode" event="script" value="task_extended_opcode.lua" />
 </creaturescripts>
