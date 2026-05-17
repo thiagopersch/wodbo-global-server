@@ -67391,6 +67391,7 @@
 	</item>
 	<item id="49597" article="a" name="break hollow mask">
 		<attribute key="weight" value="1000" />
+		<attribute key="description" value="Defense +10, regeneration HP/MP 800 per 1s" />
 		<attribute key="armor" value="20" />
 		<attribute key="defense" value="10" />
 		<attribute key="healthGain" value="800" />

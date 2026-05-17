@@ -12,7 +12,8 @@ function TaskCache_buildIndexes()
 
     for taskId, task in pairs(TASKS) do
         for _, monsterName in ipairs(task.monsters) do
-            local key = monsterName:lower()
+            local name = type(monsterName) == "table" and monsterName.name or monsterName
+            local key = name:lower()
             if not TASK_MONSTERS[key] then
                 TASK_MONSTERS[key] = {}
             end

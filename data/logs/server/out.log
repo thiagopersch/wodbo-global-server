@@ -1,48 +1,48 @@
-[14/5/2026 22:41:40] > Usando SHA1 criptografia
-[14/5/2026 22:41:40] >> Carregando RSA key
-[14/5/2026 22:41:40] >> Iniciando conexao SQL
-[14/5/2026 22:41:40] >> Executando Gerenciador de Banco de Dados
-[14/5/2026 22:41:40] > Optimized database.
-[14/5/2026 22:41:40] >> Carregando items (OTB)
-[14/5/2026 22:41:41] >> Carregando items (XML)
-[14/5/2026 22:41:41] >> Carregando Grupos
-[14/5/2026 22:41:41] >> Carregando Vocacoes
-[14/5/2026 22:41:41] >> Carregando Outfits
-[14/5/2026 22:41:41] >> Carregando Canal de Chat
-[14/5/2026 22:41:41] >> Carregando Sistema
-[14/5/2026 22:41:43] >> Carregando Mods...
-[14/5/2026 22:41:43] > Loading AutoLoot.xml... done.
-[14/5/2026 22:41:43] > Loading Automatic Raids.xml... done.
-[14/5/2026 22:41:43] > Loading highscorebook.xml... done.
-[14/5/2026 22:41:43] > Loading task_system.xml... done.
-[14/5/2026 22:41:43] > 4 mods were loaded.
-[14/5/2026 22:41:43] >> Carregando EXP Stages
-[14/5/2026 22:41:43] >> Carregando Monstros
-[14/5/2026 22:41:45] >> Carregando Mapa e Spawns...
-[14/5/2026 22:41:45] > Tamanho do Mapa: 64000x64000.
-[14/5/2026 22:41:45] > Descricao do Mapa: 
-[14/5/2026 22:41:45] "Saved with OTARMEIE 7.1.2"
-[14/5/2026 22:41:45] "No map description available."
-[14/5/2026 22:41:47] > Mapa carregado em: 2.772 segundos.
-[14/5/2026 22:41:48] > Data carregada em: 0.279 segundos.
-[14/5/2026 22:41:49] > Houses carregada em: 1.693 segundos.
-[14/5/2026 22:41:49] > Content unserialization time: 0.005 seconds.
-[14/5/2026 22:41:49] > Carregando Tipo de PVP... Open PvP
-[14/5/2026 22:41:49] > Inicializando estado do jogo e registrando servicos...
-[14/5/2026 22:41:49] > IP do Servidor: 127.0.0.1
-[14/5/2026 22:41:49] > IP local do Servidor: 172.17.128.1	192.168.1.103	
-[14/5/2026 22:41:49] > Portas do Servidor: 7171	7172	
-[14/5/2026 22:41:49] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[14/5/2026 22:41:59] >> DBOSupreme servidor Online!
+[16/5/2026 20:25:16] > Usando SHA1 criptografia
+[16/5/2026 20:25:16] >> Carregando RSA key
+[16/5/2026 20:25:16] >> Iniciando conexao SQL
+[16/5/2026 20:25:16] >> Executando Gerenciador de Banco de Dados
+[16/5/2026 20:25:16] > Optimized database.
+[16/5/2026 20:25:16] >> Carregando items (OTB)
+[16/5/2026 20:25:16] >> Carregando items (XML)
+[16/5/2026 20:25:16] >> Carregando Grupos
+[16/5/2026 20:25:16] >> Carregando Vocacoes
+[16/5/2026 20:25:16] >> Carregando Outfits
+[16/5/2026 20:25:16] >> Carregando Canal de Chat
+[16/5/2026 20:25:16] >> Carregando Sistema
+[16/5/2026 20:25:16] >> Carregando Mods...
+[16/5/2026 20:25:16] > Loading AutoLoot.xml... done.
+[16/5/2026 20:25:16] > Loading Automatic Raids.xml... done.
+[16/5/2026 20:25:16] > Loading highscorebook.xml... done.
+[16/5/2026 20:25:16] > Loading task_system.xml... done.
+[16/5/2026 20:25:16] > 4 mods were loaded.
+[16/5/2026 20:25:16] >> Carregando EXP Stages
+[16/5/2026 20:25:16] >> Carregando Monstros
+[16/5/2026 20:25:17] >> Carregando Mapa e Spawns...
+[16/5/2026 20:25:17] > Tamanho do Mapa: 64000x64000.
+[16/5/2026 20:25:17] > Descricao do Mapa: 
+[16/5/2026 20:25:17] "Saved with OTARMEIE 7.1.2"
+[16/5/2026 20:25:17] "No map description available."
+[16/5/2026 20:25:20] > Mapa carregado em: 2.939 segundos.
+[16/5/2026 20:25:20] > Data carregada em: 0.16 segundos.
+[16/5/2026 20:25:21] > Houses carregada em: 1.547 segundos.
+[16/5/2026 20:25:21] > Content unserialization time: 0.003 seconds.
+[16/5/2026 20:25:21] > Carregando Tipo de PVP... Open PvP
+[16/5/2026 20:25:21] > Inicializando estado do jogo e registrando servicos...
+[16/5/2026 20:25:22] > IP do Servidor: 127.0.0.1
+[16/5/2026 20:25:22] > IP local do Servidor: 172.29.192.1	192.168.1.103	
+[16/5/2026 20:25:22] > Portas do Servidor: 7171	7172	
+[16/5/2026 20:25:22] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[16/5/2026 20:25:32] >> DBOSupreme servidor Online!
 
-[14/5/2026 22:42:12] God has logged in.
-[14/5/2026 22:47:7] God has logged out.
-[14/5/2026 22:47:8] God has logged in.
-[14/5/2026 22:48:39] God has logged out.
-[14/5/2026 22:48:40] God has logged in.
-[14/5/2026 23:43:43] > Salvando servidor...
-[14/5/2026 23:43:43] > SAVE: Completo em 0.102 segundos usando binary casa storage.
-[15/5/2026 0:10:26] God has logged out.
-[15/5/2026 0:15:3] God has logged in.
-[15/5/2026 0:16:1] God has logged out.
-[15/5/2026 0:16:2] God has logged in.
+[16/5/2026 20:25:57] God has logged in.
+[16/5/2026 21:27:17] > Salvando servidor...
+[16/5/2026 21:27:17] > SAVE: Completo em 0.095 segundos usando binary casa storage.
+[16/5/2026 22:25:17] > CLEAN: Removed 4 items from 4 tiles (4 were marked) in 0 seconds.
+[16/5/2026 22:27:17] > Salvando servidor...
+[16/5/2026 22:27:17] > SAVE: Completo em 0.1 segundos usando binary casa storage.
+[16/5/2026 23:25:17] > CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+[16/5/2026 23:27:17] > Salvando servidor...
+[16/5/2026 23:27:17] > SAVE: Completo em 0.104 segundos usando binary casa storage.
+[17/5/2026 0:18:39] God has logged out.
+[17/5/2026 0:18:42] God has logged in.
