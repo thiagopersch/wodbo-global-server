@@ -99,10 +99,38 @@ function TaskRank_getPointsForDifficulty(cid, difficulty)
     return rank.pointsPerDifficulty[difficulty] or rank.pointsPerDifficulty["easy"] or 0
 end
 
+local VOCATION_UNIVERSE_MAP = {}
+
+local function loadVocationUniverses()
+    local f = io.open("data/XML/vocations.xml", "r")
+    if not f then
+        print("[TaskRank] Could not open vocations.xml")
+        return
+    end
+    local content = f:read("*a")
+    f:close()
+
+    for tag in content:gmatch('<vocation[^>]+>') do
+        local id = tonumber(tag:match('id="(%d+)"'))
+        local universe = tag:match('type_universe="([^"]+)"')
+        if id and id > 0 and universe then
+            if universe == "Dragon Ball" then
+                VOCATION_UNIVERSE_MAP[id] = "dragonball"
+            elseif universe == "Bleach" then
+                VOCATION_UNIVERSE_MAP[id] = "bleach"
+            end
+        end
+    end
+    print("[TaskRank] Vocation->universe mappings loaded")
+end
+
 function TaskRank_getPlayerVocationCategory(cid)
+    if next(VOCATION_UNIVERSE_MAP) == nil then
+        loadVocationUniverses()
+    end
     local voc = getPlayerVocation(cid)
-    if voc >= 1 and voc <= 45 then return "dragonball"
-    elseif voc >= 47 and voc <= 67 then return "bleach" end
+    local category = VOCATION_UNIVERSE_MAP[voc]
+    if category then return category end
     return "dragonball"
 end
 

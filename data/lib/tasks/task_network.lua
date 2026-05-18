@@ -20,7 +20,17 @@ local function networkNormalizeMonsters(monsters)
 end
 
 TASK_LIST_LEVEL_RANGE = 50
-MAX_PAYLOAD_BYTES = 2500
+MAX_PAYLOAD_BYTES = 16000
+DEFAULT_PAGE_SIZE = 30
+MAX_PAGE_SIZE = 50
+
+local DIFFICULTY_ORDER_MAP = {}
+do
+    local order = TASK_DIFFICULTY_ORDER or { "easy", "medium", "hard", "elite" }
+    for i, d in ipairs(order) do
+        DIFFICULTY_ORDER_MAP[d] = i
+    end
+end
 
 function TaskNetwork_sendJSON(cid, data)
     if not isPlayer(cid) then
@@ -35,7 +45,7 @@ function TaskNetwork_sendJSON(cid, data)
     end
 
     if #encoded > MAX_PAYLOAD_BYTES then
-        print("[TaskNetwork] sendJSON: payload too large (" .. #encoded .. " bytes), truncating")
+        print("[TaskNetwork] sendJSON: payload too large (" .. #encoded .. " bytes), truncating allTasks")
         while #encoded > MAX_PAYLOAD_BYTES and data.allTasks and #data.allTasks > 0 do
             local keep = math.max(1, math.floor(#data.allTasks * 0.7))
             local truncated = {}
@@ -54,10 +64,21 @@ end
 
 TASK_LAST_SEND_TIME = {}
 
-function TaskNetwork_sendTaskList(cid)
+local function getDifficultyIndex(task)
+    return DIFFICULTY_ORDER_MAP[task.difficulty] or 99
+end
+
+local function getMonsterLevel(task)
+    if task.monsterDetails and #task.monsterDetails > 0 then
+        return task.monsterDetails[1].level or 0
+    end
+    return 0
+end
+
+function TaskNetwork_sendTaskList(cid, params)
     local now = os.time()
     local last = TASK_LAST_SEND_TIME[cid] or 0
-    if now - last < 1 then
+    if now - last < 0.3 then
         print("[TaskNetwork] Debounce: skipping sendTaskList for cid=" .. cid)
         return
     end
@@ -69,93 +90,142 @@ function TaskNetwork_sendTaskList(cid)
     local playerPoints = TaskStorage_getPlayerPoints(cid)
     local range = math.max(TASK_LIST_LEVEL_RANGE, math.min(playerLevel * 2, 300))
     local maxLevelToShow = playerLevel + range
-    local MAX_ALLTASKS = 15
 
-    local allTasks = {}
+    local page = math.max(1, (params and params.page) or 1)
+    local pageSize = math.max(1, math.min((params and params.pageSize) or DEFAULT_PAGE_SIZE, MAX_PAGE_SIZE))
+    local search = ((params and params.search) or ""):lower()
+    local filterType = (params and params.type) or ""
+    local filterDifficulty = (params and params.difficulty) or ""
+    local sortField = (params and params.sort) or "difficulty"
+
     local playerTasks = {}
+    local matching = {}
+    local categoryCounts = { dragonball = 0, bleach = 0 }
 
-    -- Collect active player tasks first (always include these)
     for taskId, task in pairs(TASKS) do
         if task.category == category then
             local playerTask = cache[taskId]
-            if playerTask and playerTask.rewarded ~= 1 then
-                local playerTaskData = {
-                    id = taskId,
-                    name = task.name,
+            local isActive = playerTask and playerTask.rewarded ~= 1
+
+            if isActive then
+                table.insert(playerTasks, {
+                    id = taskId, name = task.name,
                     kills = task.killsRequired,
                     done = math.min(playerTask.kills or 0, task.killsRequired),
-                    exp = task.experience,
-                    points = task.points,
+                    exp = task.experience, points = task.points,
                     completed = playerTask.completed or 0,
                     rewarded = playerTask.rewarded or 0
-                }
-                table.insert(playerTasks, playerTaskData)
-            end
-        end
-    end
-
-    -- Build allTasks list with level filter + always include active tasks
-    for taskId, task in pairs(TASKS) do
-        if task.category == category then
-            local hasActive = cache[taskId] and cache[taskId].rewarded ~= 1
-            if hasActive or task.levelRequired <= maxLevelToShow then
-                local taskData = {
-                    id = taskId,
-                    name = task.name,
-                    category = task.category,
-                    type = task.type,
-                    difficulty = task.difficulty,
-                    levelRequired = task.levelRequired,
-                    rankRequired = task.rankRequired,
-                    kills = task.killsRequired,
-                    killsRequired = task.killsRequired,
-                    exp = task.experience,
-                    money = task.money,
-                    points = task.points,
-                    rewards = task.rewards,
-                    delivery = task.delivery,
-                    monsters = networkNormalizeMonsters(task.monsters),
-                    lookType = task.lookType,
-                    repeatable = task.repeatable or false,
-                    unique = task.unique or false,
-                    daily = task.daily or { enabled = false }
-                }
-                local showLocked = false
-                if playerLevel < task.levelRequired then
-                    showLocked = true
-                end
-                if playerPoints < task.rankRequired then
-                    showLocked = true
-                end
-                taskData.locked = showLocked
-                table.insert(allTasks, taskData)
-                if #allTasks >= MAX_ALLTASKS then break end
-            end
-        end
-    end
-
-    -- Ensure active tasks are in allTasks
-    for _, pt in ipairs(playerTasks) do
-        local found = false
-        for _, at in ipairs(allTasks) do
-            if at.id == pt.id then found = true; break end
-        end
-        if not found then
-            local task = TASKS[pt.id]
-            if task then
-                table.insert(allTasks, {
-                    id = pt.id, name = task.name, category = task.category,
-                    type = task.type, difficulty = task.difficulty,
-                    levelRequired = task.levelRequired, rankRequired = task.rankRequired,
-                    kills = task.killsRequired, killsRequired = task.killsRequired,
-                    exp = task.experience, money = task.money, points = task.points,
-                    lookType = task.lookType, rewards = task.rewards,
-                    delivery = task.delivery, monsters = networkNormalizeMonsters(task.monsters),
-                    locked = false, repeatable = task.repeatable or false,
-                    unique = task.unique or false, daily = task.daily or { enabled = false }
                 })
             end
         end
+
+        do
+            local levelFits = task.levelRequired <= maxLevelToShow
+            local rankFits = playerPoints >= task.rankRequired
+            if levelFits and rankFits then
+                if task.category == "dragonball" then
+                    categoryCounts.dragonball = categoryCounts.dragonball + 1
+                elseif task.category == "bleach" then
+                    categoryCounts.bleach = categoryCounts.bleach + 1
+                end
+            end
+        end
+
+        if task.category == category then
+            local hasActive = cache[taskId] and cache[taskId].rewarded ~= 1
+            local levelFits = task.levelRequired <= maxLevelToShow
+
+            if not hasActive and not levelFits then
+            else
+                local passSearch = true
+                if search ~= "" then
+                    passSearch = false
+                    if task.name:lower():find(search, 1, true) then
+                        passSearch = true
+                    else
+                        for _, m in ipairs(task.monsters or {}) do
+                            local mname = type(m) == "table" and m.name or m
+                            if mname and mname:lower():find(search, 1, true) then
+                                passSearch = true
+                                break
+                            end
+                        end
+                    end
+                end
+
+                if passSearch then
+                    local passType = true
+                    if filterType ~= "" then
+                        if filterType == "repeatable" then
+                            passType = task.repeatable == true
+                        elseif filterType == "daily" then
+                            passType = task.daily and task.daily.enabled
+                        else
+                            passType = task.type == filterType
+                        end
+                    end
+
+                    if passType then
+                        local passDiff = true
+                        if filterDifficulty ~= "" then
+                            passDiff = task.difficulty == filterDifficulty
+                        end
+
+                        if passDiff then
+                            table.insert(matching, {
+                                taskId = taskId, task = task,
+                                diffIdx = getDifficultyIndex(task),
+                                monsterLevel = getMonsterLevel(task),
+                                isActive = hasActive
+                            })
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    table.sort(matching, function(a, b)
+        if a.isActive ~= b.isActive then
+            return a.isActive
+        end
+        if a.diffIdx ~= b.diffIdx then
+            return a.diffIdx < b.diffIdx
+        end
+        return a.monsterLevel < b.monsterLevel
+    end)
+
+    local totalTasks = #matching
+    local totalPages = math.max(1, math.ceil(totalTasks / pageSize))
+    if page > totalPages then page = totalPages end
+    local startIdx = (page - 1) * pageSize + 1
+    local endIdx = math.min(startIdx + pageSize - 1, totalTasks)
+
+    local allTasks = {}
+    for i = startIdx, endIdx do
+        local entry = matching[i]
+        local task = entry.task
+        local locked = false
+        if playerLevel < task.levelRequired then locked = true end
+        if playerPoints < task.rankRequired then locked = true end
+        if entry.isActive then locked = false end
+
+        table.insert(allTasks, {
+            id = entry.taskId, name = task.name,
+            category = task.category, type = task.type,
+            difficulty = task.difficulty,
+            levelRequired = task.levelRequired,
+            rankRequired = task.rankRequired,
+            kills = task.killsRequired, killsRequired = task.killsRequired,
+            exp = task.experience, money = task.money, points = task.points,
+            rewards = task.rewards, delivery = task.delivery,
+            monsters = networkNormalizeMonsters(task.monsters),
+            lookType = task.lookType,
+            repeatable = task.repeatable or false,
+            unique = task.unique or false,
+            daily = task.daily or { enabled = false },
+            locked = locked
+        })
     end
 
     local rankName, rankColor, rankPoints = TaskRank_getPlayerRank(cid, category)
@@ -170,6 +240,12 @@ function TaskNetwork_sendTaskList(cid)
     local response = {
         allTasks = allTasks,
         playerTasks = playerTasks,
+        totalTasks = totalTasks,
+        totalPages = totalPages,
+        currentPage = page,
+        pageSize = pageSize,
+        categoryCounts = categoryCounts,
+        playerCategory = category,
         rank = {
             name = rankName,
             color = rankColor,
@@ -258,9 +334,9 @@ function TaskNetwork_handleAction(cid, data)
     local action = data.action
     print("[TaskNetwork] Handling action='" .. action .. "' taskId=" .. tostring(data.taskId))
 
-    if action == "info" then
+    if action == "info" or action == "list" then
         print("[TaskNetwork] Sending task list for cid=" .. cid)
-        TaskNetwork_sendTaskList(cid)
+        TaskNetwork_sendTaskList(cid, data)
         print("[TaskNetwork] Task list sent")
     elseif action == "start" then
         if data.taskId then
