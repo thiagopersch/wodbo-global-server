@@ -17,7 +17,7 @@ DRAGONBALL_KEYWORDS = [
     "turles", "slug", "cooler", "broly", "zeno", "whis", "supreme kai",
     "kibito", "babidi", "morning", "popo", "shenlong", "polunga",
     "gohan", "goten", "chichi", "bulma", "kame", "kaio", "zeni",
-    "god of destruction", "dende", "porunga", "sheron",
+    "god of destruction", "dende", "porunga", "shenron",
     "c17", "c18", "c19", "c20", "cell", "boo", "buu",
     "dino hollow", "dino", "t-rex", "tyrannosaurus",
 ]
@@ -31,7 +31,7 @@ BLEACH_KEYWORDS = [
     "yhawch", "yhwach", "ywhach", "juha", "bach", "wandenreich", "soul society",
     "seireitei", "hueco mundo", "las noches", "zangetsu", "zanpakuto",
     "vizard", "vaizard", "shikai", "bankai", "kido", "cero", "bala",
-    "menos", "gillian", "adjucha", "vasto lorde", "fishbone", "grand fisher",
+    "menos", "gillian", "adjucha", "vasto lord", "fishbone", "grand fisher",
     "acid hollow", "spider hollow", "ghost hollow", "wolf hollow",
     "bandit hollow", "bone hollow", "ancient dinosaur hollow",
     "byakuya", "ikkaku", "yumichika", "matsumoto", "rangiku",
@@ -149,10 +149,7 @@ def generate_task_config(monsters, monster_dir):
     bosses = [m for m in monsters if m["original_file"].startswith("bosses" + os.sep)]
     regular = [m for m in monsters if m not in bosses]
 
-    regular.sort(key=lambda m: (m["level"], m["name"]))
-
     known_ids = set()
-    task_id_counter = [0]
 
     def make_unique_id(base):
         tid = base
@@ -163,30 +160,20 @@ def generate_task_config(monsters, monster_dir):
         known_ids.add(tid)
         return tid
 
-    # Track distribution for generic monsters (those not explicitly DBZ or Bleach)
-    generic_monsters = []
+    # Only include monsters that match DRAGONBALL_KEYWORDS or BLEACH_KEYWORDS
     dragonball_monsters = []
     bleach_monsters = []
 
     for monster in regular:
         mname = monster["name"]
-        level = monster["level"]
-        difficulty = get_difficulty(level)
 
-        if is_bleach(mname):
-            bleach_monsters.append(monster)
-        elif is_dragonball(mname):
+        if is_dragonball(mname):
             dragonball_monsters.append(monster)
-        else:
-            generic_monsters.append(monster)
+        elif is_bleach(mname):
+            bleach_monsters.append(monster)
 
-    # Split generic monsters: even indices -> dragonball, odd indices -> bleach
-    generic_monsters.sort(key=lambda m: (m["level"], m["name"]))
-    for i, m in enumerate(generic_monsters):
-        if i % 2 == 0:
-            dragonball_monsters.append(m)
-        else:
-            bleach_monsters.append(m)
+    dragonball_monsters.sort(key=lambda m: (m["level"], m["name"]))
+    bleach_monsters.sort(key=lambda m: (m["level"], m["name"]))
 
     all_monsters_sorted = sorted(dragonball_monsters + bleach_monsters, key=lambda m: (m["level"], m["name"]))
 
@@ -202,7 +189,7 @@ def generate_task_config(monsters, monster_dir):
         rankReq = level_to_rank_required(level)
 
         category = "dragonball"
-        if monster in bleach_monsters:
+        if is_bleach(mname):
             category = "bleach"
 
         task_id = make_unique_id("task_" + safe)
@@ -229,12 +216,22 @@ def generate_task_config(monsters, monster_dir):
         lines.append(f"    }},")
         lines.append("")
 
-    # Boss tasks
+    # Boss tasks (only those matching keywords)
     lines.append("    -- ============================================================")
     lines.append("    -- BOSS TASKS")
     lines.append("    -- ============================================================")
-    for i, monster in enumerate(bosses):
+    for monster in bosses:
         mname = monster["name"]
+
+        boss_category = None
+        if is_dragonball(mname):
+            boss_category = "dragonball"
+        elif is_bleach(mname):
+            boss_category = "bleach"
+
+        if boss_category is None:
+            continue
+
         safe = make_safe_id(mname)
         level = monster["level"]
         difficulty = get_difficulty(level)
@@ -242,16 +239,6 @@ def generate_task_config(monsters, monster_dir):
         points = calc_points(difficulty) * 3
         exp = calc_exp(monster["experience"], difficulty) * 2
         money = calc_money(difficulty) * 2
-
-        boss_category = "dragonball"
-        if is_bleach(mname):
-            boss_category = "bleach"
-        elif is_dragonball(mname):
-            boss_category = "dragonball"
-        elif i % 2 == 0:
-            boss_category = "dragonball"
-        else:
-            boss_category = "bleach"
 
         task_id = make_unique_id("boss_" + safe)
         lines.append(f"    -- {mname} (Level {level}, {difficulty})")

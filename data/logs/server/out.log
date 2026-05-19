@@ -1,38 +1,48 @@
-[17/5/2026 21:19:53] > Usando SHA1 criptografia
-[17/5/2026 21:19:53] >> Carregando RSA key
-[17/5/2026 21:19:53] >> Iniciando conexao SQL
-[17/5/2026 21:19:53] >> Executando Gerenciador de Banco de Dados
-[17/5/2026 21:19:53] > Optimized database.
-[17/5/2026 21:19:53] >> Carregando items (OTB)
-[17/5/2026 21:19:54] >> Carregando items (XML)
-[17/5/2026 21:19:54] >> Carregando Grupos
-[17/5/2026 21:19:54] >> Carregando Vocacoes
-[17/5/2026 21:19:54] >> Carregando Outfits
-[17/5/2026 21:19:54] >> Carregando Canal de Chat
-[17/5/2026 21:19:54] >> Carregando Sistema
-[17/5/2026 21:19:54] >> Carregando Mods...
-[17/5/2026 21:19:54] > Loading AutoLoot.xml... done.
-[17/5/2026 21:19:54] > Loading Automatic Raids.xml... done.
-[17/5/2026 21:19:54] > Loading highscorebook.xml... done.
-[17/5/2026 21:19:54] > Loading task_system.xml... done.
-[17/5/2026 21:19:54] > 4 mods were loaded.
-[17/5/2026 21:19:54] >> Carregando EXP Stages
-[17/5/2026 21:19:54] >> Carregando Monstros
-[17/5/2026 21:19:55] >> Carregando Mapa e Spawns...
-[17/5/2026 21:19:55] > Tamanho do Mapa: 64000x64000.
-[17/5/2026 21:19:55] > Descricao do Mapa: 
-[17/5/2026 21:19:55] "Saved with OTARMEIE 7.1.2"
-[17/5/2026 21:19:55] "No map description available."
-[17/5/2026 21:19:58] > Mapa carregado em: 3.366 segundos.
-[17/5/2026 21:19:58] > Data carregada em: 0.191 segundos.
-[17/5/2026 21:20:0] > Houses carregada em: 1.688 segundos.
-[17/5/2026 21:20:0] > Content unserialization time: 0.003 seconds.
-[17/5/2026 21:20:0] > Carregando Tipo de PVP... Open PvP
-[17/5/2026 21:20:0] > Inicializando estado do jogo e registrando servicos...
-[17/5/2026 21:20:0] > IP do Servidor: 127.0.0.1
-[17/5/2026 21:20:0] > IP local do Servidor: 192.168.80.1	192.168.1.104	
-[17/5/2026 21:20:0] > Portas do Servidor: 7171	7172	
-[17/5/2026 21:20:0] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[17/5/2026 21:20:10] >> DBOSupreme servidor Online!
+[18/5/2026 23:2:6] > Usando SHA1 criptografia
+[18/5/2026 23:2:6] >> Carregando RSA key
+[18/5/2026 23:2:6] >> Iniciando conexao SQL
+[18/5/2026 23:2:6] >> Executando Gerenciador de Banco de Dados
+[18/5/2026 23:2:6] > Optimized database.
+[18/5/2026 23:2:6] >> Carregando items (OTB)
+[18/5/2026 23:2:7] >> Carregando items (XML)
+[18/5/2026 23:2:7] >> Carregando Grupos
+[18/5/2026 23:2:7] >> Carregando Vocacoes
+[18/5/2026 23:2:7] >> Carregando Outfits
+[18/5/2026 23:2:7] >> Carregando Canal de Chat
+[18/5/2026 23:2:7] >> Carregando Sistema
+[18/5/2026 23:2:7] >> Carregando Mods...
+[18/5/2026 23:2:7] > Loading AutoLoot.xml... done.
+[18/5/2026 23:2:7] > Loading Automatic Raids.xml... done.
+[18/5/2026 23:2:7] > Loading highscorebook.xml... done.
+[18/5/2026 23:2:7] > Loading task_system.xml... done.
+[18/5/2026 23:2:7] > 4 mods were loaded.
+[18/5/2026 23:2:7] >> Carregando EXP Stages
+[18/5/2026 23:2:7] >> Carregando Monstros
+[18/5/2026 23:2:7] >> Carregando Mapa e Spawns...
+[18/5/2026 23:2:8] > Tamanho do Mapa: 64000x64000.
+[18/5/2026 23:2:8] > Descricao do Mapa: 
+[18/5/2026 23:2:8] "Saved with OTARMEIE 7.1.2"
+[18/5/2026 23:2:8] "No map description available."
+[18/5/2026 23:2:11] > Mapa carregado em: 3.64 segundos.
+[18/5/2026 23:2:11] > Data carregada em: 0.242 segundos.
+[18/5/2026 23:2:13] > Houses carregada em: 1.565 segundos.
+[18/5/2026 23:2:13] > Content unserialization time: 0.003 seconds.
+[18/5/2026 23:2:13] > Carregando Tipo de PVP... Open PvP
+[18/5/2026 23:2:13] > Inicializando estado do jogo e registrando servicos...
+[18/5/2026 23:2:13] > IP do Servidor: 127.0.0.1
+[18/5/2026 23:2:13] > IP local do Servidor: 172.29.176.1	192.168.1.104	
+[18/5/2026 23:2:13] > Portas do Servidor: 7171	7172	
+[18/5/2026 23:2:13] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[18/5/2026 23:2:23] >> DBOSupreme servidor Online!
 
-[17/5/2026 21:22:57] God has logged in.
+[18/5/2026 23:2:25] God has logged in.
+[18/5/2026 23:3:40] God has logged out.
+[18/5/2026 23:3:43] God has logged in.
+[18/5/2026 23:15:21] God has logged out.
+[18/5/2026 23:15:22] God has logged in.
+[18/5/2026 23:17:10] God has logged out.
+[18/5/2026 23:17:11] God has logged in.
+[18/5/2026 23:26:49] God has logged out.
+[18/5/2026 23:26:50] God has logged in.
+[18/5/2026 23:28:31] God has logged out.
+[18/5/2026 23:28:32] God has logged in.

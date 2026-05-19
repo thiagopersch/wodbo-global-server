@@ -38,6 +38,7 @@
 # NPC
 
 - Ajustar os npc's de compra e venda de items :x:
+  - Ajustar itens :x:
 - Criar outros NPC's conforme a necessidade :x:
 - Toda compra está vindo com quantidade de 2 ao invés de 1
 
@@ -53,7 +54,7 @@
 
 - Ajustar as transformações :white_check_mark:
   - Modificar o script para ter o efeito saindo na transformação em todas as vocations :x:
-  - Ajustar o revert :x:
+  - Ajustar o revert :white_check_mark:
 
 # World
 
@@ -61,8 +62,8 @@
 
 # XML
 
-- Recalibrar as vocações (HP, Mana e etc) :x:
-- Ajustar as outfits :x:
+- Recalibrar as vocações (HP, Mana e etc) :white_check_mark:
+- Ajustar as outfits :white_check_mark:
 - Novas vocations
   - Dragon ball
     - Babidi = [5044,5045,5046,5047,5048,5049,5050]
@@ -221,7 +222,7 @@
     - Pernida Parnkgjas = [4932,4934,4935]
     - Yumichika Ayasegawa = [4929,4930,4931]
 
-  - The seven deadly sins
+  - The Seven Deadly Sins
     - Meliodas = [2667,2668,2669,2670,2671,2672,2673,2674,2675,2676,2677,2678,2679]
     - Ban = [2680,2681,2682,2683,2684,2685]
     - Merlin = [2690,2691,2692,2693,2694,2695,2696,2697,2698]
@@ -320,7 +321,6 @@
 # Clients
 
 - Ajustar modules :x:
-
 - Outfits
   - Guarda = 4490
   - Hawk = 2666
