@@ -182,6 +182,18 @@ function ChangeVocation.buildPayload(cid, action)
   end
   levels[currentId] = getPlayerLevel(cid)
 
+  local ranks = {}
+  local rq = db.getResult("SELECT `vocation_id`, `rank`, `stars` FROM `player_vocation_ranks` WHERE `player_id` = " .. guid)
+  if rq and rq:getID() ~= -1 then
+    repeat
+      local vid = rq:getDataInt("vocation_id")
+      local rnk = rq:getDataInt("rank")
+      local str = rq:getDataInt("stars")
+      ranks[vid] = { rank = rnk, stars = str }
+    until not rq:next()
+    rq:free()
+  end
+
   local vocList = {}
   for _, vocId in ipairs(unlocked) do
     local v = Config.Vocations[vocId] or {}
@@ -190,6 +202,7 @@ function ChangeVocation.buildPayload(cid, action)
     local classType = v.class or "DPS"
     local lookType = v.lookType or Config.DEFAULT_LOOKTYPE
     local level = levels[vocId] or 1
+    local rankData = ranks[vocId] or { rank = 0, stars = 0 }
 
     table.insert(vocList, {
       id = vocId,
@@ -197,7 +210,9 @@ function ChangeVocation.buildPayload(cid, action)
       universe = universe,
       classType = classType,
       lookType = lookType,
-      level = level
+      level = level,
+      rank = rankData.rank,
+      stars = rankData.stars
     })
   end
 
@@ -225,6 +240,9 @@ function ChangeVocation.buildPayload(cid, action)
 
     bin = bin .. encU16(math.floor(v.level / 65536))
     bin = bin .. encU16(v.level % 65536)
+
+    bin = bin .. encU16(v.rank)
+    bin = bin .. encU16(v.stars)
   end
   return toHex(bin)
 end

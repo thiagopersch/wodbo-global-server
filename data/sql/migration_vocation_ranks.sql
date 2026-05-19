@@ -1,4 +1,4 @@
--- Migration: Add Vocation Ranks System
+-- Migration: Add Vocation Upgraded System
 -- SQLite version for The Forgotten Server 0.4
 
 CREATE TABLE IF NOT EXISTS player_vocation_ranks (

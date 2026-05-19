@@ -1,5 +1,5 @@
 -- ============================================================
--- extendedopcode_vocation_ranks.lua
+-- extendedopcode_vocation_upgraded.lua
 -- Handles opcode 235 messages from clients (TFS 0.4)
 -- ============================================================
 

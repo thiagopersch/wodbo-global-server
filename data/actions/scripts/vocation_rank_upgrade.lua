@@ -1,5 +1,5 @@
 -- ============================================================
--- vocation_rank_upgrade.lua
+-- vocation_upgrade.lua
 -- Handles using fragment items to upgrade vocation rank
 -- ============================================================
 

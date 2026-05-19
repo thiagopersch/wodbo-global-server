@@ -1,6 +1,6 @@
 -- ============================================================
--- vocation_ranks_lib.lua
--- Main logic for Vocation Rank System (TFS 0.4)
+-- vocation_upgraded_lib.lua
+-- Main logic for Vocation Upgraded System (TFS 0.4)
 -- ============================================================
 
 if not VocationRankConfig then dofile("data/lib/vocation_ranks_config.lua") end
@@ -160,14 +160,16 @@ function VocationRankLib.doUpgrade(cid, source)
 
     -- Promotion logic: If reached 5 stars, advance rank
     if rankData.stars >= VocationRankConfig.StarsPerRank then
-      rankData.rank = rankData.rank + 1
-      -- If advancing to Bronze (1), start at star 0 as requested.
-      -- If advancing to Silver (2) or higher, start at star 1.
-      if rankData.rank > 1 then
-        rankData.stars = 1
-        rankData.totalStars = rankData.totalStars + 1 -- count this extra star?
+      if rankData.rank + 1 > config.maxRank then
+        rankData.stars = VocationRankConfig.StarsPerRank
       else
-        rankData.stars = 0
+        rankData.rank = rankData.rank + 1
+        if rankData.rank > 1 then
+          rankData.stars = 1
+          rankData.totalStars = rankData.totalStars + 1
+        else
+          rankData.stars = 0
+        end
       end
     end
 
