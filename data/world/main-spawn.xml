@@ -322,6 +322,169 @@
 	<spawn centerx="31581" centery="32141" centerz="1" radius="1">
 		<monster name="Stone Golem" x="0" y="0" z="1" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32349" centery="32235" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32236" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32236" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32343" centery="32236" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32316" centery="32238" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32353" centery="32238" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32327" centery="32239" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32308" centery="32240" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32321" centery="32240" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32346" centery="32240" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32291" centery="32241" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32297" centery="32242" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32242" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32310" centery="32242" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32332" centery="32242" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32350" centery="32242" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32286" centery="32243" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32289" centery="32244" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32342" centery="32244" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32356" centery="32244" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32277" centery="32245" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32317" centery="32245" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32324" centery="32246" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32246" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32361" centery="32246" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="-1" y="0" z="1" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32283" centery="32247" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32298" centery="32247" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32348" centery="32247" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32309" centery="32248" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32316" centery="32249" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32290" centery="32250" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32329" centery="32250" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32299" centery="32251" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32251" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32251" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32349" centery="32251" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32358" centery="32251" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32296" centery="32252" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32311" centery="32252" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32326" centery="32252" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32344" centery="32252" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32307" centery="32254" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32334" centery="32255" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32352" centery="32255" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32319" centery="32256" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32311" centery="32257" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32340" centery="32257" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32324" centery="32258" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32332" centery="32260" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32321" centery="32261" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32346" centery="32261" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32329" centery="32264" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32265" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32347" centery="32268" centerz="1" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="1" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32543" centery="32356" centerz="1" radius="1">
 		<monster name="Kongra" x="0" y="0" z="1" spawntime="60" direction="2" />
 	</spawn>
@@ -930,6 +1093,172 @@
 	<spawn centerx="31575" centery="32141" centerz="2" radius="1">
 		<monster name="Stone Golem" x="0" y="0" z="2" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32349" centery="32235" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32236" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32236" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32343" centery="32236" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32316" centery="32238" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32353" centery="32238" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32327" centery="32239" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32308" centery="32240" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32321" centery="32240" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32346" centery="32240" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32291" centery="32241" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32297" centery="32242" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32242" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32310" centery="32242" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32332" centery="32242" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32350" centery="32242" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32286" centery="32243" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32289" centery="32244" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32342" centery="32244" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32356" centery="32244" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32277" centery="32245" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32317" centery="32245" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32324" centery="32246" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32246" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32361" centery="32246" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="-1" y="0" z="2" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32283" centery="32247" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32298" centery="32247" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32348" centery="32247" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32309" centery="32248" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32316" centery="32249" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32290" centery="32250" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32329" centery="32250" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32299" centery="32251" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32251" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32251" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32349" centery="32251" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32358" centery="32251" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32296" centery="32252" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32311" centery="32252" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32326" centery="32252" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32344" centery="32252" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32307" centery="32254" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32334" centery="32255" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32352" centery="32255" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32319" centery="32256" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32311" centery="32257" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="1" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32340" centery="32257" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32324" centery="32258" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32332" centery="32260" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32321" centery="32261" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="-1" y="0" z="2" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32346" centery="32261" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32329" centery="32264" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32265" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32347" centery="32268" centerz="2" radius="1">
+		<monster name="Goku SSJ5" x="0" y="-1" z="2" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="2" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32543" centery="32355" centerz="2" radius="1">
 		<monster name="Kongra" x="0" y="0" z="2" spawntime="60" direction="2" />
 	</spawn>
@@ -1535,6 +1864,172 @@
 	</spawn>
 	<spawn centerx="32070" centery="32196" centerz="3" radius="1">
 		<monster name="Elf Arcanist" x="0" y="0" z="3" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32349" centery="32235" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32236" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32236" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32343" centery="32236" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32316" centery="32238" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32353" centery="32238" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32327" centery="32239" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32308" centery="32240" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32321" centery="32240" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32346" centery="32240" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32291" centery="32241" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32297" centery="32242" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32242" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32310" centery="32242" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32332" centery="32242" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32350" centery="32242" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32286" centery="32243" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32289" centery="32244" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32342" centery="32244" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32356" centery="32244" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32277" centery="32245" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32317" centery="32245" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32324" centery="32246" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32246" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32361" centery="32246" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="-1" y="0" z="3" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32283" centery="32247" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32298" centery="32247" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32348" centery="32247" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32309" centery="32248" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32316" centery="32249" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32290" centery="32250" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32329" centery="32250" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32299" centery="32251" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32251" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32251" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32349" centery="32251" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32358" centery="32251" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32296" centery="32252" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32311" centery="32252" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32326" centery="32252" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32344" centery="32252" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32307" centery="32254" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32334" centery="32255" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32352" centery="32255" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32319" centery="32256" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32311" centery="32257" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="1" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32340" centery="32257" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32324" centery="32258" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32332" centery="32260" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32321" centery="32261" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="-1" y="0" z="3" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32346" centery="32261" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32329" centery="32264" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32265" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32347" centery="32268" centerz="3" radius="1">
+		<monster name="Goku SSJ5" x="0" y="-1" z="3" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="3" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32546" centery="32356" centerz="3" radius="1">
 		<monster name="Kongra" x="0" y="0" z="3" spawntime="60" direction="2" />
@@ -2354,11 +2849,177 @@
 	<spawn centerx="31654" centery="32234" centerz="4" radius="1">
 		<monster name="Demodras" x="0" y="0" z="4" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32349" centery="32235" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31658" centery="32236" centerz="4" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="4" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31668" centery="32236" centerz="4" radius="1">
 		<monster name="Demodras" x="0" y="0" z="4" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32236" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32236" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32343" centery="32236" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32316" centery="32238" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32353" centery="32238" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32327" centery="32239" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32308" centery="32240" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32321" centery="32240" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32346" centery="32240" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32291" centery="32241" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32297" centery="32242" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32242" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32310" centery="32242" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32332" centery="32242" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32350" centery="32242" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32286" centery="32243" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32289" centery="32244" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32342" centery="32244" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32356" centery="32244" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32277" centery="32245" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32317" centery="32245" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32324" centery="32246" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32246" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32361" centery="32246" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="-1" y="0" z="4" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32283" centery="32247" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32298" centery="32247" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32348" centery="32247" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32309" centery="32248" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32316" centery="32249" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32290" centery="32250" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32329" centery="32250" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32299" centery="32251" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32251" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32251" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32349" centery="32251" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32358" centery="32251" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32296" centery="32252" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32311" centery="32252" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32326" centery="32252" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32344" centery="32252" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32307" centery="32254" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32334" centery="32255" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32352" centery="32255" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32319" centery="32256" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32311" centery="32257" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="1" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32340" centery="32257" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32324" centery="32258" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32332" centery="32260" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32321" centery="32261" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="-1" y="0" z="4" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32346" centery="32261" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32329" centery="32264" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32265" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32347" centery="32268" centerz="4" radius="1">
+		<monster name="Goku SSJ5" x="0" y="-1" z="4" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="4" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32431" centery="32354" centerz="4" radius="1">
 		<monster name="Term" x="0" y="0" z="4" spawntime="60" direction="2" />
@@ -4212,14 +4873,35 @@
 	<spawn centerx="31648" centery="32235" centerz="5" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="5" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32349" centery="32235" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32236" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32236" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32343" centery="32236" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31651" centery="32237" centerz="5" radius="1">
 		<monster name="Dragon Baby" x="0" y="0" z="5" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31660" centery="32238" centerz="5" radius="1">
 		<monster name="Dragon" x="0" y="0" z="5" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32316" centery="32238" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32353" centery="32238" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31656" centery="32239" centerz="5" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="5" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32327" centery="32239" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31644" centery="32240" centerz="5" radius="1">
 		<monster name="Demodras" x="0" y="0" z="5" spawntime="60" direction="2" />
@@ -4227,11 +4909,56 @@
 	<spawn centerx="31667" centery="32240" centerz="5" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="5" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32308" centery="32240" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32321" centery="32240" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32346" centery="32240" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32291" centery="32241" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31671" centery="32242" centerz="5" radius="1">
 		<monster name="Demodras" x="0" y="0" z="5" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32297" centery="32242" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32242" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32310" centery="32242" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32332" centery="32242" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32350" centery="32242" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31662" centery="32243" centerz="5" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="5" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32286" centery="32243" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32289" centery="32244" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32342" centery="32244" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32356" centery="32244" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32277" centery="32245" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32317" centery="32245" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31647" centery="32246" centerz="5" radius="1">
 		<monster name="Dragon Baby" x="0" y="0" z="5" spawntime="60" direction="2" />
@@ -4239,11 +4966,42 @@
 	<spawn centerx="31670" centery="32246" centerz="5" radius="1">
 		<monster name="Dragon Baby" x="0" y="0" z="5" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32324" centery="32246" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32246" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32361" centery="32246" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="-1" y="0" z="5" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31659" centery="32247" centerz="5" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="5" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32283" centery="32247" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32298" centery="32247" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32348" centery="32247" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31651" centery="32248" centerz="5" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="5" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32309" centery="32248" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32316" centery="32249" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32290" centery="32250" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32329" centery="32250" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31653" centery="32251" centerz="5" radius="1">
 		<monster name="Dragon" x="0" y="0" z="5" spawntime="60" direction="2" />
@@ -4251,8 +5009,77 @@
 	<spawn centerx="31663" centery="32251" centerz="5" radius="1">
 		<monster name="Demodras" x="0" y="0" z="5" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32299" centery="32251" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32251" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32251" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32349" centery="32251" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32358" centery="32251" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32296" centery="32252" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32311" centery="32252" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32326" centery="32252" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32344" centery="32252" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31659" centery="32254" centerz="5" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="5" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32307" centery="32254" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32334" centery="32255" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32352" centery="32255" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32319" centery="32256" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32311" centery="32257" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="1" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32340" centery="32257" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32324" centery="32258" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32332" centery="32260" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32321" centery="32261" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="-1" y="0" z="5" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32346" centery="32261" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32329" centery="32264" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32265" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32347" centery="32268" centerz="5" radius="1">
+		<monster name="Goku SSJ5" x="0" y="-1" z="5" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="5" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32168" centery="32339" centerz="5" radius="1">
 		<monster name="Wind Elemental" x="0" y="0" z="5" spawntime="60" direction="2" />
@@ -10179,8 +11006,20 @@
 	<spawn centerx="32047" centery="32235" centerz="6" radius="1">
 		<monster name="Elf" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32349" centery="32235" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32062" centery="32236" centerz="6" radius="1">
 		<monster name="Elf Arcanist" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32236" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32236" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32343" centery="32236" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31662" centery="32237" centerz="6" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -10194,6 +11033,12 @@
 	<spawn centerx="32074" centery="32238" centerz="6" radius="1">
 		<monster name="Elf Scout" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32316" centery="32238" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32353" centery="32238" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31647" centery="32239" centerz="6" radius="1">
 		<monster name="Demodras" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
@@ -10202,6 +11047,9 @@
 	</spawn>
 	<spawn centerx="32057" centery="32239" centerz="6" radius="1">
 		<monster name="Elf Scout" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32327" centery="32239" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31692" centery="32240" centerz="6" radius="1">
 		<monster name="Demodras" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -10212,14 +11060,41 @@
 	<spawn centerx="32067" centery="32240" centerz="6" radius="1">
 		<monster name="Elf" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32308" centery="32240" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32321" centery="32240" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32346" centery="32240" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32049" centery="32241" centerz="6" radius="1">
 		<monster name="Elf" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32291" centery="32241" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31658" centery="32242" centerz="6" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32054" centery="32242" centerz="6" radius="1">
 		<monster name="Elf Arcanist" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32297" centery="32242" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32242" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32310" centery="32242" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32332" centery="32242" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32350" centery="32242" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31668" centery="32243" centerz="6" radius="1">
 		<monster name="Dragon" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -10233,8 +11108,20 @@
 	<spawn centerx="32070" centery="32243" centerz="6" radius="1">
 		<monster name="Elf Scout" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32286" centery="32243" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32073" centery="32244" centerz="6" radius="1">
 		<monster name="Elf" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32289" centery="32244" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32342" centery="32244" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32356" centery="32244" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31648" centery="32245" centerz="6" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -10245,17 +11132,42 @@
 	<spawn centerx="32049" centery="32245" centerz="6" radius="1">
 		<monster name="Elf Scout" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32277" centery="32245" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32317" centery="32245" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31656" centery="32246" centerz="6" radius="1">
 		<monster name="Dragon Baby" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32058" centery="32246" centerz="6" radius="1">
 		<monster name="Elf Scout" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32324" centery="32246" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32246" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32361" centery="32246" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="-1" y="0" z="6" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31688" centery="32247" centerz="6" radius="1">
 		<monster name="Dragon" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31694" centery="32247" centerz="6" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32283" centery="32247" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32298" centery="32247" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32348" centery="32247" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31652" centery="32248" centerz="6" radius="1">
 		<monster name="Dragon" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -10266,17 +11178,44 @@
 	<spawn centerx="32054" centery="32248" centerz="6" radius="1">
 		<monster name="Elf" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32309" centery="32248" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31683" centery="32249" centerz="6" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32067" centery="32249" centerz="6" radius="1">
 		<monster name="Elf Scout" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32316" centery="32249" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32290" centery="32250" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32329" centery="32250" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31672" centery="32251" centerz="6" radius="1">
 		<monster name="Dragon" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31678" centery="32251" centerz="6" radius="1">
 		<monster name="Dragon Baby" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32299" centery="32251" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32251" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32251" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32349" centery="32251" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32358" centery="32251" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31684" centery="32252" centerz="6" radius="1">
 		<monster name="Demodras" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -10286,6 +11225,18 @@
 	</spawn>
 	<spawn centerx="32075" centery="32252" centerz="6" radius="1">
 		<monster name="Elf" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32296" centery="32252" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32311" centery="32252" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32326" centery="32252" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32344" centery="32252" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31692" centery="32253" centerz="6" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -10300,8 +11251,17 @@
 	<spawn centerx="32066" centery="32254" centerz="6" radius="1">
 		<monster name="Elf Scout" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32307" centery="32254" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32056" centery="32255" centerz="6" radius="1">
 		<monster name="Elf Scout" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32334" centery="32255" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32352" centery="32255" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31670" centery="32256" centerz="6" radius="1">
 		<monster name="Demodras" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -10312,8 +11272,18 @@
 	<spawn centerx="32051" centery="32256" centerz="6" radius="1">
 		<monster name="Elf Arcanist" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32319" centery="32256" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32067" centery="32257" centerz="6" radius="1">
 		<monster name="Elf Scout" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32311" centery="32257" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="1" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32340" centery="32257" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31677" centery="32258" centerz="6" radius="1">
 		<monster name="Dragon Lord" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -10324,6 +11294,9 @@
 	<spawn centerx="32060" centery="32258" centerz="6" radius="1">
 		<monster name="Elf" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32324" centery="32258" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31682" centery="32259" centerz="6" radius="1">
 		<monster name="Dragon" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
@@ -10333,8 +11306,18 @@
 	<spawn centerx="32067" centery="32260" centerz="6" radius="1">
 		<monster name="Elf Arcanist" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32332" centery="32260" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32063" centery="32261" centerz="6" radius="1">
 		<monster name="Elf Scout" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32321" centery="32261" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="-1" y="0" z="6" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32346" centery="32261" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32050" centery="32262" centerz="6" radius="1">
 		<monster name="Elf" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -10345,8 +11328,14 @@
 	<spawn centerx="32076" centery="32264" centerz="6" radius="1">
 		<monster name="Elf" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32329" centery="32264" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32050" centery="32265" centerz="6" radius="1">
 		<monster name="Elf Scout" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32265" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32046" centery="32266" centerz="6" radius="1">
 		<monster name="Elf" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -10362,6 +11351,10 @@
 	</spawn>
 	<spawn centerx="32073" centery="32268" centerz="6" radius="1">
 		<monster name="Elf Scout" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32347" centery="32268" centerz="6" radius="1">
+		<monster name="Goku SSJ5" x="0" y="-1" z="6" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32049" centery="32269" centerz="6" radius="1">
 		<monster name="Elf" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -19361,7 +20354,6 @@
 	</spawn>
 	<spawn centerx="32304" centery="32146" centerz="7" radius="1">
 		<monster name="Assassin" x="0" y="0" z="7" spawntime="60" direction="2" />
-		<monster name="Assassin" x="1" y="1" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32361" centery="32146" centerz="7" radius="1">
 		<monster name="Amazon" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -19392,7 +20384,6 @@
 	</spawn>
 	<spawn centerx="32316" centery="32147" centerz="7" radius="1">
 		<monster name="Assassin" x="0" y="0" z="7" spawntime="60" direction="2" />
-		<monster name="Assassin" x="1" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32318" centery="32147" centerz="7" radius="1">
 		<monster name="Assassin" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -19420,7 +20411,6 @@
 	</spawn>
 	<spawn centerx="32313" centery="32148" centerz="7" radius="1">
 		<monster name="Assassin" x="0" y="0" z="7" spawntime="60" direction="2" />
-		<monster name="Assassin" x="-1" y="1" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32320" centery="32148" centerz="7" radius="1">
 		<monster name="Assassin" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -19472,11 +20462,9 @@
 	</spawn>
 	<spawn centerx="32315" centery="32149" centerz="7" radius="1">
 		<monster name="Assassin" x="0" y="0" z="7" spawntime="60" direction="2" />
-		<monster name="Assassin" x="1" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32317" centery="32149" centerz="7" radius="1">
 		<monster name="Assassin" x="0" y="0" z="7" spawntime="60" direction="2" />
-		<monster name="Assassin" x="1" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31590" centery="32150" centerz="7" radius="1">
 		<monster name="Stone Golem" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -19501,7 +20489,6 @@
 	</spawn>
 	<spawn centerx="32319" centery="32150" centerz="7" radius="1">
 		<monster name="Assassin" x="0" y="0" z="7" spawntime="60" direction="2" />
-		<monster name="Assassin" x="1" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32323" centery="32150" centerz="7" radius="1">
 		<monster name="Assassin" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -20672,7 +21659,6 @@
 	</spawn>
 	<spawn centerx="32129" centery="32202" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
-		<monster name="Black Butterfly" x="-1" y="1" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32138" centery="32202" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -20795,7 +21781,6 @@
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32239" centery="32206" centerz="7" radius="1">
-		<monster name="Amazon" x="-1" y="0" z="7" spawntime="60" direction="2" />
 		<monster name="Amazon" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32302" centery="32206" centerz="7" radius="1">
@@ -20812,7 +21797,6 @@
 	</spawn>
 	<spawn centerx="32115" centery="32207" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
-		<monster name="Black Butterfly" x="1" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32117" centery="32207" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -20869,11 +21853,9 @@
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32104" centery="32209" centerz="7" radius="1">
-		<monster name="Black Butterfly" x="-1" y="0" z="7" spawntime="60" direction="2" />
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32131" centery="32209" centerz="7" radius="1">
-		<monster name="Black Butterfly" x="0" y="-1" z="7" spawntime="60" direction="2" />
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32161" centery="32209" centerz="7" radius="1">
@@ -21010,7 +21992,6 @@
 	</spawn>
 	<spawn centerx="32118" centery="32213" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
-		<monster name="Black Butterfly" x="1" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32124" centery="32213" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -21155,7 +22136,6 @@
 	</spawn>
 	<spawn centerx="32248" centery="32219" centerz="7" radius="1">
 		<monster name="Amazon" x="0" y="0" z="7" spawntime="60" direction="2" />
-		<monster name="Amazon" x="0" y="1" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31589" centery="32220" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -21547,6 +22527,12 @@
 	<spawn centerx="32155" centery="32235" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32345" centery="32235" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32350" centery="32235" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31598" centery="32236" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -21564,6 +22550,9 @@
 	</spawn>
 	<spawn centerx="32206" centery="32236" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32337" centery="32236" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31627" centery="32237" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -21626,6 +22615,15 @@
 	<spawn centerx="32197" centery="32239" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32315" centery="32239" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32347" centery="32239" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32354" centery="32239" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31770" centery="32240" centerz="7" radius="1">
 		<monster name="Cat" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -21675,6 +22673,18 @@
 	<spawn centerx="32219" centery="32241" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32285" centery="32241" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32296" centery="32241" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32308" centery="32241" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32324" centery="32241" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31597" centery="32242" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -21698,6 +22708,12 @@
 	</spawn>
 	<spawn centerx="32192" centery="32242" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32242" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32332" centery="32242" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31591" centery="32243" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -21729,6 +22745,9 @@
 	<spawn centerx="32146" centery="32243" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32312" centery="32243" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31639" centery="32244" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -21746,6 +22765,15 @@
 	</spawn>
 	<spawn centerx="32234" centery="32244" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32278" centery="32244" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32290" centery="32244" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32350" centery="32244" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31585" centery="32245" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -21768,6 +22796,15 @@
 	<spawn centerx="32215" centery="32245" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32300" centery="32245" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32338" centery="32245" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32355" centery="32245" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31634" centery="32246" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -21789,6 +22826,18 @@
 	<spawn centerx="32237" centery="32246" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="-1" y="-1" z="7" spawntime="60" direction="2" />
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32308" centery="32246" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32318" centery="32246" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32246" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32347" centery="32246" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31594" centery="32247" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -21851,6 +22900,16 @@
 	<spawn centerx="32230" centery="32248" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32284" centery="32248" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32299" centery="32248" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32325" centery="32248" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="1" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31581" centery="32249" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -21887,6 +22946,12 @@
 	<spawn centerx="32242" centery="32249" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32329" centery="32249" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32359" centery="32249" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31703" centery="32250" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -21901,6 +22966,12 @@
 	</spawn>
 	<spawn centerx="32201" centery="32250" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32295" centery="32250" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32320" centery="32250" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31586" centery="32251" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -21923,6 +22994,18 @@
 	<spawn centerx="32228" centery="32251" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32291" centery="32251" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32304" centery="32251" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32316" centery="32251" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32339" centery="32251" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31574" centery="32252" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -21940,6 +23023,12 @@
 	</spawn>
 	<spawn centerx="32241" centery="32252" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32310" centery="32252" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32345" centery="32252" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31590" centery="32253" centerz="7" radius="1">
 		<monster name="Bandit Chef" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -21968,6 +23057,13 @@
 	<spawn centerx="32207" centery="32253" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32298" centery="32253" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="-1" z="7" spawntime="0" direction="2" />
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32355" centery="32253" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31770" centery="32254" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -21982,6 +23078,12 @@
 	</spawn>
 	<spawn centerx="32224" centery="32254" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32328" centery="32254" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32334" centery="32254" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31597" centery="32255" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22020,6 +23122,9 @@
 	<spawn centerx="32194" centery="32255" centerz="7" radius="1">
 		<monster name="Bardock Oozaru" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32307" centery="32255" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31565" centery="32256" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22038,6 +23143,9 @@
 	<spawn centerx="32248" centery="32256" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 		<monster name="Black Butterfly" x="0" y="1" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32319" centery="32256" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31577" centery="32257" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22070,6 +23178,12 @@
 	<spawn centerx="32233" centery="32257" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32313" centery="32257" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32341" centery="32257" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31600" centery="32258" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22090,6 +23204,12 @@
 	</spawn>
 	<spawn centerx="32166" centery="32258" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32324" centery="32258" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32350" centery="32258" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31610" centery="32259" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22140,6 +23260,12 @@
 	<spawn centerx="32161" centery="32260" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32319" centery="32260" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32333" centery="32260" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31577" centery="32261" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22183,6 +23309,9 @@
 	<spawn centerx="32254" centery="32262" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32326" centery="32262" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31563" centery="32263" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22203,6 +23332,12 @@
 	</spawn>
 	<spawn centerx="32244" centery="32263" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32337" centery="32263" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32345" centery="32263" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31586" centery="32264" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -22261,6 +23396,12 @@
 	<spawn centerx="32258" centery="32265" centerz="7" radius="1">
 		<monster name="Black Butterfly" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32329" centery="32265" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32340" centery="32265" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31572" centery="32266" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -22315,6 +23456,9 @@
 	</spawn>
 	<spawn centerx="31763" centery="32268" centerz="7" radius="1">
 		<monster name="Rabbit" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32347" centery="32268" centerz="7" radius="1">
+		<monster name="Goku SSJ5" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31592" centery="32269" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -26802,6 +27946,9 @@
 	<spawn centerx="32328" centery="32414" centerz="7" radius="1">
 		<monster name="Lion" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32465" centery="32414" centerz="7" radius="1">
+		<monster name="Dragon" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32496" centery="32414" centerz="7" radius="1">
 		<monster name="Dromedary" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -26990,6 +28137,9 @@
 	<spawn centerx="32437" centery="32419" centerz="7" radius="1">
 		<monster name="Scarab" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32475" centery="32419" centerz="7" radius="1">
+		<monster name="Dragon" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32493" centery="32419" centerz="7" radius="1">
 		<monster name="Dromedary" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -27120,6 +28270,9 @@
 	<spawn centerx="32442" centery="32422" centerz="7" radius="1">
 		<monster name="Scarab" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32485" centery="32422" centerz="7" radius="1">
+		<monster name="Dragon" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32528" centery="32422" centerz="7" radius="1">
 		<monster name="Dromedary" x="-1" y="0" z="7" spawntime="60" direction="2" />
 		<monster name="Dromedary" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -27222,6 +28375,9 @@
 	</spawn>
 	<spawn centerx="32443" centery="32425" centerz="7" radius="1">
 		<monster name="Scarab" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32464" centery="32425" centerz="7" radius="1">
+		<monster name="Dragon" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32501" centery="32425" centerz="7" radius="1">
 		<monster name="Dromedary" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -27349,6 +28505,9 @@
 	<spawn centerx="32443" centery="32428" centerz="7" radius="1">
 		<monster name="Scarab" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32475" centery="32428" centerz="7" radius="1">
+		<monster name="Dragon" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32517" centery="32428" centerz="7" radius="1">
 		<monster name="Dromedary" x="0" y="0" z="7" spawntime="60" direction="2" />
 		<monster name="Dromedary" x="1" y="1" z="7" spawntime="60" direction="2" />
@@ -27382,6 +28541,9 @@
 	</spawn>
 	<spawn centerx="32432" centery="32429" centerz="7" radius="1">
 		<monster name="Scarab" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32497" centery="32429" centerz="7" radius="1">
+		<monster name="Dragon" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32528" centery="32429" centerz="7" radius="1">
 		<monster name="Dromedary" x="0" y="-1" z="7" spawntime="60" direction="2" />
@@ -27523,6 +28685,12 @@
 	<spawn centerx="32450" centery="32433" centerz="7" radius="1">
 		<monster name="Scarab" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32490" centery="32433" centerz="7" radius="1">
+		<monster name="Dragon" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32510" centery="32433" centerz="7" radius="1">
+		<monster name="Dragon" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31559" centery="32434" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -27662,6 +28830,9 @@
 	<spawn centerx="32478" centery="32437" centerz="7" radius="1">
 		<monster name="Scarab" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32498" centery="32437" centerz="7" radius="1">
+		<monster name="Dragon" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31733" centery="32438" centerz="7" radius="1">
 		<monster name="Triceratops" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -27733,6 +28904,15 @@
 	<spawn centerx="32461" centery="32439" centerz="7" radius="1">
 		<monster name="Scarab" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32514" centery="32439" centerz="7" radius="1">
+		<monster name="Dragon" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32528" centery="32439" centerz="7" radius="1">
+		<monster name="Hyaena" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32536" centery="32439" centerz="7" radius="1">
+		<monster name="Dragon" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="31747" centery="32440" centerz="7" radius="1">
 		<monster name="Triceratops" x="1" y="-1" z="7" spawntime="60" direction="2" />
 		<monster name="Tyrannosaurus Rex" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -27769,6 +28949,9 @@
 	</spawn>
 	<spawn centerx="32470" centery="32440" centerz="7" radius="1">
 		<monster name="Scarab" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32520" centery="32440" centerz="7" radius="1">
+		<monster name="Hyaena" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31715" centery="32441" centerz="7" radius="1">
 		<monster name="Tyrannosaurus Rex" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -27813,6 +28996,9 @@
 	</spawn>
 	<spawn centerx="32328" centery="32442" centerz="7" radius="1">
 		<monster name="Scarab" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32499" centery="32442" centerz="7" radius="1">
+		<monster name="Dragon" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31678" centery="32443" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -27885,6 +29071,15 @@
 	</spawn>
 	<spawn centerx="32467" centery="32444" centerz="7" radius="1">
 		<monster name="Scarab" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32514" centery="32444" centerz="7" radius="1">
+		<monster name="Hyaena" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32523" centery="32444" centerz="7" radius="1">
+		<monster name="Hyaena" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32532" centery="32444" centerz="7" radius="1">
+		<monster name="Hyaena" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32541" centery="32444" centerz="7" radius="1">
 		<monster name="Crab" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -27971,6 +29166,9 @@
 	</spawn>
 	<spawn centerx="32481" centery="32447" centerz="7" radius="1">
 		<monster name="Scarab" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32504" centery="32447" centerz="7" radius="1">
+		<monster name="Hyaena" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31727" centery="32448" centerz="7" radius="1">
 		<monster name="Triceratops" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -28114,6 +29312,12 @@
 	</spawn>
 	<spawn centerx="32476" centery="32451" centerz="7" radius="1">
 		<monster name="Sandcrawler" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32510" centery="32451" centerz="7" radius="1">
+		<monster name="Hyaena" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32532" centery="32451" centerz="7" radius="1">
+		<monster name="Hyaena" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31581" centery="32452" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -28323,6 +29527,12 @@
 	</spawn>
 	<spawn centerx="32455" centery="32457" centerz="7" radius="1">
 		<monster name="Sandcrawler" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32500" centery="32457" centerz="7" radius="1">
+		<monster name="Hyaena" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="32537" centery="32457" centerz="7" radius="1">
+		<monster name="Hyaena" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31918" centery="32458" centerz="7" radius="1">
 		<monster name="Triceratops" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -33735,6 +34945,9 @@
 		<monster name="Terminator" x="0" y="-1" z="7" spawntime="60" direction="2" />
 		<monster name="Dest" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31809" centery="32621" centerz="7" radius="1">
+		<monster name="Bardock Ssj4" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32382" centery="32621" centerz="7" radius="1">
 		<monster name="Dest" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -33752,6 +34965,9 @@
 	</spawn>
 	<spawn centerx="31646" centery="32622" centerz="7" radius="1">
 		<monster name="Gohan SSJ4" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31813" centery="32622" centerz="7" radius="1">
+		<monster name="Trunks SSJ4" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31923" centery="32622" centerz="7" radius="1">
 		<monster name="Android" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -33798,6 +35014,9 @@
 	<spawn centerx="31625" centery="32625" centerz="7" radius="1">
 		<monster name="Trunks SSJ4" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31804" centery="32625" centerz="7" radius="1">
+		<monster name="Trunks SSJ4" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32398" centery="32625" centerz="7" radius="1">
 		<monster name="Destroyer" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -33821,6 +35040,9 @@
 	</spawn>
 	<spawn centerx="31792" centery="32626" centerz="7" radius="1">
 		<monster name="Gohan SSJ4" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31828" centery="32626" centerz="7" radius="1">
+		<monster name="Bardock Ssj4" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32386" centery="32626" centerz="7" radius="1">
 		<monster name="Terminator" x="-1" y="-1" z="7" spawntime="60" direction="2" />
@@ -33868,6 +35090,9 @@
 	<spawn centerx="32593" centery="32627" centerz="7" radius="1">
 		<monster name="Dest" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31822" centery="32628" centerz="7" radius="1">
+		<monster name="Trunks SSJ4" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32496" centery="32628" centerz="7" radius="1">
 		<monster name="Aegzengun" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -33886,11 +35111,17 @@
 	<spawn centerx="31769" centery="32629" centerz="7" radius="1">
 		<monster name="Trunks SSJ4" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31817" centery="32629" centerz="7" radius="1">
+		<monster name="Bardock Ssj4" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32392" centery="32629" centerz="7" radius="1">
 		<monster name="Terminator" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32427" centery="32629" centerz="7" radius="1">
 		<monster name="C18" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31805" centery="32630" centerz="7" radius="1">
+		<monster name="Bardock Ssj4" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31851" centery="32630" centerz="7" radius="1">
 		<monster name="Gohan SSJ4" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -33906,6 +35137,9 @@
 	</spawn>
 	<spawn centerx="32576" centery="32630" centerz="7" radius="1">
 		<monster name="Dest" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31835" centery="32631" centerz="7" radius="1">
+		<monster name="Trunks SSJ4" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32404" centery="32631" centerz="7" radius="1">
 		<monster name="Destroyer" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -33942,6 +35176,12 @@
 	</spawn>
 	<spawn centerx="31780" centery="32633" centerz="7" radius="1">
 		<monster name="Goku SSJ4" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31819" centery="32633" centerz="7" radius="1">
+		<monster name="Trunks SSJ4" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31827" centery="32633" centerz="7" radius="1">
+		<monster name="Bardock Ssj4" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32390" centery="32633" centerz="7" radius="1">
 		<monster name="Destroyer" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -34018,6 +35258,9 @@
 	<spawn centerx="31794" centery="32636" centerz="7" radius="1">
 		<monster name="Gohan SSJ4" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31810" centery="32636" centerz="7" radius="1">
+		<monster name="Trunks SSJ4" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32476" centery="32636" centerz="7" radius="1">
 		<monster name="C17" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -34038,6 +35281,9 @@
 	</spawn>
 	<spawn centerx="31697" centery="32637" centerz="7" radius="1">
 		<monster name="Raditz SSJ4" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31836" centery="32637" centerz="7" radius="1">
+		<monster name="Bardock Ssj4" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31845" centery="32637" centerz="7" radius="1">
 		<monster name="Gohan SSJ4" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -34080,6 +35326,13 @@
 	<spawn centerx="31715" centery="32639" centerz="7" radius="1">
 		<monster name="Bardock Ssj4" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31824" centery="32639" centerz="7" radius="1">
+		<monster name="Bardock Ssj4" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
+	<spawn centerx="31830" centery="32639" centerz="7" radius="1">
+		<monster name="Trunks SSJ4" x="-1" y="0" z="7" spawntime="0" direction="2" />
+		<monster name="Trunks SSJ4" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32380" centery="32639" centerz="7" radius="1">
 		<monster name="Dest" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -34088,6 +35341,9 @@
 	</spawn>
 	<spawn centerx="32583" centery="32639" centerz="7" radius="1">
 		<monster name="Destroyer" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31814" centery="32640" centerz="7" radius="1">
+		<monster name="Bardock Ssj4" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="32385" centery="32640" centerz="7" radius="1">
 		<monster name="Destroyer" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -34155,6 +35411,9 @@
 	<spawn centerx="32577" centery="32643" centerz="7" radius="1">
 		<monster name="Terminator" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31837" centery="32644" centerz="7" radius="1">
+		<monster name="Trunks SSJ4" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32367" centery="32644" centerz="7" radius="1">
 		<monster name="Terminator" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -34194,6 +35453,9 @@
 	<spawn centerx="31808" centery="32647" centerz="7" radius="1">
 		<monster name="Trunks SSJ4" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31820" centery="32647" centerz="7" radius="1">
+		<monster name="Trunks SSJ4" x="0" y="0" z="7" spawntime="0" direction="2" />
+	</spawn>
 	<spawn centerx="32379" centery="32647" centerz="7" radius="1">
 		<monster name="Terminator" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -34220,6 +35482,9 @@
 	</spawn>
 	<spawn centerx="31685" centery="32648" centerz="7" radius="1">
 		<monster name="Goku SSJ4" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31828" centery="32648" centerz="7" radius="1">
+		<monster name="Bardock Ssj4" x="0" y="0" z="7" spawntime="0" direction="2" />
 	</spawn>
 	<spawn centerx="31854" centery="32648" centerz="7" radius="1">
 		<monster name="Gohan SSJ4" x="0" y="0" z="7" spawntime="60" direction="2" />
