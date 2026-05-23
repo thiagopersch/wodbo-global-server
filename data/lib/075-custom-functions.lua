@@ -27,7 +27,7 @@ function doExpandingWaveCombat(cid, config)
 
   local function isBlocked(pos)
     -- Verifica se o tile existe primeiro para evitar spam de "Tile not found" no console
-    local ground = getThingfromPos({ x = pos.x, y = pos.y, z = pos.z, stackpos = 0 })
+    local ground = getThingfromPos({ x = pos.x, y = pos.y, z = pos.z, stackpos = 0 }, false)
     if ground.itemid == 0 then return true end -- Se não há chão, está bloqueado
 
     local t = getTileInfo(pos)

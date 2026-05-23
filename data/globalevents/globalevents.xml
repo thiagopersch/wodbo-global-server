@@ -4,7 +4,6 @@
 	<globalevent name="lottery" interval="7200000" event="script" value="lottery.lua" />
 	<globalevent name="broadcastMessage" interval="60000" script="broadcastMessage.lua" />
 	<globalevent name="textoTeleport" interval="900" script="textoTeleport.lua" />
-	<!-- <globalevent name="playereffect" interval="1000" script="playerEffect.lua" /> -->
 	<globalevent name="save" interval="3600000" event="script" value="save.lua" />
 	<globalevent name="clean" interval="3600000" event="script" value="clean.lua" />
 	<globalevent name="record" type="record" event="script" value="record.lua" />

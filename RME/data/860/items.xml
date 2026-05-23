@@ -64554,6 +64554,82 @@
 		<attribute key="type" value="bed" />
 		<attribute key="partnerDirection" value="south" />
 	</item>
+	<item id="44815" name="scrap metal and bone">
+		<attribute key="weight" value="150" />
+		<attribute key="description" value="A bunch of useful scraps and gears." />
+	</item>
+	<item id="44944" name="pulsating red mass">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="It still beats slightly." />
+	</item>
+	<item id="45519" name="wooden stake">
+		<attribute key="weight" value="250" />
+		<attribute key="description" value="Useful to slay vampires and dark creatures." />
+	</item>
+	<item id="45520" name="ancient stone face">
+		<attribute key="weight" value="450" />
+		<attribute key="description" value="An ancient relic from a forgotten civilization." />
+	</item>
+	<item id="45521" name="broken stone face">
+		<attribute key="weight" value="220" />
+		<attribute key="description" value="Half of an ancient stone relic." />
+	</item>
+	<item id="45522" name="stone fragment">
+		<attribute key="weight" value="90" />
+		<attribute key="description" value="A small piece of an ancient ruins." />
+	</item>
+	<item id="45523" name="ancient fossil">
+		<attribute key="weight" value="120" />
+		<attribute key="description" value="A remnant of a forgotten era." />
+	</item>
+	<item id="45524" name="sparking feather">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="It crackles with volatile lightning energy." />
+	</item>
+	<item id="45525" name="behemoth tooth">
+		<attribute key="weight" value="180" />
+		<attribute key="description" value="A very sharp and large monster tooth." />
+	</item>
+	<item id="45526" name="mystic cloth">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A piece of fabric woven with ancient magic." />
+	</item>
+	<item id="45579" name="demonic claw">
+		<attribute key="weight" value="210" />
+		<attribute key="description" value="A severed claw from a hellish creature." />
+	</item>
+	<item id="45580" name="yeti fluff">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="Extremely soft and cold to the touch." />
+	</item>
+	<item id="45581" name="mutated root">
+		<attribute key="weight" value="150" />
+		<attribute key="description" value="A weird, fleshy plant root." />
+	</item>
+	<item id="45582" name="medicinal herbs">
+		<attribute key="weight" value="40" />
+		<attribute key="description" value="A bundle of leaves used to brew potions." />
+	</item>
+	<item id="45583" name="ethereal essence">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A crystalized piece of pure magical energy." />
+	</item>
+	<item id="45584" name="deer antlers">
+		<attribute key="weight" value="260" />
+		<attribute key="description" value="A nice hunter's trophy." />
+	</item>
+	<item id="45591" name="runic slate">
+		<attribute key="weight" value="300" />
+		<attribute key="description" value="It contains ancient incantations." />
+	</item>
+	<item id="45592" name="spiked collar">
+		<attribute key="weight" value="180" />
+		<attribute key="description" value="Usually worn by fierce war hounds." />
+	</item>
+	<item id="45593" name="brass compass">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="A handy tool so you never lose your way." />
+	</item>
 	<item id="45527" article="a" name="indie mace">
 		<attribute key="weight" value="3300" />
 		<attribute key="attack" value="40" />
@@ -64677,11 +64753,163 @@
 	<item id="45575" article="a" name="ancient doll">
 		<attribute key="weight" value="850" />
 	</item>
+	<item id="47071" name="gemstone dust">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="Golden remnants of broken jewelry." />
+	</item>
+	<item id="47072" name="raw ruby chunk">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="An uncut red gem." />
+	</item>
+	<item id="47073" name="dragon scale">
+		<attribute key="weight" value="90" />
+		<attribute key="description" value="A very hard, red reptilian scale." />
+	</item>
+	<item id="47074" name="raw sapphire chunk">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="An uncut blue gem." />
+	</item>
+	<item id="47075" name="sea serpent scale">
+		<attribute key="weight" value="90" />
+		<attribute key="description" value="A slick, blue aquatic scale." />
+	</item>
+	<item id="47076" name="raw emerald chunk">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="An uncut green gem." />
+	</item>
+	<item id="47077" name="hydra scale">
+		<attribute key="weight" value="90" />
+		<attribute key="description" value="A toxic green scale." />
+	</item>
+	<item id="47078" name="raw topaz chunk">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="An uncut yellow gem." />
+	</item>
+	<item id="47079" name="wyrm scale">
+		<attribute key="weight" value="90" />
+		<attribute key="description" value="A glowing yellow scale." />
+	</item>
 	<item id="47080" article="the" name="ancient amulet carpet" />
 	<item id="47081" article="the" name="purple green ring of ending carpet" />
 	<item id="47392" article="the" name="rippes carpet" />
 	<item id="47394" article="the" name="quards carpet" />
 	<item id="47396" article="the" name="quards ruby carpet" />
+	<item id="48411" name="green slime puff">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A piece of highly toxic gas or slime." />
+	</item>
+	<item id="48783" name="magic sparkles">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="Gleaming magical residue." />
+	</item>
+	<item id="48784" name="mutated tongue">
+		<attribute key="weight" value="120" />
+		<attribute key="description" value="A gross, fleshy appendage." />
+	</item>
+	<item id="48785" name="large tusk">
+		<attribute key="weight" value="250" />
+		<attribute key="description" value="A sharp tusk from a wild beast." />
+	</item>
+	<item id="48786" name="obsidian claw">
+		<attribute key="weight" value="180" />
+		<attribute key="description" value="A dark and razor-sharp claw." />
+	</item>
+	<item id="48787" name="silver moon coin">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="An ancient coin bearing the mark of the moon." />
+	</item>
+	<item id="48788" name="silver rabbit coin">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="An ancient coin depicting a rabbit." />
+	</item>
+	<item id="48789" name="golden sun coin">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A valuable coin shining with a sun emblem." />
+	</item>
+	<item id="48790" name="golden tiger coin">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A golden coin stamped with a fierce tiger." />
+	</item>
+	<item id="48791" name="lunar pendant">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="A beautiful silver crescent ornament." />
+	</item>
+	<item id="48792" name="solar pendant">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="A radiant golden sun ornament." />
+	</item>
+	<item id="48793" name="ancient astrolabe">
+		<attribute key="weight" value="150" />
+		<attribute key="description" value="Used by old navigators to read the stars." />
+	</item>
+	<item id="48794" name="lunar compass">
+		<attribute key="weight" value="150" />
+		<attribute key="description" value="It points towards the strongest source of magic." />
+	</item>
+	<item id="48795" name="mystic ocarina">
+		<attribute key="weight" value="200" />
+		<attribute key="description" value="An enchanted wind instrument." />
+	</item>
+	<item id="48796" name="sea bubbles">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="Magical breath from the ocean depths." />
+	</item>
+	<item id="48833" name="toxic pods">
+		<attribute key="weight" value="90" />
+		<attribute key="description" value="Strange pulsating green spores." />
+	</item>
+	<item id="48834" name="bloody gland">
+		<attribute key="weight" value="160" />
+		<attribute key="description" value="It oozes a dark, corrupted blood." />
+	</item>
+	<item id="48835" name="soft paw">
+		<attribute key="weight" value="300" />
+		<attribute key="description" value="A large, furry beast paw." />
+	</item>
+	<item id="48836" name="red mantis claw">
+		<attribute key="weight" value="210" />
+		<attribute key="description" value="A dangerous crimson insect limb." />
+	</item>
+	<item id="48837" name="acid blob">
+		<attribute key="weight" value="110" />
+		<attribute key="description" value="A highly corrosive puddle of goo." />
+	</item>
+	<item id="48900" name="blood ore">
+		<attribute key="weight" value="450" />
+		<attribute key="description" value="A heavy rock with red crystal veins." />
+	</item>
+	<item id="48901" name="bone spine">
+		<attribute key="weight" value="280" />
+		<attribute key="description" value="A piece of skeletal remains." />
+	</item>
+	<item id="48902" name="swamp algae">
+		<attribute key="weight" value="40" />
+		<attribute key="description" value="Smelly green aquatic plants." />
+	</item>
+	<item id="48903" name="thorny branch">
+		<attribute key="weight" value="130" />
+		<attribute key="description" value="A prickly piece of mutated flora." />
+	</item>
+	<item id="48904" name="dried vines">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="Tough and withered plant stems." />
+	</item>
+	<item id="48905" name="shadow shard">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A jagged piece of dark crystalline energy." />
+	</item>
+	<item id="48906" name="torn bat wing">
+		<attribute key="weight" value="70" />
+		<attribute key="description" value="A severed, leathery red wing." />
+	</item>
+	<item id="48907" name="fiery stone block">
+		<attribute key="weight" value="500" />
+		<attribute key="description" value="A heavy building block emanating heat." />
+	</item>
+	<item id="48908" name="crimson orb">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A perfectly spherical red gem." />
+	</item>
 	<item id="48556" name="fitzwilliam's special reserve death">
 		<attribute key="weight" value="100" />
 		<attribute
@@ -64722,6 +64950,46 @@
 	</item>
 	<item fromid="48770" toid="48781" article="a" name="sacrificial bed">
 		<attribute key="type" value="bed" />
+	</item>
+	<item id="48909" name="corrupted heart">
+		<attribute key="weight" value="150" />
+		<attribute key="description" value="A dark, decaying heart." />
+	</item>
+	<item id="48910" name="blood crystal shard">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A jagged piece of crystallized blood." />
+	</item>
+	<item id="48911" name="pale grub">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="A plump, pale insect larva." />
+	</item>
+	<item id="48912" name="striped snake skin">
+		<attribute key="weight" value="60" />
+		<attribute key="description" value="A piece of shed snake skin." />
+	</item>
+	<item id="48913" name="obsidian gravel">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Tiny pieces of dark stone." />
+	</item>
+	<item id="48914" name="cracked shadow orb">
+		<attribute key="weight" value="250" />
+		<attribute key="description" value="It pulses with a dark, hidden energy." />
+	</item>
+	<item id="48915" name="magenta silk pouch">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A finely woven pouch holding unknown dust." />
+	</item>
+	<item id="48916" name="spiked shell">
+		<attribute key="weight" value="120" />
+		<attribute key="description" value="A heavy, calcified seashell." />
+	</item>
+	<item id="48917" name="brass bell">
+		<attribute key="weight" value="200" />
+		<attribute key="description" value="A small, tarnished brass bell." />
+	</item>
+	<item id="48918" name="conch horn">
+		<attribute key="weight" value="180" />
+		<attribute key="description" value="A beautifully crafted horn made from a large shell." />
 	</item>
 	<item id="48919" article="a" name="sanguine blade">
 		<attribute key="weight" value="3300" />
@@ -65010,6 +65278,53 @@
 	<item id="49017" article="a" name="earth bull doll">
 		<attribute key="weight" value="850" />
 	</item>
+	<item id="49018" article="a" name="primitive cerberus doll">
+		<attribute key="weight" value="850" />
+	</item>
+	<item id="49019" name="brass funnel">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="A small component of a larger machine." />
+	</item>
+	<item id="49020" name="golden valve">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A mechanical valve made of solid gold." />
+	</item>
+	<item id="49021" name="dark energy core">
+		<attribute key="weight" value="150" />
+		<attribute key="description" value="A strange stone crackling with purple energy." />
+	</item>
+	<item id="49022" name="broken obsidian blade">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="A sharp fragment of a dark weapon." />
+	</item>
+	<item id="49023" name="strange contraption">
+		<attribute key="weight" value="400" />
+		<attribute key="description" value="An odd mechanical device assembled from various parts." />
+	</item>
+	<item id="49024" name="cursed scroll">
+		<attribute key="weight" value="60" />
+		<attribute key="description" value="An ancient parchment tied with a skeletal bone." />
+	</item>
+	<item id="49099" name="broken robotic core">
+		<attribute key="weight" value="150" />
+		<attribute key="description" value="A sparking mechanical piece that still holds some power." />
+	</item>
+	<item id="49100" name="empty strange flask">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="An empty glass container of unusual shape." />
+	</item>
+	<item id="49101" name="metal canister">
+		<attribute key="weight" value="120" />
+		<attribute key="description" value="A sturdy metal container for storing unknown substances." />
+	</item>
+	<item id="49102" name="ornate hand mirror">
+		<attribute key="weight" value="40" />
+		<attribute key="description" value="A beautifully crafted silver mirror." />
+	</item>
+	<item id="49103" name="crystal horseshoe">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="It glows softly with a cold, mystical energy." />
+	</item>
 	<item id="49119" article="a" name="training shield">
 		<attribute key="weight" value="1000" />
 		<attribute key="armor" value="10" />
@@ -65061,8 +65376,9 @@
 		<attribute key="absorbpercentall" value="100" />
 		<attribute key="weaponType" value="shield" />
 	</item>
-	<item id="49018" article="a" name="primitive cerberus doll">
-		<attribute key="weight" value="850" />
+	<item id="49146" name="pile of earth dust">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A small pile of finely ground dirt." />
 	</item>
 	<item fromid="49153" toid="49164" article="a" name="feno bed">
 		<attribute key="type" value="bed" />
@@ -67391,6 +67707,7 @@
 	</item>
 	<item id="49597" article="a" name="break hollow mask">
 		<attribute key="weight" value="1000" />
+		<attribute key="description" value="Defense +10, regeneration HP/MP 800 per 1s" />
 		<attribute key="armor" value="20" />
 		<attribute key="defense" value="10" />
 		<attribute key="healthGain" value="800" />
@@ -70016,7 +70333,7 @@
 		<attribute key="magiclevelpoints" value="5" />
 		<attribute key="absorbpercentenergy" value="90" />
 		<attribute key="absorbpercentpoison" value="-90" />
-		<attribute key="slotType" value="body" />
+		<attribute key="slotType" value="feet" />
 	</item>
 	<item id="49887" article="a" name="energy cloak">
 		<attribute key="weight" value="10000" />
@@ -70056,6 +70373,7 @@
 	</item>
 	<item id="49890" article="a" name="energy necklace">
 		<attribute key="weight" value="10000" />
+		<attribute key="description" value="magic level +5, absorb energy +5% and absorb poison -90%" />
 		<attribute key="magiclevelpoints" value="5" />
 		<attribute key="absorbpercentenergy" value="90" />
 		<attribute key="absorbpercentpoison" value="-90" />
@@ -70096,6 +70414,226 @@
 	<item id="49920" name="dark browns ramps ground" />
 	<item fromid="49921" toid="49922" name="dark stones ground" />
 	<item fromid="49923" toid="49924" name="dark stones ground" />
+  <item id="51887" name="fighter bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="51888" name="fighter bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="51889" name="fighter bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="51890" name="fighter bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
+	<item id="51915" name="green sleeping bag">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52155" name="gothic stone bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52156" name="gothic stone bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52157" name="gothic stone bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52158" name="gothic stone bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52159" name="gothic stone bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52160" name="gothic stone bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52161" name="gothic stone bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="52162" name="gothic stone bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
+	<item id="52163" name="spiked demonic bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52164" name="spiked demonic bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52165" name="spiked demonic bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="52166" name="spiked demonic bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
+	<item id="52189" name="purple sakura bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52190" name="purple sakura bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52191" name="purple sakura bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52192" name="purple sakura bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52193" name="purple sakura bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="52194" name="purple sakura bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
+	<item id="52195" name="purple sakura bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="52196" name="purple sakura bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
+	<item id="52197" name="purple sakura bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52198" name="purple sakura bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52199" name="purple sakura bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="52200" name="purple sakura bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
+	<item id="52232" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52233" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52234" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52235" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52236" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="52237" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
+	<item id="52238" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="52239" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
+	<item id="52240" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52241" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52242" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="52243" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
+	<item id="52250" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="52251" name="pink rose bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
+	<item id="52276" name="dark ritual bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52277" name="dark ritual bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52278" name="dark ritual bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52279" name="dark ritual bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52280" name="dark ritual bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="52281" name="dark ritual bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
+	<item id="52282" name="dark ritual bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="52283" name="dark ritual bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
+	<item id="52284" name="dark ritual bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="52285" name="dark ritual bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+	</item>
+	<item id="52286" name="dark ritual bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+	</item>
+	<item id="52287" name="dark ritual bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+	</item>
 	<item id="55794" name="one star backpack">
 		<attribute key="weight" value="500" />
 		<attribute key="containerSize" value="30" />
@@ -72037,33 +72575,6 @@
 		<attribute key="slotType" value="backpack" />
 	</item>
 
-
-	<item id="56328" name="mystic gold stone">
-		<attribute key="weight" value="10000" />
-		<attribute key="description" value="This item is used to perform any vocation upgrade." />
-	</item>
-	<item id="56386" name="universal fragment">
-		<attribute key="weight" value="10000" />
-		<attribute key="description" value="This item is used to perform any vocation upgrade." />
-	</item>
-	<item id="56411" name="silver universal fragment">
-		<attribute key="weight" value="10000" />
-		<attribute key="description" value="This item is used to perform any vocation upgrade." />
-	</item>
-	<item id="56412" name="diamond universal fragment">
-		<attribute key="weight" value="10000" />
-		<attribute key="description" value="This item is used to perform any vocation upgrade." />
-	</item>
-	<item id="56413" name="bronze universal fragment">
-		<attribute key="weight" value="10000" />
-		<attribute key="description" value="This item is used to perform any vocation upgrade." />
-	</item>
-	<item id="56414" name="gold universal fragment">
-		<attribute key="weight" value="10000" />
-		<attribute key="description" value="This item is used to perform any vocation upgrade." />
-	</item>
-
-	<!-- DAILY REWARD SYSTEM ITEMS -->
 	<!-- Senzus -->
 	<item id="56818" name="senzu of the devil">
 		<attribute key="weight" value="1000" />
@@ -72114,69 +72625,8 @@
 		<attribute key="weight" value="100" />
 		<attribute key="description" value="Aumenta seu ganho de experiencia em 50% por 24h" />
 	</item>
-	<item id="56406" name="skill potion 30min">
-		<attribute key="weight" value="100" />
-		<attribute key="description" value="Aumenta sua skill em 25% por 30min" />
-	</item>
-	<item id="56404" name="skill potion 1h">
-		<attribute key="weight" value="100" />
-		<attribute key="description" value="Aumenta sua skill em 25% por 1h" />
-	</item>
-	<item id="56403" name="skill potion 2h">
-		<attribute key="weight" value="100" />
-		<attribute key="description" value="Aumenta sua skill em 25% por 2h" />
-	</item>
-	<item id="56405" name="skill potion 3h">
-		<attribute key="weight" value="100" />
-		<attribute key="description" value="Aumenta sua skill em 25% por 3h" />
-	</item>
-	<item id="56408" name="skill potion 6h">
-		<attribute key="weight" value="100" />
-		<attribute key="description" value="Aumenta sua skill em 25% por 6h" />
-	</item>
-	<item id="56410" name="skill potion 12h">
-		<attribute key="weight" value="100" />
-		<attribute key="description" value="Aumenta sua skill em 25% por 12h" />
-	</item>
-	<item id="56409" name="skill potion 24h">
-		<attribute key="weight" value="100" />
-		<attribute key="description" value="Aumenta sua skill em 25% por 24h" />
-	</item>
-
-	<!-- Boxes and Misc -->
-	<item id="56396" name="red box mystery">
-		<attribute key="weight" value="100" />
-		<attribute key="description" value="Abre e pega apenas um item aleatorio" />
-	</item>
-	<item id="56397" name="green box mystery">
-		<attribute key="weight" value="100" />
-		<attribute key="description" value="Abre e pega apenas um item aleatorio" />
-	</item>
-	<item id="56399" name="chest system key">
-		<attribute key="weight" value="100" />
-		<attribute key="description" value="Chave necessaria para abrir um bau no sistema de chest." />
-	</item>
-	<item id="56392" name="ectoplasmasma stone">
-		<attribute key="weight" value="100" />
-		<attribute key="description"
-			value="Pedra mistica para encantar itens no sistema de enchantment." />
-	</item>
-
-	<!-- Points -->
-	<item id="56449" name="10 points">
-		<attribute key="description" value="Concede 10 pontos no shopping." />
-	</item>
-	<item id="56451" name="20 points">
-		<attribute key="description" value="Concede 20 pontos no shopping." />
-	</item>
 
 	<!-- Backpacks -->
-	
-	
-	
-	
-	
-
 	<item id="51719" name="red small chest">
 		<attribute key="weight" value="12000" />
 		<attribute key="containerSize" value="15" />
@@ -72312,6 +72762,1736 @@
 	<item id="52079" name="blue magic box">
 		<attribute key="weight" value="12000" />
 		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56172" name="energy drink can">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="An energizing beverage to boost your stamina." />
+	</item>
+	<item id="56173" name="blue speckled egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A mysterious blue monster egg." />
+	</item>
+	<item id="56174" name="green cracked egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A mysterious green monster egg." />
+	</item>
+	<item id="56175" name="orange patterned egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A mysterious orange monster egg." />
+	</item>
+	<item id="56176" name="purple egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A plain purple monster egg." />
+	</item>
+	<item id="56177" name="red scaly egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A tough red egg with dragon-like scales." />
+	</item>
+	<item id="56178" name="white egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A plain white monster egg." />
+	</item>
+	<item id="56179" name="golden egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A very valuable glowing golden egg." />
+	</item>
+	<item id="56180" name="striped egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A weirdly striped monster egg." />
+	</item>
+	<item id="56181" name="blue surprise bag">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A festive blue bag containing presents." />
+		<attribute key="containerSize" value="8" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56182" name="red surprise bag">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A festive red bag containing presents." />
+		<attribute key="containerSize" value="8" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56183" name="orange surprise bag">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A festive orange bag containing presents." />
+		<attribute key="containerSize" value="8" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56184" name="white present box">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A beautifully wrapped gift box." />
+	</item>
+	<item id="56185" name="crimson elixir">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A fancy flask containing a magical red liquid." />
+	</item>
+	<item id="56186" name="green experience scroll">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="Read it to gain a burst of experience." />
+	</item>
+	<item id="56187" name="blue experience scroll">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="Read it to gain a burst of experience." />
+	</item>
+	<item id="56188" name="red experience scroll">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="Read it to gain a burst of experience." />
+	</item>
+	<item id="56189" name="purple experience scroll">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="Read it to gain a burst of experience." />
+	</item>
+	<item id="56190" name="blue present box">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A beautifully wrapped gift box." />
+	</item>
+	<item id="56191" name="cyan present box">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A beautifully wrapped gift box." />
+	</item>
+	<item id="56192" name="purple present box">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A beautifully wrapped gift box." />
+	</item>
+	<item id="56193" name="pink present box">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A beautifully wrapped gift box." />
+	</item>
+	<item id="56194" name="golden ticket">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A shiny premium ticket." />
+	</item>
+	<item id="56195" name="blue pearl">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A perfectly round and glowing blue pearl." />
+	</item>
+	<item id="56196" name="phantom mask">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="A scary white ghost mask." />
+	</item>
+	<item id="56197" name="halloween pumpkin">
+		<attribute key="weight" value="40" />
+		<attribute key="description" value="A classic carved pumpkin." />
+	</item>
+	<item id="56198" name="mutated pumpkin">
+		<attribute key="weight" value="40" />
+		<attribute key="description" value="A creepy blue carved pumpkin." />
+	</item>
+	<item id="56199" name="meat on a bone">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A delicious looking piece of meat." />
+	</item>
+	<item id="56200" name="skull totem">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A small skull mounted on a wooden stick." />
+	</item>
+	<item id="56201" name="cursed skull">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A skull radiating a strange blue aura." />
+	</item>
+	<item id="56202" name="red crystal shard">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A sharp fragment of red crystal." />
+	</item>
+	<item id="56203" name="purple crystal shard">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A sharp fragment of purple crystal." />
+	</item>
+	<item id="56204" name="orange crystal shard">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A sharp fragment of orange crystal." />
+	</item>
+	<item id="56205" name="green crystal shard">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A sharp fragment of green crystal." />
+	</item>
+	<item id="56206" name="blue crystal shard">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A sharp fragment of blue crystal." />
+	</item>
+	<item id="56207" name="yellow crystal shard">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A sharp fragment of yellow crystal." />
+	</item>
+	<item id="56208" name="pink crystal shard">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A sharp fragment of pink crystal." />
+	</item>
+	<item id="56209" name="golden reliquary">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="A small, elegant treasure chest." />
+	</item>
+	<item id="56210" name="silver pass">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A metallic card with the number 2." />
+	</item>
+	<item id="56211" name="red magic orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A sphere of concentrated magical energy." />
+	</item>
+	<item id="56212" name="blue magic orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A sphere of concentrated magical energy." />
+	</item>
+	<item id="56213" name="green magic orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A sphere of concentrated magical energy." />
+	</item>
+	<item id="56214" name="white magic orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A sphere of concentrated magical energy." />
+	</item>
+	<item id="56215" name="crimson magic orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A sphere of concentrated magical energy." />
+	</item>
+	<item id="56216" name="black magic orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A sphere of concentrated magical energy." />
+	</item>
+	<item id="56217" name="orange access card">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A plastic card used for security access." />
+	</item>
+	<item id="56218" name="blue access card">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A plastic card used for security access." />
+	</item>
+	<item id="56219" name="pumpkin bucket">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="Used to collect candies during Halloween." />
+	</item>
+	<item id="56220" name="square pumpkin">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="An oddly shaped pumpkin." />
+	</item>
+	<item id="56221" name="lit pumpkin">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A small glowing pumpkin." />
+	</item>
+	<item id="56222" name="lit pumpkin">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A small glowing pumpkin." />
+	</item>
+	<item id="56223" name="lit pumpkin">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A small glowing pumpkin." />
+	</item>
+	<item id="56224" name="lit pumpkin">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A small glowing pumpkin." />
+	</item>
+	<item id="56225" name="lit pumpkin">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A small glowing pumpkin." />
+	</item>
+	<item id="56226" name="lit pumpkin">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A small glowing pumpkin." />
+	</item>
+	<item id="56227" name="purple access card">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A plastic card used for security access." />
+	</item>
+	<item id="56228" name="letter A card">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A card with the letter A." />
+	</item>
+	<item id="56229" name="letter B card">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A card with the letter B." />
+	</item>
+	<item id="56230" name="letter D card">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A card with the letter D." />
+	</item>
+	<item id="56231" name="letter G card">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A card with the letter G." />
+	</item>
+	<item id="56232" name="letter M card">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A card with the letter M." />
+	</item>
+	<item id="56233" name="letter N card">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A card with the letter N." />
+	</item>
+	<item id="56234" name="red hood emblem">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A dark red emblem pin." />
+	</item>
+	<item id="56235" name="little ghost companion">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="A spooky but friendly little spirit." />
+	</item>
+	<item id="56236" name="pirate hat">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="Yarrr! A proper captain's hat." />
+	</item>
+	<item id="56237" name="white skull">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="Just a regular human skull." />
+	</item>
+	<item id="56238" name="demonic mask">
+		<attribute key="weight" value="18" />
+		<attribute key="description" value="A scary red ritual mask." />
+	</item>
+	<item id="56239" name="glowing orange crystal">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A perfectly cut crystal that glows warmly." />
+	</item>
+	<item id="56240" name="glowing pink crystal">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A perfectly cut crystal that glows warmly." />
+	</item>
+	<item id="56241" name="glowing red crystal">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A perfectly cut crystal that glows warmly." />
+	</item>
+	<item id="56242" name="glowing green crystal">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A perfectly cut crystal that glows warmly." />
+	</item>
+	<item id="56243" name="glowing purple crystal">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A perfectly cut crystal that glows warmly." />
+	</item>
+	<item id="56244" name="glowing blue crystal">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A perfectly cut crystal that glows warmly." />
+	</item>
+	<item id="56245" name="glowing grey crystal">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A perfectly cut crystal that glows warmly." />
+	</item>
+	<item id="56246" name="secret folder">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="It contains highly classified information." />
+	</item>
+	<item id="56247" name="pink lightning bolt">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A crackling piece of pink magical energy." />
+	</item>
+	<item id="56248" name="one-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with one red star inside." />
+	</item>
+	<item id="56249" name="two-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with two red stars inside." />
+	</item>
+	<item id="56250" name="three-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with three red stars inside." />
+	</item>
+	<item id="56251" name="four-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with four red stars inside." />
+	</item>
+	<item id="56252" name="five-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with five red stars inside." />
+	</item>
+	<item id="56253" name="six-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with six red stars inside." />
+	</item>
+	<item id="56254" name="large one-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with seven red stars inside." />
+	</item>
+	<item id="56255" name="seven-star dragon ball">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A massive mystical orange sphere with one red star inside." />
+	</item>
+	<item id="56256" name="large two-star dragon ball">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A massive mystical orange sphere with two red stars inside." />
+	</item>
+	<item id="56257" name="large three-star dragon ball">
+		<attribute key="weight" value="20" />
+		<attribute key="description"
+			value="A massive mystical orange sphere with three red stars inside." />
+	</item>
+	<item id="56258" name="large six-star dragon ball">
+		<attribute key="weight" value="20" />
+		<attribute key="description"
+			value="A massive mystical orange sphere with four red stars inside." />
+	</item>
+	<item id="56259" name="large four-star dragon ball">
+		<attribute key="weight" value="20" />
+		<attribute key="description"
+			value="A massive mystical orange sphere with five red stars inside." />
+	</item>
+	<item id="56260" name="large seven-star dragon ball">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A massive mystical orange sphere with six red stars inside." />
+	</item>
+	<item id="56261" name="pumpkin lollipop">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A sweet Halloween treat." />
+	</item>
+	<item id="56262" name="cardboard box">
+		<attribute key="weight" value="150" />
+		<attribute key="description" value="A sealed package ready for delivery." />
+		<attribute key="containerSize" value="5" />
+	</item>
+	<item id="56263" name="pink glass orb">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A perfectly smooth and shiny sphere." />
+	</item>
+	<item id="56264" name="cyan glass orb">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A perfectly smooth and shiny sphere." />
+	</item>
+	<item id="56265" name="monster backpack">
+		<attribute key="weight" value="18" />
+		<attribute key="description" value="A spooky backpack stitched together like a famous monster." />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56266" name="golden upgrade token">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="It can be used to improve your equipment." />
+	</item>
+	<item id="56267" name="blue scarab shell">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="The hardened carapace of a desert insect." />
+	</item>
+	<item id="56268" name="red scarab shell">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="The hardened carapace of a desert insect." />
+	</item>
+	<item id="56269" name="dusty pouches">
+		<attribute key="weight" value="40" />
+		<attribute key="description" value="A pair of small bags tied together." />
+		<attribute key="containerSize" value="12" />
+	</item>
+	<item id="56270" name="black magnetic card">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A high-level security access card." />
+	</item>
+	<item id="56271" name="yellow magnetic card">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A colorful security access card." />
+	</item>
+	<item id="56272" name="purple magnetic card">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="An access card stamped with the letter M." />
+	</item>
+	<item id="56273" name="dragon balls radar">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A magical amulet vibrating with nature energy." />
+	</item>
+	<item id="56274" name="sturdy pickaxe">
+		<attribute key="weight" value="450" />
+		<attribute key="description" value="A reliable tool for mining hard rocks." />
+	</item>
+	<item id="56275" name="crimson pickaxe">
+		<attribute key="weight" value="450" />
+		<attribute key="description" value="A mining tool forged with blood-red metal." />
+	</item>
+	<item id="56276" name="red dragon balls radar">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="An eerie amulet that seems to be watching you." />
+	</item>
+	<item id="56277" name="emerald treasure chest">
+		<attribute key="weight" value="250" />
+		<attribute key="description" value="A beautiful chest adorned with green gems." />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56278" name="topaz treasure chest">
+		<attribute key="weight" value="250" />
+		<attribute key="description" value="A beautiful chest adorned with yellow gems." />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56279" name="ruby treasure chest">
+		<attribute key="weight" value="250" />
+		<attribute key="description" value="A beautiful chest adorned with red gems." />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56280" name="amethyst treasure chest">
+		<attribute key="weight" value="250" />
+		<attribute key="description" value="A beautiful chest adorned with purple gems." />
+		<attribute key="containerSize" value="15" />
+	</item>
+	<item id="56281" name="crimson treasure box">
+		<attribute key="weight" value="300" />
+		<attribute key="containerSize" value="15" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="56282" name="champion's medal">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="Awarded to the greatest heroes." />
+	</item>
+	<item id="56283" name="golden pickaxe">
+		<attribute key="weight" value="500" />
+		<attribute key="description" value="Too soft for real mining, but very valuable." />
+	</item>
+	<item id="56284" name="frost pickaxe">
+		<attribute key="weight" value="400" />
+		<attribute key="description" value="A tool carved entirely out of magical ice." />
+	</item>
+	<item id="56285" name="shadow pickaxe">
+		<attribute key="weight" value="450" />
+		<attribute key="description" value="It absorbs the light around it." />
+	</item>
+	<item id="56286" name="mystory dark metal box">
+		<attribute key="weight" value="600" />
+		<attribute key="description" value="Returns a random item from the shadows." />
+	</item>
+	<item id="56287" name="dark amethyst">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A beautiful, deep purple gemstone." />
+	</item>
+	<item id="56288" name="glowing ruby">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A flawless red gem radiating heat." />
+	</item>
+	<item id="56289" name="glowing obsidian">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A dark gem pulsing with shadow energy." />
+	</item>
+	<item id="56290" name="glowing emerald">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A vibrant green gem full of life energy." />
+	</item>
+	<item id="56291" name="demon bat wing">
+		<attribute key="weight" value="120" />
+		<attribute key="description" value="A leathery wing torn from a creature of the abyss." />
+	</item>
+	<item id="56292" name="pure crystal">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="A flawless, transparent crystal block." />
+	</item>
+	<item id="56293" name="enchanted pickaxe">
+		<attribute key="weight" value="450" />
+		<attribute key="description" value="A mining tool infused with magic." />
+	</item>
+	<item id="56294" name="ticket dungeon">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="An exclusive item from the old boss dungeons." />
+	</item>
+	<item id="56295" name="old bronze key">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A simple key and is exclusive pass for dungeons." />
+	</item>
+	<item id="56296" name="ornate silver key">
+		<attribute key="weight" value="5" />
+		<attribute key="description"
+			value="A beautifully crafted key and is exclusive pass for dungeons." />
+	</item>
+	<item id="56297" name="golden skeleton key">
+		<attribute key="weight" value="8" />
+		<attribute key="description"
+			value="A master key forged in gold and is exclusive pass for dungeons." />
+	</item>
+	<item id="56298" name="tome of nature">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="It glows with a toxic green aura." />
+	</item>
+	<item id="56299" name="tome of fire">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="The pages are warm to the touch." />
+	</item>
+	<item id="56300" name="tome of shadow">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="A book containing forbidden dark magic." />
+	</item>
+	<item id="56301" name="tome of illusion">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="It glows with a mesmerizing pink light." />
+	</item>
+	<item id="56302" name="open tome of blood">
+		<attribute key="weight" value="85" />
+		<attribute key="description" value="The arcane symbols are written in fresh blood." />
+	</item>
+	<item id="56303" name="book of dark rituals">
+		<attribute key="weight" value="90" />
+		<attribute key="description" value="Bound in unknown black leather." />
+	</item>
+	<item id="56304" name="book of arcane secrets">
+		<attribute key="weight" value="90" />
+		<attribute key="description" value="An old book wrapped in chains." />
+	</item>
+	<item id="56305" name="mysterious scroll">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="An ancient parchment sealed with magic." />
+	</item>
+	<item id="56306" name="ancient scroll">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A rolled up piece of old parchment." />
+	</item>
+	<item id="56307" name="Part of the zanpakuto Zabimaru">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="Item used to forge the zanpakuto Zabimaru." />
+	</item>
+	<item id="56308" name="preserved monster eye">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A huge, unblinking eye." />
+	</item>
+	<item id="56309" name="demonic skull">
+		<attribute key="weight" value="120" />
+		<attribute key="description" value="A large skull with broken horns." />
+	</item>
+	<item id="56310" name="silver beast horn">
+		<attribute key="weight" value="70" />
+		<attribute key="description" value="A sharp and curved animal horn." />
+	</item>
+	<item id="56311" name="basilisk tail">
+		<attribute key="weight" value="150" />
+		<attribute key="description" value="A heavy, dark reptilian tail." />
+	</item>
+	<item id="56312" name="shattered skull">
+		<attribute key="weight" value="60" />
+		<attribute key="description" value="Half of a decomposed skull." />
+	</item>
+	<item id="56313" name="curved bone">
+		<attribute key="weight" value="40" />
+		<attribute key="description" value="A simple bleached bone." />
+	</item>
+	<item id="56314" name="long green crystal">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A large, unrefined green gemstone." />
+	</item>
+	<item id="56315" name="long red crystal">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A large, unrefined red gemstone." />
+	</item>
+	<item id="56316" name="emerald teardrop">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A glowing green gem shaped like a tear." />
+	</item>
+	<item id="56317" name="pink teardrop">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A glowing pink gem shaped like a tear." />
+	</item>
+	<item id="56318" name="topaz teardrop">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A glowing orange gem shaped like a tear." />
+	</item>
+	<item id="56319" name="amethyst teardrop">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A glowing purple gem shaped like a tear." />
+	</item>
+	<item id="56320" name="emerald orb">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A perfect sphere of green crystal." />
+	</item>
+	<item id="56321" name="ruby orb">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A perfect sphere of red crystal." />
+	</item>
+	<item id="56322" name="topaz orb">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A perfect sphere of yellow crystal." />
+	</item>
+	<item id="56323" name="magenta orb">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A perfect sphere of pink crystal." />
+	</item>
+	<item id="56324" name="amethyst cluster">
+		<attribute key="weight" value="180" />
+		<attribute key="description" value="A raw formation of purple crystals." />
+	</item>
+	<item id="56325" name="shadow ore">
+		<attribute key="weight" value="200" />
+		<attribute key="description" value="A chunk of dark, heavy metal." />
+	</item>
+	<item id="56326" name="corrupted ore">
+		<attribute key="weight" value="200" />
+		<attribute key="description" value="A rock infested with dark purple crystals." />
+	</item>
+	<item id="56327" name="sapphire cluster">
+		<attribute key="weight" value="180" />
+		<attribute key="description" value="A raw formation of blue crystals." />
+	</item>
+	<item id="56328" name="mystic gold stone">
+		<attribute key="weight" value="10000" />
+		<attribute key="description" value="A very heavy chunk of raw gold." />
+	</item>
+	<item id="56329" name="ruby cluster">
+		<attribute key="weight" value="180" />
+		<attribute key="description" value="A raw formation of red crystals." />
+	</item>
+	<item id="56330" name="magic mirror">
+		<attribute key="weight" value="65" />
+		<attribute key="description" value="It reflects more than just your face." />
+	</item>
+	<item id="56331" name="obsidian block">
+		<attribute key="weight" value="450" />
+		<attribute key="description" value="A solid block of dark crystal." />
+	</item>
+	<item id="56332" name="raw earth crystal">
+		<attribute key="weight" value="90" />
+		<attribute key="description" value="An uncut brown gemstone." />
+	</item>
+	<item id="56333" name="pile of red dust">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="Sparkling magical powder." />
+	</item>
+	<item id="56334" name="pile of green dust">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="Sparkling magical powder." />
+	</item>
+	<item id="56335" name="pile of cyan dust">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="Sparkling magical powder." />
+	</item>
+	<item id="56336" name="crimson crystal formation">
+		<attribute key="weight" value="140" />
+		<attribute key="description" value="A complex structure of red crystals." />
+	</item>
+	<item id="56337" name="emerald crystal formation">
+		<attribute key="weight" value="140" />
+		<attribute key="description" value="A complex structure of green crystals." />
+	</item>
+	<item id="56338" name="sapphire crystal formation">
+		<attribute key="weight" value="140" />
+		<attribute key="description" value="A complex structure of blue crystals." />
+	</item>
+	<item id="56339" name="red crystal cube">
+		<attribute key="weight" value="250" />
+		<attribute key="description" value="A perfectly carved cube of ruby." />
+	</item>
+	<item id="56340" name="green crystal cube">
+		<attribute key="weight" value="250" />
+		<attribute key="description" value="A perfectly carved cube of emerald." />
+	</item>
+	<item id="56341" name="cyan crystal cube">
+		<attribute key="weight" value="250" />
+		<attribute key="description" value="A perfectly carved cube of bright blue crystal." />
+	</item>
+	<item id="56342" name="large fangs">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="Extracted from a venomous beast." />
+	</item>
+	<item id="56343" name="carved tooth">
+		<attribute key="weight" value="40" />
+		<attribute key="description" value="A monster tooth mounted as a trophy." />
+	</item>
+	<item id="56344" name="wooden spike">
+		<attribute key="weight" value="110" />
+		<attribute key="description" value="A sharpened piece of hard wood." />
+	</item>
+	<item id="56345" name="mystic potion">
+		<attribute key="weight" value="20" />
+		<attribute key="description"
+			value="A strange vial that glowed in the dark, when illuminated by light, granted infinite stamina." />
+	</item>
+	<item id="56346" name="golden angel aura">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="They radiate a warm, holy light." />
+	</item>
+	<item id="56347" name="pink fairy aura">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="Magical aura that leave a trail of sparkles." />
+	</item>
+	<item id="56348" name="sapphire fairy aura">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="Magical aura that glow like moonlight." />
+	</item>
+	<item id="56349" name="shadow fairy aura">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="Corrupted aura dripping with dark magic." />
+	</item>
+	<item id="56350" name="ancient parchment">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="Highly explosive. Handle with care!" />
+	</item>
+	<item id="56351" name="green flask">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A small flask containing a strange green liquid." />
+	</item>
+	<item id="56352" name="pink flask">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A decorative flask with pink fluid inside." />
+	</item>
+	<item id="56353" name="poisonous brew">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A highly toxic concoction. Do not drink." />
+	</item>
+	<item id="56354" name="twisted root">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A strangely shaped piece of dead wood." />
+	</item>
+	<item id="56355" name="large horn">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A hollowed-out animal horn." />
+	</item>
+	<item id="56356" name="torn leather">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="A useless piece of shredded leather." />
+	</item>
+	<item id="56357" name="dried mushroom cap">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A large, dried out mushroom." />
+	</item>
+	<item id="56358" name="horned skull">
+		<attribute key="weight" value="80" />
+		<attribute key="description" value="A creepy skull from a horned beast." />
+	</item>
+	<item id="56359" name="iron claw">
+		<attribute key="weight" value="120" />
+		<attribute key="description" value="A heavy mechanical gauntlet." />
+	</item>
+	<item id="56360" name="white kimono">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A traditional martial arts uniform." />
+	</item>
+	<item id="56361" name="ghostly rag">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="Ethereal cloth dropped by a restless spirit." />
+	</item>
+	<item id="56362" name="sealed red scroll">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="An ancient scroll with a golden seal." />
+	</item>
+	<item id="56363" name="pink scroll tube">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A protective container for delicate parchments." />
+	</item>
+	<item id="56364" name="purple scroll tube">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A protective container for magical parchments." />
+	</item>
+	<item id="56365" name="grey scroll tube">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A dusty old container for scrolls." />
+	</item>
+	<item id="56366" name="sealed orange scroll">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A brightly colored scroll full of secrets." />
+	</item>
+	<item id="56367" name="sealed purple scroll">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="It pulses with a faint arcane energy." />
+	</item>
+	<item id="56368" name="red ribbon scroll">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A rolled parchment tied with a red ribbon." />
+	</item>
+	<item id="56369" name="yellow ribbon scroll">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A rolled parchment tied with a yellow ribbon." />
+	</item>
+	<item id="56370" name="blue ribbon scroll">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A rolled parchment tied with a blue ribbon." />
+	</item>
+	<item id="56371" name="green ribbon scroll">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A rolled parchment tied with a green ribbon." />
+	</item>
+	<item id="56372" name="yellow gem">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A beautifully cut yellow gemstone." />
+	</item>
+	<item id="56373" name="blue gem">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A beautifully cut blue gemstone." />
+	</item>
+	<item id="56374" name="purple gem">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A beautifully cut purple gemstone." />
+	</item>
+	<item id="56375" name="crackling yellow gem">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="It emanates a strong electrical aura." />
+	</item>
+	<item id="56376" name="crackling purple gem">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="It emanates a strong magical aura." />
+	</item>
+	<item id="56377" name="crackling blue gem">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="It emanates a freezing cold aura." />
+	</item>
+	<item id="56378" name="glowing orange ingot">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="A strangely warm piece of forged metal." />
+	</item>
+	<item id="56379" name="dark mystic wings">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="Ethereal wings woven from shadows and magic." />
+	</item>
+	<item id="56380" name="crunchy carrot">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="A healthy and delicious vegetable." />
+	</item>
+	<item id="56381" name="golden carrot">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A legendary vegetable radiating pure energy." />
+	</item>
+	<item id="56382" name="lethal poison flask">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A sealed flask containing deadly venom." />
+	</item>
+	<item id="56383" name="yellow engraved rune">
+		<attribute key="weight" value="18" />
+		<attribute key="description" value="A stone etched with a glowing yellow symbol." />
+	</item>
+	<item id="56384" name="cyan engraved rune">
+		<attribute key="weight" value="18" />
+		<attribute key="description" value="A stone etched with a glowing cyan symbol." />
+	</item>
+	<item id="56385" name="red engraved rune">
+		<attribute key="weight" value="18" />
+		<attribute key="description" value="A stone etched with a glowing red symbol." />
+	</item>
+	<item id="56386" name="universal fragment">
+		<attribute key="weight" value="10000" />
+		<attribute key="description" value="This item is used to perform any vocation upgrade." />
+	</item>
+	<item id="56387" name="nest with a green gem">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A small nest protecting a vibrant green gem." />
+	</item>
+	<item id="56388" name="nest with a cyan gem">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A small nest protecting a bright cyan gem." />
+	</item>
+	<item id="56389" name="nest with a red gem">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A small nest protecting a glowing red gem." />
+	</item>
+	<item id="56390" name="green glowing vial">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A glass tube filled with a luminescent green liquid." />
+	</item>
+	<item id="56391" name="green glowing vial">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A glass tube filled with a luminescent green liquid." />
+	</item>
+	<item id="56392" name="ectoplasma stone">
+		<attribute key="weight" value="100" />
+		<attribute key="description"
+			value="Pedra mistica para encantar itens no sistema de enchantment." />
+	</item>
+	<item id="56393" name="green engraved rune">
+		<attribute key="weight" value="18" />
+		<attribute key="description" value="A stone etched with a glowing green symbol." />
+	</item>
+	<item id="56394" name="pink engraved rune">
+		<attribute key="weight" value="18" />
+		<attribute key="description" value="A stone etched with a glowing pink symbol." />
+	</item>
+	<item id="56395" name="orange engraved rune">
+		<attribute key="weight" value="18" />
+		<attribute key="description" value="A stone etched with a glowing orange symbol." />
+	</item>
+	<item id="56396" name="red box mystery">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Abre e pega apenas um item aleatorio" />
+	</item>
+	<item id="56397" name="green box mystery">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Abre e pega apenas um item aleatorio" />
+	</item>
+	<item id="56398" name="ice crystal block">
+		<attribute key="weight" value="150" />
+		<attribute key="description" value="A solid chunk of magical ice." />
+	</item>
+	<item id="56399" name="chest system key">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="An ornate red key with a green ring." />
+	</item>
+	<item id="56400" name="blue scaly egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A monster egg covered in blue scales." />
+	</item>
+	<item id="56401" name="brown scaly egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A monster egg covered in brown scales." />
+	</item>
+	<item id="56402" name="purple scaly egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A monster egg covered in purple scales." />
+	</item>
+	<item id="56403" name="skill potion 2h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill em 25% por 2h" />
+	</item>
+	<item id="56404" name="skill potion 1h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill em 25% por 1h" />
+	</item>
+	<item id="56405" name="skill potion 3h">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill em 25% por 3h" />
+	</item>
+	<item id="56406" name="skill potion 30min">
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="Aumenta sua skill em 25% por 30min" />
+	</item>
+	<item id="56407" name="yellow diamond">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A perfectly cut yellow gemstone." />
+	</item>
+	<item id="56408" name="mystic emblem of the hell">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="An elegant emblem in the shape of a shield from hell, it grants 6 hours of double skill gain." />
+	</item>
+	<item id="56409" name="purple crescent gem">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A glowing gem shaped like a crescent moon, it grants 24 hours of double skill gain." />
+	</item>
+	<item id="56410" name="rainbow egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A vibrant multicolored monster egg, it grants 12 hours of double skill gain." />
+	</item>
+	<item id="56411" name="silver universal fragment">
+		<attribute key="weight" value="10000" />
+		<attribute key="description" value="This item is used to perform any vocation upgrade." />
+	</item>
+	<item id="56412" name="diamond universal fragment">
+		<attribute key="weight" value="10000" />
+		<attribute key="description" value="This item is used to perform any vocation upgrade." />
+	</item>
+	<item id="56413" name="bronze universal fragment">
+		<attribute key="weight" value="10000" />
+		<attribute key="description" value="This item is used to perform any vocation upgrade." />
+	</item>
+	<item id="56414" name="gold universal fragment">
+		<attribute key="weight" value="10000" />
+		<attribute key="description" value="This item is used to perform any vocation upgrade." />
+	</item>
+	<item id="56415" name="silver moon key">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A beautifully crafted silver key." />
+	</item>
+	<item id="56416" name="golden sun key">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A masterfully crafted golden key." />
+	</item>
+	<item id="56417" name="rose key">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="An elegant key forged from pink metal." />
+	</item>
+	<item id="56418" name="crystal key">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A delicate key made of cyan crystal." />
+	</item>
+	<item id="56419" name="tied scroll">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A rolled parchment secured with a red ribbon." />
+	</item>
+	<item id="56420" name="blue magic crystal">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="A jagged piece of glowing blue crystal." />
+	</item>
+	<item id="56421" name="xp boost badge">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="Grants a burst of experience when used." />
+	</item>
+	<item id="56422" name="exposed brain">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="A preserved biological specimen." />
+	</item>
+	<item id="56423" name="purple crystal shard">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A sharp fragment of purple crystal." />
+	</item>
+	<item id="56424" name="ice crystal shard">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A cold, sharp fragment of magical ice." />
+	</item>
+	<item id="56425" name="gold crystal shard">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A sharp fragment of golden crystal." />
+	</item>
+	<item id="56426" name="purple scroll tube">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A sturdy tube for protecting ancient scrolls." />
+	</item>
+	<item id="56427" name="blue dusty bag">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A small sack containing unknown materials." />
+	</item>
+	<item id="56428" name="mystic blue fruit">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="A strange fruit radiating magical energy." />
+	</item>
+	<item id="56429" name="mystic purple fruit">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="A strange swirly fruit radiating magical energy." />
+	</item>
+	<item id="56430" name="blue orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A perfect sphere of blue crystal." />
+	</item>
+	<item id="56431" name="golden orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A perfect sphere of golden crystal." />
+	</item>
+	<item id="56432" name="pink orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A perfect sphere of pink crystal." />
+	</item>
+	<item id="56433" name="purple orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A perfect sphere of purple crystal." />
+	</item>
+	<item id="56434" name="silver orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A perfect sphere of silver crystal." />
+	</item>
+	<item id="56435" name="cyan orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A perfect sphere of cyan crystal." />
+	</item>
+	<item id="56436" name="pale yellow orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A perfect sphere of pale yellow crystal." />
+	</item>
+	<item id="56437" name="green orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A perfect sphere of green crystal." />
+	</item>
+	<item id="56438" name="dark purple orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A perfect sphere of dark purple crystal." />
+	</item>
+	<item id="56439" name="grey orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A perfect sphere of grey crystal." />
+	</item>
+	<item id="56440" name="orange orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A perfect sphere of orange crystal." />
+	</item>
+	<item id="56441" name="dark red orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A perfect sphere of dark red crystal." />
+	</item>
+	<item id="56442" name="glowing pink orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A crystal sphere pulsing with pink energy." />
+	</item>
+	<item id="56443" name="glowing yellow orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A crystal sphere pulsing with yellow energy." />
+	</item>
+	<item id="56444" name="glowing purple orb">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A crystal sphere pulsing with purple energy." />
+	</item>
+	<item id="56445" name="red crystal pillar">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="A tall, glowing red crystal formation." />
+	</item>
+	<item id="56446" name="yellow crystal pillar">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="A tall, glowing yellow crystal formation." />
+	</item>
+	<item id="56447" name="clear crystal pillar">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="A tall, glowing clear crystal formation." />
+	</item>
+	<item id="56448" name="pink crystal pillar">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="A tall, glowing pink crystal formation." />
+	</item>
+	<item id="56449" name="10 points token">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="Can be exchanged for valuable rewards in store." />
+	</item>
+	<item id="56450" name="15 points token">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="Can be exchanged for valuable rewards in store." />
+	</item>
+	<item id="56451" name="20 points token">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="Can be exchanged for valuable rewards in store." />
+	</item>
+	<item id="56452" name="5 points token">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="Can be exchanged for valuable rewards in store." />
+	</item>
+	<item id="56453" name="yellow level up potion">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="Drink this to instantly gain a level." />
+	</item>
+	<item id="56454" name="green level up potion">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="Drink this to instantly gain a level." />
+	</item>
+	<item id="56455" name="red level up potion">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="Drink this to instantly gain a level." />
+	</item>
+	<item id="56456" name="blue level up potion">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="Drink this to instantly gain a level." />
+	</item>
+	<item id="56457" name="dark wings">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="Fierce wings from a creature of the night." />
+	</item>
+	<item id="56458" name="silver wings">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="Majestic wings from a heavenly creature." />
+	</item>
+	<item id="56459" name="mystery scroll">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="Read it to discover its hidden secret." />
+	</item>
+	<item id="56460" name="brown star scroll">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A magical scroll marked with a bright star." />
+	</item>
+	<item id="56461" name="pink star scroll">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A magical scroll marked with a bright star." />
+	</item>
+	<item id="56462" name="red star scroll">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A magical scroll marked with a bright star." />
+	</item>
+	<item id="56463" name="green star scroll">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A magical scroll marked with a bright star." />
+	</item>
+	<item id="56464" name="grey star scroll">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A magical scroll marked with a bright star." />
+	</item>
+	<item id="56465" name="gold star scroll">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A magical scroll marked with a bright star." />
+	</item>
+	<item id="56466" name="blue star scroll">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A magical scroll marked with a bright star." />
+	</item>
+	<item id="56467" name="50 points token">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="Can be exchanged for valuable rewards." />
+	</item>
+	<item id="56468" name="100 points token">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="Can be exchanged for valuable rewards." />
+	</item>
+	<item id="56469" name="blue energy fragment">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A volatile piece of raw blue energy." />
+	</item>
+	<item id="56470" name="yellow energy fragment">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A volatile piece of raw yellow energy." />
+	</item>
+	<item id="56471" name="red energy fragment">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A volatile piece of raw red energy." />
+	</item>
+	<item id="56472" name="corrupted heart">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A heart tainted by dark magic." />
+	</item>
+	<item id="56473" name="golden heart">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A pure heart radiating warm light." />
+	</item>
+	<item id="56474" name="small stack of ticket bars">
+		<attribute key="weight" value="250" />
+		<attribute key="description" value="A heavy stack of pure ticket bars." />
+	</item>
+	<item id="56475" name="large stack of ticket bars">
+		<attribute key="weight" value="700" />
+		<attribute key="description" value="A massive fortune in pure ticket bars." />
+	</item>
+	<item id="56476" name="ticket bar">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A solid bar of pure ticket." />
+	</item>
+	<item id="56477" name="purple mottled egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A mysterious egg covered in dark purple spots." />
+	</item>
+	<item id="56478" name="rainbow monster egg">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A vibrant, multicolored egg." />
+	</item>
+	<item id="56479" name="glowing yellow seed">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A magical seed radiating warm light." />
+	</item>
+	<item id="56480" name="premium silver ticket">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="Grants access to exclusive areas." />
+	</item>
+	<item id="56481" name="festive green wreath">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A holiday decoration." />
+	</item>
+	<item id="56482" name="wrapped fabric">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A piece of dark fabric neatly tied together." />
+	</item>
+	<item id="56483" name="purple surprise box">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A beautifully wrapped gift." />
+	</item>
+	<item id="56484" name="yellow surprise box">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A beautifully wrapped gift." />
+	</item>
+	<item id="56485" name="purple gift box">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A small wrapped present." />
+	</item>
+	<item id="56486" name="purple mystery chest">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A wooden chest painted purple." />
+	</item>
+	<item id="56487" name="purple mystery chest">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A wooden chest painted purple." />
+	</item>
+	<item id="56488" name="purple mystery chest">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A wooden chest painted purple." />
+	</item>
+	<item id="56489" name="purple mystery chest">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A wooden chest painted purple." />
+	</item>
+	<item id="56490" name="purple mystery chest">
+		<attribute key="weight" value="50" />
+		<attribute key="description" value="A wooden chest painted purple." />
+	</item>
+	<item id="56491" name="blue gift box">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A small wrapped present." />
+	</item>
+	<item id="56492" name="white pearl">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A perfectly round and shiny pearl." />
+	</item>
+	<item id="56493" name="red pearl">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A beautiful crimson pearl." />
+	</item>
+	<item id="56494" name="yellow pearl">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A beautiful golden pearl." />
+	</item>
+	<item id="56495" name="purple pearl">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A beautiful amethyst pearl." />
+	</item>
+	<item id="56496" name="astronomy scroll">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A dark parchment mapping the stars." />
+	</item>
+	<item id="56497" name="crimson eye emblem">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A golden emblem with an unblinking red eye." />
+	</item>
+	<item id="56498" name="blue crystal shard">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="A jagged piece of bright blue crystal." />
+	</item>
+	<item id="56499" name="red crystal hexagon">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="A geometrically perfect red gem." />
+	</item>
+	<item id="56500" name="black feathered wings">
+		<attribute key="weight" value="40" />
+		<attribute key="description" value="Wings from a giant crow or dark angel." />
+	</item>
+	<item id="56501" name="white feathered wings">
+		<attribute key="weight" value="40" />
+		<attribute key="description" value="Majestic wings of pure white feathers." />
+	</item>
+	<item id="56502" name="vampiric wings">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="Leathery bat-like wings." />
+	</item>
+	<item id="56503" name="dark demon wings">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="Intimidating wings from the underworld." />
+	</item>
+	<item id="56504" name="brown bat wings">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="Simple leathery animal wings." />
+	</item>
+	<item id="56505" name="red demon wings">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="Crimson wings born from hellfire." />
+	</item>
+	<item id="56506" name="corrupted demon wings">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="Dark wings infused with blood magic." />
+	</item>
+	<item id="56507" name="divine wing fragment">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A single wing glowing with holy light." />
+	</item>
+	<item id="56508" name="fallen wing fragment">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A single wing engulfed in shadows." />
+	</item>
+	<item id="56509" name="one-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with one red star inside." />
+	</item>
+	<item id="56510" name="two-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with two red stars inside." />
+	</item>
+	<item id="56511" name="three-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with three red stars inside." />
+	</item>
+	<item id="56512" name="four-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with four red stars inside." />
+	</item>
+	<item id="56513" name="five-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with five red stars inside." />
+	</item>
+	<item id="56514" name="six-star dragon ball">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A mystical orange sphere with six red stars inside." />
+	</item>
+	<item id="56515" name="dark mystic fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A strange fruit that grants unknown powers." />
+	</item>
+	<item id="56516" name="green pear mystic fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A strange fruit with swirling patterns." />
+	</item>
+	<item id="56517" name="swirly green fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A weird fruit tasting like pure magic." />
+	</item>
+	<item id="56518" name="red berry mystic fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A clustered fruit radiating heat." />
+	</item>
+	<item id="56519" name="pink berry mystic fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A sweet-smelling magical fruit." />
+	</item>
+	<item id="56520" name="brown curly fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="An odd, tough-skinned mystical fruit." />
+	</item>
+	<item id="56521" name="flame mystic fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="It looks like a frozen ball of fire." />
+	</item>
+	<item id="56522" name="blue round mystic fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A strange fruit covered in swirl patterns." />
+	</item>
+	<item id="56523" name="orange mystic fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A bright fruit promising great power." />
+	</item>
+	<item id="56524" name="pineapple mystic fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A spiky fruit full of magical energy." />
+	</item>
+	<item id="56525" name="white swirly fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="It looks like a cloud you can eat." />
+	</item>
+	<item id="56526" name="yellow spiky fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="It crackles with static electricity." />
+	</item>
+	<item id="56527" name="dark purple mystic fruit">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A dark fruit with an ominous aura." />
+	</item>
+	<item id="56528" name="treasure map">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="X marks the spot." />
+	</item>
+	<item id="56529" name="casino roulette wheel">
+		<attribute key="weight" value="120" />
+		<attribute key="description" value="Used for games of chance and gambling." />
+	</item>
+	<item id="56530" name="roasted meat platter">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="A delicious feast." />
+	</item>
+	<item id="56531" name="spiked skull emblem">
+		<attribute key="weight" value="20" />
+		<attribute key="description" value="A brutal insignia worn by warlords." />
+	</item>
+	<item id="56532" name="slice of pizza">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="Cheesy and delicious." />
+	</item>
+	<item id="56533" name="golden token">
+		<attribute key="weight" value="1" />
+		<attribute key="description" value="A heavy gold coin used in special trades." />
+	</item>
+	<item id="56534" name="green demon mask">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A scary jade mask used in rituals." />
+	</item>
+	<item id="56535" name="ancient tied scroll">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="It contains long-forgotten knowledge." />
+	</item>
+	<item id="56536" name="holy cross emblem">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A sacred symbol of divine protection." />
+	</item>
+	<item id="56537" name="blue parchment token">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="A magical document shaped like a coin." />
+	</item>
+	<item id="56538" name="blacksmith token">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="Can be exchanged for forged equipment." />
+	</item>
+	<item id="56539" name="wealth token">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="A symbol of great fortune." />
+	</item>
+	<item id="56540" name="location map">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A map with a marked destination." />
+	</item>
+	<item id="56541" name="holy spellbook">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="A heavy tome filled with healing prayers." />
+	</item>
+	<item id="56542" name="mystic blue sword">
+		<attribute key="weight" value="65" />
+		<attribute key="description" value="A magical blade glowing with frost energy." />
+	</item>
+	<item id="56543" name="mystic orange sword">
+		<attribute key="weight" value="65" />
+		<attribute key="description" value="A magical blade glowing with fire energy." />
+	</item>
+	<item id="56544" name="mystic red sword">
+		<attribute key="weight" value="65" />
+		<attribute key="description" value="A magical blade glowing with blood energy." />
+	</item>
+	<item id="56545" name="bone skull shield">
+		<attribute key="weight" value="110" />
+		<attribute key="description" value="A grim shield crafted from monster bones." />
+	</item>
+	<item id="56546" name="jagged purple crystal">
+		<attribute key="weight" value="30" />
+		<attribute key="description" value="A raw, unrefined magical stone." />
+	</item>
+	<item id="56547" name="dark gemstone pendant">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="An elegant necklace holding a black stone." />
+	</item>
+	<item id="56548" name="green gemstone pendant">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="An elegant necklace holding an emerald." />
+	</item>
+	<item id="56549" name="cyan gemstone pendant">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="An elegant necklace holding a bright blue gem." />
+	</item>
+	<item id="56550" name="yellow gemstone pendant">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="An elegant necklace holding a topaz." />
+	</item>
+	<item id="56551" name="silver gemstone pendant">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="An elegant necklace holding a diamond." />
+	</item>
+	<item id="56552" name="ruby gemstone pendant">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="An elegant necklace holding a red ruby." />
+	</item>
+	<item id="56553" name="amethyst gemstone pendant">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="An elegant necklace holding a purple gem." />
+	</item>
+	<item id="56554" name="interlocked mystic rings">
+		<attribute key="weight" value="8" />
+		<attribute key="description" value="Two glowing rings bound together by magic." />
+	</item>
+	<item id="56555" name="grey potion flask">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A mysterious liquid." />
+	</item>
+	<item id="56556" name="glowing blue cube">
+		<attribute key="weight" value="40" />
+		<attribute key="description" value="A strange technological artifact." />
+	</item>
+	<item id="56557" name="fancy layered cake">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A very sweet dessert." />
+	</item>
+	<item id="56558" name="jade demon mask">
+		<attribute key="weight" value="25" />
+		<attribute key="description" value="A scary green mask used in ancient rituals." />
+	</item>
+	<item id="56559" name="golden wolf emblem">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="A badge representing courage and strength." />
+	</item>
+	<item id="56560" name="approved document">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="Official paperwork stamped with a green check." />
+	</item>
+	<item id="56561" name="letter H emblem">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A golden token with the letter H." />
+	</item>
+	<item id="56562" name="letter S emblem">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A blue token with the letter S." />
+	</item>
+	<item id="56563" name="demonic skull helmet">
+		<attribute key="weight" value="85" />
+		<attribute key="description" value="A terrifying headpiece forged in the abyss." />
+	</item>
+	<item id="56564" name="architect blueprint">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="Detailed plans for an unknown structure." />
+	</item>
+	<item id="56565" name="red prayer beads">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A necklace used by monks to channel chi." />
+	</item>
+	<item id="56566" name="red mystic tome">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="A book containing forbidden fire magic." />
+	</item>
+	<item id="56567" name="radiant blue star">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A crystalline star pulsing with pure energy." />
+	</item>
+	<item id="56568" name="red mystic tome">
+		<attribute key="weight" value="45" />
+		<attribute key="description" value="A heavy book radiating heat and dark magic." />
+	</item>
+	<item id="56569" name="golden ceremonial torch">
+		<attribute key="weight" value="35" />
+		<attribute key="description" value="It burns with an eternal white flame." />
+	</item>
+	<item id="56570" name="prismatic hexagon crystal">
+		<attribute key="weight" value="15" />
+		<attribute key="description" value="A flawless crystal reflecting multiple colors." />
+	</item>
+	<item id="56669" name="fire soul essence">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A swirling mass of intense heat." />
+	</item>
+	<item id="56670" name="orange energy tear">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="A tiny drop of fiery energy." />
+	</item>
+	<item id="56671" name="green energy tear">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="A tiny drop of nature energy." />
+	</item>
+	<item id="56672" name="yellow energy tear">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="A tiny drop of light energy." />
+	</item>
+	<item id="56673" name="dark green energy tear">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="A tiny drop of toxic energy." />
+	</item>
+	<item id="56674" name="glowing cyan spirit">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A restless soul radiating a bright aura." />
+	</item>
+	<item id="56675" name="faint cyan spirit">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A small ethereal entity." />
+	</item>
+	<item id="56676" name="green spirit flame">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="An eerie green spiritual fire." />
+	</item>
+	<item id="56677" name="red spirit flame">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="An eerie red spiritual fire." />
+	</item>
+	<item id="56678" name="dark red spirit flame">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="An eerie dark red spiritual fire." />
+	</item>
+	<item id="56679" name="white spirit flame">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A pale ethereal flame." />
+	</item>
+	<item id="56680" name="orange radiant energy">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A burst of orange cosmic energy." />
+	</item>
+	<item id="56681" name="golden radiant energy">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A burst of golden cosmic energy." />
+	</item>
+	<item id="56682" name="red radiant energy">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A burst of crimson cosmic energy." />
+	</item>
+	<item id="56683" name="blue radiant energy">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A burst of azure cosmic energy." />
+	</item>
+	<item id="56684" name="purple radiant energy">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A burst of amethyst cosmic energy." />
+	</item>
+	<item id="56685" name="magenta radiant energy">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A burst of magenta cosmic energy." />
+	</item>
+	<item id="56686" name="cyan radiant energy">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A burst of cyan cosmic energy." />
+	</item>
+	<item id="56687" name="green radiant energy">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A burst of emerald cosmic energy." />
+	</item>
+	<item id="56688" name="mystic purple shield emblem">
+		<attribute key="weight" value="12" />
+		<attribute key="description" value="A floating magical barrier crystal." />
+	</item>
+	<item id="56689" name="bright golden energy">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A concentrated burst of light." />
+	</item>
+	<item id="56693" name="purple energy vortex">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A swirling portal of purple magic." />
+	</item>
+	<item id="56694" name="pink energy vortex">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A swirling portal of pink magic." />
+	</item>
+	<item id="56695" name="blue energy vortex">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A swirling portal of blue magic." />
+	</item>
+	<item id="56696" name="green energy vortex">
+		<attribute key="weight" value="5" />
+		<attribute key="description" value="A swirling portal of green magic." />
+	</item>
+	<item id="56971" name="golden ring">
+		<attribute key="weight" value="2" />
+		<attribute key="description" value="A plain, but valuable, golden band." />
+	</item>
+	<item id="56972" name="blue kite shield">
+		<attribute key="weight" value="55" />
+		<attribute key="description" value="A sturdy wooden shield painted blue." />
+	</item>
+	<item id="56973" name="ruby necklace">
+		<attribute key="weight" value="6" />
+		<attribute key="description" value="A silver chain adorned with blood red rubies." />
 	</item>
 	<item id="56975" name="master dragon chest">
 		<attribute key="weight" value="12000" />

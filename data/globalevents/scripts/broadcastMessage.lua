@@ -16,6 +16,11 @@ CONFIG = {
         color = TEXTCOLOR_BLUE
 
     },
+    [4] = {
+        message =
+        'You can view your profile by clicking on your character and selecting the "Profile" option. Likewise, you can also view other players profiles by following the same procedure.',
+        color = TEXTCOLOR_ORANGE
+    }
 }
 
 
@@ -23,6 +28,6 @@ function onThink()
     local getRandom = math.random(1, #CONFIG)
     local msg = CONFIG[getRandom].message
     local color = CONFIG[getRandom].color
-    local formattedText = "center|" .. color .. "|" .. msg
+    local formattedText = "top|" .. color .. "|" .. msg
     return doBroadcastMessage(formattedText)
 end

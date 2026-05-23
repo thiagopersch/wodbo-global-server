@@ -24,35 +24,35 @@
 #include <unordered_set>
 
 enum {
-	TILESTATE_NONE = 0x0000,
+	TILESTATE_NONE           = 0x0000,
 	TILESTATE_PROTECTIONZONE = 0x0001,
-	TILESTATE_DEPRECATED = 0x0002, // Reserved
-	TILESTATE_NOPVP = 0x0004,
-	TILESTATE_NOLOGOUT = 0x0008,
-	TILESTATE_PVPZONE = 0x0010,
-	TILESTATE_REFRESH = 0x0020,
-	TILESTATE_ZONE_BRUSH = 0x0040,
+	TILESTATE_DEPRECATED     = 0x0002, // Reserved
+	TILESTATE_NOPVP          = 0x0004,
+	TILESTATE_NOLOGOUT       = 0x0008,
+	TILESTATE_PVPZONE        = 0x0010,
+	TILESTATE_REFRESH        = 0x0020,
 	// Internal
-	TILESTATE_SELECTED = 0x0001,
-	TILESTATE_UNIQUE = 0x0002,
-	TILESTATE_BLOCKING = 0x0004,
+	TILESTATE_SELECTED  = 0x0001,
+	TILESTATE_UNIQUE    = 0x0002,
+	TILESTATE_BLOCKING  = 0x0004,
 	TILESTATE_OP_BORDER = 0x0008, // If this is true, gravel will be placed on the tile!
 	TILESTATE_HAS_TABLE = 0x0010,
-	TILESTATE_HAS_CARPET = 0x0020,
-	TILESTATE_MODIFIED = 0x0040,
+	TILESTATE_HAS_CARPET= 0x0020,
+	TILESTATE_MODIFIED  = 0x0040,
 };
 
 enum : uint8_t {
 	INVALID_MINIMAP_COLOR = 0xFF
 };
 
-class Tile {
+class Tile
+{
 public: // Members
-	TileLocation* location;
-	Item* ground;
-	ItemVector items;
-	Creature* creature;
-	Spawn* spawn;
+	TileLocation*  location;
+	Item*          ground;
+	ItemVector     items;
+	Creature*      creature;
+	Spawn*         spawn;
 	uint32_t house_id; // House id for this tile (pointer not safe)
 
 public:
@@ -68,67 +68,39 @@ public:
 
 	// The location of the tile
 	// Stores state that remains between the tile being moved (like house exits)
-	void setLocation(TileLocation* where) {
-		location = where;
-	}
-	TileLocation* getLocation() {
-		return location;
-	}
-	const TileLocation* getLocation() const {
-		return location;
-	}
+	void setLocation(TileLocation* where) {location = where;}
+	TileLocation* getLocation() {return location;}
+	const TileLocation* getLocation() const {return location;}
 
 	// Position of the tile
-	Position getPosition() {
-		return location->getPosition();
-	}
-	const Position getPosition() const {
-		return location->getPosition();
-	}
-	int getX() const {
-		return location->getPosition().x;
-	}
-	int getY() const {
-		return location->getPosition().y;
-	}
-	int getZ() const {
-		return location->getPosition().z;
-	}
+	Position getPosition() {return location->getPosition();}
+	const Position getPosition() const {return location->getPosition();}
+	int getX() const {return location->getPosition().x;}
+	int getY() const {return location->getPosition().y;}
+	int getZ() const {return location->getPosition().z;}
 
-public: // Functions
+public: //Functions
 	// Absorb the other tile into this tile
 	void merge(Tile* other);
 
 	// Has tile been modified since the map was loaded/created?
-	bool isModified() const {
-		return testFlags(statflags, TILESTATE_MODIFIED);
-	}
-	void modify() {
-		statflags |= TILESTATE_MODIFIED;
-	}
-	void unmodify() {
-		statflags &= ~TILESTATE_MODIFIED;
-	}
+	bool isModified() const { return testFlags(statflags, TILESTATE_MODIFIED); }
+	void modify() { statflags |= TILESTATE_MODIFIED; }
+	void unmodify() { statflags &= ~TILESTATE_MODIFIED; }
 
 	// Get memory footprint size
 	uint32_t memsize() const;
 	// Get number of items on the tile
-	bool empty() const {
-		return size() == 0;
-	}
+	bool empty() const { return size() == 0; }
 	int size() const;
 
 	// Blocking?
-	bool isBlocking() const {
-		return testFlags(statflags, TILESTATE_BLOCKING);
-	}
+	bool isBlocking() const { return testFlags(statflags, TILESTATE_BLOCKING); }
 
 	// PZ
-	bool isPZ() const {
-		return testFlags(mapflags, TILESTATE_PROTECTIONZONE);
-	}
+	bool isPZ() const { return testFlags(mapflags, TILESTATE_PROTECTIONZONE); }
 	void setPZ(bool pz) {
-		if (pz) {
+		if(pz) {
 			mapflags |= TILESTATE_PROTECTIONZONE;
 		} else {
 			mapflags &= ~TILESTATE_PROTECTIONZONE;
@@ -148,12 +120,8 @@ public: // Functions
 	void selectGround();
 	void deselectGround();
 
-	bool isSelected() const {
-		return testFlags(statflags, TILESTATE_SELECTED);
-	}
-	bool hasUniqueItem() const {
-		return testFlags(statflags, TILESTATE_UNIQUE);
-	}
+	bool isSelected() const { return testFlags(statflags, TILESTATE_SELECTED); }
+	bool hasUniqueItem() const { return testFlags(statflags, TILESTATE_UNIQUE); }
 
 	ItemVector popSelectedItems(bool ignoreTileSelected = false);
 	ItemVector getSelectedItems(bool unzoomed = false);
@@ -165,9 +133,7 @@ public: // Functions
 	uint8_t getMiniMapColor() const;
 
 	// Does this tile have ground?
-	bool hasGround() const {
-		return ground != nullptr;
-	}
+	bool hasGround() const { return ground != nullptr; }
 	bool hasBorders() const {
 		return items.size() && items[0]->isBorder();
 	}
@@ -184,21 +150,15 @@ public: // Functions
 	// Borderize this tile
 	void borderize(BaseMap* parent);
 
-	bool hasTable() const {
-		return testFlags(statflags, TILESTATE_HAS_TABLE);
-	}
+	bool hasTable() const { return testFlags(statflags, TILESTATE_HAS_TABLE); }
 	Item* getTable() const;
 
-	bool hasCarpet() const {
-		return testFlags(statflags, TILESTATE_HAS_CARPET);
-	}
+	bool hasCarpet() const { return testFlags(statflags, TILESTATE_HAS_CARPET); }
 	Item* getCarpet() const;
 
-	bool hasOptionalBorder() const {
-		return testFlags(statflags, TILESTATE_OP_BORDER);
-	}
+	bool hasOptionalBorder() const { return testFlags(statflags, TILESTATE_OP_BORDER); }
 	void setOptionalBorder(bool b) {
-		if (b) {
+		if(b) {
 			statflags |= TILESTATE_OP_BORDER;
 		} else {
 			statflags &= ~TILESTATE_OP_BORDER;
@@ -235,20 +195,8 @@ public: // Functions
 	HouseExitList* getHouseExits();
 	bool hasHouseExit(uint32_t exit) const;
 	void setHouse(House* house);
-	House* getHouse() const;
 
 	// Mapflags (PZ, PVPZONE etc.)
-	void addZoneId(uint16_t _zoneId);
-	void removeZoneId(uint16_t _zoneId);
-	void clearZoneId();
-	void setZoneIds(Tile* tile);
-	const std::vector<uint16_t>& getZoneIds() const;
-	uint16_t getZoneId() const;
-	
-	// Zone validation and consistency helpers
-	void validateZoneConsistency();
-	bool hasValidZones() const;
-	
 	void setMapFlags(uint16_t _flags);
 	void unsetMapFlags(uint16_t _flags);
 	uint16_t getMapFlags() const;
@@ -267,14 +215,12 @@ protected:
 		uint32_t flags;
 	};
 
-	std::vector<uint16_t> zoneIds;
-
 private:
 	uint8_t minimapColor;
 
 	Tile(const Tile& tile); // No copy
-	Tile& operator=(const Tile& i); // Can't copy
-	Tile& operator==(const Tile& i); // Can't compare
+	Tile& operator=(const Tile& i);// Can't copy
+	Tile& operator==(const Tile& i);// Can't compare
 };
 
 bool tilePositionLessThan(const Tile* a, const Tile* b);
@@ -307,17 +253,16 @@ inline const HouseExitList* Tile::getHouseExits() const {
 
 inline bool Tile::isHouseExit() const {
 	const HouseExitList* house_exits = getHouseExits();
-	if (house_exits) {
+	if(house_exits)
 		return !house_exits->empty();
-	}
 	return false;
 }
 
 inline bool Tile::hasHouseExit(uint32_t exit) const {
 	const HouseExitList* house_exits = getHouseExits();
-	if (house_exits) {
-		for (HouseExitList::const_iterator iter = house_exits->begin(); iter != house_exits->end(); ++iter) {
-			if (*iter == exit) {
+	if(house_exits) {
+		for(HouseExitList::const_iterator iter = house_exits->begin(); iter != house_exits->end(); ++iter) {
+			if(*iter == exit) {
 				return true;
 			}
 		}
@@ -348,53 +293,5 @@ inline void Tile::unsetStatFlags(uint16_t _flags) {
 inline uint16_t Tile::getStatFlags() const {
 	return statflags;
 }
-
-inline void Tile::addZoneId(uint16_t _zoneId) {
-	if (_zoneId == 0) return;  // Don't add invalid zone ID
-	if (std::find(zoneIds.begin(), zoneIds.end(), _zoneId) == zoneIds.end()) {
-		zoneIds.push_back(_zoneId);
-		mapflags |= TILESTATE_ZONE_BRUSH;  // Ensure flag is set
-	}
-}
-
-inline void Tile::clearZoneId() {
-	zoneIds.clear();
-	mapflags &= ~TILESTATE_ZONE_BRUSH;  // Clear zone flag when clearing zone data
-}
-
-inline void Tile::setZoneIds(Tile* tile) {
-	zoneIds.clear();
-	zoneIds.assign(tile->getZoneIds().begin(), tile->getZoneIds().end());
-	// Set or clear zone flag based on whether we have zones
-	if (!zoneIds.empty()) {
-		mapflags |= TILESTATE_ZONE_BRUSH;
-	} else {
-		mapflags &= ~TILESTATE_ZONE_BRUSH;
-	}
-}
-
-inline void Tile::removeZoneId(uint16_t _zoneId) {
-	const auto& itZone = std::find(zoneIds.begin(), zoneIds.end(), _zoneId);
-	if (itZone != zoneIds.end()) {
-		zoneIds.erase(itZone);
-		// Clear zone flag if no zones remain
-		if (zoneIds.empty()) {
-			mapflags &= ~TILESTATE_ZONE_BRUSH;
-		}
-	}
-}
-
-inline const std::vector<uint16_t>& Tile::getZoneIds() const {
-	return zoneIds;
-}
-
-inline uint16_t Tile::getZoneId() const {
-	if (zoneIds.empty()) {
-		return 0;
-	}
-
-	return zoneIds.front();
-}
-
 
 #endif

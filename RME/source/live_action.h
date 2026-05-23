@@ -25,9 +25,8 @@ class NetworkedActionQueue;
 class NetworkedAction : public Action {
 protected:
 	NetworkedAction(Editor& editor, ActionIdentifier ident);
-
-public:
 	~NetworkedAction();
+public:
 	uint32_t owner;
 
 	friend class NetworkedActionQueue;
@@ -35,16 +34,12 @@ public:
 
 class NetworkedBatchAction : public BatchAction {
 	NetworkedActionQueue& queue;
-
 protected:
 	NetworkedBatchAction(Editor& editor, NetworkedActionQueue& queue, ActionIdentifier ident);
 	~NetworkedBatchAction();
 
 public:
 	void addAndCommitAction(Action* action);
-	
-	// New method to commit actions directly without adding to undo history
-	void commitChanges(Action* action);
 
 protected:
 	void commit();
@@ -61,9 +56,6 @@ public:
 
 	Action* createAction(ActionIdentifier ident);
 	BatchAction* createBatch(ActionIdentifier ident);
-	
-	// New method to commit changes directly without adding to undo history
-	void commitChanges(Action* action);
 
 protected:
 	void broadcast(DirtyList& dirty_list);

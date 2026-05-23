@@ -21,7 +21,8 @@
 #include "graphics.h"
 #include "position.h"
 
-class LightDrawer {
+class LightDrawer
+{
 	struct Light {
 		uint16_t map_x = 0;
 		uint16_t map_y = 0;
@@ -36,7 +37,7 @@ public:
 	void draw(int map_x, int map_y, int end_x, int end_y, int scroll_x, int scroll_y, bool fog);
 
 	void setGlobalLightColor(uint8_t color);
-	void addLight(int map_x, int map_y, int map_z, const SpriteLight& light);
+	void addLight(int map_x, int map_y, const SpriteLight& light);
 	void clear() noexcept;
 
 private:

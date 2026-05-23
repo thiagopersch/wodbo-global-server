@@ -1,102 +1,303 @@
-[21/5/2026 21:10:14] > Usando SHA1 criptografia
-[21/5/2026 21:10:14] >> Carregando RSA key
-[21/5/2026 21:10:14] >> Iniciando conexao SQL
-[21/5/2026 21:10:14] >> Executando Gerenciador de Banco de Dados
-[21/5/2026 21:10:14] > Optimized database.
-[21/5/2026 21:10:14] >> Carregando items (OTB)
-[21/5/2026 21:10:14] >> Carregando items (XML)
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56392
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56396
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56397
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56399
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56403
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56404
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56405
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56406
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56408
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56409
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56410
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56449
-[21/5/2026 21:10:14] [Warning - Items::loadFromXml] Duplicate registered item with id 56451
-[21/5/2026 21:10:14] >> Carregando Grupos
-[21/5/2026 21:10:14] >> Carregando Vocacoes
-[21/5/2026 21:10:14] >> Carregando Outfits
-[21/5/2026 21:10:14] >> Carregando Canal de Chat
-[21/5/2026 21:10:14] >> Carregando Sistema
-[21/5/2026 21:10:15] >> Carregando Mods...
-[21/5/2026 21:10:15] > Loading AutoLoot.xml... done.
-[21/5/2026 21:10:15] > Loading Automatic Raids.xml... done.
-[21/5/2026 21:10:15] > Loading highscorebook.xml... done.
-[21/5/2026 21:10:15] > Loading task_system.xml... done.
-[21/5/2026 21:10:15] > 4 mods were loaded.
-[21/5/2026 21:10:15] >> Carregando EXP Stages
-[21/5/2026 21:10:15] >> Carregando Monstros
-[21/5/2026 21:10:15] >> Carregando Mapa e Spawns...
-[21/5/2026 21:10:15] > Tamanho do Mapa: 64000x64000.
-[21/5/2026 21:10:15] > Descricao do Mapa: 
-[21/5/2026 21:10:15] "Saved with OTARMEIE 7.1.2"
-[21/5/2026 21:10:15] "No map description available."
-[21/5/2026 21:10:18] > Mapa carregado em: 3.225 segundos.
-[21/5/2026 21:10:18] > Data carregada em: 0.199 segundos.
-[21/5/2026 21:10:20] > Houses carregada em: 1.383 segundos.
-[21/5/2026 21:10:20] > Content unserialization time: 0.003 seconds.
-[21/5/2026 21:10:20] > Carregando Tipo de PVP... Open PvP
-[21/5/2026 21:10:20] > Inicializando estado do jogo e registrando servicos...
-[21/5/2026 21:10:20] > IP do Servidor: 127.0.0.1
-[21/5/2026 21:10:20] > IP local do Servidor: 172.19.16.1	192.168.1.104	
-[21/5/2026 21:10:20] > Portas do Servidor: 7171	7172	
-[21/5/2026 21:10:20] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[21/5/2026 21:10:30] >> DBOSupreme servidor Online!
-
-[21/5/2026 21:10:41] God has logged in.
-
-[21/5/2026 21:19:9] [Error - Spell Interface] 
-[21/5/2026 21:19:9] In a timer event called from: 
-[21/5/2026 21:19:9] data/spells/scripts/renji/Hikotsu Taihou.lua:onCastSpell
-[21/5/2026 21:19:9] Description: 
-[21/5/2026 21:19:9] (luaGetThingFromPos) Tile not found
-
-[21/5/2026 21:19:10] [Error - Spell Interface] 
-[21/5/2026 21:19:10] In a timer event called from: 
-[21/5/2026 21:19:10] data/spells/scripts/renji/Hikotsu Taihou.lua:onCastSpell
-[21/5/2026 21:19:10] Description: 
-[21/5/2026 21:19:10] (luaGetThingFromPos) Tile not found
-
-[21/5/2026 21:19:10] [Error - Spell Interface] 
-[21/5/2026 21:19:10] In a timer event called from: 
-[21/5/2026 21:19:10] data/spells/scripts/renji/Hikotsu Taihou.lua:onCastSpell
-[21/5/2026 21:19:10] Description: 
-[21/5/2026 21:19:10] (luaGetThingFromPos) Tile not found
-
-[21/5/2026 21:19:10] [Error - Spell Interface] 
-[21/5/2026 21:19:10] In a timer event called from: 
-[21/5/2026 21:19:10] data/spells/scripts/renji/Hikotsu Taihou.lua:onCastSpell
-[21/5/2026 21:19:10] Description: 
-[21/5/2026 21:19:10] (luaGetThingFromPos) Tile not found
-
-[21/5/2026 21:19:10] [Error - Spell Interface] 
-[21/5/2026 21:19:10] In a timer event called from: 
-[21/5/2026 21:19:10] data/spells/scripts/renji/Hikotsu Taihou.lua:onCastSpell
-[21/5/2026 21:19:10] Description: 
-[21/5/2026 21:19:10] (luaGetThingFromPos) Tile not found
-
-[21/5/2026 21:19:10] [Error - Spell Interface] 
-[21/5/2026 21:19:10] In a timer event called from: 
-[21/5/2026 21:19:10] data/spells/scripts/renji/Hikotsu Taihou.lua:onCastSpell
-[21/5/2026 21:19:10] Description: 
-[21/5/2026 21:19:10] (luaGetThingFromPos) Tile not found
-
-[21/5/2026 21:19:10] [Error - Spell Interface] 
-[21/5/2026 21:19:10] In a timer event called from: 
-[21/5/2026 21:19:10] data/spells/scripts/renji/Hikotsu Taihou.lua:onCastSpell
-[21/5/2026 21:19:10] Description: 
-[21/5/2026 21:19:10] (luaGetThingFromPos) Tile not found
-
-[21/5/2026 21:19:10] [Error - Spell Interface] 
-[21/5/2026 21:19:10] In a timer event called from: 
-[21/5/2026 21:19:10] data/spells/scripts/renji/Hikotsu Taihou.lua:onCastSpell
-[21/5/2026 21:19:10] Description: 
-[21/5/2026 21:19:10] (luaGetThingFromPos) Tile not found
-[21/5/2026 21:26:15] God has logged out.
-[21/5/2026 22:12:15] > Salvando servidor...
-[21/5/2026 22:12:15] > SAVE: Completo em 0.096 segundos usando binary casa storage.
+[23/5/2026 10:48:17] > Usando SHA1 criptografia
+[23/5/2026 10:48:17] >> Carregando RSA key
+[23/5/2026 10:48:17] >> Iniciando conexao SQL
+[23/5/2026 10:48:17] >> Executando Gerenciador de Banco de Dados
+[23/5/2026 10:48:17] > Optimized database.
+[23/5/2026 10:48:17] >> Carregando items (OTB)
+[23/5/2026 10:48:18] >> Carregando items (XML)
+[23/5/2026 10:48:18] >> Carregando Grupos
+[23/5/2026 10:48:18] >> Carregando Vocacoes
+[23/5/2026 10:48:18] >> Carregando Outfits
+[23/5/2026 10:48:18] >> Carregando Canal de Chat
+[23/5/2026 10:48:18] >> Carregando Sistema
+[23/5/2026 10:48:18] >> Carregando Mods...
+[23/5/2026 10:48:18] > Loading AutoLoot.xml... done.
+[23/5/2026 10:48:18] > Loading Automatic Raids.xml... done.
+[23/5/2026 10:48:18] > Loading highscorebook.xml... done.
+[23/5/2026 10:48:18] > Loading task_system.xml... done.
+[23/5/2026 10:48:18] > 4 mods were loaded.
+[23/5/2026 10:48:18] >> Carregando EXP Stages
+[23/5/2026 10:48:18] >> Carregando Monstros
+[23/5/2026 10:48:18] >> Carregando Mapa e Spawns...
+[23/5/2026 10:48:18] > Tamanho do Mapa: 64000x64000.
+[23/5/2026 10:48:18] > Descricao do Mapa: 
+[23/5/2026 10:48:18] "Saved with OTAcademy Map Editor 4.1.1"
+[23/5/2026 10:48:18] "No map description available."
+[23/5/2026 10:48:21] > Mapa carregado em: 2.742 segundos.
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (1)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (2)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (3)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (4)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (5)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (6)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (7)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (8)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (9)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (10)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (11)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (12)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (13)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (14)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (15)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (16)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (17)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (18)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (19)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (20)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (21)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (22)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (23)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (24)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (25)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (26)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (27)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (28)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (29)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (30)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (31)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (32)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (33)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (34)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (35)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (36)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (37)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (38)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (39)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (40)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (41)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (42)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (43)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (44)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (45)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (46)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (47)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (48)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (49)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (50)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (51)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (52)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (53)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (54)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (55)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (56)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (57)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (58)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (59)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (60)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (61)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (62)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (63)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (64)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (65)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (66)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (67)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (68)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (69)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (70)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (71)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (72)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (73)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (74)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (75)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (76)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (77)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (78)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (79)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (80)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (81)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (82)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (83)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (84)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (85)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (86)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (87)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (88)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (89)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (90)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (91)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (92)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (93)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (94)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (95)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (96)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (97)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (98)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (99)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (100)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (101)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (102)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (103)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (104)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (105)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (106)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (107)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (108)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (109)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (110)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (111)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (112)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (113)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (114)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (115)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (116)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (117)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (118)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (119)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (120)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (121)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (122)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (123)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (124)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (125)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (126)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (127)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (128)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (129)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (130)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (131)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (132)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (133)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (134)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (135)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (136)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (137)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (138)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (139)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (140)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (141)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (142)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (143)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (144)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (145)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (146)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (147)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (148)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (149)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (150)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (151)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (152)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (153)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (154)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (155)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (156)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (157)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (158)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (159)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (160)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (161)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (162)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (163)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (164)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (165)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (166)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (167)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (168)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (169)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (170)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (171)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (172)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (173)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (174)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (175)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (176)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (177)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (178)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (179)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (180)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (181)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (182)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (183)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (184)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (185)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (186)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (187)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (188)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (189)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (190)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (191)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (192)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (193)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (194)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (195)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (196)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (197)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (198)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (199)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (200)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (201)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (202)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (203)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (204)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (205)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (206)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (207)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (208)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (209)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (210)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (211)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (212)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (213)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (214)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (215)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (216)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (217)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (218)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (219)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (220)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (221)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (222)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (223)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (224)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (225)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (226)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (227)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (228)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (229)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (230)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (231)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (232)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (233)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (234)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (235)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (236)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (237)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (238)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (239)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (240)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (241)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (242)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (243)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (244)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (245)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (246)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (247)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (248)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (249)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (250)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (251)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (252)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (253)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (254)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (255)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (256)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (257)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (258)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (259)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (260)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (261)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (262)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (263)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (264)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (265)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (266)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (267)
+[23/5/2026 10:48:21] [Warning - Houses::loadFromXml] House entry not set for: Forgotten headquarter (Flat 1, Area 42) (268)
+[23/5/2026 10:48:21] > Data carregada em: 0.222 segundos.
+[23/5/2026 10:48:23] > Houses carregada em: 1.811 segundos.
+[23/5/2026 10:48:23] > Content unserialization time: 0.002 seconds.
+[23/5/2026 10:48:23] > Carregando Tipo de PVP... Open PvP
+[23/5/2026 10:48:23] > Inicializando estado do jogo e registrando servicos...
+[23/5/2026 10:48:23] > IP do Servidor: 127.0.0.1
+[23/5/2026 10:48:23] > IP local do Servidor: 172.30.112.1	192.168.1.104	
+[23/5/2026 10:48:23] > Portas do Servidor: 7171	7172	
+[23/5/2026 10:48:23] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...

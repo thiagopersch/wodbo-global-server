@@ -4,6 +4,7 @@
 	<look type="130" head="95" body="19" legs="69" feet="116" addons="3" />
 	<parameters>
 		<parameter key="module_shop" value="1" />
-		<parameter key="message_greet" value="Hello |PLAYERNAME|, where do you want to {travel}?" />
+		<parameter key="message_greet"
+			value="Ah, |PLAYERNAME|! I can sense a great destiny within you! You will be redirected to {Central City}, the heart of this world, where your journey will truly begin. Do you wish to go to {Central City}?" />
 	</parameters>
 </npc>
