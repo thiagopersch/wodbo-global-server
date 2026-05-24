@@ -24,8 +24,474 @@
 #include "player.h"
 #include "condition.h"
 
+#include <sstream>
 #include "game.h"
 extern Game g_game;
+
+// ==================== Wings ====================
+
+bool Wings::loadFromXml()
+{
+	xmlDocPtr doc = xmlParseFile(getFilePath(FILE_TYPE_XML, "extoutfits.xml").c_str());
+	if(!doc)
+	{
+		std::clog << "[Warning - Wings::loadFromXml] Cannot load extoutfits.xml" << std::endl;
+		return false;
+	}
+
+	xmlNodePtr p, root = xmlDocGetRootElement(doc);
+	if(xmlStrcmp(root->name, (const xmlChar*)"extoutfits"))
+	{
+		std::clog << "[Error - Wings::loadFromXml] Malformed extoutfits.xml" << std::endl;
+		xmlFreeDoc(doc);
+		return false;
+	}
+
+	for(p = root->children; p; p = p->next)
+	{
+		if(xmlStrcmp(p->name, (const xmlChar*)"wings") == 0)
+		{
+			WingType wing;
+			int32_t intValue;
+			std::string strValue;
+
+			if(!readXMLInteger(p, "id", intValue))
+				continue;
+			wing.id = intValue;
+
+			if(!readXMLInteger(p, "looktype", intValue) && !readXMLInteger(p, "lookType", intValue))
+				continue;
+			wing.lookType = intValue;
+
+			if(readXMLString(p, "name", strValue))
+				wing.name = strValue;
+			else
+			{
+				std::ostringstream ss;
+				ss << wing.id;
+				wing.name = "Wing #" + ss.str();
+			}
+
+			if(readXMLString(p, "premium", strValue))
+				wing.isPremium = booleanString(strValue);
+
+			if(readXMLString(p, "storageId", strValue))
+				wing.storageId = strValue;
+			if(readXMLString(p, "storageValue", strValue))
+				wing.storageValue = strValue;
+
+			wingMap[wing.id] = wing;
+		}
+	}
+
+	xmlFreeDoc(doc);
+	return true;
+}
+
+bool Wings::getWing(uint16_t id, WingType& wing)
+{
+	WingMap::iterator it = wingMap.find(id);
+	if(it == wingMap.end())
+		return false;
+	wing = it->second;
+	return true;
+}
+
+WingType* Wings::getWingByLookType(uint16_t lookType)
+{
+	for(WingMap::iterator it = wingMap.begin(); it != wingMap.end(); ++it)
+	{
+		if(it->second.lookType == lookType)
+			return &it->second;
+	}
+	return NULL;
+}
+
+bool Wings::playerHasWing(const Player* player, uint16_t wingId) const
+{
+	WingMap::const_iterator it = wingMap.find(wingId);
+	if(it == wingMap.end())
+		return false;
+
+	const WingType& wing = it->second;
+	if(wing.isPremium && !player->isPremium())
+		return false;
+
+	if(wing.storageId.empty())
+		return true;
+
+	std::string value;
+	player->getStorage(wing.storageId, value);
+
+	if(value == wing.storageValue)
+		return true;
+
+	int32_t tmp = atoi(value.c_str());
+	if(!tmp && value != "0")
+		return false;
+
+	tmp = atoi(wing.storageValue.c_str());
+	if(!tmp && wing.storageValue != "0")
+		return false;
+
+	return atoi(value.c_str()) >= tmp;
+}
+
+// ==================== Auras ====================
+
+bool Auras::loadFromXml()
+{
+	xmlDocPtr doc = xmlParseFile(getFilePath(FILE_TYPE_XML, "extoutfits.xml").c_str());
+	if(!doc)
+	{
+		std::clog << "[Warning - Auras::loadFromXml] Cannot load extoutfits.xml" << std::endl;
+		return false;
+	}
+
+	xmlNodePtr p, root = xmlDocGetRootElement(doc);
+	if(xmlStrcmp(root->name, (const xmlChar*)"extoutfits"))
+	{
+		std::clog << "[Error - Auras::loadFromXml] Malformed extoutfits.xml" << std::endl;
+		xmlFreeDoc(doc);
+		return false;
+	}
+
+	for(p = root->children; p; p = p->next)
+	{
+		if(xmlStrcmp(p->name, (const xmlChar*)"auras") == 0)
+		{
+			AuraType aura;
+			int32_t intValue;
+			std::string strValue;
+
+			if(!readXMLInteger(p, "id", intValue))
+				continue;
+			aura.id = intValue;
+
+			if(!readXMLInteger(p, "looktype", intValue) && !readXMLInteger(p, "lookType", intValue))
+				continue;
+			aura.lookType = intValue;
+
+			if(readXMLString(p, "name", strValue))
+				aura.name = strValue;
+			else
+			{
+				std::ostringstream ss;
+				ss << aura.id;
+				aura.name = "Aura #" + ss.str();
+			}
+
+			if(readXMLString(p, "premium", strValue))
+				aura.isPremium = booleanString(strValue);
+
+			if(readXMLString(p, "storageId", strValue))
+				aura.storageId = strValue;
+			if(readXMLString(p, "storageValue", strValue))
+				aura.storageValue = strValue;
+
+			auraMap[aura.id] = aura;
+		}
+	}
+
+	xmlFreeDoc(doc);
+	return true;
+}
+
+bool Auras::getAura(uint16_t id, AuraType& aura)
+{
+	AuraMap::iterator it = auraMap.find(id);
+	if(it == auraMap.end())
+		return false;
+	aura = it->second;
+	return true;
+}
+
+AuraType* Auras::getAuraByLookType(uint16_t lookType)
+{
+	for(AuraMap::iterator it = auraMap.begin(); it != auraMap.end(); ++it)
+	{
+		if(it->second.lookType == lookType)
+			return &it->second;
+	}
+	return NULL;
+}
+
+bool Auras::playerHasAura(const Player* player, uint16_t auraId) const
+{
+	AuraMap::const_iterator it = auraMap.find(auraId);
+	if(it == auraMap.end())
+		return false;
+
+	const AuraType& aura = it->second;
+	if(aura.isPremium && !player->isPremium())
+		return false;
+
+	if(aura.storageId.empty())
+		return true;
+
+	std::string value;
+	player->getStorage(aura.storageId, value);
+
+	if(value == aura.storageValue)
+		return true;
+
+	int32_t tmp = atoi(value.c_str());
+	if(!tmp && value != "0")
+		return false;
+
+	tmp = atoi(aura.storageValue.c_str());
+	if(!tmp && aura.storageValue != "0")
+		return false;
+
+	return atoi(value.c_str()) >= tmp;
+}
+
+// ==================== Shaders ====================
+
+bool Shaders::loadFromXml()
+{
+	xmlDocPtr doc = xmlParseFile(getFilePath(FILE_TYPE_XML, "extoutfits.xml").c_str());
+	if(!doc)
+	{
+		std::clog << "[Warning - Shaders::loadFromXml] Cannot load extoutfits.xml" << std::endl;
+		return false;
+	}
+
+	xmlNodePtr p, root = xmlDocGetRootElement(doc);
+	if(xmlStrcmp(root->name, (const xmlChar*)"extoutfits"))
+	{
+		std::clog << "[Error - Shaders::loadFromXml] Malformed extoutfits.xml" << std::endl;
+		xmlFreeDoc(doc);
+		return false;
+	}
+
+	for(p = root->children; p; p = p->next)
+	{
+		if(xmlStrcmp(p->name, (const xmlChar*)"shaders") == 0)
+		{
+			ShaderType shader;
+			int32_t intValue;
+			std::string strValue;
+
+			if(!readXMLInteger(p, "id", intValue))
+				continue;
+			shader.id = intValue;
+
+			if(!readXMLString(p, "shadername", strValue))
+				continue;
+			shader.shaderName = strValue;
+
+			if(readXMLString(p, "name", strValue))
+				shader.displayName = strValue;
+			else
+				shader.displayName = shader.shaderName;
+
+			if(readXMLString(p, "premium", strValue))
+				shader.isPremium = booleanString(strValue);
+
+			if(readXMLString(p, "storageId", strValue))
+				shader.storageId = strValue;
+			if(readXMLString(p, "storageValue", strValue))
+				shader.storageValue = strValue;
+
+			shaderMap[shader.id] = shader;
+		}
+	}
+
+	xmlFreeDoc(doc);
+	return true;
+}
+
+bool Shaders::getShader(uint16_t id, ShaderType& shader)
+{
+	ShaderMap::iterator it = shaderMap.find(id);
+	if(it == shaderMap.end())
+		return false;
+	shader = it->second;
+	return true;
+}
+
+uint16_t Shaders::getShaderByName(const std::string& shaderName) const
+{
+	for(ShaderMap::const_iterator it = shaderMap.begin(); it != shaderMap.end(); ++it)
+	{
+		if(it->second.shaderName == shaderName)
+			return it->first;
+	}
+	return 0;
+}
+
+bool Shaders::playerHasShader(const Player* player, uint16_t shaderId) const
+{
+	ShaderMap::const_iterator it = shaderMap.find(shaderId);
+	if(it == shaderMap.end())
+		return false;
+
+	const ShaderType& shader = it->second;
+	if(shader.isPremium && !player->isPremium())
+		return false;
+
+	if(shader.storageId.empty())
+		return true;
+
+	std::string value;
+	player->getStorage(shader.storageId, value);
+
+	if(value == shader.storageValue)
+		return true;
+
+	int32_t tmp = atoi(value.c_str());
+	if(!tmp && value != "0")
+		return false;
+
+	tmp = atoi(shader.storageValue.c_str());
+	if(!tmp && shader.storageValue != "0")
+		return false;
+
+	return atoi(value.c_str()) >= tmp;
+}
+
+// ==================== Bars ====================
+
+bool Bars::loadFromXml()
+{
+	xmlDocPtr doc = xmlParseFile(getFilePath(FILE_TYPE_XML, "extoutfits.xml").c_str());
+	if(!doc)
+	{
+		std::clog << "[Warning - Bars::loadFromXml] Cannot load extoutfits.xml" << std::endl;
+		return false;
+	}
+
+	xmlNodePtr p, root = xmlDocGetRootElement(doc);
+	if(xmlStrcmp(root->name, (const xmlChar*)"extoutfits"))
+	{
+		std::clog << "[Error - Bars::loadFromXml] Malformed extoutfits.xml" << std::endl;
+		xmlFreeDoc(doc);
+		return false;
+	}
+
+	for(p = root->children; p; p = p->next)
+	{
+		if(xmlStrcmp(p->name, (const xmlChar*)"healthbars") == 0)
+		{
+			BarType bar;
+			int32_t intValue;
+			std::string strValue;
+
+			if(!readXMLInteger(p, "id", intValue))
+				continue;
+			bar.id = intValue;
+
+			if(readXMLString(p, "image", strValue))
+				bar.imagePath = strValue;
+
+			if(readXMLString(p, "name", strValue))
+				bar.name = strValue;
+			else
+			{
+				std::ostringstream ss;
+				ss << bar.id;
+				bar.name = "HealthBar #" + ss.str();
+			}
+
+			if(readXMLString(p, "premium", strValue))
+				bar.isPremium = booleanString(strValue);
+
+			if(readXMLString(p, "storageId", strValue))
+				bar.storageId = strValue;
+			if(readXMLString(p, "storageValue", strValue))
+				bar.storageValue = strValue;
+
+			healthBarMap[bar.id] = bar;
+		}
+		else if(xmlStrcmp(p->name, (const xmlChar*)"manabars") == 0)
+		{
+			BarType bar;
+			int32_t intValue;
+			std::string strValue;
+
+			if(!readXMLInteger(p, "id", intValue))
+				continue;
+			bar.id = intValue;
+
+			if(readXMLString(p, "image", strValue))
+				bar.imagePath = strValue;
+
+			if(readXMLString(p, "name", strValue))
+				bar.name = strValue;
+			else
+			{
+				std::ostringstream ss;
+				ss << bar.id;
+				bar.name = "ManaBar #" + ss.str();
+			}
+
+			if(readXMLString(p, "premium", strValue))
+				bar.isPremium = booleanString(strValue);
+
+			if(readXMLString(p, "storageId", strValue))
+				bar.storageId = strValue;
+			if(readXMLString(p, "storageValue", strValue))
+				bar.storageValue = strValue;
+
+			manaBarMap[bar.id] = bar;
+		}
+	}
+
+	xmlFreeDoc(doc);
+	return true;
+}
+
+bool Bars::getHealthBar(uint16_t id, BarType& bar)
+{
+	BarMap::iterator it = healthBarMap.find(id);
+	if(it == healthBarMap.end())
+		return false;
+	bar = it->second;
+	return true;
+}
+
+bool Bars::getManaBar(uint16_t id, BarType& bar)
+{
+	BarMap::iterator it = manaBarMap.find(id);
+	if(it == manaBarMap.end())
+		return false;
+	bar = it->second;
+	return true;
+}
+
+bool Bars::playerHasBar(const Player* player, uint16_t barId, bool isHealth) const
+{
+	const BarMap* map = isHealth ? &healthBarMap : &manaBarMap;
+	BarMap::const_iterator it = map->find(barId);
+	if(it == map->end())
+		return false;
+
+	const BarType& bar = it->second;
+	if(bar.isPremium && !player->isPremium())
+		return false;
+
+	if(bar.storageId.empty())
+		return true;
+
+	std::string value;
+	player->getStorage(bar.storageId, value);
+
+	if(value == bar.storageValue)
+		return true;
+
+	int32_t tmp = atoi(value.c_str());
+	if(!tmp && value != "0")
+		return false;
+
+	tmp = atoi(bar.storageValue.c_str());
+	if(!tmp && bar.storageValue != "0")
+		return false;
+
+	return atoi(value.c_str()) >= tmp;
+}
+
+// ==================== Outfits ====================
 
 bool Outfits::parseOutfitNode(xmlNodePtr p)
 {

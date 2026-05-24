@@ -1605,6 +1605,22 @@ void LuaInterface::registerFunctions(){
 	//doPlayerSendOutfitWindow(cid)
 	lua_register(m_luaState, "doPlayerSendOutfitWindow", LuaInterface::luaDoPlayerSendOutfitWindow);
 
+	// Extended outfit functions
+	//doPlayerSetWings(cid, wingId)
+	lua_register(m_luaState, "doPlayerSetWings", LuaInterface::luaDoPlayerSetWings);
+
+	//doPlayerGetWings(cid) -> wings lookType
+	lua_register(m_luaState, "doPlayerGetWings", LuaInterface::luaDoPlayerGetWings);
+
+	//doPlayerSetAura(cid, auraId)
+	lua_register(m_luaState, "doPlayerSetAura", LuaInterface::luaDoPlayerSetAura);
+
+	//doPlayerGetAura(cid) -> aura lookType
+	lua_register(m_luaState, "doPlayerGetAura", LuaInterface::luaDoPlayerGetAura);
+
+	//doPlayerSetOutfitExtras(cid, mount, wings, aura, shader, healthBar, manaBar)
+	lua_register(m_luaState, "doPlayerSetOutfitExtras", LuaInterface::luaDoPlayerSetOutfitExtras);
+
 	//doPlayerLearnInstantSpell(cid, name)
 	lua_register(m_luaState, "doPlayerLearnInstantSpell", LuaInterface::luaDoPlayerLearnInstantSpell);
 
@@ -2927,6 +2943,253 @@ int32_t LuaInterface::luaGetPlayerSkullEnd(lua_State* L)
 int32_t LuaInterface::luaDoPlayerSendOutfitWindow(lua_State* L)
 {
 	return internalGetPlayerInfo(L, PlayerInfoOutfitWindow);
+}
+
+// ==================== Extended Outfit Lua API ====================
+
+int32_t LuaInterface::luaDoPlayerSetWings(lua_State* L)
+{
+	// doPlayerSetWings(cid, wingId)
+	uint16_t wingId = (uint16_t)popNumber(L);
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	WingType wing;
+	if(wingId > 0 && !Wings::getInstance()->getWing(wingId, wing))
+	{
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	Outfit_t outfit = player->getDefaultOutfit();
+	outfit.wings = wing.lookType;
+	player->changeOutfit(outfit, false);
+	g_game.internalCreatureChangeOutfit(player, outfit);
+
+	lua_pushboolean(L, true);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerGetWings(lua_State* L)
+{
+	// doPlayerGetWings(cid)
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushnumber(L, 0);
+		return 1;
+	}
+
+	lua_pushnumber(L, player->getDefaultOutfit().wings);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSetAura(lua_State* L)
+{
+	// doPlayerSetAura(cid, auraId)
+	uint16_t auraId = (uint16_t)popNumber(L);
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	AuraType aura;
+	if(auraId > 0 && !Auras::getInstance()->getAura(auraId, aura))
+	{
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	Outfit_t outfit = player->getDefaultOutfit();
+	outfit.aura = aura.lookType;
+	player->changeOutfit(outfit, false);
+	g_game.internalCreatureChangeOutfit(player, outfit);
+
+	lua_pushboolean(L, true);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerGetAura(lua_State* L)
+{
+	// doPlayerGetAura(cid)
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushnumber(L, 0);
+		return 1;
+	}
+
+	lua_pushnumber(L, player->getDefaultOutfit().aura);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSetShader(lua_State* L)
+{
+	// doPlayerSetShader(cid, shaderId)
+	uint16_t shaderId = (uint16_t)popNumber(L);
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	Outfit_t outfit = player->getDefaultOutfit();
+	outfit.lookShader = shaderId;
+	player->changeOutfit(outfit, false);
+	g_game.internalCreatureChangeOutfit(player, outfit);
+
+	lua_pushboolean(L, true);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerGetShader(lua_State* L)
+{
+	// doPlayerGetShader(cid)
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushnumber(L, 0);
+		return 1;
+	}
+
+	lua_pushnumber(L, player->getDefaultOutfit().lookShader);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSetHealthBar(lua_State* L)
+{
+	// doPlayerSetHealthBar(cid, barId)
+	uint16_t barId = (uint16_t)popNumber(L);
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	Outfit_t outfit = player->getDefaultOutfit();
+	outfit.healthBar = barId;
+	player->changeOutfit(outfit, false);
+	g_game.internalCreatureChangeOutfit(player, outfit);
+
+	lua_pushboolean(L, true);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerGetHealthBar(lua_State* L)
+{
+	// doPlayerGetHealthBar(cid)
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushnumber(L, 0);
+		return 1;
+	}
+
+	lua_pushnumber(L, player->getDefaultOutfit().healthBar);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSetManaBar(lua_State* L)
+{
+	// doPlayerSetManaBar(cid, barId)
+	uint16_t barId = (uint16_t)popNumber(L);
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	Outfit_t outfit = player->getDefaultOutfit();
+	outfit.manaBar = barId;
+	player->changeOutfit(outfit, false);
+	g_game.internalCreatureChangeOutfit(player, outfit);
+
+	lua_pushboolean(L, true);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerGetManaBar(lua_State* L)
+{
+	// doPlayerGetManaBar(cid)
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushnumber(L, 0);
+		return 1;
+	}
+
+	lua_pushnumber(L, player->getDefaultOutfit().manaBar);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSetOutfitExtras(lua_State* L)
+{
+	// doPlayerSetOutfitExtras(cid, mount, wings, aura, shader, healthBar, manaBar)
+	uint16_t manaBar = (uint16_t)popNumber(L);
+	uint16_t healthBar = (uint16_t)popNumber(L);
+	uint16_t shader = (uint16_t)popNumber(L);
+	uint16_t aura = (uint16_t)popNumber(L);
+	uint16_t wings = (uint16_t)popNumber(L);
+	uint16_t mount = (uint16_t)popNumber(L);
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	Outfit_t outfit = player->getDefaultOutfit();
+	outfit.mount = mount;
+	outfit.wings = wings;
+	outfit.aura = aura;
+	outfit.lookShader = shader;
+	outfit.healthBar = healthBar;
+	outfit.manaBar = manaBar;
+	player->changeOutfit(outfit, false);
+	g_game.internalCreatureChangeOutfit(player, outfit);
+
+	lua_pushboolean(L, true);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSendExtendedOpcode(lua_State* L)
+{
+	// doPlayerSendExtendedOpcode(cid, opcode, buffer)
+	std::string buffer = popString(L);
+	uint16_t opcode = (uint16_t)popNumber(L);
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	if(player->isUsingOtclient())
+		player->sendExtendedOpcode(opcode, buffer);
+
+	lua_pushboolean(L, true);
+	return 1;
 }
 
 int32_t LuaInterface::luaGetPlayerIdleTime(lua_State* L)
@@ -11269,25 +11532,6 @@ SHIFT_OPERATOR(uint32_t, ULeftShift, <<)
 SHIFT_OPERATOR(uint32_t, URightShift, >>)
 
 #undef SHIFT_OPERATOR
-int32_t LuaInterface::luaDoPlayerSendExtendedOpcode(lua_State* L)
-{
-    // doPlayerSendExtendedOpcode(cid, opcode, buffer)
-    std::string buffer = popString(L);
-    int32_t opcode = popNumber(L);
-    uint32_t cid = popNumber(L);
-
-    ScriptEnviroment* env = getEnv();
-    Player* player = env->getPlayerByUID(cid);
-    if (!player) {
-        lua_pushboolean(L, false);
-        return 1;
-    }
-
-    player->sendExtendedOpcode(opcode, buffer);
-    lua_pushboolean(L, true);
-    return 1;
-}
-
 int32_t LuaInterface::luaDoPlayerSendPing(lua_State* L)
 {
     //doPlayerSendPing(cid)

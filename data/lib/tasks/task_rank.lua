@@ -1,33 +1,33 @@
 if not TaskStorage_getPlayerPoints then dofile("data/lib/tasks/task_storage.lua") end
 
 TASK_RANK_DRAGONBALL = {
-    { requiredPoints = 0,      name = "Unranked",           color = "#666666", pointsPerDifficulty = { easy = 5,   medium = 10,  hard = 20,  elite = 40 } },
-    { requiredPoints = 50,     name = "Citizen",            color = "#aaaaaa", pointsPerDifficulty = { easy = 10,  medium = 25,  hard = 50,  elite = 100 } },
-    { requiredPoints = 200,    name = "Veteran",            color = "#cd7f32", pointsPerDifficulty = { easy = 15,  medium = 35,  hard = 70,  elite = 140 } },
-    { requiredPoints = 500,    name = "Master",             color = "#c0c0c0", pointsPerDifficulty = { easy = 20,  medium = 50,  hard = 100, elite = 200 } },
-    { requiredPoints = 1000,   name = "Professional",       color = "#ffd700", pointsPerDifficulty = { easy = 30,  medium = 70,  hard = 140, elite = 280 } },
-    { requiredPoints = 2000,   name = "Elite",              color = "#b9f2ff", pointsPerDifficulty = { easy = 40,  medium = 90,  hard = 180, elite = 360 } },
-    { requiredPoints = 4000,   name = "Legendary",          color = "#ff6b6b", pointsPerDifficulty = { easy = 50,  medium = 110, hard = 220, elite = 440 } },
-    { requiredPoints = 7000,   name = "Immortal",           color = "#ff0000", pointsPerDifficulty = { easy = 60,  medium = 130, hard = 260, elite = 520 } },
-    { requiredPoints = 12000,  name = "Hero",               color = "#ff4500", pointsPerDifficulty = { easy = 80,  medium = 170, hard = 340, elite = 680 } },
+    { requiredPoints = 0,      name = "Unranked",           color = "#666666", pointsPerDifficulty = { easy = 5, medium = 10, hard = 20, elite = 40 } },
+    { requiredPoints = 50,     name = "Citizen",            color = "#aaaaaa", pointsPerDifficulty = { easy = 10, medium = 25, hard = 50, elite = 100 } },
+    { requiredPoints = 200,    name = "Veteran",            color = "#cd7f32", pointsPerDifficulty = { easy = 15, medium = 35, hard = 70, elite = 140 } },
+    { requiredPoints = 500,    name = "Master",             color = "#c0c0c0", pointsPerDifficulty = { easy = 20, medium = 50, hard = 100, elite = 200 } },
+    { requiredPoints = 1000,   name = "Professional",       color = "#ffd700", pointsPerDifficulty = { easy = 30, medium = 70, hard = 140, elite = 280 } },
+    { requiredPoints = 2000,   name = "Elite",              color = "#b9f2ff", pointsPerDifficulty = { easy = 40, medium = 90, hard = 180, elite = 360 } },
+    { requiredPoints = 4000,   name = "Legendary",          color = "#ff6b6b", pointsPerDifficulty = { easy = 50, medium = 110, hard = 220, elite = 440 } },
+    { requiredPoints = 7000,   name = "Immortal",           color = "#ff0000", pointsPerDifficulty = { easy = 60, medium = 130, hard = 260, elite = 520 } },
+    { requiredPoints = 12000,  name = "Hero",               color = "#ff4500", pointsPerDifficulty = { easy = 80, medium = 170, hard = 340, elite = 680 } },
     { requiredPoints = 25000,  name = "God of Destruction", color = "#8b00ff", pointsPerDifficulty = { easy = 100, medium = 210, hard = 420, elite = 840 } },
     { requiredPoints = 60000,  name = "God of Creation",    color = "#00bfff", pointsPerDifficulty = { easy = 120, medium = 250, hard = 500, elite = 1000 } },
     { requiredPoints = 120000, name = "Supreme God",        color = "#ffd700", pointsPerDifficulty = { easy = 150, medium = 300, hard = 600, elite = 1200 } }
 }
 
 TASK_RANK_BLEACH = {
-    { requiredPoints = 0,      name = "Unranked",            color = "#666666", pointsPerDifficulty = { easy = 5,   medium = 10,  hard = 20,  elite = 40 } },
-    { requiredPoints = 50,     name = "Human",               color = "#aaaaaa", pointsPerDifficulty = { easy = 10,  medium = 25,  hard = 50,  elite = 100 } },
-    { requiredPoints = 200,    name = "Hollow",              color = "#cd7f32", pointsPerDifficulty = { easy = 15,  medium = 35,  hard = 70,  elite = 140 } },
-    { requiredPoints = 500,    name = "Shinigami",           color = "#c0c0c0", pointsPerDifficulty = { easy = 20,  medium = 50,  hard = 100, elite = 200 } },
-    { requiredPoints = 1000,   name = "Vaizard",             color = "#ffd700", pointsPerDifficulty = { easy = 30,  medium = 70,  hard = 140, elite = 280 } },
-    { requiredPoints = 2000,   name = "Arrancar",            color = "#b9f2ff", pointsPerDifficulty = { easy = 40,  medium = 90,  hard = 180, elite = 360 } },
-    { requiredPoints = 4000,   name = "Espada",              color = "#ff6b6b", pointsPerDifficulty = { easy = 50,  medium = 110, hard = 220, elite = 440 } },
-    { requiredPoints = 7000,   name = "Captain",             color = "#ff0000", pointsPerDifficulty = { easy = 60,  medium = 130, hard = 260, elite = 520 } },
-    { requiredPoints = 12000,  name = "Elite Captain",       color = "#ff4500", pointsPerDifficulty = { easy = 80,  medium = 170, hard = 340, elite = 680 } },
-    { requiredPoints = 25000,  name = "General Captain",     color = "#8b00ff", pointsPerDifficulty = { easy = 100, medium = 210, hard = 420, elite = 840 } },
-    { requiredPoints = 60000,  name = "Head Captain",        color = "#00bfff", pointsPerDifficulty = { easy = 120, medium = 250, hard = 500, elite = 1000 } },
-    { requiredPoints = 120000, name = "King of Shinigami",   color = "#ffd700", pointsPerDifficulty = { easy = 150, medium = 300, hard = 600, elite = 1200 } }
+    { requiredPoints = 0,      name = "Unranked",          color = "#666666", pointsPerDifficulty = { easy = 5, medium = 10, hard = 20, elite = 40 } },
+    { requiredPoints = 50,     name = "Human",             color = "#aaaaaa", pointsPerDifficulty = { easy = 10, medium = 25, hard = 50, elite = 100 } },
+    { requiredPoints = 200,    name = "Hollow",            color = "#cd7f32", pointsPerDifficulty = { easy = 15, medium = 35, hard = 70, elite = 140 } },
+    { requiredPoints = 500,    name = "Shinigami",         color = "#c0c0c0", pointsPerDifficulty = { easy = 20, medium = 50, hard = 100, elite = 200 } },
+    { requiredPoints = 1000,   name = "Vaizard",           color = "#ffd700", pointsPerDifficulty = { easy = 30, medium = 70, hard = 140, elite = 280 } },
+    { requiredPoints = 2000,   name = "Arrancar",          color = "#b9f2ff", pointsPerDifficulty = { easy = 40, medium = 90, hard = 180, elite = 360 } },
+    { requiredPoints = 4000,   name = "Espada",            color = "#ff6b6b", pointsPerDifficulty = { easy = 50, medium = 110, hard = 220, elite = 440 } },
+    { requiredPoints = 7000,   name = "Captain",           color = "#ff0000", pointsPerDifficulty = { easy = 60, medium = 130, hard = 260, elite = 520 } },
+    { requiredPoints = 12000,  name = "Elite Captain",     color = "#ff4500", pointsPerDifficulty = { easy = 80, medium = 170, hard = 340, elite = 680 } },
+    { requiredPoints = 25000,  name = "General Captain",   color = "#8b00ff", pointsPerDifficulty = { easy = 100, medium = 210, hard = 420, elite = 840 } },
+    { requiredPoints = 60000,  name = "Head Captain",      color = "#00bfff", pointsPerDifficulty = { easy = 120, medium = 250, hard = 500, elite = 1000 } },
+    { requiredPoints = 120000, name = "King of Shinigami", color = "#ffd700", pointsPerDifficulty = { easy = 150, medium = 300, hard = 600, elite = 1200 } }
 }
 
 function TaskRank_getTableForCategory(category)
@@ -81,7 +81,8 @@ function TaskRank_checkAndRankUp(cid)
     local nextRank = ranks[idx + 1]
 
     if nextRank and points >= nextRank.requiredPoints then
-        doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "[Rank] Congratulations! You advanced to " .. nextRank.name .. "!")
+        doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE,
+            "[Rank] Congratulations! You advanced to " .. nextRank.name .. "!")
         doSendMagicEffect(getCreaturePosition(cid), CONST_ME_HOLYDAMAGE)
 
         TaskNetwork_sendRankUpdate(cid)
@@ -104,7 +105,6 @@ local VOCATION_UNIVERSE_MAP = {}
 local function loadVocationUniverses()
     local f = io.open("data/XML/vocations.xml", "r")
     if not f then
-        print("[TaskRank] Could not open vocations.xml")
         return
     end
     local content = f:read("*a")
@@ -121,7 +121,6 @@ local function loadVocationUniverses()
             end
         end
     end
-    print("[TaskRank] Vocation->universe mappings loaded")
 end
 
 function TaskRank_getPlayerVocationCategory(cid)

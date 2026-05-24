@@ -21,7 +21,10 @@
 #include "otsystem.h"
 #include "enums.h"
 
+class Player;
+
 #define OUTFITS_MAX_NUMBER 25
+#define EXT_OUTFIT_MAX_NUMBER 100
 
 enum AddonRequirement_t
 {
@@ -64,8 +67,154 @@ struct Outfit
 	std::string name, storageId, storageValue;
 };
 
+struct WingType
+{
+	uint16_t id;
+	uint16_t lookType;
+	std::string name;
+	std::string storageId;
+	std::string storageValue;
+	bool isPremium;
+
+	WingType() { id = lookType = 0; isPremium = false; }
+};
+
+struct AuraType
+{
+	uint16_t id;
+	uint16_t lookType;
+	std::string name;
+	std::string storageId;
+	std::string storageValue;
+	bool isPremium;
+
+	AuraType() { id = lookType = 0; isPremium = false; }
+};
+
+struct ShaderType
+{
+	uint16_t id;
+	std::string shaderName;
+	std::string displayName;
+	std::string storageId;
+	std::string storageValue;
+	bool isPremium;
+
+	ShaderType() { id = 0; isPremium = false; }
+};
+
+struct BarType
+{
+	uint16_t id;
+	std::string imagePath;
+	std::string name;
+	std::string storageId;
+	std::string storageValue;
+	bool isPremium;
+
+	BarType() { id = 0; isPremium = false; }
+};
+
 typedef std::list<Outfit> OutfitList;
 typedef std::map<uint32_t, Outfit> OutfitMap;
+typedef std::map<uint32_t, WingType> WingMap;
+typedef std::map<uint32_t, AuraType> AuraMap;
+typedef std::map<uint32_t, ShaderType> ShaderMap;
+typedef std::map<uint32_t, BarType> BarMap;
+
+class Wings
+{
+	public:
+		virtual ~Wings() {}
+		static Wings* getInstance()
+		{
+			static Wings instance;
+			return &instance;
+		}
+
+		bool loadFromXml();
+
+		const WingMap& getWings() const { return wingMap; }
+		bool getWing(uint16_t id, WingType& wing);
+		WingType* getWingByLookType(uint16_t lookType);
+
+		bool playerHasWing(const Player* player, uint16_t wingId) const;
+
+	private:
+		Wings() {}
+		WingMap wingMap;
+};
+
+class Auras
+{
+	public:
+		virtual ~Auras() {}
+		static Auras* getInstance()
+		{
+			static Auras instance;
+			return &instance;
+		}
+
+		bool loadFromXml();
+
+		const AuraMap& getAuras() const { return auraMap; }
+		bool getAura(uint16_t id, AuraType& aura);
+		AuraType* getAuraByLookType(uint16_t lookType);
+
+		bool playerHasAura(const Player* player, uint16_t auraId) const;
+
+	private:
+		Auras() {}
+		AuraMap auraMap;
+};
+
+class Shaders
+{
+	public:
+		virtual ~Shaders() {}
+		static Shaders* getInstance()
+		{
+			static Shaders instance;
+			return &instance;
+		}
+
+		bool loadFromXml();
+
+		const ShaderMap& getShaders() const { return shaderMap; }
+		bool getShader(uint16_t id, ShaderType& shader);
+		uint16_t getShaderByName(const std::string& shaderName) const;
+
+		bool playerHasShader(const Player* player, uint16_t shaderId) const;
+
+	private:
+		Shaders() {}
+		ShaderMap shaderMap;
+};
+
+class Bars
+{
+	public:
+		virtual ~Bars() {}
+		static Bars* getInstance()
+		{
+			static Bars instance;
+			return &instance;
+		}
+
+		bool loadFromXml();
+
+		const BarMap& getHealthBars() const { return healthBarMap; }
+		const BarMap& getManaBars() const { return manaBarMap; }
+		bool getHealthBar(uint16_t id, BarType& bar);
+		bool getManaBar(uint16_t id, BarType& bar);
+
+		bool playerHasBar(const Player* player, uint16_t barId, bool isHealth) const;
+
+	private:
+		Bars() {}
+		BarMap healthBarMap;
+		BarMap manaBarMap;
+};
 
 class Outfits
 {

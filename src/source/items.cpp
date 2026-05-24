@@ -1069,7 +1069,7 @@ void Items::parseItemNode(xmlNodePtr itemNode, uint32_t id)
 				if(readXMLInteger(itemAttributesNode, "value", intValue))
 					it.abilities.skills[SKILL_CLUB] = intValue;
 			}
-			else if(tmpStrValue == "skilldist")
+			else if(tmpStrValue == "skilldist" || tmpStrValue == "skilldistance")
 			{
 				if(readXMLInteger(itemAttributesNode, "value", intValue))
 					it.abilities.skills[SKILL_DIST] = intValue;
@@ -1554,6 +1554,11 @@ void Items::parseItemNode(xmlNodePtr itemNode, uint32_t id)
 				if(readXMLInteger(itemAttributesNode, "value", intValue) && intValue != 0)
 					it.abilities.conditionSuppressions |= CONDITION_MANASHIELD;
 			}
+			else if(tmpStrValue == "suppresslifedrain")
+			{
+				if(readXMLInteger(itemAttributesNode, "value", intValue) && intValue != 0)
+					it.abilities.conditionSuppressions |= CONDITION_LIFEDRAIN;
+			}
 			else if(tmpStrValue == "field")
 			{
 				it.group = ITEM_GROUP_MAGICFIELD;
@@ -1691,7 +1696,7 @@ void Items::parseItemNode(xmlNodePtr itemNode, uint32_t id)
 					it.abilities.elementType = COMBAT_ENERGYDAMAGE;
 				}
 			}
-			else if(tmpStrValue == "elementearth")
+			else if(tmpStrValue == "elementearth" || tmpStrValue == "elementpoison")
 			{
 				if(readXMLInteger(itemAttributesNode, "value", intValue))
 				{

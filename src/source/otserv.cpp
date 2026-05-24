@@ -38,6 +38,7 @@
 
 #include "game.h"
 #include "chat.h"
+#include "outfit.h"
 #include "tools.h"
 #include "rsa.h"
 
@@ -598,6 +599,16 @@ void otserv(StringVec, ServiceManager* services)
 	std::clog << ">> Carregando Outfits" << std::endl;
 	if(!Outfits::getInstance()->loadFromXml())
 		startupErrorMessage("Nao foi possivel carregar outfits!");
+
+	// Carregar extensoes de outfit (wings, auras, shaders, bars)
+	std::clog << ">> Carregando Wing Types" << std::endl;
+	Wings::getInstance()->loadFromXml();
+	std::clog << ">> Carregando Aura Types" << std::endl;
+	Auras::getInstance()->loadFromXml();
+	std::clog << ">> Carregando Shader Types" << std::endl;
+	Shaders::getInstance()->loadFromXml();
+	std::clog << ">> Carregando Bar Types" << std::endl;
+	Bars::getInstance()->loadFromXml();
 
 	std::clog << ">> Carregando Canal de Chat" << std::endl;
 	if(!g_chat.loadFromXml())

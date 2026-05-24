@@ -120,6 +120,14 @@
 	<talkaction words="!leavehouse;/leavehouse;alana som" filter="word-spaced" event="script"
 		value="leavehouse.lua" />
 
+	<!-- Extended Outfit (Wings, Aura, Shader, Bars) -->
+	<talkaction words="/wings;!wings;/aura;!aura;/shader;!shader" separator=" " event="script"
+		value="extoutfit.lua" access="4" />
+	<talkaction words="/healthbar;!healthbar;/manabar;!manabar" separator=" " event="script"
+		value="extoutfit.lua" access="4" />
+	<talkaction words="/extoutfit;!extoutfit" separator=" " event="script" value="extoutfit.lua"
+		access="4" />
+
 	<!-- Guilds -->
 	<talkaction words="!createguild" event="function" value="guildCreate" />
 	<talkaction words="!joinguild" event="function" value="guildJoin" />

@@ -17,6 +17,7 @@
 #include "otpch.h"
 #include <boost/function.hpp>
 #include <iostream>
+#include <vector>
 
 #include "protocolgame.h"
 #include "textlogger.h"
@@ -32,6 +33,7 @@
 #include "ioban.h"
 
 #include "items.h"
+#include "outfit.h"
 #include "tile.h"
 #include "house.h"
 
@@ -247,6 +249,10 @@ bool ProtocolGame::login(const std::string& name, uint32_t id, const std::string
 
 		player->setClientVersion(version);
 		player->setOperatingSystem(operatingSystem);
+
+		if(player->isUsingOtclient())
+			sendFeatures();
+
 		if(!g_game.placeCreature(player, player->getLoginPosition()) && !g_game.placeCreature(player, player->getMasterPosition(), false, true))
 		{
 			disconnectClient(0x14, "Temple position is wrong. Contact with the administration..");
@@ -390,6 +396,9 @@ bool ProtocolGame::connect(uint32_t playerId, OperatingSystem_t operatingSystem,
 		m_acceptPackets = true;
 		isCast = true;
 		player->addCastViewer(this);
+		if(player->isUsingOtclient())
+			sendFeatures();
+
 		sendAddCreature(_player, _player->getPosition(), _player->getTile()->getClientIndexOfThing(_player, _player));
 
 		PrivateChatChannel* channel = g_chat.getPrivateChannel(_player);
@@ -415,10 +424,13 @@ bool ProtocolGame::connect(uint32_t playerId, OperatingSystem_t operatingSystem,
 	player->client = this;
 	player->isConnecting = false;
 
-	sendAddCreature(player, player->getPosition(), 1);
-
 	player->setOperatingSystem(operatingSystem);
 	player->setClientVersion(version);
+
+	if(player->isUsingOtclient())
+		sendFeatures();
+
+    sendAddCreature(player, player->getPosition(), 1);
 
 	player->lastIP = player->getIP();
 	player->lastLoad = OTSYS_TIME();
@@ -487,9 +499,7 @@ bool ProtocolGame::parseFirstPacket(NetworkMessage& msg)
 	uint32_t key[4] = {msg.get<uint32_t>(), msg.get<uint32_t>(), msg.get<uint32_t>(), msg.get<uint32_t>()};
 	enableXTEAEncryption();
 	setXTEAKey(key);
-	// notifica o otclient que este servidor pode receber opcodes de protocolo de jogo estendido
-   if(operatingSystem >= CLIENTOS_OTCLIENT_LINUX)
-   sendExtendedOpcode(0x00, std::string());
+	// extended opcode 0 enable is now sent in sendFeatures()
 
 	bool gamemaster = msg.get<char>();
 	std::string name = msg.getString(), character = msg.getString(), password = msg.getString();
@@ -1373,6 +1383,19 @@ void ProtocolGame::parseSetOutfit(NetworkMessage& msg)
 		newOutfit.lookAddons = msg.get<char>();
 	else
 		msg.skip(1);
+
+	// Extended outfit fields from OtClient (send order matches client's sendChangeOutfit)
+	if(player->isUsingOtclient())
+	{
+		// GamePlayerMounts (feature 12) is only supported for protocol >= 870
+		if(player->getClientVersion() >= 870)
+			newOutfit.mount = msg.get<uint16_t>();
+		newOutfit.wings = msg.get<uint16_t>();
+		newOutfit.aura = msg.get<uint16_t>();
+		newOutfit.lookShader = Shaders::getInstance()->getShaderByName(msg.getString());
+		newOutfit.healthBar = msg.get<uint16_t>();
+		newOutfit.manaBar = msg.get<uint16_t>();
+	}
 
 	addGameTask(&Game::playerChangeOutfit, player->getID(), newOutfit);
 }
@@ -2418,6 +2441,75 @@ void ProtocolGame::sendUpdateTile(const Tile* tile, const Position& pos)
 	}
 }
 
+void ProtocolGame::sendFeatures()
+{
+	if(!player || !player->isUsingOtclient())
+		return;
+
+	OutputMessage_ptr msg = OutputMessagePool::getInstance()->getOutputMessage(this, false);
+	if(!msg)
+		return;
+
+	TRACK_MESSAGE(msg);
+
+	// First, send the extended opcode 0 signal to enable client-side extended opcodes
+	msg->put<char>(0x32);
+	msg->put<char>(0x00);
+	msg->putString(std::string());
+
+	// Then, send the features packet
+	msg->put<char>(0x43);
+
+	// Calculate feature count first
+	uint16_t featureCount = 8; // base features (all except mounts)
+	if(player->getClientVersion() >= 870)
+		++featureCount; // GamePlayerMounts
+
+	msg->put<uint16_t>(featureCount);
+
+	// Feature: GamePlayerMounts (12) - only for protocol >= 870
+	if(player->getClientVersion() >= 870)
+	{
+		msg->put<char>(12);
+		msg->put<char>(1);
+	}
+
+	// Feature: GameWingsAndAura (104)
+	msg->put<char>(104);
+	msg->put<char>(1);
+
+	// Feature: GameOutfitShaders (106)
+	msg->put<char>(106);
+	msg->put<char>(1);
+
+	// Feature: GameDrawAuraOnTop (109)
+	msg->put<char>(109);
+	msg->put<char>(0); // auras appear behind outfit by default
+
+	// Feature: GameHealthInfoBackground (113)
+	msg->put<char>(113);
+	msg->put<char>(1);
+
+	// Feature: GameWingOffset (114)
+	msg->put<char>(114);
+	msg->put<char>(1);
+
+	// Feature: GameAuraFrontAndBack (115)
+	msg->put<char>(115);
+	msg->put<char>(0);
+
+	// Feature: GameBigAurasCenter (119)
+	msg->put<char>(119);
+	msg->put<char>(1);
+
+	// Feature: GameExtendedOpcode (80)
+	msg->put<char>(80);
+	msg->put<char>(1);
+
+	// Send features packet immediately so the client processes it before login data
+	OutputMessagePool::getInstance()->send(msg);
+}
+
 void ProtocolGame::sendAddCreature(const Creature* creature, const Position& pos, uint32_t stackpos)
 {
 	if(!canSee(creature))
@@ -2779,6 +2871,126 @@ void ProtocolGame::sendOutfitWindow()
 			msg->put<uint16_t>(player->getDefaultOutfit().lookType);
 			msg->putString("Your outfit");
 			msg->put<char>(player->getDefaultOutfit().lookAddons);
+		}
+
+		// Extended outfit lists for OtClient
+		if(player->isUsingOtclient())
+		{
+			// Mount list (only for protocol >= 870, GamePlayerMounts)
+			if(player->getClientVersion() >= 870)
+			{
+				std::vector<std::pair<uint16_t, std::string> > mountList;
+				const OutfitMap& allOutfits = Outfits::getInstance()->getOutfits(player->getSex(true));
+				for(OutfitMap::const_iterator it = allOutfits.begin(); it != allOutfits.end(); ++it)
+				{
+					if(player->canWearOutfit(it->first, it->second.addons) && it->second.lookType != player->getDefaultOutfit().lookType)
+						mountList.push_back(std::make_pair(it->second.lookType, it->second.name));
+				}
+				uint8_t mountCount = std::min<size_t>(EXT_OUTFIT_MAX_NUMBER, mountList.size());
+				msg->put<char>(mountCount);
+				for(uint8_t i = 0; i < mountCount; ++i)
+				{
+					msg->put<uint16_t>(mountList[i].first);
+					msg->putString(mountList[i].second);
+				}
+			}
+
+			// Wing list
+			{
+				std::vector<WingType> wingList;
+				const WingMap& allWings = Wings::getInstance()->getWings();
+				for(WingMap::const_iterator it = allWings.begin(); it != allWings.end(); ++it)
+				{
+					if(Wings::getInstance()->playerHasWing(player, it->second.id))
+						wingList.push_back(it->second);
+				}
+				uint8_t wingCount = std::min<size_t>(EXT_OUTFIT_MAX_NUMBER, wingList.size());
+				msg->put<char>(wingCount);
+				for(uint8_t i = 0; i < wingCount; ++i)
+				{
+					msg->put<uint16_t>(wingList[i].lookType);
+					msg->putString(wingList[i].name);
+				}
+			}
+
+			// Aura list
+			{
+				std::vector<AuraType> auraList;
+				const AuraMap& allAuras = Auras::getInstance()->getAuras();
+				for(AuraMap::const_iterator it = allAuras.begin(); it != allAuras.end(); ++it)
+				{
+					if(Auras::getInstance()->playerHasAura(player, it->second.id))
+						auraList.push_back(it->second);
+				}
+				uint8_t auraCount = std::min<size_t>(EXT_OUTFIT_MAX_NUMBER, auraList.size());
+				msg->put<char>(auraCount);
+				for(uint8_t i = 0; i < auraCount; ++i)
+				{
+					msg->put<uint16_t>(auraList[i].lookType);
+					msg->putString(auraList[i].name);
+				}
+			}
+
+			// Shader list
+			{
+				std::vector<ShaderType> shaderList;
+				const ShaderMap& allShaders = Shaders::getInstance()->getShaders();
+				for(ShaderMap::const_iterator it = allShaders.begin(); it != allShaders.end(); ++it)
+				{
+					if(Shaders::getInstance()->playerHasShader(player, it->second.id))
+						shaderList.push_back(it->second);
+				}
+				uint8_t shaderCount = std::min<size_t>(EXT_OUTFIT_MAX_NUMBER, shaderList.size());
+				msg->put<char>(shaderCount);
+				for(uint8_t i = 0; i < shaderCount; ++i)
+				{
+					msg->put<uint16_t>(shaderList[i].id);
+					msg->putString(shaderList[i].displayName);
+				}
+			}
+
+			// Health bar list
+			{
+				std::vector<BarType> healthBarList;
+				const BarMap& allBars = Bars::getInstance()->getHealthBars();
+				for(BarMap::const_iterator it = allBars.begin(); it != allBars.end(); ++it)
+				{
+					if(Bars::getInstance()->playerHasBar(player, it->second.id, true))
+						healthBarList.push_back(it->second);
+				}
+				uint8_t hbCount = std::min<size_t>(EXT_OUTFIT_MAX_NUMBER, healthBarList.size());
+				msg->put<char>(hbCount);
+				for(uint8_t i = 0; i < hbCount; ++i)
+				{
+					msg->put<uint16_t>(healthBarList[i].id);
+					msg->putString(healthBarList[i].name);
+				}
+			}
+
+			// Mana bar list
+			{
+				std::vector<BarType> manaBarList;
+				const BarMap& allManaBars = Bars::getInstance()->getManaBars();
+				for(BarMap::const_iterator it = allManaBars.begin(); it != allManaBars.end(); ++it)
+				{
+					if(Bars::getInstance()->playerHasBar(player, it->second.id, false))
+						manaBarList.push_back(it->second);
+				}
+				uint8_t mbCount = std::min<size_t>(EXT_OUTFIT_MAX_NUMBER, manaBarList.size());
+				msg->put<char>(mbCount);
+				for(uint8_t i = 0; i < mbCount; ++i)
+				{
+					msg->put<uint16_t>(manaBarList[i].id);
+					msg->putString(manaBarList[i].name);
+				}
+			}
+
+			// Mounted state (tryOnMount / mounted) - only for Tibia 12+ protocol
+			if(player->getClientVersion() >= 1200)
+			{
+				msg->put<char>(0x00); // tryOnMount = false
+				msg->put<char>(0x00); // mounted = false
+			}
 		}
 
 		player->hasRequestedOutfit(true);
@@ -3150,6 +3362,23 @@ void ProtocolGame::AddCreatureOutfit(NetworkMessage_ptr msg, const Creature* cre
 			msg->putItemId(outfit.lookTypeEx);
 		else
 			msg->put<uint16_t>(outfit.lookTypeEx);
+
+		// Extended outfit fields for OtClient (always sent, even for item outfits)
+		if(player && player->isUsingOtclient())
+		{
+			// GamePlayerMounts (feature 12) is only supported for protocol >= 870
+			if(player->getClientVersion() >= 870)
+				msg->put<uint16_t>(outfit.mount);
+			msg->put<uint16_t>(outfit.wings);
+			msg->put<uint16_t>(outfit.aura);
+			ShaderType shader;
+			std::string shaderName = "";
+			if(Shaders::getInstance()->getShader(outfit.lookShader, shader))
+				shaderName = shader.shaderName;
+			msg->putString(shaderName);
+			msg->put<uint16_t>(outfit.healthBar);
+			msg->put<uint16_t>(outfit.manaBar);
+		}
 	}
 	else
 		msg->put<uint32_t>(0x00);

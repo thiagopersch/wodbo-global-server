@@ -74,6 +74,7 @@ Player::Player(const std::string& _name, ProtocolGame* p):
 	conditionImmunities = conditionSuppressions = groupId = vocationId = managerNumber2 = town = skullEnd = 0;
 	lastLogin = lastLogout = lastIP = messageTicks = messageBuffer = nextAction = nextExAction = 0;
 	editListId = maxWriteLen = windowTextId = rankId = 0;
+	operatingSystem = CLIENTOS_NONE;
 	managerNumber3 = g_config.getNumber(ConfigManager::SPAWNTOWN_ID);
 
 	purchaseCallback = saleCallback = -1;

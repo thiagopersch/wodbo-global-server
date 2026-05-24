@@ -1,15 +1,15 @@
-local t = {
+local config = {
   access = 3, -- acesso mínimo para sair o efeito
   text = "STAFF",
   textcolor = TEXTCOLOR_ORANGE,
-  effect = 867,
-  interval = 3
+  effect = nil,
+  interval = 1
 }
 
 
 function onLogin(cid)
-  if getPlayerAccess(cid) >= t.access then
-    SendEffect(cid, t.effect, t.text, t.interval, t.textcolor)
+  if getPlayerAccess(cid) >= config.access then
+    SendEffect(cid, config.effect, config.text, config.interval, config.textcolor)
   end
   return true
 end

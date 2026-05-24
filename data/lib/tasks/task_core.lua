@@ -2,54 +2,41 @@ if not TaskKill_onKill then dofile("data/lib/tasks/task_kill.lua") end
 if not TaskDelivery_deliver then dofile("data/lib/tasks/task_delivery.lua") end
 
 function TaskCore_startTask(cid, taskId)
-    print("[TaskCore] startTask called cid=" .. cid .. " taskId=" .. tostring(taskId))
     if not isPlayer(cid) then
-        print("[TaskCore] Not a player")
         return false
     end
 
     local config = TASKS[taskId]
     if not config then
-        print("[TaskCore] Task not found in TASKS: " .. tostring(taskId))
-        print("[TaskCore] TASKS keys sample: " .. tostring(next(TASKS)))
         doPlayerSendCancel(cid, "Task not found.")
         return false
     end
-    print("[TaskCore] Task config found: " .. config.name)
 
     local category = TaskRank_getPlayerCategory(cid)
-    print("[TaskCore] Player category=" .. tostring(category) .. " task category=" .. tostring(config.category))
     if config.category ~= category then
-        print("[TaskCore] Category mismatch")
         doPlayerSendCancel(cid, "This task is not available for your vocation.")
         return false
     end
 
     local level = getPlayerLevel(cid)
-    print("[TaskCore] Player level=" .. level .. " required=" .. config.levelRequired)
     if level < config.levelRequired then
-        print("[TaskCore] Level too low")
         doPlayerSendCancel(cid, "You need level " .. config.levelRequired .. " to start this task.")
         return false
     end
 
     if config.rankRequired > 0 then
         local points = TaskStorage_getPlayerPoints(cid)
-        print("[TaskCore] Player points=" .. points .. " required=" .. config.rankRequired)
         if points < config.rankRequired then
-            print("[TaskCore] Points too low")
             doPlayerSendCancel(cid, "You need " .. config.rankRequired .. " task points to start this task.")
             return false
         end
     end
 
     if config.requiredTask then
-        print("[TaskCore] Required task: " .. tostring(config.requiredTask))
         local required = config.requiredTask
         local cache = TaskCache_getPlayerCache(cid)
         local reqTask = cache[required]
         if not reqTask or reqTask.rewarded ~= 1 then
-            print("[TaskCore] Required task not completed")
             doPlayerSendCancel(cid,
                 "You must complete '" .. (TASKS[required] and TASKS[required].name or required) .. "' first.")
             return false
@@ -58,16 +45,13 @@ function TaskCore_startTask(cid, taskId)
 
     local cache = TaskCache_getPlayerCache(cid)
     local existing = cache[taskId]
-    print("[TaskCore] Existing task data: " .. tostring(existing))
 
     if existing and existing.rewarded ~= 1 then
         if config.unique then
-            print("[TaskCore] Task is unique and already active")
             doPlayerSendCancel(cid, "You already have this task.")
             return false
         end
         if not config.repeatable then
-            print("[TaskCore] Task is not repeatable and already in progress")
             doPlayerSendCancel(cid, "You already have this task in progress or completed.")
             return false
         end
@@ -78,14 +62,11 @@ function TaskCore_startTask(cid, taskId)
         if tid:sub(1, 1) ~= "_" and tdata.rewarded ~= 1 then
             local tconfig = TASKS[tid]
             if tconfig and tconfig.type == config.type then
-                print("[TaskCore] Found active task of same type: " .. tid .. " type=" .. tconfig.type)
                 activeCount = activeCount + 1
             end
         end
     end
-    print("[TaskCore] Active count for type '" .. config.type .. "': " .. activeCount)
     if activeCount >= 1 then
-        print("[TaskCore] Too many active tasks of type " .. config.type)
         doPlayerSendCancel(cid, "You already have an active " .. config.type .. " task. Finish it first.")
         return false
     end
@@ -101,7 +82,6 @@ function TaskCore_startTask(cid, taskId)
     end
 
     cache[taskId] = taskData
-    print("[TaskCore] Cache entry created for " .. taskId)
 
     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "[Task] You started '" .. config.name .. "'!")
     TaskNetwork_sendMessage(cid, "Task started: '" .. config.name .. "'!", "#00ff00")
@@ -119,9 +99,7 @@ function TaskCore_startTask(cid, taskId)
             "[Task] Bring " .. config.delivery.count .. "x " .. getItemNameById(config.delivery.itemId) .. ".")
     end
 
-    print("[TaskCore] Sending updated task list")
     TaskNetwork_sendTaskList(cid)
-    print("[TaskCore] startTask completed successfully")
 
     return true
 end

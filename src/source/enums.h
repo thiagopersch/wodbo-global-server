@@ -57,6 +57,7 @@ enum GuildLevel_t
 
 enum OperatingSystem_t
 {
+	CLIENTOS_NONE				= 0x00,
 	CLIENTOS_LINUX				= 0x01,
 	CLIENTOS_WINDOWS			= 0x02,
 	CLIENTOS_FLASH				= 0x03,
@@ -332,16 +333,23 @@ struct War_t
 
 struct Outfit_t
 {
-	Outfit_t() {lookHead = lookBody = lookLegs = lookFeet = lookType = lookTypeEx = lookAddons = 0;}
+	Outfit_t() {
+		lookHead = lookBody = lookLegs = lookFeet = lookType = lookTypeEx = lookAddons = 0;
+		mount = wings = aura = lookShader = healthBar = manaBar = 0;
+	}
 	uint16_t lookType, lookTypeEx;
 	uint8_t lookHead, lookBody, lookLegs, lookFeet, lookAddons;
+	uint16_t mount, wings, aura, lookShader, healthBar, manaBar;
 
 	bool operator==(const Outfit_t& o) const
 	{
 		return (o.lookAddons == lookAddons
 			&& o.lookType == lookType && o.lookTypeEx == lookTypeEx
 			&& o.lookHead == lookHead && o.lookBody == lookBody
-			&& o.lookLegs == lookLegs && o.lookFeet == lookFeet);
+			&& o.lookLegs == lookLegs && o.lookFeet == lookFeet
+			&& o.mount == mount && o.wings == wings
+			&& o.aura == aura && o.lookShader == lookShader
+			&& o.healthBar == healthBar && o.manaBar == manaBar);
 	}
 
 	bool operator!=(const Outfit_t& o) const

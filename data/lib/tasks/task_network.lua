@@ -34,18 +34,15 @@ end
 
 function TaskNetwork_sendJSON(cid, data)
     if not isPlayer(cid) then
-        print("[TaskNetwork] sendJSON: not a player")
         return
     end
 
     local ok, encoded = pcall(json.encode, data)
     if not ok then
-        print("[TaskNetwork] sendJSON: json.encode failed for cid=" .. cid)
         return
     end
 
     if #encoded > MAX_PAYLOAD_BYTES then
-        print("[TaskNetwork] sendJSON: payload too large (" .. #encoded .. " bytes), truncating allTasks")
         while #encoded > MAX_PAYLOAD_BYTES and data.allTasks and #data.allTasks > 0 do
             local keep = math.max(1, math.floor(#data.allTasks * 0.7))
             local truncated = {}
@@ -55,10 +52,7 @@ function TaskNetwork_sendJSON(cid, data)
             data.allTasks = truncated
             encoded = json.encode(data)
         end
-        print("[TaskNetwork] sendJSON: truncated to " .. #data.allTasks .. " tasks, " .. #encoded .. " bytes")
     end
-
-    print("[TaskNetwork] sendJSON: sending " .. #encoded .. " bytes to cid=" .. cid)
     doPlayerSendExtendedOpcode(cid, TASK_OPCODE, encoded)
 end
 
@@ -79,7 +73,6 @@ function TaskNetwork_sendTaskList(cid, params)
     local now = os.time()
     local last = TASK_LAST_SEND_TIME[cid] or 0
     if now - last < 0.3 then
-        print("[TaskNetwork] Debounce: skipping sendTaskList for cid=" .. cid)
         return
     end
     TASK_LAST_SEND_TIME[cid] = now
@@ -109,10 +102,12 @@ function TaskNetwork_sendTaskList(cid, params)
 
             if isActive then
                 table.insert(playerTasks, {
-                    id = taskId, name = task.name,
+                    id = taskId,
+                    name = task.name,
                     kills = task.killsRequired,
                     done = math.min(playerTask.kills or 0, task.killsRequired),
-                    exp = task.experience, points = task.points,
+                    exp = task.experience,
+                    points = task.points,
                     completed = playerTask.completed or 0,
                     rewarded = playerTask.rewarded or 0
                 })
@@ -173,7 +168,8 @@ function TaskNetwork_sendTaskList(cid, params)
 
                         if passDiff then
                             table.insert(matching, {
-                                taskId = taskId, task = task,
+                                taskId = taskId,
+                                task = task,
                                 diffIdx = getDifficultyIndex(task),
                                 monsterLevel = getMonsterLevel(task),
                                 isActive = hasActive
@@ -211,14 +207,20 @@ function TaskNetwork_sendTaskList(cid, params)
         if entry.isActive then locked = false end
 
         table.insert(allTasks, {
-            id = entry.taskId, name = task.name,
-            category = task.category, type = task.type,
+            id = entry.taskId,
+            name = task.name,
+            category = task.category,
+            type = task.type,
             difficulty = task.difficulty,
             levelRequired = task.levelRequired,
             rankRequired = task.rankRequired,
-            kills = task.killsRequired, killsRequired = task.killsRequired,
-            exp = task.experience, money = task.money, points = task.points,
-            rewards = task.rewards, delivery = task.delivery,
+            kills = task.killsRequired,
+            killsRequired = task.killsRequired,
+            exp = task.experience,
+            money = task.money,
+            points = task.points,
+            rewards = task.rewards,
+            delivery = task.delivery,
             monsters = networkNormalizeMonsters(task.monsters),
             lookType = task.lookType,
             repeatable = task.repeatable or false,
@@ -235,7 +237,7 @@ function TaskNetwork_sendTaskList(cid, params)
     local _, rankIdx = TaskRank_getRankByPoints(category, playerPoints)
     local currentRank = rankTable[rankIdx]
     local pointsPerDifficulty = currentRank and currentRank.pointsPerDifficulty or
-    { easy = 10, medium = 25, hard = 50, elite = 100 }
+        { easy = 10, medium = 25, hard = 50, elite = 100 }
 
     local response = {
         allTasks = allTasks,
@@ -307,7 +309,7 @@ function TaskNetwork_sendRankUpdate(cid)
     local _, rankIdx = TaskRank_getRankByPoints(category, rankPoints)
     local currentRank = rankTable[rankIdx]
     local pointsPerDifficulty = currentRank and currentRank.pointsPerDifficulty or
-    { easy = 10, medium = 25, hard = 50, elite = 100 }
+        { easy = 10, medium = 25, hard = 50, elite = 100 }
 
     local response = {
         rankUpdate = {
@@ -327,24 +329,18 @@ end
 
 function TaskNetwork_handleAction(cid, data)
     if not data or not data.action then
-        print("[TaskNetwork] No data or no action field")
         return
     end
 
-    local action = data.action
-    print("[TaskNetwork] Handling action='" .. action .. "' taskId=" .. tostring(data.taskId))
+    local action = data.actio
 
     if action == "info" or action == "list" then
-        print("[TaskNetwork] Sending task list for cid=" .. cid)
         TaskNetwork_sendTaskList(cid, data)
-        print("[TaskNetwork] Task list sent")
     elseif action == "start" then
         if data.taskId then
-            print("[TaskNetwork] Calling TaskCore_startTask cid=" .. cid .. " taskId=" .. data.taskId)
             local ok, err = pcall(TaskCore_startTask, cid, data.taskId)
-            print("[TaskNetwork] TaskCore_startTask returned ok=" .. tostring(ok) .. " err=" .. tostring(err))
         else
-            print("[TaskNetwork] start action but no taskId")
+
         end
     elseif action == "cancel" then
         if data.taskId then
@@ -355,8 +351,6 @@ function TaskNetwork_handleAction(cid, data)
             TaskCore_claimTask(cid, data.taskId)
         end
     elseif action == "hide" then
-        print("[TaskNetwork] hide action (no-op)")
     else
-        print("[TaskNetwork] Unknown action: " .. tostring(action))
     end
 end

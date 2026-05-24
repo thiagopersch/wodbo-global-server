@@ -242,6 +242,7 @@ class ProtocolGame : public Protocol
 		void sendHouseWindow(uint32_t windowTextId, House* house, uint32_t listId, const std::string& text);
 
 		void sendOutfitWindow();
+		void sendFeatures();
 		void sendQuests();
 		void sendQuestInfo(Quest* quest);
 

@@ -431,6 +431,21 @@ class LuaInterface
 		static int32_t luaDoPlayerSwitchSaving(lua_State* L);
 		static int32_t luaDoPlayerSave(lua_State* L);
 		static int32_t luaDoPlayerSendOutfitWindow(lua_State* L);
+
+		// Extended outfit functions
+		static int32_t luaDoPlayerSetWings(lua_State* L);
+		static int32_t luaDoPlayerGetWings(lua_State* L);
+		static int32_t luaDoPlayerSetAura(lua_State* L);
+		static int32_t luaDoPlayerGetAura(lua_State* L);
+		static int32_t luaDoPlayerSetShader(lua_State* L);
+		static int32_t luaDoPlayerGetShader(lua_State* L);
+		static int32_t luaDoPlayerSetHealthBar(lua_State* L);
+		static int32_t luaDoPlayerGetHealthBar(lua_State* L);
+		static int32_t luaDoPlayerSetManaBar(lua_State* L);
+		static int32_t luaDoPlayerGetManaBar(lua_State* L);
+		static int32_t luaDoPlayerSetOutfitExtras(lua_State* L);
+		// luaDoPlayerSendExtendedOpcode ja declarado em linha 327
+
 		static int32_t luaDoCreatureExecuteTalkAction(lua_State* L);
 		static int32_t luaGetCreatureByName(lua_State* L);
 		static int32_t luaGetPlayerByGUID(lua_State* L);
