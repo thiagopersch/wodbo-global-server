@@ -109,6 +109,118 @@ function onSay(cid, words, param)
 
 		doPlayerSetOutfitExtras(target, mount, wings, aura, shader, healthBar, manaBar)
 		doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_BLUE, "Outfit extras updated.")
+
+	elseif words == "/addwing" or words == "!addwing" then
+		local id = tonumber(param1)
+		if id then
+			doPlayerAddExtoutfitUnlock(target, "wing", id)
+			doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_BLUE, "Wing " .. id .. " unlocked.")
+		else
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Usage: " .. words .. " <id>")
+		end
+
+	elseif words == "/removewing" or words == "!removewing" then
+		local id = tonumber(param1)
+		if id then
+			doPlayerRemoveExtoutfitUnlock(target, "wing", id)
+			doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_BLUE, "Wing " .. id .. " locked.")
+		else
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Usage: " .. words .. " <id>")
+		end
+
+	elseif words == "/addaura" or words == "!addaura" then
+		local id = tonumber(param1)
+		if id then
+			doPlayerAddExtoutfitUnlock(target, "aura", id)
+			doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_BLUE, "Aura " .. id .. " unlocked.")
+		else
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Usage: " .. words .. " <id>")
+		end
+
+	elseif words == "/removeaura" or words == "!removeaura" then
+		local id = tonumber(param1)
+		if id then
+			doPlayerRemoveExtoutfitUnlock(target, "aura", id)
+			doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_BLUE, "Aura " .. id .. " locked.")
+		else
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Usage: " .. words .. " <id>")
+		end
+
+	elseif words == "/addshader" or words == "!addshader" then
+		local id = tonumber(param1)
+		if id then
+			doPlayerAddExtoutfitUnlock(target, "shader", id)
+			doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_BLUE, "Shader " .. id .. " unlocked.")
+		else
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Usage: " .. words .. " <id>")
+		end
+
+	elseif words == "/removeshader" or words == "!removeshader" then
+		local id = tonumber(param1)
+		if id then
+			doPlayerRemoveExtoutfitUnlock(target, "shader", id)
+			doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_BLUE, "Shader " .. id .. " locked.")
+		else
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Usage: " .. words .. " <id>")
+		end
+
+	elseif words == "/addhealthbar" or words == "!addhealthbar" then
+		local id = tonumber(param1)
+		if id then
+			doPlayerAddExtoutfitUnlock(target, "healthbar", id)
+			doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_BLUE, "Health bar " .. id .. " unlocked.")
+		else
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Usage: " .. words .. " <id>")
+		end
+
+	elseif words == "/removehealthbar" or words == "!removehealthbar" then
+		local id = tonumber(param1)
+		if id then
+			doPlayerRemoveExtoutfitUnlock(target, "healthbar", id)
+			doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_BLUE, "Health bar " .. id .. " locked.")
+		else
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Usage: " .. words .. " <id>")
+		end
+
+	elseif words == "/addmanabar" or words == "!addmanabar" then
+		local id = tonumber(param1)
+		if id then
+			doPlayerAddExtoutfitUnlock(target, "manabar", id)
+			doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_BLUE, "Mana bar " .. id .. " unlocked.")
+		else
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Usage: " .. words .. " <id>")
+		end
+
+	elseif words == "/removemanabar" or words == "!removemanabar" then
+		local id = tonumber(param1)
+		if id then
+			doPlayerRemoveExtoutfitUnlock(target, "manabar", id)
+			doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_BLUE, "Mana bar " .. id .. " locked.")
+		else
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Usage: " .. words .. " <id>")
+		end
+
+	elseif words == "/unlockall" or words == "!unlockall" then
+		if getPlayerAccess(cid) >= 4 then
+			for _, extType in ipairs({"wing", "aura", "shader", "healthbar", "manabar"}) do
+				local ids = {}
+				if extType == "wing" or extType == "aura" then
+					for i = 1, 10 do table.insert(ids, i) end
+				elseif extType == "shader" then
+					for i = 1, 19 do table.insert(ids, i) end
+				elseif extType == "healthbar" then
+					for i = 1, 70 do table.insert(ids, i) end
+				elseif extType == "manabar" then
+					for i = 1, 15 do table.insert(ids, i) end
+				end
+				for _, id in ipairs(ids) do
+					doPlayerAddExtoutfitUnlock(target, extType, id)
+				end
+			end
+			doPlayerSendTextMessage(target, MESSAGE_STATUS_CONSOLE_BLUE, "All extoutfit features unlocked!")
+		else
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "You don't have access to this command.")
+		end
 	end
 
 	return true

@@ -107,7 +107,6 @@
   <healthbars id="53" image="/images/bars/Shukaku" name="Shukaku" />
   <healthbars id="54" image="/images/bars/Tsuchikage" name="Tsuchikage" />
   <healthbars id="55" image="/images/bars/Tsuchikage Novo" name="Tsuchikage Novo" />
-  <!-- Barras de mana movidas para healthbar -->
   <healthbars id="56" image="/images/bars/mana1" name="Mana Padrao" />
   <healthbars id="57" image="/images/bars/chuva" name="Chuva" />
   <healthbars id="58" image="/images/bars/escuro" name="Escuro" />
@@ -123,6 +122,41 @@
   <healthbars id="68" image="/images/bars/rikudou2" name="Rikudou 2" />
   <healthbars id="69" image="/images/bars/pochita" name="Pochita" />
   <healthbars id="70" image="/images/bars/Shaolin" name="Shaolin" />
+  <healthbars id="71" image="/images/bars/blue_spirit" name="Blue Spirit" />
+  <healthbars id="72" image="/images/bars/golden_aura" name="Golden Aura" />
+  <healthbars id="73" image="/images/bars/iron" name="Iron" />
+  <healthbars id="74" image="/images/bars/iron_aura" name="Iron Aura" />
+  <healthbars id="75" image="/images/bars/demon_horn" name="Demon Horn" />
+  <healthbars id="76" image="/images/bars/hollow_skull" name="Hollow Skull" />
+  <healthbars id="77" image="/images/bars/snake_ninja" name="Snake Ninja" />
+  <healthbars id="78" image="/images/bars/kon" name="Kon" />
+  <healthbars id="79" image="/images/bars/orange_energy" name="Orange Energy" />
+  <healthbars id="80" image="/images/bars/pink_blossom" name="Pink Blossom" />
+  <healthbars id="81" image="/images/bars/super_yellow_ray" name="Super Yellow Ray" />
+  <healthbars id="82" image="/images/bars/purple_shadow" name="Purple Shadow" />
+  <healthbars id="83" image="/images/bars/dark_chakra" name="Dark Chakra" />
+  <healthbars id="84" image="/images/bars/hunter_green" name="Hunter Green" />
+  <healthbars id="85" image="/images/bars/leaf_ninja" name="Leaf Ninja" />
+  <healthbars id="86" image="/images/bars/youtube" name="Youtube" />
+  <healthbars id="87" image="/images/bars/kitchen" name="Kitchen" />
+  <healthbars id="88" image="/images/bars/love" name="Love" />
+  <healthbars id="89" image="/images/bars/straw_hat" name="Straw Hat" />
+  <healthbars id="90" image="/images/bars/love_aikawa" name="Love Aikawa" />
+  <healthbars id="91" image="/images/bars/blue_iron_angel_wings" name="Blue Iron Angel Wings" />
+  <healthbars id="92" image="/images/bars/pink_fairy_wings" name="Pink Fairy Wings" />
+  <healthbars id="93" image="/images/bars/iron_angel_wings" name="Iron Angel Wings" />
+  <healthbars id="94" image="/images/bars/grimmjow" name="Grimmjow" />
+  <healthbars id="95" image="/images/bars/renji" name="Renji" />
+  <healthbars id="96" image="/images/bars/hyori" name="Hyori" />
+  <healthbars id="97" image="/images/bars/rukia_kuchiki" name="Rukia Kuchiki" />
+  <healthbars id="98" image="/images/bars/three_hollow_mask" name="Three Hollow Mask" />
+  <healthbars id="99" image="/images/bars/young_ayamamoto" name="Young Ayamamoto" />
+  <healthbars id="100" image="/images/bars/lille_barro" name="Lille Barro" />
+  <healthbars id="101" image="/images/bars/cookie" name="Cookie" />
+  <healthbars id="102" image="/images/bars/candy" name="Candy" />
+  <healthbars id="103" image="/images/bars/gerard_valkyrie" name="Gerard Valkyrie" />
+  <healthbars id="104" image="/images/bars/giselle_gewelle" name="Giselle Gewelle" />
+  <healthbars id="105" image="/images/bars/red_phantom" name="Red Phantom" />
 
   <!-- ========== MANA BARS ========== -->
   <manabars id="1" image="/images/bars/mana1" name="Mana Padrao" />

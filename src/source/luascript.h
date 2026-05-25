@@ -445,6 +445,11 @@ class LuaInterface
 		static int32_t luaDoPlayerGetManaBar(lua_State* L);
 		static int32_t luaDoPlayerSetOutfitExtras(lua_State* L);
 		// luaDoPlayerSendExtendedOpcode ja declarado em linha 327
+		// Unlock management
+		static int32_t luaDoPlayerAddExtoutfitUnlock(lua_State* L);
+		static int32_t luaDoPlayerRemoveExtoutfitUnlock(lua_State* L);
+		static int32_t luaDoPlayerHasExtoutfitUnlock(lua_State* L);
+		static int32_t luaDoPlayerGetExtoutfitUnlocks(lua_State* L);
 
 		static int32_t luaDoCreatureExecuteTalkAction(lua_State* L);
 		static int32_t luaGetCreatureByName(lua_State* L);

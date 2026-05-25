@@ -117,24 +117,7 @@ bool Wings::playerHasWing(const Player* player, uint16_t wingId) const
 	if(wing.isPremium && !player->isPremium())
 		return false;
 
-	if(wing.storageId.empty())
-		return true;
-
-	std::string value;
-	player->getStorage(wing.storageId, value);
-
-	if(value == wing.storageValue)
-		return true;
-
-	int32_t tmp = atoi(value.c_str());
-	if(!tmp && value != "0")
-		return false;
-
-	tmp = atoi(wing.storageValue.c_str());
-	if(!tmp && wing.storageValue != "0")
-		return false;
-
-	return atoi(value.c_str()) >= tmp;
+	return player->hasUnlockedExtoutfit("wing", wingId);
 }
 
 // ==================== Auras ====================
@@ -226,24 +209,7 @@ bool Auras::playerHasAura(const Player* player, uint16_t auraId) const
 	if(aura.isPremium && !player->isPremium())
 		return false;
 
-	if(aura.storageId.empty())
-		return true;
-
-	std::string value;
-	player->getStorage(aura.storageId, value);
-
-	if(value == aura.storageValue)
-		return true;
-
-	int32_t tmp = atoi(value.c_str());
-	if(!tmp && value != "0")
-		return false;
-
-	tmp = atoi(aura.storageValue.c_str());
-	if(!tmp && aura.storageValue != "0")
-		return false;
-
-	return atoi(value.c_str()) >= tmp;
+	return player->hasUnlockedExtoutfit("aura", auraId);
 }
 
 // ==================== Shaders ====================
@@ -331,24 +297,7 @@ bool Shaders::playerHasShader(const Player* player, uint16_t shaderId) const
 	if(shader.isPremium && !player->isPremium())
 		return false;
 
-	if(shader.storageId.empty())
-		return true;
-
-	std::string value;
-	player->getStorage(shader.storageId, value);
-
-	if(value == shader.storageValue)
-		return true;
-
-	int32_t tmp = atoi(value.c_str());
-	if(!tmp && value != "0")
-		return false;
-
-	tmp = atoi(shader.storageValue.c_str());
-	if(!tmp && shader.storageValue != "0")
-		return false;
-
-	return atoi(value.c_str()) >= tmp;
+	return player->hasUnlockedExtoutfit("shader", shaderId);
 }
 
 // ==================== Bars ====================
@@ -471,24 +420,7 @@ bool Bars::playerHasBar(const Player* player, uint16_t barId, bool isHealth) con
 	if(bar.isPremium && !player->isPremium())
 		return false;
 
-	if(bar.storageId.empty())
-		return true;
-
-	std::string value;
-	player->getStorage(bar.storageId, value);
-
-	if(value == bar.storageValue)
-		return true;
-
-	int32_t tmp = atoi(value.c_str());
-	if(!tmp && value != "0")
-		return false;
-
-	tmp = atoi(bar.storageValue.c_str());
-	if(!tmp && bar.storageValue != "0")
-		return false;
-
-	return atoi(value.c_str()) >= tmp;
+	return player->hasUnlockedExtoutfit(isHealth ? "healthbar" : "manabar", barId);
 }
 
 // ==================== Outfits ====================

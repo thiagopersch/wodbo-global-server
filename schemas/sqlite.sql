@@ -881,3 +881,11 @@ CREATE TABLE IF NOT EXISTS "player_skill_upgrades" (
   PRIMARY KEY ("player_id", "vocation_id", "skill_name"),
   FOREIGN KEY ("player_id") REFERENCES "players"("id") ON DELETE CASCADE
 );
+
+CREATE TABLE IF NOT EXISTS "player_extoutfit_unlocks" (
+  "player_id" INTEGER NOT NULL,
+  "type" VARCHAR(20) NOT NULL,
+  "id" INTEGER NOT NULL,
+  PRIMARY KEY ("player_id", "type", "id"),
+  FOREIGN KEY ("player_id") REFERENCES "players"("id") ON DELETE CASCADE
+);

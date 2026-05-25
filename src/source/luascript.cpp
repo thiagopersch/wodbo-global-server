@@ -1621,6 +1621,31 @@ void LuaInterface::registerFunctions(){
 	//doPlayerSetOutfitExtras(cid, mount, wings, aura, shader, healthBar, manaBar)
 	lua_register(m_luaState, "doPlayerSetOutfitExtras", LuaInterface::luaDoPlayerSetOutfitExtras);
 
+	//doPlayerSetShader(cid, shaderId)
+	lua_register(m_luaState, "doPlayerSetShader", LuaInterface::luaDoPlayerSetShader);
+	//doPlayerGetShader(cid) -> shaderId
+	lua_register(m_luaState, "doPlayerGetShader", LuaInterface::luaDoPlayerGetShader);
+
+	//doPlayerSetHealthBar(cid, barId)
+	lua_register(m_luaState, "doPlayerSetHealthBar", LuaInterface::luaDoPlayerSetHealthBar);
+	//doPlayerGetHealthBar(cid) -> barId
+	lua_register(m_luaState, "doPlayerGetHealthBar", LuaInterface::luaDoPlayerGetHealthBar);
+
+	//doPlayerSetManaBar(cid, barId)
+	lua_register(m_luaState, "doPlayerSetManaBar", LuaInterface::luaDoPlayerSetManaBar);
+	//doPlayerGetManaBar(cid) -> barId
+	lua_register(m_luaState, "doPlayerGetManaBar", LuaInterface::luaDoPlayerGetManaBar);
+
+	// Unlock management
+	//doPlayerAddExtoutfitUnlock(cid, type, id) -> bool
+	lua_register(m_luaState, "doPlayerAddExtoutfitUnlock", LuaInterface::luaDoPlayerAddExtoutfitUnlock);
+	//doPlayerRemoveExtoutfitUnlock(cid, type, id) -> bool
+	lua_register(m_luaState, "doPlayerRemoveExtoutfitUnlock", LuaInterface::luaDoPlayerRemoveExtoutfitUnlock);
+	//doPlayerHasExtoutfitUnlock(cid, type, id) -> bool
+	lua_register(m_luaState, "doPlayerHasExtoutfitUnlock", LuaInterface::luaDoPlayerHasExtoutfitUnlock);
+	//doPlayerGetExtoutfitUnlocks(cid, type) -> table of ids
+	lua_register(m_luaState, "doPlayerGetExtoutfitUnlocks", LuaInterface::luaDoPlayerGetExtoutfitUnlocks);
+
 	//doPlayerLearnInstantSpell(cid, name)
 	lua_register(m_luaState, "doPlayerLearnInstantSpell", LuaInterface::luaDoPlayerLearnInstantSpell);
 
@@ -3169,6 +3194,81 @@ int32_t LuaInterface::luaDoPlayerSetOutfitExtras(lua_State* L)
 	g_game.internalCreatureChangeOutfit(player, outfit);
 
 	lua_pushboolean(L, true);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerAddExtoutfitUnlock(lua_State* L)
+{
+	// doPlayerAddExtoutfitUnlock(cid, type, id) -> bool
+	uint16_t id = (uint16_t)popNumber(L);
+	std::string type = popString(L);
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	player->addUnlockExtoutfit(type, id);
+	lua_pushboolean(L, true);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerRemoveExtoutfitUnlock(lua_State* L)
+{
+	// doPlayerRemoveExtoutfitUnlock(cid, type, id) -> bool
+	uint16_t id = (uint16_t)popNumber(L);
+	std::string type = popString(L);
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	player->removeUnlockExtoutfit(type, id);
+	lua_pushboolean(L, true);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerHasExtoutfitUnlock(lua_State* L)
+{
+	// doPlayerHasExtoutfitUnlock(cid, type, id) -> bool
+	uint16_t id = (uint16_t)popNumber(L);
+	std::string type = popString(L);
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	lua_pushboolean(L, player->hasUnlockedExtoutfit(type, id));
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerGetExtoutfitUnlocks(lua_State* L)
+{
+	// doPlayerGetExtoutfitUnlocks(cid, type) -> table of ids
+	std::string type = popString(L);
+	ScriptEnviroment* env = getEnv();
+	Player* player = env->getPlayerByUID(popNumber(L));
+	if(!player)
+	{
+		lua_newtable(L);
+		return 1;
+	}
+
+	std::vector<uint16_t> ids = player->getUnlockedExtoutfitList(type);
+	lua_newtable(L);
+	for(size_t i = 0; i < ids.size(); ++i)
+	{
+		lua_pushnumber(L, ids[i]);
+		lua_rawseti(L, -2, i + 1);
+	}
 	return 1;
 }
 

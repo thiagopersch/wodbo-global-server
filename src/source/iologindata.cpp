@@ -535,6 +535,25 @@ bool IOLoginData::loadPlayer(Player* player, const std::string& name, bool preLo
 	player->defaultOutfit.manaBar = result->getDataInt("lookmanabar");
 
 	player->currentOutfit = player->defaultOutfit;
+
+	// Load extoutfit unlocks
+	{
+		query.str("");
+		query << "SELECT `type`, `id` FROM `player_extoutfit_unlocks` WHERE `player_id` = " << player->getGUID();
+		DBResult* unlockResult = db->storeQuery(query.str());
+		if(unlockResult)
+		{
+			do
+			{
+				std::string type = unlockResult->getDataString("type");
+				uint16_t id = (uint16_t)unlockResult->getDataInt("id");
+				player->addUnlockExtoutfit(type, id);
+			}
+			while(unlockResult->next());
+			unlockResult->free();
+		}
+	}
+
 	Skulls_t skull = SKULL_RED;
 	if(g_config.getBool(ConfigManager::USE_BLACK_SKULL))
 		skull = (Skulls_t)result->getDataInt("skull");
@@ -1069,6 +1088,36 @@ bool IOLoginData::savePlayer(Player* player, bool preSave/* = true*/, bool shall
 			return false;
 	}
 
+	if(!query_insert.execute())
+		return false;
+
+	// Save extoutfit unlocks
+	query.str("");
+	query << "DELETE FROM `player_extoutfit_unlocks` WHERE `player_id` = " << player->getGUID();
+	if(!db->query(query.str()))
+		return false;
+
+	query_insert.setQuery("INSERT INTO `player_extoutfit_unlocks` (`player_id`, `type`, `id`) VALUES ");
+	{
+		struct ExtUnlockEntry { std::string type; const std::set<uint16_t>* set; };
+		ExtUnlockEntry entries[] = {
+			{"wing", &player->unlockedWings},
+			{"aura", &player->unlockedAuras},
+			{"shader", &player->unlockedShaders},
+			{"healthbar", &player->unlockedHealthBars},
+			{"manabar", &player->unlockedManaBars}
+		};
+		for(size_t ei = 0; ei < 5; ++ei)
+		{
+			for(std::set<uint16_t>::const_iterator it = entries[ei].set->begin(); it != entries[ei].set->end(); ++it)
+			{
+				sprintf(buffer, "%d, %s, %d", player->getGUID(),
+					db->escapeString(entries[ei].type).c_str(), *it);
+				if(!query_insert.addRow(buffer))
+					return false;
+			}
+		}
+	}
 	if(!query_insert.execute())
 		return false;
 

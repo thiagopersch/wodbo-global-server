@@ -1395,6 +1395,49 @@ void ProtocolGame::parseSetOutfit(NetworkMessage& msg)
 		newOutfit.lookShader = Shaders::getInstance()->getShaderByName(msg.getString());
 		newOutfit.healthBar = msg.get<uint16_t>();
 		newOutfit.manaBar = msg.get<uint16_t>();
+
+		// Validate unlocks - reject if player doesn't have the feature unlocked
+		if(newOutfit.wings > 0)
+		{
+			WingType* wingType = Wings::getInstance()->getWingByLookType(newOutfit.wings);
+			if(wingType)
+			{
+				if(!Wings::getInstance()->playerHasWing(player, wingType->id))
+					newOutfit.wings = 0;
+			}
+			else
+				newOutfit.wings = 0;
+		}
+
+		if(newOutfit.aura > 0)
+		{
+			AuraType* auraType = Auras::getInstance()->getAuraByLookType(newOutfit.aura);
+			if(auraType)
+			{
+				if(!Auras::getInstance()->playerHasAura(player, auraType->id))
+					newOutfit.aura = 0;
+			}
+			else
+				newOutfit.aura = 0;
+		}
+
+		if(newOutfit.lookShader > 0)
+		{
+			if(!Shaders::getInstance()->playerHasShader(player, newOutfit.lookShader))
+				newOutfit.lookShader = 0;
+		}
+
+		if(newOutfit.healthBar > 0)
+		{
+			if(!Bars::getInstance()->playerHasBar(player, newOutfit.healthBar, true))
+				newOutfit.healthBar = 0;
+		}
+
+		if(newOutfit.manaBar > 0)
+		{
+			if(!Bars::getInstance()->playerHasBar(player, newOutfit.manaBar, false))
+				newOutfit.manaBar = 0;
+		}
 	}
 
 	addGameTask(&Game::playerChangeOutfit, player->getID(), newOutfit);
@@ -2944,8 +2987,8 @@ void ProtocolGame::sendOutfitWindow()
 				msg->put<char>(shaderCount);
 				for(uint8_t i = 0; i < shaderCount; ++i)
 				{
-					msg->put<uint16_t>(shaderList[i].id);
-					msg->putString(shaderList[i].displayName);
+			msg->put<uint16_t>(shaderList[i].id);
+				msg->putString(shaderList[i].shaderName);
 				}
 			}
 

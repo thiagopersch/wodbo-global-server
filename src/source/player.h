@@ -341,6 +341,12 @@ class Player : public Creature, public Cylinder
 		bool changeOutfit(Outfit_t outfit, bool checkList);
 		void hasRequestedOutfit(bool v) {requestedOutfit = v;}
 
+		// ExtOutfit unlock system
+		bool hasUnlockedExtoutfit(const std::string& type, uint16_t id) const;
+		void addUnlockExtoutfit(const std::string& type, uint16_t id);
+		void removeUnlockExtoutfit(const std::string& type, uint16_t id);
+		std::vector<uint16_t> getUnlockedExtoutfitList(const std::string& type) const;
+
 		Vocation* getVocation() const {return vocation;}
 		int32_t getPlayerInfo(playerinfo_t playerinfo) const;
 
@@ -1267,6 +1273,11 @@ class Player : public Creature, public Cylinder
 		ShopInfoList shopOffer;
 		PartyList invitePartyList;
 		OutfitMap outfits;
+		std::set<uint16_t> unlockedWings;
+		std::set<uint16_t> unlockedAuras;
+		std::set<uint16_t> unlockedShaders;
+		std::set<uint16_t> unlockedHealthBars;
+		std::set<uint16_t> unlockedManaBars;
 		LearnedInstantSpellList learnedInstantSpellList;
 #ifdef __WAR_SYSTEM__
 		WarMap warMap;

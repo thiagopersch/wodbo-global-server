@@ -81930,7 +81930,7 @@
 		<attribute key="weight" value="0" />
 		<attribute key="description" value="Changes your character healthbar to a snake summoner theme." />
 	</item>
-	<item id="56924" name="wooden tavern healthbar">
+	<item id="56924" name="kon healthbar">
 		<attribute key="weight" value="0" />
 		<attribute key="description" value="Changes your character healthbar to a rustic wooden theme." />
 	</item>

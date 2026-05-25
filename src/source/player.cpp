@@ -4194,6 +4194,70 @@ bool Player::canWearOutfit(uint32_t outfitId, uint32_t addons)
 	return atoi(value.c_str()) >= tmp;
 }
 
+bool Player::hasUnlockedExtoutfit(const std::string& type, uint16_t id) const
+{
+	if(type == "wing")
+		return unlockedWings.find(id) != unlockedWings.end();
+	else if(type == "aura")
+		return unlockedAuras.find(id) != unlockedAuras.end();
+	else if(type == "shader")
+		return unlockedShaders.find(id) != unlockedShaders.end();
+	else if(type == "healthbar")
+		return unlockedHealthBars.find(id) != unlockedHealthBars.end();
+	else if(type == "manabar")
+		return unlockedManaBars.find(id) != unlockedManaBars.end();
+	return false;
+}
+
+void Player::addUnlockExtoutfit(const std::string& type, uint16_t id)
+{
+	if(type == "wing")
+		unlockedWings.insert(id);
+	else if(type == "aura")
+		unlockedAuras.insert(id);
+	else if(type == "shader")
+		unlockedShaders.insert(id);
+	else if(type == "healthbar")
+		unlockedHealthBars.insert(id);
+	else if(type == "manabar")
+		unlockedManaBars.insert(id);
+}
+
+void Player::removeUnlockExtoutfit(const std::string& type, uint16_t id)
+{
+	if(type == "wing")
+		unlockedWings.erase(id);
+	else if(type == "aura")
+		unlockedAuras.erase(id);
+	else if(type == "shader")
+		unlockedShaders.erase(id);
+	else if(type == "healthbar")
+		unlockedHealthBars.erase(id);
+	else if(type == "manabar")
+		unlockedManaBars.erase(id);
+}
+
+std::vector<uint16_t> Player::getUnlockedExtoutfitList(const std::string& type) const
+{
+	std::vector<uint16_t> ret;
+	if(type == "wing")
+		for(std::set<uint16_t>::const_iterator it = unlockedWings.begin(); it != unlockedWings.end(); ++it)
+			ret.push_back(*it);
+	else if(type == "aura")
+		for(std::set<uint16_t>::const_iterator it = unlockedAuras.begin(); it != unlockedAuras.end(); ++it)
+			ret.push_back(*it);
+	else if(type == "shader")
+		for(std::set<uint16_t>::const_iterator it = unlockedShaders.begin(); it != unlockedShaders.end(); ++it)
+			ret.push_back(*it);
+	else if(type == "healthbar")
+		for(std::set<uint16_t>::const_iterator it = unlockedHealthBars.begin(); it != unlockedHealthBars.end(); ++it)
+			ret.push_back(*it);
+	else if(type == "manabar")
+		for(std::set<uint16_t>::const_iterator it = unlockedManaBars.begin(); it != unlockedManaBars.end(); ++it)
+			ret.push_back(*it);
+	return ret;
+}
+
 bool Player::addOutfit(uint32_t outfitId, uint32_t addons)
 {
 	Outfit outfit;

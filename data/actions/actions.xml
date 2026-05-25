@@ -279,4 +279,7 @@
 	<action itemid="2364" event="script" value="other/music.lua" />
 	<action fromid="2367" toid="2368" event="script" value="other/music.lua" />
 	<action fromid="2370" toid="2373" event="script" value="other/music.lua" />
+
+	<!-- Extoutfit unlock items -->
+	<action fromid="56917" toid="56951" event="script" value="extoutfit_unlock.lua" />
 </actions>

@@ -583,3 +583,11 @@ CREATE TABLE IF NOT EXISTS `player_skill_upgrades` (
     PRIMARY KEY (`player_id`, `vocation_id`, `skill_name`),
     FOREIGN KEY (`player_id`) REFERENCES `players`(`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `player_extoutfit_unlocks` (
+  `player_id` INT NOT NULL,
+  `type` VARCHAR(20) NOT NULL COMMENT 'wing, aura, shader, healthbar, manabar',
+  `id` INT NOT NULL,
+  PRIMARY KEY (`player_id`, `type`, `id`),
+  FOREIGN KEY (`player_id`) REFERENCES `players`(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB;
