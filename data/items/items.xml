@@ -34828,7 +34828,7 @@
 	<item fromid="23811" toid="23813" article="a" name="stone tile with a socket" />
 	<item id="23814" name="remains of an old amphora" />
 	<item id="23815" editorsuffix=" (Blank)" />
-	<item id="23816" article="a" name="war backpack">
+	<item id="23816" article="a" name="supreme war backpack">
 		<attribute key="weight" value="1800" />
 		<attribute key="description"
 			value="backpack used in ancient times by the greatest warriors in combat." />
