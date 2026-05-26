@@ -64,4 +64,6 @@
 	<event type="kill" name="TaskKill" event="script" value="task_kill.lua" />
 	<event type="look" name="TaskLook" event="script" value="task_look.lua" />
 	<event type="extendedopcode" name="TaskOpcode" event="script" value="task_extended_opcode.lua" />
+
+	<event type="extendedopcode" name="ShaderSelectorOpcode" event="script" value="shader_selector.lua" />
 </creaturescripts>

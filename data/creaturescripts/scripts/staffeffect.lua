@@ -16,8 +16,9 @@ end
 
 function SendEffect(cid, effect, text, time, color)
   if isPlayer(cid) then
-    doSendMagicEffect(getPlayerPosition(cid), effect)
-    doSendAnimatedText(getPlayerPosition(cid), text, color)
+    if config.effect ~= nil then
+      doSendMagicEffect(getPlayerPosition(cid), effect)
+    end
     addEvent(SendEffect, time * 1000, cid, effect, text, time, color)
   end
   return true

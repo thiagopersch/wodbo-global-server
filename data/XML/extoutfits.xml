@@ -49,6 +49,8 @@
   <shaders id="17" shadername="ShaderChargeMultiColors" name="Carga Multicor" />
   <shaders id="18" shadername="ShaderChargeObito" name="Carga Obito" />
   <shaders id="19" shadername="especial" name="Especial" />
+  <shaders id="20" shadername="fire_aura" name="Aura de Fogo" />
+  <shaders id="21" shadername="big_fire_aura" name="Big Fire Aura" />
 
   <!-- ========== HEALTH BARS ========== -->
   <!-- image = path da imagem no cliente (sem extensao) -->

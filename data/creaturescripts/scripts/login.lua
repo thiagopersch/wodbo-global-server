@@ -77,38 +77,39 @@ function onLogin(cid)
   registerCreatureEvent(cid, "DailyReward")
   registerCreatureEvent(cid, "DailyRewardOpcode")
   registerCreatureEvent(cid, "DailyRewardStats")
-  
   registerCreatureEvent(cid, "SkillUpgradesCombat")
   registerCreatureEvent(cid, "SkillUpgradesLogin")
   registerCreatureEvent(cid, "SkillUpgradesLogout")
-
   registerCreatureEvent(cid, "TaskLogin")
+  registerCreatureEvent(cid, "ShaderSelectorOpcode")
+  setPlayerStorageValue(cid, 81000, -1)
+  setPlayerStorageValue(cid, 81001, -1)
 
   -- Bônus de XP/Skill do Daily Reward e Upgrades
   local totalExpRate = 1.0
   local xpBonusTime = getPlayerStorageValue(cid, 48702)
   if xpBonusTime > os.time() then
     totalExpRate = totalExpRate + 0.5
-    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Seu bônus de 50% de XP (Daily) está ativo!")
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Your 50% XP bonus (Daily) is active!")
   end
-  
+
   if SkillUpgradesLib then
-      local skillExpBonus = SkillUpgradesLib.getSkillValue(cid, "exp_bonus")
-      if skillExpBonus > 0 then
-          totalExpRate = totalExpRate + (skillExpBonus / 100)
-      end
+    local skillExpBonus = SkillUpgradesLib.getSkillValue(cid, "exp_bonus")
+    if skillExpBonus > 0 then
+      totalExpRate = totalExpRate + (skillExpBonus / 100)
+    end
   end
-  
+
   if totalExpRate > 1.0 then
-      doPlayerSetExperienceRate(cid, totalExpRate)
+    doPlayerSetExperienceRate(cid, totalExpRate)
   end
-  
+
   local skillBonusTime = getPlayerStorageValue(cid, 48703)
   if skillBonusTime > os.time() then
     doPlayerSetMagicRate(cid, 1.25)
-    -- Para outras skills, o TFS 0.4 geralmente não tem um 'setRate' individual simples no lib 
+    -- Para outras skills, o TFS 0.4 geralmente não tem um 'setRate' individual simples no lib
     -- mas o MagicRate já cobre uma parte importante.
-    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Seu bônus de 25% de Skill está ativo!")
+    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Your 25% Skill bonus is active!")
   end
 
   -- [NOVO]: Lê e escreve DIRETAMENTE na coluna SQL, ignorando storages limitados do TFS!

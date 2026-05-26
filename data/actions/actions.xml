@@ -282,4 +282,7 @@
 
 	<!-- Extoutfit unlock items -->
 	<action fromid="56917" toid="56951" event="script" value="extoutfit_unlock.lua" />
+
+	<!-- Shader selector -->
+	<action fromid="56496" toid="56496" event="script" value="shader_selector.lua" />
 </actions>

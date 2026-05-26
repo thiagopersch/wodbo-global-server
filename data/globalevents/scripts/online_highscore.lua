@@ -18,6 +18,8 @@ function onThink(interval, lastExecution)
     msg = msg .. "\n" .. i .. ". " .. playerData[i].name .. "  [Lv: " .. playerData[i].level .. "]"
   end
 
-  doBroadcastMessage(msg, "green", "top")
+  local formattedMsg = "top|" .. TEXTCOLOR_TEAL .. msg
+
+  doBroadcastMessage(formattedMsg)
   return true
 end

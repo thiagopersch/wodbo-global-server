@@ -80231,9 +80231,9 @@
 		<attribute key="weight" value="5" />
 		<attribute key="description" value="A beautiful amethyst pearl." />
 	</item>
-	<item id="56496" name="astronomy scroll">
+	<item id="56496" name="shader scroll">
 		<attribute key="weight" value="10" />
-		<attribute key="description" value="A dark parchment mapping the stars." />
+		<attribute key="description" value="A scroll mapping the shaders." />
 	</item>
 	<item id="56497" name="crimson eye emblem">
 		<attribute key="weight" value="15" />
