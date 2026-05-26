@@ -285,4 +285,7 @@
 
 	<!-- Shader selector -->
 	<action fromid="56496" toid="56496" event="script" value="shader_selector.lua" />
+
+	<!-- Wing unlock -->
+	<action fromid="56500" toid="56500" event="script" value="wing_unlock.lua" />
 </actions>
