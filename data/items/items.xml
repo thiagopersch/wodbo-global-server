@@ -80411,9 +80411,9 @@
 		<attribute key="weight" value="5" />
 		<attribute key="description" value="A map with a marked destination." />
 	</item>
-	<item id="56541" name="holy spellbook">
-		<attribute key="weight" value="45" />
-		<attribute key="description" value="A heavy tome filled with healing prayers." />
+	<item id="56541" name="aura scrollbook">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="Unlocks a cosmetic aura effect of your choice." />
 	</item>
 	<item id="56542" name="mystic blue sword">
 		<attribute key="weight" value="65" />

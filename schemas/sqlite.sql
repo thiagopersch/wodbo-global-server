@@ -889,3 +889,10 @@ CREATE TABLE IF NOT EXISTS "player_extoutfit_unlocks" (
   PRIMARY KEY ("player_id", "type", "id"),
   FOREIGN KEY ("player_id") REFERENCES "players"("id") ON DELETE CASCADE
 );
+
+ALTER TABLE "players" ADD COLUMN "lookmount" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "players" ADD COLUMN "lookwings" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "players" ADD COLUMN "lookaura" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "players" ADD COLUMN "lookshader" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "players" ADD COLUMN "lookhealthbar" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "players" ADD COLUMN "lookmanabar" INTEGER NOT NULL DEFAULT 0;

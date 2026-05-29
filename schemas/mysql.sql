@@ -591,3 +591,10 @@ CREATE TABLE IF NOT EXISTS `player_extoutfit_unlocks` (
   PRIMARY KEY (`player_id`, `type`, `id`),
   FOREIGN KEY (`player_id`) REFERENCES `players`(`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB;
+
+ALTER TABLE `players` ADD `lookmount` INT NOT NULL DEFAULT 0;
+ALTER TABLE `players` ADD `lookwings` INT NOT NULL DEFAULT 0;
+ALTER TABLE `players` ADD `lookaura` INT NOT NULL DEFAULT 0;
+ALTER TABLE `players` ADD `lookshader` INT NOT NULL DEFAULT 0;
+ALTER TABLE `players` ADD `lookhealthbar` INT NOT NULL DEFAULT 0;
+ALTER TABLE `players` ADD `lookmanabar` INT NOT NULL DEFAULT 0;

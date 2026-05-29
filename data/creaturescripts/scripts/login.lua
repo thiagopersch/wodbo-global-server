@@ -82,8 +82,11 @@ function onLogin(cid)
   registerCreatureEvent(cid, "SkillUpgradesLogout")
   registerCreatureEvent(cid, "TaskLogin")
   registerCreatureEvent(cid, "ShaderSelectorOpcode")
+  registerCreatureEvent(cid, "AuraSelectorOpcode")
   setPlayerStorageValue(cid, 81000, -1)
   setPlayerStorageValue(cid, 81001, -1)
+  setPlayerStorageValue(cid, 81002, -1)
+  setPlayerStorageValue(cid, 81003, -1)
 
   -- Bônus de XP/Skill do Daily Reward e Upgrades
   local totalExpRate = 1.0
@@ -152,7 +155,9 @@ function onLogin(cid)
       local vocation = tonumber(w[2])
 
       if lookType and vocation and vocation > 0 then
-        doCreatureChangeOutfit(cid, { lookType = lookType })
+        local currentOutfit = getCreatureOutfit(cid)
+        currentOutfit.lookType = lookType
+        doCreatureChangeOutfit(cid, currentOutfit)
         doPlayerSetVocation(cid, vocation)
 
         if saga and saga[vocation] then
@@ -169,7 +174,9 @@ function onLogin(cid)
     end
   else
     if saga and saga[currentVoc] and saga[currentVoc][1] then
-      doCreatureChangeOutfit(cid, { lookType = saga[currentVoc][1].lookType })
+      local currentOutfit = getCreatureOutfit(cid)
+      currentOutfit.lookType = saga[currentVoc][1].lookType
+      doCreatureChangeOutfit(cid, currentOutfit)
     end
   end
 
@@ -179,6 +186,38 @@ function onLogin(cid)
   local resets = getPlayerResets(cid)
 
   doPlayerSendExtendedOpcode(cid, 50, age .. "|" .. title .. "|" .. frags .. "|" .. resets)
+
+  -- ── Aura Selector: sincroniza dados ao login ─────────────────────────────
+  -- Usa addEvent para garantir que o client já está pronto para receber
+  -- opcodes extendidos (evita race condition no handshake inicial)
+  addEvent(function()
+    if not isPlayer(cid) then return end
+
+    -- Reseta qualquer sessão de aura pendente de uma sessão anterior
+    setPlayerStorageValue(cid, 81002, -1)  -- ST_AURA_ITEM
+    setPlayerStorageValue(cid, 81003, -1)  -- ST_AURA_OPEN
+
+    local AURA_OPCODE = 249
+
+    -- Garante que as libs estão carregadas (guard __loaded impede recarga)
+    if not extoutfit then dofile("data/lib/extoutfit_lib.lua") end
+    if not extoutfit_parser then dofile("data/lib/extoutfit_parser.lua") end
+
+    -- Envia lista de auras desbloqueadas
+    local unlockedAuras = extoutfit.getAuras(cid)
+    if unlockedAuras and #unlockedAuras > 0 then
+      doPlayerSendExtendedOpcode(cid, AURA_OPCODE,
+        "a_sync|" .. table.concat(unlockedAuras, ","))
+    else
+      doPlayerSendExtendedOpcode(cid, AURA_OPCODE, "a_sync|")
+    end
+
+    -- Envia aura equipada atualmente
+    local equippedAura = extoutfit.getEquippedAura(cid)
+    if equippedAura and equippedAura > 0 then
+      doPlayerSendExtendedOpcode(cid, AURA_OPCODE, "a_equipped|" .. equippedAura)
+    end
+  end, 500)  -- 500ms: suficiente para o client processar o login completo
 
   return true
 end
