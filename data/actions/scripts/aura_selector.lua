@@ -10,30 +10,16 @@ local json = dofile("data/lib/json.lua")
 local AURA_OPCODE = 249
 
 -- Storages internos do sistema (faixa 81000+)
-local ST_AURA_ITEM     = 81002  -- uid do item em uso
-local ST_AURA_OPEN     = 81003  -- flag: janela aberta (1 = sim)
-local ST_AURA_COOLDOWN = 81004  -- timestamp do cooldown
+local ST_AURA_ITEM     = 81002
+local ST_AURA_OPEN     = 81003
+local ST_AURA_COOLDOWN = 81004
 
 local COOLDOWN_SECONDS = 2
 local ITEM_ID          = 56541
-local LOG_TAG          = "[AuraSelector:Action]"
 
--- =============================================================================
--- UTILITÁRIOS
--- =============================================================================
-local function log(msg)
-  local text = LOG_TAG .. " " .. tostring(msg)
-  print(text)
-  pcall(function()
-    if extoutfit and extoutfit.logFile then extoutfit.logFile(text) end
-  end)
-end
-
--- Envia mensagem modal como opcode (exibida como janela no client)
--- Se o client não tratar a_msg, cai para texto de console
+-- Envia mensagem modal como opcode
 local function sendModal(cid, msg)
   doPlayerSendExtendedOpcode(cid, AURA_OPCODE, "a_msg|" .. tostring(msg))
-  -- Fallback: texto de console
   doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, msg)
 end
 
@@ -47,35 +33,38 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 
   local playerName = getPlayerName(cid)
 
-  -- ── Proteção: janela já aberta ────────────────────────────────────────────
+  -- ── Proteção: janela já aberta (com timeout de 30s p/ sessão stale) ────
   if getPlayerStorageValue(cid, ST_AURA_OPEN) == 1 then
-    sendModal(cid, "Você já possui uma seleção de aura aberta.")
-    log("BLOCKED: janela já aberta para " .. playerName)
-    return true
+    local cooldownVal = getPlayerStorageValue(cid, ST_AURA_COOLDOWN)
+    local stale = (type(cooldownVal) ~= "number" or os.time() > cooldownVal + 30)
+    if stale then
+      setPlayerStorageValue(cid, ST_AURA_OPEN, -1)
+      setPlayerStorageValue(cid, ST_AURA_ITEM, -1)
+    else
+      sendModal(cid, "You already have an aura selection open.")
+      return true
+    end
   end
 
   -- ── Proteção: cooldown ────────────────────────────────────────────────────
   local cooldown = getPlayerStorageValue(cid, ST_AURA_COOLDOWN)
   if type(cooldown) == "number" and cooldown > os.time() then
     local remaining = cooldown - os.time()
-    sendModal(cid, "Aguarde " .. remaining .. " segundo(s) antes de usar novamente.")
-    log("COOLDOWN: " .. playerName .. " deve aguardar " .. remaining .. "s")
+    sendModal(cid, "Please wait " .. remaining .. " second(s) before using again.")
     return true
   end
 
   -- ── Carrega auras do XML ──────────────────────────────────────────────────
   local auras = extoutfit_parser.loadAuras()
   if not auras or #auras == 0 then
-    sendModal(cid, "Nenhuma aura disponível no momento. Tente novamente mais tarde.")
-    log("WARNING: loadAuras() retornou 0 auras para " .. playerName)
+    sendModal(cid, "No auras available at this time. Please try again later.")
     return true
   end
 
   -- ── Monta JSON seguro ─────────────────────────────────────────────────────
   local ok, aurasJson = pcall(json.encode, auras)
   if not ok or not aurasJson then
-    log("ERROR: json.encode falhou: " .. tostring(aurasJson))
-    sendModal(cid, "Falha ao carregar lista de auras. Tente novamente.")
+    sendModal(cid, "Failed to load aura list. Please try again.")
     return true
   end
 
@@ -85,10 +74,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
   setPlayerStorageValue(cid, ST_AURA_COOLDOWN, os.time() + COOLDOWN_SECONDS)
 
   -- ── Envia ao client: "a_open|{JSON}" ─────────────────────────────────────
-  -- O client usa splitAction() que separa apenas no PRIMEIRO pipe,
-  -- portanto o JSON (que pode conter pipes internos) é preservado.
   doPlayerSendExtendedOpcode(cid, AURA_OPCODE, "a_open|" .. aurasJson)
 
-  log("OPEN: player=" .. playerName .. " auras=" .. #auras .. " item_uid=" .. item.uid)
   return true
 end

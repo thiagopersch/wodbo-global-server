@@ -1,7 +1,6 @@
 -- =============================================================================
 -- data/creaturescripts/scripts/aura_selector.lua
 -- Handler do opcode 249 — processa respostas do client (a_pick, a_cancel, etc)
--- Registrado em creaturescripts.xml como extendedopcode "AuraSelectorOpcode"
 -- =============================================================================
 
 dofile("data/lib/extoutfit_lib.lua")
@@ -11,39 +10,27 @@ local json = dofile("data/lib/json.lua")
 local AURA_OPCODE = 249
 local ITEM_ID     = 56541
 
--- Storages — mesmos do action script
+-- Storages
 local ST_AURA_ITEM     = 81002
 local ST_AURA_OPEN     = 81003
 local ST_AURA_COOLDOWN = 81004
 
--- Anti-spam: cooldown de pick separado do cooldown de abertura
+-- Anti-spam
 local PICK_COOLDOWN_SECONDS = 2
-local LOG_TAG = "[AuraSelector:Opcode]"
 
--- =============================================================================
--- UTILITÁRIOS
--- =============================================================================
-local function log(msg)
-  local text = LOG_TAG .. " " .. tostring(msg)
-  print(text)
-  pcall(function()
-    if extoutfit and extoutfit.logFile then extoutfit.logFile(text) end
-  end)
-end
-
--- Envia mensagem modal ao client via opcode + fallback de texto
+-- Envia mensagem modal ao client
 local function sendModal(cid, msg)
   doPlayerSendExtendedOpcode(cid, AURA_OPCODE, "a_msg|" .. tostring(msg))
   doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, msg)
 end
 
--- Reseta estado da sessão de aura
+-- Reseta estado da sessão
 local function resetSession(cid)
   setPlayerStorageValue(cid, ST_AURA_ITEM, -1)
   setPlayerStorageValue(cid, ST_AURA_OPEN, -1)
 end
 
--- Divide buffer no PRIMEIRO pipe apenas (JSON pode conter pipes)
+-- Divide buffer no PRIMEIRO pipe apenas
 local function splitAction(buffer)
   local pipePos = string.find(buffer, '|', 1, true)
   if pipePos then
@@ -66,175 +53,128 @@ end
 -- HANDLER PRINCIPAL
 -- =============================================================================
 function onExtendedOpcode(cid, opcode, buffer)
-  -- Filtra opcodes de outros sistemas
   if opcode ~= AURA_OPCODE then
     return false
   end
 
-  -- Valida que é um jogador
   if not isPlayer(cid) then
     return false
   end
 
-  -- Buffer vazio — ignora silenciosamente
   if not buffer or #buffer == 0 then
-    log("WARN: buffer vazio recebido de " .. getPlayerName(cid))
     return false
   end
 
   local playerName = getPlayerName(cid)
   local action, rest = splitAction(buffer)
 
-  -- ============================================================
-  -- a_cleanup — client iniciou uma nova sessão de jogo
-  -- ============================================================
+  -- a_cleanup — client iniciou nova sessão de jogo
   if action == "a_cleanup" then
     resetSession(cid)
-    log("CLEANUP: " .. playerName)
     return true
   end
 
-  -- ============================================================
-  -- a_cancel — jogador fechou/cancelou a janela sem confirmar
-  -- NÃO remove o item
-  -- ============================================================
+  -- a_cancel — jogador fechou/cancelou sem confirmar (não remove item)
   if action == "a_cancel" then
     if getPlayerStorageValue(cid, ST_AURA_OPEN) ~= 1 then
-      -- Já estava fechado — ignora
       return true
     end
     resetSession(cid)
-    sendModal(cid, "Seleção de aura cancelada. Você pode usar o item novamente a qualquer momento.")
-    log("CANCEL: " .. playerName)
+    sendModal(cid, "Aura selection cancelled. You can use the item again at any time.")
     return true
   end
 
-  -- ============================================================
   -- a_pick — jogador confirmou uma aura
-  -- ============================================================
   if action == "a_pick" then
 
-    -- ── Anti-spam por cooldown ──────────────────────────────────────────────
+    -- Anti-spam
     local cooldown = getPlayerStorageValue(cid, ST_AURA_COOLDOWN)
     if type(cooldown) == "number" and cooldown > os.time() then
-      log("SPAM: a_pick bloqueado por cooldown, player=" .. playerName)
       return true
     end
     setPlayerStorageValue(cid, ST_AURA_COOLDOWN, os.time() + PICK_COOLDOWN_SECONDS)
 
-    -- ── Validação: ID da aura ──────────────────────────────────────────────
+    -- Validação: ID da aura
     local auraId = tonumber(rest)
     if not auraId or auraId <= 0 then
-      sendModal(cid, "Seleção de aura inválida.")
+      sendModal(cid, "Invalid aura selection.")
       resetSession(cid)
-      log("INVALID_ID: player=" .. playerName .. " id=" .. tostring(rest))
       return true
     end
 
-    -- ── Validação: janela estava aberta ────────────────────────────────────
+    -- Validação: janela estava aberta
     if getPlayerStorageValue(cid, ST_AURA_OPEN) ~= 1 then
-      sendModal(cid, "Você não possui uma seleção de aura ativa.")
-      log("EXPLOIT: a_pick sem janela aberta, player=" .. playerName)
+      sendModal(cid, "You don't have an active aura selection.")
       return true
     end
 
-    -- ── Validação: uid do item na sessão ──────────────────────────────────
+    -- Validação: uid do item na sessão
     local itemUid = getPlayerStorageValue(cid, ST_AURA_ITEM)
     if not itemUid or itemUid <= 0 then
-      sendModal(cid, "Item de aura não encontrado. Tente novamente.")
+      sendModal(cid, "Aura item not found. Please try again.")
       resetSession(cid)
-      log("NO_ITEM_UID: player=" .. playerName)
       return true
     end
 
-    -- ── Validação: item ainda existe no inventário ─────────────────────────
-    local item = getThingByUID(itemUid)
-    if not item or not isItem(item) then
-      sendModal(cid, "O item de aura não está mais disponível.")
-      resetSession(cid)
-      log("ITEM_GONE: uid=" .. itemUid .. " player=" .. playerName)
-      return true
-    end
-
-    -- ── Validação: item ID correto (anti-exploit) ──────────────────────────
-    if item.itemid ~= ITEM_ID then
-      sendModal(cid, "Item inválido.")
-      resetSession(cid)
-      log("WRONG_ITEM: itemid=" .. item.itemid .. " esperado=" .. ITEM_ID .. " player=" .. playerName)
-      return true
-    end
-
-    -- ── Validação: aura existe no XML ─────────────────────────────────────
+    -- Validação: aura existe no XML
     local allAuras = extoutfit_parser.loadAuras()
     local auraData = extoutfit_parser.findAura(allAuras, auraId)
     if not auraData then
-      sendModal(cid, "Esta aura não existe no servidor.")
+      sendModal(cid, "This aura does not exist on the server.")
       resetSession(cid)
-      log("NOT_FOUND: aura_id=" .. auraId .. " player=" .. playerName)
       return true
     end
 
-    -- ── Proteção: aura já desbloqueada ────────────────────────────────────
+    -- Proteção: aura já desbloqueada
     if extoutfit.hasAura(cid, auraId) then
-      sendModal(cid, 'Você já possui a aura "' .. auraData.name .. '" desbloqueada.')
+      sendModal(cid, 'You already have the aura "' .. auraData.name .. '" unlocked.')
       resetSession(cid)
-      log("DUPLICATE: aura_id=" .. auraId .. " player=" .. playerName)
       return true
     end
 
-    -- ── Adiciona a aura ao banco de dados ─────────────────────────────────
+    -- Adiciona a aura ao banco de dados
     local success = extoutfit.addAura(cid, auraId)
     if not success then
-      sendModal(cid, "Falha ao desbloquear aura. Tente novamente.")
-      log("DB_FAIL: extoutfit.addAura falhou, aura_id=" .. auraId .. " player=" .. playerName)
+      sendModal(cid, "Failed to unlock aura. Please try again.")
       return true
     end
 
-    -- ── Remove 1 item do inventário ───────────────────────────────────────
-    if not doRemoveItem(itemUid, 1) then
-      log("WARN: doRemoveItem falhou uid=" .. itemUid .. " player=" .. playerName)
-      -- Mesmo com falha na remoção do item, a aura foi concedida — registra mas não desfaz
+    -- Remove 1 item do inventário
+    if not doPlayerRemoveItem(cid, ITEM_ID, 1) then
+      -- Item already consumed or not found — aura was granted, continue
     end
 
-    -- ── Limpa sessão ──────────────────────────────────────────────────────
+    -- Limpa sessão
     resetSession(cid)
 
-    -- ── Equipa a aura imediatamente (sem relog) ───────────────────────────
+    -- Equipa a aura imediatamente
     local outfit = getCreatureOutfit(cid)
     outfit.aura = auraData.looktype
     doCreatureChangeOutfit(cid, outfit)
     doPlayerSave(cid)
 
-    -- ── Feedback: quantidade total desbloqueada ───────────────────────────
+    -- Feedback: quantidade total desbloqueada
     local updatedList = extoutfit.getAuras(cid)
     local totalUnlocked = updatedList and #updatedList or 1
 
-    local msg = 'Aura "' .. auraData.name .. '" adicionada com sucesso!\nVocê possui agora ' .. totalUnlocked .. ' aura(s) desbloqueada(s).'
+    local msg = 'Aura "' .. auraData.name .. '" unlocked successfully!\nYou now have ' .. totalUnlocked .. ' aura(s) unlocked.'
     sendModal(cid, msg)
 
-    -- ── Sincroniza lista de desbloqueadas com o client ───────────────────
+    -- Sincroniza lista com o client
     syncAuras(cid)
 
-    -- ── Notifica looktype equipado ────────────────────────────────────────
+    -- Notifica looktype equipado
     doPlayerSendExtendedOpcode(cid, AURA_OPCODE, "a_equipped|" .. auraData.looktype)
 
-    -- ── Reabre a outfitwindow para refletir mudanças ──────────────────────
-    -- Pequeno delay para garantir que o client processou o unlock antes
+    -- Reabre outfit window
     addEvent(function()
       if isPlayer(cid) then
         doPlayerSendOutfitWindow(cid)
       end
     end, 300)
 
-    log("SUCCESS: aura_id=" .. auraId ..
-        ' name="' .. auraData.name .. '"' ..
-        " looktype=" .. auraData.looktype ..
-        " player=" .. playerName ..
-        " total=" .. totalUnlocked)
     return true
   end
 
-  -- Ação desconhecida — possível packet manipulado
-  log("UNKNOWN_ACTION: '" .. tostring(action) .. "' player=" .. playerName)
   return false
 end
