@@ -592,7 +592,13 @@ void ScriptEnviroment::streamOutfit(std::stringstream& stream, const std::string
 	stream << "lookLegs = " << outfit.lookLegs << "," << std::endl;
 	stream << "lookFeet = " << outfit.lookFeet << "," << std::endl;
 
-	stream << "lookAddons = " << outfit.lookAddons << std::endl;
+	stream << "lookAddons = " << outfit.lookAddons << "," << std::endl;
+	stream << "mount = " << outfit.mount << "," << std::endl;
+	stream << "wings = " << outfit.wings << "," << std::endl;
+	stream << "aura = " << outfit.aura << "," << std::endl;
+	stream << "lookShader = " << outfit.lookShader << "," << std::endl;
+	stream << "healthBar = " << outfit.healthBar << "," << std::endl;
+	stream << "manaBar = " << outfit.manaBar << std::endl;
 	if(!local.empty())
 		stream << "}" << std::endl;
 }
@@ -1081,6 +1087,12 @@ void LuaInterface::pushOutfit(lua_State* L, const Outfit_t& outfit)
 	setField(L, "lookLegs", outfit.lookLegs);
 	setField(L, "lookFeet", outfit.lookFeet);
 	setField(L, "lookAddons", outfit.lookAddons);
+	setField(L, "mount", outfit.mount);
+	setField(L, "wings", outfit.wings);
+	setField(L, "aura", outfit.aura);
+	setField(L, "lookShader", outfit.lookShader);
+	setField(L, "healthBar", outfit.healthBar);
+	setField(L, "manaBar", outfit.manaBar);
 }
 
 void LuaInterface::pushCallback(lua_State* L, int32_t callback)
@@ -1196,6 +1208,12 @@ Outfit_t LuaInterface::popOutfit(lua_State* L)
 
 	outfit.lookTypeEx = getField(L, "lookTypeEx");
 	outfit.lookType = getField(L, "lookType");
+	outfit.mount = getField(L, "mount");
+	outfit.wings = getField(L, "wings");
+	outfit.aura = getField(L, "aura");
+	outfit.lookShader = getField(L, "lookShader");
+	outfit.healthBar = getField(L, "healthBar");
+	outfit.manaBar = getField(L, "manaBar");
 
 	lua_pop(L, 1); //table
 	return outfit;

@@ -163,7 +163,7 @@ function onExtendedOpcode(cid, opcode, buffer)
     -- Sincroniza lista com o client
     syncAuras(cid)
 
-    -- Notifica looktype equipado
+    -- Notifica looktype equipado (game_auraoffset no client gerencia o offset)
     doPlayerSendExtendedOpcode(cid, AURA_OPCODE, "a_equipped|" .. auraData.looktype)
 
     -- Reabre outfit window

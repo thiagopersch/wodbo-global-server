@@ -35,7 +35,9 @@ function onSay(cid, words, param, channel)
 
         local flashEffectId = out.effect or sagaData.effect or defaultTransformEffect
         local flashPos = getTransformEffectPos(cid, sagaData, out)
-        doCreatureChangeOutfit(cid, { lookType = out.lookType })
+        local revertOutfit = getCreatureOutfit(cid)
+        revertOutfit.lookType = out.lookType
+        doCreatureChangeOutfit(cid, revertOutfit)
         setPlayerStorageValue(cid, sagastor, ":" .. out.lookType .. ",:" .. vocation)
         doSendMagicEffect(flashPos, flashEffectId)
         doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "You've reverted to your base transformation!")
@@ -98,7 +100,9 @@ function onSay(cid, words, param, channel)
 
     local flashEffectId = out.effect or sagaData.effect or defaultTransformEffect
     local flashPos = getTransformEffectPos(cid, sagaData, out)
-    doCreatureChangeOutfit(cid, { lookType = out.lookType })
+    local transformOutfit = getCreatureOutfit(cid)
+    transformOutfit.lookType = out.lookType
+    doCreatureChangeOutfit(cid, transformOutfit)
     setPlayerStorageValue(cid, sagastor, ":" .. out.lookType .. ",:" .. vocation)
     doSendMagicEffect(flashPos, flashEffectId)
     doPlayerSendTextMessage(cid, MESSAGE_STATUS_WARNING, "You've chosen a new transform!")

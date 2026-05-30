@@ -136,6 +136,10 @@ local function parseTags(content, tagName, required)
       end
 
       if valid then
+        -- Optional attributes
+        row.posx = tonumber(extractAttr(entry, 'posx')) or 0
+        row.posy = tonumber(extractAttr(entry, 'posy')) or 0
+
         seenIds[numId] = true
         table.insert(results, row)
       end

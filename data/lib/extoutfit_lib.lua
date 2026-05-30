@@ -7,17 +7,17 @@ if extoutfit and extoutfit.__loaded then
   return extoutfit
 end
 
-extoutfit = {}
+extoutfit          = {}
 extoutfit.__loaded = true
 
-local VALID_TYPES = { wing = true, aura = true, shader = true, healthbar = true, manabar = true }
-local LOG_TAG     = "[extoutfit_lib]"
+local VALID_TYPES  = { wing = true, aura = true, shader = true, healthbar = true, manabar = true }
+local LOG_TAG      = "[extoutfit_lib]"
 
 -- =============================================================================
 -- UTILITÁRIOS
 -- =============================================================================
 local function logError(msg) print(LOG_TAG .. " ERROR: " .. tostring(msg)) end
-local function logInfo(msg)  print(LOG_TAG .. " "        .. tostring(msg)) end
+local function logInfo(msg) print(LOG_TAG .. " " .. tostring(msg)) end
 
 -- Log para arquivo (logs/aura_system.log)
 local logFileHandle = nil
@@ -40,12 +40,14 @@ local function writeLog(level, msg)
     end
   end
   if logFileHandle then
-    pcall(function() logFileHandle:write(text .. "\n"); logFileHandle:flush() end)
+    pcall(function()
+      logFileHandle:write(text .. "\n"); logFileHandle:flush()
+    end)
   end
 end
-local function logFile(msg)     writeLog("INFO", msg) end
+local function logFile(msg) writeLog("INFO", msg) end
 local function logFileError(msg) writeLog("ERROR", msg) end
-local function logFileWarn(msg)  writeLog("WARN", msg) end
+local function logFileWarn(msg) writeLog("WARN", msg) end
 
 -- Expõe logging para outros scripts
 extoutfit.logFile = logFile
@@ -176,10 +178,13 @@ end
 -- WINGS
 -- =============================================================================
 
-function extoutfit.addWing(cid, id)    return extoutfit.addUnlock(cid, "wing", id) end
+function extoutfit.addWing(cid, id) return extoutfit.addUnlock(cid, "wing", id) end
+
 function extoutfit.removeWing(cid, id) return extoutfit.removeUnlock(cid, "wing", id) end
-function extoutfit.hasWing(cid, id)    return extoutfit.hasUnlock(cid, "wing", id) end
-function extoutfit.getWings(cid)       return extoutfit.getUnlocks(cid, "wing") end
+
+function extoutfit.hasWing(cid, id) return extoutfit.hasUnlock(cid, "wing", id) end
+
+function extoutfit.getWings(cid) return extoutfit.getUnlocks(cid, "wing") end
 
 function extoutfit.getEquippedWing(cid)
   if not isPlayer(cid) then return 0 end
@@ -191,28 +196,37 @@ end
 -- SHADERS
 -- =============================================================================
 
-function extoutfit.addShader(cid, id)    return extoutfit.addUnlock(cid, "shader", id) end
+function extoutfit.addShader(cid, id) return extoutfit.addUnlock(cid, "shader", id) end
+
 function extoutfit.removeShader(cid, id) return extoutfit.removeUnlock(cid, "shader", id) end
-function extoutfit.hasShader(cid, id)    return extoutfit.hasUnlock(cid, "shader", id) end
-function extoutfit.getShaders(cid)       return extoutfit.getUnlocks(cid, "shader") end
+
+function extoutfit.hasShader(cid, id) return extoutfit.hasUnlock(cid, "shader", id) end
+
+function extoutfit.getShaders(cid) return extoutfit.getUnlocks(cid, "shader") end
 
 -- =============================================================================
 -- HEALTH BARS
 -- =============================================================================
 
-function extoutfit.addHealthBar(cid, id)    return extoutfit.addUnlock(cid, "healthbar", id) end
+function extoutfit.addHealthBar(cid, id) return extoutfit.addUnlock(cid, "healthbar", id) end
+
 function extoutfit.removeHealthBar(cid, id) return extoutfit.removeUnlock(cid, "healthbar", id) end
-function extoutfit.hasHealthBar(cid, id)    return extoutfit.hasUnlock(cid, "healthbar", id) end
-function extoutfit.getHealthBars(cid)       return extoutfit.getUnlocks(cid, "healthbar") end
+
+function extoutfit.hasHealthBar(cid, id) return extoutfit.hasUnlock(cid, "healthbar", id) end
+
+function extoutfit.getHealthBars(cid) return extoutfit.getUnlocks(cid, "healthbar") end
 
 -- =============================================================================
 -- MANA BARS
 -- =============================================================================
 
-function extoutfit.addManaBar(cid, id)    return extoutfit.addUnlock(cid, "manabar", id) end
+function extoutfit.addManaBar(cid, id) return extoutfit.addUnlock(cid, "manabar", id) end
+
 function extoutfit.removeManaBar(cid, id) return extoutfit.removeUnlock(cid, "manabar", id) end
-function extoutfit.hasManaBar(cid, id)    return extoutfit.hasUnlock(cid, "manabar", id) end
-function extoutfit.getManaBars(cid)       return extoutfit.getUnlocks(cid, "manabar") end
+
+function extoutfit.hasManaBar(cid, id) return extoutfit.hasUnlock(cid, "manabar", id) end
+
+function extoutfit.getManaBars(cid) return extoutfit.getUnlocks(cid, "manabar") end
 
 -- =============================================================================
 -- EQUIP GENÉRICO (por tipo)
@@ -223,11 +237,16 @@ function extoutfit.equip(cid, extraType, extraId)
   local outfit = getCreatureOutfit(cid)
   if not outfit then return false end
 
-  if     extraType == "wing"      then outfit.wings     = extraId
-  elseif extraType == "aura"      then outfit.aura       = extraId
-  elseif extraType == "shader"    then outfit.shader     = extraId
-  elseif extraType == "healthbar" then outfit.healthBar  = extraId
-  elseif extraType == "manabar"   then outfit.manaBar    = extraId
+  if extraType == "wing" then
+    outfit.wings = extraId
+  elseif extraType == "aura" then
+    outfit.aura = extraId
+  elseif extraType == "shader" then
+    outfit.shader = extraId
+  elseif extraType == "healthbar" then
+    outfit.healthBar = extraId
+  elseif extraType == "manabar" then
+    outfit.manaBar = extraId
   else
     logError("equip: tipo desconhecido '" .. tostring(extraType) .. "'")
     return false
@@ -240,6 +259,48 @@ function extoutfit.equip(cid, extraType, extraId)
   end
   logError("equip: doCreatureChangeOutfit falhou")
   return false
+end
+
+-- =============================================================================
+-- AURA OFFSET OVERRIDE — por vocation ID ou looktype do outfit
+-- Substitui completamente o posx/posy base definido em extoutfits.xml
+-- =============================================================================
+
+-- Override por vocation ID
+vocationAuraOffsetOverride = {
+  -- [vocationId] = { posx = N, posy = N }
+  -- Exemplo:
+  -- [17] = { posx = 0, posy = -32 },  -- Goku
+  -- [40] = { posx = -64, posy = 0 },  -- Vegeta
+}
+
+-- Override por looktype do outfit do jogador
+looktypeAuraOffsetOverride = {
+  -- [looktype] = { posx = N, posy = N }
+  -- Exemplo:
+  -- [1881] = { posx = 0, posy = -32 },  -- Base form looktype 1881
+  [3479] = { posx = 64, posy = 42 }, -- Grey aura
+  [3517] = { posx = 65, posy = 24 }, -- Yellow Ki
+}
+
+-- Calcula o offset final da aura aplicando overrides.
+-- Prioridade: looktype > vocation > base (posx/posy do extoutfits.xml)
+function extoutfit.getAuraOffsetWithOverride(cid, basePosX, basePosY)
+  local outfit = getCreatureOutfit(cid)
+  local looktype = outfit and outfit.lookType or 0
+
+  local override = looktypeAuraOffsetOverride[looktype]
+  if override then
+    return override.posx or 0, override.posy or 0
+  end
+
+  local vocId = getPlayerVocation(cid)
+  local override = vocationAuraOffsetOverride[vocId]
+  if override then
+    return override.posx or 0, override.posy or 0
+  end
+
+  return basePosX or 0, basePosY or 0
 end
 
 return extoutfit

@@ -286,9 +286,9 @@
 	<!-- Shader selector -->
 	<action fromid="56496" toid="56496" event="script" value="shader_selector.lua" />
 
-	<!-- Wing unlock -->
-	<action fromid="56500" toid="56500" event="script" value="wing_unlock.lua" />
-
 	<!-- Aura selector -->
 	<action fromid="56541" toid="56541" event="script" value="aura_selector.lua" />
+
+	<!-- Wing unlock -->
+	<action fromid="56500" toid="56509" event="script" value="wing_unlock.lua" />
 </actions>

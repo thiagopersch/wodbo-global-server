@@ -172,6 +172,11 @@ bool Auras::loadFromXml()
 			if(readXMLString(p, "storageValue", strValue))
 				aura.storageValue = strValue;
 
+			if(readXMLInteger(p, "posx", intValue))
+				aura.posX = intValue;
+			if(readXMLInteger(p, "posy", intValue))
+				aura.posY = intValue;
+
 			auraMap[aura.id] = aura;
 		}
 	}

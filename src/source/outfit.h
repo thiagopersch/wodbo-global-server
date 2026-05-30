@@ -87,8 +87,10 @@ struct AuraType
 	std::string storageId;
 	std::string storageValue;
 	bool isPremium;
+	int16_t posX;
+	int16_t posY;
 
-	AuraType() { id = lookType = 0; isPremium = false; }
+	AuraType() { id = lookType = 0; isPremium = false; posX = 0; posY = 0; }
 };
 
 struct ShaderType

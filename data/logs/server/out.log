@@ -1,48 +1,48 @@
-[30/5/2026 13:9:10] > Usando SHA1 criptografia
-[30/5/2026 13:9:10] >> Carregando RSA key
-[30/5/2026 13:9:10] >> Iniciando conexao SQL
-[30/5/2026 13:9:10] >> Executando Gerenciador de Banco de Dados
-[30/5/2026 13:9:10] > Optimized database.
-[30/5/2026 13:9:10] >> Carregando items (OTB)
-[30/5/2026 13:9:10] >> Carregando items (XML)
-[30/5/2026 13:9:10] >> Carregando Grupos
-[30/5/2026 13:9:10] >> Carregando Vocacoes
-[30/5/2026 13:9:10] >> Carregando Outfits
-[30/5/2026 13:9:11] >> Carregando Wing Types
-[30/5/2026 13:9:11] >> Carregando Aura Types
-[30/5/2026 13:9:11] >> Carregando Shader Types
-[30/5/2026 13:9:11] >> Carregando Bar Types
-[30/5/2026 13:9:11] >> Carregando Canal de Chat
-[30/5/2026 13:9:11] >> Carregando Sistema
-[30/5/2026 13:9:11] >> Carregando Mods...
-[30/5/2026 13:9:11] > Loading AutoLoot.xml... done.
-[30/5/2026 13:9:11] > Loading Automatic Raids.xml... done.
-[30/5/2026 13:9:11] > Loading highscorebook.xml... done.
-[30/5/2026 13:9:11] > Loading task_system.xml... done.
-[30/5/2026 13:9:11] > 4 mods were loaded.
-[30/5/2026 13:9:11] >> Carregando EXP Stages
-[30/5/2026 13:9:11] >> Carregando Monstros
-[30/5/2026 13:9:11] >> Carregando Mapa e Spawns...
-[30/5/2026 13:9:11] > Tamanho do Mapa: 64000x64000.
-[30/5/2026 13:9:11] > Descricao do Mapa: 
-[30/5/2026 13:9:11] "Saved with OTAcademy Map Editor 4.1.1"
-[30/5/2026 13:9:11] "No map description available."
-[30/5/2026 13:9:14] > Mapa carregado em: 2.771 segundos.
-[30/5/2026 13:9:14] > Data carregada em: 0.146 segundos.
-[30/5/2026 13:9:15] > Houses carregada em: 1.424 segundos.
-[30/5/2026 13:9:15] > Content unserialization time: 0.003 seconds.
-[30/5/2026 13:9:15] > Carregando Tipo de PVP... Open PvP
-[30/5/2026 13:9:15] > Inicializando estado do jogo e registrando servicos...
-[30/5/2026 13:9:15] > IP do Servidor: 127.0.0.1
-[30/5/2026 13:9:15] > IP local do Servidor: 172.17.112.1	192.168.5.103	
-[30/5/2026 13:9:15] > Portas do Servidor: 7171	7172	
-[30/5/2026 13:9:15] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[30/5/2026 13:9:25] >> DBOSupreme servidor Online!
+[30/5/2026 17:9:12] > Usando SHA1 criptografia
+[30/5/2026 17:9:12] >> Carregando RSA key
+[30/5/2026 17:9:12] >> Iniciando conexao SQL
+[30/5/2026 17:9:12] >> Executando Gerenciador de Banco de Dados
+[30/5/2026 17:9:12] > Optimized database.
+[30/5/2026 17:9:12] >> Carregando items (OTB)
+[30/5/2026 17:9:12] >> Carregando items (XML)
+[30/5/2026 17:9:12] >> Carregando Grupos
+[30/5/2026 17:9:12] >> Carregando Vocacoes
+[30/5/2026 17:9:12] >> Carregando Outfits
+[30/5/2026 17:9:12] >> Carregando Wing Types
+[30/5/2026 17:9:12] >> Carregando Aura Types
+[30/5/2026 17:9:12] >> Carregando Shader Types
+[30/5/2026 17:9:12] >> Carregando Bar Types
+[30/5/2026 17:9:12] >> Carregando Canal de Chat
+[30/5/2026 17:9:12] >> Carregando Sistema
+[30/5/2026 17:9:13] >> Carregando Mods...
+[30/5/2026 17:9:13] > Loading AutoLoot.xml... done.
+[30/5/2026 17:9:13] > Loading Automatic Raids.xml... done.
+[30/5/2026 17:9:13] > Loading highscorebook.xml... done.
+[30/5/2026 17:9:13] > Loading task_system.xml... done.
+[30/5/2026 17:9:13] > 4 mods were loaded.
+[30/5/2026 17:9:13] >> Carregando EXP Stages
+[30/5/2026 17:9:13] >> Carregando Monstros
+[30/5/2026 17:9:13] >> Carregando Mapa e Spawns...
+[30/5/2026 17:9:13] > Tamanho do Mapa: 64000x64000.
+[30/5/2026 17:9:13] > Descricao do Mapa: 
+[30/5/2026 17:9:13] "Saved with OTAcademy Map Editor 4.1.1"
+[30/5/2026 17:9:13] "No map description available."
+[30/5/2026 17:9:16] > Mapa carregado em: 3.449 segundos.
+[30/5/2026 17:9:17] > Data carregada em: 0.226 segundos.
+[30/5/2026 17:9:18] > Houses carregada em: 1.771 segundos.
+[30/5/2026 17:9:18] > Content unserialization time: 0.004 seconds.
+[30/5/2026 17:9:18] > Carregando Tipo de PVP... Open PvP
+[30/5/2026 17:9:18] > Inicializando estado do jogo e registrando servicos...
+[30/5/2026 17:9:18] > IP do Servidor: 127.0.0.1
+[30/5/2026 17:9:18] > IP local do Servidor: 172.17.112.1	192.168.5.103	
+[30/5/2026 17:9:18] > Portas do Servidor: 7171	7172	
+[30/5/2026 17:9:18] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[30/5/2026 17:9:28] >> DBOSupreme servidor Online!
 
-[30/5/2026 13:9:31] God has logged in.
-[30/5/2026 13:20:34] God has logged out.
-[30/5/2026 13:20:34] God has logged in.
-[30/5/2026 13:21:28] God has logged out.
-[30/5/2026 13:21:29] God has logged in.
-[30/5/2026 13:25:54] God has logged out.
-[30/5/2026 13:25:55] God has logged in.
+[30/5/2026 17:11:16] God has logged in.
+[30/5/2026 17:31:53] God has logged out.
+[30/5/2026 17:31:54] God has logged in.
+[30/5/2026 17:32:18] God has logged out.
+[30/5/2026 17:32:20] God has logged in.
+[30/5/2026 17:34:57] God has logged out.
+[30/5/2026 17:34:59] God has logged in.

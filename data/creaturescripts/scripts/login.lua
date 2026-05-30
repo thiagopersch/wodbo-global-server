@@ -212,7 +212,7 @@ function onLogin(cid)
       doPlayerSendExtendedOpcode(cid, AURA_OPCODE, "a_sync|")
     end
 
-    -- Envia aura equipada atualmente
+    -- Envia aura equipada atualmente (game_auraoffset no client gerencia o offset)
     local equippedAura = extoutfit.getEquippedAura(cid)
     if equippedAura and equippedAura > 0 then
       doPlayerSendExtendedOpcode(cid, AURA_OPCODE, "a_equipped|" .. equippedAura)
