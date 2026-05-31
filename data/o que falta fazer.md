@@ -462,7 +462,7 @@
     Green = [5623],
     Red = [5625],
     Orange = [5624]
-    Yellow = []
+    Yellow = [6765]
     ]
   - Shenlong dourado = 5691
   - Goku instinto superior akatsuki = [5702]
