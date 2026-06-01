@@ -253,7 +253,7 @@
     - Orochimaru: [3900]
     - Tsunade: [3921]
 
-# Sistemas, Mods e outras funcionalidades
+# Sistemas, Mods, eventos e outras funcionalidades
 
 - [Sistema de skin](https://tibiaking.com/topic/96408-system-skin-860/)
 - [Boosted Creature](https://tibiaking.com/topic/98696-resolvidoboosted-creature/)
@@ -284,9 +284,14 @@
 - [[Creaturescripts] Experiencia para Guild (por nº de Jogadores Online)](https://tibiaking.com/topic/36654-creaturescripts-experiencia-para-guild-por-n%C2%BA-de-jogadores-online/)
 - [Evento Blood Castle [Automático]](https://tibiaking.com/topic/33713-evento-blood-castle-autom%C3%A1tico/)
 - [Castle War 24h - Conquiste o Trono](https://tibiaking.com/topic/35731-castle-war-24h-conquiste-o-trono/)
+- [Castle War 24h](https://tibiaking.com/topic/31356-sistema-castle-war-24horas-com-mapa/)
 - [Sistema de Idade](https://tibiaking.com/topic/69808-sistema-de-idade/) :white_check_mark:
 - [Jinchuuriki System](https://tibiaking.com/topic/81647-narutibia-jinchuuriki-system-distro-04/)
-- [Capture The Flag](https://tibiaking.com/topic/11028-ctf-capture-the-flag/)
+- [Capture The Flag 1.0](https://tibiaking.com/topic/11028-ctf-capture-the-flag/)
+- [Capture The Flag 2.0](https://tibiaking.com/topic/27376-ctf-capture-the-flag-20autom%C3%A1tico/)
+- [Floresta encantada](https://tibiaking.com/topic/38346-floresta-encantada-new-event-exclusivo/)
+- [Rent System](https://tibiaking.com/topic/22439-rent-system-aluguel-de-itens/)
+- [Reputation System](https://tibiaking.com/topic/13218-reputation-system/)
 
 ### GlobalEvents
 
