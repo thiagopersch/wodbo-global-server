@@ -2140,6 +2140,56 @@ TASKS = {
     -- ============================================================
     -- BOSS TASKS
     -- ============================================================
+
+    -- ============================================================
+    -- GENERAL TASKS (available to all universes)
+    -- ============================================================
+
+    -- General Easy: Hunt Bandits
+    task_general_bandits = {
+        id = "task_general_bandits",
+        name = "Hunt: Bandits",
+        lookType = 129,
+        category = "dragonball",
+        type = "general",
+        difficulty = "easy",
+        levelRequired = 10,
+        rankRequired = 0,
+        monsters = { { name = "Bandit", kills = 200 } },
+        killsRequired = 200,
+        points = 10,
+        experience = 50000,
+        money = 25000,
+        rewards = { items = { { 2160, 25 } } },
+        delivery = { enabled = false },
+        repeatable = true,
+        monsterDetails = {
+            { name = "Bandit", level = 15, size = "Small", location = "Various", probability = 80 }
+        }
+    },
+
+    -- General Medium: Hunt Orcs
+    task_general_orcs = {
+        id = "task_general_orcs",
+        name = "Hunt: Orcs",
+        lookType = 130,
+        category = "dragonball",
+        type = "general",
+        difficulty = "medium",
+        levelRequired = 40,
+        rankRequired = 100,
+        monsters = { { name = "Orc", kills = 500 } },
+        killsRequired = 500,
+        points = 30,
+        experience = 200000,
+        money = 100000,
+        rewards = { items = { { 2160, 100 } } },
+        delivery = { enabled = false },
+        repeatable = true,
+        monsterDetails = {
+            { name = "Orc", level = 50, size = "Medium", location = "Orc Cave", probability = 70 }
+        }
+    }
 }
 
 TASK_DIFFICULTY_ORDER = { "easy", "medium", "hard", "elite" }

@@ -93,7 +93,7 @@ function TaskNetwork_sendTaskList(cid, params)
 
     local playerTasks = {}
     local matching = {}
-    local categoryCounts = { dragonball = 0, bleach = 0 }
+    local categoryCounts = { dragonball = 0, bleach = 0, general = 0 }
 
     for taskId, task in pairs(TASKS) do
         if task.category == category then
@@ -122,16 +122,32 @@ function TaskNetwork_sendTaskList(cid, params)
                     categoryCounts.dragonball = categoryCounts.dragonball + 1
                 elseif task.category == "bleach" then
                     categoryCounts.bleach = categoryCounts.bleach + 1
+                elseif task.category == "general" then
+                    categoryCounts.general = categoryCounts.general + 1
                 end
             end
         end
 
-        if task.category == category then
+        if task.category == category or task.category == "general" then
             local hasActive = cache[taskId] and cache[taskId].rewarded ~= 1
+            local isFinished = cache[taskId] and cache[taskId].rewarded == 1
+            local isNonRepeatableFinished = isFinished and not task.repeatable
             local levelFits = task.levelRequired <= maxLevelToShow
 
-            if not hasActive and not levelFits then
+            local passVisibility = true
+            if filterType == "completed" then
+                if not isNonRepeatableFinished then
+                    passVisibility = false
+                end
             else
+                if isNonRepeatableFinished then
+                    passVisibility = false
+                elseif not hasActive and not levelFits then
+                    passVisibility = false
+                end
+            end
+
+            if passVisibility then
                 local passSearch = true
                 if search ~= "" then
                     passSearch = false
@@ -150,7 +166,7 @@ function TaskNetwork_sendTaskList(cid, params)
 
                 if passSearch then
                     local passType = true
-                    if filterType ~= "" then
+                    if filterType ~= "" and filterType ~= "completed" then
                         if filterType == "repeatable" then
                             passType = task.repeatable == true
                         elseif filterType == "daily" then
@@ -167,12 +183,20 @@ function TaskNetwork_sendTaskList(cid, params)
                         end
 
                         if passDiff then
+                            local isLocked = false
+                            if playerLevel < task.levelRequired then isLocked = true end
+                            if playerPoints < task.rankRequired then isLocked = true end
+                            if hasActive then isLocked = false end
+
                             table.insert(matching, {
                                 taskId = taskId,
                                 task = task,
                                 diffIdx = getDifficultyIndex(task),
                                 monsterLevel = getMonsterLevel(task),
-                                isActive = hasActive
+                                isActive = hasActive,
+                                isLocked = isLocked,
+                                levelRequired = task.levelRequired,
+                                rankRequired = task.rankRequired
                             })
                         end
                     end
@@ -182,13 +206,16 @@ function TaskNetwork_sendTaskList(cid, params)
     end
 
     table.sort(matching, function(a, b)
-        if a.isActive ~= b.isActive then
-            return a.isActive
+        if a.isLocked ~= b.isLocked then
+            return not a.isLocked
         end
         if a.diffIdx ~= b.diffIdx then
             return a.diffIdx < b.diffIdx
         end
-        return a.monsterLevel < b.monsterLevel
+        if a.levelRequired ~= b.levelRequired then
+            return a.levelRequired < b.levelRequired
+        end
+        return a.rankRequired < b.rankRequired
     end)
 
     local totalTasks = #matching
@@ -201,10 +228,8 @@ function TaskNetwork_sendTaskList(cid, params)
     for i = startIdx, endIdx do
         local entry = matching[i]
         local task = entry.task
-        local locked = false
-        if playerLevel < task.levelRequired then locked = true end
-        if playerPoints < task.rankRequired then locked = true end
-        if entry.isActive then locked = false end
+        local locked = entry.isLocked
+        local isRewarded = (cache[entry.taskId] and cache[entry.taskId].rewarded == 1) or false
 
         table.insert(allTasks, {
             id = entry.taskId,
@@ -226,7 +251,8 @@ function TaskNetwork_sendTaskList(cid, params)
             repeatable = task.repeatable or false,
             unique = task.unique or false,
             daily = task.daily or { enabled = false },
-            locked = locked
+            locked = locked,
+            isRewarded = isRewarded
         })
     end
 
@@ -332,7 +358,7 @@ function TaskNetwork_handleAction(cid, data)
         return
     end
 
-    local action = data.actio
+    local action = data.action
 
     if action == "info" or action == "list" then
         TaskNetwork_sendTaskList(cid, data)

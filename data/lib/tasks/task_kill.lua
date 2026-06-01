@@ -13,9 +13,12 @@ function TaskKill_onKill(cid, monsterName)
 
     local cache = TaskCache_getPlayerCache(cid)
 
+    local playerCategory = TaskRank_getPlayerCategory(cid)
+
     for _, taskId in ipairs(taskIds) do
         local config = TASKS[taskId]
         if not config then
+        elseif config.category ~= playerCategory and config.category ~= "general" then
         else
             local shouldProcess = config.type ~= "delivery"
 

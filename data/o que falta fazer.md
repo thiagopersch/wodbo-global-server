@@ -263,11 +263,11 @@
 - [Pegar bau inicial e anunciar que player chegou na cidade](https://tibiaking.com/topic/76491-pegar-bau-inicial-e-anunciar-que-player-chegou-na-cidade/)
 - [Akatsuki system](https://tibiaking.com/topic/75913-akatsuki-system-simples/)
 - [Bonus Exp and Loot system](https://pastebin.com/Wc9ZL8Km)
-- [TopLevel Effect](https://xtibia.com/forum/topic/233144-toplevel-effect/)
+- [TopLevel Effect](https://xtibia.com/forum/topic/233144-toplevel-effect/) :white_check_mark:
 - [[Creature Events] Animação para vip](https://tibiaking.com/topic/52395-creature-events-anima%C3%A7ao-para-vip/)
 - [Heart System](https://tibiaking.com/topic/41920-heart-system/)
 - [TFS 1.x | Recompensa por Level (Item, Bank, Addon, Mount)](https://tibiaking.com/topic/51573-recompensa-por-level-item-bank-addon-mount/)
-- [TFS 0.4 | [UP-LEVEL] Recompensa ao subir de level](https://tibiaking.com/topic/36453-up-level-recompensa-ao-subir-de-level/)
+- [TFS 0.4 | [UP-LEVEL] Recompensa ao subir de level](https://tibiaking.com/topic/36453-up-level-recompensa-ao-subir-de-level/) :white_check_mark:
 - [Mostrar a quantidade que morreu e que matou ao dar look no player](https://tibiaking.com/topic/57782-mostrar-a-quantidade-que-morreu-e-que-matou-ao-dar-look-no-player/) :white_check_mark:
 - [[CreatureEvent] Rank Militar](https://tibiaking.com/topic/8680-creatureevent-rank-militar/)
 - [LevelUP Time](https://tibiaking.com/topic/68333-levelup-time-you-advanced-to-level-35-in-3-minutes-and-10-seconds/) :white_check_mark:
@@ -283,7 +283,10 @@
 - [TFS 0.4 | Evento DoubleXP](https://tibiaking.com/topic/67665-evento-doublexp-tfs-04/)
 - [[Creaturescripts] Experiencia para Guild (por nº de Jogadores Online)](https://tibiaking.com/topic/36654-creaturescripts-experiencia-para-guild-por-n%C2%BA-de-jogadores-online/)
 - [Evento Blood Castle [Automático]](https://tibiaking.com/topic/33713-evento-blood-castle-autom%C3%A1tico/)
-- [Sistema de Idade](https://tibiaking.com/topic/69808-sistema-de-idade/)
+- [Castle War 24h - Conquiste o Trono](https://tibiaking.com/topic/35731-castle-war-24h-conquiste-o-trono/)
+- [Sistema de Idade](https://tibiaking.com/topic/69808-sistema-de-idade/) :white_check_mark:
+- [Jinchuuriki System](https://tibiaking.com/topic/81647-narutibia-jinchuuriki-system-distro-04/)
+- [Capture The Flag](https://tibiaking.com/topic/11028-ctf-capture-the-flag/)
 
 ### GlobalEvents
 

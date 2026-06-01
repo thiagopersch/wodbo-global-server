@@ -4,6 +4,11 @@ function TaskDelivery_canDeliver(cid, taskId)
     local config = TASKS[taskId]
     if not config then return false, "Task not found." end
 
+    local category = TaskRank_getPlayerCategory(cid)
+    if config.category ~= category and config.category ~= "general" then
+        return false, "This task is not available for your vocation."
+    end
+
     local cache = TaskCache_getPlayerCache(cid)
     local playerTask = cache[taskId]
     if not playerTask then return false, "You don't have this task." end

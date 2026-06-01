@@ -13,7 +13,7 @@ function TaskCore_startTask(cid, taskId)
     end
 
     local category = TaskRank_getPlayerCategory(cid)
-    if config.category ~= category then
+    if config.category ~= category and config.category ~= "general" then
         doPlayerSendCancel(cid, "This task is not available for your vocation.")
         return false
     end
@@ -84,7 +84,7 @@ function TaskCore_startTask(cid, taskId)
     cache[taskId] = taskData
 
     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "[Task] You started '" .. config.name .. "'!")
-    TaskNetwork_sendMessage(cid, "Task started: '" .. config.name .. "'!", "#00ff00")
+    TaskNetwork_sendMessage(cid, "Task started successfully: '" .. config.name .. "'!", "#00ff00")
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_GREEN_RINGS)
     if config.killsRequired > 0 then
         local names = {}
@@ -107,6 +107,15 @@ end
 function TaskCore_abortTask(cid, taskId)
     if not isPlayer(cid) then return false end
 
+    local config = TASKS[taskId]
+    if not config then return false end
+
+    local category = TaskRank_getPlayerCategory(cid)
+    if config.category ~= category and config.category ~= "general" then
+        doPlayerSendCancel(cid, "This task is not available for your vocation.")
+        return false
+    end
+
     local cache = TaskCache_getPlayerCache(cid)
     local playerTask = cache[taskId]
 
@@ -123,7 +132,7 @@ function TaskCore_abortTask(cid, taskId)
     cache[taskId] = nil
 
     doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "[Task] Task aborted.")
-    TaskNetwork_sendMessage(cid, "Task cancelled!", "#ff4444")
+    TaskNetwork_sendMessage(cid, "Task canceled!", "#ff4444")
 
     TaskNetwork_sendTaskList(cid)
 
@@ -172,6 +181,12 @@ function TaskCore_claimTask(cid, taskId)
     local config = TASKS[taskId]
     if not config then
         doPlayerSendCancel(cid, "Task not found.")
+        return false
+    end
+
+    local category = TaskRank_getPlayerCategory(cid)
+    if config.category ~= category and config.category ~= "general" then
+        doPlayerSendCancel(cid, "This task is not available for your vocation.")
         return false
     end
 
@@ -224,7 +239,7 @@ function TaskCore_getAvailableTasks(cid)
     local available = {}
 
     for taskId, config in pairs(TASKS) do
-        if config.category == category then
+        if config.category == category or config.category == "general" then
             if level >= config.levelRequired and points >= config.rankRequired then
                 local playerTask = cache[taskId]
                 if not playerTask or playerTask.rewarded == 1 then
