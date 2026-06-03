@@ -23563,7 +23563,7 @@
 	<item id="13682" article="a" name="floating stone" />
 	<item id="13683" article="a" name="rocky wall" />
 	<item id="13684" name="strange sand" />
-	<item fromid="13686" toid="13687" article="a" name="rocky wall" />
+	<item fromid="13685" toid="13687" article="a" name="rocky wall" />
 	<item fromid="13688" toid="13691" article="a" name="lamp" />
 	<item fromid="13692" toid="13693" article="a" name="hieroglyph banner" />
 	<item fromid="13694" toid="13695" article="a" name="pharaoh banner" />
@@ -64179,9 +64179,87 @@
 		<attribute key="weight" value="150" />
 		<attribute key="description" value="A bunch of useful scraps and gears." />
 	</item>
+	<item fromid="44903" toid="44906" article="a" name="sandstone archway" />
+	<item fromid="44907" toid="44912" article="a" name="sandstone low wall" />
+	<item fromid="44913" toid="44914" article="a" name="sandstone wall" />
+	<item id="44915" article="a" name="sandstone ramp" />
+	<item id="44916" article="a" name="sandstone ramp">
+			<attribute key="floorchange" value="north" />
+	</item>
+	<item id="44917" article="a" name="sandstone ramp" />
+	<item id="44918" article="a" name="sandstone ramp">
+			<attribute key="floorchange" value="east" />
+	</item>
+	<item id="44919" article="a" name="sandstone ramp" />
+	<item id="44920" article="a" name="sandstone ramp">
+			<attribute key="floorchange" value="west" />
+	</item>
+	<item id="44921" article="a" name="sandstone ramp" />
+	<item id="44922" article="a" name="sandstone ramp">
+			<attribute key="floorchange" value="south" />
+	</item>
+	<item fromid="44931" toid="44936" article="a" name="mossy sandstone wall" />
+	<item fromid="44940" toid="44942" article="a" name="mossy sandstone archway" />
 	<item id="44944" name="pulsating red mass">
 		<attribute key="weight" value="80" />
 		<attribute key="description" value="It still beats slightly." />
+	</item>
+	<item fromid="45239" toid="45256" article="a" name="musgy wall" />
+	<item id="45257" article="a" name="musgy ramp" />
+	<item id="45258" article="a" name="musgy ramp" />
+	<item id="45259" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="north" />
+	</item>
+	<item id="45260" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="east" />
+	</item>
+	<item fromid="45261" toid="45274" article="a" name="musgy wall" />
+	<item id="45275" article="a" name="musgy ramp" />
+	<item id="45276" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="east" />
+	</item>
+	<item id="45277" article="a" name="musgy ramp" />
+	<item id="45278" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="north" />
+	</item>
+	<item fromid="45279" toid="45291" article="a" name="musgy wall" />
+	<item id="45292" article="a" name="musgy ramp" />
+	<item id="45293" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="north" />
+	</item>
+	<item id="45294" article="a" name="musgy ramp" />
+	<item id="45294" article="a" name="musgy ramp" />
+	<item id="45295" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="west" />
+	</item>
+	<item id="45296" article="a" name="musgy ramp" />
+	<item id="45297" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="west" />
+	</item>
+	<item id="45298" article="a" name="musgy ramp" />
+	<item id="45299" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="west" />
+	</item>
+	<item fromid="45300" toid="45305" article="a" name="musgy wall" />
+	<item fromid="45384" toid="45411" article="a" name="rockmud wall" />
+	<item fromid="45412" toid="45415" article="a" name="rockmud archway" />
+	<item fromid="45416" toid="45421" article="a" name="rockmud low wall" />
+	<item fromid="45422" toid="45423" article="a" name="rockmud wall" />
+	<item id="45424" article="a" name="rockmud ramp" />
+	<item id="45425" article="a" name="rockmud ramp">
+			<attribute key="floorchange" value="north" />
+	</item>
+	<item id="45426" article="a" name="rockmud ramp" />
+	<item id="45427" article="a" name="rockmud ramp">
+			<attribute key="floorchange" value="west" />
+	</item>
+	<item id="45428" article="a" name="rockmud ramp" />
+	<item id="45429" article="a" name="rockmud ramp">
+			<attribute key="floorchange" value="east" />
+	</item>
+	<item id="45430" article="a" name="rockmud ramp" />
+	<item id="45431" article="a" name="rockmud ramp">
+			<attribute key="floorchange" value="south" />
 	</item>
 	<item id="45519" name="wooden stake">
 		<attribute key="weight" value="250" />

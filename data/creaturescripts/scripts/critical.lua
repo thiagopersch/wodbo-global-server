@@ -7,7 +7,8 @@ function onStatsChange(cid, attacker, type, combat, value)
     if (getPlayerStorageValue(attacker, lvlcrit) * 3) >= math.random(0, 1000) then
       dano = math.ceil(value * (multiplier))
       doTargetCombatHealth(attacker, cid, combat, -dano, -dano, 255)
-      doSendAnimatedText(getCreaturePos(attacker), "CRITICAAAAAAAAAAAAAAAAAAAAAL!!", 144)
+      doSendAnimatedText(getCreaturePos(attacker), "CRITICAL!!", 144)
+      doSendMagicEffect(getCreaturePos(attacker), 172)
       return false
     end
   end
