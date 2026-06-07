@@ -31,11 +31,13 @@ function onLogin(cid)
       "Hello, type 'account' to create an account or type 'recover' to recover an account.")
   end
 
-  local loot = ''
+  local maxSlots = isPremium(cid) and info.Max_Slots.premium or info.Max_Slots.free
+  local loot = maxSlots .. '|'
   for i = 1, #getPlayerStorageTable(cid, info.Storages[1]) do
-    loot = loot ..
-        getItemInfo(getPlayerStorageTable(cid, info.Storages[1])[i]).clientId ..
-        '-' .. getItemNameById(getPlayerStorageTable(cid, info.Storages[1])[i]) .. '@'
+    local storedItemId = getPlayerStorageTable(cid, info.Storages[1])[i]
+    local itemInfo = getItemInfo(storedItemId)
+    local clientId = (itemInfo and itemInfo.clientId and itemInfo.clientId > 0) and itemInfo.clientId or storedItemId
+    loot = loot .. clientId .. '-' .. getItemNameById(storedItemId) .. '@'
   end
   doPlayerSendExtendedOpcode(cid, 157, loot)
 

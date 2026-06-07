@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <mod name="Loot System" version="1.0" author="Vodkart And Mkalo" contact="none.com" enabled="yes">
 	<config name="Loot_func"><![CDATA[
 
@@ -6,7 +6,7 @@ info = {
 	AutomaticDeposit = true,
 	BlockMonsters = {},
 	BlockItemsList = {2123,2515},
-	Max_Slots = {free = 5, premium = 25},
+	Max_Slots = {free = 30, premium = 100},
 	Storages = {27000,28001,28002}
 }
 function setPlayerStorageTable(cid, storage, tab)
@@ -161,7 +161,7 @@ function corpseRetireItems(cid, pos)
 						AutomaticDeposit(cid,x.itemid,x.type)
 					end
 				else
-					doPlayerAddItem(cid, x.itemid)
+					doPlayerAddItem(cid, x.itemid, x.type)
 				end
 				doRemoveItem(x.uid)
 			end
@@ -185,13 +185,14 @@ end]]></event>
 domodlib('Loot_func')
 function onKill(cid, target, lastHit)
 	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
-		addEvent(corpseRetireItems, 0, cid ,getThingPos(target))
+		addEvent(corpseRetireItems, 100, cid ,getThingPos(target))
 	end
 	return true
 end]]></event>
 	<talkaction words="!autoloot;/autoloot" event="buffer"><![CDATA[
 domodlib('Loot_func')
 local slots = isPremium(cid) and info.Max_Slots.premium or info.Max_Slots.free
+param = param:match("^%s*(.-)%s*$") or ""
 if not param:lower() or param:lower() == "" then
 	return true
 elseif param:lower() == "clean" then
@@ -206,7 +207,8 @@ end
 
 local param = string.explode(param, ",")
 if param[1]:lower() == "add" then
-local item = getItemIdByName(param[2], false)
+local itemName = param[2]:match("^%s*(.-)%s*$")
+local item = getItemIdByName(itemName, false)
 if not item then
 	doPlayerSendCancel(cid, "This item does not exist.")
 	return true
@@ -222,15 +224,16 @@ end
 if not var then
 	addItemTable(cid, item)
 end
-doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[AutoLoot] You added the item ["..param[2].."] in the list")
+doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[AutoLoot] You added the item ["..itemName.."] in the list")
 elseif param[1]:lower() == "remove" then
-	local item = getItemIdByName(param[2], false)
+	local itemName = param[2]:match("^%s*(.-)%s*$")
+	local item = getItemIdByName(itemName, false)
 	if not item then
 		doPlayerSendCancel(cid, "This item does not exist.")
 		return true
 	end
 	removeItemTable(cid, item)
-	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[AutoLoot] You removed the item ["..param[2].."] from the list")
+	doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[AutoLoot] You removed the item ["..itemName.."] from the list")
 end
 
 return true]]></talkaction>

@@ -64228,7 +64228,6 @@
 			<attribute key="floorchange" value="north" />
 	</item>
 	<item id="45294" article="a" name="musgy ramp" />
-	<item id="45294" article="a" name="musgy ramp" />
 	<item id="45295" article="a" name="musgy ramp">
 			<attribute key="floorchange" value="west" />
 	</item>
@@ -81183,7 +81182,7 @@
 	</item>
 	<item id="56718" name="red potion">
 		<attribute key="weight" value="15" />
-		<attribute key="description" value="Restores a small amount of health." />
+		<attribute key="description" value="Item for crafting critical potions and dodge potions." />
 	</item>
 	<item id="56719" name="supreme health potion">
 		<attribute key="weight" value="35" />

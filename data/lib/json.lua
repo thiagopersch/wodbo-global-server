@@ -311,7 +311,7 @@ local function parse_object(str, idx)
     if str:sub(idx, idx) ~= ":" then
       decode_error(str, idx, "expected ':' after key")
     end
-    idx = next_char(str, idx, space_chars, true) + 1
+    idx = next_char(str, idx + 1, space_chars, true)
     val, idx = parse(str, idx)
     res[key] = val
     idx = next_char(str, idx, space_chars, true)
