@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Tsuful Baby" nameDescription="a tsuful baby" race="blood" experience="5000"
+<monster name="Tsuful Baby" bestiary="monster" nameDescription="a tsuful baby" race="blood" experience="5000"
 	speed="350"
 	manacost="0">
 	<health now="5000" max="5000" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Draken Warmaster" nameDescription="a draken warmaster" race="blood" experience="2400" speed="220" manacost="0">
+<monster name="Draken Warmaster" bestiary="monster" nameDescription="a draken warmaster" race="blood" experience="2400" speed="220" manacost="0">
 <health now="4150" max="4150"/>
 <look type="334" corpse="11108"/>
 <targetchange interval="5000" chance="8"/>

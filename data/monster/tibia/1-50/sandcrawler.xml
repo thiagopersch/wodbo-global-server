@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Sandcrawler" nameDescription="a sandcrawler" race="venom" experience="20" speed="220" manacost="0">
+<monster name="Sandcrawler" bestiary="monster" nameDescription="a sandcrawler" race="venom" experience="20" speed="220" manacost="0">
 <health now="30" max="30"/>
 <look type="350" corpse="11357"/>
 <targetchange interval="5000" chance="12"/>

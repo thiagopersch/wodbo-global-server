@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Monako" nameDescription="an monako" race="blood" experience="180000" speed="600" manacost="0">
+<monster name="Monako" bestiary="monster" nameDescription="an monako" race="blood" experience="180000" speed="600" manacost="0">
 	<health now="350000" max="350000" />
 	<look type="925" head="1" body="1" legs="1" feet="1" addons="0" corpse="12850" />
 	<targetchange interval="5000" chance="8" />

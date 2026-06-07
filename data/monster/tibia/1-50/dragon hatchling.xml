@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Dragon Hatchling"
+  name="Dragon Hatchling" bestiary="monster"
   nameDescription="a dragon hatchling"
   race="blood"
   experience="185"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Terramite" nameDescription="a terramite" race="venom" experience="160" speed="220" manacost="0">
+<monster name="Terramite" bestiary="monster" nameDescription="a terramite" race="venom" experience="160" speed="220" manacost="0">
 <health now="365" max="365"/>
 <look type="346" corpse="8593"/>
 <targetchange interval="5000" chance="12"/>

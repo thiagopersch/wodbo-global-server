@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<monster name="Black Butterfly" namedescription="a black butterfly" race="venom" experience="0"
+<monster name="Black Butterfly" bestiary="monster" namedescription="a black butterfly" race="venom" experience="0"
 	speed="300" manacost="0">
 	<health now="5" max="5" />
 	<look type="363" corpse="4313" />

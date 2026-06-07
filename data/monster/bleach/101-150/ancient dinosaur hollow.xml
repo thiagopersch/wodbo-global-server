@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Ancient Dinosaur Hollow"
+  name="Ancient Dinosaur Hollow" bestiary="monster"
   nameDescription="a ancient dinosaur hollow"
   race="undead"
   experience="61820"

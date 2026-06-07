@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Lizzard King" description="a lizzard king" race="blood" experience="9800" speed="280">
+<monster name="Lizzard King" bestiary="monster" description="a lizzard king" race="blood" experience="9800" speed="280">
   <health now="60000" max="60000" />
   <look type="334" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="11107" />
   <targetchange interval="4000" chance="10" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Vegeta Ssj Blue" nameDescription="a vegeta ssj blue" race="blood" experience="750000"
+<monster name="Vegeta Ssj Blue" bestiary="monster" nameDescription="a vegeta ssj blue" race="blood" experience="750000"
 	speed="600" manacost="0">
 	<health now="1000000" max="1000000" />
 	<look type="2128" head="1" body="1" legs="1" feet="1" addons="0" corpse="49248" />

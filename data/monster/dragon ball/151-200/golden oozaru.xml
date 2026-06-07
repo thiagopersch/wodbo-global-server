@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Golden Oozaru"
+  name="Golden Oozaru" bestiary="monster"
   nameDescription="an golden oozaru"
   race="blood"
   experience="450000"

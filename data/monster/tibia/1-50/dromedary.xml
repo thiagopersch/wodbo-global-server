@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Dromedary" nameDescription="a dromedary" race="blood" experience="30" speed="180"
+<monster name="Dromedary" bestiary="monster" nameDescription="a dromedary" race="blood" experience="30" speed="180"
 	manacost="320">
 	<health now="80" max="80" />
 	<look type="404" corpse="13519" />

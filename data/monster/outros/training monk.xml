@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Training Monk" nameDescription="a Training Monk" race="blood" experience="0"
+<monster name="Training Monk" bestiary="monster" nameDescription="a Training Monk" race="blood" experience="0"
   speed="0" manacost="0">
   <health now="99999999999999" max="99999999999999" />
-  <look type="268" head="19" body="95" legs="19" feet="19" addons="3" corpse="6080" />
+  <look type="3108" head="19" body="95" legs="19" feet="19" addons="3" corpse="6080" />
   <targetchange interval="60000" chance="0" />
   <strategy attack="100" defense="0" />
   <flags>
@@ -20,7 +20,7 @@
     <flag runonhealth="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="200" min="-0" max="-1" />
+    <attack name="melee" interval="1000" min="-1" max="-1" />
   </attacks>
   <defenses armor="0" defense="0">
     <defense name="Big Regeneration" interval="5000" chance="1000" min="99999999999999"

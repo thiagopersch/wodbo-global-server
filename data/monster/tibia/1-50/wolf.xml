@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Wolf" nameDescription="a wolf" race="blood" experience="18" speed="195"
+<monster name="Wolf" bestiary="monster" nameDescription="a wolf" race="blood" experience="18" speed="195"
 	manacost="255">
 	<health now="25" max="25" />
 	<look type="27" corpse="5968" />

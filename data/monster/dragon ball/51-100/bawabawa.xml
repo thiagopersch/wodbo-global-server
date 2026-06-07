@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Bawabawa" nameDescription="a bawabawa" race="undead" experience="70000"
+<monster name="Bawabawa" bestiary="monster" nameDescription="a bawabawa" race="undead" experience="70000"
 	speed="630" manacost="255">
 	<health now="70000" max="70000" />
 	<look type="2619" corpse="49401" />

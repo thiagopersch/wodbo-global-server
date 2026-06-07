@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Quara Hydromancer" nameDescription="a quara hydromancer" race="blood" experience="800" speed="520" manacost="0">
+<monster name="Quara Hydromancer" bestiary="monster" nameDescription="a quara hydromancer" race="blood" experience="800" speed="520" manacost="0">
 	<health now="1100" max="1100"/>
 	<look type="47" corpse="6066"/>
 	<targetchange interval="5000" chance="8"/>

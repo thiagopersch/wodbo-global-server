@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Saibamen White" nameDescription="an saibamen white" race="blood" experience="5000"
+<monster name="Saibamen White" bestiary="monster" nameDescription="an saibamen white" race="blood" experience="5000"
 	speed="400"
 	manacost="0">
 	<health now="10000" max="10000" />

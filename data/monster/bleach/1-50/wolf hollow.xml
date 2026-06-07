@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Wolf hollow" nameDescription="a wolf hollow" race="undead" experience="40"
+<monster name="Wolf hollow" bestiary="monster" nameDescription="a wolf hollow" race="undead" experience="40"
 	speed="230" manacost="255">
 	<health now="70" max="70" />
 	<look type="2544" corpse="49296" />
@@ -20,6 +20,7 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="10" attack="70" />
+		<attack name="cero" interval="6000" min="-10" max="-50" />
 	</attacks>
 	<defenses armor="1" defense="4" />
 	<elements>

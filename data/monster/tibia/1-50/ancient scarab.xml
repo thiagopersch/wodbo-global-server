@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Ancient Scarab"
+  name="Ancient Scarab" bestiary="monster"
   nameDescription="a ancient scarab"
   race="venom"
   experience="7200"

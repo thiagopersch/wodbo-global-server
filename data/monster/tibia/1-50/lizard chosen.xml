@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Lizard Chosen" nameDescription="a lizard chosen" race="blood" experience="2200" speed="240" manacost="0">
+<monster name="Lizard Chosen" bestiary="monster" nameDescription="a lizard chosen" race="blood" experience="2200" speed="240" manacost="0">
 <health now="3050" max="3050"/>
 <look type="344" corpse="12609"/>
 <targetchange interval="5000" chance="8"/>

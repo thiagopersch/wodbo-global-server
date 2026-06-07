@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Lizard High Guard" nameDescription="a lizard high guard" race="blood" experience="1450" speed="340" manacost="0">
+<monster name="Lizard High Guard" bestiary="monster" nameDescription="a lizard high guard" race="blood" experience="1450" speed="340" manacost="0">
 <health now="1800" max="1800"/>
 <look type="337" corpse="11269"/>
 <targetchange interval="5000" chance="8"/>

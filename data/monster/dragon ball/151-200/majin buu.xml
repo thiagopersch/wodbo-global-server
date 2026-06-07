@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Majin Buu" nameDescription="an majin buu" race="blood" experience="150000" speed="500" manacost="0">
+<monster name="Majin Buu" bestiary="monster" nameDescription="an majin buu" race="blood" experience="150000" speed="500" manacost="0">
 	<health now="500000" max="500000" />
 	<look type="1761" head="1" body="1" legs="1" feet="1" addons="0" corpse="49260" />
 	<targetchange interval="5000" chance="8" />

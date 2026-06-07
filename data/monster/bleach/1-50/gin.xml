@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Gin" description="a gin" race="blood" experience="300" speed="300">
+<monster name="Gin" bestiary="monster" description="a gin" race="blood" experience="300" speed="300">
   <health now="500" max="500" />
   <look type="2191" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49444" />
   <targetchange interval="4000" chance="10" />
@@ -31,7 +31,6 @@
   </flags>
   <attacks>
     <attack name="melee" interval="2000" min="-1" max="-600" />
-    <attack name="Cero" interval="2000" min="-1" max="-300" />
     <attack name="Shinso" interval="5000" min="-1" max="-400" />
     <attack name="Buto" interval="7000" min="-1" max="-500" />
     <attack name="Korose Kamishini no Yari" interval="10000" min="-1" max="-600" />

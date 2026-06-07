@@ -67,4 +67,8 @@
 
 	<event type="extendedopcode" name="ShaderSelectorOpcode" event="script" value="shader_selector.lua" />
 	<event type="extendedopcode" name="AuraSelectorOpcode" event="script" value="aura_selector.lua" />
+	<!-- <event type="login" name="AutoLootLogin" event="script" value="autoloot_opcode.lua" />
+	<event type="extendedopcode" name="AutoLootOpcode" event="script" value="autoloot_opcode.lua" /> -->
+
+	<event type="extendedopcode" name="BestiaryOpcode" event="script" value="bestiary.lua" />
 </creaturescripts>

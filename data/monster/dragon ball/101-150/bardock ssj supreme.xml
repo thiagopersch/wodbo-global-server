@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Bardock Ssj Supreme" description="a bardock ssj supreme" race="blood"
+<monster name="Bardock Ssj Supreme" bestiary="monster" description="a bardock ssj supreme" race="blood"
   experience="60000"
   speed="500">
   <health now="95000" max="95000" />

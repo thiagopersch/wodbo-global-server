@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Fire Elemental"
+  name="Fire Elemental" bestiary="monster"
   nameDescription="a fire elemental"
   race="fire"
   experience="220"

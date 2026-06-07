@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Merikh The Slaughterer"
+  name="Merikh The Slaughterer" bestiary="monster"
   nameDescription="an merikh the slaughterer"
   race="blood"
   experience="10010"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Ghost Hollow" description="a ghost hollow" race="undead" experience="2500"
+<monster name="Ghost Hollow" bestiary="monster" description="a ghost hollow" race="undead" experience="2500"
   speed="350">
   <health now="5800" max="5800" />
   <look type="2345" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49443" />
@@ -32,6 +32,7 @@
   </flags>
   <attacks>
     <attack name="melee" interval="3000" min="-200" max="-800" />
+    <attack name="cero" interval="6000" min="-100" max="-500" />
   </attacks>
   <immunities>
     <immunity physical="1" />

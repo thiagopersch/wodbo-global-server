@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Vegetto" nameDescription="an Vegetto" race="blood" experience="240000" speed="300"
+<monster name="Vegetto" bestiary="monster" nameDescription="an Vegetto" race="blood" experience="240000" speed="300"
 	manacost="0">
 	<health now="500000" max="500000" />
 	<look type="2135" head="1" body="1" legs="1" feet="1" addons="0" corpse="49332" />

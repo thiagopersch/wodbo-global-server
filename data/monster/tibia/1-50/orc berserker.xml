@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Orc Berserker"
+  name="Orc Berserker" bestiary="monster"
   nameDescription="a orc berserker"
   race="blood"
   experience="1950"

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Zarbon" nameDescription="an zarbon" race="blood" experience="40000" speed="300"
+<monster name="Zarbon" bestiary="monster" nameDescription="an zarbon" race="blood" experience="40000" speed="300"
 	manacost="0">
 	<health now="60000" max="60000" />
 	<look type="2446" head="1" body="1" legs="1" feet="1" addons="0" corpse="49295" />

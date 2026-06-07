@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Bojack" nameDescription="an bojack" race="blood" experience="40000" speed="500"
+<monster name="Bojack" bestiary="monster" nameDescription="an bojack" race="blood" experience="40000" speed="500"
 	manacost="0">
 	<health now="93000" max="93000" />
 	<look type="2479" head="1" body="1" legs="1" feet="1" addons="0" corpse="49348" />

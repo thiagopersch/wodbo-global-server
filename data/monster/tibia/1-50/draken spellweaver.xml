@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Draken Spellweaver"
+  name="Draken Spellweaver" bestiary="monster"
   nameDescription="a draken spellweaver"
   race="blood"
   experience="2600"

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Turles SSJ5" nameDescription="an turles ssj5" race="blood" experience="1000000"
+<monster name="Turles SSJ5" bestiary="monster" nameDescription="an turles ssj5" race="blood" experience="1000000"
 	speed="600" manacost="0">
 	<health now="1500000" max="1500000" />
 	<look type="2103" head="1" body="1" legs="1" feet="1" addons="0" corpse="49288" />

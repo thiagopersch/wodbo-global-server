@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Undead Prospector" nameDescription="a undead prospector" race="blood" experience="85"
+<monster name="Undead Prospector" bestiary="monster" nameDescription="a undead prospector" race="blood" experience="85"
 	speed="144" manacost="0">
 	<health now="100" max="100" />
 	<look type="18" corpse="5976" />

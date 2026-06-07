@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Jagged Earth Elemental"
+  name="Jagged Earth Elemental" bestiary="monster"
   nameDescription="a jagged earth elemental"
   race="undead"
   experience="1300"

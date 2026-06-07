@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Mini Stone Golem" description="a mini stone golem" race="undead" experience="300"
+<monster name="Mini Stone Golem" bestiary="monster" description="a mini stone golem" race="undead" experience="300"
   speed="180">
   <health now="320" max="320" />
   <look type="333" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="2952" />

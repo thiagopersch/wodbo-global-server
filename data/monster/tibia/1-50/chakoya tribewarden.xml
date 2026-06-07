@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Chakoya Tribewarden"
+  name="Chakoya Tribewarden" bestiary="monster"
   nameDescription="a chakoya tribewarden"
   race="blood"
   experience="400"

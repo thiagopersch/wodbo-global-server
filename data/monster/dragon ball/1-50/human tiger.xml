@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Human Tiger" description="a human tiger" race="blood" experience="200" speed="200">
+<monster name="Human Tiger" bestiary="monster" description="a human tiger" race="blood" experience="200" speed="200">
 	<health now="300" max="300" />
 	<look type="2441" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49294" />
 	<targetchange interval="4000" chance="10" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Giant Spider" nameDescription="a giant spider" race="venom" experience="900" speed="280" manacost="0">
+<monster name="Giant Spider" bestiary="monster" nameDescription="a giant spider" race="venom" experience="900" speed="280" manacost="0">
 	<health now="1300" max="1300" />
 	<look type="38" corpse="5977" />
 	<targetchange interval="5000" chance="8" />

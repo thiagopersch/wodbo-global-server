@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="C19 And C20" nameDescription="an c19 and c20" race="blood" experience="25000" speed="300" manacost="0">
+<monster name="C19 And C20" bestiary="monster" nameDescription="an c19 and c20" race="blood" experience="25000" speed="300" manacost="0">
 	<health now="80000" max="80000" />
 	<look type="2492" head="1" body="1" legs="1" feet="1" addons="0" corpse="49364" />
 	<targetchange interval="5000" chance="8" />

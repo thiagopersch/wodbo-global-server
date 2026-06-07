@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Slug" nameDescription="a slug" race="venom" experience="1400" speed="100"
+<monster name="Slug" bestiary="monster" nameDescription="a slug" race="venom" experience="1400" speed="100"
 	manacost="355">
 	<health now="700" max="700" />
 	<look type="407" corpse="6023" />

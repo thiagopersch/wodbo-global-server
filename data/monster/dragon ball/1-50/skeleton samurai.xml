@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Skeleton Samurai" description="a skeleton samurai" race="undead" experience="300"
+<monster name="Skeleton Samurai" bestiary="monster" description="a skeleton samurai" race="undead" experience="300"
   speed="180">
   <health now="500" max="500" />
   <look type="2353" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="0" />

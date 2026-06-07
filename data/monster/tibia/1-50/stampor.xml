@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<monster name="Stampor" nameDescription="a Stampor" race="blood" experience="780" speed="220">
+<monster name="Stampor" bestiary="monster" nameDescription="a Stampor" race="blood" experience="780" speed="220">
 	<health now="1200" max="1200"/>
 	<look type="381" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="12325"/>
 	<targetchange interval="4000" chance="10"/>

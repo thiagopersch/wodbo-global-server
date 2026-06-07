@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Dest" nameDescription="a dest" race="energy" experience="2500" speed="200"
+<monster name="Dest" bestiary="monster" nameDescription="a dest" race="energy" experience="2500" speed="200"
 	manacost="0">
 	<health now="1475" max="1475" />
 	<look type="1777" corpse="49352" />

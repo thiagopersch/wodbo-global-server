@@ -31,16 +31,6 @@ function onLogin(cid)
       "Hello, type 'account' to create an account or type 'recover' to recover an account.")
   end
 
-  local maxSlots = isPremium(cid) and info.Max_Slots.premium or info.Max_Slots.free
-  local loot = maxSlots .. '|'
-  for i = 1, #getPlayerStorageTable(cid, info.Storages[1]) do
-    local storedItemId = getPlayerStorageTable(cid, info.Storages[1])[i]
-    local itemInfo = getItemInfo(storedItemId)
-    local clientId = (itemInfo and itemInfo.clientId and itemInfo.clientId > 0) and itemInfo.clientId or storedItemId
-    loot = loot .. clientId .. '-' .. getItemNameById(storedItemId) .. '@'
-  end
-  doPlayerSendExtendedOpcode(cid, 157, loot)
-
   if (not isPlayerGhost(cid)) then
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_TELEPORT)
   end
@@ -85,6 +75,7 @@ function onLogin(cid)
   registerCreatureEvent(cid, "TaskLogin")
   registerCreatureEvent(cid, "ShaderSelectorOpcode")
   registerCreatureEvent(cid, "AuraSelectorOpcode")
+  registerCreatureEvent(cid, "BestiaryOpcode")
   setPlayerStorageValue(cid, 81000, -1)
   setPlayerStorageValue(cid, 81001, -1)
   setPlayerStorageValue(cid, 81002, -1)

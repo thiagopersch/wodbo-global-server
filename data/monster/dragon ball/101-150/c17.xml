@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="C17" nameDescription="an C17" race="blood" experience="25000" speed="550" manacost="0">
+<monster name="C17" bestiary="monster" nameDescription="an C17" race="blood" experience="25000" speed="550" manacost="0">
 	<health now="175000" max="175000" />
 	<look type="1780" head="1" body="1" legs="1" feet="1" addons="0" corpse="49259" />
 	<targetchange interval="5000" chance="8" />

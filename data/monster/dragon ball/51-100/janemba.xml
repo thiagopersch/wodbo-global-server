@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Janemba" nameDescription="an janemba" race="blood" experience="85000" speed="400" manacost="0">
+<monster name="Janemba" bestiary="monster" nameDescription="an janemba" race="blood" experience="85000" speed="400" manacost="0">
 	<health now="75000" max="75000" />
 	<look type="1912" head="1" body="1" legs="1" feet="1" addons="0" corpse="49269" />
 	<targetchange interval="5000" chance="8" />

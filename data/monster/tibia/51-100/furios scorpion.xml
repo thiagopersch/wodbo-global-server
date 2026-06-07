@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Furios Scorpion" description="a furios scorpion" race="blood"
+<monster name="Furios Scorpion" bestiary="monster" description="a furios scorpion" race="blood"
   experience="12000" speed="320">
   <health now="90000" max="90000" />
   <look type="398" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49312" />

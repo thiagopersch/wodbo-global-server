@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Term" nameDescription="a term" race="energy" experience="2500" speed="380" manacost="0">
+<monster name="Term" bestiary="monster" nameDescription="a term" race="energy" experience="2500" speed="380" manacost="0">
 	<health now="1475" max="1475" />
 	<look type="1786" corpse="49353" />
 	<targetchange interval="5000" chance="8" />

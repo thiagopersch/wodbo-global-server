@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Pirate Buccaneer"
+  name="Pirate Buccaneer" bestiary="monster"
   nameDescription="a pirate buccaneer"
   race="blood"
   experience="250"

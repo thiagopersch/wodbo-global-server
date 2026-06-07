@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <monster
-  name="Leader of the guardian of the forest of menos"
+  name="Leader of the guardian of the forest of menos" bestiary="monster"
   nameDescription="a leader of the guardian of the forest of menos"
   race="undead"
   experience="70000"

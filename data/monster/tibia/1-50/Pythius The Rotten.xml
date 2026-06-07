@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<monster name="Pythius The Rotten" namedescription="a pythius the rotten" race="undead" experience="100" speed="300" manacost="0">
+<monster name="Pythius The Rotten" bestiary="monster" namedescription="a pythius the rotten" race="undead" experience="100" speed="300" manacost="0">
 <health now="8350" max="8350"/>
 <look type="231" corpse="6306"/>
 <targetchange interval="5000" chance="8"/>

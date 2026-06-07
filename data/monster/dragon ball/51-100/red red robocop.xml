@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<monster name="Red Red Robocop" nameDescription="a red red robocop" race="energy" experience="35000" speed="400">
+<monster name="Red Red Robocop" bestiary="monster" nameDescription="a red red robocop" race="energy" experience="35000" speed="400">
 	<health now="60000" max="60000" />
 	<look type="2587" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49420" />
 	<targetchange interval="4000" chance="10" />

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Apprentice Sheng"
+  name="Apprentice Sheng" bestiary="monster"
   nameDescription="apprentice sheng"
   race="blood"
   experience="1000"

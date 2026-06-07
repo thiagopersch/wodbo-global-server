@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Ghastly Dragon" nameDescription="a ghastly dragon" race="undead" experience="4600" speed="410" manacost="0">
+<monster name="Ghastly Dragon" bestiary="monster" nameDescription="a ghastly dragon" race="undead" experience="4600" speed="410" manacost="0">
 <health now="7800" max="7800"/>
 <look type="351" corpse="11363"/>
 <targetchange interval="5000" chance="8"/>

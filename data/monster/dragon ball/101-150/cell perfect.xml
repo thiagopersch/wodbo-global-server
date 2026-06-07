@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Cell Perfect"
+  name="Cell Perfect" bestiary="monster"
   nameDescription="an cell perfect"
   race="blood"
   experience="100000"

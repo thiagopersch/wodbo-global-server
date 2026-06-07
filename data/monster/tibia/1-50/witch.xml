@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Witch" nameDescription="a witch" race="blood" experience="120" speed="180" manacost="0">
+<monster name="Witch" bestiary="monster" nameDescription="a witch" race="blood" experience="120" speed="180" manacost="0">
 	<health now="300" max="300"/>
 	<look type="54" corpse="6081"/>
 	<targetchange interval="5000" chance="8"/>

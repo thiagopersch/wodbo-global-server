@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<monster name="Fire Elemental Supremo" nameDescription="a fire elemental supremo" race="blood"
+<monster name="Fire Elemental Supremo" bestiary="boss" nameDescription="a fire elemental supremo" race="blood"
 	experience="350000000" speed="400">
 	<health now="12000000" max="12000000" />
 	<look type="2519" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49386" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Goku Ginyu" nameDescription="an goku ginyu" race="blood" experience="30000" speed="400" manacost="0">
+<monster name="Goku Ginyu" bestiary="monster" nameDescription="an goku ginyu" race="blood" experience="30000" speed="400" manacost="0">
 	<health now="50000" max="50000" />
 	<look type="2474" head="1" body="1" legs="1" feet="1" addons="0" corpse="49245" />
 	<targetchange interval="5000" chance="8" />

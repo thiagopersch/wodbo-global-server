@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Werewolf" nameDescription="a werewolf" experience="1450" speed="320" race="blood"
+<monster name="Werewolf" bestiary="monster" nameDescription="a werewolf" experience="1450" speed="320" race="blood"
 	manacost="0">
 	<health now="1955" max="1955" />
 	<strategy attack="100" defense="0" />

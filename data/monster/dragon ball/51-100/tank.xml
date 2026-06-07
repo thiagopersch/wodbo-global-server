@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Tank" nameDescription="an tank" race="blood" experience="5000" speed="300"
+<monster name="Tank" bestiary="monster" nameDescription="an tank" race="blood" experience="5000" speed="300"
 	manacost="0">
 	<health now="20000" max="20000" />
 	<look type="2493" head="1" body="1" legs="1" feet="1" addons="0" corpse="49420" />

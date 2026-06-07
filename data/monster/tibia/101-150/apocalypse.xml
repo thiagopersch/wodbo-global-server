@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Apocalypse" nameDescription="Apocalypse" race="undead" experience="80000" speed="400" manacost="0">
+<monster name="Apocalypse" bestiary="monster" nameDescription="Apocalypse" race="undead" experience="80000" speed="400" manacost="0">
 	<health now="160000" max="160000" />
 	<look type="12" head="39" body="15" legs="77" feet="104" corpse="6068" />
 	<targetchange interval="10000" chance="20" />

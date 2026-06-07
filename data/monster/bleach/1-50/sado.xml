@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Sado" description="a sado" race="blood" experience="3000" speed="300">
+<monster name="Sado" bestiary="monster" description="a sado" race="blood" experience="3000" speed="300">
   <health now="5000" max="5000" />
   <look type="2283" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49444" />
   <targetchange interval="4000" chance="10" />
@@ -31,10 +31,9 @@
   </flags>
   <attacks>
     <attack name="melee" interval="2000" min="-1" max="-600" />
-    <attack name="Cero" interval="2000" min="-1" max="-300" />
-    <attack name="El Brazo Del La Muerte" interval="5000" min="-1" max="-400" />
-    <attack name="La Muerte" interval="7000" min="-1" max="-500" />
-    <attack name="El Directo" interval="10000" min="-1" max="-700" />
+    <attack name="El Brazo Del La Muerte" interval="3000" min="-1" max="-400" />
+    <attack name="La Muerte" interval="5000" min="-1" max="-500" />
+    <attack name="El Directo" interval="6000" min="-1" max="-700" />
   </attacks>
   <immunities>
     <immunity physical="0" />

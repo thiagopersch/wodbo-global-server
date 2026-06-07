@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Saiyan" nameDescription="an Saiyan" race="blood" experience="800000" speed="400"
+<monster name="Saiyan" bestiary="monster" nameDescription="an Saiyan" race="blood" experience="800000" speed="400"
 	manacost="0">
 	<health now="1000000" max="1000000" />
 	<look type="2460" corpse="49444" />

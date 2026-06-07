@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Spopovitch" nameDescription="an spopovitch" race="blood" experience="100000"
+<monster name="Spopovitch" bestiary="monster" nameDescription="an spopovitch" race="blood" experience="100000"
 	speed="500" manacost="0">
 	<health now="60000" max="60000" />
 	<look type="2497" head="1" body="1" legs="1" feet="1" addons="0" corpse="49341" />

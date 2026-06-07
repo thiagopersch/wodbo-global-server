@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Freeza" nameDescription="an Freeza" race="blood" experience="70000" speed="350" manacost="0">
+<monster name="Freeza" bestiary="monster" nameDescription="an Freeza" race="blood" experience="70000" speed="350" manacost="0">
 	<health now="100000" max="100000" />
 	<look type="1835" head="1" body="1" legs="1" feet="1" addons="0" corpse="49242" />
 	<targetchange interval="5000" chance="8" />

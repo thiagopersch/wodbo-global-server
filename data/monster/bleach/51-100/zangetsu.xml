@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Zangetsu" description="a zangetsu" race="undead" experience="4500" speed="0">
+<monster name="Zangetsu" bestiary="monster" description="a zangetsu" race="undead" experience="4500" speed="0">
   <health now="8000" max="8000" />
   <look type="2347" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49312" />
   <targetchange interval="4000" chance="10" />

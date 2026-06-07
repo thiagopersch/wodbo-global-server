@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Dragon Baby" nameDescription="a dragon baby" race="blood" experience="1000" speed="170" manacost="0">
+<monster name="Dragon Baby" bestiary="monster" nameDescription="a dragon baby" race="blood" experience="1000" speed="170" manacost="0">
 	<health now="3000" max="3000" />
 	<look type="2461" corpse="49309" />
 	<targetchange interval="2000" chance="5" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Tsuful" nameDescription="a tsuful" race="blood" experience="50000" speed="350"
+<monster name="Tsuful" bestiary="monster" nameDescription="a tsuful" race="blood" experience="50000" speed="350"
 	manacost="0">
 	<health now="50000" max="50000" />
 	<look type="2087" head="1" body="1" legs="1" feet="1" addons="0" corpse="49268" />

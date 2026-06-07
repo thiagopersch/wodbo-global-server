@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Dino" description="a dino" race="blood" experience="200" speed="200">
+<monster name="Dino" bestiary="monster" description="a dino" race="blood" experience="200" speed="200">
   <health now="300" max="300" />
   <look type="2445" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49293" />
   <targetchange interval="4000" chance="10" />

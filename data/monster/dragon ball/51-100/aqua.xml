@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Aqua" nameDescription="a aqua" race="blood" experience="10000" speed="300">
+<monster name="Aqua" bestiary="monster" nameDescription="a aqua" race="blood" experience="10000" speed="300">
 	<health now="20000" max="20000" />
 	<look type="2440" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49305" />
 	<targetchange interval="4000" chance="10" />

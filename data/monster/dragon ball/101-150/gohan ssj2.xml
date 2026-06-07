@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Gohan SSJ2" nameDescription="an gohan SSJ2" race="blood" experience="100000" speed="400" manacost="0">
+<monster name="Gohan SSJ2" bestiary="monster" nameDescription="an gohan SSJ2" race="blood" experience="100000" speed="400" manacost="0">
 	<health now="250000" max="250000" />
 	<look type="1861" head="1" body="1" legs="1" feet="1" addons="0" corpse="49244" />
 	<targetchange interval="5000" chance="8" />

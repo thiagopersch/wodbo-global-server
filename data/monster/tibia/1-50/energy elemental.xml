@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Energy Elemental"
+  name="Energy Elemental" bestiary="monster"
   nameDescription="an energy elemental"
   race="undead"
   experience="450"

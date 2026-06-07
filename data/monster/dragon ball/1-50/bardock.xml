@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Bardock" description="a bardock" race="blood" experience="6000" speed="300">
+<monster name="Bardock" bestiary="monster" description="a bardock" race="blood" experience="6000" speed="300">
   <health now="5000" max="5000" />
   <look type="1683" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49290" />
   <targetchange interval="4000" chance="10" />

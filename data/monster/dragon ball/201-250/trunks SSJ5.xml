@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Trunks SSJ5" nameDescription="an Trunks SSJ5" race="blood" experience="950000"
+<monster name="Trunks SSJ5" bestiary="monster" nameDescription="an Trunks SSJ5" race="blood" experience="950000"
 	speed="600" manacost="0">
 	<health now="1500000" max="1500000" />
 	<look type="2076" head="1" body="1" legs="1" feet="1" addons="0" corpse="49277" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Hawk" nameDescription="an Hawk" race="blood" experience="7500000" speed="300" manacost="0">
+<monster name="Hawk" bestiary="boss" nameDescription="an Hawk" race="blood" experience="7500000" speed="300" manacost="0">
 	<health now="100000000" max="100000000" />
 	<look type="2666" head="1" body="1" legs="1" feet="1" addons="0" corpse="2935" />
 	<targetchange interval="5000" chance="8" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Super C18" nameDescription="an Super C18" race="blood" experience="500000"
+<monster name="Super C18" bestiary="monster" nameDescription="an Super C18" race="blood" experience="500000"
 	speed="400" manacost="0">
 	<health now="600000" max="600000" />
 	<look type="1792" head="1" body="1" legs="1" feet="1" addons="0" corpse="49247" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <monster
-  name="Slick Water Elemental"
+  name="Slick Water Elemental" bestiary="monster"
   nameDescription="a Slick water Elemental"
   race="undead"
   experience="450"

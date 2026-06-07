@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Gogeta" nameDescription="an gogeta" race="blood" experience="120000" speed="600" manacost="0">
+<monster name="Gogeta" bestiary="monster" nameDescription="an gogeta" race="blood" experience="120000" speed="600" manacost="0">
 	<health now="500000" max="500000" />
 	<look type="1885" head="1" body="1" legs="1" feet="1" addons="0" corpse="49245" />
 	<targetchange interval="5000" chance="8" />

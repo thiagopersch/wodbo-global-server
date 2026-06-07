@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Raditz" nameDescription="an Raditz" race="blood" experience="50000" speed="300" manacost="0">
+<monster name="Raditz" bestiary="monster" nameDescription="an Raditz" race="blood" experience="50000" speed="300" manacost="0">
 	<health now="60000" max="60000" />
 	<look type="267" head="1" body="1" legs="1" feet="1" addons="0" corpse="12798" />
 	<targetchange interval="5000" chance="8" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Cell" nameDescription="an Cell" race="blood" experience="35000" speed="500" manacost="0">
+<monster name="Cell" bestiary="monster" nameDescription="an Cell" race="blood" experience="35000" speed="500" manacost="0">
 	<health now="200000" max="200000" />
 	<look type="1805" head="1" body="1" legs="1" feet="1" addons="0" corpse="49254" />
 	<targetchange interval="5000" chance="8" />

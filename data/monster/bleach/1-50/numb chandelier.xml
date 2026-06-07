@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Numb Chandelier" description="a numb chandelier" race="undead" experience="1000"
+<monster name="Numb Chandelier" bestiary="monster" description="a numb chandelier" race="undead" experience="1000"
   speed="180">
   <health now="1500" max="1500" />
   <look type="2348" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49355" />
@@ -31,7 +31,8 @@
     <flag canwalkonpoison="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" min="-100" max="-1500" />
+    <attack name="melee" interval="2000" min="-100" max="-700" />
+    <attack name="cero" interval="6000" min="-100" max="-450" />
   </attacks>
   <immunities>
     <immunity physical="0" />
