@@ -111,7 +111,9 @@ function Bestiary_parseMonsterFile(filepath, fallbackName)
         experience = 0,
         speed = 0,
         armor = 0,
+        race = "unknown",
         lookType = 0,
+        lookTypeEx = 0,
         lookHead = 0,
         lookBody = 0,
         lookLegs = 0,
@@ -129,6 +131,10 @@ function Bestiary_parseMonsterFile(filepath, fallbackName)
     -- Bestiary attribute
     local bestiaryMatch = string.match(content, '<monster.-bestiary="(.-)"')
     if bestiaryMatch then data.bestiary = bestiaryMatch end
+
+    -- Race
+    local raceMatch = string.match(content, '<monster.-race="(.-)"')
+    if raceMatch then data.race = raceMatch end
 
     -- Experience
     local expMatch = string.match(content, 'experience="(%d+)"')
@@ -149,6 +155,9 @@ function Bestiary_parseMonsterFile(filepath, fallbackName)
     -- Look type + outfit detalhes
     local lookType = string.match(content, '<look.-type="(%d+)"')
     if lookType then data.lookType = tonumber(lookType) end
+
+    local lookTypeEx = string.match(content, '<look.-typeex="(%d+)"')
+    if lookTypeEx then data.lookTypeEx = tonumber(lookTypeEx) end
 
     data.lookHead = tonumber(string.match(content, '<look.-head="(%d+)"') or "0")
     data.lookBody = tonumber(string.match(content, '<look.-body="(%d+)"') or "0")
