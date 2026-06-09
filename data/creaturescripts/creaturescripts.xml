@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
-	<event type="login" name="StaffLogin" event="script" value="stafflogged.lua" />
+    <!-- monster boost login -->
+    <event type="login" name="MBlogin" script="monsterBoost.lua"/>
+    <event type="kill" name="MBKill" event="script" value="monsterBoost.lua"/>
+
+    <event type="login" name="StaffLogin" event="script" value="stafflogged.lua" />
 	<event type="login" name="StaffEffect" event="script" value="staffeffect.lua" />
 	<event type="login" name="TopEffect" event="script" value="topeffect.lua" />
 	<event type="advance" name="CheckTop" event="script" value="topeffect.lua" />

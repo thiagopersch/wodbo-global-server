@@ -1,42 +1,114 @@
-[9/6/2026 14:33:37] > Usando SHA1 criptografia
-[9/6/2026 14:33:37] >> Carregando RSA key
-[9/6/2026 14:33:37] >> Iniciando conexao SQL
-[9/6/2026 14:33:37] >> Executando Gerenciador de Banco de Dados
-[9/6/2026 14:33:37] > Optimized database.
-[9/6/2026 14:33:37] >> Carregando items (OTB)
-[9/6/2026 14:33:37] >> Carregando items (XML)
-[9/6/2026 14:33:37] >> Carregando Grupos
-[9/6/2026 14:33:37] >> Carregando Vocacoes
-[9/6/2026 14:33:37] >> Carregando Outfits
-[9/6/2026 14:33:37] >> Carregando Wing Types
-[9/6/2026 14:33:37] >> Carregando Aura Types
-[9/6/2026 14:33:37] >> Carregando Shader Types
-[9/6/2026 14:33:37] >> Carregando Bar Types
-[9/6/2026 14:33:37] >> Carregando Canal de Chat
-[9/6/2026 14:33:37] >> Carregando Sistema
-[9/6/2026 14:33:38] >> Carregando Mods...
-[9/6/2026 14:33:38] > Loading AutoLoot.xml... done.
-[9/6/2026 14:33:38] > Loading Automatic Raids.xml... done.
-[9/6/2026 14:33:38] > Loading highscorebook.xml... done.
-[9/6/2026 14:33:38] > Loading task_system.xml... done.
-[9/6/2026 14:33:38] > 4 mods were loaded.
-[9/6/2026 14:33:38] >> Carregando EXP Stages
-[9/6/2026 14:33:38] >> Carregando Monstros
-[9/6/2026 14:33:38] >> Carregando Mapa e Spawns...
-[9/6/2026 14:33:38] > Tamanho do Mapa: 64000x64000.
-[9/6/2026 14:33:38] > Descricao do Mapa: 
-[9/6/2026 14:33:38] "Saved with OTAcademy Map Editor 4.1.1"
-[9/6/2026 14:33:38] "No map description available."
-[9/6/2026 14:33:41] > Mapa carregado em: 2.916 segundos.
-[9/6/2026 14:33:41] > Data carregada em: 0.238 segundos.
-[9/6/2026 14:33:42] > Houses carregada em: 1.482 segundos.
-[9/6/2026 14:33:42] > Content unserialization time: 0.003 seconds.
-[9/6/2026 14:33:42] > Carregando Tipo de PVP... Open PvP
-[9/6/2026 14:33:42] > Inicializando estado do jogo e registrando servicos...
-[9/6/2026 14:33:43] > IP do Servidor: 127.0.0.1
-[9/6/2026 14:33:43] > IP local do Servidor: 172.17.48.1	192.168.1.37	
-[9/6/2026 14:33:43] > Portas do Servidor: 7171	7172	
-[9/6/2026 14:33:43] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[9/6/2026 14:33:53] >> DBOSupreme servidor Online!
+[9/6/2026 15:44:22] > Usando SHA1 criptografia
+[9/6/2026 15:44:22] >> Carregando RSA key
+[9/6/2026 15:44:22] >> Iniciando conexao SQL
+[9/6/2026 15:44:22] >> Executando Gerenciador de Banco de Dados
+[9/6/2026 15:44:22] > Optimized database.
+[9/6/2026 15:44:22] >> Carregando items (OTB)
+[9/6/2026 15:44:23] >> Carregando items (XML)
+[9/6/2026 15:44:23] >> Carregando Grupos
+[9/6/2026 15:44:23] >> Carregando Vocacoes
+[9/6/2026 15:44:23] >> Carregando Outfits
+[9/6/2026 15:44:23] >> Carregando Wing Types
+[9/6/2026 15:44:23] >> Carregando Aura Types
+[9/6/2026 15:44:23] >> Carregando Shader Types
+[9/6/2026 15:44:23] >> Carregando Bar Types
+[9/6/2026 15:44:23] >> Carregando Canal de Chat
+[9/6/2026 15:44:23] >> Carregando Sistema
+[9/6/2026 15:44:23] >> Carregando Mods...
+[9/6/2026 15:44:23] > Loading AutoLoot.xml... done.
+[9/6/2026 15:44:23] > Loading Automatic Raids.xml... done.
+[9/6/2026 15:44:23] > Loading highscorebook.xml... done.
+[9/6/2026 15:44:23] > Loading task_system.xml... done.
+[9/6/2026 15:44:23] > 4 mods were loaded.
+[9/6/2026 15:44:23] >> Carregando EXP Stages
+[9/6/2026 15:44:23] >> Carregando Monstros
+[9/6/2026 15:44:24] >> Carregando Mapa e Spawns...
+[9/6/2026 15:44:24] > Tamanho do Mapa: 64000x64000.
+[9/6/2026 15:44:24] > Descricao do Mapa: 
+[9/6/2026 15:44:24] "Saved with OTAcademy Map Editor 4.1.1"
+[9/6/2026 15:44:24] "No map description available."
+[9/6/2026 15:44:26] > Mapa carregado em: 2.828 segundos.
+[9/6/2026 15:44:27] > Data carregada em: 0.204 segundos.
+[9/6/2026 15:44:28] > Houses carregada em: 1.68 segundos.
+[9/6/2026 15:44:28] > Content unserialization time: 0.004 seconds.
+[9/6/2026 15:44:28] > Carregando Tipo de PVP... Open PvP
+[9/6/2026 15:44:28] > Inicializando estado do jogo e registrando servicos...
+[9/6/2026 15:44:28] > IP do Servidor: 127.0.0.1
+[9/6/2026 15:44:28] > IP local do Servidor: 172.17.48.1	192.168.1.37	
+[9/6/2026 15:44:28] > Portas do Servidor: 7171	7172	
+[9/6/2026 15:44:28] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[9/6/2026 15:44:38] >> DBOSupreme servidor Online!
 
-[9/6/2026 14:33:54] God has logged in.
+[9/6/2026 15:44:40] Leo stronda has logged in.
+[9/6/2026 15:45:57] Leo stronda has logged out.
+[9/6/2026 15:45:58] Dias Atras has logged in.
+[9/6/2026 15:45:59] Dias Atras has logged out.
+[9/6/2026 15:46:0] God has logged in.
+[9/6/2026 15:46:19] > Loading AutoLoot.xml... done.
+[9/6/2026 15:46:19] > Loading Automatic Raids.xml... done.
+[9/6/2026 15:46:19] > Loading highscorebook.xml... done.
+[9/6/2026 15:46:19] > Loading task_system.xml... done.
+[9/6/2026 15:46:19] > 4 mods were loaded.
+[9/6/2026 15:46:42] > Loading AutoLoot.xml... done.
+[9/6/2026 15:46:42] > Loading Automatic Raids.xml... done.
+[9/6/2026 15:46:42] > Loading highscorebook.xml... done.
+[9/6/2026 15:46:42] > Loading task_system.xml... done.
+[9/6/2026 15:46:42] > 4 mods were loaded.
+[9/6/2026 15:47:33] > Loading AutoLoot.xml... done.
+[9/6/2026 15:47:33] > Loading Automatic Raids.xml... done.
+[9/6/2026 15:47:33] > Loading highscorebook.xml... done.
+[9/6/2026 15:47:33] > Loading task_system.xml... done.
+[9/6/2026 15:47:33] > 4 mods were loaded.
+[9/6/2026 15:47:36] God has logged out.
+[9/6/2026 15:47:37] God has logged in.
+[9/6/2026 15:49:8] > Loading AutoLoot.xml... done.
+[9/6/2026 15:49:8] > Loading Automatic Raids.xml... done.
+[9/6/2026 15:49:8] > Loading highscorebook.xml... done.
+[9/6/2026 15:49:8] > Loading task_system.xml... done.
+[9/6/2026 15:49:8] > 4 mods were loaded.
+[9/6/2026 15:49:19] > Loading AutoLoot.xml... done.
+[9/6/2026 15:49:19] > Loading Automatic Raids.xml... done.
+[9/6/2026 15:49:19] > Loading highscorebook.xml... done.
+[9/6/2026 15:49:19] > Loading task_system.xml... done.
+[9/6/2026 15:49:19] > 4 mods were loaded.
+[9/6/2026 15:52:39] > Loading AutoLoot.xml... done.
+[9/6/2026 15:52:39] > Loading Automatic Raids.xml... done.
+[9/6/2026 15:52:39] > Loading highscorebook.xml... done.
+[9/6/2026 15:52:39] > Loading task_system.xml... done.
+[9/6/2026 15:52:39] > 4 mods were loaded.
+[9/6/2026 15:52:40] God has logged out.
+[9/6/2026 15:52:41] God has logged in.
+[9/6/2026 15:52:58] God has logged out.
+[9/6/2026 15:52:58] God has logged in.
+[9/6/2026 15:54:44] > Loading AutoLoot.xml... done.
+[9/6/2026 15:54:44] > Loading Automatic Raids.xml... done.
+[9/6/2026 15:54:44] > Loading highscorebook.xml... done.
+[9/6/2026 15:54:44] > Loading task_system.xml... done.
+[9/6/2026 15:54:44] > 4 mods were loaded.
+[9/6/2026 15:54:45] God has logged out.
+[9/6/2026 15:54:46] God has logged in.
+[9/6/2026 15:55:17] > Loading AutoLoot.xml... done.
+[9/6/2026 15:55:17] > Loading Automatic Raids.xml... done.
+[9/6/2026 15:55:17] > Loading highscorebook.xml... done.
+[9/6/2026 15:55:17] > Loading task_system.xml... done.
+[9/6/2026 15:55:17] > 4 mods were loaded.
+[9/6/2026 15:55:19] God has logged out.
+[9/6/2026 15:55:20] God has logged in.
+[9/6/2026 15:55:47] > Loading AutoLoot.xml... done.
+[9/6/2026 15:55:47] > Loading Automatic Raids.xml... done.
+[9/6/2026 15:55:47] > Loading highscorebook.xml... done.
+[9/6/2026 15:55:47] > Loading task_system.xml... done.
+[9/6/2026 15:55:47] > 4 mods were loaded.
+[9/6/2026 15:55:48] God has logged out.
+[9/6/2026 15:55:48] God has logged in.
+[9/6/2026 15:56:9] God has logged out.
+[9/6/2026 15:56:10] Leo stronda has logged in.
+[9/6/2026 15:56:18] Leo stronda has logged out.
+[9/6/2026 15:56:19] God has logged in.
+[9/6/2026 15:59:8] God has logged out.
+[9/6/2026 15:59:9] Dias Atras has logged in.
+[9/6/2026 16:1:26] Dias Atras has logged out.
+[9/6/2026 16:1:27] God has logged in.
+[9/6/2026 16:1:37] God has logged out.
+[9/6/2026 16:1:38] Leo stronda has logged in.
+[9/6/2026 16:14:20] Leo stronda has logged out.

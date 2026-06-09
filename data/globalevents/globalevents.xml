@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
+	<!-- Monster Boost -->
+	<globalevent name="monsterBoostStart" type="startup" event="script" value="monsterBoost.lua" />
+	<globalevent name="monsterBoostThink" interval="2500" event="script" value="monsterBoost.lua" />
+	<!-- Monster Boost -->
+
 	<globalevent name="OnlineHighscore" interval="300000" script="online_highscore.lua" />
 	<globalevent name="lottery" interval="7200000" event="script" value="lottery.lua" />
 	<globalevent name="broadcastMessage" interval="60000" script="broadcastMessage.lua" />
-	<globalevent name="textoTeleport" interval="900" script="textoTeleport.lua" />
+	<globalevent name="textoTeleport" interval="1000" script="textoTeleport.lua" />
 	<globalevent name="save" interval="3600000" event="script" value="save.lua" />
 	<globalevent name="clean" interval="3600000" event="script" value="clean.lua" />
 	<globalevent name="record" type="record" event="script" value="record.lua" />

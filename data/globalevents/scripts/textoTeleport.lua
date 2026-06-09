@@ -19,9 +19,9 @@ local positions = {
     },
     [4] = {
         message = "Change vocation",
-        pos = { x = 31910, y = 32209, z = 7 },
+        pos = { x = 31910, y = 32208, z = 7 },
         color = { 205, 210 },
-        effect = { 39, 55, 56 }
+        effect = { 39, 55 }
     },
     [5] = {
         message = "To become a citizen of the city",

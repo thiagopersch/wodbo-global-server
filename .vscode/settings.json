@@ -202,11 +202,17 @@
     "doDecayItem",
     "getPlayerFood",
     "doPlayerFeed",
-    "getCreatureDescription"
+    "getCreatureDescription",
+    "doSetStorage",
+    "doCreatureSetLookDirection",
+    "getStorage",
+    "getTileThingByPos",
+    "getExperienceStage"
   ],
   "Lua.diagnostics.disable": [
     "lowercase-global",
     "redundant-parameter",
-    "duplicate-set-field"
+    "duplicate-set-field",
+    "param-type-mismatch"
   ]
 }
