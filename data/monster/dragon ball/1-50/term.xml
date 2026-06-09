@@ -50,26 +50,26 @@
 		<voice sentence="It's a good day to destroy!" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="90" chance="9000" />
-		<item name="gold coin" countmax="40" chance="9000" />
-		<item name="platinum coin" countmax="25" chance="7800" />
-		<item name="flash arrow" countmax="20" chance="5000" />
-		<item name="leaf senzu" countmax="5" chance="1000" />
-		<item name="soul orb" chance="5390" />
-		<item name="crystal necklace" chance="480" />
-		<item name="bag" chance="100000">
+		<item countmax="90" chance="9000" id="2148" /> <!-- gold coin -->
+		<item countmax="40" chance="9000" id="2148" /> <!-- gold coin -->
+		<item countmax="25" chance="7800" id="2152" /> <!-- platinum coin -->
+		<item countmax="20" chance="5000" id="7838" /> <!-- flash arrow -->
+		<item countmax="5" chance="1000" id="49691" /> <!-- leaf senzu -->
+		<item chance="5390" id="5944" /> <!-- soul orb -->
+		<item chance="480" id="2125" /> <!-- crystal necklace -->
+		<item chance="100000" id="1987"> <!-- bag -->
 			<inside>
-				<item name="small amethyst" countmax="2" chance1="12000" />
-				<item name="giant sword" chance="1290" />
-				<item name="plate armor" chance="4590" />
-				<item name="dreaded cleaver" chance="560" />
-				<item name="crowbar" chance="14980" />
-				<item name="dark armor" chance="11190" />
-				<item name="steel boots" chance="890" />
-				<item name="mind stone" chance="640" />
-				<item name="chaos mace" chance="1370" />
-				<item name="skull helmet" chance="160" />
-				<item name="energy pistol energy" chance="100" />
+				<item countmax="2" chance1="12000" id="2150" /> <!-- small amethyst -->
+				<item chance="1290" id="2393" /> <!-- giant sword -->
+				<item chance="4590" id="2463" /> <!-- plate armor -->
+				<item chance="560" id="7419" /> <!-- dreaded cleaver -->
+				<item chance="14980" id="2416" /> <!-- crowbar -->
+				<item chance="11190" id="2489" /> <!-- dark armor -->
+				<item chance="890" id="2645" /> <!-- steel boots -->
+				<item chance="640" id="2178" /> <!-- mind stone -->
+				<item chance="1370" id="7427" /> <!-- chaos mace -->
+				<item chance="160" id="5741" /> <!-- skull helmet -->
+				<item chance="100" id="49579" /> <!-- energy pistol energy -->
 			</inside>
 		</item>
 	</loot>

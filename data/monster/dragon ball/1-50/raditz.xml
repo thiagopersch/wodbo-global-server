@@ -37,13 +37,13 @@
 		<voice sentence="You are very slow!" />
 	</voices>
 		<loot>
-			<item name="gold coin" countmax="200" chance="100000" />
-			<item name="platinum coin" countmax="200" chance="100000" />
-			<item name="crystal coin" countmax="10" chance="15000" />
+			<item countmax="200" chance="100000" id="2148" /> <!-- gold coin -->
+			<item countmax="200" chance="100000" id="2152" /> <!-- platinum coin -->
+			<item countmax="10" chance="15000" id="2160" /> <!-- crystal coin -->
 			<item name="senzu root" countmax="15" chance="25000" />
 			<item name="senzu bean" countmax="10" chance="15000" />
-			<item name="raditz armor" chance="1000" />
-			<item name="grand saiyan glove" chance="500" />
-			<item name="glove of honor" chance="500" />
+			<item chance="1000" id="49676" /> <!-- raditz armor -->
+			<item chance="500" id="49719" /> <!-- grand saiyan glove -->
+			<item chance="500" id="49720" /> <!-- glove of honor -->
 		</loot>
 </monster>

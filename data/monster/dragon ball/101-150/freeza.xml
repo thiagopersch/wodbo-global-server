@@ -40,14 +40,14 @@
 		<voice sentence="Não me provoque!" />
 	</voices>
 		<loot>
-			<item name="gold coin" countmax="100" chance="100000" />
-  		<item name="platinum coin" countmax="75" chance="50000" />
-  		<item name="crystal coin" countmax="5" chance="1000" />
-  		<item name="hp point" countmax="10" chance="1000" />
-  		<item name="mp point" countmax="10" chance="1000" />
-  		<item name="leaf senzu" countmax="5" chance="1000" />
-			<item name="imperfect-form freeza helmet" chance="2500" />
-			<item name="imperfect-form freeza armor" chance="2500" />
-			<item name="imperfect-form freeza legs" chance="2500" />
+			<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
+  		<item countmax="75" chance="50000" id="2152" /> <!-- platinum coin -->
+  		<item countmax="5" chance="1000" id="2160" /> <!-- crystal coin -->
+  		<item countmax="10" chance="1000" id="49689" /> <!-- hp point -->
+  		<item countmax="10" chance="1000" id="49690" /> <!-- mp point -->
+  		<item countmax="5" chance="1000" id="49691" /> <!-- leaf senzu -->
+			<item chance="2500" id="49864" /> <!-- imperfect-form freeza helmet -->
+			<item chance="2500" id="49865" /> <!-- imperfect-form freeza armor -->
+			<item chance="2500" id="49866" /> <!-- imperfect-form freeza legs -->
 		</loot>
 </monster>

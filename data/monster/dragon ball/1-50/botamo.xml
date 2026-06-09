@@ -68,10 +68,10 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item name="gold coin" countmax="60" chance="100000" />
-    <item name="platinum coin" countmax="30" chance="100000" />
-    <item name="crystal coin" countmax="10" chance="50000" />
-    <item name="green iron glove" chance="1000" />
-    <item name="pox rod" chance="1000" />
+    <item countmax="60" chance="100000" id="2148" /> <!-- gold coin -->
+    <item countmax="30" chance="100000" id="2152" /> <!-- platinum coin -->
+    <item countmax="10" chance="50000" id="2160" /> <!-- crystal coin -->
+    <item chance="1000" id="49710" /> <!-- green iron glove -->
+    <item chance="1000" id="49748" /> <!-- pox rod -->
   </loot>
 </monster>

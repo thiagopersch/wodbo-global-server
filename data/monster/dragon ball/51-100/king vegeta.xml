@@ -40,15 +40,15 @@
 		<voice sentence="Hahahaa" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="100" chance="100000" />
-		<item name="platinum coin" countmax="75" chance="50000" />
-		<item name="crystal coin" countmax="5" chance="1000" />
-		<item name="hp point" countmax="10" chance="1000" />
-		<item name="mp point" countmax="10" chance="1000" />
-		<item name="leaf senzu" countmax="5" chance="1000" />
-		<item name="branch senzu" countmax="5" chance="1000" />
-		<item name="blaster saiyajin" chance="1000" />
+		<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
+		<item countmax="75" chance="50000" id="2152" /> <!-- platinum coin -->
+		<item countmax="5" chance="1000" id="2160" /> <!-- crystal coin -->
+		<item countmax="10" chance="1000" id="49689" /> <!-- hp point -->
+		<item countmax="10" chance="1000" id="49690" /> <!-- mp point -->
+		<item countmax="5" chance="1000" id="49691" /> <!-- leaf senzu -->
+		<item countmax="5" chance="1000" id="49692" /> <!-- branch senzu -->
+		<item chance="1000" id="49582" /> <!-- blaster saiyajin -->
 		<item name="saiyan waiscoat" chance="1000" />
-		<item name="strong white glove" chance="1000" />
+		<item chance="1000" id="49713" /> <!-- strong white glove -->
 	</loot>
 </monster>

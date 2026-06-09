@@ -42,15 +42,15 @@
 		<voice sentence="You made me angry!" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="100" chance="100000" />
-		<item name="platinum coin" countmax="75" chance="50000" />
-		<item name="crystal coin" countmax="2" chance="500" />
-		<item name="hp point" countmax="10" chance="1000" />
-		<item name="mp point" countmax="10" chance="1000" />
-		<item name="leaf senzu" countmax="5" chance="1000" />
-		<item name="branch senzu" countmax="5" chance="1000" />
-		<item name="goku armor" chance="1000" />
-		<item name="goku legs" chance="1000" />
-		<item name="goku boots" chance="1000" />
+		<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
+		<item countmax="75" chance="50000" id="2152" /> <!-- platinum coin -->
+		<item countmax="2" chance="500" id="2160" /> <!-- crystal coin -->
+		<item countmax="10" chance="1000" id="49689" /> <!-- hp point -->
+		<item countmax="10" chance="1000" id="49690" /> <!-- mp point -->
+		<item countmax="5" chance="1000" id="49691" /> <!-- leaf senzu -->
+		<item countmax="5" chance="1000" id="49692" /> <!-- branch senzu -->
+		<item chance="1000" id="49686" /> <!-- goku armor -->
+		<item chance="1000" id="49674" /> <!-- goku legs -->
+		<item chance="1000" id="49669" /> <!-- goku boots -->
 	</loot>
 </monster>

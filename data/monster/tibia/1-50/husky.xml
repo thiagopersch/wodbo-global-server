@@ -25,6 +25,6 @@
 		<voice sentence="Ruff, ruff!" />
 	</voices>
 	<loot>
-		<item name="meat" countmax="5" chance="1000" />
+		<item countmax="5" chance="1000" id="2666" /> <!-- meat -->
 	</loot>
 </monster>

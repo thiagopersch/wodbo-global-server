@@ -42,13 +42,13 @@
 		<voice sentence="You need to be faster than that!" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="200" chance="100000" />
-		<item name="platinum coin" countmax="200" chance="100000" />
-		<item name="crystal coin" countmax="10" chance="1500" />
+		<item countmax="200" chance="100000" id="2148" /> <!-- gold coin -->
+		<item countmax="200" chance="100000" id="2152" /> <!-- platinum coin -->
+		<item countmax="10" chance="1500" id="2160" /> <!-- crystal coin -->
 		<item name="senzu root" countmax="15" chance="2500" />
-		<item name="green senzu" countmax="3" chance="1500" />
+		<item countmax="3" chance="1500" id="49693" /> <!-- green senzu -->
 		<item name="android 18 waistcoat" chance="1000" />
-		<item name="android boots" chance="1000" />
-		<item name="strong white glove" chance="200" />
+		<item chance="1000" id="49668" /> <!-- android boots -->
+		<item chance="200" id="49713" /> <!-- strong white glove -->
 	</loot>
 </monster>

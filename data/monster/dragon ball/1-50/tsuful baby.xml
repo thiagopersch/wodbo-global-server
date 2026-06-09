@@ -42,7 +42,7 @@
 		<voice sentence="Kill me or die trying!" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="100" chance="100000" />
+		<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
 		<item name="dollar" countmax="75" chance="50000" />
 		<item name="gold" countmax="5" chance="2500" />
 		<item name="senzu leaf" countmax="15" chance="5000" />

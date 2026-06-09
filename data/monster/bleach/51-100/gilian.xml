@@ -67,10 +67,10 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item name="gold coin" countmax="50" chance="1000" />
-    <item name="platinum coin" countmax="50" chance="1000" />
+    <item countmax="50" chance="1000" id="2148" /> <!-- gold coin -->
+    <item countmax="50" chance="1000" id="2152" /> <!-- platinum coin -->
     <item name="rifle" chance="700" />
     <item name="magma armor" chance="700" />
-    <item name="crystal coin" countmax="30" chance="400" />
+    <item countmax="30" chance="400" id="2160" /> <!-- crystal coin -->
   </loot>
 </monster>

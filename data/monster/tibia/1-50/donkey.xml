@@ -70,6 +70,6 @@
 		<voice sentence="Grunt!" yell="1" />
 	</voices>
 	<loot>
-		<item name="meat" countmax="5" chance="20000" />
+		<item countmax="5" chance="20000" id="2666" /> <!-- meat -->
 	</loot>
 </monster>

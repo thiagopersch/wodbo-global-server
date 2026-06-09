@@ -38,9 +38,9 @@
 		<voice sentence="You shouldn't have provoked me!" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="100" chance="100000" />
-		<item name="platinum coin" countmax="25" chance="50000" />
-		<item name="crystal coin" countmax="3" chance="500" />
+		<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
+		<item countmax="25" chance="50000" id="2152" /> <!-- platinum coin -->
+		<item countmax="3" chance="500" id="2160" /> <!-- crystal coin -->
 		<item name="49689" countmax="10" chance="5000" />
 		<item name="49690" countmax="10" chance="5000" />
 		<item name="49691" countmax="5" chance="2500" />

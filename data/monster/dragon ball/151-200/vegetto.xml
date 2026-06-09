@@ -42,7 +42,7 @@
 		<voice sentence="I'm going to finish this quickly!" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="100" chance="100000" />
+		<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
 		<item name="dollar" countmax="100" chance="75000" />
 		<item name="gold" countmax="5" chance="10000" />
 		<item name="senzu root" countmax="5" chance="5000" />

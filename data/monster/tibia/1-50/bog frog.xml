@@ -44,6 +44,6 @@
 		<voice sentence="Ribbit!" yell="false" />
 	</voices>
 	<loot>
-		<item name="worm" chance="10000" />
+		<item chance="10000" id="3976" /> <!-- worm -->
 	</loot>
 </monster>

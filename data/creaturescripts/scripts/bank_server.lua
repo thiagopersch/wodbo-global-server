@@ -54,11 +54,6 @@ function onExtendedOpcode(cid, opcode, buffer)
       return true
     end
 
-    if hasCondition(cid, CONDITION_INFIGHT) then
-      sendError(cid, "Bank cannot be used in fight.")
-      return true
-    end
-
     lastAction[cid] = now
   end
 

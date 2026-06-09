@@ -1223,7 +1223,7 @@ if (Modules == nil) then
 	function ShopModule:callbackOnBuy(cid, itemid, subType, amount, ignoreCap, inBackpacks)
 		local shopItem = nil
 		for _, item in ipairs(self.npcHandler.shopItems) do
-			if (item.id == itemid and item.subType == subType) then
+			if (item.id == itemid and (item.subType == subType or item.subType == 0)) then
 				shopItem = item
 				break
 			end
@@ -1307,7 +1307,7 @@ if (Modules == nil) then
 	function ShopModule:callbackOnSell(cid, itemid, subType, amount, ignoreEquipped, dummy)
 		local shopItem = nil
 		for _, item in ipairs(self.npcHandler.shopItems) do
-			if (item.id == itemid and item.subType == subType) then
+			if (item.id == itemid and (item.subType == subType or item.subType == 0)) then
 				shopItem = item
 				break
 			end
@@ -1383,7 +1383,7 @@ if (Modules == nil) then
 
 		local parseInfo = { [TAG_PLAYERNAME] = getPlayerName(cid) }
 		local msg = module.npcHandler:parseMessage(module.npcHandler:getMessage(MESSAGE_SENDTRADE), parseInfo)
-		addEvent(openShopWindow, 100, cid, module.npcHandler.shopItems,
+		openShopWindow(cid, module.npcHandler.shopItems,
 			function(cid, itemid, subType, amount, ignoreCap, inBackpacks)
 				module.npcHandler:onBuy(cid, itemid, subType, amount, ignoreCap, inBackpacks)
 			end,

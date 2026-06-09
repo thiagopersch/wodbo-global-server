@@ -177,7 +177,7 @@ class Array
 		const A getElement(uint32_t id) const;
 		void addElement(A a, uint32_t pos);
 
-		uint32_t size() {return m_size;}
+		uint32_t size() const {return m_size;}
 
 	private:
 		A* m_data;

@@ -85,7 +85,7 @@
 		<item id="2418" chance="900" /> <!-- golden sickle -->
 		<item id="5015" chance="100" /> <!-- mandrake -->
 		<item id="2802" chance="3200" /> <!-- sling herb -->
-		<item name="gold coin" countmax="50" chance="75000" />
+		<item countmax="50" chance="75000" id="2148" /> <!-- gold coin -->
 		<item id="7761" countmax="10" chance="3000" /> <!-- enchanted small emerald-->
 		<item id="2670" countmax="10" chance="1500" /> <!-- health potion -->
 		<item id="2671" countmax="10" chance="1500" /> <!-- reiatsu potion -->
@@ -93,14 +93,14 @@
 		<item id="2791" chance="4500" /> <!-- wood mushroom -->
 		<item id="1987" chance="100000"><!-- bag -->
 			<aside>
-				<item name="hunting spear" countmax="0" chance="15185" />
-				<item name="life ring" chance="2127" />
-				<item name="rusted armor" chance="925" />
-				<item name="heavy trident" chance="505" />
-				<item name="eye of a deepling" chance="310" />
-				<item name="fish fin" chance="310" />
-				<item name="small emerald" chance="310" />
-				<item name="flask of rust remover" chance="111" />
+				<item countmax="0" chance="15185" id="3965" /> <!-- hunting spear -->
+				<item chance="2127" id="2168" /> <!-- life ring -->
+				<item chance="925" id="9809" /> <!-- rusted armor -->
+				<item chance="505" id="13838" /> <!-- heavy trident -->
+				<item chance="310" id="13870" /> <!-- eye of a deepling -->
+				<item chance="310" id="5895" /> <!-- fish fin -->
+				<item chance="310" id="2149" /> <!-- small emerald -->
+				<item chance="111" id="9930" /> <!-- flask of rust remover -->
 			</aside>
 		</item>
 	</loot>

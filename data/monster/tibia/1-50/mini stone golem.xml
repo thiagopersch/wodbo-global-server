@@ -69,11 +69,11 @@
 
 
   <loot>
-    <item name="gold coin" countmax="15" chance="100" />
-    <item name="small stone" countmax="4" chance="82" />
-    <item name="steel shield" chance="97" />
-    <item name="torch" chance="72" />
-    <item name="power ring" chance="50" />
-    <item name="red gem" chance="15" />
+    <item countmax="15" chance="100" id="2148" /> <!-- gold coin -->
+    <item countmax="4" chance="82" id="1294" /> <!-- small stone -->
+    <item chance="97" id="2509" /> <!-- steel shield -->
+    <item chance="72" id="2050" /> <!-- torch -->
+    <item chance="50" id="2166" /> <!-- power ring -->
+    <item chance="15" id="2156" /> <!-- red gem -->
   </loot>
 </monster>

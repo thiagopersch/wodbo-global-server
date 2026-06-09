@@ -35,8 +35,8 @@
 		<immunity invisible="0" />
 	</immunities>
 	<loot>
-		<item name="gold coin" countmax="100" chance="100000" />
+		<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
 		<item name="silver coin" countmax="15" chance="25000" />
-		<item name="gold coin" countmax="2" chance="500" />
+		<item countmax="2" chance="500" id="2148" /> <!-- gold coin -->
 	</loot>
 </monster>

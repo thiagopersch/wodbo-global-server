@@ -85,16 +85,16 @@
 		<voice sentence="Go to sleep!" yell="1" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="100" chance="5000" />
-		<item name="berserk potion" chance="1500" />
-		<item name="crystal of power" chance="100" />
-		<item name="golden sickle" chance="900" />
-		<item name="mandrake" chance="100" />
-		<item name="sling herb" chance="3200" />
+		<item countmax="100" chance="5000" id="2148" /> <!-- gold coin -->
+		<item chance="1500" id="7439" /> <!-- berserk potion -->
+		<item chance="100" id="9980" /> <!-- crystal of power -->
+		<item chance="900" id="2418" /> <!-- golden sickle -->
+		<item chance="100" id="5015" /> <!-- mandrake -->
+		<item chance="3200" id="2802" /> <!-- sling herb -->
 		<item name="enchanted small emerald" countmax="10" chance="3000" />
-		<item name="health potion" countmax="10" chance="1500" />
+		<item countmax="10" chance="1500" id="7618" /> <!-- health potion -->
 		<item name="reiatsu potion" countmax="10" chance="1500" />
-		<item name="terra amulet" chance="3200" />
-		<item name="wood mushroom" chance="4500" />
+		<item chance="3200" id="7887" /> <!-- terra amulet -->
+		<item chance="4500" id="2791" /> <!-- wood mushroom -->
 	</loot>
 </monster>

@@ -52,11 +52,11 @@
 		<voice sentence="GRRR" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="90" chance="33750" />
-		<item name="gold coin" countmax="60" chance="33750" />
-		<item name="strong health potion" chance="3150" />
-		<item name="strong mana potion" chance="4150" />
-		<item name="dragon robe" chance="950" />
-		<item name="draptor scales" chance="6650" />
+		<item countmax="90" chance="33750" id="2148" /> <!-- gold coin -->
+		<item countmax="60" chance="33750" id="2148" /> <!-- gold coin -->
+		<item chance="3150" id="7588" /> <!-- strong health potion -->
+		<item chance="4150" id="7589" /> <!-- strong mana potion -->
+		<item chance="950" id="8867" /> <!-- dragon robe -->
+		<item chance="6650" id="13296" /> <!-- draptor scales -->
 	</loot>
 </monster>

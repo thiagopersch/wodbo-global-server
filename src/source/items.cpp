@@ -1873,16 +1873,12 @@ const ItemType& Items::getItemType(int32_t id) const
 
 const ItemType& Items::getItemIdByClientId(int32_t spriteId) const
 {
-	uint32_t i = 100;
-	ItemType* iType;
-	do
+	for(uint32_t i = 0; i < items.size(); ++i)
 	{
-		if((iType = items.getElement(i)) && iType->clientId == spriteId)
+		ItemType* iType = items.getElement(i);
+		if(iType && iType->clientId == spriteId)
 			return *iType;
-
-		i++;
 	}
-	while(iType);
 	static ItemType dummyItemType; // use this for invalid ids
 	return dummyItemType;
 }

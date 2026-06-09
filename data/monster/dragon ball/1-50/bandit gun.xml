@@ -66,8 +66,8 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item name="gold coin" countmax="50" chance="100" />
-    <item name="platinum coin" countmax="50" chance="100" />
+    <item countmax="50" chance="100" id="2148" /> <!-- gold coin -->
+    <item countmax="50" chance="100" id="2152" /> <!-- platinum coin -->
     <item name="rifle" chance="70" />
     <item name="pistol" chance="70" />
   </loot>

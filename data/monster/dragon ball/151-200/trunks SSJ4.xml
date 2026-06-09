@@ -40,12 +40,12 @@
 		<voice sentence="Die damned!" />
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="200" chance="100000" />
-		<item name="platinum coin" countmax="200" chance="50000" />
-		<item name="crystal coin" countmax="10" chance="2500" />
+		<item countmax="200" chance="100000" id="2148" /> <!-- gold coin -->
+		<item countmax="200" chance="50000" id="2152" /> <!-- platinum coin -->
+		<item countmax="10" chance="2500" id="2160" /> <!-- crystal coin -->
 		<item name="senzu root" countmax="15" chance="1500" />
 		<item name="senzu bean" countmax="10" chance="1000" />
-		<item name="future trunks cloak" chance="1000" />
-		<item name="holy knight sword" chance="1000" />
+		<item chance="1000" id="49879" /> <!-- future trunks cloak -->
+		<item chance="1000" id="49555" /> <!-- holy knight sword -->
 	</loot>
 </monster>

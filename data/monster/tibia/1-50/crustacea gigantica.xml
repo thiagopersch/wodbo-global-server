@@ -65,12 +65,12 @@
 		<voice sentence="Crunch crunch" yell="false"/>
 	</voices>
 	<loot>
-		<item name="gold coin" chance="96000" maxCount="100"/>
-		<item name="gold coin" chance="56000" maxCount="75"/>
-		<item name="strong mana potion" chance="8885"/>
-		<item name="strong health potion" chance="3880"/>
+		<item chance="96000" maxCount="100" id="2148" /> <!-- gold coin -->
+		<item chance="56000" maxCount="75" id="2148" /> <!-- gold coin -->
+		<item chance="8885" id="7589" /> <!-- strong mana potion -->
+		<item chance="3880" id="7588" /> <!-- strong health potion -->
 		<item id="3098" chance="3000"/>
-		<item name="great mana potion" chance="1220"/>
-		<item name="giant crab pincer" chance="5000" maxCount="2"/>
+		<item chance="1220" id="7590" /> <!-- great mana potion -->
+		<item chance="5000" maxCount="2" id="13304" /> <!-- giant crab pincer -->
 	</loot>
 </monster>

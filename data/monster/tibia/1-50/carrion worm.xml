@@ -35,7 +35,7 @@
 		<immunity invisible="0" />
 	</immunities>
 	<loot>
-		<item name="gold coin" countmax="45" chance="18250" />
+		<item countmax="45" chance="18250" id="2148" /> <!-- gold coin -->
 		<item name="meat" id="2666" chance="8000" />
 		<item name="worm" id="3976" countmax="2" chance="1500" />
 	</loot>

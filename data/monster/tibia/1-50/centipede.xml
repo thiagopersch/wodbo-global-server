@@ -28,11 +28,11 @@
 		<element firePercent="-15" />
 	</elements>
 	<loot>
-		<item name="gold coin" countmax="17" chance="38500" />
-		<item name="bag" chance="100000">
+		<item countmax="17" chance="38500" id="2148" /> <!-- gold coin -->
+		<item chance="100000" id="1987"> <!-- bag -->
 			<inside>
-				<item name="mace" chance="4500" />
-				<item name="sword" chance="4000" />
+				<item chance="4500" id="2398" /> <!-- mace -->
+				<item chance="4000" id="2376" /> <!-- sword -->
 			</inside>
 		</item>
 	</loot>

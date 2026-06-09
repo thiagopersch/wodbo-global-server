@@ -85,13 +85,13 @@
     <voice sentence="AAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHH" yell="1" />
   </voices>
   <loot>
-    <item name="gold coin" countmax="100" chance="100" />
-    <item name="zaoan armor" chance="50" />
-    <item name="zaoan helmet" chance="50" />
-    <item name="zaoan shoes" chance="50" />
-    <item name="zaoan legs" chance="50" />
-    <item name="zaoan sword" chance="50" />
-    <item name="zaoan halberd" chance="50" />
-    <item name="zaoan robe" chance="50" />
+    <item countmax="100" chance="100" id="2148" /> <!-- gold coin -->
+    <item chance="50" id="11301" /> <!-- zaoan armor -->
+    <item chance="50" id="11302" /> <!-- zaoan helmet -->
+    <item chance="50" id="11303" /> <!-- zaoan shoes -->
+    <item chance="50" id="11304" /> <!-- zaoan legs -->
+    <item chance="50" id="11307" /> <!-- zaoan sword -->
+    <item chance="50" id="11323" /> <!-- zaoan halberd -->
+    <item chance="50" id="11356" /> <!-- zaoan robe -->
   </loot>
 </monster>

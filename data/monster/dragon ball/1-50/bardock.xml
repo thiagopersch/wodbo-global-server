@@ -67,11 +67,11 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item name="gold coin" countmax="60" chance="100000" />
-    <item name="platinum coin" countmax="30" chance="100000" />
-    <item name="crystal coin" countmax="10" chance="50000" />
+    <item countmax="60" chance="100000" id="2148" /> <!-- gold coin -->
+    <item countmax="30" chance="100000" id="2152" /> <!-- platinum coin -->
+    <item countmax="10" chance="50000" id="2160" /> <!-- crystal coin -->
     <item name="bardock armor" chance="3000" />
-    <item name="bardock legs" chance="3000" />
-    <item name="bardock boots" chance="3000" />
+    <item chance="3000" id="49632" /> <!-- bardock legs -->
+    <item chance="3000" id="49664" /> <!-- bardock boots -->
   </loot>
 </monster>

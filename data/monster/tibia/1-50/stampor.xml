@@ -81,16 +81,16 @@
 		<voice sentence="KRRRRRNG" yell="1"/>
 	</voices>
 	<loot>
-		<item name="gold coin" countmax="242" chance="30000" />
-    <item name="platinum coin" countmax="2" chance="9920" />
-    <item name="war hammer" chance="1010" />
-    <item name="knight armor" chance="870" />
-    <item name="spiked squelcher" chance="160" />
-    <item name="strong health potion" countmax="2" chance="5000" />
-    <item name="strong mana potion" countmax="2" chance="5000" />
-    <item name="small topaz" countmax="2" chance="7940" />
-    <item name="stampor horn" chance="4920" />
-    <item name="stampor talons" countmax="2" chance="9950" />
-    <item name="hollow stampor hoof" chance="3020" />
+		<item countmax="242" chance="30000" id="2148" /> <!-- gold coin -->
+    <item countmax="2" chance="9920" id="2152" /> <!-- platinum coin -->
+    <item chance="1010" id="2391" /> <!-- war hammer -->
+    <item chance="870" id="2476" /> <!-- knight armor -->
+    <item chance="160" id="7452" /> <!-- spiked squelcher -->
+    <item countmax="2" chance="5000" id="7588" /> <!-- strong health potion -->
+    <item countmax="2" chance="5000" id="7589" /> <!-- strong mana potion -->
+    <item countmax="2" chance="7940" id="9970" /> <!-- small topaz -->
+    <item chance="4920" id="13299" /> <!-- stampor horn -->
+    <item countmax="2" chance="9950" id="13300" /> <!-- stampor talons -->
+    <item chance="3020" id="13301" /> <!-- hollow stampor hoof -->
 	</loot>
 </monster>

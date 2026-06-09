@@ -65,7 +65,7 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item name="meat" chance="70" countmax="5" />
-    <item name="ham" chance="70" countmax="5" />
+    <item chance="70" countmax="5" id="2666" /> <!-- meat -->
+    <item chance="70" countmax="5" id="2671" /> <!-- ham -->
   </loot>
 </monster>

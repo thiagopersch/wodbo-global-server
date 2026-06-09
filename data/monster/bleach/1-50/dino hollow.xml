@@ -76,7 +76,7 @@
 		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
 		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
 		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
-		<item name="meat" chance="7000" countmax="5" /> <!-- meat -->
-		<item name="ham" chance="7000" countmax="5" /> <!-- ham -->
+		<item chance="7000" countmax="5" id="2666" /> <!-- meat --> <!-- meat -->
+		<item chance="7000" countmax="5" id="2671" /> <!-- ham --> <!-- ham -->
 	</loot>
 </monster>

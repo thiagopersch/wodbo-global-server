@@ -34731,8 +34731,8 @@
 	<item fromid="23777" toid="23780" name="stone floor" />
 	<item id="23781" article="a" name="spellbook" editorsuffix=" (Immobile)" />
 	<item id="23782" article="a" name="shopping bag">
-		<attribute key="weight" value="1800" />
-		<attribute key="containerSize" value="20" />
+		<attribute key="weight" value="1000" />
+		<attribute key="containerSize" value="12" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="23783" article="a" name="dead explorer" />
