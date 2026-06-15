@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Acid Hollow" bestiary="monster" nameDescription="a acid hollow" race="undead" experience="100000"
+<monster name="Acid Hollow" bestiary="monster" nameDescription="a acid hollow" race="undead"
+	experience="100000"
 	speed="470">
 	<health now="50000" max="50000" />
 	<look type="2306" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49401" />
@@ -86,18 +87,19 @@
 		<voice sentence="Go to sleep!" yell="1" />
 	</voices>
 	<loot>
-		<item countmax="100" chance="5000" id="2148" /> <!-- gold coin -->
-		<item chance="1500" id="7439" /> <!-- berserk potion -->
-		<item chance="100" id="9980" /> <!-- crystal of power -->
-		<item chance="900" id="2418" /> <!-- golden sickle -->
-		<item chance="100" id="5015" /> <!-- mandrake -->
-		<item chance="3200" id="2802" /> <!-- sling herb -->
-		<item name="enchanted small emerald" countmax="10" chance="3000" />
-		<item countmax="10" chance="1500" id="7618" /> <!-- health potion -->
-		<item name="reiatsu potion" countmax="10" chance="1500" />
-		<item countmax="10" chance="1500" id="49689" /> <!-- hp point -->
-		<item countmax="10" chance="1500" id="49690" /> <!-- mp point -->
-		<item chance="3200" id="7887" /> <!-- terra amulet -->
-		<item chance="4500" id="2791" /> <!-- wood mushroom -->
+		<item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+		<item id="7618" countmax="10" chance="1000" /> <!-- health potion -->
+		<item id="2149" countmax="5" chance="500" /> <!-- small emerald -->
 	</loot>
 </monster>

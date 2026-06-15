@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Term" bestiary="monster" nameDescription="a term" race="energy" experience="2500" speed="380" manacost="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Term" bestiary="monster" nameDescription="a term" race="energy" experience="2213"
+	speed="380" manacost="0">
 	<health now="1475" max="1475" />
 	<look type="1786" corpse="49353" />
 	<targetchange interval="5000" chance="8" />
@@ -50,27 +51,18 @@
 		<voice sentence="It's a good day to destroy!" />
 	</voices>
 	<loot>
-		<item countmax="90" chance="9000" id="2148" /> <!-- gold coin -->
-		<item countmax="40" chance="9000" id="2148" /> <!-- gold coin -->
-		<item countmax="25" chance="7800" id="2152" /> <!-- platinum coin -->
-		<item countmax="20" chance="5000" id="7838" /> <!-- flash arrow -->
-		<item countmax="5" chance="1000" id="49691" /> <!-- leaf senzu -->
-		<item chance="5390" id="5944" /> <!-- soul orb -->
-		<item chance="480" id="2125" /> <!-- crystal necklace -->
-		<item chance="100000" id="1987"> <!-- bag -->
-			<inside>
-				<item countmax="2" chance1="12000" id="2150" /> <!-- small amethyst -->
-				<item chance="1290" id="2393" /> <!-- giant sword -->
-				<item chance="4590" id="2463" /> <!-- plate armor -->
-				<item chance="560" id="7419" /> <!-- dreaded cleaver -->
-				<item chance="14980" id="2416" /> <!-- crowbar -->
-				<item chance="11190" id="2489" /> <!-- dark armor -->
-				<item chance="890" id="2645" /> <!-- steel boots -->
-				<item chance="640" id="2178" /> <!-- mind stone -->
-				<item chance="1370" id="7427" /> <!-- chaos mace -->
-				<item chance="160" id="5741" /> <!-- skull helmet -->
-				<item chance="100" id="49579" /> <!-- energy pistol energy -->
-			</inside>
-		</item>
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="2672" countmax="15" chance="25000" /><!-- dragon ham -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+		<item chance="100" id="49579" /> <!-- energy pistol energy -->
 	</loot>
 </monster>

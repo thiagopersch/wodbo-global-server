@@ -1,5 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Freeza" bestiary="monster" nameDescription="an Freeza" race="blood" experience="70000" speed="350" manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Freeza" bestiary="monster" nameDescription="an Freeza" race="blood"
+	experience="70000" speed="350" manacost="0">
 	<health now="100000" max="100000" />
 	<look type="1835" head="1" body="1" legs="1" feet="1" addons="0" corpse="49242" />
 	<targetchange interval="5000" chance="8" />
@@ -39,15 +40,22 @@
 		<voice sentence="MORRA DESGRAÇADO!" />
 		<voice sentence="Não me provoque!" />
 	</voices>
-		<loot>
-			<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
-  		<item countmax="75" chance="50000" id="2152" /> <!-- platinum coin -->
-  		<item countmax="5" chance="1000" id="2160" /> <!-- crystal coin -->
-  		<item countmax="10" chance="1000" id="49689" /> <!-- hp point -->
-  		<item countmax="10" chance="1000" id="49690" /> <!-- mp point -->
-  		<item countmax="5" chance="1000" id="49691" /> <!-- leaf senzu -->
-			<item chance="2500" id="49864" /> <!-- imperfect-form freeza helmet -->
-			<item chance="2500" id="49865" /> <!-- imperfect-form freeza armor -->
-			<item chance="2500" id="49866" /> <!-- imperfect-form freeza legs -->
-		</loot>
+	<loot>
+		<item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+		<item id="49639" chance="1000" /> <!-- freeza helmet -->
+		<item id="49739" chance="1000" /> <!-- freeza armor -->
+		<item id="49745" chance="1000" /> <!-- freeza legs -->
+		<item id="49770" chance="1000" /> <!-- freeza boots -->
+	</loot>
 </monster>

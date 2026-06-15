@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Vegeta" bestiary="monster" description="a vegeta" race="blood" experience="3000" speed="300">
+<monster name="Vegeta" bestiary="monster" description="a vegeta" race="blood" experience="7500"
+  speed="300">
   <health now="5000" max="5000" />
   <look type="2121" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49444" />
   <targetchange interval="4000" chance="10" />
@@ -73,18 +74,25 @@
     <voice sentence="Fight with all your strength!" />
   </voices>
   <loot>
-    <item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
-    <item name="dollar" countmax="100" chance="75000" />
-    <item name="gold" countmax="5" chance="10000" />
-    <item name="senzu leaf" countmax="15" chance="2500" />
-    <item name="senzu root" countmax="10" chance="1500" />
-    <item name="senzu bean" countmax="5" chance="1000" />
-    <item chance="1000" id="49620" /> <!-- vegeta armor -->
-    <item chance="1000" id="49607" /> <!-- vegeta legs -->
-    <item name="saiyan armor" chance="1000" />
-    <item name="saiyan legs" chance="1000" />
-    <item chance="1000" id="49768" /> <!-- saiyan boots -->
-    <item chance="1000" id="49644" /> <!-- majin legs -->
-    <item chance="1000" id="49667" /> <!-- majin boots -->
+    <item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+    <item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+    <item id="2672" countmax="15" chance="25000" /><!-- dragon ham -->
+    <item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+    <item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+    <item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+    <item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+    <item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+    <item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+    <item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+    <item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+    <item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+    <item id="49691" countmax="5" chance="1000" /> <!-- leaf senzu -->
+    <item id="49692" countmax="5" chance="1000" /> <!-- branch senzu -->
+    <item id="49620" chance="500" /> <!-- vegeta armor -->
+    <item id="49607" chance="500" /> <!-- vegeta legs -->
+    <item id="49677" chance="500" /> <!-- saiyan waistcoat -->
+    <item id="49768" chance="500" /> <!-- saiyan boots -->
+    <item id="49644" chance="500" /> <!-- majin legs -->
+    <item id="49667" chance="500" /> <!-- majin boots -->
   </loot>
 </monster>

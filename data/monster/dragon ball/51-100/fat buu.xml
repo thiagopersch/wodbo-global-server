@@ -1,5 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Fat Boo" bestiary="monster" nameDescription="an fat buu" race="blood" experience="40000" speed="200" manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fat Boo" bestiary="monster" nameDescription="an fat buu" race="blood"
+	experience="40000" speed="200" manacost="0">
 	<health now="40000" max="40000" />
 	<look type="1755" head="1" body="1" legs="1" feet="1" addons="0" corpse="49351" />
 	<targetchange interval="5000" chance="8" />
@@ -40,10 +41,16 @@
 		<voice sentence="I'll make you suffer!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="100000" /> <!-- Cents -->
-		<item id="2152" countmax="75" chance="100000" /> <!-- Dollars -->
-		<item id="2160" countmax="2" chance="500" /> <!-- Golds -->
-		<item id="49692" countmax="5" chance="500" /> <!-- Branch Senzu -->
-		<item id="49693" countmax="5" chance="250" /> <!-- Green Senzu -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
 	</loot>
 </monster>

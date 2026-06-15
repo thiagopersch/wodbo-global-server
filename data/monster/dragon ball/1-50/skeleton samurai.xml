@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Skeleton Samurai" bestiary="monster" description="a skeleton samurai" race="undead" experience="300"
-  speed="180">
+<monster name="Skeleton Samurai" bestiary="monster" description="a skeleton samurai" race="undead"
+  experience="750" speed="180">
   <health now="500" max="500" />
   <look type="2353" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="0" />
   <targetchange interval="4000" chance="10" />
@@ -31,9 +31,9 @@
     <flag canwalkonpoison="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" min="-200" max="-900" />
-    <attack name="Cero" interval="2000" min="-50" max="-300" />
-    <attack name="Daichiretsuzan" interval="4000" min="-200" max="-1200" />
+    <attack name="melee" interval="1000" min="-200" max="-900" />
+    <attack name="Cero" interval="5000" min="-50" max="-300" />
+    <attack name="Daichiretsuzan" interval="10000" min="-200" max="-1200" />
   </attacks>
   <immunities>
     <immunity physical="0" />
@@ -52,7 +52,6 @@
     <immunity invisible="0" />
     <immunity paralyze="0" />
   </immunities>
-
   <elements>
     <element firePercent="0" />
     <element energyPercent="0" />
@@ -68,6 +67,4 @@
     <element healingPercent="0" />
     <element undefinedPercent="0" />
   </elements>
-
-
 </monster>

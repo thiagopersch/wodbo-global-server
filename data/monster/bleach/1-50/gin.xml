@@ -68,9 +68,9 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item id="2148" countmax="50" chance="10000" /> <!-- gold coin -->
-    <item id="2152" countmax="50" chance="10000" /> <!-- platinum coin -->
-    <item id="2160" countmax="5" chance="10000" /> <!-- crystal coin -->
+    <item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+    <item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+    <item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
     <item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
     <item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
     <item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->

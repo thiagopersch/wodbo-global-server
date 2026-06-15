@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Tyrannosaurus Rex Hollow" bestiary="monster" description="a tyrannosaurus rex hollow" race="undead"
+<monster name="Tyrannosaurus Rex Hollow" bestiary="monster" description="a tyrannosaurus rex hollow"
+  race="undead"
   experience="700"
   speed="180">
   <health now="2000" max="2000" />
@@ -68,6 +69,16 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
+    <item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+    <item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+    <item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+    <item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+    <item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+    <item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+    <item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+    <item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+    <item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+    <item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
     <item chance="10000" countmax="5" id="2666" /> <!-- meat -->
     <item chance="10000" countmax="5" id="2671" /> <!-- ham -->
   </loot>

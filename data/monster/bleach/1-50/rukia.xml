@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Rukia" bestiary="monster" description="a rukia" race="blood" experience="3000" speed="300">
+<monster name="Rukia" bestiary="monster" description="a rukia" race="blood" experience="3000"
+  speed="300">
   <health now="5000" max="5000" />
   <look type="2278" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49444" />
   <targetchange interval="4000" chance="10" />
@@ -68,9 +69,9 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item id="2148" countmax="50" chance="10000" /> <!-- gold coin -->
-    <item id="2152" countmax="50" chance="10000" /> <!-- platinum coin -->
-    <item id="2160" countmax="5" chance="10000" /> <!-- crystal coin -->
+    <item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+    <item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+    <item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
     <item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
     <item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
     <item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->

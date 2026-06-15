@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Bardock Oozaru" bestiary="monster" description="a bardock oozaru" race="blood" experience="8000"
+<monster name="Bardock Oozaru" bestiary="monster" description="a bardock oozaru" race="blood"
+  experience="8000"
   speed="300">
   <health now="15000" max="15000" />
   <look type="1684" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49357" />
@@ -68,11 +69,21 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item countmax="60" chance="100000" id="2148" /> <!-- gold coin -->
-    <item countmax="30" chance="100000" id="2152" /> <!-- platinum coin -->
-    <item countmax="10" chance="50000" id="2160" /> <!-- crystal coin -->
-    <item name="bardock armor" chance="1000" />
-    <item chance="1000" id="49632" /> <!-- bardock legs -->
-    <item chance="1000" id="49664" /> <!-- bardock boots -->
+    <item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+    <item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+    <item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+    <item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+    <item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+    <item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+    <item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+    <item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+    <item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+    <item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+    <item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+    <item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+    <item id="49635" chance="250" /> <!-- bardock helmet -->
+    <item id="49624" chance="250" /> <!-- bardock waistcoat -->
+    <item id="49632" chance="250" /> <!-- bardock legs -->
+    <item id="49664" chance="250" /> <!-- bardock boots -->
   </loot>
 </monster>

@@ -1,5 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Gohan SSJ2" bestiary="monster" nameDescription="an gohan SSJ2" race="blood" experience="100000" speed="400" manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gohan SSJ2" bestiary="monster" nameDescription="an gohan SSJ2" race="blood"
+	experience="100000" speed="400" manacost="0">
 	<health now="250000" max="250000" />
 	<look type="1861" head="1" body="1" legs="1" feet="1" addons="0" corpse="49244" />
 	<targetchange interval="5000" chance="8" />
@@ -41,19 +42,22 @@
 		<voice sentence="AaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAah!" />
 		<voice sentence="You made me angry!" />
 	</voices>
-		<loot>
-			<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
-  		<item countmax="75" chance="50000" id="2152" /> <!-- platinum coin -->
-  		<item countmax="2" chance="500" id="2160" /> <!-- crystal coin -->
-  		<item countmax="10" chance="1000" id="49689" /> <!-- hp point -->
-  		<item countmax="10" chance="1000" id="49690" /> <!-- mp point -->
-  		<item countmax="5" chance="1000" id="49691" /> <!-- leaf senzu -->
-  		<item countmax="5" chance="1000" id="49692" /> <!-- branch senzu -->
-			<item countmax="5" chance="1000" id="49693" /> <!-- green senzu -->
-			<item chance="1000" id="49645" /> <!-- gohan cloak -->
-			<item chance="1000" id="49679" /> <!-- gohan waistcoat -->
-			<item chance="500" id="49719" /> <!-- grand saiyan glove -->
-			<item chance="1000" id="49633" /> <!-- great saiyaman helmet -->
-			<item chance="1000" id="49548" /> <!-- z sword -->
-		</loot>
+	<loot>
+		<item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+		<item id="49691" countmax="5" chance="1000" /> <!-- leaf senzu -->
+		<item id="49692" countmax="5" chance="1000" /> <!-- branch senzu -->
+		<item id="49693" countmax="5" chance="1000" /> <!-- green senzu -->
+		<item id="49679" chance="1000" /> <!-- gohan waistcoat -->
+	</loot>
 </monster>

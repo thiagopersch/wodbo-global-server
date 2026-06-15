@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <monster
-  name="Space Soldier" bestiary="monster"
-  nameDescription="an space soldier"
-  race="blood"
-  experience="75000"
-  speed="450"
-  manacost="0"
+	name="Space Soldier" bestiary="monster"
+	nameDescription="an space soldier"
+	race="blood"
+	experience="75000"
+	speed="450"
+	manacost="0"
 >
 	<health now="400000" max="400000" />
 	<look type="2481" head="1" body="1" legs="1" feet="1" addons="0" corpse="49339" />
@@ -42,13 +42,18 @@
 		<immunity invisible="0" />
 	</immunities>
 	<loot>
-		<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
-		<item countmax="75" chance="50000" id="2152" /> <!-- platinum coin -->
-		<item countmax="2" chance="500" id="2160" /> <!-- crystal coin -->
-		<item countmax="10" chance="1000" id="49689" /> <!-- hp point -->
-		<item countmax="10" chance="1000" id="49690" /> <!-- mp point -->
-		<item countmax="5" chance="1000" id="49691" /> <!-- leaf senzu -->
-		<item countmax="5" chance="1000" id="49692" /> <!-- branch senzu -->
-		<item chance="1000" id="2481" /> <!-- soldier helmet -->
+		<item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+		<item id="49619" chance="1000" /> <!-- soldier helmet -->
 	</loot>
 </monster>

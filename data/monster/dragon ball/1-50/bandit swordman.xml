@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Bandit Swordman" bestiary="monster" description="a bandit swordman" race="blood" experience="800"
-  speed="180">
-  <health now="1800" max="1800" />
+<monster name="Bandit Swordman" bestiary="monster" description="a bandit swordman" race="blood"
+  experience="5700" speed="230">
+  <health now="3800" max="3800" />
   <look type="2442" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49306" />
   <targetchange interval="4000" chance="10" />
   <flags>
@@ -31,9 +31,9 @@
     <flag canwalkonpoison="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" min="-5" max="-30" />
-    <attack name="Sword Bash" interval="5000" min="-5" max="-20" />
-    <attack name="Brave Furie" interval="10000" min="-10" max="-35" />
+    <attack name="melee" interval="1000" min="-10" max="-40" />
+    <attack name="Sword Bash" interval="5000" chance="5" min="-10" max="-40" />
+    <attack name="Brave Furie" interval="10000" chance="3" min="-20" max="-60" />
   </attacks>
   <immunities>
     <immunity physical="0" />
@@ -68,7 +68,18 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item countmax="50" chance="100" id="2148" /> <!-- gold coin -->
-    <item countmax="50" chance="100" id="2152" /> <!-- platinum coin -->
+    <item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+    <item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+    <item id="2672" countmax="15" chance="25000" /><!-- dragon ham -->
+    <item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+    <item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+    <item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+    <item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+    <item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+    <item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+    <item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+    <item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+    <item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+    <item id="49637" chance="500" /> <!-- bandit cloak -->
   </loot>
 </monster>

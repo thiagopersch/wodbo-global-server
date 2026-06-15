@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Aqua" bestiary="monster" nameDescription="a aqua" race="blood" experience="10000" speed="300">
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Aqua" bestiary="monster" nameDescription="a aqua" race="blood" experience="10000"
+	speed="300">
 	<health now="20000" max="20000" />
 	<look type="2440" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49305" />
 	<targetchange interval="4000" chance="10" />
@@ -79,29 +80,16 @@
 		<voice sentence="Go to sleep!" yell="1" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="5000" /> <!-- gold coin -->
-		<item id="7439" chance="1500" /> <!-- berserk potion -->
-		<item id="9980" chance="100" /> <!-- crystal of power -->
-		<item id="2418" chance="900" /> <!-- golden sickle -->
-		<item id="5015" chance="100" /> <!-- mandrake -->
-		<item id="2802" chance="3200" /> <!-- sling herb -->
-		<item countmax="50" chance="75000" id="2148" /> <!-- gold coin -->
-		<item id="7761" countmax="10" chance="3000" /> <!-- enchanted small emerald-->
-		<item id="2670" countmax="10" chance="1500" /> <!-- health potion -->
-		<item id="2671" countmax="10" chance="1500" /> <!-- reiatsu potion -->
-		<item id="7887" chance="3200" /> <!-- terra amulet -->
-		<item id="2791" chance="4500" /> <!-- wood mushroom -->
-		<item id="1987" chance="100000"><!-- bag -->
-			<aside>
-				<item countmax="0" chance="15185" id="3965" /> <!-- hunting spear -->
-				<item chance="2127" id="2168" /> <!-- life ring -->
-				<item chance="925" id="9809" /> <!-- rusted armor -->
-				<item chance="505" id="13838" /> <!-- heavy trident -->
-				<item chance="310" id="13870" /> <!-- eye of a deepling -->
-				<item chance="310" id="5895" /> <!-- fish fin -->
-				<item chance="310" id="2149" /> <!-- small emerald -->
-				<item chance="111" id="9930" /> <!-- flask of rust remover -->
-			</aside>
-		</item>
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
 	</loot>
 </monster>

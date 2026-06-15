@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Wolf hollow" bestiary="monster" nameDescription="a wolf hollow" race="undead" experience="40"
+<monster name="Wolf hollow" bestiary="monster" nameDescription="a wolf hollow" race="undead"
+	experience="40"
 	speed="230" manacost="255">
 	<health now="70" max="70" />
 	<look type="2544" corpse="49296" />
@@ -30,10 +31,16 @@
 		<elemetn deathPercent="-5" />
 	</elements>
 	<loot>
-		<item id="2148" countmax="50" chance="10000" /> <!--gold
-		coin-->
-		<item id="2152" countmax="50" chance="10000" /> <!--platinum
-		coin-->
+		<item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
 		<item id="2666" countmax="2" chance="10000" /><!-- meat -->
 		<item id="5897" chance="5500" /><!-- wolf paw -->
 	</loot>

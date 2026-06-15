@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Zarbon" bestiary="monster" nameDescription="an zarbon" race="blood" experience="40000" speed="300"
+<monster name="Zarbon" bestiary="monster" nameDescription="an zarbon" race="blood"
+	experience="40000" speed="300"
 	manacost="0">
 	<health now="60000" max="60000" />
 	<look type="2446" head="1" body="1" legs="1" feet="1" addons="0" corpse="49295" />
@@ -38,14 +39,19 @@
 		<voice sentence="Your end is near!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="100000" /> <!-- Cents -->
-		<item id="2152" countmax="25" chance="50000" /> <!-- Dollars -->
-		<item id="2160" countmax="3" chance="1000" /> <!-- Golds -->
-		<item id="49689" countmax="10" chance="5000" /> <!-- HP Potion -->
-		<item id="49690" countmax="10" chance="5000" /> <!-- Ki Potion -->
-		<item id="49684" chance="1000" /> <!-- Piccolo Robe -->
-		<item id="49768" chance="1000" /> <!-- Saiyan Boots -->
-		<item id="49677" chance="1000" /> <!-- Saiyan Armor -->
-		<item id="49691" countmax="5" chance="500" /> <!-- Leaf Senzu -->
+		<item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+		<item id="49677" chance="1000" /> <!-- saiyan armor -->
+		<item id="49768" chance="1000" /> <!-- saiyan boots -->
 	</loot>
 </monster>

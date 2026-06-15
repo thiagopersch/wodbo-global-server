@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Tsuful Oozaru" bestiary="monster" nameDescription="a tsuful oozaru" race="blood" experience="150000"
+<monster name="Tsuful Oozaru" bestiary="monster" nameDescription="a tsuful oozaru" race="blood"
+	experience="150000"
 	speed="200"
 	manacost="0">
 	<health now="250000" max="250000" />
@@ -49,13 +50,17 @@
 		<voice sentence="Kill me or die trying!" />
 	</voices>
 	<loot>
-		<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
-		<item name="dollar" countmax="75" chance="50000" />
-		<item name="gold" countmax="5" chance="2500" />
-		<item name="senzu leaf" countmax="15" chance="5000" />
-		<item name="senzu root" countmax="10" chance="2500" />
-		<item name="senzu bean" countmax="5" chance="1000" />
-		<item chance="1000" id="49688" /> <!-- tsuful armor -->
-		<item chance="1000" id="49457" /> <!-- tsuful boots -->
+		<item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
 	</loot>
 </monster>

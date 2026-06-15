@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Dino" bestiary="monster" description="a dino" race="blood" experience="200" speed="200">
-  <health now="300" max="300" />
+<monster name="Dino" bestiary="monster" description="a dino" race="blood" experience="1500"
+  speed="230">
+  <health now="1000" max="1000" />
   <look type="2445" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49293" />
   <targetchange interval="4000" chance="10" />
   <flags>
@@ -30,7 +31,7 @@
     <flag canwalkonpoison="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" min="-1" max="-50" />
+    <attack name="melee" interval="1000" chance="15" min="-1" max="-50" />
   </attacks>
   <immunities>
     <immunity physical="0" />
@@ -65,7 +66,17 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item chance="70" countmax="5" id="2666" /> <!-- meat -->
-    <item chance="70" countmax="5" id="2671" /> <!-- ham -->
+    <item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+    <item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+    <item id="2672" countmax="15" chance="25000" /><!-- dragon ham -->
+    <item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+    <item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+    <item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+    <item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+    <item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+    <item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+    <item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+    <item id="2666" countmax="5" chance="1000" /> <!-- meat -->
+    <item id="2671" countmax="5" chance="1000" /> <!-- ham -->
   </loot>
 </monster>

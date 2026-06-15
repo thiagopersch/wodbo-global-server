@@ -64184,19 +64184,19 @@
 	<item fromid="44913" toid="44914" article="a" name="sandstone wall" />
 	<item id="44915" article="a" name="sandstone ramp" />
 	<item id="44916" article="a" name="sandstone ramp">
-			<attribute key="floorchange" value="north" />
+		<attribute key="floorchange" value="north" />
 	</item>
 	<item id="44917" article="a" name="sandstone ramp" />
 	<item id="44918" article="a" name="sandstone ramp">
-			<attribute key="floorchange" value="east" />
+		<attribute key="floorchange" value="east" />
 	</item>
 	<item id="44919" article="a" name="sandstone ramp" />
 	<item id="44920" article="a" name="sandstone ramp">
-			<attribute key="floorchange" value="west" />
+		<attribute key="floorchange" value="west" />
 	</item>
 	<item id="44921" article="a" name="sandstone ramp" />
 	<item id="44922" article="a" name="sandstone ramp">
-			<attribute key="floorchange" value="south" />
+		<attribute key="floorchange" value="south" />
 	</item>
 	<item fromid="44931" toid="44936" article="a" name="mossy sandstone wall" />
 	<item fromid="44940" toid="44942" article="a" name="mossy sandstone archway" />
@@ -64208,36 +64208,36 @@
 	<item id="45257" article="a" name="musgy ramp" />
 	<item id="45258" article="a" name="musgy ramp" />
 	<item id="45259" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="north" />
+		<attribute key="floorchange" value="north" />
 	</item>
 	<item id="45260" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="east" />
+		<attribute key="floorchange" value="east" />
 	</item>
 	<item fromid="45261" toid="45274" article="a" name="musgy wall" />
 	<item id="45275" article="a" name="musgy ramp" />
 	<item id="45276" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="east" />
+		<attribute key="floorchange" value="east" />
 	</item>
 	<item id="45277" article="a" name="musgy ramp" />
 	<item id="45278" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="north" />
+		<attribute key="floorchange" value="north" />
 	</item>
 	<item fromid="45279" toid="45291" article="a" name="musgy wall" />
 	<item id="45292" article="a" name="musgy ramp" />
 	<item id="45293" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="north" />
+		<attribute key="floorchange" value="north" />
 	</item>
 	<item id="45294" article="a" name="musgy ramp" />
 	<item id="45295" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="west" />
+		<attribute key="floorchange" value="west" />
 	</item>
 	<item id="45296" article="a" name="musgy ramp" />
 	<item id="45297" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="west" />
+		<attribute key="floorchange" value="west" />
 	</item>
 	<item id="45298" article="a" name="musgy ramp" />
 	<item id="45299" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="west" />
+		<attribute key="floorchange" value="west" />
 	</item>
 	<item fromid="45300" toid="45305" article="a" name="musgy wall" />
 	<item fromid="45384" toid="45411" article="a" name="rockmud wall" />
@@ -64246,19 +64246,19 @@
 	<item fromid="45422" toid="45423" article="a" name="rockmud wall" />
 	<item id="45424" article="a" name="rockmud ramp" />
 	<item id="45425" article="a" name="rockmud ramp">
-			<attribute key="floorchange" value="north" />
+		<attribute key="floorchange" value="north" />
 	</item>
 	<item id="45426" article="a" name="rockmud ramp" />
 	<item id="45427" article="a" name="rockmud ramp">
-			<attribute key="floorchange" value="west" />
+		<attribute key="floorchange" value="west" />
 	</item>
 	<item id="45428" article="a" name="rockmud ramp" />
 	<item id="45429" article="a" name="rockmud ramp">
-			<attribute key="floorchange" value="east" />
+		<attribute key="floorchange" value="east" />
 	</item>
 	<item id="45430" article="a" name="rockmud ramp" />
 	<item id="45431" article="a" name="rockmud ramp">
-			<attribute key="floorchange" value="south" />
+		<attribute key="floorchange" value="south" />
 	</item>
 	<item id="45519" name="wooden stake">
 		<attribute key="weight" value="250" />
@@ -67142,8 +67142,8 @@
 	</item>
 	<item id="49555" article="a" name="holy knight sword">
 		<attribute key="weight" value="3500" />
-		<attribute key="defense" value="19" />
-		<attribute key="attack" value="26" />
+		<attribute key="defense" value="26" />
+		<attribute key="attack" value="33" />
 		<attribute key="weaponType" value="sword" />
 	</item>
 	<item id="49556" article="a" name="sword of disease">
@@ -68030,7 +68030,7 @@
 		<attribute key="absorbpercentall" value="20" />
 		<attribute key="slotType" value="feet" />
 	</item>
-	<item id="49668" article="a" name="android boots">
+	<item id="49668" article="a" name="android 17 boots">
 		<attribute key="weight" value="8000" />
 		<attribute key="armor" value="20" />
 		<attribute key="healthGain" value="700" />
@@ -68116,9 +68116,9 @@
 		<attribute key="weight" value="4000" />
 		<attribute key="armor" value="30" />
 		<attribute key="defense" value="20" />
-		<attribute key="healthGain" value="300" />
+		<attribute key="healthGain" value="450" />
 		<attribute key="healthTicks" value="1" />
-		<attribute key="manaGain" value="300" />
+		<attribute key="manaGain" value="450" />
 		<attribute key="manaTicks" value="1" />
 		<attribute key="slotType" value="body" />
 	</item>
@@ -68132,7 +68132,7 @@
 		<attribute key="manaTicks" value="1" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="49678" article="a" name="android 17 waistcoat">
+	<item id="49678" article="a" name="android 18 waistcoat">
 		<attribute key="weight" value="6000" />
 		<attribute key="armor" value="40" />
 		<attribute key="defense" value="20" />
@@ -68176,10 +68176,10 @@
 		<attribute key="manaTicks" value="1" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="49683" article="a" name="saiyan waistcoat">
+	<item id="49683" article="a" name="vegeta waistcoat">
 		<attribute key="weight" value="2000" />
-		<attribute key="armor" value="19" />
-		<attribute key="manaGain" value="600" />
+		<attribute key="armor" value="15" />
+		<attribute key="manaGain" value="900" />
 		<attribute key="manaTicks" value="1" />
 		<attribute key="slotType" value="body" />
 	</item>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Saiyan" bestiary="monster" nameDescription="an Saiyan" race="blood" experience="800000" speed="400"
-	manacost="0">
-	<health now="1000000" max="1000000" />
+<monster name="Saiyan" bestiary="monster" nameDescription="an Saiyan" race="blood"
+	experience="375000" speed="380" manacost="600">
+	<health now="250000" max="250000" />
 	<look type="2460" corpse="49444" />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
@@ -44,12 +44,19 @@
 		<voice sentence="MORRAM DESGRAÇADOS!!!" />
 	</voices>
 	<loot>
-		<item countmax="200" chance="100000" id="2148" /> <!-- gold coin -->
-		<item countmax="100" chance="100000" id="2152" /> <!-- platinum coin -->
-		<item countmax="100" chance="15000" id="2160" /> <!-- crystal coin -->
-		<item name="senzu root" countmax="15" chance="25000" />
-		<item name="senzu bean" countmax="10" chance="15000" />
-		<item chance="1000" id="49719" /> <!-- grand saiyan glove -->
-		<item chance="1000" id="49720" /> <!-- glove of honor -->
+		<item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+		<item id="49719" chance="1000" /> <!-- grand saiyan glove -->
+		<item id="49720" chance="1000" /> <!-- glove of honor -->
 	</loot>
 </monster>

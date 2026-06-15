@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Dabura" bestiary="monster" nameDescription="an dabura" race="blood" experience="80000" speed="350"
+<monster name="Dabura" bestiary="monster" nameDescription="an dabura" race="blood"
+	experience="80000" speed="350"
 	manacost="0">
 	<health now="90000" max="90000" />
 	<look type="2487" head="1" body="1" legs="1" feet="1" addons="0" corpse="49360" />
@@ -20,8 +21,8 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="1000" min="-350" max="-500" />
-		<attack name="sword bash" interval="1000" chance="35" min="-0" max="-250" />
-		<attack name="Brave Furie" interval="8000" chance="25" min="-0" max="-1000" />
+		<attack name="sword bash" interval="1000" chance="35" min="-100" max="-250" />
+		<attack name="Brave Furie" interval="8000" chance="25" min="-500" max="-1000" />
 	</attacks>
 	<defenses armor="0" defense="0">
 	</defenses>
@@ -40,11 +41,17 @@
 		<voice sentence="I am the king of the underworld!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="200" chance="100000" /> <!-- Cents -->
-		<item id="2152" countmax="100" chance="75000" /> <!-- Dollars -->
-		<item id="2160" countmax="5" chance="1000" /> <!-- Golds -->
-		<item id="12777" countmax="15" chance="5000" /> <!-- Senzu Leaf -->
-		<item id="12778" countmax="10" chance="2500" /> <!-- Senzu Root -->
-		<item id="13447" chance="100" /> <!-- Elypson -->
+		<item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
 	</loot>
 </monster>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<monster name="Fire Elemental Supremo" bestiary="boss" nameDescription="a fire elemental supremo" race="blood"
-	experience="350000000" speed="400">
-	<health now="12000000" max="12000000" />
+<monster name="Fire Elemental Supremo" bestiary="boss" nameDescription="a fire elemental supremo"
+	race="blood" experience="350000000" speed="400">
+	<health now="50000000" max="50000000" />
 	<look type="2519" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49386" />
 	<targetchange interval="4000" chance="10" />
 	<flags>
@@ -31,10 +31,10 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="1000" skill="100" attack="400" />
-		<attack name="hakai" interval="4000" min="-1" max="-40000" />
+		<attack name="melee" interval="1000" min="-1000" max="-10000" />
+		<attack name="hakai" interval="4000" min="-10000" max="-40000" />
 		<attack name="Calamity Blaster" interval="3000" min="-1000" max="-15000" />
-		<attack name="Deadly Bomb" interval="5000" min="-1000" max="-15000" />
+		<attack name="Artillery Destruction" interval="5000" min="-1000" max="-50000" />
 		<attack name="fire" interval="2000" chance="40" range="7" radius="4" target="1" min="-1000"
 			max="-20000">
 			<attribute key="shootEffect" value="fire" />
@@ -80,8 +80,8 @@
 		<immunity manadrain="0" />
 		<immunity outfit="0" />
 		<immunity drunk="0" />
-		<immunity invisible="1" />
-		<immunity paralyze="1" />
+		<immunity invisible="0" />
+		<immunity paralyze="0" />
 	</immunities>
 	<defenses armor="35" defense="35">
 		<defense name="speed" interval="2000" chance="10" speedchange="10000" duration="50000">
@@ -106,10 +106,10 @@
 		<element healingPercent="0" />
 		<element undefinedPercent="0" />
 	</elements>
-	<summons>
-		<summon name="Demon" interval="2000" chance="90" max="10" />
-		<summon name="Dragon Lord" interval="2000" chance="90" max="50" />
-		<summon name="Fire Elemental" interval="2000" chance="90" max="50" />
+	<summons maxSummons="5">
+		<summon name="Demon" interval="2000" chance="90" max="5" />
+		<summon name="Dragon Lord" interval="2000" chance="90" max="5" />
+		<summon name="Fire Elemental" interval="2000" chance="90" max="5" />
 	</summons>
 	<voices interval="2000" chance="50">
 		<voice sentence="Go to sleep!" yell="1" />
@@ -118,20 +118,23 @@
 		<voice sentence="YOU ARE DEAD!" yell="1" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="5000" /> <!-- gold coin -->
-		<item id="7439" chance="1500" /> <!-- berserk potion -->
-		<item id="9980" chance="100" /> <!-- crystal of power -->
-		<item id="2418" chance="900" /> <!-- golden sickle -->
-		<item id="5015" chance="100" /> <!-- mandrake -->
-		<item id="2802" chance="3200" /> <!-- sling herb -->
+		<item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
 		<item id="7761" countmax="10" chance="3000" /> <!-- enchanted small emerald-->
-		<item id="2670" countmax="10" chance="1500" /> <!-- health potion -->
-		<item id="2671" countmax="10" chance="1500" /> <!-- reiatsu potion -->
-		<item id="7887" chance="3200" /> <!-- terra amulet -->
-		<item id="2791" chance="4500" /> <!-- wood mushroom -->
-		<item id="48939" chance="350" /> <!-- sanguine boots -->
-		<item id="48940" chance="350" /> <!-- sanguine rod -->
-		<item id="49507" countmax="5" chance="100" /> <!-- sanguine rod -->
-		<item id="49594" chance="100" /> <!-- vaizard mask -->
+		<item id="49507" chance="10000" /> <!-- enchanted experience scroll gray -->
+		<item id="9980" chance="10000" /> <!-- crystal of power -->
+		<item id="48939" chance="1000" /> <!-- sanguine boots -->
+		<item id="48940" chance="1000" /> <!-- sanguine rod -->
+		<item id="49594" chance="1000" /> <!-- vaizard mask -->
 	</loot>
 </monster>

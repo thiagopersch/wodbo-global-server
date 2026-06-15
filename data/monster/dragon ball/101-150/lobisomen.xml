@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<monster name="Lobisomen" bestiary="monster" nameDescription="a lobisomen" race="blood" experience="60000" speed="800">
+<monster name="Lobisomen" bestiary="monster" nameDescription="a lobisomen" race="blood"
+	experience="60000" speed="800">
 	<health now="110000" max="110000" />
 	<look type="2465" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49314" />
 	<targetchange interval="4000" chance="10" />
@@ -95,13 +96,18 @@
 		<voice sentence="HRAAAAAAAAAARRRRRR!" yell="1" />
 	</voices>
 	<loot>
-		<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
-		<item countmax="50" chance="50000" id="2152" /> <!-- platinum coin -->
-		<item countmax="5" chance="10000" id="2160" /> <!-- crystal coin -->
-		<item countmax="10" chance="10000" id="49689" /> <!-- hp point -->
-		<item countmax="10" chance="10000" id="49690" /> <!-- mp point -->
-		<item countmax="5" chance="10000" id="49691" /> <!-- leaf senzu -->
-		<item countmax="5" chance="10000" id="49692" /> <!-- branch senzu -->
-		<item chance="2600" id="5897" /> <!-- wolf paw -->
+		<item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+		<item id="5897" chance="2600" /> <!-- wolf paw -->
 	</loot>
 </monster>

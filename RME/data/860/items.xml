@@ -23563,7 +23563,7 @@
 	<item id="13682" article="a" name="floating stone" />
 	<item id="13683" article="a" name="rocky wall" />
 	<item id="13684" name="strange sand" />
-	<item fromid="13686" toid="13687" article="a" name="rocky wall" />
+	<item fromid="13685" toid="13687" article="a" name="rocky wall" />
 	<item fromid="13688" toid="13691" article="a" name="lamp" />
 	<item fromid="13692" toid="13693" article="a" name="hieroglyph banner" />
 	<item fromid="13694" toid="13695" article="a" name="pharaoh banner" />
@@ -34731,8 +34731,8 @@
 	<item fromid="23777" toid="23780" name="stone floor" />
 	<item id="23781" article="a" name="spellbook" editorsuffix=" (Immobile)" />
 	<item id="23782" article="a" name="shopping bag">
-		<attribute key="weight" value="1800" />
-		<attribute key="containerSize" value="20" />
+		<attribute key="weight" value="1000" />
+		<attribute key="containerSize" value="12" />
 		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="23783" article="a" name="dead explorer" />
@@ -34828,7 +34828,7 @@
 	<item fromid="23811" toid="23813" article="a" name="stone tile with a socket" />
 	<item id="23814" name="remains of an old amphora" />
 	<item id="23815" editorsuffix=" (Blank)" />
-	<item id="23816" article="a" name="war backpack">
+	<item id="23816" article="a" name="supreme war backpack">
 		<attribute key="weight" value="1800" />
 		<attribute key="description"
 			value="backpack used in ancient times by the greatest warriors in combat." />
@@ -64179,9 +64179,86 @@
 		<attribute key="weight" value="150" />
 		<attribute key="description" value="A bunch of useful scraps and gears." />
 	</item>
+	<item fromid="44903" toid="44906" article="a" name="sandstone archway" />
+	<item fromid="44907" toid="44912" article="a" name="sandstone low wall" />
+	<item fromid="44913" toid="44914" article="a" name="sandstone wall" />
+	<item id="44915" article="a" name="sandstone ramp" />
+	<item id="44916" article="a" name="sandstone ramp">
+			<attribute key="floorchange" value="north" />
+	</item>
+	<item id="44917" article="a" name="sandstone ramp" />
+	<item id="44918" article="a" name="sandstone ramp">
+			<attribute key="floorchange" value="east" />
+	</item>
+	<item id="44919" article="a" name="sandstone ramp" />
+	<item id="44920" article="a" name="sandstone ramp">
+			<attribute key="floorchange" value="west" />
+	</item>
+	<item id="44921" article="a" name="sandstone ramp" />
+	<item id="44922" article="a" name="sandstone ramp">
+			<attribute key="floorchange" value="south" />
+	</item>
+	<item fromid="44931" toid="44936" article="a" name="mossy sandstone wall" />
+	<item fromid="44940" toid="44942" article="a" name="mossy sandstone archway" />
 	<item id="44944" name="pulsating red mass">
 		<attribute key="weight" value="80" />
 		<attribute key="description" value="It still beats slightly." />
+	</item>
+	<item fromid="45239" toid="45256" article="a" name="musgy wall" />
+	<item id="45257" article="a" name="musgy ramp" />
+	<item id="45258" article="a" name="musgy ramp" />
+	<item id="45259" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="north" />
+	</item>
+	<item id="45260" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="east" />
+	</item>
+	<item fromid="45261" toid="45274" article="a" name="musgy wall" />
+	<item id="45275" article="a" name="musgy ramp" />
+	<item id="45276" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="east" />
+	</item>
+	<item id="45277" article="a" name="musgy ramp" />
+	<item id="45278" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="north" />
+	</item>
+	<item fromid="45279" toid="45291" article="a" name="musgy wall" />
+	<item id="45292" article="a" name="musgy ramp" />
+	<item id="45293" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="north" />
+	</item>
+	<item id="45294" article="a" name="musgy ramp" />
+	<item id="45295" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="west" />
+	</item>
+	<item id="45296" article="a" name="musgy ramp" />
+	<item id="45297" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="west" />
+	</item>
+	<item id="45298" article="a" name="musgy ramp" />
+	<item id="45299" article="a" name="musgy ramp">
+			<attribute key="floorchange" value="west" />
+	</item>
+	<item fromid="45300" toid="45305" article="a" name="musgy wall" />
+	<item fromid="45384" toid="45411" article="a" name="rockmud wall" />
+	<item fromid="45412" toid="45415" article="a" name="rockmud archway" />
+	<item fromid="45416" toid="45421" article="a" name="rockmud low wall" />
+	<item fromid="45422" toid="45423" article="a" name="rockmud wall" />
+	<item id="45424" article="a" name="rockmud ramp" />
+	<item id="45425" article="a" name="rockmud ramp">
+			<attribute key="floorchange" value="north" />
+	</item>
+	<item id="45426" article="a" name="rockmud ramp" />
+	<item id="45427" article="a" name="rockmud ramp">
+			<attribute key="floorchange" value="west" />
+	</item>
+	<item id="45428" article="a" name="rockmud ramp" />
+	<item id="45429" article="a" name="rockmud ramp">
+			<attribute key="floorchange" value="east" />
+	</item>
+	<item id="45430" article="a" name="rockmud ramp" />
+	<item id="45431" article="a" name="rockmud ramp">
+			<attribute key="floorchange" value="south" />
 	</item>
 	<item id="45519" name="wooden stake">
 		<attribute key="weight" value="250" />
@@ -70393,7 +70470,7 @@
 	</item>
 	<item id="55044" article="a" name="spirit king's radiant shield">
 		<attribute key="weight" value="850" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="18" />
 		<attribute key="absorbPercentPhysical" value="8" />
 		<attribute key="absorbPercentHoly" value="12" />
@@ -70402,7 +70479,7 @@
 	</item>
 	<item id="55045" article="a" name="hollow king's crimson mask">
 		<attribute key="weight" value="920" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="16" />
 		<attribute key="absorbPercentDeath" value="15" />
 		<attribute key="absorbPercentPhysical" value="6" />
@@ -70411,7 +70488,7 @@
 	</item>
 	<item id="55046" article="a" name="saiyan elite battle crest">
 		<attribute key="weight" value="780" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="17" />
 		<attribute key="absorbPercentPhysical" value="10" />
 		<attribute key="maxHitPoints" value="120" />
@@ -70420,7 +70497,7 @@
 	</item>
 	<item id="55047" article="a" name="quincy cross of purity">
 		<attribute key="weight" value="650" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="15" />
 		<attribute key="absorbPercentHoly" value="18" />
 		<attribute key="absorbPercentDeath" value="8" />
@@ -70429,7 +70506,7 @@
 	</item>
 	<item id="55048" article="a" name="flame hashira emblem">
 		<attribute key="weight" value="810" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentFire" value="22" />
 		<attribute key="elementFire" value="8" />
@@ -70438,7 +70515,7 @@
 	</item>
 	<item id="55049" article="a" name="akatsuki crimson moon shield">
 		<attribute key="weight" value="880" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="18" />
 		<attribute key="absorbPercentDeath" value="14" />
 		<attribute key="absorbPercentPhysical" value="7" />
@@ -70447,7 +70524,7 @@
 	</item>
 	<item id="55050" article="a" name="kyuubi rage barrier">
 		<attribute key="weight" value="790" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="17" />
 		<attribute key="absorbPercentPhysical" value="12" />
 		<attribute key="absorbPercentPoison" value="10" />
@@ -70456,7 +70533,7 @@
 	</item>
 	<item id="55051" article="a" name="espada's black sun crest">
 		<attribute key="weight" value="860" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentDeath" value="16" />
 		<attribute key="elementDeath" value="10" />
@@ -70465,7 +70542,7 @@
 	</item>
 	<item id="55052" article="a" name="uchiha eternal mangekyo">
 		<attribute key="weight" value="720" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="16" />
 		<attribute key="absorbPercentPhysical" value="9" />
 		<attribute key="absorbPercentFire" value="11" />
@@ -70474,7 +70551,7 @@
 	</item>
 	<item id="55053" article="a" name="demon king sin shield">
 		<attribute key="weight" value="950" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentPhysical" value="13" />
 		<attribute key="absorbPercentFire" value="15" />
@@ -70483,7 +70560,7 @@
 	</item>
 	<item id="55054" article="a" name="shadow monarch's dominion">
 		<attribute key="weight" value="840" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentDeath" value="20" />
 		<attribute key="absorbPercentPhysical" value="10" />
@@ -70493,7 +70570,7 @@
 	</item>
 	<item id="55055" article="a" name="titan's purple rune guard">
 		<attribute key="weight" value="910" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentAll" value="7" />
 		<attribute key="magiclevelpoints" value="2" />
@@ -70502,7 +70579,7 @@
 	</item>
 	<item id="55056" article="a" name="ichigo's bankai crest">
 		<attribute key="weight" value="760" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="18" />
 		<attribute key="absorbPercentPhysical" value="11" />
 		<attribute key="absorbPercentDeath" value="13" />
@@ -70511,7 +70588,7 @@
 	</item>
 	<item id="55057" article="a" name="gotei 13 captain's emblem">
 		<attribute key="weight" value="830" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="17" />
 		<attribute key="absorbPercentHoly" value="12" />
 		<attribute key="absorbPercentDeath" value="9" />
@@ -70520,7 +70597,7 @@
 	</item>
 	<item id="55058" article="a" name="golden ozymandias guard">
 		<attribute key="weight" value="880" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="maxHitPointsPercent" value="6" />
@@ -70529,7 +70606,7 @@
 	</item>
 	<item id="55059" article="a" name="naruto's nine tails barrier">
 		<attribute key="weight" value="810" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="18" />
 		<attribute key="absorbPercentPhysical" value="12" />
 		<attribute key="absorbPercentFire" value="10" />
@@ -70538,7 +70615,7 @@
 	</item>
 	<item id="55060" article="a" name="sasuke's rinnegan ward">
 		<attribute key="weight" value="750" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentEnergy" value="16" />
 		<attribute key="absorbPercentDeath" value="11" />
@@ -70547,7 +70624,7 @@
 	</item>
 	<item id="55061" article="a" name="meliodas's wrath shield">
 		<attribute key="weight" value="920" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="elementHoly" value="12" />
@@ -70556,7 +70633,7 @@
 	</item>
 	<item id="55062" article="a" name="byakuya's senbonzakura guard">
 		<attribute key="weight" value="680" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="16" />
 		<attribute key="absorbPercentPhysical" value="8" />
 		<attribute key="absorbPercentHoly" value="14" />
@@ -70565,7 +70642,7 @@
 	</item>
 	<item id="55063" article="a" name="madara's susanoo fragment">
 		<attribute key="weight" value="1050" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentAll" value="9" />
 		<attribute key="magiclevelpoints" value="3" />
@@ -70574,7 +70651,7 @@
 	</item>
 	<item id="55064" article="a" name="aizen's kyoka suigetsu mirror">
 		<attribute key="weight" value="720" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="17" />
 		<attribute key="absorbPercentPhysical" value="10" />
 		<attribute key="suppressDazzle" value="1" />
@@ -70583,7 +70660,7 @@
 	</item>
 	<item id="55065" article="a" name="frieza's golden tyrant plate">
 		<attribute key="weight" value="890" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentPhysical" value="13" />
 		<attribute key="absorbPercentEnergy" value="12" />
@@ -70592,7 +70669,7 @@
 	</item>
 	<item id="55066" article="a" name="gogeta's fusion aura core">
 		<attribute key="weight" value="850" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="absorbPercentHoly" value="10" />
@@ -70602,7 +70679,7 @@
 	</item>
 	<item id="55067" article="a" name="ulquiorra's segunda etapa veil">
 		<attribute key="weight" value="780" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentDeath" value="18" />
 		<attribute key="elementDeath" value="14" />
@@ -70611,7 +70688,7 @@
 	</item>
 	<item id="55068" article="a" name="jiraiya's toad sage ward">
 		<attribute key="weight" value="820" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="17" />
 		<attribute key="absorbPercentPoison" value="15" />
 		<attribute key="magiclevelpoints" value="2" />
@@ -70620,7 +70697,7 @@
 	</item>
 	<item id="55069" article="a" name="sung jin-woo's shadow veil">
 		<attribute key="weight" value="740" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="18" />
 		<attribute key="absorbPercentDeath" value="17" />
 		<attribute key="preventLoss" value="1" />
@@ -70629,7 +70706,7 @@
 	</item>
 	<item id="55070" article="a" name="escabor's holy knight crest">
 		<attribute key="weight" value="870" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentHoly" value="20" />
 		<attribute key="absorbPercentPhysical" value="11" />
@@ -70638,7 +70715,7 @@
 	</item>
 	<item id="55071" article="a" name="itachi's crow genjutsu ward">
 		<attribute key="weight" value="690" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="16" />
 		<attribute key="absorbPercentPhysical" value="9" />
 		<attribute key="suppressCurse" value="1" />
@@ -70647,7 +70724,7 @@
 	</item>
 	<item id="55072" article="a" name="beerus's hakai orb shield">
 		<attribute key="weight" value="930" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentAll" value="8" />
 		<attribute key="elementDeath" value="15" />
@@ -70656,7 +70733,7 @@
 	</item>
 	<item id="55073" article="a" name="gon's nen resolve guard">
 		<attribute key="weight" value="760" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="18" />
 		<attribute key="absorbPercentPhysical" value="13" />
 		<attribute key="maxHitPointsPercent" value="7" />
@@ -70665,7 +70742,7 @@
 	</item>
 	<item id="55074" article="a" name="vegeta's royal saiyan guard">
 		<attribute key="weight" value="890" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="speed" value="15" />
@@ -70674,7 +70751,7 @@
 	</item>
 	<item id="55075" article="a" name="yhwach's almighty eye">
 		<attribute key="weight" value="980" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="25" />
 		<attribute key="absorbPercentAll" value="12" />
 		<attribute key="magiclevelpoints" value="4" />
@@ -70684,7 +70761,7 @@
 	</item>
 	<item id="55076" article="a" name="goku ultra instinct emblem">
 		<attribute key="weight" value="860" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentPhysical" value="12" />
 		<attribute key="absorbPercentHoly" value="10" />
@@ -70694,7 +70771,7 @@
 	</item>
 	<item id="55077" article="a" name="vegeta royal pride crest">
 		<attribute key="weight" value="910" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="elementFire" value="9" />
@@ -70703,7 +70780,7 @@
 	</item>
 	<item id="55078" article="a" name="ichigo final getsuga guard">
 		<attribute key="weight" value="780" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentDeath" value="16" />
 		<attribute key="absorbPercentPhysical" value="11" />
@@ -70712,7 +70789,7 @@
 	</item>
 	<item id="55079" article="a" name="naruto sage of six paths ward">
 		<attribute key="weight" value="820" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentAll" value="8" />
 		<attribute key="magiclevelpoints" value="3" />
@@ -70721,7 +70798,7 @@
 	</item>
 	<item id="55080" article="a" name="aizen's hogyoku fragment">
 		<attribute key="weight" value="750" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentPhysical" value="10" />
 		<attribute key="suppressDazzle" value="1" />
@@ -70730,7 +70807,7 @@
 	</item>
 	<item id="55081" article="a" name="rock lee's gate of death seal">
 		<attribute key="weight" value="880" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="18" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="speed" value="20" />
@@ -70739,7 +70816,7 @@
 	</item>
 	<item id="55082" article="a" name="kenpachi's bloodlust plate">
 		<attribute key="weight" value="940" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentPhysical" value="13" />
 		<attribute key="absorbPercentDeath" value="12" />
@@ -70748,7 +70825,7 @@
 	</item>
 	<item id="55083" article="a" name="frieza golden form core">
 		<attribute key="weight" value="830" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentEnergy" value="14" />
 		<attribute key="elementDeath" value="10" />
@@ -70757,7 +70834,7 @@
 	</item>
 	<item id="55084" article="a" name="meliodas demon mark barrier">
 		<attribute key="weight" value="890" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="absorbPercentFire" value="13" />
@@ -70766,7 +70843,7 @@
 	</item>
 	<item id="55085" article="a" name="madara's perfect susanoo eye">
 		<attribute key="weight" value="1050" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="26" />
 		<attribute key="absorbPercentAll" value="10" />
 		<attribute key="magiclevelpoints" value="4" />
@@ -70775,7 +70852,7 @@
 	</item>
 	<item id="55086" article="a" name="byakuya's senbonzakura veil">
 		<attribute key="weight" value="710" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="18" />
 		<attribute key="absorbPercentPhysical" value="9" />
 		<attribute key="absorbPercentHoly" value="15" />
@@ -70784,7 +70861,7 @@
 	</item>
 	<item id="55087" article="a" name="hitsugaya's hyoryu frost shield">
 		<attribute key="weight" value="760" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentIce" value="25" />
 		<attribute key="suppressFreeze" value="1" />
@@ -70793,7 +70870,7 @@
 	</item>
 	<item id="55088" article="a" name="ulquiorra's despair wings">
 		<attribute key="weight" value="840" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentDeath" value="18" />
 		<attribute key="elementDeath" value="12" />
@@ -70802,7 +70879,7 @@
 	</item>
 	<item id="55089" article="a" name="sasuke's rinnegan void">
 		<attribute key="weight" value="780" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentEnergy" value="17" />
 		<attribute key="absorbPercentDeath" value="13" />
@@ -70811,7 +70888,7 @@
 	</item>
 	<item id="55090" article="a" name="sung jin-woo's monarch shadow">
 		<attribute key="weight" value="820" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentDeath" value="20" />
 		<attribute key="preventLoss" value="1" />
@@ -70820,7 +70897,7 @@
 	</item>
 	<item id="55091" article="a" name="akatsuki eternal pain ring">
 		<attribute key="weight" value="850" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentPhysical" value="11" />
 		<attribute key="absorbPercentFire" value="12" />
@@ -70829,7 +70906,7 @@
 	</item>
 	<item id="55092" article="a" name="uchiha mangekyo tomoe">
 		<attribute key="weight" value="730" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="18" />
 		<attribute key="absorbPercentPhysical" value="10" />
 		<attribute key="suppressCurse" value="1" />
@@ -70838,7 +70915,7 @@
 	</item>
 	<item id="55093" article="a" name="titan's ancient rune guard">
 		<attribute key="weight" value="980" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentAll" value="9" />
 		<attribute key="magiclevelpoints" value="3" />
@@ -70846,7 +70923,7 @@
 	</item>
 	<item id="55094" article="a" name="gojo's limitless barrier">
 		<attribute key="weight" value="690" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentPhysical" value="12" />
 		<attribute key="absorbPercentEnergy" value="18" />
@@ -70855,7 +70932,7 @@
 	</item>
 	<item id="55095" article="a" name="jiraiya's toad sage emblem">
 		<attribute key="weight" value="810" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="17" />
 		<attribute key="absorbPercentPoison" value="16" />
 		<attribute key="magiclevelpoints" value="2" />
@@ -70863,7 +70940,7 @@
 	</item>
 	<item id="55096" article="a" name="toshiro's ryujin hyoryu">
 		<attribute key="weight" value="770" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentIce" value="24" />
 		<attribute key="suppressFreeze" value="1" />
@@ -70872,7 +70949,7 @@
 	</item>
 	<item id="55097" article="a" name="grimjow's panther king mask">
 		<attribute key="weight" value="850" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentPhysical" value="13" />
 		<attribute key="elementDeath" value="11" />
@@ -70881,7 +70958,7 @@
 	</item>
 	<item id="55098" article="a" name="escabor's divine holy shield">
 		<attribute key="weight" value="920" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentHoly" value="22" />
 		<attribute key="absorbPercentPhysical" value="12" />
@@ -70890,7 +70967,7 @@
 	</item>
 	<item id="55099" article="a" name="yamamoto's ryujin jakka seal">
 		<attribute key="weight" value="880" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentFire" value="26" />
 		<attribute key="elementFire" value="14" />
@@ -70899,7 +70976,7 @@
 	</item>
 	<item id="55100" article="a" name="kurama's nine tails chakra">
 		<attribute key="weight" value="810" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentPhysical" value="11" />
 		<attribute key="absorbPercentFire" value="12" />
@@ -70908,7 +70985,7 @@
 	</item>
 	<item id="55101" article="a" name="pain's rinnegan dominion">
 		<attribute key="weight" value="860" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentEnergy" value="15" />
 		<attribute key="magiclevelpoints" value="3" />
@@ -70917,7 +70994,7 @@
 	</item>
 	<item id="55102" article="a" name="beerus hakai destruction ward">
 		<attribute key="weight" value="930" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="25" />
 		<attribute key="absorbPercentAll" value="11" />
 		<attribute key="elementDeath" value="16" />
@@ -70926,7 +71003,7 @@
 	</item>
 	<item id="55103" article="a" name="yhwach's almighty eye core">
 		<attribute key="weight" value="970" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="27" />
 		<attribute key="absorbPercentAll" value="13" />
 		<attribute key="preventLoss" value="1" />
@@ -70935,7 +71012,7 @@
 	</item>
 	<item id="55104" article="a" name="gogeta's fusion spirit shield">
 		<attribute key="weight" value="890" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="absorbPercentHoly" value="12" />
@@ -70944,7 +71021,7 @@
 	</item>
 	<item id="55105" article="a" name="itachi's eternal tsukuyomi">
 		<attribute key="weight" value="740" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="18" />
 		<attribute key="absorbPercentPhysical" value="9" />
 		<attribute key="suppressCurse" value="1" />
@@ -70953,7 +71030,7 @@
 	</item>
 	<item id="55106" article="a" name="zangetsu true bankai guard">
 		<attribute key="weight" value="820" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentDeath" value="17" />
 		<attribute key="absorbPercentPhysical" value="13" />
@@ -70962,7 +71039,7 @@
 	</item>
 	<item id="55107" article="a" name="shadow monarch's eternal dominion">
 		<attribute key="weight" value="950" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="26" />
 		<attribute key="absorbPercentDeath" value="22" />
 		<attribute key="preventLoss" value="1" />
@@ -70972,7 +71049,7 @@
 	</item>
 	<item id="55108" article="a" name="gojo's limitless infinity">
 		<attribute key="weight" value="820" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentPhysical" value="13" />
 		<attribute key="absorbPercentEnergy" value="18" />
@@ -70981,7 +71058,7 @@
 	</item>
 	<item id="55109" article="a" name="hitsugaya's eternal frost">
 		<attribute key="weight" value="760" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentIce" value="26" />
 		<attribute key="suppressFreeze" value="1" />
@@ -70990,7 +71067,7 @@
 	</item>
 	<item id="55110" article="a" name="madara's eternal mangekyo">
 		<attribute key="weight" value="890" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentPhysical" value="12" />
 		<attribute key="absorbPercentFire" value="14" />
@@ -70999,7 +71076,7 @@
 	</item>
 	<item id="55111" article="a" name="naruto's baryon mode core">
 		<attribute key="weight" value="830" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="maxHitPoints" value="160" />
@@ -71008,7 +71085,7 @@
 	</item>
 	<item id="55112" article="a" name="toshiro's hyoten hyakkaso">
 		<attribute key="weight" value="750" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentIce" value="24" />
 		<attribute key="elementIce" value="12" />
@@ -71017,7 +71094,7 @@
 	</item>
 	<item id="55113" article="a" name="sasuke's amaterasu veil">
 		<attribute key="weight" value="780" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentFire" value="22" />
 		<attribute key="suppressFire" value="1" />
@@ -71025,7 +71102,7 @@
 	</item>
 	<item id="55114" article="a" name="beerus's hakai sphere">
 		<attribute key="weight" value="920" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentAll" value="11" />
 		<attribute key="elementDeath" value="15" />
@@ -71034,7 +71111,7 @@
 	</item>
 	<item id="55115" article="a" name="aizen's complete hypnosis">
 		<attribute key="weight" value="710" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="18" />
 		<attribute key="absorbPercentPhysical" value="10" />
 		<attribute key="suppressDazzle" value="1" />
@@ -71043,7 +71120,7 @@
 	</item>
 	<item id="55116" article="a" name="ichigo's mugetsu essence">
 		<attribute key="weight" value="850" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentDeath" value="17" />
 		<attribute key="absorbPercentPhysical" value="12" />
@@ -71052,7 +71129,7 @@
 	</item>
 	<item id="55117" article="a" name="yhwach's almighty throne">
 		<attribute key="weight" value="980" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="27" />
 		<attribute key="absorbPercentAll" value="14" />
 		<attribute key="preventLoss" value="1" />
@@ -71061,7 +71138,7 @@
 	</item>
 	<item id="55118" article="a" name="meliodas's full counter">
 		<attribute key="weight" value="880" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentPhysical" value="16" />
 		<attribute key="elementHoly" value="13" />
@@ -71070,7 +71147,7 @@
 	</item>
 	<item id="55119" article="a" name="sung jin-woo's shadow legion">
 		<attribute key="weight" value="840" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentDeath" value="21" />
 		<attribute key="preventLoss" value="1" />
@@ -71078,7 +71155,7 @@
 	</item>
 	<item id="55120" article="a" name="goku's ultra ego">
 		<attribute key="weight" value="910" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="maxHitPointsPercent" value="8" />
@@ -71087,7 +71164,7 @@
 	</item>
 	<item id="55121" article="a" name="pain's almighty push">
 		<attribute key="weight" value="790" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentEnergy" value="19" />
 		<attribute key="magiclevelpoints" value="3" />
@@ -71096,7 +71173,7 @@
 	</item>
 	<item id="55122" article="a" name="frieza's death beam core">
 		<attribute key="weight" value="860" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentEnergy" value="15" />
 		<attribute key="elementDeath" value="12" />
@@ -71105,7 +71182,7 @@
 	</item>
 	<item id="55123" article="a" name="itachi's susanoo ribcage">
 		<attribute key="weight" value="930" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentPhysical" value="13" />
 		<attribute key="suppressCurse" value="1" />
@@ -71114,7 +71191,7 @@
 	</item>
 	<item id="55124" article="a" name="vegeta's final flash">
 		<attribute key="weight" value="870" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="elementFire" value="11" />
@@ -71123,7 +71200,7 @@
 	</item>
 	<item id="55125" article="a" name="byakuya's senbonzakura kageyoshi">
 		<attribute key="weight" value="740" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentHoly" value="16" />
 		<attribute key="absorbPercentPhysical" value="9" />
@@ -71131,7 +71208,7 @@
 	</item>
 	<item id="55126" article="a" name="jiraiya's hermit sage ward">
 		<attribute key="weight" value="810" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="18" />
 		<attribute key="absorbPercentPoison" value="17" />
 		<attribute key="magiclevelpoints" value="3" />
@@ -71139,7 +71216,7 @@
 	</item>
 	<item id="55127" article="a" name="ulquiorra's segunda etapa">
 		<attribute key="weight" value="850" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentDeath" value="20" />
 		<attribute key="elementDeath" value="14" />
@@ -71148,7 +71225,7 @@
 	</item>
 	<item id="55128" article="a" name="escabor's goddess grace">
 		<attribute key="weight" value="920" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="25" />
 		<attribute key="absorbPercentHoly" value="23" />
 		<attribute key="absorbPercentPhysical" value="12" />
@@ -71157,7 +71234,7 @@
 	</item>
 	<item id="55129" article="a" name="grimjow's panther claw">
 		<attribute key="weight" value="780" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="elementDeath" value="10" />
@@ -71166,7 +71243,7 @@
 	</item>
 	<item id="55130" article="a" name="yamamoto's bankai seal">
 		<attribute key="weight" value="950" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentFire" value="28" />
 		<attribute key="elementFire" value="16" />
@@ -71175,7 +71252,7 @@
 	</item>
 	<item id="55131" article="a" name="kurama's tailed beast bomb">
 		<attribute key="weight" value="840" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentPhysical" value="13" />
 		<attribute key="absorbPercentFire" value="12" />
@@ -71184,7 +71261,7 @@
 	</item>
 	<item id="55132" article="a" name="kenpachi's nozarashi">
 		<attribute key="weight" value="910" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="absorbPercentDeath" value="11" />
@@ -71193,7 +71270,7 @@
 	</item>
 	<item id="55133" article="a" name="gogeta's blue fusion">
 		<attribute key="weight" value="880" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="25" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="absorbPercentHoly" value="13" />
@@ -71202,7 +71279,7 @@
 	</item>
 	<item id="55134" article="a" name="rock lee's eight gates">
 		<attribute key="weight" value="760" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentPhysical" value="16" />
 		<attribute key="speed" value="25" />
@@ -71211,7 +71288,7 @@
 	</item>
 	<item id="55135" article="a" name="zangetsu's true power">
 		<attribute key="weight" value="830" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentDeath" value="18" />
 		<attribute key="absorbPercentPhysical" value="12" />
@@ -71220,7 +71297,7 @@
 	</item>
 	<item id="55136" article="a" name="sung jin-woo's monarch's authority">
 		<attribute key="weight" value="940" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="26" />
 		<attribute key="absorbPercentDeath" value="23" />
 		<attribute key="preventLoss" value="1" />
@@ -71229,7 +71306,7 @@
 	</item>
 	<item id="55137" article="a" name="akatsuki's infinite tsukuyomi">
 		<attribute key="weight" value="810" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentPhysical" value="11" />
 		<attribute key="suppressCurse" value="1" />
@@ -71238,7 +71315,7 @@
 	</item>
 	<item id="55138" article="a" name="demon king's chaos">
 		<attribute key="weight" value="900" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="absorbPercentFire" value="14" />
@@ -71246,7 +71323,7 @@
 	</item>
 	<item id="55139" article="a" name="shadow monarch's eternal realm">
 		<attribute key="weight" value="970" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="28" />
 		<attribute key="absorbPercentDeath" value="25" />
 		<attribute key="magiclevelpoints" value="4" />
@@ -71256,7 +71333,7 @@
 	</item>
 	<item id="55140" article="a" name="goku's ultra instinct emblem">
 		<attribute key="weight" value="850" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentPhysical" value="13" />
 		<attribute key="absorbPercentHoly" value="12" />
@@ -71266,7 +71343,7 @@
 	</item>
 	<item id="55141" article="a" name="vegeta's pride of saiyans">
 		<attribute key="weight" value="910" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="elementFire" value="10" />
@@ -71275,7 +71352,7 @@
 	</item>
 	<item id="55142" article="a" name="ichigo's true bankai core">
 		<attribute key="weight" value="830" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentDeath" value="18" />
 		<attribute key="absorbPercentPhysical" value="12" />
@@ -71284,7 +71361,7 @@
 	</item>
 	<item id="55143" article="a" name="naruto's six paths barrier">
 		<attribute key="weight" value="860" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentAll" value="9" />
 		<attribute key="magiclevelpoints" value="4" />
@@ -71293,7 +71370,7 @@
 	</item>
 	<item id="55144" article="a" name="aizen's hogyoku evolution">
 		<attribute key="weight" value="780" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentPhysical" value="11" />
 		<attribute key="suppressDazzle" value="1" />
@@ -71302,7 +71379,7 @@
 	</item>
 	<item id="55145" article="a" name="madara's perfect susanoo">
 		<attribute key="weight" value="1050" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="27" />
 		<attribute key="absorbPercentAll" value="11" />
 		<attribute key="magiclevelpoints" value="4" />
@@ -71311,7 +71388,7 @@
 	</item>
 	<item id="55146" article="a" name="beerus's hakai orb">
 		<attribute key="weight" value="940" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="25" />
 		<attribute key="absorbPercentAll" value="12" />
 		<attribute key="elementDeath" value="16" />
@@ -71320,7 +71397,7 @@
 	</item>
 	<item id="55147" article="a" name="sung jin-woo's shadow monarch">
 		<attribute key="weight" value="890" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="26" />
 		<attribute key="absorbPercentDeath" value="23" />
 		<attribute key="preventLoss" value="1" />
@@ -71329,7 +71406,7 @@
 	</item>
 	<item id="55148" article="a" name="meliodas's demon king mark">
 		<attribute key="weight" value="920" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="absorbPercentFire" value="14" />
@@ -71338,7 +71415,7 @@
 	</item>
 	<item id="55149" article="a" name="yhwach's almighty vision">
 		<attribute key="weight" value="980" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="28" />
 		<attribute key="absorbPercentAll" value="14" />
 		<attribute key="preventLoss" value="1" />
@@ -71347,7 +71424,7 @@
 	</item>
 	<item id="55150" article="a" name="gojo's limitless domain">
 		<attribute key="weight" value="760" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentPhysical" value="12" />
 		<attribute key="absorbPercentEnergy" value="20" />
@@ -71356,7 +71433,7 @@
 	</item>
 	<item id="55151" article="a" name="sasuke's rinnegan void">
 		<attribute key="weight" value="810" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentEnergy" value="18" />
 		<attribute key="absorbPercentDeath" value="14" />
@@ -71365,7 +71442,7 @@
 	</item>
 	<item id="55152" article="a" name="gogeta's fusion aura">
 		<attribute key="weight" value="880" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="25" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="absorbPercentHoly" value="13" />
@@ -71374,7 +71451,7 @@
 	</item>
 	<item id="55153" article="a" name="itachi's eternal tsukuyomi">
 		<attribute key="weight" value="740" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentPhysical" value="10" />
 		<attribute key="suppressCurse" value="1" />
@@ -71383,7 +71460,7 @@
 	</item>
 	<item id="55154" article="a" name="yamamoto's ryujin jakka">
 		<attribute key="weight" value="950" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentFire" value="28" />
 		<attribute key="elementFire" value="15" />
@@ -71392,7 +71469,7 @@
 	</item>
 	<item id="55155" article="a" name="kurama's nine tails rage">
 		<attribute key="weight" value="840" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentPhysical" value="13" />
 		<attribute key="absorbPercentFire" value="12" />
@@ -71401,7 +71478,7 @@
 	</item>
 	<item id="55156" article="a" name="escabor's holy knight vow">
 		<attribute key="weight" value="900" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="25" />
 		<attribute key="absorbPercentHoly" value="24" />
 		<attribute key="absorbPercentPhysical" value="13" />
@@ -71410,7 +71487,7 @@
 	</item>
 	<item id="55157" article="a" name="pain's rinnegan dominion">
 		<attribute key="weight" value="820" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentEnergy" value="17" />
 		<attribute key="magiclevelpoints" value="3" />
@@ -71419,7 +71496,7 @@
 	</item>
 	<item id="55158" article="a" name="frieza's golden tyrant">
 		<attribute key="weight" value="870" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentEnergy" value="16" />
 		<attribute key="elementDeath" value="13" />
@@ -71428,7 +71505,7 @@
 	</item>
 	<item id="55159" article="a" name="byakuya's senbonzakura">
 		<attribute key="weight" value="730" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentHoly" value="17" />
 		<attribute key="absorbPercentPhysical" value="9" />
@@ -71437,7 +71514,7 @@
 	</item>
 	<item id="55160" article="a" name="hitsugaya's hyoryu frost">
 		<attribute key="weight" value="760" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentIce" value="25" />
 		<attribute key="suppressFreeze" value="1" />
@@ -71446,7 +71523,7 @@
 	</item>
 	<item id="55161" article="a" name="ulquiorra's despair veil">
 		<attribute key="weight" value="800" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentDeath" value="19" />
 		<attribute key="elementDeath" value="14" />
@@ -71455,7 +71532,7 @@
 	</item>
 	<item id="55162" article="a" name="kenpachi's bloodthirst">
 		<attribute key="weight" value="930" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentPhysical" value="16" />
 		<attribute key="absorbPercentDeath" value="12" />
@@ -71464,7 +71541,7 @@
 	</item>
 	<item id="55163" article="a" name="jiraiya's sage toad ward">
 		<attribute key="weight" value="810" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="19" />
 		<attribute key="absorbPercentPoison" value="18" />
 		<attribute key="magiclevelpoints" value="3" />
@@ -71473,7 +71550,7 @@
 	</item>
 	<item id="55164" article="a" name="rock lee's burning gates">
 		<attribute key="weight" value="780" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="speed" value="22" />
@@ -71482,7 +71559,7 @@
 	</item>
 	<item id="55165" article="a" name="grimjow's panther king">
 		<attribute key="weight" value="850" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="21" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="elementDeath" value="11" />
@@ -71491,7 +71568,7 @@
 	</item>
 	<item id="55166" article="a" name="zangetsu's hollow power">
 		<attribute key="weight" value="820" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentDeath" value="18" />
 		<attribute key="absorbPercentPhysical" value="13" />
@@ -71500,7 +71577,7 @@
 	</item>
 	<item id="55167" article="a" name="akatsuki's moon eye plan">
 		<attribute key="weight" value="790" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="20" />
 		<attribute key="absorbPercentPhysical" value="11" />
 		<attribute key="suppressCurse" value="1" />
@@ -71509,7 +71586,7 @@
 	</item>
 	<item id="55168" article="a" name="demon king's chaos shield">
 		<attribute key="weight" value="910" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="absorbPercentFire" value="14" />
@@ -71518,7 +71595,7 @@
 	</item>
 	<item id="55169" article="a" name="shadow monarch's authority">
 		<attribute key="weight" value="960" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="27" />
 		<attribute key="absorbPercentDeath" value="24" />
 		<attribute key="preventLoss" value="1" />
@@ -71527,7 +71604,7 @@
 	</item>
 	<item id="55170" article="a" name="goku's mastered ultra instinct">
 		<attribute key="weight" value="870" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="26" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="absorbPercentHoly" value="13" />
@@ -71537,7 +71614,7 @@
 	</item>
 	<item id="55171" article="a" name="yhwach's final almighty">
 		<attribute key="weight" value="990" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="29" />
 		<attribute key="absorbPercentAll" value="15" />
 		<attribute key="magiclevelpoints" value="5" />
@@ -71547,7 +71624,7 @@
 	</item>
 	<item id="55172" article="a" name="goku's divine ultra instinct">
 		<attribute key="weight" value="880" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="25" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="absorbPercentHoly" value="13" />
@@ -71557,7 +71634,7 @@
 	</item>
 	<item id="55173" article="a" name="vegeta's royal saiyan crest">
 		<attribute key="weight" value="920" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="elementFire" value="12" />
@@ -71566,7 +71643,7 @@
 	</item>
 	<item id="55174" article="a" name="ichigo's final zangetsu">
 		<attribute key="weight" value="850" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="26" />
 		<attribute key="absorbPercentDeath" value="19" />
 		<attribute key="absorbPercentPhysical" value="13" />
@@ -71575,7 +71652,7 @@
 	</item>
 	<item id="55175" article="a" name="naruto's sage of six paths">
 		<attribute key="weight" value="890" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="25" />
 		<attribute key="absorbPercentAll" value="10" />
 		<attribute key="magiclevelpoints" value="4" />
@@ -71584,7 +71661,7 @@
 	</item>
 	<item id="55176" article="a" name="aizen's hogyoku perfection">
 		<attribute key="weight" value="780" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentPhysical" value="12" />
 		<attribute key="suppressDazzle" value="1" />
@@ -71593,7 +71670,7 @@
 	</item>
 	<item id="55177" article="a" name="madara's eternal susanoo">
 		<attribute key="weight" value="1060" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="28" />
 		<attribute key="absorbPercentAll" value="12" />
 		<attribute key="magiclevelpoints" value="4" />
@@ -71602,7 +71679,7 @@
 	</item>
 	<item id="55178" article="a" name="beerus's hakai essence">
 		<attribute key="weight" value="950" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="26" />
 		<attribute key="absorbPercentAll" value="13" />
 		<attribute key="elementDeath" value="17" />
@@ -71611,7 +71688,7 @@
 	</item>
 	<item id="55179" article="a" name="sung jin-woo's eternal shadow">
 		<attribute key="weight" value="910" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="27" />
 		<attribute key="absorbPercentDeath" value="24" />
 		<attribute key="preventLoss" value="1" />
@@ -71619,7 +71696,7 @@
 	</item>
 	<item id="55180" article="a" name="meliodas's full counter barrier">
 		<attribute key="weight" value="930" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="25" />
 		<attribute key="absorbPercentPhysical" value="16" />
 		<attribute key="absorbPercentFire" value="14" />
@@ -71628,7 +71705,7 @@
 	</item>
 	<item id="55181" article="a" name="yhwach's almighty core">
 		<attribute key="weight" value="990" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="29" />
 		<attribute key="absorbPercentAll" value="15" />
 		<attribute key="preventLoss" value="1" />
@@ -71637,7 +71714,7 @@
 	</item>
 	<item id="55182" article="a" name="gojo's infinite void">
 		<attribute key="weight" value="770" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentPhysical" value="13" />
 		<attribute key="absorbPercentEnergy" value="21" />
@@ -71646,7 +71723,7 @@
 	</item>
 	<item id="55183" article="a" name="sasuke's rinnegan authority">
 		<attribute key="weight" value="830" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="24" />
 		<attribute key="absorbPercentEnergy" value="19" />
 		<attribute key="absorbPercentDeath" value="15" />
@@ -71655,7 +71732,7 @@
 	</item>
 	<item id="55184" article="a" name="gogeta's legendary fusion">
 		<attribute key="weight" value="900" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="26" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="absorbPercentHoly" value="14" />
@@ -71664,7 +71741,7 @@
 	</item>
 	<item id="55185" article="a" name="itachi's susanoo armor">
 		<attribute key="weight" value="810" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="22" />
 		<attribute key="absorbPercentPhysical" value="12" />
 		<attribute key="suppressCurse" value="1" />
@@ -71673,7 +71750,7 @@
 	</item>
 	<item id="55186" article="a" name="yamamoto's bankai flame">
 		<attribute key="weight" value="970" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="25" />
 		<attribute key="absorbPercentFire" value="29" />
 		<attribute key="elementFire" value="16" />
@@ -71682,14 +71759,14 @@
 	</item>
 	<item id="55187" article="an" name="iron shortsword">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="35" />
 		<attribute key="defense" value="20" />
 		<attribute key="skillSword" value="1" />
 	</item>
 	<item id="55188" article="a" name="crimson demon blade">
 		<attribute key="weight" value="45.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="55" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementFire" value="15" />
@@ -71699,7 +71776,7 @@
 	</item>
 	<item id="55189" article="a" name="cursed eye sword">
 		<attribute key="weight" value="48.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="60" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementDeath" value="10" />
@@ -71709,7 +71786,7 @@
 	</item>
 	<item id="55190" article="a" name="void edge">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="65" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementEnergy" value="20" />
@@ -71740,7 +71817,7 @@
 	</item>
 	<item id="55193" article="a" name="plasma blade">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="70" />
 		<attribute key="defense" value="10" />
 		<attribute key="elementEnergy" value="40" />
@@ -71763,16 +71840,16 @@
 	</item>
 	<item id="55195" article="a" name="heavy hand cannon">
 		<attribute key="weight" value="120.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="80" />
 		<attribute key="hitChance" value="90" />
-		<attribute key="skillDistance" value="5" />
+		<attribute key="skilldist" value="5" />
 		<attribute key="description"
 			value="A massive firearm capable of blasting through reinforced gates. Recoil is incredibly high." />
 	</item>
 	<item id="55196" article="a" name="homing missile">
 		<attribute key="weight" value="10.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="100" />
 		<attribute key="elementFire" value="50" />
 		<attribute key="hitChance" value="100" />
@@ -71781,27 +71858,27 @@
 	</item>
 	<item id="55197" article="a" name="magitech sniper rifle">
 		<attribute key="weight" value="65.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="90" />
 		<attribute key="hitChance" value="100" />
-		<attribute key="skillDistance" value="8" />
+		<attribute key="skilldist" value="8" />
 		<attribute key="elementDeath" value="15" />
 		<attribute key="description"
 			value="A precision rifle enhanced with magical circuits. One shot is usually all it takes." />
 	</item>
 	<item id="55198" article="an" name="alien raygun">
 		<attribute key="weight" value="20.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="75" />
 		<attribute key="hitChance" value="95" />
 		<attribute key="elementEnergy" value="45" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 		<attribute key="description"
 			value="An otherworldly pistol that shoots concentrated beams of plasma. It hums with foreign technology." />
 	</item>
 	<item id="55199" article="a" name="crimson piercing blade">
 		<attribute key="weight" value="55.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="72" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementFire" value="20" />
@@ -71809,7 +71886,7 @@
 	</item>
 	<item id="55200" article="a" name="dragon bone dagger">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="68" />
 		<attribute key="defense" value="15" />
 		<attribute key="skillSword" value="5" />
@@ -71819,7 +71896,7 @@
 	</item>
 	<item id="55201" article="a" name="holy knight's sword">
 		<attribute key="weight" value="50.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="85" />
 		<attribute key="defense" value="45" />
 		<attribute key="elementHoly" value="30" />
@@ -71840,7 +71917,7 @@
 	</item>
 	<item id="55203" article="a" name="sakura chakram blade">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="65" />
 		<attribute key="defense" value="25" />
 		<attribute key="skillSword" value="4" />
@@ -71849,7 +71926,7 @@
 	</item>
 	<item id="55204" article="a" name="blood manipulation blade">
 		<attribute key="weight" value="40.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="78" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementDeath" value="20" />
@@ -71861,17 +71938,17 @@
 	</item>
 	<item id="55205" article="a" name="spirit archer bow">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="88" />
 		<attribute key="hitChance" value="95" />
-		<attribute key="skillDistance" value="7" />
+		<attribute key="skilldist" value="7" />
 		<attribute key="elementHoly" value="25" />
 		<attribute key="description"
 			value="A bow crafted from pure reishi. Its arrows pierce through hollow souls with ease." />
 	</item>
 	<item id="55206" article="a" name="venomous chain sword">
 		<attribute key="weight" value="60.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementPoison" value="30" />
@@ -71882,10 +71959,10 @@
 	</item>
 	<item id="55207" article="a" name="thunder god's bow">
 		<attribute key="weight" value="35.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="95" />
 		<attribute key="hitChance" value="90" />
-		<attribute key="skillDistance" value="9" />
+		<attribute key="skilldist" value="9" />
 		<attribute key="elementEnergy" value="40" />
 		<attribute key="speed" value="25" />
 		<attribute key="description"
@@ -71904,7 +71981,7 @@
 	</item>
 	<item id="55209" article="a" name="shadow monarch's dagger">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="110" />
 		<attribute key="defense" value="40" />
 		<attribute key="elementDeath" value="45" />
@@ -71928,7 +72005,7 @@
 	</item>
 	<item id="55211" article="a" name="black lightning katana">
 		<attribute key="weight" value="38.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="92" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementEnergy" value="30" />
@@ -71940,7 +72017,7 @@
 	</item>
 	<item id="55212" article="a" name="crimson crescent blade">
 		<attribute key="weight" value="45.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="75" />
 		<attribute key="defense" value="28" />
 		<attribute key="elementDeath" value="10" />
@@ -71948,7 +72025,7 @@
 	</item>
 	<item id="55213" article="a" name="mystic pink staff">
 		<attribute key="weight" value="22.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="45" />
 		<attribute key="defense" value="20" />
 		<attribute key="magiclevelpoints" value="4" />
@@ -71973,7 +72050,7 @@
 	</item>
 	<item id="55215" article="a" name="golden skull mace">
 		<attribute key="weight" value="80.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementHoly" value="15" />
@@ -71995,7 +72072,7 @@
 	</item>
 	<item id="55217" article="a" name="flesh devouring sword">
 		<attribute key="weight" value="55.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="88" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementDeath" value="30" />
@@ -72042,7 +72119,7 @@
 	</item>
 	<item id="55221" article="a" name="silver assassin dagger">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="55" />
 		<attribute key="defense" value="15" />
 		<attribute key="skillSword" value="2" />
@@ -72050,7 +72127,7 @@
 	</item>
 	<item id="55222" article="a" name="heavenly black katana">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="105" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementDeath" value="30" />
@@ -72061,7 +72138,7 @@
 	</item>
 	<item id="55223" article="a" name="venomous chain kama">
 		<attribute key="weight" value="35.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="68" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementPoison" value="25" />
@@ -72080,7 +72157,7 @@
 	</item>
 	<item id="55225" article="a" name="holy king's blade">
 		<attribute key="weight" value="60.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="88" />
 		<attribute key="defense" value="45" />
 		<attribute key="elementHoly" value="30" />
@@ -72101,7 +72178,7 @@
 	</item>
 	<item id="55227" article="a" name="blood reaper claw">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="78" />
 		<attribute key="defense" value="15" />
 		<attribute key="elementDeath" value="15" />
@@ -72111,7 +72188,7 @@
 	</item>
 	<item id="55228" article="a" name="cyber ninja sword">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementEnergy" value="20" />
@@ -72131,7 +72208,7 @@
 	</item>
 	<item id="55230" article="a" name="shadow slim blade">
 		<attribute key="weight" value="20.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="70" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementDeath" value="15" />
@@ -72150,7 +72227,7 @@
 	</item>
 	<item id="55232" article="a" name="wind rapier">
 		<attribute key="weight" value="22.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="65" />
 		<attribute key="defense" value="30" />
 		<attribute key="skillSword" value="3" />
@@ -72158,7 +72235,7 @@
 	</item>
 	<item id="55233" article="an" name="emerald energy sword">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="88" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementEnergy" value="30" />
@@ -72167,14 +72244,14 @@
 	</item>
 	<item id="55234" article="a" name="ronin katana">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="50" />
 		<attribute key="defense" value="20" />
 		<attribute key="skillSword" value="2" />
 	</item>
 	<item id="55235" article="a" name="spiritual needle">
 		<attribute key="weight" value="5.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="40" />
 		<attribute key="defense" value="10" />
 		<attribute key="elementHoly" value="25" />
@@ -72184,7 +72261,7 @@
 	</item>
 	<item id="55236" article="a" name="shinobi sai">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="45" />
 		<attribute key="defense" value="35" />
 		<attribute key="skillSword" value="2" />
@@ -72192,7 +72269,7 @@
 	</item>
 	<item id="55237" article="a" name="frozen dragon katana">
 		<attribute key="weight" value="38.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="95" />
 		<attribute key="defense" value="40" />
 		<attribute key="elementIce" value="45" />
@@ -72204,7 +72281,7 @@
 	</item>
 	<item id="55238" article="an" name="oceanic chain blade">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="76" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementIce" value="20" />
@@ -72212,7 +72289,7 @@
 	</item>
 	<item id="55239" article="a" name="cherry blossom blade">
 		<attribute key="weight" value="28.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="80" />
 		<attribute key="defense" value="22" />
 		<attribute key="elementEnergy" value="25" />
@@ -72220,7 +72297,7 @@
 	</item>
 	<item id="55240" article="a" name="white tiger claw">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="65" />
 		<attribute key="defense" value="15" />
 		<attribute key="skillFist" value="6" />
@@ -72228,7 +72305,7 @@
 	</item>
 	<item id="55241" article="a" name="dual shadow blades">
 		<attribute key="weight" value="45.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="100" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementDeath" value="35" />
@@ -72239,7 +72316,7 @@
 	</item>
 	<item id="55242" article="a" name="demonic aura sword">
 		<attribute key="weight" value="65.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="90" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementDeath" value="25" />
@@ -72263,7 +72340,7 @@
 	</item>
 	<item id="55245" article="a" name="pink mana staff">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="30" />
 		<attribute key="defense" value="20" />
 		<attribute key="magiclevelpoints" value="5" />
@@ -72273,7 +72350,7 @@
 	</item>
 	<item id="55246" article="an" name="anbu ninjato">
 		<attribute key="weight" value="24.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="60" />
 		<attribute key="defense" value="25" />
 		<attribute key="skillSword" value="5" />
@@ -72292,7 +72369,7 @@
 	</item>
 	<item id="55248" article="a" name="monarch's azure dagger">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="105" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementEnergy" value="35" />
@@ -72304,7 +72381,7 @@
 	</item>
 	<item id="55249" article="a" name="monarch's crimson dagger">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="105" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementFire" value="25" />
@@ -72317,14 +72394,14 @@
 	</item>
 	<item id="55250" article="a" name="dragon bone shortsword">
 		<attribute key="weight" value="22.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="75" />
 		<attribute key="defense" value="20" />
 		<attribute key="skillSword" value="4" />
 	</item>
 	<item id="55251" article="a" name="venomous fang dagger">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="60" />
 		<attribute key="defense" value="15" />
 		<attribute key="elementPoison" value="25" />
@@ -72334,7 +72411,7 @@
 	</item>
 	<item id="55252" article="a" name="crimson aura mace">
 		<attribute key="weight" value="65.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="75" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementFire" value="20" />
@@ -72342,7 +72419,7 @@
 	</item>
 	<item id="55253" article="a" name="holy aura mace">
 		<attribute key="weight" value="65.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="72" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementHoly" value="20" />
@@ -72350,7 +72427,7 @@
 	</item>
 	<item id="55254" article="a" name="toxic aura mace">
 		<attribute key="weight" value="65.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="70" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementPoison" value="25" />
@@ -72358,7 +72435,7 @@
 	</item>
 	<item id="55255" article="a" name="sapphire studded blade">
 		<attribute key="weight" value="45.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="80" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementIce" value="25" />
@@ -72366,7 +72443,7 @@
 	</item>
 	<item id="55256" article="a" name="ruby studded blade">
 		<attribute key="weight" value="45.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementFire" value="25" />
@@ -72374,7 +72451,7 @@
 	</item>
 	<item id="55257" article="a" name="topaz studded blade">
 		<attribute key="weight" value="45.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="78" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementHoly" value="20" />
@@ -72382,7 +72459,7 @@
 	</item>
 	<item id="55258" article="an" name="emerald studded blade">
 		<attribute key="weight" value="45.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="75" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementPoison" value="30" />
@@ -72390,7 +72467,7 @@
 	</item>
 	<item id="55259" article="a" name="scattered blossom blade">
 		<attribute key="weight" value="40.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="105" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementEnergy" value="35" />
@@ -72401,7 +72478,7 @@
 	</item>
 	<item id="55260" article="a" name="blood sickle claw">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="72" />
 		<attribute key="defense" value="15" />
 		<attribute key="elementDeath" value="15" />
@@ -72420,7 +72497,7 @@
 	</item>
 	<item id="55262" article="a" name="purified soul katana">
 		<attribute key="weight" value="35.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="65" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementHoly" value="15" />
@@ -72428,7 +72505,7 @@
 	</item>
 	<item id="55263" article="a" name="starlight chain katana">
 		<attribute key="weight" value="38.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="74" />
 		<attribute key="defense" value="28" />
 		<attribute key="skillSword" value="5" />
@@ -72436,7 +72513,7 @@
 	</item>
 	<item id="55264" article="a" name="holy light rapier">
 		<attribute key="weight" value="28.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementHoly" value="25" />
@@ -72444,7 +72521,7 @@
 	</item>
 	<item id="55265" article="a" name="ronin's blood katana">
 		<attribute key="weight" value="35.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="78" />
 		<attribute key="defense" value="25" />
 		<attribute key="skillSword" value="5" />
@@ -72452,7 +72529,7 @@
 	</item>
 	<item id="55266" article="an" name="azure energy sword">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="90" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementEnergy" value="40" />
@@ -72462,24 +72539,24 @@
 	</item>
 	<item id="55267" article="a" name="jade hook sword">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="62" />
 		<attribute key="defense" value="35" />
 		<attribute key="skillSword" value="4" />
 	</item>
 	<item id="55268" article="a" name="spirit archer's bow">
 		<attribute key="weight" value="20.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="110" />
 		<attribute key="hitChance" value="100" />
-		<attribute key="skillDistance" value="9" />
+		<attribute key="skilldist" value="9" />
 		<attribute key="elementHoly" value="45" />
 		<attribute key="description"
 			value="A bow forged purely from reishi particles. It fires arrows of divine light that eradicate hollow souls instantly." />
 	</item>
 	<item id="55269" article="a" name="frozen lotus shuriken">
 		<attribute key="weight" value="8.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="95" />
 		<attribute key="hitChance" value="95" />
 		<attribute key="elementIce" value="50" />
@@ -72489,7 +72566,7 @@
 	</item>
 	<item id="55270" article="a" name="cursed shadow blade">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="85" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementDeath" value="25" />
@@ -72497,7 +72574,7 @@
 	</item>
 	<item id="55271" article="a" name="hollow bone scythe">
 		<attribute key="weight" value="55.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="100" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementDeath" value="40" />
@@ -72508,10 +72585,10 @@
 	</item>
 	<item id="55272" article="a" name="cherry blossom storm">
 		<attribute key="weight" value="5.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="120" />
 		<attribute key="hitChance" value="100" />
-		<attribute key="skillDistance" value="10" />
+		<attribute key="skilldist" value="10" />
 		<attribute key="elementEnergy" value="50" />
 		<attribute key="description"
 			value="Millions of microscopic blades swirling violently. They shred through armor and flesh like a storm of falling petals." />
@@ -72548,7 +72625,7 @@
 	</item>
 	<item id="55276" article="a" name="maiden's sun axe">
 		<attribute key="weight" value="300.0" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="130" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementFire" value="60" />
@@ -72560,14 +72637,14 @@
 	</item>
 	<item id="55277" article="a" name="silver needle blade">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="68" />
 		<attribute key="defense" value="30" />
 		<attribute key="skillSword" value="4" />
 	</item>
 	<item id="55278" article="an" name="emerald gale sword">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="86" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementPoison" value="35" />
@@ -72575,14 +72652,14 @@
 	</item>
 	<item id="55279" article="an" name="iron katana">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="50" />
 		<attribute key="defense" value="20" />
 		<attribute key="skillSword" value="2" />
 	</item>
 	<item id="55280" article="an" name="amethyst rapier">
 		<attribute key="weight" value="24.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="72" />
 		<attribute key="defense" value="28" />
 		<attribute key="elementDeath" value="15" />
@@ -72590,7 +72667,7 @@
 	</item>
 	<item id="55281" article="a" name="silver trident blade">
 		<attribute key="weight" value="38.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="80" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementIce" value="20" />
@@ -72598,7 +72675,7 @@
 	</item>
 	<item id="55282" article="a" name="pale moon katana">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="94" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementHoly" value="30" />
@@ -72609,7 +72686,7 @@
 	</item>
 	<item id="55283" article="a" name="frozen chain katana">
 		<attribute key="weight" value="36.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="88" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementIce" value="35" />
@@ -72620,7 +72697,7 @@
 	</item>
 	<item id="55284" article="a" name="twin hellfire blades">
 		<attribute key="weight" value="55.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="105" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementFire" value="40" />
@@ -72632,7 +72709,7 @@
 	</item>
 	<item id="55285" article="a" name="cursed flame katana">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="98" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementFire" value="30" />
@@ -72645,14 +72722,14 @@
 	</item>
 	<item id="55286" article="a" name="mercenary's broadsword">
 		<attribute key="weight" value="65.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="60" />
 		<attribute key="defense" value="35" />
 		<attribute key="skillSword" value="3" />
 	</item>
 	<item id="55287" article="a" name="ronin's swift katana">
 		<attribute key="weight" value="28.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="72" />
 		<attribute key="defense" value="22" />
 		<attribute key="skillSword" value="5" />
@@ -72660,7 +72737,7 @@
 	</item>
 	<item id="55288" article="a" name="cherry blossom staff">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="45" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementEnergy" value="25" />
@@ -72671,7 +72748,7 @@
 	</item>
 	<item id="55289" article="a" name="royal guard katana">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="78" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementHoly" value="15" />
@@ -72689,7 +72766,7 @@
 	</item>
 	<item id="55291" article="a" name="holy knight's longsword">
 		<attribute key="weight" value="45.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="40" />
 		<attribute key="elementHoly" value="25" />
@@ -72697,7 +72774,7 @@
 	</item>
 	<item id="55292" article="a" name="gale spirit bokken">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="68" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementPoison" value="20" />
@@ -72708,7 +72785,7 @@
 	</item>
 	<item id="55293" article="a" name="druid's wooden club">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="55" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementPoison" value="15" />
@@ -72717,7 +72794,7 @@
 	</item>
 	<item id="55294" article="a" name="solar flare blade">
 		<attribute key="weight" value="48.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="115" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementFire" value="50" />
@@ -72729,7 +72806,7 @@
 	</item>
 	<item id="55295" article="a" name="glacier spike sword">
 		<attribute key="weight" value="52.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="86" />
 		<attribute key="defense" value="28" />
 		<attribute key="elementIce" value="30" />
@@ -72737,7 +72814,7 @@
 	</item>
 	<item id="55296" article="a" name="blood harvester kama">
 		<attribute key="weight" value="22.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="74" />
 		<attribute key="defense" value="15" />
 		<attribute key="elementDeath" value="25" />
@@ -72747,7 +72824,7 @@
 	</item>
 	<item id="55297" article="a" name="necromancer's skull staff">
 		<attribute key="weight" value="35.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="50" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementDeath" value="35" />
@@ -72756,7 +72833,7 @@
 	</item>
 	<item id="55298" article="an" name="amethyst energy blade">
 		<attribute key="weight" value="38.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="80" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementEnergy" value="25" />
@@ -72779,11 +72856,11 @@
 	</item>
 	<item id="55301" article="a" name="shadow longbow">
 		<attribute key="weight" value="28.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="85" />
 		<attribute key="hitChance" value="90" />
 		<attribute key="elementDeath" value="20" />
-		<attribute key="skillDistance" value="7" />
+		<attribute key="skilldist" value="7" />
 	</item>
 	<item id="55302" article="a" name="monk's golden shakujo">
 		<attribute key="weight" value="55.0" />
@@ -72796,7 +72873,7 @@
 	</item>
 	<item id="55303" article="a" name="divine monarch's scepter">
 		<attribute key="weight" value="40.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="65" />
 		<attribute key="defense" value="45" />
 		<attribute key="elementHoly" value="45" />
@@ -72820,7 +72897,7 @@
 	</item>
 	<item id="55305" article="a" name="steel battle claws">
 		<attribute key="weight" value="12.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="70" />
 		<attribute key="defense" value="15" />
 		<attribute key="skillFist" value="6" />
@@ -72828,7 +72905,7 @@
 	</item>
 	<item id="55306" article="a" name="silver crescent chakram">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="65" />
 		<attribute key="defense" value="20" />
 		<attribute key="skillSword" value="4" />
@@ -72836,16 +72913,16 @@
 	</item>
 	<item id="55307" article="a" name="shinobi's shadow kunai">
 		<attribute key="weight" value="5.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="80" />
 		<attribute key="hitChance" value="95" />
 		<attribute key="elementDeath" value="15" />
-		<attribute key="skillDistance" value="5" />
+		<attribute key="skilldist" value="5" />
 		<attribute key="speed" value="20" />
 	</item>
 	<item id="55308" article="a" name="beast drill fist">
 		<attribute key="weight" value="45.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="88" />
 		<attribute key="defense" value="10" />
 		<attribute key="skillFist" value="8" />
@@ -72855,7 +72932,7 @@
 	</item>
 	<item id="55309" article="a" name="chef's wooden ladle">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="25" />
 		<attribute key="defense" value="15" />
 		<attribute key="healthGain" value="50" />
@@ -72863,7 +72940,7 @@
 	</item>
 	<item id="55310" article="a" name="golden harvest corn">
 		<attribute key="weight" value="10.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="15" />
 		<attribute key="defense" value="10" />
 		<attribute key="healthGain" value="100" />
@@ -72873,11 +72950,11 @@
 	</item>
 	<item id="55311" article="an" name="obsidian razor feather">
 		<attribute key="weight" value="2.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="92" />
 		<attribute key="hitChance" value="100" />
 		<attribute key="elementDeath" value="20" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 	</item>
 	<item id="55312" article="a" name="crimson moon naginata">
 		<attribute key="weight" value="65.0" />
@@ -72909,7 +72986,7 @@
 	</item>
 	<item id="55315" article="a" name="demonic blood sword">
 		<attribute key="weight" value="48.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="95" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementDeath" value="25" />
@@ -72988,11 +73065,11 @@
 	</item>
 	<item id="55323" article="a" name="shadow ninja bow">
 		<attribute key="weight" value="28.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="82" />
 		<attribute key="hitChance" value="95" />
 		<attribute key="elementDeath" value="15" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 		<attribute key="speed" value="15" />
 	</item>
 	<item id="55324" article="a" name="black cross sword">
@@ -73008,7 +73085,7 @@
 	</item>
 	<item id="55325" article="a" name="lightning ringed staff">
 		<attribute key="weight" value="40.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="70" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementEnergy" value="30" />
@@ -73016,14 +73093,14 @@
 	</item>
 	<item id="55326" article="a" name="giant fuma shuriken">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="75" />
 		<attribute key="hitChance" value="90" />
-		<attribute key="skillDistance" value="4" />
+		<attribute key="skilldist" value="4" />
 	</item>
 	<item id="55327" article="a" name="vampiric bat sword">
 		<attribute key="weight" value="35.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="68" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementDeath" value="15" />
@@ -73032,7 +73109,7 @@
 	</item>
 	<item id="55328" article="a" name="flaming demon gauntlets">
 		<attribute key="weight" value="22.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="98" />
 		<attribute key="defense" value="15" />
 		<attribute key="elementFire" value="45" />
@@ -73043,22 +73120,22 @@
 	</item>
 	<item id="55329" article="a" name="quincy spirit bow">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="105" />
 		<attribute key="hitChance" value="100" />
 		<attribute key="elementHoly" value="40" />
-		<attribute key="skillDistance" value="8" />
+		<attribute key="skilldist" value="8" />
 		<attribute key="magiclevelpoints" value="3" />
 		<attribute key="description"
 			value="A pure blue bow materialized from condensed reishi in the atmosphere." />
 	</item>
 	<item id="55330" article="a" name="shadow fuma shuriken">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="95" />
 		<attribute key="hitChance" value="100" />
 		<attribute key="elementDeath" value="30" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 	</item>
 	<item id="55331" article="a" name="desert war fan">
 		<attribute key="weight" value="65.0" />
@@ -73080,7 +73157,7 @@
 	</item>
 	<item id="55333" article="a" name="sun god's divine axe">
 		<attribute key="weight" value="300.0" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="135" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementFire" value="55" />
@@ -73092,7 +73169,7 @@
 	</item>
 	<item id="55334" article="an" name="aquatic crystal sword">
 		<attribute key="weight" value="38.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementIce" value="25" />
@@ -73100,7 +73177,7 @@
 	</item>
 	<item id="55335" article="a" name="frostbite dagger">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="64" />
 		<attribute key="defense" value="15" />
 		<attribute key="elementIce" value="20" />
@@ -73108,12 +73185,12 @@
 	</item>
 	<item id="55336" article="a" name="void energy bow">
 		<attribute key="weight" value="26.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="115" />
 		<attribute key="hitChance" value="100" />
 		<attribute key="elementDeath" value="45" />
 		<attribute key="elementEnergy" value="20" />
-		<attribute key="skillDistance" value="9" />
+		<attribute key="skilldist" value="9" />
 		<attribute key="description"
 			value="A bow sculpted from the dark matter of the cosmos. Its arrows tear holes through dimensions." />
 	</item>
@@ -73131,7 +73208,7 @@
 	</item>
 	<item id="55338" article="an" name="inferno fire blade">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="105" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementFire" value="45" />
@@ -73140,7 +73217,7 @@
 	</item>
 	<item id="55339" article="a" name="dual steel katanas">
 		<attribute key="weight" value="50.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="80" />
 		<attribute key="defense" value="25" />
 		<attribute key="skillSword" value="5" />
@@ -73148,7 +73225,7 @@
 	</item>
 	<item id="55340" article="an" name="iron chain mace">
 		<attribute key="weight" value="55.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="65" />
 		<attribute key="defense" value="20" />
 		<attribute key="skillClub" value="3" />
@@ -73162,7 +73239,7 @@
 	</item>
 	<item id="55342" article="a" name="dragon magic blade">
 		<attribute key="weight" value="48.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="108" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementEnergy" value="35" />
@@ -73194,7 +73271,7 @@
 	</item>
 	<item id="55345" article="a" name="cursed blood edge">
 		<attribute key="weight" value="52.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="96" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementDeath" value="35" />
@@ -73204,7 +73281,7 @@
 	</item>
 	<item id="55346" article="a" name="celestial star blade">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="120" />
 		<attribute key="defense" value="45" />
 		<attribute key="elementHoly" value="45" />
@@ -73264,7 +73341,7 @@
 	</item>
 	<item id="55351" article="a" name="monarch's shadow blade">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="110" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementDeath" value="45" />
@@ -73276,7 +73353,7 @@
 	</item>
 	<item id="55352" article="a" name="monarch's inferno blade">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="108" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementFire" value="45" />
@@ -73285,7 +73362,7 @@
 	</item>
 	<item id="55353" article="a" name="monarch's frost blade">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="106" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementIce" value="45" />
@@ -73302,7 +73379,7 @@
 	</item>
 	<item id="55355" article="an" name="amethyst phantom blade">
 		<attribute key="weight" value="28.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="92" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementDeath" value="35" />
@@ -73311,7 +73388,7 @@
 	</item>
 	<item id="55356" article="a" name="thunder god's katana">
 		<attribute key="weight" value="35.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="125" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementEnergy" value="55" />
@@ -73323,7 +73400,7 @@
 	</item>
 	<item id="55357" article="an" name="elite shinobi katana">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="78" />
 		<attribute key="defense" value="25" />
 		<attribute key="skillSword" value="5" />
@@ -73339,7 +73416,7 @@
 	</item>
 	<item id="55359" article="a" name="hollow bone dagger">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="72" />
 		<attribute key="defense" value="15" />
 		<attribute key="elementDeath" value="20" />
@@ -73347,21 +73424,21 @@
 	</item>
 	<item id="55360" article="an" name="azure crystal blade">
 		<attribute key="weight" value="38.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="60" />
 		<attribute key="defense" value="28" />
 		<attribute key="skillSword" value="3" />
 	</item>
 	<item id="55361" article="a" name="dark assassin dagger">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="55" />
 		<attribute key="defense" value="12" />
 		<attribute key="skillSword" value="2" />
 	</item>
 	<item id="55362" article="a" name="sakura lightning sword">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="88" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementEnergy" value="30" />
@@ -73370,7 +73447,7 @@
 	</item>
 	<item id="55363" article="an" name="emerald guardian sword">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="65" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementPoison" value="15" />
@@ -73378,14 +73455,14 @@
 	</item>
 	<item id="55364" article="a" name="standard steel katana">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="45" />
 		<attribute key="defense" value="20" />
 		<attribute key="skillSword" value="1" />
 	</item>
 	<item id="55365" article="a" name="pure holy sword">
 		<attribute key="weight" value="40.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="70" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementHoly" value="20" />
@@ -73393,28 +73470,28 @@
 	</item>
 	<item id="55366" article="a" name="silver knight's sword">
 		<attribute key="weight" value="38.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="58" />
 		<attribute key="defense" value="25" />
 		<attribute key="skillSword" value="3" />
 	</item>
 	<item id="55367" article="a" name="bronze infantry sword">
 		<attribute key="weight" value="35.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="40" />
 		<attribute key="defense" value="18" />
 		<attribute key="skillSword" value="1" />
 	</item>
 	<item id="55368" article="a" name="golden royal sword">
 		<attribute key="weight" value="40.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="62" />
 		<attribute key="defense" value="26" />
 		<attribute key="skillSword" value="3" />
 	</item>
 	<item id="55369" article="an" name="abyssal crystal rapier">
 		<attribute key="weight" value="28.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="75" />
 		<attribute key="defense" value="22" />
 		<attribute key="elementDeath" value="15" />
@@ -73422,13 +73499,13 @@
 	</item>
 	<item id="55370" article="an" name="emerald novice sword">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="35" />
 		<attribute key="defense" value="15" />
 	</item>
 	<item id="55371" article="a" name="sapphire novice sword">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="38" />
 		<attribute key="defense" value="15" />
 	</item>
@@ -73442,7 +73519,7 @@
 	</item>
 	<item id="55373" article="a" name="frost spike rapier">
 		<attribute key="weight" value="26.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="70" />
 		<attribute key="defense" value="24" />
 		<attribute key="elementIce" value="15" />
@@ -73450,7 +73527,7 @@
 	</item>
 	<item id="55374" article="a" name="frozen wave cutlass">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="68" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementIce" value="10" />
@@ -73467,7 +73544,7 @@
 	</item>
 	<item id="55376" article="a" name="permafrost katana">
 		<attribute key="weight" value="34.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="28" />
 		<attribute key="elementIce" value="30" />
@@ -73475,7 +73552,7 @@
 	</item>
 	<item id="55377" article="an" name="absolute zero hammer">
 		<attribute key="weight" value="95.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="94" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementIce" value="40" />
@@ -73509,7 +73586,7 @@
 	</item>
 	<item id="55381" article="a" name="golden desert cleaver">
 		<attribute key="weight" value="60.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="78" />
 		<attribute key="defense" value="25" />
 		<attribute key="skillSword" value="4" />
@@ -73525,7 +73602,7 @@
 	</item>
 	<item id="55383" article="a" name="venomous phantom scimitar">
 		<attribute key="weight" value="35.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="28" />
 		<attribute key="elementPoison" value="30" />
@@ -73550,7 +73627,7 @@
 	</item>
 	<item id="55386" article="a" name="divine executioner's axe">
 		<attribute key="weight" value="95.0" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="94" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementHoly" value="20" />
@@ -73558,7 +73635,7 @@
 	</item>
 	<item id="55387" article="a" name="sun paladin's mace">
 		<attribute key="weight" value="65.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="80" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementHoly" value="25" />
@@ -73566,7 +73643,7 @@
 	</item>
 	<item id="55388" article="a" name="golden dawn hammer">
 		<attribute key="weight" value="110.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="92" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementHoly" value="15" />
@@ -73574,21 +73651,21 @@
 	</item>
 	<item id="55389" article="a" name="royal golden sword">
 		<attribute key="weight" value="45.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="70" />
 		<attribute key="defense" value="35" />
 		<attribute key="skillSword" value="5" />
 	</item>
 	<item id="55390" article="a" name="noble golden longsword">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="75" />
 		<attribute key="defense" value="30" />
 		<attribute key="skillSword" value="5" />
 	</item>
 	<item id="55391" article="a" name="sunlight rapier">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="68" />
 		<attribute key="defense" value="25" />
 		<attribute key="skillSword" value="6" />
@@ -73596,7 +73673,7 @@
 	</item>
 	<item id="55392" article="a" name="golden lotus katana">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="85" />
 		<attribute key="defense" value="22" />
 		<attribute key="elementHoly" value="20" />
@@ -73605,7 +73682,7 @@
 	</item>
 	<item id="55393" article="an" name="angelic golden blade">
 		<attribute key="weight" value="38.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="90" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementHoly" value="30" />
@@ -73613,14 +73690,14 @@
 	</item>
 	<item id="55394" article="a" name="golden lion broadsword">
 		<attribute key="weight" value="65.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="30" />
 		<attribute key="skillSword" value="5" />
 	</item>
 	<item id="55395" article="a" name="holy silver longsword">
 		<attribute key="weight" value="40.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="86" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementHoly" value="25" />
@@ -73628,7 +73705,7 @@
 	</item>
 	<item id="55396" article="a" name="golden minotaur axe">
 		<attribute key="weight" value="85.0" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="96" />
 		<attribute key="defense" value="24" />
 		<attribute key="skillAxe" value="7" />
@@ -73654,7 +73731,7 @@
 	</item>
 	<item id="55399" article="a" name="crimson demon axe">
 		<attribute key="weight" value="90.0" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="105" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementFire" value="30" />
@@ -73676,7 +73753,7 @@
 	</item>
 	<item id="55401" article="a" name="glacial energy blade">
 		<attribute key="weight" value="38.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="95" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementIce" value="40" />
@@ -73686,7 +73763,7 @@
 	</item>
 	<item id="55402" article="a" name="shadow monarch's fang">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="108" />
 		<attribute key="defense" value="28" />
 		<attribute key="elementDeath" value="45" />
@@ -73697,7 +73774,7 @@
 	</item>
 	<item id="55403" article="a" name="succubus battle axe">
 		<attribute key="weight" value="75.0" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="112" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementDeath" value="35" />
@@ -73708,7 +73785,7 @@
 	</item>
 	<item id="55404" article="a" name="soul king's guitar">
 		<attribute key="weight" value="28.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="85" />
 		<attribute key="defense" value="40" />
 		<attribute key="elementDeath" value="30" />
@@ -73731,7 +73808,7 @@
 	</item>
 	<item id="55406" article="an" name="amethyst phantom dagger">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="92" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementDeath" value="35" />
@@ -73740,7 +73817,7 @@
 	</item>
 	<item id="55407" article="a" name="starlight crystal cross">
 		<attribute key="weight" value="55.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="120" />
 		<attribute key="defense" value="40" />
 		<attribute key="elementIce" value="40" />
@@ -73787,7 +73864,7 @@
 	</item>
 	<item id="55411" article="a" name="sunfire cross blade">
 		<attribute key="weight" value="60.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="135" />
 		<attribute key="defense" value="45" />
 		<attribute key="elementFire" value="50" />
@@ -73800,7 +73877,7 @@
 	</item>
 	<item id="55412" article="an" name="elemental clash sword">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="95" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementFire" value="25" />
@@ -73809,7 +73886,7 @@
 	</item>
 	<item id="55413" article="a" name="demonic eye broadsword">
 		<attribute key="weight" value="55.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="92" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementDeath" value="30" />
@@ -73819,7 +73896,7 @@
 	</item>
 	<item id="55414" article="a" name="holy ice cross">
 		<attribute key="weight" value="48.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="128" />
 		<attribute key="defense" value="40" />
 		<attribute key="elementIce" value="45" />
@@ -73842,7 +73919,7 @@
 	</item>
 	<item id="55416" article="a" name="pink energy saber">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="80" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementEnergy" value="35" />
@@ -73851,7 +73928,7 @@
 	</item>
 	<item id="55417" article="a" name="magma core blade">
 		<attribute key="weight" value="50.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="88" />
 		<attribute key="defense" value="28" />
 		<attribute key="elementFire" value="40" />
@@ -73869,7 +73946,7 @@
 	</item>
 	<item id="55419" article="an" name="azure aura sword">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="60" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementEnergy" value="15" />
@@ -73877,7 +73954,7 @@
 	</item>
 	<item id="55420" article="an" name="azure aura sword (tier 1)">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="65" />
 		<attribute key="defense" value="26" />
 		<attribute key="elementEnergy" value="18" />
@@ -73885,7 +73962,7 @@
 	</item>
 	<item id="55421" article="an" name="azure aura sword (tier 2)">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="70" />
 		<attribute key="defense" value="27" />
 		<attribute key="elementEnergy" value="22" />
@@ -73893,7 +73970,7 @@
 	</item>
 	<item id="55422" article="an" name="azure aura sword (tier 3)">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="75" />
 		<attribute key="defense" value="28" />
 		<attribute key="elementEnergy" value="26" />
@@ -73901,7 +73978,7 @@
 	</item>
 	<item id="55423" article="an" name="azure aura sword (tier 4)">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementEnergy" value="30" />
@@ -73909,7 +73986,7 @@
 	</item>
 	<item id="55424" article="an" name="azure aura sword (tier 5)">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="90" />
 		<attribute key="defense" value="32" />
 		<attribute key="elementEnergy" value="35" />
@@ -73917,7 +73994,7 @@
 	</item>
 	<item id="55425" article="an" name="azure aura sword (awakened)">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="105" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementEnergy" value="45" />
@@ -73927,7 +74004,7 @@
 	</item>
 	<item id="55426" article="an" name="azure aura sword (transcendent)">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="120" />
 		<attribute key="defense" value="40" />
 		<attribute key="elementEnergy" value="55" />
@@ -73940,7 +74017,7 @@
 	</item>
 	<item id="55427" article="a" name="shadow aura sword">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="62" />
 		<attribute key="defense" value="24" />
 		<attribute key="elementDeath" value="15" />
@@ -73948,7 +74025,7 @@
 	</item>
 	<item id="55428" article="a" name="shadow aura sword (tier 1)">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="68" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementDeath" value="18" />
@@ -73956,7 +74033,7 @@
 	</item>
 	<item id="55429" article="a" name="shadow aura sword (tier 2)">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="74" />
 		<attribute key="defense" value="26" />
 		<attribute key="elementDeath" value="22" />
@@ -73964,7 +74041,7 @@
 	</item>
 	<item id="55430" article="a" name="shadow aura sword (tier 3)">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="80" />
 		<attribute key="defense" value="27" />
 		<attribute key="elementDeath" value="26" />
@@ -73972,7 +74049,7 @@
 	</item>
 	<item id="55431" article="a" name="shadow aura sword (tier 4)">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="88" />
 		<attribute key="defense" value="29" />
 		<attribute key="elementDeath" value="30" />
@@ -73980,7 +74057,7 @@
 	</item>
 	<item id="55432" article="a" name="shadow aura sword (tier 5)">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="96" />
 		<attribute key="defense" value="31" />
 		<attribute key="elementDeath" value="35" />
@@ -73988,7 +74065,7 @@
 	</item>
 	<item id="55433" article="a" name="shadow aura sword (awakened)">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="112" />
 		<attribute key="defense" value="34" />
 		<attribute key="elementDeath" value="45" />
@@ -73999,7 +74076,7 @@
 	</item>
 	<item id="55434" article="a" name="shadow aura sword (transcendent)">
 		<attribute key="weight" value="32.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="125" />
 		<attribute key="defense" value="38" />
 		<attribute key="elementDeath" value="55" />
@@ -74011,7 +74088,7 @@
 	</item>
 	<item id="55435" article="a" name="phantom bone sword">
 		<attribute key="weight" value="28.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="78" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementDeath" value="15" />
@@ -74020,7 +74097,7 @@
 	</item>
 	<item id="55436" article="a" name="black steel katana">
 		<attribute key="weight" value="35.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="50" />
 		<attribute key="defense" value="20" />
 		<attribute key="skillSword" value="2" />
@@ -74088,7 +74165,7 @@
 	</item>
 	<item id="55444" article="a" name="sunfire crusader sword">
 		<attribute key="weight" value="65.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="115" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementFire" value="45" />
@@ -74097,7 +74174,7 @@
 	</item>
 	<item id="55445" article="a" name="sunfire battleaxe">
 		<attribute key="weight" value="85.0" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="118" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementFire" value="45" />
@@ -74106,7 +74183,7 @@
 	</item>
 	<item id="55446" article="a" name="sunfire heavy mace">
 		<attribute key="weight" value="90.0" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="112" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementFire" value="40" />
@@ -74114,7 +74191,7 @@
 	</item>
 	<item id="55447" article="a" name="sunfire katana">
 		<attribute key="weight" value="42.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="108" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementFire" value="35" />
@@ -74123,7 +74200,7 @@
 	</item>
 	<item id="55448" article="a" name="sunfire hatchet">
 		<attribute key="weight" value="55.0" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="95" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementFire" value="25" />
@@ -74131,7 +74208,7 @@
 	</item>
 	<item id="55449" article="a" name="cybernetic energy axe">
 		<attribute key="weight" value="80.0" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="105" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementEnergy" value="35" />
@@ -74140,7 +74217,7 @@
 	</item>
 	<item id="55450" article="a" name="hollow bone gauntlet">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="75" />
 		<attribute key="defense" value="15" />
 		<attribute key="elementDeath" value="20" />
@@ -74149,7 +74226,7 @@
 	</item>
 	<item id="55451" article="a" name="demon lord gauntlet">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="95" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementFire" value="30" />
@@ -74158,7 +74235,7 @@
 	</item>
 	<item id="55452" article="a" name="spirit silver gauntlet">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="85" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementHoly" value="25" />
@@ -74166,7 +74243,7 @@
 	</item>
 	<item id="55453" article="a" name="monarch's azure gauntlet">
 		<attribute key="weight" value="20.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="105" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementEnergy" value="35" />
@@ -74175,7 +74252,7 @@
 	</item>
 	<item id="55454" article="a" name="crimson blood gauntlet">
 		<attribute key="weight" value="16.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="88" />
 		<attribute key="defense" value="15" />
 		<attribute key="elementDeath" value="25" />
@@ -74185,7 +74262,7 @@
 	</item>
 	<item id="55455" article="a" name="necromancer's skull gauntlet">
 		<attribute key="weight" value="22.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementDeath" value="30" />
@@ -74194,7 +74271,7 @@
 	</item>
 	<item id="55456" article="an" name="emerald dragon gauntlet">
 		<attribute key="weight" value="24.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="90" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementPoison" value="35" />
@@ -74202,7 +74279,7 @@
 	</item>
 	<item id="55457" article="a" name="holy paladin gauntlet">
 		<attribute key="weight" value="28.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="98" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementHoly" value="40" />
@@ -74211,7 +74288,7 @@
 	</item>
 	<item id="55458" article="an" name="abyssal scale gauntlet">
 		<attribute key="weight" value="26.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="94" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementIce" value="25" />
@@ -74220,7 +74297,7 @@
 	</item>
 	<item id="55459" article="a" name="royal mystic gauntlet">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="85" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementEnergy" value="20" />
@@ -74229,14 +74306,14 @@
 	</item>
 	<item id="55460" article="a" name="brawler's studded gauntlet">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="65" />
 		<attribute key="defense" value="15" />
 		<attribute key="skillFist" value="4" />
 	</item>
 	<item id="55461" article="a" name="glacial frost gauntlet">
 		<attribute key="weight" value="22.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="88" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementIce" value="35" />
@@ -74245,7 +74322,7 @@
 	</item>
 	<item id="55462" article="a" name="thunder god's gauntlet">
 		<attribute key="weight" value="20.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="102" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementEnergy" value="45" />
@@ -74254,7 +74331,7 @@
 	</item>
 	<item id="55463" article="a" name="fairy king's gauntlet">
 		<attribute key="weight" value="12.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="92" />
 		<attribute key="defense" value="15" />
 		<attribute key="elementPoison" value="25" />
@@ -74265,7 +74342,7 @@
 	</item>
 	<item id="55464" article="an" name="archangel's pure gauntlet">
 		<attribute key="weight" value="16.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="96" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementHoly" value="45" />
@@ -74274,7 +74351,7 @@
 	</item>
 	<item id="55465" article="an" name="incinerator mech gauntlet">
 		<attribute key="weight" value="35.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="110" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementFire" value="50" />
@@ -74283,7 +74360,7 @@
 	</item>
 	<item id="55466" article="an" name="archangel's divine gauntlet">
 		<attribute key="weight" value="16.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="115" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementHoly" value="55" />
@@ -74295,7 +74372,7 @@
 	</item>
 	<item id="55467" article="an" name="awakened abyssal gauntlet">
 		<attribute key="weight" value="26.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="112" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementIce" value="35" />
@@ -74305,7 +74382,7 @@
 	</item>
 	<item id="55468" article="an" name="awakened thunder gauntlet">
 		<attribute key="weight" value="20.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="118" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementEnergy" value="55" />
@@ -74315,7 +74392,7 @@
 	</item>
 	<item id="55469" article="an" name="awakened emerald gauntlet">
 		<attribute key="weight" value="24.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="108" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementPoison" value="45" />
@@ -74324,7 +74401,7 @@
 	</item>
 	<item id="55470" article="an" name="awakened mystic gauntlet">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="105" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementEnergy" value="30" />
@@ -74334,7 +74411,7 @@
 	</item>
 	<item id="55471" article="a" name="super saiyan aura fist">
 		<attribute key="weight" value="5.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="130" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementHoly" value="60" />
@@ -74346,7 +74423,7 @@
 	</item>
 	<item id="55472" article="a" name="cyber ninja claw">
 		<attribute key="weight" value="14.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="98" />
 		<attribute key="defense" value="15" />
 		<attribute key="elementEnergy" value="25" />
@@ -74355,14 +74432,14 @@
 	</item>
 	<item id="55473" article="a" name="heavy striker glove">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="75" />
 		<attribute key="defense" value="20" />
 		<attribute key="skillFist" value="5" />
 	</item>
 	<item id="55474" article="a" name="sonic striker glove">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="defense" value="15" />
 		<attribute key="elementEnergy" value="15" />
@@ -74371,7 +74448,7 @@
 	</item>
 	<item id="55475" article="a" name="dark shadow gauntlets">
 		<attribute key="weight" value="20.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="85" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementDeath" value="30" />
@@ -74379,7 +74456,7 @@
 	</item>
 	<item id="55476" article="a" name="crimson warrior gloves">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="90" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementFire" value="25" />
@@ -74387,7 +74464,7 @@
 	</item>
 	<item id="55477" article="a" name="inferno beast gauntlets">
 		<attribute key="weight" value="30.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="110" />
 		<attribute key="defense" value="25" />
 		<attribute key="elementFire" value="50" />
@@ -74398,7 +74475,7 @@
 	</item>
 	<item id="55478" article="a" name="void walker gauntlets">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="100" />
 		<attribute key="defense" value="30" />
 		<attribute key="elementDeath" value="40" />
@@ -74407,7 +74484,7 @@
 	</item>
 	<item id="55479" article="a" name="aurora celestial gloves">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="95" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementHoly" value="35" />
@@ -74416,7 +74493,7 @@
 	</item>
 	<item id="55480" article="a" name="frost guardian gauntlets">
 		<attribute key="weight" value="28.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="92" />
 		<attribute key="defense" value="40" />
 		<attribute key="elementIce" value="40" />
@@ -74425,7 +74502,7 @@
 	</item>
 	<item id="55481" article="a" name="solar titan gauntlets">
 		<attribute key="weight" value="35.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="115" />
 		<attribute key="defense" value="35" />
 		<attribute key="elementFire" value="45" />
@@ -74434,7 +74511,7 @@
 	</item>
 	<item id="55482" article="a" name="frost guardian gauntlets (awakened)">
 		<attribute key="weight" value="28.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="105" />
 		<attribute key="defense" value="45" />
 		<attribute key="elementIce" value="55" />
@@ -74445,7 +74522,7 @@
 	</item>
 	<item id="55483" article="a" name="necrotic skull claw">
 		<attribute key="weight" value="22.0" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="88" />
 		<attribute key="defense" value="20" />
 		<attribute key="elementDeath" value="35" />
@@ -74454,38 +74531,38 @@
 	</item>
 	<item id="55484" article="a" name="light spirit bow">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="70" />
 		<attribute key="hitChance" value="95" />
-		<attribute key="skillDistance" value="5" />
+		<attribute key="skilldist" value="5" />
 	</item>
 	<item id="55485" article="a" name="twin shadow pistols">
 		<attribute key="weight" value="12.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="85" />
 		<attribute key="hitChance" value="100" />
 		<attribute key="elementDeath" value="20" />
-		<attribute key="skillDistance" value="7" />
+		<attribute key="skilldist" value="7" />
 		<attribute key="description"
 			value="Dual-wielded pistols that fire concentrated bursts of shadow energy." />
 	</item>
 	<item id="55486" article="a" name="bone hunter bow">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="75" />
 		<attribute key="hitChance" value="90" />
 		<attribute key="elementDeath" value="15" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 	</item>
 	<item id="55487" article="an" name="energy arrow">
 		<attribute key="weight" value="1.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="50" />
 		<attribute key="elementEnergy" value="20" />
 	</item>
 	<item id="55488" article="an" name="triple energy arrow">
 		<attribute key="weight" value="1.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="70" />
 		<attribute key="elementEnergy" value="35" />
 		<attribute key="description"
@@ -74493,145 +74570,145 @@
 	</item>
 	<item id="55489" article="a" name="thorned wood bow">
 		<attribute key="weight" value="14.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="60" />
-		<attribute key="skillDistance" value="4" />
+		<attribute key="skilldist" value="4" />
 	</item>
 	<item id="55490" article="a" name="flexible willow bow">
 		<attribute key="weight" value="12.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="65" />
-		<attribute key="skillDistance" value="5" />
+		<attribute key="skilldist" value="5" />
 	</item>
 	<item id="55491" article="a" name="hardened oak bow">
 		<attribute key="weight" value="16.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="70" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 	</item>
 	<item id="55492" article="a" name="runic energy bow">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="85" />
 		<attribute key="elementEnergy" value="30" />
-		<attribute key="skillDistance" value="7" />
+		<attribute key="skilldist" value="7" />
 		<attribute key="magiclevelpoints" value="2" />
 	</item>
 	<item id="55493" article="a" name="blood demon bow">
 		<attribute key="weight" value="20.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="95" />
 		<attribute key="elementDeath" value="40" />
-		<attribute key="skillDistance" value="8" />
+		<attribute key="skilldist" value="8" />
 		<attribute key="healthGain" value="20" />
 		<attribute key="description"
 			value="A bow made from demonic bone that siphons the blood of the target." />
 	</item>
 	<item id="55494" article="a" name="silver wind bow">
 		<attribute key="weight" value="13.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="80" />
-		<attribute key="skillDistance" value="7" />
+		<attribute key="skilldist" value="7" />
 		<attribute key="speed" value="20" />
 	</item>
 	<item id="55495" article="a" name="ancient relic bow">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="90" />
-		<attribute key="skillDistance" value="8" />
+		<attribute key="skilldist" value="8" />
 		<attribute key="magiclevelpoints" value="3" />
 	</item>
 	<item id="55496" article="a" name="golden light bow">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="100" />
 		<attribute key="elementHoly" value="40" />
-		<attribute key="skillDistance" value="9" />
+		<attribute key="skilldist" value="9" />
 		<attribute key="maxHitPointsPercent" value="5" />
 	</item>
 	<item id="55497" article="a" name="royal guardian bow">
 		<attribute key="weight" value="17.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="95" />
-		<attribute key="skillDistance" value="8" />
+		<attribute key="skilldist" value="8" />
 		<attribute key="defense" value="20" />
 	</item>
 	<item id="55498" article="a" name="void shadow bow">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="105" />
 		<attribute key="elementDeath" value="50" />
-		<attribute key="skillDistance" value="10" />
+		<attribute key="skilldist" value="10" />
 		<attribute key="absorbPercentDeath" value="15" />
 		<attribute key="description"
 			value="A bow carved from the void, shooting arrows of pure darkness." />
 	</item>
 	<item id="55499" article="a" name="frost bite bow">
 		<attribute key="weight" value="16.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="98" />
 		<attribute key="elementIce" value="45" />
-		<attribute key="skillDistance" value="9" />
+		<attribute key="skilldist" value="9" />
 		<attribute key="suppressFreeze" value="1" />
 	</item>
 	<item id="55500" article="a" name="sunfire archer bow">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="110" />
 		<attribute key="elementFire" value="50" />
-		<attribute key="skillDistance" value="10" />
+		<attribute key="skilldist" value="10" />
 		<attribute key="absorbPercentFire" value="20" />
 	</item>
 	<item id="55501" article="a" name="dark abyss bow">
 		<attribute key="weight" value="19.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="115" />
 		<attribute key="elementDeath" value="55" />
-		<attribute key="skillDistance" value="11" />
+		<attribute key="skilldist" value="11" />
 		<attribute key="preventLoss" value="1" />
 	</item>
 	<item id="55502" article="a" name="twilight whisper bow">
 		<attribute key="weight" value="14.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="100" />
-		<attribute key="skillDistance" value="9" />
+		<attribute key="skilldist" value="9" />
 		<attribute key="speed" value="30" />
 	</item>
 	<item id="55503" article="a" name="nature's path bow">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="95" />
 		<attribute key="elementPoison" value="30" />
-		<attribute key="skillDistance" value="8" />
+		<attribute key="skilldist" value="8" />
 		<attribute key="healthGain" value="40" />
 	</item>
 	<item id="55504" article="a" name="tidal wave bow">
 		<attribute key="weight" value="17.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="100" />
 		<attribute key="elementIce" value="40" />
-		<attribute key="skillDistance" value="9" />
+		<attribute key="skilldist" value="9" />
 	</item>
 	<item id="55505" article="a" name="crimson serpent bow">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="105" />
 		<attribute key="elementFire" value="40" />
-		<attribute key="skillDistance" value="9" />
+		<attribute key="skilldist" value="9" />
 	</item>
 	<item id="55506" article="a" name="ancient vine bow">
 		<attribute key="weight" value="16.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="90" />
 		<attribute key="elementPoison" value="25" />
-		<attribute key="skillDistance" value="8" />
+		<attribute key="skilldist" value="8" />
 	</item>
 	<item id="55507" article="a" name="emerald forest bow">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="95" />
 		<attribute key="elementPoison" value="35" />
-		<attribute key="skillDistance" value="8" />
+		<attribute key="skilldist" value="8" />
 		<attribute key="description" value="An ancient bow woven from sacred forest vines." />
 	</item>
 	<item id="55508" article="a" name="blue spirit staff">
@@ -74713,68 +74790,68 @@
 	</item>
 	<item id="55517" article="a" name="blunderbuss rifle">
 		<attribute key="weight" value="60.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="95" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 	</item>
 	<item id="55518" article="an" name="energy blast bow">
 		<attribute key="weight" value="20.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="90" />
 		<attribute key="elementEnergy" value="30" />
-		<attribute key="skillDistance" value="8" />
+		<attribute key="skilldist" value="8" />
 		<attribute key="description" value="Fires arrows made of pure raw energy." />
 	</item>
 	<item id="55519" article="an" name="ice shard bow">
 		<attribute key="weight" value="20.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="90" />
 		<attribute key="elementIce" value="30" />
-		<attribute key="skillDistance" value="8" />
+		<attribute key="skilldist" value="8" />
 	</item>
 	<item id="55520" article="a" name="phantom wind bow">
 		<attribute key="weight" value="18.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="85" />
-		<attribute key="skillDistance" value="7" />
+		<attribute key="skilldist" value="7" />
 		<attribute key="speed" value="30" />
 	</item>
 	<item id="55521" article="a" name="shadow vine bow">
 		<attribute key="weight" value="22.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="92" />
 		<attribute key="elementDeath" value="25" />
-		<attribute key="skillDistance" value="7" />
+		<attribute key="skilldist" value="7" />
 	</item>
 	<item id="55522" article="a" name="ancient forest bow">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="88" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 		<attribute key="healthGain" value="20" />
 	</item>
 	<item id="55523" article="a" name="void spirit bow">
 		<attribute key="weight" value="15.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="110" />
 		<attribute key="elementDeath" value="45" />
-		<attribute key="skillDistance" value="10" />
+		<attribute key="skilldist" value="10" />
 		<attribute key="description"
 			value="A bow that whispers into the void, granting the user unparalleled precision." />
 	</item>
 	<item id="55524" article="a" name="lightning star shuriken">
 		<attribute key="weight" value="5.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="95" />
 		<attribute key="elementEnergy" value="40" />
-		<attribute key="skillDistance" value="8" />
+		<attribute key="skilldist" value="8" />
 	</item>
 	<item id="55525" article="a" name="bloody demon bow">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="105" />
 		<attribute key="elementDeath" value="40" />
-		<attribute key="skillDistance" value="9" />
+		<attribute key="skilldist" value="9" />
 		<attribute key="healthGain" value="30" />
 	</item>
 	<item id="55526" article="a" name="royal golden staff">
@@ -74847,10 +74924,10 @@
 	</item>
 	<item id="55533" article="a" name="glacial bone bow">
 		<attribute key="weight" value="25.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="95" />
 		<attribute key="elementIce" value="40" />
-		<attribute key="skillDistance" value="9" />
+		<attribute key="skilldist" value="9" />
 		<attribute key="suppressFreeze" value="1" />
 	</item>
 	<item id="55534" article="a" name="starlight wand">
@@ -74864,38 +74941,38 @@
 	</item>
 	<item id="55535" article="a" name="azure serpent bow">
 		<attribute key="weight" value="24.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="105" />
 		<attribute key="elementEnergy" value="45" />
-		<attribute key="skillDistance" value="10" />
+		<attribute key="skilldist" value="10" />
 	</item>
 	<item id="55536" article="a" name="frozen storm bow">
 		<attribute key="weight" value="24.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="105" />
 		<attribute key="elementIce" value="45" />
-		<attribute key="skillDistance" value="10" />
+		<attribute key="skilldist" value="10" />
 	</item>
 	<item id="55537" article="a" name="crimson blood bow">
 		<attribute key="weight" value="24.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="105" />
 		<attribute key="elementFire" value="45" />
-		<attribute key="skillDistance" value="10" />
+		<attribute key="skilldist" value="10" />
 	</item>
 	<item id="55538" article="a" name="golden sun bow">
 		<attribute key="weight" value="24.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="105" />
 		<attribute key="elementHoly" value="45" />
-		<attribute key="skillDistance" value="10" />
+		<attribute key="skilldist" value="10" />
 	</item>
 	<item id="55539" article="a" name="infernal flame bow">
 		<attribute key="weight" value="24.0" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="115" />
 		<attribute key="elementFire" value="55" />
-		<attribute key="skillDistance" value="11" />
+		<attribute key="skilldist" value="11" />
 		<attribute key="description" value="A bow that burns with the eternal flames of the inferno." />
 	</item>
 	<item id="55540" article="a" name="shadow reaper blade">
@@ -74909,7 +74986,7 @@
 	</item>
 	<item id="55541" article="a" name="crimson demon sword">
 		<attribute key="weight" value="3800" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="78" />
 		<attribute key="elementFire" value="15" />
 		<attribute key="skillSword" value="3" />
@@ -74927,7 +75004,7 @@
 	</item>
 	<item id="55543" article="a" name="golden phoenix gauntlet">
 		<attribute key="weight" value="3200" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="65" />
 		<attribute key="elementFire" value="8" />
 		<attribute key="skillClub" value="3" />
@@ -74945,7 +75022,7 @@
 	</item>
 	<item id="55545" article="a" name="saiyan tail whip">
 		<attribute key="weight" value="1800" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="55" />
 		<attribute key="skillClub" value="4" />
 		<attribute key="description"
@@ -74962,7 +75039,7 @@
 	</item>
 	<item id="55547" article="a" name="zangetsu cleaver">
 		<attribute key="weight" value="3900" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="elementDeath" value="11" />
 		<attribute key="skillSword" value="4" />
@@ -74971,7 +75048,7 @@
 	</item>
 	<item id="55548" article="a" name="spirit wheel staff">
 		<attribute key="weight" value="3400" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="68" />
 		<attribute key="elementHoly" value="9" />
 		<attribute key="skillClub" value="3" />
@@ -74980,7 +75057,7 @@
 	</item>
 	<item id="55549" article="a" name="rasengan orb club">
 		<attribute key="weight" value="2900" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="72" />
 		<attribute key="elementEnergy" value="13" />
 		<attribute key="skillClub" value="4" />
@@ -74989,7 +75066,7 @@
 	</item>
 	<item id="55550" article="a" name="naruto kunai gauntlet">
 		<attribute key="weight" value="2100" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="48" />
 		<attribute key="skillFist" value="5" />
 		<attribute key="description"
@@ -74997,7 +75074,7 @@
 	</item>
 	<item id="55551" article="a" name="kyoka suigetsu blade">
 		<attribute key="weight" value="3700" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="75" />
 		<attribute key="elementDeath" value="10" />
 		<attribute key="skillSword" value="4" />
@@ -75006,7 +75083,7 @@
 	</item>
 	<item id="55552" article="a" name="demon king axe">
 		<attribute key="weight" value="5300" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="90" />
 		<attribute key="elementFire" value="16" />
 		<attribute key="skillAxe" value="5" />
@@ -75031,7 +75108,7 @@
 	</item>
 	<item id="55555" article="a" name="tensa zangetsu katana">
 		<attribute key="weight" value="2600" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="95" />
 		<attribute key="elementDeath" value="15" />
 		<attribute key="skillSword" value="6" />
@@ -75040,7 +75117,7 @@
 	</item>
 	<item id="55556" article="a" name="sun breathing sword">
 		<attribute key="weight" value="4100" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="83" />
 		<attribute key="elementFire" value="14" />
 		<attribute key="skillSword" value="4" />
@@ -75049,7 +75126,7 @@
 	</item>
 	<item id="55557" article="a" name="cursed energy staff">
 		<attribute key="weight" value="3600" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="70" />
 		<attribute key="elementDeath" value="12" />
 		<attribute key="skillClub" value="3" />
@@ -75058,7 +75135,7 @@
 	</item>
 	<item id="55558" article="a" name="shadow monarch gauntlets">
 		<attribute key="weight" value="2800" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="67" />
 		<attribute key="skillFist" value="6" />
 		<attribute key="elementDeath" value="10" />
@@ -75067,7 +75144,7 @@
 	</item>
 	<item id="55559" article="a" name="one punch glove">
 		<attribute key="weight" value="1500" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="110" />
 		<attribute key="skillFist" value="8" />
 		<attribute key="description"
@@ -75075,7 +75152,7 @@
 	</item>
 	<item id="55560" article="a" name="purple lightning blade">
 		<attribute key="weight" value="3950" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="79" />
 		<attribute key="elementEnergy" value="17" />
 		<attribute key="skillSword" value="4" />
@@ -75083,7 +75160,7 @@
 	</item>
 	<item id="55561" article="a" name="ban's immortality axe">
 		<attribute key="weight" value="4800" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="85" />
 		<attribute key="absorbPercentPhysical" value="12" />
 		<attribute key="skillAxe" value="4" />
@@ -75092,7 +75169,7 @@
 	</item>
 	<item id="55562" article="a" name="meliodas demon sword">
 		<attribute key="weight" value="4300" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="98" />
 		<attribute key="elementDeath" value="13" />
 		<attribute key="skillSword" value="5" />
@@ -75101,7 +75178,7 @@
 	</item>
 	<item id="55563" article="a" name="full counter shield">
 		<attribute key="weight" value="5200" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="28" />
 		<attribute key="absorbPercentPhysical" value="15" />
 		<attribute key="description"
@@ -75118,7 +75195,7 @@
 	</item>
 	<item id="55565" article="a" name="goku power pole">
 		<attribute key="weight" value="3100" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="76" />
 		<attribute key="skillClub" value="5" />
 		<attribute key="description"
@@ -75126,7 +75203,7 @@
 	</item>
 	<item id="55566" article="a" name="hollow mask gauntlet">
 		<attribute key="weight" value="2700" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="74" />
 		<attribute key="elementDeath" value="14" />
 		<attribute key="skillFist" value="5" />
@@ -75135,7 +75212,7 @@
 	</item>
 	<item id="55567" article="a" name="jinchuriki fist wrap">
 		<attribute key="weight" value="1400" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="62" />
 		<attribute key="skillFist" value="7" />
 		<attribute key="elementEnergy" value="8" />
@@ -75143,7 +75220,7 @@
 	</item>
 	<item id="55568" article="a" name="soul reaper zanpakuto">
 		<attribute key="weight" value="3600" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="81" />
 		<attribute key="skillSword" value="4" />
 		<attribute key="description"
@@ -75151,31 +75228,31 @@
 	</item>
 	<item id="55569" article="a" name="hunter bow">
 		<attribute key="weight" value="2800" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="65" />
-		<attribute key="skillDistance" value="5" />
+		<attribute key="skilldist" value="5" />
 		<attribute key="description"
 			value="A finely crafted bow used by elite hunters from the Hunter Association." />
 	</item>
 	<item id="55570" article="a" name="chakra arrow">
 		<attribute key="weight" value="800" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="45" />
-		<attribute key="skillDistance" value="4" />
+		<attribute key="skilldist" value="4" />
 		<attribute key="description" value="Arrows condensed from pure shinobi chakra." />
 	</item>
 	<item id="55571" article="a" name="spirit arrow crossbow">
 		<attribute key="weight" value="3100" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="72" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 		<attribute key="elementHoly" value="10" />
 		<attribute key="description"
 			value="A Quincy crossbow that manifests spiritual arrows from reishi." />
 	</item>
 	<item id="55572" article="a" name="amethyst spirit staff">
 		<attribute key="weight" value="3200" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="69" />
 		<attribute key="elementEnergy" value="11" />
 		<attribute key="skillClub" value="3" />
@@ -75184,7 +75261,7 @@
 	</item>
 	<item id="55573" article="a" name="violet zanpakuto">
 		<attribute key="weight" value="3650" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="77" />
 		<attribute key="elementDeath" value="9" />
 		<attribute key="skillSword" value="4" />
@@ -75202,7 +75279,7 @@
 	</item>
 	<item id="55575" article="a" name="cursed chain whip">
 		<attribute key="weight" value="2900" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="63" />
 		<attribute key="elementDeath" value="13" />
 		<attribute key="skillClub" value="3" />
@@ -75211,7 +75288,7 @@
 	</item>
 	<item id="55576" article="a" name="starlight staff">
 		<attribute key="weight" value="3100" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="71" />
 		<attribute key="elementHoly" value="12" />
 		<attribute key="skillClub" value="3" />
@@ -75219,7 +75296,7 @@
 	</item>
 	<item id="55577" article="a" name="flame empress sword">
 		<attribute key="weight" value="3950" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="80" />
 		<attribute key="elementFire" value="14" />
 		<attribute key="skillSword" value="4" />
@@ -75228,7 +75305,7 @@
 	</item>
 	<item id="55578" article="a" name="shadow kunai staff">
 		<attribute key="weight" value="2750" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="64" />
 		<attribute key="skillFist" value="4" />
 		<attribute key="description"
@@ -75236,7 +75313,7 @@
 	</item>
 	<item id="55579" article="a" name="rainbow chakra blade">
 		<attribute key="weight" value="3400" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="76" />
 		<attribute key="elementEnergy" value="10" />
 		<attribute key="skillSword" value="4" />
@@ -75254,7 +75331,7 @@
 	</item>
 	<item id="55581" article="a" name="arcane crystal staff">
 		<attribute key="weight" value="3300" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="73" />
 		<attribute key="magiclevelpoints" value="4" />
 		<attribute key="skillClub" value="3" />
@@ -75263,7 +75340,7 @@
 	</item>
 	<item id="55582" article="a" name="purple haze katana">
 		<attribute key="weight" value="3700" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="79" />
 		<attribute key="elementPoison" value="12" />
 		<attribute key="skillSword" value="4" />
@@ -75272,7 +75349,7 @@
 	</item>
 	<item id="55583" article="a" name="dark rose whip">
 		<attribute key="weight" value="2600" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="62" />
 		<attribute key="elementPoison" value="11" />
 		<attribute key="skillClub" value="3" />
@@ -75281,7 +75358,7 @@
 	</item>
 	<item id="55584" article="a" name="ice queen scepter">
 		<attribute key="weight" value="3100" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="68" />
 		<attribute key="elementIce" value="14" />
 		<attribute key="skillClub" value="3" />
@@ -75290,7 +75367,7 @@
 	</item>
 	<item id="55585" article="a" name="star breaker sword">
 		<attribute key="weight" value="4150" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="elementHoly" value="13" />
 		<attribute key="skillSword" value="4" />
@@ -75299,7 +75376,7 @@
 	</item>
 	<item id="55586" article="a" name="void energy blade">
 		<attribute key="weight" value="3850" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="81" />
 		<attribute key="elementDeath" value="16" />
 		<attribute key="skillSword" value="5" />
@@ -75308,31 +75385,31 @@
 	</item>
 	<item id="55587" article="a" name="azure dragon bow">
 		<attribute key="weight" value="2950" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="68" />
-		<attribute key="skillDistance" value="5" />
+		<attribute key="skilldist" value="5" />
 		<attribute key="description" value="A legendary bow inspired by the Azure Dragon of the East." />
 	</item>
 	<item id="55588" article="a" name="crystal crossbow">
 		<attribute key="weight" value="3250" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="71" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 		<attribute key="elementHoly" value="9" />
 		<attribute key="description"
 			value="A crossbow crafted from enchanted crystal that fires piercing bolts." />
 	</item>
 	<item id="55589" article="a" name="shadow monarch bow">
 		<attribute key="weight" value="3100" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="75" />
-		<attribute key="skillDistance" value="5" />
+		<attribute key="skilldist" value="5" />
 		<attribute key="elementDeath" value="12" />
 		<attribute key="description" value="A bow that summons arrows from the shadows themselves." />
 	</item>
 	<item id="55590" article="a" name="purple lotus staff">
 		<attribute key="weight" value="3400" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="70" />
 		<attribute key="elementPoison" value="10" />
 		<attribute key="magiclevelpoints" value="3" />
@@ -75349,7 +75426,7 @@
 	</item>
 	<item id="55592" article="a" name="hellfire gauntlets">
 		<attribute key="weight" value="2500" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="66" />
 		<attribute key="skillFist" value="6" />
 		<attribute key="elementFire" value="13" />
@@ -75365,7 +75442,7 @@
 	</item>
 	<item id="55594" article="a" name="chakra burst dagger staff">
 		<attribute key="weight" value="2800" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="67" />
 		<attribute key="skillFist" value="5" />
 		<attribute key="description" value="A short staff optimized for explosive taijutsu techniques." />
@@ -75405,7 +75482,7 @@
 	</item>
 	<item id="55599" article="a" name="golden ratio staff">
 		<attribute key="weight" value="3550" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="74" />
 		<attribute key="elementHoly" value="11" />
 		<attribute key="skillClub" value="4" />
@@ -75413,14 +75490,14 @@
 	</item>
 	<item id="55600" article="a" name="explosive tag kunai set">
 		<attribute key="weight" value="1900" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="58" />
-		<attribute key="skillDistance" value="5" />
+		<attribute key="skilldist" value="5" />
 		<attribute key="description" value="Kunai rigged with powerful explosive chakra tags." />
 	</item>
 	<item id="55601" article="a" name="flame pattern blade">
 		<attribute key="weight" value="3800" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="80" />
 		<attribute key="elementFire" value="12" />
 		<attribute key="skillSword" value="4" />
@@ -75437,7 +75514,7 @@
 	</item>
 	<item id="55603" article="a" name="crimson lotus gauntlets">
 		<attribute key="weight" value="2600" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="69" />
 		<attribute key="skillFist" value="6" />
 		<attribute key="elementFire" value="10" />
@@ -75445,7 +75522,7 @@
 	</item>
 	<item id="55604" article="a" name="royal phoenix wing blade">
 		<attribute key="weight" value="3900" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="83" />
 		<attribute key="elementFire" value="15" />
 		<attribute key="skillSword" value="4" />
@@ -75453,7 +75530,7 @@
 	</item>
 	<item id="55605" article="a" name="lightning chain whip">
 		<attribute key="weight" value="3100" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="65" />
 		<attribute key="elementEnergy" value="16" />
 		<attribute key="skillClub" value="3" />
@@ -75462,7 +75539,7 @@
 	</item>
 	<item id="55606" article="a" name="demon horn staff">
 		<attribute key="weight" value="3450" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="72" />
 		<attribute key="elementDeath" value="13" />
 		<attribute key="skillClub" value="4" />
@@ -75471,7 +75548,7 @@
 	</item>
 	<item id="55607" article="a" name="solar flare sword">
 		<attribute key="weight" value="4050" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="81" />
 		<attribute key="elementFire" value="18" />
 		<attribute key="skillSword" value="4" />
@@ -75479,7 +75556,7 @@
 	</item>
 	<item id="55608" article="a" name="moonlit katana">
 		<attribute key="weight" value="3750" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="79" />
 		<attribute key="elementIce" value="12" />
 		<attribute key="skillSword" value="4" />
@@ -75488,21 +75565,21 @@
 	</item>
 	<item id="55609" article="a" name="berserk axe">
 		<attribute key="weight" value="5100" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="89" />
 		<attribute key="skillAxe" value="5" />
 		<attribute key="description" value="A heavy axe that fuels the user's rage in battle." />
 	</item>
 	<item id="55610" article="a" name="spirit arrow quiver">
 		<attribute key="weight" value="2850" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="66" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 		<attribute key="description" value="A quiver that generates endless spiritual arrows." />
 	</item>
 	<item id="55611" article="a" name="dragon fang dagger staff">
 		<attribute key="weight" value="2950" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="70" />
 		<attribute key="skillFist" value="5" />
 		<attribute key="description" value="A staff reinforced with sharp dragon fangs." />
@@ -75517,7 +75594,7 @@
 	</item>
 	<item id="55613" article="a" name="void walker cloak edge">
 		<attribute key="weight" value="3600" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="78" />
 		<attribute key="elementDeath" value="14" />
 		<attribute key="skillSword" value="4" />
@@ -75525,14 +75602,14 @@
 	</item>
 	<item id="55614" article="a" name="sacred beast claw">
 		<attribute key="weight" value="2700" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="68" />
 		<attribute key="skillFist" value="6" />
 		<attribute key="description" value="Claw weapons inspired by the sacred beasts of legend." />
 	</item>
 	<item id="55615" article="a" name="thousand year sakura blade">
 		<attribute key="weight" value="3850" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="elementHoly" value="11" />
 		<attribute key="skillSword" value="5" />
@@ -75541,7 +75618,7 @@
 	</item>
 	<item id="55616" article="a" name="inferno god hammer">
 		<attribute key="weight" value="5200" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="91" />
 		<attribute key="elementFire" value="17" />
 		<attribute key="skillClub" value="5" />
@@ -75549,7 +75626,7 @@
 	</item>
 	<item id="55617" article="a" name="necromancer orb staff">
 		<attribute key="weight" value="3550" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="74" />
 		<attribute key="elementDeath" value="15" />
 		<attribute key="magiclevelpoints" value="4" />
@@ -75557,7 +75634,7 @@
 	</item>
 	<item id="55618" article="a" name="blood moon axe">
 		<attribute key="weight" value="4950" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="88" />
 		<attribute key="elementDeath" value="16" />
 		<attribute key="skillAxe" value="5" />
@@ -75565,7 +75642,7 @@
 	</item>
 	<item id="55619" article="a" name="ancient relic blade">
 		<attribute key="weight" value="4100" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="84" />
 		<attribute key="elementHoly" value="12" />
 		<attribute key="skillSword" value="4" />
@@ -75581,16 +75658,16 @@
 	</item>
 	<item id="55621" article="a" name="twin dragon daggers">
 		<attribute key="weight" value="2200" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="64" />
 		<attribute key="skillFist" value="6" />
 		<attribute key="description" value="Paired daggers shaped like coiling dragons." />
 	</item>
 	<item id="55622" article="a" name="judgment crossbow">
 		<attribute key="weight" value="3350" />
-		<attribute key="slotType" value="distance" />
+		<attribute key="weaponType" value="distance" />
 		<attribute key="attack" value="73" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 		<attribute key="elementHoly" value="13" />
 		<attribute key="description" value="A holy crossbow that delivers divine judgment." />
 	</item>
@@ -75620,7 +75697,7 @@
 	<item id="55626" article="a" name="quincy cross ring">
 		<attribute key="weight" value="70" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="skillDistance" value="4" />
+		<attribute key="skilldist" value="4" />
 		<attribute key="elementHoly" value="5" />
 		<attribute key="description"
 			value="Forged from reishi, this ring enhances the user's spiritual archery." />
@@ -75725,7 +75802,7 @@
 		<attribute key="weight" value="45" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="speed" value="25" />
-		<attribute key="skillDistance" value="3" />
+		<attribute key="skilldist" value="3" />
 		<attribute key="description"
 			value="Swirling with intense wind chakra, it accelerates the user's movements." />
 	</item>
@@ -75760,7 +75837,7 @@
 		<attribute key="weight" value="50" />
 		<attribute key="slotType" value="ring" />
 		<attribute key="hitChance" value="15" />
-		<attribute key="skillDistance" value="2" />
+		<attribute key="skilldist" value="2" />
 		<attribute key="description"
 			value="Embeds a copied visual prowess, letting the user foresee enemy movements." />
 	</item>
@@ -75850,7 +75927,7 @@
 	<item id="55652" article="an" name="uchiha ancestral ring">
 		<attribute key="weight" value="90" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="skillDistance" value="5" />
+		<attribute key="skilldist" value="5" />
 		<attribute key="magiclevelpoints" value="3" />
 		<attribute key="elementFire" value="5" />
 		<attribute key="description"
@@ -75995,7 +76072,7 @@
 	<item id="55668" article="a" name="potara earrings (orange)">
 		<attribute key="weight" value="40" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="skillDistance" value="5" />
+		<attribute key="skilldist" value="5" />
 		<attribute key="magiclevelpoints" value="5" />
 		<attribute key="speed" value="30" />
 		<attribute key="description"
@@ -76408,7 +76485,7 @@
 	<item id="55720" article="a" name="quincy holy cross">
 		<attribute key="weight" value="45" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="skillDistance" value="5" />
+		<attribute key="skilldist" value="5" />
 		<attribute key="elementHoly" value="8" />
 		<attribute key="absorbPercentDeath" value="5" />
 		<attribute key="description"
@@ -76434,7 +76511,7 @@
 	<item id="55723" article="a" name="quincy apprentice cross">
 		<attribute key="weight" value="30" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="skillDistance" value="2" />
+		<attribute key="skilldist" value="2" />
 		<attribute key="elementHoly" value="3" />
 	</item>
 	<item id="55724" article="a" name="spiritual energy ring">
@@ -76449,7 +76526,7 @@
 	<item id="55725" article="a" name="quincy master cross">
 		<attribute key="weight" value="50" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="skillDistance" value="7" />
+		<attribute key="skilldist" value="7" />
 		<attribute key="elementHoly" value="12" />
 		<attribute key="speed" value="20" />
 		<attribute key="absorbPercentDeath" value="10" />
@@ -76568,7 +76645,7 @@
 	<item id="55739" article="a" name="quincy vollstandig cross">
 		<attribute key="weight" value="55" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="skillDistance" value="10" />
+		<attribute key="skilldist" value="10" />
 		<attribute key="elementHoly" value="15" />
 		<attribute key="magicPointsPercent" value="8" />
 		<attribute key="speed" value="40" />
@@ -76836,43 +76913,43 @@
 	<item id="55774" article="a" name="star-shard shuriken ring">
 		<attribute key="weight" value="30" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="skillDistance" value="2" />
+		<attribute key="skilldist" value="2" />
 		<attribute key="speed" value="5" />
 	</item>
 	<item id="55775" article="a" name="two-star shuriken ring">
 		<attribute key="weight" value="30" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="skillDistance" value="3" />
+		<attribute key="skilldist" value="3" />
 		<attribute key="speed" value="8" />
 	</item>
 	<item id="55776" article="a" name="three-star shuriken ring">
 		<attribute key="weight" value="30" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="skillDistance" value="4" />
+		<attribute key="skilldist" value="4" />
 		<attribute key="speed" value="12" />
 	</item>
 	<item id="55777" article="a" name="four-star shuriken ring">
 		<attribute key="weight" value="30" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="skillDistance" value="5" />
+		<attribute key="skilldist" value="5" />
 		<attribute key="speed" value="16" />
 	</item>
 	<item id="55778" article="a" name="five-star shuriken ring">
 		<attribute key="weight" value="30" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="skillDistance" value="6" />
+		<attribute key="skilldist" value="6" />
 		<attribute key="speed" value="20" />
 	</item>
 	<item id="55779" article="a" name="six-star shuriken ring">
 		<attribute key="weight" value="30" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="skillDistance" value="8" />
+		<attribute key="skilldist" value="8" />
 		<attribute key="speed" value="25" />
 	</item>
 	<item id="55780" article="a" name="seven-star shuriken ring">
 		<attribute key="weight" value="35" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="skillDistance" value="10" />
+		<attribute key="skilldist" value="10" />
 		<attribute key="speed" value="35" />
 		<attribute key="hitChance" value="10" />
 		<attribute key="description"
@@ -76881,7 +76958,7 @@
 	<item id="55781" article="a" name="eight-star shuriken ring">
 		<attribute key="weight" value="40" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="skillDistance" value="12" />
+		<attribute key="skilldist" value="12" />
 		<attribute key="speed" value="45" />
 		<attribute key="hitChance" value="15" />
 		<attribute key="magiclevelpoints" value="5" />
@@ -76891,7 +76968,7 @@
 	<item id="55782" article="a" name="nine-star shuriken ring">
 		<attribute key="weight" value="45" />
 		<attribute key="slotType" value="ring" />
-		<attribute key="skillDistance" value="15" />
+		<attribute key="skilldist" value="15" />
 		<attribute key="speed" value="50" />
 		<attribute key="hitChance" value="20" />
 		<attribute key="magiclevelpoints" value="8" />
@@ -77810,7 +77887,7 @@
 	</item>
 	<item id="55956" article="a" name="azure soul blade">
 		<attribute key="weight" value="3800" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="84" />
 		<attribute key="elementIce" value="13" />
 		<attribute key="skillSword" value="5" />
@@ -77819,7 +77896,7 @@
 	</item>
 	<item id="55957" article="a" name="frost reaper katana">
 		<attribute key="weight" value="3650" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="82" />
 		<attribute key="elementIce" value="16" />
 		<attribute key="skillSword" value="5" />
@@ -77828,7 +77905,7 @@
 	</item>
 	<item id="55958" article="a" name="golden judgment sword">
 		<attribute key="weight" value="4100" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="88" />
 		<attribute key="elementHoly" value="15" />
 		<attribute key="skillSword" value="5" />
@@ -77837,7 +77914,7 @@
 	</item>
 	<item id="55959" article="a" name="emperor dragon blade">
 		<attribute key="weight" value="4350" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="92" />
 		<attribute key="elementFire" value="12" />
 		<attribute key="skillSword" value="6" />
@@ -80231,9 +80308,9 @@
 		<attribute key="weight" value="5" />
 		<attribute key="description" value="A beautiful amethyst pearl." />
 	</item>
-	<item id="56496" name="astronomy scroll">
+	<item id="56496" name="shader scroll">
 		<attribute key="weight" value="10" />
-		<attribute key="description" value="A dark parchment mapping the stars." />
+		<attribute key="description" value="A scroll mapping the shaders." />
 	</item>
 	<item id="56497" name="crimson eye emblem">
 		<attribute key="weight" value="15" />
@@ -80411,9 +80488,9 @@
 		<attribute key="weight" value="5" />
 		<attribute key="description" value="A map with a marked destination." />
 	</item>
-	<item id="56541" name="holy spellbook">
-		<attribute key="weight" value="45" />
-		<attribute key="description" value="A heavy tome filled with healing prayers." />
+	<item id="56541" name="aura scrollbook">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="Unlocks a cosmetic aura effect of your choice." />
 	</item>
 	<item id="56542" name="mystic blue sword">
 		<attribute key="weight" value="65" />
@@ -81105,7 +81182,7 @@
 	</item>
 	<item id="56718" name="red potion">
 		<attribute key="weight" value="15" />
-		<attribute key="description" value="Restores a small amount of health." />
+		<attribute key="description" value="Item for crafting critical potions and dodge potions." />
 	</item>
 	<item id="56719" name="supreme health potion">
 		<attribute key="weight" value="35" />
@@ -81930,7 +82007,7 @@
 		<attribute key="weight" value="0" />
 		<attribute key="description" value="Changes your character healthbar to a snake summoner theme." />
 	</item>
-	<item id="56924" name="wooden tavern healthbar">
+	<item id="56924" name="kon healthbar">
 		<attribute key="weight" value="0" />
 		<attribute key="description" value="Changes your character healthbar to a rustic wooden theme." />
 	</item>
@@ -82240,7 +82317,7 @@
 	</item>
 	<item id="57002" article="a" name="kurama's tailed beast shield">
 		<attribute key="weight" value="860" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="23" />
 		<attribute key="absorbPercentPhysical" value="14" />
 		<attribute key="absorbPercentFire" value="13" />
@@ -82249,7 +82326,7 @@
 	</item>
 	<item id="57003" article="a" name="shadow monarch's final dominion">
 		<attribute key="weight" value="980" />
-		<attribute key="slotType" value="shield" />
+		<attribute key="weaponType" value="shield" />
 		<attribute key="defense" value="28" />
 		<attribute key="absorbPercentDeath" value="25" />
 		<attribute key="magiclevelpoints" value="5" />
@@ -82314,7 +82391,7 @@
 	</item>
 	<item id="57016" article="a" name="necromancer orb staff">
 		<attribute key="weight" value="3550" />
-		<attribute key="slotType" value="club" />
+		<attribute key="weaponType" value="club" />
 		<attribute key="attack" value="74" />
 		<attribute key="elementDeath" value="15" />
 		<attribute key="magiclevelpoints" value="4" />
@@ -82322,7 +82399,7 @@
 	</item>
 	<item id="57017" article="a" name="blood moon axe">
 		<attribute key="weight" value="4950" />
-		<attribute key="slotType" value="axe" />
+		<attribute key="weaponType" value="axe" />
 		<attribute key="attack" value="88" />
 		<attribute key="elementDeath" value="16" />
 		<attribute key="skillAxe" value="5" />
@@ -82330,7 +82407,7 @@
 	</item>
 	<item id="57018" article="a" name="legendary z sword">
 		<attribute key="weight" value="4200" />
-		<attribute key="slotType" value="sword" />
+		<attribute key="weaponType" value="sword" />
 		<attribute key="attack" value="95" />
 		<attribute key="elementHoly" value="14" />
 		<attribute key="skillSword" value="6" />

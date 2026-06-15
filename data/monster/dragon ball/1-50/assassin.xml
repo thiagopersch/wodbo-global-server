@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Assassin" bestiary="monster" nameDescription="an assassin" race="blood" experience="1050" speed="224" manacost="450">
-	<health now="1750" max="1750" />
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Assassin" bestiary="monster" nameDescription="an assassin" race="blood"
+	experience="1800" speed="224" manacost="450">
+	<health now="1200" max="1200" />
 	<look type="2439" head="95" body="95" legs="95" feet="95" corpse="6080" />
 	<targetchange interval="2000" chance="5" />
 	<strategy attack="70" defense="20" />
@@ -17,8 +18,8 @@
 		<flag runonhealth="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" skill="30" attack="60" />
-		<attack name="physical" interval="1000" chance="13" range="7" min="-28" max="-38">
+		<attack name="melee" interval="2000" min="-50" max="-160" />
+		<attack name="physical" interval="1000" chance="13" range="7" min="-8" max="-130">
 			<attribute key="shootEffect" value="throwingstar" />
 		</attack>
 		<attack name="drunk" interval="1000" chance="10" range="6">
@@ -47,22 +48,22 @@
 		<voice sentence="You are on my deathlist!" />
 	</voices>
 	<loot>
-		<item id="2148" countmax="30" chance="35000" /><!-- gold coin -->
-		<item id="2148" countmax="20" chance="5000" /><!-- gold coin -->
-		<item id="2050" chance="22500" /><!-- torch -->
-		<item id="2148" countmax="14" chance="2750" /><!-- throwing star -->
-		<item id="2403" chance="7500" /><!-- knife -->
-		<item id="2404" chance="4750" /><!-- combat knife -->
-		<item id="1987" chance="100000"><!-- bag -->
-			<inside>
-				<item id="2050" chance="22500" /><!-- torch -->
-				<item id="2457" chance="4350" /><!-- steel helmet -->
-				<item id="2510" chance="1600" /><!-- plate shield -->
-				<item id="3968" chance="400" /><!-- leopard armor -->
-				<item id="2513" chance="400" /><!-- battle shield -->
-				<item id="2145" countmax="2" chance="200" /><!-- small diamond -->
-				<item id="3969" chance="100" /><!-- horseman helmet -->
-			</inside>
-		</item>
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="2672" countmax="15" chance="25000" /><!-- dragon ham -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+		<item id="2399" countmax="3" chance="1000" /> <!-- throwing star -->
+		<item id="7368" countmax="3" chance="975" /> <!-- throwing knife -->
+		<item id="2394" chance="700" /> <!-- morning star -->
+		<item id="2403" chance="500" /> <!-- knife -->
+		<item id="2404" chance="400" /> <!-- combat knife -->
 	</loot>
 </monster>

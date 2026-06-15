@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Goku" bestiary="monster" description="a goku" race="blood" experience="3000" speed="300">
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Goku" bestiary="monster" description="a goku" race="blood" experience="7500"
+  speed="300">
   <health now="5000" max="5000" />
   <look type="1881" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49245" />
   <targetchange interval="4000" chance="10" />
@@ -69,15 +70,22 @@
     <element undefinedPercent="0" />
   </elements>
   <loot>
-    <item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
-		<item countmax="75" chance="50000" id="2152" /> <!-- platinum coin -->
-		<item countmax="2" chance="500" id="2160" /> <!-- crystal coin -->
-		<item countmax="10" chance="1000" id="49689" /> <!-- hp point -->
-		<item countmax="10" chance="1000" id="49690" /> <!-- mp point -->
-		<item countmax="5" chance="1000" id="49691" /> <!-- leaf senzu -->
-		<item countmax="5" chance="1000" id="49692" /> <!-- branch senzu -->
-    <item chance="1000" id="49686" /> <!-- goku armor -->
-    <item chance="1000" id="49674" /> <!-- goku legs -->
-    <item chance="1000" id="49669" /> <!-- goku boots -->
+    <item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+    <item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+    <item id="2672" countmax="15" chance="25000" /><!-- dragon ham -->
+    <item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+    <item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+    <item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+    <item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+    <item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+    <item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+    <item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+    <item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+    <item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+    <item id="49691" countmax="5" chance="1000" /> <!-- leaf senzu -->
+    <item id="49692" countmax="5" chance="1000" /> <!-- branch senzu -->
+    <item id="49686" chance="1000" /> <!-- goku armor -->
+    <item id="49674" chance="1000" /> <!-- goku legs -->
+    <item id="49669" chance="1000" /> <!-- goku boots -->
   </loot>
 </monster>

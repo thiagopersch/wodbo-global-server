@@ -1175,31 +1175,27 @@
 
 	<brush name="lava" type="ground" server_lookid="598" z-order="7700">
 		<item id="23857" chance="100" />
+		<item id="598" chance="100" />
 		<item id="599" chance="7" />
+		<item id="600" chance="5" />
+		<item id="601" chance="5" />
 		<item id="23848" chance="1" />
 		<item id="23849" chance="1" />
 		<item id="23850" chance="2" />
 		<item id="23851" chance="2" />
+		<item id="23858" chance="1" />
+		<item id="23859" chance="2" />
+		<item id="23860" chance="1" />
+		<item id="23861" chance="2" />
 		<item id="39145" chance="2" />
 		<item id="39146" chance="2" />
 		<item id="39147" chance="2" />
 		<item id="39148" chance="2" />
 
-		<border align="outer" id="211" />
-	</brush>
-
-	<brush name="lava (rock soil and cave ground)" type="ground" server_lookid="598" z-order="7700">
-		<item id="598" chance="100" />
-		<item id="600" chance="5" />
-		<item id="601" chance="5" />
-		<item id="23858" chance="1" />
-		<item id="23859" chance="2" />
-		<item id="23860" chance="1" />
-		<item id="23861" chance="2" />
-
 		<border align="inner" to="cave" id="18" />
 		<border align="inner" to="cave (alternate border)" id="18" />
 		<border align="inner" to="rock soil" id="30" />
+		<border align="inner" to="none" id="211" />
 		<friend name="sea" />
 	</brush>
 
@@ -4488,13 +4484,17 @@
 		<item id="48801" chance="100" />
 	</brush>
 
-	<brush name="ice lava" type="ground" server_lookid="48958" z-order="2500">
+	<brush name="ice lava" type="ground" server_lookid="48958" z-order="1">
 		<item id="48958" chance="100" />
 		<item id="48959" chance="100" />
 		<item id="48960" chance="100" />
 		<item id="48961" chance="5" />
 		<item id="48962" chance="100" />
 		<item id="48963" chance="100" />
+
+		<friend name="sea" />
+		<friend name="tar pit" />
+		<friend name="lava" />
 	</brush>
 
 	<brush name="clouds" type="ground" server_lookid="49893" z-order="2498">
@@ -4556,8 +4556,11 @@
 		<item id="49913" chance="100" />
 	</brush>
 
-	<brush name="dbo grass alternate" type="ground" server_lookid="49914" z-order="2501">
+	<brush name="dbo grass alternate" type="ground" server_lookid="49914" z-order="1">
 		<item id="49914" chance="100" />
+		<friend name="sea" />
+		<friend name="tar pit" />
+		<friend name="lava" />
 	</brush>
 
 	<brush name="dbo brigde" type="ground" server_lookid="49915" z-order="2500">

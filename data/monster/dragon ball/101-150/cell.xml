@@ -1,5 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<monster name="Cell" bestiary="monster" nameDescription="an Cell" race="blood" experience="35000" speed="500" manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cell" bestiary="monster" nameDescription="an Cell" race="blood" experience="35000"
+	speed="500" manacost="0">
 	<health now="200000" max="200000" />
 	<look type="1805" head="1" body="1" legs="1" feet="1" addons="0" corpse="49254" />
 	<targetchange interval="5000" chance="8" />
@@ -38,14 +39,21 @@
 		<voice sentence="Fight with all your might.!" />
 		<voice sentence="You won't defeat me easily!" />
 	</voices>
-		<loot>
-			<item countmax="100" chance="100000" id="2148" /> <!-- gold coin -->
-  		<item countmax="75" chance="50000" id="2152" /> <!-- platinum coin -->
-  		<item countmax="5" chance="1000" id="2160" /> <!-- crystal coin -->
-  		<item countmax="10" chance="1000" id="49689" /> <!-- hp point -->
-  		<item countmax="10" chance="1000" id="49690" /> <!-- mp point -->
-  		<item countmax="5" chance="1000" id="49691" /> <!-- leaf senzu -->
-  		<item countmax="5" chance="1000" id="49692" /> <!-- branch senzu -->
-			<item chance="500" id="49464" /> <!-- cell armor -->
-		</loot>
+	<loot>
+		<item id="2148" countmax="50" chance="90000" /> <!-- gold coin -->
+		<item id="2152" countmax="50" chance="90000" /> <!-- platinum coin -->
+		<item id="2160" countmax="5" chance="50000" /> <!-- crystal coin -->
+		<item id="56712" countmax="3" chance="10000" /> <!-- yellow potion -->
+		<item id="56713" countmax="3" chance="10000" /> <!-- grey potion -->
+		<item id="56714" countmax="3" chance="10000" /> <!-- purple potion -->
+		<item id="56715" countmax="3" chance="10000" /> <!-- pink potion -->
+		<item id="56716" countmax="3" chance="10000" /> <!-- light blue potion -->
+		<item id="56717" countmax="3" chance="10000" /> <!-- green potion -->
+		<item id="56718" countmax="3" chance="10000" /> <!-- red potion -->
+		<item id="49689" countmax="10" chance="1000" /> <!-- hp point -->
+		<item id="49690" countmax="10" chance="1000" /> <!-- mp point -->
+		<item id="49635" chance="1000" /> <!-- cell helmet -->
+		<item id="49464" chance="1000" /> <!-- cell armor -->
+		<item id="49872" countmax="2" chance="1000" /> <!-- cell eggs -->
+	</loot>
 </monster>

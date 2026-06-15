@@ -1,114 +1,113 @@
-[9/6/2026 15:44:22] > Usando SHA1 criptografia
-[9/6/2026 15:44:22] >> Carregando RSA key
-[9/6/2026 15:44:22] >> Iniciando conexao SQL
-[9/6/2026 15:44:22] >> Executando Gerenciador de Banco de Dados
-[9/6/2026 15:44:22] > Optimized database.
-[9/6/2026 15:44:22] >> Carregando items (OTB)
-[9/6/2026 15:44:23] >> Carregando items (XML)
-[9/6/2026 15:44:23] >> Carregando Grupos
-[9/6/2026 15:44:23] >> Carregando Vocacoes
-[9/6/2026 15:44:23] >> Carregando Outfits
-[9/6/2026 15:44:23] >> Carregando Wing Types
-[9/6/2026 15:44:23] >> Carregando Aura Types
-[9/6/2026 15:44:23] >> Carregando Shader Types
-[9/6/2026 15:44:23] >> Carregando Bar Types
-[9/6/2026 15:44:23] >> Carregando Canal de Chat
-[9/6/2026 15:44:23] >> Carregando Sistema
-[9/6/2026 15:44:23] >> Carregando Mods...
-[9/6/2026 15:44:23] > Loading AutoLoot.xml... done.
-[9/6/2026 15:44:23] > Loading Automatic Raids.xml... done.
-[9/6/2026 15:44:23] > Loading highscorebook.xml... done.
-[9/6/2026 15:44:23] > Loading task_system.xml... done.
-[9/6/2026 15:44:23] > 4 mods were loaded.
-[9/6/2026 15:44:23] >> Carregando EXP Stages
-[9/6/2026 15:44:23] >> Carregando Monstros
-[9/6/2026 15:44:24] >> Carregando Mapa e Spawns...
-[9/6/2026 15:44:24] > Tamanho do Mapa: 64000x64000.
-[9/6/2026 15:44:24] > Descricao do Mapa: 
-[9/6/2026 15:44:24] "Saved with OTAcademy Map Editor 4.1.1"
-[9/6/2026 15:44:24] "No map description available."
-[9/6/2026 15:44:26] > Mapa carregado em: 2.828 segundos.
-[9/6/2026 15:44:27] > Data carregada em: 0.204 segundos.
-[9/6/2026 15:44:28] > Houses carregada em: 1.68 segundos.
-[9/6/2026 15:44:28] > Content unserialization time: 0.004 seconds.
-[9/6/2026 15:44:28] > Carregando Tipo de PVP... Open PvP
-[9/6/2026 15:44:28] > Inicializando estado do jogo e registrando servicos...
-[9/6/2026 15:44:28] > IP do Servidor: 127.0.0.1
-[9/6/2026 15:44:28] > IP local do Servidor: 172.17.48.1	192.168.1.37	
-[9/6/2026 15:44:28] > Portas do Servidor: 7171	7172	
-[9/6/2026 15:44:28] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[9/6/2026 15:44:38] >> DBOSupreme servidor Online!
+[14/6/2026 22:16:7] > Usando SHA1 criptografia
+[14/6/2026 22:16:7] >> Carregando RSA key
+[14/6/2026 22:16:7] >> Iniciando conexao SQL
+[14/6/2026 22:16:7] >> Executando Gerenciador de Banco de Dados
+[14/6/2026 22:16:7] > Optimized database.
+[14/6/2026 22:16:7] >> Carregando items (OTB)
+[14/6/2026 22:16:7] >> Carregando items (XML)
+[14/6/2026 22:16:8] >> Carregando Grupos
+[14/6/2026 22:16:8] >> Carregando Vocacoes
+[14/6/2026 22:16:8] >> Carregando Outfits
+[14/6/2026 22:16:8] >> Carregando Wing Types
+[14/6/2026 22:16:8] >> Carregando Aura Types
+[14/6/2026 22:16:8] >> Carregando Shader Types
+[14/6/2026 22:16:8] >> Carregando Bar Types
+[14/6/2026 22:16:8] >> Carregando Canal de Chat
+[14/6/2026 22:16:8] >> Carregando Sistema
+[14/6/2026 22:16:12] >> Carregando Mods...
+[14/6/2026 22:16:12] > Loading AutoLoot.xml... done.
+[14/6/2026 22:16:12] > Loading Automatic Raids.xml... done.
+[14/6/2026 22:16:12] > Loading highscorebook.xml... done.
+[14/6/2026 22:16:12] > Loading task_system.xml... done.
+[14/6/2026 22:16:12] > 4 mods were loaded.
+[14/6/2026 22:16:12] >> Carregando EXP Stages
+[14/6/2026 22:16:12] >> Carregando Monstros
+[14/6/2026 22:16:12] [Warning - Monsters::loadMonster] Cannot load monster (Bardock ssj supreme) file (data/monster/dragon ball/101-150/bardock ssj supreme.xml).
+[14/6/2026 22:16:12] Info: failed to load external entity "data/monster/dragon ball/101-150/bardock ssj supreme.xml"
 
-[9/6/2026 15:44:40] Leo stronda has logged in.
-[9/6/2026 15:45:57] Leo stronda has logged out.
-[9/6/2026 15:45:58] Dias Atras has logged in.
-[9/6/2026 15:45:59] Dias Atras has logged out.
-[9/6/2026 15:46:0] God has logged in.
-[9/6/2026 15:46:19] > Loading AutoLoot.xml... done.
-[9/6/2026 15:46:19] > Loading Automatic Raids.xml... done.
-[9/6/2026 15:46:19] > Loading highscorebook.xml... done.
-[9/6/2026 15:46:19] > Loading task_system.xml... done.
-[9/6/2026 15:46:19] > 4 mods were loaded.
-[9/6/2026 15:46:42] > Loading AutoLoot.xml... done.
-[9/6/2026 15:46:42] > Loading Automatic Raids.xml... done.
-[9/6/2026 15:46:42] > Loading highscorebook.xml... done.
-[9/6/2026 15:46:42] > Loading task_system.xml... done.
-[9/6/2026 15:46:42] > 4 mods were loaded.
-[9/6/2026 15:47:33] > Loading AutoLoot.xml... done.
-[9/6/2026 15:47:33] > Loading Automatic Raids.xml... done.
-[9/6/2026 15:47:33] > Loading highscorebook.xml... done.
-[9/6/2026 15:47:33] > Loading task_system.xml... done.
-[9/6/2026 15:47:33] > 4 mods were loaded.
-[9/6/2026 15:47:36] God has logged out.
-[9/6/2026 15:47:37] God has logged in.
-[9/6/2026 15:49:8] > Loading AutoLoot.xml... done.
-[9/6/2026 15:49:8] > Loading Automatic Raids.xml... done.
-[9/6/2026 15:49:8] > Loading highscorebook.xml... done.
-[9/6/2026 15:49:8] > Loading task_system.xml... done.
-[9/6/2026 15:49:8] > 4 mods were loaded.
-[9/6/2026 15:49:19] > Loading AutoLoot.xml... done.
-[9/6/2026 15:49:19] > Loading Automatic Raids.xml... done.
-[9/6/2026 15:49:19] > Loading highscorebook.xml... done.
-[9/6/2026 15:49:19] > Loading task_system.xml... done.
-[9/6/2026 15:49:19] > 4 mods were loaded.
-[9/6/2026 15:52:39] > Loading AutoLoot.xml... done.
-[9/6/2026 15:52:39] > Loading Automatic Raids.xml... done.
-[9/6/2026 15:52:39] > Loading highscorebook.xml... done.
-[9/6/2026 15:52:39] > Loading task_system.xml... done.
-[9/6/2026 15:52:39] > 4 mods were loaded.
-[9/6/2026 15:52:40] God has logged out.
-[9/6/2026 15:52:41] God has logged in.
-[9/6/2026 15:52:58] God has logged out.
-[9/6/2026 15:52:58] God has logged in.
-[9/6/2026 15:54:44] > Loading AutoLoot.xml... done.
-[9/6/2026 15:54:44] > Loading Automatic Raids.xml... done.
-[9/6/2026 15:54:44] > Loading highscorebook.xml... done.
-[9/6/2026 15:54:44] > Loading task_system.xml... done.
-[9/6/2026 15:54:44] > 4 mods were loaded.
-[9/6/2026 15:54:45] God has logged out.
-[9/6/2026 15:54:46] God has logged in.
-[9/6/2026 15:55:17] > Loading AutoLoot.xml... done.
-[9/6/2026 15:55:17] > Loading Automatic Raids.xml... done.
-[9/6/2026 15:55:17] > Loading highscorebook.xml... done.
-[9/6/2026 15:55:17] > Loading task_system.xml... done.
-[9/6/2026 15:55:17] > 4 mods were loaded.
-[9/6/2026 15:55:19] God has logged out.
-[9/6/2026 15:55:20] God has logged in.
-[9/6/2026 15:55:47] > Loading AutoLoot.xml... done.
-[9/6/2026 15:55:47] > Loading Automatic Raids.xml... done.
-[9/6/2026 15:55:47] > Loading highscorebook.xml... done.
-[9/6/2026 15:55:47] > Loading task_system.xml... done.
-[9/6/2026 15:55:47] > 4 mods were loaded.
-[9/6/2026 15:55:48] God has logged out.
-[9/6/2026 15:55:48] God has logged in.
-[9/6/2026 15:56:9] God has logged out.
-[9/6/2026 15:56:10] Leo stronda has logged in.
-[9/6/2026 15:56:18] Leo stronda has logged out.
-[9/6/2026 15:56:19] God has logged in.
-[9/6/2026 15:59:8] God has logged out.
-[9/6/2026 15:59:9] Dias Atras has logged in.
-[9/6/2026 16:1:26] Dias Atras has logged out.
-[9/6/2026 16:1:27] God has logged in.
-[9/6/2026 16:1:37] God has logged out.
-[9/6/2026 16:1:38] Leo stronda has logged in.
-[9/6/2026 16:14:20] Leo stronda has logged out.
+
+[14/6/2026 22:16:12] [Warning - Monsters::loadMonster] Cannot load monster (Bardock ssj5) file (data/monster/dragon ball/101-150/bardock ssj5.xml).
+[14/6/2026 22:16:12] Info: failed to load external entity "data/monster/dragon ball/101-150/bardock ssj5.xml"
+
+
+[14/6/2026 22:16:12] [Warning - Monsters::loadMonster] Cannot load monster (Bat) file (data/monster/tibia/1-50/bat.xml).
+[14/6/2026 22:16:12] Info: failed to load external entity "data/monster/tibia/1-50/bat.xml"
+
+
+[14/6/2026 22:16:14] [Warning - Monsters::loadMonster] Cannot load monster (Gohan ssj4) file (data/monster/dragon ball/151-200/gohan ssj4.xml).
+[14/6/2026 22:16:14] Info: failed to load external entity "data/monster/dragon ball/151-200/gohan ssj4.xml"
+
+
+[14/6/2026 22:16:14] [Warning - Monsters::loadMonster] Cannot load monster (Gohan ssj5) file (data/monster/dragon ball/151-200/gohan ssj5.xml).
+[14/6/2026 22:16:14] Info: failed to load external entity "data/monster/dragon ball/151-200/gohan ssj5.xml"
+
+
+[14/6/2026 22:16:14] [Warning - Monsters::loadMonster] Cannot load monster (Goku ssj4) file (data/monster/dragon ball/151-200/goku ssj4.xml).
+[14/6/2026 22:16:14] Info: failed to load external entity "data/monster/dragon ball/151-200/goku ssj4.xml"
+
+
+[14/6/2026 22:16:14] [Warning - Monsters::loadMonster] Cannot load monster (Goku ssj5) file (data/monster/dragon ball/201-250/goku ssj5.xml).
+[14/6/2026 22:16:14] Info: failed to load external entity "data/monster/dragon ball/201-250/goku ssj5.xml"
+
+
+[14/6/2026 22:16:14] [Warning - Monsters::loadMonster] Cannot load monster (Golden oozaru) file (data/monster/dragon ball/151-200/golden oozaru.xml).
+[14/6/2026 22:16:14] Info: failed to load external entity "data/monster/dragon ball/151-200/golden oozaru.xml"
+
+
+[14/6/2026 22:16:15] [Warning - Monsters::loadMonster] Cannot load monster (Majin buu) file (data/monster/dragon ball/151-200/majin buu.xml).
+[14/6/2026 22:16:15] Info: failed to load external entity "data/monster/dragon ball/151-200/majin buu.xml"
+
+
+[14/6/2026 22:16:15] [Warning - Monsters::loadMonster] Cannot load monster (Raditz ssj4) file (data/monster/dragon ball/201-250/raditz ssj4.xml).
+[14/6/2026 22:16:15] Info: failed to load external entity "data/monster/dragon ball/201-250/raditz ssj4.xml"
+
+
+[14/6/2026 22:16:15] [Warning - Monsters::loadMonster] Cannot load monster (Raditz ssj5) file (data/monster/dragon ball/201-250/raditz ssj5.xml).
+[14/6/2026 22:16:15] Info: failed to load external entity "data/monster/dragon ball/201-250/raditz ssj5.xml"
+
+
+[14/6/2026 22:16:16] [Warning - Monsters::loadMonster] Cannot load monster (Super c17) file (data/monster/dragon ball/151-200/super c17.xml).
+[14/6/2026 22:16:16] Info: failed to load external entity "data/monster/dragon ball/151-200/super c17.xml"
+
+
+[14/6/2026 22:16:16] [Warning - Monsters::loadMonster] Cannot load monster (Super c18) file (data/monster/dragon ball/151-200/super c18.xml).
+[14/6/2026 22:16:16] Info: failed to load external entity "data/monster/dragon ball/151-200/super c18.xml"
+
+
+[14/6/2026 22:16:16] [Warning - Monsters::loadMonster] Cannot load monster (Trunks ssj4) file (data/monster/dragon ball/151-200/trunks SSJ4.xml).
+[14/6/2026 22:16:16] Info: failed to load external entity "data/monster/dragon ball/151-200/trunks SSJ4.xml"
+
+
+[14/6/2026 22:16:16] [Warning - Monsters::loadMonster] Cannot load monster (Trunks ssj5) file (data/monster/dragon ball/201-250/trunks SSJ5.xml).
+[14/6/2026 22:16:16] Info: failed to load external entity "data/monster/dragon ball/201-250/trunks SSJ5.xml"
+
+
+[14/6/2026 22:16:16] [Warning - Monsters::loadMonster] Cannot load monster (Tsuful ssj5) file (data/monster/dragon ball/201-250/tsuful SSJ5.xml).
+[14/6/2026 22:16:16] Info: failed to load external entity "data/monster/dragon ball/201-250/tsuful SSJ5.xml"
+
+
+[14/6/2026 22:16:16] [Warning - Monsters::loadMonster] Cannot load monster (Turles ssj4) file (data/monster/dragon ball/151-200/turles ssj4.xml).
+[14/6/2026 22:16:16] Info: failed to load external entity "data/monster/dragon ball/151-200/turles ssj4.xml"
+
+
+[14/6/2026 22:16:16] [Warning - Monsters::loadMonster] Cannot load monster (Turles ssj5) file (data/monster/dragon ball/201-250/turles ssj5.xml).
+[14/6/2026 22:16:16] Info: failed to load external entity "data/monster/dragon ball/201-250/turles ssj5.xml"
+
+
+[14/6/2026 22:16:16] [Warning - Monsters::loadMonster] Cannot load monster (Vegeta ssj blue) file (data/monster/dragon ball/151-200/vegeta ssj blue.xml).
+[14/6/2026 22:16:16] Info: failed to load external entity "data/monster/dragon ball/151-200/vegeta ssj blue.xml"
+
+
+[14/6/2026 22:16:16] [Warning - Monsters::loadMonster] Cannot load monster (Vegeta ssj4) file (data/monster/dragon ball/151-200/vegeta ssj4.xml).
+[14/6/2026 22:16:16] Info: failed to load external entity "data/monster/dragon ball/151-200/vegeta ssj4.xml"
+
+
+[14/6/2026 22:16:16] [Warning - Monsters::loadMonster] Cannot load monster (Vegetto) file (data/monster/dragon ball/151-200/vegetto.xml).
+[14/6/2026 22:16:16] Info: failed to load external entity "data/monster/dragon ball/151-200/vegetto.xml"
+
+
+[14/6/2026 22:16:16] >> Carregando Mapa e Spawns...
+[14/6/2026 22:16:17] > Tamanho do Mapa: 64000x64000.
+[14/6/2026 22:16:17] > Descricao do Mapa: 
+[14/6/2026 22:16:17] "Saved with OTAcademy Map Editor 4.1.1"
+[14/6/2026 22:16:17] "No map description available."

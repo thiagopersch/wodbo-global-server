@@ -1,532 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monsters>
-  <monster name="Acid blob" file="tibia/1-50/acid blob.xml"/>
+  <monster name="Acid blob" file="dragon ball/tibia/acid blob.xml"/>
   <monster name="Acid hollow" file="bleach/51-100/acid hollow.xml"/>
   <monster name="Acidwire" file="dragon ball/51-100/acidwire.xml"/>
   <monster name="Aegzen" file="dragon ball/51-100/aegzen.xml"/>
   <monster name="Aegzengiven" file="dragon ball/51-100/aegzengiven.xml"/>
   <monster name="Aegzengun" file="dragon ball/51-100/aegzengun.xml"/>
   <monster name="Aizen" file="bleach/1-50/aizen.xml"/>
-  <monster name="Amazon" file="tibia/51-100/amazon.xml"/>
+  <monster name="Amazon" file="dragon ball/tibia/amazon.xml"/>
   <monster name="Ancestral guardian" file="dragon ball/51-100/ancestral guardian.xml"/>
   <monster name="Ancient dinosaur hollow" file="bleach/101-150/ancient dinosaur hollow.xml"/>
-  <monster name="Ancient scarab" file="tibia/1-50/ancient scarab.xml"/>
   <monster name="Android" file="dragon ball/1-50/android.xml"/>
-  <monster name="Annihilon" file="tibia/101-150/annihilon.xml"/>
-  <monster name="Apocalypse" file="tibia/101-150/apocalypse.xml"/>
-  <monster name="Apprentice sheng" file="tibia/1-50/apprentice sheng.xml"/>
+  <monster name="Apocalypse" file="dragon ball/tibia/apocalypse.xml"/>
   <monster name="Aqua" file="dragon ball/51-100/aqua.xml"/>
   <monster name="Aqua corrupted" file="dragon ball/51-100/aqua corrupted.xml"/>
-  <monster name="Ashmunrah" file="tibia/1-50/ashmunrah.xml"/>
   <monster name="Assassin" file="dragon ball/1-50/assassin.xml"/>
-  <monster name="Azure frog" file="tibia/1-50/azure frog.xml"/>
-  <monster name="Badger" file="tibia/1-50/badger.xml"/>
+  <monster name="Azure frog" file="dragon ball/tibia/azure frog.xml"/>
+  <monster name="Badger" file="dragon ball/tibia/badger.xml"/>
   <monster name="Bandit" file="dragon ball/1-50/bandit.xml"/>
   <monster name="Bandit black" file="dragon ball/1-50/bandit black.xml"/>
   <monster name="Bandit chef" file="dragon ball/1-50/bandit chef.xml"/>
   <monster name="Bandit gun" file="dragon ball/1-50/bandit gun.xml"/>
   <monster name="Bandit hollow" file="bleach/51-100/bandit hollow.xml"/>
   <monster name="Bandit swordman" file="dragon ball/1-50/bandit swordman.xml"/>
-  <monster name="Banshee" file="tibia/1-50/banshee.xml"/>
-  <monster name="Barbaria" file="tibia/1-50/barbaria.xml"/>
-  <monster name="Barbarian bloodwalker" file="tibia/1-50/barbarian bloodwalker.xml"/>
-  <monster name="Barbarian brutetamer" file="tibia/1-50/barbarian brutetamer.xml"/>
-  <monster name="Barbarian headsplitter" file="tibia/1-50/barbarian headsplitter.xml"/>
-  <monster name="Barbarian skullhunter" file="tibia/1-50/barbarian skullhunter.xml"/>
+  <monster name="Banshee" file="dragon ball/tibia/banshee.xml"/>
   <monster name="Bardock" file="dragon ball/1-50/bardock.xml"/>
   <monster name="Bardock oozaru" file="dragon ball/51-100/bardock oozaru.xml"/>
   <monster name="Bardock ssj" file="dragon ball/51-100/bardock ssj.xml"/>
-  <monster name="Bardock ssj supreme" file="dragon ball/101-150/bardock ssj supreme.xml"/>
+  <monster name="Bardock ssj supreme" file="dragon ball/700-800/bardock ssj supreme.xml"/>
   <monster name="Bardock ssj3" file="dragon ball/51-100/bardock ssj3.xml"/>
   <monster name="Bardock ssj4" file="dragon ball/51-100/bardock ssj4.xml"/>
-  <monster name="Bardock ssj5" file="dragon ball/101-150/bardock ssj5.xml"/>
-  <monster name="Bat" file="tibia/1-50/bat.xml"/>
-  <monster name="Battlemaster zunzu" file="tibia/1-50/battlemaster zunzu.xml"/>
+  <monster name="Bardock ssj5" file="dragon ball/600-700/bardock ssj5.xml"/>
+  <monster name="Bat" file="dragon ball/1-50/bat.xml"/>
   <monster name="Bawabawa" file="dragon ball/51-100/bawabawa.xml"/>
-  <monster name="Bear" file="tibia/1-50/bear.xml"/>
-  <monster name="Behemoth" file="tibia/1-50/behemoth.xml"/>
-  <monster name="Beholder" file="tibia/1-50/beholder.xml"/>
-  <monster name="Betrayed wraith" file="tibia/1-50/betrayed wraith.xml"/>
-  <monster name="Big boss trolliver" file="tibia/1-50/big boss trolliver.xml"/>
-  <monster name="Black butterfly" file="tibia/1-50/black butterfly.xml"/>
-  <monster name="Black knight" file="tibia/1-50/black knight.xml"/>
-  <monster name="Black sheep" file="tibia/1-50/black sheep.xml"/>
-  <monster name="Blazing fire elemental" file="tibia/1-50/blazing fire elemental.xml"/>
-  <monster name="Blightwalker" file="tibia/1-50/blightwalker.xml"/>
-  <monster name="Blistering fire elemental" file="tibia/1-50/blistering fire elemental.xml"/>
-  <monster name="Blood crab" file="tibia/1-50/blood crab.xml"/>
-  <monster name="Blue butterfly" file="tibia/1-50/blue butterfly.xml"/>
-  <monster name="Blue djinn" file="tibia/1-50/blue djinn.xml"/>
-  <monster name="Boar" file="tibia/1-50/boar.xml"/>
-  <monster name="Bog frog" file="tibia/1-50/bog frog.xml"/>
-  <monster name="Bog raider" file="tibia/1-50/bog raider.xml"/>
+  <monster name="Bear" file="dragon ball/tibia/bear.xml"/>
+  <monster name="Behemoth" file="dragon ball/tibia/behemoth.xml"/>
+  <monster name="Beholder" file="dragon ball/tibia/beholder.xml"/>
+  <monster name="Black butterfly" file="dragon ball/tibia/black butterfly.xml"/>
+  <monster name="Boar" file="dragon ball/tibia/boar.xml"/>
   <monster name="Bojack" file="dragon ball/51-100/bojack.xml"/>
-  <monster name="Bonebeast" file="tibia/1-50/bonebeast.xml"/>
-  <monster name="Bones" file="tibia/51-100/bones.xml"/>
+  <monster name="Bonebeast" file="dragon ball/tibia/bonebeast.xml"/>
   <monster name="Botamo" file="dragon ball/1-50/botamo.xml"/>
-  <monster name="Braindeath" file="tibia/1-50/braindeath.xml"/>
-  <monster name="Brutus bloodbeard" file="tibia/1-50/brutus bloodbeard.xml"/>
-  <monster name="Bug" file="tibia/1-50/bug.xml"/>
-  <monster name="Butterfly" file="tibia/1-50/butterfly.xml"/>
+  <monster name="Bug" file="dragon ball/tibia/bug.xml"/>
+  <monster name="Butterfly" file="dragon ball/tibia/butterfly.xml"/>
   <monster name="Byakuya" file="bleach/1-50/byakuya.xml"/>
   <monster name="C17" file="dragon ball/101-150/c17.xml"/>
   <monster name="C18" file="dragon ball/101-150/c18.xml"/>
   <monster name="C19" file="dragon ball/101-150/c19.xml"/>
   <monster name="C19 and c20" file="dragon ball/51-100/c19 and c20.xml"/>
   <monster name="C20" file="dragon ball/101-150/c20.xml"/>
-  <monster name="Carniphila" file="tibia/1-50/carniphila.xml"/>
-  <monster name="Carrion worm" file="tibia/1-50/carrion worm.xml"/>
-  <monster name="Cat" file="tibia/1-50/cat.xml"/>
+  <monster name="Carrion worm" file="dragon ball/tibia/carrion worm.xml"/>
+  <monster name="Cat" file="dragon ball/tibia/cat.xml"/>
   <monster name="Cave rat" file="dragon ball/1-50/cave rat.xml"/>
   <monster name="Cell" file="dragon ball/101-150/cell.xml"/>
   <monster name="Cell jr" file="dragon ball/101-150/cell jr.xml"/>
   <monster name="Cell perfect" file="dragon ball/101-150/cell perfect.xml"/>
-  <monster name="Centipede" file="tibia/1-50/centipede.xml"/>
-  <monster name="Chakoya toolshaper" file="tibia/1-50/chakoya toolshaper.xml"/>
-  <monster name="Chakoya tribewarden" file="tibia/1-50/chakoya tribewarden.xml"/>
-  <monster name="Chakoya windcaller" file="tibia/1-50/chakoya windcaller.xml"/>
-  <monster name="Charged energy elemental" file="tibia/1-50/charged energy elemental.xml"/>
-  <monster name="Chicken" file="tibia/1-50/chicken.xml"/>
-  <monster name="Cobra" file="tibia/1-50/cobra.xml"/>
-  <monster name="Cockroach" file="tibia/1-50/cockroach.xml"/>
-  <monster name="Coral frog" file="tibia/1-50/coral frog.xml"/>
-  <monster name="Countess sorrow" file="tibia/51-100/countess sorrow.xml"/>
-  <monster name="Crab" file="tibia/1-50/crab.xml"/>
-  <monster name="Crazed beggar" file="tibia/1-50/crazed beggar.xml"/>
-  <monster name="Crimson frog" file="tibia/1-50/crimson frog.xml"/>
-  <monster name="Crocodile" file="tibia/1-50/crocodile.xml"/>
-  <monster name="Crustacea gigantica" file="tibia/1-50/crustacea gigantica.xml"/>
-  <monster name="Crypt shambler" file="tibia/1-50/crypt shambler.xml"/>
-  <monster name="Crystal spider" file="tibia/1-50/crystal spider.xml"/>
-  <monster name="Crystal wolf" file="tibia/1-50/crystal wolf.xml"/>
-  <monster name="Cyclops" file="tibia/1-50/cyclops.xml"/>
-  <monster name="Cyclops drone" file="tibia/1-50/cyclops drone.xml"/>
-  <monster name="Cyclops smith" file="tibia/1-50/cyclops smith.xml"/>
+  <monster name="Centipede" file="dragon ball/tibia/centipede.xml"/>
+  <monster name="Cobra" file="dragon ball/tibia/cobra.xml"/>
+  <monster name="Cockroach" file="dragon ball/tibia/cockroach.xml"/>
+  <monster name="Coral frog" file="dragon ball/tibia/coral frog.xml"/>
+  <monster name="Crab" file="dragon ball/tibia/crab.xml"/>
+  <monster name="Crimson frog" file="dragon ball/tibia/crimson frog.xml"/>
+  <monster name="Crocodile" file="dragon ball/tibia/crocodile.xml"/>
+  <monster name="Cyclops" file="dragon ball/tibia/cyclops.xml"/>
+  <monster name="Cyclops drone" file="dragon ball/tibia/cyclops drone.xml"/>
+  <monster name="Cyclops smith" file="dragon ball/tibia/cyclops smith.xml"/>
   <monster name="Dabura" file="dragon ball/101-150/dabura.xml"/>
-  <monster name="Damaged worker golem" file="tibia/1-50/damaged worker golem.xml"/>
-  <monster name="Dark apprentice" file="tibia/1-50/dark apprentice.xml"/>
-  <monster name="Dark magician" file="tibia/1-50/dark magician.xml"/>
-  <monster name="Dark monk" file="tibia/1-50/dark monk.xml"/>
-  <monster name="Dark torturer" file="tibia/51-100/dark torturer.xml"/>
-  <monster name="Deadeye devious" file="tibia/1-50/deadeye devious.xml"/>
-  <monster name="Death blob" file="tibia/1-50/death blob.xml"/>
-  <monster name="Deathslicer" file="tibia/51-100/deathslicer.xml"/>
-  <monster name="Deepling scout" file="tibia/1-50/deepling scout.xml"/>
-  <monster name="Deer" file="tibia/1-50/deer.xml"/>
-  <monster name="Defiler" file="tibia/1-50/defiler.xml"/>
-  <monster name="Demodras" file="tibia/1-50/demodras.xml"/>
-  <monster name="Demon" file="tibia/51-100/demon.xml"/>
-  <monster name="Demon skeleton" file="tibia/1-50/demon skeleton.xml"/>
-  <monster name="Demon wolf" file="tibia/1-50/demon wolf.xml"/>
+  <monster name="Deer" file="dragon ball/tibia/deer.xml"/>
+  <monster name="Defiler" file="dragon ball/tibia/defiler.xml"/>
+  <monster name="Demodras" file="dragon ball/tibia/demodras.xml"/>
+  <monster name="Demon" file="dragon ball/tibia/demon.xml"/>
+  <monster name="Demon skeleton" file="dragon ball/tibia/demon skeleton.xml"/>
   <monster name="Demonic soldier" file="dragon ball/51-100/demonic soldier.xml"/>
   <monster name="Dest" file="dragon ball/1-50/dest.xml"/>
   <monster name="Destroyer" file="dragon ball/1-50/destroyer.xml"/>
-  <monster name="Dharalion" file="tibia/1-50/dharalion.xml"/>
-  <monster name="Diabolic imp" file="tibia/1-50/diabolic imp.xml"/>
   <monster name="Dino" file="dragon ball/1-50/dino.xml"/>
   <monster name="Dino hollow" file="bleach/1-50/dino hollow.xml"/>
-  <monster name="Dipthrah" file="tibia/1-50/dipthrah.xml"/>
-  <monster name="Dire penguin" file="tibia/1-50/dire penguin.xml"/>
   <monster name="Dodoria" file="dragon ball/51-100/dodoria.xml"/>
-  <monster name="Dog" file="tibia/1-50/dog.xml"/>
-  <monster name="Donkey" file="tibia/1-50/donkey.xml"/>
+  <monster name="Dog" file="dragon ball/tibia/dog.xml"/>
+  <monster name="Donkey" file="dragon ball/tibia/donkey.xml"/>
   <monster name="Dr. gero" file="dragon ball/101-150/dr. gero.xml"/>
-  <monster name="Dracola" file="tibia/51-100/dracola.xml"/>
-  <monster name="Dragon" file="tibia/1-50/dragon.xml"/>
+  <monster name="Dracola" file="dragon ball/tibia/dracola.xml"/>
+  <monster name="Dragon" file="dragon ball/tibia/dragon.xml"/>
   <monster name="Dragon baby" file="dragon ball/1-50/dragon baby.xml"/>
-  <monster name="Dragon hatchling" file="tibia/1-50/dragon hatchling.xml"/>
-  <monster name="Dragon lord" file="tibia/1-50/dragon lord.xml"/>
-  <monster name="Dragon lord hatchling" file="tibia/1-50/dragon lord hatchling.xml"/>
-  <monster name="Draken spellweaver" file="tibia/1-50/draken spellweaver.xml"/>
-  <monster name="Draken warmaster" file="tibia/1-50/draken warmaster.xml"/>
-  <monster name="Draptor" file="tibia/1-50/draptor.xml"/>
-  <monster name="Dreadbeast" file="tibia/1-50/dreadbeast.xml"/>
-  <monster name="Dromedary" file="tibia/1-50/dromedary.xml"/>
-  <monster name="Dwarf" file="tibia/1-50/dwarf.xml"/>
-  <monster name="Dwarf geomancer" file="tibia/1-50/dwarf geomancer.xml"/>
-  <monster name="Dwarf guard" file="tibia/1-50/dwarf guard.xml"/>
-  <monster name="Dwarf soldier" file="tibia/1-50/dwarf soldier.xml"/>
-  <monster name="Dworc fleshhunter" file="tibia/1-50/dworc fleshhunter.xml"/>
-  <monster name="Dworc venomsniper" file="tibia/1-50/dworc venomsniper.xml"/>
-  <monster name="Dworc voodoomaster" file="tibia/1-50/dworc voodoomaster.xml"/>
-  <monster name="Earth elemental" file="tibia/1-50/earth elemental.xml"/>
-  <monster name="Earth overlord" file="tibia/1-50/earth overlord.xml"/>
-  <monster name="Efreet" file="tibia/1-50/efreet.xml"/>
-  <monster name="Elder beholder" file="tibia/1-50/elder beholder.xml"/>
-  <monster name="Elephant" file="tibia/1-50/elephant.xml"/>
-  <monster name="Elf" file="tibia/1-50/elf.xml"/>
-  <monster name="Elf arcanist" file="tibia/1-50/elf arcanist.xml"/>
-  <monster name="Elf scout" file="tibia/1-50/elf scout.xml"/>
-  <monster name="Energy elemental" file="tibia/1-50/energy elemental.xml"/>
-  <monster name="Energy overlord" file="tibia/1-50/energy overlord.xml"/>
-  <monster name="Esmeralda" file="tibia/1-50/esmeralda.xml"/>
-  <monster name="Eternal guardian" file="tibia/1-50/eternal guardian.xml"/>
-  <monster name="Eye of the seven" file="tibia/1-50/eye of the seven.xml"/>
-  <monster name="Fahim the wise" file="tibia/51-100/fahim the wise.xml"/>
+  <monster name="Dragon hatchling" file="dragon ball/tibia/dragon hatchling.xml"/>
+  <monster name="Dragon lord" file="dragon ball/tibia/dragon lord.xml"/>
+  <monster name="Dragon lord hatchling" file="dragon ball/tibia/dragon lord hatchling.xml"/>
+  <monster name="Draptor" file="dragon ball/tibia/draptor.xml"/>
+  <monster name="Dromedary" file="dragon ball/tibia/dromedary.xml"/>
+  <monster name="Earth overlord" file="dragon ball/tibia/earth overlord.xml"/>
+  <monster name="Elf" file="dragon ball/tibia/elf.xml"/>
+  <monster name="Elf arcanist" file="dragon ball/tibia/elf arcanist.xml"/>
+  <monster name="Elf scout" file="dragon ball/tibia/elf scout.xml"/>
   <monster name="Fat buu" file="dragon ball/51-100/fat buu.xml"/>
   <monster name="Fat janemba" file="dragon ball/51-100/fat janemba.xml"/>
-  <monster name="Fernfang" file="tibia/1-50/fernfang.xml"/>
-  <monster name="Ferumbras" file="tibia/51-100/ferumbras.xml"/>
-  <monster name="Fire devil" file="tibia/1-50/fire devil.xml"/>
-  <monster name="Fire elemental" file="tibia/1-50/fire elemental.xml"/>
   <monster name="Fire elemental supremo" file="dragon ball/bosses/fire elemental supremo.xml"/>
-  <monster name="Fire overlord" file="tibia/51-100/fire overlord.xml"/>
+  <monster name="Fire overlord" file="dragon ball/tibia/fire overlord.xml"/>
   <monster name="Fishbone d" file="bleach/151-200/fishbone d.xml"/>
   <monster name="Flamethrower" file="dragon ball/bosses/flamethrower.xml"/>
-  <monster name="Flamingo" file="tibia/1-50/flamingo.xml"/>
-  <monster name="Fluffy" file="tibia/1-50/fluffy.xml"/>
-  <monster name="Foreman kneebiter" file="tibia/1-50/foreman kneebiter.xml"/>
+  <monster name="Flamingo" file="dragon ball/tibia/flamingo.xml"/>
   <monster name="Freeza" file="dragon ball/101-150/freeza.xml"/>
-  <monster name="Frost dragon" file="tibia/1-50/frost dragon.xml"/>
-  <monster name="Frost dragon hatchling" file="tibia/1-50/frost dragon hatchling.xml"/>
-  <monster name="Frost giant" file="tibia/1-50/frost giant.xml"/>
-  <monster name="Frost giantess" file="tibia/1-50/frost giantess.xml"/>
-  <monster name="Frost troll" file="tibia/1-50/frost troll.xml"/>
-  <monster name="Furios scorpion" file="tibia/51-100/furios scorpion.xml"/>
-  <monster name="Fury" file="tibia/1-50/fury.xml"/>
-  <monster name="Gang member" file="tibia/1-50/gang member.xml"/>
-  <monster name="Gargoyle" file="tibia/1-50/gargoyle.xml"/>
-  <monster name="Gazer" file="tibia/1-50/gazer.xml"/>
-  <monster name="General murius" file="tibia/1-50/general murius.xml"/>
-  <monster name="Ghastly dragon" file="tibia/51-100/ghastly dragon.xml"/>
-  <monster name="Ghazbaran" file="tibia/51-100/ghazbaran.xml"/>
-  <monster name="Ghost" file="tibia/1-50/ghost.xml"/>
+  <monster name="Furios scorpion" file="dragon ball/tibia/furios scorpion.xml"/>
   <monster name="Ghost hollow" file="bleach/1-50/ghost hollow.xml"/>
-  <monster name="Ghoul" file="tibia/1-50/ghoul.xml"/>
-  <monster name="Giant spider" file="tibia/1-50/giant spider.xml"/>
+  <monster name="Ghoul" file="dragon ball/tibia/ghoul.xml"/>
+  <monster name="Giant spider" file="dragon ball/tibia/giant spider.xml"/>
   <monster name="Gilian" file="bleach/51-100/gilian.xml"/>
   <monster name="Gin" file="bleach/1-50/gin.xml"/>
-  <monster name="Gladiator" file="tibia/1-50/gladiator.xml"/>
-  <monster name="Gnarlhound" file="tibia/1-50/gnarlhound.xml"/>
-  <monster name="Goblin" file="tibia/1-50/goblin.xml"/>
-  <monster name="Goblin assassin" file="tibia/1-50/goblin assassin.xml"/>
-  <monster name="Goblin leader" file="tibia/1-50/goblin leader.xml"/>
-  <monster name="Goblin scavenger" file="tibia/1-50/goblin scavenger.xml"/>
+  <monster name="Goblin" file="dragon ball/tibia/goblin.xml"/>
+  <monster name="Goblin assassin" file="dragon ball/tibia/goblin assassin.xml"/>
+  <monster name="Goblin leader" file="dragon ball/tibia/goblin leader.xml"/>
+  <monster name="Goblin scavenger" file="dragon ball/tibia/goblin scavenger.xml"/>
   <monster name="Gogeta" file="dragon ball/151-200/gogeta.xml"/>
   <monster name="Gohan ssj2" file="dragon ball/101-150/gohan ssj2.xml"/>
-  <monster name="Gohan ssj4" file="dragon ball/151-200/gohan ssj4.xml"/>
-  <monster name="Gohan ssj5" file="dragon ball/151-200/gohan ssj5.xml"/>
+  <monster name="Gohan ssj4" file="dragon ball/500-600/gohan ssj4.xml"/>
+  <monster name="Gohan ssj5" file="dragon ball/600-700/gohan ssj5.xml"/>
   <monster name="Goku" file="dragon ball/1-50/goku.xml"/>
   <monster name="Goku ginyu" file="dragon ball/51-100/goku ginyu.xml"/>
   <monster name="Goku ssj" file="dragon ball/101-150/goku ssj.xml"/>
   <monster name="Goku ssj2" file="dragon ball/101-150/goku ssj2.xml"/>
   <monster name="Goku ssj3" file="dragon ball/151-200/goku ssj3.xml"/>
-  <monster name="Goku ssj4" file="dragon ball/151-200/goku ssj4.xml"/>
-  <monster name="Goku ssj5" file="dragon ball/201-250/goku ssj5.xml"/>
-  <monster name="Golden oozaru" file="dragon ball/151-200/golden oozaru.xml"/>
-  <monster name="Golgordan" file="tibia/51-100/golgordan.xml"/>
-  <monster name="Gozzler" file="tibia/1-50/gozzler.xml"/>
+  <monster name="Goku ssj4" file="dragon ball/500-600/goku ssj4.xml"/>
+  <monster name="Goku ssj5" file="dragon ball/600-700/goku ssj5.xml"/>
+  <monster name="Golden oozaru" file="dragon ball/201-250/golden oozaru.xml"/>
   <monster name="Grand fisher" file="bleach/151-200/grand fisher.xml"/>
-  <monster name="Green djinn" file="tibia/1-50/green djinn.xml"/>
-  <monster name="Green frog" file="tibia/1-50/green frog.xml"/>
-  <monster name="Grim reaper" file="tibia/51-100/grim reaper.xml"/>
   <monster name="Grimmjow" file="bleach/1-50/grimmjow.xml"/>
-  <monster name="Grorlam" file="tibia/1-50/grorlam.xml"/>
-  <monster name="Grynch clan goblin" file="tibia/1-50/grynch clan goblin.xml"/>
-  <monster name="Hacker" file="tibia/1-50/hacker.xml"/>
-  <monster name="Hairman the huge" file="tibia/1-50/hairman the huge.xml"/>
-  <monster name="Halloweenhare" file="tibia/1-50/halloweenhare.xml"/>
-  <monster name="Hand of cursed fate" file="tibia/51-100/hand of cursed fate.xml"/>
-  <monster name="Handmaiden" file="tibia/51-100/handmaiden.xml"/>
-  <monster name="Haunted treeling" file="tibia/1-50/haunted treeling.xml"/>
   <monster name="Hawk" file="dragon ball/bosses/hawk.xml"/>
-  <monster name="Hellfire fighter" file="tibia/51-100/hellfire fighter.xml"/>
-  <monster name="Hellgorak" file="tibia/51-100/hellgorak.xml"/>
-  <monster name="Hellhound" file="tibia/51-100/hellhound.xml"/>
-  <monster name="Hellspawn" file="tibia/1-50/hellspawn.xml"/>
-  <monster name="Hero" file="tibia/1-50/hero.xml"/>
-  <monster name="Hide" file="tibia/1-50/hide.xml"/>
+  <monster name="Hero" file="dragon ball/tibia/hero.xml"/>
   <monster name="Hitsugaya" file="bleach/1-50/hitsugaya.xml"/>
   <monster name="Hollow" file="bleach/51-100/hollow.xml"/>
-  <monster name="Horse" file="tibia/1-50/horse.xml"/>
   <monster name="Human tiger" file="dragon ball/1-50/human tiger.xml"/>
-  <monster name="Hunter" file="tibia/1-50/hunter.xml"/>
-  <monster name="Husky" file="tibia/1-50/husky.xml"/>
-  <monster name="Hyaena" file="tibia/1-50/hyaena.xml"/>
-  <monster name="Hydra" file="tibia/1-50/hydra.xml"/>
-  <monster name="Ice golem" file="tibia/1-50/ice golem.xml"/>
-  <monster name="Ice overlord" file="tibia/1-50/ice overlord.xml"/>
-  <monster name="Ice witch" file="tibia/1-50/ice witch.xml"/>
+  <monster name="Hyaena" file="dragon ball/tibia/hyaena.xml"/>
   <monster name="Ichigo" file="bleach/1-50/ichigo.xml"/>
   <monster name="Ikomikidomoe" file="bleach/301-350/ikomikidomoe.xml"/>
-  <monster name="Infernalist" file="tibia/1-50/infernalist.xml"/>
-  <monster name="Insect swarm" file="tibia/1-50/insect swarm.xml"/>
   <monster name="Ishida" file="bleach/1-50/ishida.xml"/>
-  <monster name="Island troll" file="tibia/1-50/island troll.xml"/>
-  <monster name="Jagged earth elemental" file="tibia/1-50/jagged earth elemental.xml"/>
   <monster name="Janemba" file="dragon ball/51-100/janemba.xml"/>
-  <monster name="Juggernaut" file="tibia/51-100/juggernaut.xml"/>
   <monster name="Kid janemba" file="dragon ball/51-100/kid janemba.xml"/>
-  <monster name="Killer caiman" file="tibia/1-50/killer caiman.xml"/>
   <monster name="King vegeta" file="dragon ball/51-100/king vegeta.xml"/>
-  <monster name="Kongra" file="tibia/1-50/kongra.xml"/>
-  <monster name="Koshei the deathless" file="tibia/1-50/koshei the deathless.xml"/>
+  <monster name="Kongra" file="dragon ball/tibia/kongra.xml"/>
   <monster name="Kuririn" file="dragon ball/101-150/kuririn.xml"/>
   <monster name="Kyouraku" file="bleach/1-50/kyouraku.xml"/>
-  <monster name="Lancer beetle" file="tibia/1-50/lancer beetle.xml"/>
-  <monster name="Larva" file="tibia/1-50/larva.xml"/>
-  <monster name="Latrivan" file="tibia/51-100/latrivan.xml"/>
+  <monster name="Larva" file="dragon ball/tibia/larva.xml"/>
   <monster name="Lavahole" file="dragon ball/1-50/lavahole.xml"/>
   <monster name="Leader of the guardian of the forest of menos" file="bleach/101-150/leader of the guardian of the forest of menos.xml"/>
-  <monster name="Lethal lissy" file="tibia/1-50/lethal lissy.xml"/>
-  <monster name="Leviathan" file="tibia/51-100/leviathan.xml"/>
-  <monster name="Lich" file="tibia/1-50/lich.xml"/>
-  <monster name="Lion" file="tibia/1-50/lion.xml"/>
-  <monster name="Lizard chosen" file="tibia/1-50/lizard chosen.xml"/>
-  <monster name="Lizard dragon priest" file="tibia/1-50/lizard dragon priest.xml"/>
-  <monster name="Lizard high guard" file="tibia/1-50/lizard high guard.xml"/>
-  <monster name="Lizard legionnaire" file="tibia/1-50/lizard legionnaire.xml"/>
-  <monster name="Lizard sentinel" file="tibia/1-50/lizard sentinel.xml"/>
-  <monster name="Lizard snakecharmer" file="tibia/1-50/lizard snakecharmer.xml"/>
-  <monster name="Lizard templar" file="tibia/1-50/lizard templar.xml"/>
-  <monster name="Lizard zaogun" file="tibia/1-50/lizard zaogun.xml"/>
-  <monster name="Lizzard king" file="tibia/51-100/lizzard king.xml"/>
+  <monster name="Lion" file="dragon ball/tibia/lion.xml"/>
   <monster name="Lobisomen" file="dragon ball/101-150/lobisomen.xml"/>
-  <monster name="Lord of the elements" file="tibia/51-100/lord of the elements.xml"/>
-  <monster name="Lost soul" file="tibia/1-50/lost soul.xml"/>
-  <monster name="Mad scientist" file="tibia/1-50/mad scientist.xml"/>
-  <monster name="Mad technomancer" file="tibia/1-50/mad technomancer.xml"/>
-  <monster name="Madareth" file="tibia/51-100/madareth.xml"/>
   <monster name="Magicthrower" file="dragon ball/bosses/magicthrower.xml"/>
-  <monster name="Mahrdis" file="tibia/1-50/mahrdis.xml"/>
-  <monster name="Majin buu" file="dragon ball/151-200/majin buu.xml"/>
+  <monster name="Majin buu" file="dragon ball/201-250/majin buu.xml"/>
   <monster name="Mama bird" file="dragon ball/bosses/mama bird.xml"/>
-  <monster name="Mammoth" file="tibia/1-50/mammoth.xml"/>
-  <monster name="Man in the cave" file="tibia/1-50/man in the cave.xml"/>
-  <monster name="Marid" file="tibia/1-50/marid.xml"/>
-  <monster name="Massacre" file="tibia/51-100/massacre.xml"/>
-  <monster name="Massive earth elemental" file="tibia/1-50/massive earth elemental.xml"/>
-  <monster name="Massive energy elemental" file="tibia/1-50/massive energy elemental.xml"/>
-  <monster name="Massive fire elemental" file="tibia/1-50/massive fire elemental.xml"/>
-  <monster name="Massive water elemental" file="tibia/1-50/massive water elemental.xml"/>
-  <monster name="Medusa" file="tibia/1-50/medusa.xml"/>
-  <monster name="Mercury blob" file="tibia/1-50/mercury blob.xml"/>
-  <monster name="Merikh the slaughterer" file="tibia/51-100/merikh the slaughterer.xml"/>
-  <monster name="Merlkin" file="tibia/1-50/merlkin.xml"/>
-  <monster name="Mimic" file="tibia/1-50/mimic.xml"/>
-  <monster name="Mini stone golem" file="tibia/1-50/mini stone golem.xml"/>
-  <monster name="Minishabaal" file="tibia/1-50/minishabaal.xml"/>
-  <monster name="Minotaur" file="tibia/1-50/minotaur.xml"/>
-  <monster name="Minotaur archer" file="tibia/1-50/minotaur archer.xml"/>
-  <monster name="Minotaur guard" file="tibia/1-50/minotaur guard.xml"/>
-  <monster name="Minotaur mage" file="tibia/1-50/minotaur mage.xml"/>
-  <monster name="Monako" file="tibia/101-150/monako.xml"/>
-  <monster name="Monk" file="tibia/1-50/monk.xml"/>
-  <monster name="Morgaroth" file="tibia/51-100/morgaroth.xml"/>
-  <monster name="Morguthis" file="tibia/1-50/morguthis.xml"/>
-  <monster name="Mr. punish" file="tibia/51-100/mr. punish.xml"/>
-  <monster name="Muddy earth elemental" file="tibia/1-50/muddy earth elemental.xml"/>
-  <monster name="Mummy" file="tibia/1-50/mummy.xml"/>
-  <monster name="Munster" file="tibia/1-50/munster.xml"/>
-  <monster name="Mutated bat" file="tibia/1-50/mutated bat.xml"/>
-  <monster name="Mutated human" file="tibia/1-50/mutated human.xml"/>
-  <monster name="Mutated rat" file="tibia/1-50/mutated rat.xml"/>
-  <monster name="Mutated tiger" file="tibia/1-50/mutated tiger.xml"/>
+  <monster name="Merlkin" file="dragon ball/tibia/merlkin.xml"/>
+  <monster name="Minotaur" file="dragon ball/tibia/minotaur.xml"/>
+  <monster name="Minotaur archer" file="dragon ball/tibia/minotaur archer.xml"/>
+  <monster name="Minotaur guard" file="dragon ball/tibia/minotaur guard.xml"/>
+  <monster name="Minotaur mage" file="dragon ball/tibia/minotaur mage.xml"/>
   <monster name="Namekjin" file="dragon ball/51-100/namekjin.xml"/>
-  <monster name="Necromancer" file="tibia/1-50/necromancer.xml"/>
-  <monster name="Necropharus" file="tibia/1-50/necropharus.xml"/>
   <monster name="Neliel" file="bleach/1-50/neliel.xml"/>
-  <monster name="Nightmare" file="tibia/1-50/nightmare.xml"/>
-  <monster name="Nightmare scion" file="tibia/1-50/nightmare scion.xml"/>
-  <monster name="Nightstalker" file="tibia/1-50/nightstalker.xml"/>
-  <monster name="Nomad" file="tibia/1-50/nomad.xml"/>
   <monster name="Numb chandelier" file="bleach/1-50/numb chandelier.xml"/>
-  <monster name="Omruc" file="tibia/1-50/omruc.xml"/>
   <monster name="Oozaru" file="dragon ball/51-100/oozaru.xml"/>
-  <monster name="Orc" file="tibia/1-50/orc.xml"/>
-  <monster name="Orc berserker" file="tibia/1-50/orc berserker.xml"/>
-  <monster name="Orc leader" file="tibia/1-50/orc leader.xml"/>
-  <monster name="Orc marauder" file="tibia/1-50/orc marauder.xml"/>
-  <monster name="Orc rider" file="tibia/1-50/orc rider.xml"/>
-  <monster name="Orc shaman" file="tibia/1-50/orc shaman.xml"/>
-  <monster name="Orc spearman" file="tibia/1-50/orc spearman.xml"/>
-  <monster name="Orc warlord" file="tibia/51-100/orc warlord.xml"/>
-  <monster name="Orc warrior" file="tibia/51-100/orc warrior.xml"/>
-  <monster name="Orchid frog" file="tibia/1-50/orchid frog.xml"/>
-  <monster name="Orshabaal" file="tibia/101-150/orshabaal.xml"/>
-  <monster name="Overcharged energy elemental" file="tibia/1-50/overcharged energy elemental.xml"/>
   <monster name="Paikuhan" file="dragon ball/101-150/paikuhan.xml"/>
-  <monster name="Panda" file="tibia/1-50/panda.xml"/>
-  <monster name="Parrot" file="tibia/1-50/parrot.xml"/>
-  <monster name="Penguin" file="tibia/1-50/penguin.xml"/>
-  <monster name="Phantasm" file="tibia/1-50/phantasm.xml"/>
-  <monster name="Phantasm summon" file="tibia/1-50/phantasm summon.xml"/>
-  <monster name="Pig" file="tibia/1-50/pig.xml"/>
-  <monster name="Pink butterfly" file="tibia/1-50/pink butterfly.xml"/>
-  <monster name="Pirate buccaneer" file="tibia/1-50/pirate buccaneer.xml"/>
-  <monster name="Pirate corsair" file="tibia/1-50/pirate corsair.xml"/>
-  <monster name="Pirate cutthroat" file="tibia/1-50/pirate cutthroat.xml"/>
-  <monster name="Pirate ghost" file="tibia/1-50/pirate ghost.xml"/>
-  <monster name="Pirate marauder" file="tibia/1-50/pirate marauder.xml"/>
-  <monster name="Pirate skeleton" file="tibia/1-50/pirate skeleton.xml"/>
-  <monster name="Plaguesmith" file="tibia/51-100/plaguesmith.xml"/>
+  <monster name="Panda" file="dragon ball/tibia/panda.xml"/>
+  <monster name="Parrot" file="dragon ball/tibia/parrot.xml"/>
   <monster name="Plaguethrower" file="dragon ball/bosses/plaguethrower.xml"/>
-  <monster name="Poacher" file="tibia/1-50/poacher.xml"/>
-  <monster name="Poison spider" file="tibia/1-50/poison spider.xml"/>
+  <monster name="Poison spider" file="dragon ball/tibia/poison spider.xml"/>
   <monster name="Poisonthrower" file="dragon ball/bosses/poisonthrower.xml"/>
-  <monster name="Polar bear" file="tibia/1-50/polar bear.xml"/>
-  <monster name="Priestess" file="tibia/1-50/priestess.xml"/>
-  <monster name="Primitive" file="tibia/1-50/primitive.xml"/>
   <monster name="Purple robocop" file="dragon ball/51-100/purple robocop.xml"/>
-  <monster name="Pythius the rotten" file="tibia/1-50/Pythius The Rotten.xml"/>
-  <monster name="Quara constrictor" file="tibia/1-50/quara constrictor.xml"/>
-  <monster name="Quara constrictor scout" file="tibia/1-50/quara constrictor scout.xml"/>
-  <monster name="Quara hydromancer" file="tibia/1-50/quara hydromancer.xml"/>
-  <monster name="Quara hydromancer scout" file="tibia/1-50/quara hydromancer scout.xml"/>
-  <monster name="Quara mantassin" file="tibia/1-50/quara mantassin.xml"/>
-  <monster name="Quara mantassin scout" file="tibia/1-50/quara mantassin scout.xml"/>
-  <monster name="Quara pincher" file="tibia/1-50/quara pincher.xml"/>
-  <monster name="Quara pincher scout" file="tibia/1-50/quara pincher scout.xml"/>
-  <monster name="Quara predator" file="tibia/1-50/quara predator.xml"/>
-  <monster name="Quara predator scout" file="tibia/1-50/quara predator scout.xml"/>
-  <monster name="Rabbit" file="tibia/1-50/rabbit.xml"/>
+  <monster name="Rabbit" file="dragon ball/tibia/rabbit.xml"/>
   <monster name="Raditz" file="dragon ball/1-50/raditz.xml"/>
-  <monster name="Raditz ssj4" file="dragon ball/201-250/raditz ssj4.xml"/>
-  <monster name="Raditz ssj5" file="dragon ball/201-250/raditz ssj5.xml"/>
-  <monster name="Raging mage" file="tibia/1-50/raging mage.xml"/>
-  <monster name="Rahemos" file="tibia/1-50/rahemos.xml"/>
+  <monster name="Raditz ssj4" file="dragon ball/500-600/raditz ssj4.xml"/>
+  <monster name="Raditz ssj5" file="dragon ball/600-700/raditz ssj5.xml"/>
   <monster name="Rat" file="dragon ball/1-50/rat.xml"/>
-  <monster name="Red butterfly" file="tibia/1-50/red butterfly.xml"/>
   <monster name="Red red robocop" file="dragon ball/51-100/red red robocop.xml"/>
   <monster name="Renji" file="bleach/1-50/renji.xml"/>
-  <monster name="Rift brood" file="tibia/1-50/rift brood.xml"/>
-  <monster name="Rift scythe" file="tibia/1-50/rift scythe.xml"/>
-  <monster name="Rift worm" file="tibia/1-50/rift worm.xml"/>
-  <monster name="Roaring water elemental" file="tibia/1-50/roaring water elemental.xml"/>
   <monster name="Robotron" file="dragon ball/1-50/robotron.xml"/>
-  <monster name="Ron the ripper" file="tibia/1-50/ron the ripper.xml"/>
-  <monster name="Rotworm" file="tibia/1-50/rotworm.xml"/>
-  <monster name="Rotworm queen" file="tibia/1-50/rotworm queen.xml"/>
+  <monster name="Rotworm" file="dragon ball/tibia/rotworm.xml"/>
+  <monster name="Rotworm queen" file="dragon ball/tibia/rotworm queen.xml"/>
   <monster name="Rukia" file="bleach/1-50/rukia.xml"/>
   <monster name="Sado" file="bleach/1-50/sado.xml"/>
   <monster name="Saibamen" file="dragon ball/51-100/saibamen.xml"/>
   <monster name="Saibamen white" file="dragon ball/51-100/saibamen white.xml"/>
   <monster name="Saiyan" file="dragon ball/201-250/saiyan.xml"/>
   <monster name="Saiyan ghost" file="dragon ball/51-100/saiyan ghost.xml"/>
-  <monster name="Sandcrawler" file="tibia/1-50/sandcrawler.xml"/>
-  <monster name="Scarab" file="tibia/1-50/scarab.xml"/>
-  <monster name="Scorpion" file="tibia/1-50/scorpion.xml"/>
-  <monster name="Sea serpent" file="tibia/1-50/sea serpent.xml"/>
-  <monster name="Seagull" file="tibia/1-50/seagull.xml"/>
-  <monster name="Serpent spawn" file="tibia/1-50/serpent spawn.xml"/>
-  <monster name="Shardhead" file="tibia/1-50/shardhead.xml"/>
-  <monster name="Sheep" file="tibia/1-50/sheep.xml"/>
+  <monster name="Sandcrawler" file="dragon ball/tibia/sandcrawler.xml"/>
+  <monster name="Scarab" file="dragon ball/tibia/scarab.xml"/>
+  <monster name="Scorpion" file="dragon ball/tibia/scorpion.xml"/>
+  <monster name="Seagull" file="dragon ball/tibia/seagull.xml"/>
   <monster name="Shredderthrower" file="dragon ball/bosses/shredderthrower.xml"/>
-  <monster name="Sibang" file="tibia/1-50/sibang.xml"/>
-  <monster name="Silver rabbit" file="tibia/1-50/silver rabbit.xml"/>
-  <monster name="Skeleton" file="tibia/1-50/skeleton.xml"/>
+  <monster name="Sibang" file="dragon ball/tibia/sibang.xml"/>
+  <monster name="Silver rabbit" file="dragon ball/tibia/silver rabbit.xml"/>
   <monster name="Skeleton samurai" file="dragon ball/1-50/skeleton samurai.xml"/>
-  <monster name="Skeleton warrior" file="tibia/1-50/skeleton warrior.xml"/>
-  <monster name="Skunk" file="tibia/1-50/skunk.xml"/>
-  <monster name="Slick water elemental" file="tibia/1-50/slick water elemental.xml"/>
-  <monster name="Slime" file="tibia/1-50/slime.xml"/>
-  <monster name="Slime summon" file="tibia/1-50/slime summon.xml"/>
-  <monster name="Slug" file="tibia/1-50/slug.xml"/>
-  <monster name="Smuggler" file="tibia/1-50/smuggler.xml"/>
-  <monster name="Snake" file="tibia/1-50/snake.xml"/>
-  <monster name="Son of verminor" file="tibia/51-100/son of verminor.xml"/>
+  <monster name="Snake" file="dragon ball/tibia/snake.xml"/>
   <monster name="Space soldier" file="dragon ball/101-150/space soldier.xml"/>
-  <monster name="Spectre" file="tibia/1-50/spectre.xml"/>
-  <monster name="Spider" file="tibia/1-50/spider.xml"/>
   <monster name="Spider hollow" file="bleach/51-100/spider hollow.xml"/>
-  <monster name="Spit nettle" file="tibia/1-50/spit nettle.xml"/>
+  <monster name="Spit nettle" file="dragon ball/tibia/spit nettle.xml"/>
   <monster name="Spopovitch" file="dragon ball/51-100/spopovitch.xml"/>
-  <monster name="Squirrel" file="tibia/1-50/squirrel.xml"/>
-  <monster name="Stalker" file="tibia/1-50/stalker.xml"/>
-  <monster name="Stampor" file="tibia/1-50/stampor.xml"/>
-  <monster name="Stone golem" file="tibia/1-50/stone golem.xml"/>
-  <monster name="Stonecracker" file="tibia/1-50/stonecracker.xml"/>
-  <monster name="Super c17" file="dragon ball/151-200/super c17.xml"/>
-  <monster name="Super c18" file="dragon ball/151-200/super c18.xml"/>
-  <monster name="Swamp troll" file="tibia/1-50/swamp troll.xml"/>
+  <monster name="Stone golem" file="dragon ball/tibia/stone golem.xml"/>
+  <monster name="Super c17" file="dragon ball/300-400/super c17.xml"/>
+  <monster name="Super c18" file="dragon ball/300-400/super c18.xml"/>
   <monster name="Tank" file="dragon ball/51-100/tank.xml"/>
-  <monster name="Tarantula" file="tibia/1-50/tarantula.xml"/>
+  <monster name="Tarantula" file="dragon ball/tibia/tarantula.xml"/>
   <monster name="Term" file="dragon ball/1-50/term.xml"/>
   <monster name="Terminator" file="dragon ball/1-50/terminator.xml"/>
-  <monster name="Terramite" file="tibia/1-50/terramite.xml"/>
-  <monster name="Terror bird" file="tibia/1-50/terror bird.xml"/>
-  <monster name="Thalas" file="tibia/1-50/thalas.xml"/>
-  <monster name="The abomination" file="tibia/51-100/the abomination.xml"/>
-  <monster name="The bloodtusk" file="tibia/1-50/the bloodtusk.xml"/>
-  <monster name="The count" file="tibia/1-50/the count.xml"/>
-  <monster name="The evil eye" file="tibia/1-50/the evil eye.xml"/>
-  <monster name="The handmaiden" file="tibia/51-100/the handmaiden.xml"/>
-  <monster name="The horned fox" file="tibia/1-50/the horned fox.xml"/>
-  <monster name="The imperor" file="tibia/51-100/the imperor.xml"/>
-  <monster name="The many" file="tibia/1-50/the many.xml"/>
-  <monster name="The noxious spawn" file="tibia/51-100/the noxious spawn.xml"/>
-  <monster name="The old widow" file="tibia/1-50/the old widow.xml"/>
-  <monster name="The plasmother" file="tibia/51-100/the plasmother.xml"/>
-  <monster name="The snapper" file="tibia/1-50/the snapper.xml"/>
-  <monster name="Thornback tortoise" file="tibia/1-50/thornback tortoise.xml"/>
-  <monster name="Thul" file="tibia/1-50/thul.xml"/>
-  <monster name="Tibia bug" file="tibia/1-50/tibia bug.xml"/>
-  <monster name="Tiger" file="tibia/1-50/tiger.xml"/>
-  <monster name="Tiquandas revenge" file="tibia/1-50/tiquandas revenge.xml"/>
-  <monster name="Toad" file="tibia/1-50/toad.xml"/>
-  <monster name="Tortoise" file="tibia/1-50/tortoise.xml"/>
+  <monster name="Terror bird" file="dragon ball/tibia/terror bird.xml"/>
   <monster name="Training monk" file="outros/training monk.xml"/>
   <monster name="Triceratops" file="dragon ball/1-50/triceratops.xml"/>
-  <monster name="Troll" file="tibia/1-50/troll.xml"/>
-  <monster name="Troll champion" file="tibia/1-50/troll champion.xml"/>
+  <monster name="Troll" file="dragon ball/tibia/troll.xml"/>
   <monster name="Trunks ssj2" file="dragon ball/101-150/trunks SSJ2.xml"/>
-  <monster name="Trunks ssj4" file="dragon ball/151-200/trunks SSJ4.xml"/>
-  <monster name="Trunks ssj5" file="dragon ball/201-250/trunks SSJ5.xml"/>
+  <monster name="Trunks ssj4" file="dragon ball/500-600/trunks SSJ4.xml"/>
+  <monster name="Trunks ssj5" file="dragon ball/600-700/trunks SSJ5.xml"/>
   <monster name="Tsuful" file="dragon ball/51-100/tsuful.xml"/>
   <monster name="Tsuful baby" file="dragon ball/1-50/tsuful baby.xml"/>
   <monster name="Tsuful oozaru" file="dragon ball/101-150/tsuful oozaru.xml"/>
-  <monster name="Tsuful ssj5" file="dragon ball/201-250/tsuful SSJ5.xml"/>
+  <monster name="Tsuful ssj5" file="dragon ball/600-700/tsuful SSJ5.xml"/>
   <monster name="Turles" file="dragon ball/1-50/turles.xml"/>
-  <monster name="Turles ssj4" file="dragon ball/151-200/turles ssj4.xml"/>
-  <monster name="Turles ssj5" file="dragon ball/201-250/turles ssj5.xml"/>
+  <monster name="Turles ssj4" file="dragon ball/500-600/turles ssj4.xml"/>
+  <monster name="Turles ssj5" file="dragon ball/600-700/turles ssj5.xml"/>
   <monster name="Tyrannosaurus rex" file="dragon ball/1-50/tyrannosaurus rex.xml"/>
   <monster name="Tyrannosaurus rex hollow" file="bleach/1-50/tyrannosaurus rex hollow.xml"/>
   <monster name="Ulquiorra" file="bleach/1-50/ulquiorra.xml"/>
-  <monster name="Undead dragon" file="tibia/51-100/undead dragon.xml"/>
+  <monster name="Undead dragon" file="dragon ball/tibia/undead dragon.xml"/>
   <monster name="Undead dragon baby" file="dragon ball/1-50/undead dragon baby.xml"/>
-  <monster name="Undead gladiator" file="tibia/1-50/undead gladiator.xml"/>
-  <monster name="Undead mine worker" file="tibia/1-50/undead mine worker.xml"/>
-  <monster name="Undead minion" file="tibia/1-50/undead minion.xml"/>
-  <monster name="Undead prospector" file="tibia/1-50/undead prospector.xml"/>
   <monster name="Urahara" file="bleach/1-50/urahara.xml"/>
-  <monster name="Ushuriel" file="tibia/51-100/ushuriel.xml"/>
-  <monster name="Valkyrie" file="tibia/1-50/valkyrie.xml"/>
-  <monster name="Vampire" file="tibia/1-50/vampire.xml"/>
-  <monster name="Vampire bride" file="tibia/1-50/vampire bride.xml"/>
-  <monster name="Vashresamun" file="tibia/1-50/vashresamun.xml"/>
   <monster name="Vegeta" file="dragon ball/1-50/vegeta.xml"/>
-  <monster name="Vegeta ssj blue" file="dragon ball/151-200/vegeta ssj blue.xml"/>
-  <monster name="Vegeta ssj4" file="dragon ball/151-200/vegeta ssj4.xml"/>
-  <monster name="Vegetto" file="dragon ball/151-200/vegetto.xml"/>
-  <monster name="Wailing widow" file="tibia/1-50/wailing widow.xml"/>
-  <monster name="War golem" file="tibia/1-50/war golem.xml"/>
-  <monster name="War wolf" file="tibia/1-50/war wolf.xml"/>
-  <monster name="Warlock" file="tibia/1-50/warlock.xml"/>
-  <monster name="Wasp" file="tibia/1-50/wasp.xml"/>
-  <monster name="Water elemental" file="tibia/1-50/water elemental.xml"/>
-  <monster name="Werewolf" file="tibia/1-50/werewolf.xml"/>
-  <monster name="Wild warrior" file="tibia/1-50/wild warrior.xml"/>
+  <monster name="Vegeta ssj blue" file="dragon ball/700-800/vegeta ssj blue.xml"/>
+  <monster name="Vegeta ssj4" file="dragon ball/500-600/vegeta ssj4.xml"/>
+  <monster name="Vegetto" file="dragon ball/201-250/vegetto.xml"/>
+  <monster name="Wasp" file="dragon ball/tibia/wasp.xml"/>
   <monster name="Wind elemental" file="dragon ball/51-100/wind elemental.xml"/>
-  <monster name="Winter wolf" file="tibia/1-50/winter wolf.xml"/>
-  <monster name="Wisp" file="tibia/1-50/wisp.xml"/>
-  <monster name="Witch" file="tibia/1-50/witch.xml"/>
-  <monster name="Wolf" file="tibia/1-50/wolf.xml"/>
+  <monster name="Wisp" file="dragon ball/tibia/wisp.xml"/>
+  <monster name="Wolf" file="dragon ball/tibia/wolf.xml"/>
   <monster name="Wolf hollow" file="bleach/1-50/wolf hollow.xml"/>
-  <monster name="Worker" file="tibia/51-100/worker.xml"/>
-  <monster name="Worker gold" file="tibia/101-150/worker gold.xml"/>
-  <monster name="Worker golem" file="tibia/1-50/worker golem.xml"/>
-  <monster name="Worker ice" file="tibia/51-100/worker ice.xml"/>
-  <monster name="Wyrm" file="tibia/1-50/wyrm.xml"/>
-  <monster name="Wyvern" file="tibia/1-50/wyvern.xml"/>
-  <monster name="Xenia" file="tibia/1-50/xenia.xml"/>
   <monster name="Yakon" file="dragon ball/51-100/yakon.xml"/>
-  <monster name="Yellow butterfly" file="tibia/1-50/yellow butterfly.xml"/>
-  <monster name="Yeti" file="tibia/1-50/yeti.xml"/>
-  <monster name="Yielothax" file="tibia/1-50/yielothax.xml"/>
-  <monster name="Young sea serpent" file="tibia/1-50/young sea serpent.xml"/>
   <monster name="Zangetsu" file="bleach/51-100/zangetsu.xml"/>
   <monster name="Zaraki" file="bleach/1-50/zaraki.xml"/>
   <monster name="Zarbon" file="dragon ball/51-100/zarbon.xml"/>
-  <monster name="Zombie" file="tibia/1-50/zombie.xml"/>
-  <monster name="Zugurosh" file="tibia/51-100/zugurosh.xml"/>
 </monsters>
