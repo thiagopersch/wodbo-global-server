@@ -10,14 +10,27 @@ string.upperAllFirst = string.upperAllFirst or function(str)
 	return string.gsub(' ' .. str, '%W%l', string.upper):sub(2)
 end
 
+local monsters = { "Aegzen", "Aegzengiven", "Aegzengun", "Aizen", "Ancestral guardian", "Ancient dinosaur hollow",
+	"Android", "Aqua", "Aqua corrupted", "Assassin", "Bandit hollow", "Bardock oozaru", "Bardock ssj supreme",
+	"Bardock ssj3", "Bardock ssj4", "Bardock ssj5", "Bojack", "Botamo", "Cell", "Cell jr", "Cell perfect", "Demon",
+	"Demonic soldier", "Dragon", "Dragon baby", "Dragon lord", "Fat buu", "Fat janemba", "Fishbone d", "Furios scorpion",
+	"Ghost hollow", "Giant spider", "Gilian", "Gogeta", "Gohan ssj2", "Gohan ssj4", "Gohan ssj5", "Goku ssj", "Goku ssj2",
+	"Goku ssj3", "Goku ssj4", "Goku ssj5", "Golden oozaru", "Grand fisher", "Hollow", "Ikomikidomoe", "Janemba",
+	"Kid janemba", "King vegeta", "Leader of the guardian of the forest of menos", "Namekjin", "Numb chandelier", "Oozaru",
+	"Paikuhan", "Purple robocop", "Raditz ssj4", "Raditz ssj5", "Red red robocop", "Robotron", "Saibamen", "Space soldier",
+	"Spider hollow", "Spopovitch", "Super c17", "Super c18", "Tank", "Triceratops", "Trunks ssj2", "Trunks ssj4",
+	"Trunks ssj5", "Tsuful baby", "Tsuful oozaru", "Tsuful ssj5", "Turles ssj4", "Turles ssj5", "Tyrannosaurus rex",
+	"Tyrannosaurus rex hollow", "Undead dragon", "Undead dragon baby", "Vegeta ssj blue", "Vegeta ssj4", "Vegetto", "Wolf",
+	"Wolf hollow", "Yakon", "Zangetsu", "Zarbon" }
+
 local days = {
-	["Sunday"]    = { "Rat", "Rotworm", "Demon" },
-	["Monday"]    = { "Rat", "Rotworm", "Demon" },
-	["Tuesday"]   = { "Rat", "Rotworm", "Demon" },
-	["Wednesday"] = { "Rat", "Rotworm", "Demon" },
-	["Thursday"]  = { "Rat", "Rotworm", "Demon" },
-	["Friday"]    = { "Rat", "Rotworm", "Demon" },
-	["Saturday"]  = { "Rat", "Rotworm", "Demon" },
+	["Sunday"]    = monsters,
+	["Monday"]    = monsters,
+	["Tuesday"]   = monsters,
+	["Wednesday"] = monsters,
+	["Thursday"]  = monsters,
+	["Friday"]    = monsters,
+	["Saturday"]  = monsters,
 }
 
 function onStartup()

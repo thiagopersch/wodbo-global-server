@@ -127,40 +127,31 @@
 		<item id="4665" chance="1" />
 		<item id="4666" chance="1" />
 
-		<item id="4620" chance="0" />
-		<item id="4621" chance="0" />
-		<item id="4622" chance="0" />
-		<item id="4623" chance="0" />
-		<item id="4624" chance="0" />
-		<item id="4625" chance="0" />
-
-		<item id="5757" chance="0" />
-		<item id="5756" chance="0" />
-		<item id="5755" chance="0" />
-		<item id="5759" chance="0" />
-		<item id="5760" chance="0" />
-		<item id="5758" chance="0" />
-		<item id="5761" chance="0" />
-		<item id="28824" chance="0" />
-
 		<border align="outer" id="5" />
-		<border align="outer" to="none" id="5" />
+		<!-- <border align="outer" to="none" id="5" /> -->
 		<border align="inner" to="ice" id="48" />
 	</brush>
 
 	<brush name="walkable sea" type="ground" server_lookid="4608" z-order="7600">
+		<item id="4620" chance="1" />
+		<item id="4621" chance="1" />
+		<item id="4622" chance="1" />
+		<item id="4623" chance="1" />
+		<item id="4624" chance="1" />
+		<item id="4625" chance="1" />
 		<item id="4820" chance="3" />
 		<item id="4821" chance="1" />
 		<item id="4822" chance="1" />
 		<item id="4823" chance="1" />
 		<item id="4824" chance="1" />
 		<item id="4825" chance="1" />
-
-		<friend name="sea" />
+		<item id="28824" chance="1" />
 
 		<border align="outer" id="5" />
-		<border align="outer" to="none" id="5" />
+		<!-- <border align="outer" to="none" id="5" /> -->
 		<border align="inner" to="ice" id="48" />
+
+		<friend name="sea" />
 	</brush>
 
 	<brush name="ice" type="ground" server_lookid="671" z-order="3900">
@@ -273,7 +264,8 @@
 		<border align="inner" to="sea" id="33" />
 		<border align="inner" to="none" id="1" />
 		<border align="inner" to="walkable sea" id="33" />
-		<border align="outer" id="6"> -- snow vs. grass/whatever with normal sea border -- <specific>
+		<border align="outer" id="6">
+			<specific>
 				<conditions>
 					<match_border id="6" edge="s" />
 					<match_border id="5" edge="e" />
@@ -351,8 +343,8 @@
 				<actions>
 					<replace_border id="5" edge="n" with="6655" />
 				</actions>
-			</specific> -- snow
-			vs. frozen mud border -- <specific>
+			</specific>
+			<specific>
 				<conditions>
 					<match_border id="6" edge="s" />
 					<match_border id="47" edge="e" />
@@ -433,7 +425,8 @@
 			</specific>
 		</border>
 
-		<border align="inner" to="ice" id="50"> -- West -- <specific>
+		<border align="inner" to="ice" id="50">
+			<specific>
 				<conditions>
 					<match_border id="33" edge="dsw" />
 					<match_border id="50" edge="cnw" />
@@ -482,7 +475,8 @@
 				<actions>
 					<delete_borders />
 				</actions>
-			</specific> -- East -- <specific>
+			</specific>
+			<specific>
 				<conditions>
 					<match_border id="33" edge="dse" />
 					<match_border id="50" edge="cne" />
@@ -531,7 +525,8 @@
 				<actions>
 					<delete_borders />
 				</actions>
-			</specific> -- North -- <specific>
+			</specific>
+			<specific>
 				<conditions>
 					<match_border id="33" edge="dnw" />
 					<match_border id="50" edge="cne" />
@@ -580,7 +575,8 @@
 				<actions>
 					<delete_borders />
 				</actions>
-			</specific> -- South -- <specific>
+			</specific>
+			<specific>
 				<conditions>
 					<match_border id="33" edge="dsw" />
 					<match_border id="50" edge="cse" />
@@ -713,24 +709,23 @@
 		<item id="8322" chance="0" />
 
 		<border align="outer" id="16" />
-		<border align="inner" to="sea" ground_equivalent="231">
+		<border align="inner" to="sea" ground_equivalent="231" id="289" />
+		<border align="outer" to="none" id="16" />
+		<friend name="sand (thick border)" />
+		<!-- <border align="inner" to="sea" ground_equivalent="231">
 			<borderitem edge="n" item="4632" />
 			<borderitem edge="e" item="4635" />
-			<borderitem edge="s"
-				item="4634" />
+			<borderitem edge="s" item="4634" />
 			<borderitem edge="w" item="4633" />
 			<borderitem edge="cnw" item="4643" />
-			<borderitem
-				edge="cne" item="4642" />
+			<borderitem edge="cne" item="4642" />
 			<borderitem edge="csw" item="4641" />
-			<borderitem edge="cse"
-				item="4640" />
+			<borderitem edge="cse" item="4640" />
 			<borderitem edge="dnw" item="4639" />
 			<borderitem edge="dne" item="4638" />
-			<borderitem
-				edge="dsw" item="4637" />
-			<borderitem edge="dse" item="4636" /> -- Handles for the 8
-			different specific cases which might occur with water/sand borders -- <specific>
+			<borderitem edge="dsw" item="4637" />
+			<borderitem edge="dse" item="4636" />
+			<specific>
 				<conditions>
 					<match_item id="4634" />
 					<match_border id="2" edge="e" />
@@ -739,7 +734,6 @@
 					<replace_item id="4634" with="4661" />
 				</actions>
 			</specific>
-
 			<specific>
 				<conditions>
 					<match_item id="4632" />
@@ -749,7 +743,6 @@
 					<replace_item id="4632" with="4660" />
 				</actions>
 			</specific>
-
 			<specific>
 				<conditions>
 					<match_item id="4633" />
@@ -759,7 +752,6 @@
 					<replace_item id="4633" with="4662" />
 				</actions>
 			</specific>
-
 			<specific>
 				<conditions>
 					<match_item id="4635" />
@@ -769,7 +761,6 @@
 					<replace_item id="4635" with="4663" />
 				</actions>
 			</specific>
-
 			<specific>
 				<conditions>
 					<match_item id="4634" />
@@ -779,7 +770,6 @@
 					<replace_item id="4634" with="4661" />
 				</actions>
 			</specific>
-
 			<specific>
 				<conditions>
 					<match_item id="4632" />
@@ -789,7 +779,6 @@
 					<replace_item id="4632" with="4656" />
 				</actions>
 			</specific>
-
 			<specific>
 				<conditions>
 					<match_item id="4634" />
@@ -799,7 +788,6 @@
 					<replace_item id="4634" with="4657" />
 				</actions>
 			</specific>
-
 			<specific>
 				<conditions>
 					<match_item id="4635" />
@@ -809,7 +797,6 @@
 					<replace_item id="4635" with="4659" />
 				</actions>
 			</specific>
-
 			<specific>
 				<conditions>
 					<match_item id="4633" />
@@ -819,10 +806,7 @@
 					<replace_item id="4633" with="4658" />
 				</actions>
 			</specific>
-		</border>
-		<border align="inner" to="none" id="1" />
-
-		<friend name="sand (thick border)" />
+		</border> -->
 	</brush>
 
 	<brush name="sand (thick border)" type="ground" server_lookid="231" z-order="4700">
@@ -923,8 +907,8 @@
 		<item id="9041" chance="1" />
 		<item id="9042" chance="1" />
 
-		<border align="outer" id="22"> -- Handles for the 8 different specific cases which might occur
-			with icy earth/stone earth borders -- <specific>
+		<border align="outer" id="22">
+			<specific>
 				<conditions>
 					<match_border id="21" edge="s" />
 					<match_border id="22" edge="cse" />
@@ -1004,8 +988,8 @@
 				</actions>
 			</specific>
 		</border>
-		<border align="outer" to="none" id="22"> -- Handles for the 8 different specific cases which
-			might occur with icy earth/stone earth borders -- <specific>
+		<border align="outer" to="none" id="22">
+			<specific>
 				<conditions>
 					<match_border id="21" edge="s" />
 					<match_border id="22" edge="cse" />
@@ -1231,7 +1215,8 @@
 		<item id="7065" chance="1" />
 		<item id="7066" chance="1" />
 
-		<border align="outer" id="44"> -- frozen mud vs. with lower z-order -- <specific>
+		<border align="outer" id="44">
+			<specific>
 				<conditions>
 					<match_border id="5" edge="s" />
 					<match_border id="44" edge="e" />
@@ -1311,7 +1296,8 @@
 				</actions>
 			</specific>
 		</border>
-		<border align="inner" id="47" to="sea"> -- snow vs. frozen mud border -- <specific>
+		<border align="inner" id="47" to="sea">
+			<specific>
 				<conditions>
 					<match_border id="6" edge="s" />
 					<match_border id="47" edge="e" />
@@ -1389,8 +1375,8 @@
 				<actions>
 					<replace_border id="47" edge="n" with="6667" />
 				</actions>
-			</specific> --
-			frozen mud vs. with higher z-order -- <specific>
+			</specific>
+			<specific>
 				<conditions>
 					<match_group group="1" edge="s" />
 					<match_border id="47" edge="e" />
@@ -1672,7 +1658,6 @@
 
 		<border align="inner" to="none" id="53" />
 		<border align="outer" to="none" id="52" />
-		<!-- <border align="inner" to="icy mountain" id="133"/> -->
 		<border align="inner" id="53" />
 		<border align="outer" id="52" />
 	</brush>
@@ -1682,8 +1667,8 @@
 
 		<border align="outer" to="earth" id="6" />
 		<border align="outer" to="earth (stone border)" id="6" />
-		<border align="outer" id="122"> -- Handles for the 8 different specific cases which might occur
-			with icy earth/earth borders -- <specific>
+		<border align="outer" id="122">
+			<specific>
 				<conditions>
 					<match_border id="21" edge="s" />
 					<match_border id="122" edge="cse" />
@@ -1761,8 +1746,8 @@
 				<actions>
 					<replace_border id="122" edge="cnw" with="6836" />
 				</actions>
-			</specific> --
-			Handles for the 8 different specific cases which might occur with icy earth/earth borders -- <specific>
+			</specific>
+			<specific>
 				<conditions>
 					<match_border id="22" edge="s" />
 					<match_border id="122" edge="cse" />
@@ -1842,8 +1827,8 @@
 				</actions>
 			</specific>
 		</border>
-		<border align="outer" to="none" id="122"> -- Handles for the 8 different specific cases which
-			might occur with icy earth/earth borders -- <specific>
+		<border align="outer" to="none" id="122">
+			<specific>
 				<conditions>
 					<match_border id="21" edge="s" />
 					<match_border id="122" edge="cse" />
@@ -1921,8 +1906,8 @@
 				<actions>
 					<replace_border id="122" edge="cnw" with="6836" />
 				</actions>
-			</specific> --
-			Handles for the 8 different specific cases which might occur with icy earth/earth borders -- <specific>
+			</specific>
+			<specific>
 				<conditions>
 					<match_border id="22" edge="s" />
 					<match_border id="122" edge="cse" />
@@ -2264,8 +2249,6 @@
 
 	<brush name="tiled sandstone floor" type="ground" server_lookid="419" z-order="2500">
 		<item id="419" chance="1" />
-
-		<!-- <friend name="all"/> -->
 	</brush>
 
 	<brush name="tiled sandstone floor pressed" type="ground" server_lookid="417" z-order="500">

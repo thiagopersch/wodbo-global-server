@@ -30620,14 +30620,11 @@
 		<item id="50104" chance="10" />
 		<item id="50105" chance="10" />
 		<item id="50122" chance="10" />
-		<item id="50126" chance="10" />
 		<item id="50140" chance="10" />
 		<item id="50141" chance="10" />
 		<item id="50142" chance="10" />
 		<item id="50143" chance="10" />
 		<item id="50144" chance="10" />
-		<item id="50157" chance="10" />
-
 	</brush>
 
 	<brush name="dbo desert" type="doodad"

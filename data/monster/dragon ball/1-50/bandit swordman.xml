@@ -32,8 +32,8 @@
   </flags>
   <attacks>
     <attack name="melee" interval="1000" min="-10" max="-40" />
-    <attack name="Sword Bash" interval="5000" chance="5" min="-10" max="-40" />
-    <attack name="Brave Furie" interval="10000" chance="3" min="-20" max="-60" />
+    <attack name="Sword Bash" interval="5000" chance="25" min="-10" max="-40" />
+    <attack name="Brave Furie" interval="10000" chance="25" min="-20" max="-60" />
   </attacks>
   <immunities>
     <immunity physical="0" />

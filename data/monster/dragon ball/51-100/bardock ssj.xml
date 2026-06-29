@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Bardock Ssj" bestiary="monster" description="a bardock ssj" race="blood"
-  experience="10000" speed="350">
-  <health now="35000" max="35000" />
+  experience="150000" speed="350">
+  <health now="100000" max="100000" />
   <look type="1688" head="0" body="0" legs="0" feet="0" addons="0" typeex="0" corpse="49290" />
   <targetchange interval="4000" chance="10" />
   <flags>
@@ -31,9 +31,9 @@
     <flag canwalkonpoison="0" />
   </flags>
   <attacks>
-    <attack name="melee" interval="2000" min="-1" max="-300" />
-    <attack name="Dock Rage" interval="4000" chance="20" min="-1" max="-370" />
-    <attack name="Saiyajin Energy" interval="10000" chance="10" min="-1" max="-390" />
+    <attack name="melee" interval="2000" min="-80" max="-150" />
+    <attack name="Dock Rage" interval="4000" chance="35" min="-200" max="-350" />
+    <attack name="Saiyajin Energy" interval="10000" chance="25" min="-300" max="-450" />
   </attacks>
   <immunities>
     <immunity physical="0" />
