@@ -269,4 +269,6 @@
 	<house name="Unnamed House #267" houseid="267" entryx="31858" entryy="32300" entryz="7" rent="0" townid="2" size="47" />
 	<house name="Unnamed House #268" houseid="268" entryx="31865" entryy="32300" entryz="7" rent="0" townid="2" size="47" />
 	<house name="Unnamed House #269" houseid="269" entryx="31916" entryy="32231" entryz="7" rent="0" townid="2" size="24" />
+	<house name="Unnamed House #270" houseid="270" entryx="31781" entryy="32291" entryz="5" rent="0" townid="2" size="270" />
+	<house name="Unnamed House #271" houseid="271" entryx="31804" entryy="32291" entryz="5" rent="0" townid="2" size="397" />
 </houses>

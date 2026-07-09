@@ -261,10 +261,9 @@
 		<item id="6923" chance="0" />
 		<item id="6924" chance="0" />
 
-		<border align="inner" to="sea" id="33" />
-		<border align="inner" to="none" id="1" />
-		<border align="inner" to="walkable sea" id="33" />
-		<border align="outer" id="6">
+		<border align="outer" to="none" id="6" />
+		<border align="outer" to="ice" id="6" />
+		<!-- <border align="outer" id="6">
 			<specific>
 				<conditions>
 					<match_border id="6" edge="s" />
@@ -423,9 +422,9 @@
 					<replace_border id="47" edge="n" with="6667" />
 				</actions>
 			</specific>
-		</border>
+		</border> -->
 
-		<border align="inner" to="ice" id="50">
+		<!-- <border align="inner" to="ice" id="50">
 			<specific>
 				<conditions>
 					<match_border id="33" edge="dsw" />
@@ -626,7 +625,9 @@
 					<delete_borders />
 				</actions>
 			</specific>
-		</border>
+		</border> -->
+		<border align="inner" to="sea" id="33" />
+		<border align="inner" to="walkable sea" id="33" />
 	</brush>
 
 	<brush name="cave" type="ground" lookid="351" z-order="200">
@@ -1157,7 +1158,7 @@
 		<border align="inner" to="none" id="58" />
 	</brush>
 
-	<brush name="lava" type="ground" server_lookid="598" z-order="7700">
+	<brush name="lava" type="ground" server_lookid="598" z-order="1000">
 		<item id="23857" chance="100" />
 		<item id="598" chance="100" />
 		<item id="599" chance="7" />

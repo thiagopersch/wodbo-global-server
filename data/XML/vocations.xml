@@ -474,7 +474,7 @@
 		<skill fist="2.0" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="2.0" fishing="2.0"
 			experience="2.0" />
 	</vocation>
-	<vocation id="52" name="Ichigo Kurosaki FullBring" description="Ichigo Kurosaki FullBring"
+	<vocation id="52" name="Ichigo Kurosaki Time Skip" description="Ichigo Kurosaki Time Skip"
 		needpremium="0"
 		gaincap="500" gainhp="250" gainmana="250" gainhpticks="4" gainhpamount="10" gainmanaticks="3"
 		gainmanaamount="15" manamultiplier="1.1" attackspeed="900" soulmax="200" gainsoulticks="60"
@@ -495,7 +495,7 @@
 		<skill fist="2.0" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="2.0" fishing="2.0"
 			experience="2.0" />
 	</vocation>
-	<vocation id="54" name="Uryu Ishida" description="Uryu Ishida" needpremium="0" gaincap="500"
+	<vocation id="54" name="Uryuu Ishida" description="Uryuu Ishida" needpremium="0" gaincap="500"
 		gainhp="250"
 		gainmana="250" gainhpticks="4" gainhpamount="10" gainmanaticks="2" gainmanaamount="25"
 		manamultiplier="1.1" attackspeed="1000" soulmax="200" gainsoulticks="60" fromvoc="54"
@@ -628,11 +628,9 @@
 			experience="2.0" />
 	</vocation>
 	<vocation id="67" name="Kenpachi Zaraki" description="Kenpachi Zaraki" needpremium="0"
-		gaincap="500"
-		gainhp="250" gainmana="250" gainhpticks="4" gainhpamount="10" gainmanaticks="3"
-		gainmanaamount="15"
-		manamultiplier="1.1" attackspeed="900" soulmax="200" gainsoulticks="60" fromvoc="67"
-		type_class="DPS" type_universe="Bleach">
+		gaincap="500" gainhp="250" gainmana="250" gainhpticks="4" gainhpamount="10" gainmanaticks="3"
+		gainmanaamount="15" manamultiplier="1.1" attackspeed="900" soulmax="200" gainsoulticks="60"
+		fromvoc="67" type_class="DPS" type_universe="Bleach">
 		<formula meleeDamage="1.7" distDamage="1.7" wandDamage="1.7" magDamage="1.7"
 			magHealingDamage="1.7" defense="1.0" magDefense="1.0" armor="1.0" />
 		<skill fist="2.0" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="2.0" fishing="2.0"

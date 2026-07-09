@@ -2116,7 +2116,7 @@
 		type="doodad"
 		server_lookid="5395"
 		draggable="true"
-		on_blocking="false"
+		on_blocking="true"
 		thickness="13/100"
 	>
 		<item id="5395" chance="10" />
@@ -2128,7 +2128,7 @@
 		type="doodad"
 		server_lookid="5394"
 		draggable="true"
-		on_blocking="false"
+		on_blocking="true"
 		thickness="13/100"
 	>
 		<item id="5394" chance="10" />

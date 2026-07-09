@@ -70228,6 +70228,12 @@
 		<attribute key="type" value="bed" />
 		<attribute key="partnerDirection" value="south" />
 	</item>
+	<item id="51947" article="a" name="hole">
+		<attribute key="floorchange" value="down" />
+	</item>
+	<item id="51947" article="a" name="hole">
+		<attribute key="floorchange" value="down" />
+	</item>
 	<item id="51954" name="cyan square chest">
 		<attribute key="weight" value="12000" />
 		<attribute key="containerSize" value="15" />

@@ -6,11 +6,11 @@ function onStepIn(cid, item, pos)
     local thingPos = getThingPos(cid)
     local magicEffect = 240
 
-    print("[Citizen Portal] Player '" .. getCreatureName(cid) .. "' stepped on teleport (Item ID: " .. item.itemid .. ", Action ID: " .. item.actionid .. ")")
-
     local townId = nil
     if item.actionid == 4036 then
         townId = 2 -- Central City (Main City on map)
+    elseif item.actionid == 4035 then
+        townId = 3 -- Icy Land
     elseif item.actionid == 4037 then
         townId = 1 -- Ressuration Temple on map
     end
@@ -18,9 +18,8 @@ function onStepIn(cid, item, pos)
     if townId then
         local townName = getTownName(townId)
         if townName then
-            print("[Citizen Portal] Setting town of '" .. getCreatureName(cid) .. "' to " .. townName .. " (ID: " .. townId .. ")")
             local success = doPlayerSetTown(cid, townId)
-            print("[Citizen Portal] doPlayerSetTown success: " .. tostring(success))
+
 
             local templePos = getTownTemplePosition(townId)
             if templePos and templePos.x > 0 then
@@ -39,4 +38,3 @@ function onStepIn(cid, item, pos)
 
     return true
 end
-

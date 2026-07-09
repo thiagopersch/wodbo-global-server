@@ -48,6 +48,17 @@ function doExpandingWaveCombat(cid, config)
     return false
   end
 
+  -- Verifica linha de visão livre de projéteis entre duas posições.
+  -- canThrowObjectTo() já respeita blockprojectile (paredes, árvores) e PZ nativamente.
+  local function hasLineOfSight(fromPos, toPos)
+    -- Posições no mesmo tile são sempre visíveis
+    if fromPos.x == toPos.x and fromPos.y == toPos.y and fromPos.z == toPos.z then
+      return true
+    end
+    -- A função retorna true se um projétil pode percorrer o caminho sem obstrução
+    return canThrowObjectTo(fromPos, toPos)
+  end
+
   local casterPos = getCreaturePosition(cid)
   if isBlocked(casterPos) then
     return false
@@ -74,12 +85,13 @@ function doExpandingWaveCombat(cid, config)
       return false
     end
 
-    -- 1. Efeitos (Apenas no anel do raio atual, se NÃO for PZ)
+    -- 1. Efeitos (Apenas no anel do raio atual)
+    -- Só renderiza efeito se o tile não estiver bloqueado E houver linha de visão livre do centro
     for x = -radius, radius do
       for y = -radius, radius do
         if math.abs(x) + math.abs(y) == radius then
           local areaPos = { x = center.x + x, y = center.y + y, z = center.z }
-          if not isBlocked(areaPos) then
+          if not isBlocked(areaPos) and hasLineOfSight(center, areaPos) then
             doSendMagicEffect(areaPos, getEffect(radius))
           end
         end
@@ -96,8 +108,9 @@ function doExpandingWaveCombat(cid, config)
 
           if dist <= radius and not hitCreatures[creature] then
             hitCreatures[creature] = true
-            -- Checar PZ na posição da criatura (Sempre segura/válida)
-            if not isBlocked(targetPos) then
+            -- Checar se a posição do alvo não está bloqueada E se há linha de visão livre
+            -- hasLineOfSight já rejeita PZ e blockprojectile (paredes, árvores, etc.)
+            if not isBlocked(targetPos) and hasLineOfSight(center, targetPos) then
               local min = -(config.minDmg * radius)
               local max = -(config.maxDmg * radius)
               doTargetCombatHealth(cid, creature, config.type, min, max, getEffect(radius))
