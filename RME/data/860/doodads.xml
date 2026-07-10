@@ -30636,4 +30636,170 @@
 		<item id="50081" chance="10" />
 		<item id="50082" chance="10" />
 	</brush>
+
+	<brush name="sea monster" type="doodad"
+		server_lookid="37850" draggable="true" on_blocking="false" thickness="15/100">
+		<composite chance="4">
+			<tile x="0" y="0">
+				<item id="37850" />
+			</tile>
+			<tile x="1" y="0">
+				<item id="37851" />
+			</tile>
+			<tile x="0" y="1">
+				<item id="37852" />
+			</tile>
+			<tile x="1" y="1">
+				<item id="37853" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush name="no sea monster"
+		type="doodad"
+		server_lookid="37854" draggable="true" on_blocking="false" thickness="15/100">
+		<composite chance="4">
+			<tile x="0" y="0">
+				<item id="37854" />
+			</tile>
+			<tile x="1" y="0">
+				<item id="37855" />
+			</tile>
+			<tile x="0" y="1">
+				<item id="37856" />
+			</tile>
+			<tile x="1" y="1">
+				<item id="37857" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush name="tentuglys treasure"
+		type="doodad" server_lookid="38256" draggable="true" on_blocking="false" thickness="10/100">
+		<item id="38256" chance="10" />
+		<item id="38257" chance="10" />
+		<item id="38258" chance="10" />
+		<item id="38259" chance="10" />
+	</brush>
+
+	<brush name="sun tapet"
+		type="doodad"
+		server_lookid="47895" draggable="true" on_blocking="false" thickness="15/100">
+		<composite chance="4">
+			<tile x="0" y="0">
+				<item id="47895" />
+			</tile>
+			<tile x="1" y="0">
+				<item id="47896" />
+			</tile>
+			<tile x="0" y="1">
+				<item id="47897" />
+			</tile>
+			<tile x="1" y="1">
+				<item id="47898" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush name="sun tapet border red"
+		type="doodad"
+		server_lookid="47899" draggable="true" on_blocking="false" thickness="15/100">
+		<composite chance="4">
+			<tile x="0" y="0">
+				<item id="47899" />
+			</tile>
+			<tile x="1" y="0">
+				<item id="47900" />
+			</tile>
+			<tile x="0" y="1">
+				<item id="47901" />
+			</tile>
+			<tile x="1" y="1">
+				<item id="47902" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush
+		name="star sun tapet tips simples"
+		type="doodad"
+		server_lookid="47903" draggable="true" on_blocking="false" thickness="15/100">
+		<item id="47903" chance="10" />
+		<item id="47904" chance="10" />
+		<item id="47905" chance="10" />
+	</brush>
+
+	<brush
+		name="rocky path"
+		type="doodad"
+		server_lookid="9727" draggable="true" on_blocking="false" thickness="15/100">
+		<item id="9727" chance="10" />
+		<item id="9728" chance="10" />
+	</brush>
+
+	<brush name="grassy path" type="wall"
+		server_lookid="28168">
+		<wall type="pole">
+			<item id="28168" chance="1" />
+		</wall>
+		<wall type="horizontal">
+			<item id="28168" chance="1" />
+		</wall>
+		<wall type="vertical">
+			<item id="28167" chance="1" />
+		</wall>
+		<wall type="south end">
+			<item id="28167" chance="1" />
+		</wall>
+		<wall type="east end">
+			<item id="28168" chance="1" />
+		</wall>
+		<wall type="north end">
+			<item id="28167" chance="1" />
+		</wall>
+		<wall type="west end">
+			<item id="28168" chance="1" />
+		</wall>
+		<wall type="northeast diagonal">
+			<item id="28169" chance="1" />
+		</wall>
+		<wall type="northwest diagonal">
+			<item id="28170" chance="1" />
+		</wall>
+		<wall type="southeast diagonal">
+			<item id="28172" chance="1" />
+		</wall>
+		<wall type="southwest diagonal">
+			<item id="28171" chance="1" />
+		</wall>
+		<wall type="south T">
+			<item id="28173" chance="1" />
+			<item id="28177" chance="1" />
+		</wall>
+		<wall type="north T">
+			<item id="28174" chance="1" />
+			<item id="28178" chance="1" />
+		</wall>
+		<wall type="east T">
+			<item id="28175" chance="1" />
+			<item id="28179" chance="1" />
+		</wall>
+		<wall type="west T">
+			<item id="28176" chance="1" />
+			<item id="28180" chance="1" />
+		</wall>
+	</brush>
+
+	<!-- <brush name="grassy path" type="carpet"
+		server_lookid="28168">
+		<carpet align="n" id="28168" />
+		<carpet align="e" id="28167" />
+		<carpet align="s" id="28168" />
+		<carpet align="w" id="28167" />
+		<carpet align="cse" id="28172" />
+		<carpet align="csw" id="28171" />
+		<carpet align="cne" id="28169" />
+		<carpet align="cnw" id="28170" />
+		<carpet align="center" id="28168" />
+	</brush> -->
 </materials>

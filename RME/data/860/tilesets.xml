@@ -18,7 +18,7 @@
 			<brush name="lava" />
 			<brush name="tar pit" />
 			<brush name="acid" />
-			<brush name="unknown5" />
+			<brush name="poison swamp" />
 			<brush name="unknown6" />
 			<brush name="earth" />
 			<brush name="earth (stone border)" />
@@ -151,6 +151,7 @@
 
 	<tileset name="City Grounds">
 		<terrain>
+			<brush name="rocky path" />
 			<brush name="cobblestone" />
 			<brush name="grassy cobblestone" />
 			<brush name="dark cobblestone" />
@@ -253,6 +254,13 @@
 			<brush name="clouds" />
 			<brush name="dbo wooden planks horizontal" />
 			<brush name="dbo white floor" />
+			<brush name="broken light wooden floor horizontal" />
+			<brush name="broken wooden floor vertical" />
+			<brush name="broken boat wooden floor vertical" />
+			<brush name="sea shallow water (walkable)" />
+			<brush name="sea monster" />
+			<brush name="no sea monster" />
+			<brush name="tentuglys treasure" />
 			<brush name="dbo wooden planks alternative" />
 			<brush name="bleach wooden planks alternative" />
 			<brush name="dbo gray floor" />
@@ -299,10 +307,15 @@
 			<brush name="Twilight Dusk" />
 			<brush name="Sunrise Sunset" />
 			<brush name="Nightfall Night" />
-			<item fromid="9727" />
-			<item fromid="9728" />
+			<brush name="dark smooth surface" />
+
+			<brush name="sun tapet" />
+			<brush name="sun tapet border red" />
+			<brush name="star sun tapet tips simples" />
+			<brush name="salt" />
 
 
+			<brush name="grassy path" />
 			<brush name="real ornaments" />
 			<brush name="piping fire" />
 			<brush name="jade floor ornaments" />
@@ -727,7 +740,7 @@
 			<item fromid="47839" toid="47854" />
 			<item fromid="47871" toid="47882" />
 			<item fromid="47895" toid="47905" />
-			<item fromid="47895" toid="47907" />
+			<item fromid="47906" toid="47908" />
 			<item fromid="48028" toid="48038" />
 			<item fromid="48052" />
 			<item fromid="48109" toid="48110" />

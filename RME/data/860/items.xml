@@ -24613,7 +24613,7 @@
 	<item fromid="14904" toid="14912" name="wet temple floor" />
 	<item fromid="14913" toid="14914" article="a" name="finely crafted ornament" />
 	<item fromid="14915" toid="14928" name="wet temple floor" />
-	<item fromid="14929" toid="14930" article="a" name="deepling ornament" />
+	<item fromid="14929" toid="14939" article="a" name="deepling ornament" />
 	<item fromid="14940" toid="14951" name="cracked deepling floor" />
 	<item fromid="14952" toid="14967" name="cryptic writings" />
 	<item id="14968" article="an" name="embedded emerald" />
@@ -33763,6 +33763,7 @@
 	<item fromid="23308" toid="23311" name="rubble" />
 	<item fromid="23312" toid="23319" article="a" name="lattice" />
 	<item fromid="23320" toid="23323" article="a" name="broken wall" />
+	<item fromid="23324" toid="23326" name="poison swamp" />
 	<item id="23343" article="a" name="dead glooth golem" editorsuffix=" (Immobile)">
 		<attribute key="containerSize" value="38" />
 		<attribute key="decayTo" value="23344" />
@@ -35160,6 +35161,7 @@
 		<attribute key="weight" value="2180" />
 	</item>
 	<item id="24140" editorsuffix=" (Blank)" />
+	<item fromid="24141" toid="24143" name="poison swamp" />
 	<item fromid="24144" toid="24146" editorsuffix=" (Blank)" />
 	<item id="24156" article="a" name="broken nacre altar">
 		<attribute key="description"
@@ -62930,7 +62932,7 @@
 		<attribute key="absorbPercentEnergy" value="4" />
 		<attribute key="absorbPercentIce" value="4" />
 	</item>
-	<item fromid="44226" toid="44231" name="lava" editorsuffix=" (Walkable)" />
+	<item fromid="44226" toid="44231" name="lava" />
 	<item id="44232" article="a" name="dead parder">
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="30" />
@@ -64184,19 +64186,19 @@
 	<item fromid="44913" toid="44914" article="a" name="sandstone wall" />
 	<item id="44915" article="a" name="sandstone ramp" />
 	<item id="44916" article="a" name="sandstone ramp">
-			<attribute key="floorchange" value="north" />
+		<attribute key="floorchange" value="north" />
 	</item>
 	<item id="44917" article="a" name="sandstone ramp" />
 	<item id="44918" article="a" name="sandstone ramp">
-			<attribute key="floorchange" value="east" />
+		<attribute key="floorchange" value="east" />
 	</item>
 	<item id="44919" article="a" name="sandstone ramp" />
 	<item id="44920" article="a" name="sandstone ramp">
-			<attribute key="floorchange" value="west" />
+		<attribute key="floorchange" value="west" />
 	</item>
 	<item id="44921" article="a" name="sandstone ramp" />
 	<item id="44922" article="a" name="sandstone ramp">
-			<attribute key="floorchange" value="south" />
+		<attribute key="floorchange" value="south" />
 	</item>
 	<item fromid="44931" toid="44936" article="a" name="mossy sandstone wall" />
 	<item fromid="44940" toid="44942" article="a" name="mossy sandstone archway" />
@@ -64208,36 +64210,36 @@
 	<item id="45257" article="a" name="musgy ramp" />
 	<item id="45258" article="a" name="musgy ramp" />
 	<item id="45259" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="north" />
+		<attribute key="floorchange" value="north" />
 	</item>
 	<item id="45260" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="east" />
+		<attribute key="floorchange" value="east" />
 	</item>
 	<item fromid="45261" toid="45274" article="a" name="musgy wall" />
 	<item id="45275" article="a" name="musgy ramp" />
 	<item id="45276" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="east" />
+		<attribute key="floorchange" value="east" />
 	</item>
 	<item id="45277" article="a" name="musgy ramp" />
 	<item id="45278" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="north" />
+		<attribute key="floorchange" value="north" />
 	</item>
 	<item fromid="45279" toid="45291" article="a" name="musgy wall" />
 	<item id="45292" article="a" name="musgy ramp" />
 	<item id="45293" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="north" />
+		<attribute key="floorchange" value="north" />
 	</item>
 	<item id="45294" article="a" name="musgy ramp" />
 	<item id="45295" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="west" />
+		<attribute key="floorchange" value="west" />
 	</item>
 	<item id="45296" article="a" name="musgy ramp" />
 	<item id="45297" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="west" />
+		<attribute key="floorchange" value="west" />
 	</item>
 	<item id="45298" article="a" name="musgy ramp" />
 	<item id="45299" article="a" name="musgy ramp">
-			<attribute key="floorchange" value="west" />
+		<attribute key="floorchange" value="west" />
 	</item>
 	<item fromid="45300" toid="45305" article="a" name="musgy wall" />
 	<item fromid="45384" toid="45411" article="a" name="rockmud wall" />
@@ -64246,19 +64248,19 @@
 	<item fromid="45422" toid="45423" article="a" name="rockmud wall" />
 	<item id="45424" article="a" name="rockmud ramp" />
 	<item id="45425" article="a" name="rockmud ramp">
-			<attribute key="floorchange" value="north" />
+		<attribute key="floorchange" value="north" />
 	</item>
 	<item id="45426" article="a" name="rockmud ramp" />
 	<item id="45427" article="a" name="rockmud ramp">
-			<attribute key="floorchange" value="west" />
+		<attribute key="floorchange" value="west" />
 	</item>
 	<item id="45428" article="a" name="rockmud ramp" />
 	<item id="45429" article="a" name="rockmud ramp">
-			<attribute key="floorchange" value="east" />
+		<attribute key="floorchange" value="east" />
 	</item>
 	<item id="45430" article="a" name="rockmud ramp" />
 	<item id="45431" article="a" name="rockmud ramp">
-			<attribute key="floorchange" value="south" />
+		<attribute key="floorchange" value="south" />
 	</item>
 	<item id="45519" name="wooden stake">
 		<attribute key="weight" value="250" />
@@ -67142,8 +67144,8 @@
 	</item>
 	<item id="49555" article="a" name="holy knight sword">
 		<attribute key="weight" value="3500" />
-		<attribute key="defense" value="19" />
-		<attribute key="attack" value="26" />
+		<attribute key="defense" value="26" />
+		<attribute key="attack" value="33" />
 		<attribute key="weaponType" value="sword" />
 	</item>
 	<item id="49556" article="a" name="sword of disease">
@@ -68030,7 +68032,7 @@
 		<attribute key="absorbpercentall" value="20" />
 		<attribute key="slotType" value="feet" />
 	</item>
-	<item id="49668" article="a" name="android boots">
+	<item id="49668" article="a" name="android 17 boots">
 		<attribute key="weight" value="8000" />
 		<attribute key="armor" value="20" />
 		<attribute key="healthGain" value="700" />
@@ -68116,9 +68118,9 @@
 		<attribute key="weight" value="4000" />
 		<attribute key="armor" value="30" />
 		<attribute key="defense" value="20" />
-		<attribute key="healthGain" value="300" />
+		<attribute key="healthGain" value="450" />
 		<attribute key="healthTicks" value="1" />
-		<attribute key="manaGain" value="300" />
+		<attribute key="manaGain" value="450" />
 		<attribute key="manaTicks" value="1" />
 		<attribute key="slotType" value="body" />
 	</item>
@@ -68132,7 +68134,7 @@
 		<attribute key="manaTicks" value="1" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="49678" article="a" name="android 17 waistcoat">
+	<item id="49678" article="a" name="android 18 waistcoat">
 		<attribute key="weight" value="6000" />
 		<attribute key="armor" value="40" />
 		<attribute key="defense" value="20" />
@@ -68176,10 +68178,10 @@
 		<attribute key="manaTicks" value="1" />
 		<attribute key="slotType" value="body" />
 	</item>
-	<item id="49683" article="a" name="saiyan waistcoat">
+	<item id="49683" article="a" name="vegeta waistcoat">
 		<attribute key="weight" value="2000" />
-		<attribute key="armor" value="19" />
-		<attribute key="manaGain" value="600" />
+		<attribute key="armor" value="15" />
+		<attribute key="manaGain" value="900" />
 		<attribute key="manaTicks" value="1" />
 		<attribute key="slotType" value="body" />
 	</item>
@@ -70112,6 +70114,26 @@
 	<item id="49920" name="dark browns ramps ground" />
 	<item fromid="49921" toid="49922" name="dark stones ground" />
 	<item fromid="49923" toid="49924" name="dark stones ground" />
+	<item fromid="49925" toid="49990" name="dbo ground" />
+	<item id="50215" name="dbo grass ground" />
+	<item fromid="50216" toid="51012" name="bleach ground" />
+	<item fromid="54172" toid="54174" name="bleach ground" />
+	<item fromid="50015" toid="50049" name="dbo stones" />
+	<item fromid="50050" toid="50074" name="dbo trees" />
+	<item fromid="50075" toid="50106" name="dbo flowers" />
+	<item fromid="50107" toid="50121" name="dbo trees" />
+	<item id="50122" name="dbo grass" />
+	<item fromid="50123" toid="50139" name="dbo trees" />
+	<item fromid="50140" toid="50144" name="dbo flowers" />
+	<item fromid="50145" toid="50147" name="dbo trees" />
+	<item fromid="50148" toid="50156" name="dbo stones" />
+	<item id="50157" name="brush" />
+	<item fromid="50158" toid="50161" name="dbo trees" />
+	<item fromid="50162" toid="50174" name="dbo stones" />
+	<item fromid="50175" toid="50184" name="dbo trees" />
+	<item fromid="50185" toid="50189" name="dbo flowers" />
+	<item fromid="50190" toid="50210" name="dbo stones" />
+	<item fromid="50211" toid="50214" name="brush" />
 	<item id="51719" name="red small chest">
 		<attribute key="weight" value="12000" />
 		<attribute key="containerSize" value="15" />
@@ -70227,6 +70249,12 @@
 	<item id="51915" name="green sleeping bag">
 		<attribute key="type" value="bed" />
 		<attribute key="partnerDirection" value="south" />
+	</item>
+	<item id="51947" article="a" name="hole">
+		<attribute key="floorchange" value="down" />
+	</item>
+	<item id="51947" article="a" name="hole">
+		<attribute key="floorchange" value="down" />
 	</item>
 	<item id="51954" name="cyan square chest">
 		<attribute key="weight" value="12000" />
@@ -70468,6 +70496,61 @@
 		<attribute key="type" value="bed" />
 		<attribute key="partnerDirection" value="west" />
 	</item>
+	<item id="52318" name="bleach tree" />
+	<item id="52319" name="bleach stones" />
+	<item fromid="52320" toid="52323" name="bleach flowers" />
+	<item fromid="52324" toid="52395" name="bleach stones" />
+	<item fromid="52396" toid="52420" name="bleach tree" />
+	<item fromid="52320" toid="52429" name="bleach flowers" />
+	<item fromid="52430" toid="52445" name="bleach florest tree" />
+	<item fromid="52446" toid="52451" name="bleach mountain" />
+	<item fromid="52452" toid="52468" name="bleach tree" />
+	<item fromid="52469" toid="52478" name="bleach desert tree" />
+	<item fromid="52480" toid="52490" name="bleach flowers" />
+	<item fromid="52542" toid="52541" name="bleach mountain" />
+	<item id="52495" name="bleach icy tree" />
+	<item fromid="52491" toid="52494" name="bleach mountain" />
+	<item fromid="52491" toid="52543" name="bleach tree" />
+	<item fromid="52544" toid="52554" name="bleach stones" />
+	<item fromid="52555" toid="52562" name="bleach mountain" />
+	<item id="52563" name="bleach palm tree" />
+	<item fromid="52564" toid="52565" name="bleach icy stones" />
+	<item id="52566" name="bleach icy pool" />
+	<item id="52567" name="bleach brush" />
+	<item id="52568" name="bleach stone" />
+	<item id="52569" name="bleach pink tree" />
+	<item id="52570" name="bleach flowers tree" />
+	<item fromid="52571" toid="52579" name="bleach sea stones" />
+	<item fromid="52580" toid="52593" name="bleach tree" />
+	<item fromid="52594" toid="52607" name="bleach stones" />
+	<item fromid="52608" toid="52609" name="bleach ancient florest statue" />
+	<item id="52610" name="bleach icy big tip" />
+	<item fromid="52611" toid="52618" name="bleach flowers tree" />
+	<item fromid="52619" toid="52621" name="bleach stone" />
+	<item fromid="52622" toid="52676" name="bleach tree" />
+	<item fromid="52677" toid="52678" name="bleach stone" />
+	<item fromid="52679" toid="52680" name="bleach lamp flowers" />
+	<item fromid="52681" toid="52682" name="purple crystal" />
+	<item id="52683" name="large tree" />
+	<item fromid="52684" toid="52685" name="pink crystal" />
+	<item fromid="52686" toid="52687" name="golden crystal" />
+	<item fromid="52688" toid="52690" name="purple wall crystal" />
+	<item fromid="52691" toid="52714" name="bleach flowers" />
+	<item fromid="52715" toid="52718" name="bleach waterfall" />
+	<item fromid="52719" toid="52727" name="bleach crystals" />
+	<item fromid="52728" toid="52730" name="bleach tree" />
+	<item fromid="52731" toid="52738" name="swamp tree" />
+	<item fromid="52739" toid="52740" name="bleach tree" />
+	<item fromid="52741" toid="52807" name="candy nature" />
+	<item id="52808" name="fairy nature" />
+	<item fromid="52809" toid="52816" name="demonic nature" />
+	<item fromid="52817" toid="52821" name="bleach lamp flowers" />
+	<item fromid="52822" toid="52826" name="bleach swamp tree" />
+	<item fromid="52827" toid="52829" name="bleach flowers" />
+	<item fromid="52827" toid="52829" name="bleach flowers" />
+	<item fromid="52830" toid="52833" name="bleach tree" />
+	<item fromid="52834" toid="52839" name="demonic nature" />
+	<item id="54179" name="waterball" />
 	<item id="55044" article="a" name="spirit king's radiant shield">
 		<attribute key="weight" value="850" />
 		<attribute key="weaponType" value="shield" />
@@ -82414,6 +82497,7 @@
 		<attribute key="description"
 			value="The legendary sword of the Kaioshin, capable of cutting through dimensions and evil itself." />
 	</item>
+	<item id="57020" name="demonic nature" />
 	<item id="57023" name="champa doll">
 		<attribute key="weight" value="150" />
 		<attribute key="description" value="Use this doll to decorate your house." />

@@ -206,7 +206,7 @@
 		<friend name="ice closed stone pile" />
 	</brush>
 
-	<brush name="snow" type="ground" server_lookid="6838" z-order="4000">
+	<brush name="snow" type="ground" server_lookid="6838" z-order="7000">
 		<item id="6580" chance="10" />
 		<item id="6581" chance="10" />
 		<item id="6582" chance="10" />
@@ -2574,6 +2574,9 @@
 		<item id="17670" chance="2500" />
 		<item id="17671" chance="1500" />
 		<item id="17672" chance="2500" />
+		<item id="44400" chance="2500" />
+		<item id="44401" chance="2500" />
+		<item id="44402" chance="2500" />
 
 		<border align="outer" id="136" />
 		<border align="inner" to="none" id="1" />
@@ -3199,7 +3202,7 @@
 		<border align="inner" to="none" id="1" />
 	</brush>
 
-	<brush name="unknown5" type="ground" server_lookid="23324" z-order="1800">
+	<brush name="poison swamp" type="ground" server_lookid="23324" z-order="1800">
 		<item id="23324" chance="2500" />
 		<item id="23325" chance="2500" />
 		<item id="23326" chance="2500" />
@@ -3412,13 +3415,15 @@
 		<item id="25011" chance="100" />
 		<item id="25012" chance="100" />
 		<item id="25013" chance="100" />
-		<item id="25014" chance="2" />
-		<item id="25015" chance="2" />
-		<item id="25016" chance="2" />
-		<item id="25017" chance="1" />
-		<item id="25198" chance="2" />
-		<item id="25199" chance="2" />
-		<item id="25365" chance="2" />
+		<item id="25014" chance="10" />
+		<item id="25015" chance="10" />
+		<item id="25016" chance="10" />
+		<item id="25017" chance="10" />
+		<item id="25198" chance="10" />
+		<item id="25199" chance="10" />
+		<item id="25365" chance="10" />
+		<item id="40471" chance="10" />
+		<item id="40470" chance="10" />
 		<item id="48109" chance="100" />
 		<item id="48110" chance="100" />
 		<item id="48112" chance="100" />
@@ -4729,6 +4734,34 @@
 
 		<border align="outer" id="288" />
 		<border align="inner" to="none" id="1" />
+	</brush>
+
+	<brush name="dark smooth surface" type="ground" server_lookid="35474" z-order="2500">
+		<item id="35474" chance="10" />
+		<item id="35475" chance="10" />
+		<item id="35476" chance="10" />
+		<item id="35477" chance="10" />
+	</brush>
+
+	<brush name="broken light wooden floor horizontal" type="ground" server_lookid="37730"
+		z-order="2500">
+		<item id="37730" chance="10" />
+	</brush>
+
+	<brush name="broken wooden floor vertical" type="ground" server_lookid="37728" z-order="2500">
+		<item id="37728" chance="10" />
+	</brush>
+
+	<brush name="broken boat wooden floor vertical" type="ground" server_lookid="37729" z-order="2500">
+		<item id="37729" chance="10" />
+	</brush>
+
+	<brush name="sea shallow water (walkable)" type="ground" server_lookid="38023" z-order="2500">
+		<item id="38023" chance="100" />
+	</brush>
+
+	<brush name="salt" type="ground" server_lookid="39311" z-order="2500">
+		<item id="39311" chance="100" />
 	</brush>
 
 </materials>
