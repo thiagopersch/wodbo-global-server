@@ -308,13 +308,10 @@
 			<brush name="Sunrise Sunset" />
 			<brush name="Nightfall Night" />
 			<brush name="dark smooth surface" />
-
 			<brush name="sun tapet" />
 			<brush name="sun tapet border red" />
 			<brush name="star sun tapet tips simples" />
 			<brush name="salt" />
-
-
 			<brush name="grassy path" />
 			<brush name="real ornaments" />
 			<brush name="piping fire" />
@@ -3241,6 +3238,12 @@
 			<brush name="brick wall arch" />
 			<brush name="plaster wall arch" />
 			<brush name="wooden archway" />
+			<brush name="arching leaves archway" />
+			<brush name="rose arch off" />
+			<brush name="rose arch on" />
+			<brush name="arching leaves archway center" />
+			<brush name="rose arch center off" />
+			<brush name="rose arch center on" />
 		</terrain>
 		<raw>
 			<item fromid="873" toid="876" />
@@ -4073,20 +4076,38 @@
 
 	<tileset name="Nature">
 		<doodad>
+			<brush name="bleach florest" />
 			<brush name="dbo florest" />
 			<brush name="dbo big florest" />
 			<brush name="dbo thin florest" />
 			<brush name="dbo dry florest" />
 			<brush name="dbo ornaments florest" />
 			<brush name="dbo flowers/others" />
+			<brush name="forest with sloths" />
+			<brush name="bleach new florest" />
+			<brush name="bleach florest selva" />
+			<brush name="bleach snow florest" />
+			<brush name="bleach florest seca" />
+			<brush name="mini bleach florest" />
+			<brush name="palmeiras" />
+			<brush name="beech tree" />
+			<brush name="windroot tree" />
+			<brush name="bleach bamboo plant" />
+			<brush name="sleeping carnisylvan" />
+			<brush name="swamp branchs" />
+			<item id="31988" />
+			<item id="31989" />
 			<item id="50181" />
 			<item id="50157" />
 			<item id="50126" />
 			<brush name="dbo desert" />
-			<brush name="bleach florest" />
+			<brush name="bleach cactus desert" />
+			<brush name="swamp cactus" />
 			<brush name="beechs" />
+			<item id="52570" />
 			<brush name="fly agaric" />
 			<brush name="trimmed trees" />
+			<item id="52741" />
 			<brush name="yellow pincher" />
 			<brush name="plants vases" />
 			<brush name="green trees" />
@@ -4095,7 +4116,12 @@
 			<brush name="dead trees" />
 			<brush name="mango tree" />
 			<brush name="sunlight moon grass" />
+			<brush name="swamp grass" />
+			<brush name="eldritch grass" />
+			<brush name="eldritch wax stain" />
+			<brush name="sulphur stone" />
 			<item id="6094" />
+			<item id="52567" />
 			<brush name="palm trees" />
 			<brush name="banana trees" />
 			<brush name="broken palm trees" />
@@ -4112,6 +4138,14 @@
 			<brush name="jade plant" />
 			<brush name="solstice trees" />
 			<item id="10917" />
+			<brush name="bleach demonic nature" />
+			<brush name="bleach demonic nature2" />
+			<brush name="bleach demonic nature3" />
+			<brush name="bleach lamp flowers" />
+			<brush name="purple wineberry" />
+			<brush name="dream bird tree" />
+			<brush name="moon sculpture" />
+			<brush name="stones hell lights" />
 			<brush name="whispering willow" />
 			<brush name="ab'dendriel trees" />
 			<brush name="oramond trees1" />
@@ -4127,11 +4161,6 @@
 			<brush name="dead bushes" />
 			<brush name="bushes" />
 			<brush name="blueberry bushes" />
-			<brush name="swamp plants" />
-			<brush name="herbs" />
-			<brush name="riff stones" />
-			<brush name="black bubbles" />
-			<brush name="black bubbles2" />
 			<brush name="mossy stone" />
 			<brush name="mossy spots" />
 			<brush name="grass tufts" />
@@ -4144,7 +4173,15 @@
 			<brush name="yellow flowers" />
 			<brush name="white flowers" />
 			<brush name="moon flowers" />
+			<brush name="swamp plants" />
+			<brush name="herbs" />
 			<item id="2743" />
+			<brush name="magic swamp blue flower" />
+			<brush name="frost flowers" />
+			<brush name="midnight flowers" />
+			<brush name="bleach selva flowers" />
+			<brush name="bleach flowers" />
+			<brush name="candy plants" />
 			<brush name="yellow flowers (hanging)" />
 			<brush name="white flowers (hanging)" />
 			<brush name="red flowers (hanging)" />
@@ -4156,23 +4193,50 @@
 			<item fromid="2737" toid="2739" />
 			<brush name="large cactus" />
 			<brush name="small cactus" />
+			<brush name="swamp pool" />
 			<brush name="sand dune" />
 			<brush name="sand dark dune" />
 			<brush name="sand pile" />
 			<brush name="heap of black sand" />
 			<brush name="sand trickle" />
 			<brush name="sand stones" />
+			<brush name="bleach sea stones" />
+			<brush name="shark fin" />
+			<brush name="shallow sea lily pads" />
 			<brush name="sea stepping stones" />
 			<brush name="swamp stepping stones" />
+			<brush name="lilypads" />
+			<brush name="sea lily pads" />
+			<brush name="swamp lily pads" />
 			<brush name="mangrove roots" />
 			<brush name="sandy rock pile" />
 			<brush name="stalagmite" />
+			<brush name="bleach stalagmite" />
+			<brush name="new bones" />
 			<brush name="glowing white crystals" />
+			<brush name="bleach ice stones" />
+			<brush name="bleach ice stones2" />
+			<brush name="bleach ice stones3" />
+			<brush name="bleach brown mountain" />
+			<brush name="bleach lava hole" />
 			<brush name="dbo stones" />
+			<brush name="swamp stones" />
+			<brush name="riff stones" />
+			<brush name="black bubbles" />
+			<brush name="black bubbles2" />
+			<brush name="dark stones" />
+			<brush name="bleach stones" />
+			<brush name="sentient stone" />
+			<brush name="bleach large stones" />
+			<brush name="bleach demonic nature stone" />
+			<brush name="bleach mini vulcan" />
+			<brush name="candy stones" />
+			<brush name="rubble stones" />
 			<brush name="4sqm stones" />
 			<brush name="2sqm stones" />
 			<brush name="menhir" />
 			<brush name="medium stone rocks" />
+			<brush name="dawnfire blossoms" />
 			<brush name="tiny stone rocks" />
 			<brush name="iny tiny stone rocks" />
 			<brush name="lava hole" />
@@ -4212,16 +4276,20 @@
 			<brush name="dragonhead" />
 			<brush name="spider web" />
 			<brush name="webbed cocoon" />
+			<brush name="bleach webbed cocoon, closed" />
 			<brush name="webbed cocoon, closed" />
 			<brush name="webbed cocoon, standing" />
 			<brush name="spider victim" />
 			<brush name="water stones" />
 			<brush name="water source" />
-			<brush name="lilypads" />
-			<brush name="sea lily pads" />
-			<brush name="swamp lily pads" />
+			<item id="50098" />
+			<brush name="large seashell" />
+
 			<brush name="floating trash in sea" />
 			<item id="8632" />
+			<item id="48858" />
+			<item id="28101" />
+			<brush name="bleach waterfall" />
 			<brush name="waterfall" />
 			<brush name="lavafall" />
 			<brush name="fogfall" />
@@ -4306,6 +4374,7 @@
 			<brush name="lava stream" />
 			<brush name="small stream blue" />
 			<brush name="small stream green" />
+			<brush name="swamp balls" />
 			<brush name="titanic mushroom (top)" />
 			<brush name="titanic mushroom (stem)" />
 			<brush name="titanic mushroom (standing)" />
@@ -4405,6 +4474,14 @@
 			<brush name="unknown14" />
 			<brush name="unknown15" />
 			<brush name="purple things" />
+			<brush name="bleach crystals off" />
+			<brush name="bleach crystals on" />
+			<brush name="purple wall crystal" />
+			<brush name="purple wall crystal" />
+			<brush name="bleach green crystal" />
+			<brush name="purple cave crystal" />
+			<brush name="pink cave crystal" />
+			<brush name="golden cave crystal" />
 			<brush name="blue cave crystal" />
 			<brush name="light blue cave crystal" />
 			<brush name="red cave crystal" />
@@ -4433,6 +4510,7 @@
 			<brush name="red crystal rods" />
 			<brush name="red crystal geode" />
 			<brush name="small gloothworm tubes" />
+			<brush name="something crawling" />
 			<item id="17592" />
 			<item id="17589" />
 			<item id="22571" toid="22572" />
@@ -4456,9 +4534,11 @@
 			<item fromid="28037" toid="28038" />
 			<item fromid="28045" toid="28052" />
 			<item fromid="28452" />
-			<item fromid="28453" />
 			<item fromid="28406" />
+			<item fromid="52808" />
+			<item fromid="28453" />
 			<item fromid="32992" />
+
 		</doodad>
 		<raw>
 			<item fromid="386" toid="391" />
@@ -6931,6 +7011,8 @@
 			<item fromid="11125" />
 			<item fromid="11127" />
 			<item fromid="11128" />
+			<item fromid="52701" />
+			<brush name="bleach ancient florest statue" />
 			<brush name="knight statue" />
 			<brush name="mage statue" />
 			<brush name="king statue" />
@@ -8427,6 +8509,8 @@
 			<brush name="yellow energy field (decaying)" />
 			<brush name="smoke field (not decaying)" />
 			<brush name="searing fire field (decaying)" />
+			<item id="28452" />
+			<item id="28453" />
 			<item id="1397" />
 			<item id="8058" />
 			<item fromid="1487" toid="1508" />

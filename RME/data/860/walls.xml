@@ -3639,4 +3639,76 @@
 			<item id="25809" chance="1000" />
 		</wall>
 	</brush>
+
+	<brush name="arching leaves archway" type="doodad" server_lookid="28138" draggable="true"
+		on_blocking="true" redo_borders="true" thickness="100/100">
+		<alternate>
+			<composite chance="10">
+				<tile x="0" y="0" z="0">
+					<item id="28137" chance="10" />
+				</tile>
+				<tile x="1" y="0" z="0">
+					<item id="28138" chance="10" />
+				</tile>
+			</composite>
+		</alternate>
+		<alternate>
+			<composite chance="10">
+				<tile x="0" y="0" z="0">
+					<item id="28139" chance="10" />
+				</tile>
+				<tile x="0" y="1" z="0">
+					<item id="28140" chance="10" />
+				</tile>
+			</composite>
+		</alternate>
+	</brush>
+
+	<brush name="rose arch off" type="doodad" server_lookid="28156" draggable="true"
+		on_blocking="true" redo_borders="true" thickness="100/100">
+		<alternate>
+			<composite chance="10">
+				<tile x="0" y="0" z="0">
+					<item id="28155" chance="10" />
+				</tile>
+				<tile x="1" y="0" z="0">
+					<item id="28156" chance="10" />
+				</tile>
+			</composite>
+		</alternate>
+		<alternate>
+			<composite chance="10">
+				<tile x="0" y="0" z="0">
+					<item id="28158" chance="10" />
+				</tile>
+				<tile x="0" y="1" z="0">
+					<item id="28157" chance="10" />
+				</tile>
+			</composite>
+		</alternate>
+	</brush>
+
+	<brush name="rose arch on" type="doodad" server_lookid="28292" draggable="true"
+		on_blocking="true" redo_borders="true" thickness="100/100">
+		<alternate>
+			<composite chance="10">
+				<tile x="0" y="0" z="0">
+					<item id="28291" chance="10" />
+				</tile>
+				<tile x="1" y="0" z="0">
+					<item id="28292" chance="10" />
+				</tile>
+			</composite>
+		</alternate>
+		<alternate>
+			<composite chance="10">
+				<tile x="0" y="0" z="0">
+					<item id="28294" chance="10" />
+				</tile>
+				<tile x="0" y="1" z="0">
+					<item id="28293" chance="10" />
+				</tile>
+			</composite>
+		</alternate>
+	</brush>
 </materials>
