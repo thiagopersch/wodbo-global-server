@@ -33707,8 +33707,7 @@
 	<item fromid="23084" toid="23085" name="parquet floor" />
 	<item fromid="23086" toid="23097" name="parquet" />
 	<item fromid="23098" toid="23099" article="a" name="metal statue" />
-	<item fromid="23100" toid="23103" article="a" name="metal gargoyle" />
-	<item fromid="23106" toid="23107" article="a" name="metal gargoyle" />
+	<item fromid="23100" toid="23107" article="a" name="metal gargoyle" />
 	<item fromid="23108" toid="23115" article="a" name="metal statue" />
 	<item fromid="23116" toid="23117" article="a" name="tap" />
 	<item fromid="23118" toid="23120" article="a" name="wall" />

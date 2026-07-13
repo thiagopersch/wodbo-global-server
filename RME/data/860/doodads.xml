@@ -23155,16 +23155,16 @@
 	>
 		<composite chance="10">
 			<tile x="0" y="0">
-				<item id="26005" />
+				<item id="26006" />
 			</tile>
-			<tile x="1" y="0">
+			<tile x="0" y="-2">
 				<item id="25999" />
 			</tile>
-			<tile x="0" y="1">
-				<item id="26007" />
+			<tile x="-2" y="-2">
+				<item id="26005" />
 			</tile>
-			<tile x="1" y="1">
-				<item id="26006" />
+			<tile x="-2" y="0">
+				<item id="26007" />
 			</tile>
 		</composite>
 	</brush>
@@ -32178,5 +32178,924 @@
 		<item id="48855" chance="10" />
 		<item id="48856" chance="10" />
 		<item id="48857" chance="10" />
+	</brush>
+
+	<brush name="cantero grass" type="doodad"
+		server_lookid="51857" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="51857" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51858" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51859" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51860" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="bleach campfire"
+		type="doodad" server_lookid="51893" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="51891" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51892" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51893" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51894" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51895" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51896" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="purple lamppost"
+		type="doodad" server_lookid="51898" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="51898" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51897" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="green lamppost"
+		type="doodad" server_lookid="51900" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="51900" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51899" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="gray lamppost"
+		type="doodad" server_lookid="51905" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="51905" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51906" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51904" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="simple chair"
+		type="doodad" server_lookid="51911" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="51911" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51912" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="green chair"
+		type="doodad" server_lookid="51913" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="51913" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51914" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="empty fonts"
+		type="doodad" server_lookid="51944" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="51944" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51945" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51946" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="blue lamppost"
+		type="doodad" server_lookid="51967" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="51967" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51968" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51969" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51970" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51963" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51964" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51965" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51966" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="control panel horizontal" type="doodad" server_lookid="51972" draggable="true"
+		on_blocking="false" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="51973" />
+			</tile>
+			<tile x="-1" y="-1">
+				<item id="51972" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush
+		name="control panel vertical" type="doodad" server_lookid="51975" draggable="true"
+		on_blocking="false" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="51975" />
+			</tile>
+			<tile x="0" y="-1">
+				<item id="51974" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush
+		name="ice fountain" type="doodad" server_lookid="51978" draggable="true"
+		on_blocking="false" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="51979" />
+			</tile>
+			<tile x="0" y="-1">
+				<item id="51976" />
+			</tile>
+			<tile x="-1" y="-1">
+				<item id="51977" />
+			</tile>
+			<tile x="-1" y="0">
+				<item id="51978" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush
+		name="simple fountain" type="doodad" server_lookid="51986" draggable="true"
+		on_blocking="false" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="51985" />
+			</tile>
+			<tile x="0" y="-1">
+				<item id="51987" />
+			</tile>
+			<tile x="-1" y="-1">
+				<item id="51986" />
+			</tile>
+			<tile x="-1" y="0">
+				<item id="51984" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush name="pumpkin bag"
+		type="doodad" server_lookid="51989" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="51989" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51990" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="pumpkin chairs"
+		type="doodad" server_lookid="51998" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="51998" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51996" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51997" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="51999" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="ice pumpkin chairs"
+		type="doodad" server_lookid="52002" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52002" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52000" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52001" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52003" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="spider chairs"
+		type="doodad" server_lookid="52006" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52006" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52004" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52005" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52007" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="lily pink flower chairs"
+		type="doodad" server_lookid="52182" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52182" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52181" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52183" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52184" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="lily pink flower chairs2"
+		type="doodad" server_lookid="52185" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52185" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52186" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52188" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52187" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="pumpkin table horizontal" type="doodad" server_lookid="52012" draggable="true"
+		on_blocking="false" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="52013" />
+			</tile>
+			<tile x="-1" y="0">
+				<item id="52012" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush
+		name="pumpkin table vertical" type="doodad" server_lookid="52014" draggable="true"
+		on_blocking="false" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="52015" />
+			</tile>
+			<tile x="0" y="-1">
+				<item id="52014" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush
+		name="spider table horizontal" type="doodad" server_lookid="52011" draggable="true"
+		on_blocking="false" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="52010" />
+			</tile>
+			<tile x="-1" y="0">
+				<item id="52011" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush
+		name="spider table vertical" type="doodad" server_lookid="52020" draggable="true"
+		on_blocking="false" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="52021" />
+			</tile>
+			<tile x="0" y="-1">
+				<item id="52020" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush
+		name="gengar table horizontal" type="doodad" server_lookid="52016" draggable="true"
+		on_blocking="false" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="52017" />
+			</tile>
+			<tile x="-1" y="0">
+				<item id="52016" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush
+		name="gengar table vertical" type="doodad" server_lookid="52018" draggable="true"
+		on_blocking="false" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="52019" />
+			</tile>
+			<tile x="0" y="-1">
+				<item id="52018" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush name="spider cabinet"
+		type="doodad" server_lookid="52008" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52008" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52009" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="dbo bush"
+		type="doodad" server_lookid="52068" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52068" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52069" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="dbo coal basin"
+		type="doodad" server_lookid="52088" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52088" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52095" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="numbers"
+		type="doodad" server_lookid="52062" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52062" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52063" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="candy bench"
+		type="doodad" server_lookid="52026" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52026" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52027" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="purple magic fountain - off" type="doodad" server_lookid="52305" draggable="true"
+		on_blocking="false" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="52305" />
+			</tile>
+			<tile x="0" y="-1">
+				<item id="52303" />
+			</tile>
+			<tile x="-1" y="-1">
+				<item id="52302" />
+			</tile>
+			<tile x="-1" y="0">
+				<item id="52304" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush
+		name="purple magic fountain - on" type="doodad" server_lookid="52309" draggable="true"
+		on_blocking="false" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="52309" />
+			</tile>
+			<tile x="0" y="-1">
+				<item id="52307" />
+			</tile>
+			<tile x="-1" y="-1">
+				<item id="52306" />
+			</tile>
+			<tile x="-1" y="0">
+				<item id="52308" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush
+		name="red ritual" type="doodad" server_lookid="52293" draggable="true"
+		on_blocking="true" thickness="10/100">
+		<alternate>
+			<composite chance="10">
+				<tile x="0" y="0">
+					<item id="52293" />
+				</tile>
+				<tile x="0" y="-1">
+					<item id="52291" />
+				</tile>
+				<tile x="-1" y="-1">
+					<item id="52290" />
+				</tile>
+				<tile x="-1" y="0">
+					<item id="52292" />
+				</tile>
+			</composite>
+		</alternate>
+		<alternate>
+			<composite chance="10">
+				<tile x="0" y="0">
+					<item id="52297" />
+				</tile>
+				<tile x="0" y="-1">
+					<item id="52295" />
+				</tile>
+				<tile x="-1" y="-1">
+					<item id="52294" />
+				</tile>
+				<tile x="-1" y="0">
+					<item id="52296" />
+				</tile>
+			</composite>
+		</alternate>
+		<alternate>
+			<composite chance="10">
+				<tile x="0" y="0">
+					<item id="52301" />
+				</tile>
+				<tile x="0" y="-1">
+					<item id="52299" />
+				</tile>
+				<tile x="-1" y="-1">
+					<item id="52298" />
+				</tile>
+				<tile x="-1" y="0">
+					<item id="52300" />
+				</tile>
+			</composite>
+		</alternate>
+	</brush>
+
+	<brush
+		name="imperial table"
+		type="table" server_lookid="52089">
+		<table align="north">
+			<item id="52089" chance="10" />
+		</table>
+		<table align="vertical">
+			<item id="52093" chance="10" />
+		</table>
+		<table align="south">
+			<item id="52090" chance="10" />
+		</table>
+		<table align="west">
+			<item id="52091" chance="10" />
+		</table>
+		<table align="horizontal">
+			<item id="52094" chance="10" />
+		</table>
+		<table align="east">
+			<item id="52092" chance="10" />
+		</table>
+		<table align="alone">
+			<item id="52094" chance="10" />
+		</table>
+	</brush>
+
+	<brush name="blue candy lamp off"
+		type="doodad" server_lookid="52119" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52119" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52120" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="green candy lamp off"
+		type="doodad" server_lookid="52121" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52121" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52122" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="pink candy lamp off"
+		type="doodad" server_lookid="52124" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52124" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52123" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="yellow candy lamp off"
+		type="doodad" server_lookid="52125" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52125" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52126" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="blue candy lamp on"
+		type="doodad" server_lookid="52100" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52100" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52101" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="green candy lamp on"
+		type="doodad" server_lookid="52102" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52102" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52103" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="pink candy lamp on"
+		type="doodad" server_lookid="52104" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52104" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52105" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="yellow candy lamp on"
+		type="doodad" server_lookid="52106" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52106" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52107" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="orc lamp off"
+		type="doodad" server_lookid="52167" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52167" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52169" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="orc lamp on"
+		type="doodad" server_lookid="52168" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52168" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52170" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="cemetery lamp"
+		type="doodad" server_lookid="52179" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52179" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52177" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="cemetery lamp2"
+		type="doodad" server_lookid="52180" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52180" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52178" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="pink flower lamp vertical"
+		type="doodad" server_lookid="52201" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52201" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52203" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="pink flower lamp horizontal"
+		type="doodad" server_lookid="52202" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52202" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52204" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="purple flower lamp"
+		type="doodad" server_lookid="52205" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52205" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52206" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="inferal lamp"
+		type="doodad" server_lookid="52288" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52288" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52289" chance="10" />
+		</alternate>
+	</brush>
+
+<brush name="demons" type="doodad"
+		server_lookid="52315" draggable="true" on_blocking="true" thickness="10/100">
+		<composite chance="10">
+			<tile x="0" y="0">
+				<item id="52317" />
+			</tile>
+			<tile x="0" y="-1">
+				<item id="52313" />
+			</tile>
+			<tile x="-1" y="-1">
+				<item id="52312" />
+			</tile>
+			<tile x="-1" y="0">
+				<item id="52316" />
+			</tile>
+			<tile x="-2" y="-1">
+				<item id="52311" />
+			</tile>
+			<tile x="-2" y="0">
+				<item id="52315" />
+			</tile>
+			<tile x="-3" y="-1">
+				<item id="52310" />
+			</tile>
+			<tile x="-3" y="0">
+				<item id="52314" />
+			</tile>
+		</composite>
+	</brush>
+
+	<brush name="three lamppost"
+		type="doodad" server_lookid="52997" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="52997" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="52996" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush name="anime counter"
+		type="doodad" server_lookid="53002" draggable="true" on_blocking="true" thickness="10/100">
+		<alternate>
+			<composite chance="10">
+				<tile x="0" y="0">
+					<item id="53005" />
+				</tile>
+				<tile x="0" y="-1">
+					<item id="53006" />
+				</tile>
+				<tile x="0" y="-2">
+					<item id="53007" />
+				</tile>
+				<tile x="-1" y="0">
+					<item id="53004" />
+				</tile>
+				<tile x="-2" y="0">
+					<item id="53003" />
+				</tile>
+				<tile x="-3" y="0">
+					<item id="53002" />
+				</tile>
+				<tile x="-4" y="0">
+					<item id="53001" />
+				</tile>
+				<tile x="-5" y="0">
+					<item id="53000" />
+				</tile>
+				<tile x="-5" y="-1">
+					<item id="52999" />
+				</tile>
+				<tile x="-5" y="-2">
+					<item id="52998" />
+				</tile>
+			</composite>
+		</alternate>
+		<alternate>
+			<composite chance="10">
+				<tile x="0" y="0">
+					<item id="53014" />
+				</tile>
+				<tile x="0" y="-1">
+					<item id="53016" />
+				</tile>
+				<tile x="-1" y="-1">
+					<item id="53015" />
+				</tile>
+				<tile x="-1" y="0">
+					<item id="53013" />
+				</tile>
+				<tile x="-2" y="0">
+					<item id="53012" />
+				</tile>
+				<tile x="-3" y="0">
+					<item id="53011" />
+				</tile>
+				<tile x="-4" y="0">
+					<item id="53010" />
+				</tile>
+				<tile x="-5" y="0">
+					<item id="53009" />
+				</tile>
+				<tile x="-5" y="-1">
+					<item id="53008" />
+				</tile>
+			</composite>
+		</alternate>
+	</brush>
+
+	<brush
+		name="rift lamp"
+		type="doodad" server_lookid="25390" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="25390" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="25391" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="dripping candles"
+		type="doodad" server_lookid="21354" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="21354" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21447" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21353" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21350" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21351" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21352" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21490" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21491" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21492" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21357" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21493" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21494" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21356" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="21355" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="vengothic chair"
+		type="doodad" server_lookid="27879" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="27879" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="27878" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="27877" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="27880" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="vengothic table"
+		type="doodad" server_lookid="27881" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="27881" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="27882" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="vengothic cabinet"
+		type="doodad" server_lookid="27883" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="27883" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="27884" chance="10" />
+		</alternate>
+	</brush>
+
+	<brush
+		name="vengothic chest"
+		type="doodad" server_lookid="27885" draggable="true" on_blocking="false" thickness="10/100">
+		<alternate>
+			<item id="27885" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="27886" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="27887" chance="10" />
+		</alternate>
+		<alternate>
+			<item id="27888" chance="10" />
+		</alternate>
 	</brush>
 </materials>

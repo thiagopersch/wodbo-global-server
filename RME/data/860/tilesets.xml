@@ -2931,7 +2931,6 @@
 			<item fromid="30962" toid="30973" />
 			<item
 				fromid="30982" toid="30993" />
-			<item fromid="31164" toid="31166" />
 			<item fromid="31620"
 				toid="31631" />
 			<item fromid="31644" toid="31655" />
@@ -5428,7 +5427,6 @@
 		<doodad_and_raw>
 			<item fromid="7480" />
 			<item fromid="28744" toid="28755" />
-			<item fromid="28757" toid="28760" />
 			<item fromid="35129" toid="35192" />
 			<item fromid="35197" toid="35222" />
 			<item fromid="35224" toid="35225" />
@@ -6074,17 +6072,21 @@
 			<brush name="unknown24" />
 			<brush name="pendulum clock" />
 			<brush name="venorean pendulum clock" />
+			<brush name="control panel horizontal" />
+			<brush name="control panel vertical" />
 			<brush name="normal wardrobe" />
 			<brush name="bambu wardrobe" />
 			<brush name="bambu bookcase" />
 			<brush name="bambu drawer" />
 			<brush name="venorean wardrobe" />
 			<brush name="unknown22" />
+			<brush name="vengothic cabinet" />
 			<brush name="tall locker" />
 			<brush name="cabinet" />
 			<brush name="cake cabinet" />
 			<brush name="venorean cabinet" />
 			<brush name="venorean glass cabinet" />
+			<brush name="spider cabinet" />
 			<brush name="unknown25" />
 			<brush name="mirror stand" />
 			<brush name="bookcase" />
@@ -6105,6 +6107,16 @@
 			<brush name="anniversary table" />
 			<brush name="anniversary table (seats)" />
 			<brush name="table cloth" />
+			<brush name="imperial table" />
+			<brush name="vengothic table" />
+			<item id="52022" />
+			<brush name="anime counter" />
+			<brush name="gengar table horizontal" />
+			<brush name="gengar table vertical" />
+			<brush name="spider table horizontal" />
+			<brush name="spider table vertical" />
+			<brush name="pumpkin table horizontal" />
+			<brush name="pumpkin table vertical" />
 			<item id="1614" />
 			<item id="1615" />
 			<item id="1616" />
@@ -6122,6 +6134,13 @@
 			<brush name="ferocious table" />
 			<brush name="fancy table" />
 			<brush name="light wooden table" />
+			<brush name="simple chair" />
+			<brush name="green chair" />
+			<brush name="pumpkin chairs" />
+			<brush name="ice pumpkin chairs" />
+			<brush name="spider chairs" />
+			<brush name="lily pink flower chairs" />
+			<brush name="lily pink flower chairs2" />
 			<brush name="wooden chair" />
 			<brush name="rocking chair" />
 			<brush name="red cushioned chair" />
@@ -6142,6 +6161,9 @@
 			<brush name="venorean chair2" />
 			<brush name="unknown17" />
 			<brush name="ferocious chair" />
+			<brush name="blue beach chair" />
+			<brush name="yellow beach chair" />
+			<brush name="vengothic chair" />
 			<brush name="unknown19" />
 			<brush name="gilded throne" />
 			<brush name="dull throne" />
@@ -6154,6 +6176,7 @@
 			<brush name="bench" />
 			<brush name="leaf bench" />
 			<brush name="venorean bench" />
+			<brush name="candy bench" />
 			<brush name="brown bear skin rug" />
 			<brush name="white bear skin rug" />
 			<brush name="badger fur" />
@@ -6167,6 +6190,7 @@
 			<item fromid="26109" toid="26111" />
 			<item id="26193" />
 			<item fromid="26371" toid="26376" />
+			<item fromid="25392" toid="25393" />
 			<brush name="normal bed" />
 			<brush name="normal bed with sleeper" />
 			<brush name="cot" />
@@ -6193,6 +6217,7 @@
 			<item id="1746" />
 			<item fromid="5675" toid="5676" />
 			<brush name="blue treasure chest" />
+			<brush name="vengothic chest" />
 			<item id="15640" />
 			<brush name="brown underwater chest" />
 			<item fromid="18472" toid="18474" />
@@ -6208,6 +6233,7 @@
 			<item id="1775" />
 			<brush name="yalahar fire basin" />
 			<item id="9439" />
+			<brush name="dripping candles" />
 			<brush name="dragon basin" />
 			<brush name="zao torch" />
 			<brush name="zao lamp" />
@@ -6405,6 +6431,7 @@
 			<item fromid="28318" toid="28337" />
 			<item fromid="28366" />
 			<item fromid="28812" toid="28823" />
+			<item fromid="28757" toid="28760" />
 			<item fromid="28761" toid="28769" />
 			<item fromid="30317" toid="30322" />
 			<item fromid="30538" toid="30549" />
@@ -6412,6 +6439,7 @@
 			<item fromid="30620" toid="30641" />
 			<item fromid="30674" toid="30792" />
 			<item fromid="30802" toid="30821" />
+			<item fromid="31164" toid="31166" />
 			<item fromid="31118" />
 			<item fromid="27896" />
 			<item fromid="31138" />
@@ -6561,6 +6589,7 @@
 			<brush name="pyramid template" />
 			<brush name="light desert skull" />
 			<brush name="dark desert skull" />
+			<brush name="pumpkin bag" />
 			<brush name="light papyrus scroll" />
 			<brush name="dark papyrus scroll" />
 			<brush name="light ornate tombstone" />
@@ -6575,10 +6604,16 @@
 			<brush name="stone coffin (red rose)" />
 			<brush name="buried stone coffin" />
 			<brush name="sarcophagus" />
+			<item id="53022" />
+			<item id="53024" />
+			<item id="52078" />
 			<brush name="campfire" />
+			<brush name="bleach campfire" />
 			<brush name="campfire pot" />
 			<brush name="coal basin (immovable)" />
 			<brush name="coal basin (movable)" />
+			<brush name="dbo coal basin" />
+			<item id="52054" />
 			<brush name="large cauldron" />
 			<brush name="fire shrines" />
 			<brush name="ice shrines" />
@@ -6590,6 +6625,11 @@
 			<brush name="water well" />
 			<brush name="lava fountain" />
 
+			<item id="51971" />
+			<brush name="ice fountain" />
+			<brush name="simple fountain" />
+			<brush name="purple magic fountain - off" />
+			<brush name="purple magic fountain - on" />
 			<brush name="marble fountain - on" />
 			<brush name="marble fountain - off" />
 			<item id="1378" />
@@ -6599,6 +6639,7 @@
 			<brush name="wall fountain" />
 			<brush name="large well - water" />
 			<brush name="large well - no water" />
+			<item id="51988" />
 			<brush name="molten lava well - empty" />
 			<brush name="molten lava well - empty (head)" />
 			<brush name="molten lava well" />
@@ -6607,7 +6648,8 @@
 			<brush name="huge cauldron WHY" />
 			<brush name="krailos pot" />
 			<brush name="color purple pool" />
-
+			<item id="53023" />
+			<brush name="red ritual" />
 			<brush name="gray striped tent" />
 			<brush name="red striped tent" />
 			<brush name="garish striped tent" />
@@ -6615,8 +6657,6 @@
 			<brush name="caravan wagon chassis" />
 			<brush name="cage wagon" />
 			<brush name="orc wagon" />
-			<brush name="blue beach chair" />
-			<brush name="yellow beach chair" />
 			<brush name="parasol" />
 			<brush name="stone shelf" />
 			<brush name="cart" />
@@ -6639,6 +6679,31 @@
 			<brush name="dark zao bridge" />
 			<brush name="grey nails" />
 			<brush name="brown nails" />
+			<brush name="rift lamp" />
+			<brush name="blue candy lamp off" />
+			<brush name="green candy lamp off" />
+			<brush name="pink candy lamp off" />
+			<brush name="yellow candy lamp off" />
+			<brush name="blue candy lamp on" />
+			<brush name="green candy lamp on" />
+			<brush name="pink candy lamp on" />
+			<brush name="yellow candy lamp on" />
+			<brush name="orc lamp off" />
+			<brush name="orc lamp on" />
+			<brush name="cemetery lamp" />
+			<brush name="cemetery lamp2" />
+			<brush name="pink flower lamp vertical" />
+			<brush name="pink flower lamp horizontal" />
+			<brush name="purple flower lamp" />
+			<brush name="inferal lamp" />
+			<brush name="blue lamppost" />
+			<brush name="purple lamppost" />
+			<brush name="green lamppost" />
+			<brush name="gray lamppost" />
+			<item id="52070" />
+			<item id="52071" />
+			<item id="52996" />
+			<brush name="three lamppost" />
 			<brush name="street lamp" />
 			<brush name="yalahar street lamp - on" />
 			<brush name="yalahar street lamp - off" />
@@ -7012,6 +7077,11 @@
 			<item fromid="11127" />
 			<item fromid="11128" />
 			<item fromid="52701" />
+			<brush name="dbo bush" />
+			<brush name="demons" />
+			<brush name="numbers" />
+			<brush name="cantero grass" />
+			<brush name="empty fonts" />
 			<brush name="bleach ancient florest statue" />
 			<brush name="knight statue" />
 			<brush name="mage statue" />
@@ -7473,10 +7543,12 @@
 			<item fromid="37206" toid="37217" />
 			<item fromid="39508" toid="39510" />
 			<item fromid="39526" toid="39529" />
+			<item id="51980" />
 		</doodad>
 		<raw>
 			<item fromid="51822" toid="51825" />
 			<item fromid="51942" toid="51943" />
+			<item id="51980" />
 		</raw>
 	</tileset>
 
@@ -9582,6 +9654,7 @@
 
 	<tileset name="Architecture">
 		<doodad>
+			<item id="52057" />
 			<item fromid="1514" toid="1515" />
 			<item fromid="3766" toid="3767" />
 			<item id="463" />
