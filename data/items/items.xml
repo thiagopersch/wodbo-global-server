@@ -70252,9 +70252,6 @@
 	<item id="51947" article="a" name="hole">
 		<attribute key="floorchange" value="down" />
 	</item>
-	<item id="51947" article="a" name="hole">
-		<attribute key="floorchange" value="down" />
-	</item>
 	<item id="51954" name="cyan square chest">
 		<attribute key="weight" value="12000" />
 		<attribute key="containerSize" value="15" />
@@ -70500,16 +70497,15 @@
 	<item fromid="52320" toid="52323" name="bleach flowers" />
 	<item fromid="52324" toid="52395" name="bleach stones" />
 	<item fromid="52396" toid="52420" name="bleach tree" />
-	<item fromid="52320" toid="52429" name="bleach flowers" />
+	<item fromid="52421" toid="52429" name="bleach flowers" />
 	<item fromid="52430" toid="52445" name="bleach florest tree" />
 	<item fromid="52446" toid="52451" name="bleach mountain" />
 	<item fromid="52452" toid="52468" name="bleach tree" />
 	<item fromid="52469" toid="52478" name="bleach desert tree" />
 	<item fromid="52480" toid="52490" name="bleach flowers" />
-	<item fromid="52542" toid="52541" name="bleach mountain" />
 	<item id="52495" name="bleach icy tree" />
-	<item fromid="52491" toid="52494" name="bleach mountain" />
-	<item fromid="52491" toid="52543" name="bleach tree" />
+	<item fromid="52491" toid="52494" name="bleach tree" />
+	<item fromid="52496" toid="52543" name="bleach tree" />
 	<item fromid="52544" toid="52554" name="bleach stones" />
 	<item fromid="52555" toid="52562" name="bleach mountain" />
 	<item id="52563" name="bleach palm tree" />
@@ -70545,7 +70541,6 @@
 	<item fromid="52809" toid="52816" name="demonic nature" />
 	<item fromid="52817" toid="52821" name="bleach lamp flowers" />
 	<item fromid="52822" toid="52826" name="bleach swamp tree" />
-	<item fromid="52827" toid="52829" name="bleach flowers" />
 	<item fromid="52827" toid="52829" name="bleach flowers" />
 	<item fromid="52830" toid="52833" name="bleach tree" />
 	<item fromid="52834" toid="52839" name="demonic nature" />

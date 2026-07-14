@@ -69,10 +69,7 @@ end
 local function updatePlayerAgeDB(cid, minutes, age)
     local guid = getPlayerGUID(cid)
     local query = "UPDATE `players` SET `age_minutes` = " .. minutes .. ", `age` = " .. age .. " WHERE `id` = " .. guid
-    local result = db.storeQuery(query)
-    if result then
-        result:free()
-    end
+    db.query(query)
 end
 
 local function getPlayerAgeReal(cid)

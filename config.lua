@@ -1,5 +1,5 @@
 -- Account manager
-accountManager = true
+accountManager = false
 namelockManager = false
 newPlayerChooseTown = false
 newPlayerChooseVoc = true
@@ -103,12 +103,12 @@ loginTries = 10
 retryTimeout = 5 * 1000
 loginTimeout = 60 * 1000
 maxPlayers = 1000
-motd = "Welcome to the DBOSupreme!"
+motd = "Welcome to the WodBleach!"
 displayOnOrOffAtCharlist = false
 onePlayerOnlinePerAccount = false
 allowClones = false
-serverName = "DBOSupreme"
-loginMessage = "Welcome to the DBOSupreme!"
+serverName = "WodBleach"
+loginMessage = "Welcome to the WodBleach!"
 statusTimeout = 5 * 60 * 1000
 replaceKickOnLogin = true
 forceSlowConnectionsToDisconnect = false
@@ -128,12 +128,12 @@ antiPushItems = "2148,2152,2160,3976"
 -- NOTE: sqlFile is used only by sqlite database, and sqlKeepAlive by mysql database.
 -- To disable sqlKeepAlive such as mysqlReadTimeout use 0 value.
 -- encryptionType can be plain, md5, sha1, sha256, sha512 or vahash.
-sqlType = "sqlite"
-sqlHost = "127.0.0.1"
-sqlPort = 3306
+sqlType = "mysql"
+sqlHost = "localhost"
+sqlPort = 3307
 sqlUser = "root"
-sqlPass = ""
-sqlDatabase = "wodbleach"
+sqlPass = "ndbo"
+sqlDatabase = "ndbo"
 sqlFile = "theforgottenserver.s3db"
 sqlKeepAlive = 0
 mysqlReadTimeout = 10
