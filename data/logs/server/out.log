@@ -1,296 +1,48 @@
-[13/7/2026 18:2:36] > Usando SHA1 criptografia
-[13/7/2026 18:2:36] >> Carregando RSA key
-[13/7/2026 18:2:36] >> Iniciando conexao SQL
-[13/7/2026 18:2:36] >> Executando Gerenciador de Banco de Dados
-[13/7/2026 18:2:36] > Updating database to version 27...
-[13/7/2026 18:2:37] > Banco de dados foi atualizado para a versao: 27.
-[13/7/2026 18:2:37] > Trigger: ondelete_accounts does not exist, creating it...
-[13/7/2026 18:2:37] > Trigger: oncreate_guilds does not exist, creating it...
-[13/7/2026 18:2:37] > Trigger: ondelete_guilds does not exist, creating it...
-[13/7/2026 18:2:37] > Trigger: oncreate_players does not exist, creating it...
-[13/7/2026 18:2:37] > Trigger: ondelete_players does not exist, creating it...
-[13/7/2026 18:2:37] > Optimizing table: doodad_brushes... [success]
-[13/7/2026 18:2:37] >> Carregando items (OTB)
-[13/7/2026 18:2:38] >> Carregando items (XML)
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 51947
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52320
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52321
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52322
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52323
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52324
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52325
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52326
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52327
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52328
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52329
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52330
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52331
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52332
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52333
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52334
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52335
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52336
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52337
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52338
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52339
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52340
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52341
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52342
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52343
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52344
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52345
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52346
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52347
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52348
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52349
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52350
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52351
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52352
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52353
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52354
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52355
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52356
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52357
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52358
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52359
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52360
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52361
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52362
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52363
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52364
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52365
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52366
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52367
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52368
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52369
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52370
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52371
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52372
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52373
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52374
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52375
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52376
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52377
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52378
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52379
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52380
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52381
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52382
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52383
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52384
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52385
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52386
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52387
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52388
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52389
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52390
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52391
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52392
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52393
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52394
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52395
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52396
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52397
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52398
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52399
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52400
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52401
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52402
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52403
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52404
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52405
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52406
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52407
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52408
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52409
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52410
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52411
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52412
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52413
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52414
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52415
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52416
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52417
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52418
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52419
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52420
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52491
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52492
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52493
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52494
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52495
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52542
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52827
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52828
-[13/7/2026 18:2:38] [Warning - Items::loadFromXml] Duplicate registered item with id 52829
-[13/7/2026 18:2:38] >> Carregando Grupos
-[13/7/2026 18:2:38] >> Carregando Vocacoes
-[13/7/2026 18:2:38] >> Carregando Outfits
-[13/7/2026 18:2:38] >> Carregando Wing Types
-[13/7/2026 18:2:38] >> Carregando Aura Types
-[13/7/2026 18:2:38] >> Carregando Shader Types
-[13/7/2026 18:2:38] >> Carregando Bar Types
-[13/7/2026 18:2:38] >> Carregando Canal de Chat
-[13/7/2026 18:2:38] >> Carregando Sistema
-[13/7/2026 18:2:45] >> Carregando Mods...
-[13/7/2026 18:2:45] > Loading AutoLoot.xml... done.
-[13/7/2026 18:2:45] > Loading Automatic Raids.xml... done.
-[13/7/2026 18:2:45] > Loading highscorebook.xml... done.
-[13/7/2026 18:2:45] > Loading task_system.xml...mysql_real_query(): SELECT name FROM sqlite_master WHERE type='table' AND name='player_tasks' - MYSQL ERROR: Table 'ndbo.sqlite_master' doesn't exist (1146)
-[13/7/2026 18:2:45] mysql_real_query(): CREATE TABLE IF NOT EXISTS player_tasks (id INTEGER PRIMARY KEY AUTOINCREMENT, player_id INTEGER NOT NULL, task_id TEXT NOT NULL, kills INTEGER DEFAULT 0, completed INTEGER DEFAULT 0, rewarded INTEGER DEFAULT 0, started_at DATETIME DEFAULT CURRENT_TIMESTAMP, UNIQUE(player_id, task_id)) - MYSQL ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AUTOINCREMENT, player_id INTEGER NOT NULL, task_id TEXT NOT NULL, kills INTEGER ' at line 1 (1064)
-[13/7/2026 18:2:45]  done.
-[13/7/2026 18:2:45] > 4 mods were loaded.
-[13/7/2026 18:2:45] >> Carregando EXP Stages
-[13/7/2026 18:2:45] >> Carregando Monstros
-[13/7/2026 18:2:48] >> Carregando Mapa e Spawns...
-[13/7/2026 18:2:48] > Tamanho do Mapa: 64000x64000.
-[13/7/2026 18:2:48] > Descricao do Mapa: 
-[13/7/2026 18:2:48] "Saved with OTAcademy Map Editor 4.1.1"
-[13/7/2026 18:2:48] "No map description available."
-[13/7/2026 18:2:50] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
-[13/7/2026 18:2:50] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
-[13/7/2026 18:2:50] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
-[13/7/2026 18:2:50] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
-[13/7/2026 18:2:51] > Mapa carregado em: 3.409 segundos.
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:51] [Warning - Npc::loadFromXml] Cannot load npc file (data/npc/Frodo.xml).
-[13/7/2026 18:2:51] Info: failed to load external entity "data/npc/Frodo.xml"
+[14/7/2026 9:49:3] > Usando SHA1 criptografia
+[14/7/2026 9:49:3] >> Carregando RSA key
+[14/7/2026 9:49:3] >> Iniciando conexao SQL
+[14/7/2026 9:49:3] >> Executando Gerenciador de Banco de Dados
+[14/7/2026 9:49:4] > Optimizing table: doodad_brushes... [success]
+[14/7/2026 9:49:4] >> Carregando items (OTB)
+[14/7/2026 9:49:4] >> Carregando items (XML)
+[14/7/2026 9:49:4] >> Carregando Grupos
+[14/7/2026 9:49:4] >> Carregando Vocacoes
+[14/7/2026 9:49:4] >> Carregando Outfits
+[14/7/2026 9:49:4] >> Carregando Wing Types
+[14/7/2026 9:49:4] >> Carregando Aura Types
+[14/7/2026 9:49:4] >> Carregando Shader Types
+[14/7/2026 9:49:4] >> Carregando Bar Types
+[14/7/2026 9:49:4] >> Carregando Canal de Chat
+[14/7/2026 9:49:4] >> Carregando Sistema
+[14/7/2026 9:49:5] >> Carregando Mods...
+[14/7/2026 9:49:5] > Loading AutoLoot.xml... done.
+[14/7/2026 9:49:5] > Loading Automatic Raids.xml... done.
+[14/7/2026 9:49:5] > Loading highscorebook.xml... done.
+[14/7/2026 9:49:5] > Loading task_system.xml... done.
+[14/7/2026 9:49:5] > 4 mods were loaded.
+[14/7/2026 9:49:5] >> Carregando EXP Stages
+[14/7/2026 9:49:5] >> Carregando Monstros
+[14/7/2026 9:49:5] >> Carregando Mapa e Spawns...
+[14/7/2026 9:49:5] > Tamanho do Mapa: 64000x64000.
+[14/7/2026 9:49:5] > Descricao do Mapa: 
+[14/7/2026 9:49:5] "Saved with OTAcademy Map Editor 4.1.1"
+[14/7/2026 9:49:5] "No map description available."
+[14/7/2026 9:49:8] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
+[14/7/2026 9:49:8] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
+[14/7/2026 9:49:8] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
+[14/7/2026 9:49:8] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
+[14/7/2026 9:49:10] > Mapa carregado em: 4.589 segundos.
+[14/7/2026 9:49:10] > Data carregada em: 0.321 segundos.
+[14/7/2026 9:49:10] > Houses carregada em: 0.414 segundos.
+[14/7/2026 9:49:10] > Content unserialization time: 0.004 seconds.
+[14/7/2026 9:49:10] > Carregando Tipo de PVP... Open PvP
+[14/7/2026 9:49:10] > Inicializando estado do jogo e registrando servicos...
+[14/7/2026 9:49:10] > IP do Servidor: 127.0.0.1
+[14/7/2026 9:49:10] > IP local do Servidor: 172.29.80.1	172.20.192.1	192.168.1.37	
+[14/7/2026 9:49:10] > Portas do Servidor: 7171	7172	
+[14/7/2026 9:49:10] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[14/7/2026 9:49:20] >> WodBleach servidor Online!
 
-
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Warning - Npc::loadFromXml] Cannot load npc file (data/npc/Frodo.xml).
-[13/7/2026 18:2:52] Info: failed to load external entity "data/npc/Frodo.xml"
-
-
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] [Spawn::addMonster] Cannot find "Mummy"
-[13/7/2026 18:2:52] > Data carregada em: 0.684 segundos.
-[13/7/2026 18:2:54] > Houses carregada em: 1.926 segundos.
-[13/7/2026 18:2:54] > Content unserialization time: 0.005 seconds.
-[13/7/2026 18:2:54] > Carregando Tipo de PVP... Open PvP
-[13/7/2026 18:2:54] > Inicializando estado do jogo e registrando servicos...
-[13/7/2026 18:2:54] > IP do Servidor: 127.0.0.1
-[13/7/2026 18:2:54] > IP local do Servidor: 172.29.80.1	172.20.192.1	192.168.1.37	
-[13/7/2026 18:2:54] > Portas do Servidor: 7171	7172	
-[13/7/2026 18:2:54] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[13/7/2026 18:3:4] >> WodBleach servidor Online!
-
-[13/7/2026 18:4:55] Admin has logged in.
-[13/7/2026 18:4:56] mysql_real_query(): SELECT `task_id`, `kills`, `completed`, `rewarded` FROM `player_tasks` WHERE `player_id` = 2 - MYSQL ERROR: Table 'ndbo.player_tasks' doesn't exist (1146)
-[13/7/2026 18:5:45] mysql_store_result(): UPDATE `players` SET `age_minutes` = 2, `age` = 0 WHERE `id` = 2 - MYSQL ERROR:  (0)
-[13/7/2026 18:6:46] mysql_store_result(): UPDATE `players` SET `age_minutes` = 4, `age` = 0 WHERE `id` = 2 - MYSQL ERROR:  (0)
-[13/7/2026 18:7:46] mysql_store_result(): UPDATE `players` SET `age_minutes` = 6, `age` = 0 WHERE `id` = 2 - MYSQL ERROR:  (0)
-[13/7/2026 18:8:46] mysql_store_result(): UPDATE `players` SET `age_minutes` = 8, `age` = 0 WHERE `id` = 2 - MYSQL ERROR:  (0)
-[13/7/2026 18:9:46] mysql_store_result(): UPDATE `players` SET `age_minutes` = 10, `age` = 0 WHERE `id` = 2 - MYSQL ERROR:  (0)
+[14/7/2026 9:49:23] Lider Supremo 1 has logged in.
+[14/7/2026 10:5:32] Lider Supremo 1 has logged out.
+[14/7/2026 10:5:34] Lider Supremo 1 has logged in.
