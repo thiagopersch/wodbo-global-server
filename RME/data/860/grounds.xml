@@ -4332,15 +4332,6 @@
 		<border align="outer" to="none" id="1" />
 	</brush>
 
-	<brush name="esmerald bridge floor" type="ground" server_lookid="44113" z-order="9999">
-		<item id="44113" chance="10" />
-		<item id="44115" chance="10" />
-		<item id="44116" chance="10" />
-
-		<border align="outer" id="277" />
-		<border align="outer" to="none" id="1" />
-	</brush>
-
 	<brush name="modern stone floor" type="ground" server_lookid="45193" z-order="9999">
 		<item id="45193" chance="100" />
 		<item id="45194" chance="100" />

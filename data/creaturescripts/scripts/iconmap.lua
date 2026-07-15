@@ -1,5 +1,5 @@
 local config = {
-    storage = 030220122041,
+    storage = 30001,
     version = 1,
     marks = {
         { mark = 5, pos = { x = 31999, y = 32001, z = 6 }, desc = "Beginning of your story" },

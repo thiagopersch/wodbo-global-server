@@ -1,48 +1,121 @@
-[14/7/2026 9:49:3] > Usando SHA1 criptografia
-[14/7/2026 9:49:3] >> Carregando RSA key
-[14/7/2026 9:49:3] >> Iniciando conexao SQL
-[14/7/2026 9:49:3] >> Executando Gerenciador de Banco de Dados
-[14/7/2026 9:49:4] > Optimizing table: doodad_brushes... [success]
-[14/7/2026 9:49:4] >> Carregando items (OTB)
-[14/7/2026 9:49:4] >> Carregando items (XML)
-[14/7/2026 9:49:4] >> Carregando Grupos
-[14/7/2026 9:49:4] >> Carregando Vocacoes
-[14/7/2026 9:49:4] >> Carregando Outfits
-[14/7/2026 9:49:4] >> Carregando Wing Types
-[14/7/2026 9:49:4] >> Carregando Aura Types
-[14/7/2026 9:49:4] >> Carregando Shader Types
-[14/7/2026 9:49:4] >> Carregando Bar Types
-[14/7/2026 9:49:4] >> Carregando Canal de Chat
-[14/7/2026 9:49:4] >> Carregando Sistema
-[14/7/2026 9:49:5] >> Carregando Mods...
-[14/7/2026 9:49:5] > Loading AutoLoot.xml... done.
-[14/7/2026 9:49:5] > Loading Automatic Raids.xml... done.
-[14/7/2026 9:49:5] > Loading highscorebook.xml... done.
-[14/7/2026 9:49:5] > Loading task_system.xml... done.
-[14/7/2026 9:49:5] > 4 mods were loaded.
-[14/7/2026 9:49:5] >> Carregando EXP Stages
-[14/7/2026 9:49:5] >> Carregando Monstros
-[14/7/2026 9:49:5] >> Carregando Mapa e Spawns...
-[14/7/2026 9:49:5] > Tamanho do Mapa: 64000x64000.
-[14/7/2026 9:49:5] > Descricao do Mapa: 
-[14/7/2026 9:49:5] "Saved with OTAcademy Map Editor 4.1.1"
-[14/7/2026 9:49:5] "No map description available."
-[14/7/2026 9:49:8] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
-[14/7/2026 9:49:8] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
-[14/7/2026 9:49:8] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
-[14/7/2026 9:49:8] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
-[14/7/2026 9:49:10] > Mapa carregado em: 4.589 segundos.
-[14/7/2026 9:49:10] > Data carregada em: 0.321 segundos.
-[14/7/2026 9:49:10] > Houses carregada em: 0.414 segundos.
-[14/7/2026 9:49:10] > Content unserialization time: 0.004 seconds.
-[14/7/2026 9:49:10] > Carregando Tipo de PVP... Open PvP
-[14/7/2026 9:49:10] > Inicializando estado do jogo e registrando servicos...
-[14/7/2026 9:49:10] > IP do Servidor: 127.0.0.1
-[14/7/2026 9:49:10] > IP local do Servidor: 172.29.80.1	172.20.192.1	192.168.1.37	
-[14/7/2026 9:49:10] > Portas do Servidor: 7171	7172	
-[14/7/2026 9:49:10] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[14/7/2026 9:49:20] >> WodBleach servidor Online!
+[14/7/2026 23:36:32] > Usando SHA1 criptografia
+[14/7/2026 23:36:32] >> Carregando RSA key
+[14/7/2026 23:36:32] >> Iniciando conexao SQL
+[14/7/2026 23:36:32] >> Executando Gerenciador de Banco de Dados
+[14/7/2026 23:36:32] > Sem tabelas para optimizar.
+[14/7/2026 23:36:32] >> Carregando items (OTB)
+[14/7/2026 23:36:33] >> Carregando items (XML)
+[14/7/2026 23:36:33] >> Carregando Grupos
+[14/7/2026 23:36:33] >> Carregando Vocacoes
+[14/7/2026 23:36:33] >> Carregando Outfits
+[14/7/2026 23:36:33] >> Carregando Wing Types
+[14/7/2026 23:36:33] >> Carregando Aura Types
+[14/7/2026 23:36:33] >> Carregando Shader Types
+[14/7/2026 23:36:33] >> Carregando Bar Types
+[14/7/2026 23:36:33] >> Carregando Canal de Chat
+[14/7/2026 23:36:33] >> Carregando Sistema
+[14/7/2026 23:36:33] >> Carregando Mods...
+[14/7/2026 23:36:33] > Loading AutoLoot.xml... done.
+[14/7/2026 23:36:33] > Loading Automatic Raids.xml... done.
+[14/7/2026 23:36:33] > Loading highscorebook.xml... done.
+[14/7/2026 23:36:33] > Loading task_system.xml... done.
+[14/7/2026 23:36:33] > 4 mods were loaded.
+[14/7/2026 23:36:33] >> Carregando EXP Stages
+[14/7/2026 23:36:33] >> Carregando Monstros
+[14/7/2026 23:36:33] >> Carregando Mapa e Spawns...
+[14/7/2026 23:36:34] > Tamanho do Mapa: 64000x64000.
+[14/7/2026 23:36:34] > Descricao do Mapa: 
+[14/7/2026 23:36:34] "Saved with OTAcademy Map Editor 4.1.1"
+[14/7/2026 23:36:34] "No map description available."
+[14/7/2026 23:36:35] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
+[14/7/2026 23:36:35] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
+[14/7/2026 23:36:35] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
+[14/7/2026 23:36:35] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
+[14/7/2026 23:36:37] > Mapa carregado em: 3.55 segundos.
+[14/7/2026 23:36:37] > Data carregada em: 0.25 segundos.
+[14/7/2026 23:36:37] > Houses carregada em: 0.315 segundos.
+[14/7/2026 23:36:37] > Content unserialization time: 0.005 seconds.
+[14/7/2026 23:36:37] > Carregando Tipo de PVP... Open PvP
+[14/7/2026 23:36:37] > Inicializando estado do jogo e registrando servicos...
+[14/7/2026 23:36:38] > IP do Servidor: 127.0.0.1
+[14/7/2026 23:36:38] > IP local do Servidor: 172.29.80.1	172.21.16.1	192.168.1.37	
+[14/7/2026 23:36:38] > Portas do Servidor: 7171	7172	
+[14/7/2026 23:36:38] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[14/7/2026 23:36:48] >> WodBleach servidor Online!
 
-[14/7/2026 9:49:23] Lider Supremo 1 has logged in.
-[14/7/2026 10:5:32] Lider Supremo 1 has logged out.
-[14/7/2026 10:5:34] Lider Supremo 1 has logged in.
+[14/7/2026 23:36:50] ADM Peixola has logged in.
+
+[14/7/2026 23:37:7] [Error - Spell Interface] 
+[14/7/2026 23:37:7] data/spells/scripts/rukia/Hakuren.lua:onCastSpell
+[14/7/2026 23:37:7] Description: 
+[14/7/2026 23:37:7] data/lib/075-custom-functions.lua:59: attempt to call global 'canThrowObjectTo' (a nil value)
+[14/7/2026 23:37:7] stack traceback:
+[14/7/2026 23:37:7] 	data/lib/075-custom-functions.lua:59: in function 'hasLineOfSight'
+[14/7/2026 23:37:7] 	data/lib/075-custom-functions.lua:94: in function 'doAreaDamage'
+[14/7/2026 23:37:7] 	data/lib/075-custom-functions.lua:131: in function 'expandArea'
+[14/7/2026 23:37:7] 	data/lib/075-custom-functions.lua:137: in function <data/lib/075-custom-functions.lua:23>
+[14/7/2026 23:37:7] 	(tail call): ?
+
+[14/7/2026 23:37:7] [Error - Spell Interface] 
+[14/7/2026 23:37:7] data/spells/scripts/rukia/Hakuren.lua:onCastSpell
+[14/7/2026 23:37:7] Description: 
+[14/7/2026 23:37:7] data/lib/075-custom-functions.lua:59: attempt to call global 'canThrowObjectTo' (a nil value)
+[14/7/2026 23:37:7] stack traceback:
+[14/7/2026 23:37:7] 	data/lib/075-custom-functions.lua:59: in function 'hasLineOfSight'
+[14/7/2026 23:37:7] 	data/lib/075-custom-functions.lua:94: in function 'doAreaDamage'
+[14/7/2026 23:37:7] 	data/lib/075-custom-functions.lua:131: in function 'expandArea'
+[14/7/2026 23:37:7] 	data/lib/075-custom-functions.lua:137: in function <data/lib/075-custom-functions.lua:23>
+[14/7/2026 23:37:7] 	(tail call): ?
+
+[14/7/2026 23:37:7] [Error - Spell Interface] 
+[14/7/2026 23:37:7] data/spells/scripts/rukia/Hakuren.lua:onCastSpell
+[14/7/2026 23:37:7] Description: 
+[14/7/2026 23:37:7] data/lib/075-custom-functions.lua:59: attempt to call global 'canThrowObjectTo' (a nil value)
+[14/7/2026 23:37:7] stack traceback:
+[14/7/2026 23:37:7] 	data/lib/075-custom-functions.lua:59: in function 'hasLineOfSight'
+[14/7/2026 23:37:7] 	data/lib/075-custom-functions.lua:94: in function 'doAreaDamage'
+[14/7/2026 23:37:7] 	data/lib/075-custom-functions.lua:131: in function 'expandArea'
+[14/7/2026 23:37:7] 	data/lib/075-custom-functions.lua:137: in function <data/lib/075-custom-functions.lua:23>
+[14/7/2026 23:37:7] 	(tail call): ?
+
+[14/7/2026 23:37:8] [Error - Spell Interface] 
+[14/7/2026 23:37:8] data/spells/scripts/rukia/Hakuren.lua:onCastSpell
+[14/7/2026 23:37:8] Description: 
+[14/7/2026 23:37:8] data/lib/075-custom-functions.lua:59: attempt to call global 'canThrowObjectTo' (a nil value)
+[14/7/2026 23:37:8] stack traceback:
+[14/7/2026 23:37:8] 	data/lib/075-custom-functions.lua:59: in function 'hasLineOfSight'
+[14/7/2026 23:37:8] 	data/lib/075-custom-functions.lua:94: in function 'doAreaDamage'
+[14/7/2026 23:37:8] 	data/lib/075-custom-functions.lua:131: in function 'expandArea'
+[14/7/2026 23:37:8] 	data/lib/075-custom-functions.lua:137: in function <data/lib/075-custom-functions.lua:23>
+[14/7/2026 23:37:8] 	(tail call): ?
+
+[14/7/2026 23:37:8] [Error - Spell Interface] 
+[14/7/2026 23:37:8] data/spells/scripts/rukia/Hakuren.lua:onCastSpell
+[14/7/2026 23:37:8] Description: 
+[14/7/2026 23:37:8] data/lib/075-custom-functions.lua:59: attempt to call global 'canThrowObjectTo' (a nil value)
+[14/7/2026 23:37:8] stack traceback:
+[14/7/2026 23:37:8] 	data/lib/075-custom-functions.lua:59: in function 'hasLineOfSight'
+[14/7/2026 23:37:8] 	data/lib/075-custom-functions.lua:94: in function 'doAreaDamage'
+[14/7/2026 23:37:8] 	data/lib/075-custom-functions.lua:131: in function 'expandArea'
+[14/7/2026 23:37:8] 	data/lib/075-custom-functions.lua:137: in function <data/lib/075-custom-functions.lua:23>
+[14/7/2026 23:37:8] 	(tail call): ?
+
+[14/7/2026 23:37:8] [Error - Spell Interface] 
+[14/7/2026 23:37:8] data/spells/scripts/rukia/Hakuren.lua:onCastSpell
+[14/7/2026 23:37:8] Description: 
+[14/7/2026 23:37:8] data/lib/075-custom-functions.lua:59: attempt to call global 'canThrowObjectTo' (a nil value)
+[14/7/2026 23:37:8] stack traceback:
+[14/7/2026 23:37:8] 	data/lib/075-custom-functions.lua:59: in function 'hasLineOfSight'
+[14/7/2026 23:37:8] 	data/lib/075-custom-functions.lua:94: in function 'doAreaDamage'
+[14/7/2026 23:37:8] 	data/lib/075-custom-functions.lua:131: in function 'expandArea'
+[14/7/2026 23:37:8] 	data/lib/075-custom-functions.lua:137: in function <data/lib/075-custom-functions.lua:23>
+[14/7/2026 23:37:8] 	(tail call): ?
+[14/7/2026 23:37:14] > Salvando servidor...
+[14/7/2026 23:37:15] > SAVE: Completo em 0.495 segundos usando binary casa storage.
+[14/7/2026 23:37:32] ADM Peixola has logged out.
+[14/7/2026 23:37:33] ADM Peixola has logged in.
+[14/7/2026 23:44:14] ADM Peixola has logged out.
+[14/7/2026 23:44:15] ADM Peixola has logged in.
+[14/7/2026 23:46:45] Admin has logged in.
+[14/7/2026 23:46:52] Admin has logged out.
+[14/7/2026 23:46:56] ADM Peixola has logged out.

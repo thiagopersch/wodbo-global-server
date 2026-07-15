@@ -1,5 +1,5 @@
 local config = {
-	storage = 030220122041,
+	storage = 30002,
 	version = 1, 
 	marks = {
 		{mark = 2, pos = {x = 1023, y = 1034, z = 7}, desc = "Bueiro Pt. 1"},
@@ -46,9 +46,9 @@ function onSay(cid, words, param)
 	end
 
 	if not found then
-		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Marcação '" .. description .. "' não encontrada.")
+		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Marcaï¿½ï¿½o '" .. description .. "' nï¿½o encontrada.")
 	else
-		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "A localização foi marcada no seu mapa na camada do chão '" .. description .. "' adicionada ao mapa!")
+		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "A localizaï¿½ï¿½o foi marcada no seu mapa na camada do chï¿½o '" .. description .. "' adicionada ao mapa!")
 		setPlayerStorageValue(cid, config.storage, config.version)
 	end
 
