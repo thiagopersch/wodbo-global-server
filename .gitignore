@@ -1,3 +1,4 @@
 # In .gitignore
 src/vc10/.vs/
 *.db
+NEW-RME/
