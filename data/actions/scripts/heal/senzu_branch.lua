@@ -1,9 +1,9 @@
 function onUse(cid, item, fromPosition, itemEx, toPosition)
     ITEM = 49692
-    local magicEffect = 348
-    local REG_HEALTH = 50000
-    local REG_MANA = 20000
     local storage = 20000
+    local magicEffect = 348
+    local REG_HEALTH = 20000
+    local REG_MANA = 20000
     local qtdRemoveItem = 1
     local wait = 2
     local pos1 = {
