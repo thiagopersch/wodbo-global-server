@@ -260,6 +260,20 @@ checkCorpseOwner = true
 monsterLootMessage = 3
 monsterLootMessageType = 25
 
+-- Auto Loot
+enableAutoLoot = true
+
+-- Compact number display (1k, 10k, 1kk, and so on)
+expNumbersInK = true
+damageNumbersInK = true
+
+-- Show the player's own life/mana bars as a percentage (100%) instead of absolute values (1500/1500)
+lifeManaInPercent = false
+
+-- Chest system: consuming this item rolls a random reward from `chest_rewards`
+-- (managed on the portal at /admin/chest-rewards). Set to 0 to disable.
+chestItemId = 0
+
 -- Ghost mode
 ghostModeInvisibleEffect = false
 ghostModeSpellEffects = true

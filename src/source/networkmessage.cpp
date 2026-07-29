@@ -201,12 +201,12 @@ void NetworkMessage::putPosition(const Position& pos)
 	put<char>(pos.z);
 }
 
-void NetworkMessage::putItem(uint16_t id, uint8_t count)
+void NetworkMessage::putItem(uint16_t id, uint16_t count)
 {
 	const ItemType &it = Item::items[id];
 	put<uint16_t>(it.clientId);
 	if(it.stackable)
-		put<char>(count);
+		put<uint16_t>(count);
 	else if(it.isSplash() || it.isFluidContainer())
 		put<char>(fluidMap[count % 8]);
 }
@@ -216,7 +216,7 @@ void NetworkMessage::putItem(const Item* item)
 	const ItemType& it = Item::items[item->getID()];
 	put<uint16_t>(it.clientId);
 	if(it.stackable)
-		put<char>(item->getSubType());
+		put<uint16_t>(item->getSubType());
 	else if(it.isSplash() || it.isFluidContainer())
 		put<char>(fluidMap[item->getSubType() % 8]);
 }
@@ -226,7 +226,7 @@ void NetworkMessage::putItem(const Item* item, bool withDescription)
 	const ItemType& it = Item::items[item->getID()];
 	put<uint16_t>(it.clientId);
 	if(it.stackable)
-		put<char>(item->getSubType());
+		put<uint16_t>(item->getSubType());
 	else if(it.isSplash() || it.isFluidContainer())
 		put<char>(fluidMap[item->getSubType() % 8]);
 

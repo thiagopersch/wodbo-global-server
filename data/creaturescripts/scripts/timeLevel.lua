@@ -35,7 +35,7 @@ function onAdvance(cid, skill, oldlevel, newlevel)
   else
     local msg = getPlayerName(cid) ..
         " It took you " .. timeString(timenow - oldtime) .. " to advance in level from your last advance."
-    local formattedText = "center|" .. TEXTCOLOR_YELLOW .. "|" .. msg
+    local formattedText = "top|" .. TEXTCOLOR_YELLOW .. "|" .. msg
     addEvent(doBroadcastMessage, 21, formattedText)
     setPlayerStorageValue(cid, 3499, timenow)
   end

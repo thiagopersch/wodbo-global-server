@@ -70,6 +70,7 @@
 	<talkaction words="!exp" event="script" value="monsters.lua" />
 	<talkaction words="!marcar" event="script" value="marcar.lua" />
 	<talkaction words="!sendquestlog" event="script" value="sendquestlog.lua" />
+	<talkaction words="!resgatarquest" event="script" value="resgatarquest.lua" />
 	<talkaction words="/onlinepoints;!onlinepoints" event="script" value="onlinepoints.lua" />
 	<talkaction words="!deathlistall" event="script" value="deathlist_all.lua" />
 	<talkaction words="!remover" event="script" value="removeFrags.lua" />
@@ -93,13 +94,9 @@
 	<talkaction words="!stats;!dodge;!critical" event="script" value="stats_skills.lua" />
 	<!-- <talkaction words="/setvoc" separator=" " script="setvocation.lua" /> -->
 
-	<!-- Transformations and Resets -->
+	<!-- Resets -->
 	<talkaction words="!resetar;!reset;/resetar;/reset" event="script" value="reset.lua" />
-	<talkaction
-		words="!transform;!transformar;!revert;!reverter;/transformar;/transform;/revert;/reverter"
-		event="script"
-		value="transformar.lua"
-	/>
+	<!-- Transformations are now driven entirely by the "Set Outfit" window (see creaturescripts type="outfit" -> outfit_transform.lua). The old !transform/!revert talkactions were removed. -->
 
 	<!-- Bank -->
 	<talkaction log="yes" words="!balance" event="script" value="bank\balance.lua" />

@@ -137,10 +137,17 @@ function onSay(cid, words, param)
 
     -- Realiza o reset
     local healthMax, manaMax = getCreatureMaxHealth(cid), getCreatureMaxMana(cid)
+    local levelBeforeReset = getPlayerLevel(cid)
+    local newResetNumber = getPlayerResets(cid) + 1
     doPlayerAddLevel(cid, -(getPlayerLevel(cid) - config.backToLevel)) -- Reseta para backToLevel
     setCreatureMaxHealth(cid, healthMax)
     setCreatureMaxMana(cid, manaMax)
     doPlayerAddResets(cid) -- Incrementa a contagem de resets no banco de dados
+
+    -- Histórico de nível-por-reset, usado pelo portal para calcular a "Média" (ver AGENTS.md).
+    db.query("INSERT INTO `player_reset_history` (`player_id`, `reset_number`, `level`, `created_at`) VALUES (" ..
+        getPlayerGUID(cid) .. ", " .. newResetNumber .. ", " .. levelBeforeReset .. ", NOW())")
+
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_FIREWORK_RED)
     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,
         "You have reset your level! You now have " .. getPlayerResets(cid) .. " reset(s).")

@@ -308,6 +308,12 @@ ReturnValue Combat::canDoCombat(const Creature* attacker, const Creature* target
 					return RET_YOUMAYNOTATTACKTHISCREATURE;
 			}
 		}
+		else if(!target->isPlayerSummon())
+		{
+			//attacker is a "wild" creature (not a player, not a player's summon):
+			//it may only damage players or player summons, never other wild monsters
+			return RET_YOUMAYNOTATTACKTHISCREATURE;
+		}
 	}
 
 	return checkZones && (target->getTile()->hasFlag(TILESTATE_OPTIONALZONE) ||

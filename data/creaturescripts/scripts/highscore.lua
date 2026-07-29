@@ -1,12 +1,22 @@
+if not json then json = dofile("data/lib/json.lua") end
+
 local HIGH_OPCODE = 73
 
 local highscoreCategories = {
   [0] = { name = "Level", type = "player", column = "level", expr = "experience" },
   [1] = { name = "Magic Level", type = "player", column = "maglevel", expr = "maglevel" },
   [2] = { name = "Fist Fighting", type = "skill", skillid = 0 },
-  [3] = { name = "Shielding", type = "skill", skillid = 5 },
-  -- Adicione mais categorias aqui se quiser...
+  [3] = { name = "Club Fighting", type = "skill", skillid = 1 },
+  [4] = { name = "Sword Fighting", type = "skill", skillid = 2 },
+  [5] = { name = "Axe Fighting", type = "skill", skillid = 3 },
+  [6] = { name = "Distance Fighting", type = "skill", skillid = 4 },
+  [7] = { name = "Shielding", type = "skill", skillid = 5 },
 }
+
+function onLogin(cid)
+  registerCreatureEvent(cid, "HighscoreOpcode")
+  return true
+end
 
 function onExtendedOpcode(cid, opcode, buffer)
   if opcode ~= HIGH_OPCODE then return false end

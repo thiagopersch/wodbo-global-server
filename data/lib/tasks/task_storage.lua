@@ -1,4 +1,4 @@
-if not TASKS then dofile("data/lib/tasks/task_config.lua") end
+if not TASKS then dofile("data/lib/tasks/task_db_loader.lua") end
 if not PLAYER_TASK_CACHE then dofile("data/lib/tasks/task_cache.lua") end
 
 function TaskStorage_loadPlayer(cid)

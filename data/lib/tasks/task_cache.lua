@@ -1,4 +1,4 @@
-if not TASKS then dofile("data/lib/tasks/task_config.lua") end
+if not TASKS then dofile("data/lib/tasks/task_db_loader.lua") end
 
 TASK_MONSTERS = {}
 TASK_IDS_BY_CATEGORY = {}

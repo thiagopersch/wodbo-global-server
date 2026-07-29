@@ -36,22 +36,22 @@ function VocationRankLib.getPlayerVocationRank(cid, vocationId)
   return { rank = 0, stars = 0, totalStars = 0 }
 end
 
+-- Every vocation gets the same bonus per star: +2% damage, +5000 max HP, +5000 max mana.
 function VocationRankLib.applyStats(cid, vocationId, totalStars)
   local config = VocationRankConfig.Vocations[vocationId]
-  if not config or totalStars == 0 then return end
+  if not config then return end
 
-  local s         = config.statsPerStar
+  if doPlayerSetVocationRankDamageBonus then
+    doPlayerSetVocationRankDamageBonus(cid, totalStars * VocationRankConfig.DamagePerStar)
+  end
+
+  if totalStars == 0 then return end
+
   local condition = createConditionObject(CONDITION_ATTRIBUTES)
   setConditionParam(condition, CONDITION_PARAM_TICKS, -1)
   setConditionParam(condition, CONDITION_PARAM_SUBID, 12345)
-
-  if s.health and s.health > 0 then setConditionParam(condition, CONDITION_PARAM_STAT_MAXHITPOINTS, s.health * totalStars) end
-  if s.mana and s.mana > 0 then setConditionParam(condition, CONDITION_PARAM_STAT_MAXMANAPOINTS, s.mana * totalStars) end
-  if s.attack and s.attack > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_MELEE, s.attack * totalStars) end
-  if s.defense and s.defense > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_SHIELD, s.defense * totalStars) end
-  if s.magic and s.magic > 0 then setConditionParam(condition, CONDITION_PARAM_STAT_MAGICLEVEL, s.magic * totalStars) end
-  if s.distance and s.distance > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_DISTANCE, s.distance * totalStars) end
-
+  setConditionParam(condition, CONDITION_PARAM_STAT_MAXHITPOINTS, totalStars * VocationRankConfig.HealthPerStar)
+  setConditionParam(condition, CONDITION_PARAM_STAT_MAXMANAPOINTS, totalStars * VocationRankConfig.ManaPerStar)
   doAddCondition(cid, condition)
 end
 
@@ -71,27 +71,11 @@ function sendRankDataToClient(cid)
   end
   
   local specCount = getPlayerItemCount(cid, config.specificFragmentItemId)
-  
-  -- The cost is based on the CURRENT rank (or 1 if rank 0)
-  local costIndex = math.max(1, rankData.rank)
-  local costAmount = config.costs[costIndex] or 0
 
-  -- Stats per single star (from config)
-  local s = config.statsPerStar
-  local sHp = s.health or 0
-  local sMana = s.mana or 0
-  local sMelee = s.attack or 0
-  local sShield = s.defense or 0
-  local sMagic = s.magic or 0
+  -- Cost of the NEXT star: star (stars+1) within the current rank costs (stars+1) * FragmentsPerStar
+  local costAmount = (rankData.stars + 1) * VocationRankConfig.FragmentsPerStar
 
   local vocName = getVocationInfo(vocationId).name or "None"
-  if VocationRankConfig and VocationRankConfig.Vocations and VocationRankConfig.Vocations[vocationId] then
-      local archetype = VocationRankConfig.Vocations[vocationId].archetype
-      if archetype then
-          if archetype == "Support" then archetype = "Suporte" end
-          vocName = vocName .. " (" .. archetype .. ")"
-      end
-  end
   local playerName = getCreatureName(cid)
 
   -- Protocol version 2: Added per-star bonuses
@@ -99,7 +83,7 @@ function sendRankDataToClient(cid)
     "2", -- Protocol version
     rankData.rank, rankData.stars, rankData.totalStars,
     univCount, costAmount, specCount, costAmount,
-    sHp, sMana, sMelee, sShield, sMagic, 
+    VocationRankConfig.HealthPerStar, VocationRankConfig.ManaPerStar, VocationRankConfig.DamagePerStar, 0, 0,
     vocName, playerName
   }, "|")
 
@@ -143,9 +127,8 @@ function VocationRankLib.doUpgrade(cid, source)
     return false
   end
 
-  local costIndex = math.max(1, rankData.rank)
-  local costAmount = config.costs[costIndex]
-  if not costAmount then return false end
+  -- Star (stars+1) within the current rank costs (stars+1) * FragmentsPerStar (50, 100, 150, 200, 250)
+  local costAmount = (rankData.stars + 1) * VocationRankConfig.FragmentsPerStar
 
   local success = false
   if source == "universal" then
@@ -158,19 +141,10 @@ function VocationRankLib.doUpgrade(cid, source)
     rankData.stars = rankData.stars + 1
     rankData.totalStars = rankData.totalStars + 1
 
-    -- Promotion logic: If reached 5 stars, advance rank
-    if rankData.stars >= VocationRankConfig.StarsPerRank then
-      if rankData.rank + 1 > config.maxRank then
-        rankData.stars = VocationRankConfig.StarsPerRank
-      else
-        rankData.rank = rankData.rank + 1
-        if rankData.rank > 1 then
-          rankData.stars = 1
-          rankData.totalStars = rankData.totalStars + 1
-        else
-          rankData.stars = 0
-        end
-      end
+    -- Promotion logic: 5 stars completes the current rank; advance to the next one (if any)
+    if rankData.stars >= VocationRankConfig.StarsPerRank and rankData.rank < config.maxRank then
+      rankData.rank = rankData.rank + 1
+      rankData.stars = 0
     end
 
     -- Salva no banco de dados

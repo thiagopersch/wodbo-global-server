@@ -337,6 +337,8 @@ bool ConfigManager::load()
 	m_confBool[LOG_PLAYER] = getGlobalBool("logsPlayers", false);
 	m_confNumber[GUILD_MAXPLAYER] = getGlobalNumber("maxPlayerGuild", 50);
 	m_confBool[ENABLE_CAST] = getGlobalBool("enableCast", false); //CAST
+	m_confBool[EXPERIENCE_NUMBERS_IN_K] = getGlobalBool("expNumbersInK", false);
+	m_confBool[DAMAGE_NUMBERS_IN_K] = getGlobalBool("damageNumbersInK", false);
 	m_confBool[MONSTER_SPAWN_WALKBACK] = getGlobalBool("monsterSpawnWalkback", true);
 	m_confBool[ALLOW_BLOCK_SPAWN] = getGlobalBool("allowBlockSpawn", true);
 	m_confNumber[MAIL_ATTEMPTS] = getGlobalNumber("mailMaxAttempts", 10);

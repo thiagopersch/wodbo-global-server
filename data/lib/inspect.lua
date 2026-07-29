@@ -1,3 +1,6 @@
+if not DonateTier then dofile("data/lib/donate_tier.lua") end
+if not ServerConfigLib then dofile("data/lib/server_config_lib.lua") end
+
 InspectModule = {
 	opcode = 13,
 	privacy_storage = 10000, -- storage para checar se o alvo quer mostrar o set
@@ -213,6 +216,17 @@ function InspectModule:sendPlayerData(cid, creatureID)
 	data[#data + 1] = pointsToNext     -- 51
 	data[#data + 1] = pointsInThisRank -- 52
 	data[#data + 1] = pointsToNextMax  -- 53
+
+	-- Donate tier (ver data/lib/donate_tier.lua)
+	local donateTier = DonateTier.getAccountDonateTier(getPlayerAccountId(creatureID))
+	data[#data + 1] = donateTier.name                         -- 54
+	data[#data + 1] = donateTier.bonusPct                      -- 55
+	data[#data + 1] = donateTier.bonusPct > 0 and 1 or 0        -- 56 (bless infinita)
+
+	-- Caps de dodge/critical configuráveis em /admin/settings (lib/server-config.ts) — antes
+	-- fixos em 1000 no cliente (modules/game_player_profile/player_profile.lua).
+	data[#data + 1] = ServerConfigLib.getDodgeCap()    -- 57 (DODGE CAP)
+	data[#data + 1] = ServerConfigLib.getCriticalCap() -- 58 (CRITICAL CAP)
 
 	doPlayerSendExtendedOpcode(cid, self.opcode, table.concat(data, "&"))
 end

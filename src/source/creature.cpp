@@ -1280,9 +1280,17 @@ void Creature::onGainExperience(double& gainExp, bool fromMonster, bool multipli
 	if(color < 0)
 		color = random_range(0, 255);
 
-	std::stringstream ss;
-	ss << (uint64_t)gainExp;
-	g_game.addAnimatedText(getPosition(), (uint8_t)color, ss.str());
+	std::string expText;
+	if(g_config.getBool(ConfigManager::EXPERIENCE_NUMBERS_IN_K))
+		expText = formatCompactNumber((uint64_t)gainExp);
+	else
+	{
+		std::stringstream ss;
+		ss << (uint64_t)gainExp;
+		expText = ss.str();
+	}
+
+	g_game.addAnimatedText(getPosition(), (uint8_t)color, expText);
 }
 
 void Creature::onGainSharedExperience(double& gainExp, bool fromMonster, bool multiplied)
@@ -1302,9 +1310,17 @@ void Creature::onGainSharedExperience(double& gainExp, bool fromMonster, bool mu
 	if(color < 0)
 		color = random_range(0, 255);
 
-	std::stringstream ss;
-	ss << (uint64_t)gainExp;
-	g_game.addAnimatedText(getPosition(), (uint8_t)color, ss.str());
+	std::string expText;
+	if(g_config.getBool(ConfigManager::EXPERIENCE_NUMBERS_IN_K))
+		expText = formatCompactNumber((uint64_t)gainExp);
+	else
+	{
+		std::stringstream ss;
+		ss << (uint64_t)gainExp;
+		expText = ss.str();
+	}
+
+	g_game.addAnimatedText(getPosition(), (uint8_t)color, expText);
 }
 
 void Creature::addSummon(Creature* creature)

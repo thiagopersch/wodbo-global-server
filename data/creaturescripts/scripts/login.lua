@@ -16,7 +16,7 @@ function onLogin(cid)
       doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, str)
       str = "Your last visit was on " .. os.date("%a %b %d %X %Y", lastLogin) .. "."
     else
-      str = str .. " Welcome to DBOSupreme!"
+      str = str .. " Welcome to WodBleach!"
       setPlayerStorageValue(cid, 30024, 0)
     end
     doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, str)
@@ -76,6 +76,7 @@ function onLogin(cid)
   registerCreatureEvent(cid, "ShaderSelectorOpcode")
   registerCreatureEvent(cid, "AuraSelectorOpcode")
   registerCreatureEvent(cid, "BestiaryOpcode")
+  registerCreatureEvent(cid, "QuestOpcode")
   registerCreatureEvent(cid, "MBKill")
   setPlayerStorageValue(cid, 81000, -1)
   setPlayerStorageValue(cid, 81001, -1)
@@ -188,8 +189,8 @@ function onLogin(cid)
     if not isPlayer(cid) then return end
 
     -- Reseta qualquer sessão de aura pendente de uma sessão anterior
-    setPlayerStorageValue(cid, 81002, -1)  -- ST_AURA_ITEM
-    setPlayerStorageValue(cid, 81003, -1)  -- ST_AURA_OPEN
+    setPlayerStorageValue(cid, 81002, -1) -- ST_AURA_ITEM
+    setPlayerStorageValue(cid, 81003, -1) -- ST_AURA_OPEN
 
     local AURA_OPCODE = 249
 
@@ -211,7 +212,7 @@ function onLogin(cid)
     if equippedAura and equippedAura > 0 then
       doPlayerSendExtendedOpcode(cid, AURA_OPCODE, "a_equipped|" .. equippedAura)
     end
-  end, 500)  -- 500ms: suficiente para o client processar o login completo
+  end, 500) -- 500ms: suficiente para o client processar o login completo
 
   return true
 end

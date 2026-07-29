@@ -1,3 +1,5 @@
+if not DonateTier then dofile("data/lib/donate_tier.lua") end
+
 local PROFILE_MINUTES_PER_YEAR = 60
 
 local PROFILE_TITLES = {
@@ -191,10 +193,14 @@ function onExtendedOpcode(cid, opcode, buffer)
         end
         skills = skills .. "," .. magLevel
 
+        -- Donate tier (ver data/lib/donate_tier.lua)
+        local donateTier = DonateTier.getAccountDonateTier(getPlayerAccountId(target))
+
         -- Enviar dados para o cliente
         local data = age .. "|" .. title .. "|" .. frags .. "|" .. resets .. "|" .. vocationName .. "|"
             .. health .. "|" .. healthmax .. "|" .. mana .. "|" .. manamax .. "|" .. staminaMinutes .. "|"
-            .. cap .. "|" .. balance .. "|" .. skills .. "|" .. posx .. "|" .. posy .. "|" .. posz
+            .. cap .. "|" .. balance .. "|" .. skills .. "|" .. posx .. "|" .. posy .. "|" .. posz .. "|"
+            .. donateTier.name .. "|" .. donateTier.bonusPct .. "|" .. (donateTier.bonusPct > 0 and 1 or 0)
 
         print(data)
         doPlayerSendExtendedOpcode(cid, opcodeId, data)

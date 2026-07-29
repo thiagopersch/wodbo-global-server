@@ -10,6 +10,7 @@
 	<event type="advance" name="CheckTop" event="script" value="topeffect.lua" />
 	<event type="login" name="OutfitFilter" event="script" value="outfits_filter.lua" />
 	<event type="advance" name="OutfitAdvance" event="script" value="outfits_filter.lua" />
+	<event type="outfit" name="OutfitTransform" event="script" value="outfit_transform.lua" />
 	<event type="kill" name="AnnounceDeath" event="script" value="announce_death.lua" />
 	<event type="death" name="AmuletDeath" script="amuletDeath.lua" />
 	<event type="look" name="fraglook" event="script" value="fraglook.lua" />
@@ -32,7 +33,14 @@
 	<event type="think" name="IconMap" event="script" value="iconmap.lua" />
 	<event type="kill" name="KillingInTheNameOf" event="script" value="killinginthenameof.lua" />
 	<event type="login" name="VocationRanks" event="script" value="vocation_ranks.lua" />
-	<!-- <event type="extendedopcode" event="script" name="HighscoreOpcode" value="highscore.lua" /> -->
+	<event type="login" name="ClientConfigLogin" event="script" value="client_config.lua" />
+	<event type="login" name="HighscoreLogin" event="script" value="highscore.lua" />
+	<event type="extendedopcode" event="script" name="HighscoreOpcode" value="highscore.lua" />
+
+	<!-- Battle Pass System -->
+	<event type="login" name="BattlePassLogin" event="script" value="battle_pass.lua" />
+	<event type="kill" name="BattlePassKill" event="script" value="battle_pass.lua" />
+	<event type="extendedopcode" name="BattlePassOpcode" event="script" value="battle_pass.lua" />
 	<event type="login" name="BankExtended" event="script" value="bank_server.lua" />
 	<event type="extendedopcode" name="BankOpcode" event="script" value="bank_server.lua" />
 	<event type="extendedopcode" event="script" name="ChangeVocationOpcode"
@@ -69,10 +77,18 @@
 	<event type="look" name="TaskLook" event="script" value="task_look.lua" />
 	<event type="extendedopcode" name="TaskOpcode" event="script" value="task_extended_opcode.lua" />
 
+	<!-- Quest System -->
+	<event type="extendedopcode" name="QuestOpcode" event="script" value="quest_extended_opcode.lua" />
+
 	<event type="extendedopcode" name="ShaderSelectorOpcode" event="script" value="shader_selector.lua" />
 	<event type="extendedopcode" name="AuraSelectorOpcode" event="script" value="aura_selector.lua" />
-	<!-- <event type="login" name="AutoLootLogin" event="script" value="autoloot_opcode.lua" />
-	<event type="extendedopcode" name="AutoLootOpcode" event="script" value="autoloot_opcode.lua" /> -->
+	<event type="login" name="AutoLootLogin" event="script" value="autoloot_opcode.lua" />
+	<event type="extendedopcode" name="AutoLootOpcode" event="script" value="autoloot_opcode.lua" />
+	<event type="kill" name="AutoLootKill" event="script" value="autoloot_opcode.lua" />
 
 	<event type="extendedopcode" name="BestiaryOpcode" event="script" value="bestiary.lua" />
+
+	<!-- Donate System -->
+	<event type="login" name="DonateBless" event="script" value="donate_bless.lua" />
+	<event type="kill" name="DonateBonusKill" event="script" value="donate_bonus_kill.lua" />
 </creaturescripts>

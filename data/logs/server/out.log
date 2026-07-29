@@ -1,78 +1,45 @@
-[17/7/2026 22:52:56] > Usando SHA1 criptografia
-[17/7/2026 22:52:56] >> Carregando RSA key
-[17/7/2026 22:52:56] >> Iniciando conexao SQL
-[17/7/2026 22:52:56] >> Executando Gerenciador de Banco de Dados
-[17/7/2026 22:52:57] > Optimizing table: doodad_brushes... [success]
-[17/7/2026 22:53:2] > Optimizing table: items... [success]
-[17/7/2026 22:53:2] > Optimizing table: monsters... [success]
-[17/7/2026 22:53:2] >> Carregando items (OTB)
-[17/7/2026 22:53:3] >> Carregando items (XML)
-[17/7/2026 22:53:3] >> Carregando Grupos
-[17/7/2026 22:53:3] >> Carregando Vocacoes
-[17/7/2026 22:53:3] >> Carregando Outfits
-[17/7/2026 22:53:3] >> Carregando Wing Types
-[17/7/2026 22:53:3] >> Carregando Aura Types
-[17/7/2026 22:53:3] >> Carregando Shader Types
-[17/7/2026 22:53:3] >> Carregando Bar Types
-[17/7/2026 22:53:3] >> Carregando Canal de Chat
-[17/7/2026 22:53:3] >> Carregando Sistema
-[17/7/2026 22:53:11] >> Carregando Mods...
-[17/7/2026 22:53:11] > Loading AutoLoot.xml... done.
-[17/7/2026 22:53:11] > Loading Automatic Raids.xml... done.
-[17/7/2026 22:53:11] > Loading highscorebook.xml... done.
-[17/7/2026 22:53:11] > Loading task_system.xml... done.
-[17/7/2026 22:53:11] > 4 mods were loaded.
-[17/7/2026 22:53:11] >> Carregando EXP Stages
-[17/7/2026 22:53:11] >> Carregando Monstros
-[17/7/2026 22:53:12] >> Carregando Mapa e Spawns...
-[17/7/2026 22:53:12] > Tamanho do Mapa: 64000x64000.
-[17/7/2026 22:53:12] > Descricao do Mapa: 
-[17/7/2026 22:53:12] "Saved with OTAcademy Map Editor 4.1.1"
-[17/7/2026 22:53:12] "No map description available."
-[17/7/2026 22:53:14] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
-[17/7/2026 22:53:14] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
-[17/7/2026 22:53:14] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
-[17/7/2026 22:53:14] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
-[17/7/2026 22:53:16] > Mapa carregado em: 4.689 segundos.
-[17/7/2026 22:53:17] > Data carregada em: 0.656 segundos.
-[17/7/2026 22:53:17] > Houses carregada em: 0.417 segundos.
-[17/7/2026 22:53:17] > Content unserialization time: 0.005 seconds.
-[17/7/2026 22:53:17] > Carregando Tipo de PVP... Open PvP
-[17/7/2026 22:53:17] > Inicializando estado do jogo e registrando servicos...
-[17/7/2026 22:53:18] > IP do Servidor: 127.0.0.1
-[17/7/2026 22:53:18] > IP local do Servidor: 172.29.80.1	172.26.240.1	192.168.1.37	
-[17/7/2026 22:53:18] > Portas do Servidor: 7171	7172	
-[17/7/2026 22:53:18] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[17/7/2026 22:53:28] >> WodBleach servidor Online!
+[29/7/2026 14:21:49] > Usando SHA1 criptografia
+[29/7/2026 14:21:49] >> Carregando RSA key
+[29/7/2026 14:21:49] >> Iniciando conexao SQL
+[29/7/2026 14:21:49] >> Executando Gerenciador de Banco de Dados
+[29/7/2026 14:21:49] > Sem tabelas para optimizar.
+[29/7/2026 14:21:49] >> Carregando items (OTB)
+[29/7/2026 14:21:49] >> Carregando items (XML)
+[29/7/2026 14:21:50] >> Carregando Grupos
+[29/7/2026 14:21:50] >> Carregando Vocacoes
+[29/7/2026 14:21:50] >> Carregando Outfits
+[29/7/2026 14:21:50] >> Carregando Wing Types
+[29/7/2026 14:21:50] >> Carregando Aura Types
+[29/7/2026 14:21:50] >> Carregando Shader Types
+[29/7/2026 14:21:50] >> Carregando Bar Types
+[29/7/2026 14:21:50] >> Carregando Canal de Chat
+[29/7/2026 14:21:50] >> Carregando Sistema
+[29/7/2026 14:21:50] >> Carregando Mods...
+[29/7/2026 14:21:50] > Loading AutoLoot.xml... done.
+[29/7/2026 14:21:50] > Loading Automatic Raids.xml... done.
+[29/7/2026 14:21:50] > Loading highscorebook.xml... done.
+[29/7/2026 14:21:50] > Loading task_system.xml... done.
+[29/7/2026 14:21:50] > 4 mods were loaded.
+[29/7/2026 14:21:50] >> Carregando EXP Stages
+[29/7/2026 14:21:50] >> Carregando Monstros
+[29/7/2026 14:21:50] >> Carregando Mapa e Spawns...
+[29/7/2026 14:21:50] > Tamanho do Mapa: 64000x64000.
+[29/7/2026 14:21:50] > Descricao do Mapa: 
+[29/7/2026 14:21:50] "Saved with OTAcademy Map Editor 4.1.1"
+[29/7/2026 14:21:50] "No map description available."
+[29/7/2026 14:21:52] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
+[29/7/2026 14:21:52] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
+[29/7/2026 14:21:52] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
+[29/7/2026 14:21:52] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
+[29/7/2026 14:21:53] > Mapa carregado em: 3.067 segundos.
+[29/7/2026 14:21:53] > Data carregada em: 0.21 segundos.
+[29/7/2026 14:21:54] > Houses carregada em: 0.28 segundos.
+[29/7/2026 14:21:54] > Content unserialization time: 0.003 seconds.
+[29/7/2026 14:21:54] > Carregando Tipo de PVP... Open PvP
+[29/7/2026 14:21:54] > Inicializando estado do jogo e registrando servicos...
+[29/7/2026 14:21:54] > IP do Servidor: 127.0.0.1
+[29/7/2026 14:21:54] > IP local do Servidor: 172.29.80.1	192.168.192.1	192.168.1.37	
+[29/7/2026 14:21:54] > Portas do Servidor: 7171	7172	
+[29/7/2026 14:21:54] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[29/7/2026 14:22:4] >> WodBleach servidor Online!
 
-[17/7/2026 22:53:40] ADM Peixola has logged in.
-[17/7/2026 22:56:50] > Salvando servidor...
-[17/7/2026 22:56:51] > SAVE: Completo em 0.573 segundos usando binary casa storage.
-[17/7/2026 22:57:1] > Salvando servidor...
-[17/7/2026 22:57:1] > SAVE: Completo em 0.518 segundos usando binary casa storage.
-[17/7/2026 23:11:50] ADM Peixola has logged out.
-[17/7/2026 23:11:51] ADM Peixola has logged in.
-[17/7/2026 23:12:4] ADM Peixola has logged out.
-[17/7/2026 23:12:5] Admin has logged in.
-[17/7/2026 23:12:28] Admin has logged out.
-[17/7/2026 23:12:29] ADM Peixola has logged in.
-[17/7/2026 23:33:59] ADM Peixola has logged out.
-[17/7/2026 23:34:1] ADM Peixola has logged in.
-[17/7/2026 23:55:11] > Salvando servidor...
-[17/7/2026 23:55:12] > SAVE: Completo em 0.788 segundos usando binary casa storage.
-[17/7/2026 23:56:57] ADM Peixola has logged out.
-[17/7/2026 23:56:59] ADM Peixola has logged in.
-[18/7/2026 0:2:10] ADM Peixola has logged out.
-[18/7/2026 0:2:11] ADM Peixola has logged in.
-[18/7/2026 0:4:38] ADM Peixola has logged out.
-[18/7/2026 0:4:40] ADM Peixola has logged in.
-[18/7/2026 0:5:0] > Loading AutoLoot.xml... done.
-[18/7/2026 0:5:0] > Loading Automatic Raids.xml... done.
-[18/7/2026 0:5:0] > Loading highscorebook.xml... done.
-[18/7/2026 0:5:0] > Loading task_system.xml... done.
-[18/7/2026 0:5:0] > 4 mods were loaded.
-[18/7/2026 0:5:17] > Loading AutoLoot.xml... done.
-[18/7/2026 0:5:17] > Loading Automatic Raids.xml... done.
-[18/7/2026 0:5:17] > Loading highscorebook.xml... done.
-[18/7/2026 0:5:17] > Loading task_system.xml... done.
-[18/7/2026 0:5:17] > 4 mods were loaded.

@@ -2327,6 +2327,12 @@ void LuaInterface::registerFunctions(){
 	lua_register(m_luaState, "doPlayerSetRate", LuaInterface::luaDoPlayerSetRate);
 	lua_register(m_luaState, "doPlayerSetSkillUpgradeManaReduction", LuaInterface::luaDoPlayerSetSkillUpgradeManaReduction);
 	lua_register(m_luaState, "doPlayerSetSkillUpgradeCooldownReduction", LuaInterface::luaDoPlayerSetSkillUpgradeCooldownReduction);
+	lua_register(m_luaState, "doPlayerSetSkillUpgradeExpBonus", LuaInterface::luaDoPlayerSetSkillUpgradeExpBonus);
+	lua_register(m_luaState, "doPlayerSetSkillUpgradeLootChance", LuaInterface::luaDoPlayerSetSkillUpgradeLootChance);
+	lua_register(m_luaState, "doPlayerSetSkillUpgradeMagicLevelSpeed", LuaInterface::luaDoPlayerSetSkillUpgradeMagicLevelSpeed);
+	lua_register(m_luaState, "doPlayerSetSkillUpgradeAttackSpeed", LuaInterface::luaDoPlayerSetSkillUpgradeAttackSpeed);
+	lua_register(m_luaState, "doPlayerSetVocationRankDamageBonus", LuaInterface::luaDoPlayerSetVocationRankDamageBonus);
+	lua_register(m_luaState, "getPlayerVocationRankDamageBonus", LuaInterface::luaGetPlayerVocationRankDamageBonus);
 
 	//getPlayerPartner(cid)
 	lua_register(m_luaState, "getPlayerPartner", LuaInterface::luaGetPlayerPartner);
@@ -10088,6 +10094,121 @@ int32_t LuaInterface::luaDoPlayerSetSkillUpgradeCooldownReduction(lua_State* L)
 	if(Player* player = env->getPlayerByUID(popNumber(L)))
 	{
 		player->setSkillUpgradeCooldownReduction(percent);
+		lua_pushboolean(L, true);
+	}
+	else
+	{
+		errorEx(getError(LUA_ERROR_PLAYER_NOT_FOUND));
+		lua_pushboolean(L, false);
+	}
+
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSetSkillUpgradeExpBonus(lua_State* L)
+{
+	//doPlayerSetSkillUpgradeExpBonus(cid, percent)
+	int32_t percent = (int32_t)popNumber(L);
+
+	ScriptEnviroment* env = getEnv();
+	if(Player* player = env->getPlayerByUID(popNumber(L)))
+	{
+		player->setSkillUpgradeExpBonus(percent);
+		lua_pushboolean(L, true);
+	}
+	else
+	{
+		errorEx(getError(LUA_ERROR_PLAYER_NOT_FOUND));
+		lua_pushboolean(L, false);
+	}
+
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSetSkillUpgradeLootChance(lua_State* L)
+{
+	//doPlayerSetSkillUpgradeLootChance(cid, percent)
+	int32_t percent = (int32_t)popNumber(L);
+
+	ScriptEnviroment* env = getEnv();
+	if(Player* player = env->getPlayerByUID(popNumber(L)))
+	{
+		player->setSkillUpgradeLootChance(percent);
+		lua_pushboolean(L, true);
+	}
+	else
+	{
+		errorEx(getError(LUA_ERROR_PLAYER_NOT_FOUND));
+		lua_pushboolean(L, false);
+	}
+
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSetSkillUpgradeMagicLevelSpeed(lua_State* L)
+{
+	//doPlayerSetSkillUpgradeMagicLevelSpeed(cid, percent)
+	int32_t percent = (int32_t)popNumber(L);
+
+	ScriptEnviroment* env = getEnv();
+	if(Player* player = env->getPlayerByUID(popNumber(L)))
+	{
+		player->setSkillUpgradeMagicLevelSpeed(percent);
+		lua_pushboolean(L, true);
+	}
+	else
+	{
+		errorEx(getError(LUA_ERROR_PLAYER_NOT_FOUND));
+		lua_pushboolean(L, false);
+	}
+
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSetSkillUpgradeAttackSpeed(lua_State* L)
+{
+	//doPlayerSetSkillUpgradeAttackSpeed(cid, percent)
+	int32_t percent = (int32_t)popNumber(L);
+
+	ScriptEnviroment* env = getEnv();
+	if(Player* player = env->getPlayerByUID(popNumber(L)))
+	{
+		player->setSkillUpgradeAttackSpeed(percent);
+		lua_pushboolean(L, true);
+	}
+	else
+	{
+		errorEx(getError(LUA_ERROR_PLAYER_NOT_FOUND));
+		lua_pushboolean(L, false);
+	}
+
+	return 1;
+}
+
+int32_t LuaInterface::luaGetPlayerVocationRankDamageBonus(lua_State* L)
+{
+	//getPlayerVocationRankDamageBonus(cid)
+	ScriptEnviroment* env = getEnv();
+	if(Player* player = env->getPlayerByUID(popNumber(L)))
+		lua_pushnumber(L, player->getVocationRankDamageBonus());
+	else
+	{
+		errorEx(getError(LUA_ERROR_PLAYER_NOT_FOUND));
+		lua_pushboolean(L, false);
+	}
+
+	return 1;
+}
+
+int32_t LuaInterface::luaDoPlayerSetVocationRankDamageBonus(lua_State* L)
+{
+	//doPlayerSetVocationRankDamageBonus(cid, percent)
+	int32_t percent = (int32_t)popNumber(L);
+
+	ScriptEnviroment* env = getEnv();
+	if(Player* player = env->getPlayerByUID(popNumber(L)))
+	{
+		player->setVocationRankDamageBonus(percent);
 		lua_pushboolean(L, true);
 	}
 	else

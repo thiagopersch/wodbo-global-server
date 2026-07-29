@@ -1,38 +1,39 @@
--- Tabela de quests gerenciada pelo servidor
-questData = {
-  quests = {
-    --{ id = , name = "", description = ".", lvl = , storage = 0, successful = 0 },
-    { id = 1, name = "Initial items",   description = "When you start the game you will receive some basic items by clicking on the chest.", lvl = 1,   storage = 0, successful = 11000 * 2 },
-    { id = 2, name = "Demon Green Set", description = "Complete the quest to receive the Demon Green Set.",                                  lvl = 200, storage = 0, successful = 11001 * 2 },
-  }
-}
+-- Catálogo de quests é administrado pelo portal (`quests` table, /admin/quests) — este arquivo
+-- só monta e envia o payload pro cliente (opcode 135, JSON — mesmo padrão de
+-- data/lib/tasks/task_network.lua). Progresso do jogador vem de `player_quests` (ver
+-- data/lib/quests/quest_lib.lua — QuestLib.completeQuest é chamado por scripts de action/npc
+-- quest a quest, igual ao padrão antigo baseado em storage). Requisitado pelo cliente via
+-- extended opcode (data/creaturescripts/scripts/quest_extended_opcode.lua) ou pela talkaction
+-- legada `!sendquestlog`.
+if not json then json = dofile("data/lib/json.lua") end
 
--- Enviar lista de quests ao cliente
 function sendQuestLog(cid)
   if not isPlayer(cid) then return end
-  local msg = "#questlog#"
-  local questCount = 0
+
   local playerLevel = getPlayerLevel(cid) or 1
+  local playerId = getPlayerGUID(cid)
 
-  for _, quest in ipairs(questData.quests) do
-    local meetsLevel = (playerLevel >= quest.lvl)
-    local meetsStorage = (quest.storage == 0 or (quest.storage > 0 and getPlayerStorageValue(cid, quest.storage) >= 1))
-    local isCompleted = (quest.successful > 0 and getPlayerStorageValue(cid, quest.successful) >= 1)
-    local completa = isCompleted and 1 or 0 -- 1 para verde, 0 para branco
-    --print("Checking quest - ID: " .. quest.id .. ", Name: " .. quest.name .. ", Level check: " .. tostring(meetsLevel) .. ", Storage check: " .. tostring(meetsStorage) .. ", Completed: " .. tostring(isCompleted) .. ", Completa: " .. completa)
-    if meetsLevel and meetsStorage then
-      questCount = questCount + 1
-      msg = msg ..
-          "," ..
-          quest.id .. "," .. quest.name .. "," .. (quest.description or "No description provided.") .. "," .. completa
-    end
+  local resultId = db.getResult(
+    "SELECT q.`id`, q.`name`, q.`description`, q.`category`, COALESCE(pq.`completed`, 0) AS completed " ..
+    "FROM `quests` q LEFT JOIN `player_quests` pq ON pq.`quest_id` = q.`id` AND pq.`player_id` = " .. playerId ..
+    " WHERE q.`published` = 1 AND q.`level_required` <= " .. playerLevel ..
+    " ORDER BY q.`level_required` ASC")
+
+  local quests = {}
+
+  if resultId ~= -1 then
+    repeat
+      local description = result.getDataString(resultId, "description")
+      quests[#quests + 1] = {
+        id = result.getDataInt(resultId, "id"),
+        name = result.getDataString(resultId, "name"),
+        description = description ~= "" and description or "No description provided.",
+        category = result.getDataString(resultId, "category"),
+        completed = result.getDataInt(resultId, "completed") == 1,
+      }
+    until not result.next(resultId)
+    result.free(resultId)
   end
 
-  if questCount > 0 then
-    --print("Sending opcode 135: " .. msg)
-    doPlayerSendExtendedOpcode(cid, 135, msg)
-  else
-    --print("No quests available for player")
-    doPlayerSendExtendedOpcode(cid, 135, "#questlog#") -- Envia buffer vazio para evitar erros
-  end
+  doPlayerSendExtendedOpcode(cid, 135, json.encode({ quests = quests }))
 end

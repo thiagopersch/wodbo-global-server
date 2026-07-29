@@ -325,11 +325,23 @@ Attr_ReadValue Item::readAttr(AttrTypes_t attr, PropStream& propStream)
 	{
 		case ATTR_COUNT:
 		{
+			// Legacy 1-byte count — written by saves/maps from before 10k stacking was added.
+			// Kept read-only for backward compatibility; new saves always use ATTR_COUNT_U16.
 			uint8_t _count;
 			if(!propStream.getByte(_count))
 				return ATTR_READ_ERROR;
 
 			setSubType((uint16_t)_count);
+			break;
+		}
+
+		case ATTR_COUNT_U16:
+		{
+			uint16_t _count;
+			if(!propStream.getShort(_count))
+				return ATTR_READ_ERROR;
+
+			setSubType(_count);
 			break;
 		}
 
@@ -663,8 +675,8 @@ bool Item::serializeAttr(PropWriteStream& propWriteStream) const
 {
 	if(isStackable() || isFluidContainer() || isSplash())
 	{
-		propWriteStream.addByte(ATTR_COUNT);
-		propWriteStream.addByte((uint8_t)getSubType());
+		propWriteStream.addByte(ATTR_COUNT_U16);
+		propWriteStream.addShort(getSubType());
 	}
 
 	if(attributes && !attributes->empty())

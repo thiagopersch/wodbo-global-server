@@ -1,65 +1,63 @@
 info = {
-	AutomaticDeposit = true,
 	BlockMonsters = {},
 	BlockItemsList = {2123,2515},
 	Max_Slots = {free = 30, premium = 100},
-	Storages = {27000,28001,28002}
+	-- [1] personal item list, [2] money auto-collect toggle, [3] system on/off,
+	-- [4] money destination (0 = backpack, 1 = bank)
+	Storages = {27000,28001,28002,28003}
 }
 
-itemNameCache = nil
+-- Master catalog of items allowed in the autoloot system, administered on the portal at
+-- /admin/autoloot-items (table `autoloot_items`) — not every item in items.xml, only the
+-- published ones. Loaded once at boot and refreshed by the globalevent below so portal edits
+-- propagate without a restart (same pattern as data/lib/tasks/task_db_loader.lua).
+AUTOLOOT_CATALOG = AUTOLOOT_CATALOG or {}
 
-function buildItemNameCache()
-	if itemNameCache then return end
-	itemNameCache = {}
-	print("[AutoLoot] Building item name cache from items.xml (v2 - separated id/name match)...")
-	local f = io.open("data/items/items.xml", "r")
-	if not f then
-		print("[AutoLoot] ERROR: Could not open data/items/items.xml")
-		return
-	end
-	local count = 0
-	for line in f:lines() do
-		local id = line:match('id="(%d+)"')
-		local name = line:match('name="([^"]+)"')
-		if id and name then
-			local key = name:lower()
-			if not itemNameCache[key] then
-				itemNameCache[key] = tonumber(id)
-				count = count + 1
+function AutolootCatalog_reload()
+	local catalog = {}
+	local res = db.getResult("SELECT `item_id`, `name` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC")
+	-- `db.getResult` only returns -1 on a hard query error — a SELECT matching zero rows still
+	-- returns a "valid" handle, and reading a field from it returns `false` instead of erroring,
+	-- so always check the read value's type before trusting it.
+	if res ~= -1 and type(result.getDataInt(res, "item_id")) == "number" then
+		repeat
+			local itemId = result.getDataInt(res, "item_id")
+			local name = result.getDataString(res, "name")
+			if type(itemId) == "number" and type(name) == "string" then
+				local itemInfo = getItemInfo(itemId)
+				local clientId = (itemInfo and itemInfo.clientId and itemInfo.clientId > 0) and itemInfo.clientId or itemId
+				table.insert(catalog, {id = itemId, name = name, clientId = clientId})
 			end
-		end
+		until not result.next(res)
 	end
-	f:close()
-	print("[AutoLoot] Item name cache built: " .. count .. " unique names")
+	if res ~= -1 then result.free(res) end
+
+	AUTOLOOT_CATALOG = catalog
+	print("[AutoLoot] Loaded " .. #catalog .. " items from the admin catalog.")
+end
+
+if #AUTOLOOT_CATALOG == 0 then
+	AutolootCatalog_reload()
 end
 
 function getItemIdFromCache(itemName)
-	if not itemNameCache then
-		buildItemNameCache()
+	local queryLower = itemName:lower()
+	for _, item in ipairs(AUTOLOOT_CATALOG) do
+		if item.name:lower() == queryLower then
+			return item.id
+		end
 	end
-	return itemNameCache[itemName:lower()]
+	return nil
 end
 
 function searchItemsByQuery(query)
-	if not itemNameCache then
-		buildItemNameCache()
-	end
 	local results = {}
 	local queryLower = query:lower()
-	for name, id in pairs(itemNameCache) do
-		if name:find(queryLower, 1, true) then
-			local info = getItemInfo(id)
-			local clientId = (info and info.clientId and info.clientId > 0) and info.clientId or id
-			table.insert(results, {id = id, name = name, clientId = clientId})
+	for _, item in ipairs(AUTOLOOT_CATALOG) do
+		if item.name:lower():find(queryLower, 1, true) then
+			table.insert(results, item)
+			if #results >= 100 then break end
 		end
-	end
-	table.sort(results, function(a, b) return a.id < b.id end)
-	if #results > 100 then
-		local truncated = {}
-		for i = 1, 100 do
-			truncated[i] = results[i]
-		end
-		return truncated
 	end
 	return results
 end
@@ -170,15 +168,17 @@ function getItemsInContainerById(container, itemid)
 	end
 	return items
 end
+local MAX_STACK = ITEM_STACK_SIZE or 10000
+
 function doPlayerAddItemStacking(cid, itemid, amount)
 	local item, _G = getItemsInContainerById(getPlayerSlotItem(cid, 3).uid, itemid), 0
 	if #item > 0 then
 		for _ ,x in pairs(item) do
 			local ret = getThing(x)
-			if ret.type < 100 then
+			if ret.type < MAX_STACK then
 				doTransformItem(ret.uid, itemid, ret.type+amount)
-				if ret.type+amount > 100 then
-					doPlayerAddItem(cid, itemid, ret.type+amount-100)
+				if ret.type+amount > MAX_STACK then
+					doPlayerAddItem(cid, itemid, ret.type+amount-MAX_STACK)
 				end
 				break
 			else
@@ -207,13 +207,18 @@ function corpseRetireItems(cid, pos)
 	end
 	if check == true then
 		local items = getContainerItems(tile.uid)
+		if type(items) ~= "table" then
+			return
+		end
+		local moneyEnabled = getPlayerStorageValue(cid, info.Storages[2]) > 0
+		local toBank = getPlayerStorageValue(cid, info.Storages[4]) > 0
 		for i,x in pairs(items) do
-			if isInArray(getPlayerStorageTable(cid, info.Storages[1]), tonumber(x.itemid)) or getPlayerStorageValue(cid, info.Storages[2]) > 0 and isInArray({2148,2152,2160},tonumber(x.itemid)) then
-				if isItemStackable(x.itemid) then
+			local isMoney = isInArray({2148,2152,2160}, tonumber(x.itemid))
+			if isInArray(getPlayerStorageTable(cid, info.Storages[1]), tonumber(x.itemid)) or (moneyEnabled and isMoney) then
+				if isMoney and toBank then
+					AutomaticDeposit(cid, x.itemid, x.type)
+				elseif isItemStackable(x.itemid) then
 					doPlayerAddItemStacking(cid, x.itemid, x.type)
-					if info.AutomaticDeposit == true and isInArray({2148,2152,2160}, tonumber(x.itemid)) then
-						AutomaticDeposit(cid,x.itemid,x.type)
-					end
 				else
 					doPlayerAddItem(cid, x.itemid, x.type)
 				end

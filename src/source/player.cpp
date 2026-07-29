@@ -80,6 +80,8 @@ Player::Player(const std::string& _name, ProtocolGame* p):
 	purchaseCallback = saleCallback = -1;
 	level = shootRange = 1;
 	skillUpgradeManaReduction = skillUpgradeCooldownReduction = 0;
+	skillUpgradeExpBonus = skillUpgradeLootChance = skillUpgradeMagicLevelSpeed = skillUpgradeAttackSpeed = 0;
+	vocationRankDamageBonus = 0;
 	rates[SKILL__MAGLEVEL] = rates[SKILL__LEVEL] = 1.0f;
 	soulMax = 200;
 	capacity = 500.00;
@@ -1902,7 +1904,13 @@ void Player::addManaSpent(uint64_t amount, bool useMultiplier/* = true*/)
 		return;
 
 	if(useMultiplier)
-		amount = uint64_t((double)amount * rates[SKILL__MAGLEVEL] * g_config.getDouble(ConfigManager::RATE_MAGIC));
+	{
+		double multiplier = rates[SKILL__MAGLEVEL] * g_config.getDouble(ConfigManager::RATE_MAGIC);
+		if(skillUpgradeMagicLevelSpeed > 0)
+			multiplier *= (1.0 + (skillUpgradeMagicLevelSpeed / 100.0));
+
+		amount = uint64_t((double)amount * multiplier);
+	}
 
 	bool advance = false;
 	while(manaSpent + amount >= nextReqMana)
@@ -2899,9 +2907,9 @@ ReturnValue Player::__queryMaxCount(int32_t index, const Thing* thing, uint32_t 
 						}
 					}
 				}
-				else if(inventoryItem->isStackable() && item->getID() == inventoryItem->getID() && inventoryItem->getItemCount() < 100)
+				else if(inventoryItem->isStackable() && item->getID() == inventoryItem->getID() && inventoryItem->getItemCount() < ITEM_STACK_SIZE)
 				{
-					uint32_t remainder = (100 - inventoryItem->getItemCount());
+					uint32_t remainder = (ITEM_STACK_SIZE - inventoryItem->getItemCount());
 					if(__queryAdd(i, item, remainder, flags) == RET_NOERROR)
 						n += remainder;
 				}
@@ -2909,7 +2917,7 @@ ReturnValue Player::__queryMaxCount(int32_t index, const Thing* thing, uint32_t 
 			else if(__queryAdd(i, item, item->getItemCount(), flags) == RET_NOERROR)
 			{
 				if(item->isStackable())
-					n += 100;
+					n += ITEM_STACK_SIZE;
 				else
 					n += 1;
 			}
@@ -2926,15 +2934,15 @@ ReturnValue Player::__queryMaxCount(int32_t index, const Thing* thing, uint32_t 
 
 		if(destItem)
 		{
-			if(destItem->isStackable() && item->getID() == destItem->getID() && destItem->getItemCount() < 100)
-				maxQueryCount = 100 - destItem->getItemCount();
+			if(destItem->isStackable() && item->getID() == destItem->getID() && destItem->getItemCount() < ITEM_STACK_SIZE)
+				maxQueryCount = ITEM_STACK_SIZE - destItem->getItemCount();
 			else
 				maxQueryCount = 0;
 		}
 		else if(__queryAdd(index, item, count, flags) == RET_NOERROR)
 		{
 			if(item->isStackable())
-				maxQueryCount = 100;
+				maxQueryCount = ITEM_STACK_SIZE;
 			else
 				maxQueryCount = 1;
 
@@ -2989,7 +2997,7 @@ Cylinder* Player::__queryDestination(int32_t& index, const Thing* thing, Item** 
 					continue;
 
 				if(autoStack && item->isStackable() && __queryAdd(i, item, item->getItemCount(), 0)
-					== RET_NOERROR && invItem->getID() == item->getID() && invItem->getItemCount() < 100)
+					== RET_NOERROR && invItem->getID() == item->getID() && invItem->getItemCount() < ITEM_STACK_SIZE)
 				{
 					*destItem = invItem;
 					index = i;
@@ -3038,7 +3046,7 @@ Cylinder* Player::__queryDestination(int32_t& index, const Thing* thing, Item** 
 						continue;
 
 					if(autoStack && item->isStackable() && tmpContainer->__queryAdd(n, item, item->getItemCount(),
-						0) == RET_NOERROR && tmpItem->getID() == item->getID() && tmpItem->getItemCount() < 100)
+						0) == RET_NOERROR && tmpItem->getID() == item->getID() && tmpItem->getItemCount() < ITEM_STACK_SIZE)
 					{
 						index = n;
 						*destItem = tmpItem;
@@ -4089,6 +4097,9 @@ bool Player::rateExperience(double& gainExp, bool fromMonster)
 	else if(isPremium() || !g_config.getNumber(ConfigManager::STAMINA_BONUS_PREMIUM))
 		gainExp *= g_config.getDouble(ConfigManager::RATE_STAMINA_ABOVE);
 
+	if(skillUpgradeExpBonus > 0)
+		gainExp *= (1.0 + (skillUpgradeExpBonus / 100.0));
+
 	return true;
 }
 
@@ -4561,7 +4572,13 @@ uint64_t Player::getLostExperience() const
 
 uint32_t Player::getAttackSpeed() const
 {
-	return ((weapon && weapon->getAttackSpeed() != 0) ? weapon->getAttackSpeed() : (vocation->getAttackSpeed() / std::max((size_t)1, getWeapons().size())));
+	uint32_t speed = (weapon && weapon->getAttackSpeed() != 0) ? weapon->getAttackSpeed() :
+		(vocation->getAttackSpeed() / std::max((size_t)1, getWeapons().size()));
+
+	if(skillUpgradeAttackSpeed > 0)
+		speed = (uint32_t)((double)speed / (1.0 + (skillUpgradeAttackSpeed / 100.0)));
+
+	return speed;
 }
 
 void Player::learnInstantSpell(const std::string& name)

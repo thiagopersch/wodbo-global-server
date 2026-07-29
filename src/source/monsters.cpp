@@ -93,10 +93,14 @@ uint16_t Monsters::getLootRandom()
 
 void MonsterType::dropLoot(Container* corpse)
 {
+	uint32_t ownerId = corpse->getCorpseOwner();
+	Player* owner = ownerId ? g_game.getPlayerByGuid(ownerId) : NULL;
+	int32_t lootBonus = owner ? owner->getSkillUpgradeLootChance() : 0;
+
 	ItemList items;
 	for(LootItems::const_iterator it = lootItems.begin(); it != lootItems.end() && !corpse->full(); ++it)
 	{
-		items = createLoot(*it);
+		items = createLoot(*it, lootBonus);
 		if(items.empty())
 			continue;
 
@@ -105,7 +109,7 @@ void MonsterType::dropLoot(Container* corpse)
 			Item* tmpItem = *iit;
 			if(Container* container = tmpItem->getContainer())
 			{
-				if(createChildLoot(container, *it))
+				if(createChildLoot(container, *it, lootBonus))
 					corpse->__internalAddThing(tmpItem);
 				else
 					delete container;
@@ -116,11 +120,6 @@ void MonsterType::dropLoot(Container* corpse)
 	}
 
 	corpse->__startDecaying();
-	uint32_t ownerId = corpse->getCorpseOwner();
-	if(!ownerId)
-		return;
-
-	Player* owner = g_game.getPlayerByGuid(ownerId);
 	if(!owner)
 		return;
 
@@ -139,14 +138,18 @@ void MonsterType::dropLoot(Container* corpse)
 		owner->sendTextMessage((MessageClasses)g_config.getNumber(ConfigManager::LOOT_MESSAGE_TYPE), ss.str());
 }
 
-ItemList MonsterType::createLoot(const LootBlock& lootBlock)
+ItemList MonsterType::createLoot(const LootBlock& lootBlock, int32_t bonusPercent/* = 0*/)
 {
 	uint16_t item = lootBlock.ids[0], random = Monsters::getLootRandom(), count = 0;
 	if(lootBlock.ids.size() > 1)
 		item = lootBlock.ids[random_range((size_t)0, lootBlock.ids.size() - 1)];
 
+	uint32_t chance = lootBlock.chance;
+	if(bonusPercent > 0)
+		chance = std::min((uint32_t)MAX_LOOTCHANCE, (uint32_t)(chance * (1.0 + (bonusPercent / 100.0))));
+
 	ItemList items;
-	if(random < lootBlock.chance)
+	if(random < chance)
 		count = random % lootBlock.count + 1;
 
 	Item* tmpItem = NULL;
@@ -178,7 +181,7 @@ ItemList MonsterType::createLoot(const LootBlock& lootBlock)
 	return items;
 }
 
-bool MonsterType::createChildLoot(Container* parent, const LootBlock& lootBlock)
+bool MonsterType::createChildLoot(Container* parent, const LootBlock& lootBlock, int32_t bonusPercent/* = 0*/)
 {
 	LootItems::const_iterator it = lootBlock.childLoot.begin();
 	if(it == lootBlock.childLoot.end())
@@ -187,7 +190,7 @@ bool MonsterType::createChildLoot(Container* parent, const LootBlock& lootBlock)
 	ItemList items;
 	for(; it != lootBlock.childLoot.end() && !parent->full(); ++it)
 	{
-		items = createLoot(*it);
+		items = createLoot(*it, bonusPercent);
 		if(items.empty())
 			continue;
 
@@ -196,7 +199,7 @@ bool MonsterType::createChildLoot(Container* parent, const LootBlock& lootBlock)
 			Item* tmpItem = *iit;
 			if(Container* container = tmpItem->getContainer())
 			{
-				if(createChildLoot(container, *it))
+				if(createChildLoot(container, *it, bonusPercent))
 					parent->__internalAddThing(tmpItem);
 				else
 					delete container;

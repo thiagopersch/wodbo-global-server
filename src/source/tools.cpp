@@ -19,6 +19,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 
 #include <openssl/sha.h>
 #include <openssl/md5.h>
@@ -635,6 +636,43 @@ std::string parseParams(tokenizer::iterator &it, tokenizer::iterator end)
 	}
 
 	return tmp;
+}
+
+std::string formatCompactNumber(uint64_t value)
+{
+	if(value < 1000)
+	{
+		std::ostringstream ss;
+		ss << value;
+		return ss.str();
+	}
+
+	static const char* units[] = {"", "k", "kk", "kkk", "kkkk", "kkkkk"};
+	uint32_t unit = 0;
+
+	long double val = (long double)value;
+	while(val >= 1000.0L && unit < 5)
+	{
+		val /= 1000.0L;
+		++unit;
+	}
+
+	//rounding to 1 decimal may push the value back over 1000 (e.g. 999.96 -> 1000.0), bump the unit again
+	val = std::floor(val * 10.0L + 0.5L) / 10.0L;
+	if(val >= 1000.0L && unit < 5)
+	{
+		val /= 1000.0L;
+		++unit;
+	}
+
+	std::ostringstream ss;
+	ss << std::fixed << std::setprecision(1) << (double)val;
+
+	std::string result = ss.str();
+	if(result.size() > 2 && result.compare(result.size() - 2, 2, ".0") == 0)
+		result.erase(result.size() - 2);
+
+	return result + units[unit];
 }
 
 std::string formatDate(time_t _time/* = 0*/)

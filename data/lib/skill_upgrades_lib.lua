@@ -10,25 +10,41 @@ SkillUpgradesLib = {}
 -- Cache to hold player stats in memory for performance
 -- Structure: PlayerSkillUpgradesCache[guid][vocationId][skill_name] = level
 PlayerSkillUpgradesCache = {}
--- Structure: PlayerSkillPointsCache[guid][vocationId] = {available = X, spent = Y}
+-- Structure: PlayerSkillPointsCache[guid][vocationId] = {available = X, spent = Y, highestLevel = Z}
 PlayerSkillPointsCache = {}
+
+function SkillUpgradesLib.ensureSchema()
+    if SkillUpgradesLib.__schemaEnsured then return end
+    SkillUpgradesLib.__schemaEnsured = true
+
+    local query = db.getResult(
+    "SELECT 1 FROM `information_schema`.`COLUMNS` WHERE `TABLE_SCHEMA` = DATABASE() AND `TABLE_NAME` = 'player_skill_points' AND `COLUMN_NAME` = 'highest_level_counted'")
+    if not query or query:getID() == -1 then
+        db.query("ALTER TABLE `player_skill_points` ADD COLUMN `highest_level_counted` INT NOT NULL DEFAULT 0")
+    else
+        query:free()
+    end
+end
 
 function SkillUpgradesLib.loadPlayer(cid)
     local guid = getPlayerGUID(cid)
     if not guid then return end
+
+    SkillUpgradesLib.ensureSchema()
 
     PlayerSkillUpgradesCache[guid] = {}
     PlayerSkillPointsCache[guid] = {}
 
     -- Load Points
     local query = db.getResult(
-    "SELECT `vocation_id`, `available_points`, `spent_points` FROM `player_skill_points` WHERE `player_id` = " .. guid)
+    "SELECT `vocation_id`, `available_points`, `spent_points`, `highest_level_counted` FROM `player_skill_points` WHERE `player_id` = " .. guid)
     if query:getID() ~= -1 then
         repeat
             local voc = query:getDataInt("vocation_id")
             local avail = query:getDataInt("available_points")
             local spent = query:getDataInt("spent_points")
-            PlayerSkillPointsCache[guid][voc] = { available = avail, spent = spent }
+            local highestLevel = query:getDataInt("highest_level_counted")
+            PlayerSkillPointsCache[guid][voc] = { available = avail, spent = spent, highestLevel = highestLevel }
         until not query:next()
         query:free()
     end
@@ -64,10 +80,10 @@ function SkillUpgradesLib.initVocation(guid, vocationId)
     if not PlayerSkillUpgradesCache[guid] then PlayerSkillUpgradesCache[guid] = {} end
 
     if not PlayerSkillPointsCache[guid][vocationId] then
-        PlayerSkillPointsCache[guid][vocationId] = { available = 0, spent = 0 }
+        PlayerSkillPointsCache[guid][vocationId] = { available = 0, spent = 0, highestLevel = 0 }
         db.query(
-        "INSERT INTO `player_skill_points` (`player_id`, `vocation_id`, `available_points`, `spent_points`) VALUES (" ..
-        guid .. ", " .. vocationId .. ", 0, 0)")
+        "INSERT INTO `player_skill_points` (`player_id`, `vocation_id`, `available_points`, `spent_points`, `highest_level_counted`) VALUES (" ..
+        guid .. ", " .. vocationId .. ", 0, 0, 0)")
     end
 
     if not PlayerSkillUpgradesCache[guid][vocationId] then
@@ -77,8 +93,30 @@ end
 
 function SkillUpgradesLib.getPoints(cid, vocationId)
     local guid = getPlayerGUID(cid)
-    if not guid or not PlayerSkillPointsCache[guid] then return { available = 0, spent = 0 } end
-    return PlayerSkillPointsCache[guid][vocationId] or { available = 0, spent = 0 }
+    if not guid or not PlayerSkillPointsCache[guid] then return { available = 0, spent = 0, highestLevel = 0 } end
+    return PlayerSkillPointsCache[guid][vocationId] or { available = 0, spent = 0, highestLevel = 0 }
+end
+
+-- Watermark of the highest character level for which skill points were already granted
+-- in this vocation. Prevents re-granting points after a prestige reset or a death releveling
+-- back up to a level that was already counted.
+function SkillUpgradesLib.getHighestCountedLevel(cid, vocationId)
+    local guid = getPlayerGUID(cid)
+    vocationId = vocationId or getPlayerVocation(cid)
+    if not guid then return 0 end
+
+    SkillUpgradesLib.initVocation(guid, vocationId)
+    return PlayerSkillPointsCache[guid][vocationId].highestLevel or 0
+end
+
+function SkillUpgradesLib.setHighestCountedLevel(cid, vocationId, level)
+    local guid = getPlayerGUID(cid)
+    if not guid then return end
+
+    SkillUpgradesLib.initVocation(guid, vocationId)
+    PlayerSkillPointsCache[guid][vocationId].highestLevel = level
+    db.query("UPDATE `player_skill_points` SET `highest_level_counted` = " .. level ..
+    " WHERE `player_id` = " .. guid .. " AND `vocation_id` = " .. vocationId)
 end
 
 function SkillUpgradesLib.addAvailablePoints(cid, vocationId, amount)
@@ -191,54 +229,29 @@ function SkillUpgradesLib.resetSkills(cid, vocationId)
     return true
 end
 
+-- Every category is all-or-nothing (see skill_upgrades_config.lua): formula(lvl) is 0 until
+-- the skill hits maxLevel, then returns its fixed bonus. Percent-based effects that need to be
+-- read from C++ (cooldown/mana, exp, loot, magic level speed, attack speed) are pushed down to
+-- cached Player fields here. Effects resolved purely from combat events (crit, leech, healing,
+-- reflect, weapon-type damage, magic damage, shielding) live in skill_upgrades_stats.lua instead.
 function SkillUpgradesLib.applyCombatStats(cid, vocationId)
     vocationId = vocationId or getPlayerVocation(cid)
 
-    -- Apply direct conditions for base stats (individual skills)
-    local condition = createConditionObject(CONDITION_ATTRIBUTES)
-    setConditionParam(condition, CONDITION_PARAM_TICKS, -1)
-    setConditionParam(condition, CONDITION_PARAM_SUBID, 98765) -- Unique subId for skill upgrades
-
-    local mlLvl = SkillUpgradesLib.getSkillValue(cid, "magic_level", vocationId)
-    if mlLvl > 0 then setConditionParam(condition, CONDITION_PARAM_STAT_MAGICLEVEL, mlLvl) end
-
-    local fistLvl = SkillUpgradesLib.getSkillValue(cid, "fist_fighting", vocationId)
-    if fistLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_FIST, fistLvl) end
-
-    local clubLvl = SkillUpgradesLib.getSkillValue(cid, "club_fighting", vocationId)
-    if clubLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_CLUB, clubLvl) end
-
-    local axeLvl = SkillUpgradesLib.getSkillValue(cid, "axe_fighting", vocationId)
-    if axeLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_AXE, axeLvl) end
-
-    local swordLvl = SkillUpgradesLib.getSkillValue(cid, "sword_fighting", vocationId)
-    if swordLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_SWORD, swordLvl) end
-
-    local distLvl = SkillUpgradesLib.getSkillValue(cid, "distance_fighting", vocationId)
-    if distLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_DISTANCE, distLvl) end
-
-    local shieldLvl = SkillUpgradesLib.getSkillValue(cid, "shielding", vocationId)
-    if shieldLvl > 0 then setConditionParam(condition, CONDITION_PARAM_SKILL_SHIELD, shieldLvl) end
-
-    doAddCondition(cid, condition)
-
-    -- Apply mana and cooldown reduction via C++ functions
     local cdLvl = SkillUpgradesLib.getSkillValue(cid, "cooldown_reduction", vocationId)
-    if cdLvl > 0 then
-        if doPlayerSetSkillUpgradeManaReduction then
-            doPlayerSetSkillUpgradeManaReduction(cid, cdLvl)
-        end
-        if doPlayerSetSkillUpgradeCooldownReduction then
-            doPlayerSetSkillUpgradeCooldownReduction(cid, cdLvl)
-        end
-    else
-        if doPlayerSetSkillUpgradeManaReduction then
-            doPlayerSetSkillUpgradeManaReduction(cid, 0)
-        end
-        if doPlayerSetSkillUpgradeCooldownReduction then
-            doPlayerSetSkillUpgradeCooldownReduction(cid, 0)
-        end
-    end
+    if doPlayerSetSkillUpgradeManaReduction then doPlayerSetSkillUpgradeManaReduction(cid, cdLvl) end
+    if doPlayerSetSkillUpgradeCooldownReduction then doPlayerSetSkillUpgradeCooldownReduction(cid, cdLvl) end
+
+    local expLvl = SkillUpgradesLib.getSkillValue(cid, "exp_bonus", vocationId)
+    if doPlayerSetSkillUpgradeExpBonus then doPlayerSetSkillUpgradeExpBonus(cid, expLvl) end
+
+    local lootLvl = SkillUpgradesLib.getSkillValue(cid, "loot_chance", vocationId)
+    if doPlayerSetSkillUpgradeLootChance then doPlayerSetSkillUpgradeLootChance(cid, lootLvl) end
+
+    local mlSpeedLvl = SkillUpgradesLib.getSkillValue(cid, "magic_level", vocationId)
+    if doPlayerSetSkillUpgradeMagicLevelSpeed then doPlayerSetSkillUpgradeMagicLevelSpeed(cid, mlSpeedLvl) end
+
+    local atkSpeedLvl = SkillUpgradesLib.getSkillValue(cid, "fist_fighting", vocationId)
+    if doPlayerSetSkillUpgradeAttackSpeed then doPlayerSetSkillUpgradeAttackSpeed(cid, atkSpeedLvl) end
 end
 
 function SkillUpgradesLib.sendMetaToClient(cid)

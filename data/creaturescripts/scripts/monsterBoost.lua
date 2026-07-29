@@ -35,13 +35,13 @@ local function addBonusLoot(cid, position, name)
 				local count = loot.countmax and math.random(1, loot.countmax) or 1
 				doAddContainerItem(mainbp, loot.id, count)
 				local itemName = getItemNameById(loot.id)
-				table.insert(bonusItems, count .. "x " .. itemName)
+				table.insert(bonusItems, count .. " " .. itemName)
 			end
 		end
 	end
 	doAddContainerItemEx(corpse.uid, mainbp)
 	if #bonusItems > 0 then
-		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "[Monster Boost] Bonus loot: " .. table.concat(bonusItems, ", ") .. ".")
+		doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "Loot boost: " .. table.concat(bonusItems, ", ") .. ".")
 	end
 end
 

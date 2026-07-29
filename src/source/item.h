@@ -19,6 +19,9 @@
 #define __ITEM__
 #include "otsystem.h"
 
+//maximum amount a single stackable item slot can hold (GameCountU16: 16-bit count field)
+#define ITEM_STACK_SIZE 10000
+
 #include <libxml/xmlmemory.h>
 #include <libxml/parser.h>
 
@@ -111,6 +114,9 @@ enum AttrTypes_t
 	ATTR_ARTICLE = 41,
 	ATTR_SCRIPTPROTECTED = 42,
 	ATTR_DUALWIELD = 43,
+	/// 16-bit stackable count (up to ITEM_STACK_SIZE) — new tag so existing saves/maps written
+	/// with the old 1-byte ATTR_COUNT still parse correctly; new saves always write this one.
+	ATTR_COUNT_U16 = 44,
 	ATTR_ATTRIBUTE_MAP = 128
 };
 
@@ -336,7 +342,7 @@ class Item : virtual public Thing, public ItemAttributes
 
 	protected:
 		uint16_t id;
-		uint8_t count;
+		uint16_t count;
 
 		Raid* raid;
 		bool loadedFromMap;

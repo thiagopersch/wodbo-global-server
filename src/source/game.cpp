@@ -1033,7 +1033,7 @@ bool Game::removeCreature(Creature* creature, bool isLogout /*= true*/)
 }
 
 bool Game::playerMoveThing(uint32_t playerId, const Position& fromPos,
-	uint16_t spriteId, int16_t fromStackpos, const Position& toPos, uint8_t count)
+	uint16_t spriteId, int16_t fromStackpos, const Position& toPos, uint16_t count)
 {
 	Player* player = getPlayerByID(playerId);
 	if(!player || player->isRemoved())
@@ -1315,7 +1315,7 @@ ReturnValue Game::internalMoveCreature(Creature* actor, Creature* creature, Cyli
 }
 
 bool Game::playerMoveItem(uint32_t playerId, const Position& fromPos,
-	uint16_t spriteId, int16_t fromStackpos, const Position& toPos, uint8_t count)
+	uint16_t spriteId, int16_t fromStackpos, const Position& toPos, uint16_t count)
 {
 	Player* player = getPlayerByID(playerId);
 	if(!player || player->isRemoved() || player->hasFlag(PlayerFlag_CannotMoveItems))
@@ -1626,10 +1626,10 @@ ReturnValue Game::internalMoveItem(Creature* actor, Cylinder* fromCylinder, Cyli
 	Item* updateItem = NULL;
 	if(item->isStackable())
 	{
-		uint8_t n = 0;
+		uint32_t n = 0;
 		if(toItem && toItem->getID() == item->getID())
 		{
-			n = std::min((uint32_t)100 - toItem->getItemCount(), m);
+			n = std::min((uint32_t)ITEM_STACK_SIZE - toItem->getItemCount(), m);
 			toCylinder->__updateThing(toItem, toItem->getID(), toItem->getItemCount() + n);
 			updateItem = toItem;
 		}
@@ -1722,7 +1722,7 @@ ReturnValue Game::internalAddItem(Creature* actor, Cylinder* toCylinder, Item* i
 		uint32_t m = std::min((uint32_t)item->getItemCount(), maxQueryCount), n = 0;
 		if(toItem->getID() == item->getID())
 		{
-			n = std::min((uint32_t)100 - toItem->getItemCount(), m);
+			n = std::min((uint32_t)ITEM_STACK_SIZE - toItem->getItemCount(), m);
 			toCylinder->__updateThing(toItem, toItem->getID(), toItem->getItemCount() + n);
 		}
 
@@ -2104,7 +2104,7 @@ void Game::addMoney(Cylinder* cylinder, int64_t money, uint32_t flags /*= 0*/)
 		do
 		{
 			uint32_t remainderCount = 0;
-			Item* item = Item::CreateItem(it->second, std::min((int64_t)100, tmp));
+			Item* item = Item::CreateItem(it->second, std::min((int64_t)ITEM_STACK_SIZE, tmp));
 			if(internalAddItem(NULL, cylinder, item, INDEX_WHEREEVER, flags, false, remainderCount) != RET_NOERROR)
 			{
 				if(remainderCount)
@@ -2117,7 +2117,7 @@ void Game::addMoney(Cylinder* cylinder, int64_t money, uint32_t flags /*= 0*/)
 					delete item;
 			}
 
-			tmp -= std::min((int64_t)100, tmp);
+			tmp -= std::min((int64_t)ITEM_STACK_SIZE, tmp);
 		}
 		while(tmp > 0);
 	}
@@ -4558,6 +4558,24 @@ bool Game::combatBlockHit(CombatType_t combatType, Creature* attacker, Creature*
 	return true;
 }
 
+static std::string formatCombatText(uint32_t value, bool showPlusSign = false)
+{
+	std::string text;
+	if(g_config.getBool(ConfigManager::DAMAGE_NUMBERS_IN_K))
+		text = formatCompactNumber(value);
+	else
+	{
+		char buffer[20];
+		sprintf(buffer, "%u", value);
+		text = buffer;
+	}
+
+	if(showPlusSign)
+		text = "+" + text;
+
+	return text;
+}
+
 bool Game::combatChangeHealth(CombatType_t combatType, Creature* attacker, Creature* target, int32_t healthChange,
 	MagicEffect_t hitEffect/* = MAGIC_EFFECT_UNKNOWN*/, Color_t hitColor/* = COLOR_UNKNOWN*/, bool force/* = false*/)
 {
@@ -4582,8 +4600,7 @@ bool Game::combatChangeHealth(CombatType_t combatType, Creature* attacker, Creat
 		if(g_config.getBool(ConfigManager::SHOW_HEALING_DAMAGE) && !target->isGhost() &&
 			(g_config.getBool(ConfigManager::SHOW_HEALING_DAMAGE_MONSTER) || !target->getMonster()))
 		{
-			char buffer[20];
-			sprintf(buffer, "+%d", healthChange);
+			std::string buffer = formatCombatText((uint32_t)healthChange, true);
 
 			const SpectatorVec& list = getSpectators(targetPos);
 			if(combatType != COMBAT_HEALING)
@@ -4622,8 +4639,7 @@ bool Game::combatChangeHealth(CombatType_t combatType, Creature* attacker, Creat
 						return false;
 
 					target->drainMana(attacker, combatType, manaDamage);
-					char buffer[20];
-					sprintf(buffer, "%d", manaDamage);
+					std::string buffer = formatCombatText((uint32_t)manaDamage);
 
 					addMagicEffect(list, targetPos, MAGIC_EFFECT_LOSE_ENERGY);
 					addAnimatedText(list, targetPos, COLOR_BLUE, buffer);
@@ -4763,8 +4779,7 @@ bool Game::combatChangeHealth(CombatType_t combatType, Creature* attacker, Creat
 
 				if(textColor < COLOR_NONE && magicEffect < MAGIC_EFFECT_NONE)
 				{
-					char buffer[20];
-					sprintf(buffer, "%d", damage);
+					std::string buffer = formatCombatText((uint32_t)damage);
 
 					addMagicEffect(list, targetPos, magicEffect);
 					addAnimatedText(list, targetPos, textColor, buffer);
@@ -4834,8 +4849,7 @@ bool Game::combatChangeMana(Creature* attacker, Creature* target, int32_t manaCh
 				return false;
 
 			target->drainMana(attacker, COMBAT_MANADRAIN, manaLoss);
-			char buffer[20];
-			sprintf(buffer, "%d", manaLoss);
+			std::string buffer = formatCombatText((uint32_t)manaLoss);
 
 			addAnimatedText(list, targetPos, COLOR_BLUE, buffer);
 		}

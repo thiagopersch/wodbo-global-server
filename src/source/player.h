@@ -656,6 +656,18 @@ class Player : public Creature, public Cylinder
 		void setSkillUpgradeManaReduction(int32_t value) { skillUpgradeManaReduction = std::max(0, std::min(80, value)); }
 		int32_t getSkillUpgradeCooldownReduction() const { return skillUpgradeCooldownReduction; }
 		void setSkillUpgradeCooldownReduction(int32_t value) { skillUpgradeCooldownReduction = std::max(0, std::min(60, value)); }
+		int32_t getSkillUpgradeExpBonus() const { return skillUpgradeExpBonus; }
+		void setSkillUpgradeExpBonus(int32_t value) { skillUpgradeExpBonus = std::max(0, std::min(100, value)); }
+		int32_t getSkillUpgradeLootChance() const { return skillUpgradeLootChance; }
+		void setSkillUpgradeLootChance(int32_t value) { skillUpgradeLootChance = std::max(0, std::min(100, value)); }
+		int32_t getSkillUpgradeMagicLevelSpeed() const { return skillUpgradeMagicLevelSpeed; }
+		void setSkillUpgradeMagicLevelSpeed(int32_t value) { skillUpgradeMagicLevelSpeed = std::max(0, std::min(100, value)); }
+		int32_t getSkillUpgradeAttackSpeed() const { return skillUpgradeAttackSpeed; }
+		void setSkillUpgradeAttackSpeed(int32_t value) { skillUpgradeAttackSpeed = std::max(0, std::min(100, value)); }
+
+		// Vocation Rank System – flat % damage bonus from stars (2% per star, 5–20 stars possible)
+		int32_t getVocationRankDamageBonus() const { return vocationRankDamageBonus; }
+		void setVocationRankDamageBonus(int32_t value) { vocationRankDamageBonus = std::max(0, std::min(200, value)); }
 
 		//combat event functions
 		virtual void onAddCondition(ConditionType_t type, bool hadCondition);
@@ -1267,6 +1279,11 @@ class Player : public Creature, public Cylinder
 		// ---- Skill Upgrade System: cached values (set from Lua, read in C++) ----
 		int32_t skillUpgradeManaReduction;     // 0–80 (percent)
 		int32_t skillUpgradeCooldownReduction; // 0–60 (percent)
+		int32_t skillUpgradeExpBonus;          // 0–100 (percent)
+		int32_t skillUpgradeLootChance;        // 0–100 (percent)
+		int32_t skillUpgradeMagicLevelSpeed;   // 0–100 (percent)
+		int32_t skillUpgradeAttackSpeed;       // 0–100 (percent)
+		int32_t vocationRankDamageBonus;       // 0–200 (percent)
 
 		typedef std::set<uint32_t> AttackedSet;
 		AttackedSet attackedSet;

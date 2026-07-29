@@ -457,11 +457,11 @@ class Game
 			ViolationAction_t action, std::string comment, std::string statement,
 			uint32_t statementId, bool ipBanishment);
 		bool playerMoveThing(uint32_t playerId, const Position& fromPos, uint16_t spriteId,
-			int16_t fromStackpos, const Position& toPos, uint8_t count);
+			int16_t fromStackpos, const Position& toPos, uint16_t count);
 		bool playerMoveCreature(uint32_t playerId, uint32_t movingCreatureId,
 			const Position& movingCreatureOrigPos, const Position& toPos, bool delay);
 		bool playerMoveItem(uint32_t playerId, const Position& fromPos,
-			uint16_t spriteId, int16_t fromStackpos, const Position& toPos, uint8_t count);
+			uint16_t spriteId, int16_t fromStackpos, const Position& toPos, uint16_t count);
 		bool playerMove(uint32_t playerId, Direction dir);
 		bool playerCreatePrivateChannel(uint32_t playerId, ProtocolGame* pg); //CAST
 		bool playerChannelInvite(uint32_t playerId, const std::string& name);

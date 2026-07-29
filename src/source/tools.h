@@ -109,6 +109,8 @@ Direction getDirectionTo(Position pos1, Position pos2, bool extended = true);
 Direction getReverseDirection(Direction dir);
 Position getNextPosition(Direction direction, Position pos);
 
+std::string formatCompactNumber(uint64_t value);
+
 std::string formatDate(time_t _time = 0);
 std::string formatDateEx(time_t _time = 0, std::string format = "%d %b %Y, %H:%M:%S");
 std::string formatTime(time_t _time = 0, bool miliseconds = false);

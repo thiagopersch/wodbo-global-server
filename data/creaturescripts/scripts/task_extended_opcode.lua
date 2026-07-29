@@ -1,5 +1,5 @@
 if not json then json = dofile("data/lib/json.lua") end
-dofile("data/lib/tasks/task_config.lua")
+dofile("data/lib/tasks/task_db_loader.lua")
 dofile("data/talkactions/scripts/tasks.lua")
 dofile("data/lib/tasks/task_network.lua")
 

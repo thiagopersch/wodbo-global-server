@@ -3,6 +3,7 @@
 
 function onLogin(cid)
     registerCreatureEvent(cid, "OutfitAdvance")
+    registerCreatureEvent(cid, "OutfitTransform")
     updatePlayerOutfits(cid)
     return true
 end

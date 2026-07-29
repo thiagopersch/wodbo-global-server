@@ -1654,7 +1654,8 @@
 		<friend name="mountain" />
 	</brush>
 
-	<brush name="snowy mountain" type="ground" server_lookid="671" z-order="9901" solo_optional="true">
+	<brush name="snowy mountain" type="ground" server_lookid="671" z-order="9901"
+		solo_optional="true">
 		<item id="6869" chance="1" />
 
 		<border align="inner" to="none" id="53" />
@@ -3559,7 +3560,8 @@
 		<item id="448" chance="10" />
 	</brush>
 
-	<brush name="striped marquee red white (vertical)" type="ground" server_lookid="5189" z-order="80">
+	<brush name="striped marquee red white (vertical)" type="ground" server_lookid="5189"
+		z-order="80">
 		<item id="5189" chance="10" />
 
 		<border align="outer" to="none" id="214" />
@@ -4234,7 +4236,8 @@
 		<border align="outer" to="none" id="1" />
 	</brush>
 
-	<brush name="star leaves alternate horizontal" type="ground" server_lookid="43316" z-order="9999">
+	<brush name="star leaves alternate horizontal" type="ground" server_lookid="43316"
+		z-order="9999">
 		<item id="43316" chance="10" />
 		<item id="43317" chance="10" />
 
@@ -4524,7 +4527,8 @@
 		<item id="49910" chance="100" />
 	</brush>
 
-	<brush name="bleach wooden planks alternative" type="ground" server_lookid="49911" z-order="2500">
+	<brush name="bleach wooden planks alternative" type="ground" server_lookid="49911"
+		z-order="2500">
 		<item id="49911" chance="100" />
 	</brush>
 
@@ -4743,7 +4747,8 @@
 		<item id="37728" chance="10" />
 	</brush>
 
-	<brush name="broken boat wooden floor vertical" type="ground" server_lookid="37729" z-order="2500">
+	<brush name="broken boat wooden floor vertical" type="ground" server_lookid="37729"
+		z-order="2500">
 		<item id="37729" chance="10" />
 	</brush>
 
@@ -4755,4 +4760,30 @@
 		<item id="39311" chance="100" />
 	</brush>
 
+	<brush name="ghostly water" type="ground" server_lookid="35269" z-order="50">
+		<item id="35269" chance="10" />
+	</brush>
+
+	<brush name="smooth surface sea" type="ground" server_lookid="35478" z-order="50">
+		<item id="35478" chance="1" />
+		<item id="35479" chance="1" />
+		<item id="35480" chance="1" />
+		<item id="35481" chance="1" />
+		<border align="outer" id="1" />
+	</brush>
+
+	<brush name="checked floor" type="ground" server_lookid="35728" z-order="55">
+		<item id="35728" chance="100" />
+	</brush>
+
+	<brush name="cracked white marble floor" type="ground" server_lookid="38652" z-order="32">
+		<item id="38652" chance="10" />
+		<item id="38653" chance="10" />
+		<item id="38654" chance="10" />
+		<item id="39202" chance="10" />
+	</brush>
+
+	<brush name="bleach stones ground" type="ground" server_lookid="50216" z-order="36">
+		<item id="50216" chance="10" />
+	</brush>
 </materials>

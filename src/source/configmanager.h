@@ -324,6 +324,8 @@ class ConfigManager
 			CLASSIC_EQUIPMENT_SLOTS,
 			USE_RUNE_REQUIREMENTS,
 			ENABLE_CAST, //CAST
+			EXPERIENCE_NUMBERS_IN_K,
+			DAMAGE_NUMBERS_IN_K,
 			LAST_BOOL_CONFIG /* this must be the last one */
 		};
 

@@ -1,5 +1,7 @@
 -- Fraglook & Stats System using profile_lib.lua
 
+if not ServerConfigLib then dofile("data/lib/server_config_lib.lua") end
+
 function onLogin(cid)
     registerCreatureEvent(cid, "fraglook")
     return true
@@ -83,6 +85,13 @@ function onLook(cid, thing, position, lookDistance)
 
     description = description .. string.format("\n[Age: %d %s (%s)]", age, ageTitle, getAgeTitle(age))
     description = description .. string.format("\n[Frags: %d]\n[Resets: %d]", frags, resets)
+
+    local dodge = math.max(0, getPlayerStorageValue(target, 48700))
+    local critical = math.max(0, getPlayerStorageValue(target, 48701))
+    local dodgeCap = ServerConfigLib.getDodgeCap()
+    local criticalCap = ServerConfigLib.getCriticalCap()
+    description = description .. string.format("\n[Critical: %d/%d, Dodge: %d/%d]",
+        critical, criticalCap, dodge, dodgeCap)
 
     -- 3. GOD Only Details
     -- Using common flags for details/position visibility

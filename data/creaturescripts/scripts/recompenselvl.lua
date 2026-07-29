@@ -32,7 +32,7 @@ function onAdvance(cid, skill, oldLevel, newLevel)
 
 				local msg = getPlayerName(cid) .. ", you have reached the level " .. newLevel .. " and earned " ..
 						info.count .. " " .. getItemNameById(info.item) .. "."
-				local formattedText = "center|" .. TEXTCOLOR_YELLOW .. "|" .. msg
+				local formattedText = "top|" .. TEXTCOLOR_YELLOW .. "|" .. msg
 				addEvent(doBroadcastMessage, 21, formattedText)
 
 				local sat = getPlayerStorageValue(cid, 30700) == -1 and "Values: '" .. level .. "'" or

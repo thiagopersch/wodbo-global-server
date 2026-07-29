@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 	<action itemid="5952" event="script" value="points.lua" />
+	<!-- Chest system: set actionid="9500" on whichever item you want to act as the chest
+	     (items.xml <attribute key="uniqueid".../> style, or the admin item editor). -->
+	<action actionid="9500" event="script" value="chest.lua" />
 	<action itemid="2178" script="pedravoc.lua" />
 	<action itemid="8303" event="script" value="upgrading.lua" />
 	<action itemid="8110" event="script" value="absoluteitem.lua" />
