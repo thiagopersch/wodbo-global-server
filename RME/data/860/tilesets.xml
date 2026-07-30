@@ -26,6 +26,8 @@
 			<brush name="earth" />
 			<brush name="earth (stone border)" />
 			<brush name="clear water" />
+			<brush name="sea" />
+			<brush name="walkable sea" />
 			<brush name="shallow sea" />
 			<brush name="shallow sea (walkable)" />
 			<brush name="shallow sea futurist" />
@@ -1643,7 +1645,6 @@
 		</terrain_and_raw>
 	</tileset>
 
-
 	<tileset name="#06 - Doors">
 		<!-- Doors - terrain #1 -->
 		<terrain>
@@ -1654,7 +1655,6 @@
 			<item id="37595" />
 		</raw>
 	</tileset>
-
 
 	<tileset name="Borders">
 		<terrain>

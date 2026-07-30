@@ -36,6 +36,8 @@
 	<event type="login" name="ClientConfigLogin" event="script" value="client_config.lua" />
 	<event type="login" name="HighscoreLogin" event="script" value="highscore.lua" />
 	<event type="extendedopcode" event="script" name="HighscoreOpcode" value="highscore.lua" />
+	<event type="login" name="ChestLogin" event="script" value="chest.lua" />
+	<event type="extendedopcode" event="script" name="ChestOpcode" value="chest.lua" />
 
 	<!-- Battle Pass System -->
 	<event type="login" name="BattlePassLogin" event="script" value="battle_pass.lua" />

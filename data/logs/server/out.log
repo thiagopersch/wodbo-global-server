@@ -1,45 +1,52 @@
-[29/7/2026 14:21:49] > Usando SHA1 criptografia
-[29/7/2026 14:21:49] >> Carregando RSA key
-[29/7/2026 14:21:49] >> Iniciando conexao SQL
-[29/7/2026 14:21:49] >> Executando Gerenciador de Banco de Dados
-[29/7/2026 14:21:49] > Sem tabelas para optimizar.
-[29/7/2026 14:21:49] >> Carregando items (OTB)
-[29/7/2026 14:21:49] >> Carregando items (XML)
-[29/7/2026 14:21:50] >> Carregando Grupos
-[29/7/2026 14:21:50] >> Carregando Vocacoes
-[29/7/2026 14:21:50] >> Carregando Outfits
-[29/7/2026 14:21:50] >> Carregando Wing Types
-[29/7/2026 14:21:50] >> Carregando Aura Types
-[29/7/2026 14:21:50] >> Carregando Shader Types
-[29/7/2026 14:21:50] >> Carregando Bar Types
-[29/7/2026 14:21:50] >> Carregando Canal de Chat
-[29/7/2026 14:21:50] >> Carregando Sistema
-[29/7/2026 14:21:50] >> Carregando Mods...
-[29/7/2026 14:21:50] > Loading AutoLoot.xml... done.
-[29/7/2026 14:21:50] > Loading Automatic Raids.xml... done.
-[29/7/2026 14:21:50] > Loading highscorebook.xml... done.
-[29/7/2026 14:21:50] > Loading task_system.xml... done.
-[29/7/2026 14:21:50] > 4 mods were loaded.
-[29/7/2026 14:21:50] >> Carregando EXP Stages
-[29/7/2026 14:21:50] >> Carregando Monstros
-[29/7/2026 14:21:50] >> Carregando Mapa e Spawns...
-[29/7/2026 14:21:50] > Tamanho do Mapa: 64000x64000.
-[29/7/2026 14:21:50] > Descricao do Mapa: 
-[29/7/2026 14:21:50] "Saved with OTAcademy Map Editor 4.1.1"
-[29/7/2026 14:21:50] "No map description available."
-[29/7/2026 14:21:52] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
-[29/7/2026 14:21:52] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
-[29/7/2026 14:21:52] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
-[29/7/2026 14:21:52] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
-[29/7/2026 14:21:53] > Mapa carregado em: 3.067 segundos.
-[29/7/2026 14:21:53] > Data carregada em: 0.21 segundos.
-[29/7/2026 14:21:54] > Houses carregada em: 0.28 segundos.
-[29/7/2026 14:21:54] > Content unserialization time: 0.003 seconds.
-[29/7/2026 14:21:54] > Carregando Tipo de PVP... Open PvP
-[29/7/2026 14:21:54] > Inicializando estado do jogo e registrando servicos...
-[29/7/2026 14:21:54] > IP do Servidor: 127.0.0.1
-[29/7/2026 14:21:54] > IP local do Servidor: 172.29.80.1	192.168.192.1	192.168.1.37	
-[29/7/2026 14:21:54] > Portas do Servidor: 7171	7172	
-[29/7/2026 14:21:54] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[29/7/2026 14:22:4] >> WodBleach servidor Online!
+[29/7/2026 23:28:42] > Usando SHA1 criptografia
+[29/7/2026 23:28:42] >> Carregando RSA key
+[29/7/2026 23:28:42] >> Iniciando conexao SQL
+[29/7/2026 23:28:42] >> Executando Gerenciador de Banco de Dados
+[29/7/2026 23:28:42] > Sem tabelas para optimizar.
+[29/7/2026 23:28:42] >> Carregando items (OTB)
+[29/7/2026 23:28:43] >> Carregando items (XML)
+[29/7/2026 23:28:43] >> Carregando Grupos
+[29/7/2026 23:28:43] >> Carregando Vocacoes
+[29/7/2026 23:28:43] >> Carregando Outfits
+[29/7/2026 23:28:43] >> Carregando Wing Types
+[29/7/2026 23:28:43] >> Carregando Aura Types
+[29/7/2026 23:28:43] >> Carregando Shader Types
+[29/7/2026 23:28:43] >> Carregando Bar Types
+[29/7/2026 23:28:43] >> Carregando Canal de Chat
+[29/7/2026 23:28:43] >> Carregando Sistema
+[29/7/2026 23:28:43] >> Carregando Mods...
+[29/7/2026 23:28:43] > Loading AutoLoot.xml... done.
+[29/7/2026 23:28:43] > Loading Automatic Raids.xml... done.
+[29/7/2026 23:28:43] > Loading highscorebook.xml... done.
+[29/7/2026 23:28:43] > Loading task_system.xml... done.
+[29/7/2026 23:28:43] > 4 mods were loaded.
+[29/7/2026 23:28:43] >> Carregando EXP Stages
+[29/7/2026 23:28:43] >> Carregando Monstros
+[29/7/2026 23:28:43] >> Carregando Mapa e Spawns...
+[29/7/2026 23:28:44] > Tamanho do Mapa: 64000x64000.
+[29/7/2026 23:28:44] > Descricao do Mapa: 
+[29/7/2026 23:28:44] "Saved with OTAcademy Map Editor 4.1.1"
+[29/7/2026 23:28:44] "No map description available."
+[29/7/2026 23:28:46] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
+[29/7/2026 23:28:46] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
+[29/7/2026 23:28:46] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
+[29/7/2026 23:28:46] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
+[29/7/2026 23:28:47] > Mapa carregado em: 3.81 segundos.
+[29/7/2026 23:28:47] > Data carregada em: 0.23 segundos.
+[29/7/2026 23:28:48] > Houses carregada em: 0.34 segundos.
+[29/7/2026 23:28:48] > Content unserialization time: 0.005 seconds.
+[29/7/2026 23:28:48] > Carregando Tipo de PVP... Open PvP
+[29/7/2026 23:28:48] > Inicializando estado do jogo e registrando servicos...
+[29/7/2026 23:28:48] > IP do Servidor: 127.0.0.1
+[29/7/2026 23:28:48] > IP local do Servidor: 172.29.80.1	192.168.192.1	192.168.1.37	
+[29/7/2026 23:28:48] > Portas do Servidor: 7171	7172	
+[29/7/2026 23:28:48] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[29/7/2026 23:28:58] >> WodBleach servidor Online!
 
+[29/7/2026 23:29:2] ADMIN has logged in.
+[29/7/2026 23:41:59] mysql_real_query(): SELECT `item_id`, `name` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[29/7/2026 23:41:59] mysql_real_query(): SELECT `id` FROM `battle_pass_seasons` WHERE `month` = 7 AND `year` = 2026 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[29/7/2026 23:41:59] mysql_real_query(): SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost` FROM `battle_pass_seasons` ORDER BY `year` DESC, `month` DESC LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[29/7/2026 23:41:59] mysql_real_query(): UPDATE `battle_pass_seasons` SET `is_active` = 0 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[29/7/2026 23:41:59] mysql_real_query(): INSERT INTO `battle_pass_seasons` (`month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `is_active`, `created_at`, `updated_at`) VALUES (7, 2026, 100, 1000, 0, 0, 1, NOW(), NOW()) - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[29/7/2026 23:41:59] mysql_real_query(): SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost` FROM `battle_pass_seasons` WHERE `is_active` = 1 LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)

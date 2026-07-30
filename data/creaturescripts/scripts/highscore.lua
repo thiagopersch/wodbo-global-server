@@ -61,12 +61,16 @@ function sendHighscore(cid, req)
 
   local playerName = getPlayerName(cid)
   local ownWhere = (ownOnly == 1) and (" AND `name`=" .. db.escapeString(playerName)) or ""
+  -- Mesma regra do site (/community/ranking): so jogadores normais/tutores (group_id 1/2).
+  -- O Account Manager tem group_id=1 (mesmo dos jogadores normais), entao precisa ser
+  -- excluido explicitamente pelo nome, ja que o group_id sozinho nao o filtra.
+  local groupWhere = " AND `group_id` IN (1, 2) AND `name` != 'Account Manager'"
   local data, total, pages = {}, 0, 1
 
   -- Ranking por player stats
   if def.type == "player" then
     local orderBy = "ORDER BY `" .. def.column .. "` DESC, `experience` DESC"
-    local countRes = db.getResult("SELECT COUNT(*) AS total FROM `players` WHERE 1=1" .. vocWhere .. ownWhere .. ";")
+    local countRes = db.getResult("SELECT COUNT(*) AS total FROM `players` WHERE 1=1" .. vocWhere .. ownWhere .. groupWhere .. ";")
     if countRes:getID() ~= -1 then
       total = countRes:getDataInt("total")
       countRes:free()
@@ -77,7 +81,7 @@ function sendHighscore(cid, req)
 
     local sql =
         "SELECT `name`, `level`, `experience`, `maglevel`, `vocation`, `looktype`, `lookhead`, `lookbody`, `looklegs`, `lookfeet`, `lookaddons` " ..
-        "FROM `players` WHERE 1=1" .. vocWhere .. ownWhere .. " " .. orderBy ..
+        "FROM `players` WHERE 1=1" .. vocWhere .. ownWhere .. groupWhere .. " " .. orderBy ..
         " LIMIT " .. perPage .. " OFFSET " .. offset
     local res = db.getResult(sql)
     local rank = offset + 1
@@ -118,7 +122,7 @@ function sendHighscore(cid, req)
     local skillid = def.skillid
     local countSql = "SELECT COUNT(*) AS total " ..
         "FROM `player_skills` INNER JOIN `players` ON `player_skills`.`player_id` = `players`.`id` " ..
-        "WHERE `player_skills`.`skillid`=" .. skillid .. vocWhere .. ownWhere .. ";"
+        "WHERE `player_skills`.`skillid`=" .. skillid .. vocWhere .. ownWhere .. groupWhere .. ";"
     local resCount = db.getResult(countSql)
     if resCount:getID() ~= -1 then
       total = resCount:getDataInt("total")
@@ -131,7 +135,7 @@ function sendHighscore(cid, req)
     local sql = [[SELECT players.name, players.level, players.vocation, players.looktype, players.lookhead,
             players.lookbody, players.looklegs, players.lookfeet, players.lookaddons, player_skills.value
             FROM player_skills INNER JOIN players ON player_skills.player_id=players.id
-            WHERE player_skills.skillid=]] .. skillid .. vocWhere .. ownWhere ..
+            WHERE player_skills.skillid=]] .. skillid .. vocWhere .. ownWhere .. groupWhere ..
         [[ ORDER BY player_skills.value DESC, players.level DESC
             LIMIT ]] .. perPage .. " OFFSET " .. offset .. ";"
     local res = db.getResult(sql)

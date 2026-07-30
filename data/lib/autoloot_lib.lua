@@ -1,7 +1,7 @@
 info = {
 	BlockMonsters = {},
 	BlockItemsList = {2123,2515},
-	Max_Slots = {free = 30, premium = 100},
+	Max_Slots = {free = 5, premium = 20},
 	-- [1] personal item list, [2] money auto-collect toggle, [3] system on/off,
 	-- [4] money destination (0 = backpack, 1 = bank)
 	Storages = {27000,28001,28002,28003}

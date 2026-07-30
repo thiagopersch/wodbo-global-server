@@ -107,3 +107,33 @@ addVocation(64, "DPS", DIAMOND, 49914)     -- Ulquiorra Ciffer
 addVocation(65, "Bruiser", DIAMOND, 49915) -- Kisuke Urahara
 addVocation(66, "Bruiser", DIAMOND, 49916) -- Yoruichi Shihouin
 addVocation(67, "DPS", DIAMOND, 49917)     -- Kenpachi Zaraki
+
+-- Sobrepõe o maxRank hardcoded acima com o valor do campo "Rank máximo" do CRUD de vocações do
+-- portal (coluna vocations.max_rank, exportada como atributo maxrank="N" em vocations.xml).
+-- Mantém o fallback hardcoded quando o atributo não existe (portal ainda não exportou/vocação
+-- sem entrada no XML), pra não quebrar servidores que não usam o portal.
+local function loadMaxRanksFromXml()
+  local path = "data/XML/vocations.xml"
+  local file, err = io.open(path, "r")
+  if not file then
+    print("[VocationRanks] Nao foi possivel abrir " .. path .. ": " .. tostring(err))
+    return
+  end
+
+  local content = file:read("*a")
+  file:close()
+
+  local overridden = 0
+  for vocationBlock in string.gmatch(content, "<vocation%s+(.-)/?>") do
+    local id = tonumber(vocationBlock:match('id="(%-?%d+)"'))
+    local maxRank = tonumber(vocationBlock:match('maxrank="(%d+)"'))
+    if id and maxRank and VocationRankConfig.Vocations[id] then
+      VocationRankConfig.Vocations[id].maxRank = maxRank
+      overridden = overridden + 1
+    end
+  end
+
+  print("[VocationRanks] maxRank sincronizado do vocations.xml para " .. overridden .. " vocacao(oes).")
+end
+
+loadMaxRanksFromXml()
