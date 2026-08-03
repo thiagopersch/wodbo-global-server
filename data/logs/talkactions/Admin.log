@@ -45,3 +45,16 @@
 [29/7/2026 23:10:20] !spells
 [29/7/2026 23:12:35] !spells
 [29/7/2026 23:16:22] /monster aizen
+[2/8/2026 16:14:21] !spells
+[2/8/2026 16:21:33] /monster Gohan SSJ2
+[2/8/2026 16:21:37] /monster Gohan SSJ2
+[2/8/2026 16:22:11] /level ADMIN, 900
+[2/8/2026 16:22:55] /addskill magicLevel, 250
+[2/8/2026 16:23:3] /addskill magicLevel, ADMIN,250
+[2/8/2026 16:23:13] /addskill ADMIN
+[2/8/2026 16:23:21] /addskill ADMIN, ml, 250
+[2/8/2026 16:23:48] /monster dino
+[2/8/2026 23:6:59] /reload config
+[2/8/2026 23:25:55] /i 56399
+[2/8/2026 23:37:41] !spells
+[2/8/2026 23:44:47] !spells

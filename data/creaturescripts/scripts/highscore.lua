@@ -115,7 +115,7 @@ function sendHighscore(cid, req)
       rank = rank + 1
       if not res:next() then break end
     end
-    res:free()
+    if res:getID() ~= -1 then res:free() end
 
     -- Ranking por skills
   elseif def.type == "skill" then

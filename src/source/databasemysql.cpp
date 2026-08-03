@@ -113,6 +113,7 @@ bool DatabaseMySQL::connect(bool _reconnect)
 		ConfigManager::SQL_DB).c_str(), g_config.getNumber(ConfigManager::SQL_PORT), NULL, 0))
 	{
 		m_attempts = 0;
+		m_connected = true;
 		return true;
 	}
 
@@ -163,7 +164,7 @@ bool DatabaseMySQL::commit()
 
 bool DatabaseMySQL::query(const std::string &query)
 {
-	if(!m_connected)
+	if(!m_connected && !connect(true))
 		return false;
 
 #ifdef __SQL_QUERY_DEBUG__
@@ -190,7 +191,7 @@ bool DatabaseMySQL::query(const std::string &query)
 
 DBResult* DatabaseMySQL::storeQuery(const std::string &query)
 {
-	if(!m_connected)
+	if(!m_connected && !connect(true))
 		return NULL;
 
 	int32_t error = 0;

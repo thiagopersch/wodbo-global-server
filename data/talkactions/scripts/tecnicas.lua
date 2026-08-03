@@ -127,7 +127,22 @@ local function getSpellsData()
         end
     end
 
-    spellsCache = { spellInfo = newSpellInfo, spellOrder = newSpellOrder }
+    -- Resolve os nomes reais das vocações (parametrizadas no servidor via vocations.xml) para
+    -- todas as vocações referenciadas nas spells, já que o client não tem essa informação.
+    local vocationNames = {}
+    for _, info in pairs(newSpellInfo) do
+        for _, vocId in ipairs(info.vocations) do
+            local key = tostring(vocId)
+            if not vocationNames[key] then
+                local ok, vocInfo = pcall(getVocationInfo, vocId)
+                if ok and vocInfo and vocInfo.name then
+                    vocationNames[key] = vocInfo.name
+                end
+            end
+        end
+    end
+
+    spellsCache = { spellInfo = newSpellInfo, spellOrder = newSpellOrder, vocationNames = vocationNames }
     return spellsCache
 end
 
@@ -180,10 +195,21 @@ function onSay(cid, words, param)
         return TRUE
     end
 
+    local playerVocation = getPlayerVocation(cid)
+    local vocationNames = spellsData.vocationNames
+    local playerVocKey = tostring(playerVocation)
+    if not vocationNames[playerVocKey] then
+        local ok, vocInfo = pcall(getVocationInfo, playerVocation)
+        if ok and vocInfo and vocInfo.name then
+            vocationNames[playerVocKey] = vocInfo.name
+        end
+    end
+
     local payload = {
-        vocation = getPlayerVocation(cid),
+        vocation = playerVocation,
         spellInfo = spellsData.spellInfo,
-        spellOrder = spellsData.spellOrder
+        spellOrder = spellsData.spellOrder,
+        vocationNames = vocationNames
     }
 
     local ok, encoded = pcall(json.encode, payload)

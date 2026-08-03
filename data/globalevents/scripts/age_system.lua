@@ -72,8 +72,7 @@ local function updatePlayerAgeDB(cid, minutes, age)
     db.query(query)
 end
 
-local function getPlayerAgeReal(cid)
-    local minutes = getPlayerAgeMinutesReal(cid)
+local function getAgeFromMinutes(minutes)
     return math.floor(minutes / MINUTES_PER_YEAR)
 end
 
@@ -84,7 +83,7 @@ function onThink(interval, lastExecution)
         local cid = players[i]
 
         local minutes = getPlayerAgeMinutesReal(cid)
-        local age = getPlayerAgeReal(cid)
+        local age = getAgeFromMinutes(minutes)
 
         if minutes < 0 then minutes = 0 end
         if age < 0 then age = 0 end

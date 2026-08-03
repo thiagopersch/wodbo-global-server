@@ -38,6 +38,9 @@ function onExtendedOpcode(cid, opcode, buffer)
     elseif req.action == "buyGoldPass" then
         local success, message = BattlePassLib.buyGoldPass(cid)
         doPlayerSendTextMessage(cid, success and MESSAGE_INFO_DESCR or MESSAGE_STATUS_CONSOLE_ORANGE, message)
+    elseif req.action == "buyLevel" then
+        local success, message = BattlePassLib.buyLevel(cid)
+        doPlayerSendTextMessage(cid, success and MESSAGE_INFO_DESCR or MESSAGE_STATUS_CONSOLE_ORANGE, message)
     end
 
     return true

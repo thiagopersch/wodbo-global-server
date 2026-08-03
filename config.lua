@@ -268,11 +268,11 @@ expNumbersInK = true
 damageNumbersInK = true
 
 -- Show the player's own life/mana bars as a percentage (100%) instead of absolute values (1500/1500)
-lifeManaInPercent = false
+lifeManaInPercent = true
 
 -- Chest system: consuming this item rolls a random reward from `chest_rewards`
 -- (managed on the portal at /admin/chest-rewards). Set to 0 to disable.
-chestItemId = 0
+chestItemId = 56399 -- chest system key
 
 -- Ghost mode
 ghostModeInvisibleEffect = false

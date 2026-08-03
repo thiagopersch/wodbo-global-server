@@ -18,39 +18,39 @@ function TaskConfig_reload()
     local tasks = {}
     local count = 0
 
-    if resultId ~= -1 then
+    if resultId:getID() ~= -1 then
         repeat
-            if result.getDataInt(resultId, "published") == 1 then
-                local id = result.getDataString(resultId, "id")
+            if resultId:getDataInt("published") == 1 then
+                local id = resultId:getDataString("id")
 
-                local okMonsters, monsters = pcall(json.decode, result.getDataString(resultId, "monsters") or "[]")
-                local okRewards, rewards = pcall(json.decode, result.getDataString(resultId, "rewards") or "{}")
-                local okDelivery, delivery = pcall(json.decode, result.getDataString(resultId, "delivery") or "{}")
+                local okMonsters, monsters = pcall(json.decode, resultId:getDataString("monsters") or "[]")
+                local okRewards, rewards = pcall(json.decode, resultId:getDataString("rewards") or "{}")
+                local okDelivery, delivery = pcall(json.decode, resultId:getDataString("delivery") or "{}")
                 local okDetails, monsterDetails =
-                    pcall(json.decode, result.getDataString(resultId, "monster_details") or "[]")
+                    pcall(json.decode, resultId:getDataString("monster_details") or "[]")
 
                 tasks[id] = {
                     id = id,
-                    name = result.getDataString(resultId, "name"),
-                    lookType = result.getDataInt(resultId, "look_type"),
-                    category = result.getDataString(resultId, "category"),
-                    type = result.getDataString(resultId, "type"),
-                    difficulty = result.getDataString(resultId, "difficulty"),
-                    levelRequired = result.getDataInt(resultId, "level_required"),
-                    rankRequired = result.getDataInt(resultId, "rank_required"),
+                    name = resultId:getDataString("name"),
+                    lookType = resultId:getDataInt("look_type"),
+                    category = resultId:getDataString("category"),
+                    type = resultId:getDataString("type"),
+                    difficulty = resultId:getDataString("difficulty"),
+                    levelRequired = resultId:getDataInt("level_required"),
+                    rankRequired = resultId:getDataInt("rank_required"),
                     monsters = okMonsters and monsters or {},
-                    killsRequired = result.getDataInt(resultId, "kills_required"),
-                    points = result.getDataInt(resultId, "points"),
-                    experience = result.getDataInt(resultId, "experience"),
-                    money = result.getDataInt(resultId, "money"),
+                    killsRequired = resultId:getDataInt("kills_required"),
+                    points = resultId:getDataInt("points"),
+                    experience = resultId:getDataInt("experience"),
+                    money = resultId:getDataInt("money"),
                     rewards = okRewards and rewards or { items = {} },
                     delivery = okDelivery and delivery or { enabled = false },
                     monsterDetails = okDetails and monsterDetails or {},
                 }
                 count = count + 1
             end
-        until not result.next(resultId)
-        result.free(resultId)
+        until not resultId:next()
+        resultId:free()
     end
 
     TASKS = tasks

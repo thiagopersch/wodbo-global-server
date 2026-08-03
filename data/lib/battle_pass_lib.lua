@@ -32,9 +32,27 @@ local function readString(res, column, default)
     return value
 end
 
+-- Resolve o looktype do cliente (protocolo) a partir do cadastro de monstros do portal
+-- (tabela `monsters`, coluna `look_type`) — mesmo valor usado em UICreature:setOutfit no client,
+-- não confundir com `look_type_id` (FK só usada para thumbnails no admin).
+local monsterLookTypeCache = {}
+local function getMonsterLookType(monsterName)
+    if not monsterName or monsterName == "" then return 0 end
+    local key = string.lower(monsterName)
+    if monsterLookTypeCache[key] ~= nil then return monsterLookTypeCache[key] end
+
+    local res = db.getResult("SELECT `look_type` FROM `monsters` WHERE `name` = " .. db.escapeString(monsterName) .. " LIMIT 1")
+    local lookType = readInt(res, "look_type") or 0
+    if res ~= -1 then result.free(res) end
+
+    monsterLookTypeCache[key] = lookType
+    return lookType
+end
+
 function BattlePassLib.reload()
     local seasonResult = db.getResult(
-        "SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost` " ..
+        "SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, " ..
+        "`level_purchase_item_id`, `level_purchase_cost` " ..
         "FROM `battle_pass_seasons` WHERE `is_active` = 1 LIMIT 1")
 
     local seasonId = readInt(seasonResult, "id")
@@ -52,6 +70,8 @@ function BattlePassLib.reload()
         xpPerLevel = readInt(seasonResult, "xp_per_level") or 1000,
         goldPassItemId = readInt(seasonResult, "gold_pass_item_id") or 0,
         goldPassCost = readInt(seasonResult, "gold_pass_cost") or 0,
+        levelPurchaseItemId = readInt(seasonResult, "level_purchase_item_id") or 0,
+        levelPurchaseCost = readInt(seasonResult, "level_purchase_cost") or 0,
         missions = {},
         rewards = {},
     }
@@ -63,10 +83,12 @@ function BattlePassLib.reload()
     if readInt(missionsResult, "id") then
         repeat
             local okTarget, target = pcall(json.decode, readString(missionsResult, "target", "{}"))
+            target = okTarget and target or {}
             table.insert(season.missions, {
                 id = readInt(missionsResult, "id"),
                 type = readString(missionsResult, "type", ""),
-                target = okTarget and target or {},
+                target = target,
+                lookType = getMonsterLookType(target.monster),
                 description = readString(missionsResult, "description", ""),
                 xpReward = readInt(missionsResult, "xp_reward") or 0,
             })
@@ -111,16 +133,20 @@ function BattlePassLib.ensureSeason()
     end
 
     local prevResult = db.getResult(
-        "SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost` " ..
+        "SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, " ..
+        "`level_purchase_item_id`, `level_purchase_cost` " ..
         "FROM `battle_pass_seasons` ORDER BY `year` DESC, `month` DESC LIMIT 1")
 
     local maxLevel, xpPerLevel, goldItem, goldCost = 100, 1000, 0, 0
+    local levelPurchaseItem, levelPurchaseCost = 0, 0
     local prevId = readInt(prevResult, "id")
     if prevId then
         maxLevel = readInt(prevResult, "max_level") or maxLevel
         xpPerLevel = readInt(prevResult, "xp_per_level") or xpPerLevel
         goldItem = readInt(prevResult, "gold_pass_item_id") or goldItem
         goldCost = readInt(prevResult, "gold_pass_cost") or goldCost
+        levelPurchaseItem = readInt(prevResult, "level_purchase_item_id") or levelPurchaseItem
+        levelPurchaseCost = readInt(prevResult, "level_purchase_cost") or levelPurchaseCost
     end
     if prevResult ~= -1 then result.free(prevResult) end
 
@@ -128,9 +154,11 @@ function BattlePassLib.ensureSeason()
     -- `created_at`/`updated_at` set explicitly — don't rely on a DB-side DEFAULT CURRENT_TIMESTAMP
     -- existing, some deployments (ex.: `prisma db push` on this schema) don't set one.
     db.query("INSERT INTO `battle_pass_seasons` (`month`, `year`, `max_level`, `xp_per_level`, " ..
-        "`gold_pass_item_id`, `gold_pass_cost`, `is_active`, `created_at`, `updated_at`) VALUES (" ..
+        "`gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost`, " ..
+        "`is_active`, `created_at`, `updated_at`) VALUES (" ..
         month .. ", " .. year .. ", " .. maxLevel .. ", " .. xpPerLevel .. ", " ..
-        goldItem .. ", " .. goldCost .. ", 1, NOW(), NOW())")
+        goldItem .. ", " .. goldCost .. ", " .. levelPurchaseItem .. ", " .. levelPurchaseCost ..
+        ", 1, NOW(), NOW())")
 
     if prevId then
         local newSeasonResult = db.getResult(
@@ -213,8 +241,11 @@ function BattlePassLib.sendUpdate(cid, progress)
             xpPerLevel = BATTLE_PASS_SEASON.xpPerLevel,
             goldPassItemId = BATTLE_PASS_SEASON.goldPassItemId,
             goldPassCost = BATTLE_PASS_SEASON.goldPassCost,
+            levelPurchaseItemId = BATTLE_PASS_SEASON.levelPurchaseItemId,
+            levelPurchaseCost = BATTLE_PASS_SEASON.levelPurchaseCost,
         },
         missions = BATTLE_PASS_SEASON.missions,
+        rewards = BATTLE_PASS_SEASON.rewards,
         progress = progress,
     })
     doPlayerSendExtendedOpcode(cid, BATTLE_PASS_OPCODE, payload)
@@ -317,6 +348,27 @@ function BattlePassLib.claimReward(cid, level, track)
     BattlePassLib.sendUpdate(cid, progress)
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_GIFT_WRAPS)
     return true, "Reward claimed!"
+end
+
+function BattlePassLib.buyLevel(cid)
+    if not BATTLE_PASS_SEASON then return false, "There is no active battle pass." end
+    if BATTLE_PASS_SEASON.levelPurchaseItemId == 0 then return false, "Level purchase is not enabled this season." end
+
+    local progress = BattlePassLib.getProgress(cid)
+    if not progress then return false, "Error loading progress." end
+    if progress.level >= BATTLE_PASS_SEASON.maxLevel then return false, "You are already at max level." end
+
+    if getPlayerItemCount(cid, BATTLE_PASS_SEASON.levelPurchaseItemId) < BATTLE_PASS_SEASON.levelPurchaseCost then
+        return false, "Not enough currency."
+    end
+
+    doPlayerRemoveItem(cid, BATTLE_PASS_SEASON.levelPurchaseItemId, BATTLE_PASS_SEASON.levelPurchaseCost)
+    progress.level = progress.level + 1
+    progress.xp = 0
+    BattlePassLib.saveProgress(cid, progress)
+    BattlePassLib.sendUpdate(cid, progress)
+    doSendMagicEffect(getCreaturePosition(cid), CONST_ME_FIREWORK_YELLOW)
+    return true, "Level purchased!"
 end
 
 function BattlePassLib.buyGoldPass(cid)
