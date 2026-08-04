@@ -4,9 +4,11 @@
 -- (`/admin/battle-pass`, tables battle_pass_*) — this file loads the active season from the
 -- database (same pattern as data/lib/tasks/task_db_loader.lua) and tracks player progress.
 --
--- NOTE: "spell_kill" missions are tracked the same way as "kill" missions (monster + amount) —
--- tying a kill to the specific spell that landed the final blow would require last-hit-spell
--- tracking that no existing spell script reports centrally today. Left as a known limitation.
+-- Only mission `type` values actually tracked below have a matching `checkMissions` call
+-- somewhere in the codebase. `lib/validations/admin/battle-pass.ts` (portal) exposes more types
+-- (dungeon_any_vocation, damage, battle_pass_missions, daily_tasks, specific_tasks,
+-- daily_rewards, vocation_rank) than are wired here — those can be configured on the portal but
+-- currently never advance in-game (no hook calls `checkMissions` for them yet).
 -- ============================================================
 
 if not json then json = dofile("data/lib/json.lua") end
@@ -97,22 +99,30 @@ function BattlePassLib.reload()
     if missionsResult ~= -1 then result.free(missionsResult) end
 
     local rewardsResult = db.getResult(
-        "SELECT `level`, `track`, `item_id`, `count` FROM `battle_pass_rewards` WHERE `season_id` = " .. season.id)
+        "SELECT `level`, `track`, `rarity`, `item_id`, `count`, `order` FROM `battle_pass_rewards` " ..
+        "WHERE `season_id` = " .. season.id .. " ORDER BY `level` ASC, `track` ASC, `order` ASC")
     if readInt(rewardsResult, "level") then
         repeat
             local level = readInt(rewardsResult, "level")
             local track = readString(rewardsResult, "track", "")
-            season.rewards[track .. "_" .. level] = {
-                itemId = readInt(rewardsResult, "item_id") or 0,
+            local key = track .. "_" .. level
+            local itemId = readInt(rewardsResult, "item_id") or 0
+            local itemInfo = getItemInfo(itemId)
+            local clientId = (itemInfo and itemInfo.clientId and itemInfo.clientId > 0) and itemInfo.clientId or itemId
+
+            season.rewards[key] = season.rewards[key] or {}
+            table.insert(season.rewards[key], {
+                itemId = itemId,
+                clientId = clientId,
                 count = readInt(rewardsResult, "count") or 1,
-            }
+                rarity = readString(rewardsResult, "rarity", ""),
+                order = readInt(rewardsResult, "order") or 0,
+            })
         until not result.next(rewardsResult)
     end
     if rewardsResult ~= -1 then result.free(rewardsResult) end
 
     BATTLE_PASS_SEASON = season
-    print("[BattlePass] Loaded season " .. season.month .. "/" .. season.year ..
-        " (" .. #season.missions .. " missions).")
 end
 
 -- Ensures a season row exists for the current month/year, cloning the most recent previous
@@ -171,8 +181,8 @@ function BattlePassLib.ensureSeason()
             ", `type`, `target`, `description`, `xp_reward`, `published`, NOW(), NOW() " ..
             "FROM `battle_pass_missions` WHERE `season_id` = " .. prevId)
         db.query("INSERT INTO `battle_pass_rewards` (`season_id`, `level`, `track`, `rarity`, " ..
-            "`item_id`, `count`) SELECT " .. newId ..
-            ", `level`, `track`, `rarity`, `item_id`, `count` FROM `battle_pass_rewards` " ..
+            "`item_id`, `count`, `order`) SELECT " .. newId ..
+            ", `level`, `track`, `rarity`, `item_id`, `count`, `order` FROM `battle_pass_rewards` " ..
             "WHERE `season_id` = " .. prevId)
 
         print("[BattlePass] Rolled over to season " .. month .. "/" .. year .. " (cloned from previous).")
@@ -232,6 +242,8 @@ end
 
 function BattlePassLib.sendUpdate(cid, progress)
     if not BATTLE_PASS_SEASON then return end
+    local goldPassInfo = getItemInfo(BATTLE_PASS_SEASON.goldPassItemId)
+    local levelPurchaseInfo = getItemInfo(BATTLE_PASS_SEASON.levelPurchaseItemId)
     local payload = json.encode({
         action = "update",
         season = {
@@ -240,8 +252,12 @@ function BattlePassLib.sendUpdate(cid, progress)
             maxLevel = BATTLE_PASS_SEASON.maxLevel,
             xpPerLevel = BATTLE_PASS_SEASON.xpPerLevel,
             goldPassItemId = BATTLE_PASS_SEASON.goldPassItemId,
+            goldPassClientId = (goldPassInfo and goldPassInfo.clientId and goldPassInfo.clientId > 0)
+                and goldPassInfo.clientId or BATTLE_PASS_SEASON.goldPassItemId,
             goldPassCost = BATTLE_PASS_SEASON.goldPassCost,
             levelPurchaseItemId = BATTLE_PASS_SEASON.levelPurchaseItemId,
+            levelPurchaseClientId = (levelPurchaseInfo and levelPurchaseInfo.clientId and levelPurchaseInfo.clientId > 0)
+                and levelPurchaseInfo.clientId or BATTLE_PASS_SEASON.levelPurchaseItemId,
             levelPurchaseCost = BATTLE_PASS_SEASON.levelPurchaseCost,
         },
         missions = BATTLE_PASS_SEASON.missions,
@@ -311,7 +327,7 @@ function BattlePassLib.onKill(cid, target)
     local monsterName = string.lower(getCreatureName(target))
 
     checkMissions(cid, function(mission)
-        return (mission.type == "kill" or mission.type == "spell_kill")
+        return mission.type == "kill_monster"
             and mission.target.monster
             and string.lower(mission.target.monster) == monsterName
     end)
@@ -337,10 +353,12 @@ function BattlePassLib.claimReward(cid, level, track)
         if claimedLevel == level then return false, "Already claimed." end
     end
 
-    local reward = BATTLE_PASS_SEASON.rewards[track .. "_" .. level]
-    if not reward then return false, "No reward configured for this level." end
+    local rewards = BATTLE_PASS_SEASON.rewards[track .. "_" .. level]
+    if not rewards or #rewards == 0 then return false, "No reward configured for this level." end
 
-    doPlayerAddItem(cid, reward.itemId, reward.count)
+    for _, reward in ipairs(rewards) do
+        doPlayerAddItem(cid, reward.itemId, reward.count)
+    end
     table.insert(claimedList, level)
     if track == "gold" then progress.claimedGold = claimedList else progress.claimedBronze = claimedList end
 

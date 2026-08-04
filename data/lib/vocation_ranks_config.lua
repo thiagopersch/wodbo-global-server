@@ -108,11 +108,13 @@ addVocation(65, "Bruiser", DIAMOND, 49915) -- Kisuke Urahara
 addVocation(66, "Bruiser", DIAMOND, 49916) -- Yoruichi Shihouin
 addVocation(67, "DPS", DIAMOND, 49917)     -- Kenpachi Zaraki
 
--- Sobrepõe o maxRank hardcoded acima com o valor do campo "Rank máximo" do CRUD de vocações do
--- portal (coluna vocations.max_rank, exportada como atributo maxrank="N" em vocations.xml).
--- Mantém o fallback hardcoded quando o atributo não existe (portal ainda não exportou/vocação
--- sem entrada no XML), pra não quebrar servidores que não usam o portal.
-local function loadMaxRanksFromXml()
+-- Sobrepõe maxRank/archetype/specificFragmentItemId hardcoded acima com os valores dos campos
+-- do CRUD de vocações do portal (colunas vocations.max_rank/archetype/specific_fragment_item_id,
+-- exportadas como atributos maxrank="N" archetype="..." specificfragmentitemid="N" em
+-- vocations.xml). Mantém os fallbacks hardcoded (addVocation acima) quando o atributo não existe
+-- (portal ainda não exportou/vocação sem entrada no XML), pra não quebrar servidores que não usam
+-- o portal.
+local function loadVocationConfigFromXml()
   local path = "data/XML/vocations.xml"
   local file, err = io.open(path, "r")
   if not file then
@@ -126,14 +128,23 @@ local function loadMaxRanksFromXml()
   local overridden = 0
   for vocationBlock in string.gmatch(content, "<vocation%s+(.-)/?>") do
     local id = tonumber(vocationBlock:match('id="(%-?%d+)"'))
-    local maxRank = tonumber(vocationBlock:match('maxrank="(%d+)"'))
-    if id and maxRank and VocationRankConfig.Vocations[id] then
-      VocationRankConfig.Vocations[id].maxRank = maxRank
-      overridden = overridden + 1
+    if id and VocationRankConfig.Vocations[id] then
+      local maxRank = tonumber(vocationBlock:match('maxrank="(%d+)"'))
+      local archetype = vocationBlock:match('archetype="([^"]+)"')
+      local specificFragmentItemId = tonumber(vocationBlock:match('specificfragmentitemid="(%d+)"'))
+
+      if maxRank then VocationRankConfig.Vocations[id].maxRank = maxRank end
+      if archetype then VocationRankConfig.Vocations[id].archetype = archetype end
+      if specificFragmentItemId then
+        VocationRankConfig.Vocations[id].specificFragmentItemId = specificFragmentItemId
+      end
+
+      if maxRank or archetype or specificFragmentItemId then
+        overridden = overridden + 1
+      end
     end
   end
 
-  print("[VocationRanks] maxRank sincronizado do vocations.xml para " .. overridden .. " vocacao(oes).")
 end
 
-loadMaxRanksFromXml()
+loadVocationConfigFromXml()

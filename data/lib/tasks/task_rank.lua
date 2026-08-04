@@ -114,9 +114,15 @@ local function loadVocationUniverses()
         local id = tonumber(tag:match('id="(%d+)"'))
         local universe = tag:match('type_universe="([^"]+)"')
         if id and id > 0 and universe then
-            if universe == "Dragon Ball" then
+            -- Mesma normalização usada no site pra `Category` das tasks
+            -- (lib/validations/admin/task-definition.ts: normalizeTaskCategory) — sem isso, uma
+            -- grafia diferente de "Dragon Ball"/"Bleach" no cadastro de Universo (maiúscula,
+            -- espaço extra, etc.) faz toda vocação daquele universo cair no fallback
+            -- "dragonball" e as tasks do universo real ficarem invisíveis pra ela.
+            local normalized = universe:trim():lower():gsub('%s+', '')
+            if normalized == "dragonball" then
                 VOCATION_UNIVERSE_MAP[id] = "dragonball"
-            elseif universe == "Bleach" then
+            elseif normalized == "bleach" then
                 VOCATION_UNIVERSE_MAP[id] = "bleach"
             end
         end

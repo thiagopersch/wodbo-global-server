@@ -36,14 +36,34 @@ local function findChest(chestId)
     return nil
 end
 
+-- `reward.itemId` é o server id (real OT server id) — o cliente precisa do clientId (id do
+-- .dat/.otb) pra achar a sprite certa em UIItem:setItemId, mesmo padrão do game_autoloot.
+local function getItemClientId(itemId)
+    local itemInfo = getItemInfo(itemId)
+    if itemInfo and itemInfo.clientId and itemInfo.clientId > 0 then return itemInfo.clientId end
+    return itemId
+end
+
 local function sendChestList(cid)
     local list = {}
     for _, chest in ipairs(loadPublishedChests()) do
+        local rewards = {}
+        for _, reward in ipairs(chest.rewards) do
+            table.insert(rewards, {
+                itemId = reward.itemId,
+                clientId = getItemClientId(reward.itemId),
+                count = reward.count or 1,
+                name = getItemNameById(reward.itemId),
+            })
+        end
+
         table.insert(list, {
             id = chest.id,
             name = chest.name,
             keyItemId = chest.keyItemId,
+            keyClientId = getItemClientId(chest.keyItemId),
             hasKey = getPlayerItemCount(cid, chest.keyItemId) >= 1,
+            rewards = rewards,
         })
     end
 
@@ -63,21 +83,19 @@ local function sendChestResult(cid, success, message, extra)
     doPlayerSendExtendedOpcode(cid, CHEST_OPCODE, json.encode(response))
 end
 
+-- Entrega direta no inventário do player (não numa backpack) — doPlayerAddItem já resolve o
+-- primeiro slot livre e faz split automático de itens não empilháveis.
 local function grantRewardItem(cid, itemId, count)
-    local backpack = doPlayerAddItem(cid, 5801, 1)
-    if not backpack then
-        backpack = doPlayerAddItem(cid, 1988, 1)
-    end
-    if not backpack then return false end
+    return doPlayerAddItem(cid, itemId, count) ~= false
+end
 
-    if isItemStackable(itemId) or count == 1 then
-        doAddContainerItem(backpack, itemId, count)
-    else
-        for _ = 1, count do
-            doAddContainerItem(backpack, itemId, 1)
-        end
-    end
-    return true
+-- Sorteia exatamente 1 dentre os rewards configurados (nunca todos) — a quantidade entregue
+-- desse único item sorteado varia entre 1 e o `count` configurado para ele no site, e nunca
+-- ultrapassa esse máximo.
+local function rollRewards(rewards)
+    local reward = rewards[math.random(1, #rewards)]
+    local maxCount = math.max(1, reward.count or 1)
+    return { { itemId = reward.itemId, count = math.random(1, maxCount) } }
 end
 
 local function openChest(cid, chestId)
@@ -102,26 +120,38 @@ local function openChest(cid, chestId)
         return
     end
 
-    local reward = chest.rewards[math.random(1, #chest.rewards)]
-    local itemId = reward.itemId
-    local count = reward.count or 1
+    local rolled = rollRewards(chest.rewards)
+    local granted = {}
+    for _, reward in ipairs(rolled) do
+        if grantRewardItem(cid, reward.itemId, reward.count) then
+            table.insert(granted, {
+                itemId = reward.itemId,
+                clientId = getItemClientId(reward.itemId),
+                count = reward.count,
+                name = getItemNameById(reward.itemId),
+            })
+        end
+    end
 
-    if not grantRewardItem(cid, itemId, count) then
-        -- Refunds the key so a full backpack doesn't silently eat the player's key item.
+    if #granted == 0 then
+        -- Refunds the key so a full inventory doesn't silently eat the player's key item.
         doPlayerAddItem(cid, chest.keyItemId, 1)
-        sendChestResult(cid, false, "Your backpack is full.")
+        sendChestResult(cid, false, "Your inventory is full.")
         return
+    end
+
+    local parts = {}
+    for _, item in ipairs(granted) do
+        table.insert(parts, item.count .. "x " .. item.name)
     end
 
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_GIFT_WRAPS)
     doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR,
-        "You opened " .. chest.name .. " and received " .. count .. "x " .. getItemNameById(itemId) .. "!")
+        "You opened " .. chest.name .. " and received " .. table.concat(parts, ", ") .. "!")
 
     sendChestResult(cid, true, nil, {
         chestId = chest.id,
-        itemId = itemId,
-        count = count,
-        name = getItemNameById(itemId),
+        rewards = granted,
     })
 end
 

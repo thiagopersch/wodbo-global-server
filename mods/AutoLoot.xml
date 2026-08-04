@@ -3,23 +3,18 @@
 	<config name="Loot_func"><![CDATA[
 dofile('data/lib/autoloot_lib.lua')
 ]]></config>
+	<!-- LootEventKIll (kill) removido: duplicava data/creaturescripts/scripts/autoloot_opcode.lua
+	     (AutoLootKill), que já é registrado no login por esse script. Ambos chamavam
+	     corpseRetireItems para a mesma morte, cada um com seu addEvent de 100ms concorrente,
+	     causando "(luaGetContainerSize) Container not found" por corrida entre os dois. -->
 	<event type="login" name="LootLogin" event="script"><![CDATA[
 function onLogin(cid)
-	registerCreatureEvent(cid, "LootEventKIll")
 	if isPremium(cid) and getPlayerStorageValue(cid, 27001) <= 0 then
 		setPlayerStorageValue(cid, 27001, 1)
 	elseif getPlayerStorageValue(cid, 27001) > 0 and not isPremium(cid) then
 		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[Auto Loot] You premium is Over, Start a new list!")
 		setPlayerStorageValue(cid, 27001, -1)
 		setPlayerStorageValue(cid, info.Storages[1], -1)
-	end
-	return true
-end]]></event>
-	<event type="kill" name="LootEventKIll" event="script"><![CDATA[
-domodlib('Loot_func')
-function onKill(cid, target, lastHit)
-	if isPlayer(cid) and getPlayerStorageValue(cid, info.Storages[3]) <= 0 and isMonster(target) and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
-		addEvent(corpseRetireItems, 100, cid ,getThingPos(target))
 	end
 	return true
 end]]></event>

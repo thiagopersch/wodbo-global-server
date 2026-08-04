@@ -349,5 +349,3 @@ function Bestiary_sendToPlayer(cid)
 
     Bestiary_sendBatch(cid, messages, 1)
 end
-
-print("[BestiaryLib] Carregado com sucesso.")

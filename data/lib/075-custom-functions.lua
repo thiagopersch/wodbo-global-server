@@ -49,14 +49,16 @@ function doExpandingWaveCombat(cid, config)
   end
 
   -- Verifica linha de visão livre de projéteis entre duas posições.
-  -- canThrowObjectTo() já respeita blockprojectile (paredes, árvores) e PZ nativamente.
+  -- `canThrowObjectTo` nunca foi exposta ao Lua neste fork (só existe em C++, sem lua_register
+  -- em luascript.cpp) — usa `isSightClear`, que é o equivalente já registrado (mesmo
+  -- Map::canThrowObjectTo por baixo, ver game.cpp Game::isSightClear).
   local function hasLineOfSight(fromPos, toPos)
     -- Posições no mesmo tile são sempre visíveis
     if fromPos.x == toPos.x and fromPos.y == toPos.y and fromPos.z == toPos.z then
       return true
     end
-    -- A função retorna true se um projétil pode percorrer o caminho sem obstrução
-    return canThrowObjectTo(fromPos, toPos)
+    -- floorCheck = true: barra o "lançamento" se as posições estiverem em andares diferentes
+    return isSightClear(fromPos, toPos, true)
   end
 
   local casterPos = getCreaturePosition(cid)

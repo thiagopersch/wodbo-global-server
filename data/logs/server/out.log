@@ -1,68 +1,61 @@
-[2/8/2026 23:19:23] > Usando SHA1 criptografia
-[2/8/2026 23:19:23] >> Carregando RSA key
-[2/8/2026 23:19:23] >> Iniciando conexao SQL
-[2/8/2026 23:19:23] >> Executando Gerenciador de Banco de Dados
-[2/8/2026 23:19:23] > Sem tabelas para optimizar.
-[2/8/2026 23:19:23] >> Carregando items (OTB)
-[2/8/2026 23:19:23] >> Carregando items (XML)
-[2/8/2026 23:19:23] >> Carregando Grupos
-[2/8/2026 23:19:23] >> Carregando Vocacoes
-[2/8/2026 23:19:23] >> Carregando Outfits
-[2/8/2026 23:19:23] >> Carregando Wing Types
-[2/8/2026 23:19:23] >> Carregando Aura Types
-[2/8/2026 23:19:23] >> Carregando Shader Types
-[2/8/2026 23:19:23] >> Carregando Bar Types
-[2/8/2026 23:19:23] >> Carregando Canal de Chat
-[2/8/2026 23:19:23] >> Carregando Sistema
-[2/8/2026 23:19:23] Error during getDataInt(look_type).
-[2/8/2026 23:19:23] Error during getDataInt(look_type).
-[2/8/2026 23:19:23] Error during getDataInt(look_type).
-[2/8/2026 23:19:24] Error during getDataInt(look_type).
-[2/8/2026 23:19:24] Error during getDataInt(look_type).
-[2/8/2026 23:19:24] Error during getDataInt(look_type).
-[2/8/2026 23:19:24] Error during getDataInt(look_type).
-[2/8/2026 23:19:24] >> Carregando Mods...
-[2/8/2026 23:19:24] > Loading AutoLoot.xml... done.
-[2/8/2026 23:19:24] > Loading Automatic Raids.xml... done.
-[2/8/2026 23:19:24] > Loading highscorebook.xml... done.
-[2/8/2026 23:19:24] > Loading task_system.xml... done.
-[2/8/2026 23:19:24] > 4 mods were loaded.
-[2/8/2026 23:19:24] >> Carregando EXP Stages
-[2/8/2026 23:19:24] >> Carregando Monstros
-[2/8/2026 23:19:24] >> Carregando Mapa e Spawns...
-[2/8/2026 23:19:24] > Tamanho do Mapa: 64000x64000.
-[2/8/2026 23:19:24] > Descricao do Mapa: 
-[2/8/2026 23:19:24] "Saved with OTAcademy Map Editor 4.1.1"
-[2/8/2026 23:19:24] "No map description available."
-[2/8/2026 23:19:26] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
-[2/8/2026 23:19:26] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
-[2/8/2026 23:19:26] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
-[2/8/2026 23:19:26] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
-[2/8/2026 23:19:27] > Mapa carregado em: 3.099 segundos.
-[2/8/2026 23:19:27] Error during getDataInt(look_type).
-[2/8/2026 23:19:27] > Data carregada em: 0.217 segundos.
-[2/8/2026 23:19:28] > Houses carregada em: 0.262 segundos.
-[2/8/2026 23:19:28] > Content unserialization time: 0.003 seconds.
-[2/8/2026 23:19:28] > Carregando Tipo de PVP... Open PvP
-[2/8/2026 23:19:28] > Inicializando estado do jogo e registrando servicos...
-[2/8/2026 23:19:28] > IP do Servidor: 127.0.0.1
-[2/8/2026 23:19:28] > IP local do Servidor: 172.29.80.1	172.20.192.1	192.168.1.35	
-[2/8/2026 23:19:28] > Portas do Servidor: 7171	7172	
-[2/8/2026 23:19:28] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[2/8/2026 23:19:38] >> WodBleach servidor Online!
+[4/8/2026 1:36:55] > Usando SHA1 criptografia
+[4/8/2026 1:36:55] >> Carregando RSA key
+[4/8/2026 1:36:55] >> Iniciando conexao SQL
+[4/8/2026 1:36:55] >> Executando Gerenciador de Banco de Dados
+[4/8/2026 1:37:0] > Optimizing table: items... [success]
+[4/8/2026 1:37:0] >> Carregando items (OTB)
+[4/8/2026 1:37:0] >> Carregando items (XML)
+[4/8/2026 1:37:1] >> Carregando Grupos
+[4/8/2026 1:37:1] >> Carregando Vocacoes
+[4/8/2026 1:37:1] >> Carregando Outfits
+[4/8/2026 1:37:1] >> Carregando Wing Types
+[4/8/2026 1:37:1] >> Carregando Aura Types
+[4/8/2026 1:37:1] >> Carregando Shader Types
+[4/8/2026 1:37:1] >> Carregando Bar Types
+[4/8/2026 1:37:1] >> Carregando Canal de Chat
+[4/8/2026 1:37:1] >> Carregando Sistema
+[4/8/2026 1:37:1] Error during getDataInt(look_type).
+[4/8/2026 1:37:1] Error during getDataInt(look_type).
+[4/8/2026 1:37:1] Error during getDataInt(look_type).
+[4/8/2026 1:37:1] Error during getDataInt(look_type).
+[4/8/2026 1:37:1] Error during getDataInt(look_type).
+[4/8/2026 1:37:1] Error during getDataInt(look_type).
+[4/8/2026 1:37:1] Error during getDataInt(look_type).
+[4/8/2026 1:37:1] >> Carregando Mods...
+[4/8/2026 1:37:1] > Loading AutoLoot.xml... done.
+[4/8/2026 1:37:1] > Loading Automatic Raids.xml... done.
+[4/8/2026 1:37:1] > Loading highscorebook.xml... done.
+[4/8/2026 1:37:1] > Loading task_system.xml... done.
+[4/8/2026 1:37:1] > 4 mods were loaded.
+[4/8/2026 1:37:1] >> Carregando EXP Stages
+[4/8/2026 1:37:1] >> Carregando Monstros
+[4/8/2026 1:37:2] >> Carregando Mapa e Spawns...
+[4/8/2026 1:37:2] > Tamanho do Mapa: 64000x64000.
+[4/8/2026 1:37:2] > Descricao do Mapa: 
+[4/8/2026 1:37:2] "Saved with OTAcademy Map Editor 4.1.1"
+[4/8/2026 1:37:2] "No map description available."
+[4/8/2026 1:37:4] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
+[4/8/2026 1:37:4] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
+[4/8/2026 1:37:4] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
+[4/8/2026 1:37:4] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
+[4/8/2026 1:37:5] > Mapa carregado em: 3.523 segundos.
+[4/8/2026 1:37:5] Error during getDataInt(look_type).
+[4/8/2026 1:37:6] > Data carregada em: 0.292 segundos.
+[4/8/2026 1:37:6] > Houses carregada em: 0.356 segundos.
+[4/8/2026 1:37:6] > Content unserialization time: 0.007 seconds.
+[4/8/2026 1:37:6] > Carregando Tipo de PVP... Open PvP
+[4/8/2026 1:37:6] > Inicializando estado do jogo e registrando servicos...
+[4/8/2026 1:37:6] > IP do Servidor: 127.0.0.1
+[4/8/2026 1:37:6] > IP local do Servidor: 172.29.80.1	172.20.192.1	192.168.1.35	
+[4/8/2026 1:37:6] > Portas do Servidor: 7171	7172	
+[4/8/2026 1:37:6] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[4/8/2026 1:37:16] >> WodBleach servidor Online!
 
-[2/8/2026 23:19:44] Error during getDataInt(look_type).
-[2/8/2026 23:19:44] ADMIN has logged in.
-[2/8/2026 23:24:24] Error during getDataInt(look_type).
-[2/8/2026 23:25:58] ADMIN has logged out.
-[2/8/2026 23:26:0] ADMIN has logged in.
-[2/8/2026 23:29:24] Error during getDataInt(look_type).
-[2/8/2026 23:34:24] Error during getDataInt(look_type).
-[2/8/2026 23:45:28] ADMIN has logged out.
-[2/8/2026 23:45:29] ADMIN has logged in.
-[2/8/2026 23:46:6] mysql_real_query(): SELECT `item_id`, `name` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[2/8/2026 23:46:6] mysql_real_query(): SELECT `id` FROM `battle_pass_seasons` WHERE `month` = 8 AND `year` = 2026 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[2/8/2026 23:46:6] mysql_real_query(): SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` ORDER BY `year` DESC, `month` DESC LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[2/8/2026 23:46:6] mysql_real_query(): UPDATE `battle_pass_seasons` SET `is_active` = 0 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[2/8/2026 23:46:6] mysql_real_query(): INSERT INTO `battle_pass_seasons` (`month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost`, `is_active`, `created_at`, `updated_at`) VALUES (8, 2026, 100, 1000, 0, 0, 0, 0, 1, NOW(), NOW()) - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[2/8/2026 23:46:6] mysql_real_query(): SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` WHERE `is_active` = 1 LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[4/8/2026 1:37:29] Error during getDataInt(look_type).
+[4/8/2026 1:37:29] ADMIN has logged in.
+[4/8/2026 1:42:1] Error during getDataInt(look_type).
+[4/8/2026 1:47:1] Error during getDataInt(look_type).
+[4/8/2026 1:52:2] Error during getDataInt(look_type).
+[4/8/2026 1:57:30] > Salvando servidor...
+[4/8/2026 1:57:31] > SAVE: Completo em 0.466 segundos usando binary casa storage.
+[4/8/2026 1:58:31] ADMIN has logged out.

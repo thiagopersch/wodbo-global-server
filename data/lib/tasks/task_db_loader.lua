@@ -54,7 +54,6 @@ function TaskConfig_reload()
     end
 
     TASKS = tasks
-    print("[Task System] Loaded " .. count .. " tasks from database.")
 end
 
 if not TASKS then

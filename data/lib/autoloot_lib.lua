@@ -198,6 +198,7 @@ function AutomaticDeposit(cid,item,n)
 end
 function corpseRetireItems(cid, pos)
 	local check = false
+	local tile
 	for i = 0, 255 do
 		pos.stackpos = i
 		tile = getTileThingByPos(pos)
@@ -205,7 +206,12 @@ function corpseRetireItems(cid, pos)
 			check = true break
 		end
 	end
-	if check == true then
+	-- isCorpse() só olha o itemid (faixa de corpos) — não garante que o item já seja um
+	-- Container de verdade no engine (ex.: corpo ainda não "aberto"/convertido). Sem esse guard,
+	-- getContainerItems() chama getContainerSize() e o engine loga
+	-- "(luaGetContainerSize) Container not found" no console mesmo já tratando o retorno sem
+	-- crashar — isContainer() evita a tentativa (e o log) quando não há nada pra coletar mesmo.
+	if check == true and isContainer(tile.uid) then
 		local items = getContainerItems(tile.uid)
 		if type(items) ~= "table" then
 			return

@@ -3,7 +3,6 @@
     <config name="task_libs"><![CDATA[
         json = dofile("data/lib/json.lua")
         dofile("data/lib/tasks/task_init.lua")
-        dofile("data/lib/tasks/task_config.lua")
         dofile("data/lib/tasks/task_cache.lua")
         dofile("data/lib/tasks/task_storage.lua")
         dofile("data/lib/tasks/task_rank.lua")
