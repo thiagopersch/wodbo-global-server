@@ -72,8 +72,10 @@ function sendRankDataToClient(cid)
   
   local specCount = getPlayerItemCount(cid, config.specificFragmentItemId)
 
-  -- Cost of the NEXT star: star (stars+1) within the current rank costs (stars+1) * FragmentsPerStar
-  local costAmount = (rankData.stars + 1) * VocationRankConfig.FragmentsPerStar
+  -- Cost of the NEXT star: star (stars+1) within the current rank costs (stars+1) * FragmentsPerStar.
+  -- Once stars == StarsPerRank, the next action promotes to the next rank instead of buying a star
+  -- (see VocationRankLib.doUpgrade) — cost stays pinned at the 5th-star price for that action.
+  local costAmount = math.min(rankData.stars + 1, VocationRankConfig.StarsPerRank) * VocationRankConfig.FragmentsPerStar
 
   local vocName = getVocationInfo(vocationId).name or "None"
   local playerName = getCreatureName(cid)
@@ -127,6 +129,28 @@ function VocationRankLib.doUpgrade(cid, source)
     return false
   end
 
+  -- Rank already sitting at 5/5 stars: this call promotes to the next rank instead of buying
+  -- a star (reaching star 5 must be its own visible/persisted state — see bug report where
+  -- promoting in the same call as buying the 5th star skipped straight past it).
+  if rankData.stars >= VocationRankConfig.StarsPerRank then
+    rankData.rank = rankData.rank + 1
+    rankData.stars = 0
+
+    local guid = getPlayerGUID(cid)
+    db.query("UPDATE `player_vocation_ranks` SET `rank` = " ..
+    rankData.rank ..
+    ", `stars` = " ..
+    rankData.stars ..
+    ", `total_stars` = " ..
+    rankData.totalStars .. " WHERE `player_id` = " .. guid .. " AND `vocation_id` = " .. vocationId)
+
+    VocationRankLib.applyStats(cid, vocationId, rankData.totalStars)
+    sendRankDataToClient(cid)
+    doSendMagicEffect(getCreaturePosition(cid), 29)
+    doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "Rank promoted!")
+    return true
+  end
+
   -- Star (stars+1) within the current rank costs (stars+1) * FragmentsPerStar (50, 100, 150, 200, 250)
   local costAmount = (rankData.stars + 1) * VocationRankConfig.FragmentsPerStar
 
@@ -140,12 +164,6 @@ function VocationRankLib.doUpgrade(cid, source)
   if success then
     rankData.stars = rankData.stars + 1
     rankData.totalStars = rankData.totalStars + 1
-
-    -- Promotion logic: 5 stars completes the current rank; advance to the next one (if any)
-    if rankData.stars >= VocationRankConfig.StarsPerRank and rankData.rank < config.maxRank then
-      rankData.rank = rankData.rank + 1
-      rankData.stars = 0
-    end
 
     -- Salva no banco de dados
     local guid = getPlayerGUID(cid)

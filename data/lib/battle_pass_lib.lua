@@ -34,20 +34,35 @@ local function readString(res, column, default)
     return value
 end
 
--- Resolve o looktype do cliente (protocolo) a partir do cadastro de monstros do portal
--- (tabela `monsters`, coluna `look_type`) — mesmo valor usado em UICreature:setOutfit no client,
--- não confundir com `look_type_id` (FK só usada para thumbnails no admin).
+-- Resolve o looktype do cliente (protocolo) a partir do monstro já carregado em memória pelo
+-- engine (data/monster/*.xml, gerado pelo site via monsterToXml com o "Número" do cadastro de
+-- looktypes já resolvido em `<look type="...">`) — mesmo padrão de data/lib/bestiary_lib.lua.
+-- Evita totalmente `db.getResult`/`getData*` pra essa consulta: tentativas anteriores de ler
+-- `monsters.look_type`/`look_type_id` via SQL sempre bateram em "Error during getData*(coluna)"
+-- mesmo com a coluna existindo e a query sendo válida — getMonsterInfo lê o XML direto, sem SQL.
+--
+-- IMPORTANTE: só cacheia quando acha o monstro (lookType > 0). `data/lib/battle_pass_lib.lua`
+-- é carregado como mod, e ">> Carregando Mods" acontece ANTES de ">> Carregando Monstros" no
+-- boot — a primeira chamada (disparada pelo `BattlePassLib.ensureSeason()` no fim deste
+-- arquivo) sempre falha porque nenhum monstro existe em memória ainda. Se cachear a falha,
+-- ela fica travada até o servidor reiniciar (`ensureSeason()` só rechama `reload()` na virada
+-- do mês) — não cachear deixa a próxima chamada (globalevent `type="startup"` em
+-- battle_pass_rotation.lua, que roda depois do boot completo) resolver certo.
 local monsterLookTypeCache = {}
 local function getMonsterLookType(monsterName)
     if not monsterName or monsterName == "" then return 0 end
     local key = string.lower(monsterName)
     if monsterLookTypeCache[key] ~= nil then return monsterLookTypeCache[key] end
 
-    local res = db.getResult("SELECT `look_type` FROM `monsters` WHERE `name` = " .. db.escapeString(monsterName) .. " LIMIT 1")
-    local lookType = readInt(res, "look_type") or 0
-    if res ~= -1 then result.free(res) end
+    local lookType = 0
+    local ok, monsterInfo = pcall(getMonsterInfo, monsterName)
+    if ok and monsterInfo and monsterInfo.outfit then
+        lookType = monsterInfo.outfit.lookType or 0
+    end
 
-    monsterLookTypeCache[key] = lookType
+    if lookType > 0 then
+        monsterLookTypeCache[key] = lookType
+    end
     return lookType
 end
 
@@ -114,6 +129,10 @@ function BattlePassLib.reload()
             table.insert(season.rewards[key], {
                 itemId = itemId,
                 clientId = clientId,
+                -- Nome vindo de items.xml (sempre correto, inclusive pra itens customizados) —
+                -- não depende do items.otb local do client, que não tem nome embutido pra quase
+                -- nenhum item (só ~0.7% dos itens têm o atributo de nome no OTB do client).
+                name = itemInfo and itemInfo.name or "",
                 count = readInt(rewardsResult, "count") or 1,
                 rarity = readString(rewardsResult, "rarity", ""),
                 order = readInt(rewardsResult, "order") or 0,
@@ -254,10 +273,14 @@ function BattlePassLib.sendUpdate(cid, progress)
             goldPassItemId = BATTLE_PASS_SEASON.goldPassItemId,
             goldPassClientId = (goldPassInfo and goldPassInfo.clientId and goldPassInfo.clientId > 0)
                 and goldPassInfo.clientId or BATTLE_PASS_SEASON.goldPassItemId,
+            -- Nome vindo de items.xml (server), não do items.otb do client — ver comentário em
+            -- season.rewards acima, mesmo motivo (nome quase nunca embutido no OTB do client).
+            goldPassItemName = goldPassInfo and goldPassInfo.name or "",
             goldPassCost = BATTLE_PASS_SEASON.goldPassCost,
             levelPurchaseItemId = BATTLE_PASS_SEASON.levelPurchaseItemId,
             levelPurchaseClientId = (levelPurchaseInfo and levelPurchaseInfo.clientId and levelPurchaseInfo.clientId > 0)
                 and levelPurchaseInfo.clientId or BATTLE_PASS_SEASON.levelPurchaseItemId,
+            levelPurchaseItemName = levelPurchaseInfo and levelPurchaseInfo.name or "",
             levelPurchaseCost = BATTLE_PASS_SEASON.levelPurchaseCost,
         },
         missions = BATTLE_PASS_SEASON.missions,

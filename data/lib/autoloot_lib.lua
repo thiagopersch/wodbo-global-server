@@ -176,9 +176,28 @@ function doPlayerAddItemStacking(cid, itemid, amount)
 		for _ ,x in pairs(item) do
 			local ret = getThing(x)
 			if ret.type < MAX_STACK then
-				doTransformItem(ret.uid, itemid, ret.type+amount)
-				if ret.type+amount > MAX_STACK then
-					doPlayerAddItem(cid, itemid, ret.type+amount-MAX_STACK)
+				-- Topa a stack existente até MAX_STACK (nunca ultrapassa) e manda só o excedente
+				-- real pro doPlayerAddItem nativo, que já divide sozinho em múltiplas stacks de
+				-- até ITEM_STACK_SIZE cada (game.cpp).
+				--
+				-- doTransformItem, porém, trava o count em 100 por chamada (luascript.cpp:
+				-- `if(it.stackable and count > 100) count = 100`), silenciosamente e sem sinalizar
+				-- erro — chamar ele uma vez só com toAdd na casa dos milhares perdia tudo acima
+				-- de 100 (era exatamente o "autoloot para de coletar depois de 100"). Por isso o
+				-- topo da stack precisa ser feito em passos de no máximo 100 por chamada.
+				local spaceLeft = MAX_STACK - ret.type
+				local toAdd = math.min(amount, spaceLeft)
+				local newCount = ret.type
+				local stillToAdd = toAdd
+				while stillToAdd > 0 do
+					local step = math.min(stillToAdd, 100)
+					newCount = newCount+step
+					doTransformItem(ret.uid, itemid, newCount)
+					stillToAdd = stillToAdd-step
+				end
+				local remaining = amount-toAdd
+				if remaining > 0 then
+					doPlayerAddItem(cid, itemid, remaining)
 				end
 				break
 			else

@@ -29,10 +29,17 @@ function TaskConfig_reload()
                 local okDetails, monsterDetails =
                     pcall(json.decode, resultId:getDataString("monster_details") or "[]")
 
+                -- `look_type` is nullable (a task doesn't have to be tied to a monster with a
+                -- registered looktype yet) — reading a NULL column via getDataInt logs
+                -- "Error during getDataInt(look_type)." to the console even though it still
+                -- returns safely, so read it as a string and convert instead.
+                local lookTypeRaw = resultId:getDataString("look_type")
+                local lookType = tonumber(lookTypeRaw) or 0
+
                 tasks[id] = {
                     id = id,
                     name = resultId:getDataString("name"),
-                    lookType = resultId:getDataInt("look_type"),
+                    lookType = lookType,
                     category = resultId:getDataString("category"),
                     type = resultId:getDataString("type"),
                     difficulty = resultId:getDataString("difficulty"),
