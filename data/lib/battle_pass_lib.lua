@@ -44,13 +44,21 @@ end
 -- IMPORTANTE: só cacheia quando acha o monstro (lookType > 0). `data/lib/battle_pass_lib.lua`
 -- é carregado como mod, e ">> Carregando Mods" acontece ANTES de ">> Carregando Monstros" no
 -- boot — a primeira chamada (disparada pelo `BattlePassLib.ensureSeason()` no fim deste
--- arquivo) sempre falha porque nenhum monstro existe em memória ainda. Se cachear a falha,
--- ela fica travada até o servidor reiniciar (`ensureSeason()` só rechama `reload()` na virada
--- do mês) — não cachear deixa a próxima chamada (globalevent `type="startup"` em
--- battle_pass_rotation.lua, que roda depois do boot completo) resolver certo.
+-- arquivo) sempre falharia porque nenhum monstro existe em memória ainda. `getMonsterInfo`
+-- imprime no console via `errorEx` mesmo dentro de `pcall` (pcall só protege o script Lua de
+-- abortar, não silencia o log do engine), então até com o cache essa primeira chamada gerava
+-- uma linha de erro por monstro único referenciado nas missions. Por isso não tentamos resolver
+-- nada enquanto `monstersLoaded` não for setado — `BattlePassLib.setMonstersLoaded()` é chamado
+-- pelo globalevent `type="startup"` em battle_pass_rotation.lua, que roda depois do boot
+-- completo, e o `reload()` disparado por ele resolve tudo certo, sem log de erro.
+local monstersLoaded = false
+function BattlePassLib.setMonstersLoaded()
+    monstersLoaded = true
+end
+
 local monsterLookTypeCache = {}
 local function getMonsterLookType(monsterName)
-    if not monsterName or monsterName == "" then return 0 end
+    if not monstersLoaded or not monsterName or monsterName == "" then return 0 end
     local key = string.lower(monsterName)
     if monsterLookTypeCache[key] ~= nil then return monsterLookTypeCache[key] end
 
@@ -58,6 +66,13 @@ local function getMonsterLookType(monsterName)
     local ok, monsterInfo = pcall(getMonsterInfo, monsterName)
     if ok and monsterInfo and monsterInfo.outfit then
         lookType = monsterInfo.outfit.lookType or 0
+        -- Alguns monstros são cadastrados com `<look typeex="...">` (outfit baseado em item) em
+        -- vez de `<look type="...">` — lookType fica 0 nesse caso. Mesmo fallback usado por
+        -- data/lib/bestiary_lib.lua / game_bestiary.lua no client: manda lookTypeEx no lugar de
+        -- lookType (o client já sabe renderizar isso via `setOutfit({ type = ... })`).
+        if lookType == 0 then
+            lookType = monsterInfo.outfit.lookTypeEx or 0
+        end
     end
 
     if lookType > 0 then
@@ -212,7 +227,29 @@ function BattlePassLib.ensureSeason()
     BattlePassLib.reload()
 end
 
+-- Este fork do TFS carrega cada <event> de creaturescripts.xml/globalevents.xml num ambiente
+-- Lua isolado (globals não compartilhadas nem sempre entre tags da mesma categoria — confirmado
+-- via log: AUTOLOOT_CATALOG/BATTLE_PASS_SEASON reiniciam do zero em cada bloco de boot em vez de
+-- reaproveitar o que já tinha carregado). Isso significa que este arquivo é dofile'd várias
+-- vezes independentes, cada uma com sua PRÓPRIA cópia de BattlePassLib/BATTLE_PASS_SEASON —
+-- `BattlePassLib.setMonstersLoaded()` chamado pelo globalevent de startup só corrige a cópia
+-- DAQUELE ambiente, não a cópia usada por onLogin/onKill/onExtendedOpcode em
+-- creaturescripts/scripts/battle_pass.lua (ambiente diferente, nunca recebe esse aviso, fica com
+-- lookType = 0 pra sempre desde o dofile inicial pré-boot). Por isso cada ambiente precisa se
+-- auto-corrigir sozinho: getProgress() é chamado por todo ponto de entrada real de gameplay
+-- (login, kill, claim, compra), e um jogador só consegue disparar esses eventos depois que o
+-- boot terminou — então a primeira chamada real é sempre pós-boot, garantindo que
+-- getMonsterInfo já funcione no ambiente que a chamou, sem depender de nenhum outro ambiente.
+local postBootReloaded = false
+local function ensurePostBootReload()
+    if postBootReloaded then return end
+    postBootReloaded = true
+    monstersLoaded = true
+    BattlePassLib.reload()
+end
+
 function BattlePassLib.getProgress(cid)
+    ensurePostBootReload()
     if not BATTLE_PASS_SEASON then return nil end
     local guid = getPlayerGUID(cid)
     if not guid then return nil end
@@ -290,10 +327,16 @@ function BattlePassLib.sendUpdate(cid, progress)
     doPlayerSendExtendedOpcode(cid, BATTLE_PASS_OPCODE, payload)
 end
 
-function BattlePassLib.addXp(cid, amount)
-    if not BATTLE_PASS_SEASON or amount <= 0 then return end
-    local progress = BattlePassLib.getProgress(cid)
-    if not progress or progress.level >= BATTLE_PASS_SEASON.maxLevel then return end
+-- Aplica XP direto num `progress` já carregado, sem tocar no banco — usado tanto por addXp
+-- (round-trip único) quanto por checkMissions (que já tem seu próprio `progress` em mãos).
+-- IMPORTANTE: checkMissions costumava chamar BattlePassLib.addXp(cid, ...), que fazia seu PRÓPRIO
+-- getProgress (uma leitura separada e desatualizada do banco) e seu próprio saveProgress no meio
+-- do loop. Isso significava que o `saveProgress(cid, progress)` do FIM de checkMissions (com o
+-- `progress` local dele, que já tinha o `missionProgress` atualizado mas ainda o `xp`/`level`
+-- ANTIGOS) sobrescrevia de volta o XP que addXp acabara de salvar — o ganho de XP da missão nunca
+-- persistia de verdade. Aplicar tudo no mesmo objeto `progress` e salvar uma vez só resolve isso.
+local function applyXp(progress, amount)
+    if not progress or amount <= 0 or progress.level >= BATTLE_PASS_SEASON.maxLevel then return false end
 
     progress.xp = progress.xp + amount
     local leveledUp = false
@@ -305,13 +348,56 @@ function BattlePassLib.addXp(cid, amount)
     if progress.level >= BATTLE_PASS_SEASON.maxLevel then
         progress.xp = 0
     end
+    return leveledUp
+end
 
-    BattlePassLib.saveProgress(cid, progress)
-    if leveledUp and isPlayer(cid) then
-        doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE,
-            "Battle Pass level up! You are now level " .. progress.level .. ".")
-        doSendMagicEffect(getCreaturePosition(cid), CONST_ME_FIREWORK_YELLOW)
+local function announceLevelUp(cid, level)
+    if not isPlayer(cid) then return end
+    doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "Battle Pass level up! You are now level " .. level .. ".")
+    doSendMagicEffect(getCreaturePosition(cid), CONST_ME_FIREWORK_YELLOW)
+end
+
+-- Qualquer level (1..progress.level) com reward configurado (bronze sempre conta; gold só se o
+-- jogador tem o Gold Pass) que ainda não foi resgatado — usado pra avisar no popup de missão
+-- concluída se vale a pena o jogador abrir o Battle Pass pra resgatar algo.
+local function hasUnclaimedReward(progress)
+    if not BATTLE_PASS_SEASON then return false end
+    local claimedBronze, claimedGold = {}, {}
+    for _, level in ipairs(progress.claimedBronze) do claimedBronze[level] = true end
+    for _, level in ipairs(progress.claimedGold) do claimedGold[level] = true end
+
+    for level = 1, progress.level do
+        local bronzeRewards = BATTLE_PASS_SEASON.rewards["bronze_" .. level]
+        if bronzeRewards and #bronzeRewards > 0 and not claimedBronze[level] then return true end
+        if progress.hasGoldPass then
+            local goldRewards = BATTLE_PASS_SEASON.rewards["gold_" .. level]
+            if goldRewards and #goldRewards > 0 and not claimedGold[level] then return true end
+        end
     end
+    return false
+end
+
+-- Notificação dedicada (separada do `action = "update"` de sendUpdate) que o client usa pra
+-- abrir uma janela modal chamando atenção do jogador — texto sempre em inglês americano, igual
+-- ao resto das mensagens do sistema (não passa por tr()/tradução).
+local function announceMissionComplete(cid, mission, hasClaimable)
+    if not isPlayer(cid) then return end
+    doPlayerSendExtendedOpcode(cid, BATTLE_PASS_OPCODE, json.encode({
+        action = "missionComplete",
+        description = mission.description,
+        xpReward = mission.xpReward,
+        hasClaimable = hasClaimable,
+    }))
+end
+
+function BattlePassLib.addXp(cid, amount)
+    if not BATTLE_PASS_SEASON then return end
+    local progress = BattlePassLib.getProgress(cid)
+    if not progress then return end
+
+    local leveledUp = applyXp(progress, amount)
+    BattlePassLib.saveProgress(cid, progress)
+    if leveledUp then announceLevelUp(cid, progress.level) end
     BattlePassLib.sendUpdate(cid, progress)
 end
 
@@ -320,7 +406,8 @@ local function checkMissions(cid, matches)
     local progress = BattlePassLib.getProgress(cid)
     if not progress then return end
 
-    local changed = false
+    local changed, leveledUp = false, false
+    local completedMissions = {}
     for _, mission in ipairs(BATTLE_PASS_SEASON.missions) do
         if matches(mission) then
             local key = tostring(mission.id)
@@ -331,9 +418,10 @@ local function checkMissions(cid, matches)
                 progress.missionProgress[key] = current
                 changed = true
                 if current >= required then
-                    doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE,
-                        "[Battle Pass] Mission complete: " .. mission.description)
-                    BattlePassLib.addXp(cid, mission.xpReward)
+                    table.insert(completedMissions, mission)
+                    if applyXp(progress, mission.xpReward) then
+                        leveledUp = true
+                    end
                 end
             end
         end
@@ -341,7 +429,17 @@ local function checkMissions(cid, matches)
 
     if changed then
         BattlePassLib.saveProgress(cid, progress)
+        if leveledUp then announceLevelUp(cid, progress.level) end
         BattlePassLib.sendUpdate(cid, progress)
+
+        -- Calculado com o `progress` já final (depois de todo XP/level-up desta leva) — se um
+        -- kill completar 2 missões ao mesmo tempo, cada popup reflete corretamente se já dá pra
+        -- resgatar algo, e não o estado (potencialmente desatualizado) de antes das outras terem
+        -- sido processadas.
+        local hasClaimable = hasUnclaimedReward(progress)
+        for _, mission in ipairs(completedMissions) do
+            announceMissionComplete(cid, mission, hasClaimable)
+        end
     end
 end
 

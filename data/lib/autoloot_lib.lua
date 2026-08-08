@@ -149,67 +149,17 @@ function getContainerItems(containeruid)
 	end
 	return items
 end
-function getItemsInContainerById(container, itemid)
-	local items = {}
-	if isContainer(container) and getContainerSize(container) > 0 then
-		for slot=0, (getContainerSize(container)-1) do
-			local item = getContainerItem(container, slot)
-			if isContainer(item.uid) then
-				local itemsbag = getItemsInContainerById(item.uid, itemid)
-				for i=0, #itemsbag do
-					table.insert(items, itemsbag[i])
-				end
-			else
-				if itemid == item.itemid then
-					table.insert(items, item.uid)
-				end
-			end
-		end
-	end
-	return items
-end
-local MAX_STACK = ITEM_STACK_SIZE or 10000
-
+-- `doTransformItem(uid, itemId, count)` recebe `count` como o valor ABSOLUTO do novo subtype,
+-- não um delta — e o engine C++ (luascript.cpp: `if(it.stackable and count > 100) count = 100`)
+-- trava esse valor absoluto em 100 pra qualquer item empilhável, sempre, mesmo passando o total
+-- acumulado (150, 200, ...) em passos de <=100 por chamada. Por isso a stack nunca passava de
+-- 100 ("autoloot para de coletar depois de 100"): cada chamada seguinte simplesmente reduzia o
+-- item de volta a 100. `doPlayerAddItem` nativo não tem esse problema — ele cria o item em
+-- pedaços de <=100 internamente (luascript.cpp:luaDoPlayerAddItem) e usa o pipeline normal de
+-- adicionar item (game.cpp/container.cpp), que já mescla esses pedaços na stack existente do
+-- jogador respeitando ITEM_STACK_SIZE (10000). Delegar direto resolve sem reinventar a stack.
 function doPlayerAddItemStacking(cid, itemid, amount)
-	local item, _G = getItemsInContainerById(getPlayerSlotItem(cid, 3).uid, itemid), 0
-	if #item > 0 then
-		for _ ,x in pairs(item) do
-			local ret = getThing(x)
-			if ret.type < MAX_STACK then
-				-- Topa a stack existente até MAX_STACK (nunca ultrapassa) e manda só o excedente
-				-- real pro doPlayerAddItem nativo, que já divide sozinho em múltiplas stacks de
-				-- até ITEM_STACK_SIZE cada (game.cpp).
-				--
-				-- doTransformItem, porém, trava o count em 100 por chamada (luascript.cpp:
-				-- `if(it.stackable and count > 100) count = 100`), silenciosamente e sem sinalizar
-				-- erro — chamar ele uma vez só com toAdd na casa dos milhares perdia tudo acima
-				-- de 100 (era exatamente o "autoloot para de coletar depois de 100"). Por isso o
-				-- topo da stack precisa ser feito em passos de no máximo 100 por chamada.
-				local spaceLeft = MAX_STACK - ret.type
-				local toAdd = math.min(amount, spaceLeft)
-				local newCount = ret.type
-				local stillToAdd = toAdd
-				while stillToAdd > 0 do
-					local step = math.min(stillToAdd, 100)
-					newCount = newCount+step
-					doTransformItem(ret.uid, itemid, newCount)
-					stillToAdd = stillToAdd-step
-				end
-				local remaining = amount-toAdd
-				if remaining > 0 then
-					doPlayerAddItem(cid, itemid, remaining)
-				end
-				break
-			else
-				_G = _G+1
-			end
-		end
-		if _G == #item then
-			doPlayerAddItem(cid, itemid, amount)
-		end
-	else
-		return doPlayerAddItem(cid, itemid, amount)
-	end
+	return doPlayerAddItem(cid, itemid, amount)
 end
 function AutomaticDeposit(cid,item,n)
 	local deposit = item == tonumber(2160) and (n*10000) or tonumber(item) == 2152 and (n*100) or (n*1)

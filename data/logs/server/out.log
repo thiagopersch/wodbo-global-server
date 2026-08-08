@@ -1,199 +1,57 @@
-[4/8/2026 14:43:11] > Usando SHA1 criptografia
-[4/8/2026 14:43:11] >> Carregando RSA key
-[4/8/2026 14:43:11] >> Iniciando conexao SQL
-[4/8/2026 14:43:11] >> Executando Gerenciador de Banco de Dados
-[4/8/2026 14:43:16] > Optimizing table: items... [success]
-[4/8/2026 14:43:16] >> Carregando items (OTB)
-[4/8/2026 14:43:17] >> Carregando items (XML)
-[4/8/2026 14:43:17] >> Carregando Grupos
-[4/8/2026 14:43:17] >> Carregando Vocacoes
-[4/8/2026 14:43:17] >> Carregando Outfits
-[4/8/2026 14:43:17] >> Carregando Wing Types
-[4/8/2026 14:43:17] >> Carregando Aura Types
-[4/8/2026 14:43:17] >> Carregando Shader Types
-[4/8/2026 14:43:17] >> Carregando Bar Types
-[4/8/2026 14:43:17] >> Carregando Canal de Chat
-[4/8/2026 14:43:17] >> Carregando Sistema
+[5/8/2026 23:40:59] > Usando SHA1 criptografia
+[5/8/2026 23:40:59] >> Carregando RSA key
+[5/8/2026 23:40:59] >> Iniciando conexao SQL
+[5/8/2026 23:40:59] >> Executando Gerenciador de Banco de Dados
+[5/8/2026 23:41:3] > Optimizing table: items... [success]
+[5/8/2026 23:41:4] > Optimizing table: monsters... [success]
+[5/8/2026 23:41:4] >> Carregando items (OTB)
+[5/8/2026 23:41:4] >> Carregando items (XML)
+[5/8/2026 23:41:5] >> Carregando Grupos
+[5/8/2026 23:41:5] >> Carregando Vocacoes
+[5/8/2026 23:41:5] >> Carregando Outfits
+[5/8/2026 23:41:5] >> Carregando Wing Types
+[5/8/2026 23:41:5] >> Carregando Aura Types
+[5/8/2026 23:41:5] >> Carregando Shader Types
+[5/8/2026 23:41:5] >> Carregando Bar Types
+[5/8/2026 23:41:5] >> Carregando Canal de Chat
+[5/8/2026 23:41:5] >> Carregando Sistema
+[5/8/2026 23:41:5] >> Carregando Mods...
+[5/8/2026 23:41:5] > Loading AutoLoot.xml... done.
+[5/8/2026 23:41:5] > Loading Automatic Raids.xml... done.
+[5/8/2026 23:41:5] > Loading highscorebook.xml... done.
+[5/8/2026 23:41:5] > Loading task_system.xml... done.
+[5/8/2026 23:41:5] > 4 mods were loaded.
+[5/8/2026 23:41:5] >> Carregando EXP Stages
+[5/8/2026 23:41:5] >> Carregando Monstros
+[5/8/2026 23:41:5] >> Carregando Mapa e Spawns...
+[5/8/2026 23:41:5] > Tamanho do Mapa: 64000x64000.
+[5/8/2026 23:41:5] > Descricao do Mapa: 
+[5/8/2026 23:41:5] "Saved with OTAcademy Map Editor 4.1.1"
+[5/8/2026 23:41:5] "No map description available."
+[5/8/2026 23:41:7] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
+[5/8/2026 23:41:7] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
+[5/8/2026 23:41:7] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
+[5/8/2026 23:41:7] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
+[5/8/2026 23:41:9] > Mapa carregado em: 3.461 segundos.
+[5/8/2026 23:41:9] > Data carregada em: 0.224 segundos.
+[5/8/2026 23:41:9] > Houses carregada em: 0.28 segundos.
+[5/8/2026 23:41:9] > Content unserialization time: 0.003 seconds.
+[5/8/2026 23:41:9] > Carregando Tipo de PVP... Open PvP
+[5/8/2026 23:41:9] > Inicializando estado do jogo e registrando servicos...
+[5/8/2026 23:41:9] > IP do Servidor: 127.0.0.1
+[5/8/2026 23:41:9] > IP local do Servidor: 172.29.80.1	172.20.192.1	192.168.1.35	
+[5/8/2026 23:41:9] > Portas do Servidor: 7171	7172	
+[5/8/2026 23:41:9] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[5/8/2026 23:41:19] >> WodBleach servidor Online!
 
-[4/8/2026 14:43:17] [Error - Weapon Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - Weapon Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - Weapon Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - Weapon Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - Spell Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - Spell Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - Spell Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - Spell Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - Action Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - Action Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - Action Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - Action Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - TalkAction Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - TalkAction Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - TalkAction Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - TalkAction Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - MoveEvents Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - MoveEvents Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - MoveEvents Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - MoveEvents Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - CreatureScript Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - CreatureScript Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - CreatureScript Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - CreatureScript Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - GlobalEvent Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - GlobalEvent Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - GlobalEvent Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-
-[4/8/2026 14:43:17] [Error - GlobalEvent Interface] 
-[4/8/2026 14:43:17] data/lib/battle_pass_lib.lua
-[4/8/2026 14:43:17] Description: 
-[4/8/2026 14:43:17] (luaGetMonsterInfo) Monster not found
-[4/8/2026 14:43:20] >> Carregando Mods...
-[4/8/2026 14:43:20] > Loading AutoLoot.xml... done.
-[4/8/2026 14:43:20] > Loading Automatic Raids.xml... done.
-[4/8/2026 14:43:20] > Loading highscorebook.xml... done.
-[4/8/2026 14:43:20] > Loading task_system.xml... done.
-[4/8/2026 14:43:20] > 4 mods were loaded.
-[4/8/2026 14:43:20] >> Carregando EXP Stages
-[4/8/2026 14:43:20] >> Carregando Monstros
-[4/8/2026 14:43:20] >> Carregando Mapa e Spawns...
-[4/8/2026 14:43:20] > Tamanho do Mapa: 64000x64000.
-[4/8/2026 14:43:20] > Descricao do Mapa: 
-[4/8/2026 14:43:20] "Saved with OTAcademy Map Editor 4.1.1"
-[4/8/2026 14:43:20] "No map description available."
-[4/8/2026 14:43:22] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
-[4/8/2026 14:43:22] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
-[4/8/2026 14:43:22] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
-[4/8/2026 14:43:22] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
-[4/8/2026 14:43:24] > Mapa carregado em: 3.449 segundos.
-[4/8/2026 14:43:24] > Data carregada em: 0.312 segundos.
-[4/8/2026 14:43:24] > Houses carregada em: 0.3 segundos.
-[4/8/2026 14:43:24] > Content unserialization time: 0.006 seconds.
-[4/8/2026 14:43:24] > Carregando Tipo de PVP... Open PvP
-[4/8/2026 14:43:24] > Inicializando estado do jogo e registrando servicos...
-[4/8/2026 14:43:24] > IP do Servidor: 127.0.0.1
-[4/8/2026 14:43:24] > IP local do Servidor: 172.29.80.1	172.20.192.1	192.168.1.35	
-[4/8/2026 14:43:24] > Portas do Servidor: 7171	7172	
-[4/8/2026 14:43:24] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[4/8/2026 14:43:34] >> WodBleach servidor Online!
-
-[4/8/2026 14:44:40] Kira VS L has logged in.
-[4/8/2026 14:46:4] > Salvando servidor...
-[4/8/2026 14:46:5] > SAVE: Completo em 0.973 segundos usando binary casa storage.
-[4/8/2026 14:50:6] Kira VS L has logged out.
-[4/8/2026 14:50:8] ADMIN has logged in.
-[4/8/2026 15:13:17] > Salvando servidor...
-[4/8/2026 15:13:18] > SAVE: Completo em 0.468 segundos usando binary casa storage.
-[4/8/2026 15:14:33] ADMIN has logged out.
-[4/8/2026 15:17:7] mysql_real_query(): SELECT `item_id`, `name` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[4/8/2026 15:17:7] mysql_real_query(): SELECT `id` FROM `battle_pass_seasons` WHERE `month` = 8 AND `year` = 2026 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[4/8/2026 15:17:7] mysql_real_query(): SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` ORDER BY `year` DESC, `month` DESC LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[4/8/2026 15:17:7] mysql_real_query(): UPDATE `battle_pass_seasons` SET `is_active` = 0 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[4/8/2026 15:17:7] mysql_real_query(): INSERT INTO `battle_pass_seasons` (`month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost`, `is_active`, `created_at`, `updated_at`) VALUES (8, 2026, 100, 1000, 0, 0, 0, 0, 1, NOW(), NOW()) - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[4/8/2026 15:17:7] mysql_real_query(): SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` WHERE `is_active` = 1 LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[5/8/2026 23:41:23] Kira VS L has logged in.
+[5/8/2026 23:43:12] Kira VS L has logged out.
+[5/8/2026 23:43:14] ADMIN has logged in.
+[5/8/2026 23:57:9] > Salvando servidor...
+[5/8/2026 23:57:9] > SAVE: Completo em 0.524 segundos usando binary casa storage.
+[5/8/2026 23:57:12] mysql_real_query(): SELECT `item_id`, `name` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[5/8/2026 23:57:12] mysql_real_query(): SELECT `id` FROM `battle_pass_seasons` WHERE `month` = 8 AND `year` = 2026 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[5/8/2026 23:57:12] mysql_real_query(): SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` ORDER BY `year` DESC, `month` DESC LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[5/8/2026 23:57:12] mysql_real_query(): UPDATE `battle_pass_seasons` SET `is_active` = 0 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[5/8/2026 23:57:12] mysql_real_query(): INSERT INTO `battle_pass_seasons` (`month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost`, `is_active`, `created_at`, `updated_at`) VALUES (8, 2026, 100, 1000, 0, 0, 0, 0, 1, NOW(), NOW()) - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[5/8/2026 23:57:12] mysql_real_query(): SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` WHERE `is_active` = 1 LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)

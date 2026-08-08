@@ -70,9 +70,13 @@ local arr4 = {
 local area4 = createCombatArea(arr4)
 setCombatArea(combat4, area4)
 
+function onGetFormulaValues(cid, level, maglevel)
+	return getCombatFormulaValues(cid, level, maglevel, 1, 2, 10, 1, 1, 120)
+end
+
 local combat5 = createCombatObject()
 setCombatParam(combat5, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatFormula(combat5, COMBAT_FORMULA_LEVELMAGIC, -35.0, 0, -80.0, 0)
+setCombatCallback(combat5, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local arr5 = {
 	{ 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -90,7 +94,7 @@ setCombatArea(combat5, area5)
 
 local combat6 = createCombatObject()
 setCombatParam(combat6, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatFormula(combat6, COMBAT_FORMULA_LEVELMAGIC, -35.0, 0, -80.0, 0)
+setCombatCallback(combat6, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local arr6 = {
 	{ 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -108,7 +112,7 @@ setCombatArea(combat6, area6)
 
 local combat7 = createCombatObject()
 setCombatParam(combat7, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatFormula(combat7, COMBAT_FORMULA_LEVELMAGIC, -35.0, 0, -80.0, 0)
+setCombatCallback(combat7, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local arr7 = {
 	{ 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -126,7 +130,7 @@ setCombatArea(combat7, area7)
 
 local combat8 = createCombatObject()
 setCombatParam(combat8, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatFormula(combat8, COMBAT_FORMULA_LEVELMAGIC, -35.0, 0, -80.0, 0)
+setCombatCallback(combat8, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local arr8 = {
 	{ 0, 0, 0, 0, 0, 0, 0, 0 },

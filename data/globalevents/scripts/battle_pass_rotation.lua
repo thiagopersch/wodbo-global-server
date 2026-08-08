@@ -9,9 +9,11 @@ end
 
 -- Roda depois que o boot completo termina (monstros já carregados) — battle_pass_lib.lua é
 -- carregado como mod, antes dos monstros, então a resolução inicial de looktype das missions
--- (feita no dofile do mod, via ensureSeason -> reload) sempre falha ("Monster not found") e
--- fica com lookType = 0. Esse reload() aqui recalcula certo, sem log de erro.
+-- (feita no dofile do mod, via ensureSeason -> reload) ficaria com lookType = 0 e sem essa
+-- liberação nunca tentaria de novo. setMonstersLoaded() libera a resolução e o reload()
+-- recalcula tudo certo, sem log de erro (ver comentário em battle_pass_lib.lua).
 function onStartup()
+    BattlePassLib.setMonstersLoaded()
     BattlePassLib.reload()
     return true
 end

@@ -1,7 +1,12 @@
 local combat1 = createCombatObject()
 setCombatParam(combat1, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat1, COMBAT_PARAM_TARGETCASTERORTARGET, TRUE)
-setCombatFormula(combat1, COMBAT_FORMULA_LEVELMAGIC, -100.0, 0, -150.0, 0)
+
+function onGetFormulaValues(cid, level, maglevel)
+    return getCombatFormulaValues(cid, level, maglevel, 1, 2, 10, 1, 1, 250)
+end
+
+setCombatCallback(combat1, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local arr1 = { -- LADO >>
     { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -20,7 +25,7 @@ local combat10 = createCombatObject()
 setCombatParam(combat10, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat10, COMBAT_PARAM_TARGETCASTERORTARGET, TRUE)
 setCombatParam(combat10, COMBAT_PARAM_EFFECT, 404)
-setCombatFormula(combat10, COMBAT_FORMULA_LEVELMAGIC, -100.0, 0, -150.0, 0)
+setCombatCallback(combat10, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local arr10 = { -- LADO >>
     { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -38,7 +43,7 @@ setCombatArea(combat10, area10)
 local combat2 = createCombatObject()
 setCombatParam(combat2, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat2, COMBAT_PARAM_TARGETCASTERORTARGET, TRUE)
-setCombatFormula(combat2, COMBAT_FORMULA_LEVELMAGIC, -100.0, 0, -150.0, 0)
+setCombatCallback(combat2, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local arr2 = { --lado <<
     { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -57,7 +62,7 @@ local combat20 = createCombatObject()
 setCombatParam(combat20, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat20, COMBAT_PARAM_TARGETCASTERORTARGET, TRUE)
 setCombatParam(combat20, COMBAT_PARAM_EFFECT, 405)
-setCombatFormula(combat20, COMBAT_FORMULA_LEVELMAGIC, -100.0, 0, -150.0, 0)
+setCombatCallback(combat20, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local arr20 = { --lado <<
     { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -75,7 +80,7 @@ setCombatArea(combat20, area20)
 local combat3 = createCombatObject()
 setCombatParam(combat3, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat3, COMBAT_PARAM_TARGETCASTERORTARGET, TRUE)
-setCombatFormula(combat3, COMBAT_FORMULA_LEVELMAGIC, -100.0, 0, -150.0, 0)
+setCombatCallback(combat3, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local arr3 = { -- LADO /\
     { 0, 0, 0, 0, 2, 0, 0, 0, 0 },
@@ -97,7 +102,7 @@ local combat30 = createCombatObject()
 setCombatParam(combat30, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat30, COMBAT_PARAM_TARGETCASTERORTARGET, TRUE)
 setCombatParam(combat30, COMBAT_PARAM_EFFECT, 403)
-setCombatFormula(combat30, COMBAT_FORMULA_LEVELMAGIC, -100.0, 0, -150.0, 0)
+setCombatCallback(combat30, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local arr30 = { -- LADO /\
     { 0, 0, 0, 0, 2, 0, 0, 0, 0 },
@@ -118,7 +123,7 @@ setCombatArea(combat30, area30)
 local combat4 = createCombatObject()
 setCombatParam(combat4, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat4, COMBAT_PARAM_TARGETCASTERORTARGET, TRUE)
-setCombatFormula(combat4, COMBAT_FORMULA_LEVELMAGIC, -100.0, 0, -150.0, 0)
+setCombatCallback(combat4, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local arr4 = { -- LADO \/
     { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -140,7 +145,7 @@ local combat40 = createCombatObject()
 setCombatParam(combat40, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
 setCombatParam(combat40, COMBAT_PARAM_TARGETCASTERORTARGET, TRUE)
 setCombatParam(combat40, COMBAT_PARAM_EFFECT, 402)
-setCombatFormula(combat40, COMBAT_FORMULA_LEVELMAGIC, -100.0, 0, -150.0, 0)
+setCombatCallback(combat40, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
 local arr40 = { -- LADO \/
     { 0, 0, 0, 0, 0, 0, 0, 0, 0 },

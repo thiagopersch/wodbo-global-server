@@ -113,8 +113,23 @@ function doExpandingWaveCombat(cid, config)
             -- Checar se a posição do alvo não está bloqueada E se há linha de visão livre
             -- hasLineOfSight já rejeita PZ e blockprojectile (paredes, árvores, etc.)
             if not isBlocked(targetPos) and hasLineOfSight(center, targetPos) then
-              local min = -(config.minDmg * radius)
-              local max = -(config.maxDmg * radius)
+              local min, max
+              if isPlayer(cid) and config.spellMaxLevel then
+                -- Same level/magic level/vocation/skill-upgrade formula used by target spells
+                -- (getCombatFormulaValues, data/lib/formula_values_spells.lua), so wave and
+                -- target spells scale the same way. Radius keeps the existing behaviour of
+                -- hitting harder the farther the ring has expanded.
+                local level = getPlayerLevel(cid)
+                local maglevel = getPlayerMagLevel(cid)
+                min, max = getCombatFormulaValues(cid, level, maglevel, config.baseMin or 1,
+                  config.baseMax or 2, config.levelDiv or 10, config.magMultMin or 1,
+                  config.magMultMax or 1, config.spellMaxLevel)
+                min = min * radius
+                max = max * radius
+              else
+                min = -(config.minDmg * radius)
+                max = -(config.maxDmg * radius)
+              end
               doTargetCombatHealth(cid, creature, config.type, min, max, getEffect(radius))
             end
           end
