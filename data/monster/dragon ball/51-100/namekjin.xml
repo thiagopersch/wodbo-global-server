@@ -1,8 +1,23 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Namekjin" bestiary="monster" nameDescription="an namekjin" race="blood"
-	experience="15000" speed="400" manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<monster
+  name="Namekjin"
+  bestiary="monster"
+  nameDescription="an namekjin"
+  race="blood"
+  experience="15000"
+  speed="400"
+  manacost="0"
+>
 	<health now="20000" max="20000" />
-	<look type="34" head="1" body="1" legs="1" feet="1" addons="0" corpse="12792" />
+	<look
+    type="2013"
+    head="1"
+    body="1"
+    legs="1"
+    feet="1"
+    addons="0"
+    corpse="12792"
+  />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
 	<flags>
@@ -21,7 +36,13 @@
 	<attacks>
 		<attack name="melee" interval="1000" min="-200" max="-400" />
 		<attack name="Makosen" interval="2000" chance="25" min="-230" max="-700" />
-		<attack name="Namekjin Wave" interval="5000" chance="10" min="-300" max="-600" />
+		<attack
+      name="Namekjin Wave"
+      interval="5000"
+      chance="10"
+      min="-300"
+      max="-600"
+    />
 	</attacks>
 	<defenses armor="0" defense="0">
 	</defenses>

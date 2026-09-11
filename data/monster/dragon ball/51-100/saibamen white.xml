@@ -1,10 +1,23 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Saibamen White" bestiary="monster" nameDescription="an saibamen white" race="blood"
-	experience="5000"
-	speed="400"
-	manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<monster
+  name="Saibamen White"
+  bestiary="monster"
+  nameDescription="an saibamen white"
+  race="blood"
+  experience="5000"
+  speed="400"
+  manacost="0"
+>
 	<health now="10000" max="10000" />
-	<look type="2454" head="1" body="1" legs="1" feet="1" addons="0" corpse="49322" />
+	<look
+    type="2459"
+    head="1"
+    body="1"
+    legs="1"
+    feet="1"
+    addons="0"
+    corpse="49322"
+  />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
 	<flags>

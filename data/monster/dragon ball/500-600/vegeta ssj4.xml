@@ -1,9 +1,23 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Vegeta SSJ4" bestiary="monster" nameDescription="an Vegeta SSJ4" race="blood"
-	experience="550000"
-	speed="600" manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<monster
+  name="Vegeta SSJ4"
+  bestiary="monster"
+  nameDescription="an Vegeta SSJ4"
+  race="blood"
+  experience="550000"
+  speed="600"
+  manacost="0"
+>
 	<health now="750000" max="750000" />
-	<look type="2128" head="1" body="1" legs="1" feet="1" addons="0" corpse="49248" />
+	<look
+    type="2131"
+    head="1"
+    body="1"
+    legs="1"
+    feet="1"
+    addons="0"
+    corpse="49248"
+  />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
 	<flags>
@@ -21,8 +35,20 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="-1" max="-500" />
-		<attack name="Big Bang Attack" interval="5000" chance="25" min="-1" max="-900" />
-		<attack name="Burning Attack" interval="8000" chance="25" min="-1" max="-1200" />
+		<attack
+      name="Big Bang Attack"
+      interval="5000"
+      chance="25"
+      min="-1"
+      max="-900"
+    />
+		<attack
+      name="Burning Attack"
+      interval="8000"
+      chance="25"
+      min="-1"
+      max="-1200"
+    />
 		<attack name="explosion" interval="10000" chance="10" min="-1" max="-3000" />
 	</attacks>
 	<immunities>

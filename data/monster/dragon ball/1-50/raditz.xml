@@ -1,8 +1,23 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<monster name="Raditz" bestiary="monster" nameDescription="an Raditz" race="blood"
-	experience="15000" speed="300" manacost="0">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<monster
+  name="Raditz"
+  bestiary="monster"
+  nameDescription="an Raditz"
+  race="blood"
+  experience="15000"
+  speed="300"
+  manacost="0"
+>
 	<health now="10000" max="10000" />
-	<look type="267" head="1" body="1" legs="1" feet="1" addons="0" corpse="12798" />
+	<look
+    type="2037"
+    head="1"
+    body="1"
+    legs="1"
+    feet="1"
+    addons="0"
+    corpse="12798"
+  />
 	<targetchange interval="5000" chance="8" />
 	<strategy attack="100" defense="0" />
 	<flags>
@@ -20,7 +35,13 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="1000" min="-100" max="-200" />
-		<attack name="energy shyotu" interval="3000" chance="15" min="-500" max="-1500" />
+		<attack
+      name="energy shyotu"
+      interval="3000"
+      chance="15"
+      min="-500"
+      max="-1500"
+    />
 	</attacks>
 	<immunities>
 		<immunity physical="0" />

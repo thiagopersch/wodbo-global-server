@@ -1,57 +1,491 @@
-[5/8/2026 23:40:59] > Usando SHA1 criptografia
-[5/8/2026 23:40:59] >> Carregando RSA key
-[5/8/2026 23:40:59] >> Iniciando conexao SQL
-[5/8/2026 23:40:59] >> Executando Gerenciador de Banco de Dados
-[5/8/2026 23:41:3] > Optimizing table: items... [success]
-[5/8/2026 23:41:4] > Optimizing table: monsters... [success]
-[5/8/2026 23:41:4] >> Carregando items (OTB)
-[5/8/2026 23:41:4] >> Carregando items (XML)
-[5/8/2026 23:41:5] >> Carregando Grupos
-[5/8/2026 23:41:5] >> Carregando Vocacoes
-[5/8/2026 23:41:5] >> Carregando Outfits
-[5/8/2026 23:41:5] >> Carregando Wing Types
-[5/8/2026 23:41:5] >> Carregando Aura Types
-[5/8/2026 23:41:5] >> Carregando Shader Types
-[5/8/2026 23:41:5] >> Carregando Bar Types
-[5/8/2026 23:41:5] >> Carregando Canal de Chat
-[5/8/2026 23:41:5] >> Carregando Sistema
-[5/8/2026 23:41:5] >> Carregando Mods...
-[5/8/2026 23:41:5] > Loading AutoLoot.xml... done.
-[5/8/2026 23:41:5] > Loading Automatic Raids.xml... done.
-[5/8/2026 23:41:5] > Loading highscorebook.xml... done.
-[5/8/2026 23:41:5] > Loading task_system.xml... done.
-[5/8/2026 23:41:5] > 4 mods were loaded.
-[5/8/2026 23:41:5] >> Carregando EXP Stages
-[5/8/2026 23:41:5] >> Carregando Monstros
-[5/8/2026 23:41:5] >> Carregando Mapa e Spawns...
-[5/8/2026 23:41:5] > Tamanho do Mapa: 64000x64000.
-[5/8/2026 23:41:5] > Descricao do Mapa: 
-[5/8/2026 23:41:5] "Saved with OTAcademy Map Editor 4.1.1"
-[5/8/2026 23:41:5] "No map description available."
-[5/8/2026 23:41:7] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
-[5/8/2026 23:41:7] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
-[5/8/2026 23:41:7] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
-[5/8/2026 23:41:7] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
-[5/8/2026 23:41:9] > Mapa carregado em: 3.461 segundos.
-[5/8/2026 23:41:9] > Data carregada em: 0.224 segundos.
-[5/8/2026 23:41:9] > Houses carregada em: 0.28 segundos.
-[5/8/2026 23:41:9] > Content unserialization time: 0.003 seconds.
-[5/8/2026 23:41:9] > Carregando Tipo de PVP... Open PvP
-[5/8/2026 23:41:9] > Inicializando estado do jogo e registrando servicos...
-[5/8/2026 23:41:9] > IP do Servidor: 127.0.0.1
-[5/8/2026 23:41:9] > IP local do Servidor: 172.29.80.1	172.20.192.1	192.168.1.35	
-[5/8/2026 23:41:9] > Portas do Servidor: 7171	7172	
-[5/8/2026 23:41:9] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[5/8/2026 23:41:19] >> WodBleach servidor Online!
+[11/9/2026 15:38:43] > Usando SHA1 criptografia
+[11/9/2026 15:38:43] >> Carregando RSA key
+[11/9/2026 15:38:43] >> Iniciando conexao SQL
+[11/9/2026 15:38:43] >> Executando Gerenciador de Banco de Dados
+[11/9/2026 15:38:47] > Optimizing table: audit_logs... [success]
+[11/9/2026 15:38:53] > Optimizing table: items... [success]
+[11/9/2026 15:38:55] > Optimizing table: looktypes... [success]
+[11/9/2026 15:38:55] > Optimizing table: monsters... [success]
+[11/9/2026 15:38:55] >> Carregando items (OTB)
+[11/9/2026 15:38:56] >> Carregando items (XML)
+[11/9/2026 15:38:56] >> Carregando Grupos
+[11/9/2026 15:38:56] >> Carregando Vocacoes
+[11/9/2026 15:38:56] >> Carregando Outfits
+[11/9/2026 15:38:56] >> Carregando Wing Types
+[11/9/2026 15:38:56] >> Carregando Aura Types
+[11/9/2026 15:38:56] >> Carregando Shader Types
+[11/9/2026 15:38:56] >> Carregando Bar Types
+[11/9/2026 15:38:56] >> Carregando Canal de Chat
+[11/9/2026 15:38:56] >> Carregando Sistema
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
 
-[5/8/2026 23:41:23] Kira VS L has logged in.
-[5/8/2026 23:43:12] Kira VS L has logged out.
-[5/8/2026 23:43:14] ADMIN has logged in.
-[5/8/2026 23:57:9] > Salvando servidor...
-[5/8/2026 23:57:9] > SAVE: Completo em 0.524 segundos usando binary casa storage.
-[5/8/2026 23:57:12] mysql_real_query(): SELECT `item_id`, `name` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[5/8/2026 23:57:12] mysql_real_query(): SELECT `id` FROM `battle_pass_seasons` WHERE `month` = 8 AND `year` = 2026 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[5/8/2026 23:57:12] mysql_real_query(): SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` ORDER BY `year` DESC, `month` DESC LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[5/8/2026 23:57:12] mysql_real_query(): UPDATE `battle_pass_seasons` SET `is_active` = 0 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[5/8/2026 23:57:12] mysql_real_query(): INSERT INTO `battle_pass_seasons` (`month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost`, `is_active`, `created_at`, `updated_at`) VALUES (8, 2026, 100, 1000, 0, 0, 0, 0, 1, NOW(), NOW()) - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[5/8/2026 23:57:12] mysql_real_query(): SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` WHERE `is_active` = 1 LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Final Flash.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Super Eraser Blow.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Kamehameha.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/cannons/Hyper Hell Cannon.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/saiyajin/Genki Dama.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/saiyajin/Genki Dama.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:38:57] Warning: [CallBack::loadCallBack] Event onGetFormulaValues not found.
+
+[11/9/2026 15:38:57] [Error - Spell Interface] 
+[11/9/2026 15:38:57] data/spells/scripts/saiyajin/Genki Dama.lua
+[11/9/2026 15:38:57] Description: 
+[11/9/2026 15:38:57] (luaSetCombatCallBack) Cannot load callback
+[11/9/2026 15:39:0] >> Carregando Mods...
+[11/9/2026 15:39:0] > Loading AutoLoot.xml... done.
+[11/9/2026 15:39:0] > Loading Automatic Raids.xml... done.
+[11/9/2026 15:39:0] > Loading highscorebook.xml... done.
+[11/9/2026 15:39:0] > Loading task_system.xml... done.
+[11/9/2026 15:39:0] > 4 mods were loaded.
+[11/9/2026 15:39:0] >> Carregando EXP Stages
+[11/9/2026 15:39:0] >> Carregando Monstros
+[11/9/2026 15:39:1] >> Carregando Mapa e Spawns...
+[11/9/2026 15:39:2] > Tamanho do Mapa: 64000x64000.
+[11/9/2026 15:39:2] > Descricao do Mapa: 
+[11/9/2026 15:39:2] "Saved with OTAcademy Map Editor 4.1.1"
+[11/9/2026 15:39:2] "No map description available."
+[11/9/2026 15:39:3] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
+[11/9/2026 15:39:3] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
+[11/9/2026 15:39:3] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
+[11/9/2026 15:39:3] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
+[11/9/2026 15:39:5] > Mapa carregado em: 3.17 segundos.
+[11/9/2026 15:39:5] > Data carregada em: 0.412 segundos.
+[11/9/2026 15:39:5] > Houses carregada em: 0.264 segundos.
+[11/9/2026 15:39:5] > Content unserialization time: 0.005 seconds.
+[11/9/2026 15:39:5] > Carregando Tipo de PVP... Open PvP
+[11/9/2026 15:39:5] > Inicializando estado do jogo e registrando servicos...
+[11/9/2026 15:39:5] > IP do Servidor: 127.0.0.1
+[11/9/2026 15:39:5] > IP local do Servidor: 172.29.80.1	172.24.240.1	192.168.1.35	
+[11/9/2026 15:39:5] > Portas do Servidor: 7171	7172	
+[11/9/2026 15:39:5] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[11/9/2026 15:39:15] >> WodBleach servidor Online!
+
+[11/9/2026 15:39:28] ADMIN has logged in.
+[11/9/2026 15:41:41] ADMIN has logged out.
+[11/9/2026 15:41:43] ADMIN has logged in.
+[11/9/2026 15:41:58] ADMIN has logged out.
+[11/9/2026 15:42:0] ADMIN has logged in.
