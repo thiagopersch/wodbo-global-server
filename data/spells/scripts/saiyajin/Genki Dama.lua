@@ -70,13 +70,14 @@ local arr4 = {
 local area4 = createCombatArea(arr4)
 setCombatArea(combat4, area4)
 
-function onGetFormulaValues(cid, level, maglevel)
+local function genkiDamaFormula(cid, level, maglevel)
 	return getCombatFormulaValues(cid, level, maglevel, 1, 2, 10, 1, 1, 120)
 end
 
 local combat5 = createCombatObject()
 setCombatParam(combat5, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatCallback(combat5, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
+function onGetFormulaValues1(cid, level, maglevel) return genkiDamaFormula(cid, level, maglevel) end
+setCombatCallback(combat5, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues1")
 
 local arr5 = {
 	{ 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -94,7 +95,8 @@ setCombatArea(combat5, area5)
 
 local combat6 = createCombatObject()
 setCombatParam(combat6, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatCallback(combat6, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
+function onGetFormulaValues2(cid, level, maglevel) return genkiDamaFormula(cid, level, maglevel) end
+setCombatCallback(combat6, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues2")
 
 local arr6 = {
 	{ 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -112,7 +114,8 @@ setCombatArea(combat6, area6)
 
 local combat7 = createCombatObject()
 setCombatParam(combat7, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatCallback(combat7, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
+function onGetFormulaValues3(cid, level, maglevel) return genkiDamaFormula(cid, level, maglevel) end
+setCombatCallback(combat7, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues3")
 
 local arr7 = {
 	{ 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -130,7 +133,8 @@ setCombatArea(combat7, area7)
 
 local combat8 = createCombatObject()
 setCombatParam(combat8, COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-setCombatCallback(combat8, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
+function onGetFormulaValues4(cid, level, maglevel) return genkiDamaFormula(cid, level, maglevel) end
+setCombatCallback(combat8, CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues4")
 
 local arr8 = {
 	{ 0, 0, 0, 0, 0, 0, 0, 0 },
