@@ -100,14 +100,11 @@ function onStatsChange(cid, attacker, type, combat, value)
                         modified = true
                     end
                 end
-            elseif combat ~= COMBAT_HEALING then
-                -- Magic Damage bonus (offensive spells: energy/fire/earth/ice/holy/death/lifedrain)
-                local magicBonus = SkillUpgradesLib.getSkillValue(attacker, "magic_damage")
-                if magicBonus > 0 then
-                    damage = math.ceil(damage * (1 + (magicBonus / 100)))
-                    modified = true
-                end
             end
+            -- Note: "magic_damage" is NOT reapplied here — getPlayerCombatFormulaValues()
+            -- in formula_values_spells.lua already folds it into damageMult for every
+            -- player-cast spell (physical or elemental), so applying it again here would
+            -- double it for non-physical spells.
 
             -- Vocation Rank System: flat +2% damage per star, stacks with the bonuses above
             local rankBonus = getPlayerVocationRankDamageBonus and getPlayerVocationRankDamageBonus(attacker) or 0

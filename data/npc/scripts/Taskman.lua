@@ -6,6 +6,6 @@ function onCreatureDisappear(cid) npcHandler:onCreatureDisappear(cid) end
 function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) end
 function onThink() npcHandler:onThink() end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|! Want to check the {tasks}? Need to {deliver} a completed task? Or want to see your {rank}? Maybe a {daily} mission?")
+npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|!, Do you want to do a {task}, {daily} ou {deliver}? In case you have already completed a task and give it to me, you will receive prizes in return!")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell!")
 npcHandler:addModule(FocusModule:new())
