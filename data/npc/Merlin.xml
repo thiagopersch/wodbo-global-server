@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Merlin" script="default.lua" walkinterval="2000" floorchange="0">
    <health now="100" max="100" />
-   <look type="0" head="0" body="0" legs="0" feet="0" addons="3" />
+   <look type="138" head="114" body="108" legs="107" feet="128" addons="3" />
    <parameters>
       <parameter key="module_shop" value="1" />
       <parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy boots. Say {trade}." />

@@ -103,8 +103,7 @@
   <monster name="Kyouraku" file="bleach/1-50/kyouraku.xml" />
   <monster name="Larva" file="dragon ball/1-50/larva.xml" />
   <monster name="Lavahole" file="dragon ball/1-50/lavahole.xml" />
-  <monster name="Leader of the guardian of the forest of menos"
-    file="bleach/101-150/leader of the guardian of the forest of menos.xml" />
+  <monster name="Leader of the guardian of the forest of menos" file="bleach/101-150/leader of the guardian of the forest of menos.xml" />
   <monster name="Lion" file="dragon ball/1-50/lion.xml" />
   <monster name="Lobisomen" file="dragon ball/101-150/lobisomen.xml" />
   <monster name="Majin buu" file="dragon ball/201-250/majin buu.xml" />
