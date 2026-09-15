@@ -4,8 +4,6 @@
    <look type="2666" head="0" body="0" legs="0" feet="0" addons="3" />
    <parameters>
       <parameter key="module_shop" value="1" />
-      <parameter key="message_greet" value="Hey |PLAYERNAME|! I sell all kind of foods, say {trade}." />
-      <parameter key="message_farewell" value="Bye bye!! Oinc, oinc" />
       <parameter key="shop_buyable" value="
                meat,2666,10000;
                dragon ham,2672,20000;
@@ -79,5 +77,7 @@
                beetroot,8845,10000;
                lump of chocolate dough,8846,10000;
                chocolate cake,8847,10000" />
+      <parameter key="message_greet" value="Hey |PLAYERNAME|! I sell all kind of foods, say {trade}." />
+      <parameter key="message_farewell" value="Bye bye!! Oinc, oinc" />
    </parameters>
 </npc>

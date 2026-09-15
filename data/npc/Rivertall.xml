@@ -4,7 +4,6 @@
    <look type="1575" head="114" body="96" legs="125" feet="0" addons="3" />
    <parameters>
       <parameter key="module_shop" value="1" />
-      <parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy gloves. Say {trade}." />
       <parameter key="shop_sellable" value="
                shinigami glove,7383,50000;
                human glove,7384,10000;
@@ -33,5 +32,6 @@
                kinght glove,8930,130000;
                shenlong glove,13699,150000;
                golden fist,8931,130000" />
+      <parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy gloves. Say {trade}." />
    </parameters>
 </npc>

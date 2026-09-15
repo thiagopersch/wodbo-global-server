@@ -4,7 +4,6 @@
    <look type="130" head="57" body="130" legs="105" feet="116" addons="3" />
    <parameters>
       <parameter key="module_shop" value="1" />
-      <parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy wands. Say {trade}." />
       <parameter key="shop_sellable" value="
                terra rod,2181,100000;
                snakebite rod,2182,100000;
@@ -21,5 +20,6 @@
                soulmaimer,14249,300000;
                soultainter,14252,300000;
                soulhexer,14253,300000" />
+      <parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy wands. Say {trade}." />
    </parameters>
 </npc>

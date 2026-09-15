@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<npc name="Travel" script="default.lua" walkinterval="2000" floorchange="0">
+<npc name="Travel" script="travel.lua" walkinterval="2000" floorchange="0">
    <health now="100" max="100" />
-   <look type="0" head="0" body="0" legs="0" feet="0" addons="3" />
+   <look type="666" head="0" body="114" legs="114" feet="113" addons="3" />
    <parameters>
-      <parameter key="module_shop" value="1" />
-      <parameter key="message_greet" value="Hello |PLAYERNAME|, where do you want to travel? {Central City}, {Karakura}." />
+      <parameter key="message_greet" value="Hello |PLAYERNAME|, where do you want to travel? {Main City}, {Karakura}." />
+      <parameter key="message_farewell" value="Get out of here, you damned player!!" />
+      <parameter key="message_walkaway" value="Are you afraid of me, you bastard?" />
+      <parameter key="message_idletimeout" value="Why are you stuttering, you son of a bitch?" />
    </parameters>
 </npc>
