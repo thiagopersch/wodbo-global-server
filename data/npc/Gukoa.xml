@@ -7,15 +7,11 @@
       <parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy legs. Say {trade}." />
       <parameter key="message_farewell" value="Bye bye!!" />
       <parameter key="shop_sellable" value="
-               ornamented legs,8889,25000;
-               golden legs,8890,25000;
-               black janemba legs,8891,250000;
-               super goku legs,9776,100000;
-               legendary legs,9809,100000;
-               hitto legs,9810,100000;
+               golden legs,49606,25000;
+               black janemba legs,49744,250000;
+               hitto legs,49760,100000;
                ice barbarian legs,9928,200000;
-               hibiscus legs,8819,150000;
-               zamasu legs,8821,150000;
+               zamasu legs,49729,150000;
                pluff legs,2468,100000;
                mystic legs,2469,50000;
                majin legs,2470,40000;
@@ -38,18 +34,63 @@
                ssj5 legs,7730,100000;
                strange legs,8923,200000;
                bills legs,9777,100000;
-               golden freeza legs,9811,100000;
-               freeza legs,8892,100000;
-               cabba legs,9808,100000;
-               hell shenlong legs,13681,200000;
-               shenlong legs,13694,200000;
-               black shenlong legs,13682,200000;
-               soldier satanic legs,13690,250000;
-               enchanted zangetsu legs,13720,250000;
-               supreme infernal's shenlong legs,13726,250000;
-               fullbring legs,13730,220000;
-               angel legs,13734,220000;
-               soulhancks,14256,270000;
-               soulstrider,14257,270000" />
+               golden freeza legs,49761,100000;
+               freeza legs,49745,100000;
+               cabba legs,49758,100000;
+               shenlong legs,49791,200000;
+               fullbring legs,49827,220000;
+               angel legs,49831,220000;
+               soulstrider,36749,270000;
+               lederhosen,34753,320000;
+               trousers of the ancients,10300,740000;
+               chocolatey dragon scale legs,27058,840000;
+               tatty dragon scale legs,27060,1050000;
+               wereboar loincloth,24743,1570000;
+               green demon legs,40756,2720000;
+               zaoan legs,11304,3030000;
+               exotic legs,38172,3130000;
+               gill legs,18400,3240000;
+               ornate legs,15412,3340000;
+               alloy legs,23539,3440000;
+               icy culottes,21700,3550000;
+               grasshopper legs,15490,3650000;
+               prismatic legs,18405,3760000;
+               bast legs,38173,3860000;
+               soulful legs,35274,4070000;
+               eldritch greaves,39323,4170000;
+               depth ocrea,15409,4280000;
+               dawnfire pantaloons,44197,4380000;
+               gnome legs,30305,4480000;
+               midnight sarong,44198,4590000;
+               fabulous legs,35273,4690000;
+               soulshanks,36748,4800000;
+               falcon greaves,31376,5010000;
+               unknown legs,49461,5110000;
+               experial legs,49672,5420000;
+               vegeta legs,49607,5530000;
+               xicor legs,49675,6150000;
+               android 17 legs,49641,6250000;
+               imperfect-form freeza legs,49866,6360000;
+               ice legs,49605,6460000;
+               imperfect-form cell legs,49869,6570000;
+               hunter legs,49456,6670000;
+               sanguine legs,48931,6770000;
+               sanguine greaves,48936,6880000;
+               indie lance legs,45528,6980000;
+               indie knight legs,45586,7090000;
+               indie knight armor,45588,7190000;
+               indie knight thin legs,45587,7290000;
+               corporation legs,49850,7400000;
+               enchanted ancient hunter legs,49742,7710000;
+               goku training legs,49756,8440000;
+               elite patroler legs,49752,8540000;
+               ultimate demonic shenlong legs,49823,8960000;
+               zaiko legs,49451,9060000;
+               energy legs,49892,9170000;
+               goku golden legs,49743,9270000;
+               ultimate shenlong legs,49778,9480000;
+               ultimate black shenlong legs,49779,9580000;
+               demonic mage legs,49787,9690000;
+               ultimate fullbring legs,49817,10000000" />
    </parameters>
 </npc>

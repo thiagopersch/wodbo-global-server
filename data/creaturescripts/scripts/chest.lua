@@ -10,19 +10,37 @@ if not json then json = dofile("data/lib/json.lua") end
 
 local CHEST_OPCODE = 252
 
+-- Chests carregam uma janela de disponibilidade (start_month/start_year -> end_month/end_year,
+-- granularidade de mês) além do `published`; um chest fora da janela não deve ser enviado ao
+-- cliente mesmo que `published = 1`.
+local function isChestActive(startMonth, startYear, endMonth, endYear)
+    local date = os.date("*t")
+    local currentValue = date.year * 12 + (date.month - 1)
+    local startValue = startYear * 12 + (startMonth - 1)
+    local endValue = endYear * 12 + (endMonth - 1)
+    return currentValue >= startValue and currentValue <= endValue
+end
+
 local function loadPublishedChests()
     local chests = {}
-    local res = db.getResult("SELECT `id`, `name`, `key_item_id`, `rewards` FROM `chests` WHERE `published` = 1 ORDER BY `id` ASC")
+    local res = db.getResult("SELECT `id`, `name`, `key_item_id`, `rewards`, `start_month`, `start_year`, `end_month`, `end_year` FROM `chests` WHERE `published` = 1 ORDER BY `id` ASC")
     if res == -1 then return chests end
 
     repeat
-        local okRewards, rewards = pcall(json.decode, result.getDataString(res, "rewards") or "[]")
-        table.insert(chests, {
-            id = result.getDataInt(res, "id"),
-            name = result.getDataString(res, "name"),
-            keyItemId = result.getDataInt(res, "key_item_id"),
-            rewards = okRewards and rewards or {},
-        })
+        local startMonth = result.getDataInt(res, "start_month")
+        local startYear = result.getDataInt(res, "start_year")
+        local endMonth = result.getDataInt(res, "end_month")
+        local endYear = result.getDataInt(res, "end_year")
+
+        if isChestActive(startMonth, startYear, endMonth, endYear) then
+            local okRewards, rewards = pcall(json.decode, result.getDataString(res, "rewards") or "[]")
+            table.insert(chests, {
+                id = result.getDataInt(res, "id"),
+                name = result.getDataString(res, "name"),
+                keyItemId = result.getDataInt(res, "key_item_id"),
+                rewards = okRewards and rewards or {},
+            })
+        end
     until not result.next(res)
     result.free(res)
 
