@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Zoruta" script="default.lua" walkinterval="2000" floorchange="0">
    <health now="100" max="100" />
-   <look type="0" head="0" body="0" legs="0" feet="0" addons="3" />
+   <look type="1202" head="114" body="114" legs="113" feet="132" addons="3" />
    <parameters>
       <parameter key="module_shop" value="1" />
-      <parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy amulets and necklaces. Say {trade}." />
       <parameter key="shop_sellable" value="
                crystal necklace,2125,970000;
                bronze necklace,2126,460000;
@@ -183,6 +182,7 @@
                earth sage stone (rank 6),55791,9550000;
                earth sage stone (rank 7),55792,9770000;
                z-warrior pendant,55903,4070000;
-               medal of honor (soul society),56986,2890000;" />
+               medal of honor (soul society),56986,2890000" />
+      <parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy amulets and necklaces. Say {trade}." />
    </parameters>
 </npc>
