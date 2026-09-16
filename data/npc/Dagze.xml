@@ -4,22 +4,39 @@
    <look type="130" head="57" body="130" legs="105" feet="116" addons="3" />
    <parameters>
       <parameter key="module_shop" value="1" />
+      <parameter key="shop_buyable" value="
+               leaf senzu,49691,1000000;
+               branch senzu,49692,1000000;
+               green senzu,49693,1000000;
+               HP point,49689,100000;
+               MP point,49690,100000;
+               coke bottle,56738,500000;
+               nature health potion,56765,1000000;
+               wrapped blue potion,56766,1000000;
+               mystic elixir,56736,1000000;
+               supreme mana potion,56720,1000000;
+               supreme health potion,56719,1000000" />
       <parameter key="shop_sellable" value="
-               terra rod,2181,100000;
-               snakebite rod,2182,100000;
-               hailstorm rod,2183,100000;
-               crystal wand,2184,110000;
-               wand of dragonbreath,2191,150000;
-               supreme vortex,7958,200000;
-               enchanted staff,2433,210000;
-               ice rod,8910,220000;
-               northwind rod,8911,230000;
-               supreme demonic rod,8921,240000;
-               wand of voodoo,8922,130000;
-               angel wand,13714,250000;
-               soulmaimer,14249,300000;
-               soultainter,14252,300000;
-               soulhexer,14253,300000" />
+               leaf senzu,49691,1000000;
+               branch senzu,49692,1000000;
+               green senzu,49693,1000000;
+               red senzu,49694,1000000;
+               black senzu,49695,1000000;
+               crystal senzu,49696,1000000;
+               yellow senzu,56697,1000000;
+               brown senzu,56744,1000000;
+               blue sky senzu,56745,1000000;
+               supreme yellow senzu,56746,1000000;
+               purple senzu,56817,1000000;
+               senzu of the devil,56818,1000000;
+               HP point,49689,100000;
+               MP point,49690,100000;
+               coke bottle,56738,500000;
+               nature health potion,56765,1000000;
+               wrapped blue potion,56766,1000000;
+               mystic elixir,56736,1000000;
+               supreme mana potion,56720,1000000;
+               supreme health potion,56719,1000000" />
       <parameter key="message_greet" value="Hello, |PLAYERNAME|! I buy wands. Say {trade}." />
    </parameters>
 </npc>
