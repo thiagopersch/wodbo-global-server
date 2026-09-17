@@ -1079,6 +1079,11 @@ if (Modules == nil) then
 		end
 
 		local v = getItemInfo(itemid)
+		if (not v) then
+			print('[Warning - ShopModule:addBuyableItem] Item id ' .. itemid .. ' does not exist in items.otb')
+			return
+		end
+
 		if (SHOPMODULE_MODE ~= SHOPMODULE_MODE_TALK) then
 			local item = {
 				id = itemid,
@@ -1166,6 +1171,11 @@ if (Modules == nil) then
 	--	realName - The real, full name for the item. Will be used as ITEMNAME in MESSAGE_ONBUY and MESSAGE_ONSELL if defined. Default value is nil (getItemNameById will be used)
 	function ShopModule:addSellableItem(names, itemid, cost, realName)
 		local v = getItemInfo(itemid)
+		if (not v) then
+			print('[Warning - ShopModule:addSellableItem] Item id ' .. itemid .. ' does not exist in items.otb')
+			return
+		end
+
 		if (SHOPMODULE_MODE ~= SHOPMODULE_MODE_TALK) then
 			local item = {
 				id = itemid,
@@ -1336,7 +1346,7 @@ if (Modules == nil) then
 			subType = -1
 		end
 
-		if (doPlayerRemoveItem(cid, itemid, amount, subType, ignoreEquipped)) then
+		if (doPlayerRemoveItem(cid, itemid, amount, subType)) then
 			local msg = self.npcHandler:getMessage(MESSAGE_SOLD)
 			doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, self.npcHandler:parseMessage(msg, parseInfo))
 

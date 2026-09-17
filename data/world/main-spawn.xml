@@ -27817,7 +27817,7 @@
 		<monster name="Wolf" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31926" centery="32197" centerz="7" radius="4">
-		<npc name="Taskman" x="0" y="0" z="7" spawntime="60" direction="2" />
+		<npc name="Taskerman" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31945" centery="32197" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
