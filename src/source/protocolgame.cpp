@@ -1289,10 +1289,12 @@ void ProtocolGame::sendMapAwareRange(uint8_t width, uint8_t height)
 
 void ProtocolGame::parseChangeMapAwareRange(NetworkMessage& msg)
 {
-	msg.get<uint8_t>(); // width
-	msg.get<uint8_t>(); // height
+	uint8_t width = msg.get<uint8_t>();
+	uint8_t height = msg.get<uint8_t>();
 	if(player && player->isUsingOtclient()) {
-		sendMapAwareRange(30, 22);
+		uint8_t maxWidth = (Map::maxClientViewportX + 1) * 2;
+		uint8_t maxHeight = (Map::maxClientViewportY + 1) * 2;
+		sendMapAwareRange(width < maxWidth ? width : maxWidth, height < maxHeight ? height : maxHeight);
 	}
 }
 

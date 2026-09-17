@@ -1,55 +1,134 @@
-[17/9/2026 16:24:53] > Usando SHA1 criptografia
-[17/9/2026 16:24:53] >> Carregando RSA key
-[17/9/2026 16:24:53] >> Iniciando conexao SQL
-[17/9/2026 16:24:53] >> Executando Gerenciador de Banco de Dados
-[17/9/2026 16:24:56] > Optimizing table: audit_logs... [success]
-[17/9/2026 16:25:2] > Optimizing table: items... [success]
-[17/9/2026 16:25:4] > Optimizing table: looktypes... [success]
-[17/9/2026 16:25:4] >> Carregando items (OTB)
-[17/9/2026 16:25:4] >> Carregando items (XML)
-[17/9/2026 16:25:4] >> Carregando Grupos
-[17/9/2026 16:25:4] >> Carregando Vocacoes
-[17/9/2026 16:25:4] >> Carregando Outfits
-[17/9/2026 16:25:4] >> Carregando Wing Types
-[17/9/2026 16:25:4] >> Carregando Aura Types
-[17/9/2026 16:25:4] >> Carregando Shader Types
-[17/9/2026 16:25:4] >> Carregando Bar Types
-[17/9/2026 16:25:4] >> Carregando Canal de Chat
-[17/9/2026 16:25:4] >> Carregando Sistema
-[17/9/2026 16:25:5] >> Carregando Mods...
-[17/9/2026 16:25:5] > Loading AutoLoot.xml... done.
-[17/9/2026 16:25:5] > Loading Automatic Raids.xml... done.
-[17/9/2026 16:25:5] > Loading highscorebook.xml... done.
-[17/9/2026 16:25:5] > Loading task_system.xml... done.
-[17/9/2026 16:25:5] > 4 mods were loaded.
-[17/9/2026 16:25:5] >> Carregando EXP Stages
-[17/9/2026 16:25:5] >> Carregando Monstros
-[17/9/2026 16:25:5] >> Carregando Mapa e Spawns...
-[17/9/2026 16:25:5] > Tamanho do Mapa: 64000x64000.
-[17/9/2026 16:25:5] > Descricao do Mapa: 
-[17/9/2026 16:25:5] "Saved with OTAcademy Map Editor 4.1.1"
-[17/9/2026 16:25:5] "No map description available."
-[17/9/2026 16:25:8] > Mapa carregado em: 3.024 segundos.
-
-[17/9/2026 16:25:8] [Error - NpcScript Interface] 
-[17/9/2026 16:25:8] data/npc/scripts/taskerman.lua
-[17/9/2026 16:25:8] Description: 
-[17/9/2026 16:25:8] data/npc/lib/npcsystem/modules.lua:252: attempt to index field 'keywordHandler' (a nil value)
-[17/9/2026 16:25:8] [Warning - NpcEvents::NpcEvents] Cannot load script: data/npc/scripts/taskerman.lua
-
-[17/9/2026 16:25:8] > Data carregada em: 0.745 segundos.
-[17/9/2026 16:25:9] > Houses carregada em: 0.26 segundos.
-[17/9/2026 16:25:9] > Content unserialization time: 0.004 seconds.
-[17/9/2026 16:25:9] > Carregando Tipo de PVP... Open PvP
-[17/9/2026 16:25:9] > Inicializando estado do jogo e registrando servicos...
-[17/9/2026 16:25:9] > IP do Servidor: 127.0.0.1
-[17/9/2026 16:25:9] > IP local do Servidor: 172.29.80.1	172.21.48.1	192.168.1.37	
-[17/9/2026 16:25:9] > Portas do Servidor: 7171	7172	
-[17/9/2026 16:25:9] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[17/9/2026 16:25:19] >> WodBleach servidor Online!
-
-[17/9/2026 16:25:45] ADMIN has logged in.
-[17/9/2026 16:27:0] ADMIN has logged out.
-[17/9/2026 16:27:2] ADMIN has logged in.
-[17/9/2026 16:35:34] ADMIN has logged out.
-[17/9/2026 16:35:35] Kira VS L has logged in.
+[17/9/2026 17:3:55] > Usando SHA1 criptografia
+[17/9/2026 17:3:55] >> Carregando RSA key
+[17/9/2026 17:3:55] >> Iniciando conexao SQL
+[17/9/2026 17:3:55] >> Executando Gerenciador de Banco de Dados
+[17/9/2026 17:4:3] > Optimizing table: audit_logs... [success]
+[17/9/2026 17:4:14] > Optimizing table: items... mysql_real_query(): OPTIMIZE TABLE `items`; - MYSQL ERROR: Lost connection to MySQL server during query (2013)
+[17/9/2026 17:4:14] [failure]
+[17/9/2026 17:4:14] > Optimizing table: looktypes... WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:14] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:14] [failure]
+[17/9/2026 17:4:14] >> Carregando items (OTB)
+[17/9/2026 17:4:14] >> Carregando items (XML)
+[17/9/2026 17:4:15] >> Carregando Grupos
+[17/9/2026 17:4:15] >> Carregando Vocacoes
+[17/9/2026 17:4:15] >> Carregando Outfits
+[17/9/2026 17:4:15] >> Carregando Wing Types
+[17/9/2026 17:4:15] >> Carregando Aura Types
+[17/9/2026 17:4:15] >> Carregando Shader Types
+[17/9/2026 17:4:15] >> Carregando Bar Types
+[17/9/2026 17:4:15] >> Carregando Canal de Chat
+[17/9/2026 17:4:15] >> Carregando Sistema
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:15] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:15] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:17] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:17] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:17] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:17] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:17] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:17] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:17] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:17] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:17] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:17] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:17] >> Carregando Mods...
+[17/9/2026 17:4:17] > Loading AutoLoot.xml... done.
+[17/9/2026 17:4:17] > Loading Automatic Raids.xml... done.
+[17/9/2026 17:4:17] > Loading highscorebook.xml... done.
+[17/9/2026 17:4:17] > Loading task_system.xml...WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:17] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:17] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:17] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:17] WARNING: MYSQL Lost connection, attempting to reconnect...
+[17/9/2026 17:4:17] Failed connection to database - maximum reconnect attempts passed.
+[17/9/2026 17:4:17]  done.
+[17/9/2026 17:4:17] > 4 mods were loaded.
+[17/9/2026 17:4:17] >> Carregando EXP Stages
+[17/9/2026 17:4:17] >> Carregando Monstros
+[17/9/2026 17:4:17] >> Carregando Mapa e Spawns...
+[17/9/2026 17:4:18] > Tamanho do Mapa: 64000x64000.
+[17/9/2026 17:4:18] > Descricao do Mapa: 
+[17/9/2026 17:4:18] "Saved with OTAcademy Map Editor 4.1.1"
+[17/9/2026 17:4:18] "No map description available."
