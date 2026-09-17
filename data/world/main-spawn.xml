@@ -11619,9 +11619,11 @@
 	<spawn centerx="31986" centery="31987" centerz="6" radius="1">
 		<npc name="Zoruta" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
-	<spawn centerx="31995" centery="31987" centerz="6" radius="1" />
-	<spawn centerx="32005" centery="31987" centerz="6" radius="1">
-		<npc name="Gukoa" x="0" y="0" z="6" spawntime="60" direction="2" />
+	<spawn centerx="31995" centery="31987" centerz="6" radius="1">
+		<monster name="Hawk" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32004" centery="31987" centerz="6" radius="1">
+		<npc name="Gukoa" x="1" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32014" centery="31987" centerz="6" radius="1">
 		<npc name="Razo" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -11710,7 +11712,7 @@
 		<npc name="Afonso" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32014" centery="31995" centerz="6" radius="1">
-		<npc name="Gidan" x="0" y="0" z="6" spawntime="60" direction="2" />
+		<npc name="Samanta" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32373" centery="31996" centerz="6" radius="1">
 		<monster name="Freeza" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -11764,10 +11766,10 @@
 		<monster name="Freeza" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31986" centery="32005" centerz="6" radius="1">
-		<npc name="Cakev" x="0" y="0" z="6" spawntime="60" direction="2" />
+		<npc name="Lucius Corvinus" x="1" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32014" centery="32005" centerz="6" radius="1">
-		<npc name="Samanta" x="0" y="0" z="6" spawntime="60" direction="2" />
+		<npc name="Merlin" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32122" centery="32005" centerz="6" radius="1">
 		<monster name="Bardock" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -14387,6 +14389,15 @@
 	<spawn centerx="32337" centery="32201" centerz="6" radius="1">
 		<monster name="Super C18" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31902" centery="32202" centerz="6" radius="1">
+		<npc name="Dobao" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31915" centery="32202" centerz="6" radius="1">
+		<npc name="Afonso" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31929" centery="32202" centerz="6" radius="1">
+		<npc name="Dagze" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="32061" centery="32202" centerz="6" radius="1">
 		<monster name="Dragon" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
@@ -14444,6 +14455,12 @@
 	<spawn centerx="31586" centery="32207" centerz="6" radius="1">
 		<monster name="Dragon Baby" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31908" centery="32207" centerz="6" radius="1">
+		<npc name="Gukoa" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31923" centery="32207" centerz="6" radius="1">
+		<npc name="Gidan" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="32262" centery="32207" centerz="6" radius="1">
 		<monster name="Lobisomen" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
@@ -14467,6 +14484,12 @@
 	</spawn>
 	<spawn centerx="31596" centery="32211" centerz="6" radius="1">
 		<monster name="Dragon Baby" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31901" centery="32211" centerz="6" radius="1">
+		<npc name="Kayfas" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31930" centery="32211" centerz="6" radius="1">
+		<npc name="Lucius Corvinus" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32318" centery="32211" centerz="6" radius="1">
 		<monster name="Majin Buu" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -14503,6 +14526,12 @@
 	</spawn>
 	<spawn centerx="31590" centery="32215" centerz="6" radius="1">
 		<monster name="Dragon Baby" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31908" centery="32215" centerz="6" radius="1">
+		<monster name="Hawk" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31923" centery="32215" centerz="6" radius="1">
+		<npc name="Merlin" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32053" centery="32215" centerz="6" radius="1">
 		<monster name="Dragon" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -14588,6 +14617,12 @@
 	<spawn centerx="32351" centery="32222" centerz="6" radius="1">
 		<monster name="Super C18" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="31901" centery="32223" centerz="6" radius="1">
+		<npc name="Razo" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31908" centery="32223" centerz="6" radius="1">
+		<npc name="Samanta" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="32063" centery="32223" centerz="6" radius="1">
 		<monster name="Dragon" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
@@ -14656,6 +14691,12 @@
 	</spawn>
 	<spawn centerx="31658" centery="32232" centerz="6" radius="1">
 		<monster name="Dragon" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31902" centery="32232" centerz="6" radius="1">
+		<npc name="Rivertall" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31915" centery="32232" centerz="6" radius="1">
+		<npc name="Zoruta" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32072" centery="32232" centerz="6" radius="1">
 		<monster name="Dragon" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -27359,7 +27400,9 @@
 	<spawn centerx="31956" centery="32174" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
-	<spawn centerx="31964" centery="32174" centerz="7" radius="1" />
+	<spawn centerx="31964" centery="32174" centerz="7" radius="1">
+		<npc name="Kayfas" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="31969" centery="32174" centerz="7" radius="1">
 		<monster name="Cat" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -28186,6 +28229,9 @@
 	<spawn centerx="31960" centery="32211" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
+	<spawn centerx="32025" centery="32211" centerz="7" radius="2">
+		<npc name="Gidan" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="32080" centery="32211" centerz="7" radius="1">
 		<monster name="Bandit Black" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
@@ -28771,6 +28817,9 @@
 	</spawn>
 	<spawn centerx="31957" centery="32234" centerz="7" radius="1">
 		<monster name="Dog" x="0" y="0" z="7" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32026" centery="32234" centerz="7" radius="2">
+		<npc name="Zoruta" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32100" centery="32234" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />

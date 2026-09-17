@@ -1,98 +1,55 @@
-[17/9/2026 11:47:50] > Usando SHA1 criptografia
-[17/9/2026 11:47:50] >> Carregando RSA key
-[17/9/2026 11:47:50] >> Iniciando conexao SQL
-[17/9/2026 11:47:50] >> Executando Gerenciador de Banco de Dados
-[17/9/2026 11:47:54] > Optimizing table: audit_logs... [success]
-[17/9/2026 11:47:59] > Optimizing table: items... [success]
-[17/9/2026 11:48:0] > Optimizing table: looktypes... [success]
-[17/9/2026 11:48:0] >> Carregando items (OTB)
-[17/9/2026 11:48:1] >> Carregando items (XML)
-[17/9/2026 11:48:1] >> Carregando Grupos
-[17/9/2026 11:48:1] >> Carregando Vocacoes
-[17/9/2026 11:48:1] >> Carregando Outfits
-[17/9/2026 11:48:1] >> Carregando Wing Types
-[17/9/2026 11:48:1] >> Carregando Aura Types
-[17/9/2026 11:48:1] >> Carregando Shader Types
-[17/9/2026 11:48:1] >> Carregando Bar Types
-[17/9/2026 11:48:1] >> Carregando Canal de Chat
-[17/9/2026 11:48:1] >> Carregando Sistema
-[17/9/2026 11:48:2] >> Carregando Mods...
-[17/9/2026 11:48:2] > Loading AutoLoot.xml... done.
-[17/9/2026 11:48:2] > Loading Automatic Raids.xml... done.
-[17/9/2026 11:48:2] > Loading highscorebook.xml... done.
-[17/9/2026 11:48:2] > Loading task_system.xml... done.
-[17/9/2026 11:48:2] > 4 mods were loaded.
-[17/9/2026 11:48:2] >> Carregando EXP Stages
-[17/9/2026 11:48:2] >> Carregando Monstros
-[17/9/2026 11:48:2] >> Carregando Mapa e Spawns...
-[17/9/2026 11:48:2] > Tamanho do Mapa: 64000x64000.
-[17/9/2026 11:48:2] > Descricao do Mapa: 
-[17/9/2026 11:48:2] "Saved with OTAcademy Map Editor 4.1.1"
-[17/9/2026 11:48:2] "No map description available."
-[17/9/2026 11:48:4] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1725, pos 31776/32295/4
-[17/9/2026 11:48:4] [Warning - IOMap::loadMap] Movable item in house: 270, item type: 1724, pos 31781/32293/4
-[17/9/2026 11:48:5] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1725, pos 31803/32303/4
-[17/9/2026 11:48:5] [Warning - IOMap::loadMap] Movable item in house: 271, item type: 1727, pos 31812/32303/4
-[17/9/2026 11:48:6] > Mapa carregado em: 4.264 segundos.
+[17/9/2026 16:24:53] > Usando SHA1 criptografia
+[17/9/2026 16:24:53] >> Carregando RSA key
+[17/9/2026 16:24:53] >> Iniciando conexao SQL
+[17/9/2026 16:24:53] >> Executando Gerenciador de Banco de Dados
+[17/9/2026 16:24:56] > Optimizing table: audit_logs... [success]
+[17/9/2026 16:25:2] > Optimizing table: items... [success]
+[17/9/2026 16:25:4] > Optimizing table: looktypes... [success]
+[17/9/2026 16:25:4] >> Carregando items (OTB)
+[17/9/2026 16:25:4] >> Carregando items (XML)
+[17/9/2026 16:25:4] >> Carregando Grupos
+[17/9/2026 16:25:4] >> Carregando Vocacoes
+[17/9/2026 16:25:4] >> Carregando Outfits
+[17/9/2026 16:25:4] >> Carregando Wing Types
+[17/9/2026 16:25:4] >> Carregando Aura Types
+[17/9/2026 16:25:4] >> Carregando Shader Types
+[17/9/2026 16:25:4] >> Carregando Bar Types
+[17/9/2026 16:25:4] >> Carregando Canal de Chat
+[17/9/2026 16:25:4] >> Carregando Sistema
+[17/9/2026 16:25:5] >> Carregando Mods...
+[17/9/2026 16:25:5] > Loading AutoLoot.xml... done.
+[17/9/2026 16:25:5] > Loading Automatic Raids.xml... done.
+[17/9/2026 16:25:5] > Loading highscorebook.xml... done.
+[17/9/2026 16:25:5] > Loading task_system.xml... done.
+[17/9/2026 16:25:5] > 4 mods were loaded.
+[17/9/2026 16:25:5] >> Carregando EXP Stages
+[17/9/2026 16:25:5] >> Carregando Monstros
+[17/9/2026 16:25:5] >> Carregando Mapa e Spawns...
+[17/9/2026 16:25:5] > Tamanho do Mapa: 64000x64000.
+[17/9/2026 16:25:5] > Descricao do Mapa: 
+[17/9/2026 16:25:5] "Saved with OTAcademy Map Editor 4.1.1"
+[17/9/2026 16:25:5] "No map description available."
+[17/9/2026 16:25:8] > Mapa carregado em: 3.024 segundos.
 
-[17/9/2026 11:48:7] [Error - NpcScript Interface] 
-[17/9/2026 11:48:7] data/npc/scripts/taskerman.lua
-[17/9/2026 11:48:7] Description: 
-[17/9/2026 11:48:7] data/npc/lib/npcsystem/modules.lua:252: attempt to index field 'keywordHandler' (a nil value)
-[17/9/2026 11:48:7] [Warning - NpcEvents::NpcEvents] Cannot load script: data/npc/scripts/taskerman.lua
+[17/9/2026 16:25:8] [Error - NpcScript Interface] 
+[17/9/2026 16:25:8] data/npc/scripts/taskerman.lua
+[17/9/2026 16:25:8] Description: 
+[17/9/2026 16:25:8] data/npc/lib/npcsystem/modules.lua:252: attempt to index field 'keywordHandler' (a nil value)
+[17/9/2026 16:25:8] [Warning - NpcEvents::NpcEvents] Cannot load script: data/npc/scripts/taskerman.lua
 
-[17/9/2026 11:48:7] > Data carregada em: 0.539 segundos.
-[17/9/2026 11:48:7] > Houses carregada em: 0.314 segundos.
-[17/9/2026 11:48:7] > Content unserialization time: 0.006 seconds.
-[17/9/2026 11:48:7] > Carregando Tipo de PVP... Open PvP
-[17/9/2026 11:48:7] > Inicializando estado do jogo e registrando servicos...
-[17/9/2026 11:48:7] > IP do Servidor: 127.0.0.1
-[17/9/2026 11:48:7] > IP local do Servidor: 172.29.80.1	172.21.48.1	192.168.1.37	
-[17/9/2026 11:48:7] > Portas do Servidor: 7171	7172	
-[17/9/2026 11:48:7] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[17/9/2026 11:48:17] >> WodBleach servidor Online!
+[17/9/2026 16:25:8] > Data carregada em: 0.745 segundos.
+[17/9/2026 16:25:9] > Houses carregada em: 0.26 segundos.
+[17/9/2026 16:25:9] > Content unserialization time: 0.004 seconds.
+[17/9/2026 16:25:9] > Carregando Tipo de PVP... Open PvP
+[17/9/2026 16:25:9] > Inicializando estado do jogo e registrando servicos...
+[17/9/2026 16:25:9] > IP do Servidor: 127.0.0.1
+[17/9/2026 16:25:9] > IP local do Servidor: 172.29.80.1	172.21.48.1	192.168.1.37	
+[17/9/2026 16:25:9] > Portas do Servidor: 7171	7172	
+[17/9/2026 16:25:9] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[17/9/2026 16:25:19] >> WodBleach servidor Online!
 
-[17/9/2026 11:50:36] ADMIN has logged in.
-[17/9/2026 11:55:3] ADMIN has logged out.
-[17/9/2026 11:55:5] ADMIN has logged in.
-
-[17/9/2026 11:55:52] [Error - NpcScript Interface] 
-[17/9/2026 11:55:52] (Unknown script file)
-[17/9/2026 11:55:52] Description: 
-[17/9/2026 11:55:52] (luaDoPlayerRemoveItem) Player not found
-
-[17/9/2026 11:55:55] [Error - NpcScript Interface] 
-[17/9/2026 11:55:55] (Unknown script file)
-[17/9/2026 11:55:55] Description: 
-[17/9/2026 11:55:55] (luaDoPlayerRemoveItem) Player not found
-
-[17/9/2026 11:55:56] [Error - NpcScript Interface] 
-[17/9/2026 11:55:56] (Unknown script file)
-[17/9/2026 11:55:56] Description: 
-[17/9/2026 11:55:56] (luaDoPlayerRemoveItem) Player not found
-
-[17/9/2026 11:55:57] [Error - NpcScript Interface] 
-[17/9/2026 11:55:57] (Unknown script file)
-[17/9/2026 11:55:57] Description: 
-[17/9/2026 11:55:57] (luaDoPlayerRemoveItem) Player not found
-
-[17/9/2026 11:56:1] [Error - NpcScript Interface] 
-[17/9/2026 11:56:1] (Unknown script file)
-[17/9/2026 11:56:1] Description: 
-[17/9/2026 11:56:1] (luaDoPlayerRemoveItem) Player not found
-
-[17/9/2026 11:56:1] [Error - NpcScript Interface] 
-[17/9/2026 11:56:1] (Unknown script file)
-[17/9/2026 11:56:1] Description: 
-[17/9/2026 11:56:1] (luaDoPlayerRemoveItem) Player not found
-
-[17/9/2026 11:56:2] [Error - NpcScript Interface] 
-[17/9/2026 11:56:2] (Unknown script file)
-[17/9/2026 11:56:2] Description: 
-[17/9/2026 11:56:2] (luaDoPlayerRemoveItem) Player not found
-[17/9/2026 12:14:3] mysql_real_query(): SELECT `item_id`, `name` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[17/9/2026 12:14:3] mysql_real_query(): SELECT `id` FROM `battle_pass_seasons` WHERE `month` = 9 AND `year` = 2026 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[17/9/2026 12:14:3] mysql_real_query(): SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` ORDER BY `year` DESC, `month` DESC LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[17/9/2026 12:14:3] mysql_real_query(): UPDATE `battle_pass_seasons` SET `is_active` = 0 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[17/9/2026 12:14:3] mysql_real_query(): INSERT INTO `battle_pass_seasons` (`month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost`, `is_active`, `created_at`, `updated_at`) VALUES (9, 2026, 100, 1000, 0, 0, 0, 0, 1, NOW(), NOW()) - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[17/9/2026 12:14:3] mysql_real_query(): SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` WHERE `is_active` = 1 LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[17/9/2026 16:25:45] ADMIN has logged in.
+[17/9/2026 16:27:0] ADMIN has logged out.
+[17/9/2026 16:27:2] ADMIN has logged in.
+[17/9/2026 16:35:34] ADMIN has logged out.
+[17/9/2026 16:35:35] Kira VS L has logged in.

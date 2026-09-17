@@ -37899,8 +37899,8 @@
         <attribute key="duration" value="30" />
     </item>
     <item id="20002" article="an" name="hourglass" />
-    <item id="20003" article="a" name="filigree statue" />
-    <item id="20004" article="a" name="filigree statue" />
+    <item id="20003" client_id="17723" article="a" name="filigree statue" />
+    <item id="20004" client_id="17724" article="a" name="filigree statue" />
     <item id="20005" article="a" name="sign">
         <attribute key="readable" value="1" />
     </item>
@@ -38145,14 +38145,14 @@
         <attribute key="weight" value="5900" />
         <attribute key="defense" value="28" />
     </item>
-    <item id="20092" article="a" name="ratana">
+    <item id="20092" client_id="17812" article="a" name="ratana">
         <attribute key="weaponType" value="sword" />
         <attribute key="weight" value="3300" />
         <attribute key="defense" value="19" />
         <attribute key="extraDefense" value="1" />
         <attribute key="attack" value="27" />
     </item>
-    <item id="20093" article="a" name="life preserver">
+    <item id="20093" client_id="17813" article="a" name="life preserver">
         <attribute key="weaponType" value="club" />
         <attribute key="weight" value="4600" />
         <attribute key="defense" value="19" />
@@ -91604,8 +91604,8 @@
         <attribute key="defense" value="20" />
         <attribute key="attack" value="45" />
         <attribute key="magicLevelPoints" value="6" />
-        <attribute key="magicLevelPercent" value="5" />
         <attribute key="elementEnergy" value="25" />
+        <attribute key="magicLevelPercent" value="5" />
     </item>
     <item id="55289" client_id="50234" article="a" name="royal guard katana">
         <attribute key="weaponType" value="sword" />
@@ -91737,8 +91737,8 @@
         <attribute key="attack" value="65" />
         <attribute key="maxManaPointsPercent" value="8" />
         <attribute key="magicLevelPoints" value="10" />
-        <attribute key="magicLevelPercent" value="10" />
         <attribute key="elementHoly" value="45" />
+        <attribute key="magicLevelPercent" value="10" />
     </item>
     <item id="55304" client_id="50249" article="a" name="void emperor's trident">
         <attribute key="slotType" value="two-handed" />
@@ -92126,11 +92126,11 @@
         <attribute key="weight" value="42" />
         <attribute key="defense" value="45" />
         <attribute key="attack" value="120" />
-        <attribute key="magicLevelPercent" value="5" />
         <attribute key="skillSword" value="12" />
         <attribute key="elementIce" value="20" />
         <attribute key="elementHoly" value="45" />
         <attribute key="absorbPercentDeath" value="20" />
+        <attribute key="magicLevelPercent" value="5" />
     </item>
     <item id="55347" client_id="50292" article="a" name="void bat scythe">
         <attribute key="slotType" value="two-handed" />
@@ -92631,8 +92631,8 @@
         <attribute key="attack" value="80" />
         <attribute key="maxManaPointsPercent" value="5" />
         <attribute key="magicLevelPoints" value="10" />
-        <attribute key="magicLevelPercent" value="8" />
         <attribute key="elementDeath" value="40" />
+        <attribute key="magicLevelPercent" value="8" />
     </item>
     <item id="55406" client_id="50351" article="an" name="amethyst phantom dagger">
         <attribute key="weaponType" value="sword" />
@@ -93221,9 +93221,9 @@
         <attribute key="defense" value="25" />
         <attribute key="attack" value="105" />
         <attribute key="magicLevelPoints" value="6" />
-        <attribute key="magicLevelPercent" value="5" />
         <attribute key="skillFist" value="8" />
         <attribute key="elementEnergy" value="30" />
+        <attribute key="magicLevelPercent" value="5" />
     </item>
     <item id="55471" client_id="50416" article="a" name="super saiyan aura fist">
         <attribute key="weaponType" value="sword" />
@@ -93713,8 +93713,8 @@
         <attribute key="defense" value="50" />
         <attribute key="attack" value="90" />
         <attribute key="magicLevelPoints" value="9" />
-        <attribute key="magicLevelPercent" value="8" />
         <attribute key="elementHoly" value="40" />
+        <attribute key="magicLevelPercent" value="8" />
     </item>
     <item id="55532" client_id="50477" article="a" name="silver wing greatsword">
         <attribute key="slotType" value="two-handed" />
@@ -94592,9 +94592,9 @@
         <attribute key="description" value="Forged from the magic crystal of humanity's greatest calamity. It burns with draconic rage." />
         <attribute key="weight" value="55" />
         <attribute key="magicLevelPoints" value="8" />
-        <attribute key="magicLevelPercent" value="5" />
         <attribute key="elementDeath" value="15" />
         <attribute key="absorbPercentEnergy" value="10" />
+        <attribute key="magicLevelPercent" value="5" />
     </item>
     <item id="55646" client_id="50591" article="an" name="itachi's akatsuki ring">
         <attribute key="slotType" value="ring" />
@@ -94687,17 +94687,17 @@
         <attribute key="description" value="Awakened through deep sorrow, it unlocks access to heavenly visual jutsu." />
         <attribute key="weight" value="40" />
         <attribute key="hitChance" value="15" />
-        <attribute key="magicLevelPercent" value="3" />
         <attribute key="absorbPercentPhysical" value="5" />
+        <attribute key="magicLevelPercent" value="3" />
     </item>
     <item id="55658" client_id="50603" article="an" name="eternal mangekyou amulet">
         <attribute key="slotType" value="necklace" />
         <attribute key="description" value="A perfect visual prowess that never loses its light, forged by transplanting a sibling's eyes." />
         <attribute key="weight" value="40" />
         <attribute key="hitChance" value="20" />
-        <attribute key="magicLevelPercent" value="5" />
         <attribute key="preventLoss" value="1" />
         <attribute key="absorbPercentPhysical" value="8" />
+        <attribute key="magicLevelPercent" value="5" />
     </item>
     <item id="55659" client_id="50604" article="a" name="kamui dimension amulet">
         <attribute key="slotType" value="necklace" />
@@ -94713,8 +94713,8 @@
         <attribute key="weight" value="45" />
         <attribute key="healthGain" value="50" />
         <attribute key="healthTicks" value="2000" />
-        <attribute key="magicLevelPercent" value="10" />
         <attribute key="absorbPercentAll" value="5" />
+        <attribute key="magicLevelPercent" value="10" />
     </item>
     <item id="55661" client_id="50606" article="a" name="pure byakugan amulet">
         <attribute key="slotType" value="necklace" />
@@ -94729,8 +94729,8 @@
         <attribute key="description" value="A divine eye born from the absolute chakra of the ten-tails." />
         <attribute key="weight" value="50" />
         <attribute key="speed" value="40" />
-        <attribute key="magicLevelPercent" value="12" />
         <attribute key="absorbPercentAll" value="8" />
+        <attribute key="magicLevelPercent" value="12" />
     </item>
     <item id="55663" client_id="50608" article="a" name="sage toad eye amulet">
         <attribute key="slotType" value="necklace" />
@@ -94772,8 +94772,8 @@
         <attribute key="description" value="Emanates the terrifying purple energy of hakai, capable of erasing almost anything." />
         <attribute key="weight" value="50" />
         <attribute key="magicLevelPoints" value="10" />
-        <attribute key="magicLevelPercent" value="8" />
         <attribute key="absorbPercentAll" value="10" />
+        <attribute key="magicLevelPercent" value="8" />
     </item>
     <item id="55668" client_id="50613" article="a" name="potara earrings (orange)">
         <attribute key="slotType" value="necklace" />
@@ -94835,8 +94835,8 @@
         <attribute key="weight" value="20" />
         <attribute key="speed" value="30" />
         <attribute key="maxManaPointsPercent" value="6" />
-        <attribute key="magicLevelPercent" value="2" />
         <attribute key="absorbPercentEnergy" value="2" />
+        <attribute key="magicLevelPercent" value="2" />
     </item>
     <item id="55677" client_id="50622" article="a" name="special grade hunter's ring">
         <attribute key="slotType" value="ring" />
@@ -94844,9 +94844,9 @@
         <attribute key="weight" value="25" />
         <attribute key="speed" value="40" />
         <attribute key="maxManaPointsPercent" value="10" />
-        <attribute key="magicLevelPercent" value="5" />
         <attribute key="absorbPercentEnergy" value="5" />
         <attribute key="suppressIce" value="1" />
+        <attribute key="magicLevelPercent" value="5" />
     </item>
     <item id="55678" client_id="50623" article="a" name="national level hunter's ring">
         <attribute key="slotType" value="ring" />
@@ -94855,8 +94855,8 @@
         <attribute key="speed" value="50" />
         <attribute key="manaShield" value="1" />
         <attribute key="maxManaPointsPercent" value="15" />
-        <attribute key="magicLevelPercent" value="8" />
         <attribute key="absorbPercentEnergy" value="10" />
+        <attribute key="magicLevelPercent" value="8" />
     </item>
     <item id="55679" client_id="50624" article="an" name="unranked shadow ring">
         <attribute key="slotType" value="ring" />
@@ -95088,11 +95088,11 @@
         <attribute key="slotType" value="ring" />
         <attribute key="description" value="A sinister ring forged from the broken horn of the demon king himself." />
         <attribute key="weight" value="60" />
-        <attribute key="magicLevelPercent" value="5" />
         <attribute key="preventLoss" value="1" />
         <attribute key="elementFire" value="8" />
         <attribute key="elementDeath" value="8" />
         <attribute key="absorbPercentAll" value="5" />
+        <attribute key="magicLevelPercent" value="5" />
     </item>
     <item id="55711" client_id="50656" article="a" name="red stone of aja necklace">
         <attribute key="slotType" value="necklace" />
@@ -95114,8 +95114,8 @@
         <attribute key="description" value="Sacred divine earrings worn by supreme kais, possessing terrifying fusion magic." />
         <attribute key="weight" value="40" />
         <attribute key="speed" value="30" />
-        <attribute key="magicLevelPercent" value="8" />
         <attribute key="absorbPercentEnergy" value="10" />
+        <attribute key="magicLevelPercent" value="8" />
     </item>
     <item id="55714" client_id="50659" article="a" name="king of heroes' chain">
         <attribute key="slotType" value="necklace" />
@@ -95319,10 +95319,10 @@
         <attribute key="description" value="Unlocks the ultimate divine form of a Quincy, flooding the user with absolute holy power." />
         <attribute key="weight" value="55" />
         <attribute key="speed" value="40" />
-        <attribute key="magicLevelPercent" value="8" />
         <attribute key="preventLoss" value="1" />
         <attribute key="skillDist" value="10" />
         <attribute key="elementHoly" value="15" />
+        <attribute key="magicLevelPercent" value="8" />
     </item>
     <item id="55740" client_id="50685" article="a" name="shadow infantry skull">
         <attribute key="slotType" value="necklace" />
@@ -95390,17 +95390,17 @@
         <attribute key="description" value="A mythical eye pattern that commands the six paths of pain and planetary gravity." />
         <attribute key="weight" value="50" />
         <attribute key="magicLevelPoints" value="6" />
-        <attribute key="magicLevelPercent" value="10" />
         <attribute key="absorbPercentAll" value="8" />
+        <attribute key="magicLevelPercent" value="10" />
     </item>
     <item id="55749" client_id="50694" article="the" name="six paths magatama">
         <attribute key="slotType" value="necklace" />
         <attribute key="description" value="A divine artifact radiating truth-seeking power, worn only by the sage of six paths." />
         <attribute key="weight" value="45" />
         <attribute key="speed" value="40" />
-        <attribute key="magicLevelPercent" value="15" />
         <attribute key="preventLoss" value="1" />
         <attribute key="absorbPercentAll" value="12" />
+        <attribute key="magicLevelPercent" value="15" />
     </item>
     <item id="55750" client_id="50695" article="a" name="medical ninja cross">
         <attribute key="slotType" value="necklace" />

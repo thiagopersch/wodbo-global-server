@@ -33,7 +33,7 @@ function AutolootCatalog_reload()
 	if res ~= -1 then result.free(res) end
 
 	AUTOLOOT_CATALOG = catalog
-	print("[AutoLoot] Loaded " .. #catalog .. " items from the admin catalog.")
+	-- print("[AutoLoot] Loaded " .. #catalog .. " items from the admin catalog.")
 end
 
 if #AUTOLOOT_CATALOG == 0 then

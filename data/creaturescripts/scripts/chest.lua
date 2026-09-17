@@ -81,6 +81,7 @@ local function sendChestList(cid)
             keyItemId = chest.keyItemId,
             keyClientId = getItemClientId(chest.keyItemId),
             hasKey = getPlayerItemCount(cid, chest.keyItemId) >= 1,
+            keyCount = getPlayerItemCount(cid, chest.keyItemId),
             rewards = rewards,
         })
     end
