@@ -2606,8 +2606,8 @@ void ProtocolGame::sendAddCreature(const Creature* creature, const Position& pos
 	}
 
 	msg->put<char>(0x42);
-	msg->put<char>(30);
-	msg->put<char>(22);
+	msg->put<char>(2 * Map::maxClientViewportX);
+	msg->put<char>(2 * Map::maxClientViewportY);
 
 	AddMapDescription(msg, pos);
 	for(int32_t i = SLOT_FIRST; i < SLOT_LAST; ++i)
