@@ -1146,20 +1146,28 @@ void ProtocolGame::checkCreatureAsKnown(uint32_t id, bool& known, uint32_t& remo
 	{
 		// lets try to remove one from the end of the list
 		Creature* c = NULL;
+		bool foundRemovable = false;
 		for(int32_t n = 0; n < 250; n++)
 		{
 			removedKnown = knownCreatureList.front();
 			if(!(c = g_game.getCreatureByID(removedKnown)) || !canSee(c))
+			{
+				foundRemovable = true;
 				break;
+			}
 
 			// this creature we can't remove, still in sight, so back to the end
 			knownCreatureList.pop_front();
 			knownCreatureList.push_back(removedKnown);
 		}
 
-		// hopefully we found someone to remove :S, we got only 250 tries
-		// if not... lets kick some players with debug errors :)
-		knownCreatureList.pop_front();
+		// only actually remove it if we found one that's truly out of sight - forcing
+		// the removal of a still-visible creature desyncs the client's own known-creature
+		// tracking from what we just told it (wrong wire encoding for that creature next time)
+		if(foundRemovable)
+			knownCreatureList.pop_front();
+		else
+			removedKnown = 0;
 	}
 	else // we can cache without problems :)
 		removedKnown = 0;
@@ -3153,11 +3161,13 @@ void ProtocolGame::reloadCreature(const Creature* creature)
 
 void ProtocolGame::AddMapDescription(NetworkMessage_ptr msg, const Position& pos)
 {
+	uint16_t sizeBefore = msg->size();
 	msg->put<char>(0x64);
 	msg->putPosition(player->getPosition());
 	GetMapDescription(pos.x - Map::maxClientViewportX, pos.y - Map::maxClientViewportY, pos.z, (Map::maxClientViewportX+1)*2, (Map::maxClientViewportY+1)*2, msg);
 
 	// GetMapDescription(pos.x - 8, pos.y - 6, pos.z, 18, 14, msg);
+	std::clog << "[AddMapDescription] wrote " << (msg->size() - sizeBefore) << " bytes (msg total size now " << msg->size() << ")" << std::endl;
 }
 
 void ProtocolGame::AddTextMessage(NetworkMessage_ptr msg, MessageClasses mclass, const std::string& message)

@@ -1,58 +1,58 @@
-[17/9/2026 21:48:15] > Usando SHA1 criptografia
-[17/9/2026 21:48:15] >> Carregando RSA key
-[17/9/2026 21:48:15] >> Iniciando conexao SQL
-[17/9/2026 21:48:15] >> Executando Gerenciador de Banco de Dados
-[17/9/2026 21:48:25] > Optimizing table: audit_logs... [success]
-[17/9/2026 21:48:32] > Optimizing table: items... [success]
-[17/9/2026 21:48:34] > Optimizing table: looktypes... [success]
-[17/9/2026 21:48:34] >> Carregando items (OTB)
-[17/9/2026 21:48:34] >> Carregando items (XML)
-[17/9/2026 21:48:35] >> Carregando Grupos
-[17/9/2026 21:48:35] >> Carregando Vocacoes
-[17/9/2026 21:48:35] >> Carregando Outfits
-[17/9/2026 21:48:35] >> Carregando Wing Types
-[17/9/2026 21:48:35] >> Carregando Aura Types
-[17/9/2026 21:48:35] >> Carregando Shader Types
-[17/9/2026 21:48:35] >> Carregando Bar Types
-[17/9/2026 21:48:35] >> Carregando Canal de Chat
-[17/9/2026 21:48:35] >> Carregando Sistema
-[17/9/2026 21:48:35] >> Carregando Mods...
-[17/9/2026 21:48:35] > Loading AutoLoot.xml... done.
-[17/9/2026 21:48:35] > Loading Automatic Raids.xml... done.
-[17/9/2026 21:48:35] > Loading highscorebook.xml... done.
-[17/9/2026 21:48:35] > Loading task_system.xml... done.
-[17/9/2026 21:48:35] > 4 mods were loaded.
-[17/9/2026 21:48:35] >> Carregando EXP Stages
-[17/9/2026 21:48:35] >> Carregando Monstros
-[17/9/2026 21:48:36] >> Carregando Mapa e Spawns...
-[17/9/2026 21:48:36] > Tamanho do Mapa: 64000x64000.
-[17/9/2026 21:48:36] > Descricao do Mapa: 
-[17/9/2026 21:48:36] "Saved with OTAcademy Map Editor 4.1.1"
-[17/9/2026 21:48:36] "No map description available."
-[17/9/2026 21:48:40] > Mapa carregado em: 4.282 segundos.
+[17/9/2026 22:54:41] > Usando SHA1 criptografia
+[17/9/2026 22:54:41] >> Carregando RSA key
+[17/9/2026 22:54:41] >> Iniciando conexao SQL
+[17/9/2026 22:54:42] >> Executando Gerenciador de Banco de Dados
+[17/9/2026 22:54:48] > Optimizing table: audit_logs... [success]
+[17/9/2026 22:54:56] > Optimizing table: items... [success]
+[17/9/2026 22:54:57] > Optimizing table: looktypes... [success]
+[17/9/2026 22:54:57] >> Carregando items (OTB)
+[17/9/2026 22:54:58] >> Carregando items (XML)
+[17/9/2026 22:54:58] >> Carregando Grupos
+[17/9/2026 22:54:58] >> Carregando Vocacoes
+[17/9/2026 22:54:58] >> Carregando Outfits
+[17/9/2026 22:54:58] >> Carregando Wing Types
+[17/9/2026 22:54:58] >> Carregando Aura Types
+[17/9/2026 22:54:58] >> Carregando Shader Types
+[17/9/2026 22:54:58] >> Carregando Bar Types
+[17/9/2026 22:54:58] >> Carregando Canal de Chat
+[17/9/2026 22:54:58] >> Carregando Sistema
+[17/9/2026 22:54:58] >> Carregando Mods...
+[17/9/2026 22:54:58] > Loading AutoLoot.xml... done.
+[17/9/2026 22:54:58] > Loading Automatic Raids.xml... done.
+[17/9/2026 22:54:58] > Loading highscorebook.xml... done.
+[17/9/2026 22:54:58] > Loading task_system.xml... done.
+[17/9/2026 22:54:58] > 4 mods were loaded.
+[17/9/2026 22:54:58] >> Carregando EXP Stages
+[17/9/2026 22:54:58] >> Carregando Monstros
+[17/9/2026 22:54:58] >> Carregando Mapa e Spawns...
+[17/9/2026 22:54:59] > Tamanho do Mapa: 64000x64000.
+[17/9/2026 22:54:59] > Descricao do Mapa: 
+[17/9/2026 22:54:59] "Saved with OTAcademy Map Editor 4.1.1"
+[17/9/2026 22:54:59] "No map description available."
+[17/9/2026 22:55:1] > Mapa carregado em: 2.917 segundos.
 
-[17/9/2026 21:48:41] [Error - NpcScript Interface] 
-[17/9/2026 21:48:41] data/npc/scripts/taskerman.lua
-[17/9/2026 21:48:41] Description: 
-[17/9/2026 21:48:41] data/npc/lib/npcsystem/modules.lua:252: attempt to index field 'keywordHandler' (a nil value)
-[17/9/2026 21:48:41] [Warning - NpcEvents::NpcEvents] Cannot load script: data/npc/scripts/taskerman.lua
+[17/9/2026 22:55:2] [Error - NpcScript Interface] 
+[17/9/2026 22:55:2] data/npc/scripts/taskerman.lua
+[17/9/2026 22:55:2] Description: 
+[17/9/2026 22:55:2] data/npc/lib/npcsystem/modules.lua:252: attempt to index field 'keywordHandler' (a nil value)
+[17/9/2026 22:55:2] [Warning - NpcEvents::NpcEvents] Cannot load script: data/npc/scripts/taskerman.lua
 
-[17/9/2026 21:48:41] > Data carregada em: 1.131 segundos.
-[17/9/2026 21:48:41] > Houses carregada em: 0.343 segundos.
-[17/9/2026 21:48:41] > Content unserialization time: 0.014 seconds.
-[17/9/2026 21:48:41] > Carregando Tipo de PVP... Open PvP
-[17/9/2026 21:48:41] > Inicializando estado do jogo e registrando servicos...
-[17/9/2026 21:48:42] > IP do Servidor: 127.0.0.1
-[17/9/2026 21:48:42] > IP local do Servidor: 172.29.80.1	172.21.48.1	192.168.1.37	
-[17/9/2026 21:48:42] > Portas do Servidor: 7171	7172	
-[17/9/2026 21:48:42] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[17/9/2026 21:48:52] >> WodBleach servidor Online!
+[17/9/2026 22:55:2] > Data carregada em: 0.76 segundos.
+[17/9/2026 22:55:2] > Houses carregada em: 0.265 segundos.
+[17/9/2026 22:55:2] > Content unserialization time: 0.003 seconds.
+[17/9/2026 22:55:2] > Carregando Tipo de PVP... Open PvP
+[17/9/2026 22:55:2] > Inicializando estado do jogo e registrando servicos...
+[17/9/2026 22:55:2] > IP do Servidor: 127.0.0.1
+[17/9/2026 22:55:2] > IP local do Servidor: 172.29.80.1	172.21.48.1	192.168.1.37	
+[17/9/2026 22:55:2] > Portas do Servidor: 7171	7172	
+[17/9/2026 22:55:2] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[17/9/2026 22:55:12] >> WodBleach servidor Online!
 
-[17/9/2026 22:14:53] ADMIN has logged in.
-[17/9/2026 22:18:6] ADMIN has logged out.
-[17/9/2026 22:21:41] mysql_real_query(): SELECT `item_id`, `name` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[17/9/2026 22:21:41] mysql_real_query(): SELECT `id` FROM `battle_pass_seasons` WHERE `month` = 9 AND `year` = 2026 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[17/9/2026 22:21:41] mysql_real_query(): SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` ORDER BY `year` DESC, `month` DESC LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[17/9/2026 22:21:41] mysql_real_query(): UPDATE `battle_pass_seasons` SET `is_active` = 0 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[17/9/2026 22:21:41] mysql_real_query(): INSERT INTO `battle_pass_seasons` (`month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost`, `is_active`, `created_at`, `updated_at`) VALUES (9, 2026, 100, 1000, 0, 0, 0, 0, 1, NOW(), NOW()) - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[17/9/2026 22:21:41] mysql_real_query(): SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` WHERE `is_active` = 1 LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[17/9/2026 22:55:36] [AddMapDescription] wrote 14443 bytes (msg total size now 14475)
+[17/9/2026 22:55:36] ADMIN has logged in.
+[17/9/2026 22:59:29] mysql_real_query(): SELECT `item_id`, `name` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[17/9/2026 22:59:29] mysql_real_query(): SELECT `id` FROM `battle_pass_seasons` WHERE `month` = 9 AND `year` = 2026 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[17/9/2026 22:59:29] mysql_real_query(): SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` ORDER BY `year` DESC, `month` DESC LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[17/9/2026 22:59:29] mysql_real_query(): UPDATE `battle_pass_seasons` SET `is_active` = 0 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[17/9/2026 22:59:29] mysql_real_query(): INSERT INTO `battle_pass_seasons` (`month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost`, `is_active`, `created_at`, `updated_at`) VALUES (9, 2026, 100, 1000, 0, 0, 0, 0, 1, NOW(), NOW()) - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[17/9/2026 22:59:29] mysql_real_query(): SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` WHERE `is_active` = 1 LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
