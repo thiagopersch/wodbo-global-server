@@ -90,6 +90,9 @@
 
 	<event type="extendedopcode" name="BestiaryOpcode" event="script" value="bestiary.lua" />
 
+	<!-- Teleport checkpoints -->
+	<event type="extendedopcode" name="TeleportCheckpointOpcode" event="script" value="teleport_checkpoint_opcode.lua" />
+
 	<!-- Donate System -->
 	<event type="login" name="DonateBless" event="script" value="donate_bless.lua" />
 	<event type="kill" name="DonateBonusKill" event="script" value="donate_bonus_kill.lua" />

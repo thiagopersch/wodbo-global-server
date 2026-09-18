@@ -291,4 +291,7 @@
 
 	<!-- Wing unlock -->
 	<action fromid="56500" toid="56509" event="script" value="wing_unlock.lua" />
+
+	<!-- Teleport checkpoints -->
+	<action itemid="53225" event="script" value="teleport_checkpoint.lua" />
 </actions>
