@@ -1292,8 +1292,11 @@ void ProtocolGame::parseChangeMapAwareRange(NetworkMessage& msg)
 	uint8_t width = msg.get<uint8_t>();
 	uint8_t height = msg.get<uint8_t>();
 	if(player && player->isUsingOtclient()) {
-		uint8_t maxWidth = (Map::maxClientViewportX + 1) * 2;
-		uint8_t maxHeight = (Map::maxClientViewportY + 1) * 2;
+		// the client converts these wire values asymmetrically (right/bottom get +1 extra),
+		// so the real rendered range ends up 2 tiles larger than what's sent here -
+		// the cap must be 2*maxClientViewportX/Y, not (maxClientViewportX/Y + 1) * 2
+		uint8_t maxWidth = 2 * Map::maxClientViewportX;
+		uint8_t maxHeight = 2 * Map::maxClientViewportY;
 		sendMapAwareRange(width < maxWidth ? width : maxWidth, height < maxHeight ? height : maxHeight);
 	}
 }
