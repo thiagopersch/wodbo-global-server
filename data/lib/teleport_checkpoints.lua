@@ -21,7 +21,7 @@ TELEPORT_CHECKPOINTS = {
     {
         id = 2,
         name = "Mansions",
-        position = {x = 31985, y = 32295, z = 7},
+        position = {x = 31985, y = 32296, z = 7},
         costs = {
             { itemId = 2160, count = 250 },
         },
@@ -29,7 +29,7 @@ TELEPORT_CHECKPOINTS = {
     {
         id = 3,
         name = "Travel North Main City",
-        position = {x = 31947, y = 32146, z = 7},
+        position = {x = 31947, y = 32147, z = 7},
         costs = {
             { itemId = 2160, count = 250 },
         },
@@ -37,7 +37,7 @@ TELEPORT_CHECKPOINTS = {
     {
         id = 4,
         name = "Trainers Main City",
-        position = {x = 31783, y = 32212, z = 7},
+        position = {x = 31783, y = 32213, z = 7},
         costs = {
             { itemId = 2160, count = 250 },
         },
@@ -45,7 +45,7 @@ TELEPORT_CHECKPOINTS = {
     {
         id = 5,
         name = "Kitnets Main City",
-        position = {x = 32031, y = 32221, z = 7},
+        position = {x = 32031, y = 32222, z = 7},
         costs = {
             { itemId = 2160, count = 250 },
         },
@@ -53,7 +53,7 @@ TELEPORT_CHECKPOINTS = {
     {
         id = 6,
         name = "Northeast Exit",
-        position = {x = 32108, y = 32131, z = 7},
+        position = {x = 32108, y = 32132, z = 7},
         costs = {
             { itemId = 2160, count = 250 },
         },

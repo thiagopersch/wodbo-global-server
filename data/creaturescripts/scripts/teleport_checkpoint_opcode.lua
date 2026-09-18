@@ -70,6 +70,7 @@ local function buyCheckpoint(cid, point)
     end
 
     setPlayerStorageValue(cid, getTeleportCheckpointStorageKey(point), 1)
+    doPlayerSave(cid)
 
     local message = "You bought the teleport point to " .. point.name .. "!"
     if totalBankGold > 0 then
