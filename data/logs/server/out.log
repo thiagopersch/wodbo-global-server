@@ -1,133 +1,57 @@
-[17/9/2026 23:3:3] > Usando SHA1 criptografia
-[17/9/2026 23:3:3] >> Carregando RSA key
-[17/9/2026 23:3:3] >> Iniciando conexao SQL
-[17/9/2026 23:3:3] >> Executando Gerenciador de Banco de Dados
-[17/9/2026 23:3:6] > Optimizing table: audit_logs... [success]
-[17/9/2026 23:3:10] > Optimizing table: items... [success]
-[17/9/2026 23:3:12] > Optimizing table: looktypes... [success]
-[17/9/2026 23:3:12] >> Carregando items (OTB)
-[17/9/2026 23:3:12] >> Carregando items (XML)
-[17/9/2026 23:3:12] >> Carregando Grupos
-[17/9/2026 23:3:12] >> Carregando Vocacoes
-[17/9/2026 23:3:12] >> Carregando Outfits
-[17/9/2026 23:3:12] >> Carregando Wing Types
-[17/9/2026 23:3:12] >> Carregando Aura Types
-[17/9/2026 23:3:12] >> Carregando Shader Types
-[17/9/2026 23:3:12] >> Carregando Bar Types
-[17/9/2026 23:3:12] >> Carregando Canal de Chat
-[17/9/2026 23:3:12] >> Carregando Sistema
-[17/9/2026 23:3:13] >> Carregando Mods...
-[17/9/2026 23:3:13] > Loading AutoLoot.xml... done.
-[17/9/2026 23:3:13] > Loading Automatic Raids.xml... done.
-[17/9/2026 23:3:13] > Loading highscorebook.xml... done.
-[17/9/2026 23:3:13] > Loading task_system.xml... done.
-[17/9/2026 23:3:13] > 4 mods were loaded.
-[17/9/2026 23:3:13] >> Carregando EXP Stages
-[17/9/2026 23:3:13] >> Carregando Monstros
-[17/9/2026 23:3:13] >> Carregando Mapa e Spawns...
-[17/9/2026 23:3:13] > Tamanho do Mapa: 64000x64000.
-[17/9/2026 23:3:13] > Descricao do Mapa: 
-[17/9/2026 23:3:13] "Saved with OTAcademy Map Editor 4.1.1"
-[17/9/2026 23:3:13] "No map description available."
-[17/9/2026 23:3:16] > Mapa carregado em: 3.081 segundos.
+[18/9/2026 8:2:54] > Usando SHA1 criptografia
+[18/9/2026 8:2:54] >> Carregando RSA key
+[18/9/2026 8:2:54] >> Iniciando conexao SQL
+[18/9/2026 8:2:54] >> Executando Gerenciador de Banco de Dados
+[18/9/2026 8:2:58] > Optimizing table: audit_logs... [success]
+[18/9/2026 8:3:3] > Optimizing table: items... [success]
+[18/9/2026 8:3:4] > Optimizing table: looktypes... [success]
+[18/9/2026 8:3:4] >> Carregando items (OTB)
+[18/9/2026 8:3:5] >> Carregando items (XML)
+[18/9/2026 8:3:5] >> Carregando Grupos
+[18/9/2026 8:3:5] >> Carregando Vocacoes
+[18/9/2026 8:3:5] >> Carregando Outfits
+[18/9/2026 8:3:5] >> Carregando Wing Types
+[18/9/2026 8:3:5] >> Carregando Aura Types
+[18/9/2026 8:3:5] >> Carregando Shader Types
+[18/9/2026 8:3:5] >> Carregando Bar Types
+[18/9/2026 8:3:5] >> Carregando Canal de Chat
+[18/9/2026 8:3:5] >> Carregando Sistema
+[18/9/2026 8:3:9] >> Carregando Mods...
+[18/9/2026 8:3:9] > Loading AutoLoot.xml... done.
+[18/9/2026 8:3:9] > Loading Automatic Raids.xml... done.
+[18/9/2026 8:3:9] > Loading highscorebook.xml... done.
+[18/9/2026 8:3:9] > Loading task_system.xml... done.
+[18/9/2026 8:3:9] > 4 mods were loaded.
+[18/9/2026 8:3:9] >> Carregando EXP Stages
+[18/9/2026 8:3:9] >> Carregando Monstros
+[18/9/2026 8:3:9] >> Carregando Mapa e Spawns...
+[18/9/2026 8:3:9] > Tamanho do Mapa: 64000x64000.
+[18/9/2026 8:3:9] > Descricao do Mapa: 
+[18/9/2026 8:3:9] "Saved with OTAcademy Map Editor 4.1.1"
+[18/9/2026 8:3:9] "No map description available."
+[18/9/2026 8:3:12] > Mapa carregado em: 2.93 segundos.
 
-[17/9/2026 23:3:17] [Error - NpcScript Interface] 
-[17/9/2026 23:3:17] data/npc/scripts/taskerman.lua
-[17/9/2026 23:3:17] Description: 
-[17/9/2026 23:3:17] data/npc/lib/npcsystem/modules.lua:252: attempt to index field 'keywordHandler' (a nil value)
-[17/9/2026 23:3:17] [Warning - NpcEvents::NpcEvents] Cannot load script: data/npc/scripts/taskerman.lua
+[18/9/2026 8:3:13] [Error - NpcScript Interface] 
+[18/9/2026 8:3:13] data/npc/scripts/taskerman.lua
+[18/9/2026 8:3:13] Description: 
+[18/9/2026 8:3:13] data/npc/lib/npcsystem/modules.lua:252: attempt to index field 'keywordHandler' (a nil value)
+[18/9/2026 8:3:13] [Warning - NpcEvents::NpcEvents] Cannot load script: data/npc/scripts/taskerman.lua
 
-[17/9/2026 23:3:17] > Data carregada em: 0.67 segundos.
-[17/9/2026 23:3:17] > Houses carregada em: 0.255 segundos.
-[17/9/2026 23:3:17] > Content unserialization time: 0.004 seconds.
-[17/9/2026 23:3:17] > Carregando Tipo de PVP... Open PvP
-[17/9/2026 23:3:17] > Inicializando estado do jogo e registrando servicos...
-[17/9/2026 23:3:17] > IP do Servidor: 127.0.0.1
-[17/9/2026 23:3:17] > IP local do Servidor: 172.29.80.1	172.21.48.1	192.168.1.37	
-[17/9/2026 23:3:17] > Portas do Servidor: 7171	7172	
-[17/9/2026 23:3:17] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[17/9/2026 23:3:27] >> WodBleach servidor Online!
+[18/9/2026 8:3:13] > Data carregada em: 0.932 segundos.
+[18/9/2026 8:3:13] > Houses carregada em: 0.257 segundos.
+[18/9/2026 8:3:13] > Content unserialization time: 0.005 seconds.
+[18/9/2026 8:3:13] > Carregando Tipo de PVP... Open PvP
+[18/9/2026 8:3:13] > Inicializando estado do jogo e registrando servicos...
+[18/9/2026 8:3:13] > IP do Servidor: 127.0.0.1
+[18/9/2026 8:3:13] > IP local do Servidor: 172.29.80.1	172.21.48.1	192.168.1.37	
+[18/9/2026 8:3:13] > Portas do Servidor: 7171	7172	
+[18/9/2026 8:3:13] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[18/9/2026 8:3:23] >> WodBleach servidor Online!
 
-[17/9/2026 23:3:42] [AddMapDescription] wrote 14441 bytes (msg total size now 14473)
-[17/9/2026 23:3:42] ADMIN has logged in.
-[17/9/2026 23:3:54] ADMIN has logged out.
-[17/9/2026 23:3:55] [AddMapDescription] wrote 13523 bytes (msg total size now 13555)
-[17/9/2026 23:3:55] ADMIN has logged in.
-[17/9/2026 23:4:4] ADMIN has logged out.
-[17/9/2026 23:4:5] [AddMapDescription] wrote 14577 bytes (msg total size now 14609)
-[17/9/2026 23:4:5] ADMIN has logged in.
-[17/9/2026 23:5:10] [AddMapDescription] wrote 12739 bytes (msg total size now 12771)
-[17/9/2026 23:5:13] ADMIN has logged out.
-[17/9/2026 23:5:14] [AddMapDescription] wrote 13457 bytes (msg total size now 13489)
-[17/9/2026 23:5:14] ADMIN has logged in.
-[17/9/2026 23:5:16] ADMIN has logged out.
-[17/9/2026 23:5:17] [AddMapDescription] wrote 13457 bytes (msg total size now 13489)
-[17/9/2026 23:5:17] ADMIN has logged in.
-[17/9/2026 23:5:21] ADMIN has logged out.
-[17/9/2026 23:5:22] [AddMapDescription] wrote 13195 bytes (msg total size now 13227)
-[17/9/2026 23:5:22] ADMIN has logged in.
-[17/9/2026 23:5:25] ADMIN has logged out.
-[17/9/2026 23:5:27] [AddMapDescription] wrote 13123 bytes (msg total size now 13155)
-[17/9/2026 23:5:27] ADMIN has logged in.
-[17/9/2026 23:5:41] ADMIN has logged out.
-[17/9/2026 23:5:43] [AddMapDescription] wrote 13863 bytes (msg total size now 13895)
-[17/9/2026 23:5:43] ADMIN has logged in.
-[17/9/2026 23:5:54] ADMIN has logged out.
-[17/9/2026 23:5:56] [AddMapDescription] wrote 13148 bytes (msg total size now 13159)
-[17/9/2026 23:5:56] Kira VS L has logged in.
-[17/9/2026 23:6:5] Kira VS L has logged out.
-[17/9/2026 23:6:6] [AddMapDescription] wrote 13148 bytes (msg total size now 13159)
-[17/9/2026 23:6:6] Kira VS L has logged in.
-[17/9/2026 23:8:56] [AddMapDescription] wrote 13060 bytes (msg total size now 13071)
-[17/9/2026 23:9:15] Kira VS L has logged out.
-[17/9/2026 23:9:17] [AddMapDescription] wrote 13060 bytes (msg total size now 13071)
-[17/9/2026 23:9:17] Kira VS L has logged in.
-[17/9/2026 23:9:19] Kira VS L has logged out.
-[17/9/2026 23:9:20] [AddMapDescription] wrote 13863 bytes (msg total size now 13895)
-[17/9/2026 23:9:20] ADMIN has logged in.
-[17/9/2026 23:9:21] ADMIN has logged out.
-[17/9/2026 23:9:22] [AddMapDescription] wrote 13060 bytes (msg total size now 13071)
-[17/9/2026 23:9:22] Kira VS L has logged in.
-[17/9/2026 23:9:39] Kira VS L has logged out.
-[17/9/2026 23:9:40] [AddMapDescription] wrote 13863 bytes (msg total size now 13895)
-[17/9/2026 23:9:40] ADMIN has logged in.
-[17/9/2026 23:9:42] ADMIN has logged out.
-[17/9/2026 23:9:43] [AddMapDescription] wrote 13457 bytes (msg total size now 13489)
-[17/9/2026 23:9:43] ADMIN has logged in.
-[17/9/2026 23:13:20] [AddMapDescription] wrote 15200 bytes (msg total size now 15788)
-[17/9/2026 23:13:33] [AddMapDescription] wrote 15298 bytes (msg total size now 15314)
-[17/9/2026 23:15:5] [AddMapDescription] wrote 11513 bytes (msg total size now 12127)
-[17/9/2026 23:15:17] [AddMapDescription] wrote 14406 bytes (msg total size now 15116)
-[17/9/2026 23:15:18] [AddMapDescription] wrote 14058 bytes (msg total size now 14618)
-[17/9/2026 23:15:42] [AddMapDescription] wrote 11070 bytes (msg total size now 11580)
-[17/9/2026 23:18:34] [AddMapDescription] wrote 15200 bytes (msg total size now 15955)
-[17/9/2026 23:18:50] [AddMapDescription] wrote 15306 bytes (msg total size now 15322)
-[17/9/2026 23:19:22] ADMIN has logged out.
-[17/9/2026 23:19:23] [AddMapDescription] wrote 12696 bytes (msg total size now 12728)
-[17/9/2026 23:19:23] ADMIN has logged in.
-[17/9/2026 23:19:33] ADMIN has logged out.
-[17/9/2026 23:19:34] [AddMapDescription] wrote 12829 bytes (msg total size now 12861)
-[17/9/2026 23:19:34] ADMIN has logged in.
-[17/9/2026 23:19:36] ADMIN has logged out.
-[17/9/2026 23:19:37] [AddMapDescription] wrote 13390 bytes (msg total size now 13401)
-[17/9/2026 23:19:37] Kira VS L has logged in.
-[17/9/2026 23:19:38] Kira VS L has logged out.
-[17/9/2026 23:19:39] [AddMapDescription] wrote 12829 bytes (msg total size now 12861)
-[17/9/2026 23:19:39] ADMIN has logged in.
-[17/9/2026 23:20:9] [AddMapDescription] wrote 12829 bytes (msg total size now 12861)
-[17/9/2026 23:20:12] ADMIN has logged out.
-[17/9/2026 23:20:13] [AddMapDescription] wrote 12181 bytes (msg total size now 12213)
-[17/9/2026 23:20:13] ADMIN has logged in.
-[17/9/2026 23:20:34] [AddMapDescription] wrote 12927 bytes (msg total size now 12959)
-[17/9/2026 23:20:52] [AddMapDescription] wrote 11595 bytes (msg total size now 11988)
-[17/9/2026 23:20:55] [AddMapDescription] wrote 10686 bytes (msg total size now 11184)
-[17/9/2026 23:20:58] [AddMapDescription] wrote 15050 bytes (msg total size now 15236)
-[17/9/2026 23:21:6] ADMIN has logged out.
-[17/9/2026 23:21:7] [AddMapDescription] wrote 13509 bytes (msg total size now 13541)
-[17/9/2026 23:21:7] ADMIN has logged in.
-[17/9/2026 23:21:21] ADMIN has logged out.
-[17/9/2026 23:21:22] [AddMapDescription] wrote 13133 bytes (msg total size now 13165)
-[17/9/2026 23:21:22] ADMIN has logged in.
-[17/9/2026 23:21:31] ADMIN has logged out.
-[17/9/2026 23:21:32] [AddMapDescription] wrote 13123 bytes (msg total size now 13155)
-[17/9/2026 23:21:32] ADMIN has logged in.
+[18/9/2026 8:3:34] ADMIN has logged in.
+[18/9/2026 8:7:45] Kira VS L has logged in.
+[18/9/2026 8:8:26] ADMIN has logged out.
+[18/9/2026 8:24:55] ADMIN has logged in.
+[18/9/2026 8:25:6] ADMIN has logged out.
+[18/9/2026 8:25:24] Kira VS L has logged out.
+[18/9/2026 8:25:26] ADMIN has logged in.

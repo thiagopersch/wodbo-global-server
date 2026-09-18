@@ -116,13 +116,7 @@ class NetworkMessage
 #endif
 	protected:
 		// used to check available space while writing
-		inline bool hasSpace(int32_t size)
-		{
-			bool ok = (size + m_position < NETWORK_MAX_SIZE - 16);
-			if(!ok)
-				std::clog << "[NetworkMessage] hasSpace() FALSE pos=" << m_position << " requested=" << size << std::endl;
-			return ok;
-		}
+		inline bool hasSpace(int32_t size) {return (size + m_position < NETWORK_MAX_SIZE - 16);}
 
 		// message propeties
 		uint16_t m_size;

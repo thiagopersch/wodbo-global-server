@@ -3161,13 +3161,11 @@ void ProtocolGame::reloadCreature(const Creature* creature)
 
 void ProtocolGame::AddMapDescription(NetworkMessage_ptr msg, const Position& pos)
 {
-	uint16_t sizeBefore = msg->size();
 	msg->put<char>(0x64);
 	msg->putPosition(player->getPosition());
 	GetMapDescription(pos.x - Map::maxClientViewportX, pos.y - Map::maxClientViewportY, pos.z, (Map::maxClientViewportX+1)*2, (Map::maxClientViewportY+1)*2, msg);
 
 	// GetMapDescription(pos.x - 8, pos.y - 6, pos.z, 18, 14, msg);
-	std::clog << "[AddMapDescription] wrote " << (msg->size() - sizeBefore) << " bytes (msg total size now " << msg->size() << ")" << std::endl;
 }
 
 void ProtocolGame::AddTextMessage(NetworkMessage_ptr msg, MessageClasses mclass, const std::string& message)
