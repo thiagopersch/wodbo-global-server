@@ -11616,18 +11616,6 @@
 	<spawn centerx="32240" centery="31986" centerz="6" radius="1">
 		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
-	<spawn centerx="31986" centery="31987" centerz="6" radius="1">
-		<npc name="Zoruta" x="0" y="0" z="6" spawntime="60" direction="2" />
-	</spawn>
-	<spawn centerx="31995" centery="31987" centerz="6" radius="1">
-		<monster name="Hawk" x="0" y="0" z="6" spawntime="60" direction="2" />
-	</spawn>
-	<spawn centerx="32004" centery="31987" centerz="6" radius="1">
-		<npc name="Gukoa" x="1" y="0" z="6" spawntime="60" direction="2" />
-	</spawn>
-	<spawn centerx="32014" centery="31987" centerz="6" radius="1">
-		<npc name="Razo" x="0" y="0" z="6" spawntime="60" direction="2" />
-	</spawn>
 	<spawn centerx="32089" centery="31987" centerz="6" radius="1">
 		<monster name="Gohan SSJ5" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
@@ -11639,6 +11627,18 @@
 	</spawn>
 	<spawn centerx="32392" centery="31987" centerz="6" radius="1">
 		<monster name="Freeza" x="0" y="0" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31987" centery="31988" centerz="6" radius="1">
+		<npc name="Zoruta" x="-1" y="-1" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="31995" centery="31988" centerz="6" radius="1">
+		<npc name="Hawk, Capitão das Sobras" x="0" y="-1" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32005" centery="31988" centerz="6" radius="1">
+		<npc name="Gukoa" x="0" y="-1" z="6" spawntime="60" direction="2" />
+	</spawn>
+	<spawn centerx="32013" centery="31988" centerz="6" radius="1">
+		<npc name="Razo" x="1" y="-1" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32197" centery="31988" centerz="6" radius="1">
 		<monster name="Goku SSJ5" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -11708,8 +11708,8 @@
 	<spawn centerx="32380" centery="31994" centerz="6" radius="1">
 		<monster name="Freeza" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
-	<spawn centerx="31986" centery="31995" centerz="6" radius="1">
-		<npc name="Afonso" x="0" y="0" z="6" spawntime="60" direction="2" />
+	<spawn centerx="31987" centery="31995" centerz="6" radius="1">
+		<npc name="Afonso" x="-1" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32014" centery="31995" centerz="6" radius="1">
 		<npc name="Samanta" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -11765,8 +11765,8 @@
 	<spawn centerx="32391" centery="32004" centerz="6" radius="1">
 		<monster name="Freeza" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
-	<spawn centerx="31986" centery="32005" centerz="6" radius="1">
-		<npc name="Lucius Corvinus" x="1" y="0" z="6" spawntime="60" direction="2" />
+	<spawn centerx="31987" centery="32005" centerz="6" radius="1">
+		<npc name="Lucius Corvinus" x="-1" y="-1" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32014" centery="32005" centerz="6" radius="1">
 		<npc name="Merlin" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -11871,7 +11871,7 @@
 		<monster name="Demon" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31995" centery="32013" centerz="6" radius="1">
-		<npc name="Kayfas" x="1" y="0" z="6" spawntime="60" direction="2" />
+		<npc name="Kayfas" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32005" centery="32013" centerz="6" radius="1">
 		<npc name="Dobao" x="0" y="0" z="6" spawntime="60" direction="2" />
@@ -14528,7 +14528,7 @@
 		<monster name="Dragon Baby" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31908" centery="32215" centerz="6" radius="1">
-		<monster name="Hawk" x="0" y="0" z="6" spawntime="60" direction="2" />
+		<npc name="Hawk, Capitão das Sobras" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31923" centery="32215" centerz="6" radius="1">
 		<npc name="Merlin" x="0" y="0" z="6" spawntime="60" direction="2" />
