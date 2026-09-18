@@ -177,8 +177,8 @@ bool Spawns::parseSpawnNode(xmlNodePtr p, bool checkDuplicate)
 			if(readXMLInteger(tmpNode, "z", intValue))
 				placePos.z /*+*/= intValue;
 
-			Direction direction = NORTH;
-			if(readXMLInteger(tmpNode, "direction", intValue) && direction >= EAST && direction <= WEST)
+			Direction direction = SOUTH;
+			if(readXMLInteger(tmpNode, "direction", intValue) && intValue >= NORTH && intValue <= WEST)
 				direction = (Direction)intValue;
 
 			Npc* npc = Npc::createNpc(name);

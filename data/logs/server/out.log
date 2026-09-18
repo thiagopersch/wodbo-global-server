@@ -1,57 +1,51 @@
-[18/9/2026 8:2:54] > Usando SHA1 criptografia
-[18/9/2026 8:2:54] >> Carregando RSA key
-[18/9/2026 8:2:54] >> Iniciando conexao SQL
-[18/9/2026 8:2:54] >> Executando Gerenciador de Banco de Dados
-[18/9/2026 8:2:58] > Optimizing table: audit_logs... [success]
-[18/9/2026 8:3:3] > Optimizing table: items... [success]
-[18/9/2026 8:3:4] > Optimizing table: looktypes... [success]
-[18/9/2026 8:3:4] >> Carregando items (OTB)
-[18/9/2026 8:3:5] >> Carregando items (XML)
-[18/9/2026 8:3:5] >> Carregando Grupos
-[18/9/2026 8:3:5] >> Carregando Vocacoes
-[18/9/2026 8:3:5] >> Carregando Outfits
-[18/9/2026 8:3:5] >> Carregando Wing Types
-[18/9/2026 8:3:5] >> Carregando Aura Types
-[18/9/2026 8:3:5] >> Carregando Shader Types
-[18/9/2026 8:3:5] >> Carregando Bar Types
-[18/9/2026 8:3:5] >> Carregando Canal de Chat
-[18/9/2026 8:3:5] >> Carregando Sistema
-[18/9/2026 8:3:9] >> Carregando Mods...
-[18/9/2026 8:3:9] > Loading AutoLoot.xml... done.
-[18/9/2026 8:3:9] > Loading Automatic Raids.xml... done.
-[18/9/2026 8:3:9] > Loading highscorebook.xml... done.
-[18/9/2026 8:3:9] > Loading task_system.xml... done.
-[18/9/2026 8:3:9] > 4 mods were loaded.
-[18/9/2026 8:3:9] >> Carregando EXP Stages
-[18/9/2026 8:3:9] >> Carregando Monstros
-[18/9/2026 8:3:9] >> Carregando Mapa e Spawns...
-[18/9/2026 8:3:9] > Tamanho do Mapa: 64000x64000.
-[18/9/2026 8:3:9] > Descricao do Mapa: 
-[18/9/2026 8:3:9] "Saved with OTAcademy Map Editor 4.1.1"
-[18/9/2026 8:3:9] "No map description available."
-[18/9/2026 8:3:12] > Mapa carregado em: 2.93 segundos.
+[18/9/2026 8:38:58] > Usando SHA1 criptografia
+[18/9/2026 8:38:58] >> Carregando RSA key
+[18/9/2026 8:38:58] >> Iniciando conexao SQL
+[18/9/2026 8:38:58] >> Executando Gerenciador de Banco de Dados
+[18/9/2026 8:39:2] > Optimizing table: audit_logs... [success]
+[18/9/2026 8:39:7] > Optimizing table: items... [success]
+[18/9/2026 8:39:8] > Optimizing table: looktypes... [success]
+[18/9/2026 8:39:8] >> Carregando items (OTB)
+[18/9/2026 8:39:9] >> Carregando items (XML)
+[18/9/2026 8:39:9] >> Carregando Grupos
+[18/9/2026 8:39:9] >> Carregando Vocacoes
+[18/9/2026 8:39:9] >> Carregando Outfits
+[18/9/2026 8:39:9] >> Carregando Wing Types
+[18/9/2026 8:39:9] >> Carregando Aura Types
+[18/9/2026 8:39:9] >> Carregando Shader Types
+[18/9/2026 8:39:9] >> Carregando Bar Types
+[18/9/2026 8:39:9] >> Carregando Canal de Chat
+[18/9/2026 8:39:9] >> Carregando Sistema
+[18/9/2026 8:39:10] >> Carregando Mods...
+[18/9/2026 8:39:10] > Loading AutoLoot.xml... done.
+[18/9/2026 8:39:10] > Loading Automatic Raids.xml... done.
+[18/9/2026 8:39:10] > Loading highscorebook.xml... done.
+[18/9/2026 8:39:10] > Loading task_system.xml... done.
+[18/9/2026 8:39:10] > 4 mods were loaded.
+[18/9/2026 8:39:10] >> Carregando EXP Stages
+[18/9/2026 8:39:10] >> Carregando Monstros
+[18/9/2026 8:39:10] >> Carregando Mapa e Spawns...
+[18/9/2026 8:39:10] > Tamanho do Mapa: 64000x64000.
+[18/9/2026 8:39:10] > Descricao do Mapa: 
+[18/9/2026 8:39:10] "Saved with OTAcademy Map Editor 4.1.1"
+[18/9/2026 8:39:10] "No map description available."
+[18/9/2026 8:39:13] > Mapa carregado em: 3.197 segundos.
 
-[18/9/2026 8:3:13] [Error - NpcScript Interface] 
-[18/9/2026 8:3:13] data/npc/scripts/taskerman.lua
-[18/9/2026 8:3:13] Description: 
-[18/9/2026 8:3:13] data/npc/lib/npcsystem/modules.lua:252: attempt to index field 'keywordHandler' (a nil value)
-[18/9/2026 8:3:13] [Warning - NpcEvents::NpcEvents] Cannot load script: data/npc/scripts/taskerman.lua
+[18/9/2026 8:39:14] [Error - NpcScript Interface] 
+[18/9/2026 8:39:14] data/npc/scripts/taskerman.lua
+[18/9/2026 8:39:14] Description: 
+[18/9/2026 8:39:14] data/npc/lib/npcsystem/modules.lua:252: attempt to index field 'keywordHandler' (a nil value)
+[18/9/2026 8:39:14] [Warning - NpcEvents::NpcEvents] Cannot load script: data/npc/scripts/taskerman.lua
 
-[18/9/2026 8:3:13] > Data carregada em: 0.932 segundos.
-[18/9/2026 8:3:13] > Houses carregada em: 0.257 segundos.
-[18/9/2026 8:3:13] > Content unserialization time: 0.005 seconds.
-[18/9/2026 8:3:13] > Carregando Tipo de PVP... Open PvP
-[18/9/2026 8:3:13] > Inicializando estado do jogo e registrando servicos...
-[18/9/2026 8:3:13] > IP do Servidor: 127.0.0.1
-[18/9/2026 8:3:13] > IP local do Servidor: 172.29.80.1	172.21.48.1	192.168.1.37	
-[18/9/2026 8:3:13] > Portas do Servidor: 7171	7172	
-[18/9/2026 8:3:13] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[18/9/2026 8:3:23] >> WodBleach servidor Online!
+[18/9/2026 8:39:14] > Data carregada em: 0.764 segundos.
+[18/9/2026 8:39:14] > Houses carregada em: 0.261 segundos.
+[18/9/2026 8:39:14] > Content unserialization time: 0.006 seconds.
+[18/9/2026 8:39:14] > Carregando Tipo de PVP... Open PvP
+[18/9/2026 8:39:14] > Inicializando estado do jogo e registrando servicos...
+[18/9/2026 8:39:14] > IP do Servidor: 127.0.0.1
+[18/9/2026 8:39:14] > IP local do Servidor: 172.29.80.1	172.21.48.1	192.168.1.37	
+[18/9/2026 8:39:14] > Portas do Servidor: 7171	7172	
+[18/9/2026 8:39:14] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[18/9/2026 8:39:24] >> WodBleach servidor Online!
 
-[18/9/2026 8:3:34] ADMIN has logged in.
-[18/9/2026 8:7:45] Kira VS L has logged in.
-[18/9/2026 8:8:26] ADMIN has logged out.
-[18/9/2026 8:24:55] ADMIN has logged in.
-[18/9/2026 8:25:6] ADMIN has logged out.
-[18/9/2026 8:25:24] Kira VS L has logged out.
-[18/9/2026 8:25:26] ADMIN has logged in.
+[18/9/2026 8:40:1] ADMIN has logged in.
