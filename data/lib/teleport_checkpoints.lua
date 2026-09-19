@@ -52,10 +52,66 @@ TELEPORT_CHECKPOINTS = {
     },
     {
         id = 6,
-        name = "Northeast Exit",
+        name = "Northeast Exit Main City",
         position = {x = 32108, y = 32132, z = 7},
         costs = {
             { itemId = 2160, count = 250 },
+        },
+    },
+    {
+        id = 7,
+        name = "Panda's Main City",
+        position = {x = 32287, y = 32467, z = 7},
+        costs = {
+            { itemId = 2160, count = 250 },
+        },
+    },
+    {
+        id = 8,
+        name = "Desert Main City",
+        position = {x = 32488, y = 32439, z = 7},
+        costs = {
+            { itemId = 2160, count = 250 },
+        },
+    },
+    {
+        id = 9,
+        name = "Lion's Main City",
+        position = {x = 32428, y = 32272, z = 7},
+        costs = {
+            { itemId = 2160, count = 500 },
+        },
+    },
+    {
+        id = 10,
+        name = "Bandit Chef's North Main City",
+        position = {x = 32287, y = 31964, z = 7},
+        costs = {
+            { itemId = 2160, count = 800 },
+        },
+    },
+    {
+        id = 11,
+        name = "Demons Main City",
+        position = {x = 32187, y = 32065, z = 7},
+        costs = {
+            { itemId = 2160, count = 250 },
+        },
+    },
+    {
+        id = 12,
+        name = "Janembas Main City",
+        position = {x = 32245, y = 32260, z = 7},
+        costs = {
+            { itemId = 2160, count = 250 },
+        },
+    },
+    {
+        id = 13,
+        name = "Southeast Icy land",
+        position = {x = 32547, y = 31872, z = 7},
+        costs = {
+            { itemId = 2160, count = 1250 },
         },
     },
 }

@@ -1654,8 +1654,7 @@
 		<friend name="mountain" />
 	</brush>
 
-	<brush name="snowy mountain" type="ground" server_lookid="671" z-order="9901"
-		solo_optional="true">
+	<brush name="snowy mountain" type="ground" server_lookid="671" z-order="9901" solo_optional="true">
 		<item id="6869" chance="1" />
 
 		<border align="inner" to="none" id="53" />
