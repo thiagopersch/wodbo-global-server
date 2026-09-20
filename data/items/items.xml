@@ -1055,7 +1055,10 @@
         <attribute key="floorchange" value="north" />
     </item>
     <item id="1386" client_id="1948" article="a" name="ladder" />
-    <item id="1387" client_id="1949" article="a" name="magic forcefield" />
+    <item id="1387" client_id="1949" article="a" name="magic forcefield">
+        <attribute key="type" value="teleport" />
+        <attribute key="effect" value="teleport" />
+    </item>
     <item id="1388" client_id="1950" article="a" name="ramp">
         <attribute key="floorchange" value="east" />
     </item>
@@ -37007,8 +37010,14 @@
     <item id="19594" client_id="17314" article="a" name="border" />
     <item id="19595" client_id="17315" article="a" name="border" />
     <item id="19596" client_id="17316" name="cobbled pavement" />
-    <item id="19598" client_id="17318" article="a" name="magic door" />
-    <item id="19599" client_id="17319" article="a" name="magic door" />
+    <item id="19598" client_id="17318" article="a" name="magic door">
+        <attribute key="type" value="teleport" />
+        <attribute key="effect" value="teleport" />
+    </item>
+    <item id="19599" client_id="17319" article="a" name="magic door">
+        <attribute key="type" value="teleport" />
+        <attribute key="effect" value="teleport" />
+    </item>
     <item id="19600" client_id="17320" article="a" name="magic door" />
     <item id="19601" client_id="17321" article="a" name="magic door" />
     <item id="19603" client_id="17323" article="a" name="pillar railing" />

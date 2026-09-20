@@ -1055,7 +1055,10 @@
         <attribute key="floorchange" value="north" />
     </item>
     <item id="1386" client_id="1948" article="a" name="ladder" />
-    <item id="1387" client_id="1949" article="a" name="magic forcefield" />
+    <item id="1387" client_id="1949" article="a" name="magic forcefield">
+        <attribute key="type" value="teleport" />
+        <attribute key="effect" value="teleport" />
+    </item>
     <item id="1388" client_id="1950" article="a" name="ramp">
         <attribute key="floorchange" value="east" />
     </item>

@@ -1159,29 +1159,28 @@
 	</brush>
 
 	<brush name="lava" type="ground" server_lookid="598" z-order="1000">
-		<item id="23857" chance="100" />
-		<item id="598" chance="100" />
-		<item id="599" chance="7" />
-		<item id="600" chance="5" />
-		<item id="601" chance="5" />
-		<item id="23848" chance="1" />
-		<item id="23849" chance="1" />
-		<item id="23850" chance="2" />
-		<item id="23851" chance="2" />
-		<item id="23858" chance="1" />
-		<item id="23859" chance="2" />
-		<item id="23860" chance="1" />
-		<item id="23861" chance="2" />
-		<item id="39145" chance="2" />
-		<item id="39146" chance="2" />
-		<item id="39147" chance="2" />
-		<item id="39148" chance="2" />
-
-		<border align="inner" to="cave" id="18" />
-		<border align="inner" to="cave (alternate border)" id="18" />
-		<border align="inner" to="rock soil" id="30" />
-		<border align="inner" to="none" id="211" />
-		<friend name="sea" />
+	    <item id="23857" chance="100" />
+	    <item id="598" chance="100" />
+	    <item id="599" chance="7" />
+	    <item id="600" chance="5" />
+	    <item id="601" chance="5" />
+	    <item id="23848" chance="1" />
+	    <item id="23849" chance="1" />
+	    <item id="23850" chance="2" />
+	    <item id="23851" chance="2" />
+	    <item id="23858" chance="1" />
+	    <item id="23859" chance="2" />
+	    <item id="23860" chance="1" />
+	    <item id="23861" chance="2" />
+	    <item id="39145" chance="2" />
+	    <item id="39146" chance="2" />
+	    <item id="39147" chance="2" />
+	    <item id="39148" chance="2" />
+	    <border align="inner" to="cave" id="18" />
+	    <border align="inner" to="cave (alternate border)" id="18" />
+	    <border align="inner" to="rock soil" id="30" />
+	    <border align="outer" to="all" id="211" />
+	    <friend name="sea" />
 	</brush>
 
 	<brush name="rocky ground" type="ground" server_lookid="4570" z-order="2000">
