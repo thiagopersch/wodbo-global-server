@@ -126,9 +126,18 @@ function doExpandingWaveCombat(cid, config)
                   config.magMultMax or 1, config.spellMaxLevel)
                 min = min * radius
                 max = max * radius
-              else
+              elseif config.minDmg and config.maxDmg then
+                -- Valores fixos por spell (ex: monsters/bakuhatsuha.lua)
                 min = -(config.minDmg * radius)
                 max = -(config.maxDmg * radius)
+              else
+                -- Monstro usando spell de player: o min/max do XML do monstro é ignorado
+                -- pela engine em spells com script, então escala pela vida máxima do caster
+                -- (~bate com os valores atuais do XML: trunks SSJ2 350k HP -> 500-750,
+                -- trunks SSJ5 1.5M HP -> 2000-2500).
+                local maxHealth = getCreatureMaxHealth(cid)
+                min = -(maxHealth * (config.monsterMinPct or 0.0014) * radius)
+                max = -(maxHealth * (config.monsterMaxPct or 0.0018) * radius)
               end
               doTargetCombatHealth(cid, creature, config.type, min, max, getEffect(radius))
             end
