@@ -44,7 +44,7 @@ theforgottenserver_SOURCES = account.h actions.cpp actions.h $(MAYBE_OTADMIN) \
 	party.cpp party.h player.cpp player.h position.cpp position.h \
 	protocol.cpp protocol.h protocolgame.cpp protocolgame.h \
 	protocolhttp.cpp protocolhttp.h protocollogin.cpp protocollogin.h \
-	protocolold.cpp protocolold.h quests.cpp quests.h raids.cpp raids.h \
+	protocolold.cpp protocolold.h quests.cpp quests.h raids.cpp raids.h rarity.cpp rarity.h \
 	rsa.cpp rsa.h scheduler.cpp scheduler.h scriptmanager.cpp \
 	scriptmanager.h server.cpp server.h spawn.cpp spawn.h spells.cpp \
 	spells.h status.cpp status.h talkaction.cpp talkaction.h teleport.cpp \

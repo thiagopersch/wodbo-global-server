@@ -1,62 +1,352 @@
-[18/9/2026 22:43:14] > Usando SHA1 criptografia
-[18/9/2026 22:43:14] >> Carregando RSA key
-[18/9/2026 22:43:14] >> Iniciando conexao SQL
-[18/9/2026 22:43:14] >> Executando Gerenciador de Banco de Dados
-[18/9/2026 22:43:20] > Optimizing table: audit_logs... [success]
-[18/9/2026 22:43:27] > Optimizing table: items... [success]
-[18/9/2026 22:43:29] > Optimizing table: looktypes... [success]
-[18/9/2026 22:43:29] > Optimizing table: lua_scripts... [success]
-[18/9/2026 22:43:30] > Optimizing table: monsters... [success]
-[18/9/2026 22:43:30] > Optimizing table: npcs... [success]
-[18/9/2026 22:43:30] >> Carregando items (OTB)
-[18/9/2026 22:43:31] >> Carregando items (XML)
-[18/9/2026 22:43:31] >> Carregando Grupos
-[18/9/2026 22:43:31] >> Carregando Vocacoes
-[18/9/2026 22:43:31] >> Carregando Outfits
-[18/9/2026 22:43:31] >> Carregando Wing Types
-[18/9/2026 22:43:31] >> Carregando Aura Types
-[18/9/2026 22:43:32] >> Carregando Shader Types
-[18/9/2026 22:43:32] >> Carregando Bar Types
-[18/9/2026 22:43:32] >> Carregando Canal de Chat
-[18/9/2026 22:43:32] >> Carregando Sistema
-[18/9/2026 22:43:37] >> Carregando Mods...
-[18/9/2026 22:43:37] > Loading AutoLoot.xml... done.
-[18/9/2026 22:43:37] > Loading Automatic Raids.xml... done.
-[18/9/2026 22:43:37] > Loading highscorebook.xml... done.
-[18/9/2026 22:43:37] > Loading task_system.xml... done.
-[18/9/2026 22:43:37] > 4 mods were loaded.
-[18/9/2026 22:43:37] >> Carregando EXP Stages
-[18/9/2026 22:43:37] >> Carregando Monstros
-[18/9/2026 22:43:39] >> Carregando Mapa e Spawns...
-[18/9/2026 22:43:39] > Tamanho do Mapa: 64000x64000.
-[18/9/2026 22:43:39] > Descricao do Mapa: 
-[18/9/2026 22:43:39] "Saved with OTAcademy Map Editor 4.1.1"
-[18/9/2026 22:43:39] "No map description available."
-[18/9/2026 22:43:42] > Mapa carregado em: 3.431 segundos.
+[12/10/2026 23:11:21] > Usando SHA1 criptografia
+[12/10/2026 23:11:21] >> Carregando RSA key
+[12/10/2026 23:11:21] >> Iniciando conexao SQL
+[12/10/2026 23:11:21] >> Executando Gerenciador de Banco de Dados
+[12/10/2026 23:11:25] > Optimizing table: audit_logs... [success]
+[12/10/2026 23:11:31] > Optimizing table: items... [success]
+[12/10/2026 23:11:31] >> Carregando items (OTB)
+[12/10/2026 23:11:31] >> Carregando items (XML)
+[12/10/2026 23:11:32] >> Carregando Grupos
+[12/10/2026 23:11:32] >> Carregando Vocacoes
+[12/10/2026 23:11:32] >> Carregando Outfits
+[12/10/2026 23:11:32] >> Carregando Wing Types
+[12/10/2026 23:11:32] >> Carregando Aura Types
+[12/10/2026 23:11:32] >> Carregando Shader Types
+[12/10/2026 23:11:32] >> Carregando Bar Types
+[12/10/2026 23:11:32] >> Carregando Raridades
+[12/10/2026 23:11:32] >> Rarity: 6 tiers, 7 groups, 39 items
+[12/10/2026 23:11:32] >> Carregando Canal de Chat
+[12/10/2026 23:11:32] >> Carregando Sistema
+[12/10/2026 23:11:32] >> Carregando Mods...
+[12/10/2026 23:11:32] > Loading AutoLoot.xml... done.
+[12/10/2026 23:11:32] > Loading Automatic Raids.xml... done.
+[12/10/2026 23:11:32] > Loading highscorebook.xml... done.
+[12/10/2026 23:11:32] > Loading task_system.xml... done.
+[12/10/2026 23:11:32] > 4 mods were loaded.
+[12/10/2026 23:11:32] >> Carregando EXP Stages
+[12/10/2026 23:11:32] >> Carregando Monstros
+[12/10/2026 23:11:32] >> Carregando Mapa e Spawns...
+[12/10/2026 23:11:32] > Tamanho do Mapa: 64000x64000.
+[12/10/2026 23:11:32] > Descricao do Mapa: 
+[12/10/2026 23:11:32] "Saved with OTAcademy Map Editor 4.1.1"
+[12/10/2026 23:11:32] "No map description available."
+[12/10/2026 23:11:35] > Mapa carregado em: 2.928 segundos.
 
-[18/9/2026 22:43:43] [Error - NpcScript Interface] 
-[18/9/2026 22:43:43] data/npc/scripts/taskerman.lua
-[18/9/2026 22:43:43] Description: 
-[18/9/2026 22:43:43] data/npc/lib/npcsystem/modules.lua:252: attempt to index field 'keywordHandler' (a nil value)
-[18/9/2026 22:43:43] [Warning - NpcEvents::NpcEvents] Cannot load script: data/npc/scripts/taskerman.lua
+[12/10/2026 23:11:36] [Error - NpcScript Interface] 
+[12/10/2026 23:11:36] data/npc/scripts/taskerman.lua
+[12/10/2026 23:11:36] Description: 
+[12/10/2026 23:11:36] data/npc/lib/npcsystem/modules.lua:252: attempt to index field 'keywordHandler' (a nil value)
+[12/10/2026 23:11:36] [Warning - NpcEvents::NpcEvents] Cannot load script: data/npc/scripts/taskerman.lua
 
-[18/9/2026 22:43:43] > Data carregada em: 1.214 segundos.
-[18/9/2026 22:43:44] > Houses carregada em: 0.956 segundos.
-[18/9/2026 22:43:44] > Content unserialization time: 0.007 seconds.
-[18/9/2026 22:43:44] > Carregando Tipo de PVP... Open PvP
-[18/9/2026 22:43:44] > Inicializando estado do jogo e registrando servicos...
-[18/9/2026 22:43:44] > IP do Servidor: 127.0.0.1
-[18/9/2026 22:43:44] > IP local do Servidor: 172.29.80.1	172.21.48.1	192.168.1.37	
-[18/9/2026 22:43:44] > Portas do Servidor: 7171	7172	
-[18/9/2026 22:43:44] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[18/9/2026 22:43:54] >> WodBleach servidor Online!
+[12/10/2026 23:11:36] > Data carregada em: 0.819 segundos.
+[12/10/2026 23:11:36] > Houses carregada em: 0.263 segundos.
+[12/10/2026 23:11:36] > Content unserialization time: 0.005 seconds.
+[12/10/2026 23:11:36] > Carregando Tipo de PVP... Open PvP
+[12/10/2026 23:11:36] > Inicializando estado do jogo e registrando servicos...
+[12/10/2026 23:11:36] > IP do Servidor: 127.0.0.1
+[12/10/2026 23:11:36] > IP local do Servidor: 172.29.80.1	172.22.144.1	192.168.1.33	
+[12/10/2026 23:11:36] > Portas do Servidor: 7171	7172	
+[12/10/2026 23:11:36] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[12/10/2026 23:11:46] >> WodBleach servidor Online!
 
-[18/9/2026 22:44:44] ADMIN has logged in.
-[18/9/2026 22:47:3] ADMIN has logged out.
-[18/9/2026 22:51:49] ADMIN has logged in.
-[18/9/2026 22:52:39] mysql_real_query(): SELECT `item_id`, `name` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[18/9/2026 22:52:39] mysql_real_query(): SELECT `id` FROM `battle_pass_seasons` WHERE `month` = 9 AND `year` = 2026 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[18/9/2026 22:52:39] mysql_real_query(): SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` ORDER BY `year` DESC, `month` DESC LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[18/9/2026 22:52:39] mysql_real_query(): UPDATE `battle_pass_seasons` SET `is_active` = 0 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[18/9/2026 22:52:39] mysql_real_query(): INSERT INTO `battle_pass_seasons` (`month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost`, `is_active`, `created_at`, `updated_at`) VALUES (9, 2026, 100, 1000, 0, 0, 0, 0, 1, NOW(), NOW()) - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[18/9/2026 22:52:39] mysql_real_query(): SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` WHERE `is_active` = 1 LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[12/10/2026 23:12:2] ADMIN has logged in.
+[12/10/2026 23:15:27] ADMIN has logged out.
+[12/10/2026 23:15:28] Kira VS L has logged in.
+[12/10/2026 23:16:22] ADMIN has logged in.
+
+[12/10/2026 23:17:35] [Error - Spell Interface] 
+[12/10/2026 23:17:35] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:17:35] Description: 
+[12/10/2026 23:17:35] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:17:35] stack traceback:
+[12/10/2026 23:17:35] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:17:35] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:17:35] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:17:35] 	(tail call): ?
+
+[12/10/2026 23:17:39] [Error - Spell Interface] 
+[12/10/2026 23:17:39] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:17:39] Description: 
+[12/10/2026 23:17:39] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:17:39] stack traceback:
+[12/10/2026 23:17:39] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:17:39] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:17:39] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:17:39] 	(tail call): ?
+
+[12/10/2026 23:17:39] [Error - Spell Interface] 
+[12/10/2026 23:17:39] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:17:39] Description: 
+[12/10/2026 23:17:39] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:17:39] stack traceback:
+[12/10/2026 23:17:39] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:17:39] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:17:39] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:17:39] 	(tail call): ?
+
+[12/10/2026 23:17:43] [Error - Spell Interface] 
+[12/10/2026 23:17:43] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:17:43] Description: 
+[12/10/2026 23:17:43] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:17:43] stack traceback:
+[12/10/2026 23:17:43] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:17:43] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:17:43] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:17:43] 	(tail call): ?
+[12/10/2026 23:17:44] > Salvando servidor...
+[12/10/2026 23:17:45] > SAVE: Completo em 0.49 segundos usando binary casa storage.
+
+[12/10/2026 23:17:47] [Error - Spell Interface] 
+[12/10/2026 23:17:47] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:17:47] Description: 
+[12/10/2026 23:17:47] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:17:47] stack traceback:
+[12/10/2026 23:17:47] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:17:47] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:17:47] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:17:47] 	(tail call): ?
+
+[12/10/2026 23:17:51] [Error - Spell Interface] 
+[12/10/2026 23:17:51] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:17:51] Description: 
+[12/10/2026 23:17:51] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:17:51] stack traceback:
+[12/10/2026 23:17:51] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:17:51] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:17:51] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:17:51] 	(tail call): ?
+
+[12/10/2026 23:17:52] [Error - Spell Interface] 
+[12/10/2026 23:17:52] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:17:52] Description: 
+[12/10/2026 23:17:52] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:17:52] stack traceback:
+[12/10/2026 23:17:52] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:17:52] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:17:52] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:17:52] 	(tail call): ?
+
+[12/10/2026 23:17:55] [Error - Spell Interface] 
+[12/10/2026 23:17:55] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:17:55] Description: 
+[12/10/2026 23:17:55] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:17:55] stack traceback:
+[12/10/2026 23:17:55] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:17:55] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:17:55] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:17:55] 	(tail call): ?
+
+[12/10/2026 23:17:59] [Error - Spell Interface] 
+[12/10/2026 23:17:59] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:17:59] Description: 
+[12/10/2026 23:17:59] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:17:59] stack traceback:
+[12/10/2026 23:17:59] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:17:59] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:17:59] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:17:59] 	(tail call): ?
+
+[12/10/2026 23:17:59] [Error - Spell Interface] 
+[12/10/2026 23:17:59] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:17:59] Description: 
+[12/10/2026 23:17:59] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:17:59] stack traceback:
+[12/10/2026 23:17:59] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:17:59] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:17:59] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:17:59] 	(tail call): ?
+
+[12/10/2026 23:18:11] [Error - Spell Interface] 
+[12/10/2026 23:18:11] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:18:11] Description: 
+[12/10/2026 23:18:11] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:18:11] stack traceback:
+[12/10/2026 23:18:11] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:18:11] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:18:11] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:18:11] 	(tail call): ?
+
+[12/10/2026 23:18:15] [Error - Spell Interface] 
+[12/10/2026 23:18:15] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:18:15] Description: 
+[12/10/2026 23:18:15] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:18:15] stack traceback:
+[12/10/2026 23:18:15] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:18:15] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:18:15] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:18:15] 	(tail call): ?
+
+[12/10/2026 23:18:19] [Error - Spell Interface] 
+[12/10/2026 23:18:19] In a timer event called from: 
+[12/10/2026 23:18:19] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:18:19] Description: 
+[12/10/2026 23:18:19] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:18:19] stack traceback:
+[12/10/2026 23:18:19] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:18:19] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:18:19] 	data/lib/075-custom-functions.lua:150: in function <data/lib/075-custom-functions.lua:149>
+
+[12/10/2026 23:18:27] [Error - Spell Interface] 
+[12/10/2026 23:18:27] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:18:27] Description: 
+[12/10/2026 23:18:27] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:18:27] stack traceback:
+[12/10/2026 23:18:27] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:18:27] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:18:27] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:18:27] 	(tail call): ?
+
+[12/10/2026 23:19:11] [Error - Spell Interface] 
+[12/10/2026 23:19:11] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:19:11] Description: 
+[12/10/2026 23:19:11] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:19:11] stack traceback:
+[12/10/2026 23:19:11] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:19:11] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:19:11] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:19:11] 	(tail call): ?
+
+[12/10/2026 23:19:34] [Error - Spell Interface] 
+[12/10/2026 23:19:34] In a timer event called from: 
+[12/10/2026 23:19:34] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:19:34] Description: 
+[12/10/2026 23:19:34] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:19:34] stack traceback:
+[12/10/2026 23:19:34] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:19:34] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:19:34] 	data/lib/075-custom-functions.lua:150: in function <data/lib/075-custom-functions.lua:149>
+
+[12/10/2026 23:19:38] [Error - Spell Interface] 
+[12/10/2026 23:19:38] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:19:38] Description: 
+[12/10/2026 23:19:38] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:19:38] stack traceback:
+[12/10/2026 23:19:38] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:19:38] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:19:38] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:19:38] 	(tail call): ?
+
+[12/10/2026 23:19:46] [Error - Spell Interface] 
+[12/10/2026 23:19:46] In a timer event called from: 
+[12/10/2026 23:19:46] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:19:46] Description: 
+[12/10/2026 23:19:46] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:19:46] stack traceback:
+[12/10/2026 23:19:46] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:19:46] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:19:46] 	data/lib/075-custom-functions.lua:150: in function <data/lib/075-custom-functions.lua:149>
+
+[12/10/2026 23:19:53] [Error - Spell Interface] 
+[12/10/2026 23:19:53] In a timer event called from: 
+[12/10/2026 23:19:53] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:19:53] Description: 
+[12/10/2026 23:19:53] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:19:53] stack traceback:
+[12/10/2026 23:19:53] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:19:53] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:19:53] 	data/lib/075-custom-functions.lua:150: in function <data/lib/075-custom-functions.lua:149>
+
+[12/10/2026 23:20:9] [Error - Spell Interface] 
+[12/10/2026 23:20:9] In a timer event called from: 
+[12/10/2026 23:20:9] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:20:9] Description: 
+[12/10/2026 23:20:9] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:20:9] stack traceback:
+[12/10/2026 23:20:9] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:20:9] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:20:9] 	data/lib/075-custom-functions.lua:150: in function <data/lib/075-custom-functions.lua:149>
+
+[12/10/2026 23:20:10] [Error - Spell Interface] 
+[12/10/2026 23:20:10] In a timer event called from: 
+[12/10/2026 23:20:10] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:20:10] Description: 
+[12/10/2026 23:20:10] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:20:10] stack traceback:
+[12/10/2026 23:20:10] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:20:10] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:20:10] 	data/lib/075-custom-functions.lua:150: in function <data/lib/075-custom-functions.lua:149>
+
+[12/10/2026 23:20:13] [Error - Spell Interface] 
+[12/10/2026 23:20:13] In a timer event called from: 
+[12/10/2026 23:20:13] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:20:13] Description: 
+[12/10/2026 23:20:13] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:20:13] stack traceback:
+[12/10/2026 23:20:13] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:20:13] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:20:13] 	data/lib/075-custom-functions.lua:150: in function <data/lib/075-custom-functions.lua:149>
+
+[12/10/2026 23:20:18] [Error - Spell Interface] 
+[12/10/2026 23:20:18] In a timer event called from: 
+[12/10/2026 23:20:18] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:20:18] Description: 
+[12/10/2026 23:20:18] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:20:18] stack traceback:
+[12/10/2026 23:20:18] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:20:18] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:20:18] 	data/lib/075-custom-functions.lua:150: in function <data/lib/075-custom-functions.lua:149>
+
+[12/10/2026 23:20:34] [Error - Spell Interface] 
+[12/10/2026 23:20:34] In a timer event called from: 
+[12/10/2026 23:20:34] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:20:34] Description: 
+[12/10/2026 23:20:34] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:20:34] stack traceback:
+[12/10/2026 23:20:34] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:20:34] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:20:34] 	data/lib/075-custom-functions.lua:150: in function <data/lib/075-custom-functions.lua:149>
+
+[12/10/2026 23:22:8] [Error - Spell Interface] 
+[12/10/2026 23:22:8] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:22:8] Description: 
+[12/10/2026 23:22:8] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:22:8] stack traceback:
+[12/10/2026 23:22:8] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:22:8] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:22:8] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:22:8] 	(tail call): ?
+
+[12/10/2026 23:22:11] [Error - Spell Interface] 
+[12/10/2026 23:22:11] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:22:11] Description: 
+[12/10/2026 23:22:11] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:22:11] stack traceback:
+[12/10/2026 23:22:11] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:22:11] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:22:11] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:22:11] 	(tail call): ?
+
+[12/10/2026 23:22:12] [Error - Spell Interface] 
+[12/10/2026 23:22:12] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:22:12] Description: 
+[12/10/2026 23:22:12] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:22:12] stack traceback:
+[12/10/2026 23:22:12] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:22:12] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:22:12] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:22:12] 	(tail call): ?
+
+[12/10/2026 23:22:19] [Error - Spell Interface] 
+[12/10/2026 23:22:19] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:22:19] Description: 
+[12/10/2026 23:22:19] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:22:19] stack traceback:
+[12/10/2026 23:22:19] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:22:19] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:22:19] 	data/lib/075-custom-functions.lua:154: in function <data/lib/075-custom-functions.lua:23>
+[12/10/2026 23:22:19] 	(tail call): ?
+
+[12/10/2026 23:22:31] [Error - Spell Interface] 
+[12/10/2026 23:22:31] In a timer event called from: 
+[12/10/2026 23:22:31] data/spells/scripts/saiyajin/Super Saiyaman Furie.lua:onCastSpell
+[12/10/2026 23:22:31] Description: 
+[12/10/2026 23:22:31] data/lib/075-custom-functions.lua:130: attempt to perform arithmetic on field 'minDmg' (a nil value)
+[12/10/2026 23:22:31] stack traceback:
+[12/10/2026 23:22:31] 	data/lib/075-custom-functions.lua:130: in function 'doAreaDamage'
+[12/10/2026 23:22:31] 	data/lib/075-custom-functions.lua:148: in function 'expandArea'
+[12/10/2026 23:22:31] 	data/lib/075-custom-functions.lua:150: in function <data/lib/075-custom-functions.lua:149>
+[12/10/2026 23:23:35] > Salvando servidor...
+[12/10/2026 23:23:35] > SAVE: Completo em 0.47 segundos usando binary casa storage.
+[12/10/2026 23:23:50] ADMIN has logged out.
+[12/10/2026 23:23:51] ADMIN has logged in.
+[12/10/2026 23:24:26] Kira VS L has logged out.

@@ -2989,10 +2989,12 @@
         <attribute key="weight" value="10" />
         <attribute key="worth" value="100" />
     </item>
-    <item id="2153" client_id="3036" article="a" name="violet gem">
+    <item id="2153" client_id="3036" article="a" name="exclusive rarity stone">
+        <attribute key="description" value="Exclusive rarity stone. Used in the Craft window to upgrade special set items." />
         <attribute key="weight" value="30" />
     </item>
-    <item id="2154" client_id="3037" article="a" name="yellow gem">
+    <item id="2154" client_id="3037" article="a" name="rarity stone">
+        <attribute key="description" value="Universal rarity stone. Used in the Craft window to upgrade equipment rarity." />
         <attribute key="weight" value="30" />
     </item>
     <item id="2155" client_id="3038" article="a" name="green gem">

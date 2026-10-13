@@ -14,6 +14,7 @@ local reloadInfo = {
 	{ RELOAD_OUTFITS,        "outfits",        "outfit" },
 	{ RELOAD_QUESTS,         "quests",         "quest" },
 	{ RELOAD_RAIDS,          "raids",          "raid" },
+	{ RELOAD_RARITY,         "rarity",         "raridade",        "raridades" },
 	{ RELOAD_SPELLS,         "spells",         "spell" },
 	{ RELOAD_STAGES,         "stages",         "experience" },
 	{ RELOAD_TALKACTIONS,    "talkactions",    "talk actions",    "talk",            "commands",         "talkaction",    "talk action" },

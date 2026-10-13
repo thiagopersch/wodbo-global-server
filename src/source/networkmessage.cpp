@@ -201,7 +201,7 @@ void NetworkMessage::putPosition(const Position& pos)
 	put<char>(pos.z);
 }
 
-void NetworkMessage::putItem(uint16_t id, uint16_t count)
+void NetworkMessage::putItem(uint16_t id, uint16_t count, bool customAttrs/* = false*/)
 {
 	const ItemType &it = Item::items[id];
 	put<uint16_t>(it.clientId);
@@ -209,19 +209,12 @@ void NetworkMessage::putItem(uint16_t id, uint16_t count)
 		put<uint16_t>(count);
 	else if(it.isSplash() || it.isFluidContainer())
 		put<char>(fluidMap[count % 8]);
+
+	if(customAttrs)
+		putItemCustomAttributes(NULL);
 }
 
-void NetworkMessage::putItem(const Item* item)
-{
-	const ItemType& it = Item::items[item->getID()];
-	put<uint16_t>(it.clientId);
-	if(it.stackable)
-		put<uint16_t>(item->getSubType());
-	else if(it.isSplash() || it.isFluidContainer())
-		put<char>(fluidMap[item->getSubType() % 8]);
-}
-
-void NetworkMessage::putItem(const Item* item, bool withDescription)
+void NetworkMessage::putItem(const Item* item, bool withDescription/* = false*/, bool customAttrs/* = false*/)
 {
 	const ItemType& it = Item::items[item->getID()];
 	put<uint16_t>(it.clientId);
@@ -232,6 +225,25 @@ void NetworkMessage::putItem(const Item* item, bool withDescription)
 
 	if(withDescription)
 		putString(item->getDescription(0));
+
+	if(customAttrs)
+		putItemCustomAttributes(item);
+}
+
+void NetworkMessage::putItemCustomAttributes(const Item* item)
+{
+	// lido pelo OTClient quando a feature GameItemCustomAttributes esta ativa:
+	// u16 quantidade + (u16 chave, u64 valor) por atributo
+	int32_t rarity = item ? item->getRarity() : 0;
+	if(rarity <= 0)
+	{
+		put<uint16_t>(0);
+		return;
+	}
+
+	put<uint16_t>(1);
+	put<uint16_t>(RARITY_CUSTOM_ATTRIBUTE_KEY);
+	put<uint64_t>((uint64_t)rarity);
 }
 
 void NetworkMessage::putItemId(const Item* item)

@@ -1490,6 +1490,13 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance, const
 		s << ".";
 	}
 
+	if(item && item->getRarity() > 0)
+	{
+		std::string tmp = g_rarity.getDescription(item->getRarity());
+		if(!tmp.empty())
+			s << std::endl << tmp;
+	}
+
 	if(lookDistance <= 1 && it.pickupable)
 	{
 		std::string tmp;

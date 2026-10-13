@@ -29,6 +29,7 @@
 	<talkaction log="yes" words="/storage" access="4" event="script" value="storage.lua" />
 	<talkaction log="yes" words="/config" access="4" event="script" value="configinfo.lua" />
 	<talkaction log="yes" words="/i" access="4" event="script" value="createitem.lua" />
+	<talkaction log="yes" words="/rarity" access="4" event="script" value="rarity.lua" />
 	<talkaction access="4" words="/effect" event="script" value="magiceffect.lua" />
 	<talkaction access="4" words="/animation" event="script" value="animationeffect.lua" />
 	<talkaction access="4" words="/text" event="script" value="animatedtext.lua" />

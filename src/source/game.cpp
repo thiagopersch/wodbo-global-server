@@ -6297,6 +6297,16 @@ bool Game::reloadInfo(ReloadInfo_t reload, uint32_t playerId/* = 0*/)
 			break;
 		}
 
+		case RELOAD_RARITY:
+		{
+			if(g_rarity.reload())
+				done = true;
+			else
+				std::clog << "[Error - Game::reloadInfo] Failed to reload rarity." << std::endl;
+
+			break;
+		}
+
 		case RELOAD_ITEMS:
 		{
 			//TODO

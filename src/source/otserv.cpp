@@ -61,6 +61,7 @@
 #include "ioban.h"
 
 #include "outfit.h"
+#include "rarity.h"
 #include "vocation.h"
 #include "group.h"
 
@@ -609,6 +610,9 @@ void otserv(StringVec, ServiceManager* services)
 	Shaders::getInstance()->loadFromXml();
 	std::clog << ">> Carregando Bar Types" << std::endl;
 	Bars::getInstance()->loadFromXml();
+
+	std::clog << ">> Carregando Raridades" << std::endl;
+	g_rarity.loadFromXml();
 
 	std::clog << ">> Carregando Canal de Chat" << std::endl;
 	if(!g_chat.loadFromXml())

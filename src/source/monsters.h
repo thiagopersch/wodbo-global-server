@@ -102,7 +102,7 @@ class MonsterType
 
 		int32_t defense, armor, health, healthMax, baseSpeed, lookCorpse, corpseUnique, corpseAction,
 			maxSummons, targetDistance, runAwayHealth, conditionImmunities, damageImmunities,
-			lightLevel, lightColor, changeTargetSpeed, changeTargetChance;
+			lightLevel, lightColor, changeTargetSpeed, changeTargetChance, rarityBonus;
 		uint32_t yellChance, yellSpeedTicks, staticAttackChance, manaCost;
 		uint64_t experience;
 

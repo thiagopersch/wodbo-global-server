@@ -30,6 +30,7 @@
 
 #include "items.h"
 #include "raids.h"
+#include "rarity.h"
 
 class Creature;
 class Player;
@@ -254,6 +255,9 @@ class Item : virtual public Thing, public ItemAttributes
 		bool isScriptProtected() const;
 		bool isDualWield() const;
 
+		int32_t getRarity() const;
+		void setRarity(int32_t rarity);
+
 		int32_t getAttack() const;
 		int32_t getExtraAttack() const;
 		int32_t getDefense() const;
@@ -384,49 +388,66 @@ inline bool Item::isScriptProtected() const
 	return false;
 }
 
+inline int32_t Item::getRarity() const
+{
+	const int32_t* v = getIntegerAttribute(RARITY_ATTRIBUTE);
+	if(v)
+		return *v;
+
+	return 0;
+}
+
+inline void Item::setRarity(int32_t rarity)
+{
+	if(rarity <= 0)
+		eraseAttribute(RARITY_ATTRIBUTE);
+	else
+		setAttribute(RARITY_ATTRIBUTE, std::min(rarity, g_rarity.getMaxTier()));
+}
+
 inline int32_t Item::getAttack() const
 {
 	const int32_t* v = getIntegerAttribute("attack");
 	if(v)
-		return *v;
+		return g_rarity.applyBonus(*v, getRarity());
 
-	return items[id].attack;
+	return g_rarity.applyBonus(items[id].attack, getRarity());
 }
 
 inline int32_t Item::getExtraAttack() const
 {
 	const int32_t* v = getIntegerAttribute("extraattack");
 	if(v)
-		return *v;
+		return g_rarity.applyBonus(*v, getRarity());
 
-	return items[id].extraAttack;
+	return g_rarity.applyBonus(items[id].extraAttack, getRarity());
 }
 
 inline int32_t Item::getDefense() const
 {
 	const int32_t* v = getIntegerAttribute("defense");
 	if(v)
-		return *v;
+		return g_rarity.applyBonus(*v, getRarity());
 
-	return items[id].defense;
+	return g_rarity.applyBonus(items[id].defense, getRarity());
 }
 
 inline int32_t Item::getExtraDefense() const
 {
 	const int32_t* v = getIntegerAttribute("extradefense");
 	if(v)
-		return *v;
+		return g_rarity.applyBonus(*v, getRarity());
 
-	return items[id].extraDefense;
+	return g_rarity.applyBonus(items[id].extraDefense, getRarity());
 }
 
 inline int32_t Item::getArmor() const
 {
 	const int32_t* v = getIntegerAttribute("armor");
 	if(v)
-		return *v;
+		return g_rarity.applyBonus(*v, getRarity());
 
-	return items[id].armor;
+	return g_rarity.applyBonus(items[id].armor, getRarity());
 }
 
 inline int32_t Item::getAttackSpeed() const

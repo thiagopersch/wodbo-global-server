@@ -1023,7 +1023,7 @@ void ProtocolGame::GetTileDescription(const Tile* tile, NetworkMessage_ptr msg)
 	int32_t count = 0;
 	if(tile->ground)
 	{
-		msg->putItem(tile->ground);
+		msg->putItem(tile->ground, false, useItemCustomAttributes());
 		count++;
 	}
 
@@ -1034,7 +1034,7 @@ void ProtocolGame::GetTileDescription(const Tile* tile, NetworkMessage_ptr msg)
 	if(items)
 	{
 		for(it = items->getBeginTopItem(); (it != items->getEndTopItem() && count < 10); ++it, ++count)
-			msg->putItem(*it);
+			msg->putItem(*it, false, useItemCustomAttributes());
 	}
 
 	if(creatures)
@@ -1056,7 +1056,7 @@ void ProtocolGame::GetTileDescription(const Tile* tile, NetworkMessage_ptr msg)
 	if(items)
 	{
 		for(it = items->getBeginDownItem(); (it != items->getEndDownItem() && count < 10); ++it, ++count)
-			msg->putItem(*it);
+			msg->putItem(*it, false, useItemCustomAttributes());
 	}
 }
 
@@ -1181,6 +1181,11 @@ bool ProtocolGame::canSee(const Creature* c) const
 bool ProtocolGame::canSee(const Position& pos) const
 {
 	return canSee(pos.x, pos.y, pos.z);
+}
+
+bool ProtocolGame::useItemCustomAttributes() const
+{
+	return player && player->isUsingOtclient();
 }
 
 bool ProtocolGame::canSee(uint16_t x, uint16_t y, uint16_t z) const
@@ -2093,6 +2098,9 @@ void ProtocolGame::sendContainer(uint32_t cid, const Container* container, bool 
 		msg->put<char>(cid);
 
 		msg->putItemId(container);
+		if(useItemCustomAttributes())
+			msg->putItemCustomAttributes(container);
+
 		msg->putString(container->getName());
 		msg->put<char>(container->capacity());
 
@@ -2101,7 +2109,7 @@ void ProtocolGame::sendContainer(uint32_t cid, const Container* container, bool 
 
 		ItemList::const_iterator cit = container->getItems();
 		for(uint32_t i = 0; cit != container->getEnd() && i < 255; ++cit, ++i)
-			msg->putItem(*cit, player->isUsingOtclient());
+			msg->putItem(*cit, player->isUsingOtclient(), useItemCustomAttributes());
 	}
 }
 
@@ -2215,14 +2223,14 @@ void ProtocolGame::sendTradeItemRequest(const Player* player, const Item* item, 
 		if(const Container* container = item->getContainer())
 		{
 			msg->put<char>(container->getItemHoldingCount() + 1);
-			msg->putItem(item);
+			msg->putItem(item, false, useItemCustomAttributes());
 			for(ContainerIterator it = container->begin(); it != container->end(); ++it)
-				msg->putItem(*it);
+				msg->putItem(*it, false, useItemCustomAttributes());
 		}
 		else
 		{
 			msg->put<char>(1);
-			msg->putItem(item);
+			msg->putItem(item, false, useItemCustomAttributes());
 		}
 	}
 }
@@ -3474,7 +3482,7 @@ void ProtocolGame::AddTileItem(NetworkMessage_ptr msg, const Position& pos, uint
 	msg->put<char>(0x6A);
 	msg->putPosition(pos);
 	msg->put<char>(stackpos);
-	msg->putItem(item);
+	msg->putItem(item, false, useItemCustomAttributes());
 }
 
 void ProtocolGame::AddTileCreature(NetworkMessage_ptr msg, const Position& pos, uint32_t stackpos, const Creature* creature)
@@ -3500,7 +3508,7 @@ void ProtocolGame::UpdateTileItem(NetworkMessage_ptr msg, const Position& pos, u
 	msg->put<char>(0x6B);
 	msg->putPosition(pos);
 	msg->put<char>(stackpos);
-	msg->putItem(item);
+	msg->putItem(item, false, useItemCustomAttributes());
 }
 
 void ProtocolGame::RemoveTileItem(NetworkMessage_ptr msg, const Position& pos, uint32_t stackpos)
@@ -3620,7 +3628,7 @@ void ProtocolGame::AddInventoryItem(NetworkMessage_ptr msg, slots_t slot, const 
 	{
 		msg->put<char>(0x78);
 		msg->put<char>(slot);
-		msg->putItem(item, player->isUsingOtclient());
+		msg->putItem(item, player->isUsingOtclient(), useItemCustomAttributes());
 	}
 	else
 		RemoveInventoryItem(msg, slot);
@@ -3642,7 +3650,7 @@ void ProtocolGame::AddContainerItem(NetworkMessage_ptr msg, uint8_t cid, const I
 {
 	msg->put<char>(0x70);
 	msg->put<char>(cid);
-	msg->putItem(item, player->isUsingOtclient());
+	msg->putItem(item, player->isUsingOtclient(), useItemCustomAttributes());
 }
 
 void ProtocolGame::UpdateContainerItem(NetworkMessage_ptr msg, uint8_t cid, uint8_t slot, const Item* item)
@@ -3650,7 +3658,7 @@ void ProtocolGame::UpdateContainerItem(NetworkMessage_ptr msg, uint8_t cid, uint
 	msg->put<char>(0x71);
 	msg->put<char>(cid);
 	msg->put<char>(slot);
-	msg->putItem(item, player->isUsingOtclient());
+	msg->putItem(item, player->isUsingOtclient(), useItemCustomAttributes());
 }
 
 void ProtocolGame::RemoveContainerItem(NetworkMessage_ptr msg, uint8_t cid, uint8_t slot)

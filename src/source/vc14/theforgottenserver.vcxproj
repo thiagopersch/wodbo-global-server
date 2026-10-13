@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -212,6 +212,7 @@
     <ClCompile Include="..\protocolold.cpp" />
     <ClCompile Include="..\quests.cpp" />
     <ClCompile Include="..\raids.cpp" />
+    <ClCompile Include="..\rarity.cpp" />
     <ClCompile Include="..\rsa.cpp" />
     <ClCompile Include="..\scheduler.cpp" />
     <ClCompile Include="..\scriptmanager.cpp" />
@@ -295,6 +296,7 @@
     <ClInclude Include="..\protocolold.h" />
     <ClInclude Include="..\quests.h" />
     <ClInclude Include="..\raids.h" />
+    <ClInclude Include="..\rarity.h" />
     <ClInclude Include="..\rsa.h" />
     <ClInclude Include="..\scheduler.h" />
     <ClInclude Include="..\scriptmanager.h" />

@@ -707,6 +707,11 @@ class LuaInterface
 		static int32_t luaGetItemAttribute(lua_State* L);
 		static int32_t luaDoItemSetAttribute(lua_State* L);
 		static int32_t luaDoItemEraseAttribute(lua_State* L);
+		static int32_t luaGetItemRarity(lua_State* L);
+		static int32_t luaGetItemRarityBonus(lua_State* L);
+		static int32_t luaDoItemSetRarity(lua_State* L);
+		static int32_t luaDoItemRollRarity(lua_State* L);
+		static int32_t luaGetRarityConfig(lua_State* L);
 		static int32_t luaGetVocationList(lua_State* L);
 		static int32_t luaGetGroupList(lua_State* L);
 		static int32_t luaGetChannelList(lua_State* L);

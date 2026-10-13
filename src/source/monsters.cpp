@@ -57,6 +57,7 @@ void MonsterType::reset()
 	partyShield = SHIELD_NONE;
 	guildEmblem = EMBLEM_NONE;
 	lootMessage = LOOTMSG_IGNORE;
+	rarityBonus = 0;
 
 	for(SpellList::iterator it = spellAttackList.begin(); it != spellAttackList.end(); ++it)
 	{
@@ -175,6 +176,7 @@ ItemList MonsterType::createLoot(const LootBlock& lootBlock, int32_t bonusPercen
 		if(!lootBlock.text.empty())
 			tmpItem->setText(lootBlock.text);
 
+		g_rarity.applyRoll(tmpItem, rarityBonus);
 		items.push_back(tmpItem);
 	}
 
@@ -1043,6 +1045,9 @@ bool Monsters::loadMonster(const std::string& file, const std::string& monsterNa
 
 					if(readXMLInteger(tmpNode, "lootmessage", intValue))
 						mType->lootMessage = (LootMessage_t)intValue;
+
+					if(readXMLInteger(tmpNode, "raritybonus", intValue))
+						mType->rarityBonus = intValue;
 
 					if(readXMLInteger(tmpNode, "staticattack", intValue))
 					{

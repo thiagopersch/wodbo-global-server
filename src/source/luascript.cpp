@@ -2418,6 +2418,21 @@ void LuaInterface::registerFunctions(){
 	//doItemEraseAttribute(uid, key)
 	lua_register(m_luaState, "doItemEraseAttribute", LuaInterface::luaDoItemEraseAttribute);
 
+	//getItemRarity(uid)
+	lua_register(m_luaState, "getItemRarity", LuaInterface::luaGetItemRarity);
+
+	//getItemRarityBonus(uid)
+	lua_register(m_luaState, "getItemRarityBonus", LuaInterface::luaGetItemRarityBonus);
+
+	//doItemSetRarity(uid, rarity)
+	lua_register(m_luaState, "doItemSetRarity", LuaInterface::luaDoItemSetRarity);
+
+	//doItemRollRarity(uid[, bonusPercent = 0])
+	lua_register(m_luaState, "doItemRollRarity", LuaInterface::luaDoItemRollRarity);
+
+	//getRarityConfig()
+	lua_register(m_luaState, "getRarityConfig", LuaInterface::luaGetRarityConfig);
+
 	//getItemWeight(uid[, precise = true])
 	lua_register(m_luaState, "getItemWeight", LuaInterface::luaGetItemWeight);
 
@@ -10888,6 +10903,175 @@ int32_t LuaInterface::luaDoItemEraseAttribute(lua_State* L)
 		item->resetActionId();
 
 	lua_pushboolean(L, ret);
+	return 1;
+}
+
+static void sendRarityUpdate(Item* item)
+{
+	// reenvia o item para quem estiver vendo (inventario, container ou chao)
+	if(Cylinder* parent = item->getParent())
+		parent->__updateThing(item, item->getID(), item->getItemCount());
+}
+
+int32_t LuaInterface::luaGetItemRarity(lua_State* L)
+{
+	//getItemRarity(uid)
+	ScriptEnviroment* env = getEnv();
+	Item* item = env->getItemByUID(popNumber(L));
+	if(!item)
+	{
+		errorEx(getError(LUA_ERROR_ITEM_NOT_FOUND));
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	lua_pushnumber(L, item->getRarity());
+	return 1;
+}
+
+int32_t LuaInterface::luaGetItemRarityBonus(lua_State* L)
+{
+	//getItemRarityBonus(uid)
+	ScriptEnviroment* env = getEnv();
+	Item* item = env->getItemByUID(popNumber(L));
+	if(!item)
+	{
+		errorEx(getError(LUA_ERROR_ITEM_NOT_FOUND));
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	const RarityTier* tier = g_rarity.getTier(item->getRarity());
+	lua_pushnumber(L, (tier && item->getRarity() > 0) ? tier->bonus : 0);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoItemSetRarity(lua_State* L)
+{
+	//doItemSetRarity(uid, rarity)
+	int32_t rarity = popNumber(L);
+	ScriptEnviroment* env = getEnv();
+
+	Item* item = env->getItemByUID(popNumber(L));
+	if(!item)
+	{
+		errorEx(getError(LUA_ERROR_ITEM_NOT_FOUND));
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	if(item->isStackable())
+	{
+		errorEx("Stackable items cannot have rarity.");
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	item->setRarity(std::max((int32_t)0, std::min(rarity, g_rarity.getMaxTier())));
+	sendRarityUpdate(item);
+	lua_pushboolean(L, true);
+	return 1;
+}
+
+int32_t LuaInterface::luaDoItemRollRarity(lua_State* L)
+{
+	//doItemRollRarity(uid[, bonusPercent = 0])
+	int32_t bonus = 0;
+	if(lua_gettop(L) > 1)
+		bonus = popNumber(L);
+
+	ScriptEnviroment* env = getEnv();
+	Item* item = env->getItemByUID(popNumber(L));
+	if(!item)
+	{
+		errorEx(getError(LUA_ERROR_ITEM_NOT_FOUND));
+		lua_pushboolean(L, false);
+		return 1;
+	}
+
+	int32_t before = item->getRarity();
+	int32_t rarity = g_rarity.applyRoll(item, bonus);
+	if(rarity != before)
+		sendRarityUpdate(item);
+
+	lua_pushnumber(L, rarity);
+	return 1;
+}
+
+int32_t LuaInterface::luaGetRarityConfig(lua_State* L)
+{
+	//getRarityConfig()
+	lua_newtable(L);
+	setFieldBool(L, "enabled", g_rarity.isEnabled());
+	setField(L, "guaranteeMultiplier", (int32_t)g_rarity.getGuaranteeMultiplier());
+	setField(L, "maxTier", g_rarity.getMaxTier());
+
+	const RarityTierList& tiers = g_rarity.getTiers();
+	createTable(L, "tiers");
+	for(size_t i = 0; i < tiers.size(); ++i)
+	{
+		createTable(L, (int32_t)i + 1);
+		setField(L, "id", (int32_t)i);
+		setField(L, "name", tiers[i].name);
+		setField(L, "nameLatin", tiers[i].nameLatin);
+		setField(L, "color", tiers[i].color);
+		setField(L, "bonus", tiers[i].bonus);
+		setField(L, "dropChance", tiers[i].dropChance);
+		pushTable(L);
+	}
+
+	pushTable(L);
+	const RarityGroupList& groups = g_rarity.getGroups();
+	createTable(L, "groups");
+	for(size_t g = 0; g < groups.size(); ++g)
+	{
+		const RarityGroup& group = groups[g];
+		createTable(L, (int32_t)g + 1);
+		setField(L, "name", group.name);
+		setField(L, "category", group.category);
+		setField(L, "maxRarity", group.maxRarity);
+		setFieldBool(L, "drop", group.drop);
+		setFieldBool(L, "failDowngrade", group.failDowngrade);
+
+		createTable(L, "items");
+		int32_t n = 0;
+		for(std::vector<uint16_t>::const_iterator it = group.items.begin(); it != group.items.end(); ++it)
+		{
+			// somente itens aceitos pelo manager (validos e nao empilhaveis)
+			if(g_rarity.getGroup(*it) != &group)
+				continue;
+
+			lua_pushnumber(L, ++n);
+			lua_pushnumber(L, *it);
+			pushTable(L);
+		}
+
+		pushTable(L);
+		createTable(L, "steps");
+		for(RarityStepMap::const_iterator it = group.steps.begin(); it != group.steps.end(); ++it)
+		{
+			createTable(L, it->first);
+			setField(L, "to", it->first);
+			setField(L, "chance", it->second.chance);
+
+			createTable(L, "materials");
+			for(size_t m = 0; m < it->second.materials.size(); ++m)
+			{
+				createTable(L, (int32_t)m + 1);
+				setField(L, "id", (int32_t)it->second.materials[m].itemId);
+				setField(L, "count", (int32_t)it->second.materials[m].count);
+				pushTable(L);
+			}
+
+			pushTable(L);
+			pushTable(L);
+		}
+
+		pushTable(L);
+		pushTable(L);
+	}
+
+	pushTable(L);
 	return 1;
 }
 

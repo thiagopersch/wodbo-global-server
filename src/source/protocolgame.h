@@ -105,6 +105,9 @@ class ProtocolGame : public Protocol
 		bool canSee(const Creature*) const;
 		bool canSee(const Position& pos) const;
 
+		// atributos customizados de item (raridade) so existem no OTClient
+		bool useItemCustomAttributes() const;
+
 		virtual void onConnect();
 		virtual void onRecvFirstMessage(NetworkMessage& msg);
 
