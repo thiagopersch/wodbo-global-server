@@ -46,13 +46,13 @@ function TaskKill_onKill(cid, monsterName)
 
                         if playerTask.kills >= config.killsRequired then
                             playerTask.completed = 1
-                            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE,
+                            TaskChannel_message(cid, TALKTYPE_CHANNEL_O,
                                 "[Task] '" .. config.name .. "' completed! Open the Tasks window and claim your reward.")
                             TaskNetwork_sendMessage(cid, "Task '" .. config.name .. "' completed!", "#00ff00")
                             doSendMagicEffect(getCreaturePosition(cid), CONST_ME_FIREAREA)
                             TaskNetwork_sendCompletePopup(cid, taskId, config)
                         else
-                            doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,
+                            TaskChannel_message(cid, TALKTYPE_CHANNEL_W,
                                 "[Task] " .. config.name .. ": " ..
                                 playerTask.kills .. "/" .. config.killsRequired)
                         end

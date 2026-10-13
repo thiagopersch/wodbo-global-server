@@ -165,7 +165,42 @@ function AutomaticDeposit(cid,item,n)
 	local deposit = item == tonumber(2160) and (n*10000) or tonumber(item) == 2152 and (n*100) or (n*1)
 	return doPlayerDepositMoney(cid, deposit)
 end
-function corpseRetireItems(cid, pos)
+-- Cores dos itens no canal Loot (itens com raridade usam a cor do tier em rarity.xml).
+LOOT_ITEM_COLORS = {
+	[2160] = "#5a9bff", -- crystal coin
+	[2152] = "#3fcf3f", -- platinum coin
+}
+
+local function lootItemText(itemid, count)
+	local info = getItemInfo(itemid)
+	local name = info and info.name or getItemNameById(itemid)
+	if count > 1 then
+		local plural = (info and info.plural ~= "") and info.plural or (name .. "s")
+		return count .. " " .. plural
+	end
+	local article = (info and info.article ~= "") and (info.article .. " ") or ""
+	return article .. name
+end
+
+-- Envia "Loot of <monstro>: ..." no canal Loot com o que o autoloot coletou.
+function sendAutolootChannel(cid, monsterDesc, collected)
+	if #collected == 0 or not isPlayer(cid) then
+		return
+	end
+	local parts = {}
+	for _, entry in ipairs(collected) do
+		local color = LOOT_ITEM_COLORS[entry.itemid]
+		if entry.rarity > 0 and Rarity and Rarity.getTier then
+			local tier = Rarity.getTier(entry.rarity)
+			color = tier and tier.color or color
+		end
+		table.insert(parts, SysChannel_color(lootItemText(entry.itemid, entry.count), color))
+	end
+	SysChannel_send(cid, SYSCHANNEL_LOOT, "Loot of " .. (monsterDesc or "a creature") .. ": " ..
+		table.concat(parts, ", "), TALKTYPE_CHANNEL_W)
+end
+
+function corpseRetireItems(cid, pos, monsterDesc)
 	local check = false
 	local tile
 	for i = 0, 255 do
@@ -187,9 +222,19 @@ function corpseRetireItems(cid, pos)
 		end
 		local moneyEnabled = getPlayerStorageValue(cid, info.Storages[2]) > 0
 		local toBank = getPlayerStorageValue(cid, info.Storages[4]) > 0
+		local collected, collectedIndex = {}, {}
 		for i,x in pairs(items) do
 			local isMoney = isInArray({2148,2152,2160}, tonumber(x.itemid))
 			if isInArray(getPlayerStorageTable(cid, info.Storages[1]), tonumber(x.itemid)) or (moneyEnabled and isMoney) then
+				local rarity = tonumber(getItemRarity and getItemRarity(x.uid)) or 0
+				local count = isItemStackable(x.itemid) and math.max(1, x.type) or 1
+				local key = x.itemid .. ":" .. rarity
+				if collectedIndex[key] then
+					collectedIndex[key].count = collectedIndex[key].count + count
+				else
+					collectedIndex[key] = {itemid = x.itemid, count = count, rarity = rarity}
+					table.insert(collected, collectedIndex[key])
+				end
 				if isMoney and toBank then
 					AutomaticDeposit(cid, x.itemid, x.type)
 				elseif isItemStackable(x.itemid) then
@@ -200,5 +245,6 @@ function corpseRetireItems(cid, pos)
 				doRemoveItem(x.uid)
 			end
 		end
+		sendAutolootChannel(cid, monsterDesc, collected)
 	end
 end

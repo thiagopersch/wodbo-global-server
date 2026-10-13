@@ -353,7 +353,7 @@ end
 
 local function announceLevelUp(cid, level)
     if not isPlayer(cid) then return end
-    doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "Battle Pass level up! You are now level " .. level .. ".")
+    SysChannel_send(cid, SYSCHANNEL_BATTLEPASS, "Battle Pass level up! You are now level " .. level .. ".", TALKTYPE_CHANNEL_O)
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_FIREWORK_YELLOW)
 end
 
@@ -417,7 +417,20 @@ local function checkMissions(cid, matches)
                 current = current + 1
                 progress.missionProgress[key] = current
                 changed = true
+                if current < required then
+                    local text
+                    if mission.type == "kill_monster" and mission.target.monster then
+                        text = "Keep killing " .. mission.target.monster .. " [" .. current .. " of " .. required ..
+                            "] to complete the Battle Pass mission"
+                    else
+                        text = "Battle Pass mission progress: " .. (mission.description or "") ..
+                            " [" .. current .. " of " .. required .. "]"
+                    end
+                    SysChannel_send(cid, SYSCHANNEL_BATTLEPASS, text, TALKTYPE_CHANNEL_W)
+                end
                 if current >= required then
+                    SysChannel_send(cid, SYSCHANNEL_BATTLEPASS, "Mission completed: " .. (mission.description or "") ..
+                        " (+" .. (mission.xpReward or 0) .. " XP)", TALKTYPE_CHANNEL_O)
                     table.insert(completedMissions, mission)
                     if applyXp(progress, mission.xpReward) then
                         leveledUp = true

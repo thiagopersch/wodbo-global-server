@@ -83,7 +83,7 @@ function TaskCore_startTask(cid, taskId)
 
     cache[taskId] = taskData
 
-    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "[Task] You started '" .. config.name .. "'!")
+    TaskChannel_message(cid, TALKTYPE_CHANNEL_O, "[Task] You started '" .. config.name .. "'!")
     TaskNetwork_sendMessage(cid, "Task started successfully: '" .. config.name .. "'!", "#00ff00")
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_GREEN_RINGS)
     if config.killsRequired > 0 then
@@ -91,11 +91,11 @@ function TaskCore_startTask(cid, taskId)
         for _, m in ipairs(config.monsters) do
             table.insert(names, type(m) == "table" and m.name or m)
         end
-        doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR,
+        TaskChannel_message(cid, TALKTYPE_CHANNEL_W,
             "[Task] Kill " .. config.killsRequired .. " " .. table.concat(names, ", ") .. ".")
     end
     if config.delivery and config.delivery.enabled then
-        doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR,
+        TaskChannel_message(cid, TALKTYPE_CHANNEL_W,
             "[Task] Bring " .. config.delivery.count .. "x " .. getItemNameById(config.delivery.itemId) .. ".")
     end
 
@@ -131,7 +131,7 @@ function TaskCore_abortTask(cid, taskId)
 
     cache[taskId] = nil
 
-    doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "[Task] Task aborted.")
+    TaskChannel_message(cid, TALKTYPE_CHANNEL_RN, "[Task] Task aborted.")
     TaskNetwork_sendMessage(cid, "Task canceled!", "#ff4444")
 
     TaskNetwork_sendTaskList(cid)
@@ -165,7 +165,7 @@ function TaskCore_completeTask(cid, taskId)
 
     playerTask.completed = 1
 
-    doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR,
+    TaskChannel_message(cid, TALKTYPE_CHANNEL_O,
         "[Task] '" .. config.name .. "' completed! Open the Tasks window and click Claim Rewards.")
     TaskNetwork_sendMessage(cid, "Task '" .. config.name .. "' completed! Claim your rewards.", "#00ff00")
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_FIREAREA)
@@ -221,7 +221,7 @@ function TaskCore_claimTask(cid, taskId)
 
     playerTask.rewarded = 1
 
-    doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "[Task] Rewards delivered for '" .. config.name .. "'!")
+    TaskChannel_message(cid, TALKTYPE_CHANNEL_O, "[Task] Rewards delivered for '" .. config.name .. "'!")
     TaskNetwork_sendMessage(cid, "Rewards claimed for '" .. config.name .. "'!", "#00ff00")
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_HOLYDAMAGE)
 

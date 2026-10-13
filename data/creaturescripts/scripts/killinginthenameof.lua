@@ -21,7 +21,7 @@ function onKill(cid, target, damage, flags)
     end
 
     local b = getPlayerStorageValue(cid, a.storage) + 1
-    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE,
+    TaskChannel_message(cid, TALKTYPE_CHANNEL_W,
       "Task (" .. name:upper() .. "): " .. (b == a.amount and "Completed!" or b .. " / " .. a.amount))
     setPlayerStorageValue(cid, a.storage, b)
   end

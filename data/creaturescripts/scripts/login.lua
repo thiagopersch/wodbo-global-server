@@ -41,7 +41,6 @@ function onLogin(cid)
 
   registerCreatureEvent(cid, "OutfitFilter")
   if (config.useFragHandler) then registerCreatureEvent(cid, "SkullCheck") end
-  registerCreatureEvent(cid, "AnnounceDeath")
   registerCreatureEvent(cid, "AmuletDeath")
   registerCreatureEvent(cid, "critical")
   registerCreatureEvent(cid, "FullHpMana")

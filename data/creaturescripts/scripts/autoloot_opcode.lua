@@ -17,7 +17,10 @@ function onKill(cid, target)
 
 	if isPlayer(cid) and isMonster(target) and getPlayerStorageValue(cid, info.Storages[3]) <= 0
 			and not isInArray(info.BlockMonsters, getCreatureName(target):lower()) then
-		addEvent(corpseRetireItems, 300, cid, getThingPos(target))
+		local monsterName = getCreatureName(target)
+		local monsterInfo = getMonsterInfo(monsterName)
+		local monsterDesc = (monsterInfo and monsterInfo.description ~= "") and monsterInfo.description or monsterName
+		addEvent(corpseRetireItems, 300, cid, getThingPos(target), monsterDesc)
 	end
 	return true
 end

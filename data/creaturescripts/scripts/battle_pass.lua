@@ -34,13 +34,13 @@ function onExtendedOpcode(cid, opcode, buffer)
         if progress then BattlePassLib.sendUpdate(cid, progress) end
     elseif req.action == "claim" then
         local success, message = BattlePassLib.claimReward(cid, tonumber(req.level), tostring(req.track))
-        doPlayerSendTextMessage(cid, success and MESSAGE_INFO_DESCR or MESSAGE_STATUS_CONSOLE_ORANGE, message)
+        SysChannel_send(cid, SYSCHANNEL_BATTLEPASS, message, success and TALKTYPE_CHANNEL_O or TALKTYPE_CHANNEL_RN)
     elseif req.action == "buyGoldPass" then
         local success, message = BattlePassLib.buyGoldPass(cid)
-        doPlayerSendTextMessage(cid, success and MESSAGE_INFO_DESCR or MESSAGE_STATUS_CONSOLE_ORANGE, message)
+        SysChannel_send(cid, SYSCHANNEL_BATTLEPASS, message, success and TALKTYPE_CHANNEL_O or TALKTYPE_CHANNEL_RN)
     elseif req.action == "buyLevel" then
         local success, message = BattlePassLib.buyLevel(cid)
-        doPlayerSendTextMessage(cid, success and MESSAGE_INFO_DESCR or MESSAGE_STATUS_CONSOLE_ORANGE, message)
+        SysChannel_send(cid, SYSCHANNEL_BATTLEPASS, message, success and TALKTYPE_CHANNEL_O or TALKTYPE_CHANNEL_RN)
     end
 
     return true

@@ -59,7 +59,7 @@ function TaskDelivery_deliver(cid, taskId)
         playerTask.rewarded = 1
     end
 
-    doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "[Task] Rewards delivered for '" .. config.name .. "'!")
+    TaskChannel_message(cid, TALKTYPE_CHANNEL_O, "[Task] Rewards delivered for '" .. config.name .. "'!")
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_HOLYDAMAGE)
 
     return true

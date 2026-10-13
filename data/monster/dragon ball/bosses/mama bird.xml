@@ -136,4 +136,7 @@
 		<item id="48940" chance="1000" /> <!-- sanguine rod -->
 		<item id="49594" chance="1000" /> <!-- vaizard mask -->
 	</loot>
+	<script>
+		<event name="BossChannelDeath" />
+	</script>
 </monster>

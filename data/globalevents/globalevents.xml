@@ -18,4 +18,5 @@
 	<globalevent name="BattlePassRotation" interval="300000" event="script" value="battle_pass_rotation.lua" />
 	<globalevent type="startup" name="BattlePassStartup" event="script" value="battle_pass_rotation.lua" />
 	<globalevent name="AutolootCatalogReload" interval="300000" event="script" value="autoloot_catalog_reload.lua" />
+	<globalevent name="BossSystem" interval="20000" event="script" value="boss_system.lua" />
 </globalevents>

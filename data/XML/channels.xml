@@ -20,6 +20,11 @@
 	</channel>
 	<channel id="8" name="RL-Chat" level="2" />
 	<channel id="9" name="Help" logged="yes" />
-	<!-- <channel id="10" name="My Custom Channel"/> -->
+	<!-- Canais do sistema (somente leitura, abertos no login - data/lib/system_channels_lib.lua) -->
+	<channel id="10" name="Loot" active="no" />
+	<channel id="11" name="Tasks" active="no" />
+	<channel id="12" name="Bosses" active="no" />
+	<channel id="13" name="Deaths" active="no" />
+	<channel id="14" name="Battle Pass" active="no" />
 	<channel id="65535" name="Private Chat Channel" />
 </channels>

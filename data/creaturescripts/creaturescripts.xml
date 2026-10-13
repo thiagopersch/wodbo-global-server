@@ -11,7 +11,6 @@
 	<event type="login" name="OutfitFilter" event="script" value="outfits_filter.lua" />
 	<event type="advance" name="OutfitAdvance" event="script" value="outfits_filter.lua" />
 	<event type="outfit" name="OutfitTransform" event="script" value="outfit_transform.lua" />
-	<event type="kill" name="AnnounceDeath" event="script" value="announce_death.lua" />
 	<event type="death" name="AmuletDeath" script="amuletDeath.lua" />
 	<event type="look" name="fraglook" event="script" value="fraglook.lua" />
 	<event type="advance" name="FullHpMana" event="script" value="fullhpmana.lua" />
@@ -97,4 +96,8 @@
 	<!-- Donate System -->
 	<event type="login" name="DonateBless" event="script" value="donate_bless.lua" />
 	<event type="kill" name="DonateBonusKill" event="script" value="donate_bonus_kill.lua" />
+
+	<!-- System Channels (Loot, Tasks, Bosses, Deaths) -->
+	<event type="login" name="SystemChannelsLogin" event="script" value="system_channels.lua" />
+	<event type="death" name="BossChannelDeath" event="script" value="boss_death.lua" />
 </creaturescripts>

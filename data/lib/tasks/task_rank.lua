@@ -81,7 +81,7 @@ function TaskRank_checkAndRankUp(cid)
     local nextRank = ranks[idx + 1]
 
     if nextRank and points >= nextRank.requiredPoints then
-        doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE,
+        TaskChannel_message(cid, TALKTYPE_CHANNEL_O,
             "[Rank] Congratulations! You advanced to " .. nextRank.name .. "!")
         doSendMagicEffect(getCreaturePosition(cid), CONST_ME_HOLYDAMAGE)
 
