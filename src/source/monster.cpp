@@ -492,6 +492,10 @@ BlockType_t Monster::blockHit(Creature* attacker, CombatType_t combatType, int32
 
 bool Monster::isTarget(Creature* creature)
 {
+	//wild monsters forced into a protection zone (e.g. monster boost showcase) never pick targets
+	if(!isSummon() && getZone() == ZONE_PROTECTION)
+		return false;
+
 	return (!creature->isRemoved() && creature->isAttackable() && creature->getZone() != ZONE_PROTECTION
 		&& canSeeCreature(creature) && creature->getPosition().z == getPosition().z);
 }

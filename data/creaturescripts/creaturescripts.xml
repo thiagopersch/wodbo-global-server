@@ -3,6 +3,9 @@
     <!-- monster boost login -->
     <event type="login" name="MBlogin" script="monsterBoost.lua"/>
     <event type="kill" name="MBKill" event="script" value="monsterBoost.lua"/>
+    <event type="combat" name="MBShowcaseCombat" event="script" value="monsterBoostShowcase.lua"/>
+    <event type="statschange" name="MBShowcaseStats" event="script" value="monsterBoostShowcase.lua"/>
+    <event type="attack" name="MBShowcaseAttack" event="script" value="monsterBoostShowcase.lua"/>
 
     <event type="login" name="StaffLogin" event="script" value="stafflogged.lua" />
 	<event type="login" name="StaffEffect" event="script" value="staffeffect.lua" />

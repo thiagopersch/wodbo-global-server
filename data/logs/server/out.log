@@ -1,47 +1,56 @@
-[13/10/2026 13:47:49] > Usando SHA1 criptografia
-[13/10/2026 13:47:49] >> Carregando RSA key
-[13/10/2026 13:47:49] >> Iniciando conexao SQL
-[13/10/2026 13:47:49] >> Executando Gerenciador de Banco de Dados
-[13/10/2026 13:47:53] > Optimizing table: audit_logs... [success]
-[13/10/2026 13:47:59] > Optimizing table: items... [success]
-[13/10/2026 13:47:59] >> Carregando items (OTB)
-[13/10/2026 13:47:59] >> Carregando items (XML)
-[13/10/2026 13:48:0] >> Carregando Grupos
-[13/10/2026 13:48:0] >> Carregando Vocacoes
-[13/10/2026 13:48:0] >> Carregando Outfits
-[13/10/2026 13:48:0] >> Carregando Wing Types
-[13/10/2026 13:48:0] >> Carregando Aura Types
-[13/10/2026 13:48:0] >> Carregando Shader Types
-[13/10/2026 13:48:0] >> Carregando Bar Types
-[13/10/2026 13:48:0] >> Carregando Raridades
-[13/10/2026 13:48:0] >> Rarity: 6 tiers, 7 groups, 39 items
-[13/10/2026 13:48:0] >> Carregando Canal de Chat
-[13/10/2026 13:48:0] >> Carregando Sistema
-[13/10/2026 13:48:4] >> Carregando Mods...
-[13/10/2026 13:48:4] > Loading AutoLoot.xml... done.
-[13/10/2026 13:48:4] > Loading Automatic Raids.xml... done.
-[13/10/2026 13:48:4] > Loading highscorebook.xml... done.
-[13/10/2026 13:48:4] > Loading task_system.xml... done.
-[13/10/2026 13:48:4] > 4 mods were loaded.
-[13/10/2026 13:48:4] >> Carregando EXP Stages
-[13/10/2026 13:48:4] >> Carregando Monstros
-[13/10/2026 13:48:6] >> Carregando Mapa e Spawns...
-[13/10/2026 13:48:6] > Tamanho do Mapa: 64000x64000.
-[13/10/2026 13:48:6] > Descricao do Mapa: 
-[13/10/2026 13:48:6] "Saved with OTAcademy Map Editor 4.1.1"
-[13/10/2026 13:48:6] "No map description available."
-[13/10/2026 13:48:9] > Mapa carregado em: 3.13 segundos.
-[13/10/2026 13:48:10] > Data carregada em: 1.025 segundos.
-[13/10/2026 13:48:10] > Houses carregada em: 0.271 segundos.
-[13/10/2026 13:48:10] > Content unserialization time: 0.006 seconds.
-[13/10/2026 13:48:10] > Carregando Tipo de PVP... Open PvP
-[13/10/2026 13:48:10] > Inicializando estado do jogo e registrando servicos...
-[13/10/2026 13:48:10] > IP do Servidor: 127.0.0.1
-[13/10/2026 13:48:10] > IP local do Servidor: 172.29.80.1	172.22.144.1	192.168.1.33	
-[13/10/2026 13:48:10] > Portas do Servidor: 7171	7172	
-[13/10/2026 13:48:10] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[13/10/2026 13:48:20] >> WodBleach servidor Online!
+[13/10/2026 15:23:13] > Usando SHA1 criptografia
+[13/10/2026 15:23:13] >> Carregando RSA key
+[13/10/2026 15:23:13] >> Iniciando conexao SQL
+[13/10/2026 15:23:13] >> Executando Gerenciador de Banco de Dados
+[13/10/2026 15:23:17] > Optimizing table: audit_logs... [success]
+[13/10/2026 15:23:23] > Optimizing table: items... [success]
+[13/10/2026 15:23:23] >> Carregando items (OTB)
+[13/10/2026 15:23:23] >> Carregando items (XML)
+[13/10/2026 15:23:23] >> Carregando Grupos
+[13/10/2026 15:23:23] >> Carregando Vocacoes
+[13/10/2026 15:23:23] >> Carregando Outfits
+[13/10/2026 15:23:23] >> Carregando Wing Types
+[13/10/2026 15:23:23] >> Carregando Aura Types
+[13/10/2026 15:23:23] >> Carregando Shader Types
+[13/10/2026 15:23:23] >> Carregando Bar Types
+[13/10/2026 15:23:23] >> Carregando Raridades
+[13/10/2026 15:23:23] >> Rarity: 6 tiers, 7 groups, 39 items
+[13/10/2026 15:23:23] >> Carregando Canal de Chat
+[13/10/2026 15:23:23] >> Carregando Sistema
+[13/10/2026 15:23:24] >> Carregando Mods...
+[13/10/2026 15:23:24] > Loading AutoLoot.xml... done.
+[13/10/2026 15:23:24] > Loading Automatic Raids.xml... done.
+[13/10/2026 15:23:24] > Loading highscorebook.xml... done.
+[13/10/2026 15:23:24] > Loading task_system.xml... done.
+[13/10/2026 15:23:24] > 4 mods were loaded.
+[13/10/2026 15:23:24] >> Carregando EXP Stages
+[13/10/2026 15:23:24] >> Carregando Monstros
+[13/10/2026 15:23:24] >> Carregando Mapa e Spawns...
+[13/10/2026 15:23:24] > Tamanho do Mapa: 64000x64000.
+[13/10/2026 15:23:24] > Descricao do Mapa: 
+[13/10/2026 15:23:24] "Saved with OTAcademy Map Editor 4.1.1"
+[13/10/2026 15:23:24] "No map description available."
+[13/10/2026 15:23:27] > Mapa carregado em: 2.955 segundos.
+[13/10/2026 15:23:28] > Data carregada em: 0.838 segundos.
+[13/10/2026 15:23:28] > Houses carregada em: 0.258 segundos.
+[13/10/2026 15:23:28] > Content unserialization time: 0.004 seconds.
+[13/10/2026 15:23:28] > Carregando Tipo de PVP... Open PvP
+[13/10/2026 15:23:28] > Inicializando estado do jogo e registrando servicos...
+[13/10/2026 15:23:28] > IP do Servidor: 127.0.0.1
+[13/10/2026 15:23:28] > IP local do Servidor: 172.29.80.1	172.22.144.1	192.168.1.33	
+[13/10/2026 15:23:28] > Portas do Servidor: 7171	7172	
+[13/10/2026 15:23:28] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[13/10/2026 15:23:38] >> WodBleach servidor Online!
 
-[13/10/2026 13:48:56] ADMIN has logged in.
-[13/10/2026 13:54:0] ADMIN has logged out.
-[13/10/2026 13:54:3] ADMIN has logged in.
+[13/10/2026 15:26:25] ADMIN has logged in.
+[13/10/2026 15:26:41] ADMIN has logged out.
+[13/10/2026 15:26:42] Kira VS L has logged in.
+[13/10/2026 15:27:9] Kira VS L has logged out.
+[13/10/2026 15:27:10] ADMIN has logged in.
+[13/10/2026 15:33:9] > Loading AutoLoot.xml... done.
+[13/10/2026 15:33:9] > Loading Automatic Raids.xml... done.
+[13/10/2026 15:33:9] > Loading highscorebook.xml... done.
+[13/10/2026 15:33:9] > Loading task_system.xml... done.
+[13/10/2026 15:33:9] > 4 mods were loaded.
+[13/10/2026 15:33:16] ADMIN has logged out.
+[13/10/2026 15:33:17] ADMIN has logged in.
