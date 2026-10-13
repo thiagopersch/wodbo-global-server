@@ -68,10 +68,22 @@ class Group
 		uint64_t getCustomFlags() const {return m_customFlags;}
 		void setCustomFlags(uint64_t v) {m_customFlags = v;}
 
-		bool hasFlag(uint64_t value) const {return (m_flags & ((uint64_t)1 << value));}
-		bool hasCustomFlag(uint64_t value) const {return (m_customFlags & ((uint64_t)1 << value));}
+		bool hasFlag(uint64_t value) const {return testBit(m_flags, value);}
+		bool hasCustomFlag(uint64_t value) const {return testBit(m_customFlags, value);}
 
 	private:
+		// tests one bit of a 64-bit mask using only 32-bit shifts: the old 32-bit GCC used to build
+		// the server miscompiles "(uint64_t)1 << bit" when inlined with a constant (bit 31 and 42
+		// came out true for group 6, blocking loot and item moving)
+		static bool testBit(uint64_t flags, uint64_t bit)
+		{
+			if(bit >= 64)
+				return false;
+
+			uint32_t word = bit < 32 ? (uint32_t)(flags & 0xFFFFFFFF) : (uint32_t)(flags >> 32);
+			return ((word >> ((uint32_t)bit & 31)) & 1) != 0;
+		}
+
 		std::string m_name, m_fullName;
 		uint8_t m_violationReasons;
 		int16_t m_nameViolationFlags, m_statementViolationFlags;
