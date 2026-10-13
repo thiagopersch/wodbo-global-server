@@ -1,4 +1,5 @@
-local npcHandler = NpcHandler:new()
+local keywordHandler = KeywordHandler:new()
+local npcHandler = NpcHandler:new(keywordHandler)
 NpcSystem.parseParameters(npcHandler)
 
 function onCreatureAppear(cid) npcHandler:onCreatureAppear(cid) end

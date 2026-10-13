@@ -35,7 +35,7 @@ end
 local function sendCatalog(cid)
 	local resp = "catalog"
 	for _, item in ipairs(AUTOLOOT_CATALOG) do
-		resp = resp .. "|" .. item.id .. ";" .. item.clientId .. ";" .. item.name
+		resp = resp .. "|" .. item.id .. ";" .. item.clientId .. ";" .. item.name .. ";" .. (item.category or "other")
 	end
 	doPlayerSendExtendedOpcode(cid, 157, resp)
 end
@@ -129,7 +129,9 @@ function sendAutolootList(cid)
 		local itemInfo = getItemInfo(storedItemId)
 		local clientId = (itemInfo and itemInfo.clientId and itemInfo.clientId > 0) and itemInfo.clientId or storedItemId
 		local itemName = getItemNameById(storedItemId)
-		loot = loot .. storedItemId .. ";" .. clientId .. ";" .. itemName .. '@'
+		local catalogEntry = AUTOLOOT_CATALOG_BY_ID[tonumber(storedItemId)]
+		local category = catalogEntry and catalogEntry.category or AutolootGetCategory(storedItemId)
+		loot = loot .. storedItemId .. ";" .. clientId .. ";" .. itemName .. ";" .. category .. '@'
 	end
 	doPlayerSendExtendedOpcode(cid, 157, loot)
 end

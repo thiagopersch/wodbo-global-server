@@ -12,10 +12,81 @@ info = {
 -- published ones. Loaded once at boot and refreshed by the globalevent below so portal edits
 -- propagate without a restart (same pattern as data/lib/tasks/task_db_loader.lua).
 AUTOLOOT_CATALOG = AUTOLOOT_CATALOG or {}
+AUTOLOOT_CATALOG_BY_ID = AUTOLOOT_CATALOG_BY_ID or {}
+
+-- Categorias usadas pelo filtro/ordenação do module game_autoloot do OTC. A coluna
+-- `autoloot_items.category` (portal) força uma delas; vazia = classificação automática abaixo.
+AUTOLOOT_CATEGORIES = {
+	helmet = true, armor = true, legs = true, boots = true, shield = true, weapon = true,
+	ammo = true, amulet = true, ring = true, potion = true, healing = true, food = true,
+	rune = true, fragment = true, quest = true, money = true, backpack = true, other = true
+}
+
+-- Moedas (mesmos ids tratados como dinheiro em corpseRetireItems).
+local AUTOLOOT_MONEY_IDS = {[2148] = true, [2152] = true, [2160] = true}
+
+-- Lua 5.1 não tem operadores bit a bit: testa o bit `flag` (potência de 2) de `value`.
+local function hasFlag(value, flag)
+	return math.floor(value / flag) % 2 == 1
+end
+
+-- Classifica o item pelo items.xml: group/type (itemloader.h/items.h), weaponType (const.h)
+-- e slotPosition (items.h SLOTP_*). Os bits de mão/ammo são ignorados no slotPosition porque
+-- são o default de todo item (items.cpp: SLOTP_HAND | SLOTP_AMMO).
+function AutolootGetCategory(itemId, override)
+	if type(override) == "string" and AUTOLOOT_CATEGORIES[override] then
+		return override
+	end
+
+	if AUTOLOOT_MONEY_IDS[tonumber(itemId)] then
+		return "money"
+	end
+
+	local it = getItemInfo(itemId)
+	if not it then
+		return "other"
+	end
+
+	if it.group == 2 then return "backpack" end -- ITEM_GROUP_CONTAINER
+	if it.type == 10 then return "rune" end -- ITEM_TYPE_RUNE
+
+	local weaponType = tonumber(it.weaponType) or 0
+	if weaponType == 5 then return "shield" end -- WEAPON_SHIELD
+	if weaponType == 8 then return "ammo" end -- WEAPON_AMMO
+	if weaponType > 0 then return "weapon" end -- sword/club/axe/dist/fist/wand
+
+	local slot = tonumber(it.slotPosition) or 0
+	if slot ~= 0xFFFFFFFF then
+		if hasFlag(slot, 1) then return "helmet" end -- SLOTP_HEAD
+		if hasFlag(slot, 2) then return "amulet" end -- SLOTP_NECKLACE
+		if hasFlag(slot, 8) then return "armor" end -- SLOTP_ARMOR
+		if hasFlag(slot, 64) then return "legs" end -- SLOTP_LEGS
+		if hasFlag(slot, 128) then return "boots" end -- SLOTP_FEET
+		if hasFlag(slot, 256) then return "ring" end -- SLOTP_RING
+		if hasFlag(slot, 2048) then return "weapon" end -- SLOTP_TWO_HAND
+	end
+
+	local name = (it.name or ""):lower()
+	if it.group == 12 or name:find("potion", 1, true) then -- ITEM_GROUP_FLUID
+		return "potion"
+	end
+	if name:find("fragment", 1, true) then
+		return "fragment"
+	end
+	-- Quest/missão, comida e cura não têm marca confiável no items.xml (comida é action script):
+	-- só via tipo forçado no portal.
+	return "other"
+end
 
 function AutolootCatalog_reload()
-	local catalog = {}
-	local res = db.getResult("SELECT `item_id`, `name` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC")
+	local catalog, byId = {}, {}
+	-- `category` vem do portal; se a coluna ainda não existir no banco, cai no SELECT antigo.
+	local hasCategory = true
+	local res = db.getResult("SELECT `item_id`, `name`, `category` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC")
+	if res == -1 then
+		hasCategory = false
+		res = db.getResult("SELECT `item_id`, `name` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC")
+	end
 	-- `db.getResult` only returns -1 on a hard query error — a SELECT matching zero rows still
 	-- returns a "valid" handle, and reading a field from it returns `false` instead of erroring,
 	-- so always check the read value's type before trusting it.
@@ -26,13 +97,18 @@ function AutolootCatalog_reload()
 			if type(itemId) == "number" and type(name) == "string" then
 				local itemInfo = getItemInfo(itemId)
 				local clientId = (itemInfo and itemInfo.clientId and itemInfo.clientId > 0) and itemInfo.clientId or itemId
-				table.insert(catalog, {id = itemId, name = name, clientId = clientId})
+				local override = hasCategory and result.getDataString(res, "category") or nil
+				local entry = {id = itemId, name = name, clientId = clientId,
+					category = AutolootGetCategory(itemId, override)}
+				table.insert(catalog, entry)
+				byId[itemId] = entry
 			end
 		until not result.next(res)
 	end
 	if res ~= -1 then result.free(res) end
 
 	AUTOLOOT_CATALOG = catalog
+	AUTOLOOT_CATALOG_BY_ID = byId
 	-- print("[AutoLoot] Loaded " .. #catalog .. " items from the admin catalog.")
 end
 
