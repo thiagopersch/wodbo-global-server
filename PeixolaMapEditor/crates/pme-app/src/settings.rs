@@ -100,6 +100,10 @@ pub struct View {
     pub highlight_items: bool,
     pub show_animation: bool,
     pub show_lights: bool,
+    /// RME-style balloons over items with text / teleport / aid / uid / door id.
+    pub show_tooltips: bool,
+    /// Invisible items (stairs / walkable floor / walls) drawn as coloured squares, like RME.
+    pub show_tech_items: bool,
     /// HD Mode: sprites upscaled 32 -> 64 px with xBRZ, like the client's `hdSprites`.
     pub hd_sprites: bool,
     /// Ambient light 0 (night) ..= 255 (day) used by the light preview.
@@ -121,6 +125,8 @@ impl Default for View {
             highlight_items: false,
             show_animation: true,
             show_lights: false,
+            show_tooltips: true,
+            show_tech_items: true,
             hd_sprites: false,
             ambient_light: 90,
         }

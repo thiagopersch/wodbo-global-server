@@ -120,6 +120,8 @@ pub struct App {
     pub remove_creature: Option<(String, bool, usize)>,
     /// In-place editor of an existing brush.
     pub std_brush_edit: Option<StdBrushEdit>,
+    /// "Browse field" window (objects of one tile).
+    pub browse: Option<crate::browse::BrowseField>,
 }
 
 impl App {
@@ -169,6 +171,7 @@ impl App {
             context_pos: None,
             remove_creature: None,
             std_brush_edit: None,
+            browse: None,
         };
         if app.settings.paths.missing().is_none() {
             app.start_asset_load();
@@ -717,6 +720,8 @@ impl App {
                 c |= ui.checkbox(&mut v.show_animation, t("view-animation")).changed();
                 c |= ui.checkbox(&mut v.show_lights, t("view-lights")).changed();
                 c |= ui.checkbox(&mut v.hd_sprites, t("view-hd")).on_hover_text(t("view-hd-tip")).changed();
+                c |= ui.checkbox(&mut v.show_tooltips, t("view-tooltips")).changed();
+                c |= ui.checkbox(&mut v.show_tech_items, t("view-tech-items")).on_hover_text(t("view-tech-items-tip")).changed();
                 ui.horizontal(|ui| {
                     ui.label(t("view-ambient"));
                     c |= ui.add(egui::Slider::new(&mut v.ambient_light, 0..=255)).on_hover_text(t("view-ambient-tip")).changed();
@@ -869,6 +874,7 @@ impl App {
             c |= ui.toggle_value(&mut v.show_animation, t("tool-animation")).on_hover_text(t("view-animation")).changed();
             c |= ui.toggle_value(&mut v.show_lights, t("tool-lights")).on_hover_text(t("view-lights")).changed();
             c |= ui.toggle_value(&mut v.hd_sprites, t("tool-hd")).on_hover_text(t("view-hd-tip")).changed();
+            c |= ui.toggle_value(&mut v.show_tooltips, t("tool-tooltips")).on_hover_text(t("view-tooltips")).changed();
             if c {
                 self.settings.save();
             }
@@ -1408,6 +1414,7 @@ impl eframe::App for App {
         self.replace_window(ctx);
         self.brush_editor_window(ctx);
         self.std_brush_edit_window(ctx);
+        self.browse_field_window(ctx);
         self.remove_creature_dialog(ctx);
         if self.settings.view.show_animation {
             ctx.request_repaint_after(std::time::Duration::from_millis(self.settings.anim_ms.clamp(50, 500) as u64));

@@ -4,7 +4,7 @@
 use eframe::egui::{self, Color32, RichText, Sense, Vec2};
 use pme_core::brushes::{Brush, BrushShape};
 use pme_core::map::House;
-use pme_core::materials::{PaletteKind, TilesetEntry};
+use pme_core::materials::{BrushKind, PaletteKind, TilesetEntry};
 use pme_core::tile::flags;
 
 use crate::app::App;
@@ -64,6 +64,11 @@ pub struct PaletteState {
     pub creature_search: String,
     pub show_npcs: bool,
     pub show_hidden: bool,
+    /// Entry to scroll to after the palette list is rebuilt (Select RAW / Select brush).
+    pub scroll_to: Option<TilesetEntry>,
+    /// "Add to tileset" popup state.
+    pub ts_add_item: u16,
+    pub ts_add_brush: String,
     pub selected_house: Option<u32>,
     pub house_town_filter: u32,
     pub waypoint_name: String,
@@ -72,6 +77,60 @@ pub struct PaletteState {
 impl PaletteState {
     pub fn invalidate(&mut self) {
         self.cache_key = None;
+    }
+}
+
+/// Change requested on the selected tileset from the palette.
+pub enum TsAction {
+    AddItem(u16),
+    AddBrush(String),
+    Remove(TilesetEntry),
+}
+
+impl App {
+    /// Write a palette change into the tileset XML (in place, `.bak` kept) and reload brushes.
+    fn apply_tileset_action(&mut self, ctx: &egui::Context, idx: usize, action: TsAction) {
+        let Some(a) = &self.assets else { return };
+        let Some(ts) = a.mat.tilesets.get(idx) else { return };
+        let name = ts.name.clone();
+        let Some(file) = a.mat.tileset_source.get(&name).cloned() else {
+            self.toast(ctx, t("ts-no-source"), true);
+            return;
+        };
+        let kind = self.palette.tab.kind().unwrap_or(PaletteKind::Raw);
+        let brush_name = |b: pme_core::materials::BrushId| a.mat.brush(b).map(|d| d.name.clone());
+        let mut scroll = None;
+        let result = match action {
+            TsAction::AddItem(id) => {
+                scroll = Some(TilesetEntry::Item(id));
+                pme_io::tileset_edit::edit(&file, &name, |e| {
+                    pme_io::tileset_edit::add_item(e, kind, id);
+                    true
+                })
+            }
+            TsAction::AddBrush(b) => {
+                scroll = a.mat.brush_by_name(&b).map(TilesetEntry::Brush);
+                pme_io::tileset_edit::edit(&file, &name, |e| {
+                    pme_io::tileset_edit::add_brush(e, kind, &b);
+                    true
+                })
+            }
+            TsAction::Remove(TilesetEntry::Item(id)) => pme_io::tileset_edit::edit(&file, &name, |e| pme_io::tileset_edit::remove_item(e, kind, id)),
+            TsAction::Remove(TilesetEntry::Brush(b)) => match brush_name(b) {
+                Some(n) => pme_io::tileset_edit::edit(&file, &name, |e| pme_io::tileset_edit::remove_brush(e, kind, &n)),
+                None => Ok(false),
+            },
+        };
+        match result {
+            Ok(true) => {
+                self.palette.scroll_to = scroll;
+                self.palette.ts_add_brush.clear();
+                self.reload_materials(None);
+                self.toast(ctx, tf("ts-saved", &[&name]), false);
+            }
+            Ok(false) => self.toast(ctx, t("ts-not-found"), true),
+            Err(e) => self.toast(ctx, format!("{e:#}"), true),
+        }
     }
 }
 
@@ -156,6 +215,32 @@ pub fn zone_names(f: u32) -> String {
 const ICON: f32 = 34.0;
 
 impl App {
+    /// "Select RAW": select the item as a RAW brush and show it in the Raw palette.
+    pub fn select_raw_in_palette(&mut self, id: u16) {
+        let Some(a) = &self.assets else { return };
+        let ts = a.mat.tilesets.iter().position(|t| t.entries(PaletteKind::Raw).any(|e| matches!(e, TilesetEntry::Item(i) if *i == id)));
+        self.palette.tab = Tab::Raw;
+        self.palette.tileset = Some(ts.unwrap_or(usize::MAX));
+        self.palette.search.clear();
+        self.palette.invalidate();
+        self.palette.scroll_to = Some(TilesetEntry::Item(id));
+        self.set_brush(Some(Brush::Raw(id)));
+    }
+
+    /// "Select brush": select a materials brush and show it in its palette (Terrain / Doodads).
+    pub fn select_brush_in_palette(&mut self, b: pme_core::materials::BrushId) {
+        let Some(a) = &self.assets else { return };
+        let is_doodad = matches!(a.mat.brush(b).map(|d| &d.kind), Some(pme_core::materials::BrushKind::Doodad(_)));
+        let (tab, kind) = if is_doodad { (Tab::Doodad, PaletteKind::Doodad) } else { (Tab::Terrain, PaletteKind::Terrain) };
+        let ts = a.mat.tilesets.iter().position(|t| t.entries(kind).any(|e| matches!(e, TilesetEntry::Brush(x) if *x == b)));
+        self.palette.tab = tab;
+        self.palette.tileset = ts;
+        self.palette.search.clear();
+        self.palette.invalidate();
+        self.palette.scroll_to = Some(TilesetEntry::Brush(b));
+        self.set_brush(Some(Brush::Material(b)));
+    }
+
     pub fn palette_ui(&mut self, ctx: &egui::Context, ui: &mut egui::Ui) {
         // Brush settings
         ui.add_space(4.0);
@@ -321,10 +406,52 @@ impl App {
             self.palette.invalidate();
         }
         self.rebuild_entries();
+        // A specific tileset is selected: its entries can be added / removed (written to the XML).
+        let editable = self.palette.tileset.filter(|&i| i != usize::MAX);
+        let mut ts_action: Option<TsAction> = None;
         ui.horizontal(|ui| {
             ui.label(RichText::new(tf("palette-count", &[&self.palette.cache.len()])).weak().small());
             if matches!(self.palette.tab, Tab::Terrain | Tab::Doodad) && ui.small_button(format!("+ {}", t("be-new-brush"))).on_hover_text(t("be-title")).clicked() {
                 self.open_brush_editor();
+            }
+            if editable.is_some() {
+                let brush_item = self.brush_item();
+                let frame = self.anim_frame(ctx);
+                let tab = self.palette.tab;
+                let (Some(a), Some(atlas)) = (&self.assets, &mut self.atlas) else { return };
+                let p = &mut self.palette;
+                ui.menu_button(format!("+ {}", t("ts-add")), |ui| {
+                    ui.set_min_width(320.0);
+                    ui.label(RichText::new(t("ts-add-help")).small().weak());
+                    let mut pc = crate::widgets::PickerCtx { ctx, atlas, assets: a, brush_item, frame };
+                    ui.horizontal(|ui| {
+                        if p.ts_add_item == 0 {
+                            p.ts_add_item = brush_item.unwrap_or(0);
+                        }
+                        crate::widgets::item_picker(ui, &mut pc, "ts-add-item", &mut p.ts_add_item, true);
+                    });
+                    if ui.add_enabled(p.ts_add_item != 0, egui::Button::new(t("ts-add-item"))).clicked() {
+                        ts_action = Some(TsAction::AddItem(p.ts_add_item));
+                        ui.close_menu();
+                    }
+                    if matches!(tab, Tab::Terrain | Tab::Doodad) {
+                        ui.separator();
+                        ui.add(egui::TextEdit::singleline(&mut p.ts_add_brush).hint_text(t("ts-brush-hint")).desired_width(300.0));
+                        let q = p.ts_add_brush.to_lowercase();
+                        let want_doodad = tab == Tab::Doodad;
+                        egui::ScrollArea::vertical().max_height(220.0).show(ui, |ui| {
+                            for def in a.mat.brushes.iter().filter(|d| {
+                                let doodad = matches!(d.kind, BrushKind::Doodad(_));
+                                !matches!(d.kind, BrushKind::Unknown) && doodad == want_doodad && (q.is_empty() || d.name.to_lowercase().contains(&q))
+                            }).take(60) {
+                                if ui.selectable_label(false, format!("{} ({})", def.name, def.kind_name())).clicked() {
+                                    ts_action = Some(TsAction::AddBrush(def.name.clone()));
+                                    ui.close_menu();
+                                }
+                            }
+                        });
+                    }
+                });
             }
         });
         ui.separator();
@@ -335,7 +462,19 @@ impl App {
         let rows = entries.len().div_ceil(cols);
         let mut clicked = None;
         let mut edit_brush: Option<String> = None;
-        egui::ScrollArea::vertical().auto_shrink([false, false]).show_rows(ui, ICON + 4.0, rows, |ui, range| {
+        let mut area = egui::ScrollArea::vertical().auto_shrink([false, false]);
+        if let Some(target) = self.palette.scroll_to.take() {
+            let same = |e: &TilesetEntry| match (e, &target) {
+                (TilesetEntry::Brush(a), TilesetEntry::Brush(b)) => a == b,
+                (TilesetEntry::Item(a), TilesetEntry::Item(b)) => a == b,
+                _ => false,
+            };
+            if let Some(i) = entries.iter().position(same) {
+                let row_h = ICON + 4.0 + ui.spacing().item_spacing.y;
+                area = area.vertical_scroll_offset(((i / cols) as f32 * row_h - row_h * 2.0).max(0.0));
+            }
+        }
+        area.show_rows(ui, ICON + 4.0, rows, |ui, range| {
             let (Some(a), Some(atlas)) = (&self.assets, &mut self.atlas) else { return };
             for row in range {
                 ui.horizontal(|ui| {
@@ -360,15 +499,20 @@ impl App {
                         ui.painter().rect_filled(rect, 3.0, bg);
                         view::paint_item_icon(ctx, ui.painter(), atlas, &a.db, item, rect.shrink(1.0), frame);
                         let resp = resp.on_hover_text(tip);
-                        if let TilesetEntry::Brush(b) = e {
-                            if let Some(def) = a.mat.brush(*b) {
-                                resp.context_menu(|ui| {
+                        let def = if let TilesetEntry::Brush(b) = e { a.mat.brush(*b) } else { None };
+                        if def.is_some() || editable.is_some() {
+                            resp.context_menu(|ui| {
+                                if let Some(def) = def {
                                     if ui.button(format!("\u{270F} {}", t("bse-open"))).clicked() {
                                         edit_brush = Some(def.name.clone());
                                         ui.close_menu();
                                     }
-                                });
-                            }
+                                }
+                                if editable.is_some() && ui.button(RichText::new(t("ts-remove")).color(Color32::from_rgb(255, 130, 130))).clicked() {
+                                    ts_action = Some(TsAction::Remove(e.clone()));
+                                    ui.close_menu();
+                                }
+                            });
                         }
                         if resp.clicked() {
                             clicked = Some(brush);
@@ -378,6 +522,9 @@ impl App {
             }
         });
         self.palette.cache = entries;
+        if let (Some(action), Some(idx)) = (ts_action, editable) {
+            self.apply_tileset_action(ctx, idx, action);
+        }
         if let Some(name) = edit_brush {
             // Brushes created in the editor open in the creator; the others are edited in place.
             let custom = self.assets.as_ref().and_then(|a| a.mat.brush_source.get(&name)).is_some_and(|p| p.file_name().is_some_and(|f| f == "peixola_brushes.xml"));

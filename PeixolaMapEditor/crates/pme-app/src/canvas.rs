@@ -39,6 +39,51 @@ fn line(a: (i32, i32), b: (i32, i32)) -> Vec<(i32, i32)> {
     out
 }
 
+/// RME `MapTooltip` line handling: wrap at ~40 chars on spaces, cut after 255 chars.
+fn wrap_tooltip(text: &str) -> String {
+    const MAX_CHARS: usize = 255;
+    const PER_LINE: usize = 40;
+    let mut out = String::with_capacity(text.len() + 8);
+    let mut line = 0usize;
+    for (n, c) in text.chars().enumerate() {
+        if n >= MAX_CHARS {
+            out.push_str("...");
+            break;
+        }
+        if c == '\n' || (line >= PER_LINE && c == ' ') {
+            out.push('\n');
+            line = 0;
+            continue;
+        }
+        out.push(c);
+        line += 1;
+    }
+    out
+}
+
+/// White balloons with a pointer, like RME `MapDrawer::DrawTooltips`.
+fn paint_tooltips(painter: &egui::Painter, tips: &[view::Tooltip], zoom: f32) {
+    if tips.is_empty() || zoom < 0.5 {
+        return;
+    }
+    let scale = zoom.min(1.0);
+    let font = egui::FontId::proportional(12.0 * scale);
+    let space = 7.0 * scale;
+    let border = Stroke::new(1.0_f32, Color32::BLACK);
+    for tip in tips {
+        let galley = painter.layout_no_wrap(wrap_tooltip(&tip.text), font.clone(), Color32::BLACK);
+        let size = galley.size() + Vec2::new(8.0, 4.0) * scale;
+        let x = tip.anchor.x;
+        let rect = Rect::from_min_size(egui::pos2(x - size.x / 2.0, tip.anchor.y - space - size.y), size);
+        painter.rect(rect, 1.0, Color32::WHITE, border, egui::StrokeKind::Inside);
+        let pointer = vec![egui::pos2(x - space, rect.max.y - 0.5), egui::pos2(x + space, rect.max.y - 0.5), egui::pos2(x, tip.anchor.y)];
+        painter.add(Shape::convex_polygon(pointer, Color32::WHITE, border));
+        // Hide the border line between the box and the pointer.
+        painter.line_segment([egui::pos2(x - space + 1.0, rect.max.y - 1.0), egui::pos2(x + space - 1.0, rect.max.y - 1.0)], Stroke::new(2.0_f32, Color32::WHITE));
+        painter.galley(rect.min + Vec2::new(4.0, 2.0) * scale, galley, Color32::BLACK);
+    }
+}
+
 pub fn zone_color(flag: u32) -> Color32 {
     match flag {
         flags::PROTECTION_ZONE => Color32::from_rgb(60, 200, 90),
@@ -319,7 +364,17 @@ impl App {
             if let Some(tile) = ed.map.get(h).cloned() {
                 let db = a.db.clone();
                 let name = |id: u16| format!("{} [{id}]", db.name(id));
+                // Brush for "Select brush" (resolved now: the menu actions below borrow `self`).
+                let brush = a.mat.brush_of_tile(&tile);
+                let brush_label = match brush.and_then(|b| a.mat.brush(b)) {
+                    Some(def) => format!("{}: {}", t("ctx-select-brush"), def.name),
+                    None => t("ctx-select-brush").to_owned(),
+                };
                 let stack: Vec<(usize, u16)> = tile.items.iter().enumerate().rev().map(|(i, it)| (i + 1, it.id)).chain(tile.ground.iter().map(|g| (0, g.id))).collect();
+                if ui.button(format!("\u{1F50D} {}", t("ctx-browse-field"))).clicked() {
+                    self.browse = Some(crate::browse::BrowseField { pos: h, sel: None });
+                    ui.close_menu();
+                }
                 if let Some(&(k, id)) = stack.first() {
                     if ui.button(format!("{}: {}", t("ctx-item-properties"), name(id))).clicked() {
                         self.open_properties(h, PropTarget::Item(k));
@@ -349,6 +404,20 @@ impl App {
                         self.open_replace(Some(id));
                         ui.close_menu();
                     }
+                }
+                ui.separator();
+                // RME "Select RAW" / "Select brush": pick it and jump to it in the palette.
+                if let Some(&(_, id)) = stack.first() {
+                    if ui.button(format!("{}: {}", t("ctx-select-raw"), name(id))).clicked() {
+                        self.select_raw_in_palette(id);
+                        ui.close_menu();
+                    }
+                }
+                if ui.add_enabled(brush.is_some(), egui::Button::new(brush_label)).clicked() {
+                    if let Some(b) = brush {
+                        self.select_brush_in_palette(b);
+                    }
+                    ui.close_menu();
                 }
                 ui.separator();
             }
@@ -386,18 +455,19 @@ impl App {
         let valid = self.cache.as_ref().is_some_and(|c| c.key == key && c.complete);
         if !valid {
             let t0 = Instant::now();
-            let mut dc = DrawCtx { ctx, atlas, assets, cam: self.cam, rect, frame, spawns: Vec::new() };
-            let (shapes, quads) = view::build_map(&mut dc, &ed.map, &self.settings.view, &ed.selection, self.current_house);
+            let mut dc = DrawCtx { ctx, atlas, assets, cam: self.cam, rect, frame, spawns: Vec::new(), tech: self.settings.view.show_tech_items };
+            let (shapes, quads, tooltips) = view::build_map(&mut dc, &ed.map, &self.settings.view, &ed.selection, self.current_house);
             let complete = !dc.atlas.missing;
             self.last_build_ms = t0.elapsed().as_secs_f32() * 1000.0;
             self.last_quads = quads;
-            self.cache = Some(MapCache { key, shapes, complete });
+            self.cache = Some(MapCache { key, shapes, tooltips, complete });
             if !complete {
                 ctx.request_repaint();
             }
         }
         if let Some(c) = &self.cache {
             painter.extend(c.shapes.iter().cloned());
+            paint_tooltips(&painter, &c.tooltips, self.cam.zoom);
         }
 
         // Grid
@@ -453,7 +523,7 @@ impl App {
         let mut b = Builder::new();
         let ghost = Color32::from_rgba_unmultiplied(255, 255, 255, 150);
         let frame = crate::app::anim_frame_for(&self.settings, ctx);
-        let mut dc = DrawCtx { ctx, atlas, assets, cam, rect, frame, spawns: Vec::new() };
+        let mut dc = DrawCtx { ctx, atlas, assets, cam, rect, frame, spawns: Vec::new(), tech: self.settings.view.show_tech_items };
 
         if self.paste_mode {
             let base_z = ed.clipboard.tiles.iter().map(|t| t.pos.z).min().unwrap_or(z);

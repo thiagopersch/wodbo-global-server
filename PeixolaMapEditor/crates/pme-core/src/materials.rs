@@ -330,6 +330,8 @@ pub struct Materials {
     pub brush_source: AHashMap<String, std::path::PathBuf>,
     /// File that defines each border set (by id).
     pub border_source: AHashMap<u32, std::path::PathBuf>,
+    /// First file that defines each tileset (by name) — used to add/remove palette entries.
+    pub tileset_source: AHashMap<String, std::path::PathBuf>,
 }
 
 impl Materials {
@@ -394,6 +396,23 @@ impl Materials {
         self.wall(a).is_some_and(|w| w.friends.iter().any(|&f| f == b || f == BRUSH_ALL))
     }
 
+    /// Brush to select for a tile (RME "Select brush"): the first item from the top of the
+    /// stack that belongs to a ground/wall/carpet/table/doodad brush, then the ground.
+    pub fn brush_of_tile(&self, tile: &crate::tile::Tile) -> Option<BrushId> {
+        for it in tile.items.iter().rev() {
+            let info = self.info(it.id);
+            if info.brush != 0 && self.brush(info.brush).is_some() {
+                return Some(info.brush);
+            }
+            if info.doodad != 0 && self.brush(info.doodad).is_some() {
+                return Some(info.doodad);
+            }
+        }
+        let g = tile.ground.as_ref()?;
+        let info = self.info(g.id);
+        [info.brush, info.doodad].into_iter().find(|&b| b != 0 && self.brush(b).is_some())
+    }
+
     /// Get or create a brush slot by name (used by the loader for forward references).
     pub fn ensure_brush(&mut self, name: &str) -> BrushId {
         if let Some(&id) = self.brush_index.get(name) {
@@ -405,3 +424,35 @@ impl Materials {
         id
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::item::Item;
+    use crate::tile::Tile;
+
+    #[test]
+    fn brush_of_tile_prefers_top_item_then_ground() {
+        let mut m = Materials::default();
+        let ground = m.ensure_brush("grass");
+        m.brushes[ground as usize - 1].kind = BrushKind::Ground(GroundBrush::default());
+        let wallb = m.ensure_brush("stone wall");
+        m.brushes[wallb as usize - 1].kind = BrushKind::Wall(WallBrush::new());
+        let tree = m.ensure_brush("tree");
+        m.brushes[tree as usize - 1].kind = BrushKind::Doodad(DoodadBrush::default());
+        m.info_mut(100).brush = ground;
+        m.info_mut(200).is_border = true;
+        m.info_mut(300).brush = wallb;
+        m.info_mut(400).doodad = tree;
+
+        let mut t = Tile { ground: Some(Item::new(100)), ..Tile::new() };
+        t.items.push(Item::new(200)); // border: no brush of its own
+        assert_eq!(m.brush_of_tile(&t), Some(ground), "border over ground -> ground brush");
+        t.items.push(Item::new(300));
+        assert_eq!(m.brush_of_tile(&t), Some(wallb));
+        t.items.push(Item::new(400));
+        assert_eq!(m.brush_of_tile(&t), Some(tree));
+        assert_eq!(m.brush_of_tile(&Tile { ground: Some(Item::new(999)), ..Tile::new() }), None);
+    }
+}
+

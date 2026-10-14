@@ -5,6 +5,7 @@
 mod app;
 mod assets;
 mod atlas;
+mod browse;
 mod brush_edit_std;
 mod brush_editor;
 mod canvas;

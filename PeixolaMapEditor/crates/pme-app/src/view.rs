@@ -186,6 +186,28 @@ pub struct DrawCtx<'a> {
     /// Spawns around the view on the current floor: (x, y, radius) - used to flag creatures
     /// that are outside every spawn.
     pub spawns: Vec<(i32, i32, i32)>,
+    /// Draw invisible "tech" items as coloured squares (RME `show_tech_items`).
+    pub tech: bool,
+}
+
+/// RME tech items (by client id): invisible stairs (yellow), invisible walkable floor (red),
+/// invisible wall (cyan). Same colours/alpha as RME `MapDrawer::BlitItem`.
+pub fn tech_color(client_id: u16) -> Option<Color32> {
+    match client_id {
+        469 => Some(Color32::from_rgba_unmultiplied(255, 255, 0, 170)),
+        470 => Some(Color32::from_rgba_unmultiplied(255, 0, 0, 170)),
+        2187 => Some(Color32::from_rgba_unmultiplied(0, 255, 255, 80)),
+        _ => None,
+    }
+}
+
+/// Colour for items whose sprite is entirely transparent (so they never vanish).
+const INVISIBLE_ITEM: Color32 = Color32::from_rgba_premultiplied(60, 60, 60, 90);
+
+/// Apply the alpha of a (premultiplied) tint to a colour.
+fn with_alpha_of(c: Color32, tint: Color32) -> Color32 {
+    let a = (c.a() as u16 * tint.a() as u16 / 255) as u8;
+    Color32::from_rgba_unmultiplied(c.r(), c.g(), c.b(), a)
 }
 
 impl DrawCtx<'_> {
@@ -194,8 +216,16 @@ impl DrawCtx<'_> {
     #[allow(clippy::too_many_arguments)]
     pub fn item(&mut self, b: &mut Builder, item: &Item, pos: Position, tile: Option<&Tile>, wx: f32, wy: f32, tint: Color32) -> f32 {
         let db: &ItemDb = &self.assets.db;
+        let Some(ty) = db.get(item.id) else { return 0.0 };
+        let tile_rect = |cam: &Camera, rect: Rect| Rect::from_min_size(cam.world_to_screen(rect, wx, wy), Vec2::splat(TILE * cam.zoom));
+        if self.tech {
+            if let Some(c) = tech_color(ty.client_id) {
+                b.fill(tile_rect(&self.cam, self.rect), with_alpha_of(c, tint));
+                return 0.0;
+            }
+        }
         let Some(s) = db.sprite(item.id) else { return 0.0 };
-        let ty = db.get(item.id).unwrap();
+        let mut visible = false;
         let sx = wx - s.offset_x as f32;
         let sy = wy - s.offset_y as f32;
         let mut subtype = -1;
@@ -217,12 +247,23 @@ impl DrawCtx<'_> {
                 for layer in 0..s.layers.max(1) as u32 {
                     let idx = s.sprite_index(cx, cy, layer, subtype, px, pos.y as u32, pos.z as u32, self.frame);
                     let spr = s.sprite_ids[idx];
-                    if let Lookup::Ready(tex, uv) = self.atlas.get(self.ctx, spr) {
-                        let min = self.cam.world_to_screen(self.rect, sx - cx as f32 * TILE, sy - cy as f32 * TILE);
-                        b.image(tex, uv, Rect::from_min_size(min, Vec2::splat(TILE * z)), tint);
+                    match self.atlas.get(self.ctx, spr) {
+                        Lookup::Ready(tex, uv) => {
+                            visible = true;
+                            let min = self.cam.world_to_screen(self.rect, sx - cx as f32 * TILE, sy - cy as f32 * TILE);
+                            b.image(tex, uv, Rect::from_min_size(min, Vec2::splat(TILE * z)), tint);
+                        }
+                        Lookup::Pending => visible = true,
+                        Lookup::Empty => {}
                     }
                 }
             }
+        }
+        if !visible && self.tech {
+            // Fully transparent sprite: show a faint square so the item can still be found.
+            let r = tile_rect(&self.cam, self.rect);
+            b.fill(r.shrink(1.0), with_alpha_of(INVISIBLE_ITEM, tint));
+            b.outline(r.shrink(1.0), 1.0, with_alpha_of(Color32::from_rgba_unmultiplied(160, 160, 160, 160), tint));
         }
         s.elevation as f32
     }
@@ -363,7 +404,57 @@ pub struct CacheKey {
 pub struct MapCache {
     pub key: CacheKey,
     pub shapes: Vec<Shape>,
+    pub tooltips: Vec<Tooltip>,
     pub complete: bool,
+}
+
+/// RME-style balloon above a tile of the current floor.
+#[derive(Clone)]
+pub struct Tooltip {
+    /// Top-centre of the tile, in screen space (the balloon points here).
+    pub anchor: Pos2,
+    pub text: String,
+}
+
+/// Port of RME `MapDrawer::WriteTooltip(Item*)`: only items with configured content get a tooltip.
+pub fn tooltip_text(item: &Item, ty: Option<&pme_core::items::ItemType>, house_tile: bool) -> Option<String> {
+    use std::fmt::Write as _;
+    if item.id < 100 {
+        return None;
+    }
+    let (aid, uid, text) = (item.action_id(), item.unique_id(), item.text());
+    let door = if house_tile && ty.is_some_and(|t| t.is_door()) { item.door_id() } else { 0 };
+    let teleport = ty.is_some_and(|t| t.is_teleport()) || item.tele_dest().is_some();
+    if aid == 0 && uid == 0 && door == 0 && text.is_empty() && !teleport {
+        return None;
+    }
+    let mut s = format!("id: {}", item.id);
+    if aid > 0 {
+        let _ = write!(s, "\naid: {aid}");
+    }
+    if uid > 0 {
+        let _ = write!(s, "\nuid: {uid}");
+    }
+    if door > 0 {
+        let _ = write!(s, "\ndoor id: {door}");
+    }
+    if !text.is_empty() {
+        let _ = write!(s, "\ntext: {text}");
+    }
+    if teleport {
+        let d = item.tele_dest().unwrap_or_default();
+        let _ = write!(s, "\ndestination: {}, {}, {}", d.x, d.y, d.z);
+    }
+    Some(s)
+}
+
+/// Tooltip of a whole tile (ground + items, plus waypoint), RME style.
+fn tile_tooltip(db: &ItemDb, tile: &Tile, waypoint: Option<&str>) -> Option<String> {
+    let mut parts: Vec<String> = tile.ground.iter().chain(tile.items.iter()).filter_map(|i| tooltip_text(i, db.get(i.id), tile.house_id != 0)).collect();
+    if let Some(w) = waypoint {
+        parts.push(format!("wp: {w}"));
+    }
+    (!parts.is_empty()).then(|| parts.join("\n\n"))
 }
 
 pub fn view_hash(v: &View) -> u64 {
@@ -381,12 +472,21 @@ pub fn view_hash(v: &View) -> u64 {
         v.show_animation,
         v.show_lights,
         v.hd_sprites,
+        v.show_tooltips,
+        v.show_tech_items,
     ];
     bits.iter().enumerate().fold(0, |acc, (i, &b)| acc | ((b as u64) << i))
 }
 
 /// Build the meshes for the whole visible map.
-pub fn build_map(dc: &mut DrawCtx, map: &Map, view: &View, selection: &AHashSet<Position>, current_house: u32) -> (Vec<Shape>, usize) {
+pub fn build_map(dc: &mut DrawCtx, map: &Map, view: &View, selection: &AHashSet<Position>, current_house: u32) -> (Vec<Shape>, usize, Vec<Tooltip>) {
+    const MAX_TOOLTIPS: usize = 400;
+    let mut tips: Vec<Tooltip> = Vec::new();
+    let waypoints: ahash::AHashMap<Position, &str> = if view.show_tooltips {
+        map.waypoints.iter().filter(|w| w.pos.z == dc.cam.floor).map(|w| (w.pos, w.name.as_str())).collect()
+    } else {
+        Default::default()
+    };
     let mut b = Builder::new();
     let cam = dc.cam;
     let rect = dc.rect;
@@ -422,6 +522,14 @@ pub fn build_map(dc: &mut DrawCtx, map: &Map, view: &View, selection: &AHashSet<
                     let pos = Position::new(((cxi << 5) | lx) as u16, y as u16, z);
                     let sel = z == cam.floor && !selection.is_empty() && selection.contains(&pos);
                     dc.tile(&mut b, pos, t, view, sel, current_house, 255);
+                    if view.show_tooltips && z == cam.floor && tips.len() < MAX_TOOLTIPS {
+                        if let Some(text) = tile_tooltip(&dc.assets.db, t, waypoints.get(&pos).copied()) {
+                            let r = cam.tile_rect(rect, pos.x as i32, pos.y as i32, z);
+                            if rect.intersects(r) {
+                                tips.push(Tooltip { anchor: Pos2::new(r.center().x, r.min.y), text });
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -433,7 +541,7 @@ pub fn build_map(dc: &mut DrawCtx, map: &Map, view: &View, selection: &AHashSet<
         }
     }
     let q = b.quads;
-    (b.into_shapes(), q)
+    (b.into_shapes(), q, tips)
 }
 
 /// Spawns on the current floor within (or reaching into) the view.
@@ -507,7 +615,13 @@ fn draw_markers(dc: &mut DrawCtx, b: &mut Builder, map: &Map, view: &View, (x0, 
 
 /// Paint an item icon (all sprite parts, scaled to fit) into `rect` (palettes, properties).
 pub fn paint_item_icon(ctx: &egui::Context, painter: &egui::Painter, atlas: &mut Atlas, db: &ItemDb, id: u16, rect: Rect, frame: u32) {
+    // Invisible items must still be visible in palettes / pickers (RME shows tech items).
+    if let Some(c) = db.get(id).and_then(|t| tech_color(t.client_id)) {
+        painter.rect_filled(rect.shrink(2.0), 2.0, c);
+        return;
+    }
     let Some(s) = db.sprite(id) else { return };
+    let mut visible = false;
     let (w, h) = (s.width.max(1) as u32, s.height.max(1) as u32);
     let size = w.max(h) as f32 * TILE;
     let scale = rect.width().min(rect.height()) / size;
@@ -517,14 +631,22 @@ pub fn paint_item_icon(ctx: &egui::Context, painter: &egui::Painter, atlas: &mut
         for cy in 0..h {
             for layer in 0..s.layers.max(1) as u32 {
                 let idx = s.sprite_index(cx, cy, layer, if stack { 0 } else { -1 }, 0, 0, 0, frame);
-                if let Lookup::Ready(tex, uv) = atlas.get(ctx, s.sprite_ids[idx]) {
-                    let ox = (size - (cx + 1) as f32 * TILE) * scale;
-                    let oy = (size - (cy + 1) as f32 * TILE) * scale;
-                    let r = Rect::from_min_size(rect.min + Vec2::new(ox, oy), Vec2::splat(TILE * scale));
-                    b.image(tex, uv, r, Color32::WHITE);
+                match atlas.get(ctx, s.sprite_ids[idx]) {
+                    Lookup::Ready(tex, uv) => {
+                        visible = true;
+                        let ox = (size - (cx + 1) as f32 * TILE) * scale;
+                        let oy = (size - (cy + 1) as f32 * TILE) * scale;
+                        let r = Rect::from_min_size(rect.min + Vec2::new(ox, oy), Vec2::splat(TILE * scale));
+                        b.image(tex, uv, r, Color32::WHITE);
+                    }
+                    Lookup::Pending => visible = true,
+                    Lookup::Empty => {}
                 }
             }
         }
+    }
+    if !visible {
+        painter.rect(rect.shrink(3.0), 2.0, INVISIBLE_ITEM, egui::Stroke::new(1.0_f32, Color32::from_gray(150)), egui::StrokeKind::Inside);
     }
     for s in b.into_shapes() {
         painter.add(s);
@@ -597,3 +719,55 @@ pub fn paint_creature_icon(ctx: &egui::Context, painter: &egui::Painter, atlas: 
         painter.add(s);
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::tooltip_text;
+    use pme_core::item::Item;
+    use pme_core::items::{ItemGroup, ItemType};
+    use pme_core::position::Position;
+
+    fn ty(group: ItemGroup, xml: &str) -> ItemType {
+        ItemType { id: 1, group, xml_type: xml.into(), valid: true, ..Default::default() }
+    }
+
+    #[test]
+    fn tech_items_like_rme() {
+        use super::tech_color;
+        let y = tech_color(469).unwrap(); // premultiplied: compare the hue, not raw channels
+        assert!(y.r() == y.g() && y.b() == 0 && y.a() == 170, "invisible stairs: yellow");
+        let r = tech_color(470).unwrap();
+        assert!(r.r() > 0 && r.g() == 0 && r.b() == 0, "invisible walkable floor: red");
+        assert!(tech_color(470).is_some() && tech_color(2187).is_some());
+        assert!(tech_color(100).is_none());
+    }
+
+    #[test]
+    fn tooltip_like_rme() {
+        let plain = ty(ItemGroup::None, "");
+        assert_eq!(tooltip_text(&Item::new(2000), Some(&plain), false), None);
+        assert_eq!(tooltip_text(&Item::new(50), Some(&plain), false), None, "ids < 100 are skipped");
+
+        let mut it = Item::new(50845);
+        it.set_action_id(5500);
+        assert_eq!(tooltip_text(&it, Some(&plain), false).unwrap(), "id: 50845\naid: 5500");
+
+        let tp = ty(ItemGroup::Teleport, "");
+        assert_eq!(tooltip_text(&Item::new(27710), Some(&tp), false).unwrap(), "id: 27710\ndestination: 0, 0, 0");
+        let mut t2 = Item::new(27707);
+        t2.set_tele_dest(Some(Position::new(31797, 32204, 7)));
+        assert_eq!(tooltip_text(&t2, Some(&tp), false).unwrap(), "id: 27707\ndestination: 31797, 32204, 7");
+
+        let mut sign = Item::new(1429);
+        sign.set_text("Welcome Main City");
+        sign.set_unique_id(9);
+        assert_eq!(tooltip_text(&sign, Some(&plain), false).unwrap(), "id: 1429\nuid: 9\ntext: Welcome Main City");
+
+        let door_t = ty(ItemGroup::Door, "");
+        let mut door = Item::new(1209);
+        door.set_door_id(3);
+        assert_eq!(tooltip_text(&door, Some(&door_t), false), None, "door id only on house tiles");
+        assert_eq!(tooltip_text(&door, Some(&door_t), true).unwrap(), "id: 1209\ndoor id: 3");
+    }
+}
+

@@ -105,6 +105,10 @@ pub fn load(materials_xml: &Path, extension_dirs: &[PathBuf], db: &ItemDb) -> Re
             if let Some(id) = e.int::<u32>("id") {
                 cx.m.border_source.entry(id).or_insert_with(|| file.clone());
             }
+        } else if e.is("tileset") {
+            if let Some(name) = e.attr("name") {
+                cx.m.tileset_source.entry(name.to_owned()).or_insert_with(|| file.clone());
+            }
         }
     }
     // Pass 2: definitions, in order.
@@ -576,6 +580,8 @@ fn load_tileset(cx: &mut Ctx, e: &Elem) {
                 let (from, to) = match (c.int::<u16>("id"), c.int::<u16>("fromid"), c.int::<u16>("toid")) {
                     (Some(id), _, _) => (id, id),
                     (None, Some(a), Some(b)) => (a, b),
+                    // RME writes single items as `<item fromid="459" />` (no toid).
+                    (None, Some(a), None) => (a, a),
                     _ => continue,
                 };
                 for id in from..=to {

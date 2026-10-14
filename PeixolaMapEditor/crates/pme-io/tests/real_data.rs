@@ -55,6 +55,11 @@ fn assert_same(a: &Map, b: &Map) {
 fn load_items_dat_spr() {
     let db = load_db();
     assert!(db.max_id > 100);
+    // Invisible "tech" items: editorsuffix appended to the name, client ids used by RME.
+    let t = db.get(460).unwrap();
+    assert_eq!((t.client_id, t.name.as_str()), (470, "nothing special (Invisible Walkable Floor)"));
+    assert_eq!(db.get(459).unwrap().client_id, 469);
+    assert_eq!(db.get(1548).unwrap().client_id, 2187);
     let opts = dat::read_otfi(&client_things().join("Tibia.otfi")).unwrap_or_default();
     let f = spr::SpriteFile::open(&client_things().join("Tibia.spr"), opts.extended, true).unwrap();
     println!("spr: signature {:#x}, {} sprites", f.signature, f.count);
@@ -394,5 +399,36 @@ fn edit_default_brush_in_place() {
             assert_eq!(format!("{:?}", b1.kind).len(), format!("{:?}", b2.kind).len(), "brush {} changed", b1.name);
         }
     }
+    let _ = std::fs::remove_dir_all(&dir);
+}
+
+#[test]
+#[ignore]
+fn tileset_fromid_and_edit() {
+    use pme_core::materials::{PaletteKind, TilesetEntry};
+    use pme_io::tileset_edit;
+    let db = load_db();
+    let dir = temp_materials();
+    let mat = materials_xml::load(&dir.join("materials.xml"), &[], &db).unwrap();
+    let stairs = mat.tilesets.iter().find(|t| t.name == "Stairs / Ramps / Ladders").expect("tileset");
+    assert!(stairs.entries(PaletteKind::Terrain).any(|e| matches!(e, TilesetEntry::Item(459))), "item 459 (fromid only) must be listed");
+    let total: usize = mat.tilesets.iter().map(|t| t.categories.iter().map(|c| c.1.len()).sum::<usize>()).sum();
+    println!("{total} tileset entries");
+
+    // Add + remove an item through the in-place editor, on the temp copy.
+    let file = mat.tileset_source["Stairs / Ramps / Ladders"].clone();
+    assert!(tileset_edit::edit(&file, "Stairs / Ramps / Ladders", |t| {
+        tileset_edit::add_item(t, PaletteKind::Terrain, 460);
+        true
+    })
+    .unwrap());
+    let m2 = materials_xml::load(&dir.join("materials.xml"), &[], &db).unwrap();
+    let s2 = m2.tilesets.iter().find(|t| t.name == "Stairs / Ramps / Ladders").unwrap();
+    assert!(s2.entries(PaletteKind::Terrain).any(|e| matches!(e, TilesetEntry::Item(460))));
+    assert!(tileset_edit::edit(&file, "Stairs / Ramps / Ladders", |t| tileset_edit::remove_item(t, PaletteKind::Terrain, 460)).unwrap());
+    let m3 = materials_xml::load(&dir.join("materials.xml"), &[], &db).unwrap();
+    let s3 = m3.tilesets.iter().find(|t| t.name == "Stairs / Ramps / Ladders").unwrap();
+    assert!(!s3.entries(PaletteKind::Terrain).any(|e| matches!(e, TilesetEntry::Item(460))));
+    assert!(s3.entries(PaletteKind::Terrain).any(|e| matches!(e, TilesetEntry::Item(459))), "other entries kept");
     let _ = std::fs::remove_dir_all(&dir);
 }

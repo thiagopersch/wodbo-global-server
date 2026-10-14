@@ -8,6 +8,7 @@ pub mod materials_xml;
 pub mod otb;
 pub mod otbm;
 pub mod spr;
+pub mod tileset_edit;
 pub mod world_xml;
 pub mod xml;
 pub mod xml_edit;

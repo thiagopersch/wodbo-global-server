@@ -83,9 +83,16 @@ pub fn load_items_xml(path: &Path, db: &mut ItemDb) -> Result<()> {
         let (from, to) = match (e.int::<u32>("id"), e.int::<u32>("fromid"), e.int::<u32>("toid")) {
             (Some(id), _, _) => (id, id),
             (None, Some(a), Some(b)) => (a, b),
+            (None, Some(a), None) => (a, a),
             _ => continue,
         };
-        let name = e.attr("name").unwrap_or("");
+        // RME shows `name` + `editorsuffix` (e.g. "nothing special (Invisible Walkable Floor)").
+        let name = match (e.attr("name").unwrap_or(""), e.attr("editorsuffix").map(str::trim).filter(|s| !s.is_empty())) {
+            (n, Some(sfx)) if !n.is_empty() => format!("{n} {sfx}"),
+            (_, Some(sfx)) => sfx.to_owned(),
+            (n, None) => n.to_owned(),
+        };
+        let name = name.as_str();
         let ty = e.children_named("attribute").find(|a| a.attr("key").is_some_and(|k| k.eq_ignore_ascii_case("type"))).and_then(|a| a.attr("value"));
         for id in from..=to.min(u16::MAX as u32) {
             if let Some(t) = db.items.get_mut(id as usize).filter(|t| t.valid) {
