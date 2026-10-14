@@ -432,3 +432,75 @@ fn tileset_fromid_and_edit() {
     assert!(s3.entries(PaletteKind::Terrain).any(|e| matches!(e, TilesetEntry::Item(459))), "other entries kept");
     let _ = std::fs::remove_dir_all(&dir);
 }
+
+#[test]
+#[ignore]
+fn staged_borders_and_scatter_real() {
+    use pme_core::brushes::{Brush, BrushShape};
+    use pme_core::editor::Editor;
+    use pme_core::gen::scatter::{scatter, ScatterEntry, ScatterParams};
+    use pme_core::position::Position;
+    use pme_core::staged::{with_neighbours, Staged};
+    use pme_core::Item;
+    use std::sync::Arc;
+    let db = Arc::new(load_db());
+    let s = server_dir();
+    let mat = Arc::new(materials_xml::load(&s.join("RME/data/860/materials.xml"), &[], &db).unwrap());
+    let area: Vec<Position> = (0..6u16).flat_map(|y| (0..6u16).map(move |x| Position::new(500 + x, 500 + y, 7))).collect();
+
+    // A: borders computed on the real map.
+    let mut a = Editor::new(Map::new(), db.clone(), mat.clone());
+    for p in &area {
+        a.map.set_tile(*p, pme_core::Tile { ground: Some(Item::new(4526)), ..Default::default() });
+    }
+    a.reborder(&with_neighbours(area.iter().copied()));
+    // B: the same, staged first, then applied.
+    let mut b = Editor::new(Map::new(), db.clone(), mat.clone());
+    let ch = {
+        let mut st = Staged::new(&b.map);
+        for p in &area {
+            st.set(*p, pme_core::Tile { ground: Some(Item::new(4526)), ..Default::default() });
+        }
+        st.reborder(&with_neighbours(area.iter().copied()), &db, &mat);
+        st.into_changes()
+    };
+    b.apply_staged(&ch, "gen");
+    let dump = |m: &Map| {
+        let mut v: Vec<_> = m.tiles().map(|(p, t)| (p, t.clone())).collect();
+        v.sort_by_key(|x| x.0);
+        v
+    };
+    assert!(dump(&a.map).iter().any(|(_, t)| !t.items.is_empty()), "borders were generated");
+    assert_eq!(dump(&a.map), dump(&b.map), "staged borders == map borders");
+
+    // Scatter with a real doodad brush, twice with the same seed.
+    let mut ed = Editor::new(Map::new(), db.clone(), mat.clone());
+    let grass = mat.brush_by_name("grass").unwrap();
+    ed.brush_seed = Some(9);
+    ed.draw(&Brush::Material(grass), Position::new(700, 700, 7), 10, BrushShape::Square, false, None);
+    let doodad = mat
+        .brushes
+        .iter()
+        .enumerate()
+        .find_map(|(i, b)| match &b.kind {
+            pme_core::materials::BrushKind::Doodad(d) if !d.on_blocking && d.alternatives.iter().any(|a| a.single_chance > 0) => Some(i as u32 + 1),
+            _ => None,
+        })
+        .unwrap();
+    let zone: Vec<Position> = (0..21u16).flat_map(|y| (0..21u16).map(move |x| Position::new(690 + x, 690 + y, 7))).collect();
+    let params = ScatterParams { entries: vec![(ScatterEntry::Doodad(doodad), 2), (ScatterEntry::Item(4541), 1)], density: 0.3, min_distance: 1, seed: 42, ..Default::default() };
+    let r1 = scatter(&ed.map, &zone, &params, &db, &mat);
+    let r2 = scatter(&ed.map, &zone, &params, &db, &mat);
+    assert!(!r1.is_empty());
+    assert_eq!(r1, r2, "seed 42 twice → identical");
+    let before = dump(&ed.map);
+    let n = ed.apply_staged(&r1, "scatter");
+    assert!(n > 0);
+    // Save → reload keeps the scattered items and attributes.
+    let bytes = otbm::save_bytes(&ed.map, &db);
+    let back = otbm::load_bytes(&bytes, &db, None).unwrap();
+    assert_same(&ed.map, &back);
+    assert!(ed.undo());
+    assert_eq!(dump(&ed.map), before, "undo restores the map");
+    println!("staged borders ok; scatter placed objects on {n} tiles");
+}

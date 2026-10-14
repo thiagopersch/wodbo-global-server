@@ -3,7 +3,7 @@
 use crate::brush_tables::{FULL_BORDER_TYPES, HALF_BORDER_TYPES};
 use crate::item::Item;
 use crate::items::ItemDb;
-use crate::map::Map;
+use crate::source::TileSource;
 use crate::materials::{wall, BrushId, Materials, WallNode};
 use crate::position::Position;
 use crate::tile::Tile;
@@ -55,8 +55,8 @@ pub fn undraw(mat: &Materials, brush: BrushId, tile: &mut Tile) {
     clean_walls(mat, tile, Some(brush));
 }
 
-fn has_matching_wall(map: &Map, mat: &Materials, brush: BrushId, x: i32, y: i32, z: u8) -> bool {
-    let Some(t) = map.get_xyz(x, y, z) else { return false };
+fn has_matching_wall<S: TileSource + ?Sized>(map: &S, mat: &Materials, brush: BrushId, x: i32, y: i32, z: u8) -> bool {
+    let Some(t) = map.tile_xyz(x, y, z) else { return false };
     for item in &t.items {
         let info = mat.info(item.id);
         if info.is_wall {
@@ -70,7 +70,7 @@ fn has_matching_wall(map: &Map, mat: &Materials, brush: BrushId, x: i32, y: i32,
 }
 
 /// RME `WallBrush::doWalls`: realign every wall on the tile according to its neighbours.
-pub fn do_walls(map: &Map, db: &ItemDb, mat: &Materials, pos: Position, tile: &mut Tile) {
+pub fn do_walls<S: TileSource + ?Sized>(map: &S, db: &ItemDb, mat: &Materials, pos: Position, tile: &mut Tile) {
     let (x, y, z) = (pos.x as i32, pos.y as i32, pos.z);
     let mut to_add: Vec<Item> = Vec::new();
     let mut i = tile.items.iter().take_while(|it| mat.info(it.id).is_border).count();

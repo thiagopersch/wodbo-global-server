@@ -467,7 +467,9 @@ impl App {
         }
         if let Some(c) = &self.cache {
             painter.extend(c.shapes.iter().cloned());
-            paint_tooltips(&painter, &c.tooltips, self.cam.zoom);
+            if self.pending.is_none() {
+                paint_tooltips(&painter, &c.tooltips, self.cam.zoom);
+            }
         }
 
         // Grid
@@ -488,6 +490,7 @@ impl App {
             }
         }
 
+        self.draw_pending(ctx, &painter, rect);
         self.draw_preview(ctx, &painter, rect, hover_xy);
     }
 

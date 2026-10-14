@@ -3,7 +3,7 @@
 use crate::brush_tables::{CARPET_TYPES, TABLE_TYPES};
 use crate::item::Item;
 use crate::items::ItemDb;
-use crate::map::Map;
+use crate::source::TileSource;
 use crate::materials::{border, table, BrushId, BrushKind, Materials, WeightedNode};
 use crate::position::Position;
 use crate::tile::Tile;
@@ -73,18 +73,18 @@ pub fn undraw_table(mat: &Materials, tile: &mut Tile) {
     tile.items.retain(|i| !mat.info(i.id).is_table);
 }
 
-fn neighbour_mask(map: &Map, pos: Position, mut matches: impl FnMut(&Tile) -> bool) -> usize {
+fn neighbour_mask<S: TileSource + ?Sized>(map: &S, pos: Position, mut matches: impl FnMut(&Tile) -> bool) -> usize {
     const OFFS: [(i32, i32); 8] = [(-1, -1), (0, -1), (1, -1), (-1, 0), (1, 0), (-1, 1), (0, 1), (1, 1)];
     let mut mask = 0;
     for (k, (dx, dy)) in OFFS.iter().enumerate() {
-        if map.get_xyz(pos.x as i32 + dx, pos.y as i32 + dy, pos.z).is_some_and(&mut matches) {
+        if map.tile_xyz(pos.x as i32 + dx, pos.y as i32 + dy, pos.z).is_some_and(&mut matches) {
             mask |= 1 << k;
         }
     }
     mask
 }
 
-pub fn do_carpets(map: &Map, mat: &Materials, pos: Position, tile: &mut Tile) {
+pub fn do_carpets<S: TileSource + ?Sized>(map: &S, mat: &Materials, pos: Position, tile: &mut Tile) {
     for i in 0..tile.items.len() {
         let info = mat.info(tile.items[i].id);
         if !info.is_carpet {
@@ -99,7 +99,7 @@ pub fn do_carpets(map: &Map, mat: &Materials, pos: Position, tile: &mut Tile) {
     }
 }
 
-pub fn do_tables(map: &Map, mat: &Materials, pos: Position, tile: &mut Tile) {
+pub fn do_tables<S: TileSource + ?Sized>(map: &S, mat: &Materials, pos: Position, tile: &mut Tile) {
     for i in 0..tile.items.len() {
         let info = mat.info(tile.items[i].id);
         if !info.is_table {

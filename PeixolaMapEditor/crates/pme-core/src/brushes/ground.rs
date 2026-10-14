@@ -3,7 +3,7 @@
 
 use crate::brush_tables::BORDER_TYPES;
 use crate::item::Item;
-use crate::map::Map;
+use crate::source::TileSource;
 use crate::materials::{border, BorderBlock, BrushId, Materials, BRUSH_ALL};
 use crate::position::Position;
 use crate::tile::Tile;
@@ -32,8 +32,8 @@ pub fn undraw(mat: &Materials, brush: BrushId, tile: &mut Tile) {
 }
 
 #[inline]
-fn brush_at(map: &Map, mat: &Materials, x: i32, y: i32, z: u8) -> BrushId {
-    map.get_xyz(x, y, z).and_then(|t| t.ground.as_ref()).map_or(0, |g| mat.ground_brush_of(g.id))
+fn brush_at<S: TileSource + ?Sized>(map: &S, mat: &Materials, x: i32, y: i32, z: u8) -> BrushId {
+    map.tile_xyz(x, y, z).and_then(|t| t.ground.as_ref()).map_or(0, |g| mat.ground_brush_of(g.id))
 }
 
 /// RME `GroundBrush::getBrushTo`.
@@ -80,7 +80,7 @@ pub fn clean_borders(mat: &Materials, tile: &mut Tile) {
 }
 
 /// Recompute the borders of `tile` (located at `pos`), reading neighbours from `map`.
-pub fn do_borders(map: &Map, mat: &Materials, pos: Position, tile: &mut Tile) {
+pub fn do_borders<S: TileSource + ?Sized>(map: &S, mat: &Materials, pos: Position, tile: &mut Tile) {
     let x = pos.x as i32;
     let y = pos.y as i32;
     let z = pos.z;

@@ -96,6 +96,38 @@ cargo test --release -p pme-io -- --ignored --nocapture  # testes com os dados r
 Os testes com dados reais carregam `items.otb`, `Tibia.dat/.spr`, os materiais e o `main.otbm`,
 fazem o round-trip do mapa **em memória** (nada é gravado nas pastas do servidor) e testam
 bordas automáticas, paredes, zonas, casas, doodads, copiar/colar/mover e desfazer.
+Testes que editam materiais (brushes, tilesets) trabalham numa **cópia temporária** de `RME/data/860`.
+
+### Benchmarks
+
+```powershell
+cargo test --release -p pme-io --test bench -- --ignored --nocapture
+```
+
+Mede carregamento/serialização do `main.otbm`, pincel 101×101 com bordas, desfazer e a
+distribuição de objetos (tudo em memória). Resultados de referência em `docs/AUDIT.md`.
+
+## Prévia e operações em lote
+
+Ferramentas que alteram muitos tiles de uma vez mostram primeiro uma **prévia** (fantasma no mapa
+com contorno ciano) e uma barra **Aplicar (Enter) · Regenerar · Cancelar (Esc)**. Nada muda no
+mapa até Aplicar, e a operação inteira vira **um único Ctrl+Z**. Se o mapa for editado depois da
+prévia, Aplicar fica bloqueado até regenerar.
+
+### Distribuir objetos (Ferramentas → Distribuir objetos...)
+
+Espalha itens e/ou doodads (com pesos) na **seleção** — ou nos tiles visíveis do andar atual se
+nada estiver selecionado:
+- **Densidade** (chance por tile), **distância mínima** entre objetos e **semente** (mesma semente =
+  mesmo resultado; 🎲 sorteia outra).
+- **Regras**: só em tiles vazios, evitar bloqueados, casas, PZ, criaturas/spawns; opcionalmente
+  só em certos chãos (ex.: só na grama).
+- Doodads compostos só são colocados inteiros, e nunca são usados IDs que não existem no items.otb.
+
+## Documentação técnica
+
+- `docs/AUDIT.md` — arquitetura, pontos de extensão, riscos e linha de base de desempenho.
+- `ROADMAP.md` — fases de evolução e o que já foi entregue.
 
 ## Licença
 

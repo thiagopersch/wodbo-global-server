@@ -73,6 +73,9 @@ pub struct Editor {
     pub clipboard: CopyBuffer,
     /// Map revision at the last save.
     pub saved_revision: u64,
+    /// When set, brush strokes are reproducible: each `draw` is seeded with this value mixed
+    /// with the target position (same seed + same map = same result).
+    pub brush_seed: Option<u64>,
 }
 
 impl Editor {
@@ -87,6 +90,7 @@ impl Editor {
             selection: AHashSet::new(),
             clipboard: CopyBuffer::default(),
             saved_revision: rev,
+            brush_seed: None,
         }
     }
 
@@ -157,6 +161,31 @@ impl Editor {
     /// Apply `brush` at `center`. `erase` = right mouse button / undraw.
     /// `doodad_buffer` is the pre-generated doodad placement (see [`doodad::fill_buffer`]).
     pub fn draw(&mut self, brush: &Brush, center: Position, size: i32, shape: BrushShape, erase: bool, doodad_buffer: Option<&doodad::DoodadBuffer>) {
+        match self.brush_seed {
+            Some(seed) => crate::rng::with_seed(crate::rng::mix(seed, center.x, center.y, center.z), || self.draw_inner(brush, center, size, shape, erase, doodad_buffer)),
+            None => self.draw_inner(brush, center, size, shape, erase, doodad_buffer),
+        }
+    }
+
+    /// Apply a staged change set (preview → confirm) as **one** undo step.
+    /// Returns the number of tiles actually changed.
+    pub fn apply_staged(&mut self, changes: &crate::staged::StagedChanges, label: &str) -> usize {
+        let mut n = 0;
+        self.begin(label);
+        for p in changes.sorted_positions() {
+            let new = changes.tiles.get(&p).cloned().flatten();
+            let before = self.map.get(p).cloned();
+            if before == new {
+                continue;
+            }
+            self.history.apply(&mut self.map, Change::Tile { pos: p, tile: new.map(Box::new) });
+            n += 1;
+        }
+        self.end();
+        n
+    }
+
+    fn draw_inner(&mut self, brush: &Brush, center: Position, size: i32, shape: BrushShape, erase: bool, doodad_buffer: Option<&doodad::DoodadBuffer>) {
         let mat = self.mat.clone();
         let db = self.db.clone();
         match brush {
@@ -814,6 +843,29 @@ impl Editor {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn apply_staged_is_one_undo_step() {
+        let mut ed = editor();
+        let before: Vec<_> = ed.map.tiles().map(|(p, t)| (p, t.clone())).collect();
+        let mut st = crate::staged::Staged::new(&ed.map);
+        for x in 0..50u16 {
+            st.set(Position::new(300 + x, 300, 7), Tile { ground: Some(Item::new(2)), ..Tile::new() });
+        }
+        st.remove(Position::new(100, 100, 7));
+        st.tile_mut(Position::new(101, 100, 7)).items.push(Item::new(11));
+        let ch = st.into_changes();
+        let undo_before = ed.history.undo_count();
+        assert_eq!(ed.apply_staged(&ch, "gen"), 52);
+        assert_eq!(ed.history.undo_count(), undo_before + 1, "one undo step");
+        assert!(ed.map.get(Position::new(100, 100, 7)).is_none());
+        assert!(ed.undo());
+        let after: Vec<_> = ed.map.tiles().map(|(p, t)| (p, t.clone())).collect();
+        let (mut a, mut b) = (before, after);
+        a.sort_by_key(|x| x.0);
+        b.sort_by_key(|x| x.0);
+        assert_eq!(a, b, "undo restores the map exactly");
+    }
     use crate::items::{ItemGroup, ItemType};
 
     fn db() -> ItemDb {

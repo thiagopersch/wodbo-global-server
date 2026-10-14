@@ -122,6 +122,10 @@ pub struct App {
     pub std_brush_edit: Option<StdBrushEdit>,
     /// "Browse field" window (objects of one tile).
     pub browse: Option<crate::browse::BrowseField>,
+    /// Previewed operation waiting for Apply / Cancel.
+    pub pending: Option<crate::pending::PendingOp>,
+    /// "Distribuir objetos" window.
+    pub scatter: Option<crate::scatter_ui::ScatterUi>,
 }
 
 impl App {
@@ -172,6 +176,8 @@ impl App {
             remove_creature: None,
             std_brush_edit: None,
             browse: None,
+            pending: None,
+            scatter: None,
         };
         if app.settings.paths.missing().is_none() {
             app.start_asset_load();
@@ -563,7 +569,9 @@ impl App {
             self.delete_selection();
         }
         if consume(sc(Modifiers::NONE, Key::Escape)) {
-            if self.picking_dest.is_some() {
+            if self.pending.is_some() {
+                self.pending = None;
+            } else if self.picking_dest.is_some() {
                 self.picking_dest = None;
             } else if self.paste_mode || self.brush.is_some() {
                 self.set_brush(None);
@@ -774,6 +782,10 @@ impl App {
                 }
             });
             ui.menu_button(t("menu-tools"), |ui| {
+                if ui.add_enabled(self.editor.is_some(), egui::Button::new(t("scatter-title"))).on_hover_text(t("scatter-help")).clicked() {
+                    ui.close_menu();
+                    self.open_scatter();
+                }
                 if ui.add_enabled(self.assets.is_some(), egui::Button::new(t("be-title"))).clicked() {
                     ui.close_menu();
                     self.open_brush_editor();
@@ -1415,6 +1427,8 @@ impl eframe::App for App {
         self.brush_editor_window(ctx);
         self.std_brush_edit_window(ctx);
         self.browse_field_window(ctx);
+        self.scatter_window(ctx);
+        self.pending_bar(ctx);
         self.remove_creature_dialog(ctx);
         if self.settings.view.show_animation {
             ctx.request_repaint_after(std::time::Duration::from_millis(self.settings.anim_ms.clamp(50, 500) as u64));

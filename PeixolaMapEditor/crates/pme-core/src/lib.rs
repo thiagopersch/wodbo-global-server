@@ -4,12 +4,16 @@
 pub mod brush_tables;
 pub mod brushes;
 pub mod editor;
+pub mod gen;
 pub mod history;
 pub mod item;
 pub mod items;
 pub mod map;
 pub mod materials;
 pub mod position;
+pub mod rng;
+pub mod source;
+pub mod staged;
 pub mod tile;
 
 pub use item::{Attr, Item};
