@@ -9,6 +9,11 @@ use pme_core::items::ItemDb;
 use pme_core::map::Map;
 use pme_io::{dat, materials_xml, otb, otbm, spr, world_xml};
 
+/// The editor's own materials (`PeixolaMapEditor/data/materials`).
+fn materials_dir() -> PathBuf {
+    Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/materials").canonicalize().unwrap()
+}
+
 fn server_dir() -> PathBuf {
     Path::new(env!("CARGO_MANIFEST_DIR")).join("../../..").canonicalize().unwrap()
 }
@@ -76,7 +81,7 @@ fn load_materials() {
     let db = load_db();
     let s = server_dir();
     let t = Instant::now();
-    let m = materials_xml::load(&s.join("RME/data/860/materials.xml"), &[s.join("RME/extensions")], &db).unwrap();
+    let m = materials_xml::load(&materials_dir().join("materials.xml"), &[materials_dir().join("extensions")], &db).unwrap();
     println!(
         "materials: {} brushes, {} borders, {} tilesets, {} warnings in {:?}",
         m.brushes.len(),
@@ -153,7 +158,7 @@ mod brushes_real {
     fn setup() -> Editor {
         let db = load_db();
         let s = server_dir();
-        let m: Materials = materials_xml::load(&s.join("RME/data/860/materials.xml"), &[], &db).unwrap();
+        let m: Materials = materials_xml::load(&materials_dir().join("materials.xml"), &[], &db).unwrap();
         Editor::new(Map::new(), Arc::new(db), Arc::new(m))
     }
 
@@ -296,7 +301,7 @@ mod brushes_real {
         c.upsert(CustomBrush::Doodad(DoodadDef { name: "peixola test doodad".into(), look_id: 2700, draggable: false, on_blocking: true, thickness: (0, 0), singles: vec![], composite: vec![(0, 0, 0, vec![2700]), (1, 0, 0, vec![2701])] }));
         c.save(&dir.join("peixola_brushes.xml")).unwrap();
 
-        let m = materials_xml::load(&s.join("RME/data/860/materials.xml"), &[dir.clone()], &db).unwrap();
+        let m = materials_xml::load(&materials_dir().join("materials.xml"), &[dir.clone()], &db).unwrap();
         let g = m.brush_by_name("peixola test ground").expect("custom ground loaded");
         let d = m.brush_by_name("peixola test doodad").expect("custom doodad loaded");
         assert!(m.tilesets.iter().any(|t| t.name == TILESET_NAME));
@@ -340,9 +345,9 @@ fn creatures_unique_and_spawn_npcs_resolve() {
     }
 }
 
-/// Copy of RME/data/860 in a temp dir (tests never touch the real files).
+/// Copy of the bundled materials in a temp dir (tests never touch the real files).
 fn temp_materials() -> PathBuf {
-    let src = server_dir().join("RME/data/860");
+    let src = materials_dir();
     let dst = std::env::temp_dir().join(format!("pme-860-{}", std::process::id()));
     std::fs::create_dir_all(&dst).unwrap();
     for f in std::fs::read_dir(&src).unwrap().flatten() {
@@ -445,7 +450,7 @@ fn staged_borders_and_scatter_real() {
     use std::sync::Arc;
     let db = Arc::new(load_db());
     let s = server_dir();
-    let mat = Arc::new(materials_xml::load(&s.join("RME/data/860/materials.xml"), &[], &db).unwrap());
+    let mat = Arc::new(materials_xml::load(&materials_dir().join("materials.xml"), &[], &db).unwrap());
     let area: Vec<Position> = (0..6u16).flat_map(|y| (0..6u16).map(move |x| Position::new(500 + x, 500 + y, 7))).collect();
 
     // A: borders computed on the real map.
@@ -503,4 +508,28 @@ fn staged_borders_and_scatter_real() {
     assert!(ed.undo());
     assert_eq!(dump(&ed.map), before, "undo restores the map");
     println!("staged borders ok; scatter placed objects on {n} tiles");
+}
+
+/// The bundled materials must load exactly like the RME originals they were copied from.
+/// Skipped (printed) when the RME folder is no longer present.
+#[test]
+#[ignore]
+fn bundled_materials_match_rme_originals() {
+    let rme = server_dir().join("RME");
+    if !rme.join("data/860/materials.xml").is_file() {
+        println!("RME folder not present: nothing to compare (the editor does not need it)");
+        return;
+    }
+    let db = load_db();
+    let ours = materials_xml::load(&materials_dir().join("materials.xml"), &[materials_dir().join("extensions")], &db).unwrap();
+    let orig = materials_xml::load(&rme.join("data/860/materials.xml"), &[rme.join("extensions")], &db).unwrap();
+    assert_eq!(ours.brushes.len(), orig.brushes.len());
+    assert_eq!(ours.borders.len(), orig.borders.len());
+    assert_eq!(ours.tilesets.len(), orig.tilesets.len());
+    let entries = |m: &pme_core::materials::Materials| m.tilesets.iter().map(|t| t.categories.iter().map(|c| c.1.len()).sum::<usize>()).sum::<usize>();
+    assert_eq!(entries(&ours), entries(&orig));
+    for (a, b) in ours.brushes.iter().zip(&orig.brushes) {
+        assert_eq!(format!("{:?}", a.kind), format!("{:?}", b.kind), "brush {}", a.name);
+    }
+    println!("bundled materials == RME: {} brushes, {} borders, {} tilesets", ours.brushes.len(), ours.borders.len(), ours.tilesets.len());
 }

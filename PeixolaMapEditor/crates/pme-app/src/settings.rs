@@ -13,9 +13,10 @@ pub struct Paths {
     pub server_data: PathBuf,
     /// Folder with Tibia.dat / Tibia.spr / Tibia.otfi.
     pub client_things: PathBuf,
-    /// RME materials.xml (borders, grounds, walls, doodads, tilesets).
+    /// materials.xml (borders, grounds, walls, doodads, tilesets) — the editor's own copy in
+    /// `PeixolaMapEditor/data/materials` (RME-compatible format).
     pub materials_xml: PathBuf,
-    /// Extra materials folder (RME extensions).
+    /// Extra materials folder (`PeixolaMapEditor/data/materials/extensions`).
     pub extensions_dir: PathBuf,
 }
 
@@ -53,9 +54,7 @@ impl Paths {
     }
 }
 
-/// Look for the OTServer layout (`server/data`, `cliente/data/things/860`, `server/RME`)
-/// around the executable and the working directory.
-fn detect_paths() -> Option<Paths> {
+fn search_starts() -> Vec<PathBuf> {
     let mut starts: Vec<PathBuf> = Vec::new();
     if let Ok(exe) = std::env::current_exe() {
         starts.push(exe);
@@ -63,7 +62,30 @@ fn detect_paths() -> Option<Paths> {
     if let Ok(cwd) = std::env::current_dir() {
         starts.push(cwd);
     }
-    for start in starts {
+    starts
+}
+
+/// The editor's own materials folder (`<PeixolaMapEditor>/data/materials`), found next to the
+/// executable (also when it runs from `target/release`) or from the working directory.
+pub fn bundled_materials() -> Option<PathBuf> {
+    for start in search_starts() {
+        for dir in start.ancestors() {
+            for root in [dir.to_path_buf(), dir.join("PeixolaMapEditor"), dir.join("server/PeixolaMapEditor")] {
+                let m = root.join("data/materials");
+                if m.join("materials.xml").is_file() {
+                    return Some(clean(m));
+                }
+            }
+        }
+    }
+    None
+}
+
+/// Look for the OTServer layout (`server/data`, `cliente/data/things/860`) around the
+/// executable and the working directory. Materials always come from the editor's own folder.
+fn detect_paths() -> Option<Paths> {
+    let materials = bundled_materials();
+    for start in search_starts() {
         for dir in start.ancestors() {
             for server in [dir.to_path_buf(), dir.join("server")] {
                 if server.join("data/items/items.otb").is_file() {
@@ -71,14 +93,31 @@ fn detect_paths() -> Option<Paths> {
                     return Some(Paths {
                         server_data: clean(server.join("data")),
                         client_things: clean(things),
-                        materials_xml: clean(server.join("RME/data/860/materials.xml")),
-                        extensions_dir: clean(server.join("RME/extensions")),
+                        materials_xml: materials.as_ref().map(|m| m.join("materials.xml")).unwrap_or_default(),
+                        extensions_dir: materials.as_ref().map(|m| m.join("extensions")).unwrap_or_default(),
                     });
                 }
             }
         }
     }
     None
+}
+
+/// Point materials paths that still live in an RME folder to the editor's own copy.
+/// Returns true when something changed.
+pub fn migrate_paths(paths: &mut Paths, bundled: Option<&Path>) -> bool {
+    let Some(b) = bundled else { return false };
+    let in_rme = |p: &Path| p.components().any(|c| c.as_os_str().to_string_lossy().eq_ignore_ascii_case("RME"));
+    let mut changed = false;
+    if paths.materials_xml.as_os_str().is_empty() || in_rme(&paths.materials_xml) {
+        paths.materials_xml = b.join("materials.xml");
+        changed = true;
+    }
+    if paths.extensions_dir.as_os_str().is_empty() || in_rme(&paths.extensions_dir) {
+        paths.extensions_dir = b.join("extensions");
+        changed = true;
+    }
+    changed
 }
 
 fn clean(p: PathBuf) -> PathBuf {
@@ -148,6 +187,8 @@ pub struct Settings {
     pub default_direction: u8,
     pub undo_limit: usize,
     pub open_last_map: bool,
+    /// Show the start screen (new / open / recent maps) when the editor starts.
+    pub show_welcome: bool,
     /// Sprite animation speed: milliseconds per frame (50..=500).
     pub anim_ms: u32,
     /// Creatures hidden from the palette ("npc:Name" / "monster:Name").
@@ -168,6 +209,7 @@ impl Default for Settings {
             default_direction: 2,
             undo_limit: 500,
             open_last_map: false,
+            show_welcome: true,
             anim_ms: 100,
             hidden_creatures: Vec::new(),
         }
@@ -182,7 +224,13 @@ fn settings_path() -> PathBuf {
 impl Settings {
     pub fn load() -> Self {
         let p = settings_path();
-        std::fs::read_to_string(&p).ok().and_then(|s| toml::from_str(&s).ok()).unwrap_or_default()
+        let mut s: Settings = std::fs::read_to_string(&p).ok().and_then(|s| toml::from_str(&s).ok()).unwrap_or_default();
+        // Older configs pointed to the RME folder: move them to the editor's bundled materials.
+        if migrate_paths(&mut s.paths, bundled_materials().as_deref()) {
+            log::info!("materials paths migrated to the bundled copy: {}", s.paths.materials_xml.display());
+            s.save();
+        }
+        s
     }
 
     pub fn save(&self) {
@@ -199,5 +247,66 @@ impl Settings {
         self.recent.retain(|p| p != path);
         self.recent.insert(0, path.to_path_buf());
         self.recent.truncate(10);
+    }
+
+    pub fn remove_recent(&mut self, path: &Path) {
+        self.recent.retain(|p| p != path);
+    }
+
+    /// Drop history entries whose file no longer exists. Returns how many were removed.
+    pub fn prune_missing_recent(&mut self) -> usize {
+        let before = self.recent.len();
+        self.recent.retain(|p| p.is_file());
+        before - self.recent.len()
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn rme_paths_migrate_to_bundled_copy() {
+        let bundled = PathBuf::from(r"C:\x\PeixolaMapEditor\data\materials");
+        let mut p = Paths {
+            server_data: PathBuf::from(r"C:\x\server\data"),
+            client_things: PathBuf::from(r"C:\x\cliente\data\things\860"),
+            materials_xml: PathBuf::from(r"C:\x\server\RME\data\860\materials.xml"),
+            extensions_dir: PathBuf::from(r"C:\x\server\RME\extensions"),
+        };
+        assert!(migrate_paths(&mut p, Some(&bundled)));
+        assert_eq!(p.materials_xml, bundled.join("materials.xml"));
+        assert_eq!(p.extensions_dir, bundled.join("extensions"));
+        assert_eq!(p.server_data, PathBuf::from(r"C:\x\server\data"), "other paths untouched");
+        assert!(!migrate_paths(&mut p, Some(&bundled)), "already migrated");
+        // A custom non-RME path chosen by the user is respected.
+        p.materials_xml = PathBuf::from(r"D:\meus\materials.xml");
+        assert!(!migrate_paths(&mut p, Some(&bundled)));
+        // Without a bundled copy nothing changes.
+        p.materials_xml = PathBuf::from(r"C:\x\server\RME\data\860\materials.xml");
+        assert!(!migrate_paths(&mut p, None));
+    }
+
+    #[test]
+    fn recent_history_helpers() {
+        let mut s = Settings { recent: Vec::new(), ..Settings::default() };
+        for i in 0..12 {
+            s.push_recent(Path::new(&format!("map{i}.otbm")));
+        }
+        assert_eq!(s.recent.len(), 10, "history keeps 10 entries");
+        assert_eq!(s.recent[0], PathBuf::from("map11.otbm"), "newest first");
+        s.push_recent(Path::new("map5.otbm"));
+        assert_eq!(s.recent[0], PathBuf::from("map5.otbm"));
+        assert_eq!(s.recent.iter().filter(|p| **p == PathBuf::from("map5.otbm")).count(), 1, "no duplicates");
+        s.remove_recent(Path::new("map5.otbm"));
+        assert!(!s.recent.contains(&PathBuf::from("map5.otbm")));
+
+        // Only existing files survive pruning (the crate's Cargo.toml exists, the fake maps don't).
+        let real = Path::new(env!("CARGO_MANIFEST_DIR")).join("Cargo.toml");
+        assert!(real.is_file());
+        s.push_recent(&real);
+        let n = s.recent.len();
+        assert_eq!(s.prune_missing_recent(), n - 1);
+        assert_eq!(s.recent, vec![real]);
     }
 }

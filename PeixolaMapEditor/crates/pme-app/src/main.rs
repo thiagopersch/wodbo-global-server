@@ -10,6 +10,7 @@ mod brush_edit_std;
 mod brush_editor;
 mod canvas;
 mod i18n;
+mod icons;
 mod inspector;
 mod light;
 mod minimap;
@@ -21,6 +22,7 @@ mod replace;
 mod scatter_ui;
 mod settings;
 mod view;
+mod welcome;
 mod widgets;
 
 use std::path::PathBuf;

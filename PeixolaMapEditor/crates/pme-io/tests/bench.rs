@@ -13,6 +13,11 @@ use pme_core::items::ItemDb;
 use pme_core::position::Position;
 use pme_io::{dat, materials_xml, otb, otbm};
 
+/// The editor's own materials (`PeixolaMapEditor/data/materials`).
+fn materials_dir() -> PathBuf {
+    Path::new(env!("CARGO_MANIFEST_DIR")).join("../../data/materials").canonicalize().unwrap()
+}
+
 fn server_dir() -> PathBuf {
     Path::new(env!("CARGO_MANIFEST_DIR")).join("../../..").canonicalize().unwrap()
 }
@@ -33,7 +38,7 @@ fn baseline_timings() {
     dat::load_dat(&things.join("Tibia.dat"), &dat::read_otfi(&things.join("Tibia.otfi")).unwrap_or_default(), &mut db).unwrap();
     let t_items = ms(t);
     let t = Instant::now();
-    let mat = materials_xml::load(&s.join("RME/data/860/materials.xml"), &[s.join("RME/extensions")], &db).unwrap();
+    let mat = materials_xml::load(&materials_dir().join("materials.xml"), &[materials_dir().join("extensions")], &db).unwrap();
     let t_mat = ms(t);
     let db = Arc::new(db);
     let mat = Arc::new(mat);
@@ -77,7 +82,7 @@ fn baseline_timings() {
 
     println!("---- PeixolaMapEditor baseline (release, this machine) ----");
     println!("items.otb + items.xml + Tibia.dat : {t_items:8.1} ms");
-    println!("materials (RME 860 + extensions)  : {t_mat:8.1} ms");
+    println!("materials (bundled + extensions)   : {t_mat:8.1} ms");
     println!("load main.otbm ({tiles} tiles)     : {t_load:8.1} ms");
     println!("serialize main.otbm ({} MB)       : {t_save:8.1} ms", bytes.len() / 1_000_000);
     println!("ground brush 101x101 + borders    : {t_brush:8.1} ms");

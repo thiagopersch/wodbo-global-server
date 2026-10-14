@@ -126,6 +126,8 @@ pub struct App {
     pub pending: Option<crate::pending::PendingOp>,
     /// "Distribuir objetos" window.
     pub scatter: Option<crate::scatter_ui::ScatterUi>,
+    /// Start screen (new / open / recent maps) visible.
+    pub welcome: bool,
 }
 
 impl App {
@@ -134,6 +136,7 @@ impl App {
         i18n::set_lang(settings.lang);
         setup_style(&cc.egui_ctx);
         let open = open.or_else(|| if settings.open_last_map { settings.recent.first().cloned() } else { None });
+        let welcome = open.is_none() && settings.show_welcome;
         let mut app = Self {
             settings,
             assets: None,
@@ -178,6 +181,7 @@ impl App {
             browse: None,
             pending: None,
             scatter: None,
+            welcome,
         };
         if app.settings.paths.missing().is_none() {
             app.start_asset_load();
@@ -354,15 +358,20 @@ impl App {
         self.cam.center_on(self.canvas_rect, Position::new(1000, 1000, 7));
     }
 
-    pub fn open_dialog(&mut self) {
+    /// Pick a map file and start loading it. Returns false when the dialog was cancelled.
+    pub fn open_dialog(&mut self) -> bool {
         let mut d = rfd::FileDialog::new().add_filter("OpenTibia map (*.otbm)", &["otbm"]);
         if let Some(dir) = self.map_path.as_ref().and_then(|p| p.parent()) {
             d = d.set_directory(dir);
         } else {
             d = d.set_directory(self.settings.paths.server_data.join("world"));
         }
-        if let Some(p) = d.pick_file() {
-            self.start_map_load(p);
+        match d.pick_file() {
+            Some(p) => {
+                self.start_map_load(p);
+                true
+            }
+            None => false,
         }
     }
 
@@ -405,7 +414,7 @@ impl App {
         }
     }
 
-    fn request(&mut self, ctx: &egui::Context, action: Pending) {
+    pub(crate) fn request(&mut self, ctx: &egui::Context, action: Pending) {
         if self.is_dirty() {
             self.dialogs.confirm = Some(action);
         } else {
@@ -416,7 +425,9 @@ impl App {
     fn do_pending(&mut self, ctx: &egui::Context, action: Pending) {
         match action {
             Pending::New => self.new_map(),
-            Pending::Open => self.open_dialog(),
+            Pending::Open => {
+                self.open_dialog();
+            }
             Pending::Quit => {
                 self.allow_close = true;
                 ctx.send_viewport_cmd(egui::ViewportCommand::Close);
@@ -651,6 +662,10 @@ impl App {
                         }
                     }
                 });
+                if ui.button(t("menu-welcome")).clicked() {
+                    ui.close_menu();
+                    self.welcome = true;
+                }
                 ui.separator();
                 if ui.add_enabled(self.editor.is_some(), egui::Button::new(t("menu-save")).shortcut_text("Ctrl+S")).clicked() {
                     ui.close_menu();
@@ -852,11 +867,11 @@ impl App {
             }
             ui.separator();
             let select = self.brush.is_none() && !self.paste_mode;
-            if ui.selectable_label(select, format!("⬚ {}", t("tool-select"))).on_hover_text(t("tool-select-tip")).clicked() {
+            if crate::icons::tool_button(ui, select, crate::icons::ToolIcon::Cursor, &t("tool-select")).on_hover_text(t("tool-select-tip")).clicked() {
                 self.set_brush(None);
             }
             let eraser = self.brush == Some(Brush::Eraser);
-            if ui.selectable_label(eraser, format!("⌫ {}", t("tool-eraser"))).on_hover_text(t("tool-eraser-tip")).clicked() {
+            if crate::icons::tool_button(ui, eraser, crate::icons::ToolIcon::Eraser, &t("tool-eraser")).on_hover_text(t("tool-eraser-tip")).clicked() {
                 self.set_brush(Some(Brush::Eraser));
             }
             ui.separator();
@@ -1421,6 +1436,8 @@ impl eframe::App for App {
             }
         });
 
+        // Before the dialogs so Settings opened from it is drawn on top.
+        self.welcome_window(ctx);
         self.dialogs(ctx);
         self.properties_windows(ctx);
         self.replace_window(ctx);

@@ -25,7 +25,7 @@ próximas fases do `ROADMAP.md`.
 ## Dados disponíveis para as próximas fases
 - items.otb: flags `UNPASSABLE`, `BLOCK_MISSILES`, `BLOCK_PATHFINDER`, `HAS_ELEVATION`, `FLOORCHANGE*`, `ALWAYSONTOP`/`TOPORDER`.
 - items.xml (servidor): `rotateTo` em 723 itens e `floorchange` em 494 — **ainda não lidos**; necessários para rotação segura (Módulo F) e pathfinding (Módulo E).
-- Materiais do RME completos (bordas com specific cases, paredes, doodads com alternativas e composições, tapetes, mesas, tilesets).
+- Materiais completos (bordas com specific cases, paredes, doodads com alternativas e composições, tapetes, mesas, tilesets) em `data/materials` — cópia própria do editor, idêntica aos originais do RME 8.60 (teste `bundled_materials_match_rme_originals`). O editor não depende mais da pasta `server/RME`.
 
 ## Riscos conhecidos
 - **Rotação/espelhamento**: sprites do Tibia não podem ser espelhados; só posições podem. Rotacionar itens direcionais exige `rotateTo` — sem ele, a transformação precisa avisar.
@@ -38,7 +38,7 @@ Medida com `cargo test --release -p pme-io --test bench -- --ignored --nocapture
 | Operação | Tempo |
 |---|---|
 | items.otb + items.xml + Tibia.dat | 103 ms |
-| materiais (RME 860 + extensões) | 41 ms |
+| materiais (data/materials + extensões) | 41 ms |
 | carregar main.otbm (3.427.934 tiles) | 349 ms |
 | serializar main.otbm (30 MB) | 330 ms |
 | pincel de chão 101×101 + bordas | 5,4 ms |
@@ -48,3 +48,6 @@ Medida com `cargo test --release -p pme-io --test bench -- --ignored --nocapture
 
 Memória: o editor com `main.otbm` aberto ocupou **751 MB** de working set (medido pelo Windows após
 abrir o mapa, sem edições). Ainda não há medição automática por teste; fica como pendência da Fase 8.
+
+## Dependência do RME
+Nenhuma em tempo de execução. Só as ferramentas de desenvolvimento `tools/gen_brush_tables.py` e `tools/gen_outfit_colors.py` leem o código-fonte do RME, e apenas para regenerar tabelas que já estão no repositório (`brush_tables.rs`, `outfit.rs`); não são necessárias para compilar nem para usar o editor.

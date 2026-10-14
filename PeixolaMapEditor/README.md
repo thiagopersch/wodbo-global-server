@@ -24,12 +24,19 @@ Na primeira execução os caminhos são detectados automaticamente a partir dest
 |---|---|
 | items.otb / items.xml, monster/, npc/ | `server\data` |
 | Tibia.dat / Tibia.spr / Tibia.otfi | `cliente\data\things\860` |
-| Materiais (brushes) | `server\RME\data\860\materials.xml` |
-| Extensões de materiais | `server\RME\extensions` |
+| Materiais (brushes) | `server\PeixolaMapEditor\data\materials\materials.xml` (cópia própria do editor) |
+| Extensões de materiais | `server\PeixolaMapEditor\data\materials\extensions` |
+
+O editor **não depende da pasta do RME**: os materiais (bordas, chãos, paredes, doodads, tilesets e`nextensões) ficam em `data\materials` dentro da própria pasta do editor, no mesmo formato XML do RME.
+Configurações antigas que apontavam para server\RME são migradas automaticamente na primeira execução.
 
 Eles podem ser alterados em **Ferramentas → Configurações** (salvo em `%APPDATA%\PeixolaMapEditor\peixola.toml`).
 
 ## Funcionalidades
+
+- **Tela inicial** (como a do RME): Novo mapa, Abrir mapa existente, Configurações e o histórico de mapas abertos
+  (clique para abrir; arquivos que sumiram aparecem riscados e podem ser removidos). Desligue em
+  "Mostrar esta janela ao iniciar" ou reabra por Arquivo → Tela inicial.
 
 - **Mapa**: abrir/salvar OTBM v1–v3 (`main.otbm` de 3,4 milhões de tiles abre em ~0,5 s), spawns e casas em XML,
   cidades e waypoints. O salvamento é atômico (`.tmp` → renomeia) e mantém um backup `.bak`.
@@ -54,7 +61,7 @@ Eles podem ser alterados em **Ferramentas → Configurações** (salvo em `%APPD
   (destino + escolher no mapa), porta, depot, contêiner (itens dentro), escrevível, fluido, empilhável, criatura e spawn.
 - **Criar brushes** (Ferramentas → Criar/editar brushes, ou "+ Novo brush" na paleta): terreno com borda existente ou
   nova, parede com portas, tapete, mesa e doodad (inclusive capturado de uma seleção do mapa). Salvos em
-  `RME/extensions/peixola_brushes.xml` (formato do RME) e aparecem no tileset "Peixola (custom)".
+  `data/materials/extensions/peixola_brushes.xml` (formato compatível com o RME) e aparecem no tileset "Peixola (custom)".
 - **Substituir itens** (Mapa → Substituir itens, Ctrl+H): várias regras de uma vez, no mapa inteiro, seleção, andar
   atual ou área visível, com contagem prévia e um único desfazer.
 - **Criaturas/NPCs com cores**: roupas coloridas (head/body/legs/feet do XML) e addons, como no RME.
@@ -96,7 +103,7 @@ cargo test --release -p pme-io -- --ignored --nocapture  # testes com os dados r
 Os testes com dados reais carregam `items.otb`, `Tibia.dat/.spr`, os materiais e o `main.otbm`,
 fazem o round-trip do mapa **em memória** (nada é gravado nas pastas do servidor) e testam
 bordas automáticas, paredes, zonas, casas, doodads, copiar/colar/mover e desfazer.
-Testes que editam materiais (brushes, tilesets) trabalham numa **cópia temporária** de `RME/data/860`.
+Testes que editam materiais (brushes, tilesets) trabalham numa **cópia temporária** de `data/materials`.
 
 ### Benchmarks
 
