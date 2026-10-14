@@ -440,12 +440,28 @@ impl App {
                         let q = p.ts_add_brush.to_lowercase();
                         let want_doodad = tab == Tab::Doodad;
                         egui::ScrollArea::vertical().max_height(220.0).show(ui, |ui| {
-                            for def in a.mat.brushes.iter().filter(|d| {
-                                let doodad = matches!(d.kind, BrushKind::Doodad(_));
-                                !matches!(d.kind, BrushKind::Unknown) && doodad == want_doodad && (q.is_empty() || d.name.to_lowercase().contains(&q))
-                            }).take(60) {
-                                if ui.selectable_label(false, format!("{} ({})", def.name, def.kind_name())).clicked() {
-                                    ts_action = Some(TsAction::AddBrush(def.name.clone()));
+                            // Match by brush name, or by the server id / client id of its icon item.
+                            let qn = q.trim().parse::<u16>().ok();
+                            let hits: Vec<(String, &'static str, u16)> = a
+                                .mat
+                                .brushes
+                                .iter()
+                                .filter(|d| {
+                                    let doodad = matches!(d.kind, BrushKind::Doodad(_));
+                                    let client = a.db.get(d.look_id).map_or(0, |t| t.client_id);
+                                    let matches = q.trim().is_empty() || d.name.to_lowercase().contains(q.trim()) || qn.is_some_and(|n| n == d.look_id || n == client);
+                                    !matches!(d.kind, BrushKind::Unknown) && doodad == want_doodad && matches
+                                })
+                                .take(60)
+                                .map(|d| (d.name.clone(), d.kind_name(), d.look_id))
+                                .collect();
+                            for (name, kind, look) in hits {
+                                let r = ui.horizontal(|ui| {
+                                    pc.icon(ui, look, 26.0);
+                                    ui.selectable_label(false, format!("{name} ({kind})"))
+                                });
+                                if r.inner.clicked() {
+                                    ts_action = Some(TsAction::AddBrush(name));
                                     ui.close_menu();
                                 }
                             }

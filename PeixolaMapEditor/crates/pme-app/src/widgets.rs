@@ -57,28 +57,32 @@ pub fn item_picker(ui: &mut egui::Ui, pc: &mut PickerCtx, salt: impl Hash, value
         }
         ui.menu_button("🔍", |ui| {
             let mut q: String = ui.data_mut(|d| d.get_temp(id).unwrap_or_default());
-            ui.add(egui::TextEdit::singleline(&mut q).hint_text(t("search-hint")).desired_width(240.0)).request_focus();
+            ui.add(egui::TextEdit::singleline(&mut q).hint_text(t("picker-search-hint")).desired_width(240.0)).request_focus();
             let ql = q.to_lowercase();
             ui.data_mut(|d| d.insert_temp(id, q.clone()));
             if ql.trim().is_empty() {
                 ui.label(RichText::new(t("picker-type-to-search")).weak());
                 return;
             }
+            // Name, server id or client id. Exact id matches come first.
             let qid = ql.trim().parse::<u16>().ok();
-            let hits: Vec<u16> = pc
-                .assets
-                .db
-                .items
-                .iter()
-                .filter(|it| it.valid && (qid == Some(it.id) || it.name.to_lowercase().contains(ql.trim())))
-                .map(|it| it.id)
-                .take(80)
-                .collect();
+            let db = &pc.assets.db;
+            let mut hits: Vec<u16> = Vec::new();
+            if let Some(n) = qid {
+                hits.extend(db.get(n).map(|t| t.id));
+                hits.extend(db.items.iter().filter(|it| it.valid && it.client_id == n && it.id != n).map(|it| it.id));
+            }
+            let by_id = hits.clone();
+            hits.extend(db.items.iter().filter(|it| it.valid && !by_id.contains(&it.id) && it.name.to_lowercase().contains(ql.trim())).map(|it| it.id).take(80));
+            hits.truncate(80);
             egui::ScrollArea::vertical().max_height(320.0).show(ui, |ui| {
                 for h in hits {
+                    let client = pc.assets.db.get(h).map_or(0, |t| t.client_id);
                     let r = ui.horizontal(|ui| {
                         pc.icon(ui, h, 22.0);
-                        ui.selectable_label(false, pc.name(h))
+                        let r = ui.selectable_label(false, pc.name(h));
+                        ui.label(RichText::new(format!("cid {client}")).small().weak());
+                        r
                     });
                     if r.inner.clicked() {
                         *value = h;

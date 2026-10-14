@@ -437,8 +437,10 @@ browse-title = Objetos do tile
 ts-add = Adicionar ao tileset
 ts-add-help = Adiciona ao tileset selecionado (grava no tilesets.xml; fica um .bak).
 ts-add-item = Adicionar item
-ts-brush-hint = Buscar brush para adicionar
+ts-brush-hint = Buscar brush (nome, server id ou client id)
 ts-remove = Remover do tileset
 ts-no-source = Não encontrei o arquivo desse tileset.
 ts-not-found = Nada foi alterado (entrada não encontrada no tileset).
 ts-saved = Tileset "{0}" salvo. Recarregando...
+picker-search-hint = Nome, server id ou client id
+
