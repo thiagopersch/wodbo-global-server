@@ -23,7 +23,7 @@
 
 class Player;
 
-#define OUTFITS_MAX_NUMBER 25
+#define OUTFITS_MAX_NUMBER 100
 #define EXT_OUTFIT_MAX_NUMBER 100
 
 enum AddonRequirement_t

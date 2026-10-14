@@ -15,6 +15,7 @@
 	<globalevent type="startup" name="doCheckHouses" script="doCheckHouses.lua" />
 	<globalevent name="Age System" interval="60000" script="age_system.lua" />
 	<globalevent name="TaskSave" interval="300000" event="script" value="task_save.lua" />
+	<globalevent name="DailyRewardRotation" interval="300000" event="script" value="daily_reward_rotation.lua" />
 	<globalevent name="BattlePassRotation" interval="300000" event="script" value="battle_pass_rotation.lua" />
 	<globalevent type="startup" name="BattlePassStartup" event="script" value="battle_pass_rotation.lua" />
 	<globalevent name="AutolootCatalogReload" interval="300000" event="script" value="autoloot_catalog_reload.lua" />

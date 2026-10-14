@@ -556,6 +556,47 @@ CREATE TABLE IF NOT EXISTS `daily_rewards_bonus_monthly` (
   PRIMARY KEY (`month`, `year`, `streak_day`)
 ) ENGINE=InnoDB;
 
+CREATE TABLE IF NOT EXISTS `daily_reward_default_items` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `kind` VARCHAR(10) NOT NULL DEFAULT 'daily',
+    `rarity` VARCHAR(20) NULL,
+    `item_id` INT NOT NULL,
+    `client_id` INT NOT NULL DEFAULT 0,
+    `count` INT NOT NULL DEFAULT 1,
+    `active` TINYINT(1) NOT NULL DEFAULT 1,
+    `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`),
+    KEY `daily_reward_default_items_kind_idx` (`kind`)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `daily_reward_rarity_weights` (
+    `rarity` VARCHAR(20) NOT NULL,
+    `weight` INT NOT NULL DEFAULT 0,
+    PRIMARY KEY (`rarity`)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `custom_outfits` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(60) NOT NULL,
+    `look_type` INT NOT NULL,
+    `item_id` INT NOT NULL,
+    `client_id` INT NOT NULL DEFAULT 0,
+    `active` TINYINT(1) NOT NULL DEFAULT 1,
+    `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `custom_outfits_item_id_key` (`item_id`)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `daily_reward_default_outfits` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `custom_outfit_id` INT NOT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `daily_reward_default_outfits_custom_outfit_id_key` (`custom_outfit_id`),
+    FOREIGN KEY (`custom_outfit_id`) REFERENCES `custom_outfits`(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
 CREATE TABLE IF NOT EXISTS `player_daily_reward_bonus` (
   `player_id` INT NOT NULL,
   `month` TINYINT NOT NULL,

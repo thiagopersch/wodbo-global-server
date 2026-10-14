@@ -184,6 +184,13 @@ function onLogin(cid)
     end
   end
 
+  -- Outfit customizado (item de outfit, /admin/custom-outfits): se o jogador escolheu um, ele
+  -- vence o looktype de saga aplicado acima.
+  if not CustomOutfits then dofile("data/lib/custom_outfits.lua") end
+  if CustomOutfits.restoreChosen(cid) then
+    stopAura(cid)
+  end
+
   local age = math.max(0, getPlayerStorageValue(cid, STORAGE_AGE))
   local title = getAgeTitle(age)
   local frags = getPlayerFrags(cid)

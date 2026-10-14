@@ -9,6 +9,7 @@
 -- ============================================================
 
 if not saga then dofile("data/lib/transformation_lib.lua") end
+if not CustomOutfits then dofile("data/lib/custom_outfits.lua") end
 
 function onOutfit(cid, old, current)
     if not isPlayer(cid) then return true end
@@ -45,6 +46,12 @@ function onOutfit(cid, old, current)
             -- Switched to a non-saga outfit: no longer transformed, stop the aura loop
             stopAura(cid)
         end
+    end
+
+    -- Lembra o outfit customizado escolhido (ou esquece, se voltou para saga/outro) para o
+    -- login.lua reaplicar depois do bloco de saga.
+    if current.lookType ~= old.lookType then
+        CustomOutfits.onOutfitChanged(cid, current.lookType)
     end
 
     -- defaultOutfit is already updated synchronously by the engine before this event fires,

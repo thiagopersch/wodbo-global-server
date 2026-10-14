@@ -20989,7 +20989,7 @@
 		<monster name="Training Monk" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32462" centery="31723" centerz="7" radius="1">
-		<npc name="Travel" x="0" y="0" z="7" spawntime="60" direction="2" />
+		<npc name="Waylon" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32182" centery="31867" centerz="7" radius="1">
 		<monster name="Deer" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -26415,7 +26415,7 @@
 		<monster name="Bandit Black" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31947" centery="32117" centerz="7" radius="1">
-		<npc name="Travel" x="0" y="0" z="7" spawntime="60" direction="2" />
+		<npc name="Waylon" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32102" centery="32117" centerz="7" radius="1">
 		<monster name="Bear" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -29366,7 +29366,7 @@
 		<monster name="Crocodile" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31775" centery="32222" centerz="7" radius="1">
-		<npc name="Travel" x="0" y="0" z="7" spawntime="60" direction="2" />
+		<npc name="Waylon" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32084" centery="32222" centerz="7" radius="1">
 		<monster name="Robotron" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -33457,7 +33457,7 @@
 		<monster name="Bandit Black" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31880" centery="32334" centerz="7" radius="1">
-		<npc name="Travel" x="0" y="0" z="7" spawntime="60" direction="2" />
+		<npc name="Waylon" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31890" centery="32334" centerz="7" radius="1">
 		<monster name="Bandit Gun" x="0" y="0" z="7" spawntime="60" direction="2" />
@@ -33502,7 +33502,7 @@
 		<monster name="Bandit Black" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31896" centery="32335" centerz="7" radius="1">
-		<npc name="Travel" x="0" y="0" z="7" spawntime="60" direction="2" />
+		<npc name="Waylon" x="0" y="0" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="31934" centery="32335" centerz="7" radius="1">
 		<monster name="Bandit" x="0" y="0" z="7" spawntime="60" direction="2" />

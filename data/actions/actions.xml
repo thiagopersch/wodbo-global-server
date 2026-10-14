@@ -294,4 +294,6 @@
 
 	<!-- Teleport checkpoints -->
 	<action itemid="53225" event="script" value="teleport_checkpoint.lua" />
+	<!-- CUSTOM_OUTFITS:BEGIN (gerado por /admin/custom-outfits - não editar à mão) -->
+	<!-- CUSTOM_OUTFITS:END -->
 </actions>
