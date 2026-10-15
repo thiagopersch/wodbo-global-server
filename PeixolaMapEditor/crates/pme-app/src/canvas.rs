@@ -120,6 +120,16 @@ impl App {
         }
     }
 
+    /// Ctrl + click: remove the whole tile at `xy` (inside the current undo batch).
+    fn clear_tile_at(&mut self, xy: (i32, i32)) {
+        let (Some(p), Some(ed)) = (self.pos_of(xy), &mut self.editor) else { return };
+        ed.clear_tiles(&[p]);
+        if self.inspect_edit.as_ref().is_some_and(|(q, _)| *q == p) {
+            self.inspect_edit = None;
+        }
+        self.sel_rev += 1;
+    }
+
     /// Open the properties of the topmost thing on a tile (item, else creature, else spawn).
     pub fn open_top_properties(&mut self, p: Position) {
         let Some(t) = self.editor.as_ref().and_then(|e| e.map.get(p)) else { return };
@@ -223,7 +233,7 @@ impl App {
             return;
         }
         // Double click in selection mode opens the top item's properties (like RME).
-        if self.brush.is_none() && !self.paste_mode && resp.double_clicked() {
+        if self.brush.is_none() && !self.paste_mode && !mods.ctrl && resp.double_clicked() {
             if let Some(p) = self.pos_of(xy) {
                 self.open_top_properties(p);
             }
@@ -232,7 +242,14 @@ impl App {
         // Start gestures.
         if hovered && (pressed_l || pressed_r) && self.gesture == Gesture::None {
             let erase = pressed_r;
-            if self.paste_mode {
+            if pressed_l && mods.ctrl && !self.paste_mode {
+                // Ctrl + left click (any tool): clear the whole tile.
+                if let Some(ed) = &mut self.editor {
+                    ed.begin("clear");
+                }
+                self.clear_tile_at(xy);
+                self.gesture = Gesture::Clear { last: xy };
+            } else if self.paste_mode {
                 if pressed_l {
                     if let (Some(p), Some(ed)) = (self.pos_of(xy), &mut self.editor) {
                         ed.paste(p);
@@ -272,6 +289,14 @@ impl App {
                 self.gesture = Gesture::Paint { erase, last: xy };
             }
         }
+        if let Gesture::Clear { last } = self.gesture {
+            if down_l && xy != last {
+                for p in line(last, xy).into_iter().skip(1) {
+                    self.clear_tile_at(p);
+                }
+                self.gesture = Gesture::Clear { last: xy };
+            }
+        }
         if !down_l && !down_r {
             self.finish_gesture(Some(xy));
         }
@@ -281,7 +306,7 @@ impl App {
         let g = std::mem::replace(&mut self.gesture, Gesture::None);
         match g {
             Gesture::None => {}
-            Gesture::Paint { .. } => {
+            Gesture::Paint { .. } | Gesture::Clear { .. } => {
                 if let Some(ed) = &mut self.editor {
                     ed.end();
                 }
@@ -308,11 +333,7 @@ impl App {
                 let mods = self.modifiers_now();
                 let (Some(a), Some(b)) = (self.pos_of(start), self.pos_of(end)) else { return };
                 if let Some(ed) = &mut self.editor {
-                    if start == end && mods.ctrl {
-                        ed.toggle_select(a);
-                    } else {
-                        ed.select_area(a, b, mods.shift || mods.ctrl);
-                    }
+                    ed.select_area(a, b, mods.shift || mods.ctrl);
                 }
                 self.sel_rev += 1;
                 self.inspect = Some(b);
@@ -371,9 +392,22 @@ impl App {
                     None => t("ctx-select-brush").to_owned(),
                 };
                 let stack: Vec<(usize, u16)> = tile.items.iter().enumerate().rev().map(|(i, it)| (i + 1, it.id)).chain(tile.ground.iter().map(|g| (0, g.id))).collect();
-                if ui.button(format!("\u{1F50D} {}", t("ctx-browse-field"))).clicked() {
-                    self.browse = Some(crate::browse::BrowseField { pos: h, sel: None });
-                    ui.close_menu();
+                // RME: copy server id / client id / name of the top item.
+                if let Some(&(_, id)) = stack.first() {
+                    let client = db.get(id).map(|it| it.client_id).unwrap_or(0);
+                    if ui.button(format!("{}: {id}", t("ctx-copy-server-id"))).clicked() {
+                        ctx.copy_text(id.to_string());
+                        ui.close_menu();
+                    }
+                    if ui.button(format!("{}: {client}", t("ctx-copy-client-id"))).clicked() {
+                        ctx.copy_text(client.to_string());
+                        ui.close_menu();
+                    }
+                    if ui.button(t("ctx-copy-name")).clicked() {
+                        ctx.copy_text(db.name(id).to_string());
+                        ui.close_menu();
+                    }
+                    ui.separator();
                 }
                 if let Some(&(k, id)) = stack.first() {
                     if ui.button(format!("{}: {}", t("ctx-item-properties"), name(id))).clicked() {
@@ -431,6 +465,15 @@ impl App {
             if ui.button(t("ctx-copy-position")).clicked() {
                 ctx.copy_text(format!("{}, {}, {}", h.x, h.y, h.z));
                 ui.close_menu();
+            }
+            // Last entry, like RME.
+            let has_tile = self.editor.as_ref().is_some_and(|e| e.map.get(h).is_some());
+            if has_tile {
+                ui.separator();
+                if ui.button(format!("\u{1F50D} {}", t("ctx-browse-field"))).clicked() {
+                    self.browse = Some(crate::browse::BrowseField { pos: h, sel: None });
+                    ui.close_menu();
+                }
             }
         }
     }

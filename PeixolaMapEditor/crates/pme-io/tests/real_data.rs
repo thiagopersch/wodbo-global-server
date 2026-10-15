@@ -347,8 +347,11 @@ fn creatures_unique_and_spawn_npcs_resolve() {
 
 /// Copy of the bundled materials in a temp dir (tests never touch the real files).
 fn temp_materials() -> PathBuf {
+    // One folder per call: tests run in parallel and each removes its copy at the end.
+    static NEXT: std::sync::atomic::AtomicUsize = std::sync::atomic::AtomicUsize::new(0);
+    let n = NEXT.fetch_add(1, std::sync::atomic::Ordering::Relaxed);
     let src = materials_dir();
-    let dst = std::env::temp_dir().join(format!("pme-860-{}", std::process::id()));
+    let dst = std::env::temp_dir().join(format!("pme-860-{}-{n}", std::process::id()));
     std::fs::create_dir_all(&dst).unwrap();
     for f in std::fs::read_dir(&src).unwrap().flatten() {
         let p = f.path();

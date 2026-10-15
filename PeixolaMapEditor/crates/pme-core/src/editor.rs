@@ -617,15 +617,48 @@ impl Editor {
     pub fn delete_selection(&mut self) {
         let sel: Vec<Position> = self.selection.drain().collect();
         self.begin("delete");
-        for p in &sel {
-            if self.map.get(*p).is_some() {
-                self.history.apply(&mut self.map, Change::Tile { pos: *p, tile: None });
+        self.clear_tiles(&sel);
+        self.end();
+    }
+
+    /// Remove one object from a tile (Browse field "Delete") as one undo step.
+    /// `index`: `None` = creature, `Some(0)` = ground, `Some(n)` = `items[n - 1]`.
+    pub fn remove_object(&mut self, pos: Position, index: Option<usize>) -> bool {
+        let Some(mut t) = self.map.get(pos).cloned() else { return false };
+        match index {
+            None => t.creature = None,
+            Some(0) => t.ground = None,
+            Some(n) if n <= t.items.len() => {
+                t.items.remove(n - 1);
             }
+            Some(_) => return false,
         }
-        if self.opts.auto_border {
-            self.reborder(&Self::expand(&sel));
+        let ground = index == Some(0);
+        if Some(&t) == self.map.get(pos) {
+            return false;
+        }
+        self.begin("delete object");
+        self.commit(pos, t);
+        if ground && self.opts.auto_border {
+            self.reborder(&Self::expand(&[pos]));
         }
         self.end();
+        true
+    }
+
+    /// Remove the tiles at `ps` entirely (ground, items, creature, zones, house, spawn) and fix
+    /// the neighbours' borders. Recorded in the current batch (wrap in `begin`/`end`).
+    pub fn clear_tiles(&mut self, ps: &[Position]) {
+        let mut cleared = Vec::with_capacity(ps.len());
+        for p in ps {
+            if self.map.get(*p).is_some() {
+                self.history.apply(&mut self.map, Change::Tile { pos: *p, tile: None });
+                cleared.push(*p);
+            }
+        }
+        if self.opts.auto_border && !cleared.is_empty() {
+            self.reborder(&Self::expand(&cleared));
+        }
     }
 
     pub fn cut(&mut self) -> usize {
@@ -891,6 +924,37 @@ mod tests {
 
     fn count(ed: &Editor, id: u16) -> usize {
         ed.map.tiles().map(|(_, t)| t.ground.iter().chain(t.items.iter()).filter(|i| i.id == id).count()).sum()
+    }
+
+    #[test]
+    fn clear_tiles_removes_whole_tile_and_undoes() {
+        let mut ed = editor();
+        let (p, q) = (Position::new(101, 100, 7), Position::new(102, 100, 7));
+        let before = ed.map.get(p).cloned();
+        let undo_before = ed.history.undo_count();
+        ed.begin("clear");
+        ed.clear_tiles(&[p, p, Position::new(500, 500, 7)]);
+        ed.end();
+        assert!(ed.map.get(p).is_none(), "tile removed");
+        assert!(ed.map.get(q).is_some(), "neighbour untouched");
+        assert_eq!(ed.history.undo_count(), undo_before + 1, "one undo step");
+        assert!(ed.undo());
+        assert_eq!(ed.map.get(p).cloned(), before, "undo restores the tile");
+    }
+
+    #[test]
+    fn remove_object_takes_only_that_object() {
+        let mut ed = editor();
+        let p = Position::new(100, 100, 7);
+        let before = ed.map.get(p).cloned().unwrap();
+        assert!(ed.remove_object(p, Some(1)), "top item");
+        let t = ed.map.get(p).unwrap();
+        assert!(t.items.is_empty());
+        assert_eq!(t.ground, before.ground, "ground kept");
+        assert!(!ed.remove_object(p, Some(5)), "out of range");
+        assert!(!ed.remove_object(p, None), "no creature: nothing to do");
+        assert!(ed.undo());
+        assert_eq!(ed.map.get(p), Some(&before));
     }
 
     #[test]

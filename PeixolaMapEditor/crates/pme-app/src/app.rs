@@ -40,6 +40,8 @@ pub enum Gesture {
     RectFill { erase: bool, start: (i32, i32) },
     BoxSelect { start: (i32, i32) },
     MoveSelection { start: (i32, i32) },
+    /// Ctrl + left drag: clear every tile passed over (one undo step).
+    Clear { last: (i32, i32) },
 }
 
 #[derive(Clone, Copy, PartialEq)]

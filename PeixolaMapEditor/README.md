@@ -50,7 +50,11 @@ Eles podem ser alterados em **Ferramentas → Configurações** (salvo em `%APPD
   - Casas (tiles + saída, door IDs automáticos), spawns, criaturas (monstros e NPCs do servidor) e waypoints.
   - Tamanho 1–16, quadrado ou círculo; Shift + arrastar preenche um retângulo.
 - **Edição**: desfazer/refazer ilimitado por traço, seleção por área, copiar/recortar/colar com prévia,
-  mover seleção arrastando, apagar seleção.
+  mover seleção arrastando, apagar seleção. **Ctrl + clique esquerdo** limpa o tile inteiro (com qualquer
+  ferramenta; arrastando limpa vários; um único Ctrl+Z).
+- **Browse Field** (botão direito → último item do menu, como no RME): lista os objetos empilhados no tile com
+  sprite e `id - nome`; com um selecionado: Excluir (só ele), Select RAW, Select brush (abre o tileset),
+  Propriedades. Mostra posição, quantidade de itens, zonas e casa. O menu também copia Server ID, Client ID e nome.
 - **Visualização**: andares com perspectiva e sombreamento, zonas/casas/spawns coloridos, grade,
   destaque de tiles bloqueantes, minimapa navegável, zoom de 12,5% a 400%.
 - **HD Mode**: botão "HD" na barra (ou Exibir → HD Mode) amplia as sprites de 32 para 64 px com xBRZ, igual ao

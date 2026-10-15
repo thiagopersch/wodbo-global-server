@@ -77,7 +77,7 @@ view-floor-up = Subir andar
 view-floor-down = Descer andar
 
 tool-select = Selecionar
-tool-select-tip = Modo seleção: arraste para selecionar, arraste a seleção para mover, botão direito para menu (Esc)
+tool-select-tip = Modo seleção: arraste para selecionar, arraste a seleção para mover, botão direito para menu (Esc). Ctrl + clique limpa o tile.
 tool-eraser = Borracha
 tool-eraser-tip = Botão esquerdo apaga itens (mantém o chão). Botão direito apaga tudo, inclusive o chão.
 tool-floor = Andar
@@ -221,7 +221,7 @@ err-save = Erro ao salvar
 warn-orphan-creatures = {0} criaturas estão fora de qualquer spawn e não foram salvas.
 
 stats-text = Tiles: {0}\nItens: {1}\nTiles de casa: {2}\nTiles PZ: {3}\nSpawns: {4}\nCriaturas: {5}\nCasas: {6}\nCidades: {7}\nWaypoints: {8}
-shortcuts-text = Botão esquerdo | Pintar com o pincel / selecionar\nBotão direito | Apagar com o pincel / menu (modo seleção)\nShift + arrastar | Preencher retângulo com o pincel\nBotão do meio + arrastar | Mover a visão\nRoda do mouse | Zoom\nCtrl + roda | Tamanho do pincel\nAlt + roda | Mudar andar\nPgUp / PgDn | Subir / descer andar\nSetas (Shift = rápido) | Mover a visão\n[ e ] | Tamanho do pincel\nZ / Alt+Z | Variação anterior do brush\nX / Alt+X | Próxima variação do brush\nEspaço | Sortear outro doodad\nEsc | Modo seleção / limpar seleção\nCtrl+Z / Ctrl+Y | Desfazer / refazer\nCtrl+C / X / V | Copiar / recortar / colar\nDelete | Apagar seleção\nCtrl+F | Encontrar item\nCtrl+G | Ir para posição\nCtrl+S | Salvar
+shortcuts-text = Botão esquerdo | Pintar com o pincel / selecionar\nBotão direito | Apagar com o pincel / menu (modo seleção)\nShift + arrastar | Preencher retângulo com o pincel\nCtrl + clique esquerdo | Limpar o tile inteiro (arraste para vários)\nBotão do meio + arrastar | Mover a visão\nRoda do mouse | Zoom\nCtrl + roda | Tamanho do pincel\nAlt + roda | Mudar andar\nPgUp / PgDn | Subir / descer andar\nSetas (Shift = rápido) | Mover a visão\n[ e ] | Tamanho do pincel\nZ / Alt+Z | Variação anterior do brush\nX / Alt+X | Próxima variação do brush\nEspaço | Sortear outro doodad\nEsc | Modo seleção / limpar seleção\nCtrl+Z / Ctrl+Y | Desfazer / refazer\nCtrl+C / X / V | Copiar / recortar / colar\nDelete | Apagar seleção\nCtrl+F | Encontrar item\nCtrl+G | Ir para posição\nCtrl+S | Salvar
 about-text = Editor de mapas OpenTibia em Rust, compatível com o RME (OTBM, materiais e brushes do Remere's Map Editor).\nFeito para o projeto OTServer.
 
 # ---- round 2
@@ -489,3 +489,15 @@ scatter-grounds-any = qualquer chão
 scatter-preview = Gerar prévia
 scatter-no-area = Nenhuma área: selecione tiles ou deixe a área visível com chão.
 scatter-nothing = Nada foi colocado (verifique densidade, regras e chãos permitidos).
+
+# Browse field / ctrl+click
+browse-delete = Excluir
+browse-delete-tip = Remove só o objeto selecionado deste tile
+browse-position = Posição
+browse-count = Quantidade de itens
+browse-house = Casa
+yes = Sim
+no = Não
+ctx-copy-server-id = Copiar Server ID
+ctx-copy-client-id = Copiar Client ID
+ctx-copy-name = Copiar nome do item

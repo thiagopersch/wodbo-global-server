@@ -1,62 +1,32 @@
-[13/10/2026 15:23:13] > Usando SHA1 criptografia
-[13/10/2026 15:23:13] >> Carregando RSA key
-[13/10/2026 15:23:13] >> Iniciando conexao SQL
-[13/10/2026 15:23:13] >> Executando Gerenciador de Banco de Dados
-[13/10/2026 15:23:17] > Optimizing table: audit_logs... [success]
-[13/10/2026 15:23:23] > Optimizing table: items... [success]
-[13/10/2026 15:23:23] >> Carregando items (OTB)
-[13/10/2026 15:23:23] >> Carregando items (XML)
-[13/10/2026 15:23:23] >> Carregando Grupos
-[13/10/2026 15:23:23] >> Carregando Vocacoes
-[13/10/2026 15:23:23] >> Carregando Outfits
-[13/10/2026 15:23:23] >> Carregando Wing Types
-[13/10/2026 15:23:23] >> Carregando Aura Types
-[13/10/2026 15:23:23] >> Carregando Shader Types
-[13/10/2026 15:23:23] >> Carregando Bar Types
-[13/10/2026 15:23:23] >> Carregando Raridades
-[13/10/2026 15:23:23] >> Rarity: 6 tiers, 7 groups, 39 items
-[13/10/2026 15:23:23] >> Carregando Canal de Chat
-[13/10/2026 15:23:23] >> Carregando Sistema
-[13/10/2026 15:23:24] >> Carregando Mods...
-[13/10/2026 15:23:24] > Loading AutoLoot.xml... done.
-[13/10/2026 15:23:24] > Loading Automatic Raids.xml... done.
-[13/10/2026 15:23:24] > Loading highscorebook.xml... done.
-[13/10/2026 15:23:24] > Loading task_system.xml... done.
-[13/10/2026 15:23:24] > 4 mods were loaded.
-[13/10/2026 15:23:24] >> Carregando EXP Stages
-[13/10/2026 15:23:24] >> Carregando Monstros
-[13/10/2026 15:23:24] >> Carregando Mapa e Spawns...
-[13/10/2026 15:23:24] > Tamanho do Mapa: 64000x64000.
-[13/10/2026 15:23:24] > Descricao do Mapa: 
-[13/10/2026 15:23:24] "Saved with OTAcademy Map Editor 4.1.1"
-[13/10/2026 15:23:24] "No map description available."
-[13/10/2026 15:23:27] > Mapa carregado em: 2.955 segundos.
-[13/10/2026 15:23:28] > Data carregada em: 0.838 segundos.
-[13/10/2026 15:23:28] > Houses carregada em: 0.258 segundos.
-[13/10/2026 15:23:28] > Content unserialization time: 0.004 seconds.
-[13/10/2026 15:23:28] > Carregando Tipo de PVP... Open PvP
-[13/10/2026 15:23:28] > Inicializando estado do jogo e registrando servicos...
-[13/10/2026 15:23:28] > IP do Servidor: 127.0.0.1
-[13/10/2026 15:23:28] > IP local do Servidor: 172.29.80.1	172.22.144.1	192.168.1.33	
-[13/10/2026 15:23:28] > Portas do Servidor: 7171	7172	
-[13/10/2026 15:23:28] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[13/10/2026 15:23:38] >> WodBleach servidor Online!
-
-[13/10/2026 15:26:25] ADMIN has logged in.
-[13/10/2026 15:26:41] ADMIN has logged out.
-[13/10/2026 15:26:42] Kira VS L has logged in.
-[13/10/2026 15:27:9] Kira VS L has logged out.
-[13/10/2026 15:27:10] ADMIN has logged in.
-[13/10/2026 15:33:9] > Loading AutoLoot.xml... done.
-[13/10/2026 15:33:9] > Loading Automatic Raids.xml... done.
-[13/10/2026 15:33:9] > Loading highscorebook.xml... done.
-[13/10/2026 15:33:9] > Loading task_system.xml... done.
-[13/10/2026 15:33:9] > 4 mods were loaded.
-[13/10/2026 15:33:16] ADMIN has logged out.
-[13/10/2026 15:33:17] ADMIN has logged in.
-[13/10/2026 15:44:23] mysql_real_query(): SELECT `item_id`, `name`, `category` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[13/10/2026 15:44:23] mysql_real_query(): SELECT `id` FROM `battle_pass_seasons` WHERE `month` = 10 AND `year` = 2026 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[13/10/2026 15:44:23] mysql_real_query(): SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` ORDER BY `year` DESC, `month` DESC LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[13/10/2026 15:44:23] mysql_real_query(): UPDATE `battle_pass_seasons` SET `is_active` = 0 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[13/10/2026 15:44:23] mysql_real_query(): INSERT INTO `battle_pass_seasons` (`month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost`, `is_active`, `created_at`, `updated_at`) VALUES (10, 2026, 100, 1000, 0, 0, 0, 0, 1, NOW(), NOW()) - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[13/10/2026 15:44:23] mysql_real_query(): SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` WHERE `is_active` = 1 LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[14/10/2026 20:47:2] > Usando SHA1 criptografia
+[14/10/2026 20:47:2] >> Carregando RSA key
+[14/10/2026 20:47:2] >> Iniciando conexao SQL
+[14/10/2026 20:47:3] >> Executando Gerenciador de Banco de Dados
+[14/10/2026 20:47:8] > Optimizing table: audit_logs... [success]
+[14/10/2026 20:47:13] > Optimizing table: items... [success]
+[14/10/2026 20:47:15] > Optimizing table: looktypes... [success]
+[14/10/2026 20:47:15] > Optimizing table: lua_scripts... [success]
+[14/10/2026 20:47:16] > Optimizing table: monsters... [success]
+[14/10/2026 20:47:16] >> Carregando items (OTB)
+[14/10/2026 20:47:16] >> Carregando items (XML)
+[14/10/2026 20:47:17] >> Carregando Grupos
+[14/10/2026 20:47:17] >> Carregando Vocacoes
+[14/10/2026 20:47:17] >> Carregando Outfits
+[14/10/2026 20:47:17] >> Carregando Wing Types
+[14/10/2026 20:47:17] >> Carregando Aura Types
+[14/10/2026 20:47:17] >> Carregando Shader Types
+[14/10/2026 20:47:17] >> Carregando Bar Types
+[14/10/2026 20:47:17] >> Carregando Raridades
+[14/10/2026 20:47:17] >> Rarity: 6 tiers, 7 groups, 39 items
+[14/10/2026 20:47:17] >> Carregando Canal de Chat
+[14/10/2026 20:47:17] >> Carregando Sistema
+[14/10/2026 20:47:22] >> Carregando Mods...
+[14/10/2026 20:47:22] > Loading AutoLoot.xml... done.
+[14/10/2026 20:47:22] > Loading Automatic Raids.xml... done.
+[14/10/2026 20:47:22] > Loading highscorebook.xml... done.
+[14/10/2026 20:47:22] > Loading task_system.xml... done.
+[14/10/2026 20:47:22] > 4 mods were loaded.
+[14/10/2026 20:47:22] >> Carregando EXP Stages
+[14/10/2026 20:47:22] >> Carregando Monstros
+[14/10/2026 20:47:22] >> Carregando Mapa e Spawns...
+[14/10/2026 20:47:22] > FATAL: OTBM Carregado - Nao foi possivel abrir o arquivo data/world/main.otbm.

@@ -77,7 +77,7 @@ view-floor-up = Floor up
 view-floor-down = Floor down
 
 tool-select = Select
-tool-select-tip = Selection mode: drag to select, drag the selection to move it, right click for menu (Esc)
+tool-select-tip = Selection mode: drag to select, drag the selection to move it, right click for menu (Esc). Ctrl + click clears the tile.
 tool-eraser = Eraser
 tool-eraser-tip = Left button erases items (keeps ground). Right button erases everything, including ground.
 tool-floor = Floor
@@ -221,7 +221,7 @@ err-save = Error saving
 warn-orphan-creatures = {0} creatures are outside any spawn and were not saved.
 
 stats-text = Tiles: {0}\nItems: {1}\nHouse tiles: {2}\nPZ tiles: {3}\nSpawns: {4}\nCreatures: {5}\nHouses: {6}\nTowns: {7}\nWaypoints: {8}
-shortcuts-text = Left button | Paint with the brush / select\nRight button | Erase with the brush / menu (selection mode)\nShift + drag | Fill a rectangle with the brush\nMiddle button + drag | Pan the view\nMouse wheel | Zoom\nCtrl + wheel | Brush size\nAlt + wheel | Change floor\nPgUp / PgDn | Floor up / down\nArrows (Shift = fast) | Pan the view\n[ and ] | Brush size\nZ / Alt+Z | Previous brush variation\nX / Alt+X | Next brush variation\nSpace | Roll another doodad\nEsc | Selection mode / clear selection\nCtrl+Z / Ctrl+Y | Undo / redo\nCtrl+C / X / V | Copy / cut / paste\nDelete | Delete selection\nCtrl+F | Find item\nCtrl+G | Go to position\nCtrl+S | Save
+shortcuts-text = Left button | Paint with the brush / select\nRight button | Erase with the brush / menu (selection mode)\nShift + drag | Fill a rectangle with the brush\nCtrl + left click | Clear the whole tile (drag for several)\nMiddle button + drag | Pan the view\nMouse wheel | Zoom\nCtrl + wheel | Brush size\nAlt + wheel | Change floor\nPgUp / PgDn | Floor up / down\nArrows (Shift = fast) | Pan the view\n[ and ] | Brush size\nZ / Alt+Z | Previous brush variation\nX / Alt+X | Next brush variation\nSpace | Roll another doodad\nEsc | Selection mode / clear selection\nCtrl+Z / Ctrl+Y | Undo / redo\nCtrl+C / X / V | Copy / cut / paste\nDelete | Delete selection\nCtrl+F | Find item\nCtrl+G | Go to position\nCtrl+S | Save
 about-text = OpenTibia map editor written in Rust, compatible with RME (OTBM, Remere's Map Editor materials and brushes).\nMade for the OTServer project.
 
 # ---- round 2
@@ -489,3 +489,15 @@ scatter-grounds-any = any ground
 scatter-preview = Generate preview
 scatter-no-area = No area: select tiles or keep tiles with ground visible.
 scatter-nothing = Nothing was placed (check density, rules and allowed grounds).
+
+# Browse field / ctrl+click
+browse-delete = Delete
+browse-delete-tip = Removes only the selected object from this tile
+browse-position = Position
+browse-count = Item count
+browse-house = House
+yes = Yes
+no = No
+ctx-copy-server-id = Copy Server ID
+ctx-copy-client-id = Copy Client ID
+ctx-copy-name = Copy item name
