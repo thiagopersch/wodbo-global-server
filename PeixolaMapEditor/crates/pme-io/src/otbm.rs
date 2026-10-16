@@ -405,7 +405,9 @@ fn write_item(w: &mut NodeWriter, db: &ItemDb, item: &Item, version: u32) {
 /// Serialize the map to OTBM bytes.
 pub fn save_bytes(map: &Map, db: &ItemDb) -> Vec<u8> {
     let version = map.otbm_version;
-    let mut w = NodeWriter::new(b"OTBM");
+    // 4 zero bytes, like RME's default: TFS 0.4 (`FileLoader::openFile`) reads this as a u32
+    // version and refuses the map when it is not 0, so the "OTBM" magic must not be written.
+    let mut w = NodeWriter::new(&[0; 4]);
     w.start(node::ROOT);
     w.u32(version);
     w.u16(map.width);
@@ -504,4 +506,28 @@ pub fn save_bytes(map: &Map, db: &ItemDb) -> Vec<u8> {
 pub fn save(path: &Path, map: &Map, db: &ItemDb) -> Result<()> {
     let bytes = save_bytes(map, db);
     crate::write_atomic(path, &bytes)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn saved_header_is_tfs_compatible() {
+        let db = ItemDb::default();
+        let mut map = Map::new();
+        map.otbm_version = 2;
+        let mut t = Tile::new();
+        t.flags = 1;
+        map.set_tile(Position::new(1000, 1000, 7), t);
+        let bytes = save_bytes(&map, &db);
+        assert_eq!(&bytes[0..4], &[0, 0, 0, 0], "TFS 0.4 refuses a non-zero file version");
+        let back = load_bytes(&bytes, &db, None).unwrap();
+        assert_eq!(back.otbm_version, 2);
+        assert_eq!(back.get(Position::new(1000, 1000, 7)).map(|t| t.flags), Some(1));
+        // Files written with the "OTBM" magic (older PeixolaMapEditor builds) still open.
+        let mut magic = bytes.clone();
+        magic[0..4].copy_from_slice(b"OTBM");
+        assert!(load_bytes(&magic, &db, None).is_ok());
+    }
 }

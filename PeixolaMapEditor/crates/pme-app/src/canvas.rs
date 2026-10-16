@@ -194,7 +194,7 @@ impl App {
             self.cam.x -= delta.x / self.cam.zoom;
             self.cam.y -= delta.y / self.cam.zoom;
         }
-        // Wheel: zoom; Ctrl+wheel: brush size; Alt+wheel: floor.
+        // Wheel: zoom; Ctrl+wheel: floor (like PgUp / PgDn); Alt+wheel: brush size.
         if hovered {
             let mut wheel = 0.0;
             ctx.input(|i| {
@@ -207,10 +207,11 @@ impl App {
             if wheel != 0.0 {
                 let steps = wheel.signum();
                 if mods.ctrl {
+                    // Wheel forward = floor down (z increases), wheel back = floor up.
+                    self.change_floor(steps as i32);
+                } else if mods.alt {
                     self.brush_size = (self.brush_size + steps as i32).clamp(0, 15);
                     self.regen_doodad();
-                } else if mods.alt {
-                    self.change_floor(-steps as i32);
                 } else if let Some(p) = resp.hover_pos() {
                     let z = self.cam.zoom * if steps > 0.0 { 1.2 } else { 1.0 / 1.2 };
                     self.cam.zoom_at(rect, p, z);
@@ -333,7 +334,7 @@ impl App {
                 let mods = self.modifiers_now();
                 let (Some(a), Some(b)) = (self.pos_of(start), self.pos_of(end)) else { return };
                 if let Some(ed) = &mut self.editor {
-                    ed.select_area(a, b, mods.shift || mods.ctrl);
+                    ed.select_area_mode(a, b, mods.shift || mods.ctrl, self.settings.select_mode());
                 }
                 self.sel_rev += 1;
                 self.inspect = Some(b);

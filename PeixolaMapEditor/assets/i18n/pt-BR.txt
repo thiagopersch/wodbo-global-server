@@ -95,7 +95,7 @@ status-perf-tip = Tempo para montar a visão do mapa · sprites desenhados · sp
 status-selected = {0} selecionados
 
 brush-size = Tamanho
-brush-size-tip = Tamanho do pincel (Ctrl+roda do mouse, ou [ e ])
+brush-size-tip = Tamanho do pincel (Alt+roda do mouse, ou [ e ])
 brush-square = Quadrado
 brush-circle = Círculo
 brush-house = Casa #{0}
@@ -221,7 +221,7 @@ err-save = Erro ao salvar
 warn-orphan-creatures = {0} criaturas estão fora de qualquer spawn e não foram salvas.
 
 stats-text = Tiles: {0}\nItens: {1}\nTiles de casa: {2}\nTiles PZ: {3}\nSpawns: {4}\nCriaturas: {5}\nCasas: {6}\nCidades: {7}\nWaypoints: {8}
-shortcuts-text = Botão esquerdo | Pintar com o pincel / selecionar\nBotão direito | Apagar com o pincel / menu (modo seleção)\nShift + arrastar | Preencher retângulo com o pincel\nCtrl + clique esquerdo | Limpar o tile inteiro (arraste para vários)\nBotão do meio + arrastar | Mover a visão\nRoda do mouse | Zoom\nCtrl + roda | Tamanho do pincel\nAlt + roda | Mudar andar\nPgUp / PgDn | Subir / descer andar\nSetas (Shift = rápido) | Mover a visão\n[ e ] | Tamanho do pincel\nZ / Alt+Z | Variação anterior do brush\nX / Alt+X | Próxima variação do brush\nEspaço | Sortear outro doodad\nEsc | Modo seleção / limpar seleção\nCtrl+Z / Ctrl+Y | Desfazer / refazer\nCtrl+C / X / V | Copiar / recortar / colar\nDelete | Apagar seleção\nCtrl+F | Encontrar item\nCtrl+G | Ir para posição\nCtrl+S | Salvar
+shortcuts-text = Botão esquerdo | Pintar com o pincel / selecionar\nBotão direito | Apagar com o pincel / menu (modo seleção)\nShift + arrastar | Preencher retângulo com o pincel\nCtrl + clique esquerdo | Limpar o tile inteiro (arraste para vários)\nBotão do meio + arrastar | Mover a visão\nRoda do mouse | Zoom\nCtrl + roda | Subir / descer andar\nAlt + roda | Tamanho do pincel\nPgUp / PgDn | Subir / descer andar\nSetas (Shift = rápido) | Mover a visão\n[ e ] | Tamanho do pincel\nZ / Alt+Z | Variação anterior do brush\nX / Alt+X | Próxima variação do brush\nEspaço | Sortear outro doodad\nEsc | Modo seleção / limpar seleção\nCtrl+Z / Ctrl+Y | Desfazer / refazer\nCtrl+C / X / V | Copiar / recortar / colar\nDelete | Apagar seleção\nCtrl+F | Encontrar item\nCtrl+G | Ir para posição\nCtrl+S | Salvar
 about-text = Editor de mapas OpenTibia em Rust, compatível com o RME (OTBM, materiais e brushes do Remere's Map Editor).\nFeito para o projeto OTServer.
 
 # ---- round 2
@@ -501,3 +501,16 @@ no = Não
 ctx-copy-server-id = Copiar Server ID
 ctx-copy-client-id = Copiar Client ID
 ctx-copy-name = Copiar nome do item
+
+# Selection mode
+menu-selection-mode = Modo de seleção
+select-compensate = Compensar seleção
+select-compensate-tip = Nos andares de baixo, desloca a área selecionada acompanhando a perspectiva (como no RME)
+select-current = Andar atual
+select-current-tip = A seleção pega só o andar que está sendo exibido
+select-lower = Andares inferiores
+select-lower-tip = A seleção pega o andar atual e todos os andares abaixo dele (até o 15)
+select-visible = Andares visíveis
+select-visible-tip = A seleção pega os andares visíveis: até o andar 7 acima do chão, ou o atual + 2 no subsolo
+settings-selection-mode = Modo de seleção (Ctrl+C copia o que for selecionado):
+status-selected-floors = {0} selecionados em {1} andares

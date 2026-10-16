@@ -95,7 +95,7 @@ status-perf-tip = Time to build the map view · sprites drawn · sprites in vide
 status-selected = {0} selected
 
 brush-size = Size
-brush-size-tip = Brush size (Ctrl+mouse wheel, or [ and ])
+brush-size-tip = Brush size (Alt+mouse wheel, or [ and ])
 brush-square = Square
 brush-circle = Circle
 brush-house = House #{0}
@@ -221,7 +221,7 @@ err-save = Error saving
 warn-orphan-creatures = {0} creatures are outside any spawn and were not saved.
 
 stats-text = Tiles: {0}\nItems: {1}\nHouse tiles: {2}\nPZ tiles: {3}\nSpawns: {4}\nCreatures: {5}\nHouses: {6}\nTowns: {7}\nWaypoints: {8}
-shortcuts-text = Left button | Paint with the brush / select\nRight button | Erase with the brush / menu (selection mode)\nShift + drag | Fill a rectangle with the brush\nCtrl + left click | Clear the whole tile (drag for several)\nMiddle button + drag | Pan the view\nMouse wheel | Zoom\nCtrl + wheel | Brush size\nAlt + wheel | Change floor\nPgUp / PgDn | Floor up / down\nArrows (Shift = fast) | Pan the view\n[ and ] | Brush size\nZ / Alt+Z | Previous brush variation\nX / Alt+X | Next brush variation\nSpace | Roll another doodad\nEsc | Selection mode / clear selection\nCtrl+Z / Ctrl+Y | Undo / redo\nCtrl+C / X / V | Copy / cut / paste\nDelete | Delete selection\nCtrl+F | Find item\nCtrl+G | Go to position\nCtrl+S | Save
+shortcuts-text = Left button | Paint with the brush / select\nRight button | Erase with the brush / menu (selection mode)\nShift + drag | Fill a rectangle with the brush\nCtrl + left click | Clear the whole tile (drag for several)\nMiddle button + drag | Pan the view\nMouse wheel | Zoom\nCtrl + wheel | Floor up / down\nAlt + wheel | Brush size\nPgUp / PgDn | Floor up / down\nArrows (Shift = fast) | Pan the view\n[ and ] | Brush size\nZ / Alt+Z | Previous brush variation\nX / Alt+X | Next brush variation\nSpace | Roll another doodad\nEsc | Selection mode / clear selection\nCtrl+Z / Ctrl+Y | Undo / redo\nCtrl+C / X / V | Copy / cut / paste\nDelete | Delete selection\nCtrl+F | Find item\nCtrl+G | Go to position\nCtrl+S | Save
 about-text = OpenTibia map editor written in Rust, compatible with RME (OTBM, Remere's Map Editor materials and brushes).\nMade for the OTServer project.
 
 # ---- round 2
@@ -501,3 +501,16 @@ no = No
 ctx-copy-server-id = Copy Server ID
 ctx-copy-client-id = Copy Client ID
 ctx-copy-name = Copy item name
+
+# Selection mode
+menu-selection-mode = Selection mode
+select-compensate = Compensate selection
+select-compensate-tip = On lower floors, shift the selected area to follow the perspective (like RME)
+select-current = Current floor
+select-current-tip = The selection takes only the floor being shown
+select-lower = Lower floors
+select-lower-tip = The selection takes the current floor and every floor below it (down to 15)
+select-visible = Visible floors
+select-visible-tip = The selection takes the visible floors: down to floor 7 above ground, or current + 2 underground
+settings-selection-mode = Selection mode (Ctrl+C copies what is selected):
+status-selected-floors = {0} selected on {1} floors

@@ -130,6 +130,8 @@ pub struct App {
     pub scatter: Option<crate::scatter_ui::ScatterUi>,
     /// Start screen (new / open / recent maps) visible.
     pub welcome: bool,
+    /// Cached number of floors in the selection: (sel_rev it was computed for, count).
+    pub sel_floors: (u64, u32),
 }
 
 impl App {
@@ -184,6 +186,7 @@ impl App {
             pending: None,
             scatter: None,
             welcome,
+            sel_floors: (u64::MAX, 0),
         };
         if app.settings.paths.missing().is_none() {
             app.start_asset_load();
@@ -497,6 +500,10 @@ impl App {
         let n = if cut { ed.cut() } else { ed.copy() };
         self.sel_rev += 1;
         if n > 0 {
+            // The tiles stay in the editor's clipboard. A short text goes to the system clipboard
+            // because egui only emits a Paste event (Ctrl+V) when the clipboard holds text.
+            let floors: std::collections::BTreeSet<u8> = ed.clipboard.tiles.iter().map(|t| t.pos.z).collect();
+            ctx.copy_text(format!("PeixolaMapEditor: {n} tiles, {}x{}, {} floor(s)", ed.clipboard.width, ed.clipboard.height, floors.len()));
             let msg = tf(if cut { "toast-cut" } else { "toast-copied" }, &[&n]);
             self.toast(ctx, msg, false);
         }
@@ -514,6 +521,19 @@ impl App {
             ed.delete_selection();
             self.sel_rev += 1;
         }
+    }
+
+    /// RME "Selection Mode": compensate checkbox + which floors a box selection takes.
+    /// Returns true when something changed (used by the Edit menu and the settings dialog).
+    pub fn selection_mode_ui(&mut self, ui: &mut egui::Ui) -> bool {
+        use crate::settings::SelectionFloors as F;
+        let s = &mut self.settings;
+        let mut changed = ui.checkbox(&mut s.select_compensate, t("select-compensate")).on_hover_text(t("select-compensate-tip")).changed();
+        ui.separator();
+        for (v, key, tip) in [(F::Current, "select-current", "select-current-tip"), (F::Lower, "select-lower", "select-lower-tip"), (F::Visible, "select-visible", "select-visible-tip")] {
+            changed |= ui.radio_value(&mut s.select_floors, v, t(key)).on_hover_text(t(tip)).changed();
+        }
+        changed
     }
 
     pub fn change_floor(&mut self, delta: i32) {
@@ -559,13 +579,27 @@ impl App {
         if consume(sc(Modifiers::COMMAND, Key::Y)) || consume(sc(Modifiers::COMMAND | Modifiers::SHIFT, Key::Z)) {
             self.redo();
         }
-        if consume(sc(Modifiers::COMMAND, Key::C)) {
+        // egui-winit turns Ctrl+C / Ctrl+X / Ctrl+V into Copy / Cut / Paste events (no Key event),
+        // so read those; the key shortcuts stay as a fallback for other backends.
+        let (mut copy, mut cut, mut paste) = (false, false, false);
+        ctx.input_mut(|i| {
+            i.events.retain(|e| match e {
+                egui::Event::Copy => !std::mem::replace(&mut copy, true),
+                egui::Event::Cut => !std::mem::replace(&mut cut, true),
+                egui::Event::Paste(_) => !std::mem::replace(&mut paste, true),
+                _ => true,
+            })
+        });
+        copy |= consume(sc(Modifiers::COMMAND, Key::C));
+        cut |= consume(sc(Modifiers::COMMAND, Key::X));
+        paste |= consume(sc(Modifiers::COMMAND, Key::V));
+        if copy {
             self.copy(ctx, false);
         }
-        if consume(sc(Modifiers::COMMAND, Key::X)) {
+        if cut {
             self.copy(ctx, true);
         }
-        if consume(sc(Modifiers::COMMAND, Key::V)) {
+        if paste {
             self.start_paste();
         }
         if consume(sc(Modifiers::COMMAND, Key::H)) {
@@ -720,6 +754,11 @@ impl App {
                     ui.close_menu();
                     self.set_brush(None);
                 }
+                ui.menu_button(t("menu-selection-mode"), |ui| {
+                    if self.selection_mode_ui(ui) {
+                        self.settings.save();
+                    }
+                });
                 ui.separator();
                 let mut changed = ui.checkbox(&mut self.settings.auto_border, t("opt-auto-border")).changed();
                 changed |= ui.checkbox(&mut self.settings.eraser_leave_unique, t("opt-eraser-unique")).changed();
@@ -956,7 +995,17 @@ impl App {
                     ui.label(RichText::new(tf("status-tiles", &[&ed.map.tile_count()])).weak());
                     if !ed.selection.is_empty() {
                         ui.separator();
-                        ui.label(tf("status-selected", &[&ed.selection.len()]));
+                        // Floors in the selection, recomputed only when the selection changes.
+                        if self.sel_floors.0 != self.sel_rev {
+                            let mask = ed.selection.iter().fold(0u16, |m, p| m | 1 << (p.z & 15));
+                            self.sel_floors = (self.sel_rev, mask.count_ones());
+                        }
+                        let floors = self.sel_floors.1;
+                        if floors > 1 {
+                            ui.label(tf("status-selected-floors", &[&ed.selection.len(), &floors]));
+                        } else {
+                            ui.label(tf("status-selected", &[&ed.selection.len()]));
+                        }
                     }
                 }
                 ui.separator();
@@ -1235,6 +1284,10 @@ impl App {
                 ui.add(egui::DragValue::new(&mut self.settings.default_spawn_time).range(1..=86400).suffix(" s"));
             });
             ui.checkbox(&mut self.settings.open_last_map, t("settings-open-last"));
+            ui.horizontal(|ui| {
+                ui.label(t("settings-selection-mode"));
+                self.selection_mode_ui(ui);
+            });
             ui.horizontal(|ui| {
                 ui.label(t("settings-anim-speed"));
                 ui.add(egui::Slider::new(&mut self.settings.anim_ms, 50..=500).suffix(" ms").step_by(10.0)).on_hover_text(t("settings-anim-speed-tip"));

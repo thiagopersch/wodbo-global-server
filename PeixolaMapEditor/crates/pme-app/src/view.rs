@@ -520,7 +520,8 @@ pub fn build_map(dc: &mut DrawCtx, map: &Map, view: &View, selection: &AHashSet<
                 for lx in lx0..=lx1 {
                     let Some(t) = chunk.get_local(lx, ly) else { continue };
                     let pos = Position::new(((cxi << 5) | lx) as u16, y as u16, z);
-                    let sel = z == cam.floor && !selection.is_empty() && selection.contains(&pos);
+                    // Tiles selected on other floors (multi-floor selection mode) are tinted too.
+                    let sel = !selection.is_empty() && selection.contains(&pos);
                     dc.tile(&mut b, pos, t, view, sel, current_house, 255);
                     if view.show_tooltips && z == cam.floor && tips.len() < MAX_TOOLTIPS {
                         if let Some(text) = tile_tooltip(&dc.assets.db, t, waypoints.get(&pos).copied()) {

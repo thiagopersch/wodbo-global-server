@@ -49,6 +49,25 @@ pub enum ReplaceScope {
     Area { min: Position, max: Position },
 }
 
+/// Floors included by a box selection (RME "Selection Mode").
+#[derive(Clone, Copy, PartialEq, Eq, Debug, Default)]
+pub enum SelectFloors {
+    /// Only the floor being viewed.
+    #[default]
+    Current,
+    /// The floor being viewed and every floor below it (down to 15).
+    Lower,
+    /// The floors visible from the current one (down to 7 above ground, +2 underground).
+    Visible,
+}
+
+#[derive(Clone, Copy, PartialEq, Eq, Debug, Default)]
+pub struct SelectMode {
+    pub floors: SelectFloors,
+    /// Shift the box on lower floors to follow the perspective offset (RME "Compensate Selection").
+    pub compensate: bool,
+}
+
 /// Clipboard contents: tiles relative to the copied area's top-left corner.
 #[derive(Clone, Default)]
 pub struct CopyBuffer {
@@ -576,18 +595,51 @@ impl Editor {
 
     // ---------------------------------------------------------------- selection / clipboard
 
+    /// Select the tiles of the rectangle `a`..`b` on floor `a.z` only.
     pub fn select_area(&mut self, a: Position, b: Position, add: bool) {
+        self.select_area_mode(a, b, add, SelectMode::default());
+    }
+
+    /// Box selection with RME's selection modes (port of `MapCanvas::OnMouseActionRelease`):
+    /// the rectangle `a`..`b` is drawn on floor `a.z`; `mode` decides which floors are included
+    /// and whether the box follows the floors' perspective offset ("compensate").
+    pub fn select_area_mode(&mut self, a: Position, b: Position, add: bool, mode: SelectMode) {
+        const GROUND_LAYER: i32 = 7;
+        const MAX_LAYER: i32 = 15;
         if !add {
             self.selection.clear();
         }
-        let (x0, x1) = (a.x.min(b.x), a.x.max(b.x));
-        let (y0, y1) = (a.y.min(b.y), a.y.max(b.y));
-        for y in y0..=y1 {
-            for x in x0..=x1 {
-                let p = Position::new(x, y, a.z);
-                if self.map.get(p).is_some() {
-                    self.selection.insert(p);
+        let floor = a.z as i32;
+        let (mut x0, mut x1) = (a.x.min(b.x) as i32, a.x.max(b.x) as i32);
+        let (mut y0, mut y1) = (a.y.min(b.y) as i32, a.y.max(b.y) as i32);
+        let start_z = match mode.floors {
+            SelectFloors::Current => floor,
+            SelectFloors::Lower => MAX_LAYER,
+            SelectFloors::Visible if floor <= GROUND_LAYER => GROUND_LAYER,
+            SelectFloors::Visible => (floor + 2).min(MAX_LAYER),
+        };
+        let compensate = mode.compensate && mode.floors != SelectFloors::Current;
+        if compensate && floor < GROUND_LAYER {
+            let d = GROUND_LAYER - floor;
+            x0 -= d;
+            y0 -= d;
+            x1 -= d;
+            y1 -= d;
+        }
+        for z in (floor..=start_z).rev() {
+            for y in y0.max(0)..=y1.min(u16::MAX as i32) {
+                for x in x0.max(0)..=x1.min(u16::MAX as i32) {
+                    let p = Position::new(x as u16, y as u16, z as u8);
+                    if self.map.get(p).is_some() {
+                        self.selection.insert(p);
+                    }
                 }
+            }
+            if compensate && z <= GROUND_LAYER {
+                x0 += 1;
+                y0 += 1;
+                x1 += 1;
+                y1 += 1;
             }
         }
     }
@@ -940,6 +992,81 @@ mod tests {
         assert_eq!(ed.history.undo_count(), undo_before + 1, "one undo step");
         assert!(ed.undo());
         assert_eq!(ed.map.get(p).cloned(), before, "undo restores the tile");
+    }
+
+    /// Editor with a ground tile on every position of x 100..=120, y 100..=120, z 5..=9.
+    fn layered_editor() -> Editor {
+        let mut ed = Editor::new(Map::new(), Arc::new(db()), Arc::new(Materials::default()));
+        for z in 5u8..=9 {
+            for y in 100u16..=120 {
+                for x in 100u16..=120 {
+                    let mut t = Tile::new();
+                    t.ground = Some(Item::new(1));
+                    ed.map.set_tile(Position::new(x, y, z), t);
+                }
+            }
+        }
+        ed
+    }
+
+    fn floors_of(ed: &Editor) -> Vec<u8> {
+        let mut v: Vec<u8> = ed.selection.iter().map(|p| p.z).collect();
+        v.sort_unstable();
+        v.dedup();
+        v
+    }
+
+    #[test]
+    fn selection_modes_follow_rme() {
+        let (a, b) = (Position::new(110, 110, 6), Position::new(111, 111, 6));
+        let mode = |floors, compensate| SelectMode { floors, compensate };
+        let mut ed = layered_editor();
+
+        ed.select_area_mode(a, b, false, mode(SelectFloors::Current, true));
+        assert_eq!(floors_of(&ed), vec![6]);
+        assert_eq!(ed.selection.len(), 4);
+
+        ed.select_area_mode(a, b, false, mode(SelectFloors::Lower, false));
+        assert_eq!(floors_of(&ed), vec![6, 7, 8, 9], "6 and below (tiles exist up to 9)");
+        assert_eq!(ed.selection.len(), 16);
+
+        ed.select_area_mode(a, b, false, mode(SelectFloors::Visible, false));
+        assert_eq!(floors_of(&ed), vec![6, 7], "above ground: down to floor 7");
+
+        // Compensated: floor 7 is one floor below 6, so its box is shifted by -1.
+        ed.select_area_mode(a, b, false, mode(SelectFloors::Visible, true));
+        assert!(ed.selection.contains(&Position::new(110, 110, 6)));
+        assert!(ed.selection.contains(&Position::new(109, 109, 7)));
+        assert!(!ed.selection.contains(&Position::new(111, 111, 7)));
+
+        // Underground: visible = floor .. floor + 2.
+        let (c, d) = (Position::new(110, 110, 8), Position::new(110, 110, 8));
+        ed.select_area_mode(c, d, false, mode(SelectFloors::Visible, true));
+        assert_eq!(floors_of(&ed), vec![8, 9]);
+        assert_eq!(ed.selection.len(), 2, "no compensation below ground");
+
+        // `add` keeps the previous selection.
+        ed.select_area_mode(a, a, true, SelectMode::default());
+        assert!(ed.selection.contains(&Position::new(110, 110, 6)) && ed.selection.contains(&Position::new(110, 110, 9)));
+    }
+
+    #[test]
+    fn copy_paste_keeps_floors() {
+        let mut ed = layered_editor();
+        let p = Position::new(105, 105, 7);
+        let mut t = ed.map.get(p).unwrap().clone();
+        t.items.push(Item::new(11));
+        ed.map.set_tile(p, t);
+        ed.select_area_mode(Position::new(105, 105, 6), Position::new(106, 105, 6), false, SelectMode { floors: SelectFloors::Lower, compensate: false });
+        assert_eq!(ed.copy(), 8, "2 tiles x 4 floors");
+        let undo_before = ed.history.undo_count();
+        ed.paste(Position::new(200, 200, 6));
+        assert_eq!(ed.history.undo_count(), undo_before + 1, "one undo step");
+        for z in 6u8..=9 {
+            assert!(ed.map.get(Position::new(200, 200, z)).is_some() && ed.map.get(Position::new(201, 200, z)).is_some(), "floor {z}");
+        }
+        assert_eq!(ed.map.get(Position::new(200, 200, 7)).unwrap().items.len(), 1, "items come along");
+        assert!(ed.map.get(Position::new(200, 200, 10)).is_none());
     }
 
     #[test]

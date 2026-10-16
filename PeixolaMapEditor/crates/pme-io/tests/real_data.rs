@@ -345,6 +345,25 @@ fn creatures_unique_and_spawn_npcs_resolve() {
     }
 }
 
+/// Byte-for-byte comparison with a map saved by RME: `PME_RME_OTBM=<file.otbm>`
+/// (e.g. a version extracted from git). Load + save must reproduce RME's bytes exactly.
+#[test]
+#[ignore]
+fn save_matches_rme_bytes() {
+    let Some(path) = std::env::var_os("PME_RME_OTBM") else {
+        println!("PME_RME_OTBM not set: skipped");
+        return;
+    };
+    let db = load_db();
+    let original = std::fs::read(&path).unwrap();
+    let map = otbm::load_bytes(&original, &db, None).unwrap();
+    let saved = otbm::save_bytes(&map, &db);
+    let first_diff = original.iter().zip(&saved).position(|(a, b)| a != b);
+    println!("RME {} bytes, PeixolaMapEditor {} bytes, first difference at {first_diff:?}", original.len(), saved.len());
+    assert_eq!(first_diff, None, "content differs");
+    assert_eq!(original.len(), saved.len(), "length differs");
+}
+
 /// Copy of the bundled materials in a temp dir (tests never touch the real files).
 fn temp_materials() -> PathBuf {
     // One folder per call: tests run in parallel and each removes its copy at the end.

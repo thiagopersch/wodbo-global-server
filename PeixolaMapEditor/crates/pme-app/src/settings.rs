@@ -172,6 +172,15 @@ impl Default for View {
     }
 }
 
+/// Floors included by a box selection (RME "Selection Mode"), saved in the settings.
+#[derive(Clone, Copy, PartialEq, Eq, Debug, Default, Serialize, Deserialize)]
+pub enum SelectionFloors {
+    #[default]
+    Current,
+    Lower,
+    Visible,
+}
+
 #[derive(Clone, Serialize, Deserialize)]
 #[serde(default)]
 pub struct Settings {
@@ -189,6 +198,10 @@ pub struct Settings {
     pub open_last_map: bool,
     /// Show the start screen (new / open / recent maps) when the editor starts.
     pub show_welcome: bool,
+    /// Box selection: which floors are included (default: only the current one).
+    pub select_floors: SelectionFloors,
+    /// Box selection on several floors follows the perspective offset (RME "Compensate").
+    pub select_compensate: bool,
     /// Sprite animation speed: milliseconds per frame (50..=500).
     pub anim_ms: u32,
     /// Creatures hidden from the palette ("npc:Name" / "monster:Name").
@@ -210,6 +223,8 @@ impl Default for Settings {
             undo_limit: 500,
             open_last_map: false,
             show_welcome: true,
+            select_floors: SelectionFloors::Current,
+            select_compensate: true,
             anim_ms: 100,
             hidden_creatures: Vec::new(),
         }
@@ -247,6 +262,17 @@ impl Settings {
         self.recent.retain(|p| p != path);
         self.recent.insert(0, path.to_path_buf());
         self.recent.truncate(10);
+    }
+
+    /// Selection mode for `Editor::select_area_mode`.
+    pub fn select_mode(&self) -> pme_core::editor::SelectMode {
+        use pme_core::editor::SelectFloors as F;
+        let floors = match self.select_floors {
+            SelectionFloors::Current => F::Current,
+            SelectionFloors::Lower => F::Lower,
+            SelectionFloors::Visible => F::Visible,
+        };
+        pme_core::editor::SelectMode { floors, compensate: self.select_compensate }
     }
 
     pub fn remove_recent(&mut self, path: &Path) {
