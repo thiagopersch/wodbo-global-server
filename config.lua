@@ -95,7 +95,7 @@ healthHealingColor = COLOR_GREEN
 manaHealingColor = COLOR_DARKPURPLE
 
 worldId = 0
-ip = "127.0.0.1"
+ip = os.getenv("SERVER_IP") or "127.0.0.1"
 bindOnlyGlobalAddress = false
 loginPort = 7171
 gamePort = 7172
@@ -129,11 +129,11 @@ antiPushItems = "2148,2152,2160,3976"
 -- To disable sqlKeepAlive such as mysqlReadTimeout use 0 value.
 -- encryptionType can be plain, md5, sha1, sha256, sha512 or vahash.
 sqlType = "mysql"
-sqlHost = "localhost"
-sqlPort = 3307
+sqlHost = os.getenv("SQL_HOST") or "localhost"
+sqlPort = tonumber(os.getenv("SQL_PORT")) or 3307
 sqlUser = "root"
-sqlPass = "ndbo"
-sqlDatabase = "ndbo"
+sqlPass = os.getenv("SQL_PASS") or "ndbo"
+sqlDatabase = os.getenv("SQL_DATABASE") or "ndbo"
 sqlFile = "theforgottenserver.s3db"
 sqlKeepAlive = 0
 mysqlReadTimeout = 10

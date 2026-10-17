@@ -714,6 +714,9 @@ void otserv(StringVec, ServiceManager* services)
 	ipList.push_back(boost::asio::ip::address_v4(INADDR_LOOPBACK));
 	if(!g_config.getBool(ConfigManager::BIND_ONLY_GLOBAL_ADDRESS))
 	{
+		//no Docker o cliente chega pelo gateway da rede interna, que "parece" LAN; com
+		//SERVER_IP_ONLY o servidor escuta nos IPs locais mas sempre anuncia o `ip` do config
+		const bool announceLocalIps = !getenv("SERVER_IP_ONLY");
 		char hostName[128];
 		if(!gethostname(hostName, 128))
 		{
@@ -727,7 +730,8 @@ void otserv(StringVec, ServiceManager* services)
 						continue;
 
 					ipList.push_back(boost::asio::ip::address_v4(resolved));
-					serverIps.push_front(std::make_pair(*(uint32_t*)(*addr), 0x0000FFFF));
+					if(announceLocalIps)
+						serverIps.push_front(std::make_pair(*(uint32_t*)(*addr), 0x0000FFFF));
 
 					s << (int32_t)(addr[0][0]) << "." << (int32_t)(addr[0][1]) << "."
 						<< (int32_t)(addr[0][2]) << "." << (int32_t)(addr[0][3]) << "\t";

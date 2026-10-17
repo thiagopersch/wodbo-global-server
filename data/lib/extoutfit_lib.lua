@@ -25,7 +25,12 @@ local function ensureLogDir()
   pcall(function()
     local ok, attr = pcall(lfs.attributes, "logs")
     if not ok or not attr then
-      os.execute("mkdir logs 2>nul")
+      -- no Linux (Docker) o `2>nul` criaria um arquivo chamado "nul"
+      if package.config:sub(1, 1) == "\\" then
+        os.execute("mkdir logs 2>nul")
+      else
+        os.execute("mkdir -p logs 2>/dev/null")
+      end
     end
   end)
 end

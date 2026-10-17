@@ -33,8 +33,16 @@ function Bestiary_buildData()
     local bosses = {}
     local scanned = {}
 
+    -- Windows (exe nativo) usa `dir`; Linux/macOS (Docker) usa `find`
+    local isWindows = package.config:sub(1, 1) == "\\"
     local ok, result = pcall(function()
-        local handle = io.popen('dir "' .. MONSTER_BASE_DIR .. '" /s /b /a-d 2>nul')
+        local cmd
+        if isWindows then
+            cmd = 'dir "' .. MONSTER_BASE_DIR .. '" /s /b /a-d 2>nul'
+        else
+            cmd = 'find "' .. MONSTER_BASE_DIR .. '" -type f -iname "*.xml" 2>/dev/null'
+        end
+        local handle = io.popen(cmd)
         if not handle then return nil end
         local content = handle:read("*a")
         handle:close()
@@ -43,8 +51,9 @@ function Bestiary_buildData()
 
     if ok and result and result ~= "" then
         for filepath in string.gmatch(result, '[^\r\n]+') do
-            if filepath:lower():match('%.xml$') then
-                local fullPath = filepath:gsub('/', '\\')
+            -- monsters.xml é o índice, não um monstro
+            if filepath:lower():match('%.xml$') and not filepath:lower():match('[/\\]monsters%.xml$') then
+                local fullPath = isWindows and filepath:gsub('/', '\\') or filepath
                 local data = Bestiary_parseMonsterFile(fullPath, nil)
                 if data and not scanned[data.name:lower()] then
                     scanned[data.name:lower()] = true

@@ -1,54 +1,50 @@
-[14/10/2026 21:2:18] > Usando SHA1 criptografia
-[14/10/2026 21:2:18] >> Carregando RSA key
-[14/10/2026 21:2:18] >> Iniciando conexao SQL
-[14/10/2026 21:2:18] >> Executando Gerenciador de Banco de Dados
-[14/10/2026 21:2:21] > Optimizing table: audit_logs... [success]
-[14/10/2026 21:2:26] > Optimizing table: items... [success]
-[14/10/2026 21:2:27] > Optimizing table: looktypes... [success]
-[14/10/2026 21:2:28] > Optimizing table: lua_scripts... [success]
-[14/10/2026 21:2:28] > Optimizing table: monsters... [success]
-[14/10/2026 21:2:28] >> Carregando items (OTB)
-[14/10/2026 21:2:29] >> Carregando items (XML)
-[14/10/2026 21:2:29] >> Carregando Grupos
-[14/10/2026 21:2:29] >> Carregando Vocacoes
-[14/10/2026 21:2:29] >> Carregando Outfits
-[14/10/2026 21:2:29] >> Carregando Wing Types
-[14/10/2026 21:2:29] >> Carregando Aura Types
-[14/10/2026 21:2:29] >> Carregando Shader Types
-[14/10/2026 21:2:29] >> Carregando Bar Types
-[14/10/2026 21:2:29] >> Carregando Raridades
-[14/10/2026 21:2:29] >> Rarity: 6 tiers, 7 groups, 39 items
-[14/10/2026 21:2:29] >> Carregando Canal de Chat
-[14/10/2026 21:2:29] >> Carregando Sistema
-[14/10/2026 21:2:29] >> Carregando Mods...
-[14/10/2026 21:2:29] > Loading AutoLoot.xml... done.
-[14/10/2026 21:2:29] > Loading Automatic Raids.xml... done.
-[14/10/2026 21:2:29] > Loading highscorebook.xml... done.
-[14/10/2026 21:2:29] > Loading task_system.xml... done.
-[14/10/2026 21:2:29] > 4 mods were loaded.
-[14/10/2026 21:2:29] >> Carregando EXP Stages
-[14/10/2026 21:2:29] >> Carregando Monstros
-[14/10/2026 21:2:29] >> Carregando Mapa e Spawns...
-[14/10/2026 21:2:30] > Tamanho do Mapa: 64000x64000.
-[14/10/2026 21:2:30] > Descricao do Mapa: 
-[14/10/2026 21:2:30] "Saved with OTAcademy Map Editor 4.1.1"
-[14/10/2026 21:2:30] "No map description available."
-[14/10/2026 21:2:32] > Mapa carregado em: 3.006 segundos.
-[14/10/2026 21:2:33] > Data carregada em: 0.99 segundos.
-[14/10/2026 21:2:35] > Houses carregada em: 1.835 segundos.
-[14/10/2026 21:2:35] > Content unserialization time: 0.007 seconds.
-[14/10/2026 21:2:35] > Carregando Tipo de PVP... Open PvP
-[14/10/2026 21:2:35] > Inicializando estado do jogo e registrando servicos...
-[14/10/2026 21:2:35] > IP do Servidor: 127.0.0.1
-[14/10/2026 21:2:35] > IP local do Servidor: 172.29.80.1	172.22.144.1	192.168.1.33	
-[14/10/2026 21:2:35] > Portas do Servidor: 7171	7172	
-[14/10/2026 21:2:35] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
-[14/10/2026 21:2:45] >> WodBleach servidor Online!
+[17/10/2026 1:10:57] > Usando SHA1 criptografia
+[17/10/2026 1:10:57] >> Carregando RSA key
+[17/10/2026 1:10:57] >> Iniciando conexao SQL
 
-[14/10/2026 21:6:9] ADMIN has logged in.
-[14/10/2026 21:20:19] mysql_real_query(): SELECT `item_id`, `name`, `category` FROM `autoloot_items` WHERE `published` = 1 ORDER BY `name` ASC - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[14/10/2026 21:20:19] mysql_real_query(): SELECT `id` FROM `battle_pass_seasons` WHERE `month` = 10 AND `year` = 2026 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[14/10/2026 21:20:19] mysql_real_query(): SELECT `id`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` ORDER BY `year` DESC, `month` DESC LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[14/10/2026 21:20:19] mysql_real_query(): UPDATE `battle_pass_seasons` SET `is_active` = 0 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[14/10/2026 21:20:19] mysql_real_query(): INSERT INTO `battle_pass_seasons` (`month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost`, `is_active`, `created_at`, `updated_at`) VALUES (10, 2026, 100, 1000, 0, 0, 0, 0, 1, NOW(), NOW()) - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
-[14/10/2026 21:20:19] mysql_real_query(): SELECT `id`, `month`, `year`, `max_level`, `xp_per_level`, `gold_pass_item_id`, `gold_pass_cost`, `level_purchase_item_id`, `level_purchase_cost` FROM `battle_pass_seasons` WHERE `is_active` = 1 LIMIT 1 - MYSQL ERROR: Unknown MySQL server host 'localhost' (0) (2005)
+[17/10/2026 1:10:57] > WARNING: Outdated MySQL server detected, consider upgrading to a newer version.
+[17/10/2026 1:10:57] >> Executando Gerenciador de Banco de Dados
+[17/10/2026 1:11:1] > Optimizing table: audit_logs... [success]
+[17/10/2026 1:11:7] > Optimizing table: items... [success]
+[17/10/2026 1:11:7] > Optimizing table: lua_scripts... [success]
+[17/10/2026 1:11:8] > Optimizing table: monsters... [success]
+[17/10/2026 1:11:8] >> Carregando items (OTB)
+[17/10/2026 1:11:10] >> Carregando items (XML)
+[17/10/2026 1:11:11] >> Carregando Grupos
+[17/10/2026 1:11:11] >> Carregando Vocacoes
+[17/10/2026 1:11:11] >> Carregando Outfits
+[17/10/2026 1:11:11] >> Carregando Wing Types
+[17/10/2026 1:11:11] >> Carregando Aura Types
+[17/10/2026 1:11:11] >> Carregando Shader Types
+[17/10/2026 1:11:11] >> Carregando Bar Types
+[17/10/2026 1:11:11] >> Carregando Raridades
+[17/10/2026 1:11:11] >> Rarity: 6 tiers, 7 groups, 39 items
+[17/10/2026 1:11:11] >> Carregando Canal de Chat
+[17/10/2026 1:11:11] >> Carregando Sistema
+[17/10/2026 1:11:14] >> Carregando Mods...
+[17/10/2026 1:11:14] > Loading AutoLoot.xml... done.
+[17/10/2026 1:11:14] > Loading Automatic Raids.xml... done.
+[17/10/2026 1:11:14] > Loading highscorebook.xml... done.
+[17/10/2026 1:11:15] > Loading task_system.xml... done.
+[17/10/2026 1:11:15] > 4 mods were loaded.
+[17/10/2026 1:11:15] >> Carregando EXP Stages
+[17/10/2026 1:11:15] >> Carregando Monstros
+[17/10/2026 1:11:16] >> Carregando Mapa e Spawns...
+[17/10/2026 1:11:18] > Tamanho do Mapa: 64000x64000.
+[17/10/2026 1:11:18] > Descricao do Mapa: 
+[17/10/2026 1:11:18] "Saved with OTAcademy Map Editor 4.1.1"
+[17/10/2026 1:11:18] "No map description available."
+[17/10/2026 1:11:21] > Mapa carregado em: 5.34 segundos.
+[17/10/2026 1:11:23] > Data carregada em: 1.263 segundos.
+[17/10/2026 1:11:23] > Houses carregada em: 0.093 segundos.
+[17/10/2026 1:11:23] > Content unserialization time: 0.003 seconds.
+[17/10/2026 1:11:23] > Carregando Tipo de PVP... Open PvP
+[17/10/2026 1:11:23] > Inicializando estado do jogo e registrando servicos...
+[17/10/2026 1:11:23] > IP do Servidor: 127.0.0.1
+[17/10/2026 1:11:23] > IP local do Servidor: 172.19.0.4	
+[17/10/2026 1:11:23] > Portas do Servidor: 7171	7172	
+[17/10/2026 1:11:23] >> Tudo ocorreu bem ate aqui, o servidor sera iniciado...
+[17/10/2026 1:11:33] >> WodBleach servidor Online!
+
+[17/10/2026 1:17:1] [Login] conta 'tiagopersch' (172.19.0.1) -> 127.0.0.1:7172
+[17/10/2026 1:17:3] ADMIN has logged in.

@@ -14,7 +14,7 @@ pme-io.workspace = true
 ahash.workspace = true
 anyhow.workspace = true
 log.workspace = true
-eframe = { version = "=0.31.1", default-features = false, features = ["wgpu", "default_fonts", "accesskit"] }
+eframe = { version = "=0.31.1", default-features = false, features = ["wgpu", "default_fonts", "accesskit", "x11", "wayland"] }
 egui_extras = { version = "=0.31.1" }
 rfd = "0.15"
 serde = { version = "1", features = ["derive"] }

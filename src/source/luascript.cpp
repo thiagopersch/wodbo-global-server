@@ -707,7 +707,14 @@ bool LuaInterface::loadBuffer(const std::string& text, Npc* npc/* = NULL*/)
 bool LuaInterface::loadFile(const std::string& file, Npc* npc/* = NULL*/)
 {
 	//loads file as a chunk at stack top
+#ifndef WINDOWS
+	//XMLs escritos no Windows usam "pasta\script.lua"
+	std::string path = file;
+	std::replace(path.begin(), path.end(), '\\', '/');
+	int32_t ret = luaL_loadfile(m_luaState, path.c_str());
+#else
 	int32_t ret = luaL_loadfile(m_luaState, file.c_str());
+#endif
 	if(ret)
 	{
 		m_lastError = popString(m_luaState);

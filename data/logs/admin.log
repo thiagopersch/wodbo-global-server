@@ -48,3 +48,14 @@
 
 [7/5/2025 1:6:37] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: God sent unknown byte: 0x9cf80c
 
+[16/10/2026 20:21:10] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[16/10/2026 20:27:19] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[16/10/2026 20:31:33] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[16/10/2026 21:3:11] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[16/10/2026 21:11:24] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[16/10/2026 23:14:4] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[17/10/2026 0:18:30] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[17/10/2026 0:21:47] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[17/10/2026 0:27:11] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[17/10/2026 0:48:19] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use
+[17/10/2026 1:11:23] (Error - void ServicePort::open(IPAddressList, uint16_t)) NETWORK: bind: Address already in use

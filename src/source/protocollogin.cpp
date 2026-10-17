@@ -174,6 +174,7 @@ bool ProtocolLogin::parseFirstPacket(NetworkMessage& msg)
 	if(!IOLoginData::getInstance()->getAccountId(name, id) && !castAccount) //CAST
 	{
 		ConnectionManager::getInstance()->addAttempt(clientIp, protocolId, false);
+		std::clog << "[Login] conta '" << name << "' (" << convertIPAddress(clientIp) << ") recusada: conta inexistente" << std::endl;
 		disconnectClient(0x0A, "Invalid account name.");
 		return false;
 	}
@@ -183,6 +184,7 @@ bool ProtocolLogin::parseFirstPacket(NetworkMessage& msg)
 	if(!encryptTest(password, account.password) && !castAccount)
 	{
 		ConnectionManager::getInstance()->addAttempt(clientIp, protocolId, false);
+		std::clog << "[Login] conta '" << name << "' (" << convertIPAddress(clientIp) << ") recusada: senha incorreta" << std::endl;
 		disconnectClient(0x0A, "Invalid password.");
 		return false;
 	}
@@ -244,6 +246,9 @@ bool ProtocolLogin::parseFirstPacket(NetworkMessage& msg)
 			serverIp = it->first;
 			break;
 		}
+
+		std::clog << "[Login] conta '" << name << "' (" << convertIPAddress(clientIp) << ") -> "
+			<< convertIPAddress(serverIp) << ":" << g_config.getNumber(ConfigManager::GAME_PORT) << std::endl;
 
 		//Add char list
 		output->put<char>(0x64);

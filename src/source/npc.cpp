@@ -81,6 +81,28 @@ Npc::Npc(const std::string& _name):
 		if(fileExists(tmp.c_str()))
 			m_filename = tmp;
 	}
+#ifndef WINDOWS
+	if(!fileExists(m_filename.c_str()))
+	{
+		//nomes vêm em Latin-1 (spawns), mas no Linux o arquivo está gravado em UTF-8
+		std::string utf8;
+		for(std::string::const_iterator it = _name.begin(); it != _name.end(); ++it)
+		{
+			uint8_t c = (uint8_t)*it;
+			if(c < 0x80)
+				utf8 += (char)c;
+			else
+			{
+				utf8 += (char)(0xC0 | (c >> 6));
+				utf8 += (char)(0x80 | (c & 0x3F));
+			}
+		}
+
+		std::string tmp = getFilePath(FILE_TYPE_OTHER, "npc/" + utf8 + ".xml");
+		if(fileExists(tmp.c_str()))
+			m_filename = tmp;
+	}
+#endif
 
 	m_npcEventHandler = NULL;
 	loaded = false;
